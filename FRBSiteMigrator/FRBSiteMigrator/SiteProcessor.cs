@@ -50,6 +50,7 @@ namespace FRBSiteMigrator
         {
             Directory.CreateDirectory(SiteFolder);
             Directory.CreateDirectory(MediaFolder);
+            Directory.CreateDirectory(TempPath);
 
 
             site.SiteUrl = siteUrl;
@@ -79,19 +80,24 @@ namespace FRBSiteMigrator
             // slow processing stuff
             WriteSiteBackupToDisk();
 
-            // now we should have a complete list of media, fetch all
-            // images locally... this will take awhile. Note that this is
+
+            // ==================================================
+            // THIS IS WHERE THE HEAVY LIFTING/SLOW PART STARTS!
+            // ==================================================
+
+            // now we fix links and images, convert html to markdown, and save out file
+            foreach (var post in site.Posts)
+            {
+                ProcessPostOrPage(post);
+            }
+
+            // we should have a complete list of media, fetch all locally
+            // Note that this is
             // intentionally not parallel because the server can't handle it
             Write($"Making local copies of {site.MediaCount} media.");
             foreach (var media in site.Media)
             {
                 FetchAndSaveMedia(media);
-            }
-
-            // now we fix links and images, convert html to markdown, and save out file
-            foreach(var post in site.Posts)
-            {
-                ProcessPostOrPage(post);
             }
 
             // write out a backup again
@@ -176,24 +182,38 @@ namespace FRBSiteMigrator
         {
             var content = page.RawContent;
 
-            // convert links to be relative
+            // convert local links to be relative
             foreach(var link in page.Links)
             {
-                var relative = link.MakeLinkRelative() + ".md";
-                content.Replace(link, relative);
+                if(!link.Contains("http") || link.Contains(site.SiteUrl))
+                {
+                    var relative = link.MakeLinkRelative() + ".md";
+                    content = content.Replace(link, relative);
+                }
             }
 
-            // convert images to be relative
+            // convert image links to their new path, note that we search
+            // for the relative path since protocols are mixed between http/s
+            // and relative links
             foreach(var img in page.Images)
             {
                 var relative = img.MakeLinkRelative();
-                content.Replace(img, relative);
+                var media = site.Media.Where(m => m.Guid.Contains(relative)).FirstOrDefault();
+                if(media != null)
+                {
+                    var newLink = "/media/" + media.ProcessedPath;
+                    content = content.Replace(img, newLink);
+                }
+                else
+                {
+                    Write("Failed to find a media link in our media collection, this shouldn't happen!");
+                }
             }
 
             page.ProcessedContent = content;
 
             // create folder structure for this page
-            var dirs = page.ProcessedPath.Split('/');
+            var dirs = page.ProcessedPath.Trim('/').Split('/');
             var dirPath = SiteFolder;
             for(var i = 0; i < dirs.Length - 1; i++)
             {
@@ -206,7 +226,7 @@ namespace FRBSiteMigrator
             File.WriteAllText(htmlPath, page.ProcessedContent);
 
             // convert to markdown and save
-            var markdownPath = Path.Combine(SiteFolder, page.ProcessedPath);
+            var markdownPath = Path.Combine(SiteFolder, page.ProcessedPath.Trim('/')) + ".md";
             try
             {
                 ConvertHtmlToMarkdown(htmlPath, markdownPath);
@@ -226,7 +246,7 @@ namespace FRBSiteMigrator
         public void ConvertHtmlToMarkdown(string htmlInputPath, string markdownOutputPath)
         {
             var processName = "pandoc";
-            var arguments = $"-t gfm -o {markdownOutputPath} {htmlInputPath} --wrap=none";
+            var arguments = $"-f html -t gfm-raw_html \"{htmlInputPath}\" -o \"{markdownOutputPath}\"  --wrap=none";
 
             using (var pandoc = new ProcessWrapper(processName, arguments))
             {
