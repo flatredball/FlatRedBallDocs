@@ -1,0 +1,1 @@
+The FlatRedBall chat is always active. Join to ask questions, show off your projects, or hang out with other developers [on Discord](https://discord.gg/tG5RBgw). ![](https://img.shields.io/discord/586997072373481494)

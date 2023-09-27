@@ -1,0 +1,1 @@
+Sprite implements the IAnimationChainAnimatable interface. For more information, see the [IAnimationChainAnimatable.CurrentFrameIndex page](/documentation/api/flatredball/flatredball-graphics/animation/flatredball-graphics-animation-ianimationchainanimatable/flatredball-graphics-animation-ianimationchainanimatable-currentframeindex/.md).
