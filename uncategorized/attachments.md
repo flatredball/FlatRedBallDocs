@@ -172,4 +172,4 @@ We'll add a simple [PositionedObject](/frb/docs/index.php?title=FlatRedBall.Posi
 -   [FlatRedBall.Math.IAttachable:Attachment Updates in the Engine](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable:Attachment_Updates_in_the_Engine.md "FlatRedBall.Math.IAttachable:Attachment Updates in the Engine")
 -   [Two-way relationships](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships.md "FlatRedBall.Math.AttachableList") - Explains how two-way relationships work between IAttachables and the lists they belong to.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

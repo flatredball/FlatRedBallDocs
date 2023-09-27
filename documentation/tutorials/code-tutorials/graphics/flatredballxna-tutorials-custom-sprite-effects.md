@@ -1,6 +1,6 @@
 ## Introduction
 
-[Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") appearance can be modified through a number of properties including [Texture](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D.md "Microsoft.Xna.Framework.Graphics.Texture2D"), [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation"), and [BlendOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.BlendOperation.md "FlatRedBall.Graphics.BlendOperation"). Full rendering control can be achieved by using custom shaders, applied through an [IDrawableBatch](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-drawablebatch/.md). This guide covers how to render a Sprite using a custom IDrawableBatch.
+[Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") appearance can be modified through a number of properties including [Texture](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D.md "Microsoft.Xna.Framework.Graphics.Texture2D"), [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation"), and [BlendOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.BlendOperation.md "FlatRedBall.Graphics.BlendOperation"). Full rendering control can be achieved by using custom shaders, applied through an [IDrawableBatch](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-drawablebatch.md). This guide covers how to render a Sprite using a custom IDrawableBatch.
 
 ##  Adding files to Glue
 
@@ -16,7 +16,7 @@ To add an image file:
 
 ## Creating an IDrawableBatch
 
-Next we'll create a [IDrawableBatch](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-drawablebatch/.md) which will handle our rendering. To do this:
+Next we'll create a [IDrawableBatch](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-drawablebatch.md) which will handle our rendering. To do this:
 
 1.  Add a new file to your project in Visual Studio
 2.  Name the file CustomShaderSprite

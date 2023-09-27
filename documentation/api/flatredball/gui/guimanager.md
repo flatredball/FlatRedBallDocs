@@ -41,4 +41,4 @@ Perishable [Windows](/frb/docs/index.php?title=FlatRedBall.Gui.Window.md "FlatRe
 -   [FlatRedBall.Gui.GuiManager.TextHeight](/frb/docs/index.php?title=FlatRedBall.Gui.GuiManager.TextHeight.md "FlatRedBall.Gui.GuiManager.TextHeight")
 -   [FlatRedBall.Gui.GuiManager.Windows](/frb/docs/index.php?title=FlatRedBall.Gui.GuiManager.Windows.md "FlatRedBall.Gui.GuiManager.Windows")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

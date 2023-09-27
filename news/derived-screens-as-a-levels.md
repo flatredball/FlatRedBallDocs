@@ -63,4 +63,4 @@ Qualified names can still be used, so existing code will not be impacted by this
 
 ## Additional Information
 
-This new approach has been applied to a re-written set of tutorials for creating projects using Tiled. For more information on how to use this new approach, see the [Tiled Tutorial](/documentation/tools/tiled-plugin/using-the-tiled-plugin/.md).  
+This new approach has been applied to a re-written set of tutorials for creating projects using Tiled. For more information on how to use this new approach, see the [Tiled Tutorial](/documentation/tools/tiled-plugin/using-the-tiled-plugin.md).  

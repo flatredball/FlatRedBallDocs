@@ -15,4 +15,4 @@ Capsule size is controlled by two variables:
 
 The following diagram shows hwo these values are used in a Capsule2D: ![Capsule2DVariables.png](/media/migrated_media-Capsule2DVariables.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

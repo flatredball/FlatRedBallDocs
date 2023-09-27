@@ -64,4 +64,4 @@ foreach(var frame in AnimationChainInstance)
 
 -   [FlatRedBall.Sprite.PixelSize](/frb/docs/index.php?title=FlatRedBall.Sprite.md.PixelSize "FlatRedBall.Sprite.PixelSize") - PixelSize can be used to reactively set scale based off of a changed Texture resulting from playing an AnimationChain.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

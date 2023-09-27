@@ -131,16 +131,16 @@ If your references are broken, then you may see something similar to the followi
 
 ### Additional Troublshooting
 
-Having problems opening or running FlatRedBall projects? Check out the [Troubleshooting Page](/uncategorized/troubleshooting-installation/.md).
+Having problems opening or running FlatRedBall projects? Check out the [Troubleshooting Page](/uncategorized/troubleshooting-installation.md).
 
 ## Advanced Options
 
 Here's some more options on getting or updating FlatRedBall:
 
--   [Setup for FlatRedBall Android](/documentation/tools/glue-reference/multi-platform/glue-how-to-create-a-flatredball-android-project/android-setup/.md)
--   [Building FlatRedBall from source](/flatredball-source/.md)
--   [FlatRedBall DLLs (binaries)](/flatredball-dlls/.md)
--   [Installing XNA (for AnimationEditor, Gum, and older projects)](/visual-studio-2019-xna-setup/.md)
+-   [Setup for FlatRedBall Android](/documentation/tools/glue-reference/multi-platform/glue-how-to-create-a-flatredball-android-project/android-setup.md)
+-   [Building FlatRedBall from source](/flatredball-source.md)
+-   [FlatRedBall DLLs (binaries)](/flatredball-dlls.md)
+-   [Installing XNA (for AnimationEditor, Gum, and older projects)](/visual-studio-2019-xna-setup.md)
 
  
 

@@ -79,4 +79,4 @@ You should now see everything showing up correctly in your game
 
 ## Conclusion
 
-Now we have a score HUD that shows up when the game plays, but it doesn't react to scored goals. The next tutorial will add the necessary logic to have it react to scored goals. [\<- Scoring and Restarting](/documentation/tutorials/tutorials-beefball/tutorials-beefball-scoring-and-restarting-rounds/.md "Tutorials:Beefball:Scoring and Restarting Rounds") -- [Scoring HUD Logic -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-scoring-hud-logic/.md "Tutorials:Beefball:Scoring Hud Logic")
+Now we have a score HUD that shows up when the game plays, but it doesn't react to scored goals. The next tutorial will add the necessary logic to have it react to scored goals. [\<- Scoring and Restarting](/documentation/tutorials/tutorials-beefball/tutorials-beefball-scoring-and-restarting-rounds.md "Tutorials:Beefball:Scoring and Restarting Rounds") -- [Scoring HUD Logic -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-scoring-hud-logic.md "Tutorials:Beefball:Scoring Hud Logic")

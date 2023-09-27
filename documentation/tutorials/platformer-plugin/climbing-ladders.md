@@ -137,7 +137,7 @@ All of this results in the LastCollisionLadderRectangle storing a rectangle if t
 
 ## Custom Movement Logic vs. Player Platform Movement Values
 
-Simple games may make use of automatically assigning movement values on collision as shown in the [Adding Ice and Water document](/documentation/tutorials/platformer-plugin/ground-type-and-water-movement/03-adding-ice-and-water/.md). In this document, platformer values are assigned through the FlatRedBall dropdowns on the Collision Relationship. While this is convenient, note that ladder movement is optionally assigned based on game logic rather than simple collision. Therefore, if your game uses ladders, you may need to move all assignment of movement values to code.
+Simple games may make use of automatically assigning movement values on collision as shown in the [Adding Ice and Water document](/documentation/tutorials/platformer-plugin/ground-type-and-water-movement/03-adding-ice-and-water.md). In this document, platformer values are assigned through the FlatRedBall dropdowns on the Collision Relationship. While this is convenient, note that ladder movement is optionally assigned based on game logic rather than simple collision. Therefore, if your game uses ladders, you may need to move all assignment of movement values to code.
 
 ## Limiting Ladder Height
 

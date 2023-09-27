@@ -24,4 +24,4 @@ Note that if you use the same effect in multiple places, the parameters may be c
 
 Models store the Texture that they reference in their effect. Therefore, the Texture used on individual mesh parts can be retrieved and set through effects.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -52,4 +52,4 @@ This value controls how much velocity is preserved after a collision occurs. A v
 
 ## Conclusion
 
-Now we're getting somewhere! The game is starting to feel pretty solid. Next we'll add a Puck Entity which can be used to score goals. [\<- Creating the Screen Collision](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-the-screen-collision/.md "Tutorials:Beefball:Creating the Screen Collision") -- [Creating the Puck Entity -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-the-puck-entity/.md "Tutorials:Beefball:Creating the Puck Entity")
+Now we're getting somewhere! The game is starting to feel pretty solid. Next we'll add a Puck Entity which can be used to score goals. [\<- Creating the Screen Collision](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-the-screen-collision.md "Tutorials:Beefball:Creating the Screen Collision") -- [Creating the Puck Entity -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-the-puck-entity.md "Tutorials:Beefball:Creating the Puck Entity")

@@ -102,4 +102,4 @@ Since the shape is neither part of the ShapeManager nor having any Collision met
 -   [FlatRedBall.Math.Geometry.ShapeManager.Remove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.Remove.md "FlatRedBall.Math.Geometry.ShapeManager.Remove")
 -   [FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder.md "FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -24,4 +24,4 @@ This makes Music play at 0 volume (effectively mutes the music):
 
     Microsoft.Xna.Framework.Media.MediaPlayer.Volume= 0;
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

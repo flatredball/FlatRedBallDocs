@@ -13,4 +13,4 @@ The FlatRedBall TouchScreen provides a thin wrapper and access to the underlying
 -   [FlatRedBall.Input.TouchScreen.LastFrameGestures](/frb/docs/index.php?title=FlatRedBall.Input.TouchScreen.LastFrameGestures.md "FlatRedBall.Input.TouchScreen.LastFrameGestures")
 -   [FlatRedBall.Input.TouchScreen.ReadsGestures](/frb/docs/index.php?title=FlatRedBall.Input.TouchScreen.ReadsGestures.md "FlatRedBall.Input.TouchScreen.ReadsGestures")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

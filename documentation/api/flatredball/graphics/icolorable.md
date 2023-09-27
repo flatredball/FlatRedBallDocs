@@ -194,4 +194,4 @@ Therefore, we can see that an AlphaRate value of -2 will cause an object to disa
 -   [FlatRedBall.Graphics.IColorable.Green](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Blue.md "FlatRedBall.Graphics.IColorable.Blue")
 -   [FlatRedBall.Graphics.IColorable.Red](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Blue.md "FlatRedBall.Graphics.IColorable.Blue")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

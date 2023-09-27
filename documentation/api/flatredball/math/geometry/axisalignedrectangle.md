@@ -97,4 +97,4 @@ For information on determining which side an object has collided on, see [this p
 -   [Axis Alignment and Rotation](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle:Axis_Alignment_and_Rotation.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle:Axis Alignment and Rotation")
 -   [Tile Collision](/frb/docs/index.php?title=Tile_Collision.md "Tile Collision")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

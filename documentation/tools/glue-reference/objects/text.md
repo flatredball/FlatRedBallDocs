@@ -26,7 +26,7 @@ To create a Text object in Glue:
 
 Since Text objects are usually used for game UI, the following properties are usually set in Glue:
 
--   [LayerOn](/documentation/tools/glue-reference/objects/layeron/.md) - Text objects are usually placed on a UI or HUD layer
--   [AttachToCamera](/documentation/tools/glue-reference/objects/glue-reference-objects-attachtocamera/.md) - Text objects are usually displayed in a fixed position on screen
+-   [LayerOn](/documentation/tools/glue-reference/objects/layeron.md) - Text objects are usually placed on a UI or HUD layer
+-   [AttachToCamera](/documentation/tools/glue-reference/objects/glue-reference-objects-attachtocamera.md) - Text objects are usually displayed in a fixed position on screen
 
  

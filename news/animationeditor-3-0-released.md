@@ -16,4 +16,4 @@ The magic wand tool has been part of the Animation Editor for a while, but new c
 
 ## Get Started Now
 
-Version 3.0 of the AnimationEditor is available now. You can get the new plugin from GlueVault here: <http://www.gluevault.com/plug/51-animationeditor-glue-plugin> If you're new to FlatRedBall and want to get started, hop on over to our [Downloads page](/download/.md).
+Version 3.0 of the AnimationEditor is available now. You can get the new plugin from GlueVault here: <http://www.gluevault.com/plug/51-animationeditor-glue-plugin> If you're new to FlatRedBall and want to get started, hop on over to our [Downloads page](/download.md).

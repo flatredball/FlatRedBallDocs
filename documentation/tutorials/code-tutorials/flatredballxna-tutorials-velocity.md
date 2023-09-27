@@ -92,4 +92,4 @@ Add the following to Initialize after initializing FlatRedBall:
 
 **KABOOM!** ![VelocityTutorial.png](/media/migrated_media-VelocityTutorial.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

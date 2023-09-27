@@ -35,4 +35,4 @@ Instead, XVelocity must be explicitly given a float:
     propertyCollection.Add("XVelocity", 3.0f);  // Whew, 3.0f is a float.
     propertyCollection.ApplyTo(someSprite);  // This will now work fine.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

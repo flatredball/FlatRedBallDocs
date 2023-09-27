@@ -76,4 +76,4 @@ The following code performs the check:
 -   [FlatRedBall.Input.Mouse.WorldXAt](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.WorldXAt&action=edit&redlink=1.md "FlatRedBall.Input.Mouse.WorldXAt (page does not exist)")
 -   [FlatRedBall.Input.Mouse.WorldYAt](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.WorldXAt&action=edit&redlink=1.md "FlatRedBall.Input.Mouse.WorldXAt (page does not exist)")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

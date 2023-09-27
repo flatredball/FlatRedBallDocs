@@ -58,4 +58,4 @@ Of course, the code above does nothing; however, you can do things to the saveIn
 
 In fact, you can do pretty much anything to an AnimationChainListSave instance and it will result in a valid .achx file when saving it out. This enables you to easily create tools to create and modify .achx files.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

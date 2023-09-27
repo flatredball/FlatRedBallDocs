@@ -21,7 +21,7 @@ The newTileId is the index of the texture of the tileset. This index uses a simi
 This example assumes the following:
 
 1.  You have a LayeredTileMap in your game called Map
-2.  You have a Layer added to the LayeredTileMap called LayerForPainting. This could be created through code, but the easiest way to do this is to add this layer in Tiled. For information on how to create a layer through code, see the [MapDrawableBatch page](/documentation/tools/tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/.md).
+2.  You have a Layer added to the LayeredTileMap called LayerForPainting. This could be created through code, but the easiest way to do this is to add this layer in Tiled. For information on how to create a layer through code, see the [MapDrawableBatch page](/documentation/tools/tiled-plugin/flatredball-tilegraphics-mapdrawablebatch.md).
 3.  This layer references a tileset that you intend to paint with. This can be done by painting tiles on the layer in Tiled which will result in the layer being associated with the tileset containing the painted tiles
 4.  The layer is already filled with tiles. This enables the painting to adjust texture coordinates without adding new tiles.
 

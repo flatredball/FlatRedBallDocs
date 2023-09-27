@@ -26,4 +26,4 @@ This goes for any file type, so keep this in mind. That is, if loading a model t
 -   [Custom files and the content pipeline](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline")
 -   [XNA Content Pipelines](/frb/docs/index.php?title=General_Programming:XNA:Content_Pipeline.md "General Programming:XNA:Content Pipeline")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

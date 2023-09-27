@@ -161,4 +161,4 @@ Executing the code:![SpriteGridCreatedInCode.png](/media/migrated_media-SpriteGr
 
 -   [FlatRedBall.Content.SpriteEditorScene.Camera](/frb/docs/index.php?title=FlatRedBall.Content.SpriteEditorScene.Camera.md "FlatRedBall.Content.SpriteEditorScene.Camera")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

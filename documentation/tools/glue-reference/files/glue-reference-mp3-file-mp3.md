@@ -27,7 +27,7 @@ A song can be controlled in the Song tab. To view the Song tab:
 
 ## Moving between Screens (Glue)
 
-Songs added in Glue belong to a particular Screen. To have songs persist between Screen transitions, see [this page](/documentation/tools/glue-reference/files/glue-reference-files-destroyonunload/.md "Glue:Reference:Files:DestroyOnUnload").
+Songs added in Glue belong to a particular Screen. To have songs persist between Screen transitions, see [this page](/documentation/tools/glue-reference/files/glue-reference-files-destroyonunload.md "Glue:Reference:Files:DestroyOnUnload").
 
 ## Optionally Playing Songs
 

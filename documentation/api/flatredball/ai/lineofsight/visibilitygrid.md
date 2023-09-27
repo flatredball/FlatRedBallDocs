@@ -120,4 +120,4 @@ You can modify the code above as follows: Add the following after creating the V
 
 ![VisibilityGridWithBlockers.png](/media/migrated_media-VisibilityGridWithBlockers.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

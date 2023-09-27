@@ -78,4 +78,4 @@ public partial class ButtonRuntime
 }
 ```
 
-    [\<- 6. Exposed Variables](/documentation/tools/gum/gum-tutorials/tutorials-gum-exposed-variables/.md) -- [8. Adding Code to Gum Objects -\>](/documentation/tools/gum/gum-tutorials/8-adding-code-to-gum-objects/.md)
+    [\<- 6. Exposed Variables](/documentation/tools/gum/gum-tutorials/tutorials-gum-exposed-variables.md) -- [8. Adding Code to Gum Objects -\>](/documentation/tools/gum/gum-tutorials/8-adding-code-to-gum-objects.md)

@@ -60,4 +60,4 @@ The visible screen area can help you decide how large objects should be. In code
 
 Of course, adding a Sprite and running the code can give you a visual indication of the size. Another good option is to run the SpriteEditor, add a Sprite, and turn on the camera bounds, as explained [here](/frb/docs/index.php?title=SpriteEditor_Camera.md "SpriteEditor Camera").
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

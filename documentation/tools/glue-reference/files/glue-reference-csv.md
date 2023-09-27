@@ -1,6 +1,6 @@
 ## Introduction
 
-CSV (comma separated values) is a spreadsheet file format which has extensive support in FlatRedBall and Glue. For information on how to use CSVs in Glue, see the ["Using CSVs" article](/documentation/tutorials/glue-tutorials/glue-tutorials-using-csvs/.md "Glue:Tutorials:Using CSVs"). For more information on how to combine CSVs with Entities, see ["How To Combine CSVs with Entities" article](/uncategorized/glue-how-to-combine-csvs-with-entities/.md "Glue:How To:Combine CSVs with Entities").
+CSV (comma separated values) is a spreadsheet file format which has extensive support in FlatRedBall and Glue. For information on how to use CSVs in Glue, see the ["Using CSVs" article](/documentation/tutorials/glue-tutorials/glue-tutorials-using-csvs.md "Glue:Tutorials:Using CSVs"). For more information on how to combine CSVs with Entities, see ["How To Combine CSVs with Entities" article](/uncategorized/glue-how-to-combine-csvs-with-entities.md "Glue:How To:Combine CSVs with Entities").
 
 ## What is a CSV?
 
@@ -49,7 +49,7 @@ As mentioned above, Glue will automatically generate a file based on the CSV. Sp
 | Bear            | Bears are strong |
 | Slug            | Slugs are slow   |
 
-For a full list of supported types, see the [CsvManager page](/documentation/api/flatredball/flatredball-io/flatredball-io-csv/flatredball-io-csv-csvfilemanager/.md).
+For a full list of supported types, see the [CsvManager page](/documentation/api/flatredball/flatredball-io/flatredball-io-csv/flatredball-io-csv-csvfilemanager.md).
 
 ## CSVs and Lists
 

@@ -61,4 +61,4 @@ Add the following in Update:
 
 -   [FlatRedBall.Math.Geometry.Segment.ClosestPointTo](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Segment.ClosestPointTo.md "FlatRedBall.Math.Geometry.Segment.ClosestPointTo")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

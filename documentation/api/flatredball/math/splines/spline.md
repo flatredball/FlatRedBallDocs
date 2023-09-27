@@ -100,4 +100,4 @@ Of course, if you ever make changes to a Spline like moving its points you will 
 
 -   [FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline](/frb/docs/index.php?title=FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline.md "FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

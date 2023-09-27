@@ -35,7 +35,7 @@ We will also change the color of the enemy rectangle so we can tell it apart fro
 
 ## Adding an Enemy to Level1
 
-Normally entities like Enemies are added through Tiled files, as shown in the [breaking blocks tutorial](/documentation/tutorials/platformer-plugin/breaking-blocks/.md). To keep the tutorial shorter, we will be directly adding Enemy instances through Glue. We could add enemies to GameScreen, but it's more common for each level to specify its own enemies, so we'll be adding the enemy instance to level1. First we will modify the EnemyList in GameScreen (which was automatically added as one of the default options when we created our Enemy entity) so it can be accessed in the levels. To do this:
+Normally entities like Enemies are added through Tiled files, as shown in the [breaking blocks tutorial](/documentation/tutorials/platformer-plugin/breaking-blocks.md). To keep the tutorial shorter, we will be directly adding Enemy instances through Glue. We could add enemies to GameScreen, but it's more common for each level to specify its own enemies, so we'll be adding the enemy instance to level1. First we will modify the EnemyList in GameScreen (which was automatically added as one of the default options when we created our Enemy entity) so it can be accessed in the levels. To do this:
 
 1.  Expand GameScreen **Objects** folder
 2.  Select **EnemyList**

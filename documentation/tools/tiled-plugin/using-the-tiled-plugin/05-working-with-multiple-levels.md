@@ -36,7 +36,7 @@ As always, don't forget to save your work or the map won't appear in game. The t
 
 ## Levels and Inheritance
 
-FlatRedBall follows an inheritance pattern for levels. the GameScreen serves as the *base screen* for all levels. This means that the GameScreen contains everything that is common to all levels. This not only includes objects (such as lists of entities) but also relationships and settings on objects. For example, the GameScreen defines a Map object which creates entities from the maps (which is covered in later tutorials). If you choose to create Screens which do not inherit, you will have to manually reconfigure some of these settings. This is not recommended for new FlatRedBall users. Readers who are more interested in how TMX Files are loaded can read the [LayeredTileMap page](/documentation/tools/tiled-plugin/flatredball-tilegraphics-layeredtilemap/.md).
+FlatRedBall follows an inheritance pattern for levels. the GameScreen serves as the *base screen* for all levels. This means that the GameScreen contains everything that is common to all levels. This not only includes objects (such as lists of entities) but also relationships and settings on objects. For example, the GameScreen defines a Map object which creates entities from the maps (which is covered in later tutorials). If you choose to create Screens which do not inherit, you will have to manually reconfigure some of these settings. This is not recommended for new FlatRedBall users. Readers who are more interested in how TMX Files are loaded can read the [LayeredTileMap page](/documentation/tools/tiled-plugin/flatredball-tilegraphics-layeredtilemap.md).
 
 ## Switching Levels
 

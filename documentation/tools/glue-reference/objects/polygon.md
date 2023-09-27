@@ -1,6 +1,6 @@
 ## Introduction
 
-Polygons can be added to screens and entities to create complex collision. Polygons will automatically be used in an entity's collisions if the entity is marked as ICollidable in Glue. For information on working with the Polygon object in code, see the [Polygon class reference](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-polygon/.md).
+Polygons can be added to screens and entities to create complex collision. Polygons will automatically be used in an entity's collisions if the entity is marked as ICollidable in Glue. For information on working with the Polygon object in code, see the [Polygon class reference](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-polygon.md).
 
 ## Adding a Polygon to an Entity
 

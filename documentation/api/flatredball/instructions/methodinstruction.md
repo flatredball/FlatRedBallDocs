@@ -104,4 +104,4 @@ For example, let's say you are working with an [AxisAlignedRectangle](/frb/docs/
                 new object[] { circleToCallAgainst }, 
                 whenToExecute);
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

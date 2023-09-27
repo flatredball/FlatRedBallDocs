@@ -56,4 +56,4 @@ Entity lists are often sorted to improve partitioning. The new version of FRB wi
 
 ## ... and lots more!
 
-This version also includes dozens of small bug fixes and enhancements. It's available now, so head on over to the [Downloads page](/download/.md) and give it a shot.
+This version also includes dozens of small bug fixes and enhancements. It's available now, so head on over to the [Downloads page](/download.md) and give it a shot.

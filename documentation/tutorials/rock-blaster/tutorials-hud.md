@@ -4,7 +4,7 @@ Now that the game is somewhat playable - bullets destroy rocks and the player ca
 
 ## Downloading Gum
 
-Before we begin, you must have Gum downloaded on your machine. You can [download Gum here](/content/Tools/Gum/Gum.zip.md). For more information on Gum, see the [Gum website](http://gumui.net/). You will also want to set up the Gum tool association with the .gumx and .gusx files. For information on how to do that, see the [first Gum tutorial](/documentation/tools/gum/gum-tutorials/tutorials-gum-introduction-and-setup/.md).
+Before we begin, you must have Gum downloaded on your machine. You can [download Gum here](/content/Tools/Gum/Gum.zip.md). For more information on Gum, see the [Gum website](http://gumui.net/). You will also want to set up the Gum tool association with the .gumx and .gusx files. For information on how to do that, see the [first Gum tutorial](/documentation/tools/gum/gum-tutorials/tutorials-gum-introduction-and-setup.md).
 
 ## Creating a Text Instance in Gum
 
@@ -28,7 +28,7 @@ Gum follows many of the same concepts as Glue, but it is primarily a visual tool
 
 ## Changing the TextInstance in Code
 
-At this point our text object says "Hello". Instead, we'd like to display a player's score. To change the Text, we can get a reference to the TextInstance in code or in Glue. Both approaches have their benefits, but for simplicity we will access the TextInstance in Glue. For more information, see the [tutorial on accessing Gum objects](/documentation/tools/gum/gum-tutorials/tutorials-gum-gum-objects-in-code/.md). The TextInstance is defined in the Gum screen, which has the file format .gusx. Our GameScreen already has the Gum screen added - this happened automatically when we used the wizard.
+At this point our text object says "Hello". Instead, we'd like to display a player's score. To change the Text, we can get a reference to the TextInstance in code or in Glue. Both approaches have their benefits, but for simplicity we will access the TextInstance in Glue. For more information, see the [tutorial on accessing Gum objects](/documentation/tools/gum/gum-tutorials/tutorials-gum-gum-objects-in-code.md). The TextInstance is defined in the Gum screen, which has the file format .gusx. Our GameScreen already has the Gum screen added - this happened automatically when we used the wizard.
 
 ![](/media/2021-03-img_604d823aa3e8a.png)
 
@@ -137,4 +137,4 @@ Also, don't forget to remove the temporary code we wrote earlier which set the t
 
 ## Conclusion
 
-![RockBlasterWithScore.png](/media/migrated_media-RockBlasterWithScore.png) Now the game includes a Score HUD that updates as the player progresses through the game. The next tutorial will add support for multiple players. [\<- 08. Rock States](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-rock-states/.md "Tutorials:Rock Blaster:Rock States") -- [10. Multiple Players -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-multiple-players/.md "Tutorials:Rock Blaster:Multiple Players")
+![RockBlasterWithScore.png](/media/migrated_media-RockBlasterWithScore.png) Now the game includes a Score HUD that updates as the player progresses through the game. The next tutorial will add support for multiple players. [\<- 08. Rock States](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-rock-states.md "Tutorials:Rock Blaster:Rock States") -- [10. Multiple Players -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-multiple-players.md "Tutorials:Rock Blaster:Multiple Players")

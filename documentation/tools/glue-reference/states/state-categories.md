@@ -108,7 +108,7 @@ StateData is the concept of treating states similar to CSV data. Glue supports t
 
 ![](/media/2020-06-img_5ee783d044f32.png)
 
-For an in-depth discussion of State Data, including how to exclude variables from inclusion, see the [State Data blog post](/news/introducing-state-data/.md).
+For an in-depth discussion of State Data, including how to exclude variables from inclusion, see the [State Data blog post](/news/introducing-state-data.md).
 
 ## SharesVariablesWithOtherCategories
 

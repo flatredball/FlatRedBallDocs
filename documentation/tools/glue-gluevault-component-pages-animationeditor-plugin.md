@@ -4,7 +4,7 @@ The AnimationEditor is a tool which simplifies the creation and editing of Anima
 
 ## Opening the AnimationEditor
 
-The AnimationEditor is distributed along FRB in the FRBDK.zip file. For info on downloading the FRBDK.zip file, see the [Downloads page](/download/.md). You can open the AnimationEditor by either:
+The AnimationEditor is distributed along FRB in the FRBDK.zip file. For info on downloading the FRBDK.zip file, see the [Downloads page](/download.md). You can open the AnimationEditor by either:
 
 -   Double-clicking a .achx file in the FRB Editor. Note that if you have not set up the Windows file association for .achx files, you may be asked how to open this file. You can select to use the AnimationEditor.exe, which is located in the place shown in the next point: ![](/media/2023-06-img_649226c0a5464.png)
 -   Or opening the AnimationEditor.exe in the XNA 4 Tools folder ![](/media/2021-01-img_5ff8eabb97e17.png)

@@ -44,14 +44,14 @@ var loadedTexture = FlatRedBallServices.Load<Texture2D>("Character.png", content
 
 The Load call performs the following logic:
 
-1.  Look for a [ContentManager](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager/.md) with a name matching the contentManager  argument.
-    1.  If no contentManager  is specified, the "global" [ContentManager](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager/.md) is used.
-    2.  If no matching [ContentManager](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager/.md) is found, create one.
+1.  Look for a [ContentManager](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager.md) with a name matching the contentManager  argument.
+    1.  If no contentManager  is specified, the "global" [ContentManager](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager.md) is used.
+    2.  If no matching [ContentManager](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager.md) is found, create one.
 2.  Search the ContentManager for an instance that has a matching name.
     1.  If the content is found, return the existing instance. This saves time loading content and reduces RAM usage.
     2.  If the content is not found, attempt to load it.
 
-For more information on how file names are stored, see the [ContentManager.IsAssetLoadedByName page](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager/.mdisassetloadedbyname/).
+For more information on how file names are stored, see the [ContentManager.IsAssetLoadedByName page](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager.mdisassetloadedbyname/).
 
 ## Load can return IDisposables added through AddDisposable
 

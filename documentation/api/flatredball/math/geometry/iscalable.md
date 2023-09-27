@@ -55,4 +55,4 @@ The ScaleX and ScaleY values on objects such as Sprites is (by default) independ
 -   [FlatRedBall.Math.Geometry.IScalable.ScaleXVelocity](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.IScalable.ScaleXVelocity&action=edit&redlink=1.md "FlatRedBall.Math.Geometry.IScalable.ScaleXVelocity (page does not exist)")
 -   [FlatRedBall.Math.Geometry.IScalable.ScaleYVelocity](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.IScalable.ScaleYVelocity&action=edit&redlink=1.md "FlatRedBall.Math.Geometry.IScalable.ScaleYVelocity (page does not exist)")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

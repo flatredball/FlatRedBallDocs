@@ -9,4 +9,4 @@ EmissionSettings stores information about how individual Sprite particles will b
 -   [FlatRedBall.Graphics.Particle.EmissionSettings.ScaleX](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.EmissionSettings.ScaleX.md "FlatRedBall.Graphics.Particle.EmissionSettings.ScaleX")
 -   [FlatRedBall.Graphics.Particle.EmissionSettings.ScaleY](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.EmissionSettings.ScaleX.md "FlatRedBall.Graphics.Particle.EmissionSettings.ScaleX")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -6,4 +6,4 @@ The InstructionList class is a class which provides methods that can simplify ma
 
 -   [FlatRedBall.Instructions.InstructionList.ExecuteAndRemoveOrCyclePassedInstructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.mdList.ExecuteAndRemoveOrCyclePassedInstructions "FlatRedBall.Instructions.InstructionList.ExecuteAndRemoveOrCyclePassedInstructions")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

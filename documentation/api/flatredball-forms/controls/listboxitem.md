@@ -12,7 +12,7 @@ The ListBoxItem control can optionally include a Text instance named **TextIns
 
 ## Creating ListBoxItems
 
-ListBoxItem instances are typically created and added to a ListBox. For more information and examples on working with ListBoxItem instances in a ListBox, see the [ListBox](/documentation/api/flatredball-forms/controls/listbox/.md) page.
+ListBoxItem instances are typically created and added to a ListBox. For more information and examples on working with ListBoxItem instances in a ListBox, see the [ListBox](/documentation/api/flatredball-forms/controls/listbox.md) page.
 
 ## Reading Data From BindingContext
 

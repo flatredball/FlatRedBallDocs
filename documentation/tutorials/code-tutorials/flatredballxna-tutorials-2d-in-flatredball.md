@@ -65,4 +65,4 @@ See the [MathFunctions wiki entry](/frb/docs/index.php?title=FlatRedBall.Math.Ma
 
 One of the benefits of using a 3D [Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera") setup is that it very easy to simulate "zooming" by simply changing the Z value of the [Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera"). When the UsePixelCoordinates method is called, the [Camera's](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera") view is made orthogonal. In other words, changing the Z value of the [Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera") does not impact the visible size of objects. However, zooming is still possible by changing the OrthogonalWidth and OrthogonalHeight properties manually. This will allow for "zooming" but parallax and other "depth" effects will not be visible.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

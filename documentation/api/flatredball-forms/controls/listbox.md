@@ -1,6 +1,6 @@
 ## Introduction
 
-The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected. [![](/wp-content/uploads/2017/12/2017-12-13_17-56-55.gif.md)](/wp-content/uploads/2017/12/2017-12-13_17-56-55.gif.md) ListBox inherits from [ScrollViewer](/documentation/api/flatredball-forms/controls/scrollviewer/.md).
+The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected. [![](/wp-content/uploads/2017/12/2017-12-13_17-56-55.gif.md)](/wp-content/uploads/2017/12/2017-12-13_17-56-55.gif.md) ListBox inherits from [ScrollViewer](/documentation/api/flatredball-forms/controls/scrollviewer.md).
 
 ## Layout Requirements
 
@@ -10,7 +10,7 @@ The ListBox control requires:
 -   An object named **InnerPanelInstance** of any type (typically a Container)
 -   An object named **ClipContainerInstance** of any type (typically a Container with **ClipsChildren** set to true)
 
-[![](/wp-content/uploads/2017/12/img_5a465ac0d252b.png.md)](/wp-content/uploads/2017/12/img_5a465ac0d252b.png.md) The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/.md](/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/.md)
+[![](/wp-content/uploads/2017/12/img_5a465ac0d252b.png.md)](/wp-content/uploads/2017/12/img_5a465ac0d252b.png.md) The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md](/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md)
 
 ## InnerPanelInstance and Children Layout
 
@@ -142,7 +142,7 @@ If the class is a ViewModel that is custom-made for UI, then its ToString can be
 
 ### ListBoxItemFormsType
 
-The ListBox control also allows specifying the Forms control to create, which can customize behavior and display logic. For information on creating and using custom ListBoxItem types, see the [ListBoxItem](/documentation/api/flatredball-forms/controls/listboxitem/.md) page.
+The ListBox control also allows specifying the Forms control to create, which can customize behavior and display logic. For information on creating and using custom ListBoxItem types, see the [ListBoxItem](/documentation/api/flatredball-forms/controls/listboxitem.md) page.
 
 ## Selection
 

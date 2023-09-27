@@ -133,4 +133,4 @@ The previous section discusses how to set AnimationChains on an IAnimationChainA
 -   [FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.JustChangedFrame](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.JustChangedFrame.md "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.JustChangedFrame")
 -   [FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.JustCycled](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.JustCycled.md "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.JustCycled")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

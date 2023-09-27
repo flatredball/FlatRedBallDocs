@@ -36,4 +36,4 @@ The following code creates set sthe camera to look down the Y axis rather than Z
 
 ![3DCamera.png](/media/migrated_media-3DCamera.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

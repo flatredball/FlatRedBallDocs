@@ -374,4 +374,4 @@ To pause the game, the balls velocity is stored in a new class variable. Then th
 
 To continue the game, the balls velocity reset from the class variable. Then the pause flag is set to false. The initialization of the save variable is not necessary, but good style. You need to define the variable ballVelocity of type Vector3 at class scope. Compile and run the code. Now we have a comfortable, pausable pong game! ![Screen FlatRedPong Tut3 3.png](/media/migrated_media-Screen_FlatRedPong_Tut3_3.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -56,4 +56,4 @@ Add the following in Update:
 
 **Not sure how to load a file?** If you're unclear or can't remember how to add the Smiley.plylstx file linked above, then you might want to check out **[this article](/frb/docs/index.php?title=Tutorials:Adding_files_to_your_project.md "Tutorials:Adding files to your project").**
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

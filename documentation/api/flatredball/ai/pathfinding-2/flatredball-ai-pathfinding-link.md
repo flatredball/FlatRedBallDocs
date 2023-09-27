@@ -17,4 +17,4 @@ Links are one-way to support wider functionality with pathfinding. In other word
 -   [FlatRedBall.AI.Pathfinding.Link.Cost](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link.Cost.md "FlatRedBall.AI.Pathfinding.Link.Cost")
 -   [FlatRedBall.AI.Pathfinding.Link.NodeLinkingTo](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link.NodeLinkingTo.md "FlatRedBall.AI.Pathfinding.Link.NodeLinkingTo")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

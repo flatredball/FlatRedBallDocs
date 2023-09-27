@@ -35,4 +35,4 @@ Node Networks are usually used for AI pathfinding through levels. To assist in p
 
     File->Load Scene
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

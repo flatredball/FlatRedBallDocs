@@ -118,4 +118,4 @@ This behavior will also be present if the shape is not visible, but you depend o
 -   [FlatRedBall.Math.Geometry.ShapeManager.Remove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.Remove.md "FlatRedBall.Math.Geometry.ShapeManager.Remove")
 -   [FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder.md "FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

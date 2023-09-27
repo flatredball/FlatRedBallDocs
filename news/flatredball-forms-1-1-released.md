@@ -32,4 +32,4 @@ Along with the TreeView control, the latest version of Glue + Gum adds:
 
 ## Additional Information
 
-Check out the [TreeView](/documentation/api/flatredball-forms/controls/treeview/.md) and [TreeViewItem](/documentation/api/flatredball-forms/controls/treeviewitem/.md) pages for additional details.
+Check out the [TreeView](/documentation/api/flatredball-forms/controls/treeview.md) and [TreeViewItem](/documentation/api/flatredball-forms/controls/treeviewitem.md) pages for additional details.

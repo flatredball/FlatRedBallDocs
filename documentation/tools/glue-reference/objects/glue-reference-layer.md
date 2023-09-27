@@ -25,10 +25,10 @@ To add an object to a layer:
 1.  Make sure you have a Layer in the same Screen as your object
 2.  Drag+drop the object onto the layer
 
-[![](/wp-content/uploads/2016/01/2019-07-19_10-39-04.gif.md)](/wp-content/uploads/2016/01/2019-07-19_10-39-04.gif.md) You can verify that the layer was changed by looking at the **LayerOn** property. Entity instances can be moved to a layer in code using the [MoveToLayer](/documentation/tools/glue-reference/entities/movetolayer/.md) function.
+[![](/wp-content/uploads/2016/01/2019-07-19_10-39-04.gif.md)](/wp-content/uploads/2016/01/2019-07-19_10-39-04.gif.md) You can verify that the layer was changed by looking at the **LayerOn** property. Entity instances can be moved to a layer in code using the [MoveToLayer](/documentation/tools/glue-reference/entities/movetolayer.md) function.
 
 ## Additional Information
 
--   [Is2D](/documentation/tools/glue-reference/objects/glue-reference-objects-layer/glue-reference-objects-is2d/.md) - Property controlling whether the layer is 2D.
+-   [Is2D](/documentation/tools/glue-reference/objects/glue-reference-objects-layer/glue-reference-objects-is2d.md) - Property controlling whether the layer is 2D.
 
  

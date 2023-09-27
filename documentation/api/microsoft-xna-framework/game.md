@@ -61,7 +61,7 @@ This can be called at any point and your game will exit properly.
 
 ## Disabling Fixed Time Step
 
-For more information, see the [IsFixedTimeStep](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-game/microsoft-xna-framework-game-isfixedtimestep/.md) page.
+For more information, see the [IsFixedTimeStep](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-game/microsoft-xna-framework-game-isfixedtimestep.md) page.
 
 ## Additional Information
 
@@ -76,4 +76,4 @@ For more information, see the [IsFixedTimeStep](/documentation/api/microsoft-xna
 -   [Microsoft.Xna.Framework.Game.IsMouseVisible](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsMouseVisible.md "Microsoft.Xna.Framework.Game.IsMouseVisible")
 -   [Microsoft.Xna.Framework.Game.TargetElapsedTime](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.TargetElapsedTime.md "Microsoft.Xna.Framework.Game.TargetElapsedTime")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

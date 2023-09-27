@@ -167,4 +167,4 @@ Here is where you destroy any assets that won't be automatically destroyed when 
 -   [Pie DrawableBatch](/frb/docs/index.php?title=Community_Source_Code:Pie_IDrawableBatch.md "Community Source Code:Pie IDrawableBatch")
 -   [Video Rendering](/frb/forum/viewtopic.php?f=24&t=4213.md)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

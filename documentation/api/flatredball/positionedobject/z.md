@@ -1,6 +1,6 @@
 ## Introduction
 
-The Z property controls the absolute Z position of an object. On 3D cameras (Orthogonal=false) , the smaller the Z is, the further away from the camera an object will appear. For information on setting Z in the FlatRedBall Editor, see [this page](/documentation/tools/glue-reference/objects/glue-reference-objects-z/.md "Glue:Reference:Objects:Z").
+The Z property controls the absolute Z position of an object. On 3D cameras (Orthogonal=false) , the smaller the Z is, the further away from the camera an object will appear. For information on setting Z in the FlatRedBall Editor, see [this page](/documentation/tools/glue-reference/objects/glue-reference-objects-z.md "Glue:Reference:Objects:Z").
 
 ## Code Example
 

@@ -151,4 +151,4 @@ Using a foreach statement on an AttachableList will allocate memory. This is a v
 -   [FlatRedBall.Math.AttachableList.FindByName](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList.FindByName.md "FlatRedBall.Math.AttachableList.FindByName")
 -   [FlatRedBall.Math.AttachableList.MakeOneWay](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList.MakeOneWay.md "FlatRedBall.Math.AttachableList.MakeOneWay")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

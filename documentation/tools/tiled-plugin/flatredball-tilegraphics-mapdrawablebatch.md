@@ -1,6 +1,6 @@
 ## Introduction
 
-The MapDrawableBatch class represents a single layer in a .tmx file. It implements the [IDrawableBatch](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch.md "FlatRedBall.Graphics.IDrawableBatch") class to perform custom rendering. It internally creates a single vertex buffer which is drawn all at once with no render state changes for maximum performance. Usually .tmx files are loaded into a [LayeredTileMap](/documentation/tools/tiled-plugin/flatredball-tilegraphics-layeredtilemap/.md), which contains one or more MapDrawableBatch instances.
+The MapDrawableBatch class represents a single layer in a .tmx file. It implements the [IDrawableBatch](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch.md "FlatRedBall.Graphics.IDrawableBatch") class to perform custom rendering. It internally creates a single vertex buffer which is drawn all at once with no render state changes for maximum performance. Usually .tmx files are loaded into a [LayeredTileMap](/documentation/tools/tiled-plugin/flatredball-tilegraphics-layeredtilemap.md), which contains one or more MapDrawableBatch instances.
 
 ## Only painted tiles create vertices
 

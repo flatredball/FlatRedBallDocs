@@ -77,7 +77,7 @@ If you're running this project on a modern computer then it's likely that you ma
 
     FlatRedBall.Debugging.Debugger.WriteAutomaticallyUpdatedObjectInformation();
 
-Now your program will be outputting information about how many automatically updated objects exist in the engine: ![AutomaticallyUpdatedOutput1.PNG](/media/migrated_media-AutomaticallyUpdatedOutput1.PNG) For more information on this method call, see the [WriteAutomaticallyUpdatedObjectInformation](/documentation/api/flatredball/flatredball-debugging/flatredball-debugging-debugger/flatredball-debugging-debugger-writeautomaticallyupdatedobjectinformation/.md) page. We can see that we have 4000 Sprites (one for each instance of our SpriteEntity) and also 4000 PositionedObjects (each SpriteEntity inherits from PositionedObject).
+Now your program will be outputting information about how many automatically updated objects exist in the engine: ![AutomaticallyUpdatedOutput1.PNG](/media/migrated_media-AutomaticallyUpdatedOutput1.PNG) For more information on this method call, see the [WriteAutomaticallyUpdatedObjectInformation](/documentation/api/flatredball/flatredball-debugging/flatredball-debugging-debugger/flatredball-debugging-debugger-writeautomaticallyupdatedobjectinformation.md) page. We can see that we have 4000 Sprites (one for each instance of our SpriteEntity) and also 4000 PositionedObjects (each SpriteEntity inherits from PositionedObject).
 
 ## Using Inheritance to reduce automatically-updated object count
 

@@ -50,4 +50,4 @@ Once a .wav file has been added to your Glue project, Glue will generate an inst
        }
     }
 
-For more information on SoundEffect in FlatRedBall, see the[SoundEffect page](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-audio/microsoft-xna-framework-audio-soundeffect/.md).
+For more information on SoundEffect in FlatRedBall, see the[SoundEffect page](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-audio/microsoft-xna-framework-audio-soundeffect.md).

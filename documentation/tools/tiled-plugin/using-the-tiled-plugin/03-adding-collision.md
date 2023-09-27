@@ -107,5 +107,5 @@ If you run your game, you will see the collision in game. The tiles will be remo
 
 As mentioned earlier, TileShapeCollection instances can also be created in code. For more information on creating collision code from Tiles, see these links:
 
--   [Creating TileShapeCollections using tile properties](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionfromtileswithproperty/.md)
--   [Creating TileShapeCollections using tile name or property values](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionfrom/.md)
+-   [Creating TileShapeCollections using tile properties](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionfromtileswithproperty.md)
+-   [Creating TileShapeCollections using tile name or property values](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionfrom.md)

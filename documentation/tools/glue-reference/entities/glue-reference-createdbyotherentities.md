@@ -10,4 +10,4 @@ Setting this property to true does the following:
 -   Glue will automatically add any newly-created instance of the given Entity to any PositionedObjectLists created in any Screens in Glue.
 -   Glue will display an additional property "PooledByFactory" which can be used to enable pooling to reduce post-load memory allocation.
 
-For more information on CreatedByOtherEntities, see the [Created by Other Entities tutorial](/documentation/tools/glue-reference/entities/glue-tutorials-entities-created-by-other-entities/.md "Glue:Tutorials:Entities Created by Other Entities").
+For more information on CreatedByOtherEntities, see the [Created by Other Entities tutorial](/documentation/tools/glue-reference/entities/glue-tutorials-entities-created-by-other-entities.md "Glue:Tutorials:Entities Created by Other Entities").

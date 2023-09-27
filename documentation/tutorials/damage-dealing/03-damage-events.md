@@ -141,4 +141,4 @@ The IDamageable and IDamageArea entities provide additional events which can be 
 
 ## Conclusion
 
-This tutorial discusses how to handle events to modify damage and display visual feedback to the player when damage is dealt. The next tutorial covers the removal of IDamageAreas and how to implement damage over time. -- [04 - IDamageArea Removal -\>](/documentation/tutorials/damage-dealing/04-idamagearea-removal/.md)
+This tutorial discusses how to handle events to modify damage and display visual feedback to the player when damage is dealt. The next tutorial covers the removal of IDamageAreas and how to implement damage over time. -- [04 - IDamageArea Removal -\>](/documentation/tutorials/damage-dealing/04-idamagearea-removal.md)

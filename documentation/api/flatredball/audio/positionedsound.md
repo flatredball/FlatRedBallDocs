@@ -20,4 +20,4 @@ For most situations, attaching the SoundListener to the default Camera will work
 
     AudioManager.SoundListener.AttachTo(SpriteManager.Camera, true);
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -43,4 +43,4 @@ Add the following to Initialize after initializing FlatRedBall:
 
 ![LayeredSpriteFrame.png](/media/migrated_media-LayeredSpriteFrame.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

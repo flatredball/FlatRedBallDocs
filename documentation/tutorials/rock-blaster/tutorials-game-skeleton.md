@@ -78,4 +78,4 @@ Notice that we have a PlayerList in the game, which suggests that Rock Blaster i
 
 ## Conclusion
 
-Wow! Even though our game isn't functional yet, we have done a lot of work defining the skeleton - and it shows in Glue too. Next we'll work on the Player visuals. [\<- 02. Setup](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-setup/.md "Tutorials:Rock Blaster:Setup") -- [04. Player Entity -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-main-ship-entity/.md "Tutorials:Rock Blaster:Main Ship Entity")
+Wow! Even though our game isn't functional yet, we have done a lot of work defining the skeleton - and it shows in Glue too. Next we'll work on the Player visuals. [\<- 02. Setup](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-setup.md "Tutorials:Rock Blaster:Setup") -- [04. Player Entity -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-main-ship-entity.md "Tutorials:Rock Blaster:Main Ship Entity")

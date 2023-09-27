@@ -7,7 +7,7 @@ The Camera object inherits from the PositionedObject class. Therefore, it can be
 -   [FlatRedBall.PositionedObject.RotationZ](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationZ&action=edit&redlink=1.md "FlatRedBall.PositionedObject.RotationZ (page does not exist)")
 -   [FlatRedBall.PositionedObject.RotationMatrix](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationMatrix&action=edit&redlink=1.md "FlatRedBall.PositionedObject.RotationMatrix (page does not exist)")
 
-By default the Camera will attempt to orient itself so that "up" is the Y vector (0,1,0). For more information see the [UpVector page](/documentation/api/flatredball/flatredball-camera/flatredball-camera-upvector/.md).
+By default the Camera will attempt to orient itself so that "up" is the Y vector (0,1,0). For more information see the [UpVector page](/documentation/api/flatredball/flatredball-camera/flatredball-camera-upvector.md).
 
 ## Code Example
 

@@ -91,4 +91,4 @@ Now each Enemy shoots a bullet every 2 seconds which travels downward and which 
 
 ## Conclusion
 
-This tutorial shows how the built-in logic in collision relationships results in automatic damage dealing and killing (destroying) of entities which can take damage. It also covered how to assign the Team Index variable in code to control whether a pair of entities result in damage dealing logic being applied. The next tutorial shows how to assign events to modify how much damage is dealt and to react to damage dealt visually. -- [03 - Damage Events -\>](/documentation/tutorials/damage-dealing/03-damage-events/.md)
+This tutorial shows how the built-in logic in collision relationships results in automatic damage dealing and killing (destroying) of entities which can take damage. It also covered how to assign the Team Index variable in code to control whether a pair of entities result in damage dealing logic being applied. The next tutorial shows how to assign events to modify how much damage is dealt and to react to damage dealt visually. -- [03 - Damage Events -\>](/documentation/tutorials/damage-dealing/03-damage-events.md)

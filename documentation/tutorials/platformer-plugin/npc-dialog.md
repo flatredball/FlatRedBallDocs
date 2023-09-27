@@ -16,7 +16,7 @@ A typical game which supports NPC dialog may have hundreds or even thousands of 
 
 ![](/media/2021-05-img_608efd44ac48e.png)
 
-For detailed information about how to create a localization database, see the [IsDatabaseForLocalizing page](/documentation/tools/glue-reference/files/glue-reference-files-isdatabaseforlocalizing/.md). The LocalizationDatabase.csv file includes two columns. The leftmost column is the string ID - this is how code accesses the text in the CSV. The second column is the text for the string ID in English (as the column name indicates).
+For detailed information about how to create a localization database, see the [IsDatabaseForLocalizing page](/documentation/tools/glue-reference/files/glue-reference-files-isdatabaseforlocalizing.md). The LocalizationDatabase.csv file includes two columns. The leftmost column is the string ID - this is how code accesses the text in the CSV. The second column is the text for the string ID in English (as the column name indicates).
 
 ![](/media/2021-05-img_608efdd6b78eb.png)
 

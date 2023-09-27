@@ -9,4 +9,4 @@ Use one of the following three lines of code to qualify the Color class:
     using Color = Microsoft.Xna.Framework.Color; // If using FlatRedBall XNA 4.0 (namespace changed in XNA framework)
     using Color = System.Drawing.Color; // if using FlatRedBall MDX
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

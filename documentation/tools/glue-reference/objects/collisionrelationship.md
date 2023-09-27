@@ -1,6 +1,6 @@
 ## Introduction
 
-The FRB Editor supports the creation and management of CollisionRelationship objects. This document covers the features provided by the FRB Editor, and explains common scenarios where you may need to interact with the CollisionsRelationships in code. Most cases can be handled by CollisionRelationships in the FRB Editor; however, more advanced situations can be handled in code. For information about creating and working with CollisionRelationships in code, see the [CollisionManager page](/documentation/api/flatredball/flatredball-math/collision/collisionmanager/.md).
+The FRB Editor supports the creation and management of CollisionRelationship objects. This document covers the features provided by the FRB Editor, and explains common scenarios where you may need to interact with the CollisionsRelationships in code. Most cases can be handled by CollisionRelationships in the FRB Editor; however, more advanced situations can be handled in code. For information about creating and working with CollisionRelationships in code, see the [CollisionManager page](/documentation/api/flatredball/flatredball-math/collision/collisionmanager.md).
 
 ## What is a CollisionRelationship?
 
@@ -22,7 +22,7 @@ Collision relationships can be created between:
 -   TileShapeCollections
 -   ShapeCollections (regular, as opposed to TileShapeCollections)
 
-All CollisionRelationships will at include at least one Entity or Entity list, so it is important to mark Entities which you intend to use in relationships as ICollidable. For information on ICollidable entities, see the [ICollidable Entity page](/documentation/tools/glue-reference/entities/glue-reference-entities-implements-icollidable/.md).
+All CollisionRelationships will at include at least one Entity or Entity list, so it is important to mark Entities which you intend to use in relationships as ICollidable. For information on ICollidable entities, see the [ICollidable Entity page](/documentation/tools/glue-reference/entities/glue-reference-entities-implements-icollidable.md).
 
 ## Creating a CollisionRelationship
 
@@ -35,7 +35,7 @@ CollisionRelationships can be created a few ways. Typically collision relationsh
 
 ![](/media/2023-08-img_64e425d030d81.png)
 
-Note that the TileShapeCollection may have its [SetByDerived](/documentation/tools/glue-reference/objects/glue-reference-objects-setbyderived/.md) value set to true. This allows the creation of CollisionRelationships in a base Screen even though the TileShapeCollection is created in a derived Screen.
+Note that the TileShapeCollection may have its [SetByDerived](/documentation/tools/glue-reference/objects/glue-reference-objects-setbyderived.md) value set to true. This allows the creation of CollisionRelationships in a base Screen even though the TileShapeCollection is created in a derived Screen.
 
 ### Option 1 - Drag+drop
 
@@ -103,7 +103,7 @@ In some cases games will need to perform custom logic when a collision occurs. F
 -   The Bullet entity being destroyed when colliding with a wall
 -   An Enemy entity's movement speed being slowed when colliding with mud TileShapeCollection.
 
-Collision events can be created by dropping a CollisionRelationship on a Screen's **Events** folder. [![](/wp-content/uploads/2019/08/2019-08-21_07-37-57.gif.md)](/wp-content/uploads/2019/08/2019-08-21_07-37-57.gif.md) For more information on Glue events, see the [Glue Events page](/documentation/tools/glue-reference/events/.md). Like all other events, collision events can be edited in code. In the example above, the **GameScreen.Event.cs** file now includes an function OnEnemyListVsPlayerListCollisionOccurred  which is called whenever a collision occurs between an Enemy and Player instance. Make sure to add code to **\<YourGameScreen\>.Event.cs** and not the **\<YourScreen\>.Genererated.Event.cs**.
+Collision events can be created by dropping a CollisionRelationship on a Screen's **Events** folder. [![](/wp-content/uploads/2019/08/2019-08-21_07-37-57.gif.md)](/wp-content/uploads/2019/08/2019-08-21_07-37-57.gif.md) For more information on Glue events, see the [Glue Events page](/documentation/tools/glue-reference/events.md). Like all other events, collision events can be edited in code. In the example above, the **GameScreen.Event.cs** file now includes an function OnEnemyListVsPlayerListCollisionOccurred  which is called whenever a collision occurs between an Enemy and Player instance. Make sure to add code to **\<YourGameScreen\>.Event.cs** and not the **\<YourScreen\>.Genererated.Event.cs**.
 
 ![](/media/2019-08-img_5d5d4a287ca7b.png)
 
@@ -120,7 +120,7 @@ For example, in the code above, you could destroy either the enemy (which is cal
 
 ### Code Example - Detecting TileShapeCollection Collided Shapes
 
-To identify which shapes an entity collided against in a TileShapeCollection, the LastCollisionAxisAlignedRectangles property can be used. For more information see the LastCollisionAxisAlignedRectangles [page](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/lastcollisionaxisalignedrectangles/.md).
+To identify which shapes an entity collided against in a TileShapeCollection, the LastCollisionAxisAlignedRectangles property can be used. For more information see the LastCollisionAxisAlignedRectangles [page](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/lastcollisionaxisalignedrectangles.md).
 
 ## Manual Collision Relationships
 

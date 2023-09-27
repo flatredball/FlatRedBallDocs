@@ -6,7 +6,7 @@ FlatRedBall can be added to any MonoGame/XNA project with only three lines of co
 
 First we'll download the FlatRedBall .dll files. Note that FlatRedBall provides different files depending on the platform you are targeting.
 
-1.  Go to the [prebuilt file location](/content/FrbXnaTemplates/DailyBuild/SingleDlls/.md).
+1.  Go to the [prebuilt file location](/content/FrbXnaTemplates/DailyBuild/SingleDlls.md).
 
 2.  Select your platform
 

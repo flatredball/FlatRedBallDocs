@@ -332,4 +332,4 @@ In case you wish to resize your form, please add the following to the ResizeEnd 
 
 Congratulations. You just implemented FRB on a windows form.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

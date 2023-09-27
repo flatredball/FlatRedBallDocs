@@ -28,4 +28,4 @@ If you add this code to an Update or Activity function it will be called every f
     // ...print it out here:
     FlatRedBall.Debugging.Debugger.CommandLineWrite(result);
 
-![SectionPrintedOut.PNG](/media/migrated_media-SectionPrintedOut.PNG) For more information on CommandLineWrite, see the [CommandLineWrite page](/documentation/api/flatredball/flatredball-debugging/flatredball-debugging-debugger/flatredball-debugging-debugger-commandlinewrite/.md).
+![SectionPrintedOut.PNG](/media/migrated_media-SectionPrintedOut.PNG) For more information on CommandLineWrite, see the [CommandLineWrite page](/documentation/api/flatredball/flatredball-debugging/flatredball-debugging-debugger/flatredball-debugging-debugger-commandlinewrite.md).

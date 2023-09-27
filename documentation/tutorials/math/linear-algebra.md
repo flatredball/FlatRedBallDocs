@@ -1,7 +1,7 @@
 ## Topics
 
 -   [Matrix](/frb/docs/index.php?title=Matrix.md "Matrix")
--   [Vector](/documentation/tutorials/math/vector/.md "Vector")
+-   [Vector](/documentation/tutorials/math/vector.md "Vector")
 
 ## External References
 

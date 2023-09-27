@@ -96,4 +96,4 @@ Add the following in Initialize after Initializing FlatRedBall:
 -   [FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints.md "FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints")
 -   [FlatRedBall.Math.Geometry.Line.Visible](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.Visible.md "FlatRedBall.Math.Geometry.Polygon.Visible")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

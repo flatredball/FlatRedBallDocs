@@ -21,4 +21,4 @@ The SpriteSave is a ["save" class](/frb/docs/index.php?title=Tutorials:Save_Clas
     // Now that we have a new Sprite, we can add it to the engine:
     SpriteManager.AddSprite(newSprite);
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

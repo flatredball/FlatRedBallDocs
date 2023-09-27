@@ -175,4 +175,4 @@ Emitters can have areas defined for emission. This can simplifying the creation 
 -   [Particle Collision](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter:Particle_Collision.md "FlatRedBall.Graphics.Particle.Emitter:Particle Collision")
 -   [Particle Performance](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter:Particle_Performance.md "FlatRedBall.Graphics.Particle.Emitter:Particle Performance")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

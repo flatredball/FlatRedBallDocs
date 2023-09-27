@@ -1,4 +1,4 @@
-The Polygon Editor is an application which can be used to create XML files which define 2D polygons. These files can be loaded in any [FlatRedBall Engine](/frb/.md) to define triggers and collision maps.
+The Polygon Editor is an application which can be used to create XML files which define 2D polygons. These files can be loaded in any [FlatRedBall Engine](/frb.md) to define triggers and collision maps.
 
 ## Download
 

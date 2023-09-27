@@ -1,6 +1,6 @@
 ## Introduction
 
-The SoundEffect class represents a sound effect that can be played at any time. The FlatRedBall Editor supports the automatic creation of SoundEffect objects by adding a WAV file to a Screen, Entity, or Global Content. For reference on the SoundEffect object, see the [MonoGame SoundEffect page](https://docs.monogame.net/api/Microsoft.Xna.Framework.Audio.SoundEffect.html). For more information on using SoundEffect through the FlatRedBall Editor, see [the tutorial page on playing sounds](/documentation/tutorials/glue-tutorials/glue-how-to-play-sounds/.md "Glue:How To:Play Sounds").
+The SoundEffect class represents a sound effect that can be played at any time. The FlatRedBall Editor supports the automatic creation of SoundEffect objects by adding a WAV file to a Screen, Entity, or Global Content. For reference on the SoundEffect object, see the [MonoGame SoundEffect page](https://docs.monogame.net/api/Microsoft.Xna.Framework.Audio.SoundEffect.html). For more information on using SoundEffect through the FlatRedBall Editor, see [the tutorial page on playing sounds](/documentation/tutorials/glue-tutorials/glue-how-to-play-sounds.md "Glue:How To:Play Sounds").
 
 ## Code Example
 

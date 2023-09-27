@@ -36,4 +36,4 @@ The new wizard now displays icons for each project type, and it now includes a n
 
 ## Get It Now
 
-All of these changes, plus dozens of small fixes and improvements, are available now. Hop over to [the downloads page](/download/.md) to get the latest.  
+All of these changes, plus dozens of small fixes and improvements, are available now. Hop over to [the downloads page](/download.md) to get the latest.  

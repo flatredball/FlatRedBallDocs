@@ -6,7 +6,7 @@ Legend of Dodgeball is a multiplayer (local) coop or competitive sports game. It
 
 ## How Can I Get Legend of Dodgeball
 
-Legend of Dodgeball can be obtained through Glue, appearing in the **Starter Projects** list. ![](/.mdwp-content/uploads/2017/07/img_596442e289cde.png) The project can be browsed and downloaded from Github as well through the following link: <http://github.com/vchelaru/dodgeball> Legend of Dodgeball can also be downloaded for free from itch.io. Note that the game does require a controller to play:
+Legend of Dodgeball can be obtained through Glue, appearing in the **Starter Projects** list. ![](.mdwp-content/uploads/2017/07/img_596442e289cde.png) The project can be browsed and downloaded from Github as well through the following link: <http://github.com/vchelaru/dodgeball> Legend of Dodgeball can also be downloaded for free from itch.io. Note that the game does require a controller to play:
 
 ![](https://img.itch.zone/aW1hZ2UvMTU1NDEwLzcxMjYxMi5qcGc=/180x143%23c/iH%2FCw3.jpg)
 
@@ -34,7 +34,7 @@ Legend of Dodgeball has helped create the FlatRedBall improvements:
 
 ## Who made Legend of Dodgeball?
 
--   **[Victor Chelaru](/.md) -** *Tools and Engine, Game Design*
+-   **[Victor Chelaru](.md) -** *Tools and Engine, Game Design*
 -   **[Jared Bagley](https://cabrill.itch.io/) -**  *AI Design, Core Game Design*
 -   **[Devin Guthrie](https://github.com/devinguthrie) - ***Programming*
 -   **Sean Kiley -** *Art and Animation*

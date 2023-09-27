@@ -14,7 +14,7 @@ The FlatRedBall Editor provides a quick setup for creating a platformer project.
 6.  Wait for the wizard to finish processing
 7.  Run the game from either Visual Studio or the FlatRedBall Editor
 
-**If you are using the wizard as shown above, you can skip the remainder of this tutorial series and check out the [other platformer tutorials](/documentation/tutorials/.md). If you are interested in how to build a platformer in the editor "from scratch", keep reading.**
+**If you are using the wizard as shown above, you can skip the remainder of this tutorial series and check out the [other platformer tutorials](/documentation/tutorials.md). If you are interested in how to build a platformer in the editor "from scratch", keep reading.**
 
 ## Creating a GameScreen
 
@@ -60,7 +60,7 @@ Now that we have the **MainCharater** set up with platfomer control values, we c
 
 ## Adding a CameraControllingEntity Instance (Optional)
 
-This tutorial series primarily focuses on creating a platformer entity. If you would like to control the camera manually, you can do so by modifying Camera.Main. More information about the Camera object can be found on the [Camera documentation page](/documentation/api/flatredball/flatredball-camera/.md). Alternatively, if you would like to have automatic camera control, see the [CameraControllingEntity documentation](/documentation/api/flatredball/entities/cameracontrollingentity/.md).  
+This tutorial series primarily focuses on creating a platformer entity. If you would like to control the camera manually, you can do so by modifying Camera.Main. More information about the Camera object can be found on the [Camera documentation page](/documentation/api/flatredball/flatredball-camera.md). Alternatively, if you would like to have automatic camera control, see the [CameraControllingEntity documentation](/documentation/api/flatredball/entities/cameracontrollingentity.md).  
 
 ## Conclusion
 

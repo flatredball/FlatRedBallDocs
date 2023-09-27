@@ -72,4 +72,4 @@ Of course, the Scene must contain objects with the same name as what is passed i
 -   [FlatRedBall.Content.SpriteEditorScene](/frb/docs/index.php?title=FlatRedBall.Content.SpriteEditorScene.md "FlatRedBall.Content.SpriteEditorScene") - Provides the ability to convert Scenes to .scnx files as well as to to manually load .scnx files.
 -   [Setting the Camera to match the SpriteEditor](/frb/docs/index.php?title=FlatRedBall.Scene:Setting_Camera.md "FlatRedBall.Scene:Setting Camera") - Discusses how you can make Scenes in your game work exactly like they do in the SpriteEditor.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

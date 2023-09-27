@@ -4,7 +4,7 @@ The Is2D option can be used to make a Layer use 2D coordinates. Layers which are
 
 ![](/media/2016-04-img_572276954d277.png)
 
-For information on how to use Layers in code, see [the Layer reference page](/documentation/tools/glue-reference/objects/glue-reference-objects-layer/.md "Glue:Reference:Objects:Layer").
+For information on how to use Layers in code, see [the Layer reference page](/documentation/tools/glue-reference/objects/glue-reference-objects-layer.md "Glue:Reference:Objects:Layer").
 
 ## Common Usage
 

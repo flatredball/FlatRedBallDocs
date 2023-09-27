@@ -114,7 +114,7 @@ If we run our game now, we should see the Door tile that we placed in Tile repla
 
 ### Troubleshooting Entities Not Created
 
-If you are not seeing the Door entity in the game, there may be a problem with the Tiled map, the inheritance in your game, or settings on the entity. Fortunately, the process that FlatRedBall uses to create entities on object layers is the same as the process for creating entities on tile layers. Therefore, to troubleshoot the problem you should go back to the [previous tutorial](/documentation/tools/tiled-plugin/using-the-tiled-plugin/06-creating-entities-from-tiles/.md) and see if you can create entities from tiles. The previous tutorial also includes troubleshooting steps.
+If you are not seeing the Door entity in the game, there may be a problem with the Tiled map, the inheritance in your game, or settings on the entity. Fortunately, the process that FlatRedBall uses to create entities on object layers is the same as the process for creating entities on tile layers. Therefore, to troubleshoot the problem you should go back to the [previous tutorial](/documentation/tools/tiled-plugin/using-the-tiled-plugin/06-creating-entities-from-tiles.md) and see if you can create entities from tiles. The previous tutorial also includes troubleshooting steps.
 
 ## Colliding Against the Door Entity
 

@@ -6,7 +6,7 @@ The SoundEffectInstance is a copy of a SoundEffect which can be played on its ow
 -   It provides parameters for modifying how the sound effect is played (such as pitch)
 -   You can inspect if a SoundEffectInstance is playing
 
-For information on using SoundEffectInstances in the FlatRedBall Editor, see the FlatRedBall Editor's [SoundEffectInstance page](/documentation/tools/glue-reference/objects/glue-reference-objects-soundeffectinstance/.md "Glue:Reference:Objects:SoundEffectInstance"). For a more detail on the SoundEffectInstance class, see [MonoGame's SoundEffectInstance reference](https://docs.monogame.net/api/Microsoft.Xna.Framework.Audio.SoundEffectInstance.html).
+For information on using SoundEffectInstances in the FlatRedBall Editor, see the FlatRedBall Editor's [SoundEffectInstance page](/documentation/tools/glue-reference/objects/glue-reference-objects-soundeffectinstance.md "Glue:Reference:Objects:SoundEffectInstance"). For a more detail on the SoundEffectInstance class, see [MonoGame's SoundEffectInstance reference](https://docs.monogame.net/api/Microsoft.Xna.Framework.Audio.SoundEffectInstance.html).
 
 ## SoundEffectInstance errors on iOS
 

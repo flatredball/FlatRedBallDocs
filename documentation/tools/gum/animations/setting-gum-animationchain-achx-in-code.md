@@ -8,7 +8,7 @@ Glue Version 12 introduces automatic calling of AnimateSelf on the top-level Gum
 
     GumScreen.AnimateSelf();
 
-For more information on Glue versions, see the [gluj/glux page](/documentation/tools/glue-reference/glujglux/.md).
+For more information on Glue versions, see the [gluj/glux page](/documentation/tools/glue-reference/glujglux.md).
 
 ## Setting Animations
 

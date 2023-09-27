@@ -10,4 +10,4 @@ The contents of the cell can be obtained through either the Name or OriginalText
 
 By default the IsRequired property will be set to false. Both the IsRequired and Name properties can be modified through the [RuntimeCsvRepresentation's RemoveHeaderWhitespaceAndDetermineIfRequired method](/frb/docs/index.php?title=FlatRedBall.IO.Csv.RuntimeCsvRepresentation.md.RemoveHeaderWhitespaceAndDetermineIfRequired&action=edit&redlink=1 "FlatRedBall.IO.Csv.RuntimeCsvRepresentation.RemoveHeaderWhitespaceAndDetermineIfRequired (page does not exist)").
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

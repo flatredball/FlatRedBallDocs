@@ -77,4 +77,4 @@ If you need help you can [post an issue](https://github.com/vchelaru/FlatRedBall
 
 ## Let's Get Started
 
-If you're ready to start making games, head over to the [downloads page](/download/.md) to get the latest version of FlatRedBall. Once it's installed, hop over to the [tutorial page](/documentation/tutorials/.md) and start making your first game!
+If you're ready to start making games, head over to the [downloads page](/download.md) to get the latest version of FlatRedBall. Once it's installed, hop over to the [tutorial page](/documentation/tutorials.md) and start making your first game!

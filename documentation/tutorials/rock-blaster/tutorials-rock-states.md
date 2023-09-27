@@ -160,4 +160,4 @@ Repeat the process above, but create a **float** named **RandomSpeedOnBreak** 
 
 ## Conclusion
 
-![RockBlasterRocksBrokenUp.png](/media/migrated_media-RockBlasterRocksBrokenUp.png) If you now run your game and shoot the rocks, you will see that they will break up into smaller pieces. Our game is becoming far more playable (and difficult). Next we'll add a HUD and logic for scoring. [\<- 07. Collision](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-collision/.md "Tutorials:Rock Blaster:Collision") -- [09. Hud -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-hud/.md "Tutorials:Rock Blaster:Hud")
+![RockBlasterRocksBrokenUp.png](/media/migrated_media-RockBlasterRocksBrokenUp.png) If you now run your game and shoot the rocks, you will see that they will break up into smaller pieces. Our game is becoming far more playable (and difficult). Next we'll add a HUD and logic for scoring. [\<- 07. Collision](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-collision.md "Tutorials:Rock Blaster:Collision") -- [09. Hud -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-hud.md "Tutorials:Rock Blaster:Hud")

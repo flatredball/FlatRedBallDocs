@@ -94,4 +94,4 @@ The ShapeCollection can be thought of as a container for all of these lists. The
 -   [FlatRedBall.Math.Geometry.ShapeCollection.SortAscending](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeCollection.SortAscending.md "FlatRedBall.Math.Geometry.ShapeCollection.SortAscending")
 -   [FlatRedBall.Math.Geometry.ShapeCollection.Visible](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeCollection.Visible.md "FlatRedBall.Math.Geometry.ShapeCollection.Visible")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

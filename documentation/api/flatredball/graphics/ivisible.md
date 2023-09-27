@@ -36,4 +36,4 @@ This behavior can be modified through the [IgnoresParentVisibility property](/fr
 
 -   [FlatRedBall.Graphics.IVisible.IgnoresParentVisibility](/frb/docs/index.php?title=FlatRedBall.Graphics.IVisible.IgnoresParentVisibility.md "FlatRedBall.Graphics.IVisible.IgnoresParentVisibility")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

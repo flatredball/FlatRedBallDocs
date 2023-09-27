@@ -85,4 +85,4 @@ Assuming cube1 and cube2 are valid AxisAlignedCubes:
 
 -   [FlatRedBall.Math.Geometry.AxisAlignedCube.CollideAgainstBounce](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedCube.CollideAgainstBounce.md "FlatRedBall.Math.Geometry.AxisAlignedCube.CollideAgainstBounce")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

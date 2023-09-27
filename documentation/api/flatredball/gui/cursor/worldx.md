@@ -1,6 +1,6 @@
 ## Introduction
 
-The WorldX property returns the X coordinate of the cursor in world units (impacted by zooming and camera position). WorldX is typically used on 2D games, or 3D games where the Z=0 plane contains the entities. For 3D games, see the [WorldXAt method](/documentation/api/flatredball/flatredball-gui/flatredball-gui-cursor/flatredball-gui-cursor-worldxat/.md).
+The WorldX property returns the X coordinate of the cursor in world units (impacted by zooming and camera position). WorldX is typically used on 2D games, or 3D games where the Z=0 plane contains the entities. For 3D games, see the [WorldXAt method](/documentation/api/flatredball/flatredball-gui/flatredball-gui-cursor/flatredball-gui-cursor-worldxat.md).
 
 ## Code Example - Moving an Entity with the Cursor
 

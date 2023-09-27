@@ -58,4 +58,4 @@ It is possible to manually create collision relationships between IDamageable an
 
 ## Conclusion
 
-This guide shows how to create entities which are IDamageable and IDamageAreas. Once these entities are created, collision relationships are either automatically created when the entity is created, or they can be added manually with a drag+drop operation. The next guide will show the automatic damage-dealing logic provided by collision relationships and the Team Index variable functionality. -- [02 - Team Index -\>](/documentation/tutorials/damage-dealing/02-team-index/.md)
+This guide shows how to create entities which are IDamageable and IDamageAreas. Once these entities are created, collision relationships are either automatically created when the entity is created, or they can be added manually with a drag+drop operation. The next guide will show the automatic damage-dealing logic provided by collision relationships and the Team Index variable functionality. -- [02 - Team Index -\>](/documentation/tutorials/damage-dealing/02-team-index.md)

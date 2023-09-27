@@ -58,4 +58,4 @@ Assumes "save" is a valid ShapeCollectionSave:
     // You can make the ShapeCollection visible if desired:
     newShapeCollection.AddToManagers();
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

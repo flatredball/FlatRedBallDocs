@@ -110,4 +110,4 @@ The content is the stuff that the player will see, hear, and "touch" (collide ag
 
 As you can see there is quite a bit to keep track of when making a game like Super Mario Bros., which may seem like it is very simple. I sincerely hope that this entry helps you understand how FlatRedBall games come together. As always, if you encounter any problems, errors, or questions about this article, please post in the forums and we will do our best to help.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

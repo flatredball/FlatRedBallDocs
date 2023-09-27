@@ -115,4 +115,4 @@ The [InstructionManager](/frb/docs/index.php?title=FlatRedBall.Instructions.Inst
 -   [FlatRedBall.Instructions.IInstructable.Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable.Instructions.md "FlatRedBall.Instructions.IInstructable.Instructions")
 -   [FlatRedBall.Instructions.IInstructable.Set](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable.Set.md "FlatRedBall.Instructions.IInstructable.Set")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

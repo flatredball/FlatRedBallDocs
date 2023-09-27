@@ -48,4 +48,4 @@ The (confusing) ColorOperation.None  has been completely removed from FlatRedBa
 
 ## Learn More
 
-The ColorOperation documentation provides additional information and examples. Check it out [here](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-coloroperation/.md) to see what kind of visual effects you can add to your game.
+The ColorOperation documentation provides additional information and examples. Check it out [here](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-coloroperation.md) to see what kind of visual effects you can add to your game.

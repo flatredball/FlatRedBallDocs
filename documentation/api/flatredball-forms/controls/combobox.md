@@ -29,11 +29,11 @@ Furthermore, the ComboBox class provides the following event:
 
 -   SelectionChanged
 
-For more information on working with these properties and events, see the ListBox page: /documentation/api/flatredball-forms/controls/listbox/.md
+For more information on working with these properties and events, see the ListBox page: /documentation/api/flatredball-forms/controls/listbox.md
 
 ## ListBoxItemGumType
 
-The ListBoxItemGumType property is used to automatically instantiate [ListBoxItem](/documentation/api/flatredball-forms/controls/listboxitem/.md) instances as needed whenever new objects are added to the Items property. This property is not needed if adding ListBoxItem instances to Items. The ListBoxItemGumType should be a Gum runtime type which implements the ListBoxItem behavior. The following example shows how to use the ListBoxItemType. property:
+The ListBoxItemGumType property is used to automatically instantiate [ListBoxItem](/documentation/api/flatredball-forms/controls/listboxitem.md) instances as needed whenever new objects are added to the Items property. This property is not needed if adding ListBoxItem instances to Items. The ListBoxItemGumType should be a Gum runtime type which implements the ListBoxItem behavior. The following example shows how to use the ListBoxItemType. property:
 
 ``` lang:c#
 void CustomInitialize()
@@ -53,10 +53,10 @@ void CustomInitialize()
 }
 ```
 
-For more information on using the ListBoxItemType, see the [ListBox](/documentation/api/flatredball-forms/controls/listbox/.md) and [ListBoxItem](/documentation/api/flatredball-forms/controls/listboxitem/.md) pages.
+For more information on using the ListBoxItemType, see the [ListBox](/documentation/api/flatredball-forms/controls/listbox.md) and [ListBoxItem](/documentation/api/flatredball-forms/controls/listboxitem.md) pages.
 
 ## Items
 
-The ComboBox's Items collection exposes the Items collection of the Listbox which appears when the ComboBox expands. For information on working with Items, see the [ListBox](/documentation/api/flatredball-forms/controls/listbox/.md) page.
+The ComboBox's Items collection exposes the Items collection of the Listbox which appears when the ComboBox expands. For information on working with Items, see the [ListBox](/documentation/api/flatredball-forms/controls/listbox.md) page.
 
 ## 

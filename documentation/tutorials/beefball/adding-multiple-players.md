@@ -81,4 +81,4 @@ Now each PlayerBall uses a different Xbox360GamePad or set of keys.
 
 ## Conclusion
 
-Now that we have multiple PlayerBall instances, we have a game that is playable, but it's missing scoring and game rules. The next tutorial will add in the ability to score goals. [\<- Creating the Puck Entity](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-the-puck-entity/.md "Tutorials:Beefball:Creating the Puck Entity") -- [Scoring and Restarting Rounds -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-scoring-and-restarting-rounds/.md "Tutorials:Beefball:Scoring and Restarting Rounds")
+Now that we have multiple PlayerBall instances, we have a game that is playable, but it's missing scoring and game rules. The next tutorial will add in the ability to score goals. [\<- Creating the Puck Entity](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-the-puck-entity.md "Tutorials:Beefball:Creating the Puck Entity") -- [Scoring and Restarting Rounds -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-scoring-and-restarting-rounds.md "Tutorials:Beefball:Scoring and Restarting Rounds")

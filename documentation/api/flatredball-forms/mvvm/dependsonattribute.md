@@ -1,6 +1,6 @@
 ## Introduction
 
-The DependsOnAttribute class is used to define dependencies between properties on a view model. The DependsOnAttribute is used heavily when creating ViewModels for FlatRedBall.Forms objects, and it appears in all but the simplest of ViewModels. For an introduction into the MVVM pattern in FlatRedBall.Forms, see the [Data Binding tutorials](/documentation/tutorials/flatredball-forms/data-binding/.md).
+The DependsOnAttribute class is used to define dependencies between properties on a view model. The DependsOnAttribute is used heavily when creating ViewModels for FlatRedBall.Forms objects, and it appears in all but the simplest of ViewModels. For an introduction into the MVVM pattern in FlatRedBall.Forms, see the [Data Binding tutorials](/documentation/tutorials/flatredball-forms/data-binding.md).
 
 ## Simple DependsOn Usage
 

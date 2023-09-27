@@ -136,4 +136,4 @@ Alternatively, you can add the filenames of all assets to be loaded to a Content
 -   [FlatRedBall.FlatRedBallServices.Load](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.Load.md "FlatRedBall.FlatRedBallServices.Load")
 -   [FlatRedBall XNA Content Pipeline](/frb/docs/index.php?title=FlatRedBall_XNA_Content_Pipeline.md "FlatRedBall XNA Content Pipeline")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

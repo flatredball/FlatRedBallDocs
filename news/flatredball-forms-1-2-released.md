@@ -36,7 +36,7 @@ button = new Button();
 button.Parent = stackPanel.Visual;
 ```
 
-Notice that the AddChild function helps make StackPanels even simpler to work with, as opposed to setting the parent on the desired child - which is both wordy and also confusing. For additional information on the StackPanel control, see the [StackPanel](/documentation/api/flatredball-forms/controls/stackpanel/.md) page.
+Notice that the AddChild function helps make StackPanels even simpler to work with, as opposed to setting the parent on the desired child - which is both wordy and also confusing. For additional information on the StackPanel control, see the [StackPanel](/documentation/api/flatredball-forms/controls/stackpanel.md) page.
 
 ## Folders and Sub-Namespaces
 

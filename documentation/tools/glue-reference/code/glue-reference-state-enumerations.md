@@ -1,6 +1,6 @@
 ## Introduction
 
-Glue creates a custom class for every state category, and a separate class for all uncategorized states. Note that previous versions of Glue used to create enumerations for states, but this behavior was changed in 2018. For details about the change, see the [post about state data](/news/introducing-state-data/.md).
+Glue creates a custom class for every state category, and a separate class for all uncategorized states. Note that previous versions of Glue used to create enumerations for states, but this behavior was changed in 2018. For details about the change, see the [post about state data](/news/introducing-state-data.md).
 
 ## Class Names
 

@@ -104,4 +104,4 @@ Way to go! You've just finished the RockBlaster tutorial series. We've covered a
 -   Allow the user to restart the level by pushing a button when the game ends
 -   Create an Explosion entity that shows whenever Rocks or the Player are destroyed
 
-There are endless possibilities. Good luck! [\<- 13. Destroying Entities](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-destroying-entities/.md "Tutorials:Rock Blaster:Destroying Entities") -- [Back to Tutorials -\>](/documentation/tutorials/.md "Category:FlatRedBall XNA Tutorials")
+There are endless possibilities. Good luck! [\<- 13. Destroying Entities](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-destroying-entities.md "Tutorials:Rock Blaster:Destroying Entities") -- [Back to Tutorials -\>](/documentation/tutorials.md "Category:FlatRedBall XNA Tutorials")

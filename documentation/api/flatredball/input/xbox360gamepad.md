@@ -46,7 +46,7 @@ The Xbox360GamePad provides two analog sticks:
 -   LeftStick
 -   RightStick
 
-Each property provides information about the matching hardware analog stick. For more information on using the analog stick property, see the [AnalogStick](/documentation/api/flatredball/flatredball-input/flatredball-input-analogstick/.md "FlatRedBall.Input.AnalogStick") page.
+Each property provides information about the matching hardware analog stick. For more information on using the analog stick property, see the [AnalogStick](/documentation/api/flatredball/flatredball-input/flatredball-input-analogstick.md "FlatRedBall.Input.AnalogStick") page.
 
 ## Using a Keyboard as a Game Pad
 

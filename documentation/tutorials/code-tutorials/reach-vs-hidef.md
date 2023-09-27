@@ -16,4 +16,4 @@ To change between Reach and HiDef:
 4.  Select the "XNA Game Studio" tab
 5.  Use the radio button to switch between Reach and HiDef
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

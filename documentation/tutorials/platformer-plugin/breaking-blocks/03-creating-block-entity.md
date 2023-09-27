@@ -89,7 +89,7 @@ Our Block objects are currently displaying a black dot in the center of the coll
 
         ![](/media/2021-04-img_606f334622496.png)
 
-For more information on texture pixels, see the [Sprite.Texture Coordinates](/documentation/api/flatredball/flatredball-sprite/flatredball-sprite-texture-coordinates/.md) page. Now our entity is using the breakable block graphic.
+For more information on texture pixels, see the [Sprite.Texture Coordinates](/documentation/api/flatredball/flatredball-sprite/flatredball-sprite-texture-coordinates.md) page. Now our entity is using the breakable block graphic.
 
 ![](/media/2021-04-img_606f337266e68.png)
 
@@ -111,9 +111,9 @@ The Player can now collide with the blocks. [![](/wp-content/uploads/2021/04/202
 
 So far our game seems fairly functional, but it has a collision bug which can result in *snagging* - the unexpected stopping of the Player's velocity when moving across flat surfaces. This bug can be difficult to reproduce, so you may not have noticed it in the game yet, but it can definitely happen given our current setup. This problem is caused by the Block instances currently having AxisAlignedRectangles with RepositionDirections in all four directions. The following image provides a visualization of this problem: ![](/media/2021-04-img_606f1937e27db.png) The purple lines indicate possible RepositionDirections which can occur, and if these occur the Player will experience snagging. The topic of RepositionDirections is fairly extensive, and interested readers can see the following pages for more information:
 
--   [AxisAlignedRectangle.RepositionDirections](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-axisalignedrectangle/flatredball-math-geometry-axisalignedrectangle-repositiondirections/.md)
--   [TileShapeCollection.AdjustRepositionDirectionsOnAddAndRemove](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/adjustrepositiondirectionsonaddandremove/.md)
--   [TileShapeCollection.InsertCollidables](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/insertcollidables/.md)
+-   [AxisAlignedRectangle.RepositionDirections](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-axisalignedrectangle/flatredball-math-geometry-axisalignedrectangle-repositiondirections.md)
+-   [TileShapeCollection.AdjustRepositionDirectionsOnAddAndRemove](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/adjustrepositiondirectionsonaddandremove.md)
+-   [TileShapeCollection.InsertCollidables](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/insertcollidables.md)
 
 We will be applying some of the concepts and code discussed in the tutorials above, but for the sake of keeping the tutorial shorter we will not take a deep dive into every topic here. To adjust the RepositionDirections of our Block instances, we will use a new TileShapeCollection which is created purely for this purpose. In other words, we'll make a new TileShapeCollection, but we won't create any collision relationships or fill it in Glue the way we normally do with other TileShapeCollections. First we'll create a TileShapeCollection to be used for adjusting the Block RepositionDirections:
 

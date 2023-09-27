@@ -2,14 +2,14 @@
 
 Glue supports the addition of events to screens and entities. The most common types of events include:
 
--   Responding to a variable changing. For more info see the [Variable Event page](/documentation/tools/glue-reference/variables/glue-reference-variables-createsevent/.md).
+-   Responding to a variable changing. For more info see the [Variable Event page](/documentation/tools/glue-reference/variables/glue-reference-variables-createsevent.md).
 -   Responding to collision (on a CollisionRelationship)
 
 Other objects such as IWindows can also expose events, but these are less common.
 
 ## IWindow Example
 
-Note that IWindows are not used as often in modern FlatRedBall development due to the introduction of FlatRedBall.Forms. However, the following example does show how events can be used for custom implementations of IWindow. The events available to a screen, entity, or object depend on the respective container's properties. For example, if an entity implements IWindow (for more information, see the [Implements IWindow page](/documentation/tools/glue-reference/entities/glue-reference-entities-implements-iwindow/.md)), the entity will have additional events available.
+Note that IWindows are not used as often in modern FlatRedBall development due to the introduction of FlatRedBall.Forms. However, the following example does show how events can be used for custom implementations of IWindow. The events available to a screen, entity, or object depend on the respective container's properties. For example, if an entity implements IWindow (for more information, see the [Implements IWindow page](/documentation/tools/glue-reference/entities/glue-reference-entities-implements-iwindow.md)), the entity will have additional events available.
 
 ![](/media/2017-01-img_58786a3627e38.png)
 

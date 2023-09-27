@@ -4,7 +4,7 @@ This tutorial will walk you through installing and creating an empty FlatRedBall
 
 ## Downloading FlatRedBall
 
-Before you can begin to create your game, you may want to download the FlatRedBall Editor. Download and installation instructions can be found on our [Downloads Page](/download/.md). Keep in mind that the download page focuses on Windows. If you are running on a Linux or Mac machine, then your installation steps will differ. We recommend using the FlatRedBall Editor, however, you can create FlatRedBall games without the FlatRedBall Editor. If you would like to skip using the FlatRedBall Editor, you can go do so by installing the .NET SDK (as shown below).l
+Before you can begin to create your game, you may want to download the FlatRedBall Editor. Download and installation instructions can be found on our [Downloads Page](/download.md). Keep in mind that the download page focuses on Windows. If you are running on a Linux or Mac machine, then your installation steps will differ. We recommend using the FlatRedBall Editor, however, you can create FlatRedBall games without the FlatRedBall Editor. If you would like to skip using the FlatRedBall Editor, you can go do so by installing the .NET SDK (as shown below).l
 
 ## Creating a New Project Using the FlatRedBall Editor
 
@@ -32,8 +32,8 @@ To find your new project solution file (.sln), navigate up a folder from the loc
 
 If you would like to avoid using the FlatRedBall Editor completely, or if you are running on Linux or Mac, then you can directly download a project template .zip file. To do this:
 
-1.  Go to [/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/.md](/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/.md)
-2.  Select your target platform. For example, if developing for desktop select [/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/.mdFlatRedBallDesktopGlNet6Template.zip](/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/.mdFlatRedBallDesktopGlNet6Template.zip)
+1.  Go to [/content/FrbXnaTemplates/DailyBuild/ZippedTemplates.md](/content/FrbXnaTemplates/DailyBuild/ZippedTemplates.md)
+2.  Select your target platform. For example, if developing for desktop select [/content/FrbXnaTemplates/DailyBuild/ZippedTemplates.mdFlatRedBallDesktopGlNet6Template.zip](/content/FrbXnaTemplates/DailyBuild/ZippedTemplates.mdFlatRedBallDesktopGlNet6Template.zip)
 3.  Download and unzip the file to your machine
 4.  Open the .sln in Visual Studio or Visual Studio Code (see below for Visual Studio Code instructions)
 
@@ -61,7 +61,7 @@ If asked, check **Yes, I trust the authors**.
 
 If you have an existing MonoGame project, you can add FlatRedBall with the following steps:
 
-1.  Download the .dll for the project you are working on from this folder: [/content/FrbXnaTemplates/DailyBuild/SingleDlls/.md](/content/FrbXnaTemplates/DailyBuild/SingleDlls/.md)
+1.  Download the .dll for the project you are working on from this folder: [/content/FrbXnaTemplates/DailyBuild/SingleDlls.md](/content/FrbXnaTemplates/DailyBuild/SingleDlls.md)
 2.  Save the .dll to a location relative to your project, such as a Libraries folder
 3.  Link your game project to the newly-downloaded .dll
 4.  Modify Game1 so it contains the following calls:

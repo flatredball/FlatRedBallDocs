@@ -8,7 +8,7 @@ The first step in any game project is to open up the FlatRedBall Editor. If you
 
 ![](/media/2023-08-img_64cbd09e989f7.png)
 
-If you haven't yet downloaded the FRBDK.zip file, you can get it from the [Download page](/download/.md).
+If you haven't yet downloaded the FRBDK.zip file, you can get it from the [Download page](/download.md).
 
 ## Creating a new project
 
@@ -52,4 +52,4 @@ You can also open the project in visual studio by opening the .sln file. The pro
 
 ## Conclusion
 
-That was easy! So far you have a fully-functional game using FlatRedBall. The next tutorial will cover making our first Entity. -- [Creating an Entity -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-an-entity/.md "Tutorials:Beefball:Creating an Entity")
+That was easy! So far you have a fully-functional game using FlatRedBall. The next tutorial will cover making our first Entity. -- [Creating an Entity -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-an-entity.md "Tutorials:Beefball:Creating an Entity")

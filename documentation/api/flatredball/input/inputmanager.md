@@ -23,4 +23,4 @@ See [Xbox360GamePad](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.
 -   [FlatRedBall.Input.InputManager.ClearAllInput](/frb/docs/index.php?title=FlatRedBall.Input.InputManager.ClearAllInput.md "FlatRedBall.Input.InputManager.ClearAllInput")
 -   [FlatRedBall.Input.InputManager.InputReceiver](/frb/docs/index.php?title=FlatRedBall.Input.InputManager.InputReceiver.md "FlatRedBall.Input.InputManager.InputReceiver")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

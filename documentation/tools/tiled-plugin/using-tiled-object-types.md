@@ -70,7 +70,7 @@ Also, note that if a tile is already given a type, then painting that tile on an
 
 ## Adding Code to Create Entities
 
-Once tiles have been given a type, these can be converted to entities using the TileEntityInstantiator . For a full tutorial on using the TileEntityInstantiator, see this link: [/documentation/tools/tiled-plugin/using-the-tiled-plugin/06-creating-entities-from-tiles/.md](/documentation/tools/tiled-plugin/using-the-tiled-plugin/06-creating-entities-from-tiles/.md) To instantiate all entities, add the following code to your screen's CustomInitialize:
+Once tiles have been given a type, these can be converted to entities using the TileEntityInstantiator . For a full tutorial on using the TileEntityInstantiator, see this link: [/documentation/tools/tiled-plugin/using-the-tiled-plugin/06-creating-entities-from-tiles.md](/documentation/tools/tiled-plugin/using-the-tiled-plugin/06-creating-entities-from-tiles.md) To instantiate all entities, add the following code to your screen's CustomInitialize:
 
 ``` lang:c#
 // This assumes your TMX is called Level1. Substitute the name of your TMX

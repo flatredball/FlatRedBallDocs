@@ -29,7 +29,7 @@ The first step in using advanced interpolation is to enable it on a given Screen
 
 ## Additional Information
 
--   [Tween Function](/documentation/api/stateinterpolationplugin/gluevault-component-pages-advanced-interpolation-plugin-tween-function/.md "GlueVault:Component Pages:Advanced Interpolation Plugin:Tween Function")
+-   [Tween Function](/documentation/api/stateinterpolationplugin/gluevault-component-pages-advanced-interpolation-plugin-tween-function.md "GlueVault:Component Pages:Advanced Interpolation Plugin:Tween Function")
 
 ## Code Reference
 

@@ -39,4 +39,4 @@ To edit a NodeNetwork file, double-click the file in Glue and the AIEditor shoul
 
 8.  Find the AIEditor.exe and select that as the default application
 
-Note that you may need to install XNA 3.1 Redistributable to run the AIEditor. For more information, see the [AIEditor page](/documentation/tools/artificialintelligenceeditor-main-page/.md).
+Note that you may need to install XNA 3.1 Redistributable to run the AIEditor. For more information, see the [AIEditor page](/documentation/tools/artificialintelligenceeditor-main-page.md).

@@ -114,7 +114,7 @@ The Bullet creation logic will be added to the Player entity. We need to detect 
 
 ### IPressableInput
 
-The first line of code in the Player class defines an IPressableInput. This is an object which can reference any pressable input hardware such as a keyboard key or an Xbox360GamePad button. We create this IPressableInput so that we can write code which will work regardless of input device. For more information on IPressableInput, see the [IPressableInput page](/documentation/api/flatredball/flatredball-input/flatredball-input-ipressableinput/.md).
+The first line of code in the Player class defines an IPressableInput. This is an object which can reference any pressable input hardware such as a keyboard key or an Xbox360GamePad button. We create this IPressableInput so that we can write code which will work regardless of input device. For more information on IPressableInput, see the [IPressableInput page](/documentation/api/flatredball/flatredball-input/flatredball-input-ipressableinput.md).
 
 ### CustomInitializePlatformerInput
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-AdjustRepositionDirectionsOnAddAndRemove determines whether a TileShapeCollection adjusts the RepositionDirections property on contained AxisAlignedRectangles when a new rectangle is added. This value defaults to true, and in most cases it should be left unchanged. For more information on the RepositionDirections, including how it pertains to TileShapeCollections, see the [AxisAlignedRectangle.RepositionDirections](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-axisalignedrectangle/flatredball-math-geometry-axisalignedrectangle-repositiondirections/.md) page.
+AdjustRepositionDirectionsOnAddAndRemove determines whether a TileShapeCollection adjusts the RepositionDirections property on contained AxisAlignedRectangles when a new rectangle is added. This value defaults to true, and in most cases it should be left unchanged. For more information on the RepositionDirections, including how it pertains to TileShapeCollections, see the [AxisAlignedRectangle.RepositionDirections](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-axisalignedrectangle/flatredball-math-geometry-axisalignedrectangle-repositiondirections.md) page.
 
 ## RepositionDirections and Multiple TileShapeCollections
 

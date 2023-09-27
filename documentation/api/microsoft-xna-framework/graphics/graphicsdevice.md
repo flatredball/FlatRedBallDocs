@@ -11,4 +11,4 @@ You may want to work with the GraphicsDevice in the following scenarios:
 
 [Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget.md "Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

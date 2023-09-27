@@ -1,6 +1,6 @@
 ## Introduction
 
-The XmlSerialize and XmlDeserialize methods are methods which can be used to easily convert a class to an XML file, or an XML file back into an instance of a given type. XmlSerialize and XmlDeserialize are often used to save and load game data, such as player progress. Internally the FileManager uses the System.Xml.Serialization.XmlSerializer for serialization and deserialization. This means that any XML file created by the FileManager can be deserialized using the XmlSerializer if FlatRedBall is not available. Similarly, FlatRedBall can deserialize files created in other applications which use the XmlSerializer to save XML files. XmlSerialize uses the [FileManager's RelativeDirectory](/documentation/api/flatredball/flatredball-io/flatredball-io-filemanager/flatredball-io-filemanager-relativedirectory/.md "FlatRedBall.IO.FileManager.RelativeDirectory") when given relative paths to serialize.
+The XmlSerialize and XmlDeserialize methods are methods which can be used to easily convert a class to an XML file, or an XML file back into an instance of a given type. XmlSerialize and XmlDeserialize are often used to save and load game data, such as player progress. Internally the FileManager uses the System.Xml.Serialization.XmlSerializer for serialization and deserialization. This means that any XML file created by the FileManager can be deserialized using the XmlSerializer if FlatRedBall is not available. Similarly, FlatRedBall can deserialize files created in other applications which use the XmlSerializer to save XML files. XmlSerialize uses the [FileManager's RelativeDirectory](/documentation/api/flatredball/flatredball-io/flatredball-io-filemanager/flatredball-io-filemanager-relativedirectory.md "FlatRedBall.IO.FileManager.RelativeDirectory") when given relative paths to serialize.
 
 ## Example
 
@@ -92,4 +92,4 @@ The FileManager uses the [internally](http://msdn.microsoft.com/en-us/library/sy
 
 ## Additional Information
 
--   [Creating Save Classes](/documentation/tutorials/code-tutorials/tutorials-save-classes/.md "Tutorials:Save Classes") - Discusses the "Save" class coding pattern commonly used to save game data.
+-   [Creating Save Classes](/documentation/tutorials/code-tutorials/tutorials-save-classes.md "Tutorials:Save Classes") - Discusses the "Save" class coding pattern commonly used to save game data.

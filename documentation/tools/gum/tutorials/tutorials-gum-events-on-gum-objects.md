@@ -4,11 +4,11 @@ So far we've discussed how to use Gum to create screens which can used and inter
 
 ## Gum and FlatRedBall.Forms
 
-Gum objects can be used as UI objects. The most common way to build interactive UI is to use FlatRedBall.Forms - a UI system which mimics WPF in syntax but which uses Gum for the visuals. This tutorial (Events on Gum Objects) was created before FlatRedBall.Forms was available, so it provides instructions on how to build your own interactive Button which responds to clicks. For modern games we recommend using FlatRedBall.Forms instead of building new UI systems from the ground-up using Gum. For information on FlatRedBall.Forms, see the [FlatRedBall.Forms tutorials page](/documentation/tutorials/flatredball-forms/.md). If you are interested in how the underlying event system works (which is not necessary for most games), feel free to continue reading this tutorial and the next tutorial. If you would like to skip the two events tutorials, you can click here to go to [tutorial 6 on Exposed Variables](/documentation/tools/gum/gum-tutorials/tutorials-gum-exposed-variables/.md).
+Gum objects can be used as UI objects. The most common way to build interactive UI is to use FlatRedBall.Forms - a UI system which mimics WPF in syntax but which uses Gum for the visuals. This tutorial (Events on Gum Objects) was created before FlatRedBall.Forms was available, so it provides instructions on how to build your own interactive Button which responds to clicks. For modern games we recommend using FlatRedBall.Forms instead of building new UI systems from the ground-up using Gum. For information on FlatRedBall.Forms, see the [FlatRedBall.Forms tutorials page](/documentation/tutorials/flatredball-forms.md). If you are interested in how the underlying event system works (which is not necessary for most games), feel free to continue reading this tutorial and the next tutorial. If you would like to skip the two events tutorials, you can click here to go to [tutorial 6 on Exposed Variables](/documentation/tools/gum/gum-tutorials/tutorials-gum-exposed-variables.md).
 
 ## Similarities with IWindow
 
-Although this tutorial is focused on Gum objects, the steps necessary for adding events to Gum objects is identical to the steps necessary for adding events to Entities which implement the IWindow interface. In fact, the GraphicalUiElement class implements the IWindow interface, so you can even add events to it in custom code. For more information on IWindow in Glue, see [the Implements IWindow page.](/documentation/tools/glue-reference/entities/glue-reference-entities-implements-iwindow/.md "Glue:Reference:Entities:Implements IWindow")
+Although this tutorial is focused on Gum objects, the steps necessary for adding events to Gum objects is identical to the steps necessary for adding events to Entities which implement the IWindow interface. In fact, the GraphicalUiElement class implements the IWindow interface, so you can even add events to it in custom code. For more information on IWindow in Glue, see [the Implements IWindow page.](/documentation/tools/glue-reference/entities/glue-reference-entities-implements-iwindow.md "Glue:Reference:Entities:Implements IWindow")
 
 ## Importing a NineSliceButton
 
@@ -85,7 +85,7 @@ Displaying the WindowOver may help you figure out why clicks are not occurring.
 
 ### WindowOver Returns the Parent Window
 
-This tutorial outlines the most basic situation - a single component "floating" in an empty screen. A common setup is to have components which are part of other components (such as a button which is part of a menu). For information on working with events and parent/child components, see the [next tutorial in this series](/documentation/tools/gum/gum-tutorials/5-events-on-gum-objects-part-2/.md).
+This tutorial outlines the most basic situation - a single component "floating" in an empty screen. A common setup is to have components which are part of other components (such as a button which is part of a menu). For information on working with events and parent/child components, see the [next tutorial in this series](/documentation/tools/gum/gum-tutorials/5-events-on-gum-objects-part-2.md).
 
 ### Events on Components and Standard Elements (Non-Components)
 
@@ -108,4 +108,4 @@ As shown above, events such as Click are only available on Components and Contai
 
 ## Conclusion
 
-Now that you know how to add events to Gum objects you can create a fully functional UI system by combining the visual editing power of Gum with the code generation and project structure features of Glue. [\<- 3. Gum objects in code](/documentation/tools/gum/gum-tutorials/tutorials-gum-gum-objects-in-code/.md) -- [5. Events on Gum Objects Part 2 -\>](/documentation/tools/gum/gum-tutorials/5-events-on-gum-objects-part-2/.md)
+Now that you know how to add events to Gum objects you can create a fully functional UI system by combining the visual editing power of Gum with the code generation and project structure features of Glue. [\<- 3. Gum objects in code](/documentation/tools/gum/gum-tutorials/tutorials-gum-gum-objects-in-code.md) -- [5. Events on Gum Objects Part 2 -\>](/documentation/tools/gum/gum-tutorials/5-events-on-gum-objects-part-2.md)

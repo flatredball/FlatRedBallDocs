@@ -63,4 +63,4 @@ Of course, if you want to test time, you can compare the [TimeManager's](/frb/do
 
 The [InstructionList](/frb/docs/index.php?title=FlatRedBall.Instructions.InstructionList.md "FlatRedBall.Instructions.InstructionList") is a class designed especially to handle lists of Instructions and it provides a number of methods which can simplify manual management of Instructions. For more information, see the [InstructionList entry](/frb/docs/index.php?title=FlatRedBall.Instructions.InstructionList.md "FlatRedBall.Instructions.InstructionList").
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

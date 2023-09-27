@@ -4,4 +4,4 @@ The Performance Settings window controls performance-related code generation be
 
 ## RecordInitializeSegments
 
-For information on RecordInitializeSegments, see the [FlatRedBall Profiler page](/documentation/tools/tutorials-flatredballprofiler/tutorials-flatredballprofiler-embedding-flatredball-profiler/.md).
+For information on RecordInitializeSegments, see the [FlatRedBall Profiler page](/documentation/tools/tutorials-flatredballprofiler/tutorials-flatredballprofiler-embedding-flatredball-profiler.md).

@@ -16,4 +16,4 @@ For more information see the [CsvFileManager](/frb/docs/index.php?title=FlatRedB
 -   [FlatRedBall.IO.Csv.RuntimeCsvRepresentation.FromList](/frb/docs/index.php?title=FlatRedBall.IO.Csv.RuntimeCsvRepresentation.FromList.md "FlatRedBall.IO.Csv.RuntimeCsvRepresentation.FromList")
 -   [FlatRedBall.IO.Csv.RuntimeCsvRepresentation.GenerateCsvString](/frb/docs/index.php?title=FlatRedBall.IO.Csv.RuntimeCsvRepresentation.GenerateCsvString.md "FlatRedBall.IO.Csv.RuntimeCsvRepresentation.GenerateCsvString")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

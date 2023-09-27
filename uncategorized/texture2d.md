@@ -72,4 +72,4 @@ For a list of power of two values, [see this table](/frb/docs/index.php?title=Ma
 -   [Creating New Textures Programatically](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D.Creating_New_Textures_Programatically.md "Microsoft.Xna.Framework.Graphics.Texture2D.Creating New Textures Programatically")
 -   [FlatRedBall.FlatRedBallServices.AddDisposable](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.AddDisposable.md "FlatRedBall.FlatRedBallServices.AddDisposable") - Can be used to add a Texture2D to a [FlatRedBall Content Manager](/frb/docs/index.php?title=FlatRedBall_Content_Manager.md "FlatRedBall Content Manager").
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

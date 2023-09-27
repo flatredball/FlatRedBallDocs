@@ -73,4 +73,4 @@ IInputReceivers automatically receive input from the keyboard when they have foc
 
 -   [FlatRedBall.Gui.IInputReceiver.ReceiveInput](/frb/docs/index.php?title=FlatRedBall.Gui.IInputReceiver.ReceiveInput.md "FlatRedBall.Gui.IInputReceiver.ReceiveInput")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

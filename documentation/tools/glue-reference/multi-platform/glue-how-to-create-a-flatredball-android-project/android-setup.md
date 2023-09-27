@@ -20,4 +20,4 @@ Once you have finished installing, you can verify that you have Xamarin installe
 
     ![](/media/2022-03-img_62361bd3833b5.png)
 
-You're al set up. Now you can begin making Android applications. For information on creating a new Android project, see the [main Android page](/documentation/tools/glue-reference/multi-platform/glue-how-to-create-a-flatredball-android-project/.md).  
+You're al set up. Now you can begin making Android applications. For information on creating a new Android project, see the [main Android page](/documentation/tools/glue-reference/multi-platform/glue-how-to-create-a-flatredball-android-project.md).  

@@ -48,7 +48,7 @@ If you have added objects that should be destroyed (such as additional Entities)
 
 ## "The Screen that was just unloaded did not clean up after itself" Exception
 
-For more information on this error and how to clean it up, see [Cleaning Up Screens](/documentation/api/glue-runtime-api/glue-reference-screens-cleaning-up-screens/.md "Glue:Reference:Screens:Cleaning Up Screens").
+For more information on this error and how to clean it up, see [Cleaning Up Screens](/documentation/api/glue-runtime-api/glue-reference-screens-cleaning-up-screens.md "Glue:Reference:Screens:Cleaning Up Screens").
 
 ## Passing information to new Screens
 

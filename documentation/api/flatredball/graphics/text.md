@@ -53,7 +53,7 @@ myTextObject.X = 50;
 myTextObject.Y = -20;
 ```
 
-For more information on [PositionedObject](/documentation/api/flatredball/flatredball-positionedobject/.md "FlatRedBall.PositionedObject") fields and properties, see the [PositionedObject entry](/documentation/api/flatredball/flatredball-positionedobject/.md "FlatRedBall.PositionedObject").
+For more information on [PositionedObject](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject") fields and properties, see the [PositionedObject entry](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject").
 
 ## Text Size
 
@@ -130,4 +130,4 @@ The following code creates three text objects which have non-default values for 
 -   [Adding Text to Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer#Adding_Text_to_Layers.md "FlatRedBall.Graphics.Layer")
 -   [IAttachable Wiki Entry](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.md "FlatRedBall.Math.IAttachable") - Text implements the IAttachable interface.
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

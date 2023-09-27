@@ -1,4 +1,4 @@
-FlatRedBall Glue has always been a program for improving the speed of game development. The [latest version](/download/.md) includes a wizard which greatly simplifies new project setup. Previously, even as recent as a month ago, setting up a new project with levels, a player entity, collision, and [tiled map files](https://www.mapeditor.org/) could take an experienced FlatRedBall user over an hour. For new users, this process could take days. The new wizard standardizes the setup, and new projects can be created in under a minute!
+FlatRedBall Glue has always been a program for improving the speed of game development. The [latest version](/download.md) includes a wizard which greatly simplifies new project setup. Previously, even as recent as a month ago, setting up a new project with levels, a player entity, collision, and [tiled map files](https://www.mapeditor.org/) could take an experienced FlatRedBall user over an hour. For new users, this process could take days. The new wizard standardizes the setup, and new projects can be created in under a minute!
 
 ## Running the Wizard
 
@@ -24,7 +24,7 @@ Once you finish the wizard, Glue will apply all of the selected options and crea
 -   Solid collision objects and a collision relationship between the solid collision and all Players. Solid collision prevents the player from moving beyond the bounds of the level and can be used as walls to control game play.
 -   A fully-functional top-down or platformer entity. This is the Player entity which can be controlled with the keyboard or Xbox gamepad
 -   Multiple levels, each with their own [Tiled map file](https://www.mapeditor.org/) and a standard gameplay tileset for quick level creation
--   [Gum](http://gumui.net/) and [FlatRedBall.Forms](/documentation/tutorials/flatredball-forms/.md) for UI and HUD. Gum is a visual tool for creating UI and HUD, and FlatRedBall.Forms provides functionality for standard UI controls such as Button, TextBox, and ListBox.
+-   [Gum](http://gumui.net/) and [FlatRedBall.Forms](/documentation/tutorials/flatredball-forms.md) for UI and HUD. Gum is a visual tool for creating UI and HUD, and FlatRedBall.Forms provides functionality for standard UI controls such as Button, TextBox, and ListBox.
 -   A camera which follows all Players and stays within the bounds of the level. This behavior can be customized, but the defaults are good enough for starting most games.
 
 ![](/media/2021-03-img_603f0653c1e3f.png)

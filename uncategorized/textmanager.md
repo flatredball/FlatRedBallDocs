@@ -46,4 +46,4 @@ The RemoveText methods remove [Text](/frb/docs/index.php?title=FlatRedBall.Graph
 -   [FlatRedBall.Graphics.TextManager.InsertNewLines](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.mdManager.InsertNewLines&action=edit&redlink=1 "FlatRedBall.Graphics.TextManager.InsertNewLines (page does not exist)")
 -   [FlatRedBall.Graphics.TextManager.RemoveText](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.mdManager.RemoveText "FlatRedBall.Graphics.TextManager.RemoveText")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

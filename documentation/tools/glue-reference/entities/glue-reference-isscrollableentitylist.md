@@ -1,6 +1,6 @@
 ## Important
 
-This property is no longer supported in newer versions of FlatRedBall as of version 16. Information about file versions can be found in the [GLUJ version page](/documentation/tools/glue-reference/glujglux/.md). Newer projects should use FlatRedball.Forms for scrolling lists and UI.
+This property is no longer supported in newer versions of FlatRedBall as of version 16. Information about file versions can be found in the [GLUJ version page](/documentation/tools/glue-reference/glujglux.md). Newer projects should use FlatRedball.Forms for scrolling lists and UI.
 
 ## Introduction
 

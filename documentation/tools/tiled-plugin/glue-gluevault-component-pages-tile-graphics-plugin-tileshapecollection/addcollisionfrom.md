@@ -17,4 +17,4 @@ SpikeCollisions.AddCollisionFrom(CurrentTileMap,(list =>
                  list.Any(item => item.Name == "IsSpike" && item.Value == "true")));
 ```
 
-Note that if adding collision based on tile property names alone (not the value), see the AddCollisionFromTilesWithProperty  method: [/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionfromtileswithproperty/.md](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionfromtileswithproperty/.md)
+Note that if adding collision based on tile property names alone (not the value), see the AddCollisionFromTilesWithProperty  method: [/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionfromtileswithproperty.md](/documentation/tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionfromtileswithproperty.md)

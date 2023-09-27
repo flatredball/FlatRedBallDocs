@@ -91,7 +91,7 @@ By default the center of the screen is at the origin (0,0), and objects are posi
 
 ![](/media/2023-09-img_65044991b53a6.png)
 
-For more information on how to control the screen's resolution and world units, see the FlatRedBall Resolution section: [/documentation/tools/glue-reference/camera/.md](/documentation/tools/glue-reference/camera/.md) For more information on how to control the Camera to change the center of the screen, see the Camera code reference: [/documentation/api/flatredball/flatredball-camera/.md](/documentation/api/flatredball/flatredball-camera/.md)
+For more information on how to control the screen's resolution and world units, see the FlatRedBall Resolution section: [/documentation/tools/glue-reference/camera.md](/documentation/tools/glue-reference/camera.md) For more information on how to control the Camera to change the center of the screen, see the Camera code reference: [/documentation/api/flatredball/flatredball-camera.md](/documentation/api/flatredball/flatredball-camera.md)
 
 ## Conclusion
 
@@ -99,4 +99,4 @@ To recap we now have an Entity called PlayerBall which has a Circle. We've also 
 
 We're now ready to start adding some code to our project. The next tutorial will cover controlling your Entity's movement.
 
-[\<- Creating an Entity](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-an-entity/.md "Tutorials:Beefball:Creating an Entity") -- [Controlling an Entity -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-controlling-an-entity/.md "Tutorials:Beefball:Controlling an Entity")
+[\<- Creating an Entity](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-an-entity.md "Tutorials:Beefball:Creating an Entity") -- [Controlling an Entity -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-controlling-an-entity.md "Tutorials:Beefball:Controlling an Entity")

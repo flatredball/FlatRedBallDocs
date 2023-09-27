@@ -4,7 +4,7 @@ Before we start creating levels with Tiled, we will need to install a few requir
 
 ### 1. FlatRedBall
 
-First, we need to install FlatRedBall, which can be found on the [FlatRedBall Download Page](/download/.md). You may already have this installed if you have have been working with FlatRedBall.
+First, we need to install FlatRedBall, which can be found on the [FlatRedBall Download Page](/download.md). You may already have this installed if you have have been working with FlatRedBall.
 
 ### 2. Tiled
 

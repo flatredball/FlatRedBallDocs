@@ -1,6 +1,6 @@
 ## Introduction
 
-The Visual property is the underlying Gum object used to render the Framework Element. The Visual object is of type [GraphicalUiElement](/documentation/api/gum-runtime-api/gum-wireframe-graphicaluielement/.md).
+The Visual property is the underlying Gum object used to render the Framework Element. The Visual object is of type [GraphicalUiElement](/documentation/api/gum-runtime-api/gum-wireframe-graphicaluielement.md).
 
 ## Visual vs Forms Object
 

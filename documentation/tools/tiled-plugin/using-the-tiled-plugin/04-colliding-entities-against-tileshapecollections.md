@@ -116,7 +116,7 @@ As shown in the FRB editor, **Move Collision** prevents the objects from overla
 
 ## Colliding Platformer Entities
 
-This guide focuses on collision between an entity that has basic top-down movement logic. Tile maps are also often used in platformers, and the platformer plugin includes support for colliding against TileShapeCollections. For more information, see the [Controlling a Platformer Entity page](/documentation/tools/platformer-plugin/03-controlling-a-platformer-entity/.md).
+This guide focuses on collision between an entity that has basic top-down movement logic. Tile maps are also often used in platformers, and the platformer plugin includes support for colliding against TileShapeCollections. For more information, see the [Controlling a Platformer Entity page](/documentation/tools/platformer-plugin/03-controlling-a-platformer-entity.md).
 
 ## Conclusion
 

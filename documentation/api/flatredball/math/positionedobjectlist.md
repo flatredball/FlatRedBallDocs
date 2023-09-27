@@ -176,4 +176,4 @@ This guarantees that all Enemies will have their Activity methods called, even i
 -   [FlatRedBall.Math.PositionedObjectList.SortZInsertionAscending](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList.SortXInsertionAscending.md "FlatRedBall.Math.PositionedObjectList.SortXInsertionAscending")
 -   [FlatRedBall.Math.PositionedObjectList.SortZInsertionDescending](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList.SortZInsertionDescending&action=edit&redlink=1.md "FlatRedBall.Math.PositionedObjectList.SortZInsertionDescending (page does not exist)")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

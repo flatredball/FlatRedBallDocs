@@ -60,4 +60,4 @@ In Update:
 -   [FlatRedBall.Math.Geometry.Circle.Visible](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.Visible.md "FlatRedBall.Math.Geometry.Circle.Visible")
 -   [FlatRedBall.Math.Geometry.Circle.Z](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.Z.md "FlatRedBall.Math.Geometry.Circle.Z")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -1,4 +1,4 @@
-**Note**: XACT is only supported in actual XNA, not MonoGame. Using XACT limits your platforms to PC, so we recommend not using XACT for game audio. The most common way to play sounds in FlatRedBall is to use Glue. More information can be found in the [Glue .wav page](/documentation/tools/glue-reference/files/glue-reference-files-wav-file-wav/.md).
+**Note**: XACT is only supported in actual XNA, not MonoGame. Using XACT limits your platforms to PC, so we recommend not using XACT for game audio. The most common way to play sounds in FlatRedBall is to use Glue. More information can be found in the [Glue .wav page](/documentation/tools/glue-reference/files/glue-reference-files-wav-file-wav.md).
 
 ## Initialization
 

@@ -119,7 +119,7 @@ The Character contains three animation files (.achx):
 2.  GhostAnimations.achx
 3.  GirlAnimations.achx
 
-These animations can be referenced by Character entities defined in Tiled (without the extension), and new animations can be created and added to the Character entity to be referenced by Tiled objects. For information on creating and editing animations, see the [Animation Editor page](/documentation/tools/animationeditor/glue-gluevault-component-pages-animationeditor-plugin/.md).
+These animations can be referenced by Character entities defined in Tiled (without the extension), and new animations can be created and added to the Character entity to be referenced by Tiled objects. For information on creating and editing animations, see the [Animation Editor page](/documentation/tools/animationeditor/glue-gluevault-component-pages-animationeditor-plugin.md).
 
 ### Dialog
 
@@ -148,7 +148,7 @@ Tile Adventure includes multiple level files (**Level1.tmx** and **Level2.tmx**
 
 ![](/media/2019-07-img_5d3713f84a055.png)
 
-This setup requires a little bit of work up-front, but is easier to maintain as additional levels are created. Note that adding multiple TMX files to a single screen is one for creating a game with multiple maps. Another common approach is to create one Glue screen per TMX file, as explained in [this blog post](/news/derived-screens-as-a-levels/.md). The approach used here is useful if you expect your game to have a large number of maps. For example, an RPG such as Final Fantasy II (IV in Japan) may include hundreds of levels:
+This setup requires a little bit of work up-front, but is easier to maintain as additional levels are created. Note that adding multiple TMX files to a single screen is one for creating a game with multiple maps. Another common approach is to create one Glue screen per TMX file, as explained in [this blog post](/news/derived-screens-as-a-levels.md). The approach used here is useful if you expect your game to have a large number of maps. For example, an RPG such as Final Fantasy II (IV in Japan) may include hundreds of levels:
 
 -   One map per overworld (main world, underground, moon)
 -   One for each town

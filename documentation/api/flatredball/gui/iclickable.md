@@ -4,4 +4,4 @@ The IClickable interface requires implementation to specify a HasCursorOver meth
 
 ## IClickable Entities
 
-Glue entities can be marked as IClickable, which results in Glue generating IClickable-implementing code. For more information, see the [Entity IClickable](/documentation/tools/glue-reference/entities/glue-reference-entities-implements-iclickable/.md) page.
+Glue entities can be marked as IClickable, which results in Glue generating IClickable-implementing code. For more information, see the [Entity IClickable](/documentation/tools/glue-reference/entities/glue-reference-entities-implements-iclickable.md) page.

@@ -30,4 +30,4 @@ To save an AnimationChainList to file, you can use the [AnimationChainListSave](
 
 -   [FlatRedBall.Graphics.Animation.AnimationChainList.Clone](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain.mdList.Clone "FlatRedBall.Graphics.Animation.AnimationChainList.Clone")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -38,11 +38,11 @@ Navigation between elements can be done by pressing up, down, left, or right on 
 
 ## OnScreenKeyboard
 
-FlatRedBall.Forms includes a control called OnScreenKeyboard which can be used to enter text with a gamepad into a TextBox. For information on how to use this control, see the [OnScreenKeyboard page](/documentation/api/flatredball-forms/controls/games/onscreenkeyboard/.md).
+FlatRedBall.Forms includes a control called OnScreenKeyboard which can be used to enter text with a gamepad into a TextBox. For information on how to use this control, see the [OnScreenKeyboard page](/documentation/api/flatredball-forms/controls/games/onscreenkeyboard.md).
 
 ## Slider
 
-Slider controls can be focused with the gamepad. When a Slider has focus, pressing left or right on the analog stick or d-pad moves the slider value by its SmallChange property. For more information, see the [Slider page](/documentation/api/flatredball-forms/controls/slider/.md).
+Slider controls can be focused with the gamepad. When a Slider has focus, pressing left or right on the analog stick or d-pad moves the slider value by its SmallChange property. For more information, see the [Slider page](/documentation/api/flatredball-forms/controls/slider.md).
 
 ## Skipping Focus
 

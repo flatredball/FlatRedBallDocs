@@ -6,6 +6,6 @@ The SortYSpritesSecondary performs a sort on all ordered [Sprites](/frb/docs/ind
 
 ## Code Example - Manually Calling SortYSpritesSecondary
 
-The SortYSpritesSecondary method can be called manually. Note that this is not needed if you have set the [OrderedSortType](/documentation/api/flatredball/flatredball-spritemanager/flatredball-spritemanager-orderedsorttype/.md). To use SortYSpritesSecondary manually, call the method every frame **at the end of Update**. Add the following code at the end of your Update call (or your [Screen's](/frb/docs/index.php?title=Screen.md "Screen") Activity method):
+The SortYSpritesSecondary method can be called manually. Note that this is not needed if you have set the [OrderedSortType](/documentation/api/flatredball/flatredball-spritemanager/flatredball-spritemanager-orderedsorttype.md). To use SortYSpritesSecondary manually, call the method every frame **at the end of Update**. Add the following code at the end of your Update call (or your [Screen's](/frb/docs/index.php?title=Screen.md "Screen") Activity method):
 
     SpriteManager.SortYSpritesSecondary();

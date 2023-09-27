@@ -53,5 +53,5 @@ The state can be compared against the values which are assigned to perform logic
 ## Additional Information
 
 -   [Introduction to States](/frb/docs/index.php?title=Glue:Tutorials:States.md "Glue:Tutorials:States")
--   [Rock Blaster States Tutorial](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-rock-states/.md)
+-   [Rock Blaster States Tutorial](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-rock-states.md)
 -   [States reference](/frb/docs/index.php?title=Glue:Reference#States.md "Glue:Reference")

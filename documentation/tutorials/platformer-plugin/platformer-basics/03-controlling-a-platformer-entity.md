@@ -1,6 +1,6 @@
 ## Introduction
 
-This tutorial covers how to read input to move a platformer entity. We will also be creating a level to test out our platformer entity. To create a level and collision, we will be using a Tiled level. For more detail on how to create Tiled levels, see the [Tiled tutorial](/documentation/tools/tiled-plugin/using-the-tiled-plugin/.md).
+This tutorial covers how to read input to move a platformer entity. We will also be creating a level to test out our platformer entity. To create a level and collision, we will be using a Tiled level. For more detail on how to create Tiled levels, see the [Tiled tutorial](/documentation/tools/tiled-plugin/using-the-tiled-plugin.md).
 
 ## Adding a Level
 

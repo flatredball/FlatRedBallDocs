@@ -12,7 +12,7 @@ Projects which have been created with the Wizard will have a CameraControllingEn
 
 ![](/media/2022-10-img_635b07de5a0f8.png)
 
-If your game includes a CameraControllingEntityInstance, then the Camera's position will automatically be determined by this object. If you would like to manually control the Camera, you can delete the CameraControllingEntityInstance from your game. For more information on how to use the CameraControllingEntity, see the [CameraControllingEntity page](/documentation/api/flatredball/entities/cameracontrollingentity/.md).
+If your game includes a CameraControllingEntityInstance, then the Camera's position will automatically be determined by this object. If you would like to manually control the Camera, you can delete the CameraControllingEntityInstance from your game. For more information on how to use the CameraControllingEntity, see the [CameraControllingEntity page](/documentation/api/flatredball/entities/cameracontrollingentity.md).
 
 ## Code Example - Changing X and Y
 

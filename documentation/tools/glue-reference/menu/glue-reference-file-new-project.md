@@ -7,7 +7,7 @@ The "New Project" menu item allows you to create a new project. When creating a
 
 ![](/media/2017-01-img_58823b8dbc491.png)
 
-Both empty and starter projects are covered in the [FlatRedBall Tutorials page](/documentation/tutorials/.md).
+Both empty and starter projects are covered in the [FlatRedBall Tutorials page](/documentation/tutorials.md).
 
 ## NewProjectCreator
 

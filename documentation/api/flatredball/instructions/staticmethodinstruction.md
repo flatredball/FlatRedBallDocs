@@ -1,4 +1,4 @@
-**Note** - StaticMethodInstruction is now marked as obsolete in favor of using [DelegateInstruction](/documentation/api/flatredball/flatredball-instructions/flatredball-instructions-delegateinstruction/.md) and [Call](/documentation/api/flatredball/flatredball-instructions/flatredball-instructions-iinstructable/flatredball-instructions-iinstructable-call/.md).
+**Note** - StaticMethodInstruction is now marked as obsolete in favor of using [DelegateInstruction](/documentation/api/flatredball/flatredball-instructions/flatredball-instructions-delegateinstruction.md) and [Call](/documentation/api/flatredball/flatredball-instructions/flatredball-instructions-iinstructable/flatredball-instructions-iinstructable-call.md).
 
 ## Introduction
 
@@ -22,4 +22,4 @@ Add the following to Initialize after initializing FlatRedBall:
 
 ![SpriteAddedThroughInstruction.png](/media/migrated_media-SpriteAddedThroughInstruction.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

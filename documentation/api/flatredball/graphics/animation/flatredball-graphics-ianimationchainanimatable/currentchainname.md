@@ -24,7 +24,7 @@ Changing CurrentChainName does a number of things:
 -   Restarts the animation from the very beginning.
 -   Immediately updates the IAnimationChainAnimatable's textures and texture coordinates to reflect the first frame in the animation.
 
-Note that these actions are only taken if the CurrentChainName *changes. *Assigning CurrentChainName to the same value performs no logic, so it can be safely set every frame without restarting the animation from the beginning. To restart the animation from the beginning, set [CurrentFrameIndex](/documentation/api/flatredball/flatredball-graphics/animation/flatredball-graphics-animation-ianimationchainanimatable/flatredball-graphics-animation-ianimationchainanimatable-currentframeindex/.md) to 0.
+Note that these actions are only taken if the CurrentChainName *changes. *Assigning CurrentChainName to the same value performs no logic, so it can be safely set every frame without restarting the animation from the beginning. To restart the animation from the beginning, set [CurrentFrameIndex](/documentation/api/flatredball/flatredball-graphics/animation/flatredball-graphics-animation-ianimationchainanimatable/flatredball-graphics-animation-ianimationchainanimatable-currentframeindex.md) to 0.
 
 ## What does setting CurrentChainName not do?
 

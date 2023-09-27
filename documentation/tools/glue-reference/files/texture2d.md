@@ -6,7 +6,7 @@ Texture2D instances can be created through Glue by adding image files to entitie
 
 Texture2D's which are added to a screen or entity can be accessed by objects in the same screen or entity. The following steps show how to add a Texture2D to an entity and reference it on a sprite:
 
-1.  Create an entity with a Sprite object. See the [Sprites in Glue page](/documentation/tools/glue-reference/objects/glue-reference-objects-sprite/.md) for more information.
+1.  Create an entity with a Sprite object. See the [Sprites in Glue page](/documentation/tools/glue-reference/objects/glue-reference-objects-sprite.md) for more information.
 
     ![](/media/2019-06-img_5d18b9a876102.png)
 

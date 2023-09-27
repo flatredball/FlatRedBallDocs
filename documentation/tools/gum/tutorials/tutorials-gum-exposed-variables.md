@@ -59,4 +59,4 @@ You should now have 2 exposed variables. You can see this by selecting the **Sco
         this.ScoreHudInstance.Score2 = "450";
     }
 
-Notice that the variables appear in Visual Studio with the same names as exposed in Gum. Running the game will show the score values showing 200 and 450 respectively. ![ScoreHud6.png](/media/migrated_media-ScoreHud6.png) [\<- 5. Events on Gum Objects Part 2](/documentation/tools/gum/gum-tutorials/5-events-on-gum-objects-part-2/.md) -- [7. States -\>](/documentation/tools/gum/gum-tutorials/tutorials-gum-states/.md)
+Notice that the variables appear in Visual Studio with the same names as exposed in Gum. Running the game will show the score values showing 200 and 450 respectively. ![ScoreHud6.png](/media/migrated_media-ScoreHud6.png) [\<- 5. Events on Gum Objects Part 2](/documentation/tools/gum/gum-tutorials/5-events-on-gum-objects-part-2.md) -- [7. States -\>](/documentation/tools/gum/gum-tutorials/tutorials-gum-states.md)

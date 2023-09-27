@@ -18,7 +18,7 @@ namespace FRBSiteMigrator
 
         public static string MakeLinkRelative(this string url)
         {
-            return Regex.Replace(url, @"^https?://[^/]+", string.Empty, RegexOptions.IgnoreCase);
+            return Regex.Replace(url.TrimEnd('/'), @"^https?://[^/]+", string.Empty, RegexOptions.IgnoreCase);
         }
     }
 }

@@ -46,4 +46,4 @@ The GetValue method allows you to get the value of a variable using reflection b
     float valueFromHardcode = spriteInstance.X;
     float valueFromLateBinder = (float)LateBinder<Sprite>.Instance.GetValue(spriteInstance, "X");
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

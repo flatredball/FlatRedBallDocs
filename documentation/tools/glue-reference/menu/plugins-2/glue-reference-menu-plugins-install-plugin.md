@@ -12,4 +12,4 @@ After selecting the plugin, click the "Ok" button. Glue needs to be restarted to
 
 ## Verifying Installation
 
-Once a plugin has been installed, the Manage Plugins window will list this plugin. For more information, see the [Manage Plugins page](/documentation/tools/glue-reference/menu/glue-reference-menu-plugins-manage-plugin/.md).  
+Once a plugin has been installed, the Manage Plugins window will list this plugin. For more information, see the [Manage Plugins page](/documentation/tools/glue-reference/menu/glue-reference-menu-plugins-manage-plugin.md).  

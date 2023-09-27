@@ -8,7 +8,7 @@ PositionedObjectLists in Glue represent lists of objects which can be positioned
 -   Texts
 -   Sprites
 
-In code all of the objects mentioned above inherit from the [FlatRedBall.PositionedObject](/documentation/api/flatredball/flatredball-positionedobject/.md "FlatRedBall.PositionedObject") class. The list above is just some of the most common types.
+In code all of the objects mentioned above inherit from the [FlatRedBall.PositionedObject](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject") class. The list above is just some of the most common types.
 
 ## Default Functionality - Glue Creates Lists in GameScreen
 

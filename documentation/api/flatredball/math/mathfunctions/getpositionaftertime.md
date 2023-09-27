@@ -1,6 +1,6 @@
 ## Introduction
 
-The GetPositionAfterTime function will return the position of an object given a set start position, an initial velocity value, and a constant acceleration value (constant during the movement time). Note that this function does not consider an object's [Drag](/documentation/api/flatredball/flatredball-positionedobject/flatredball-positionedobject-drag/.md) value, so if a PositionedObject has a non-zero Drag, the results of this function will not match actual behavior.
+The GetPositionAfterTime function will return the position of an object given a set start position, an initial velocity value, and a constant acceleration value (constant during the movement time). Note that this function does not consider an object's [Drag](/documentation/api/flatredball/flatredball-positionedobject/flatredball-positionedobject-drag.md) value, so if a PositionedObject has a non-zero Drag, the results of this function will not match actual behavior.
 
 ## Code Example
 

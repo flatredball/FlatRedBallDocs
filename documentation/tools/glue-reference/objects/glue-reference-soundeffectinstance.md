@@ -7,7 +7,7 @@ A SoundEffectInstance is a sound effect which provides a number of properties wh
 To add a SoundEffectInstance to your project:
 
 1.  Make sure you have a Glue project with a Screen or Entity which will contain the SoundEffectInstance.
-2.  Add a new WAV file to your Screen or Entity. For more information, the [.WAV file page](/documentation/tools/glue-reference/files/glue-reference-files-wav-file-wav/.md).
+2.  Add a new WAV file to your Screen or Entity. For more information, the [.WAV file page](/documentation/tools/glue-reference/files/glue-reference-files-wav-file-wav.md).
 3.  Once the file has been added to Glue, you need to change the RuntimeType to SoundEffectInstance:![RuntimeTypeSoundEffectInstance.png](/media/migrated_media-RuntimeTypeSoundEffectInstance.png)
 
 At this point the SoundEffectInstance will be available in code, but you cannot change any variables on the SoundEffectInstance. To do this:

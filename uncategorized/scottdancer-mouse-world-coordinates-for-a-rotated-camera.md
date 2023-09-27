@@ -58,4 +58,4 @@ Place in your screen's CustomActivity (or somewhere equivalent):
 
     Vector3 worldCoord = GetWorldCoordinate(mousePlane);
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

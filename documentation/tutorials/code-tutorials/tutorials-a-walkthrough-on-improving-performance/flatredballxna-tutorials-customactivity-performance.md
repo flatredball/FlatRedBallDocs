@@ -1,6 +1,6 @@
 ## Introduction
 
-This section discusses CustomActivity and its potential impact on performance. Although CustomActivity can have an impact on performance, more often than not performance problems are a result of having too many managed objects in the engine. Therefore, you should always check this first before looking at your custom code for performance problems. For information on checking the number of objects, see [this link](/documentation/tutorials/code-tutorials/tutorials-a-walkthrough-on-improving-performance/flatredballxna-tutorials-manually-updated-objects/.md "FlatRedballXna:Tutorials:Manually Updated Objects").
+This section discusses CustomActivity and its potential impact on performance. Although CustomActivity can have an impact on performance, more often than not performance problems are a result of having too many managed objects in the engine. Therefore, you should always check this first before looking at your custom code for performance problems. For information on checking the number of objects, see [this link](/documentation/tutorials/code-tutorials/tutorials-a-walkthrough-on-improving-performance/flatredballxna-tutorials-manually-updated-objects.md "FlatRedballXna:Tutorials:Manually Updated Objects").
 
 ## Profiling with Visual Studio
 

@@ -60,4 +60,4 @@ The example above showed how to add a new FlatRedBall Screen which automatically
 
 ![](/media/2023-05-img_646f4adbedd07.png)
 
-To review, if you add a new FlatRedBall Screen *after *having added Gum to your project, you do not need to manually create Gum screens. However, if you have FlatRedBall Screens which were created before having added Gum, then manual steps above are necessary for those Screens. [\<- 1. Introduction and Setup](/documentation/tools/gum/gum-tutorials/tutorials-gum-introduction-and-setup/.md) -- [3. Gum objects in code -\>](/documentation/tools/gum/gum-tutorials/tutorials-gum-gum-objects-in-code/.md)
+To review, if you add a new FlatRedBall Screen *after *having added Gum to your project, you do not need to manually create Gum screens. However, if you have FlatRedBall Screens which were created before having added Gum, then manual steps above are necessary for those Screens. [\<- 1. Introduction and Setup](/documentation/tools/gum/gum-tutorials/tutorials-gum-introduction-and-setup.md) -- [3. Gum objects in code -\>](/documentation/tools/gum/gum-tutorials/tutorials-gum-gum-objects-in-code.md)

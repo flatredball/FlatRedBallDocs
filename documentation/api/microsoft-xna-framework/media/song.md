@@ -15,7 +15,7 @@ WAV files are not supported in FlatRedBall for music files. Instead, they are us
 
 ## Example - Glue
 
-To play a song in Glue, drag+drop a file from disk into your Glue project on a Screen. It will play automatically when the screen loads. For more information about playing songs in Glue, see the [Glue MP3 page](/documentation/tools/glue-reference/files/glue-reference-files-mp3-file-mp3/.md).
+To play a song in Glue, drag+drop a file from disk into your Glue project on a Screen. It will play automatically when the screen loads. For more information about playing songs in Glue, see the [Glue MP3 page](/documentation/tools/glue-reference/files/glue-reference-files-mp3-file-mp3.md).
 
 ## Example - Manual Visual Studio/Code Loading and Playing
 
@@ -77,4 +77,4 @@ This is dependent on the Android phone. Just because it plays on one phone doesn
 
 -   [FromUri](/frb/docs/index.php?title=Microsoft.Xna.Framework.Media.Song.FromUri.md "Microsoft.Xna.Framework.Media.Song.FromUri")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

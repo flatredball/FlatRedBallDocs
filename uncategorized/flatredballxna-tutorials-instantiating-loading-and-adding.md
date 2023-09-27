@@ -66,4 +66,4 @@ Notice that the creation of the runtime instances (the [FlatRedBall.Scene](/frb/
 
 One of the reasons for the AddToManagers method being separated from the ToScene is because the ToScene method can be called on any thread while the AddToManagers can only be called on the game's primary thread. For more information on this topic see [the multithreading article.](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Multithreading_FlatRedBall.md "FlatRedBallXna:Tutorials:Multithreading FlatRedBall")
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

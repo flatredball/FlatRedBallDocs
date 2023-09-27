@@ -18,4 +18,4 @@ The following code shows how to create a Polygon from a PolygonSave:
     // Assuming polygonSave is a valid PolygonSave
     Polygon polygon = polygonSave.ToPolygon();
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

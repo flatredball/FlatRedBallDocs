@@ -1,6 +1,6 @@
 ## Introduction
 
-Gum Screens and Components can be added to Layers in Glue. This page discusses some common scenarios for layering Gum objects in Glue. For information on moving Gum objects to layers in code, see the [MoveToFrbLayer page](/documentation/api/gum-runtime-api/gum-wireframe-graphicaluielement/movetofrblayer/.md).
+Gum Screens and Components can be added to Layers in Glue. This page discusses some common scenarios for layering Gum objects in Glue. For information on moving Gum objects to layers in code, see the [MoveToFrbLayer page](/documentation/api/gum-runtime-api/gum-wireframe-graphicaluielement/movetofrblayer.md).
 
 ## Adding an entire Screen to a Layer in Glue
 

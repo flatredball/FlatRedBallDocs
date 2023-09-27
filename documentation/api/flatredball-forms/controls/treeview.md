@@ -1,6 +1,6 @@
 ## Introduction
 
-The TreeView control is a scrollable view which can contain a hierarchy of TreeViewItems. The TreeView is conceptually similar to the [ListBox](/documentation/api/flatredball-forms/controls/listbox/.md) control, but allows items to be embedded within other items. [![](/wp-content/uploads/2018/07/2018-07-21_22-18-06.gif.md)](/wp-content/uploads/2018/07/2018-07-21_22-18-06.gif.md)
+The TreeView control is a scrollable view which can contain a hierarchy of TreeViewItems. The TreeView is conceptually similar to the [ListBox](/documentation/api/flatredball-forms/controls/listbox.md) control, but allows items to be embedded within other items. [![](/wp-content/uploads/2018/07/2018-07-21_22-18-06.gif.md)](/wp-content/uploads/2018/07/2018-07-21_22-18-06.gif.md)
 
 ## Layout Requirements
 
@@ -10,7 +10,7 @@ The TreeView control requires:
 -   An object named **InnerPanelInstance** of any type (typically a Container)
 -   An object named **ClipContainerInstance** of any type (typically a Container with **ClipsChildren** set to true)
 
-[![](/wp-content/uploads/2017/12/img_5a465ac0d252b.png.md)](/wp-content/uploads/2017/12/img_5a465ac0d252b.png.md) The requirements for the TreeView are identical to the requirements for the [ScrollViewer](/documentation/api/flatredball-forms/controls/scrollviewer/.md) and [ListBox](/documentation/api/flatredball-forms/controls/listbox/.md) controls.
+[![](/wp-content/uploads/2017/12/img_5a465ac0d252b.png.md)](/wp-content/uploads/2017/12/img_5a465ac0d252b.png.md) The requirements for the TreeView are identical to the requirements for the [ScrollViewer](/documentation/api/flatredball-forms/controls/scrollviewer.md) and [ListBox](/documentation/api/flatredball-forms/controls/listbox.md) controls.
 
 ## Items
 
@@ -45,7 +45,7 @@ treeView.Visual.AddToManagers();
 
 ## Customizing TreeViewItems
 
-For information on creating a custom TreeViewItem, see the [TreeViewItem documentation](/documentation/api/flatredball-forms/controls/treeviewitem/.md).
+For information on creating a custom TreeViewItem, see the [TreeViewItem documentation](/documentation/api/flatredball-forms/controls/treeviewitem.md).
 
 ## Selection
 

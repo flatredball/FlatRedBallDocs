@@ -31,7 +31,7 @@ Once installed, Glue will display two new tabs:
 
 ![](/media/2016-04-img_571ea1fb28db5.png)
 
-When your game is running (either through Glue or Visual Studio), the Runtime Objects list will fill up with all objects. Objects contained in a [PositionedObjectList](/documentation/api/flatredball/flatredball-math/flatredball-math-positionedobjectlist/.md) added through Glue will contain dynamically-created objects (such as enemy bullets):
+When your game is running (either through Glue or Visual Studio), the Runtime Objects list will fill up with all objects. Objects contained in a [PositionedObjectList](/documentation/api/flatredball/flatredball-math/flatredball-math-positionedobjectlist.md) added through Glue will contain dynamically-created objects (such as enemy bullets):
 
 ![](/media/2016-04-img_571ea2e8f191b.png)
 

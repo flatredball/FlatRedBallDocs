@@ -1,4 +1,4 @@
-Recently a new version of FlatRedBall was released targeting .NET 6.0. This version has a lot of benefits as explained in a [previous blog post](/news/flatredball-moves-to-net-6-and-much-more/.md), but it does introduce one problem for games targeting MonoGame 3.7.1. You may notice an error that says Could not load the project \<project location\> because MonoGame 3.7.1 files are missing.
+Recently a new version of FlatRedBall was released targeting .NET 6.0. This version has a lot of benefits as explained in a [previous blog post](/news/flatredball-moves-to-net-6-and-much-more.md), but it does introduce one problem for games targeting MonoGame 3.7.1. You may notice an error that says Could not load the project \<project location\> because MonoGame 3.7.1 files are missing.
 
 ![](/media/2022-10-img_6352864d98eb5.png)
 

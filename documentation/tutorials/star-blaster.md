@@ -61,7 +61,7 @@ Notice that the keys for movement are assigned in the Get2DInput  and GetKey  
 movementInput = InputManager.Keyboard.Get2DInput(Keys.Left, Keys.Right, Keys.Up, Keys.Down);
 ```
 
-The two fields used for input use the FlatRedBall input interface classes. These classes allow using any input hardware without changing the logic to read the input. For more information, see the [I2DInput](/documentation/api/flatredball/flatredball-input/flatredball-input-i2dinput/.md) and [IPressableInput](/documentation/api/flatredball/flatredball-input/flatredball-input-ipressableinput/.md) pages.
+The two fields used for input use the FlatRedBall input interface classes. These classes allow using any input hardware without changing the logic to read the input. For more information, see the [I2DInput](/documentation/api/flatredball/flatredball-input/flatredball-input-i2dinput.md) and [IPressableInput](/documentation/api/flatredball/flatredball-input/flatredball-input-ipressableinput.md) pages.
 
 ### Movement Acceleration
 
@@ -248,7 +248,7 @@ Since this file contains many visual effects, the Bullet class must specify whic
 
 ![](/media/2016-12-img_585b625c1d583.png)
 
-The Animation can be edited by hand (XML file) or using the AnimationEditor plugin, which can be installed from GlueVault: <http://www.gluevault.com/plug/51-animationeditor-glue-plugin> For information on using the AnimationEditor Plugin, see the [AnimationEditor page](/documentation/tools/animationeditor/glue-gluevault-component-pages-animationeditor-plugin/.md). The bullet appearance can be changed by changing the first (and only) frame in PlayerBullet:
+The Animation can be edited by hand (XML file) or using the AnimationEditor plugin, which can be installed from GlueVault: <http://www.gluevault.com/plug/51-animationeditor-glue-plugin> For information on using the AnimationEditor Plugin, see the [AnimationEditor page](/documentation/tools/animationeditor/glue-gluevault-component-pages-animationeditor-plugin.md). The bullet appearance can be changed by changing the first (and only) frame in PlayerBullet:
 
 ![](/media/2016-12-img_585b64bd4678c.png)
 

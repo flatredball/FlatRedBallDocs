@@ -14,7 +14,7 @@ A "State" represents zero or more variables which can be set at once either in G
 
 ## How to create States
 
-States are easy to create, but this tutorial will provide a real-world example of how to work with states. Therefore, we'll work with the Button entity from the [AnimationChain tutorial](/documentation/tutorials/glue-tutorials/glue-tutorials-using-animation-chains/.md).
+States are easy to create, but this tutorial will provide a real-world example of how to work with states. Therefore, we'll work with the Button entity from the [AnimationChain tutorial](/documentation/tutorials/glue-tutorials/glue-tutorials-using-animation-chains.md).
 
 ## Adding States
 

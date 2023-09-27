@@ -34,7 +34,7 @@ We need to modify the rectangle so it stands out relative to the collision recta
 
 ## Defining Monster Tiles
 
-We will be using the **Type** property to set the entity type. For a deeper dive on how this property works, see the Type documentation here: [/documentation/tools/tiled-plugin/using-tiled-object-types/.md](/documentation/tools/tiled-plugin/using-tiled-object-types/.md) The documentation linked above shows how to import an XML file created using the FRB editor so that variables defined on Monster (or any other entity) automatically appear in Tiled. For simplicity we'll skip this step, but you may want to perform that additional step for larger projects. To set the Type property:
+We will be using the **Type** property to set the entity type. For a deeper dive on how this property works, see the Type documentation here: [/documentation/tools/tiled-plugin/using-tiled-object-types.md](/documentation/tools/tiled-plugin/using-tiled-object-types.md) The documentation linked above shows how to import an XML file created using the FRB editor so that variables defined on Monster (or any other entity) automatically appear in Tiled. For simplicity we'll skip this step, but you may want to perform that additional step for larger projects. To set the Type property:
 
 1.  Open whichever level is currently being loaded in your game in Tiled (such as Level2Map.tmx)
 

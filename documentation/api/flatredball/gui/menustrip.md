@@ -38,4 +38,4 @@ Add the following at class scope:
 
 ![MenuStrip.png](/media/migrated_media-MenuStrip.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum/.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

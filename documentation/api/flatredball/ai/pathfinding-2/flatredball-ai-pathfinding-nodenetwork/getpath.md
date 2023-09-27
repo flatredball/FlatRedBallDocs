@@ -4,4 +4,4 @@ The GetPath method returns a List of [PositionedNodes](/frb/docs/index.php?title
 
 ## Example
 
-For an example on how to use GetPath, see the [main NodeNetwork page](/documentation/api/flatredball/flatredball-ai/flatredball-ai-pathfinding-2/flatredball-ai-pathfinding-nodenetwork/.md).
+For an example on how to use GetPath, see the [main NodeNetwork page](/documentation/api/flatredball/flatredball-ai/flatredball-ai-pathfinding-2/flatredball-ai-pathfinding-nodenetwork.md).
