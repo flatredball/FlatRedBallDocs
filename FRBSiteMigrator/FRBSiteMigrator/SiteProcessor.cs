@@ -90,6 +90,10 @@ namespace FRBSiteMigrator
             {
                 ProcessPostOrPage(post);
             }
+            foreach(var page in site.Pages)
+            {
+                ProcessPostOrPage(page);
+            }
 
             // we should have a complete list of media, fetch all locally
             // Note that this is
@@ -197,16 +201,19 @@ namespace FRBSiteMigrator
             // and relative links
             foreach(var img in page.Images)
             {
-                var relative = img.MakeLinkRelative();
-                var media = site.Media.Where(m => m.Guid.Contains(relative)).FirstOrDefault();
-                if(media != null)
+                if (!img.Contains("http") || img.Contains(site.SiteUrl))
                 {
-                    var newLink = "/media/" + media.ProcessedPath;
-                    content = content.Replace(img, newLink);
-                }
-                else
-                {
-                    Write("Failed to find a media link in our media collection, this shouldn't happen!");
+                    var relative = img.MakeLinkRelative();
+                    var media = site.Media.Where(m => m.Guid.Contains(relative)).FirstOrDefault();
+                    if (media != null)
+                    {
+                        var newLink = "/media/" + media.ProcessedPath;
+                        content = content.Replace(img, newLink);
+                    }
+                    else
+                    {
+                        Write("Failed to find a media link in our media collection, this shouldn't happen!");
+                    }
                 }
             }
 
@@ -230,13 +237,13 @@ namespace FRBSiteMigrator
             try
             {
                 ConvertHtmlToMarkdown(htmlPath, markdownPath);
+                Write($"Processed page: {markdownPath}");
             }
             catch(Exception ex)
             {
                 Write($"Failed to convert page: {page.ProcessedPath}");
                 site.FailedPageConversions.Add(page.ProcessedPath);
             }
-            
         }
 
         // NOTE: this method requires a path instead of a string because passing
@@ -280,13 +287,12 @@ namespace FRBSiteMigrator
             }
             else if(content.Type == "page")
             {
-                var path = "";
                 if (content.ParentId != 0)
                 {
                     var parent = site.Pages.Where(p => p.Id == content.ParentId).FirstOrDefault();
                     if (parent != null)
                     {
-                        path += GetUrlRecursive(parent);
+                        url += GetUrlRecursive(parent);
                     }
                 }
                 url += "/" + content.Name;
