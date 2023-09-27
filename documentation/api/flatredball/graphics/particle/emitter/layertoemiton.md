@@ -1,10 +1,10 @@
 ## Introduction
 
-The Layer that newly-created particle [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") should be added to. This is null by default.
+The Layer that newly-created particle [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") should be added to. This is null by default.
 
 ## Code Example
 
-The following example adds an Emitter to a [Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer.md "FlatRedBall.Graphics.Layer"). All emitted [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") will appear behind the large, unlayered [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite").
+The following example adds an Emitter to a [Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer"). All emitted [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") will appear behind the large, unlayered [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite").
 
 Add the following using statements:
 

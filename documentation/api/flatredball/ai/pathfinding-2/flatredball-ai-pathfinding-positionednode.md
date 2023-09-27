@@ -12,8 +12,8 @@ To create a link from one node to another, call the **LinkTo** method. This auto
 
 ## References
 
--   [FlatRedBall.AI.Pathfinding Namespace](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding_(Namespace).md "FlatRedBall.AI.Pathfinding (Namespace)")
--   [FlatRedBall.AI.Pathfinding.Link](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link.md "FlatRedBall.AI.Pathfinding.Link")
--   [FlatRedBall.AI.Pathfinding.NodeNetwork](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.NodeNetwork.md "FlatRedBall.AI.Pathfinding.NodeNetwork")
+-   [FlatRedBall.AI.Pathfinding Namespace](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding_(Namespace) "FlatRedBall.AI.Pathfinding (Namespace)")
+-   [FlatRedBall.AI.Pathfinding.Link](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link "FlatRedBall.AI.Pathfinding.Link")
+-   [FlatRedBall.AI.Pathfinding.NodeNetwork](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.NodeNetwork "FlatRedBall.AI.Pathfinding.NodeNetwork")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

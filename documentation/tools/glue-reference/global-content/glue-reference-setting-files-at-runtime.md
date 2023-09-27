@@ -56,7 +56,7 @@ We want DemoLevelInfo.csv to use the same class as LevelInfo.csv. To do this:
 7.  Click "Yes" if asked if you should remove unused file
 8.  Click Done
 
-For more info on Set Created Class, see [this page](/frb/docs/index.php?title=Glue:Reference:Files:Set_Created_Class.md "Glue:Reference:Files:Set Created Class").
+For more info on Set Created Class, see [this page](/frb/docs/index.php?title=Glue:Reference:Files:Set_Created_Class "Glue:Reference:Files:Set Created Class").
 
 ## Using LevelInfo in a Screen
 
@@ -113,4 +113,4 @@ In this case our code is simply setting the LevelInfo to DemoLevelInfo - overwri
 -   It had to be **after** GlobalContent.Initialize because we needed DemolevelInfo to already be loaded
 -   It had to be **before** the ScreenManager's Start function because this had to be set prior to the first Screen being initialized.
 
-Although we assigned one CSV in GlobalContent to another CSV in GlobalContent, this is not a requirement. The LevelInfo could be assigned from a completely different file using the [CsvFileManager](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager.md "FlatRedBall.IO.Csv.CsvFileManager"). This means that you could download a CSV from a server somewhere, and assign LevelInfo to a new Dictionary\<string, LevelInfo\>, then deserialize the file into that dictionary using [CsvDeserializeDictionary](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager.md.CsvDeserializeDictionary&action=edit&redlink=1 "FlatRedBall.IO.Csv.CsvFileManager.CsvDeserializeDictionary (page does not exist)"). If you are doing any form of assignment on an object in GlobalContent, and you are assigning to something that is not part of GlobalContent, then you can assign the property in GlobalContent **before** GlobalContent is initialized. GlobalContent will respect this assignment and will not overwrite it when initializing.
+Although we assigned one CSV in GlobalContent to another CSV in GlobalContent, this is not a requirement. The LevelInfo could be assigned from a completely different file using the [CsvFileManager](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager "FlatRedBall.IO.Csv.CsvFileManager"). This means that you could download a CSV from a server somewhere, and assign LevelInfo to a new Dictionary\<string, LevelInfo\>, then deserialize the file into that dictionary using [CsvDeserializeDictionary](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager.CsvDeserializeDictionary&action=edit&redlink=1 "FlatRedBall.IO.Csv.CsvFileManager.CsvDeserializeDictionary (page does not exist)"). If you are doing any form of assignment on an object in GlobalContent, and you are assigning to something that is not part of GlobalContent, then you can assign the property in GlobalContent **before** GlobalContent is initialized. GlobalContent will respect this assignment and will not overwrite it when initializing.

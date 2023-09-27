@@ -41,7 +41,7 @@ Add the following in Update (or CustomActivity if using Screens):
 
 The IsPointInside method requires that the Polygon has constructed its internal vertices. This means that you must either:
 
--   Wait for one frame so that the Polygon has a chance to render and have its internal vertices set properly. If your polygon is not rendered or part of the [ShapeManager](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.md "FlatRedBall.Math.Geometry.ShapeManager") then waiting one frame will not result in the internal vertices being updated.
--   Call [FlatRedBall.Math.Geometry.Polygon.ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.ForceUpdateDependencies.md "FlatRedBall.Math.Geometry.Polygon.ForceUpdateDependencies")
+-   Wait for one frame so that the Polygon has a chance to render and have its internal vertices set properly. If your polygon is not rendered or part of the [ShapeManager](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager "FlatRedBall.Math.Geometry.ShapeManager") then waiting one frame will not result in the internal vertices being updated.
+-   Call [FlatRedBall.Math.Geometry.Polygon.ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.ForceUpdateDependencies "FlatRedBall.Math.Geometry.Polygon.ForceUpdateDependencies")
 
 If neither of the above has happened, then the internal vertices will not be set and this function will always return false.

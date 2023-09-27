@@ -1,6 +1,6 @@
 ## Introduction
 
-Button is a standard clickable object with states for enabled (default), hover, pressed, and disabled. [![](/wp-content/uploads/2017/12/2017-12-13_07-05-39.gif.md)](/wp-content/uploads/2017/12/2017-12-13_07-05-39.gif.md)
+Button is a standard clickable object with states for enabled (default), hover, pressed, and disabled. [![](/wp-content/uploads/2017/12/2017-12-13_07-05-39.gif)](/wp-content/uploads/2017/12/2017-12-13_07-05-39.gif)
 
 ## Layout Requirements
 

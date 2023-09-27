@@ -20,7 +20,7 @@ At this point you will be able to simply set the Visible property on any instanc
 
 ## Visible vs. States
 
-While the Visible property is very useful, you may not always want to use it. There are times when States are preferred. If you are not familiar with States, you will want to read through [this tutorial on States](/frb/docs/index.php?title=Glue:Tutorials:States.md "Glue:Tutorials:States") first.
+While the Visible property is very useful, you may not always want to use it. There are times when States are preferred. If you are not familiar with States, you will want to read through [this tutorial on States](/frb/docs/index.php?title=Glue:Tutorials:States "Glue:Tutorials:States") first.
 
 Let's consider a situation where you have an Entity which we'll call GameResults. GameResults is used to tell the user whether Player 1 or Player 2 has won. Instead of using Text objects, you are using Sprites for the "Player 1 Wins!" and "Player 2 Wins!" display. Therefore, GameResults has three Objects (all Sprites):
 
@@ -36,7 +36,7 @@ All seems fine, but there is one small problem. When you set Visible = true; whe
 
 This can easily be solved using States. Since the GameResults needs to set some things to visible and some things to invisible, we'll want to use States to control visibility. The first thing we need to do is create variables to control the Visibility of the Entity as a whole as well as the Visibility of the PlayerOneWins and PlayerTwoWins Sprites:
 
-1.  Create three states: Invisible, PlayerOneWinsVisible, PlayerTwoVisible. Review [this tutorial on States](/frb/docs/index.php?title=Glue:Tutorials:States.md "Glue:Tutorials:States") for information on how to do this if you're not sure.
+1.  Create three states: Invisible, PlayerOneWinsVisible, PlayerTwoVisible. Review [this tutorial on States](/frb/docs/index.php?title=Glue:Tutorials:States "Glue:Tutorials:States") for information on how to do this if you're not sure.
 2.  Right-click on Variables and select "Add Variable"
 3.  Select "Visible" from the drop-down and click OK.
 4.  Right-click on Variables again and select "Add Variable"

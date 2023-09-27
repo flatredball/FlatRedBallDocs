@@ -1,8 +1,8 @@
 ## Introduction
 
-AnimationChainListSaves are the ["save"](/frb/docs/index.php?title=Tutorials:Save_Classes.md "Tutorials:Save Classes") object type for [AnimationChainLists](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChainList.md "FlatRedBall.Graphics.Animation.AnimationChainList"). AnimatiohChainListSaves can be used to create and load .achx files. For general information on common FlatRedBall types, see the [FlatRedBall File Types](/frb/docs/index.php?title=FlatRedBall_File_Types.md "FlatRedBall File Types") wiki entry.
+AnimationChainListSaves are the ["save"](/frb/docs/index.php?title=Tutorials:Save_Classes "Tutorials:Save Classes") object type for [AnimationChainLists](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChainList "FlatRedBall.Graphics.Animation.AnimationChainList"). AnimatiohChainListSaves can be used to create and load .achx files. For general information on common FlatRedBall types, see the [FlatRedBall File Types](/frb/docs/index.php?title=FlatRedBall_File_Types "FlatRedBall File Types") wiki entry.
 
-The AnimationChainListSave class is a standardized way to save an [AnimationChainList](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChainList.md "FlatRedBall.Graphics.Animation.AnimationChainList"). Using the AnimationChainListSave class has the following benefits:
+The AnimationChainListSave class is a standardized way to save an [AnimationChainList](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChainList "FlatRedBall.Graphics.Animation.AnimationChainList"). Using the AnimationChainListSave class has the following benefits:
 
 1.  Requires very little code to use
 2.  Resulting files are 100% compatible with the FRBDK or any other application that can load .achx files.
@@ -15,7 +15,7 @@ You can load load a AnimationChainListSave as follows:
 
 ## Saving a .achx file
 
-The following code saves a .achx file named MyAnimationChainList.achx. It assumes that animationChainList is a valid [AnimationChainList](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChainList.md "FlatRedBall.Graphics.Animation.AnimationChainList").
+The following code saves a .achx file named MyAnimationChainList.achx. It assumes that animationChainList is a valid [AnimationChainList](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChainList "FlatRedBall.Graphics.Animation.AnimationChainList").
 
 Add the following using statements:
 

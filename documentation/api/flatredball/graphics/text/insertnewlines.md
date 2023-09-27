@@ -26,4 +26,4 @@ Add the following to Initialize after initializing FlatRedBall:
 
 ## Additional Information
 
--   [FlatRedBall.Graphics.BitmapFont](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont.md "FlatRedBall.Graphics.BitmapFont") - See the BitmapFont class for determining the unit-size of your text.
+-   [FlatRedBall.Graphics.BitmapFont](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont "FlatRedBall.Graphics.BitmapFont") - See the BitmapFont class for determining the unit-size of your text.

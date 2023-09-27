@@ -26,7 +26,7 @@ Resolutions can be changed by calling SetResolution multiple times. For example,
 
 ## Camera behavior when calling SetResolution
 
-By default if SetResolution is called, the Camera will adjust its [DestinationRectangle](/frb/docs/index.php?title=FlatRedBall.Camera.DestinationRectangle.md "FlatRedBall.Camera.DestinationRectangle") according to the changed resolution. This automatic adjustment depends on the Camera's [split screen viewport settings](/frb/docs/index.php?title=FlatRedBall.Camera.SetSplitScreenViewport.md "FlatRedBall.Camera.SetSplitScreenViewport"). For more information, see the [SetSplitScreenViewport page](/frb/docs/index.php?title=FlatRedBall.Camera.SetSplitScreenViewport.md "FlatRedBall.Camera.SetSplitScreenViewport").
+By default if SetResolution is called, the Camera will adjust its [DestinationRectangle](/frb/docs/index.php?title=FlatRedBall.Camera.DestinationRectangle "FlatRedBall.Camera.DestinationRectangle") according to the changed resolution. This automatic adjustment depends on the Camera's [split screen viewport settings](/frb/docs/index.php?title=FlatRedBall.Camera.SetSplitScreenViewport "FlatRedBall.Camera.SetSplitScreenViewport"). For more information, see the [SetSplitScreenViewport page](/frb/docs/index.php?title=FlatRedBall.Camera.SetSplitScreenViewport "FlatRedBall.Camera.SetSplitScreenViewport").
 
 ## Setting resolution to current resolution
 

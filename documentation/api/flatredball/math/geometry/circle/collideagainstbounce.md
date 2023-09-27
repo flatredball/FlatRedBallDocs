@@ -97,7 +97,7 @@ Since CollideAgainstBounce returns a bool, your code can use the return value to
 
 ## Bouncing and Velocity
 
-The [Collision tutorial](/frb/docs/index.php?title=Tutorials:Introduction_to_Collision.md "Tutorials:Introduction to Collision") mentions:
+The [Collision tutorial](/frb/docs/index.php?title=Tutorials:Introduction_to_Collision "Tutorials:Introduction to Collision") mentions:
 
     "For bouncing to behave properly, we have to make sure that we're not controlling the involved Shapes' position or velocity"
 
@@ -114,7 +114,7 @@ In this case, someShape will have a velocity of 0 (assuming there is no other co
 
 ### Code Example
 
-The following example shows a problem with using CollideAgainstBounce and [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.Input.Mouse") control and how it can be corrected.
+The following example shows a problem with using CollideAgainstBounce and [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse") control and how it can be corrected.
 
 Add the following using statements:
 
@@ -172,4 +172,4 @@ Add the following in Update:
 
 ## CollideAgainstBounce for platformers
 
-The CollideAgainstBounce method is effective for performing bouncing physics, but it can also be used in situations where you'd like collision to reset velocity, such as in platformers. It's very common to have acceleration in platformers, and the easiest way to do this is to set the player [Entity](/frb/docs/index.php?title=Entity.md "Entity") to have a negative YAcceleration. However, if the player collides with the ground using CollideAgainstMove, the YAcceleration will continue to accumulate the YVelocity value. Eventually this value will build up to be so large that the player will fall through the level. Even if this doesn't occur, the player will show weird behavior if it walks off of a ledge. To solve this, you can simply use CollideAgainstBounce instead of CollideAgainstMove. An elasticity of 0 will result in the same behavior as CollideAgainstMove, but the velocity will be modified according to the velocity to solve accumulation errors. You can try this in the demo above by setting the elasticity argument to 0.
+The CollideAgainstBounce method is effective for performing bouncing physics, but it can also be used in situations where you'd like collision to reset velocity, such as in platformers. It's very common to have acceleration in platformers, and the easiest way to do this is to set the player [Entity](/frb/docs/index.php?title=Entity "Entity") to have a negative YAcceleration. However, if the player collides with the ground using CollideAgainstMove, the YAcceleration will continue to accumulate the YVelocity value. Eventually this value will build up to be so large that the player will fall through the level. Even if this doesn't occur, the player will show weird behavior if it walks off of a ledge. To solve this, you can simply use CollideAgainstBounce instead of CollideAgainstMove. An elasticity of 0 will result in the same behavior as CollideAgainstMove, but the velocity will be modified according to the velocity to solve accumulation errors. You can try this in the demo above by setting the elasticity argument to 0.

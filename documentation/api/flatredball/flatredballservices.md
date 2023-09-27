@@ -15,7 +15,7 @@ The following 3 lines are required to add the FlatRedBall Engine to an XNA templ
     // in Draw
     FlatRedBallServices.Draw();
 
-For more information see the tutorial for [Creating a FlatRedBall XNA Project](/frb/docs/index.php?title=Creating_a_FlatRedBall_XNA_Project.md "Creating a FlatRedBall XNA Project").
+For more information see the tutorial for [Creating a FlatRedBall XNA Project](/frb/docs/index.php?title=Creating_a_FlatRedBall_XNA_Project "Creating a FlatRedBall XNA Project").
 
 ## FlatRedBallServices.Load
 
@@ -23,7 +23,7 @@ The generic Load method standardizes the loading of common FlatRedBall objects. 
 
     FlatRedBallServices.Load<Type>(string objectName, string contentManagerName)
 
-The Load method can be used to load both FlatRedBall and XNA types. For more information on the Load method, see the [Load page](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.Load.md "FlatRedBall.FlatRedBallServices.Load"). For more information on the contentManagerName, see the [FlatRedBall Content Manager wiki entry](/frb/docs/index.php?title=FlatRedBall_Content_Manager.md "FlatRedBall Content Manager").
+The Load method can be used to load both FlatRedBall and XNA types. For more information on the Load method, see the [Load page](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.Load "FlatRedBall.FlatRedBallServices.Load"). For more information on the contentManagerName, see the [FlatRedBall Content Manager wiki entry](/frb/docs/index.php?title=FlatRedBall_Content_Manager "FlatRedBall Content Manager").
 
 ## Random Numbers
 

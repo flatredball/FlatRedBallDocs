@@ -4,4 +4,4 @@ The Implements IVisible property controls whether Glue automatically generates a
 
 ## What is "IVisible"?
 
-IVisible is a code interface defined in FlatRedBall. This interface primarily provides a Visible property. For information on working with IVisible in code, see the [IVisible page](/frb/docs/index.php?title=FlatRedBall.Graphics.IVisible.md "FlatRedBall.Graphics.IVisible").
+IVisible is a code interface defined in FlatRedBall. This interface primarily provides a Visible property. For information on working with IVisible in code, see the [IVisible page](/frb/docs/index.php?title=FlatRedBall.Graphics.IVisible "FlatRedBall.Graphics.IVisible").

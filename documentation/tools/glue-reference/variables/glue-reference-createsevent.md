@@ -8,7 +8,7 @@ To add an event to a variable:
 
 1.  Expand your Screen or Entity's **Objects** folder
 
-2.  Drag+drop the variable onto the Events folder [![](/wp-content/uploads/2016/01/10_06-31-21.gif.md)](/wp-content/uploads/2016/01/10_06-31-21.gif.md)
+2.  Drag+drop the variable onto the Events folder [![](/wp-content/uploads/2016/01/10_06-31-21.gif)](/wp-content/uploads/2016/01/10_06-31-21.gif)
 
 3.  Open your project in Visual Studio
 

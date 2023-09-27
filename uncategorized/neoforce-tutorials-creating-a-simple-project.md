@@ -1,6 +1,6 @@
 ## Creating a new project
 
-Once you have installed Neoforce Controls, the next step is to create an empty XNA project. Of course, Neoforce does not require FlatRedBall, but we will be using FlatRedBall in this tutorial. For more information on how to get FlatRedBall set up, check out the [FlatRedBall Tutorials](/frb/docs/index.php?title=Category:FlatRedBall_XNA_Tutorials.md "Category:FlatRedBall XNA Tutorials").
+Once you have installed Neoforce Controls, the next step is to create an empty XNA project. Of course, Neoforce does not require FlatRedBall, but we will be using FlatRedBall in this tutorial. For more information on how to get FlatRedBall set up, check out the [FlatRedBall Tutorials](/frb/docs/index.php?title=Category:FlatRedBall_XNA_Tutorials "Category:FlatRedBall XNA Tutorials").
 
 To create a new project, simply open Visual Studio, and select File-\>"New Project..." and select FlatRedBall XNA. Remember, at the time of this writing, Neoforce Controls only works with XNA, so you won't be able to use Neoforce Controls with FlatSilverBall or FlatRedBall MDX.
 

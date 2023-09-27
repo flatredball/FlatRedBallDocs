@@ -1,6 +1,6 @@
 ## Introduction
 
-The Camera is a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") therefore it has a Position variable which works the same as the [PositionedObject's Position variable](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md.Position "FlatRedBall.PositionedObject.Position"). The default position for Cameras is:
+The Camera is a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") therefore it has a Position variable which works the same as the [PositionedObject's Position variable](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Position "FlatRedBall.PositionedObject.Position"). The default position for Cameras is:
 
     X = 0
     Y = 0
@@ -47,7 +47,7 @@ Now the Camera will be centered on the map as shown in the following image:
 
 ## Z controls panning
 
-Changing the Z value of the Camera will make the camera move "forward" and "backward" in the world. This is a way to simulate zooming (technically "zooming" is accomplished by changing the Camera's [FieldOfView](/frb/docs/index.php?title=FlatRedBall.Camera.FieldOfView.md "FlatRedBall.Camera.FieldOfView")). This will only work on 3D cameras. To make objects appear smaller, you will want to increase the Z value of the Camera. For example:
+Changing the Z value of the Camera will make the camera move "forward" and "backward" in the world. This is a way to simulate zooming (technically "zooming" is accomplished by changing the Camera's [FieldOfView](/frb/docs/index.php?title=FlatRedBall.Camera.FieldOfView "FlatRedBall.Camera.FieldOfView")). This will only work on 3D cameras. To make objects appear smaller, you will want to increase the Z value of the Camera. For example:
 
     Camera.Main.Z = 50; // things will be smaller than default, because the default is 40
     Camera.Main.Z = 100; // even smaller

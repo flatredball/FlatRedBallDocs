@@ -2,7 +2,7 @@
 
 The InterpolateBetween method allows you to combine two states to create an in-between state. For example, consider a ProgressBar Entity that shows the player's progress on a quest. The progress percentage may be any number, and creating one state for each number (1%, 2%, 3%, 4%, etc) is tedious and impractical. The InterpolateBetween can simplify this by allowing two states to be combined (such as a EmptyState and FullState).
 
-See [this page](/frb/docs/index.php?title=Glue:Reference:States:InterpolateToState_vs_InterpolateBetween.md "Glue:Reference:States:InterpolateToState vs InterpolateBetween") to discuss the difference between InterpolateToState and InterpolateBetween.
+See [this page](/frb/docs/index.php?title=Glue:Reference:States:InterpolateToState_vs_InterpolateBetween "Glue:Reference:States:InterpolateToState vs InterpolateBetween") to discuss the difference between InterpolateToState and InterpolateBetween.
 
 ## Method Signature
 

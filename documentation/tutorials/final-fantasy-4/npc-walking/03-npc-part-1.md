@@ -35,11 +35,11 @@ Notice that we did not check the Top-Down movement type. The reason for this is 
 
 To add animations to our NPC:
 
-1.  Drag+drop the downloaded NpcAnimations.achx file onto the Npc's Files folder in Glue. Glue will automatically copy the .png file, so we only need to drop the .achx file. [![](/wp-content/uploads/2021/03/2021_March_21_155105.gif.md)](/wp-content/uploads/2021/03/2021_March_21_155105.gif.md)
+1.  Drag+drop the downloaded NpcAnimations.achx file onto the Npc's Files folder in Glue. Glue will automatically copy the .png file, so we only need to drop the .achx file. [![](/wp-content/uploads/2021/03/2021_March_21_155105.gif)](/wp-content/uploads/2021/03/2021_March_21_155105.gif)
 
 2.  Expand the Objects folder in Npc
 
-3.  Drag+drop the NpcAnimations.achx file onto SpriteInstance to set its animations [![](/wp-content/uploads/2021/03/2021_March_21_150407.gif.md)](/wp-content/uploads/2021/03/2021_March_21_150407.gif.md)
+3.  Drag+drop the NpcAnimations.achx file onto SpriteInstance to set its animations [![](/wp-content/uploads/2021/03/2021_March_21_150407.gif)](/wp-content/uploads/2021/03/2021_March_21_150407.gif)
 
 4.  Select **SpriteInstance**
 
@@ -51,7 +51,7 @@ To add animations to our NPC:
 
 ## Adding an Npc Instance to GameScreen
 
-Now we can add an Npc to our GameScreen. Drag+drop the Npc entity onto the GameScreen and Glue will add a single Npc to the NpcList. [![](/wp-content/uploads/2021/03/2021_March_21_155510.gif.md)](/wp-content/uploads/2021/03/2021_March_21_155510.gif.md) If you run the game you may notice the nenwly-created Npc1 behind the map.
+Now we can add an Npc to our GameScreen. Drag+drop the Npc entity onto the GameScreen and Glue will add a single Npc to the NpcList. [![](/wp-content/uploads/2021/03/2021_March_21_155510.gif)](/wp-content/uploads/2021/03/2021_March_21_155510.gif) If you run the game you may notice the nenwly-created Npc1 behind the map.
 
 ![](/media/2021-03-img_6057b7c9b8b0a.png)
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-The GetFirstAfter value can be used to get the index of the next object after a given position value. For example, if you are working with a group of [Circles](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle") and are implementing some spacial partitioning logic, you can use GetFirstAfter to find the index of the first [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle") in a list to begin your loop for partitioning.
+The GetFirstAfter value can be used to get the index of the next object after a given position value. For example, if you are working with a group of [Circles](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle") and are implementing some spacial partitioning logic, you can use GetFirstAfter to find the index of the first [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle") in a list to begin your loop for partitioning.
 
 ## Code Example
 

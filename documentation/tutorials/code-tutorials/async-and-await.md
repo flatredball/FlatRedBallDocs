@@ -58,4 +58,4 @@ FlatRedBall eliminates any async calls which have yet to execute when transitio
         }
     }
 
-This code might produce the following result: [![](/wp-content/uploads/2021/09/22_18-20-58.gif.md)](/wp-content/uploads/2021/09/22_18-20-58.gif.md) Notice that although the code has a while(true) statement, the code does not block the execution of the normal game loop. However, a loop like this would normally never end, but if we move to the next screen the loop will end. In short, code can be safely written without considering whether the screen has changed when using await calls.
+This code might produce the following result: [![](/wp-content/uploads/2021/09/22_18-20-58.gif)](/wp-content/uploads/2021/09/22_18-20-58.gif) Notice that although the code has a while(true) statement, the code does not block the execution of the normal game loop. However, a loop like this would normally never end, but if we move to the next screen the loop will end. In short, code can be safely written without considering whether the screen has changed when using await calls.

@@ -19,7 +19,7 @@ The Polygon class provides the CreateRectangle  shortcut methods for creating c
     // To have the Polygon drawn and managed, add it to the ShapeManager
     ShapeManager.AddPolygon(rectangle);
 
-You can also assign the Points object. **For more information, see the [Points page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.Points.md "FlatRedBall.Math.Geometry.Polygon.Points").**
+You can also assign the Points object. **For more information, see the [Points page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.Points "FlatRedBall.Math.Geometry.Polygon.Points").**
 
 ## Creating a Polygon From Points
 
@@ -44,11 +44,11 @@ ShapeManager.AddPolygon(polygon);
 
 ## Polygon as a PositionedObject
 
-The Polygon class inherits from the [FlatRedBall.PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") class. See the [FlatRedBall.PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") wiki entry for editing properties.
+The Polygon class inherits from the [FlatRedBall.PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") class. See the [FlatRedBall.PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") wiki entry for editing properties.
 
 ## Polygon Collision
 
-The Polygon class provides collision methods and properties to simplify common game programming tasks. The following code creates two Polygons which turn red when they collide. Note that this uses input code. For information on using FlatRedBall input, see [FlatRedBall.Input.InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager.md "FlatRedBall.Input.InputManager").
+The Polygon class provides collision methods and properties to simplify common game programming tasks. The following code creates two Polygons which turn red when they collide. Note that this uses input code. For information on using FlatRedBall input, see [FlatRedBall.Input.InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager "FlatRedBall.Input.InputManager").
 
      // At class scope:
      Polygon firstPolygon;
@@ -85,6 +85,6 @@ This method repositions a Polygon or its TopParent if it has one, changes the La
 
 ## Additional Information
 
--   [FlatRedBall.Math.Geometry.Polygon:Thin Polygon Problem](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon:Thin_Polygon_Problem.md "FlatRedBall.Math.Geometry.Polygon:Thin Polygon Problem")
+-   [FlatRedBall.Math.Geometry.Polygon:Thin Polygon Problem](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon:Thin_Polygon_Problem "FlatRedBall.Math.Geometry.Polygon:Thin Polygon Problem")
 
 \[subpages depth="1"\]

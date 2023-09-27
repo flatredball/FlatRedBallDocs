@@ -1,6 +1,6 @@
 ## Tutorial
 
-See [SpriteFrame Tutorial](/frb/docs/index.php?title=SpriteFrame_Tutorial.md "SpriteFrame Tutorial")
+See [SpriteFrame Tutorial](/frb/docs/index.php?title=SpriteFrame_Tutorial "SpriteFrame Tutorial")
 
 ## Creating a SpriteFrame in code
 
@@ -11,7 +11,7 @@ The following code shows you how to create a SpriteFrame purely in code:
 
 ## SpriteFrames and Layers
 
-Just like [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and [Text objects](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text"), SpriteFrames can be added to [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer.md "FlatRedBall.Graphics.Layer"). The following code creates two SpriteFrames. One is left at its default Z location of 0 while the other is placed further in the distance. Since the SpriteFrame which is further in the distance is placed on a [Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer.md "FlatRedBall.Graphics.Layer") it will still be drawn on top of the SpriteFrame that is closer to the [Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera").
+Just like [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and [Text objects](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text"), SpriteFrames can be added to [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer"). The following code creates two SpriteFrames. One is left at its default Z location of 0 while the other is placed further in the distance. Since the SpriteFrame which is further in the distance is placed on a [Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer") it will still be drawn on top of the SpriteFrame that is closer to the [Camera](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera").
 
 Add the following using statements:
 

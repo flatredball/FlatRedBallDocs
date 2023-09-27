@@ -56,7 +56,7 @@ This will create a new platformer entity with a rich set of default functionalit
 
 Now that we have the **MainCharater** set up with platfomer control values, we can add it to our **GameScreen** by drag+dropping the **MainCharacter** onto the **GameScreen** node. We should already have a **MainCharacterList** in our **GameScreen** so the newly-added object will be inside of that list after the drag+drop.
 
-[![](/wp-content/uploads/2018/01/2021_February_20_220001.gif.md)](/wp-content/uploads/2018/01/2021_February_20_220001.gif.md)
+[![](/wp-content/uploads/2018/01/2021_February_20_220001.gif)](/wp-content/uploads/2018/01/2021_February_20_220001.gif)
 
 ## Adding a CameraControllingEntity Instance (Optional)
 

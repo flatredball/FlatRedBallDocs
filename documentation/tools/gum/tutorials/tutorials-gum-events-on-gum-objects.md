@@ -12,7 +12,7 @@ Although this tutorial is focused on Gum objects, the steps necessary for adding
 
 ## Importing a NineSliceButton
 
-This tutorial will use a NineSliceButton, which can be imported from this file (right-click and save the file): [NineSliceButton.gucx](/content/Tutorials/Gum/NineSliceButton.gucx.md) To import this file:
+This tutorial will use a NineSliceButton, which can be imported from this file (right-click and save the file): [NineSliceButton.gucx](/content/Tutorials/Gum/NineSliceButton.gucx) To import this file:
 
 1.  Save the file to disk somewhere - remember where you saved it.
 
@@ -54,7 +54,7 @@ Now that you have a NineSliceButton component, you can add it to your Gum screen
 1.  Select the **MainMenuGum** screen
 2.  Drag+drop the **NineSliceButton** into the edit window of Gum, or onto the MainMenuScreen in the tree view
 
-[![](/wp-content/uploads/2016/01/07_06-21-22.gif.md)](/wp-content/uploads/2016/01/07_06-21-22.gif.md)
+[![](/wp-content/uploads/2016/01/07_06-21-22.gif)](/wp-content/uploads/2016/01/07_06-21-22.gif)
 
 ## Accessing Gum Objects in Your Game
 
@@ -71,7 +71,7 @@ You can subscribe to the Click event by creating a method such as HandleClick, 
 
 If you run the game now and click on the button you will notice that it gets wider every time it is clicked. Of course, this is not a very practical example. In a real game, you could move to the next screen or switch the logical or visual state of your game elements as appropriate.
 
-**Where is my mouse cursor?** FlatRedBall projects have the mouse cursor invisible by default. To make the mouse cursor visible, see this page: [Microsoft.Xna.Framework.Game#Showing_Cursor](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game#Showing_Cursor.md "Microsoft.Xna.Framework.Game")
+**Where is my mouse cursor?** FlatRedBall projects have the mouse cursor invisible by default. To make the mouse cursor visible, see this page: [Microsoft.Xna.Framework.Game#Showing_Cursor](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game#Showing_Cursor "Microsoft.Xna.Framework.Game")
 
 ## Diagnosing Problems
 

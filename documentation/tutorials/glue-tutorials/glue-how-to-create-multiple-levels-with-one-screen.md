@@ -116,7 +116,7 @@ At this point the Glue project is set up in such a way that it is ready for code
          VisibleRepresentation.AddToManagers();
      }
 
-This method assumes that it will be passed a name such as "Forest" which will then used to load the Scene and ShapeCollection by appending "Scene" and "Collision". If you have additional files you want to load, you can load them here as well. Keep in mind that file names are very important. The GetMember method is case-sensitive. Therefore if you looked for "desertScene" but your file was actually called "DesertScene" then GetMember would not be able to find the file. As mentioned in the comments, we call AddToManagers to so that the Scene can be rendered. For more information see the [AddToManagers page](/frb/docs/index.php?title=FlatRedBall.Scene.AddToManagers.md "FlatRedBall.Scene.AddToManagers"). As mentioned above, you will want to use the Collision object in your game logic. If you have a Collision ShapeCollection in your Screen then you will likely be performing collision between Entities and this ShapeCollection. Therefore in your CustomActivity you will be using this as follows:
+This method assumes that it will be passed a name such as "Forest" which will then used to load the Scene and ShapeCollection by appending "Scene" and "Collision". If you have additional files you want to load, you can load them here as well. Keep in mind that file names are very important. The GetMember method is case-sensitive. Therefore if you looked for "desertScene" but your file was actually called "DesertScene" then GetMember would not be able to find the file. As mentioned in the comments, we call AddToManagers to so that the Scene can be rendered. For more information see the [AddToManagers page](/frb/docs/index.php?title=FlatRedBall.Scene.AddToManagers "FlatRedBall.Scene.AddToManagers"). As mentioned above, you will want to use the Collision object in your game logic. If you have a Collision ShapeCollection in your Screen then you will likely be performing collision between Entities and this ShapeCollection. Therefore in your CustomActivity you will be using this as follows:
 
     // assuming you have an Entity called Player
     if(Player.Collision.CollideAgainstMove(this.Collision, 0, 1))
@@ -143,7 +143,7 @@ But this means that whenever you run the game, you'll always play the "Desert" l
        set;
     }
 
-**What is GlobalData?** GlobalData is a way to store information at runtime which is not associated with a particular Screen or Entity, or which should exist despite Screens and Entities being destroyed. If you're unfamiliar with GlobalData, see [this page](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access#GlobalData.md "Glue:Tutorials:Proper Information Access").
+**What is GlobalData?** GlobalData is a way to store information at runtime which is not associated with a particular Screen or Entity, or which should exist despite Screens and Entities being destroyed. If you're unfamiliar with GlobalData, see [this page](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access#GlobalData "Glue:Tutorials:Proper Information Access").
 
 Now let's add an instance of CurrentLevelInfo to GlobalData.cs
 

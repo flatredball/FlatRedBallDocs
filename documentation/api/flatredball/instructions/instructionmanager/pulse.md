@@ -1,10 +1,10 @@
 ## Introduction
 
-The Pulse method creates a recurring set of instructions used to change the argument [IScalable's](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.IScalable.md "FlatRedBall.Math.Geometry.IScalable") Scale and Scale Velocity. The result is a pulsing effect.
+The Pulse method creates a recurring set of instructions used to change the argument [IScalable's](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.IScalable "FlatRedBall.Math.Geometry.IScalable") Scale and Scale Velocity. The result is a pulsing effect.
 
 ## Code Example
 
-The following creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") which pulses using a set of defined parameters.
+The following creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") which pulses using a set of defined parameters.
 
 Add the following using statements:
 

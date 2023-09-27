@@ -17,13 +17,13 @@ To add a .tmx file to an entity, follow these steps:
 
 2.  Create an Entity
 
-3.  Drag+drop the .tmx file onto the entity [![](/wp-content/uploads/2017/09/2017-09-26_17-28-57.gif.md)](/wp-content/uploads/2017/09/2017-09-26_17-28-57.gif.md)
+3.  Drag+drop the .tmx file onto the entity [![](/wp-content/uploads/2017/09/2017-09-26_17-28-57.gif)](/wp-content/uploads/2017/09/2017-09-26_17-28-57.gif)
 
 4.  Drag+drop the file from inside the entity's **Files** folder onto the entity's **Objects** folder
 
 5.  Select **Entire File (Layered TileMap)** in the **Source Name** dropdown
 
-6.  Click OK [![](/wp-content/uploads/2017/09/2017-09-26_17-33-51.gif.md)](/wp-content/uploads/2017/09/2017-09-26_17-33-51.gif.md)
+6.  Click OK [![](/wp-content/uploads/2017/09/2017-09-26_17-33-51.gif)](/wp-content/uploads/2017/09/2017-09-26_17-33-51.gif)
 
 The entity will now display the contents of the .tmx file when included in a screen. ![](/media/2017-09-img_59cae57528f71.png)
 
@@ -45,7 +45,7 @@ private void CustomActivity()
 }
 ```
 
-[![](/wp-content/uploads/2017/09/2017-09-26_17-49-07.gif.md)](/wp-content/uploads/2017/09/2017-09-26_17-49-07.gif.md) We can center the tiles on the center of the entity by following these steps:
+[![](/wp-content/uploads/2017/09/2017-09-26_17-49-07.gif)](/wp-content/uploads/2017/09/2017-09-26_17-49-07.gif) We can center the tiles on the center of the entity by following these steps:
 
 1.  Open the .tmx file in Tiled
 
@@ -66,7 +66,7 @@ private void CustomActivity()
     }
     ```
 
-Now the center of the tilemap will align with the center of the entity. [![](/wp-content/uploads/2017/09/2017-09-26_18-04-51.gif.md)](/wp-content/uploads/2017/09/2017-09-26_18-04-51.gif.md)
+Now the center of the tilemap will align with the center of the entity. [![](/wp-content/uploads/2017/09/2017-09-26_18-04-51.gif)](/wp-content/uploads/2017/09/2017-09-26_18-04-51.gif)
 
 ## Optionally Loading .tmx Files
 

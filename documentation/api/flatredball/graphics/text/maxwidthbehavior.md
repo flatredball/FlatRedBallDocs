@@ -1,6 +1,6 @@
 ## Introduction
 
-The MaxWidthBehavior controls how the Text object displays its [DisplayText](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.DisplayText.md "FlatRedBall.Graphics.Text.DisplayText") when it is longer than the [MaxWidth](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.MaxWidth.md "FlatRedBall.Graphics.Text.MaxWidth"). MaxWidthBehavior is an enumeration. Available values are:
+The MaxWidthBehavior controls how the Text object displays its [DisplayText](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.DisplayText "FlatRedBall.Graphics.Text.DisplayText") when it is longer than the [MaxWidth](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.MaxWidth "FlatRedBall.Graphics.Text.MaxWidth"). MaxWidthBehavior is an enumeration. Available values are:
 
 -   Chop
 -   Wrap

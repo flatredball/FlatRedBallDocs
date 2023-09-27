@@ -35,4 +35,4 @@ Since ScaleBy modifies the points on a Polygon, the Polygon has no built-in way 
 
 ## BoundingRadius
 
-ScaleBy will modify the [BoundingRadius](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.BoundingRadius&action=edit&redlink=1.md "FlatRedBall.Math.Geometry.Polygon.BoundingRadius (page does not exist)") of the calling Polygon is used internally for collisions. There is no need to call [OptimizeRadius](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.OptimizeRadius.md "FlatRedBall.Math.Geometry.Polygon.OptimizeRadius") after calling ScaleBy.
+ScaleBy will modify the [BoundingRadius](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.BoundingRadius&action=edit&redlink=1 "FlatRedBall.Math.Geometry.Polygon.BoundingRadius (page does not exist)") of the calling Polygon is used internally for collisions. There is no need to call [OptimizeRadius](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.OptimizeRadius "FlatRedBall.Math.Geometry.Polygon.OptimizeRadius") after calling ScaleBy.

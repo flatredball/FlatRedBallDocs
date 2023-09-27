@@ -2,10 +2,10 @@
 
 The Camera object inherits from the PositionedObject class. Therefore, it can be rotated just like any other PositionedObject. For information on using rotation values on a PositionedObject in general, see the following pages:
 
--   [FlatRedBall.PositionedObject.RotationX](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationX&action=edit&redlink=1.md "FlatRedBall.PositionedObject.RotationX (page does not exist)")
--   [FlatRedBall.PositionedObject.RotationY](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationY&action=edit&redlink=1.md "FlatRedBall.PositionedObject.RotationY (page does not exist)")
--   [FlatRedBall.PositionedObject.RotationZ](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationZ&action=edit&redlink=1.md "FlatRedBall.PositionedObject.RotationZ (page does not exist)")
--   [FlatRedBall.PositionedObject.RotationMatrix](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationMatrix&action=edit&redlink=1.md "FlatRedBall.PositionedObject.RotationMatrix (page does not exist)")
+-   [FlatRedBall.PositionedObject.RotationX](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationX&action=edit&redlink=1 "FlatRedBall.PositionedObject.RotationX (page does not exist)")
+-   [FlatRedBall.PositionedObject.RotationY](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationY&action=edit&redlink=1 "FlatRedBall.PositionedObject.RotationY (page does not exist)")
+-   [FlatRedBall.PositionedObject.RotationZ](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationZ&action=edit&redlink=1 "FlatRedBall.PositionedObject.RotationZ (page does not exist)")
+-   [FlatRedBall.PositionedObject.RotationMatrix](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RotationMatrix&action=edit&redlink=1 "FlatRedBall.PositionedObject.RotationMatrix (page does not exist)")
 
 By default the Camera will attempt to orient itself so that "up" is the Y vector (0,1,0). For more information see the [UpVector page](/documentation/api/flatredball/flatredball-camera/flatredball-camera-upvector.md).
 

@@ -23,7 +23,7 @@ Next, we can handle the event in code. In this case we'll use an async call to s
         AxisAlignedRectangleInstance.Color = colorBefore;
     }
 
-Now the Enemy flashes white when taking damage. Note that to test this you may want to disable the enemy shooting logic added in the previous tutorial. Also, you may want to adjust the health of the enemy to take more hits. [![](/wp-content/uploads/2023/01/11_08-19-19.gif.md)](/wp-content/uploads/2023/01/11_08-19-19.gif.md) The purpose of ReactToDamageDealt is to react to damage visually, or to perform other game logic outside of typical IDamageable logic. Therefore, ReactToDamageDealt should not:
+Now the Enemy flashes white when taking damage. Note that to test this you may want to disable the enemy shooting logic added in the previous tutorial. Also, you may want to adjust the health of the enemy to take more hits. [![](/wp-content/uploads/2023/01/11_08-19-19.gif)](/wp-content/uploads/2023/01/11_08-19-19.gif) The purpose of ReactToDamageDealt is to react to damage visually, or to perform other game logic outside of typical IDamageable logic. Therefore, ReactToDamageDealt should not:
 
 -   Kill the damage receiver unless there are special circumstances
 -   Deal more damage to the damage receiver
@@ -99,7 +99,7 @@ Next, we'll modify the code that creates Enemies in GameScreen.cs to create ice 
         }
     }
 
-Now we can create fire enemies and ice bullets by right clicking the mouse and pressing the left Alt key, respectively. [![](/wp-content/uploads/2023/01/11_08-40-53.gif.md)](/wp-content/uploads/2023/01/11_08-40-53.gif.md) Now that we have two different types of enemies and two different types of bullets, we can write logic in the Enemy's ModifyDamageDealt  event in response to the elements:  
+Now we can create fire enemies and ice bullets by right clicking the mouse and pressing the left Alt key, respectively. [![](/wp-content/uploads/2023/01/11_08-40-53.gif)](/wp-content/uploads/2023/01/11_08-40-53.gif) Now that we have two different types of enemies and two different types of bullets, we can write logic in the Enemy's ModifyDamageDealt  event in response to the elements:  
 
     private void CustomInitialize()
     {
@@ -120,7 +120,7 @@ Now we can create fire enemies and ice bullets by right clicking the mouse and p
         return damage;
     }
 
-Now ice enemies die after 5 hits instead of 10 since each bullet will do an effective 20 points of damage. [![](/wp-content/uploads/2023/01/11_08-54-38.gif.md)](/wp-content/uploads/2023/01/11_08-54-38.gif.md)
+Now ice enemies die after 5 hits instead of 10 since each bullet will do an effective 20 points of damage. [![](/wp-content/uploads/2023/01/11_08-54-38.gif)](/wp-content/uploads/2023/01/11_08-54-38.gif)
 
 ## Additional Events
 

@@ -21,7 +21,7 @@ To test damage dealing, we need instances of entities which collide with one-ano
 
     }
 
-Now the Player creates bullets when the Space key is pressed. [![](/wp-content/uploads/2023/01/11_06-32-40.gif.md)](/wp-content/uploads/2023/01/11_06-32-40.gif.md)
+Now the Player creates bullets when the Space key is pressed. [![](/wp-content/uploads/2023/01/11_06-32-40.gif)](/wp-content/uploads/2023/01/11_06-32-40.gif)
 
 ## Adding Enemies
 
@@ -37,7 +37,7 @@ Next we'll create Enemy instances to shoot. To do this, add the following code t
         }
     }
 
-Now we can click on the screen with the mouse to add enemies, and we can shoot these enemies with bullets. [![](/wp-content/uploads/2023/01/11_06-37-00.gif.md)](/wp-content/uploads/2023/01/11_06-37-00.gif.md)
+Now we can click on the screen with the mouse to add enemies, and we can shoot these enemies with bullets. [![](/wp-content/uploads/2023/01/11_06-37-00.gif)](/wp-content/uploads/2023/01/11_06-37-00.gif)
 
 ## Destroy Bullet on Damage
 
@@ -57,7 +57,7 @@ The EnemyVsBullet collision relationship also has the **Deal Damage in Generated
 4.  Health is subtracted from the enemy.
 5.  The enemy is killed (Destroy is called) if the enemy has less than or equal to 0 health
 
-We can see the this logic work by shooting an enemy enough times to kill it - by default this is 10 shots. [![](/wp-content/uploads/2023/01/11_06-48-10.gif.md)](/wp-content/uploads/2023/01/11_06-48-10.gif.md) The default variables used to deal damage and kill the enemy are defined in the Entity and Bullet entities. All entities created with the IDamageable interface default to have 100 health.
+We can see the this logic work by shooting an enemy enough times to kill it - by default this is 10 shots. [![](/wp-content/uploads/2023/01/11_06-48-10.gif)](/wp-content/uploads/2023/01/11_06-48-10.gif) The default variables used to deal damage and kill the enemy are defined in the Entity and Bullet entities. All entities created with the IDamageable interface default to have 100 health.
 
 ![](/media/2023-01-img_63bebedcd0d20.png)
 
@@ -65,11 +65,11 @@ All Entities created with the IDamageArea interface default to dealing 10 damage
 
 ![](/media/2023-01-img_63bebf1ca3662.png)
 
-If we change these values we can change how many shots it takes to kill an enemy. For example, if the enemy is changed to have 20 health, it only takes 2 shots to kill each enemy. [![](/wp-content/uploads/2023/01/11_06-54-40.gif.md)](/wp-content/uploads/2023/01/11_06-54-40.gif.md)
+If we change these values we can change how many shots it takes to kill an enemy. For example, if the enemy is changed to have 20 health, it only takes 2 shots to kill each enemy. [![](/wp-content/uploads/2023/01/11_06-54-40.gif)](/wp-content/uploads/2023/01/11_06-54-40.gif)
 
 ## Team Index in Code
 
-As mentioned before, the collision relationship EnemyVsBullet results in damage dealing code because the Enemy and Bullet have different team indexes. Our bullets have a default Team Index of 0, so they will not deal damage to the Player even if a PlayerVsBullet collision relationship exists. To show this, we'll create a collision relationship by dragging PlayerList onto BulletList. [![](/wp-content/uploads/2023/01/11_07-00-26.gif.md)](/wp-content/uploads/2023/01/11_07-00-26.gif.md) Even with this collision relationship, Bullets which are fired by the Player do not immediately disappear due to collision. [![](/wp-content/uploads/2023/01/11_07-02-07.gif.md)](/wp-content/uploads/2023/01/11_07-02-07.gif.md) We may want enemies to be able to shoot bullets at the player. These bullets should have the Enemy Team Index (a value of 1) which can be assigned in code. To do this, add the following code to Enemy.cs CustomActivity:
+As mentioned before, the collision relationship EnemyVsBullet results in damage dealing code because the Enemy and Bullet have different team indexes. Our bullets have a default Team Index of 0, so they will not deal damage to the Player even if a PlayerVsBullet collision relationship exists. To show this, we'll create a collision relationship by dragging PlayerList onto BulletList. [![](/wp-content/uploads/2023/01/11_07-00-26.gif)](/wp-content/uploads/2023/01/11_07-00-26.gif) Even with this collision relationship, Bullets which are fired by the Player do not immediately disappear due to collision. [![](/wp-content/uploads/2023/01/11_07-02-07.gif)](/wp-content/uploads/2023/01/11_07-02-07.gif) We may want enemies to be able to shoot bullets at the player. These bullets should have the Enemy Team Index (a value of 1) which can be assigned in code. To do this, add the following code to Enemy.cs CustomActivity:
 
     double lastTimeShot;
     private void CustomActivity()
@@ -84,7 +84,7 @@ As mentioned before, the collision relationship EnemyVsBullet results in damage 
 
     }
 
-Now each Enemy shoots a bullet every 2 seconds which travels downward and which shares the same Team Index as the Enemy. These bullets now collide with the Player, deal damage to the Player, and ultimately kill the Player once the Player's health has dropped to 0. [![](/wp-content/uploads/2023/01/11_07-07-18.gif.md)](/wp-content/uploads/2023/01/11_07-07-18.gif.md) When developing a full game, keep the following in mind:
+Now each Enemy shoots a bullet every 2 seconds which travels downward and which shares the same Team Index as the Enemy. These bullets now collide with the Player, deal damage to the Player, and ultimately kill the Player once the Player's health has dropped to 0. [![](/wp-content/uploads/2023/01/11_07-07-18.gif)](/wp-content/uploads/2023/01/11_07-07-18.gif) When developing a full game, keep the following in mind:
 
 -   Values like MaxHealth, TeamIndex, and DamageToDeal can all be set in the FlatRedBall Editor at the entity level. These should be used for useful defaults, but they can all be assigned in code.
 -   Variables to control logic such as how frequently enemies shoot and bullet speed should be controlled through variables in the FlatRedBall Editor. These values were hardcoded above to keep the tutorial short, but do not reflect how full games should be structured.

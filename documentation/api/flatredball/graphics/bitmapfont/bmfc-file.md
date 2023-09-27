@@ -7,7 +7,7 @@ The BMFC file format (which stands for "bitmap font configuration") is a file th
 A .bmfc file can be created in the Bitmap Font Generator. To create a .bmfc file:
 
 1.  Open the Bitmap Font Generator
-2.  Set up a bitmap font - for more information see [this page](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont.md "FlatRedBall.Graphics.BitmapFont")
+2.  Set up a bitmap font - for more information see [this page](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont "FlatRedBall.Graphics.BitmapFont")
 3.  Click Options-\>"Save configuration as..."
 4.  Enter a name for the file and click OK
 

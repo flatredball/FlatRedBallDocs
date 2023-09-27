@@ -39,4 +39,4 @@ The values above specify that the build tool accepts a file with a "dest" extens
 
 ## Additional Information
 
--   [How to add the Bitmap Font Generator as a File Build Tool](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont:Bmfc_File.md "FlatRedBall.Graphics.BitmapFont:Bmfc File")
+-   [How to add the Bitmap Font Generator as a File Build Tool](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont:Bmfc_File "FlatRedBall.Graphics.BitmapFont:Bmfc File")

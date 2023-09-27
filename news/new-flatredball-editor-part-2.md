@@ -6,7 +6,7 @@ The Game window now has a new toolbar to make it easier to control and run your 
 
 ![](/media/2021-12-img_61b53f20525bf.png)
 
-One click and your game is running in edit mode: [![](/wp-content/uploads/2021/12/11_17-16-11.gif.md)](/wp-content/uploads/2021/12/11_17-16-11.gif.md) The toolbar icons have all been replaced to be easier to understand and to have a consistent styling. When the game switches to play mode, the toolbar reacts to display more icons for control: [![](/wp-content/uploads/2021/12/11_17-18-42.gif.md)](/wp-content/uploads/2021/12/11_17-18-42.gif.md)
+One click and your game is running in edit mode: [![](/wp-content/uploads/2021/12/11_17-16-11.gif)](/wp-content/uploads/2021/12/11_17-16-11.gif) The toolbar icons have all been replaced to be easier to understand and to have a consistent styling. When the game switches to play mode, the toolbar reacts to display more icons for control: [![](/wp-content/uploads/2021/12/11_17-18-42.gif)](/wp-content/uploads/2021/12/11_17-18-42.gif)
 
 ## Updated Explorer
 
@@ -14,7 +14,7 @@ The Explorer tab has been updated to match the styling of the rest of the app. N
 
 ![](/media/2021-12-img_61b5403db30a9.png)
 
-The Explorer tab also includes new functionality. The **Collapse All** button makes it easier to find entities and screens in a large project: [![](/wp-content/uploads/2021/12/11_17-21-27.gif.md)](/wp-content/uploads/2021/12/11_17-21-27.gif.md) The Search text box provides real-time searches, keeping the hierarchy of your project: [![](/wp-content/uploads/2021/12/11_17-22-14.gif.md)](/wp-content/uploads/2021/12/11_17-22-14.gif.md) Filter prefixes let you find what you're looking for quickly. Just prefix your search with one of the following to find a certain type of content:
+The Explorer tab also includes new functionality. The **Collapse All** button makes it easier to find entities and screens in a large project: [![](/wp-content/uploads/2021/12/11_17-21-27.gif)](/wp-content/uploads/2021/12/11_17-21-27.gif) The Search text box provides real-time searches, keeping the hierarchy of your project: [![](/wp-content/uploads/2021/12/11_17-22-14.gif)](/wp-content/uploads/2021/12/11_17-22-14.gif) Filter prefixes let you find what you're looking for quickly. Just prefix your search with one of the following to find a certain type of content:
 
 -   f - file
 -   e - entity
@@ -22,7 +22,7 @@ The Explorer tab also includes new functionality. The **Collapse All** button ma
 -   o - object
 -   v - variable
 
-[![](/wp-content/uploads/2021/12/11_17-23-34.gif.md)](/wp-content/uploads/2021/12/11_17-23-34.gif.md)
+[![](/wp-content/uploads/2021/12/11_17-23-34.gif)](/wp-content/uploads/2021/12/11_17-23-34.gif)
 
 ## Wizard Changes
 

@@ -122,7 +122,7 @@ This example shows how to create a dark overlay on your game, with light sprites
       }
     }
 
-[![](/wp-content/uploads/2020/12/2020_December_18_113601.gif.md)](/wp-content/uploads/2020/12/2020_December_18_113601.gif.md)  
+[![](/wp-content/uploads/2020/12/2020_December_18_113601.gif)](/wp-content/uploads/2020/12/2020_December_18_113601.gif)  
 
 ## Refresh
 

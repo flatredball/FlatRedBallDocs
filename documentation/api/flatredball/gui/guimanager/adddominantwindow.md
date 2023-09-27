@@ -32,4 +32,4 @@ The hiding and showing of the popup is controlled as shown in the following code
         
     }
 
-[![](/wp-content/uploads/2016/01/23_09-19-49.gif.md)](/wp-content/uploads/2016/01/23_09-19-49.gif.md)  
+[![](/wp-content/uploads/2016/01/23_09-19-49.gif)](/wp-content/uploads/2016/01/23_09-19-49.gif)  

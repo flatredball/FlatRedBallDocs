@@ -34,7 +34,7 @@ Each polygon is made of an ordered list of points. These points can be moved and
 To move a point:
 
 -   Select a Polygon. Its points will be represented by small squares.
--   Select the Move icon in the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1.md "Gui:Tools Window (page does not exist)").
+-   Select the Move icon in the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1 "Gui:Tools Window (page does not exist)").
 -   Click and drag one of the points on the Polygon. It will change color and move with the mouse as long as the mouse button is held down.
 
 ### Deleting Points
@@ -50,7 +50,7 @@ To delete a point:
 To add a point:
 
 -   Select a Polygon. Its points will be represented by small squares.
--   Click the Add Point icon in the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1.md "Gui:Tools Window (page does not exist)").
+-   Click the Add Point icon in the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1 "Gui:Tools Window (page does not exist)").
 -   A blue triangle will appear on the polygon which will move in response to the mouse movement.
 -   Click the mouse to add a point. A new box will appear representing the newly-added point. You can continue to add points.
--   To stop adding points deselect the Add Point icon in the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1.md "Gui:Tools Window (page does not exist)") or select a different action in the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1.md "Gui:Tools Window (page does not exist)").
+-   To stop adding points deselect the Add Point icon in the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1 "Gui:Tools Window (page does not exist)") or select a different action in the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1 "Gui:Tools Window (page does not exist)").

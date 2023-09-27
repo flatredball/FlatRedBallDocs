@@ -4,7 +4,7 @@ Base class for class used in default XNA Template and FlatRedBall XNA Template.
 
 ## Accessing Game
 
-The Game class holds many useful methods and properties which are often needed deep inside game logic code where the Game reference is not available. The [FlatRedBallServices class](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.md "FlatRedBall.FlatRedBallServices") provides a reference to the game class:
+The Game class holds many useful methods and properties which are often needed deep inside game logic code where the Game reference is not available. The [FlatRedBallServices class](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices "FlatRedBall.FlatRedBallServices") provides a reference to the game class:
 
     FlatRedBallServices.Game
 
@@ -16,7 +16,7 @@ Since FlatRedBallServices is static this can be used anywhere in code.
 
 ## Setting Resolution
 
-The resolution of FlatRedBall is controlled through the [GraphicsOptions object](/frb/docs/index.php?title=FlatRedBall.Graphics.GraphicsOptions.md "FlatRedBall.Graphics.GraphicsOptions"). For more informatin, see the [GraphicsOptions page.](/frb/docs/index.php?title=FlatRedBall.Graphics.GraphicsOptions.md "FlatRedBall.Graphics.GraphicsOptions")
+The resolution of FlatRedBall is controlled through the [GraphicsOptions object](/frb/docs/index.php?title=FlatRedBall.Graphics.GraphicsOptions "FlatRedBall.Graphics.GraphicsOptions"). For more informatin, see the [GraphicsOptions page.](/frb/docs/index.php?title=FlatRedBall.Graphics.GraphicsOptions "FlatRedBall.Graphics.GraphicsOptions")
 
 ## Resizing
 
@@ -65,15 +65,15 @@ For more information, see the [IsFixedTimeStep](/documentation/api/microsoft-xna
 
 ## Additional Information
 
--   [Resizing the Game Window for Tools](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game:Resizing_the_Game_Window_for_Tools.md "Microsoft.Xna.Framework.Game:Resizing the Game Window for Tools")
--   [Information about the GameWindow](/frb/docs/index.php?title=Microsoft.Xna.Framework.GameWindow.md "Microsoft.Xna.Framework.GameWindow")
--   [Game Window as a Control](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.md.Owner "FlatRedBall.FlatRedBallServices.Owner") - FlatRedBallService's Owner property returns the game window as a Control which provides more functionality.
+-   [Resizing the Game Window for Tools](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game:Resizing_the_Game_Window_for_Tools "Microsoft.Xna.Framework.Game:Resizing the Game Window for Tools")
+-   [Information about the GameWindow](/frb/docs/index.php?title=Microsoft.Xna.Framework.GameWindow "Microsoft.Xna.Framework.GameWindow")
+-   [Game Window as a Control](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.Owner "FlatRedBall.FlatRedBallServices.Owner") - FlatRedBallService's Owner property returns the game window as a Control which provides more functionality.
 
 ## Game Members
 
--   [Microsoft.Xna.Framework.Game.IsActive](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsActive.md "Microsoft.Xna.Framework.Game.IsActive")
--   [Microsoft.Xna.Framework.Game.IsFixedTimeStep](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsFixedTimeStep.md "Microsoft.Xna.Framework.Game.IsFixedTimeStep")
--   [Microsoft.Xna.Framework.Game.IsMouseVisible](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsMouseVisible.md "Microsoft.Xna.Framework.Game.IsMouseVisible")
--   [Microsoft.Xna.Framework.Game.TargetElapsedTime](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.TargetElapsedTime.md "Microsoft.Xna.Framework.Game.TargetElapsedTime")
+-   [Microsoft.Xna.Framework.Game.IsActive](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsActive "Microsoft.Xna.Framework.Game.IsActive")
+-   [Microsoft.Xna.Framework.Game.IsFixedTimeStep](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsFixedTimeStep "Microsoft.Xna.Framework.Game.IsFixedTimeStep")
+-   [Microsoft.Xna.Framework.Game.IsMouseVisible](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsMouseVisible "Microsoft.Xna.Framework.Game.IsMouseVisible")
+-   [Microsoft.Xna.Framework.Game.TargetElapsedTime](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.TargetElapsedTime "Microsoft.Xna.Framework.Game.TargetElapsedTime")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

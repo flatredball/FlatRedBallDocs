@@ -23,4 +23,4 @@ The entire length of an animation can be changed without manually changing each 
 3.  Enter the new desired length of the animation
 4.  (Optionally) select the desired option for changing the frame time. The frames can be adjusted to all have the same value, or can be adjusted proportionally to achieve the desired animation length
 
-[![](/wp-content/uploads/2018/03/2018-03-11_14-44-18.gif.md)](/wp-content/uploads/2018/03/2018-03-11_14-44-18.gif.md)
+[![](/wp-content/uploads/2018/03/2018-03-11_14-44-18.gif)](/wp-content/uploads/2018/03/2018-03-11_14-44-18.gif)

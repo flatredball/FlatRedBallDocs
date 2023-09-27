@@ -1,6 +1,6 @@
 ## Introduction
 
-ApplyColorOperation is a method which can be used to modify an ImageData using the same ColorOperation and Red,Green,Blue values that are present in the [IColorable](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.md "FlatRedBall.Graphics.IColorable") interface which is implemented by common FlatRedball objects such as [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text"). ApplyColorOperation modifies the data stored in an ImageData permanently - it cannot be undone.
+ApplyColorOperation is a method which can be used to modify an ImageData using the same ColorOperation and Red,Green,Blue values that are present in the [IColorable](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable "FlatRedBall.Graphics.IColorable") interface which is implemented by common FlatRedball objects such as [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text"). ApplyColorOperation modifies the data stored in an ImageData permanently - it cannot be undone.
 
 ## Code Example
 

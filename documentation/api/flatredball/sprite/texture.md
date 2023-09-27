@@ -1,6 +1,6 @@
 ## Introduction
 
-The Sprite's Texture property controls which image the Sprite is displaying. This property is of type [Texture2D](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D.md "Microsoft.Xna.Framework.Graphics.Texture2D"). When a Sprite is created through the [SpriteManager's](/frb/docs/index.php?title=FlatRedBall.SpriteManager.md "FlatRedBall.SpriteManager") AddSprite method, the Sprite's Texture property gets set inside that method.
+The Sprite's Texture property controls which image the Sprite is displaying. This property is of type [Texture2D](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D "Microsoft.Xna.Framework.Graphics.Texture2D"). When a Sprite is created through the [SpriteManager's](/frb/docs/index.php?title=FlatRedBall.SpriteManager "FlatRedBall.SpriteManager") AddSprite method, the Sprite's Texture property gets set inside that method.
 
 ## Code Example
 

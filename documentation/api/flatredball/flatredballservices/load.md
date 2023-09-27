@@ -1,6 +1,6 @@
 ## Introduction
 
-The Load method is a method which can be used to load content either from a XNB (if using content pipelines) or from raw file if FlatRedBall supports the file format. For more information on the Load method and how FlatRedBall caches content, see the [FlatRedBall Content Manager](/frb/docs/index.php?title=FlatRedBall_Content_Manager.md "FlatRedBall Content Manager") wiki entry.
+The Load method is a method which can be used to load content either from a XNB (if using content pipelines) or from raw file if FlatRedBall supports the file format. For more information on the Load method and how FlatRedBall caches content, see the [FlatRedBall Content Manager](/frb/docs/index.php?title=FlatRedBall_Content_Manager "FlatRedBall Content Manager") wiki entry.
 
 ## File locations
 
@@ -12,7 +12,7 @@ The Load method supports either absolute or relative file names. In other words,
 
     Texture2D texture = FlatRedBallServices.Load<Texture2D>("C:\MyGame\bin\x86\debug\content\redball.bmp");
 
-The Load method will prepend [FileManager.RelativeDirectory](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.RelativeDirectory.md "FlatRedBall.IO.FileManager.RelativeDirectory") if the argument file is relative. In other words, the following two are equivalent:
+The Load method will prepend [FileManager.RelativeDirectory](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.RelativeDirectory "FlatRedBall.IO.FileManager.RelativeDirectory") if the argument file is relative. In other words, the following two are equivalent:
 
     Texture2D texture = FlatRedBallServices.Load<Texture2D>("redball.bmp");
 
@@ -20,7 +20,7 @@ The Load method will prepend [FileManager.RelativeDirectory](/frb/docs/index.php
 
     Texture2D texture = FlatRedBallServices.Load<Texture2D>(FileManager.RelativeDirectory + "redball.bmp");
 
-[FileManager.RelativeDirectory](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.RelativeDirectory.md "FlatRedBall.IO.FileManager.RelativeDirectory") defaults to the project's Content directory (the location where the Content project copies/builds files if using XNA). Therefore, if redball.bmp were present at the root of the content folder, then "content\redball.bmp" would be used to load the file.
+[FileManager.RelativeDirectory](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.RelativeDirectory "FlatRedBall.IO.FileManager.RelativeDirectory") defaults to the project's Content directory (the location where the Content project copies/builds files if using XNA). Therefore, if redball.bmp were present at the root of the content folder, then "content\redball.bmp" would be used to load the file.
 
 ### Files and Folders
 
@@ -51,7 +51,7 @@ The Load call performs the following logic:
     1.  If the content is found, return the existing instance. This saves time loading content and reduces RAM usage.
     2.  If the content is not found, attempt to load it.
 
-For more information on how file names are stored, see the [ContentManager.IsAssetLoadedByName page](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager.mdisassetloadedbyname/).
+For more information on how file names are stored, see the [ContentManager.IsAssetLoadedByName page](/documentation/api/flatredball/flatredball-content/flatredball-content-contentmanager/isassetloadedbyname.md).
 
 ## Load can return IDisposables added through AddDisposable
 

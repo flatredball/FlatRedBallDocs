@@ -2,7 +2,7 @@
 
 Rotation is the property or collection of properties which control the orientation of an object. In other words, it controls which way the object is "facing". Rotation can be used to make a planet rotate on its axis, to rotate a space ship according to user input, or to spin particles to give them more natural-looking behavior.
 
-Objects which implement the [IRotatable](/frb/docs/index.php?title=FlatRedBall.Math.IRotatable.md "FlatRedBall.Math.IRotatable") interface can be rotated. Rotation is performed using radians.
+Objects which implement the [IRotatable](/frb/docs/index.php?title=FlatRedBall.Math.IRotatable "FlatRedBall.Math.IRotatable") interface can be rotated. Rotation is performed using radians.
 
 ## Radians and Degrees
 
@@ -39,7 +39,7 @@ When presented with a current angle and a target angle, rotating clockwise or co
     // assuming currentAngle and targetAngle are both defined
     float angleToRotate = FlatRedBall.Math.MathFunctions.AngleToAngle(currentAngle, targetAngle);
 
-For more information, see the [AngleToAngle page](/frb/docs/index.php?title=FlatRedBall.Math.MathFunctions.AngleToAngle.md "FlatRedBall.Math.MathFunctions.AngleToAngle").
+For more information, see the [AngleToAngle page](/frb/docs/index.php?title=FlatRedBall.Math.MathFunctions.AngleToAngle "FlatRedBall.Math.MathFunctions.AngleToAngle").
 
 ## How to find the vertices of a Sprite
 

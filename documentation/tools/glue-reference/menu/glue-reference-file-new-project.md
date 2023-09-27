@@ -11,4 +11,4 @@ Both empty and starter projects are covered in the [FlatRedBall Tutorials page](
 
 ## NewProjectCreator
 
-The "New Project" menu item brings up a new program called "NewProjectCreator". For more information see the [NewProjectCreator page](/frb/docs/index.php?title=NewProjectCreator.md "NewProjectCreator").
+The "New Project" menu item brings up a new program called "NewProjectCreator". For more information see the [NewProjectCreator page](/frb/docs/index.php?title=NewProjectCreator "NewProjectCreator").

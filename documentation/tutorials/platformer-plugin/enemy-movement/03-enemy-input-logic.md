@@ -61,7 +61,7 @@ To use EnemyInput as the Enemy's InputDevice, modify the Enemy CustomInitialize 
         }
         // ...
 
-Now if we run the game, the Enemy automatically walks to the right and ignores keyboard and gamepad input. [![](/wp-content/uploads/2021/04/2021_April_14_194852.gif.md)](/wp-content/uploads/2021/04/2021_April_14_194852.gif.md)
+Now if we run the game, the Enemy automatically walks to the right and ignores keyboard and gamepad input. [![](/wp-content/uploads/2021/04/2021_April_14_194852.gif)](/wp-content/uploads/2021/04/2021_April_14_194852.gif)
 
 ### Jumping
 
@@ -179,4 +179,4 @@ In the diagram above, the RepositionDirection has a negative X value (points to 
 
 ## Conclusion
 
-Now that we have this logic in place, our Enemy will automatically walk until colliding with a wall, then it turns around and walks in the other direction. [![](/wp-content/uploads/2021/04/2021_April_15_075827.gif.md)](/wp-content/uploads/2021/04/2021_April_15_075827.gif.md) The next tutorial will enable Enemies to turn around when reaching the end of a platform.
+Now that we have this logic in place, our Enemy will automatically walk until colliding with a wall, then it turns around and walks in the other direction. [![](/wp-content/uploads/2021/04/2021_April_15_075827.gif)](/wp-content/uploads/2021/04/2021_April_15_075827.gif) The next tutorial will enable Enemies to turn around when reaching the end of a platform.

@@ -1,6 +1,6 @@
 ## Introduction
 
-As explained in the main [CsvFileManager page](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager.md "FlatRedBall.IO.Csv.CsvFileManager"), you can easily create CSV files to define data classes such as:
+As explained in the main [CsvFileManager page](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager "FlatRedBall.IO.Csv.CsvFileManager"), you can easily create CSV files to define data classes such as:
 
     public class Car
     {

@@ -67,8 +67,8 @@ Finally, add a list of Players the GameScreen. We recommend always creating a li
 
     ![](/media/2021-03-img_6043f6f354f8c.png)
 
-You will also need a Player instance in the list. To do this, drag+drop the Player onto the GameScreen  and it will be added to the Player list. [![](/wp-content/uploads/2020/09/2021_March_06_144641.gif.md)](/wp-content/uploads/2020/09/2021_March_06_144641.gif.md) \[/frb_toggle\]
+You will also need a Player instance in the list. To do this, drag+drop the Player onto the GameScreen  and it will be added to the Player list. [![](/wp-content/uploads/2020/09/2021_March_06_144641.gif)](/wp-content/uploads/2020/09/2021_March_06_144641.gif) \[/frb_toggle\]
 
 ## Moving the Entity
 
-Now that the entity is marked as a Top Down entity and now that we have an instance of the entity in the GameScreen, we can run the game and see the player move. By default the entity uses a gamepad if one is connected. Otherwise, the entity will use WASD keys on the keyboard. [![](/wp-content/uploads/2020/09/2020_September_09_211313.gif.md)](/wp-content/uploads/2020/09/2020_September_09_211313.gif.md)
+Now that the entity is marked as a Top Down entity and now that we have an instance of the entity in the GameScreen, we can run the game and see the player move. By default the entity uses a gamepad if one is connected. Otherwise, the entity will use WASD keys on the keyboard. [![](/wp-content/uploads/2020/09/2020_September_09_211313.gif)](/wp-content/uploads/2020/09/2020_September_09_211313.gif)

@@ -1,6 +1,6 @@
 ## Introduction
 
-The .splx file format is an XML file that stores a list of Splines. For more information on using Splines in code, see the [Spline page](/frb/docs/index.php?title=FlatRedBall.Math.Splines.Spline.md "FlatRedBall.Math.Splines.Spline").
+The .splx file format is an XML file that stores a list of Splines. For more information on using Splines in code, see the [Spline page](/frb/docs/index.php?title=FlatRedBall.Math.Splines.Spline "FlatRedBall.Math.Splines.Spline").
 
 ## Adding a SplineList file to Glue
 

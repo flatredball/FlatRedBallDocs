@@ -1,6 +1,6 @@
 ## Introduction
 
-SetByDerived is a variable that allows derived Entities to access variables defined in a base Entity. Once a variable is SetByDerived, any Entities that derive from the given Entity (that is, use it as its [BaseEntity](/frb/docs/index.php?title=Glue:Reference:Entities:BaseEntity.md "Glue:Reference:Entities:BaseEntity")) can set the variable to a different value.
+SetByDerived is a variable that allows derived Entities to access variables defined in a base Entity. Once a variable is SetByDerived, any Entities that derive from the given Entity (that is, use it as its [BaseEntity](/frb/docs/index.php?title=Glue:Reference:Entities:BaseEntity "Glue:Reference:Entities:BaseEntity")) can set the variable to a different value.
 
 When using inheritance, the derived Entity in code inherits from the base Entity, therefore all variables are available in custom code. The SetByDerived is only useful for exposing the variable in Glue.
 

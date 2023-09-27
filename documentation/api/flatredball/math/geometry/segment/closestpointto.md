@@ -4,7 +4,7 @@ The ClosestPointTo returns the closest point on the calling Segment to the argum
 
 ## Code Example
 
-The following creates a Segment and a [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line") as a visible representation of the Segment. The update method finds the closest point on the Segment to the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.Input.Mouse") and positions a [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") there.
+The following creates a Segment and a [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line") as a visible representation of the Segment. The update method finds the closest point on the Segment to the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse") and positions a [Sprite](/frb/docs/index.php?title=Sprite "Sprite") there.
 
 Add the following using statements:
 

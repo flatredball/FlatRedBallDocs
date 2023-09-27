@@ -1,6 +1,6 @@
 ## Introduction
 
-As explained in [this tutorial](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Camera_and_Coordinates.md "FlatRedBallXna:Tutorials:Camera and Coordinates") the Camera's X and Y position are the center of the screen (unless the Camera is rotated). Therefore, to keep the Camera from viewing outside of a specific area, the visible width and height must be calculated. In other words, if the Camera should not be able to see anything to the left of X = 0, then the width of the Camera needs to be calculated, and the actual minimum X becomes
+As explained in [this tutorial](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Camera_and_Coordinates "FlatRedBallXna:Tutorials:Camera and Coordinates") the Camera's X and Y position are the center of the screen (unless the Camera is rotated). Therefore, to keep the Camera from viewing outside of a specific area, the visible width and height must be calculated. In other words, if the Camera should not be able to see anything to the left of X = 0, then the width of the Camera needs to be calculated, and the actual minimum X becomes
 
     0 + cameraWidthAtSomeZ/2.0f;
 
@@ -15,7 +15,7 @@ The SetBordersAtZ calculates what the minimum and maximum values need to be set 
 
 ## Code Example
 
-The following code prevents the user from viewing behind +/- 40 on the X and Y axes. Note that bounds will be exceeded if the field of view or aspect ratio is too large for the argument values. The [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard") moves the Camera so the bounds can be tested. Add the following using statements:
+The following code prevents the user from viewing behind +/- 40 on the X and Y axes. Note that bounds will be exceeded if the field of view or aspect ratio is too large for the argument values. The [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard") moves the Camera so the bounds can be tested. Add the following using statements:
 
     using FlatRedBall.Input;
 

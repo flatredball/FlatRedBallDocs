@@ -1,6 +1,6 @@
 ## Introduction
 
-Although FlatRedBall XNA provides a [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle") class for collisions, you may be interested in writing your own custom circle collision code for customizable behavior. If so, read on.
+Although FlatRedBall XNA provides a [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle") class for collisions, you may be interested in writing your own custom circle collision code for customizable behavior. If so, read on.
 
 ## Detecting Collision
 

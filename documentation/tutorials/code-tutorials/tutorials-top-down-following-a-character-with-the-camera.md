@@ -4,7 +4,7 @@ Top-down games which are played in an area larger than the size of the screen us
 
 ## Attaching the Camera to the Character
 
-If the Character is a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") (which it will be if using Entities in Glue) then you can simply attach the Camera to the Character as follows:
+If the Character is a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") (which it will be if using Entities in Glue) then you can simply attach the Camera to the Character as follows:
 
     Camera camera = Camera.Main;
     camera.AttachTo(CharacterInstance, false);

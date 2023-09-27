@@ -38,7 +38,7 @@ We will add a list to our GameScreen and an instance of our Enemy to Level1 so w
 
 To add an enemy to your Level1:
 
-1.  Drag+drop the Enemy entity onto Level1 [![](/wp-content/uploads/2021/04/2021_April_19_171821.gif.md)](/wp-content/uploads/2021/04/2021_April_19_171821.gif.md)
+1.  Drag+drop the Enemy entity onto Level1 [![](/wp-content/uploads/2021/04/2021_April_19_171821.gif)](/wp-content/uploads/2021/04/2021_April_19_171821.gif)
 
 2.  Select **Enemy1** and click on the **Variables** tab
 
@@ -54,7 +54,7 @@ Now we have an enemy in the game, but it falls through the level. We can fix thi
 2.  Expand the **Objects** folder
 3.  Drag+drop the **EnemyList** onto the **SolidCollision** object
 
-[![](/wp-content/uploads/2021/04/2021_April_19_185117.gif.md)](/wp-content/uploads/2021/04/2021_April_19_185117.gif.md) If we run the game now, the enemy will fall and land in the level next to the player.
+[![](/wp-content/uploads/2021/04/2021_April_19_185117.gif)](/wp-content/uploads/2021/04/2021_April_19_185117.gif) If we run the game now, the enemy will fall and land in the level next to the player.
 
 ![](/media/2021-04-img_607e1e1cb80cb.png)
 

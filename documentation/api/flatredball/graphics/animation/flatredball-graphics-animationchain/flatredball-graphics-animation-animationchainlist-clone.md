@@ -12,4 +12,4 @@ The following code example assumes that OriginalAnimationChainList is a valid An
      // This is not necessary, it just makes referencing by name easier:
      FlatRedBallServices.AddDisposable(copyOfOriginal.Name, copyOfOriginal, ContentManagerName);
 
-For more information see the [AddDisposable page](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.AddDisposable.md "FlatRedBall.FlatRedBallServices.AddDisposable").
+For more information see the [AddDisposable page](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.AddDisposable "FlatRedBall.FlatRedBallServices.AddDisposable").

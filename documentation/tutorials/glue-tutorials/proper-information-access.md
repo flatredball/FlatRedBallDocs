@@ -4,7 +4,7 @@ The patterns and code created by Glue encourage proper information encapsulation
 
 ## GlobalData
 
-The simplest approach to sharing information is to make it global. In C#, that means to define it as "public static". The broadest form of global data is generally placed in a class called GlobalData. The GlobalData class is commonly used to provide **access** to data in your game. For information on how to write a public static GlobalData class, see [this page](/frb/docs/index.php?title=Glue:Reference:Code:GlobalData.md "Glue:Reference:Code:GlobalData"). First, let's consider the type of data we would want to put in GlobalData. The general rule is that information should be accessible through GlobalData if all of the following are true:
+The simplest approach to sharing information is to make it global. In C#, that means to define it as "public static". The broadest form of global data is generally placed in a class called GlobalData. The GlobalData class is commonly used to provide **access** to data in your game. For information on how to write a public static GlobalData class, see [this page](/frb/docs/index.php?title=Glue:Reference:Code:GlobalData "Glue:Reference:Code:GlobalData"). First, let's consider the type of data we would want to put in GlobalData. The general rule is that information should be accessible through GlobalData if all of the following are true:
 
 -   It outlives Screens and Entities
 -   It is used in multiple places in your game - often for different reasons
@@ -27,7 +27,7 @@ If information is used in a variety of areas, then it should be globally accessi
 
 ## Properly Encapsulating GlobalData
 
-If you have information which meets both criteria above, then it should be accessed through GlobalData. However, this information **should still be encapsulated in instanced classes. If the data you are working with is data that will be saved to XML (or some other format to disk or over a network), then you should use the "Save" pattern. If you'd like to read about the Save pattern, check out [this general purpose tutorial](/frb/docs/index.php?title=Tutorials:Save_Classes.md "Tutorials:Save Classes") or keep reading as we'll cover it as it applies specifically to Glue in a later tutorial.** In this example, we'll use a class called PlayerSave which is a class that stores information that will be later saved to disk, but during runtime is as a global storage of data for the player profile. The code for this might look like:
+If you have information which meets both criteria above, then it should be accessed through GlobalData. However, this information **should still be encapsulated in instanced classes. If the data you are working with is data that will be saved to XML (or some other format to disk or over a network), then you should use the "Save" pattern. If you'd like to read about the Save pattern, check out [this general purpose tutorial](/frb/docs/index.php?title=Tutorials:Save_Classes "Tutorials:Save Classes") or keep reading as we'll cover it as it applies specifically to Glue in a later tutorial.** In this example, we'll use a class called PlayerSave which is a class that stores information that will be later saved to disk, but during runtime is as a global storage of data for the player profile. The code for this might look like:
 
     // Define the PlayerSave class in its own file
     public class PlayerSave

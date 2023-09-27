@@ -6,4 +6,4 @@ The Cost member represents the difficulty in traveling the node. Usually cost is
 -   Difficulty in crossing due to risk (enemies, thieves)
 -   Resources required to perform a particular action (if node networks are used abstractly)
 
-The cost property is used by the [NodeNetwork](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.NodeNetwork.md "FlatRedBall.AI.Pathfinding.NodeNetwork") to find the most efficient path from one node to the next.
+The cost property is used by the [NodeNetwork](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.NodeNetwork "FlatRedBall.AI.Pathfinding.NodeNetwork") to find the most efficient path from one node to the next.

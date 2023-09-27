@@ -32,7 +32,7 @@ To add a rectangle:
 
 2.  Push and drag the left mouse button to draw a Rectangle
 
-    [![](/wp-content/uploads/2016/08/2021_February_20_153435.gif.md)](/wp-content/uploads/2016/08/2021_February_20_153435.gif.md)
+    [![](/wp-content/uploads/2016/08/2021_February_20_153435.gif)](/wp-content/uploads/2016/08/2021_February_20_153435.gif)
 
 3.  Enter the name "Rectangle1" for the new rectangle. This is needed to find the shape at run time.
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-In the [last article](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_%22SaveContent%22_Class.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "SaveContent" Class") we created a class called LevelSaveContent which can load from a XML Level file and will be able to be used to write binary Level information. The logic to perform these tasks will be written in this and the following three tutorials.
+In the [last article](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_%22SaveContent%22_Class "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "SaveContent" Class") we created a class called LevelSaveContent which can load from a XML Level file and will be able to be used to write binary Level information. The logic to perform these tasks will be written in this and the following three tutorials.
 
 This tutorial introduces the Importer class, which is responsible for loading and returning a LevelSaveContent instance.
 

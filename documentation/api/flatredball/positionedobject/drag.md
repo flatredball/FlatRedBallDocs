@@ -10,7 +10,7 @@ Drag is independently applied to each component of velocity.
 
 ## Drag Example
 
-Drag is a linear approximation of deceleration which is tied to absolute velocity. It can be used to create terminal velocities (maximum velocities) when objects are moved by acceleration. The following code shows the effect of Drag on three [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite").
+Drag is a linear approximation of deceleration which is tied to absolute velocity. It can be used to create terminal velocities (maximum velocities) when objects are moved by acceleration. The following code shows the effect of Drag on three [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite").
 
     Sprite sprite1 = SpriteManager.AddSprite("redball.bmp");
     sprite1.XVelocity = 10;
@@ -26,7 +26,7 @@ Drag is a linear approximation of deceleration which is tied to absolute velocit
     sprite3.Drag = 1;
     sprite3.Y = -3;
 
-![3SpritesWithDrag.png](/media/migrated_media-3SpritesWithDrag.png) Managed PositionedObjects such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") automatically have their Drag applied every frame.
+![3SpritesWithDrag.png](/media/migrated_media-3SpritesWithDrag.png) Managed PositionedObjects such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") automatically have their Drag applied every frame.
 
 ## When Is Drag Useful?
 

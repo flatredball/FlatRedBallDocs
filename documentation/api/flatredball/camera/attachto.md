@@ -1,6 +1,6 @@
 ## Introduction
 
-The Camera class inherits from the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") class, so it can use the AttachTo function. For general information on AttachTo, see the [PositionedObject.AttachTo](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md.AttachTo "FlatRedBall.PositionedObject.AttachTo") page.
+The Camera class inherits from the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") class, so it can use the AttachTo function. For general information on AttachTo, see the [PositionedObject.AttachTo](/frb/docs/index.php?title=FlatRedBall.PositionedObject.AttachTo "FlatRedBall.PositionedObject.AttachTo") page.
 
 ## Attaching a Camera to another object
 

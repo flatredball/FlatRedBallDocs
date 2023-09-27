@@ -16,14 +16,14 @@ The saved raw asset is usually a file that is created in a 3rd party application
 
 ### Content Importer
 
-Class which inherits from Microsoft.Xna.Framework.Content.Pipeline.ContentImporter\<T\> responsible for loading the raw asset file and creating the intermediary class. If following the [FlatRedBall file type pattern](/frb/docs/index.php?title=FlatRedBall_File_Types.md "FlatRedBall File Types"), this intermediary class would be a "Save" class. The content importer's Import method takes a file name and returns an instance of the intermediary class.
+Class which inherits from Microsoft.Xna.Framework.Content.Pipeline.ContentImporter\<T\> responsible for loading the raw asset file and creating the intermediary class. If following the [FlatRedBall file type pattern](/frb/docs/index.php?title=FlatRedBall_File_Types "FlatRedBall File Types"), this intermediary class would be a "Save" class. The content importer's Import method takes a file name and returns an instance of the intermediary class.
 
 ### Intermediary Class
 
 This is a class which represents an intermediary state - between the raw asset and the raw and processed file. Depending on the raw asset being stored, the intermediary class may have the following characteristics:
 
 -   If loaded from a tool which XML Serializes its files, then this could be the class that was used to serialize out the XML file.
--   This may be a "Save" object if following the [FlatRedBall file type pattern](/frb/docs/index.php?title=FlatRedBall_File_Types.md "FlatRedBall File Types"). This means that the class has methods for serializing to XML, deserializing from XML, converting to a runtime object, and being created from a runtime object.
+-   This may be a "Save" object if following the [FlatRedBall file type pattern](/frb/docs/index.php?title=FlatRedBall_File_Types "FlatRedBall File Types"). This means that the class has methods for serializing to XML, deserializing from XML, converting to a runtime object, and being created from a runtime object.
 
 This class may also include ExternalReferences to other files. For example, a file defining the layout of a level may include references to the image files to use for textures.
 
@@ -49,7 +49,7 @@ The runtime portion of the content pipeline is responsible for loading a .XNB fi
 
 ### .XNB (processed) File
 
-The .XNB is loaded by name (without the .XNB extension) during runtime. If using FlatRedBall, the [FlatRedBallService's Load](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices#FlatRedBallServices.Load.md "FlatRedBall.FlatRedBallServices") method is used to initiate a load and create a runtime class instance. For example, assuming there was a file MyScene.scnx in the Content/Scenes folder which was compiled into a .XNB, the following code would create the Scene at runtime:
+The .XNB is loaded by name (without the .XNB extension) during runtime. If using FlatRedBall, the [FlatRedBallService's Load](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices#FlatRedBallServices.Load "FlatRedBall.FlatRedBallServices") method is used to initiate a load and create a runtime class instance. For example, assuming there was a file MyScene.scnx in the Content/Scenes folder which was compiled into a .XNB, the following code would create the Scene at runtime:
 
     Scene myScene = FlatRedBallServices.Load<Scene>(@"Content/Scenes/MyScene", "ContentManagerName");
 

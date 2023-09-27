@@ -1,6 +1,6 @@
 ## Introduction
 
-The PolygonEditor can load .scnx files. These files are the standard way of representing collections of FlatRedBall objects including Sprites, SpriteFrames, and PositionedModels. The [SpriteEditor](/SpriteEditorWiki/index.php?title=Main_Page.md) is one of the many applications that can create .scnx files.
+The PolygonEditor can load .scnx files. These files are the standard way of representing collections of FlatRedBall objects including Sprites, SpriteFrames, and PositionedModels. The [SpriteEditor](/SpriteEditorWiki/index.php?title=Main_Page) is one of the many applications that can create .scnx files.
 
 ## Loading a .scnx File
 

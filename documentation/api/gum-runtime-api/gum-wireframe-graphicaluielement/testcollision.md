@@ -12,7 +12,7 @@ In this case the top-level object is **ChildStandardContainerInstance**. If test
 
 1.  Drag+drop the Gum screen file (.gusx) onto the Glue Screen's Objects
 2.  Use the **Source Name** dropdown to select the desired object (ChildStandardContainerInstance in this case)
-3.  Click OK [![](/wp-content/uploads/2017/05/DragDropGumObject.gif.md)](/wp-content/uploads/2017/05/DragDropGumObject.gif.md)
+3.  Click OK [![](/wp-content/uploads/2017/05/DragDropGumObject.gif)](/wp-content/uploads/2017/05/DragDropGumObject.gif)
 
 To follow the logic:
 

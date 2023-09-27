@@ -1,10 +1,10 @@
 ## Introduction
 
-CheckBox is a component which can be used to represent a bool value (true or false) at runtime. [![](/wp-content/uploads/2017/12/2017-12-13_07-13-04.gif.md)](/wp-content/uploads/2017/12/2017-12-13_07-13-04.gif.md)
+CheckBox is a component which can be used to represent a bool value (true or false) at runtime. [![](/wp-content/uploads/2017/12/2017-12-13_07-13-04.gif)](/wp-content/uploads/2017/12/2017-12-13_07-13-04.gif)
 
 ## Layout Requirements
 
-The CheckBox control has no requirements – an empty container is sufficient. [![](/wp-content/uploads/2017/12/img_5a485e78076db.png.md)](/wp-content/uploads/2017/12/img_5a485e78076db.png.md)
+The CheckBox control has no requirements – an empty container is sufficient. [![](/wp-content/uploads/2017/12/img_5a485e78076db.png)](/wp-content/uploads/2017/12/img_5a485e78076db.png)
 
 ## TextInstance
 

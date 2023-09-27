@@ -1,10 +1,10 @@
 ## Introduction
 
-Particles which are emitted by Emitters are fully-functional [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") which means they have the full set of functionality. This article presents code which creates an Emitter, then adds collision to the emitted [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). Finally these emitted [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") are collided against an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle").
+Particles which are emitted by Emitters are fully-functional [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") which means they have the full set of functionality. This article presents code which creates an Emitter, then adds collision to the emitted [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). Finally these emitted [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") are collided against an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle").
 
 ## Update
 
-The following example was written at a time when the SetCollision method was a common and encouraged way of setting collision for emitted Sprites. Since then, the [Entity](/frb/docs/index.php?title=Entity.md "Entity") pattern has been created and is used for objects which require collision. The following code is still useful for showing how to interact with emitted particles, but please consider using an [Entity](/frb/docs/index.php?title=Entity.md "Entity") instead of Sprites using the SetCollision method.
+The following example was written at a time when the SetCollision method was a common and encouraged way of setting collision for emitted Sprites. Since then, the [Entity](/frb/docs/index.php?title=Entity "Entity") pattern has been created and is used for objects which require collision. The following code is still useful for showing how to interact with emitted particles, but please consider using an [Entity](/frb/docs/index.php?title=Entity "Entity") instead of Sprites using the SetCollision method.
 
 ## Code
 

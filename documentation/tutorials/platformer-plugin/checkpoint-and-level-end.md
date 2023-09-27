@@ -1,6 +1,6 @@
 ## Introduction
 
-This walkthrough covers concepts related to creating an end-of-level entity which moves the player to the next level and creating a checkpoint which lets the player start at a midpoint in a level after dying. \[embed\]https://youtu.be/Vxg5eOPmzHI?t=282\[/embed\] The sample project can be downloaded from GitHub: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/CheckpointAndLevelEndDemo> [![](/wp-content/uploads/2021/05/2021_May_31_131549.gif.md)](/wp-content/uploads/2021/05/2021_May_31_131549.gif.md) This walkthrough refers to CheckpointAndEndLevelDemo as *the demo* and *this demo*.
+This walkthrough covers concepts related to creating an end-of-level entity which moves the player to the next level and creating a checkpoint which lets the player start at a midpoint in a level after dying. \[embed\]https://youtu.be/Vxg5eOPmzHI?t=282\[/embed\] The sample project can be downloaded from GitHub: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/CheckpointAndLevelEndDemo> [![](/wp-content/uploads/2021/05/2021_May_31_131549.gif)](/wp-content/uploads/2021/05/2021_May_31_131549.gif) This walkthrough refers to CheckpointAndEndLevelDemo as *the demo* and *this demo*.
 
 ## Main Concepts
 
@@ -111,7 +111,7 @@ The code above searches the current Map for a ShapeCollection with the name PitC
 
 ![](/media/2021-06-img_60b6f592f1073.png)
 
-A gap is left between the bottom of the map and the position of the rectangle so the player falls fully off-screen before colliding with the rectangle and respawning. [![](/wp-content/uploads/2021/06/Qo2qkk2v8Q.gif.md)](/wp-content/uploads/2021/06/Qo2qkk2v8Q.gif.md)
+A gap is left between the bottom of the map and the position of the rectangle so the player falls fully off-screen before colliding with the rectangle and respawning. [![](/wp-content/uploads/2021/06/Qo2qkk2v8Q.gif)](/wp-content/uploads/2021/06/Qo2qkk2v8Q.gif)
 
 ## Checkpoint Visuals
 

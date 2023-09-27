@@ -8,7 +8,7 @@ The TextureScale value changes the Width and Height values according to the Text
 
 -   Setting TextureScale
 -   Setting Texture
--   Setting [LeftTextureCoordinate](/frb/docs/index.php?title=FlatRedBall.Sprite.LeftTextureCoordinate.md "FlatRedBall.Sprite.LeftTextureCoordinate"), [RightTextureCoordinate](/frb/docs/index.php?title=FlatRedBall.Sprite.RightTextureCoordinate.md "FlatRedBall.Sprite.RightTextureCoordinate"), [TopTextureCoordinate](/frb/docs/index.php?title=FlatRedBall.Sprite.TopTextureCoordinate.md "FlatRedBall.Sprite.TopTextureCoordinate"), [BottomTextureCoordinate](/frb/docs/index.php?title=FlatRedBall.Sprite.BottomTextureCoordinate.md "FlatRedBall.Sprite.BottomTextureCoordinate")
+-   Setting [LeftTextureCoordinate](/frb/docs/index.php?title=FlatRedBall.Sprite.LeftTextureCoordinate "FlatRedBall.Sprite.LeftTextureCoordinate"), [RightTextureCoordinate](/frb/docs/index.php?title=FlatRedBall.Sprite.RightTextureCoordinate "FlatRedBall.Sprite.RightTextureCoordinate"), [TopTextureCoordinate](/frb/docs/index.php?title=FlatRedBall.Sprite.TopTextureCoordinate "FlatRedBall.Sprite.TopTextureCoordinate"), [BottomTextureCoordinate](/frb/docs/index.php?title=FlatRedBall.Sprite.BottomTextureCoordinate "FlatRedBall.Sprite.BottomTextureCoordinate")
 -   When an animation frame changes (if the Sprite is using AnimationChains)
 
 ### TextureScale can overwrite Scale/Width/Height values
@@ -22,7 +22,7 @@ Whenever TextureScale is not 0, it will overwrite Width/Height values when any o
 
 ## Code Example
 
-The following example creates two Sprites. Their TextureScale is set to the same value. Therefore, their sizes relative to each other is the same as the sizes of their [Textures](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D.md "Microsoft.Xna.Framework.Graphics.Texture2D") relative to each other.
+The following example creates two Sprites. Their TextureScale is set to the same value. Therefore, their sizes relative to each other is the same as the sizes of their [Textures](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D "Microsoft.Xna.Framework.Graphics.Texture2D") relative to each other.
 
     Sprite ball = SpriteManager.AddSprite("redball.bmp");
     ball.TextureScale = 1;
@@ -36,7 +36,7 @@ The following example creates two Sprites. Their TextureScale is set to the same
 
 ## TextureScale and Power of Two
 
-Some older video cards cards expect that all textures have a [power of two](/frb/docs/index.php?title=Math:Power_of_Two.md "Math:Power of Two") width and height. In some cases, textures may even be re-sized to fit this requirement. For example, if the current graphics card requires a power of two, an image that is 100X300 may be re-sized to a texture that is 128X512 when loaded in the game. The resizing always increases the resolution of images. This can cause problems if your code uses TextureScale for Sprites which are displaying textures which are not a power of two. The reason is because you may see different behavior on different machines. Using the example above, if you were to load the 100X300 image and display it with a Sprite using a TextureScale of 1, then you would see the following results: *On a machine that doesn't resize:*
+Some older video cards cards expect that all textures have a [power of two](/frb/docs/index.php?title=Math:Power_of_Two "Math:Power of Two") width and height. In some cases, textures may even be re-sized to fit this requirement. For example, if the current graphics card requires a power of two, an image that is 100X300 may be re-sized to a texture that is 128X512 when loaded in the game. The resizing always increases the resolution of images. This can cause problems if your code uses TextureScale for Sprites which are displaying textures which are not a power of two. The reason is because you may see different behavior on different machines. Using the example above, if you were to load the 100X300 image and display it with a Sprite using a TextureScale of 1, then you would see the following results: *On a machine that doesn't resize:*
 
     mySprite.ScaleX will be 50
     mySprite.ScaleY will be 150
@@ -46,7 +46,7 @@ Some older video cards cards expect that all textures have a [power of two](/frb
     mySprite.ScaleX will be 64
     mySprite.ScaleY will be 256
 
-The solution to this problem is to make sure all of your images have [power of two](/frb/docs/index.php?title=Math:Power_of_Two.md "Math:Power of Two") width and height.
+The solution to this problem is to make sure all of your images have [power of two](/frb/docs/index.php?title=Math:Power_of_Two "Math:Power of Two") width and height.
 
 ## Animations "resetting" Scale
 

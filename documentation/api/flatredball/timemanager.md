@@ -4,7 +4,7 @@ The TimeManager provides functionality for measuring differences in time. The Ti
 
 ## Retrieving Frame Length
 
-For information on how long a frame has taken, see the [SecondDifference](/frb/docs/index.php?title=FlatRedBall.TimeManager.SecondDifference.md "FlatRedBall.TimeManager.SecondDifference") page.
+For information on how long a frame has taken, see the [SecondDifference](/frb/docs/index.php?title=FlatRedBall.TimeManager.SecondDifference "FlatRedBall.TimeManager.SecondDifference") page.
 
 ## Screen Time
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-The Xbox360GamePad class represents the current state of a physical game pad. The Xbox360GamePad can provide information about its buttons and DPad with ButtonPushed, ButtonDown, and ButtonReleased methods. You can also get information about the analog sticks using the [AnalogSticks](/frb/docs/index.php?title=FlatRedBall.Input.AnalogStick.md "FlatRedBall.Input.AnalogStick") references. Information about the trigger buttons can be accessed through the [AnalogButton](/frb/docs/index.php?title=FlatRedBall.Input.AnalogButton&action=edit&redlink=1.md "FlatRedBall.Input.AnalogButton (page does not exist)") references. The [InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager.md "FlatRedBall.Input.InputManager") exposes an array of Xbox360GamePads. There are always 4 elements in this array regardless of the number of game pads connected.
+The Xbox360GamePad class represents the current state of a physical game pad. The Xbox360GamePad can provide information about its buttons and DPad with ButtonPushed, ButtonDown, and ButtonReleased methods. You can also get information about the analog sticks using the [AnalogSticks](/frb/docs/index.php?title=FlatRedBall.Input.AnalogStick "FlatRedBall.Input.AnalogStick") references. Information about the trigger buttons can be accessed through the [AnalogButton](/frb/docs/index.php?title=FlatRedBall.Input.AnalogButton&action=edit&redlink=1 "FlatRedBall.Input.AnalogButton (page does not exist)") references. The [InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager "FlatRedBall.Input.InputManager") exposes an array of Xbox360GamePads. There are always 4 elements in this array regardless of the number of game pads connected.
 
 ## Xbox360GamePad and Gamepad Hardware
 
@@ -14,7 +14,7 @@ The name Xbox360GamePad exists for historical reasons - XNA originally only expo
 
 ## Detecting Button Presses
 
-The Xbox360GamePad class reports whether a button was pushed the last frame, is currently down, or was released. The following code moves a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") to the right one unit when the A button is pressed and moves a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") to the left when the B button is released:
+The Xbox360GamePad class reports whether a button was pushed the last frame, is currently down, or was released. The following code moves a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to the right one unit when the A button is pressed and moves a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to the left when the B button is released:
 
     // Assuming mySprite is a valid Sprite
     Xbox360GamePad gamePad = InputManager.Xbox360GamePads[0];
@@ -50,7 +50,7 @@ Each property provides information about the matching hardware analog stick. For
 
 ## Using a Keyboard as a Game Pad
 
-See the [ButtonMap property](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.ButtonMap.md "FlatRedBall.Input.Xbox360GamePad.ButtonMap").
+See the [ButtonMap property](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.ButtonMap "FlatRedBall.Input.Xbox360GamePad.ButtonMap").
 
 ## Vibrations
 
@@ -64,7 +64,7 @@ The following code sets the vibration on the game pad:
 
 ## Frequency of Updates
 
-The Xbox360GamePads which are part of the [InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager.md "FlatRedBall.Input.InputManager") are automatically updated every frame by the engine. This information is not buffered, therefore very rapid button presses may not be ready by the controller.
+The Xbox360GamePads which are part of the [InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager "FlatRedBall.Input.InputManager") are automatically updated every frame by the engine. This information is not buffered, therefore very rapid button presses may not be ready by the controller.
 
 ## Platform Support
 
@@ -78,7 +78,7 @@ The Xbox360GamePad name orignally comes from the fact that XNA supported Xbox 3
 
 ## Additional Information
 
--   [Use Xbox360GamePad From the Beginning](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad:Use_Xbox360GamePad_From_the_Beginning.md "FlatRedBall.Input.Xbox360GamePad:Use Xbox360GamePad From the Beginning") - A discussion about using the Xbox360GamePad when developing games that use the keyboard as well.
+-   [Use Xbox360GamePad From the Beginning](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad:Use_Xbox360GamePad_From_the_Beginning "FlatRedBall.Input.Xbox360GamePad:Use Xbox360GamePad From the Beginning") - A discussion about using the Xbox360GamePad when developing games that use the keyboard as well.
 
 ## Xbox360GamePad Members
 

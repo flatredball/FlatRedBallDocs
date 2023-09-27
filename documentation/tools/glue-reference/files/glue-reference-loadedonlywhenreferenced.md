@@ -8,5 +8,5 @@ LoadedOnlyWhenReferenced is very useful if you have content in your game which i
 
 ## Additional Information
 
--   [Optionally Loaded Content tutorial](/frb/docs/index.php?title=Glue:Tutorials:Optionally_Loaded_Content.md "Glue:Tutorials:Optionally Loaded Content") - Basic tutorial on how to use optionally loaded content.
--   [Optionally Loaded Scenes](/frb/docs/index.php?title=Glue:Tutorials:Optionally_Loaded_Scenes.md "Glue:Tutorials:Optionally Loaded Scenes") - Discusses how to create optionally loaded Scenes (.scnx files) to load levels dynamically.
+-   [Optionally Loaded Content tutorial](/frb/docs/index.php?title=Glue:Tutorials:Optionally_Loaded_Content "Glue:Tutorials:Optionally Loaded Content") - Basic tutorial on how to use optionally loaded content.
+-   [Optionally Loaded Scenes](/frb/docs/index.php?title=Glue:Tutorials:Optionally_Loaded_Scenes "Glue:Tutorials:Optionally Loaded Scenes") - Discusses how to create optionally loaded Scenes (.scnx files) to load levels dynamically.

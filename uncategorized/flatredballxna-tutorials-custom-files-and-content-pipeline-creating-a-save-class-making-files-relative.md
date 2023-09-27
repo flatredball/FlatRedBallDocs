@@ -1,6 +1,6 @@
 ## Introduction
 
-Many content file types often reference other files. For example, [Scenes](/frb/docs/index.php?title=FlatRedBall.Scene.md "FlatRedBall.Scene") reference image files which are used to texture their contained [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). In the case of our LevelSave class, we will be referencing a .scnx file and a .shcx file.
+Many content file types often reference other files. For example, [Scenes](/frb/docs/index.php?title=FlatRedBall.Scene "FlatRedBall.Scene") reference image files which are used to texture their contained [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). In the case of our LevelSave class, we will be referencing a .scnx file and a .shcx file.
 
 It is important that the referenced file paths are saved as relative paths rather than absolute paths. For example, consider saving a reference to a .scnx file with the following path:
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-This article explains how to change the animation of your character according to player input. This assumes that you are familiar with how to create Entities, use the FlatRedBall InputManager to read input, and how to add AnimationChains to Entities. This tutorial continues what is set up in the tutorial on [how to add animated characters](/frb/docs/index.php?title=Glue:How_To:Add_Animated_Characters.md "Glue:How To:Add Animated Characters").
+This article explains how to change the animation of your character according to player input. This assumes that you are familiar with how to create Entities, use the FlatRedBall InputManager to read input, and how to add AnimationChains to Entities. This tutorial continues what is set up in the tutorial on [how to add animated characters](/frb/docs/index.php?title=Glue:How_To:Add_Animated_Characters "Glue:How To:Add Animated Characters").
 
 ## Adding a CurrentChainName variable
 
@@ -73,4 +73,4 @@ You can set the animation in code by adding the following in the CustomActivity 
 
 ![AnimatedCharacterInGame.PNG](/media/migrated_media-AnimatedCharacterInGame.PNG)
 
-**Note:** If your Character appears really large, you may want to change your [camera settings](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:Camera_Settings.md "Glue:Reference:Menu:Settings:Camera Settings") to be 2D.
+**Note:** If your Character appears really large, you may want to change your [camera settings](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:Camera_Settings "Glue:Reference:Menu:Settings:Camera Settings") to be 2D.

@@ -8,7 +8,7 @@ If you have a Camera which is part of an Entity then the Camera will be attached
 
 ## Code Sample
 
-The following code allows the user to move the camera with the arrow keys on the keyboard, but bounds the position of the Camera to the edges of the [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle") created in the Initialize method.
+The following code allows the user to move the camera with the arrow keys on the keyboard, but bounds the position of the Camera to the edges of the [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle") created in the Initialize method.
 
 Add the following to your Screen's CustomInitialize:
 
@@ -29,4 +29,4 @@ Add the following to Update
 
 ## Removing Minimum and Maximum Values
 
-See [FlatRedBall.Camera.ClearMinimumsAndMaximums](/frb/docs/index.php?title=FlatRedBall.Camera.ClearMinimumsAndMaximums.md "FlatRedBall.Camera.ClearMinimumsAndMaximums").
+See [FlatRedBall.Camera.ClearMinimumsAndMaximums](/frb/docs/index.php?title=FlatRedBall.Camera.ClearMinimumsAndMaximums "FlatRedBall.Camera.ClearMinimumsAndMaximums").

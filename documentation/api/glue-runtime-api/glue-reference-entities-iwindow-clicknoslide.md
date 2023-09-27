@@ -4,4 +4,4 @@ The ClickNoSlide event is an event which is raised when the user presses and rel
 
 ## Additional Information
 
-The ClickNoSlide method uses the [Cursor's PrimaryClickNoSlide](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.PrimaryClickNoSlide.md "FlatRedBall.Gui.Cursor.PrimaryClickNoSlide") property.
+The ClickNoSlide method uses the [Cursor's PrimaryClickNoSlide](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.PrimaryClickNoSlide "FlatRedBall.Gui.Cursor.PrimaryClickNoSlide") property.

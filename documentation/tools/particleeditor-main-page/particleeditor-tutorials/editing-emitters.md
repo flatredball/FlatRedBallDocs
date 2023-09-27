@@ -29,7 +29,7 @@ If the loaded file is outside of your Glue project's content folder, then the fi
 
 ## Previewing Emitters
 
-The ParticleEditor and GlueView work together to provide real-time previewing of particles. To learn more about GlueView, see the [GlueView page](/frb/docs/index.php?title=Glue:Reference:Menu:Glue_View.md "Glue:Reference:Menu:Glue View").
+The ParticleEditor and GlueView work together to provide real-time previewing of particles. To learn more about GlueView, see the [GlueView page](/frb/docs/index.php?title=Glue:Reference:Menu:Glue_View "Glue:Reference:Menu:Glue View").
 
 GlueView displays the selected Screen/Entity, mimicing what will be shown when you run the game (excluding custom code). Since files behave slightly different in screens and entities, the process of previewing an emitter depends on whether the emitter is part of a screen or entity.
 
@@ -41,7 +41,7 @@ Files which are part of screens will automatically show up in game and GlueView.
 
 ### Previewing in Entities
 
-Previewing an emitter in an entity is similar to previewing an emitter in a screen; the only difference is that an object must be made in the entity to display either a single emitter, or the entire file. For more information on entire files, see [the Entire File page](/frb/docs/index.php?title=Glue:Reference:Objects:Entire_File.md "Glue:Reference:Objects:Entire File").
+Previewing an emitter in an entity is similar to previewing an emitter in a screen; the only difference is that an object must be made in the entity to display either a single emitter, or the entire file. For more information on entire files, see [the Entire File page](/frb/docs/index.php?title=Glue:Reference:Objects:Entire_File "Glue:Reference:Objects:Entire File").
 
 ### Manually emitting an emitter
 

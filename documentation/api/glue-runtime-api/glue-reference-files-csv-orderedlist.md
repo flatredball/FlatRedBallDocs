@@ -1,6 +1,6 @@
 ## Introduction
 
-The OrderedList property is a List of values which correspond to the order of values in a dictionary CSV. A given CSV must have its [CreatesDictionary](/frb/docs/index.php?title=Glue:Reference:Files:CSV:CreatesDictionary.md "Glue:Reference:Files:CSV:CreatesDictionary") property set to true for OrderedList to be generated.
+The OrderedList property is a List of values which correspond to the order of values in a dictionary CSV. A given CSV must have its [CreatesDictionary](/frb/docs/index.php?title=Glue:Reference:Files:CSV:CreatesDictionary "Glue:Reference:Files:CSV:CreatesDictionary") property set to true for OrderedList to be generated.
 
 **OrderedList is not dynamic**The OrderedList is a hardcoded list. It is not dynamic, meaning if you make any modifications to a CSV at runtime, the OrderedList property will not update according to these changes.
 

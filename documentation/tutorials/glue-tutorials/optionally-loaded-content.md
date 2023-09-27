@@ -89,7 +89,7 @@ To allow access to setting the texture using GetMember, add the following code t
          this.Sprite.ColorOperation = ColorOperation.Texture;
      }
 
-That's all there is to it! Now we simply need to call SetTextureProperty and pass a proper string and our Sprite will be set to the right texture. For more information on ColorOpeation, see the [ColorOperation page](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation") and the [IColorable page](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.md "FlatRedBall.Graphics.IColorable").
+That's all there is to it! Now we simply need to call SetTextureProperty and pass a proper string and our Sprite will be set to the right texture. For more information on ColorOpeation, see the [ColorOperation page](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation") and the [IColorable page](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable "FlatRedBall.Graphics.IColorable").
 
 ## Deciding on which texture to set
 
@@ -109,7 +109,7 @@ So instead, we should put this all in the hands of the content creator by writin
 
 One of the challenges of presenting a system like this in an article is that it has the potential of becoming **very large**. Sure, we've already written the code to set the texture, and we've shown how to set the texture with a hard-coded value such as "BlueCar", but how would we handle the selection though data?
 
-The answer lies in the .csv file format. Whenever you encounter a problem like this, we recommend making .csv files. A previous Glue tutorial covers how to work with .csv files [here](/frb/docs/index.php?title=Glue:Tutorials:Creating_and_populating_lists#Introducing_CSV.md "Glue:Tutorials:Creating and populating lists") so we'll skip over the details. Make sure that when you create your CSV file you either add it to the Screen that will select the car texture (like a menu screen) or add it to "Global Content Files" in Glue.
+The answer lies in the .csv file format. Whenever you encounter a problem like this, we recommend making .csv files. A previous Glue tutorial covers how to work with .csv files [here](/frb/docs/index.php?title=Glue:Tutorials:Creating_and_populating_lists#Introducing_CSV "Glue:Tutorials:Creating and populating lists") so we'll skip over the details. Make sure that when you create your CSV file you either add it to the Screen that will select the car texture (like a menu screen) or add it to "Global Content Files" in Glue.
 
 Your .csv might look something like this:
 

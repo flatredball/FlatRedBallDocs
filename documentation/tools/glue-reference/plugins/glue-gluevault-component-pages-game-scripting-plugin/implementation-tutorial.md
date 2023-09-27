@@ -61,7 +61,7 @@ For this tutorial we will use a Circle instance to represent a controllable char
 4.  Select the **Circle** type
 5.  Click **OK**
 
-[![](/wp-content/uploads/2016/01/2019_December_15_222804.gif.md)](/wp-content/uploads/2016/01/2019_December_15_222804.gif.md)
+[![](/wp-content/uploads/2016/01/2019_December_15_222804.gif)](/wp-content/uploads/2016/01/2019_December_15_222804.gif)
 
 ## Writing Game Scripts
 

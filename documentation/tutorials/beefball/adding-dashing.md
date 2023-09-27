@@ -47,7 +47,7 @@ If you try to build your game, you'll notice that the variable DashSpeed is unde
 6.  Click **OK**
 7.  Enter a value of **600** for **DashSpeed**
 
-[![](/wp-content/uploads/2016/01/2021_July_25_152616.gif.md)](/wp-content/uploads/2016/01/2021_July_25_152616.gif.md) Your game should build and dashing should be fully functional.
+[![](/wp-content/uploads/2016/01/2021_July_25_152616.gif)](/wp-content/uploads/2016/01/2021_July_25_152616.gif) Your game should build and dashing should be fully functional.
 
 ## Limiting Dash Frequency
 
@@ -148,18 +148,18 @@ As mentioned above, we'll want the CooldownCircle ball to grow (increase its Rad
 
 1.  Drag+drop the **CooldownCircle** object onto the **Variables** item
 2.  Select **Radius** for the Variable
-3.  Click **OK [![](/wp-content/uploads/2016/01/2021_July_25_154225.gif.md)](/wp-content/uploads/2016/01/2021_July_25_154225.gif.md)**
+3.  Click **OK [![](/wp-content/uploads/2016/01/2021_July_25_154225.gif)](/wp-content/uploads/2016/01/2021_July_25_154225.gif)**
 
 Categories must be told which variables to modify. By default, categories do not modify any variables.
 
 ![](/media/2022-01-img_61d31d6a8c5dc.png)
 
-To add a variable to a state, drag+drop the variable onto the category: [![](/wp-content/uploads/2016/01/03_09-01-31.gif.md)](/wp-content/uploads/2016/01/03_09-01-31.gif.md) In this case, the only variable is the CooldownCircleRadius. Next let's define the two states:
+To add a variable to a state, drag+drop the variable onto the category: [![](/wp-content/uploads/2016/01/03_09-01-31.gif)](/wp-content/uploads/2016/01/03_09-01-31.gif) In this case, the only variable is the CooldownCircleRadius. Next let's define the two states:
 
 1.  Change Tired **CooldownCircleRadius** to 0.
 2.  Change Rested **CooldownCircleRadius** to **16**. This should match the default radius for Body.
 
-[![](/wp-content/uploads/2016/01/03_09-02-56.gif.md)](/wp-content/uploads/2016/01/03_09-02-56.gif.md)
+[![](/wp-content/uploads/2016/01/03_09-02-56.gif)](/wp-content/uploads/2016/01/03_09-02-56.gif)
 
 ## Using States in code
 
@@ -192,7 +192,7 @@ Now that our states are defined, let's use them in code. The simplest way to use
         }
     }
 
-[![](/wp-content/uploads/2016/01/2021_July_25_154528.gif.md)](/wp-content/uploads/2016/01/2021_July_25_154528.gif.md)
+[![](/wp-content/uploads/2016/01/2021_July_25_154528.gif)](/wp-content/uploads/2016/01/2021_July_25_154528.gif)
 
 ## Changing Player Colors
 

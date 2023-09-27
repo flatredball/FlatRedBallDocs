@@ -78,7 +78,7 @@ The VerticalScrollBarVisibility property controls the behavior of the scrollbar
 -   Hidden - the vertical scrollbar will never show, but the ScrollViewer still supports scrolling with the mouse wheel or swiping on the touchscreen
 -   Visibile - the vertical scrollbar will always display
 
-[![](/wp-content/uploads/2017/12/17_07-34-31.gif.md)](/wp-content/uploads/2017/12/17_07-34-31.gif.md)
+[![](/wp-content/uploads/2017/12/17_07-34-31.gif)](/wp-content/uploads/2017/12/17_07-34-31.gif)
 
 ## Example - Manually Sizing ScrollViewer in Code
 
@@ -117,7 +117,7 @@ When viewing the code above, keep in mind:
 -   At the time of this writing the ScrollViewer object only supports scrolling vertically (up and down).
 -   We set the scrollViewer.Visual's WidthUnits, Width, HeightUnits, and Height for the sake of making a clear example. This is not necessary (and often not desirable) in a real world example where layout is controlled by the Gum tool.
 
-The code above adjusts the ScrollViewer such that the view displays 40% (400 / 1000) of the available height of the InnerPanel. The scroll bar can be used to to scroll through the container. [![](/wp-content/uploads/2017/12/2017-12-24_14-54-40.gif.md)](/wp-content/uploads/2017/12/2017-12-24_14-54-40.gif.md)
+The code above adjusts the ScrollViewer such that the view displays 40% (400 / 1000) of the available height of the InnerPanel. The scroll bar can be used to to scroll through the container. [![](/wp-content/uploads/2017/12/2017-12-24_14-54-40.gif)](/wp-content/uploads/2017/12/2017-12-24_14-54-40.gif)
 
 ## Example - Adding to InnerPanelInstance in Gum
 
@@ -173,7 +173,7 @@ for(int i = 0; i < 20; i++)
 }
 ```
 
-The code above will produce the following ScrollViewer: [![](/wp-content/uploads/2017/12/2017-12-24_18-58-12.gif.md)](/wp-content/uploads/2017/12/2017-12-24_18-58-12.gif.md)
+The code above will produce the following ScrollViewer: [![](/wp-content/uploads/2017/12/2017-12-24_18-58-12.gif)](/wp-content/uploads/2017/12/2017-12-24_18-58-12.gif)
 
 ## Example - Expanding Stacking ScrollViewer in Code
 
@@ -203,4 +203,4 @@ for(int i = 0; i < 10; i++)
 }
 ```
 
-[![](/wp-content/uploads/2017/12/2017-12-24_19-18-14.gif.md)](/wp-content/uploads/2017/12/2017-12-24_19-18-14.gif.md)  
+[![](/wp-content/uploads/2017/12/2017-12-24_19-18-14.gif)](/wp-content/uploads/2017/12/2017-12-24_19-18-14.gif)  

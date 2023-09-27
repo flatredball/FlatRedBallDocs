@@ -3,12 +3,12 @@
 The XForUI and YForUI members provide a coordinate system that can be used to interact with the default FlatRedBall GUI. There are a few things to keep in mind with the UI:
 
 -   The values reported by XForUI and YForUI are rarely needed. Most interaction with the default FRB UI can be done through events and properties.
--   The default FlatRedBall UI is not intended to be used in final games. It is not cross-platform, not skinnable, and lacks flexibility in areas that a full game may need. Instead, we recommend using [Glue](/frb/docs/index.php?title=Glue.md "Glue") and creating a custom UI.
+-   The default FlatRedBall UI is not intended to be used in final games. It is not cross-platform, not skinnable, and lacks flexibility in areas that a full game may need. Instead, we recommend using [Glue](/frb/docs/index.php?title=Glue "Glue") and creating a custom UI.
 -   The FlatRedBall UI was written in the very early days of FlatRedBall; therefore, the interface is not as clear as we would like to see it. Due to its rare use in shipped games and the amount of legacy code in the FRBDK, the interface has gone mostly unchanged for a long time.
 
 ## Usage example
 
-The following code shows how to create a [Window](/frb/docs/index.php?title=FlatRedBall.Gui.Window.md "FlatRedBall.Gui.Window") and have it move with the Cursor: Add the following using statement:
+The following code shows how to create a [Window](/frb/docs/index.php?title=FlatRedBall.Gui.Window "FlatRedBall.Gui.Window") and have it move with the Cursor: Add the following using statement:
 
     using FlatRedBall.Gui;
 

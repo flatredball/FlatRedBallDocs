@@ -8,7 +8,7 @@ The following example shows how to create shapes in Gum and use them as the enti
 
 ![](/media/2022-01-img_61db04a727f11.png)
 
-First, we'll delete the existing collision from the entity since it is not needed - Gum will be responsible for adding collision: [![](/wp-content/uploads/2022/01/09_08-53-22.gif.md)](/wp-content/uploads/2022/01/09_08-53-22.gif.md) Next, we'll define a Gum object which has collision. Keep in mind - any visuals will also be rendered on the entity, but for this example we'll use only shapes for collision.
+First, we'll delete the existing collision from the entity since it is not needed - Gum will be responsible for adding collision: [![](/wp-content/uploads/2022/01/09_08-53-22.gif)](/wp-content/uploads/2022/01/09_08-53-22.gif) Next, we'll define a Gum object which has collision. Keep in mind - any visuals will also be rendered on the entity, but for this example we'll use only shapes for collision.
 
 ![](/media/2022-01-img_61db05642c98a.png)
 
@@ -20,7 +20,7 @@ Gum objects can contain Circle and Rectangle instances, and these should not be 
 4.  Scroll down or search for the name of your Gum component - in this case **PlayerGumComponentRuntime**
 5.  Click **OK**
 
-[![](/wp-content/uploads/2022/01/09_08-57-34.gif.md)](/wp-content/uploads/2022/01/09_08-57-34.gif.md) Finally, verify that the Entity is both an ICollidable and IGumCollidable:
+[![](/wp-content/uploads/2022/01/09_08-57-34.gif)](/wp-content/uploads/2022/01/09_08-57-34.gif) Finally, verify that the Entity is both an ICollidable and IGumCollidable:
 
 1.  Select the entity
 2.  Select the **Properties** tab
@@ -36,4 +36,4 @@ Now the Player object will have its Collision populated by any Circle and Rectan
         this.Collision.Visible = true;
     }
 
-The Collision ShapeCollection will be visible and collides with solid collision. [![](/wp-content/uploads/2022/01/09_09-59-12.gif.md)](/wp-content/uploads/2022/01/09_09-59-12.gif.md)
+The Collision ShapeCollection will be visible and collides with solid collision. [![](/wp-content/uploads/2022/01/09_09-59-12.gif)](/wp-content/uploads/2022/01/09_09-59-12.gif)

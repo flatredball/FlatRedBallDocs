@@ -26,7 +26,7 @@ As we'll see later in the tutorial, using classes and structs also allows for yo
 
 First we'll start by creating the CSV that contains our information, then we'll explain the syntax. The following is a screenshot from Excel, but you can use any spreadsheet editing program (such as OpenOffice or Google Docs): ![CsvWithClasses1.PNG](/media/migrated_media-CsvWithClasses1.PNG) There's a few things to note here:
 
-1.  The Name property is marked as "required". This is common practice so that the CSV can be deserialized to a Dictionary. For more info on deserializing to Dictionaries in Glue, see [this page](/frb/docs/index.php?title=Glue:Reference:Files:CSV:CreatesDictionary.md "Glue:Reference:Files:CSV:CreatesDictionary").
+1.  The Name property is marked as "required". This is common practice so that the CSV can be deserialized to a Dictionary. For more info on deserializing to Dictionaries in Glue, see [this page](/frb/docs/index.php?title=Glue:Reference:Files:CSV:CreatesDictionary "Glue:Reference:Files:CSV:CreatesDictionary").
 2.  The type for AttackInfo must be fully-qualified - in other words we use "MyGame.DataTypes.AttackInfo", not just "AttackInfo". This requirement may be eased in a future version of Glue.
 3.  Each parameter can be assigned to any value valid for the type. Note that order does not matter (AreaOfEffect could be assigned before Damage), and it is not necessary to assign variables. For example, you could simply have "Damage=4" and AreaOfEffect would remain as its default value.
 

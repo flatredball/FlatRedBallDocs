@@ -6,7 +6,7 @@ A simple layout system has been created to make developing your GUIs as easy as 
 
 ## Sample Project
 
-You can download a sample project here: [Download](/frb/docs/images/e/e2/FRBSquid.zip.md)
+You can download a sample project here: [Download](/frb/docs/images/e/e2/FRBSquid.zip)
 
 This sample project includes several things:
 

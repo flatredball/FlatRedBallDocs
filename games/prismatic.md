@@ -14,6 +14,6 @@ Prismatic is an addicting puzzle game featuring a fully-illustrated story with 1
 
 ## Other Information
 
--   [Interview with Jeff Davis from Mythicore about Prismatic](/frb/docs/index.php?title=Games:Prismatic:Interview_June_2_2009.md "Games:Prismatic:Interview June 2 2009")
+-   [Interview with Jeff Davis from Mythicore about Prismatic](/frb/docs/index.php?title=Games:Prismatic:Interview_June_2_2009 "Games:Prismatic:Interview June 2 2009")
 -   [Xbox Marketplace Link](http://marketplace.xbox.com/en-US/games/media/66acd000-77fe-1000-9115-d8025855021f/)
 -   [Mythicore](http://mythicore.com/) - The website of the creators of Prismatic.

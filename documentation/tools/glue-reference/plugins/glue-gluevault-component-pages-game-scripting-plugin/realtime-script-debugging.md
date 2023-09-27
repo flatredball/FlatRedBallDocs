@@ -19,7 +19,7 @@ To integrate the debugging form, you must already have:
 -   Created a class which inherits from ScriptEngine
 -   Added an instance of the ScriptEngine-inheriting class into your game
 
-If you are unsure about how to do any of the above steps, you should review the [game scripting implementation tutorial](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Game_Scripting_Plugin:Implementation_Tutorial.md "Glue:GlueVault:Component Pages:Game Scripting Plugin:Implementation Tutorial"). For the rest of this tutorial we will use a Screen called GameScreen - this is the name of the Screen that was used in the [game scripting implementation tutorial](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Game_Scripting_Plugin:Implementation_Tutorial.md "Glue:GlueVault:Component Pages:Game Scripting Plugin:Implementation Tutorial").
+If you are unsure about how to do any of the above steps, you should review the [game scripting implementation tutorial](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Game_Scripting_Plugin:Implementation_Tutorial "Glue:GlueVault:Component Pages:Game Scripting Plugin:Implementation Tutorial"). For the rest of this tutorial we will use a Screen called GameScreen - this is the name of the Screen that was used in the [game scripting implementation tutorial](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Game_Scripting_Plugin:Implementation_Tutorial "Glue:GlueVault:Component Pages:Game Scripting Plugin:Implementation Tutorial").
 
 ## Adding necessary references
 

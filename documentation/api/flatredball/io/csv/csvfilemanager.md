@@ -1,10 +1,10 @@
 ## Introduction
 
-The CsvFileManager is a class which provides functionality for working with [.csv files](http://en.wikipedia.org/wiki/Comma-separated_values). The CSV file format is a simple file format that can be loaded and saved by spreadsheet programs. Glue provides a lot of functionality for working with CSV files. For information on working with CSV and Glue, see the [using CSVs in Glue tutorial](/frb/docs/index.php?title=Glue:Tutorials:Using_CSVs.md "Glue:Tutorials:Using CSVs").
+The CsvFileManager is a class which provides functionality for working with [.csv files](http://en.wikipedia.org/wiki/Comma-separated_values). The CSV file format is a simple file format that can be loaded and saved by spreadsheet programs. Glue provides a lot of functionality for working with CSV files. For information on working with CSV and Glue, see the [using CSVs in Glue tutorial](/frb/docs/index.php?title=Glue:Tutorials:Using_CSVs "Glue:Tutorials:Using CSVs").
 
 ## Benefits of CSV
 
-FlatRedBall engines are built to work well with the XML format. The [FileManager](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.md "FlatRedBall.IO.FileManager") provides methods for serializing to and deserializing from XML files, and most [FlatRedBall file types](/frb/docs/index.php?title=FlatRedBall_File_Types.md "FlatRedBall File Types") are actually XML files for simplified readability, debugging, and to be cross-platform. However, despite its merits, the XML file type has a few disadvantages:
+FlatRedBall engines are built to work well with the XML format. The [FileManager](/frb/docs/index.php?title=FlatRedBall.IO.FileManager "FlatRedBall.IO.FileManager") provides methods for serializing to and deserializing from XML files, and most [FlatRedBall file types](/frb/docs/index.php?title=FlatRedBall_File_Types "FlatRedBall File Types") are actually XML files for simplified readability, debugging, and to be cross-platform. However, despite its merits, the XML file type has a few disadvantages:
 
 -   XML files tend to be bloated for the data contained. In many cases most of the data in the XML file comes from the tags rather than the data.
 -   XML files can be difficult to maintain by hand. Despite being human readable, adding new entries without copying/pasting other entries is tedious and error prone.
@@ -47,7 +47,7 @@ Notice that single-quotes around a cell are not included in the contents of a CS
 
 ## Creating CSV Files
 
-The CsvfileManager provides methods for loading CSV files and creating lists of items. The code included in this article defines a simple struct which contains properties used to initialize newly-created [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). But before getting to the code, we will explain how to create CSV files in [Google Docs](http://docs.google.com/). The following lists how to create a CSV file using [Google Docs](http://docs.google.com/).
+The CsvfileManager provides methods for loading CSV files and creating lists of items. The code included in this article defines a simple struct which contains properties used to initialize newly-created [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). But before getting to the code, we will explain how to create CSV files in [Google Docs](http://docs.google.com/). The following lists how to create a CSV file using [Google Docs](http://docs.google.com/).
 
 1.  Go to the Google Docs website: [http://docs.google.com/](http://docs.google.com/).
 2.  Log in to Google Docs. If you have never logged in before, but have a GMail address, use your GMail address and password to log in. Otherwise, you will need to create a new account.
@@ -57,7 +57,7 @@ The CsvfileManager provides methods for loading CSV files and creating lists of 
 6.  Export the files to a .csv file. ![ExportToCsv.png](/media/migrated_media-ExportToCsv.png)
 7.  Depending on your browser the CSV file may open right in the browser. If that's the case, save the file out from the browser through the File menu: ![SaveFromBrowser.png](/media/migrated_media-SaveFromBrowser.png)
 
-At this point you should have a CSV file saved on your computer. The file should be similar to: [Export.csv](/frb/docs/images/3/38/Export.csv.md "Export.csv") Either save this file in the the same folder as your project's EXE file, or add it to the solution and set the file to copy.
+At this point you should have a CSV file saved on your computer. The file should be similar to: [Export.csv](/frb/docs/images/3/38/Export.csv "Export.csv") Either save this file in the the same folder as your project's EXE file, or add it to the solution and set the file to copy.
 
 ## Code Example
 
@@ -93,23 +93,23 @@ Add the following to Initialize after initializing FlatRedBall
 
 The following table shows the supported types.
 
-|                                                                 |                                                   |                                                                                                                                                                              |
-|-----------------------------------------------------------------|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Type                                                            | Member Example                                    | CSV Entry Example                                                                                                                                                            |
-| bool *(A)*                                                      | public bool IsHungry;                             | true                                                                                                                                                                         |
-| double                                                          | public double LengthOfTime;                       | 3.244                                                                                                                                                                        |
-| Enum *(B)*                                                      | public BorderSides Sides;                         | Top                                                                                                                                                                          |
-| float                                                           | public float X;                                   | 1                                                                                                                                                                            |
-| int                                                             | public int CurrentLevel;                          | 3                                                                                                                                                                            |
-| Matrix                                                          | public Matrix OrientationMatrix;                  | 1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1                                                                                                                                              |
-| string                                                          | public string FirstName;                          | Martin                                                                                                                                                                       |
-| Texture2D *(C)*                                                 | public Texture2D TextureToUse;                    | redball.bmp                                                                                                                                                                  |
-| Vector2                                                         | public Vector2 GoalPosition;                      | 23,18                                                                                                                                                                        |
-| Vector3                                                         | public Vector3 DirectionToFace;                   | 11,0,-14                                                                                                                                                                     |
-| Vector4                                                         | public Vector4 FourDimentionalVector;             | 24,18,0,1                                                                                                                                                                    |
-| List\<string\> (or lists of any primitive)                      | public List\<string\> Names = new List\<string\>; | See [this article](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Rows_with_Lists.md "FlatRedBall.IO.Csv.CsvFileManager:Rows with Lists")                       |
-| Color                                                           | public Color PaintColor;                          | See [this article](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Color.md "FlatRedBall.IO.Csv.CsvFileManager:Color")                                           |
-| Custom types (such as classes and structs defined in your game) | public SpecialAbility AbilityInstance;            | see [this article](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Instantiating_custom_types.md "FlatRedBall.IO.Csv.CsvFileManager:Instantiating custom types") |
+|                                                                 |                                                   |                                                                                                                                                                           |
+|-----------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Type                                                            | Member Example                                    | CSV Entry Example                                                                                                                                                         |
+| bool *(A)*                                                      | public bool IsHungry;                             | true                                                                                                                                                                      |
+| double                                                          | public double LengthOfTime;                       | 3.244                                                                                                                                                                     |
+| Enum *(B)*                                                      | public BorderSides Sides;                         | Top                                                                                                                                                                       |
+| float                                                           | public float X;                                   | 1                                                                                                                                                                         |
+| int                                                             | public int CurrentLevel;                          | 3                                                                                                                                                                         |
+| Matrix                                                          | public Matrix OrientationMatrix;                  | 1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1                                                                                                                                           |
+| string                                                          | public string FirstName;                          | Martin                                                                                                                                                                    |
+| Texture2D *(C)*                                                 | public Texture2D TextureToUse;                    | redball.bmp                                                                                                                                                               |
+| Vector2                                                         | public Vector2 GoalPosition;                      | 23,18                                                                                                                                                                     |
+| Vector3                                                         | public Vector3 DirectionToFace;                   | 11,0,-14                                                                                                                                                                  |
+| Vector4                                                         | public Vector4 FourDimentionalVector;             | 24,18,0,1                                                                                                                                                                 |
+| List\<string\> (or lists of any primitive)                      | public List\<string\> Names = new List\<string\>; | See [this article](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Rows_with_Lists "FlatRedBall.IO.Csv.CsvFileManager:Rows with Lists")                       |
+| Color                                                           | public Color PaintColor;                          | See [this article](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Color "FlatRedBall.IO.Csv.CsvFileManager:Color")                                           |
+| Custom types (such as classes and structs defined in your game) | public SpecialAbility AbilityInstance;            | see [this article](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Instantiating_custom_types "FlatRedBall.IO.Csv.CsvFileManager:Instantiating custom types") |
 
 *(A)* Some applications like OpenOffice Calc convert "true" to "TRUE". FlatRedBall will parse bool values regardless of capitalization. In other words, "TRUE" will be parsed correctly. *(B)* CSVs support enumerations. If using enumerations in Glue, you need to fully-qualify the enumeration in the type. For example, for a color operation, the header might read:
 
@@ -121,9 +121,9 @@ You do not need to qualify the value. For example, you can simply use "Modulate"
 
 ## Additional Information
 
--   [Cells with multiple lines](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Cells_with_multiple_lines.md "FlatRedBall.IO.Csv.CsvFileManager:Cells with multiple lines")
--   [Instantiating custom types](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Instantiating_custom_types.md "FlatRedBall.IO.Csv.CsvFileManager:Instantiating custom types")
--   [Rows with lists](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Rows_with_Lists.md "FlatRedBall.IO.Csv.CsvFileManager:Rows with Lists")
+-   [Cells with multiple lines](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Cells_with_multiple_lines "FlatRedBall.IO.Csv.CsvFileManager:Cells with multiple lines")
+-   [Instantiating custom types](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Instantiating_custom_types "FlatRedBall.IO.Csv.CsvFileManager:Instantiating custom types")
+-   [Rows with lists](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager:Rows_with_Lists "FlatRedBall.IO.Csv.CsvFileManager:Rows with Lists")
 
 ## CsvFileManager Members
 

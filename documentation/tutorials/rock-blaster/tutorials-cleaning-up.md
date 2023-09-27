@@ -29,7 +29,7 @@ If the user dies currently the game simply sits there and doesn't let the player
 
 1.  Open Gum
 
-2.  Drag+drop a **Text** object from the Standards folder onto **GameScreenGum [![](/wp-content/uploads/2016/01/2021_March_14_093302.gif.md)](/wp-content/uploads/2016/01/2021_March_14_093302.gif.md)**
+2.  Drag+drop a **Text** object from the Standards folder onto **GameScreenGum [![](/wp-content/uploads/2016/01/2021_March_14_093302.gif)](/wp-content/uploads/2016/01/2021_March_14_093302.gif)**
 
 3.  Rename the **Text** to **GameOverAnnouncement**
 
@@ -55,7 +55,7 @@ Just like with the score hud, we will access the GameOverAnnouncement in Glue:
 4.  Use the drop-down to select **GameOverAnnouncement**
 5.  Click **OK**
 
-[![](/wp-content/uploads/2016/01/2021_March_14_090510.gif.md)](/wp-content/uploads/2016/01/2021_March_14_090510.gif.md)
+[![](/wp-content/uploads/2016/01/2021_March_14_090510.gif)](/wp-content/uploads/2016/01/2021_March_14_090510.gif)
 
 ## Detecting GameOver
 

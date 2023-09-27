@@ -4,4 +4,4 @@ The NewProjectCreator is a program which is used to create new FlatRedBall proje
 
 ## Subsections
 
--   [NewProjectCreator:AvailableFiles.csv](/frb/docs/index.php?title=NewProjectCreator:AvailableFiles.csv.md "NewProjectCreator:AvailableFiles.csv")
+-   [NewProjectCreator:AvailableFiles.csv](/frb/docs/index.php?title=NewProjectCreator:AvailableFiles.csv "NewProjectCreator:AvailableFiles.csv")

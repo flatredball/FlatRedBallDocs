@@ -1,6 +1,6 @@
 ## Introduction
 
-Attachments are an effective way to keep one [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") in a given position or rotation relative to another [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject"). However, attachments do not immediately modify children positions. This article will discuss when attachments are applied by the engine, exceptions to this rule, and how this behavior can be modified.
+Attachments are an effective way to keep one [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") in a given position or rotation relative to another [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject"). However, attachments do not immediately modify children positions. This article will discuss when attachments are applied by the engine, exceptions to this rule, and how this behavior can be modified.
 
 ## Engine Flow
 
@@ -18,4 +18,4 @@ The important thing to note is that relative values do not immediately modify ab
 
 ## Forcing Updates
 
-Although the engine automatically updates absolute values according to relative values just before drawing, it may be necessary to perform this update in game-specific code. If so, the [ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md.ForceUpdateDependencies "FlatRedBall.PositionedObject.ForceUpdateDependencies") method can be called. See the [ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md.ForceUpdateDependencies "FlatRedBall.PositionedObject.ForceUpdateDependencies") code.
+Although the engine automatically updates absolute values according to relative values just before drawing, it may be necessary to perform this update in game-specific code. If so, the [ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ForceUpdateDependencies "FlatRedBall.PositionedObject.ForceUpdateDependencies") method can be called. See the [ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ForceUpdateDependencies "FlatRedBall.PositionedObject.ForceUpdateDependencies") code.

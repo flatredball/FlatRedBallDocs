@@ -1,6 +1,6 @@
 ## Introduction
 
-The AddLayer method allows the addition of Camera-specific [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer.md "FlatRedBall.Graphics.Layer"). For more information on how [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer.md "FlatRedBall.Graphics.Layer") sort, see the [Object Sorting](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Object_Sorting.md "FlatRedBallXna:Tutorials:Object Sorting") wiki entry.
+The AddLayer method allows the addition of Camera-specific [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer"). For more information on how [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer") sort, see the [Object Sorting](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Object_Sorting "FlatRedBallXna:Tutorials:Object Sorting") wiki entry.
 
 ## Method Signatures
 

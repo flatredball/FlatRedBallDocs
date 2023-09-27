@@ -1,13 +1,13 @@
 ## Introduction
 
-The TimedActivity method is a method used by PositionedObjects (and objects which inherit from PositionedObject such as [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite")) to perform common every-frame logic. The TimedActivity method performs the following:
+The TimedActivity method is a method used by PositionedObjects (and objects which inherit from PositionedObject such as [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite")) to perform common every-frame logic. The TimedActivity method performs the following:
 
 -   Adjusts position by velocity and acceleration
 -   Adjusts velocity by acceleration
 -   Adjusts rotation by rotation velocity
 -   Adjusts velocity by drag (linear representation)
--   Calls [TimedActivityRelative](/frb/docs/index.php?title=FlatRedBall.PositionedObject.TimedActivityRelative&action=edit&redlink=1.md "FlatRedBall.PositionedObject.TimedActivityRelative (page does not exist)").
--   Adjusts RealVelocity and RealAcceleration if [KeepTrackOfReal](/frb/docs/index.php?title=FlatRedBall.PositionedObject.KeepTrackOfReal.md "FlatRedBall.PositionedObject.KeepTrackOfReal") is set to true.
+-   Calls [TimedActivityRelative](/frb/docs/index.php?title=FlatRedBall.PositionedObject.TimedActivityRelative&action=edit&redlink=1 "FlatRedBall.PositionedObject.TimedActivityRelative (page does not exist)").
+-   Adjusts RealVelocity and RealAcceleration if [KeepTrackOfReal](/frb/docs/index.php?title=FlatRedBall.PositionedObject.KeepTrackOfReal "FlatRedBall.PositionedObject.KeepTrackOfReal") is set to true.
 
 TimedActivity is automatically called for you on any PositionedObject that is part of a manager, so you will normally not need to call this method manually.
 
@@ -19,13 +19,13 @@ The TimedActivity signature is as follows:
 
 The arguments are used as follows:
 
--   secondDifference - this is the amount of time that has passed since last frame. Internally FlatRedBall uses [TimeManager.SecondDifference](/frb/docs/index.php?title=FlatRedBall.TimeManager.SecondDifference.md "FlatRedBall.TimeManager.SecondDifference")
+-   secondDifference - this is the amount of time that has passed since last frame. Internally FlatRedBall uses [TimeManager.SecondDifference](/frb/docs/index.php?title=FlatRedBall.TimeManager.SecondDifference "FlatRedBall.TimeManager.SecondDifference")
 
 -   secondDifferenceSquaredDividedByTwo - this is a value used to apply acceleration. Internally FlatRedBall uses:
 
         (TimeManager.SecondDifference * TimeManager.SecondDifference)/2.0
 
--   secondsPassedLastFrame - this is the amount of time that passed between two frames ago and last frame. This is used to calculate ["real" values](/frb/docs/index.php?title=FlatRedBall.PositionedObject.KeepTrackOfReal.md "FlatRedBall.PositionedObject.KeepTrackOfReal"). Internally FlatRedBall uses [TimeManager.LastSecondDifference](/frb/docs/index.php?title=FlatRedBall.TimeManager.LastSecondDifference&action=edit&redlink=1.md "FlatRedBall.TimeManager.LastSecondDifference (page does not exist)")
+-   secondsPassedLastFrame - this is the amount of time that passed between two frames ago and last frame. This is used to calculate ["real" values](/frb/docs/index.php?title=FlatRedBall.PositionedObject.KeepTrackOfReal "FlatRedBall.PositionedObject.KeepTrackOfReal"). Internally FlatRedBall uses [TimeManager.LastSecondDifference](/frb/docs/index.php?title=FlatRedBall.TimeManager.LastSecondDifference&action=edit&redlink=1 "FlatRedBall.TimeManager.LastSecondDifference (page does not exist)")
 
 ## When to manually call TimedActivity
 
@@ -50,16 +50,16 @@ TimedActivity may need to be manually called if you would like to simulate more 
 
 ## TimedActivity and Drag
 
-The example shown above will result in perfectly accurate positioning **if [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag.md "FlatRedBall.PositionedObject.Drag") is 0**. The reason for this is because [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag.md "FlatRedBall.PositionedObject.Drag") is a linear approximation. Normally this linear approximation is sufficiently accurate; however, large values for secondDifference can result in inaccurate and even confusing behavior. It is even possible, given a large enough secondDifference, for [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag.md "FlatRedBall.PositionedObject.Drag") to reverse the velocity of an object.
+The example shown above will result in perfectly accurate positioning **if [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag "FlatRedBall.PositionedObject.Drag") is 0**. The reason for this is because [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag "FlatRedBall.PositionedObject.Drag") is a linear approximation. Normally this linear approximation is sufficiently accurate; however, large values for secondDifference can result in inaccurate and even confusing behavior. It is even possible, given a large enough secondDifference, for [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag "FlatRedBall.PositionedObject.Drag") to reverse the velocity of an object.
 
-If you are using [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag.md "FlatRedBall.PositionedObject.Drag") and want to manually call TimedActivity, you should either:
+If you are using [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag "FlatRedBall.PositionedObject.Drag") and want to manually call TimedActivity, you should either:
 
-1.  Manually apply [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag.md "FlatRedBall.PositionedObject.Drag") (see the [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag.md "FlatRedBall.PositionedObject.Drag") page for information on how to do this)
+1.  Manually apply [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag "FlatRedBall.PositionedObject.Drag") (see the [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag "FlatRedBall.PositionedObject.Drag") page for information on how to do this)
 2.  Call TimedActivity in a loop rather than all at once, as shown below.
 
 ## Calling TimedActivity in a loop
 
-Calling TimedActivity in a loop simulates the way that FlatRedBall calls TimedActivity once per frame. This can make [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag.md "FlatRedBall.PositionedObject.Drag") behave properly. The following code shows how to call TimedActivity, simulating a game that runs at 30 frames per second:
+Calling TimedActivity in a loop simulates the way that FlatRedBall calls TimedActivity once per frame. This can make [Drag](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Drag "FlatRedBall.PositionedObject.Drag") behave properly. The following code shows how to call TimedActivity, simulating a game that runs at 30 frames per second:
 
     int framesPerSecond = 30;
     float secondDifference = 1/(float)framesPerSecond;

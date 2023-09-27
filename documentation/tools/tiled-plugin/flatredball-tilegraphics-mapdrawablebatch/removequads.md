@@ -13,7 +13,7 @@ The following shows how to remove the first three tiles from the MapDrawableBatc
     // assuming MyLevel is a valid LayeredTileMap:
     MyLevel.MapLayers[0].RemoveQuads(toRemove);
 
-For more information on LayeredTileMap, see the [LayeredTileMap page](/frb/docs/index.php?title=FlatRedBall.TileGraphics.LayeredTileMap.md "FlatRedBall.TileGraphics.LayeredTileMap").
+For more information on LayeredTileMap, see the [LayeredTileMap page](/frb/docs/index.php?title=FlatRedBall.TileGraphics.LayeredTileMap "FlatRedBall.TileGraphics.LayeredTileMap").
 
 ## Code Example - Removing Quads With the Cursor
 

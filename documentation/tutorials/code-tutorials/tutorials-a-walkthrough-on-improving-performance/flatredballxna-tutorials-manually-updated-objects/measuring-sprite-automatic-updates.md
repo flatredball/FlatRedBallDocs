@@ -1,6 +1,6 @@
 ## Introduction
 
-This section will walk you through identifying how many Sprites you have in your game, and how you can reduce this number to improve performance. If you haven't yet, you should first read the article about measuring all PositionedObjects. This article can be found [here](/frb/docs/index.php?title=FlatRedballXna:Tutorials:Manually_Updated_Objects:Measuring_Automatic_Updates.md "FlatRedballXna:Tutorials:Manually Updated Objects:Measuring Automatic Updates").
+This section will walk you through identifying how many Sprites you have in your game, and how you can reduce this number to improve performance. If you haven't yet, you should first read the article about measuring all PositionedObjects. This article can be found [here](/frb/docs/index.php?title=FlatRedballXna:Tutorials:Manually_Updated_Objects:Measuring_Automatic_Updates "FlatRedballXna:Tutorials:Manually Updated Objects:Measuring Automatic Updates").
 
 ## If Sprites are the majority
 
@@ -8,7 +8,7 @@ If you've used WriteAutomaticallyUpdatedObjectInformation and have identified th
 
 ## FlatRedBall Debugger to the rescue
 
-Just like in [the general PositionedObject measuring tutorial](/frb/docs/index.php?title=FlatRedballXna:Tutorials:Manually_Updated_Objects:Measuring_Automatic_Updates.md "FlatRedballXna:Tutorials:Manually Updated Objects:Measuring Automatic Updates"), the FlatRedBall Debugger provides functions that can help us identify where our Sprites are coming from. To use this function:
+Just like in [the general PositionedObject measuring tutorial](/frb/docs/index.php?title=FlatRedballXna:Tutorials:Manually_Updated_Objects:Measuring_Automatic_Updates "FlatRedballXna:Tutorials:Manually Updated Objects:Measuring Automatic Updates"), the FlatRedBall Debugger provides functions that can help us identify where our Sprites are coming from. To use this function:
 
 1.  Open your project in Visual Studio
 

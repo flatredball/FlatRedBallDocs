@@ -6,7 +6,7 @@ The Alpha property represents the transparency (or opacity) of a given object. T
 
 ## Code Example
 
-The following code shows how to use the Alpha property on [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") objects to control their transparency.
+The following code shows how to use the Alpha property on [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") objects to control their transparency.
 
     int count = 20;
     for (int i = 0; i < count; i++)

@@ -4,7 +4,7 @@ The IsOn3D method is a method which can be used to detect whether the mouse is o
 
 ## IsOn3D and Text
 
-The following code creates a [Text](/frb/docs/index.php?title=Text.md "Text") object. This text object will turn white when the mouse moves over the [Text](/frb/docs/index.php?title=Text.md "Text"), but will remain blue if the mouse is not over it.
+The following code creates a [Text](/frb/docs/index.php?title=Text "Text") object. This text object will turn white when the mouse moves over the [Text](/frb/docs/index.php?title=Text "Text"), but will remain blue if the mouse is not over it.
 
 Add the following using statements:
 
@@ -38,9 +38,9 @@ Add the following to Update:
 
 ![IsOn3DText.png](/media/migrated_media-IsOn3DText.png)
 
-**Warning**: You should always use the non-generic version of IsOn3D when performing tests on [Text](/frb/docs/index.php?title=Text.md "Text") objects. Want to know more? Read on!
+**Warning**: You should always use the non-generic version of IsOn3D when performing tests on [Text](/frb/docs/index.php?title=Text "Text") objects. Want to know more? Read on!
 
-There are a number of overloads for the IsOn3D method. The two which apply to the [Text](/frb/docs/index.php?title=Text.md "Text") object are:
+There are a number of overloads for the IsOn3D method. The two which apply to the [Text](/frb/docs/index.php?title=Text "Text") object are:
 
     public bool IsOn3D(Text text, bool relativeToCamera)
 
@@ -50,15 +50,15 @@ You may be wondering which to use, why there are two versions, and how you can p
 
 First, you should use the non-generic version. That is, you should use the version that takes a Text argument.
 
-So why are there two versions? The reason is because the generic IsOn3D is a method that is used to test whether the Mouse is over types such as [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") and [SpriteFrames](/frb/docs/index.php?title=Sprite.mdFrame "SpriteFrame"). Since these objects all implement IPositionable, IRotatable, and IReadOnlyScalable, then this generic function works well.
+So why are there two versions? The reason is because the generic IsOn3D is a method that is used to test whether the Mouse is over types such as [Sprites](/frb/docs/index.php?title=Sprite "Sprite") and [SpriteFrames](/frb/docs/index.php?title=SpriteFrame "SpriteFrame"). Since these objects all implement IPositionable, IRotatable, and IReadOnlyScalable, then this generic function works well.
 
-The reason that the Text object can use the generic version of IsOn3D is because it also implements the necessary interfaces; however, even though it implements the IReadOnlyScalable, it is slightly different from the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") and [SpriteFrame](/frb/docs/index.php?title=Sprite.mdFrame "SpriteFrame") classes.
+The reason that the Text object can use the generic version of IsOn3D is because it also implements the necessary interfaces; however, even though it implements the IReadOnlyScalable, it is slightly different from the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") and [SpriteFrame](/frb/docs/index.php?title=SpriteFrame "SpriteFrame") classes.
 
-The [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") and [SpriteFrame](/frb/docs/index.php?title=Sprite.mdFrame "SpriteFrame") classes both are always centered on their position. This means that the right edge of these objects is always X + ScaleX. However, this is not the case for the [Text](/frb/docs/index.php?title=Text.md "Text") object due to its VerticalAlignment and HorizontalAlignment properties. These properties can change how the Text is drawn relative to its actual position. For this reason, the assumption that the [Text's](/frb/docs/index.php?title=Text.md "Text") position is at its center is not valid.
+The [Sprite](/frb/docs/index.php?title=Sprite "Sprite") and [SpriteFrame](/frb/docs/index.php?title=SpriteFrame "SpriteFrame") classes both are always centered on their position. This means that the right edge of these objects is always X + ScaleX. However, this is not the case for the [Text](/frb/docs/index.php?title=Text "Text") object due to its VerticalAlignment and HorizontalAlignment properties. These properties can change how the Text is drawn relative to its actual position. For this reason, the assumption that the [Text's](/frb/docs/index.php?title=Text "Text") position is at its center is not valid.
 
-This means that if the [Text](/frb/docs/index.php?title=Text.md "Text") object is centered both horizontally and vertically, then the generic IsOn3D will accurately determine whether the mouse is over the [Text](/frb/docs/index.php?title=Text.md "Text"). But if either property is not centered, then the generic IsOn3D will not perform accurately.
+This means that if the [Text](/frb/docs/index.php?title=Text "Text") object is centered both horizontally and vertically, then the generic IsOn3D will accurately determine whether the mouse is over the [Text](/frb/docs/index.php?title=Text "Text"). But if either property is not centered, then the generic IsOn3D will not perform accurately.
 
-The non-generic version of IsOn3D (which has a [Text](/frb/docs/index.php?title=Text.md "Text") argument) can perform [Text](/frb/docs/index.php?title=Text.md "Text")-specific logic to accurately determine whether the mouse is over the [Text](/frb/docs/index.php?title=Text.md "Text") object regardless of the HorizontalAlignment or VerticalAlignment.
+The non-generic version of IsOn3D (which has a [Text](/frb/docs/index.php?title=Text "Text") argument) can perform [Text](/frb/docs/index.php?title=Text "Text")-specific logic to accurately determine whether the mouse is over the [Text](/frb/docs/index.php?title=Text "Text") object regardless of the HorizontalAlignment or VerticalAlignment.
 
 This brings us to the third question - how can you pick which you are using? This all depends on how you call the method. The following code shows how to call each version:
 
@@ -70,7 +70,7 @@ This brings us to the third question - how can you pick which you are using? Thi
 
 ## Working with Multiple Cameras
 
-The following code creates two [Cameras](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera"). Both cameras view a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). If the cursor is over the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") on either [Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera") then it turns purple.
+The following code creates two [Cameras](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera"). Both cameras view a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). If the cursor is over the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") on either [Camera](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera") then it turns purple.
 
 Add the following using statements:
 

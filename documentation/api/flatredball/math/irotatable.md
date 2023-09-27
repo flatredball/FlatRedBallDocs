@@ -1,14 +1,14 @@
 ## Introduction
 
-Rotation controls the 3D orientation of [PositionedObjects](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject"). Although some [PositionedObjects](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject") such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") objects are 2D, all [PositionedObjects](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject") can be rotated in 3D space. Rotation can be represented using the RotationMatrix property or individual rotation components. These components (RotationX, RotationY, RotationZ) are measured in radians, not degrees:![RadiansAndDegrees.png](/media/migrated_media-RadiansAndDegrees.png) For more information on working with rotations, see the [Rotation wiki entry](/frb/docs/index.php?title=Math:Rotation.md "Math:Rotation").
+Rotation controls the 3D orientation of [PositionedObjects](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject"). Although some [PositionedObjects](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject") such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") objects are 2D, all [PositionedObjects](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject") can be rotated in 3D space. Rotation can be represented using the RotationMatrix property or individual rotation components. These components (RotationX, RotationY, RotationZ) are measured in radians, not degrees:![RadiansAndDegrees.png](/media/migrated_media-RadiansAndDegrees.png) For more information on working with rotations, see the [Rotation wiki entry](/frb/docs/index.php?title=Math:Rotation "Math:Rotation").
 
 ## The Math of Rotation
 
-IRotatables represent their rotations as individual components (RotationX, RotationY, and Rotation) as well as a combined RotationMatrix which is of Microsoft.Xna.Framework.Matrix type. For a conceptual understanding of matrices, see [the Matrix wiki entry](/frb/docs/index.php?title=Matrix.md "Matrix"). For more information, see our [Trigonometry](/frb/docs/index.php?title=Math:Trigonometry.md "Math:Trigonometry") wiki entry to understand more about how rotations work.
+IRotatables represent their rotations as individual components (RotationX, RotationY, and Rotation) as well as a combined RotationMatrix which is of Microsoft.Xna.Framework.Matrix type. For a conceptual understanding of matrices, see [the Matrix wiki entry](/frb/docs/index.php?title=Matrix "Matrix"). For more information, see our [Trigonometry](/frb/docs/index.php?title=Math:Trigonometry "Math:Trigonometry") wiki entry to understand more about how rotations work.
 
 ### Degrees vs. Radians
 
-If you recall your math classes, you may be familiar with the degree measurement. FlatRedBall uses radians as a measurement for its rotations. For more information on radians vs. degrees and why FlatRedBall uses radians, see the [radians and degrees section on the Trigonometry page](/frb/docs/index.php?title=Math:Trigonometry.md#Radians_and_Degrees "Math:Trigonometry").
+If you recall your math classes, you may be familiar with the degree measurement. FlatRedBall uses radians as a measurement for its rotations. For more information on radians vs. degrees and why FlatRedBall uses radians, see the [radians and degrees section on the Trigonometry page](/frb/docs/index.php?title=Math:Trigonometry#Radians_and_Degrees "Math:Trigonometry").
 
 ## IRotatable Properties
 
@@ -54,7 +54,7 @@ The following code creates three rows of Sprites. Each row is rotated on a diffe
 
 ## Rotational Velocity
 
-Just as velocity changes position for all managed [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject"), rotational velocity changes rotation for all managed [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject"). The following code creates a spinning [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite").
+Just as velocity changes position for all managed [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject"), rotational velocity changes rotation for all managed [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject"). The following code creates a spinning [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite").
 
     Sprite spinningSprite = SpriteManager.AddSprite("redball.bmp");
     spinningSprite.ScaleX = 3;
@@ -64,7 +64,7 @@ Just as velocity changes position for all managed [PositionedObjects](/frb/docs/
 
 ## Facing Objects
 
-Rotation can be used to make an object (such as a gun turret) face toward another object (such as an enemy). For information on how to perform this, see the [Rotating a Sprite so it faces the cursor](/frb/docs/index.php?title=Math:Rotation.md#Rotating_a_Sprite_so_it_faces_the_cursor "Math:Rotation") wiki entry.
+Rotation can be used to make an object (such as a gun turret) face toward another object (such as an enemy). For information on how to perform this, see the [Rotating a Sprite so it faces the cursor](/frb/docs/index.php?title=Math:Rotation#Rotating_a_Sprite_so_it_faces_the_cursor "Math:Rotation") wiki entry.
 
 ## Rotating About an Axis
 
@@ -78,6 +78,6 @@ Matrices can be multiplied to apply rotation. The following code rotates an IRot
 
 ## Using multiple rotation values
 
-If an object is unrotated (the default orientation), then any rotation value will result in the object rotating about a world-world aligned axis. In other rotating a Sprite by using RotationZ will cause it to spin like a record. Rotating a Sprite by using RotationY will cause it to spin like a coin on a table. However, if a Sprite has non-zero RotationX, RotationY, or RotationZ values, then setting another Rotation value may result in unpredictable rotations. Technically, the resulting orientation IS predictable; however, to understand the result of changing one of these values you must understand how Matrices are multiplied. If you are going to be working with Matrices, we recommend instead simply performing the Matrix math in your own game logic and then setting the RotationMatrix property. This will give you complete control over how rotation values are combined and applied. For an introduction to Matrices, see our [Matrix](/frb/docs/index.php?title=Matrix.md "Matrix") page. To really get a deep understanding of Matrix math, check out the [Kahn Academy Linear Algebra videos](http://www.khanacademy.org/#Linear%20Algebra).
+If an object is unrotated (the default orientation), then any rotation value will result in the object rotating about a world-world aligned axis. In other rotating a Sprite by using RotationZ will cause it to spin like a record. Rotating a Sprite by using RotationY will cause it to spin like a coin on a table. However, if a Sprite has non-zero RotationX, RotationY, or RotationZ values, then setting another Rotation value may result in unpredictable rotations. Technically, the resulting orientation IS predictable; however, to understand the result of changing one of these values you must understand how Matrices are multiplied. If you are going to be working with Matrices, we recommend instead simply performing the Matrix math in your own game logic and then setting the RotationMatrix property. This will give you complete control over how rotation values are combined and applied. For an introduction to Matrices, see our [Matrix](/frb/docs/index.php?title=Matrix "Matrix") page. To really get a deep understanding of Matrix math, check out the [Kahn Academy Linear Algebra videos](http://www.khanacademy.org/#Linear%20Algebra).
 
 ## 

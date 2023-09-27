@@ -10,4 +10,4 @@ The PropertyGridDisplayer is a base class that makes it easier to dynamically po
 
 ## PropertyGridDisplayer
 
--   [FlatRedBall.Glue.GuiDisplay.PropertyGridDisplayer.GetPropertyGridMember](/frb/docs/index.php?title=FlatRedBall.Glue.GuiDisplay.PropertyGridDisplayer.GetPropertyGridMember&action=edit&redlink=1.md "FlatRedBall.Glue.GuiDisplay.PropertyGridDisplayer.GetPropertyGridMember (page does not exist)")
+-   [FlatRedBall.Glue.GuiDisplay.PropertyGridDisplayer.GetPropertyGridMember](/frb/docs/index.php?title=FlatRedBall.Glue.GuiDisplay.PropertyGridDisplayer.GetPropertyGridMember&action=edit&redlink=1 "FlatRedBall.Glue.GuiDisplay.PropertyGridDisplayer.GetPropertyGridMember (page does not exist)")

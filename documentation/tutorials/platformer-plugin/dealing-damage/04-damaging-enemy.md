@@ -75,7 +75,7 @@ Now we can create a collision relationship between the BulletList and EnemyList 
 
 1.  Expand the **GameScreen** **Objects** folder
 
-2.  Drag+drop the **BulletList** object onto **EnemyList [![](/wp-content/uploads/2021/04/2021_April_19_212102.gif.md)](/wp-content/uploads/2021/04/2021_April_19_212102.gif.md)**
+2.  Drag+drop the **BulletList** object onto **EnemyList [![](/wp-content/uploads/2021/04/2021_April_19_212102.gif)](/wp-content/uploads/2021/04/2021_April_19_212102.gif)**
 
 3.  Select the new **BulletListVsEnemyList** relationship
 
@@ -98,7 +98,7 @@ Now we can fill in the event method. Open **GameScreen.Event.cs** and modify the
         second.TakeDamage(1);
     }
 
-Now we can shoot at the enemy. After six shots, the enemy is destroyed. [![](/wp-content/uploads/2021/04/2021_April_19_210309.gif.md)](/wp-content/uploads/2021/04/2021_April_19_210309.gif.md)
+Now we can shoot at the enemy. After six shots, the enemy is destroyed. [![](/wp-content/uploads/2021/04/2021_April_19_210309.gif)](/wp-content/uploads/2021/04/2021_April_19_210309.gif)
 
 ## Conclusion
 

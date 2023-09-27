@@ -1,6 +1,6 @@
 ## Introduction
 
-The FromUri method games to create songs from a regular song file (such as .mp3) rather than relying on the Content Pipeline. If you are simply interested in playing a song, the easiest way to load and play a song is through Glue, as explained [on this page](/frb/docs/index.php?title=Glue:How_To:Play_Songs.md "Glue:How To:Play Songs"). The FromUri method requires writing code.
+The FromUri method games to create songs from a regular song file (such as .mp3) rather than relying on the Content Pipeline. If you are simply interested in playing a song, the easiest way to load and play a song is through Glue, as explained [on this page](/frb/docs/index.php?title=Glue:How_To:Play_Songs "Glue:How To:Play Songs"). The FromUri method requires writing code.
 
 The FromUri method provides the following benefits:
 
@@ -11,7 +11,7 @@ The FromUri method provides the following benefits:
 
 Using the FromUri code requires loading a Song in custom code (as oppose to using Glue code to load the file). Song files which are loaded with FromUri can be added as follows:
 
--   Glue files can be loaded, but they must have their LoadedAtRuntime value set to false. For more information, see the [LoadedAtRuntime page](/frb/docs/index.php?title=Glue:Reference:Files:LoadedAtRuntime.md "Glue:Reference:Files:LoadedAtRuntime").
+-   Glue files can be loaded, but they must have their LoadedAtRuntime value set to false. For more information, see the [LoadedAtRuntime page](/frb/docs/index.php?title=Glue:Reference:Files:LoadedAtRuntime "Glue:Reference:Files:LoadedAtRuntime").
 -   Files can be added manually to the Visual Studio/Xamarin Studio project manually.
 -   Files can be added by the project itself, such as by unzipping a file or downloading a file from the Internet.
 

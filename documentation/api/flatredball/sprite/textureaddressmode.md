@@ -1,6 +1,6 @@
 ## Introduction
 
-The TextureAddressMode controls how Sprites display their texture outside of the 0 - 1 range. TextureAddressMode can be used to create tiles and texture scrolling. TextureAddressMode is usually used in combination with [texture coordinates](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureCoordinate.md "FlatRedBall.Sprite.TextureCoordinate"). For more information on texture coordinates, see the [texture coordinates page](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureCoordinate.md "FlatRedBall.Sprite.TextureCoordinate").
+The TextureAddressMode controls how Sprites display their texture outside of the 0 - 1 range. TextureAddressMode can be used to create tiles and texture scrolling. TextureAddressMode is usually used in combination with [texture coordinates](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureCoordinate "FlatRedBall.Sprite.TextureCoordinate"). For more information on texture coordinates, see the [texture coordinates page](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureCoordinate "FlatRedBall.Sprite.TextureCoordinate").
 
 ## Usage Example
 
@@ -34,7 +34,7 @@ The following code creates three sprites. It assumes that the texture **star** i
     clampSprite.X = 200;
     clampSprite.TextureScale = 1;
 
-![TextureAddressModes.PNG](/media/migrated_media-TextureAddressModes.PNG) This article uses the [TextureScale property](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureScale.md "FlatRedBall.Sprite.TextureScale") to automatically size the Sprites according to their texture coordinates.
+![TextureAddressModes.PNG](/media/migrated_media-TextureAddressModes.PNG) This article uses the [TextureScale property](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureScale "FlatRedBall.Sprite.TextureScale") to automatically size the Sprites according to their texture coordinates.
 
 **Note:** The Wrap texture address mode requires that textures are a power of 2 on the Windows Phone.
 

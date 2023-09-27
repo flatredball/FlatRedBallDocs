@@ -1,6 +1,6 @@
 ## Introduction
 
-The RepositionDirections member controls which direction colliding objects will be repositioned. Specifially RepositionDirections is relevant when calling [CollideAgainstMove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove.md "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove") and [CollideAgainstBounce](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce.md "FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce"). RepositionDirections is also used by CollisionRelationships when using platformer collision. By default standalone AxisAlignedRectangles have all directions active, meaning the rectangle will reposition objects in all directions (up, down, left, right). AxisAlignedRectangles which are part of TileShapeCollections automatically have their RepositionDirections adjusted to prevent snagging.
+The RepositionDirections member controls which direction colliding objects will be repositioned. Specifially RepositionDirections is relevant when calling [CollideAgainstMove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove") and [CollideAgainstBounce](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce "FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce"). RepositionDirections is also used by CollisionRelationships when using platformer collision. By default standalone AxisAlignedRectangles have all directions active, meaning the rectangle will reposition objects in all directions (up, down, left, right). AxisAlignedRectangles which are part of TileShapeCollections automatically have their RepositionDirections adjusted to prevent snagging.
 
 ## Diagram Examples
 
@@ -51,7 +51,7 @@ These are created in Glue so the screen starts as shown in the following image:
         RedRectangle.CollideAgainstMove(BlueRectangle, 0, 1);
     }
 
-Notice that when the first rectangle is moved (with the keyboard), it will only be repositioned to the left. [![](/wp-content/uploads/2016/01/2021_April_07_083318.gif.md)](/wp-content/uploads/2016/01/2021_April_07_083318.gif.md)
+Notice that when the first rectangle is moved (with the keyboard), it will only be repositioned to the left. [![](/wp-content/uploads/2016/01/2021_April_07_083318.gif)](/wp-content/uploads/2016/01/2021_April_07_083318.gif)
 
 ## 
 

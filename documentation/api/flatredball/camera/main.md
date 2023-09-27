@@ -1,4 +1,4 @@
-[FlatRedBall.Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera")
+[FlatRedBall.Camera](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera")
 
 ## Introduction
 

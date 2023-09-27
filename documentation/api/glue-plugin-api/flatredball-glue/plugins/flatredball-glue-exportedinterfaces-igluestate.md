@@ -1,6 +1,6 @@
 ## Introduction
 
-The IGlueState interface provides a centralized way to get information about the current state of Glue. IGlueState is very similar to [IGlueCommands](/frb/docs/index.php?title=FlatRedBall.Glue.Plugins.ExportedInterfaces.IGlueCommands.md "FlatRedBall.Glue.Plugins.ExportedInterfaces.IGlueCommands") in that an instance of IGlueState can be provided to your plugin automatically through the plugin system (see below for more details).
+The IGlueState interface provides a centralized way to get information about the current state of Glue. IGlueState is very similar to [IGlueCommands](/frb/docs/index.php?title=FlatRedBall.Glue.Plugins.ExportedInterfaces.IGlueCommands "FlatRedBall.Glue.Plugins.ExportedInterfaces.IGlueCommands") in that an instance of IGlueState can be provided to your plugin automatically through the plugin system (see below for more details).
 
 ## Using IGlueState
 

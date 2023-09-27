@@ -122,24 +122,24 @@ The IDrawableBatch interface provides considerable freedom in custom drawing. Ho
 
 ### Changing Viewport
 
-The GraphicsDevice's Viewport should not be changed. IDrawableBatches can be added to [Layers](/frb/docs/index.php?title=Layer.md "Layer") - including [Camera](/frb/docs/index.php?title=Camera.md "Camera")-specific [Layers](/frb/docs/index.php?title=Layer.md "Layer") which inherit the containing [Camera](/frb/docs/index.php?title=Camera.md "Camera")'s viewport. In other words, to render to a portion of the Screen, add the IDrawableBatch to the desired [Camera](/frb/docs/index.php?title=Camera.md "Camera") using the [SpriteManager's AddToLayer](/frb/docs/index.php?title=FlatRedBall.SpriteManager.AddToLayer.md "FlatRedBall.SpriteManager.AddToLayer") method.
+The GraphicsDevice's Viewport should not be changed. IDrawableBatches can be added to [Layers](/frb/docs/index.php?title=Layer "Layer") - including [Camera](/frb/docs/index.php?title=Camera "Camera")-specific [Layers](/frb/docs/index.php?title=Layer "Layer") which inherit the containing [Camera](/frb/docs/index.php?title=Camera "Camera")'s viewport. In other words, to render to a portion of the Screen, add the IDrawableBatch to the desired [Camera](/frb/docs/index.php?title=Camera "Camera") using the [SpriteManager's AddToLayer](/frb/docs/index.php?title=FlatRedBall.SpriteManager.AddToLayer "FlatRedBall.SpriteManager.AddToLayer") method.
 
 ### Calling SetRenderTarget
 
-FlatRedBall handles render targets under the hood. Changing the RenderTarget can result in unexpected behavior or crashing. For control over render targets, use the [Camera](/frb/docs/index.php?title=Camera.md "Camera")'s RenderOrder property. If you are interested in performing something not currently supported by one of the render modes, please post on the forums.
+FlatRedBall handles render targets under the hood. Changing the RenderTarget can result in unexpected behavior or crashing. For control over render targets, use the [Camera](/frb/docs/index.php?title=Camera "Camera")'s RenderOrder property. If you are interested in performing something not currently supported by one of the render modes, please post on the forums.
 
 ## Additional Information
 
--   [Using DrawableBatches to apply custom shaders to Sprites](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Sprite_Effects.md "FlatRedBallXna:Tutorials:Custom Sprite Effects")
--   [SpriteManager.AddToLayer](/frb/docs/index.php?title=FlatRedBall.SpriteManager.AddToLayer.md "FlatRedBall.SpriteManager.AddToLayer") - This method can be used to put DrawableBatches on layers for additional sorting control.
+-   [Using DrawableBatches to apply custom shaders to Sprites](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Sprite_Effects "FlatRedBallXna:Tutorials:Custom Sprite Effects")
+-   [SpriteManager.AddToLayer](/frb/docs/index.php?title=FlatRedBall.SpriteManager.AddToLayer "FlatRedBall.SpriteManager.AddToLayer") - This method can be used to put DrawableBatches on layers for additional sorting control.
 
 ## Related Information
 
--   [Render States and IDrawableBatches](/frb/docs/index.php?title=FlatRedBall.Graphics.DrawableBatch:Render_State.md "FlatRedBall.Graphics.DrawableBatch:Render State")
+-   [Render States and IDrawableBatches](/frb/docs/index.php?title=FlatRedBall.Graphics.DrawableBatch:Render_State "FlatRedBall.Graphics.DrawableBatch:Render State")
 
 ## IDrawableBatch Members
 
--   [FlatRedBall.Graphics.IDrawableBatch.Z](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch.Z.md "FlatRedBall.Graphics.IDrawableBatch.Z")
+-   [FlatRedBall.Graphics.IDrawableBatch.Z](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch.Z "FlatRedBall.Graphics.IDrawableBatch.Z")
 
 ### UpdateEveryFrame
 
@@ -156,7 +156,7 @@ This is where any updating logic goes. This could include updating positions, mo
 
 ### Draw
 
-Executes your drawing code. The *camera* parameter represents the currently drawing camera, and may be used to retrieve camera settings (the SetDeviceViewAndProjection will work with both the BasicEffect and Effect classes, and will set the variables View, Projection, ViewProj, and any variables that have the semantics VIEW or PROJECTION). Any XNA drawing code may be used in this section. However, please note that RenderState is *not* preserved, so you will need to set any RenderState variables at the beginning of this method. This includes anything on the graphics device, such as a vertex declaration. For more information, read the [Render State article](/frb/docs/index.php?title=FlatRedBall.Graphics.DrawableBatch:Render_State.md "FlatRedBall.Graphics.DrawableBatch:Render State").
+Executes your drawing code. The *camera* parameter represents the currently drawing camera, and may be used to retrieve camera settings (the SetDeviceViewAndProjection will work with both the BasicEffect and Effect classes, and will set the variables View, Projection, ViewProj, and any variables that have the semantics VIEW or PROJECTION). Any XNA drawing code may be used in this section. However, please note that RenderState is *not* preserved, so you will need to set any RenderState variables at the beginning of this method. This includes anything on the graphics device, such as a vertex declaration. For more information, read the [Render State article](/frb/docs/index.php?title=FlatRedBall.Graphics.DrawableBatch:Render_State "FlatRedBall.Graphics.DrawableBatch:Render State").
 
 ### Destroy
 
@@ -164,7 +164,7 @@ Here is where you destroy any assets that won't be automatically destroyed when 
 
 ## Community Source Code
 
--   [Pie DrawableBatch](/frb/docs/index.php?title=Community_Source_Code:Pie_IDrawableBatch.md "Community Source Code:Pie IDrawableBatch")
--   [Video Rendering](/frb/forum/viewtopic.php?f=24&t=4213.md)
+-   [Pie DrawableBatch](/frb/docs/index.php?title=Community_Source_Code:Pie_IDrawableBatch "Community Source Code:Pie IDrawableBatch")
+-   [Video Rendering](/frb/forum/viewtopic.php?f=24&t=4213)
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

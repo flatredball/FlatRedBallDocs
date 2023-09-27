@@ -7,7 +7,7 @@ IWindow serves as an interface for creating button-like Entities in Glue. Using 
 -   Respond to dragging
 -   Prevent click-throughs on overlapping IWindows
 
-For initial information on how to use IWindows in Glue, check out the [IWindow in Glue tutorial page](/frb/docs/index.php?title=Glue:Tutorials:Using_IWindow.md "Glue:Tutorials:Using IWindow"). For more information on IWindow in raw code, check out the [IWindow code reference page](/frb/docs/index.php?title=FlatRedBall.Gui.IWindow.md "FlatRedBall.Gui.IWindow").
+For initial information on how to use IWindows in Glue, check out the [IWindow in Glue tutorial page](/frb/docs/index.php?title=Glue:Tutorials:Using_IWindow "Glue:Tutorials:Using IWindow"). For more information on IWindow in raw code, check out the [IWindow code reference page](/frb/docs/index.php?title=FlatRedBall.Gui.IWindow "FlatRedBall.Gui.IWindow").
 
 ## Click Event
 
@@ -29,5 +29,5 @@ Entities that implement IWindow automatically receive an Enabled property. The E
 
 ## IWindow Members
 
--   [Glue:Reference:Entities:IWindow:ClickNoSlide](/frb/docs/index.php?title=Glue:Reference:Entities:IWindow:ClickNoSlide.md "Glue:Reference:Entities:IWindow:ClickNoSlide")
--   [Glue:Reference:Entities:IWindow:SlideOnClick](/frb/docs/index.php?title=Glue:Reference:Entities:IWindow:SlideOnClick.md "Glue:Reference:Entities:IWindow:SlideOnClick")
+-   [Glue:Reference:Entities:IWindow:ClickNoSlide](/frb/docs/index.php?title=Glue:Reference:Entities:IWindow:ClickNoSlide "Glue:Reference:Entities:IWindow:ClickNoSlide")
+-   [Glue:Reference:Entities:IWindow:SlideOnClick](/frb/docs/index.php?title=Glue:Reference:Entities:IWindow:SlideOnClick "Glue:Reference:Entities:IWindow:SlideOnClick")

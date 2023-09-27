@@ -63,7 +63,7 @@ To assign the input interfaces, open **GameScreen.cs** in the Screens folder and
         }
             ...
 
-For more information on the Keyboard class, see [the Keyboard page](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard").
+For more information on the Keyboard class, see [the Keyboard page](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard").
 
 ## Cleaning up the code
 
@@ -72,7 +72,7 @@ For more information on the Keyboard class, see [the Keyboard page](/frb/docs/in
 The code we wrote above has a number of problems:
 
 -   The velocity (which was set to 10) is set right in the method where it's used. In this case the velocity value is considered "data" and its application is considered "logic". The separation of data from logic is a fundamental concept in keeping game projects maintainable.
--   The game includes logic in the CustomActivity method. We encourage no logic, only method calls in the standard "Custom" methods. For more information, click [here.](/frb/docs/index.php?title=General_Programming:FlatRedBall_Programming_Style_Guide#CustomActivity_and_CustomInitialize_methods_should_contain_no_logic.md "General Programming:FlatRedBall Programming Style Guide")
+-   The game includes logic in the CustomActivity method. We encourage no logic, only method calls in the standard "Custom" methods. For more information, click [here.](/frb/docs/index.php?title=General_Programming:FlatRedBall_Programming_Style_Guide#CustomActivity_and_CustomInitialize_methods_should_contain_no_logic "General Programming:FlatRedBall Programming Style Guide")
 
 ## Separating Data from Logic using Glue Variables
 
@@ -123,7 +123,7 @@ The benefit of using the input interfaces (I2DInput and IPressableInput) is that
         }
     }
 
-For more information on Xbox360GamePad, see [the Xbox360GamePad page](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.md "FlatRedBall.Input.Xbox360GamePad").
+For more information on Xbox360GamePad, see [the Xbox360GamePad page](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad "FlatRedBall.Input.Xbox360GamePad").
 
 ## Cleaning CustomActivity and CustomInitialize
 
@@ -175,4 +175,4 @@ We'll implement the AssignInput method in **GameScreen.cs**:
 
 Now we have a PlayerBall Entity which is cleanly written, has speed which can be customized through Glue, and can be moved with the game pad or keyboard. The next tutorial will cover defining collision in the GameScreen.
 
-[\<- Creating a Screen](/frb/docs/index.php?title=Tutorials:Beefball:Creating_a_Screen.md "Tutorials:Beefball:Creating a Screen") -- [Creating the Screen Collision -\>](/frb/docs/index.php?title=Tutorials:Beefball:Creating_the_Screen_Collision.md "Tutorials:Beefball:Creating the Screen Collision")
+[\<- Creating a Screen](/frb/docs/index.php?title=Tutorials:Beefball:Creating_a_Screen "Tutorials:Beefball:Creating a Screen") -- [Creating the Screen Collision -\>](/frb/docs/index.php?title=Tutorials:Beefball:Creating_the_Screen_Collision "Tutorials:Beefball:Creating the Screen Collision")

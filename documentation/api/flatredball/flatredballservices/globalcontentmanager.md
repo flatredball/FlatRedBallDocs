@@ -4,4 +4,4 @@ The GlobalContentManager is a value which can be used to load content using a "g
 
 Using a GlobalContentManager is useful for content which appears frequently in games (such as fonts) or for content which may take a long time to load/process, and should be kept in RAM to improve load times despite occupying space permanently.
 
-For information on global content in Glue, see the [GlobalContentFiles page](/frb/docs/index.php?title=Glue:Reference:Files:GlobalContent.md "Glue:Reference:Files:GlobalContent") and the [UseGlobalContent page](/frb/docs/index.php?title=Glue:Reference:Entities:UseGlobalContent.md "Glue:Reference:Entities:UseGlobalContent").
+For information on global content in Glue, see the [GlobalContentFiles page](/frb/docs/index.php?title=Glue:Reference:Files:GlobalContent "Glue:Reference:Files:GlobalContent") and the [UseGlobalContent page](/frb/docs/index.php?title=Glue:Reference:Entities:UseGlobalContent "Glue:Reference:Entities:UseGlobalContent").

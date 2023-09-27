@@ -159,4 +159,4 @@ private void HandleFileChanged(string fileName)
 ...
 ```
 
-We an change files which are selected and the plugin will be notified of the change and will automatically update the displayed information. [![](/wp-content/uploads/2018/02/2018-02-11_12-34-52.gif.md)](/wp-content/uploads/2018/02/2018-02-11_12-34-52.gif.md)  
+We an change files which are selected and the plugin will be notified of the change and will automatically update the displayed information. [![](/wp-content/uploads/2018/02/2018-02-11_12-34-52.gif)](/wp-content/uploads/2018/02/2018-02-11_12-34-52.gif)  

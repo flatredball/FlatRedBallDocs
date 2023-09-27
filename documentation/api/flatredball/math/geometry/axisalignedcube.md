@@ -1,6 +1,6 @@
 ## Introduction
 
-The AxisAlignedCube is a geometric shape from the [FlatRedBall.Math.Geometry](/frb/docs/index.php?title=FlatRedBall.Math.Geometry&action=edit&redlink=1.md "FlatRedBall.Math.Geometry (page does not exist)") class. As a 3D shape, it can be used for detecting collisions with 3D or 2D shapes. The AxisAlignedCube class shares many similarities with other shape classes ([Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle"), [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line"), [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle"), [Polygon](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.md "FlatRedBall.Math.Geometry.Polygon"), etc). For general information about shapes, see the [ShapeManager wiki entry](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.md "FlatRedBall.Math.Geometry.ShapeManager").
+The AxisAlignedCube is a geometric shape from the [FlatRedBall.Math.Geometry](/frb/docs/index.php?title=FlatRedBall.Math.Geometry&action=edit&redlink=1 "FlatRedBall.Math.Geometry (page does not exist)") class. As a 3D shape, it can be used for detecting collisions with 3D or 2D shapes. The AxisAlignedCube class shares many similarities with other shape classes ([Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle"), [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line"), [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle"), [Polygon](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon "FlatRedBall.Math.Geometry.Polygon"), etc). For general information about shapes, see the [ShapeManager wiki entry](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager "FlatRedBall.Math.Geometry.ShapeManager").
 
 ## Creating an AxisAlignedCube
 
@@ -15,7 +15,7 @@ Alternatively, you can create an AxisAlignedCube with the Visible property set f
 
 ## Relationship with ShapeManager
 
-See [ShapeManager wiki entry](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.md "FlatRedBall.Math.Geometry.ShapeManager").
+See [ShapeManager wiki entry](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager "FlatRedBall.Math.Geometry.ShapeManager").
 
 ## Collisions With AxisAlignedCube
 
@@ -83,6 +83,6 @@ Assuming cube1 and cube2 are valid AxisAlignedCubes:
 
 ## AxisAlignedCube Members
 
--   [FlatRedBall.Math.Geometry.AxisAlignedCube.CollideAgainstBounce](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedCube.CollideAgainstBounce.md "FlatRedBall.Math.Geometry.AxisAlignedCube.CollideAgainstBounce")
+-   [FlatRedBall.Math.Geometry.AxisAlignedCube.CollideAgainstBounce](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedCube.CollideAgainstBounce "FlatRedBall.Math.Geometry.AxisAlignedCube.CollideAgainstBounce")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

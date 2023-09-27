@@ -1,6 +1,6 @@
 ## Introduction
 
-The Tile Adventure starter project provides a working example of using the Tiled plugin to create a multi-level top-down game. [![TileAdventureGif1](/wp-content/uploads/2017/01/TileAdventureGif1.gif.md)](/wp-content/uploads/2017/01/TileAdventureGif1.gif.md) Much of the game's data is defined in the tiled levels that are added to the GameSceen.
+The Tile Adventure starter project provides a working example of using the Tiled plugin to create a multi-level top-down game. [![TileAdventureGif1](/wp-content/uploads/2017/01/TileAdventureGif1.gif)](/wp-content/uploads/2017/01/TileAdventureGif1.gif) Much of the game's data is defined in the tiled levels that are added to the GameSceen.
 
 ![](/media/2017-01-img_587a26a9f2063.png)
 

@@ -11,4 +11,4 @@ To add a file with a source file:
 
 ## Source files require builders
 
-Glue must be told how to convert a source file to the file type that Glue understands. To do this builders must be set up. To set up a builder, see the [article on builders](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:File_Build_Tools.md "Glue:Reference:Menu:Settings:File Build Tools").
+Glue must be told how to convert a source file to the file type that Glue understands. To do this builders must be set up. To set up a builder, see the [article on builders](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:File_Build_Tools "Glue:Reference:Menu:Settings:File Build Tools").

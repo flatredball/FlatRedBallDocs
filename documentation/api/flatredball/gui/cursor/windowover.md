@@ -14,15 +14,15 @@ The following code performs "ClickLogic" when the user performs a primary click 
 
 ## Using WindowOver to debug GUI problems
 
-One very common bug is related to having multiple IWindows overlapping. In this case events may not be raising even though it appears they should be graphically. You can use the Cursor's WindowOver property in combination with the [FlatRedBall.Debugging.Debugger](/frb/docs/index.php?title=FlatRedBall.Debugging.Debugger.md "FlatRedBall.Debugging.Debugger") to help identify the problem:
+One very common bug is related to having multiple IWindows overlapping. In this case events may not be raising even though it appears they should be graphically. You can use the Cursor's WindowOver property in combination with the [FlatRedBall.Debugging.Debugger](/frb/docs/index.php?title=FlatRedBall.Debugging.Debugger "FlatRedBall.Debugging.Debugger") to help identify the problem:
 
      FlatRedBall.Debugging.Debugger.Write( GuiManager.Cursor.WindowOver );
 
 If the wrong window is being returned by WindowOver, you can diagnose/correct this by doing the following:
 
 1.  Verify that the two IWindows have different Z values if they are on the same layer **or** verify that the desired IWindows are on separate Layers
-2.  Call [GuiManager.SortZAndLayerBased()](/frb/docs/index.php?title=FlatRedBall.Gui.GuiManager.SortZAndLayerBased.md "FlatRedBall.Gui.GuiManager.SortZAndLayerBased") to sort the IWindows in the GuiManager so that tests are performed in the right order.
-3.  See if the Window you are expecting to be over has its [Enabled](/frb/docs/index.php?title=FlatRedBall.Gui.IWindow.Enabled.md "FlatRedBall.Gui.IWindow.Enabled") property set to true.
+2.  Call [GuiManager.SortZAndLayerBased()](/frb/docs/index.php?title=FlatRedBall.Gui.GuiManager.SortZAndLayerBased "FlatRedBall.Gui.GuiManager.SortZAndLayerBased") to sort the IWindows in the GuiManager so that tests are performed in the right order.
+3.  See if the Window you are expecting to be over has its [Enabled](/frb/docs/index.php?title=FlatRedBall.Gui.IWindow.Enabled "FlatRedBall.Gui.IWindow.Enabled") property set to true.
 
 ### Gum and WindowOver
 

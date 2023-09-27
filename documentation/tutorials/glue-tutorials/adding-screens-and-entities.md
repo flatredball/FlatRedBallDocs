@@ -121,4 +121,4 @@ At this point you've created a new Screen and Entity. If you are in the planning
 
 Next, we'll be adding files to your new Screen so that it loads content.
 
-[To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Adding_files_to_Screens.md "Glue:Tutorials:Adding files to Screens")
+[To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Adding_files_to_Screens "Glue:Tutorials:Adding files to Screens")

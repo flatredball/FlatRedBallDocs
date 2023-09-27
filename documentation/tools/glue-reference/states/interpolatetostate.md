@@ -4,7 +4,7 @@ The InterpolateToState method allows Entities and Screens to smoothly interpolat
 
 If you are working with an Entity or Screen that has multiple States, then Glue has already gneerated an InterpolateToState for you.
 
-See [this page](/frb/docs/index.php?title=Glue:Reference:States:InterpolateToState_vs_InterpolateBetween.md "Glue:Reference:States:InterpolateToState vs InterpolateBetween") to discuss the difference between InterpolateToState and InterpolateBetween.
+See [this page](/frb/docs/index.php?title=Glue:Reference:States:InterpolateToState_vs_InterpolateBetween "Glue:Reference:States:InterpolateToState vs InterpolateBetween") to discuss the difference between InterpolateToState and InterpolateBetween.
 
 ## Example
 
@@ -37,7 +37,7 @@ Now that we have our Variables, let's create States for them:
 -   Create a third state called "Big"
 -   Create a fourth state called "Small"
 
-**Note:**In this example we created four states which are all uncategorized. In an actual project you would probably want to categorize these under state categories. You would likely want to set these state categories' [SharesVariablesWithOtherCategories](/frb/docs/index.php?title=Glue:Reference:States:State_Categories.md "Glue:Reference:States:State Categories") value to false as well.
+**Note:**In this example we created four states which are all uncategorized. In an actual project you would probably want to categorize these under state categories. You would likely want to set these state categories' [SharesVariablesWithOtherCategories](/frb/docs/index.php?title=Glue:Reference:States:State_Categories "Glue:Reference:States:State Categories") value to false as well.
 
 These states need to have variables assigned to them:
 

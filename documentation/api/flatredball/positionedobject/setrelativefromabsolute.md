@@ -1,14 +1,14 @@
 ## Introduction
 
-This method can be used to "update" relative values (rotation and position) of a child [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") after modifying its absolute rotation or position values.
+This method can be used to "update" relative values (rotation and position) of a child [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") after modifying its absolute rotation or position values.
 
 ## Details
 
-Although child absolute values are considered read-only (see [this page](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable#Remember.2C_child_absolute_values_are_read-only.md "FlatRedBall.Math.IAttachable")), this does not necessarily mean that the actual variable itself is read-only. Rather, before drawing occurs, the absolute values of all children are overwritten by their attachment logic. However, prior to drawing occurring, absolute values can be set and reset and used \*within that same frame\*. We can take advantage of this behavior by modifying the absolute values, then using those values to update the child's relative values so that the overwriting that occurs later will not end up changing the absolute values. In other words, we can use the SetRelativeFromAbsolute to reposition a child object in absolute space, then make those changes "stick".
+Although child absolute values are considered read-only (see [this page](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable#Remember.2C_child_absolute_values_are_read-only "FlatRedBall.Math.IAttachable")), this does not necessarily mean that the actual variable itself is read-only. Rather, before drawing occurs, the absolute values of all children are overwritten by their attachment logic. However, prior to drawing occurring, absolute values can be set and reset and used \*within that same frame\*. We can take advantage of this behavior by modifying the absolute values, then using those values to update the child's relative values so that the overwriting that occurs later will not end up changing the absolute values. In other words, we can use the SetRelativeFromAbsolute to reposition a child object in absolute space, then make those changes "stick".
 
 ## Code Example
 
-This example creates two [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") and attaches one to the other. The child will then be repositioned in absolute coordinates, then SetRelativeFromAbsolute will be called to modify its relative values so that the child remains in the position that it was placed: Add the following using statements:
+This example creates two [Sprites](/frb/docs/index.php?title=Sprite "Sprite") and attaches one to the other. The child will then be repositioned in absolute coordinates, then SetRelativeFromAbsolute will be called to modify its relative values so that the child remains in the position that it was placed: Add the following using statements:
 
     using FlatRedBall.Graphics;
 

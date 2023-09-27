@@ -22,10 +22,10 @@ Generated Glue code assumes that the RelativeDirectory is the directory of the .
 
 Virtually any FlatRedBall call which access information off of the disk will use FileManager.RelativeDirectory. For example the following calls will use the RelativeDirectory when relative paths:
 
--   [FlatRedBall.FlatRedBallServices.Load](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.Load.md "FlatRedBall.FlatRedBallServices.Load")
--   [FlatRedBall.IO.FileManager.XmlSerialize](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.XmlSerialize.md "FlatRedBall.IO.FileManager.XmlSerialize")
--   [FlatRedBall.IO.FileManager.XmlDeserialize](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.XmlDeserialize.md "FlatRedBall.IO.FileManager.XmlDeserialize")
--   [FlatRedBall.SpriteManager.AddSprite](/frb/docs/index.php?title=FlatRedBall.SpriteManager.AddSprite.md "FlatRedBall.SpriteManager.AddSprite")
+-   [FlatRedBall.FlatRedBallServices.Load](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.Load "FlatRedBall.FlatRedBallServices.Load")
+-   [FlatRedBall.IO.FileManager.XmlSerialize](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.XmlSerialize "FlatRedBall.IO.FileManager.XmlSerialize")
+-   [FlatRedBall.IO.FileManager.XmlDeserialize](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.XmlDeserialize "FlatRedBall.IO.FileManager.XmlDeserialize")
+-   [FlatRedBall.SpriteManager.AddSprite](/frb/docs/index.php?title=FlatRedBall.SpriteManager.AddSprite "FlatRedBall.SpriteManager.AddSprite")
 -   Any FlatRedBall Save Class's FromFile and Save methods
 
 ## RelativeDirectory Default Value
@@ -59,7 +59,7 @@ If you do this then your game will break if you decide to move it to another com
 
 ## Preserving the old RelativeDirectory value
 
-Many file formats assume that contained references are relative to the file itself. For example, consider a [.scnx](/frb/docs/index.php?title=.scnx&action=edit&redlink=1.md ".scnx (page does not exist)") file which references "redball.bmp". By default if you try to load "redball.bmp" your program will attempt to look for a redball.bmp file in the same folder as the .exe. If you are writing code which will load objects relative to another file, you may want to temporarily set the RelativeDirectory value, then change it back after you're finished.
+Many file formats assume that contained references are relative to the file itself. For example, consider a [.scnx](/frb/docs/index.php?title=.scnx&action=edit&redlink=1 ".scnx (page does not exist)") file which references "redball.bmp". By default if you try to load "redball.bmp" your program will attempt to look for a redball.bmp file in the same folder as the .exe. If you are writing code which will load objects relative to another file, you may want to temporarily set the RelativeDirectory value, then change it back after you're finished.
 
 For example, let's say that MySaveClass has a list of Sprites that it will load. The code to load this might be as follows:
 

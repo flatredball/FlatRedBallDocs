@@ -9,4 +9,4 @@ Every Glue project must have at least one screen. To create a new screen:
 
 ## Tutorial
 
-For information on how to create a new screen, see [this page in the Beefball tutorial](/frb/docs/index.php?title=Tutorials:Beefball:Creating_a_Screen.md "Tutorials:Beefball:Creating a Screen").
+For information on how to create a new screen, see [this page in the Beefball tutorial](/frb/docs/index.php?title=Tutorials:Beefball:Creating_a_Screen "Tutorials:Beefball:Creating a Screen").

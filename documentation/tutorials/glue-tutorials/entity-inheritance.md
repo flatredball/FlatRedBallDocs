@@ -70,10 +70,10 @@ The next step is to set the properties of the Collision object in the derived En
 2.  Change its SourceType from "FlatRedBall Type" to "File"![GlueCollisionSourceType.png](/media/migrated_media-GlueCollisionSourceType.png)
 3.  We'll use a shortcut feature here. Change the "Source File" to "\<New File...\>"![GlueNewFileShortcut.png](/media/migrated_media-GlueNewFileShortcut.png)
 4.  In the new file window, select the type as "ShapeCollection (.shcx)" and set the name as CollisionFile![GlueNewCollisionFile.png](/media/migrated_media-GlueNewCollisionFile.png)
-5.  If you haven't yet, set the file association for .shcx files (different from Scene (.scnx) files) to the PolygonEditor. If you need help with this step, see [this page](/frb/docs/index.php?title=Glue:Tutorials:Adding_files_to_Screens#Setting_up_File_Associaton.md "Glue:Tutorials:Adding files to Screens").
-6.  Double-click the newly-created file under your Enemy Entity's "Files" tree item. This should open the [PolygonEditor](/frb/docs/index.php?title=PolygonEditor.md "PolygonEditor").
-7.  Add a new Circle. For help on working with the [PolygonEditor](/frb/docs/index.php?title=PolygonEditor.md "PolygonEditor"), see [this page](/frb/docs/index.php?title=PolygonEditor.md "PolygonEditor").
-8.  Save your ShapeCollection in the [PolygonEditor](/frb/docs/index.php?title=PolygonEditor.md "PolygonEditor"). Be sure to save a ShapeCollection, not a Scene or Polygon List.![GlueSaveShapeCollection.png](/media/migrated_media-GlueSaveShapeCollection.png)
+5.  If you haven't yet, set the file association for .shcx files (different from Scene (.scnx) files) to the PolygonEditor. If you need help with this step, see [this page](/frb/docs/index.php?title=Glue:Tutorials:Adding_files_to_Screens#Setting_up_File_Associaton "Glue:Tutorials:Adding files to Screens").
+6.  Double-click the newly-created file under your Enemy Entity's "Files" tree item. This should open the [PolygonEditor](/frb/docs/index.php?title=PolygonEditor "PolygonEditor").
+7.  Add a new Circle. For help on working with the [PolygonEditor](/frb/docs/index.php?title=PolygonEditor "PolygonEditor"), see [this page](/frb/docs/index.php?title=PolygonEditor "PolygonEditor").
+8.  Save your ShapeCollection in the [PolygonEditor](/frb/docs/index.php?title=PolygonEditor "PolygonEditor"). Be sure to save a ShapeCollection, not a Scene or Polygon List.![GlueSaveShapeCollection.png](/media/migrated_media-GlueSaveShapeCollection.png)
 9.  Return to your Enemy's "Collision" object and finally set the "Source Name" to the Circle you just created![GlueSetCircleSourceName.png](/media/migrated_media-GlueSetCircleSourceName.png)
 
 Now you can repeat the above steps for your Player Entity, but it will have its own .shcx file, and the Circle in that .shcx file can be completely different. Keep in mind that since the source type defines Collision as a Circle, then all classes that inherit that property must assign a Circle to it.
@@ -96,4 +96,4 @@ If you manage to do this and want to see it in action, you should try the follow
 
 ## What's next
 
-Now you've see how you can set properties in defined classes. That means that every different "type of Character" can have a different instance. In the next tutorial we start to look at Layers, a key component for creating UI and HUD in your games. [To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Using_Layers.md "Glue:Tutorials:Using Layers")
+Now you've see how you can set properties in defined classes. That means that every different "type of Character" can have a different instance. In the next tutorial we start to look at Layers, a key component for creating UI and HUD in your games. [To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Using_Layers "Glue:Tutorials:Using Layers")

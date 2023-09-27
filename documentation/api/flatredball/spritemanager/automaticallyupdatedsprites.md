@@ -4,7 +4,7 @@ The AutomaticallyUpdatedSprites property in the SpriteManager is a list of all S
 
 ## Adding and Removing from AutomaticallyUpdatedSprites
 
-AutomaticallyUpdatedSprites is a [SpriteList](/frb/docs/index.php?title=FlatRedBall.SpriteList.md "FlatRedBall.SpriteList") which is exposed for debugging, tools development, and advanced FlatRedBall programming. Most games do not need to add or remove Sprites directly from this list. This list is added to and removed from using more common FlatRedBall methods.
+AutomaticallyUpdatedSprites is a [SpriteList](/frb/docs/index.php?title=FlatRedBall.SpriteList "FlatRedBall.SpriteList") which is exposed for debugging, tools development, and advanced FlatRedBall programming. Most games do not need to add or remove Sprites directly from this list. This list is added to and removed from using more common FlatRedBall methods.
 
 ### Adding to AutomaticallyUpdatedSprites
 
@@ -24,4 +24,4 @@ Also adding a Sprite to a Layer will add it to AutomaticallyUpdatedSprites:
 
 ### Removing from AutomaticallyUpdatedSprites
 
-AutomaticallyUpdatedSprites is a [SpriteList](/frb/docs/index.php?title=FlatRedBall.SpriteList.md "FlatRedBall.SpriteList") which means it inherits from [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList.md "FlatRedBall.Math.PositionedObjectList") so it shares a [two-way relationship](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships.md "FlatRedBall.Math.AttachableList") with any Sprite that is added to it. Calling SpriteManager.RemoveSprite is the recommended way of removing a Sprite from this List.
+AutomaticallyUpdatedSprites is a [SpriteList](/frb/docs/index.php?title=FlatRedBall.SpriteList "FlatRedBall.SpriteList") which means it inherits from [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList "FlatRedBall.Math.PositionedObjectList") so it shares a [two-way relationship](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships "FlatRedBall.Math.AttachableList") with any Sprite that is added to it. Calling SpriteManager.RemoveSprite is the recommended way of removing a Sprite from this List.

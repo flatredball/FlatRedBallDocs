@@ -10,4 +10,4 @@ The AttachTo method is a shortcut method for attaching all contained elements in
         }
     }
 
-For more information on the AttachTo method, see the [IAttachable page](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.md "FlatRedBall.Math.IAttachable").
+For more information on the AttachTo method, see the [IAttachable page](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable "FlatRedBall.Math.IAttachable").

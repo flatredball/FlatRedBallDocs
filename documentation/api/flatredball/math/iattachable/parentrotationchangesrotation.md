@@ -12,7 +12,7 @@ This code could be used to tell a health bar to not rotate when whatever it is a
 
 Attachments create a relationship in which the child is both positioned and rotated relative to the parent. In some cases it is useful to suppress some of this behavior.
 
-The ParentRotationChangesRotation property controls whether the rotation of a child is modified by the parents' rotation. In the following example the ship [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") (represented by the red ball) rotates and moves according to input from the keyboard. The [Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera") is attached to the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") but does not rotate with it.
+The ParentRotationChangesRotation property controls whether the rotation of a child is modified by the parents' rotation. In the following example the ship [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") (represented by the red ball) rotates and moves according to input from the keyboard. The [Camera](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera") is attached to the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") but does not rotate with it.
 
 **Declare the ship at class scope:**
 
@@ -63,4 +63,4 @@ The ParentRotationChangesRotation property controls whether the rotation of a ch
 
 ![CameraAttachedToRotatingSprite.png](/media/migrated_media-CameraAttachedToRotatingSprite.png)
 
-Notice that although the [Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera") is attached to the ship [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"), it does not rotate. Try setting the [Camera's](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera") ParentRotationChangesRotation property to true and observe the behavior.
+Notice that although the [Camera](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera") is attached to the ship [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"), it does not rotate. Try setting the [Camera's](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera") ParentRotationChangesRotation property to true and observe the behavior.

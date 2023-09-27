@@ -1,6 +1,6 @@
 ## Introduction
 
-AxisAlignedRectangles are rectangular shapes which cannot be rotated. AxisAlignedRectangles can be used as collision objects. For information on using AxisAlignedRectangles in code, see the [AxisAlignedRectangle code page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle").
+AxisAlignedRectangles are rectangular shapes which cannot be rotated. AxisAlignedRectangles can be used as collision objects. For information on using AxisAlignedRectangles in code, see the [AxisAlignedRectangle code page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle").
 
 ## Adding an AxisAlignedRectangle to an entity
 

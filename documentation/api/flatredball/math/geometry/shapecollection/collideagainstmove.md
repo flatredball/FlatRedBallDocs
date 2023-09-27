@@ -1,6 +1,6 @@
 ## Introduction
 
-CollideAgainstMove is a function which takes any shape type (such as [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle") or [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle")) and calls CollideAgainstMove between the argument and all shapes contained in the ShapeCollection.
+CollideAgainstMove is a function which takes any shape type (such as [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle") or [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle")) and calls CollideAgainstMove between the argument and all shapes contained in the ShapeCollection.
 
 This method is an alternative to writing loops for all of the contained objects and manually calling CollideAgainstMove. Using CollideAgainstMove has a number of benefits:
 

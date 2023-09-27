@@ -48,7 +48,7 @@ Next we'll add a frame to our animation. To do this:
 
 Now we have an animation with one frame, but the frame does not yet have a texture associated with it. Textures are image files which are displayed by the frame. To add a texture:
 
-1.  Save this file to your computer. [![](/wp-content/uploads/2016/01/Idle.png.md)](/wp-content/uploads/2016/01/Idle.png.md) The location doesn't matter, but remember where you save it because you will need to find it later. However, if you would like to use this file in a FlatRedBall project, you will want to save this file somewhere in your project's Content folder.
+1.  Save this file to your computer. [![](/wp-content/uploads/2016/01/Idle.png)](/wp-content/uploads/2016/01/Idle.png) The location doesn't matter, but remember where you save it because you will need to find it later. However, if you would like to use this file in a FlatRedBall project, you will want to save this file somewhere in your project's Content folder.
 2.  Click the button for the "TextureName" property ![ClickTextureButton.png](/media/migrated_media-ClickTextureButton.png)
 3.  Navigate to where you saved the Idle.png file and select it
 4.  You may see a window asking you if you want the file copied. In most cases you do; however you may not if in the future you are working with textures which are shared between multiple files which are not in the same location. ![CopyFileWindow.PNG](/media/migrated_media-CopyFileWindow.PNG)

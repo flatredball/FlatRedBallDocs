@@ -12,24 +12,24 @@ This code will show you how to clip a Sprite given a static position. Moving a S
 
 This tutorial will use Glue; however, the majority of what is is discussed here is code, so this tutorial can be followed along in pure code.
 
-For this setup I will use an empty XNA 4 PC project called ClippingTutorial. See [this page](/frb/docs/index.php?title=Glue:Reference:Menu:File:New_Project.md "Glue:Reference:Menu:File:New Project") for information on how to create a new tutorial.
+For this setup I will use an empty XNA 4 PC project called ClippingTutorial. See [this page](/frb/docs/index.php?title=Glue:Reference:Menu:File:New_Project "Glue:Reference:Menu:File:New Project") for information on how to create a new tutorial.
 
-I will also create a Screen called ClippingScreen. See [this page](/frb/docs/index.php?title=Glue:Reference:Screens:Creating_a_new_Screen.md "Glue:Reference:Screens:Creating a new Screen") for information on how to create a Screen.
+I will also create a Screen called ClippingScreen. See [this page](/frb/docs/index.php?title=Glue:Reference:Screens:Creating_a_new_Screen "Glue:Reference:Screens:Creating a new Screen") for information on how to create a Screen.
 
 ## Defining the Clip Region
 
-Now that we have a Screen, we can add an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle"):
+Now that we have a Screen, we can add an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle"):
 
-1.  Add a new [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle") object to your Screen. See [this page](/frb/docs/index.php?title=Glue:Reference:Objects:AxisAlignedRectangle.md "Glue:Reference:Objects:AxisAlignedRectangle") for information on AxisAlignedRectangles in Glue.
-2.  Name the [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle") "ClipRegion"
+1.  Add a new [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle") object to your Screen. See [this page](/frb/docs/index.php?title=Glue:Reference:Objects:AxisAlignedRectangle "Glue:Reference:Objects:AxisAlignedRectangle") for information on AxisAlignedRectangles in Glue.
+2.  Name the [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle") "ClipRegion"
 3.  Set the ClipRegion Width to 200
 4.  Set the ClipRegion Height to 200
 
 ## Defining the Sprite
 
-Next we'll add a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") to our Screen. This [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") will be clipped as it moves around the screen:
+Next we'll add a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to our Screen. This [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") will be clipped as it moves around the screen:
 
-1.  Add a new [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") to your Screen. See [this page](/frb/docs/index.php?title=Glue:Reference:Objects:Sprite.md "Glue:Reference:Objects:Sprite") for information on Sprites in Glue.
+1.  Add a new [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to your Screen. See [this page](/frb/docs/index.php?title=Glue:Reference:Objects:Sprite "Glue:Reference:Objects:Sprite") for information on Sprites in Glue.
 2.  Add a new Texture file to your Screen. For this demo I'll use a bear graphic: ![Bear.png](/media/migrated_media-Bear.png)
 3.  Set the newly-added Sprite's Texture to the newly added Texture.
 

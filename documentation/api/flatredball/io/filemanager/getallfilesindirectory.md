@@ -21,7 +21,7 @@ An empty string as the fileType will return all contained files.
 
 ## Code Example
 
-The following code creates a [ListBox](/frb/docs/index.php?title=FlatRedBall.Gui.ListBox.md "FlatRedBall.Gui.ListBox") to display all .jpg files which exist in the c:\Projects directory. If you do not have this directory on your computer, you will need to change the directory variable. Keep in mind that if the depth variable is large, or if the argument directory has a lot of files and sub-directories, this call can take a long time to execute. Add the following using statements:
+The following code creates a [ListBox](/frb/docs/index.php?title=FlatRedBall.Gui.ListBox "FlatRedBall.Gui.ListBox") to display all .jpg files which exist in the c:\Projects directory. If you do not have this directory on your computer, you will need to change the directory variable. Keep in mind that if the depth variable is large, or if the argument directory has a lot of files and sub-directories, this call can take a long time to execute. Add the following using statements:
 
     using FlatRedBall.IO;
     using FlatRedBall.Gui;

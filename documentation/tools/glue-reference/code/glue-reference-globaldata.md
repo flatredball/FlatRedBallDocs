@@ -7,7 +7,7 @@ The GlobalData class is a pattern for a class which serves as the access point f
 -   Options such as sound and music volume levels
 -   Cross screen information that you may want to cache, like information coming from a server
 
-For an in-depth discussion about GlobalData and other ways to store global information, see [the "Proper Information Access" page](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access.md "Glue:Tutorials:Proper Information Access").
+For an in-depth discussion about GlobalData and other ways to store global information, see [the "Proper Information Access" page](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access "Glue:Tutorials:Proper Information Access").
 
 ## Example of GlobalData class
 

@@ -36,7 +36,7 @@ Since the CharacterList is a PositionedObjectList added in Glue, there is no nee
 
 ### How does the Generated code work?
 
-You may be wondering how the generated code shown above works. The reason this code clears the list (and destroys all contained instances) is because all Entities inherit from PositionedObject. This means that they share a [two-way relationship](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships.md "FlatRedBall.Math.AttachableList") with any PositionedObjectList that they are added to. When an Entity instance is destroyed, it removes itself from any PositionedObjectLists that it is a part of. Therefore, when a Character instance it is destroyed, it removes itself from the CharacterList.
+You may be wondering how the generated code shown above works. The reason this code clears the list (and destroys all contained instances) is because all Entities inherit from PositionedObject. This means that they share a [two-way relationship](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships "FlatRedBall.Math.AttachableList") with any PositionedObjectList that they are added to. When an Entity instance is destroyed, it removes itself from any PositionedObjectLists that it is a part of. Therefore, when a Character instance it is destroyed, it removes itself from the CharacterList.
 
 ## Destroying instances created in custom code
 
@@ -84,7 +84,7 @@ For example, if you want to destroy Bullet instances which exist in a BulletList
        }
     }
 
-Notice that the code uses a "reverse for-loop". For more information on this, see [this page](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList#Reverse_For_Loops.md "FlatRedBall.Math.PositionedObjectList")
+Notice that the code uses a "reverse for-loop". For more information on this, see [this page](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList#Reverse_For_Loops "FlatRedBall.Math.PositionedObjectList")
 
 WARNING: Unless you are otherwise accounting for Entities in a PositionedObjectList which has been created in Glue, you should **never** call methods on the List itself which remove elements from it. In other words:
 

@@ -4,15 +4,15 @@ The ShapeManager is responsible for managing "Shapes". Shapes are most often use
 
 Objects which belong to the Shape categorization are:
 
--   [AxisAlignedCube](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedCube.md "FlatRedBall.Math.Geometry.AxisAlignedCube")
--   [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle")
--   [Capsule2D](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Capsule2D.md "FlatRedBall.Math.Geometry.Capsule2D")
--   [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle")
--   [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line")
--   [Polygon](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.md "FlatRedBall.Math.Geometry.Polygon")
--   [Sphere](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Sphere&action=edit&redlink=1.md "FlatRedBall.Math.Geometry.Sphere (page does not exist)")
+-   [AxisAlignedCube](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedCube "FlatRedBall.Math.Geometry.AxisAlignedCube")
+-   [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle")
+-   [Capsule2D](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Capsule2D "FlatRedBall.Math.Geometry.Capsule2D")
+-   [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle")
+-   [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line")
+-   [Polygon](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon "FlatRedBall.Math.Geometry.Polygon")
+-   [Sphere](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Sphere&action=edit&redlink=1 "FlatRedBall.Math.Geometry.Sphere (page does not exist)")
 
-All of these objects share the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") base class. These are the only objects which the ShapeManager manages. Although there is no "Shape" class, these objects are often referred to as shapes.
+All of these objects share the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") base class. These are the only objects which the ShapeManager manages. Although there is no "Shape" class, these objects are often referred to as shapes.
 
 ## Adding Shapes
 
@@ -30,7 +30,7 @@ Add the following using statement:
 
 ### Shapes and Visibility
 
-Adding a Shape to the ShapeManager will automatically make the shape visible. For example, the following code will result in a **visible** [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle"):
+Adding a Shape to the ShapeManager will automatically make the shape visible. For example, the following code will result in a **visible** [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle"):
 
     Circle circle = new Circle();
     circle.Visible = false; // this will get overridden
@@ -81,8 +81,8 @@ Shapes should be added to the ShapeManager if any of the following behavior is n
 -   Absolute or relative acceleration.
 -   Absolute or relative rotation velocity;
 -   Instructions
--   ScaleVelocity ([AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle") only)
--   Radius Velocity ([Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle") only)
+-   ScaleVelocity ([AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle") only)
+-   Radius Velocity ([Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle") only)
 
 **Note about attachments:** Shapes which are attached to parents can have their absolute positions updated one of two ways:
 
@@ -95,7 +95,7 @@ If a shape is to be completely static - like a grid in a tool - then there is no
 
 ### Unmanaged Shape Behavior
 
-The source of some confusion is what happens when a Shape is attached to a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") (like a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite")), but **not** added to the ShapeManager. If you write code which attaches a shape to a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"), make the shape visible, then move the parent [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") you will notice that the shape does not move. Why is this the case?
+The source of some confusion is what happens when a Shape is attached to a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") (like a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite")), but **not** added to the ShapeManager. If you write code which attaches a shape to a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"), make the shape visible, then move the parent [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") you will notice that the shape does not move. Why is this the case?
 
 Well, again, there are two ways to update a shape's attachments:
 
@@ -108,14 +108,14 @@ This behavior will also be present if the shape is not visible, but you depend o
 
 ## Additional Information
 
--   [Colliding a list of shapes against itself](/frb/docs/index.php?title=FlatRedBall.Math.Geometry:Colliding_a_list_of_shapes_against_itself.md "FlatRedBall.Math.Geometry:Colliding a list of shapes against itself")
--   [Shapes and 2D Collision](/frb/docs/index.php?title=FlatRedBall.Math.Geometry:Shapes_and_2D_Collision.md "FlatRedBall.Math.Geometry:Shapes and 2D Collision")
+-   [Colliding a list of shapes against itself](/frb/docs/index.php?title=FlatRedBall.Math.Geometry:Colliding_a_list_of_shapes_against_itself "FlatRedBall.Math.Geometry:Colliding a list of shapes against itself")
+-   [Shapes and 2D Collision](/frb/docs/index.php?title=FlatRedBall.Math.Geometry:Shapes_and_2D_Collision "FlatRedBall.Math.Geometry:Shapes and 2D Collision")
 
 ## ShapeManager Members
 
--   [FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle&action=edit&redlink=1.md "FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle (page does not exist)")
--   [FlatRedBall.Math.Geometry.ShapeManager.AddToLayer](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.AddToLayer&action=edit&redlink=1.md "FlatRedBall.Math.Geometry.ShapeManager.AddToLayer (page does not exist)")
--   [FlatRedBall.Math.Geometry.ShapeManager.Remove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.Remove.md "FlatRedBall.Math.Geometry.ShapeManager.Remove")
--   [FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder.md "FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder")
+-   [FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle&action=edit&redlink=1 "FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle (page does not exist)")
+-   [FlatRedBall.Math.Geometry.ShapeManager.AddToLayer](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.AddToLayer&action=edit&redlink=1 "FlatRedBall.Math.Geometry.ShapeManager.AddToLayer (page does not exist)")
+-   [FlatRedBall.Math.Geometry.ShapeManager.Remove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.Remove "FlatRedBall.Math.Geometry.ShapeManager.Remove")
+-   [FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder "FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -14,7 +14,7 @@ AddPositionedObject can be used if you are creating a custom type which inherits
 
 PositionedObjects which are added to the SpriteManager will have the following methods/logic called:
 
--   [FlatRedBall.PositionedObject.ExecuteInstructions](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ExecuteInstructions&action=edit&redlink=1.md "FlatRedBall.PositionedObject.ExecuteInstructions (page does not exist)")
--   [FlatRedBall.PositionedObject.TimedActivity](/frb/docs/index.php?title=FlatRedBall.PositionedObject.TimedActivity.md "FlatRedBall.PositionedObject.TimedActivity")
--   [FlatRedBall.PositionedObject.Pause](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Pause&action=edit&redlink=1.md "FlatRedBall.PositionedObject.Pause (page does not exist)") (If the engine is paused)
--   [FlatRedBall.PositionedObject.UpdateDependencies](/frb/docs/index.php?title=FlatRedBall.PositionedObject.UpdateDependencies.md "FlatRedBall.PositionedObject.UpdateDependencies")
+-   [FlatRedBall.PositionedObject.ExecuteInstructions](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ExecuteInstructions&action=edit&redlink=1 "FlatRedBall.PositionedObject.ExecuteInstructions (page does not exist)")
+-   [FlatRedBall.PositionedObject.TimedActivity](/frb/docs/index.php?title=FlatRedBall.PositionedObject.TimedActivity "FlatRedBall.PositionedObject.TimedActivity")
+-   [FlatRedBall.PositionedObject.Pause](/frb/docs/index.php?title=FlatRedBall.PositionedObject.Pause&action=edit&redlink=1 "FlatRedBall.PositionedObject.Pause (page does not exist)") (If the engine is paused)
+-   [FlatRedBall.PositionedObject.UpdateDependencies](/frb/docs/index.php?title=FlatRedBall.PositionedObject.UpdateDependencies "FlatRedBall.PositionedObject.UpdateDependencies")

@@ -14,4 +14,4 @@ The following code adds a Sprite regularly, then converts it to a ZBuffered Spri
 
 ## Additional Information
 
-Sprites can be converted back to ordered Sprites. For more information, see the [FlatRedBall.SpriteManager.ConvertToOrderedSprite](/frb/docs/index.php?title=FlatRedBall.SpriteManager.ConvertToOrderedSprite&action=edit&redlink=1.md "FlatRedBall.SpriteManager.ConvertToOrderedSprite (page does not exist)") page.
+Sprites can be converted back to ordered Sprites. For more information, see the [FlatRedBall.SpriteManager.ConvertToOrderedSprite](/frb/docs/index.php?title=FlatRedBall.SpriteManager.ConvertToOrderedSprite&action=edit&redlink=1 "FlatRedBall.SpriteManager.ConvertToOrderedSprite (page does not exist)") page.

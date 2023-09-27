@@ -16,15 +16,15 @@ Once a category has been created, states can be added in the State Data tab.
 
 ![](/media/2021-03-img_60562f9698889.png)
 
-New states can be added by entering names in the left-most column. Adding a new name creates a new state. [![](/wp-content/uploads/2016/01/2021_March_20_112624.gif.md)](/wp-content/uploads/2016/01/2021_March_20_112624.gif.md) By default, all variables in the Entity or Screen appear in the **State Data** tab. This includes tunneled variables too. For example, consider a tunneled SpriteInstance Texture variable. [![](/wp-content/uploads/2016/01/2021_March_20_111428.gif.md)](/wp-content/uploads/2016/01/2021_March_20_111428.gif.md) This variable will appear as a column in the **State Data** tab.
+New states can be added by entering names in the left-most column. Adding a new name creates a new state. [![](/wp-content/uploads/2016/01/2021_March_20_112624.gif)](/wp-content/uploads/2016/01/2021_March_20_112624.gif) By default, all variables in the Entity or Screen appear in the **State Data** tab. This includes tunneled variables too. For example, consider a tunneled SpriteInstance Texture variable. [![](/wp-content/uploads/2016/01/2021_March_20_111428.gif)](/wp-content/uploads/2016/01/2021_March_20_111428.gif) This variable will appear as a column in the **State Data** tab.
 
 ![](/media/2021-03-img_6056315a35c47.png)
 
-Variables can be added and removed from the **State Data** tab for a given category. It's best to remove variables which aren't used in a category to prevent mistakes. [![](/wp-content/uploads/2016/01/2021_March_20_110432.gif.md)](/wp-content/uploads/2016/01/2021_March_20_110432.gif.md)
+Variables can be added and removed from the **State Data** tab for a given category. It's best to remove variables which aren't used in a category to prevent mistakes. [![](/wp-content/uploads/2016/01/2021_March_20_110432.gif)](/wp-content/uploads/2016/01/2021_March_20_110432.gif)
 
 ### Right-Click Menu
 
-States can also be added through the right-click menu on a category. [![](/wp-content/uploads/2016/01/2021_March_20_112411.gif.md)](/wp-content/uploads/2016/01/2021_March_20_112411.gif.md) This method is the *old way* of adding states. It is still supported, but it is a little more cumbersome compared to using *state data*. States added this way will still appear in the State Data tab.
+States can also be added through the right-click menu on a category. [![](/wp-content/uploads/2016/01/2021_March_20_112411.gif)](/wp-content/uploads/2016/01/2021_March_20_112411.gif) This method is the *old way* of adding states. It is still supported, but it is a little more cumbersome compared to using *state data*. States added this way will still appear in the State Data tab.
 
 ## Setting States in Code
 
@@ -52,6 +52,6 @@ The state can be compared against the values which are assigned to perform logic
 
 ## Additional Information
 
--   [Introduction to States](/frb/docs/index.php?title=Glue:Tutorials:States.md "Glue:Tutorials:States")
+-   [Introduction to States](/frb/docs/index.php?title=Glue:Tutorials:States "Glue:Tutorials:States")
 -   [Rock Blaster States Tutorial](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-rock-states.md)
--   [States reference](/frb/docs/index.php?title=Glue:Reference#States.md "Glue:Reference")
+-   [States reference](/frb/docs/index.php?title=Glue:Reference#States "Glue:Reference")

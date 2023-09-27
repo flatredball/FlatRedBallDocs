@@ -59,7 +59,7 @@ If your files do not show up, you can troubleshoot the process as follows:
 
 1.  Look at the output window of Glue - if your plugin has crashed then Glue will display a callstack
 2.  Put try/catch statements around relevant code, such as PerformAddAndSave, and see the exception message for more information on what might be happening
-3.  Select [Plugins-\>Manage Plugins](/frb/docs/index.php?title=Glue:Reference:Menu:Plugins:Manage_Plugin.md "Glue:Reference:Menu:Plugins:Manage Plugin") to see all plugins and investigate any failures which may have occurred.
+3.  Select [Plugins-\>Manage Plugins](/frb/docs/index.php?title=Glue:Reference:Menu:Plugins:Manage_Plugin "Glue:Reference:Menu:Plugins:Manage Plugin") to see all plugins and investigate any failures which may have occurred.
 
 ## Conclusion
 

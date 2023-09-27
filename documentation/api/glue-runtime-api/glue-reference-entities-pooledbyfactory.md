@@ -1,6 +1,6 @@
 ## Introduction
 
-The PooledByFactory property on Entities tells Glue that the Factory for the given Entity should perform pooling. For this property to appear, an Entity must have its CreatedByOtherEntities property set to true. More information on CreatedByOtherEntities [can be found here](/frb/docs/index.php?title=Glue:Tutorials:Entities_Created_by_Other_Entities.md "Glue:Tutorials:Entities Created by Other Entities").
+The PooledByFactory property on Entities tells Glue that the Factory for the given Entity should perform pooling. For this property to appear, an Entity must have its CreatedByOtherEntities property set to true. More information on CreatedByOtherEntities [can be found here](/frb/docs/index.php?title=Glue:Tutorials:Entities_Created_by_Other_Entities "Glue:Tutorials:Entities Created by Other Entities").
 
 **What is pooling?** In programming a "pool" of objects is a group of objects which are instantiated but unused. Whenever a new object is needed, an instance from the pool is returned. Whenever an object is no longer needed, it is returned to the pool - in other words, it's recycled. This allows your game to create and destroy objects without having to allocate memory. This is important for reducing memory allocation, which in turn reduces the number of times that the garbage collector has to run. If your game is experiencing jumps in frame rate you may be suffering from the garbage collector firing frequently, and pooling may help resolve this problem.
 
@@ -81,4 +81,4 @@ Keep in mind that Glue only adds variables to existing objects. If you ever add 
 
 ### Pooling and Inheritance
 
-For information on how factories, pooling, and inheritance all work together see the [Factory Initialize method page](/frb/docs/index.php?title=Glue:Reference:Factory:Initialize.md "Glue:Reference:Factory:Initialize").
+For information on how factories, pooling, and inheritance all work together see the [Factory Initialize method page](/frb/docs/index.php?title=Glue:Reference:Factory:Initialize "Glue:Reference:Factory:Initialize").

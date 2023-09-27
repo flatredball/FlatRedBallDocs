@@ -1,6 +1,6 @@
 ## Introduction
 
-The DestinationRectangle can be used to make a Layer only draw to part of a Screen. This is often referred to as "masking" or "creating a mask". The DestinationRectangle property in Glue functions the same as in code. For a technical discussion on destination rectangles for Layers, see [this page](/frb/docs/index.php?title=FlatRedBall.Graphics.LayerCameraSettings.TopDestination.md "FlatRedBall.Graphics.LayerCameraSettings.TopDestination").
+The DestinationRectangle can be used to make a Layer only draw to part of a Screen. This is often referred to as "masking" or "creating a mask". The DestinationRectangle property in Glue functions the same as in code. For a technical discussion on destination rectangles for Layers, see [this page](/frb/docs/index.php?title=FlatRedBall.Graphics.LayerCameraSettings.TopDestination "FlatRedBall.Graphics.LayerCameraSettings.TopDestination").
 
 ## Example Usage
 

@@ -5,7 +5,7 @@ Tile based movement is a control system common in classic RPGs like Dragon Warri
     object.XVelocity = InputManager.XBoxController[0].LeftStick.Position.X;
     object.YVelocity = InputManager.XBoxController[0].LeftStick.Position.Y;
 
-Tile based movement can be applied in a variety of ways, but the most common is using instructions. The following code creates a tile map and a keyboard-controlled [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") which moves using tile based movement.
+Tile based movement can be applied in a variety of ways, but the most common is using instructions. The following code creates a tile map and a keyboard-controlled [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") which moves using tile based movement.
 
 Add the following using statements: using FlatRedBall; using FlatRedBall.Instructions; using FlatRedBall.ManagedSpriteGroups;
 

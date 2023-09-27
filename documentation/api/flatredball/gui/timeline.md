@@ -4,7 +4,7 @@ The TimeLine object provides a graphical element for setting numeric values. Thi
 
 ## Code Example
 
-The following code creates a TimeLine which controls the ScaleX and ScaleY values of a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite").
+The following code creates a TimeLine which controls the ScaleX and ScaleY values of a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite").
 
 Add the following Using statement:
 

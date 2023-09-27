@@ -37,7 +37,7 @@ To make a State set variables:
 
 Now you have states which can be used in Glue and in code to change the State of any object.
 
-**Where is the CurrentChain variable?**States can set any variable on a Screen/Entity. In this tutorial the Button Entity has a CurrentChain variable. This is because this tutorial continues the [previous tutorial on AnimationChains](/frb/docs/index.php?title=Glue:Tutorials:Using_Animation_Chains.md "Glue:Tutorials:Using Animation Chains"). If your Entity doesn't have any variables you can either go back to the [previous tutorial](/frb/docs/index.php?title=Glue:Tutorials:Using_Animation_Chains.md "Glue:Tutorials:Using Animation Chains") or simply add a variable to your Screen/Entity and it will show up in the State.
+**Where is the CurrentChain variable?**States can set any variable on a Screen/Entity. In this tutorial the Button Entity has a CurrentChain variable. This is because this tutorial continues the [previous tutorial on AnimationChains](/frb/docs/index.php?title=Glue:Tutorials:Using_Animation_Chains "Glue:Tutorials:Using Animation Chains"). If your Entity doesn't have any variables you can either go back to the [previous tutorial](/frb/docs/index.php?title=Glue:Tutorials:Using_Animation_Chains "Glue:Tutorials:Using Animation Chains") or simply add a variable to your Screen/Entity and it will show up in the State.
 
 ## Default States
 

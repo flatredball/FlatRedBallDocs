@@ -1,6 +1,6 @@
 ## Introduction
 
-The CurrentFrameIndex gets and sets the current frame that the IAnimationChainAnimatable is displaying. As animation plays this property will automatically increment and cycle. This value will always be between 0 and the count of the current [AnimationChain](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain.md "FlatRedBall.Graphics.Animation.AnimationChain") minus one (inclusive).
+The CurrentFrameIndex gets and sets the current frame that the IAnimationChainAnimatable is displaying. As animation plays this property will automatically increment and cycle. This value will always be between 0 and the count of the current [AnimationChain](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain "FlatRedBall.Graphics.Animation.AnimationChain") minus one (inclusive).
 
 ## Manually setting CurrentFrameIndex
 

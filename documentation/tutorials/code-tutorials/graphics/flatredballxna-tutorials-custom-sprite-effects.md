@@ -1,12 +1,12 @@
 ## Introduction
 
-[Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") appearance can be modified through a number of properties including [Texture](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D.md "Microsoft.Xna.Framework.Graphics.Texture2D"), [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation"), and [BlendOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.BlendOperation.md "FlatRedBall.Graphics.BlendOperation"). Full rendering control can be achieved by using custom shaders, applied through an [IDrawableBatch](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-drawablebatch.md). This guide covers how to render a Sprite using a custom IDrawableBatch.
+[Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") appearance can be modified through a number of properties including [Texture](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D "Microsoft.Xna.Framework.Graphics.Texture2D"), [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation"), and [BlendOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.BlendOperation "FlatRedBall.Graphics.BlendOperation"). Full rendering control can be achieved by using custom shaders, applied through an [IDrawableBatch](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-drawablebatch.md). This guide covers how to render a Sprite using a custom IDrawableBatch.
 
 ##  Adding files to Glue
 
 Before writing any code, we'll add a few files to our project. This requires an existing Glue project with at least one Screen. To add a shader file:
 
-1.  Download this file: [Shader.fx](/content/Tutorials/Graphics/Shader.fx.md)
+1.  Download this file: [Shader.fx](/content/Tutorials/Graphics/Shader.fx)
 2.  Add the file to your Glue screen
 
 To add an image file:

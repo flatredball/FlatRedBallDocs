@@ -4,7 +4,7 @@ RotatePointAroundPoint is a method that can easily rotate one point around anoth
 
 ## Code Example
 
-The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") which rotates about the origin when the user holds down the space bar. Add the following at class scope:
+The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") which rotates about the origin when the user holds down the space bar. Add the following at class scope:
 
     Sprite sprite;
 

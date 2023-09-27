@@ -66,7 +66,7 @@ The logic above sets the velocity of the entity to move in the direction towards
 
     }
 
-We can press the arrow keys on the keyboard to test movement in the four directions. [![](/wp-content/uploads/2021/03/2021_March_21_214754.gif.md)](/wp-content/uploads/2021/03/2021_March_21_214754.gif.md)
+We can press the arrow keys on the keyboard to test movement in the four directions. [![](/wp-content/uploads/2021/03/2021_March_21_214754.gif)](/wp-content/uploads/2021/03/2021_March_21_214754.gif)
 
 ## Conclusion
 

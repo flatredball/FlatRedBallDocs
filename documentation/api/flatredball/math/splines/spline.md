@@ -47,7 +47,7 @@ The following example instantiates a Spline, adds four points, calculates the ve
 
 ## Creating a Spline from .splx
 
-The following code creates a Spline by loading a .splx file. First you should add the file to your project. Information on adding files can be found [here](/frb/docs/index.php?title=Tutorials:Adding_files_to_your_project.md "Tutorials:Adding files to your project"). **File used:**[ExampleSpline.splx](/frb/docs/images/3/36/ExampleSpline.splx.md "ExampleSpline.splx") **Add the following using statement:**
+The following code creates a Spline by loading a .splx file. First you should add the file to your project. Information on adding files can be found [here](/frb/docs/index.php?title=Tutorials:Adding_files_to_your_project "Tutorials:Adding files to your project"). **File used:**[ExampleSpline.splx](/frb/docs/images/3/36/ExampleSpline.splx "ExampleSpline.splx") **Add the following using statement:**
 
     using FlatRedBall.Math.Splines;
 
@@ -63,14 +63,14 @@ The following code creates a Spline by loading a .splx file. First you should ad
 
 ![SplineFromSplx.png](/media/migrated_media-SplineFromSplx.png) There are a few things to keep in mind:
 
--   A .splx file can contain multiple Splines. In this case the .splx file only contains one. Splines implement the [INameable](/frb/docs/index.php?title=FlatRedBall.Utilities.INameable&action=edit&redlink=1.md "FlatRedBall.Utilities.INameable (page does not exist)") interface, so you can find Splines in the loaded list by their name if your .splx file contains multiple Splines.
+-   A .splx file can contain multiple Splines. In this case the .splx file only contains one. Splines implement the [INameable](/frb/docs/index.php?title=FlatRedBall.Utilities.INameable&action=edit&redlink=1 "FlatRedBall.Utilities.INameable (page does not exist)") interface, so you can find Splines in the loaded list by their name if your .splx file contains multiple Splines.
 -   In this example I added the .splx to my project's "Content" folder. Therefore, the file name is prepended with "Content\\". Make sure to modify this according to where you place your file.
--   In FlatRedBall XNA and FlatRedBall MDX, this file should be loaded "from file". In FlatSilverBall, it should be set as Content. For more information, see [this article on adding files](/frb/docs/index.php?title=Tutorials:Adding_files_to_your_project.md "Tutorials:Adding files to your project").
+-   In FlatRedBall XNA and FlatRedBall MDX, this file should be loaded "from file". In FlatSilverBall, it should be set as Content. For more information, see [this article on adding files](/frb/docs/index.php?title=Tutorials:Adding_files_to_your_project "Tutorials:Adding files to your project").
 -   .splx files store Velocities, so you do not need to call CalculateVelocities. In fact, it is possible for .splx files to store velocities that have been modified if the tool that has created the .splx supports handles. To preserve the original content, you should only call CalculateAccelerations after the Spline is loaded.
 
 ## Positioning objects using a Spline
 
-Objects can be easily positioned using a Spline. The GetPositionAtTime method returns a Vector3. It takes a time argument which is the amount of time from the beginning of the Spline. The following code positions a Sprite according to how much time has passed since the user has pressed the space bar. This code example also skips over the steps to create a valid Spline and [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite"). **Add the following at class scope:**
+Objects can be easily positioned using a Spline. The GetPositionAtTime method returns a Vector3. It takes a time argument which is the amount of time from the beginning of the Spline. The following code positions a Sprite according to how much time has passed since the user has pressed the space bar. This code example also skips over the steps to create a valid Spline and [Sprite](/frb/docs/index.php?title=Sprite "Sprite"). **Add the following at class scope:**
 
     double mTimeSplineMovementStarted = 0;
 
@@ -98,6 +98,6 @@ Of course, if you ever make changes to a Spline like moving its points you will 
 
 ## Spline Members
 
--   [FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline](/frb/docs/index.php?title=FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline.md "FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline")
+-   [FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline](/frb/docs/index.php?title=FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline "FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

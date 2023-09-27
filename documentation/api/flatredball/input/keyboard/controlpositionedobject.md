@@ -1,4 +1,4 @@
-[Back to Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard")
+[Back to Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard")
 
 ## Introduction
 
@@ -6,4 +6,4 @@ The ControlPositionedObject method is a method which can be used to move a Posit
 
 ## Code Example
 
-For an example, see [this example on the main Keyboard page](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md#Controlling_Objects_With_the_Keyboard "FlatRedBall.Input.Keyboard").
+For an example, see [this example on the main Keyboard page](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard#Controlling_Objects_With_the_Keyboard "FlatRedBall.Input.Keyboard").

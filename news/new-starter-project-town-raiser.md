@@ -6,7 +6,7 @@ Today brings the release our the fourth (and largest) FlatRedBall starter projec
 
 ## How Can I Play TownRaiser?
 
-Unlike previous starter projects, you can download and run the full TownRaiser game. Just download, unzip, and run the .exe to run the game on your Windows desktop: [http://files.flatredball.com/content/Games/TownRaiser.zip](/content/Games/TownRaiser.zip.md)
+Unlike previous starter projects, you can download and run the full TownRaiser game. Just download, unzip, and run the .exe to run the game on your Windows desktop: [http://files.flatredball.com/content/Games/TownRaiser.zip](/content/Games/TownRaiser.zip)
 
 ## Downloading In Glue
 

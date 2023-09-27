@@ -12,7 +12,7 @@ Texture2D's which are added to a screen or entity can be accessed by objects in 
 
 2.  Drag+drop a .png file from any location on your computer onto the entity's Files object. Note that if the file is not located outside of your game's Content folder, the file will be copied.
 
-    [![](/wp-content/uploads/2016/07/2019-06-30_07-32-33.gif.md)](/wp-content/uploads/2016/07/2019-06-30_07-32-33.gif.md)
+    [![](/wp-content/uploads/2016/07/2019-06-30_07-32-33.gif)](/wp-content/uploads/2016/07/2019-06-30_07-32-33.gif)
 
 3.  Select the Sprite object
 

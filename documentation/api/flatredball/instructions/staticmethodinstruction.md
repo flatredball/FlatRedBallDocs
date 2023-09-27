@@ -2,11 +2,11 @@
 
 ## Introduction
 
-StaticMethodInstructions can be used to call methods belonging to static classes. This class is useful for calling methods belonging to FlatRedBall manager classes like the [SpriteManager](/frb/docs/index.php?title=FlatRedBall.SpriteManager.md "FlatRedBall.SpriteManager").
+StaticMethodInstructions can be used to call methods belonging to static classes. This class is useful for calling methods belonging to FlatRedBall manager classes like the [SpriteManager](/frb/docs/index.php?title=FlatRedBall.SpriteManager "FlatRedBall.SpriteManager").
 
 ## Creating a StaticMethodInstruction
 
-The following code creates an instruction that will add a Sprite to the scene after 2 seconds. [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.md "FlatRedBall.Instructions.Instruction") can be added to the [InstructionManager](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.mdManager "FlatRedBall.Instructions.InstructionManager") to be executed automatically. Add the following using statements:
+The following code creates an instruction that will add a Sprite to the scene after 2 seconds. [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction") can be added to the [InstructionManager](/frb/docs/index.php?title=FlatRedBall.Instructions.InstructionManager "FlatRedBall.Instructions.InstructionManager") to be executed automatically. Add the following using statements:
 
     using System.Reflection;
     using FlatRedBall.Instructions;

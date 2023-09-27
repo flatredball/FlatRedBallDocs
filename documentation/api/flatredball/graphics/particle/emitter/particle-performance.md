@@ -1,6 +1,6 @@
 ## Introduction
 
-The Emitter class creates particle [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") which are designed to be quickly created and destroyed with no memory allocation. Of course, any feature can slow a game down if overused. This section will discuss considerations when creating particles to keep your game running smoothly.
+The Emitter class creates particle [Sprites](/frb/docs/index.php?title=Sprite "Sprite") which are designed to be quickly created and destroyed with no memory allocation. Of course, any feature can slow a game down if overused. This section will discuss considerations when creating particles to keep your game running smoothly.
 
 ## FlatRedBall vs. \<insert other engine or demo\>
 
@@ -11,7 +11,7 @@ You may be wondering why particles in FlatRedBall are not as efficient as in ano
                                               ^
                                          FlatRedBall
 
-Of course, this isn't a comparison of FlatRedBall's particle system to other engines; but rather, an indication of how we intended the particle system to behave when we designed it. The particle system is built on top of the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") class. Each particle that is created by an Emitter is actually a Sprite. That means that each particle has all of the functionality of a Sprite. That includes:
+Of course, this isn't a comparison of FlatRedBall's particle system to other engines; but rather, an indication of how we intended the particle system to behave when we designed it. The particle system is built on top of the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") class. Each particle that is created by an Emitter is actually a Sprite. That means that each particle has all of the functionality of a Sprite. That includes:
 
 -   Velocity, Acceleration, Drag
 -   Color and blend operations
@@ -28,11 +28,11 @@ Particle systems are very straight-forward. There aren't a lot of "gotchas" when
 
 ### Particle Count
 
-As mentioned earlier in this page, more [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") means more calls to [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") behavior methods. You should keep an eye on your particle count, especially if you are creating your emitters in the [Particle Editor](/ParticleEditorWiki/index.php?title=Main_Page.md).
+As mentioned earlier in this page, more [Sprites](/frb/docs/index.php?title=Sprite "Sprite") means more calls to [Sprite](/frb/docs/index.php?title=Sprite "Sprite") behavior methods. You should keep an eye on your particle count, especially if you are creating your emitters in the [Particle Editor](/ParticleEditorWiki/index.php?title=Main_Page).
 
-The number of particles in an Emitter can vary depending on its purpose, but if you are getting into Emitters that have over 500 live [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite"), you may want to reconsider if there is a way to achieve the effect you are looking for with fewer [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite").
+The number of particles in an Emitter can vary depending on its purpose, but if you are getting into Emitters that have over 500 live [Sprites](/frb/docs/index.php?title=Sprite "Sprite"), you may want to reconsider if there is a way to achieve the effect you are looking for with fewer [Sprites](/frb/docs/index.php?title=Sprite "Sprite").
 
-Keep in mind that even though an Emitter is off-screen, emission will still create [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") which can impact performance.
+Keep in mind that even though an Emitter is off-screen, emission will still create [Sprites](/frb/docs/index.php?title=Sprite "Sprite") which can impact performance.
 
 ### Texture Size
 
@@ -44,7 +44,7 @@ In short, you should try to match the size of your source texture to how large t
 
 Fill rate is perhaps one of the biggest killers of performance when it comes to particles. The reason for this is because particles are by default "ordered". That means that the FlatRedBall engine draws Sprites back-to-front, and does not perform any kind of Z-Buffering between each particle.
 
-That means that if you have 10 large particle [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") which take up the entire screen, you are drawing an entire screen's-worth of pixels every frame!
+That means that if you have 10 large particle [Sprites](/frb/docs/index.php?title=Sprite "Sprite") which take up the entire screen, you are drawing an entire screen's-worth of pixels every frame!
 
 If you anticipate that each particle will take up a lot of space on screen, you should consider reducing your particle count. Also, keep an eye on overlapping particles. If you are making a 2D game, you might have a good sense of how likely it is that particles will overlap. If you have a lot of particles overlapping, reduce the number of live particles to see improvements in performance.
 

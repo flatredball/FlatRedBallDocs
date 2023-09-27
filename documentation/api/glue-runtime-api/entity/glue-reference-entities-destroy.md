@@ -4,7 +4,7 @@ The Destroy method is a method which can be used to destroy an instance of an En
 
 ## Understanding when to call Destroy
 
-For information on when to call Destroy, as well as a general discussion of when Glue calls Destroy for you see [the "Destroying Entity Instances" tutorial](/frb/docs/index.php?title=Glue:Tutorials:Destroying_Entity_Instances.md "Glue:Tutorials:Destroying Entity Instances").
+For information on when to call Destroy, as well as a general discussion of when Glue calls Destroy for you see [the "Destroying Entity Instances" tutorial](/frb/docs/index.php?title=Glue:Tutorials:Destroying_Entity_Instances "Glue:Tutorials:Destroying Entity Instances").
 
 ## What does Destroy modify/do?
 

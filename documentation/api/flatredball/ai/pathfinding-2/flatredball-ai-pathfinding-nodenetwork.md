@@ -1,10 +1,10 @@
 ## Introduction
 
-NodeNetworks are a collection of [PositionedNodes](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode.md "FlatRedBall.AI.Pathfinding.PositionedNode") which are linked to eachother using [Links](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link.md "FlatRedBall.AI.Pathfinding.Link"). NodeNetworks are used for pathfinding.
+NodeNetworks are a collection of [PositionedNodes](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode "FlatRedBall.AI.Pathfinding.PositionedNode") which are linked to eachother using [Links](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link "FlatRedBall.AI.Pathfinding.Link"). NodeNetworks are used for pathfinding.
 
 ## Loading a NodeNetwork
 
-**Files Used:** [Sample.nntx](/frb/docs/images/5/59/Sample.nntx.md "Sample.nntx") NodeNetworks can be loaded from .nntx files. Download the file and:
+**Files Used:** [Sample.nntx](/frb/docs/images/5/59/Sample.nntx "Sample.nntx") NodeNetworks can be loaded from .nntx files. Download the file and:
 
 -   Drag the file into your Solution. If you decide to use the Content Pipeline, remember to not include the extension when loading the file. This sample will use from-file loading. To load from-file:
     -   Select the .nntx file once it's in the Solution Explorer.
@@ -23,11 +23,11 @@ Add the following code to Initialize after initializing FlatRedBall:
     NodeNetwork nodeNetwork = save.ToNodeNetwork();
     nodeNetwork.Visible = true;
 
-![NodeNetworkFromFile.png](/media/migrated_media-NodeNetworkFromFile.png) For more information on file loading in FlatRedBall, see the [FlatRedBall File Types](/frb/docs/index.php?title=FlatRedBall_File_Types.md "FlatRedBall File Types") wiki entry.
+![NodeNetworkFromFile.png](/media/migrated_media-NodeNetworkFromFile.png) For more information on file loading in FlatRedBall, see the [FlatRedBall File Types](/frb/docs/index.php?title=FlatRedBall_File_Types "FlatRedBall File Types") wiki entry.
 
 ## Creating a NodeNetwork
 
-The following code creates a simple NodeNetwork and a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). Pressing the 1, 2, 3, or 4 [keys](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard") causes the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") to move toward a given node on the NodeNetwork. This example shows simple node creation, using the node for pathfinding, and how to make the node visible. Add the following using statement:
+The following code creates a simple NodeNetwork and a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). Pressing the 1, 2, 3, or 4 [keys](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard") causes the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to move toward a given node on the NodeNetwork. This example shows simple node creation, using the node for pathfinding, and how to make the node visible. Add the following using statement:
 
     using FlatRedBall.AI.Pathfinding;
     using FlatRedBall.Input;
@@ -124,16 +124,16 @@ Add the following in Update:
 
 ### Pathfinding
 
--   [FlatRedBall.AI.Pathfinding Namespace](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding_(Namespace).md "FlatRedBall.AI.Pathfinding (Namespace)")
--   [FlatRedBall.AI.Pathfinding.Link](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link.md "FlatRedBall.AI.Pathfinding.Link")
--   [FlatRedBall.AI.Pathfinding.PositionedNode](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode.md "FlatRedBall.AI.Pathfinding.PositionedNode")
+-   [FlatRedBall.AI.Pathfinding Namespace](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding_(Namespace) "FlatRedBall.AI.Pathfinding (Namespace)")
+-   [FlatRedBall.AI.Pathfinding.Link](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link "FlatRedBall.AI.Pathfinding.Link")
+-   [FlatRedBall.AI.Pathfinding.PositionedNode](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode "FlatRedBall.AI.Pathfinding.PositionedNode")
 
 ### Sprite
 
--   [FlatRedBall.Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite")
+-   [FlatRedBall.Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite")
 
 ### Input
 
--   [FlatRedBall.Input.Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard")
+-   [FlatRedBall.Input.Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard")
 
  

@@ -4,7 +4,7 @@ The GetFile method is a method which lets you get a file using a string instead 
 
     Texture2D texture = (Texture2D)GetFile("Bear");
 
-The argument (in the example above "Bear") matches the name of the variable in the screen or entity. This will usually be the name of the file, without any path or extension. The exception to this rule is if the [IncludeDirectoryRelativeToContainer](/frb/docs/index.php?title=Glue:Reference:Files:IncludeDirectoryRelativeToContainer.md "Glue:Reference:Files:IncludeDirectoryRelativeToContainer") value is true. ![](/media/2017-05-img_591898eae0479.png) Similary, GetFile can be called to obtain files from GlobalContent. For example, the following returns a song called BattleSong from GlobalContent:
+The argument (in the example above "Bear") matches the name of the variable in the screen or entity. This will usually be the name of the file, without any path or extension. The exception to this rule is if the [IncludeDirectoryRelativeToContainer](/frb/docs/index.php?title=Glue:Reference:Files:IncludeDirectoryRelativeToContainer "Glue:Reference:Files:IncludeDirectoryRelativeToContainer") value is true. ![](/media/2017-05-img_591898eae0479.png) Similary, GetFile can be called to obtain files from GlobalContent. For example, the following returns a song called BattleSong from GlobalContent:
 
 ``` lang:c#
 Song song = (Song)GlobalContent.GetFile("BattleSong");
@@ -36,7 +36,7 @@ GetFile will usually work without any additional code most of the time, but not 
 The most common - and simplest - scenario is calling GetFile when there is already an instance of the object that holds the files created. This can be done in a number of ways:
 
 -   Calling a screen's GetFile function when the Screen is the active Screen
--   Calling an entity's GetFile function from within the entity's custom Initialize/Activity/[LoadStaticContent](/frb/docs/index.php?title=Glue:Reference:Screens:LoadStaticContent.md "Glue:Reference:Screens:LoadStaticContent") methods
+-   Calling an entity's GetFile function from within the entity's custom Initialize/Activity/[LoadStaticContent](/frb/docs/index.php?title=Glue:Reference:Screens:LoadStaticContent "Glue:Reference:Screens:LoadStaticContent") methods
 -   Calling an entity's GetFile function through an instance of that entity
 
 In all of the above cases, an instance of that Screen/entity will have been created, meaning that the files will have been loaded and are available to access through GetFile. In short, if an instance is alive, then GetFile should work without any other code.
@@ -53,4 +53,4 @@ It is possible to call GetFile on a screen/entity without having an instance of 
     // Now we can access the files:
     Texture2D texture = (Texture2D)Player.GetFile("SomeFile");
 
-[LoadStaticContent](/frb/docs/index.php?title=Glue:Reference:Screens:LoadStaticContent.md "Glue:Reference:Screens:LoadStaticContent") can be called multiple times, and this will not reload the content as long as the same content manager is used. For more information, see [the LoadStaticContent page](/frb/docs/index.php?title=Glue:Reference:Screens:LoadStaticContent.md "Glue:Reference:Screens:LoadStaticContent").
+[LoadStaticContent](/frb/docs/index.php?title=Glue:Reference:Screens:LoadStaticContent "Glue:Reference:Screens:LoadStaticContent") can be called multiple times, and this will not reload the content as long as the same content manager is used. For more information, see [the LoadStaticContent page](/frb/docs/index.php?title=Glue:Reference:Screens:LoadStaticContent "Glue:Reference:Screens:LoadStaticContent").

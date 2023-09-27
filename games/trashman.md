@@ -6,7 +6,7 @@ A mysterious life form has taken control of the "Junk Sector" space colony. Ares
 
 ## Download
 
--   [Download Trashman demo (updated August 19, 2009)](/games/trashman_setup.exe.md)
+-   [Download Trashman demo (updated August 19, 2009)](/games/trashman_setup.exe)
 
 ## Screen Shots
 

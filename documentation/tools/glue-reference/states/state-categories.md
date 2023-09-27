@@ -29,7 +29,7 @@ By default all variables appear in the the State Data tab when viewing one of th
 
 ![](/media/2021-10-img_617bf658b5b63.png)
 
-Usually states should only set a few of the variables. In the example shown here, the category might set variables related to Player armor. To exclude variables click the **...** button in the State Data tab and use the **\<\<** and **\>\> **buttons to include and exclude variables. In this case, only armor-related variables are included. All other variables are excluded and will be removed from the grid view as they are removed. [![](/wp-content/uploads/2016/01/29_07-28-14.gif.md)](/wp-content/uploads/2016/01/29_07-28-14.gif.md)
+Usually states should only set a few of the variables. In the example shown here, the category might set variables related to Player armor. To exclude variables click the **...** button in the State Data tab and use the **\<\<** and **\>\> **buttons to include and exclude variables. In this case, only armor-related variables are included. All other variables are excluded and will be removed from the grid view as they are removed. [![](/wp-content/uploads/2016/01/29_07-28-14.gif)](/wp-content/uploads/2016/01/29_07-28-14.gif)
 
 ### Excluding Variables Prevents Accidental Assignment
 
@@ -116,6 +116,6 @@ The SharesVariablesWithOtherCategories controls whether the State Category share
 
 -   Will create a separate enum value
 -   Will create a separate property of this enum type in the given Screen/Entity
--   Will create [InterpolateToState](/frb/docs/index.php?title=Glue:Reference:States:InterpolateToState.md "Glue:Reference:States:InterpolateToState") and InterpolateBetween functions for this enum type
+-   Will create [InterpolateToState](/frb/docs/index.php?title=Glue:Reference:States:InterpolateToState "Glue:Reference:States:InterpolateToState") and InterpolateBetween functions for this enum type
 -   Will allow exposing and tunneling of a new variable type in Glue
 -   Will allow setting the new category state in GlueView

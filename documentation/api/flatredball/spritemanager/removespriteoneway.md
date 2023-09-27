@@ -10,7 +10,7 @@ The RemoveSpriteOneWay method removes the argument Sprite from the SpriteManager
 
 RemoveSpriteOneWay will not remove a Sprite from:
 
--   Glue entities and other game-level [PositionedObjectLists](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList.md "FlatRedBall.Math.PositionedObjectList")
+-   Glue entities and other game-level [PositionedObjectLists](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList "FlatRedBall.Math.PositionedObjectList")
 -   Parent/child relationships
 
 ## Code Example

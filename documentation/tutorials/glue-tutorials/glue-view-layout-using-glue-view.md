@@ -4,7 +4,7 @@ Glue View can help you create Entity layouts in Screens, such as when creating U
 
 ## Creating a Layout
 
-This tutorial will use the a Button Entity which can be found [here on GlueVault.com](http://www.gluevault.com/entity/24-2d-low-resolution-brown-button). For information on importing Entities, see [this page](/frb/docs/index.php?title=Glue:Reference:Entities:Import_Entity.md "Glue:Reference:Entities:Import Entity"). Once you have imported the Entity you will need to create a Screen. Once you have a Screen and the Button Entity in your game:
+This tutorial will use the a Button Entity which can be found [here on GlueVault.com](http://www.gluevault.com/entity/24-2d-low-resolution-brown-button). For information on importing Entities, see [this page](/frb/docs/index.php?title=Glue:Reference:Entities:Import_Entity "Glue:Reference:Entities:Import Entity"). Once you have imported the Entity you will need to create a Screen. Once you have a Screen and the Button Entity in your game:
 
 1.  Click+drag the Button Entity into your Screen
 2.  Repeat the above step until you have four (4) Button instances in your Screen

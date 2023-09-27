@@ -31,4 +31,4 @@ We can set the Sprite to be animated using the following code in CustomInitializ
     gumSprite.SetProperty("SourceFile", "../Screens/MainMenu/PlatformerAnimations.achx");
     gumSprite.TextureAddress = Gum.Managers.TextureAddress.Custom;
 
-The Gum Sprite now animates when running the game. [![](/wp-content/uploads/2022/02/27_13-39-06.gif.md)](/wp-content/uploads/2022/02/27_13-39-06.gif.md)
+The Gum Sprite now animates when running the game. [![](/wp-content/uploads/2022/02/27_13-39-06.gif)](/wp-content/uploads/2022/02/27_13-39-06.gif)

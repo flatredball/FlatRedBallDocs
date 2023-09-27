@@ -21,7 +21,7 @@ Nodes can also be created by copying grabbed nodes.
 
 To move a node:
 
--   Click the "Move" button on the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1.md "Gui:Tools Window (page does not exist)")
+-   Click the "Move" button on the [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1 "Gui:Tools Window (page does not exist)")
 -   Push and hold the left mouse button down. Move the mouse while the left mouse button is down to move the selected node.
 
 ## Deleting a Node

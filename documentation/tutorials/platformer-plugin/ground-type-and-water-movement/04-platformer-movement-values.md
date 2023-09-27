@@ -99,4 +99,4 @@ Now that we have Ice and Water movement defined, we can write code in the Player
 
 ## Conclusion
 
-This concludes the platformer movement value tutorials where we use multiple TileShapeCollections to change the movement values for the player between regular ground/air movement, ice, and water movement. [![](/wp-content/uploads/2021/04/05_16-33-47.gif.md)](/wp-content/uploads/2021/04/05_16-33-47.gif.md)
+This concludes the platformer movement value tutorials where we use multiple TileShapeCollections to change the movement values for the player between regular ground/air movement, ice, and water movement. [![](/wp-content/uploads/2021/04/05_16-33-47.gif)](/wp-content/uploads/2021/04/05_16-33-47.gif)

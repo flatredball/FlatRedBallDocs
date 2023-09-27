@@ -19,7 +19,7 @@ The most common usage of PixelsPerUnit is to convert from pixels to units. In ot
 
 ## Code Example - Setting Sprite Width and Height
 
-The following code example creates a [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") and scales it to the size of the entire screen. The default resolution is 800 X 600, so scaling the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") to this size will make the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") fill up the entire screen. Add the following to Initialize after initializing FlatRedBall:
+The following code example creates a [Sprite](/frb/docs/index.php?title=Sprite "Sprite") and scales it to the size of the entire screen. The default resolution is 800 X 600, so scaling the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") to this size will make the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") fill up the entire screen. Add the following to Initialize after initializing FlatRedBall:
 
     // Our default resolution is 800 X 600
     int desiredSpritePixelWidth = 800;

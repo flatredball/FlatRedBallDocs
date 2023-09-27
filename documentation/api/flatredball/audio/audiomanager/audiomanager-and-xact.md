@@ -29,4 +29,4 @@ The Sound and PositionedSound objects can do a lot more with sound - including s
     Sound sound = AudioManager.GetSound("Arrow");
     PositionedSound positionedSound = AudioManager.GetPositionedSound("Arrow");
 
-These methods will return a [Sound](/frb/docs/index.php?title=FlatRedBall.Audio.Sound.md "FlatRedBall.Audio.Sound") and [PositionedSound](/frb/docs/index.php?title=FlatRedBall.Audio.PositionedSound.md "FlatRedBall.Audio.PositionedSound") object, respectively, which you much maintain a reference to while playing. These objects expose methods such as Play() and Stop(), which may be used to control the sound. Read more about them on their respective reference pages.
+These methods will return a [Sound](/frb/docs/index.php?title=FlatRedBall.Audio.Sound "FlatRedBall.Audio.Sound") and [PositionedSound](/frb/docs/index.php?title=FlatRedBall.Audio.PositionedSound "FlatRedBall.Audio.PositionedSound") object, respectively, which you much maintain a reference to while playing. These objects expose methods such as Play() and Stop(), which may be used to control the sound. Read more about them on their respective reference pages.

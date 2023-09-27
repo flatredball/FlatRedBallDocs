@@ -2,11 +2,11 @@
 
 Attachments are a feature in FlatRedBall which provides a convenient way of moving or rotating one object (called the child) relative to another object (called a parent). The interface for attachments is provided by the IAttachable interface. Objects which implement the IAttachable interface usually provide properties for position or rotation, although they don't have to. However, in most cases you will never need to worry about implementing the IAttachable interface yourself, so we won't cover how to do that in this tutorial.
 
-The most common type of IAttachable is the [PositionedObject](/frb/docs/index.php?title=PositionedObject.md "PositionedObject") class. The [PositionedObject](/frb/docs/index.php?title=PositionedObject.md "PositionedObject") class is the base class for many common FlatRedBall objects including [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite"), [Camera](/frb/docs/index.php?title=Camera.md "Camera"), [Texts](/frb/docs/index.php?title=Text.md "Text"), and the [Entities](/frb/docs/index.php?title=Entity.md "Entity") pattern. If you've been working through the tutorials so far, then you've worked with [PositionedObjects](/frb/docs/index.php?title=PositionedObject.md "PositionedObject") already.
+The most common type of IAttachable is the [PositionedObject](/frb/docs/index.php?title=PositionedObject "PositionedObject") class. The [PositionedObject](/frb/docs/index.php?title=PositionedObject "PositionedObject") class is the base class for many common FlatRedBall objects including [Sprites](/frb/docs/index.php?title=Sprite "Sprite"), [Camera](/frb/docs/index.php?title=Camera "Camera"), [Texts](/frb/docs/index.php?title=Text "Text"), and the [Entities](/frb/docs/index.php?title=Entity "Entity") pattern. If you've been working through the tutorials so far, then you've worked with [PositionedObjects](/frb/docs/index.php?title=PositionedObject "PositionedObject") already.
 
 ## Creating Attachments
 
-Attachments are very easy to create. The following code creates two [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite"). The larger [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") is the parent and the smaller one (which is attached to the larger one) is the child.
+Attachments are very easy to create. The following code creates two [Sprites](/frb/docs/index.php?title=Sprite "Sprite"). The larger [Sprite](/frb/docs/index.php?title=Sprite "Sprite") is the parent and the smaller one (which is attached to the larger one) is the child.
 
     Sprite parent = SpriteManager.AddSprite("redball.bmp");
     parent.ScaleX = 4;
@@ -21,7 +21,7 @@ Attachments are very easy to create. The following code creates two [Sprites](/f
 
 ![RotateAndAttachment.png](/media/migrated_media-RotateAndAttachment.png)
 
-The child [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") is attached to the parent Sprite. This means that if the parent rotates or moves, the child follows, always preserving the same relative position and rotation. To show this we've made the parent rotate and shown that the child is automatically updating its position.
+The child [Sprite](/frb/docs/index.php?title=Sprite "Sprite") is attached to the parent Sprite. This means that if the parent rotates or moves, the child follows, always preserving the same relative position and rotation. To show this we've made the parent rotate and shown that the child is automatically updating its position.
 
 ## Absolute and relative
 
@@ -29,7 +29,7 @@ The absolute modifier in "absolute position" and "absolute rotation" means the p
 
 The parent object's absolute position is at (0,0,0) - the default. Its Z rotation is continually changing due to its RotationZVelocity.
 
-As far as the parent object goes, its relative values currently have no meaning - it isn't attached to anything so its relative values have no impact. In fact, you can change any relative value of the parent and so long as it isn't attached to another [PositionedObject](/frb/docs/index.php?title=PositionedObject.md "PositionedObject"), these changes won't have any impact.
+As far as the parent object goes, its relative values currently have no meaning - it isn't attached to anything so its relative values have no impact. In fact, you can change any relative value of the parent and so long as it isn't attached to another [PositionedObject](/frb/docs/index.php?title=PositionedObject "PositionedObject"), these changes won't have any impact.
 
 Next, let's look at the child.
 
@@ -47,7 +47,7 @@ Similarly, relative positions can be just as useful. If you want to have a healt
 
 A very common mistake in FlatRedBall is forgetting which properties are active in which situation. This all depends on whether your object has an attachment or not.
 
-As mentioned before, the parent [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") has no attachment. Therefore, if we change the position of the parent, it will update fine. That is, if we write:
+As mentioned before, the parent [Sprite](/frb/docs/index.php?title=Sprite "Sprite") has no attachment. Therefore, if we change the position of the parent, it will update fine. That is, if we write:
 
     parent.X = -2;
 
@@ -70,7 +70,7 @@ If this value is false, then the absolute position of the child is ignored, and 
 
 ![AttachmentWithoutPreservingAbsolute.png](/media/migrated_media-AttachmentWithoutPreservingAbsolute.png)
 
-Now the child [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") is centered on the parent. Of course, the parent's rotation still impacts the rotation of the child, and if the parent were to move, the child would also move with it. As mentioned in the comments above, **the setting of the position of the child before the attachment has no impact on the child after the attachment.** Its **absolute position is ignored** and **overwritten** according to the absolute position of the parent and the child's relative values. You can try changing the setting of X = 6 to any other value and you'll see that it has no impact on the position of the child.
+Now the child [Sprite](/frb/docs/index.php?title=Sprite "Sprite") is centered on the parent. Of course, the parent's rotation still impacts the rotation of the child, and if the parent were to move, the child would also move with it. As mentioned in the comments above, **the setting of the position of the child before the attachment has no impact on the child after the attachment.** Its **absolute position is ignored** and **overwritten** according to the absolute position of the parent and the child's relative values. You can try changing the setting of X = 6 to any other value and you'll see that it has no impact on the position of the child.
 
 So to sum up what we've just looked at:
 
@@ -78,7 +78,7 @@ So to sum up what we've just looked at:
 
 So, you may be asking, when should the second argument be true? In practice attachments occur in one of two situations - when an object is created or due to some behavior at some point after the object is created.
 
-If the attachment occurs when the object is created, usually the second argument should be false. For example, if you are creating a character who is going to always wear a hat, then you may first create the character [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite"), then the hat [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite"), then you'll want to attach the hat to the character. In this case, you'll probably want to simply set the relative value of the hat, and the absolute position of the hat before attachment doesn't really matter.
+If the attachment occurs when the object is created, usually the second argument should be false. For example, if you are creating a character who is going to always wear a hat, then you may first create the character [Sprite](/frb/docs/index.php?title=Sprite "Sprite"), then the hat [Sprite](/frb/docs/index.php?title=Sprite "Sprite"), then you'll want to attach the hat to the character. In this case, you'll probably want to simply set the relative value of the hat, and the absolute position of the hat before attachment doesn't really matter.
 
 If the attachment occurs at some point during runtime, you may want to have the second argument be true. For example, consider a game like [Katamari Damacy](http://en.wikipedia.org/wiki/Katamari_Damacy). This game is played by controlling a ball around an environment, picking up objects to grow the ball. As soon as an object is touched by the ball, it sticks to the ball and continues to rotate with the ball. This is a perfect example of where attachments would be used and the second argument would be true. Any object that touches the ball should immediately stick to it, but at the moment when the "sticking" occurs, the object should stay in the same position and orientation. After the "sticking", the object is then subject to the movement and rotation of the parent ball.
 
@@ -128,12 +128,12 @@ That means that if you want to change any absolute value of a child, you have to
 
 ![RelativeValuesInAction.png](/media/migrated_media-RelativeValuesInAction.png)
 
-## Attachments and [Entities](/frb/docs/index.php?title=Entity.md "Entity")
+## Attachments and [Entities](/frb/docs/index.php?title=Entity "Entity")
 
-If you continue reading our FlatRedBall tutorials, or if you check the forums, you're bound to come across the term [Entity](/frb/docs/index.php?title=Entity.md "Entity") sooner or later. While this tutorial won't cover how to create one, we will mention them at a high level because they are a very common pattern in FlatRedBall game development.
+If you continue reading our FlatRedBall tutorials, or if you check the forums, you're bound to come across the term [Entity](/frb/docs/index.php?title=Entity "Entity") sooner or later. While this tutorial won't cover how to create one, we will mention them at a high level because they are a very common pattern in FlatRedBall game development.
 
-As you create your game, you'll likely want to create an object which will have some kind of graphical representation (like a [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite")) and will also need some type of collision (we cover collision in the next tutorial). FlatRedBall provides classes for both of these behaviors, but they aren't the same. This is where the [Entity](/frb/docs/index.php?title=Entity.md "Entity") pattern shines.
+As you create your game, you'll likely want to create an object which will have some kind of graphical representation (like a [Sprite](/frb/docs/index.php?title=Sprite "Sprite")) and will also need some type of collision (we cover collision in the next tutorial). FlatRedBall provides classes for both of these behaviors, but they aren't the same. This is where the [Entity](/frb/docs/index.php?title=Entity "Entity") pattern shines.
 
-The [Entity](/frb/docs/index.php?title=Entity.md "Entity") pattern is an object which inherits from the [PositionedObject](/frb/docs/index.php?title=PositionedObject.md "PositionedObject") class and has a visible representation object and a collision object. In FlatRedBall all classes which can be used as visible representations inherit from the [PositionedObject](/frb/docs/index.php?title=PositionedObject.md "PositionedObject") class. Similarly, all objects which are used for collision also inherit from the [PositionedObject](/frb/docs/index.php?title=PositionedObject.md "PositionedObject") class. Since the [Entity](/frb/docs/index.php?title=Entity.md "Entity") does as well, then the collision and visible representation can be attached to the entity. This means that you don't have to worry about the individual components when controlling your [Entity](/frb/docs/index.php?title=Entity.md "Entity"). In other words, you can simply position and rotate your [Entity](/frb/docs/index.php?title=Entity.md "Entity") and its attached visible representation and collision will move with it automatically.
+The [Entity](/frb/docs/index.php?title=Entity "Entity") pattern is an object which inherits from the [PositionedObject](/frb/docs/index.php?title=PositionedObject "PositionedObject") class and has a visible representation object and a collision object. In FlatRedBall all classes which can be used as visible representations inherit from the [PositionedObject](/frb/docs/index.php?title=PositionedObject "PositionedObject") class. Similarly, all objects which are used for collision also inherit from the [PositionedObject](/frb/docs/index.php?title=PositionedObject "PositionedObject") class. Since the [Entity](/frb/docs/index.php?title=Entity "Entity") does as well, then the collision and visible representation can be attached to the entity. This means that you don't have to worry about the individual components when controlling your [Entity](/frb/docs/index.php?title=Entity "Entity"). In other words, you can simply position and rotate your [Entity](/frb/docs/index.php?title=Entity "Entity") and its attached visible representation and collision will move with it automatically.
 
-This is just a brief explanation of how [Entities](/frb/docs/index.php?title=Entity.md "Entity") work, but keep it in mind as you read about them later on.
+This is just a brief explanation of how [Entities](/frb/docs/index.php?title=Entity "Entity") work, but keep it in mind as you read about them later on.

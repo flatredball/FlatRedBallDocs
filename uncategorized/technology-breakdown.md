@@ -86,6 +86,6 @@ The wiki is organized into topics such as engine, FRBDK, math questions, general
 
 ## Chat
 
-The chat room is immediately available when visiting [www.flatredball.com](.md) It requires no login - users immediately enter the chat room as one would enter the lobby of a building.
+The chat room is immediately available when visiting [www.flatredball.com]() It requires no login - users immediately enter the chat room as one would enter the lobby of a building.
 
 The intent is to encourage users to ask questions openly, help one another, and to supplement what may seem like confusing navigation to new users. Many users have been helped by the chat room since it was originally added.

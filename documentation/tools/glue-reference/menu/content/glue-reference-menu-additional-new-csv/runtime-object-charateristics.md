@@ -8,7 +8,7 @@ Files loaded by Glue can be used to either create "save objects" and "runtime ob
 
 ## Runtime Objects and FlatRedBall Managers
 
-Runtime objects are often either directly added to FlatRedBall managers (if they inherit from the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") or include objects which are added to managers). In this case the runtime object needs two calls:
+Runtime objects are often either directly added to FlatRedBall managers (if they inherit from the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") or include objects which are added to managers). In this case the runtime object needs two calls:
 
 1.  An "add to managers" method which is responsible for adding the object and any contained objects to the FlatRedBall Engine
 2.  A "remove from managers" or "destroy" method which removes the object and all contained objects from FlatRedBall managers

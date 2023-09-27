@@ -1,6 +1,6 @@
 ## Introduction
 
-The LayeredTileMap object is the runtime type for the TMX file format (the native file format for Tiled). Whenever a TMX file is added to FlatRedBall, it will (by default) be loaded into a LayeredTileMap at runtime. The LayeredTileMap represents a collection of [MapDrawableBatches](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Tile_Graphics_Plugin:MapDrawableBatch.md "Glue:GlueVault:Component Pages:Tile Graphics Plugin:MapDrawableBatch"). It contains one [MapDrawableBatch](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Tile_Graphics_Plugin:MapDrawableBatch.md "Glue:GlueVault:Component Pages:Tile Graphics Plugin:MapDrawableBatch") per layer in the source TMX file. The LayeredTileMap class inherits from [FlatRedBall.PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") so it can be moved and attached to other [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject"). Each MapDrawableBatch is attached to its parent LayeredTileMap, and can be moved independently by changing its [RelativePosition](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md.RelativePosition "FlatRedBall.PositionedObject.RelativePosition").
+The LayeredTileMap object is the runtime type for the TMX file format (the native file format for Tiled). Whenever a TMX file is added to FlatRedBall, it will (by default) be loaded into a LayeredTileMap at runtime. The LayeredTileMap represents a collection of [MapDrawableBatches](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Tile_Graphics_Plugin:MapDrawableBatch "Glue:GlueVault:Component Pages:Tile Graphics Plugin:MapDrawableBatch"). It contains one [MapDrawableBatch](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Tile_Graphics_Plugin:MapDrawableBatch "Glue:GlueVault:Component Pages:Tile Graphics Plugin:MapDrawableBatch") per layer in the source TMX file. The LayeredTileMap class inherits from [FlatRedBall.PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") so it can be moved and attached to other [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject"). Each MapDrawableBatch is attached to its parent LayeredTileMap, and can be moved independently by changing its [RelativePosition](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RelativePosition "FlatRedBall.PositionedObject.RelativePosition").
 
 ## Common Usage
 
@@ -25,7 +25,7 @@ If you are not using the GameScreen/Level pattern, you can add your own TMX file
 3.  Create a game screen
 4.  Drag+drop the TMX file into your Screen's **Files** folder
 
-[![](/wp-content/uploads/2016/01/2020_February_04_172542.gif.md)](/wp-content/uploads/2016/01/2020_February_04_172542.gif.md) No additional code is necessary - your map will now show up in the screen.
+[![](/wp-content/uploads/2016/01/2020_February_04_172542.gif)](/wp-content/uploads/2016/01/2020_February_04_172542.gif) No additional code is necessary - your map will now show up in the screen.
 
 ## Creating Entities From a TMX
 
@@ -33,7 +33,7 @@ If using the GameScreen/Level pattern, FlatRedBall will automatically set up a M
 
 ### Creating a Map object for Entity Creation in Glue
 
-Once you have a TMX file in your screen's Files folder, you can create a Map object by drag+dropping the TMX onto the Screen's Objects folder. [![](/wp-content/uploads/2016/01/13_08-39-26.gif.md)](/wp-content/uploads/2016/01/13_08-39-26.gif.md) Once the Map object has been created, its **Create Entities From Tiles** property can be checked.
+Once you have a TMX file in your screen's Files folder, you can create a Map object by drag+dropping the TMX onto the Screen's Objects folder. [![](/wp-content/uploads/2016/01/13_08-39-26.gif)](/wp-content/uploads/2016/01/13_08-39-26.gif) Once the Map object has been created, its **Create Entities From Tiles** property can be checked.
 
 ![](/media/2021-10-img_6166f03c272a0.png)
 

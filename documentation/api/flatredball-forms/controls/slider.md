@@ -1,6 +1,6 @@
 ## Introduction
 
-The Slider control can be used to set a value between a minimum and maximum value. For example, Sliders can be used to set color values in a game tool. [![](/wp-content/uploads/2017/12/2017-12-24_19-44-32.gif.md)](/wp-content/uploads/2017/12/2017-12-24_19-44-32.gif.md)
+The Slider control can be used to set a value between a minimum and maximum value. For example, Sliders can be used to set color values in a game tool. [![](/wp-content/uploads/2017/12/2017-12-24_19-44-32.gif)](/wp-content/uploads/2017/12/2017-12-24_19-44-32.gif)
 
 ## Layout Requirements
 
@@ -72,7 +72,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](/wp-content/uploads/2017/12/2017-12-24_19-52-10.gif.md)](/wp-content/uploads/2017/12/2017-12-24_19-52-10.gif.md)
+[![](/wp-content/uploads/2017/12/2017-12-24_19-52-10.gif)](/wp-content/uploads/2017/12/2017-12-24_19-52-10.gif)
 
 ## ValueChanged
 
@@ -98,7 +98,7 @@ private void HandleValueChanged(object sender, EventArgs e)
 }
 ```
 
-[![](/wp-content/uploads/2017/12/2019_December_06_071242.gif.md)](/wp-content/uploads/2017/12/2019_December_06_071242.gif.md)
+[![](/wp-content/uploads/2017/12/2019_December_06_071242.gif)](/wp-content/uploads/2017/12/2019_December_06_071242.gif)
 
 ## TicksFrequency
 
@@ -109,7 +109,7 @@ slider.IsSnapToTickEnabled = true;
 slider.TicksFrequency = 1;
 ```
 
-[![](/wp-content/uploads/2017/12/2017-12-24_20-07-06.gif.md)](/wp-content/uploads/2017/12/2017-12-24_20-07-06.gif.md)
+[![](/wp-content/uploads/2017/12/2017-12-24_20-07-06.gif)](/wp-content/uploads/2017/12/2017-12-24_20-07-06.gif)
 
 ## IsMoveToPointEnabled
 
@@ -121,7 +121,7 @@ slider.TicksFrequency = 1;
 slider.IsMoveToPointEnabled = true;
 ```
 
-[![](/wp-content/uploads/2017/12/2017-12-24_20-13-28.gif.md)](/wp-content/uploads/2017/12/2017-12-24_20-13-28.gif.md)
+[![](/wp-content/uploads/2017/12/2017-12-24_20-13-28.gif)](/wp-content/uploads/2017/12/2017-12-24_20-13-28.gif)
 
 ## SmallChange
 
@@ -131,4 +131,4 @@ The SmallChange property controls the change in value when pressing left or ri
     MusicSlider.Maximum = 1;
     MusicSlider.SmallChange = .1;
 
-[![](/wp-content/uploads/2017/12/02_11-27-57.gif.md)](/wp-content/uploads/2017/12/02_11-27-57.gif.md)
+[![](/wp-content/uploads/2017/12/02_11-27-57.gif)](/wp-content/uploads/2017/12/02_11-27-57.gif)

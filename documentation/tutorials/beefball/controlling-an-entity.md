@@ -67,14 +67,14 @@ Notice that the object we are assigning code to (PlayerBall1) matches the name o
 
 ![](/media/2022-01-img_61d31b3936349.png)
 
-For more information on the Keyboard class, see [the Keyboard page](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard").
+For more information on the Keyboard class, see [the Keyboard page](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard").
 
 ## Cleaning up the code
 
 **Clean code is very important.** This is something we stress at FlatRedBall for all developers making any kind of game regardless of size. Therefore, this tutorial (and others in the future) will discuss how code can be improved to be cleaner and more flexible. The code we wrote above has a number of problems:
 
 -   The velocity (which was set to 10) is set right in the method where it's used. This velocity value is typically considered "data", while its application is considered "logic". The separation of data from logic is a fundamental concept in keeping game projects maintainable.
--   The game includes logic in the CustomActivity method. We encourage no logic, only method calls in the standard "Custom" methods. For more information, click [here.](/frb/docs/index.php?title=General_Programming:FlatRedBall_Programming_Style_Guide#CustomActivity_and_CustomInitialize_methods_should_contain_no_logic.md "General Programming:FlatRedBall Programming Style Guide")
+-   The game includes logic in the CustomActivity method. We encourage no logic, only method calls in the standard "Custom" methods. For more information, click [here.](/frb/docs/index.php?title=General_Programming:FlatRedBall_Programming_Style_Guide#CustomActivity_and_CustomInitialize_methods_should_contain_no_logic "General Programming:FlatRedBall Programming Style Guide")
 
 ## Separating Data from Logic using Glue Variables
 
@@ -87,7 +87,7 @@ FlatRedBall provides a number of ways to separate data from logic. The simplest 
 5.  Enter the name **MovementSpeed** and click the **OK** button
 6.  Verify **Variables** is selected and set **MovementSpeed** to **100**. Deselect the text box or press ENTER to apply the value.
 
-[![](/wp-content/uploads/2016/01/03_08-51-45.gif.md)](/wp-content/uploads/2016/01/03_08-51-45.gif.md) Finally, return to the movement code **inside PlayerBall.cs** and change the code to:
+[![](/wp-content/uploads/2016/01/03_08-51-45.gif)](/wp-content/uploads/2016/01/03_08-51-45.gif) Finally, return to the movement code **inside PlayerBall.cs** and change the code to:
 
     private void CustomActivity()
     {
@@ -125,7 +125,7 @@ The benefit of using the input interfaces (I2DInput and IPressableInput ) is t
         }
     }
 
-For more information on Xbox360GamePad, see [the Xbox360GamePad page](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.md "FlatRedBall.Input.Xbox360GamePad").
+For more information on Xbox360GamePad, see [the Xbox360GamePad page](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad "FlatRedBall.Input.Xbox360GamePad").
 
 ### UWP Details
 

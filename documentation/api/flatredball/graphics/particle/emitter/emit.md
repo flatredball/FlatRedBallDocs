@@ -8,7 +8,7 @@ You can manually tell an Emitter to emit by calling Emit on it:
 
     EmitterInstance.Emit();
 
-This will cause the Emitter to emit one time - which may be multiple particles if the [NumberPerEmission](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission.md "FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission") property is set to a number greater than 1.
+This will cause the Emitter to emit one time - which may be multiple particles if the [NumberPerEmission](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission "FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission") property is set to a number greater than 1.
 
 ## Modifying Emitted Particles
 
@@ -37,4 +37,4 @@ In your emission logic code
        // This is one-time logic
     }
 
-The above code shows how to populate a list of newly emitted Sprites. A second SpriteList (allEmittedSprites) is created to store all emitted Sprites if you need to perform continual logic on these Sprites. The allEmittedSprites will automatically be cleaned of old Sprites due to the [two-way relationship between Sprites and SpriteLists](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships.md "FlatRedBall.Math.AttachableList").
+The above code shows how to populate a list of newly emitted Sprites. A second SpriteList (allEmittedSprites) is created to store all emitted Sprites if you need to perform continual logic on these Sprites. The allEmittedSprites will automatically be cleaned of old Sprites due to the [two-way relationship between Sprites and SpriteLists](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships "FlatRedBall.Math.AttachableList").

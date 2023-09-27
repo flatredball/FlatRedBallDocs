@@ -1,6 +1,6 @@
 ## Introduction
 
-The ContentManagerName property returns the Screen's ContentManagerName. For more information on ContentManagers, see the [ContentManager page](/frb/docs/index.php?title=FlatRedBall.Content.ContentManager.md "FlatRedBall.Content.ContentManager").
+The ContentManagerName property returns the Screen's ContentManagerName. For more information on ContentManagers, see the [ContentManager page](/frb/docs/index.php?title=FlatRedBall.Content.ContentManager "FlatRedBall.Content.ContentManager").
 
 ## Code Example
 

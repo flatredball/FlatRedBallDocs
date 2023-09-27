@@ -1,6 +1,6 @@
 ## Introduction
 
-The LayerCameraSettings class is a class which can be used to override the settings of a [FlatRedBall.Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera") on a by [FlatRedBall.Graphics.Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer.md "FlatRedBall.Graphics.Layer") basis. LayerCameraSettings can be used to achieve the following:
+The LayerCameraSettings class is a class which can be used to override the settings of a [FlatRedBall.Camera](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera") on a by [FlatRedBall.Graphics.Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer") basis. LayerCameraSettings can be used to achieve the following:
 
 -   Adding a 2D layer when the main Camera is 3D
 -   Adding a 3D layer when the main Camera is 2D
@@ -9,7 +9,7 @@ The LayerCameraSettings class is a class which can be used to override the setti
 
 ## Code Example
 
-The following code creates a [FlatRedBall.Graphics.Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer.md "FlatRedBall.Graphics.Layer") which renders in 2D even though the camera is rendering in 3D: Add the following using statement:
+The following code creates a [FlatRedBall.Graphics.Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer") which renders in 2D even though the camera is rendering in 3D: Add the following using statement:
 
     using FlatRedBall.Graphics;
 

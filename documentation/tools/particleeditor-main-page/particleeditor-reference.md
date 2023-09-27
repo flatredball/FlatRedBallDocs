@@ -1,1 +1,1 @@
--   [Emission Settings](/frb/docs/index.php?title=Emission_Settings&action=edit&redlink=1.md "Emission Settings (page does not exist)")
+-   [Emission Settings](/frb/docs/index.php?title=Emission_Settings&action=edit&redlink=1 "Emission Settings (page does not exist)")

@@ -1,6 +1,6 @@
 ## Introduction
 
-The SourceType property determines the type of the Entity at the highest level. Changing the SourceType results in different options being available in the [SourceClassType](/frb/docs/index.php?title=Glue:Reference:Objects:SourceClassType&action=edit&redlink=1.md "Glue:Reference:Objects:SourceClassType (page does not exist)"). Available SourceTypes are:
+The SourceType property determines the type of the Entity at the highest level. Changing the SourceType results in different options being available in the [SourceClassType](/frb/docs/index.php?title=Glue:Reference:Objects:SourceClassType&action=edit&redlink=1 "Glue:Reference:Objects:SourceClassType (page does not exist)"). Available SourceTypes are:
 
 -   File
 -   FlatRedBallType

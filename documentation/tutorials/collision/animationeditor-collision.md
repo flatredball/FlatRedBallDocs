@@ -26,9 +26,9 @@ For this example we will use the Player object as an example, but these concepts
 
     ![](/media/2022-09-img_6318b05279e63.png)
 
-5.  The AxisAlignedRectangle's properties can be modified in the property grid [![](/wp-content/uploads/2022/09/07_08-53-49.gif.md)](/wp-content/uploads/2022/09/07_08-53-49.gif.md)
+5.  The AxisAlignedRectangle's properties can be modified in the property grid [![](/wp-content/uploads/2022/09/07_08-53-49.gif)](/wp-content/uploads/2022/09/07_08-53-49.gif)
 
-Changes to shapes will automatically be saved to disk. The example above shows an animation with a single frame, but since each frame can contain rectangles, then this allows the collision size to change frame-by-frame. [![](/wp-content/uploads/2022/09/07_09-30-33.gif.md)](/wp-content/uploads/2022/09/07_09-30-33.gif.md)
+Changes to shapes will automatically be saved to disk. The example above shows an animation with a single frame, but since each frame can contain rectangles, then this allows the collision size to change frame-by-frame. [![](/wp-content/uploads/2022/09/07_09-30-33.gif)](/wp-content/uploads/2022/09/07_09-30-33.gif)
 
 ## Using Animation Collision in Code
 
@@ -59,7 +59,7 @@ Using matching names is especially important if you intend to have multiple shap
 
 ### Missing Shape Behavior
 
-Animation frames which do not have any shapes will not affect the collision in the entity. In the example above the CharacterIdleRight animation contains a frame which defines a rectangle. When this animation plays, the rectangle size will be applied. When other animations are played, the rectangle will remain the same size as was set by CharacterIdleRight. Keep this in mind, as creating animations which only have some frames defining a rectangle may result in unexpected behavior. The following animation shows the behavior of the rectangle when only the idle right animation defines the shape. Notice that the rectangle grows when the player faces to the right, and then remains the same size for all other animations: [![](/wp-content/uploads/2022/09/07_09-23-17.gif.md)](/wp-content/uploads/2022/09/07_09-23-17.gif.md)
+Animation frames which do not have any shapes will not affect the collision in the entity. In the example above the CharacterIdleRight animation contains a frame which defines a rectangle. When this animation plays, the rectangle size will be applied. When other animations are played, the rectangle will remain the same size as was set by CharacterIdleRight. Keep this in mind, as creating animations which only have some frames defining a rectangle may result in unexpected behavior. The following animation shows the behavior of the rectangle when only the idle right animation defines the shape. Notice that the rectangle grows when the player faces to the right, and then remains the same size for all other animations: [![](/wp-content/uploads/2022/09/07_09-23-17.gif)](/wp-content/uploads/2022/09/07_09-23-17.gif)
 
 ## Multiple Shapes per Frame
 

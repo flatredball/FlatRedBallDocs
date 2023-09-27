@@ -1,6 +1,6 @@
 ## Introduction
 
-Welcome to the Rock Blaster tutorials. Rock Blaster is a simple top-down game similar to the old Asteroids game. This set of tutorials will cover a variety of Glue topics. If you've been through the [Beefball tutorials](/frb/docs/index.php?title=Tutorials:Beefball.md "Tutorials:Beefball"), this set of tutorials will build on that information and show more Glue functionality. If you haven't yet, we recommend going through the [Beefball tutorials](/frb/docs/index.php?title=Tutorials:Beefball.md "Tutorials:Beefball") first - they cover a lot of the basics that we will use in this game.
+Welcome to the Rock Blaster tutorials. Rock Blaster is a simple top-down game similar to the old Asteroids game. This set of tutorials will cover a variety of Glue topics. If you've been through the [Beefball tutorials](/frb/docs/index.php?title=Tutorials:Beefball "Tutorials:Beefball"), this set of tutorials will build on that information and show more Glue functionality. If you haven't yet, we recommend going through the [Beefball tutorials](/frb/docs/index.php?title=Tutorials:Beefball "Tutorials:Beefball") first - they cover a lot of the basics that we will use in this game.
 
 ## What will this tutorial cover?
 

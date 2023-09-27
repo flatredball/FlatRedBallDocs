@@ -14,7 +14,7 @@ If an entity is already created but not yet marked as a ICollidable, it can be m
 
 ![](/media/2021-02-img_6039252b279e9.png)
 
-For more information on the ICollidable interface as defined in FlatRedBall, see the [ICollidable](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ICollidable.md "FlatRedBall.Math.Geometry.ICollidable") page. For more information on colliding Entities and using ImplementsICollidable, see [this page](/documentation/tutorials/glue-tutorials/glue-how-to-collide-entities.md "Glue:How To:Collide Entities").
+For more information on the ICollidable interface as defined in FlatRedBall, see the [ICollidable](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ICollidable "FlatRedBall.Math.Geometry.ICollidable") page. For more information on colliding Entities and using ImplementsICollidable, see [this page](/documentation/tutorials/glue-tutorials/glue-how-to-collide-entities.md "Glue:How To:Collide Entities").
 
 ## Code Examples
 

@@ -4,4 +4,4 @@ ForceUpdateDependenciesDeep is a method which calls ForceUpdateDisependencies on
 
 ## A note about performance
 
-Just like [FlatRedBall.PositionedObject.ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ForceUpdateDependencies.md "FlatRedBall.PositionedObject.ForceUpdateDependencies") this method does not check if dependencies have already been updated already. Therefore this method can result in unnecessary calls to ForceUpdateDependencies.
+Just like [FlatRedBall.PositionedObject.ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ForceUpdateDependencies "FlatRedBall.PositionedObject.ForceUpdateDependencies") this method does not check if dependencies have already been updated already. Therefore this method can result in unnecessary calls to ForceUpdateDependencies.

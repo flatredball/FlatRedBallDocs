@@ -31,6 +31,6 @@ The ParticleEditor is used to create .emix files. The .emix extension stands for
 
 ## How can I run the ParticleEditor?
 
-The ParticleEditor plugin can be installed [from this location on GlueVault](http://www.gluevault.com/plug/62-particle-editor-plugin-glue). For information on installing plugins, see [this page](/frb/docs/index.php?title=Glue:Reference:Menu:Plugins:Install_Plugin.md "Glue:Reference:Menu:Plugins:Install Plugin").
+The ParticleEditor plugin can be installed [from this location on GlueVault](http://www.gluevault.com/plug/62-particle-editor-plugin-glue). For information on installing plugins, see [this page](/frb/docs/index.php?title=Glue:Reference:Menu:Plugins:Install_Plugin "Glue:Reference:Menu:Plugins:Install Plugin").
 
 Once installed, the plugin will automatically appear whenever a .emix file is selected.

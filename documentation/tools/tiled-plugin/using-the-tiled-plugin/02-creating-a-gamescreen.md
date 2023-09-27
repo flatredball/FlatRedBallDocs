@@ -134,7 +134,7 @@ Now that we've created a map, we will change the "Tile Layer Format" to "Base64
 
 3.  Change the **Tile Layer Format** to **Base64 (gzip compressed)** ![](/media/2016-08-img_57abb3401128c.png)
 
-Now that the format has been changed, save the file again. Finally the file can be added to the Level1 screen by drag+dropping the file from windows explorer to the Files item under Level1. [![](/wp-content/uploads/2016/08/2019-07-03_06-48-05.gif.md)](/wp-content/uploads/2016/08/2019-07-03_06-48-05.gif.md) The game now references the .tmx file, and when executed the game loads the empty .tmx file. \[/frb_toggle\]
+Now that the format has been changed, save the file again. Finally the file can be added to the Level1 screen by drag+dropping the file from windows explorer to the Files item under Level1. [![](/wp-content/uploads/2016/08/2019-07-03_06-48-05.gif)](/wp-content/uploads/2016/08/2019-07-03_06-48-05.gif) The game now references the .tmx file, and when executed the game loads the empty .tmx file. \[/frb_toggle\]
 
 ## Editing the TMX File
 
@@ -142,9 +142,9 @@ If you have Tiled installed, then the installer should have associated the .TMX 
 
 -   Double-click the TMX file under **Level1 Files**
 
-    [![](/wp-content/uploads/2016/08/2021_February_20_104104.gif.md)](/wp-content/uploads/2016/08/2021_February_20_104104.gif.md)
+    [![](/wp-content/uploads/2016/08/2021_February_20_104104.gif)](/wp-content/uploads/2016/08/2021_February_20_104104.gif)
 
--   Use the drop-down in the toolbar to select the map to edit [![](/wp-content/uploads/2016/08/2021_February_20_102205.gif.md)](/wp-content/uploads/2016/08/2021_February_20_102205.gif.md)
+-   Use the drop-down in the toolbar to select the map to edit [![](/wp-content/uploads/2016/08/2021_February_20_102205.gif)](/wp-content/uploads/2016/08/2021_February_20_102205.gif)
 
 If you followed the previous steps, your map should include:
 
@@ -157,7 +157,7 @@ This tileset was automatically added in an earlier step so that you can hit the 
 
 ![](/media/2021-02-img_603143ca04832.png)
 
-We can click this tile and place it on the **GameplayLayer** to create walls, floors, or any other type of solid collision. [![](/wp-content/uploads/2016/08/2021_February_20_103417-1.gif.md)](/wp-content/uploads/2016/08/2021_February_20_103417-1.gif.md) Don't forget to save your work in Tiled - otherwise it won't show up in game.
+We can click this tile and place it on the **GameplayLayer** to create walls, floors, or any other type of solid collision. [![](/wp-content/uploads/2016/08/2021_February_20_103417-1.gif)](/wp-content/uploads/2016/08/2021_February_20_103417-1.gif) Don't forget to save your work in Tiled - otherwise it won't show up in game.
 
 ![](/media/2021-02-img_6031449fb6101.png)
 
@@ -197,7 +197,7 @@ Now the game will be focused on the map.
 
 ## Optional - Adding a Tileset
 
-Tilesets define the appearance of a collection of tiles along with properties which can be specified per-tile to provide functionality in your game (such as collision). We recommend that games have a dedicated tileset for gameplay functionality such as collision. We used the TiledIcons tileset for this earlier. This section will show you how to add a second tileset for visuals. We will use the following image which you can download: [![dungeonTileSet](/wp-content/uploads/2016/08/dungeonTileSet.png.md)](/wp-content/uploads/2016/08/dungeonTileSet.png.md) Files which are used by TMX levels should either be saved in the content folder of one of the level screens or in the content folder in the GameScreen. For this tutorial we'll save the file in the GameScreen folder, since the file will be used by multiple levels. First we'll open the content folder for GameScreen:
+Tilesets define the appearance of a collection of tiles along with properties which can be specified per-tile to provide functionality in your game (such as collision). We recommend that games have a dedicated tileset for gameplay functionality such as collision. We used the TiledIcons tileset for this earlier. This section will show you how to add a second tileset for visuals. We will use the following image which you can download: [![dungeonTileSet](/wp-content/uploads/2016/08/dungeonTileSet.png)](/wp-content/uploads/2016/08/dungeonTileSet.png) Files which are used by TMX levels should either be saved in the content folder of one of the level screens or in the content folder in the GameScreen. For this tutorial we'll save the file in the GameScreen folder, since the file will be used by multiple levels. First we'll open the content folder for GameScreen:
 
 1.  Expand **GameScreen **in the FRB editor
 2.  Right-click on the **Files** folder under GameScreen
@@ -205,13 +205,13 @@ Tilesets define the appearance of a collection of tiles along with properties wh
 
 The content folder for GameScreen will be open (and empty). ![](/media/2018-09-img_5b991adb938e1.png) Save the tileset (shown above) to the GameScreen content folder (which we just opened).
 
-[![](/wp-content/uploads/2016/08/2018-09-12_07-57-59.gif.md)](/wp-content/uploads/2016/08/2018-09-12_07-57-59.gif.md)
+[![](/wp-content/uploads/2016/08/2018-09-12_07-57-59.gif)](/wp-content/uploads/2016/08/2018-09-12_07-57-59.gif)
 
 To use the dungeonTileSet.png file in the tile map:
 
 1.  Open **Level1Map.tmx** (double-click it in the FRB editor or open it in Windows Explorer)
 
-2.  Drag+drop the **dungeonTileSet.png** file into the **Tilesets** tab (the bottom right pane in Tiled) [![](/wp-content/uploads/2016/08/2021_February_20_102048.gif.md)](/wp-content/uploads/2016/08/2021_February_20_102048.gif.md)
+2.  Drag+drop the **dungeonTileSet.png** file into the **Tilesets** tab (the bottom right pane in Tiled) [![](/wp-content/uploads/2016/08/2021_February_20_102048.gif)](/wp-content/uploads/2016/08/2021_February_20_102048.gif)
 
 3.  Verify that **Tile width** and **Tile height** are both **16px**
 
@@ -254,7 +254,7 @@ Once a tileset has been created, tiles can be placed by clicking on a tile in th
 4.  Select the dungeonTileSet
 5.  Paint tiles on the new layer
 
-[![](/wp-content/uploads/2016/08/2021_February_20_105257.gif.md)](/wp-content/uploads/2016/08/2021_February_20_105257.gif.md)   Keep in mind that changes made to the .tmx file in Tiled must be saved before they will show up in game. Also, the FRB editor automatically manages files referenced by .tmx files, so we do not need to manually add the dungeonTileSet.png file to the GameScreen.
+[![](/wp-content/uploads/2016/08/2021_February_20_105257.gif)](/wp-content/uploads/2016/08/2021_February_20_105257.gif)   Keep in mind that changes made to the .tmx file in Tiled must be saved before they will show up in game. Also, the FRB editor automatically manages files referenced by .tmx files, so we do not need to manually add the dungeonTileSet.png file to the GameScreen.
 
 ## 
 

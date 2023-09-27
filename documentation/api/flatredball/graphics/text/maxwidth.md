@@ -1,6 +1,6 @@
 ## Introduction
 
-The MaxWidth value controls the available area that the Text object can render text inside. The Text object will either wrap or clamp text according to its [MaxWidthBehavior](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.MaxWidthBehavior.md "FlatRedBall.Graphics.Text.MaxWidthBehavior").
+The MaxWidth value controls the available area that the Text object can render text inside. The Text object will either wrap or clamp text according to its [MaxWidthBehavior](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.MaxWidthBehavior "FlatRedBall.Graphics.Text.MaxWidthBehavior").
 
 ## Code Example
 

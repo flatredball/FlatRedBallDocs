@@ -1,6 +1,6 @@
 ## GrabbedPositionedObject
 
-The Mouse class provides functionality for grabbing and moving any object which implements the PositionedObject class. This includes common FlatRedBall types like [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and [Text,](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") as well as entities created in Glue. The following code creates 9 [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and allows the user to click and drag to control the [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). This code can be added to any FlatRedBall Screen
+The Mouse class provides functionality for grabbing and moving any object which implements the PositionedObject class. This includes common FlatRedBall types like [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and [Text,](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") as well as entities created in Glue. The following code creates 9 [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and allows the user to click and drag to control the [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). This code can be added to any FlatRedBall Screen
 
 ``` lang:c#
 public partial class YourScreenName
@@ -61,7 +61,7 @@ public partial class YourScreenName
     ...
 ```
 
-[![](/wp-content/uploads/2016/01/2019-04-06_22-18-14.gif.md)](/wp-content/uploads/2016/01/2019-04-06_22-18-14.gif.md) Setting the GrabbedPositionedObject does the following:
+[![](/wp-content/uploads/2016/01/2019-04-06_22-18-14.gif)](/wp-content/uploads/2016/01/2019-04-06_22-18-14.gif) Setting the GrabbedPositionedObject does the following:
 
 1.  Stores the reference in the GrabbedPositionedObject property
 2.  Stores offset variables - this is the difference between the GrabbedPositionedObject's position and the cursor's world coordinates.

@@ -4,7 +4,7 @@ The SortXInsertionAscending (and SortYInsertionAscending/SortZInsertionAscending
 
 ## Code Example
 
-The following code creates 3 [Circles](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle") and places them in a PositionedObjectList in descending X order. Then SortXInsertionAscending is called, and the positions of the Circles are printed out:
+The following code creates 3 [Circles](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle") and places them in a PositionedObjectList in descending X order. Then SortXInsertionAscending is called, and the positions of the Circles are printed out:
 
     FlatRedBall.Math.PositionedObjectList<Circle> circleList =
         new FlatRedBall.Math.PositionedObjectList<Circle>();

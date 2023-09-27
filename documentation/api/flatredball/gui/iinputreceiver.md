@@ -1,6 +1,6 @@
 ## Introduction
 
-The IInputReceiver interface provides methods and properties common to all UI elements which can receive [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard") input. IInputReceiver can be implemented in custom classes (such as Glue Entities) to enable more advanced input focus logic and to prevent multiple objects from receiving input. IInputReceiver is also used in the old FlatRedBall UI which is implemented in many FRB tools.
+The IInputReceiver interface provides methods and properties common to all UI elements which can receive [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard") input. IInputReceiver can be implemented in custom classes (such as Glue Entities) to enable more advanced input focus logic and to prevent multiple objects from receiving input. IInputReceiver is also used in the old FlatRedBall UI which is implemented in many FRB tools.
 
 ## Preventing multiple objects from receiving input
 
@@ -29,17 +29,17 @@ The IInputReceiver interface is designed to prevent multiple objects from receiv
        keyboard.Clear();
     }
 
-This method is especially effective because ReceiveInput is called prior to the game's activity. For more information, see [the ReceiveInput page](/frb/docs/index.php?title=FlatRedBall.Gui.IInputReceiver.ReceiveInput.md "FlatRedBall.Gui.IInputReceiver.ReceiveInput").
+This method is especially effective because ReceiveInput is called prior to the game's activity. For more information, see [the ReceiveInput page](/frb/docs/index.php?title=FlatRedBall.Gui.IInputReceiver.ReceiveInput "FlatRedBall.Gui.IInputReceiver.ReceiveInput").
 
 ## FlatRedBall GUI Classes Implementing IInputReceiver
 
 The following lists the classes which implement the IInputReceiver interface. Note that these are all classes which are part of the FRB GUI which only functions in FRB XNA 3.1, thus they are discouraged for use:
 
--   [CollapseListBox](/frb/docs/index.php?title=FlatRedBall.Gui.CollapseListBox.md "FlatRedBall.Gui.CollapseListBox") and [ListBox](/frb/docs/index.php?title=FlatRedBall.Gui.ListBox.md "FlatRedBall.Gui.ListBox")
--   [MessageBox](/frb/docs/index.php?title=FlatRedBall.Gui.MessageBox&action=edit&redlink=1.md "FlatRedBall.Gui.MessageBox (page does not exist)")
--   [OkCancelWindow](/frb/docs/index.php?title=FlatRedBall.Gui.OkCancelWindow.md "FlatRedBall.Gui.OkCancelWindow")
--   [TextBox](/frb/docs/index.php?title=FlatRedBall.Gui.TextBox.md "FlatRedBall.Gui.TextBox")
--   [UpDown](/frb/docs/index.php?title=FlatRedBall.Gui.UpDown&action=edit&redlink=1.md "FlatRedBall.Gui.UpDown (page does not exist)")
+-   [CollapseListBox](/frb/docs/index.php?title=FlatRedBall.Gui.CollapseListBox "FlatRedBall.Gui.CollapseListBox") and [ListBox](/frb/docs/index.php?title=FlatRedBall.Gui.ListBox "FlatRedBall.Gui.ListBox")
+-   [MessageBox](/frb/docs/index.php?title=FlatRedBall.Gui.MessageBox&action=edit&redlink=1 "FlatRedBall.Gui.MessageBox (page does not exist)")
+-   [OkCancelWindow](/frb/docs/index.php?title=FlatRedBall.Gui.OkCancelWindow "FlatRedBall.Gui.OkCancelWindow")
+-   [TextBox](/frb/docs/index.php?title=FlatRedBall.Gui.TextBox "FlatRedBall.Gui.TextBox")
+-   [UpDown](/frb/docs/index.php?title=FlatRedBall.Gui.UpDown&action=edit&redlink=1 "FlatRedBall.Gui.UpDown (page does not exist)")
 
 ## Gaining Focus
 
@@ -71,6 +71,6 @@ IInputReceivers automatically receive input from the keyboard when they have foc
 
 ## IInputReceiver Members
 
--   [FlatRedBall.Gui.IInputReceiver.ReceiveInput](/frb/docs/index.php?title=FlatRedBall.Gui.IInputReceiver.ReceiveInput.md "FlatRedBall.Gui.IInputReceiver.ReceiveInput")
+-   [FlatRedBall.Gui.IInputReceiver.ReceiveInput](/frb/docs/index.php?title=FlatRedBall.Gui.IInputReceiver.ReceiveInput "FlatRedBall.Gui.IInputReceiver.ReceiveInput")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

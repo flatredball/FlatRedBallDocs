@@ -1,13 +1,13 @@
 ## Introduction
 
-AnimationFrames represent the state of an [IAnimationChainAnimatable](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.md "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable"). The following properties can be set by an AnimationFrame:
+AnimationFrames represent the state of an [IAnimationChainAnimatable](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable"). The following properties can be set by an AnimationFrame:
 
 -   Texture
 -   RelativeX/Y Position
 -   Texture Coordinates
 -   Horizontal/Vertical Flipping
 
-AnimationFrames usually exist inside [AnimationChains](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain.md "FlatRedBall.Graphics.Animation.AnimationChain").
+AnimationFrames usually exist inside [AnimationChains](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain "FlatRedBall.Graphics.Animation.AnimationChain").
 
 ## Creating an AnimationFrame
 
@@ -43,7 +43,7 @@ void CustomInitialize()
 
 ## FrameLength
 
-The FrameLength property defines how long an AnimationFrame is displayed. Adding the FrameLengths of all AnimationFrames in an [AnimationChain](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain.md "FlatRedBall.Graphics.Animation.AnimationChain") results in the length of the entire animation. FrameLength - like all timing in FlatRedBall - is performed in seconds. Therefore, if an AnimationFrame has a FrameLength of 1, the AnimationFrame will show for 1 second. If you are familiar with working in milliseconds, then simply divide the desired value by 1,000. For example, to set the FrameLength to 600 millseconds, simply divide 600 by 1,000 and set that value to your FrameLength:
+The FrameLength property defines how long an AnimationFrame is displayed. Adding the FrameLengths of all AnimationFrames in an [AnimationChain](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain "FlatRedBall.Graphics.Animation.AnimationChain") results in the length of the entire animation. FrameLength - like all timing in FlatRedBall - is performed in seconds. Therefore, if an AnimationFrame has a FrameLength of 1, the AnimationFrame will show for 1 second. If you are familiar with working in milliseconds, then simply divide the desired value by 1,000. For example, to set the FrameLength to 600 millseconds, simply divide 600 by 1,000 and set that value to your FrameLength:
 
     myFrame.FrameLength = 600/1000.0f;
     // OR

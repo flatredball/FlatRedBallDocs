@@ -65,4 +65,4 @@ The following code can be used to add nodes with the cursor when the PrimaryDown
         }
     }
 
-[![](/wp-content/uploads/2019/08/j5VMYNqadR.gif.md)](/wp-content/uploads/2019/08/j5VMYNqadR.gif.md)
+[![](/wp-content/uploads/2019/08/j5VMYNqadR.gif)](/wp-content/uploads/2019/08/j5VMYNqadR.gif)

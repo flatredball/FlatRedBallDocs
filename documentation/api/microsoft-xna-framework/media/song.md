@@ -1,6 +1,6 @@
 ## Introduction
 
-The Song class can be used to play music in a game. The easiest way to play a song is through Glue, which requires no code. For more information on Songs in Glue, see [this page](/frb/docs/index.php?title=Glue:How_To:Play_Songs.md "Glue:How To:Play Songs").
+The Song class can be used to play music in a game. The easiest way to play a song is through Glue, which requires no code. For more information on Songs in Glue, see [this page](/frb/docs/index.php?title=Glue:How_To:Play_Songs "Glue:How To:Play Songs").
 
 ## Supported File Types
 
@@ -11,7 +11,7 @@ The Song class can be used to play music in a game. The easiest way to play a so
 | WMA    | X                                                                     |         |
 | OGG    | X [(with this codec installed)](http://www.vorbis.com/setup_windows/) | X       |
 
-WAV files are not supported in FlatRedBall for music files. Instead, they are used by the [SoundEffect](/frb/docs/index.php?title=Microsoft.Xna.Framework.Audio.SoundEffect.md "Microsoft.Xna.Framework.Audio.SoundEffect") and [SoundEffectInstance](/frb/docs/index.php?title=Microsoft.Xna.Framework.Audio.SoundEffect.mdInstance "Microsoft.Xna.Framework.Audio.SoundEffectInstance") classes.
+WAV files are not supported in FlatRedBall for music files. Instead, they are used by the [SoundEffect](/frb/docs/index.php?title=Microsoft.Xna.Framework.Audio.SoundEffect "Microsoft.Xna.Framework.Audio.SoundEffect") and [SoundEffectInstance](/frb/docs/index.php?title=Microsoft.Xna.Framework.Audio.SoundEffectInstance "Microsoft.Xna.Framework.Audio.SoundEffectInstance") classes.
 
 ## Example - Glue
 
@@ -35,7 +35,7 @@ Add the following to Initialize after initializing FlatRedBall:
        FlatRedBallServices.Load<Song>(@"Content/mySongWithoutExtension", contentManagerName);
     Microsoft.Xna.Framework.Media.MediaPlayer.Play(song);
 
-**This code uses the Content Pipeline:** Notice that when this file is loaded you do not include the extension. This is because the file needs to be added to your project using the Content Pipeline. For more information on what the Content Pipeline is, see [this link](/frb/docs/index.php?title=Tutorials:Adding_files_to_your_project.md "Tutorials:Adding files to your project").
+**This code uses the Content Pipeline:** Notice that when this file is loaded you do not include the extension. This is because the file needs to be added to your project using the Content Pipeline. For more information on what the Content Pipeline is, see [this link](/frb/docs/index.php?title=Tutorials:Adding_files_to_your_project "Tutorials:Adding files to your project").
 
 ## Troubleshooting
 
@@ -75,6 +75,6 @@ This is dependent on the Android phone. Just because it plays on one phone doesn
 
 ## Song Members
 
--   [FromUri](/frb/docs/index.php?title=Microsoft.Xna.Framework.Media.Song.FromUri.md "Microsoft.Xna.Framework.Media.Song.FromUri")
+-   [FromUri](/frb/docs/index.php?title=Microsoft.Xna.Framework.Media.Song.FromUri "Microsoft.Xna.Framework.Media.Song.FromUri")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

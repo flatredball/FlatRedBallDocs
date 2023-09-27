@@ -8,7 +8,7 @@ The latest release of FlatRedBall, Gum, and Gum plugin in Glue includes support 
 
 ## StackPanel
 
-[![](/wp-content/uploads/2018/08/2018-08-12_17-31-35.gif.md)](/wp-content/uploads/2018/08/2018-08-12_17-31-35.gif.md) The StackPanel control allows stacking contained children either horizontally or vertically. Note that this functionality is not new, Glue has had stacking available before FlatRedBall.Forms 1.0. The StackPanel simply provides a control similar to the WPF StackPanel to simplify the creation of UI in code using a familiar interface. We can compare how to create a StackPanel in FlatRedBall.Forms 1.2 and compare it to how this would have been done in 1.1.
+[![](/wp-content/uploads/2018/08/2018-08-12_17-31-35.gif)](/wp-content/uploads/2018/08/2018-08-12_17-31-35.gif) The StackPanel control allows stacking contained children either horizontally or vertically. Note that this functionality is not new, Glue has had stacking available before FlatRedBall.Forms 1.0. The StackPanel simply provides a control similar to the WPF StackPanel to simplify the creation of UI in code using a familiar interface. We can compare how to create a StackPanel in FlatRedBall.Forms 1.2 and compare it to how this would have been done in 1.1.
 
 ### FlatRedBall.Forms 1.2
 
@@ -82,4 +82,4 @@ As is currently set up, the generated code is referencing the files in the incor
 
 ![](/media/2018-08-img_5b70f9ba42719.png)
 
-These errors can be fixed by re-assigning the **SourceName** for the offending objects in Glue: [![](/wp-content/uploads/2018/08/2018-08-12_21-24-30.gif.md)](/wp-content/uploads/2018/08/2018-08-12_21-24-30.gif.md) Notice that the types **SourceName** dropdown has the correct type in parenthesis.    
+These errors can be fixed by re-assigning the **SourceName** for the offending objects in Glue: [![](/wp-content/uploads/2018/08/2018-08-12_21-24-30.gif)](/wp-content/uploads/2018/08/2018-08-12_21-24-30.gif) Notice that the types **SourceName** dropdown has the correct type in parenthesis.    

@@ -1,4 +1,4 @@
-[Back to Scene](/frb/docs/index.php?title=FlatRedBall.Scene.md "FlatRedBall.Scene")
+[Back to Scene](/frb/docs/index.php?title=FlatRedBall.Scene "FlatRedBall.Scene")
 
 ## Introduction
 
@@ -6,4 +6,4 @@ The ManageAll method calls the Manage method on all contained SpriteGrids. If th
 
 This method should be called every frame if you have a moving camera or at least once after setting the final position of your Camera if using a static Camera.
 
-For more information on Manage, see [this page](/frb/docs/index.php?title=FlatRedBall.ManagedSpriteGroups.SpriteGrid.Manage.md "FlatRedBall.ManagedSpriteGroups.SpriteGrid.Manage").
+For more information on Manage, see [this page](/frb/docs/index.php?title=FlatRedBall.ManagedSpriteGroups.SpriteGrid.Manage "FlatRedBall.ManagedSpriteGroups.SpriteGrid.Manage").

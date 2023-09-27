@@ -69,7 +69,7 @@ bool isOnScreen = Character.X < Camera.Main.AbsoluteRightEdgeAt(0) + halfWidth &
 
 ## Edge values and attachments
 
-If your Camera is attached to another object, you may need to call [FlatRedBall.Camera.ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.Camera.ForceUpdateDependencies.md "FlatRedBall.Camera.ForceUpdateDependencies") before asking the Camera for its absolute edge values. For example:
+If your Camera is attached to another object, you may need to call [FlatRedBall.Camera.ForceUpdateDependencies](/frb/docs/index.php?title=FlatRedBall.Camera.ForceUpdateDependencies "FlatRedBall.Camera.ForceUpdateDependencies") before asking the Camera for its absolute edge values. For example:
 
      Camera camera = Camera.Main;
 

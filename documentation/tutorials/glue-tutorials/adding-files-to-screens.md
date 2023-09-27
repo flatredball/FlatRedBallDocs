@@ -29,7 +29,7 @@ At this point you've created an empty file which will be automatically loaded by
 
 ## Setting up File Associaton
 
-Glue provides quick access to any file that is part of the project. To open a file, you can simply double-click it in the list on the right. If you have installed FlatRedBall from the installer available on our [downloads page](/frb/docs/index.php?title=Download_the_FRB_Engine_and_Components.md "Download the FRB Engine and Components"), then you probably have all of the FlatRedBall types associated to appropriate FlatRedBall tools through Windows file association. Therefore, you may not need to do anything in this step. However, there are a few reasons why you may still want to manually set your file associations:
+Glue provides quick access to any file that is part of the project. To open a file, you can simply double-click it in the list on the right. If you have installed FlatRedBall from the installer available on our [downloads page](/frb/docs/index.php?title=Download_the_FRB_Engine_and_Components "Download the FRB Engine and Components"), then you probably have all of the FlatRedBall types associated to appropriate FlatRedBall tools through Windows file association. Therefore, you may not need to do anything in this step. However, there are a few reasons why you may still want to manually set your file associations:
 
 1.  There are multiple tools which can edit a given file type. For example, Scene files (.scnx) can be edited by the SpriteEditor, TileEditor, and ModelEditor. You may want to pick one over the other depending on the type of project you are working on, or the type of content you are creating. In some cases you may even want to switch back and forth between different applications in a given project.
 2.  You may be using a "developer version" of FlatRedBall instead of the publicly-available version. If this is the case, you probably want to associate your file formats with the tools found in your developer directory (either the T drive or your specific project's directory).
@@ -50,7 +50,7 @@ Once you have set up the association between file types and FRBDK applications, 
 
 ![SpriteEditorShot.png](/media/migrated_media-SpriteEditorShot.png)
 
-Since this tutorial covers Glue, we won't go into the details of how to work with any of the other FRBDK tools. However, if you would like to learn more, check [this page](/frb/docs/index.php?title=Content_Creator%27s_Section.md "Content Creator's Section"), and specifically for the SpriteEditor you can check [this page](/frb/docs/index.php?title=SpriteEditor:Main_Page.md "SpriteEditor:Main Page").
+Since this tutorial covers Glue, we won't go into the details of how to work with any of the other FRBDK tools. However, if you would like to learn more, check [this page](/frb/docs/index.php?title=Content_Creator%27s_Section "Content Creator's Section"), and specifically for the SpriteEditor you can check [this page](/frb/docs/index.php?title=SpriteEditor:Main_Page "SpriteEditor:Main Page").
 
 To create our level, let's add some Sprites to the scene.
 
@@ -81,7 +81,7 @@ Now that we have a Screen that references a Scene, and now that we've added some
 
 By default Glue will open the .scnx file in the SpriteEditor. FlatRedBall offers other tools to edit .scnx files (such as the TileEditor). The .scnx file format is also an XML file format which means anyone can easily create their own custom .scnx editors.
 
-For information on how to use the TileEditor, check [this tutorial](/frb/docs/index.php?title=TileEditor:Tutorials:The_TileEditor_and_Glue.md "TileEditor:Tutorials:The TileEditor and Glue").
+For information on how to use the TileEditor, check [this tutorial](/frb/docs/index.php?title=TileEditor:Tutorials:The_TileEditor_and_Glue "TileEditor:Tutorials:The TileEditor and Glue").
 
 ## Wrapping it up
 
@@ -89,4 +89,4 @@ Congratulations, you have just loaded content in your new project and displayed 
 
 Now that we have a background, let's get to adding Entities.
 
-[To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Adding_objects_to_Entities.md "Glue:Tutorials:Adding objects to Entities")
+[To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Adding_objects_to_Entities "Glue:Tutorials:Adding objects to Entities")

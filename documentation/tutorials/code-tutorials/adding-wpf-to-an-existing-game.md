@@ -9,7 +9,7 @@ This tutorial uses a Glue project named "FrbAndWpf" as the starting point. This 
 1.  An entity called "CircleEntity"
     1.  CircleEntity will contain a single Circle named CircleInstance
 2.  A screen called GameScreen
-    1.  GameScreen will contain a [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList.md "FlatRedBall.Math.PositionedObjectList") of CircleEntities named CircleEntityList
+    1.  GameScreen will contain a [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList "FlatRedBall.Math.PositionedObjectList") of CircleEntities named CircleEntityList
 
 By default the game will not display anything since the CircleEntityList will be empty.
 

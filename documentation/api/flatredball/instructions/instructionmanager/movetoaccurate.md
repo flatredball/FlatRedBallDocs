@@ -1,10 +1,10 @@
 ## Introduction
 
-The MoveToAccurate creates a set of [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.md "FlatRedBall.Instructions.Instruction") for moving a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") to a given point in a set amount of time.
+The MoveToAccurate creates a set of [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction") for moving a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") to a given point in a set amount of time.
 
 ## Code Example
 
-The following code moves a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") to the position where the user clicks the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.Input.Mouse"). Note that this could be implemented with any PositionedObject, including any Glue entity. Add the following using statements to your Glue screen:
+The following code moves a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to the position where the user clicks the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse"). Note that this could be implemented with any PositionedObject, including any Glue entity. Add the following using statements to your Glue screen:
 
     using FlatRedBall;
     using FlatRedBall.Input;

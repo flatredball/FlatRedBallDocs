@@ -1,6 +1,6 @@
 ## Introduction
 
-The GraphicsOptions class provides high-level control over the graphical presentation of FlatRedBall. As a user **you do not need to create an instance of GraphicsOptions**, it is done automatically when the engine is created. It is exposed through the [FlatRedBallServices](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.md "FlatRedBall.FlatRedBallServices") class. However, you can explicitly instantiate a GraphicsOptions to make changes prior to the initialization of FlatRedBall. This is useful for setting resolution or fixing compatibility issues. Of course, if this is done you need to suspend and resume the device resets, as explained below.
+The GraphicsOptions class provides high-level control over the graphical presentation of FlatRedBall. As a user **you do not need to create an instance of GraphicsOptions**, it is done automatically when the engine is created. It is exposed through the [FlatRedBallServices](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices "FlatRedBall.FlatRedBallServices") class. However, you can explicitly instantiate a GraphicsOptions to make changes prior to the initialization of FlatRedBall. This is useful for setting resolution or fixing compatibility issues. Of course, if this is done you need to suspend and resume the device resets, as explained below.
 
 ## SuspendDeviceReset and ResumeDeviceReset
 

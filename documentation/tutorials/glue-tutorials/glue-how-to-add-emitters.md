@@ -11,13 +11,13 @@ The first step in creating an Emitter is to create a .emix file. Just like any o
 3.  Select "Add File" -\> "New File"
 4.  Select "Emitter List (.emix)" as the file type
 5.  Enter a name or leave it as the default and click "OK"
-6.  Double-click the file to open it. You may need to set up your [file associations](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:File_Associations.md "Glue:Reference:Menu:Settings:File Associations") to open the .emix file in the ParticleEditor.![ParticleEditor.PNG](/media/migrated_media-ParticleEditor.PNG)
+6.  Double-click the file to open it. You may need to set up your [file associations](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:File_Associations "Glue:Reference:Menu:Settings:File Associations") to open the .emix file in the ParticleEditor.![ParticleEditor.PNG](/media/migrated_media-ParticleEditor.PNG)
 7.  Click the "Add Emitter" button
 8.  Enter a name for the new emitter
 9.  Click the "Start All" button![EmittingParticle.PNG](/media/migrated_media-EmittingParticle.PNG)
 10. Click File-\>"Save .emix (Emitter List XML)" and click OK to save the file. If asked, select the "Copy All Locally" file, then click "Save".
 
-For more information on how to edit the file in the [ParticleEditor](/frb/docs/index.php?title=ParticleEditor.md "ParticleEditor"), see the [ParticleEditor](/frb/docs/index.php?title=ParticleEditor.md "ParticleEditor") wiki page.
+For more information on how to edit the file in the [ParticleEditor](/frb/docs/index.php?title=ParticleEditor "ParticleEditor"), see the [ParticleEditor](/frb/docs/index.php?title=ParticleEditor "ParticleEditor") wiki page.
 
 ## Viewing the Emitter in Glue
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-The CreateDefaultButtonMap method is a method which creates a button map for the calling Xbox360GamePad. This is a quick way to bind Keyboard keys to the Xbox360Controller - especially as a fallback during development if an Xbox360 game pad is not connected. For more information on creating custom button maps, see the [Xbox360GamePad ButtonMap page](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.ButtonMap.md "FlatRedBall.Input.Xbox360GamePad.ButtonMap").
+The CreateDefaultButtonMap method is a method which creates a button map for the calling Xbox360GamePad. This is a quick way to bind Keyboard keys to the Xbox360Controller - especially as a fallback during development if an Xbox360 game pad is not connected. For more information on creating custom button maps, see the [Xbox360GamePad ButtonMap page](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.ButtonMap "FlatRedBall.Input.Xbox360GamePad.ButtonMap").
 
 ## Button map keys
 
@@ -35,4 +35,4 @@ You can modify the ButtonMap after it's been created:
     // now reassign the A button
     gamePad.A = Keys.Q;
 
-For more information, see the [ButtonMap page](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.ButtonMap.md "FlatRedBall.Input.Xbox360GamePad.ButtonMap").
+For more information, see the [ButtonMap page](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.ButtonMap "FlatRedBall.Input.Xbox360GamePad.ButtonMap").

@@ -1,8 +1,8 @@
 ## Introduction
 
-In the [previous tutorial](/frb/docs/index.php?title=Editing_FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Runtime_Class.md "Editing FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Runtime Class"), we created a class called [Level](/frb/docs/images/d/d4/Level.cs.md "Level.cs"). This class provides some basic actions which we will likely want to use at runtime. Now that we have an object that we know we want to deal with, the next step is to create a ["Save"](/frb/docs/index.php?title=Tutorials:Save_Classes.md "Tutorials:Save Classes") class for this runtime object.
+In the [previous tutorial](/frb/docs/index.php?title=Editing_FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Runtime_Class "Editing FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Runtime Class"), we created a class called [Level](/frb/docs/images/d/d4/Level.cs "Level.cs"). This class provides some basic actions which we will likely want to use at runtime. Now that we have an object that we know we want to deal with, the next step is to create a ["Save"](/frb/docs/index.php?title=Tutorials:Save_Classes "Tutorials:Save Classes") class for this runtime object.
 
-The [Save](/frb/docs/index.php?title=Tutorials:Save_Classes.md "Tutorials:Save Classes") object provides the normal functionality of interfacing with a .XML. In short, it is an intermediary file that sits between the runtime [Level](/frb/docs/images/d/d4/Level.cs.md "Level.cs") class and the on-disk XML or binary content pipeline file. For more information on [Save](/frb/docs/index.php?title=Tutorials:Save_Classes.md "Tutorials:Save Classes") objects, see [this article](/frb/docs/index.php?title=Tutorials:Save_Classes.md "Tutorials:Save Classes").
+The [Save](/frb/docs/index.php?title=Tutorials:Save_Classes "Tutorials:Save Classes") object provides the normal functionality of interfacing with a .XML. In short, it is an intermediary file that sits between the runtime [Level](/frb/docs/images/d/d4/Level.cs "Level.cs") class and the on-disk XML or binary content pipeline file. For more information on [Save](/frb/docs/index.php?title=Tutorials:Save_Classes "Tutorials:Save Classes") objects, see [this article](/frb/docs/index.php?title=Tutorials:Save_Classes "Tutorials:Save Classes").
 
 ## Save class Code
 
@@ -14,7 +14,7 @@ Create the LevelSave class by adding a new class to your FromFileProject called 
 
 ### Add the Data
 
-Our LevelSave class will contain links to which [Scene](/frb/docs/index.php?title=FlatRedBall.Scene.md "FlatRedBall.Scene") and [ShapeCollection](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeCollection.md "FlatRedBall.Math.Geometry.ShapeCollection") to use.
+Our LevelSave class will contain links to which [Scene](/frb/docs/index.php?title=FlatRedBall.Scene "FlatRedBall.Scene") and [ShapeCollection](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeCollection "FlatRedBall.Math.Geometry.ShapeCollection") to use.
 
 Add the following inside the LevelSave class:
 
@@ -87,11 +87,11 @@ Add the following inside the LevelSave class:
         FileManager.RelativeDirectory = oldRelativeDirectory;
     }
 
-The [FileManager](/frb/docs/index.php?title=FlatRedBall.IO.FileManager.md "FlatRedBall.IO.FileManager") provides one-line XML saving and loading methods which are used in most Save classes.
+The [FileManager](/frb/docs/index.php?title=FlatRedBall.IO.FileManager "FlatRedBall.IO.FileManager") provides one-line XML saving and loading methods which are used in most Save classes.
 
 ### Create the to Runtime Method
 
-The Save class should be able to create a Level instance. It's common to have a To\<RuntimeName\> method which may take a [content manager](/frb/docs/index.php?title=FlatRedBall_Content_Manager.md "FlatRedBall Content Manager") name.
+The Save class should be able to create a Level instance. It's common to have a To\<RuntimeName\> method which may take a [content manager](/frb/docs/index.php?title=FlatRedBall_Content_Manager "FlatRedBall Content Manager") name.
 
 Add the following using statement:
 
@@ -148,8 +148,8 @@ Just like the runtime Level class, this class must have a no-argument (parameter
 
 ## Conclusion
 
-At this point we have a class which can read from file, save to file, and instantiate a [Level](/frb/docs/images/d/d4/Level.cs.md "Level.cs"). If you are only interested in doing from-file loading, then at this point you have a fully functional class which can perform the saving, loading, and instantiating tasks. All that's required to create a XML for a LevelSave is to simply instantiate a LevelSave, set the two fields, then call Save. This will create a file which can then be loaded easily.
+At this point we have a class which can read from file, save to file, and instantiate a [Level](/frb/docs/images/d/d4/Level.cs "Level.cs"). If you are only interested in doing from-file loading, then at this point you have a fully functional class which can perform the saving, loading, and instantiating tasks. All that's required to create a XML for a LevelSave is to simply instantiate a LevelSave, set the two fields, then call Save. This will create a file which can then be loaded easily.
 
 For the full source, click here:
 
-[LevelSave.cs](/frb/docs/images/b/b8/LevelSave.cs.md "LevelSave.cs")
+[LevelSave.cs](/frb/docs/images/b/b8/LevelSave.cs "LevelSave.cs")

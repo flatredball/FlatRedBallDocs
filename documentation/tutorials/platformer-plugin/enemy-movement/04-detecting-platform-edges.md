@@ -122,7 +122,7 @@ This code shows that we can check collisions directly in code at any time, rathe
 
 ![](/media/2021-04-img_6078544424129.png)
 
-We should also adjust the Enemy1 starting position so it starts on a ledge instead of falling from the top of the level. Change the X and Y values on Enemy1 in Level1 so that it starts in the right spot. This may take a little trial-and-error. Once you have the Enemy on a platform, you may notice that it still runs off the edge. The reason for this is because the Enemy moves very quickly and it takes time to slow down when changing directions. [![](/wp-content/uploads/2021/04/2021_April_15_090902.gif.md)](/wp-content/uploads/2021/04/2021_April_15_090902.gif.md) To do this:
+We should also adjust the Enemy1 starting position so it starts on a ledge instead of falling from the top of the level. Change the X and Y values on Enemy1 in Level1 so that it starts in the right spot. This may take a little trial-and-error. Once you have the Enemy on a platform, you may notice that it still runs off the edge. The reason for this is because the Enemy moves very quickly and it takes time to slow down when changing directions. [![](/wp-content/uploads/2021/04/2021_April_15_090902.gif)](/wp-content/uploads/2021/04/2021_April_15_090902.gif) To do this:
 
 1.  Select the **Enemy** entity
 
@@ -134,7 +134,7 @@ We should also adjust the Enemy1 starting position so it starts on a ledge inste
 
     ![](/media/2021-04-img_60785758cc8b5.png)
 
-These changes enable the enemy to turn around without falling off of the platform. It's important to note that with enough **Max Speed** or a large enough **Slow Down Time** will result in an enemy sliding off of an edge. [![](/wp-content/uploads/2021/04/2021_April_15_090312.gif.md)](/wp-content/uploads/2021/04/2021_April_15_090312.gif.md)
+These changes enable the enemy to turn around without falling off of the platform. It's important to note that with enough **Max Speed** or a large enough **Slow Down Time** will result in an enemy sliding off of an edge. [![](/wp-content/uploads/2021/04/2021_April_15_090312.gif)](/wp-content/uploads/2021/04/2021_April_15_090312.gif)
 
 ## Conclusion
 

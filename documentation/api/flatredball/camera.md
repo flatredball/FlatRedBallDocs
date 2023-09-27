@@ -4,15 +4,15 @@ The Camera encapsulates functionality to simplify and control the display of a F
 
 ## Accessing the Camera
 
-FlatRedBall projects automatically create a Camera which can be accessed by [Camera.Main](/frb/docs/index.php?title=FlatRedBall.Camera.Main.md "FlatRedBall.Camera.Main"). The following code moves the Camera to X = 5:
+FlatRedBall projects automatically create a Camera which can be accessed by [Camera.Main](/frb/docs/index.php?title=FlatRedBall.Camera.Main "FlatRedBall.Camera.Main"). The following code moves the Camera to X = 5:
 
     Camera.Main.X = 5;
 
-For more information see the [Camera.Main](/frb/docs/index.php?title=FlatRedBall.Camera.Main.md "FlatRedBall.Camera.Main") page. In most cases you will never need to create your own Camera - this one is the default camera that all single-Camera games use.
+For more information see the [Camera.Main](/frb/docs/index.php?title=FlatRedBall.Camera.Main "FlatRedBall.Camera.Main") page. In most cases you will never need to create your own Camera - this one is the default camera that all single-Camera games use.
 
 ## Controlling the Camera
 
-The camera inherits from the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") class so it shares the same interface for positioning, rotation, and attachment. Camera movement is not noticeable without something visible in the scene to compare the movement against. The following code can be added to a Screen such as an empty Screen created in the FlatRedBall Editor: Add the following using statements:
+The camera inherits from the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") class so it shares the same interface for positioning, rotation, and attachment. Camera movement is not noticeable without something visible in the scene to compare the movement against. The following code can be added to a Screen such as an empty Screen created in the FlatRedBall Editor: Add the following using statements:
 
     using FlatRedBall.Input;
     using Microsoft.Xna.Framework.Input;
@@ -49,15 +49,15 @@ Replace CustomInitialize and CustomActivity with the following code:
 
     }
 
-[![](/wp-content/uploads/2016/01/10_08-09-06.gif.md)](/wp-content/uploads/2016/01/10_08-09-06.gif.md)
+[![](/wp-content/uploads/2016/01/10_08-09-06.gif)](/wp-content/uploads/2016/01/10_08-09-06.gif)
 
 ## 2D Cameras and Pixels
 
-For information about 2D coordinates and how to create 2D scenes, see the [2D In FlatRedBall tutorial](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:2D_In_FlatRedBall.md "FlatRedBallXna:Tutorials:2D In FlatRedBall"). To convert between world and pixel coordinates, see the [World and Screen Coordinates page](/frb/docs/index.php?title=FlatRedBall.Math.MathFunctions#World_and_Screen_Coordinates.md "FlatRedBall.Math.MathFunctions").
+For information about 2D coordinates and how to create 2D scenes, see the [2D In FlatRedBall tutorial](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:2D_In_FlatRedBall "FlatRedBallXna:Tutorials:2D In FlatRedBall"). To convert between world and pixel coordinates, see the [World and Screen Coordinates page](/frb/docs/index.php?title=FlatRedBall.Math.MathFunctions#World_and_Screen_Coordinates "FlatRedBall.Math.MathFunctions").
 
 ## Camera Edges
 
-For information on finding the absolute coordinates of the edges of the Camera, see the [RelativeXEdgeAt](/frb/docs/index.php?title=FlatRedBall.Camera.RelativeXEdgeAt.md "FlatRedBall.Camera.RelativeXEdgeAt") article.
+For information on finding the absolute coordinates of the edges of the Camera, see the [RelativeXEdgeAt](/frb/docs/index.php?title=FlatRedBall.Camera.RelativeXEdgeAt "FlatRedBall.Camera.RelativeXEdgeAt") article.
 
 ## Multiple Cameras
 
@@ -79,7 +79,7 @@ FlatRedBall supports multiple cameras for different viewports (split screen). Th
      // Move the camera on the right closer
      SpriteManager.Cameras[1].Z = 5;
 
-![SplitScreen.png](/media/migrated_media-SplitScreen.png) For info on the [content manager argument](/frb/docs/index.php?title=FlatRedBall_Content_Manager.md "FlatRedBall Content Manager") see the [FlatRedBall Content Manager wiki entry](/frb/docs/index.php?title=FlatRedBall_Content_Manager.md "FlatRedBall Content Manager").
+![SplitScreen.png](/media/migrated_media-SplitScreen.png) For info on the [content manager argument](/frb/docs/index.php?title=FlatRedBall_Content_Manager "FlatRedBall Content Manager") see the [FlatRedBall Content Manager wiki entry](/frb/docs/index.php?title=FlatRedBall_Content_Manager "FlatRedBall Content Manager").
 
 ### Manually Setting Destination Rectangle
 
@@ -92,15 +92,15 @@ Every camera has a DestinationRectangle which defines where on the window it dra
     // 800 - 100 = 700
     camera.DestinationRectangle = new Rectangle(50, 50, 700, 500);
 
-For more information, see the [DestinationRectangle entry](/frb/docs/index.php?title=FlatRedBall.Camera.DestinationRectangle.md "FlatRedBall.Camera.DestinationRectangle").
+For more information, see the [DestinationRectangle entry](/frb/docs/index.php?title=FlatRedBall.Camera.DestinationRectangle "FlatRedBall.Camera.DestinationRectangle").
 
 ## Related Tutorials
 
--   [3D Camera Setup](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:3D_Camera_Setup.md "FlatRedBallXna:Tutorials:3D Camera Setup")
+-   [3D Camera Setup](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:3D_Camera_Setup "FlatRedBallXna:Tutorials:3D Camera Setup")
 
 ## Extra Information
 
--   [2D In FlatRedBall tutorial](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:2D_In_FlatRedBall.md "FlatRedBallXna:Tutorials:2D In FlatRedBall")
--   [Camera Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer#Camera_Layers.md "FlatRedBall.Graphics.Layer") - Camera Layers can be used to render objects to only one camera, such as HUDs.
+-   [2D In FlatRedBall tutorial](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:2D_In_FlatRedBall "FlatRedBallXna:Tutorials:2D In FlatRedBall")
+-   [Camera Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer#Camera_Layers "FlatRedBall.Graphics.Layer") - Camera Layers can be used to render objects to only one camera, such as HUDs.
 
 \[subpages depth="1"\]

@@ -47,7 +47,7 @@ All entities can have their Velocity value assigned. This example shows how to c
         }
     }
 
-[![](/wp-content/uploads/2016/01/16_08-10-08.gif.md)](/wp-content/uploads/2016/01/16_08-10-08.gif.md) The code could also be modified to shoot the bullets at angles. For example, the following code shows how to shoot 5 bullets in a spread angle:
+[![](/wp-content/uploads/2016/01/16_08-10-08.gif)](/wp-content/uploads/2016/01/16_08-10-08.gif) The code could also be modified to shoot the bullets at angles. For example, the following code shows how to shoot 5 bullets in a spread angle:
 
     using Microsoft.Xna.Framework;
     ...
@@ -73,7 +73,7 @@ All entities can have their Velocity value assigned. This example shows how to c
         }
     }
 
-##  [![](/wp-content/uploads/2016/01/16_08-14-14.gif.md)](/wp-content/uploads/2016/01/16_08-14-14.gif.md)
+##  [![](/wp-content/uploads/2016/01/16_08-14-14.gif)](/wp-content/uploads/2016/01/16_08-14-14.gif)
 
 ## The persistence of Velocity
 
@@ -106,4 +106,4 @@ You can make a PositionedObject move from one object to another by using the Vel
 
 ## Velocity and Parent
 
-If an object has a non-null Parent, then you must use [RelativeVelocity](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RelativeVelocity&action=edit&redlink=1.md "FlatRedBall.PositionedObject.RelativeVelocity (page does not exist)") instead of Velocity.
+If an object has a non-null Parent, then you must use [RelativeVelocity](/frb/docs/index.php?title=FlatRedBall.PositionedObject.RelativeVelocity&action=edit&redlink=1 "FlatRedBall.PositionedObject.RelativeVelocity (page does not exist)") instead of Velocity.

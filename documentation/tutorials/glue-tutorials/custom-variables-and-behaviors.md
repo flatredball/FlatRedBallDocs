@@ -124,4 +124,4 @@ Since Glue allows you to create variables which are essentially identical to fie
 -   If it makes sense that a designer would want to tweak this variable to change the behavior of an object
 -   If the variable is used to define the object and not just as a temporary or logic-only variable. In other words, MaxHealth would be a proper variable to add to Glue, but CurrentHealth would definitely not be.
 
-[To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Entity_Inheritance.md "Glue:Tutorials:Entity Inheritance")
+[To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Entity_Inheritance "Glue:Tutorials:Entity Inheritance")

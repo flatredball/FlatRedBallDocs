@@ -2,15 +2,15 @@
 
 So far the tutorials have covered some of the basics of working with FlatRedBall. However, FlatRedBall is a Game Engine, and video games are defined as being "interactive". That means that not only does the game present information to the user, but the user must also "communicate" back to the game. The three most common input devices for interacting with a game are:
 
--   [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard")
--   [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.Input.Mouse")
--   [Xbox360GamePad](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.md "FlatRedBall.Input.Xbox360GamePad") (Not currently available in FlatSilverBall)
+-   [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard")
+-   [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse")
+-   [Xbox360GamePad](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad "FlatRedBall.Input.Xbox360GamePad") (Not currently available in FlatSilverBall)
 
 Numerous other devices exist and can be used with FlatRedBall, but these three are natively supported and will satisfy most video game input requirements. The following will provide simple examples on how to use each input device. For more information check the wiki articles for each. These articles are linked above in the bullet points.
 
 ## Keyboard
 
-The [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard") class contains information about the keyboard's state and activities that have occurred during the current frame. The Keyboard can give you the following information:
+The [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard") class contains information about the keyboard's state and activities that have occurred during the current frame. The Keyboard can give you the following information:
 
 -   Whether a key is currently held down
 -   Whether a key has been pushed down - was not down last frame, is down this frame.
@@ -20,7 +20,7 @@ The [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedB
 
 ## Keyboard Example
 
-The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") which is controlled by the Keyboard: Add the following using statement:
+The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") which is controlled by the Keyboard: Add the following using statement:
 
     using FlatRedBall.Input;
 
@@ -62,7 +62,7 @@ Add the following in Update:
 
 ## Mouse
 
-The [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.Input.Mouse") class contains information about the mouse's state and activities that have occurred during the current frame. The [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.Input.Mouse") can give you the following information:
+The [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse") class contains information about the mouse's state and activities that have occurred during the current frame. The [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse") can give you the following information:
 
 -   Whether a button is currently held down.
 -   Whether a button has been pushed down - was not down last frame, is down this frame.
@@ -73,7 +73,7 @@ The [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.In
 
 ## Mouse Example
 
-The following creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") which reacts to the movements, pushes, and scroll wheel of the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.Input.Mouse"). Add the following using statement:
+The following creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") which reacts to the movements, pushes, and scroll wheel of the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse"). Add the following using statement:
 
     using FlatRedBall.Input;
 
@@ -100,7 +100,7 @@ Add the following in Update:
 
 ## Xbox360GamePad
 
-The [Xbox360GamePad](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.md "FlatRedBall.Input.Xbox360GamePad") class contains information about a Xbox 360 game pad's state and activities that have occurred during the current frame. Up to four game pads can be connected at one time, so the game pads exist in an array in the [InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager.md "FlatRedBall.Input.InputManager"). The [Xbox360GamePad](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.md "FlatRedBall.Input.Xbox360GamePad") can give you the following information:
+The [Xbox360GamePad](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad "FlatRedBall.Input.Xbox360GamePad") class contains information about a Xbox 360 game pad's state and activities that have occurred during the current frame. Up to four game pads can be connected at one time, so the game pads exist in an array in the [InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager "FlatRedBall.Input.InputManager"). The [Xbox360GamePad](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad "FlatRedBall.Input.Xbox360GamePad") can give you the following information:
 
 -   The position, velocity, and angle of either analog sticks.
 -   Whether a button is down, has been pushed, or has been released.
@@ -110,7 +110,7 @@ The [Xbox360GamePad](/frb/docs/index.php?title=FlatRedBall.Input.Xbox360GamePad.
 
 ## Xbox360GamePad Example
 
-The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") which reacts to the position of the triggers, the position of the left analog stick, and pressing the A button. Add the following using statement:
+The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") which reacts to the position of the triggers, the position of the left analog stick, and pressing the A button. Add the following using statement:
 
     using FlatRedBall.Input;
 

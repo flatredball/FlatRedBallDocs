@@ -16,7 +16,7 @@ LoadedAtRuntime is often set if a file is to be used in a custom way. For examp
 
 ### Selectively loading content
 
-You can use LoadedAtRuntime if you want to selectively load files at runtime. For example, you may add multiple files to a Screen, but only load one of them depending on the state of the game. However, we recommend using the [LoadedOnlyWhenReferenced property](/frb/docs/index.php?title=Glue:Reference:Files:LoadedOnlyWhenReferenced.md "Glue:Reference:Files:LoadedOnlyWhenReferenced").
+You can use LoadedAtRuntime if you want to selectively load files at runtime. For example, you may add multiple files to a Screen, but only load one of them depending on the state of the game. However, we recommend using the [LoadedOnlyWhenReferenced property](/frb/docs/index.php?title=Glue:Reference:Files:LoadedOnlyWhenReferenced "Glue:Reference:Files:LoadedOnlyWhenReferenced").
 
 ## LoadedAtRuntime=false vs. LoadedOnlyWhenReferenced=true
 

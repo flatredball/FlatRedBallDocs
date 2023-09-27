@@ -1,6 +1,6 @@
 ## Introduction
 
-Layers provide a way to force a particular order of drawing on a single [Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera"). While the concept is fairly straight-forward, things can become more complicated when objects are moved from being layered to unlayered, or when objects have presence on multiple layers. Since there are a variety of ways to layer and unlayer objects, this article will present a number of small code blocks and explain what each one does.
+Layers provide a way to force a particular order of drawing on a single [Camera](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera"). While the concept is fairly straight-forward, things can become more complicated when objects are moved from being layered to unlayered, or when objects have presence on multiple layers. Since there are a variety of ways to layer and unlayer objects, this article will present a number of small code blocks and explain what each one does.
 
 ## The setup
 
@@ -31,7 +31,7 @@ This table is just another way of showing what we mentioned before.
 
 ## Making a layered Sprite
 
-There are two ways to make a layered [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite"). The first is to use the AddToLayer method:
+There are two ways to make a layered [Sprite](/frb/docs/index.php?title=Sprite "Sprite"). The first is to use the AddToLayer method:
 
     Sprite sprite = SpriteManager.AddSprite("redball.bmp");
     SpriteManager.AddToLayer(sprite, firstLayer);
@@ -51,7 +51,7 @@ The result:
 | Drawn on firstLayer      | X           |
 | Drawn on secondLayer     |             |
 
-The SpriteManager provides a shortcut method for adding a [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") directly to a Layer:
+The SpriteManager provides a shortcut method for adding a [Sprite](/frb/docs/index.php?title=Sprite "Sprite") directly to a Layer:
 
     Sprite sprite = SpriteManager.AddSprite(
         "redball.bmp", 
@@ -70,7 +70,7 @@ This code does the exact same thing **if used instead of the two lines of code a
 
 ## Multiple Layer membership
 
-The AddToLayer method does remove the argument [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") from unlayered drawing, but it **does not remove the argument [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") from any other Layers that it belongs to**. Therefore, a [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") can be added to two Layers simply by calling AddToLayer twice:
+The AddToLayer method does remove the argument [Sprite](/frb/docs/index.php?title=Sprite "Sprite") from unlayered drawing, but it **does not remove the argument [Sprite](/frb/docs/index.php?title=Sprite "Sprite") from any other Layers that it belongs to**. Therefore, a [Sprite](/frb/docs/index.php?title=Sprite "Sprite") can be added to two Layers simply by calling AddToLayer twice:
 
     Sprite sprite = SpriteManager.AddSprite("redball.bmp");
     SpriteManager.AddToLayer(sprite, firstLayer);
@@ -88,13 +88,13 @@ The result:
 
 ## Removal from Layers
 
-To remove a [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") (or any other object) from a Layer, simply call the Remove method. Keep in mind that calling Remove **will not re-add the object to unlayered drawing**.
+To remove a [Sprite](/frb/docs/index.php?title=Sprite "Sprite") (or any other object) from a Layer, simply call the Remove method. Keep in mind that calling Remove **will not re-add the object to unlayered drawing**.
 
     Sprite sprite = SpriteManager.AddSprite("redball.bmp");
     SpriteManager.AddToLayer(sprite, firstLayer);
     firstLayer.Remove(sprite);
 
-As shown below, this makes the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") managed, but it will not be drawn.
+As shown below, this makes the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") managed, but it will not be drawn.
 
 |                          |             |
 |--------------------------|-------------|
@@ -113,7 +113,7 @@ Having an object be drawn layered an unlayered is not something supported by the
     SpriteManager.AddToLayer(sprite, firstLayer);
     SpriteManager.AddSprite(sprite);
 
-This code needs some explanation. The first line makes the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") managed and drawn unlayered. The second line makes the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") layered, but removes it from unlayered drawing. Now, you may be thinking "Ok, the last line just re-adds the Sprite to the SpriteManager so it is drawn unlayered." Well, you're half right. The second AddSprite call does add the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") to be drawn, but it also has a nasty side-effect. The [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") will actually be added to the [SpriteManager](/frb/docs/index.php?title=Sprite.mdManager "SpriteManager") twice. It was added once on the first line, and once again on the third line. This means that the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") will have its every-frame management performed twice. Not only does this hurt performance, but it results in properties like Velocity and Acceleration applied twice. In other words, you may get very unexpected behavior if you do this.
+This code needs some explanation. The first line makes the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") managed and drawn unlayered. The second line makes the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") layered, but removes it from unlayered drawing. Now, you may be thinking "Ok, the last line just re-adds the Sprite to the SpriteManager so it is drawn unlayered." Well, you're half right. The second AddSprite call does add the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") to be drawn, but it also has a nasty side-effect. The [Sprite](/frb/docs/index.php?title=Sprite "Sprite") will actually be added to the [SpriteManager](/frb/docs/index.php?title=SpriteManager "SpriteManager") twice. It was added once on the first line, and once again on the third line. This means that the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") will have its every-frame management performed twice. Not only does this hurt performance, but it results in properties like Velocity and Acceleration applied twice. In other words, you may get very unexpected behavior if you do this.
 
 |                          |             |
 |--------------------------|-------------|
@@ -133,7 +133,7 @@ The AddToLayer method has a little bit of inconsistent behavior. Let's explore i
     // Now add it to a layer
     SpriteManager.AddToLayer(sprite, firstLayer);
 
-So it's a safe bet that the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") will be drawn on the firstLayer, but what about management? Is it managed by the [SpriteManager](/frb/docs/index.php?title=Sprite.mdManager "SpriteManager")? We never called AddSprite. Drum roll please...
+So it's a safe bet that the [Sprite](/frb/docs/index.php?title=Sprite "Sprite") will be drawn on the firstLayer, but what about management? Is it managed by the [SpriteManager](/frb/docs/index.php?title=SpriteManager "SpriteManager")? We never called AddSprite. Drum roll please...
 
 |                          |             |
 |--------------------------|-------------|
@@ -143,4 +143,4 @@ So it's a safe bet that the [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite
 | Drawn on firstLayer      | X           |
 | Drawn on secondLayer     |             |
 
-The [SpriteManager](/frb/docs/index.php?title=Sprite.mdManager "SpriteManager") actually added the object both to the layer as well as to itself for management. This behavior is present because it's assumed that drawn objects should be managed. There is one exception, however. The [ShapeManager](/frb/docs/index.php?title=ShapeManager.md "ShapeManager")'s AddToLayer method. Shapes have somewhat unique behavior in that they are most often used for collision, and many times they can exist and be used, but not be managed by the [ShapeManager](/frb/docs/index.php?title=ShapeManager.md "ShapeManager") for performance reasons. Therefore, the [ShapeManager](/frb/docs/index.php?title=ShapeManager.md "ShapeManager") does not add a shape for management unless you explicitly tell it to do so. In other words, adding a shape to a layer, but not to the [ShapeManager](/frb/docs/index.php?title=ShapeManager.md "ShapeManager") results in the shape being drawn, but not managed. For more information on the reasoning behind this type of behavior, see the ["Why Limit Shape Management"](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager#Why_Limit_Shape_Management.3F.md "FlatRedBall.Math.Geometry.ShapeManager") section of the [ShapeManager](/frb/docs/index.php?title=ShapeManager.md "ShapeManager") page.
+The [SpriteManager](/frb/docs/index.php?title=SpriteManager "SpriteManager") actually added the object both to the layer as well as to itself for management. This behavior is present because it's assumed that drawn objects should be managed. There is one exception, however. The [ShapeManager](/frb/docs/index.php?title=ShapeManager "ShapeManager")'s AddToLayer method. Shapes have somewhat unique behavior in that they are most often used for collision, and many times they can exist and be used, but not be managed by the [ShapeManager](/frb/docs/index.php?title=ShapeManager "ShapeManager") for performance reasons. Therefore, the [ShapeManager](/frb/docs/index.php?title=ShapeManager "ShapeManager") does not add a shape for management unless you explicitly tell it to do so. In other words, adding a shape to a layer, but not to the [ShapeManager](/frb/docs/index.php?title=ShapeManager "ShapeManager") results in the shape being drawn, but not managed. For more information on the reasoning behind this type of behavior, see the ["Why Limit Shape Management"](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager#Why_Limit_Shape_Management.3F "FlatRedBall.Math.Geometry.ShapeManager") section of the [ShapeManager](/frb/docs/index.php?title=ShapeManager "ShapeManager") page.

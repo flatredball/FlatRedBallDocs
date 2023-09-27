@@ -53,4 +53,4 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](/wp-content/uploads/2019/08/2019-08-26_07-59-23.gif.md)](/wp-content/uploads/2019/08/2019-08-26_07-59-23.gif.md)    
+[![](/wp-content/uploads/2019/08/2019-08-26_07-59-23.gif)](/wp-content/uploads/2019/08/2019-08-26_07-59-23.gif)    

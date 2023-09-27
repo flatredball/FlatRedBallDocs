@@ -4,7 +4,7 @@ If you have a screen which seems to take a long time to load then this can be th
 
 ## Measuring time in CustomInitialize
 
-CustomInitialize can be measured easily by using the [TimeManager's SystemCurrentTime](/frb/docs/index.php?title=FlatRedBall.TimeManager.SystemCurrentTime.md "FlatRedBall.TimeManager.SystemCurrentTime") property along with the [Debugger's CommandLineWrite](/frb/docs/index.php?title=FlatRedBall.Debugging.Debugger.CommandLineWrite.md "FlatRedBall.Debugging.Debugger.CommandLineWrite") function. For this example, let's assume a simple CustomInitialize which looks like this:
+CustomInitialize can be measured easily by using the [TimeManager's SystemCurrentTime](/frb/docs/index.php?title=FlatRedBall.TimeManager.SystemCurrentTime "FlatRedBall.TimeManager.SystemCurrentTime") property along with the [Debugger's CommandLineWrite](/frb/docs/index.php?title=FlatRedBall.Debugging.Debugger.CommandLineWrite "FlatRedBall.Debugging.Debugger.CommandLineWrite") function. For this example, let's assume a simple CustomInitialize which looks like this:
 
     void CustomInitialize()
     {
@@ -94,4 +94,4 @@ Your game should now output information about initialization time: ![RecordSegme
 
 So far we've discussed how to measure where slowdowns are occurring.
 
--   If the slowdown is in CustomLoadStaticContent or LoadStaticContent (notice the name of your screen will be prefixed), then you can solve the problem either by loading less content or by using a loading screen. For more information on using loading screens, see [this page](/frb/docs/index.php?title=Glue:Reference:Screens:IsLoadingScreen.md "Glue:Reference:Screens:IsLoadingScreen").
+-   If the slowdown is in CustomLoadStaticContent or LoadStaticContent (notice the name of your screen will be prefixed), then you can solve the problem either by loading less content or by using a loading screen. For more information on using loading screens, see [this page](/frb/docs/index.php?title=Glue:Reference:Screens:IsLoadingScreen "Glue:Reference:Screens:IsLoadingScreen").

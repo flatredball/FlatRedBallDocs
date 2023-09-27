@@ -1,6 +1,6 @@
 ## Introduction
 
-The UsePixelCoordinates can be used to easily create a 2D Layer. This method is often used in combination with attaching Entities to a Camera so that they can be placed in screen space. This method is used by [Glue](/frb/docs/index.php?title=Glue.md "Glue") if a given Layer's "Is 2D" property is set true.
+The UsePixelCoordinates can be used to easily create a 2D Layer. This method is often used in combination with attaching Entities to a Camera so that they can be placed in screen space. This method is used by [Glue](/frb/docs/index.php?title=Glue "Glue") if a given Layer's "Is 2D" property is set true.
 
 ## Code Example
 

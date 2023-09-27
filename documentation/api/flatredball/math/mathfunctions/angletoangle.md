@@ -50,7 +50,7 @@ Add the following to Update:
 
 ## Range Checks
 
-The AngleToAngle can be used to check if one object is within an angle range. For example, you may be making a stealth game where the player must avoid being seen by enemies. We'll assume that the enemies have a property called ViewAngle which represents the edge-to-edge angle that the enemies can see. We'll also assume that this code has calculated the angle from the enemy to the player. For information on how to calculate this, see [this page](/frb/docs/index.php?title=Math:Trigonometry#Angle_Between_Two_Points.md "Math:Trigonometry").
+The AngleToAngle can be used to check if one object is within an angle range. For example, you may be making a stealth game where the player must avoid being seen by enemies. We'll assume that the enemies have a property called ViewAngle which represents the edge-to-edge angle that the enemies can see. We'll also assume that this code has calculated the angle from the enemy to the player. For information on how to calculate this, see [this page](/frb/docs/index.php?title=Math:Trigonometry#Angle_Between_Two_Points "Math:Trigonometry").
 
     // angleToPlayer is the angle from the enemy to the player
     // enemy.RotationZ is the angle that the enemy is facing (assuming that the enemy is facing right when RotationZ = 0)

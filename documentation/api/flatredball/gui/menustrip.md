@@ -4,7 +4,7 @@ MenuStrips can be used to create a compact set of commands that users can access
 
 ## Code Example
 
-The following code example creates a MenuStrip with a File MenuItem. The File MenuItem will contain two MenuItems - Load and Save. For brevity, this code example will not use the resulting files selected by the [FileWindow](/frb/docs/index.php?title=FlatRedBall.Gui.FileWindow.md "FlatRedBall.Gui.FileWindow"). For information on how to use the selected file, see the [FileWindow](/frb/docs/index.php?title=FlatRedBall.Gui.FileWindow.md "FlatRedBall.Gui.FileWindow") wiki entry.
+The following code example creates a MenuStrip with a File MenuItem. The File MenuItem will contain two MenuItems - Load and Save. For brevity, this code example will not use the resulting files selected by the [FileWindow](/frb/docs/index.php?title=FlatRedBall.Gui.FileWindow "FlatRedBall.Gui.FileWindow"). For information on how to use the selected file, see the [FileWindow](/frb/docs/index.php?title=FlatRedBall.Gui.FileWindow "FlatRedBall.Gui.FileWindow") wiki entry.
 
 Add the following using statement:
 

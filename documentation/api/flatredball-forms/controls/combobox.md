@@ -1,6 +1,6 @@
 ## Introduction
 
-The ComboBox control (also often referred to as a drop-down control) allows the user to select a value from a list of options. It expands and collapses in response to user activity. [![](/wp-content/uploads/2017/12/2017-12-13_07-47-12.gif.md)](/wp-content/uploads/2017/12/2017-12-13_07-47-12.gif.md)
+The ComboBox control (also often referred to as a drop-down control) allows the user to select a value from a list of options. It expands and collapses in response to user activity. [![](/wp-content/uploads/2017/12/2017-12-13_07-47-12.gif)](/wp-content/uploads/2017/12/2017-12-13_07-47-12.gif)
 
 ## Layout Requirements
 
@@ -29,7 +29,7 @@ Furthermore, the ComboBox class provides the following event:
 
 -   SelectionChanged
 
-For more information on working with these properties and events, see the ListBox page: /documentation/api/flatredball-forms/controls/listbox.md
+For more information on working with these properties and events, see the ListBox page: http://flatredball.com/documentation/api/flatredball-forms/controls/listbox/
 
 ## ListBoxItemGumType
 

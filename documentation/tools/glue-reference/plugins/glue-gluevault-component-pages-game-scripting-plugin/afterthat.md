@@ -38,7 +38,7 @@ For this tutorial we will use a Circle and move it right, then back left, then b
 
 ## Setting up the If and Do functions
 
-The first step is to create the If and Do functions that will be available in our game script. I won't cover the steps here because they are identical to the implementation tutorial [which can be found here\|which can be found here](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Game_Scripting_Plugin:Implementation_Tutorial.md "Glue:GlueVault:Component Pages:Game Scripting Plugin:Implementation Tutorial"). In short the setup is:
+The first step is to create the If and Do functions that will be available in our game script. I won't cover the steps here because they are identical to the implementation tutorial [which can be found here\|which can be found here](/frb/docs/index.php?title=Glue:GlueVault:Component_Pages:Game_Scripting_Plugin:Implementation_Tutorial "Glue:GlueVault:Component Pages:Game Scripting Plugin:Implementation Tutorial"). In short the setup is:
 
 1.  Create a new project
 2.  Use the menu option provided by the Game Scripting plugin to add all of the required code files to your project.

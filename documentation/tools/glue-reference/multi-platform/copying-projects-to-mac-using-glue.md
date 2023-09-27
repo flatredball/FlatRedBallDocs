@@ -49,7 +49,7 @@ Creating the project for iOS is identical to creating projects for other platfor
 -   Enter the name that you want for your project
 -   Click OK
 
-At this point you will have a project which can be compiled and run on OSX. This tutorial shows how to copy iOS projects to Glue as the primary project, but the following tutorial also works if the iOS project is a synced project. For more information on project sync, see [this page](/frb/docs/index.php?title=Glue:Reference:Menu:File:New_Synced_Project.md "Glue:Reference:Menu:File:New Synced Project").
+At this point you will have a project which can be compiled and run on OSX. This tutorial shows how to copy iOS projects to Glue as the primary project, but the following tutorial also works if the iOS project is a synced project. For more information on project sync, see [this page](/frb/docs/index.php?title=Glue:Reference:Menu:File:New_Synced_Project "Glue:Reference:Menu:File:New Synced Project").
 
 The next step is to set up Glue to copy the project over to your OSX computer.
 

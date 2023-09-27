@@ -1,6 +1,6 @@
 ## Introduction
 
-The LastFrameGestures is a List of [GestureSamples](http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.input.touch.gesturesample.aspx) representing all gestures read last frame. You can use the LastFrameGestures in your code to respond to gesture input. The LastFrameGestures will only be populated every frame if the [ReadsGestures](/frb/docs/index.php?title=FlatRedBall.Input.TouchScreen.ReadsGestures.md "FlatRedBall.Input.TouchScreen.ReadsGestures") value is true (default is true). For full documentation on how to use GestureSamples, see the [Microsoft page on GestureSamples](http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.input.touch.gesturesample.aspx).
+The LastFrameGestures is a List of [GestureSamples](http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.input.touch.gesturesample.aspx) representing all gestures read last frame. You can use the LastFrameGestures in your code to respond to gesture input. The LastFrameGestures will only be populated every frame if the [ReadsGestures](/frb/docs/index.php?title=FlatRedBall.Input.TouchScreen.ReadsGestures "FlatRedBall.Input.TouchScreen.ReadsGestures") value is true (default is true). For full documentation on how to use GestureSamples, see the [Microsoft page on GestureSamples](http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.input.touch.gesturesample.aspx).
 
 ## Code Example
 

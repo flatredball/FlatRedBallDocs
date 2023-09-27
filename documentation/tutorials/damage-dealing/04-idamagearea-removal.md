@@ -10,7 +10,7 @@ The previous tutorials set up a BulletVsEnemy collision relationship which resul
 -   The Enemy and Bullet have different team indexes
 -   The BulletVsEnemy collision relationship has the **Destroy Bullet on Damage** option checked
 
-Collision relationships with IDamageArea lists always display the Destroy option, even if the collision relationship is not against an IDamageable. This allows IDamageAreas such as Bullets to destroy themselves when colliding with non-IDamageArea objects such as solid collision. For example, a collision relationship between BulletList and SolidCollision can be added to the GameScreen to automatically destroy bullets. This collision relationship will have the **Destroy Bullet on Damage** option checked by default. [![](/wp-content/uploads/2023/01/11_09-23-32.gif.md)](/wp-content/uploads/2023/01/11_09-23-32.gif.md) Bullets will now be destroyed automatically when they collide with the wall. [![](/wp-content/uploads/2023/01/11_09-24-51.gif.md)](/wp-content/uploads/2023/01/11_09-24-51.gif.md)
+Collision relationships with IDamageArea lists always display the Destroy option, even if the collision relationship is not against an IDamageable. This allows IDamageAreas such as Bullets to destroy themselves when colliding with non-IDamageArea objects such as solid collision. For example, a collision relationship between BulletList and SolidCollision can be added to the GameScreen to automatically destroy bullets. This collision relationship will have the **Destroy Bullet on Damage** option checked by default. [![](/wp-content/uploads/2023/01/11_09-23-32.gif)](/wp-content/uploads/2023/01/11_09-23-32.gif) Bullets will now be destroyed automatically when they collide with the wall. [![](/wp-content/uploads/2023/01/11_09-24-51.gif)](/wp-content/uploads/2023/01/11_09-24-51.gif)
 
 ## Damage Over Time and Manual Removal
 
@@ -18,7 +18,7 @@ Although the automatic removal is handy, we may want to control the removal of b
 
 ![](/media/2023-01-img_63bee46fe1326.png)
 
-Now bullets will continually deal damage to the Enemy, one time per frame. This results in enemies dying very quickly. [![](/wp-content/uploads/2023/01/11_09-32-41.gif.md)](/wp-content/uploads/2023/01/11_09-32-41.gif.md)
+Now bullets will continually deal damage to the Enemy, one time per frame. This results in enemies dying very quickly. [![](/wp-content/uploads/2023/01/11_09-32-41.gif)](/wp-content/uploads/2023/01/11_09-32-41.gif)
 
 ## Seconds Between Damage Variable
 
@@ -44,7 +44,7 @@ Each enemy automatically keeps track of the last time it took damage, so it will
         }
     }
 
-[![](/wp-content/uploads/2023/01/11_09-42-04.gif.md)](/wp-content/uploads/2023/01/11_09-42-04.gif.md)
+[![](/wp-content/uploads/2023/01/11_09-42-04.gif)](/wp-content/uploads/2023/01/11_09-42-04.gif)
 
 ## Handling Removal in Custom Code
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-The Mouse class provides functionality for getting input data from the physical mouse. This class is automatically instantiated by and accessible through the [InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager.md "FlatRedBall.Input.InputManager"). The Mouse class is not available on the Xbox360 if using FlatRedBall XNA.
+The Mouse class provides functionality for getting input data from the physical mouse. This class is automatically instantiated by and accessible through the [InputManager](/frb/docs/index.php?title=FlatRedBall.Input.InputManager "FlatRedBall.Input.InputManager"). The Mouse class is not available on the Xbox360 if using FlatRedBall XNA.
 
 ## Detecting Mouse Activity
 
@@ -32,7 +32,7 @@ The mouse scroll wheel is exposed through the InputManager.Mouse.ScrollWheel pro
 
 ## Cursor Visibility
 
-See [the showing cursor wiki entry](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game#Showing_Cursor.md "Microsoft.Xna.Framework.Game").
+See [the showing cursor wiki entry](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game#Showing_Cursor "Microsoft.Xna.Framework.Game").
 
 ## Mouse Pixel Coordinates
 
@@ -52,7 +52,7 @@ The Mouse reports the world coordinates of the cursor through the functions Worl
     float xWorldPosition = InputManager.Mouse.WorldXAt(zPosition);
     float yWorldPosition = InputManager.Mouse.WorldYAt(zPosition);
 
-For a more detailed example see [this entry](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable#Creating_Attachments.md "FlatRedBall.Math.IAttachable") on moving a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") by positioning it to the cursor's coordinates.
+For a more detailed example see [this entry](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable#Creating_Attachments "FlatRedBall.Math.IAttachable") on moving a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") by positioning it to the cursor's coordinates.
 
 ## Detecting Mouse in Window
 
@@ -69,11 +69,11 @@ The following code performs the check:
 
 ## Member List
 
--   [FlatRedBall.Input.Mouse.GrabbedPositionedObject](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.GrabbedPositionedObject.md "FlatRedBall.Input.Mouse.GrabbedPositionedObject")
--   [FlatRedBall.Input.Mouse.IsOn3D](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.IsOn3D.md "FlatRedBall.Input.Mouse.IsOn3D")
--   [FlatRedBall.Input.Mouse.ModifyMouseState](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.ModifyMouseState.md "FlatRedBall.Input.Mouse.ModifyMouseState")
--   [FlatRedBall.Input.Mouse.SetScreenPosition](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.SetScreenPosition.md "FlatRedBall.Input.Mouse.SetScreenPosition")
--   [FlatRedBall.Input.Mouse.WorldXAt](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.WorldXAt&action=edit&redlink=1.md "FlatRedBall.Input.Mouse.WorldXAt (page does not exist)")
--   [FlatRedBall.Input.Mouse.WorldYAt](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.WorldXAt&action=edit&redlink=1.md "FlatRedBall.Input.Mouse.WorldXAt (page does not exist)")
+-   [FlatRedBall.Input.Mouse.GrabbedPositionedObject](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.GrabbedPositionedObject "FlatRedBall.Input.Mouse.GrabbedPositionedObject")
+-   [FlatRedBall.Input.Mouse.IsOn3D](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.IsOn3D "FlatRedBall.Input.Mouse.IsOn3D")
+-   [FlatRedBall.Input.Mouse.ModifyMouseState](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.ModifyMouseState "FlatRedBall.Input.Mouse.ModifyMouseState")
+-   [FlatRedBall.Input.Mouse.SetScreenPosition](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.SetScreenPosition "FlatRedBall.Input.Mouse.SetScreenPosition")
+-   [FlatRedBall.Input.Mouse.WorldXAt](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.WorldXAt&action=edit&redlink=1 "FlatRedBall.Input.Mouse.WorldXAt (page does not exist)")
+-   [FlatRedBall.Input.Mouse.WorldYAt](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.WorldXAt&action=edit&redlink=1 "FlatRedBall.Input.Mouse.WorldXAt (page does not exist)")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

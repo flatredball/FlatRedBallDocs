@@ -4,7 +4,7 @@ PropertyCollections are a method of encapsulating a group of property values. Us
 
 ## Using PropertyCollections
 
-The following example creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and sets its properties through a PropertyCollection.
+The following example creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and sets its properties through a PropertyCollection.
 
     Sprite sprite = SpriteManager.AddSprite("redball.bmp");
 

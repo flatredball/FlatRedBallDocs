@@ -1,18 +1,18 @@
 ## Introduction
 
-MethodInstructions are a way of calling a method at some time in the future. They can simplify the creation of effects and animation in game development. The [DelegateInstruction](/frb/docs/index.php?title=FlatRedBall.Instructions.DelegateInstruction.md "FlatRedBall.Instructions.DelegateInstruction") provides the same functionality for simple cases.
+MethodInstructions are a way of calling a method at some time in the future. They can simplify the creation of effects and animation in game development. The [DelegateInstruction](/frb/docs/index.php?title=FlatRedBall.Instructions.DelegateInstruction "FlatRedBall.Instructions.DelegateInstruction") provides the same functionality for simple cases.
 
 ## Using Method Instructions
 
 There are a few things to remember when using MethodInstructions:
 
-1.  While MethodInstructions can be manually executed, the easiest way to use them is to add them to an [IInstructable](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable.md "FlatRedBall.Instructions.IInstructable") that is being managed such as a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). This way you don't have to manually watch for instructions to call them. The manager takes care of it for you!
-2.  MethodInstructions cannot call static methods. You'll see in the following example that SpriteManager.RemoveSprite needs to be wrapped in another method. Another alternative is to create a [StaticMethodInstruction](/frb/docs/index.php?title=FlatRedBall.Instructions.StaticMethodInstruction.md "FlatRedBall.Instructions.StaticMethodInstruction").
+1.  While MethodInstructions can be manually executed, the easiest way to use them is to add them to an [IInstructable](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable "FlatRedBall.Instructions.IInstructable") that is being managed such as a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). This way you don't have to manually watch for instructions to call them. The manager takes care of it for you!
+2.  MethodInstructions cannot call static methods. You'll see in the following example that SpriteManager.RemoveSprite needs to be wrapped in another method. Another alternative is to create a [StaticMethodInstruction](/frb/docs/index.php?title=FlatRedBall.Instructions.StaticMethodInstruction "FlatRedBall.Instructions.StaticMethodInstruction").
 
 The following code creates an effect that could be used for explosions when the user presses the space bar. The code does the following things:
 
--   When the user presses the space bar, the code creates 8 instructions to create explosion [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). The creation of these [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") is delayed and controlled by the last argument of the MethodInstruction constructor.
--   These instructions are added to the [InstructionManager](/frb/docs/index.php?title=FlatRedBall.Instructions.InstructionManager.md "FlatRedBall.Instructions.InstructionManager") since there is no object around to "own" these Instructions.
+-   When the user presses the space bar, the code creates 8 instructions to create explosion [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). The creation of these [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") is delayed and controlled by the last argument of the MethodInstruction constructor.
+-   These instructions are added to the [InstructionManager](/frb/docs/index.php?title=FlatRedBall.Instructions.InstructionManager "FlatRedBall.Instructions.InstructionManager") since there is no object around to "own" these Instructions.
 -   When a Sprite is created its properties are set and another MethodInstruction is created to remove the Sprite after 1 second.
 
 Add the following using statement:
@@ -88,7 +88,7 @@ You may create an argument list as follows:
 
 MethodInstructions attempt to call methods using reflection. They obtain the method to call using the name of the method. However, if the method that you want to call has multiple overloads then you will need to supply a MethodInfo to tell which version of the method you want to call.
 
-For example, let's say you are working with an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle") instance and you want to call CollideAgainst using a MethodInstruction. The following code can be used to call CollideAgainst against a Circle:
+For example, let's say you are working with an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle") instance and you want to call CollideAgainst using a MethodInstruction. The following code can be used to call CollideAgainst against a Circle:
 
     Type typeToCollideAgainst = typeof(Circle);
     MethodInfo methodInfo = typeof(AxisAlignedRectangle).GetMethod(

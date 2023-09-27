@@ -11,7 +11,7 @@ The KeepSpriteInScreen method adjusts the absolute position of the argument Spri
 
 ## Code Example
 
-The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") which is moved around the screen by the [Keyboad](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard") with the arrow keys. Add the following using statement:
+The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") which is moved around the screen by the [Keyboad](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard") with the arrow keys. Add the following using statement:
 
     using FlatRedBall.Input;
 

@@ -94,7 +94,7 @@ Next we will give the Bullet a PNG file and a Sprite to use. This process is ess
 2.  Expand the **Bullet** entity in Glue
 3.  Drag+drop Bullet1.png onto the Files folder in the Bullet
 
-[![](/wp-content/uploads/2016/01/2021_March_13_141331.gif.md)](/wp-content/uploads/2016/01/2021_March_13_141331.gif.md) To add a Sprite to the **Bullet **entity:
+[![](/wp-content/uploads/2016/01/2021_March_13_141331.gif)](/wp-content/uploads/2016/01/2021_March_13_141331.gif) To add a Sprite to the **Bullet **entity:
 
 1.  Select the **Bullet** entity in Glue
 
@@ -121,7 +121,7 @@ Now we can set the Sprite's Texture:
 
 ## Shooting
 
-The next step is to add firing bullets. We'll be using the BulletFactory which we created in an earlier tutorial to create a new bullet and automatically add it to the GameScreen's BulletList. For more information on factories, see [the tutorial on this topic](/frb/docs/index.php?title=Glue:Tutorials:Entities_Created_by_Other_Entities.md "Glue:Tutorials:Entities Created by Other Entities"). Next we will need to define a bullet speed. To do this:
+The next step is to add firing bullets. We'll be using the BulletFactory which we created in an earlier tutorial to create a new bullet and automatically add it to the GameScreen's BulletList. For more information on factories, see [the tutorial on this topic](/frb/docs/index.php?title=Glue:Tutorials:Entities_Created_by_Other_Entities "Glue:Tutorials:Entities Created by Other Entities"). Next we will need to define a bullet speed. To do this:
 
 1.  Click the Bullet entity in Glue
 

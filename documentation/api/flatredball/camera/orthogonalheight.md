@@ -33,7 +33,7 @@ float bottomEdge = Camera.Main.Y - Camera.Main.OrthogonalHeight/2.0f;
 
 ## Setting the Camera to 2D
 
-The [Camera's UsePixelCoordinates](/frb/docs/index.php?title=FlatRedBall.Camera.UsePixelCoordinates.md "FlatRedBall.Camera.UsePixelCoordinates") method sets the calling Camera's Orthogonal property to true and adjusts the pixel coordinates to the screen's resolution. In other words, if the screen is 800X600, calling [UsePixelCoordinates](/frb/docs/index.php?title=FlatRedBall.Camera.UsePixelCoordinates.md "FlatRedBall.Camera.UsePixelCoordinates") sets the OrthogonalWidth to 800 and the OrthogonalHeight to 600.
+The [Camera's UsePixelCoordinates](/frb/docs/index.php?title=FlatRedBall.Camera.UsePixelCoordinates "FlatRedBall.Camera.UsePixelCoordinates") method sets the calling Camera's Orthogonal property to true and adjusts the pixel coordinates to the screen's resolution. In other words, if the screen is 800X600, calling [UsePixelCoordinates](/frb/docs/index.php?title=FlatRedBall.Camera.UsePixelCoordinates "FlatRedBall.Camera.UsePixelCoordinates") sets the OrthogonalWidth to 800 and the OrthogonalHeight to 600.
 
 ## Orthogonal Width/Orthogonal Height As Windows into the World
 
@@ -77,4 +77,4 @@ Add the following to Update:
 
 ## Additional Information
 
--   [How to create 2D Low Resolution Games](/frb/docs/index.php?title=Glue:How_To:Create_2D_Low_Resolution_Games.md "Glue:How To:Create 2D Low Resolution Games") - This article discusses how to use OrthogonalWidth and OrthogonalHeight to created games that look pixellated.
+-   [How to create 2D Low Resolution Games](/frb/docs/index.php?title=Glue:How_To:Create_2D_Low_Resolution_Games "Glue:How To:Create 2D Low Resolution Games") - This article discusses how to use OrthogonalWidth and OrthogonalHeight to created games that look pixellated.

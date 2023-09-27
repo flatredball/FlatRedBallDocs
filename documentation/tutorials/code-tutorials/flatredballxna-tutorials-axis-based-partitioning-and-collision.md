@@ -36,6 +36,6 @@ If these are true, the the following can be performed:
 
 ## Example
 
-The following example creates 400 Sprites and has the perform collision against each other. If they collide, the Sprites glow, otherwise they are drawn regularly. Pastebin link: [http://pastebin.ca/985502](http://pastebin.ca/985502) File link: [AxisBasedPartitioning.cs](/frb/docs/images/f/f0/AxisBasedPartitioning.cs.md "AxisBasedPartitioning.cs") ![AxisBasedPartitioning.png](/media/migrated_media-AxisBasedPartitioning.png)
+The following example creates 400 Sprites and has the perform collision against each other. If they collide, the Sprites glow, otherwise they are drawn regularly. Pastebin link: [http://pastebin.ca/985502](http://pastebin.ca/985502) File link: [AxisBasedPartitioning.cs](/frb/docs/images/f/f0/AxisBasedPartitioning.cs "AxisBasedPartitioning.cs") ![AxisBasedPartitioning.png](/media/migrated_media-AxisBasedPartitioning.png)
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

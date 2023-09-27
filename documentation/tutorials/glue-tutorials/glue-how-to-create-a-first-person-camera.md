@@ -34,7 +34,7 @@ Finally create a Screen which will contain the rest of our project. This is not 
 
 Now we'll create a large Sprite which will serve as our ground. To create this:
 
-1.  Download this file to your computer: [![](/wp-content/uploads/2016/01/redball-1.png.md)](/wp-content/uploads/2016/01/redball-1.png.md)
+1.  Download this file to your computer: [![](/wp-content/uploads/2016/01/redball-1.png)](/wp-content/uploads/2016/01/redball-1.png)
 2.  Drag+drop redball.bmp onto GameScreen's Files in Glue
 3.  Select the **Quick Actions** tab
 4.  Click **Add Object to Game Screen**

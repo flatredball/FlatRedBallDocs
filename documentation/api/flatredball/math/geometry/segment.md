@@ -1,10 +1,10 @@
 ## Introduction
 
-A segment is a object defined by two [Points](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Point.md "FlatRedBall.Math.Geometry.Point"). It is not a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") and its points are absolute, which differentiates it from the [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line") class.
+A segment is a object defined by two [Points](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Point "FlatRedBall.Math.Geometry.Point"). It is not a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") and its points are absolute, which differentiates it from the [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line") class.
 
 ## Segment Intersection
 
-The following code creates two [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line"). One line rotates automatically while the other is controlled by input from the [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard"). The two [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line") call the AsSegment method to create Segments that represent the calling [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line"). The segment can then be used to find the point of collision between the two [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line"). If the resulting intersection point has valid coordinates then a collision has occurred. A red ball [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") marks the intersection point between the two [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line").
+The following code creates two [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line"). One line rotates automatically while the other is controlled by input from the [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard"). The two [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line") call the AsSegment method to create Segments that represent the calling [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line"). The segment can then be used to find the point of collision between the two [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line"). If the resulting intersection point has valid coordinates then a collision has occurred. A red ball [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") marks the intersection point between the two [Lines](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line").
 
 Add the following using statements:
 
@@ -59,6 +59,6 @@ Add the following in Update:
 
 ## Segment Members
 
--   [FlatRedBall.Math.Geometry.Segment.ClosestPointTo](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Segment.ClosestPointTo.md "FlatRedBall.Math.Geometry.Segment.ClosestPointTo")
+-   [FlatRedBall.Math.Geometry.Segment.ClosestPointTo](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Segment.ClosestPointTo "FlatRedBall.Math.Geometry.Segment.ClosestPointTo")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

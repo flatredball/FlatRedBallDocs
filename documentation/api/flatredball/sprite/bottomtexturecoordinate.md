@@ -23,8 +23,8 @@ The texture coordinate is a coordinate which measures location on a texture, but
 
 Texture coordinates can be adjusted to create objects which show only part of a texture, such as health bars. The following code shows how to create a Diablo-like health meter (of course, using a red ball): Files used:
 
--   [Media:Fill.png](/frb/docs/images/e/ed/Fill.png.md "Fill.png")![Fill.png](/media/migrated_media-Fill.png)
--   [Media:Frame.png](/frb/docs/images/c/c5/Frame.png.md "Frame.png")![Frame.png](/media/migrated_media-Frame.png)
+-   [Media:Fill.png](/frb/docs/images/e/ed/Fill.png "Fill.png")![Fill.png](/media/migrated_media-Fill.png)
+-   [Media:Frame.png](/frb/docs/images/c/c5/Frame.png "Frame.png")![Frame.png](/media/migrated_media-Frame.png)
 
 Add the following at class scope:
 
@@ -86,5 +86,5 @@ If you are modifying the code above to be used in an Entity, and if the Sprite y
 
 ## Additional Information
 
--   [Clipping Sprites](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Clipping_Sprites.md "FlatRedBallXna:Tutorials:Clipping Sprites") - A tutorial on how to clip Sprites within a rectangle.
--   [TextureAddressMode](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureAddressMode.md "FlatRedBall.Sprite.TextureAddressMode") - The visual behavior of Sprites depends on the TextureAddressMode. See this page for information on how to use texture coordinates.
+-   [Clipping Sprites](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Clipping_Sprites "FlatRedBallXna:Tutorials:Clipping Sprites") - A tutorial on how to clip Sprites within a rectangle.
+-   [TextureAddressMode](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureAddressMode "FlatRedBall.Sprite.TextureAddressMode") - The visual behavior of Sprites depends on the TextureAddressMode. See this page for information on how to use texture coordinates.

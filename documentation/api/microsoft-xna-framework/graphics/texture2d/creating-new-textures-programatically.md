@@ -8,7 +8,7 @@ While this code addresses many common scenarios, you may want to create your own
 
 ## Creating a simple Texture2D
 
-The following code creates a Texture2D which is all red, then displays the Texture2D using a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite").
+The following code creates a Texture2D which is all red, then displays the Texture2D using a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite").
 
 Add the following using statement:
 

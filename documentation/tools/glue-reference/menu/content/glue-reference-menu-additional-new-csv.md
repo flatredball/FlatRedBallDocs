@@ -21,6 +21,6 @@ To create a new CSV file:
 
 ## Subsections
 
-1.  [Simple Line of Text Tutorial](/frb/docs/index.php?title=Glue:Reference:Menu:Content:Additional_Content:New_Content_CSV:Simple_Line_of_Text_Tutorial.md "Glue:Reference:Menu:Content:Additional Content:New Content CSV:Simple Line of Text Tutorial")
-2.  [Runtime Object Charateristics](/frb/docs/index.php?title=Glue:Reference:Menu:Content:Additional_Content:New_Content_CSV:Runtime_Object_Charateristics.md "Glue:Reference:Menu:Content:Additional Content:New Content CSV:Runtime Object Charateristics")
-3.  [Creating Runtime Objects](/frb/docs/index.php?title=Glue:Reference:Menu:Content:Additional_Content:New_Content_CSV:Creating_Runtime_Objects.md "Glue:Reference:Menu:Content:Additional Content:New Content CSV:Creating Runtime Objects")
+1.  [Simple Line of Text Tutorial](/frb/docs/index.php?title=Glue:Reference:Menu:Content:Additional_Content:New_Content_CSV:Simple_Line_of_Text_Tutorial "Glue:Reference:Menu:Content:Additional Content:New Content CSV:Simple Line of Text Tutorial")
+2.  [Runtime Object Charateristics](/frb/docs/index.php?title=Glue:Reference:Menu:Content:Additional_Content:New_Content_CSV:Runtime_Object_Charateristics "Glue:Reference:Menu:Content:Additional Content:New Content CSV:Runtime Object Charateristics")
+3.  [Creating Runtime Objects](/frb/docs/index.php?title=Glue:Reference:Menu:Content:Additional_Content:New_Content_CSV:Creating_Runtime_Objects "Glue:Reference:Menu:Content:Additional Content:New Content CSV:Creating Runtime Objects")

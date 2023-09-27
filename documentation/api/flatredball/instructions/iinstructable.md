@@ -1,10 +1,10 @@
 ## Introduction
 
-The IInstructable interface specifies that an object can store instructions in an InstructionList. Most FlatRedBall classes which implement the IInstructable interface have managers which handle [Instruction](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.md "FlatRedBall.Instructions.Instruction") execution. [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.md "FlatRedBall.Instructions.Instruction") allow the setting of properties at a predetermined time in the future without any explicit management.
+The IInstructable interface specifies that an object can store instructions in an InstructionList. Most FlatRedBall classes which implement the IInstructable interface have managers which handle [Instruction](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction") execution. [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction") allow the setting of properties at a predetermined time in the future without any explicit management.
 
 ## Using Instructions
 
-The FlatRedBall Engine provides a generic [Instruction](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.md "FlatRedBall.Instructions.Instruction") which can be used to set any property. The following code moves a Sprite in a square when the space bar is pushed.
+The FlatRedBall Engine provides a generic [Instruction](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction") which can be used to set any property. The following code moves a Sprite in a square when the space bar is pushed.
 
     // Add this using statement
     using FlatRedBall.Instructions;
@@ -107,12 +107,12 @@ Instead you should pass the instance as the first argument and have the property
 
 ## InstructionManager
 
-The [InstructionManager](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.mdManager "FlatRedBall.Instructions.InstructionManager") provides methods for performing common behavior on different objects. See the [InstructionManager wiki entry](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.mdManager "FlatRedBall.Instructions.InstructionManager") for more information.
+The [InstructionManager](/frb/docs/index.php?title=FlatRedBall.Instructions.InstructionManager "FlatRedBall.Instructions.InstructionManager") provides methods for performing common behavior on different objects. See the [InstructionManager wiki entry](/frb/docs/index.php?title=FlatRedBall.Instructions.InstructionManager "FlatRedBall.Instructions.InstructionManager") for more information.
 
 ## IInstructable Members
 
--   [FlatRedBall.Instructions.IInstructable.Call](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable.Call.md "FlatRedBall.Instructions.IInstructable.Call")
--   [FlatRedBall.Instructions.IInstructable.Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable.Instructions.md "FlatRedBall.Instructions.IInstructable.Instructions")
--   [FlatRedBall.Instructions.IInstructable.Set](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable.Set.md "FlatRedBall.Instructions.IInstructable.Set")
+-   [FlatRedBall.Instructions.IInstructable.Call](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable.Call "FlatRedBall.Instructions.IInstructable.Call")
+-   [FlatRedBall.Instructions.IInstructable.Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable.Instructions "FlatRedBall.Instructions.IInstructable.Instructions")
+-   [FlatRedBall.Instructions.IInstructable.Set](/frb/docs/index.php?title=FlatRedBall.Instructions.IInstructable.Set "FlatRedBall.Instructions.IInstructable.Set")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

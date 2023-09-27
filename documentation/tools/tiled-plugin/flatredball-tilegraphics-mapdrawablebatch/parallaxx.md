@@ -14,6 +14,6 @@ To set parallax:
 
     ![](/media/2022-08-img_630bb51ae5135.png)
 
-4.  Tiled provides a preview of the parallax if you scroll the main view [![](/wp-content/uploads/2022/08/28_12-34-43.gif.md)](/wp-content/uploads/2022/08/28_12-34-43.gif.md)
+4.  Tiled provides a preview of the parallax if you scroll the main view [![](/wp-content/uploads/2022/08/28_12-34-43.gif)](/wp-content/uploads/2022/08/28_12-34-43.gif)
 
-Once the file is saved, the parallax will automatically be applied at runtime in the game. [![](/wp-content/uploads/2022/08/28_12-36-06.gif.md)](/wp-content/uploads/2022/08/28_12-36-06.gif.md)
+Once the file is saved, the parallax will automatically be applied at runtime in the game. [![](/wp-content/uploads/2022/08/28_12-36-06.gif)](/wp-content/uploads/2022/08/28_12-36-06.gif)

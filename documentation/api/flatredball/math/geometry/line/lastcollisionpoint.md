@@ -1,4 +1,4 @@
-[FlatRedBall.Math.Geometry.Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line")
+[FlatRedBall.Math.Geometry.Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line")
 
 ## Introduction
 

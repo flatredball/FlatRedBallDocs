@@ -1,6 +1,6 @@
 ## Introduction
 
-The RemoveText method will remove the argument Text instance from the engine so it will no longer be drawn or have every-frame management applied. RemoveText also removes the Text from any [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList.md "FlatRedBall.Math.PositionedObjectList") that it is a part of (assuming a two-way relationship).
+The RemoveText method will remove the argument Text instance from the engine so it will no longer be drawn or have every-frame management applied. RemoveText also removes the Text from any [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList "FlatRedBall.Math.PositionedObjectList") that it is a part of (assuming a two-way relationship).
 
 ## Code Example
 
@@ -16,4 +16,4 @@ RemoveText can also remove entire lists:
     // clear textList if it is a two-way list.
     TextManager.RemoveText(textList);
 
-For more information see [AttachableLists](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList.md "FlatRedBall.Math.AttachableList").
+For more information see [AttachableLists](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList "FlatRedBall.Math.AttachableList").

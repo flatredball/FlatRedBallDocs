@@ -120,7 +120,7 @@ The ViewModel can be created in the FlatRedBall screen class, just like in the p
         }
         ...
 
-Like the previous tutorial, the add and remove buttons do not access any properties on the UI elements - only properties on the ViewModels are accessed. [![](/wp-content/uploads/2022/01/05_21-14-47.gif.md)](/wp-content/uploads/2022/01/05_21-14-47.gif.md)
+Like the previous tutorial, the add and remove buttons do not access any properties on the UI elements - only properties on the ViewModels are accessed. [![](/wp-content/uploads/2022/01/05_21-14-47.gif)](/wp-content/uploads/2022/01/05_21-14-47.gif)
 
 ### Forms.BindingContext
 

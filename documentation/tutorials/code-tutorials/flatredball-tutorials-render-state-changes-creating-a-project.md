@@ -74,7 +74,7 @@ Finally we'll add some reporting output to TextureTestScreen.cs. To do this:
 
     FlatRedBall.Debugging.Debugger.Write(debugMessage);
 
-This code uses the [TimeManager.SecondDifference](/frb/docs/index.php?title=FlatRedBall.TimeManager.SecondDifference.md "FlatRedBall.TimeManager.SecondDifference") to measure framerate. This will not return accurate framerate values if you do not turn off fixed time step and vsync (as done above). For more information, see the [TimeManager.SecondDifference page](/frb/docs/index.php?title=FlatRedBall.TimeManager.SecondDifference.md "FlatRedBall.TimeManager.SecondDifference").
+This code uses the [TimeManager.SecondDifference](/frb/docs/index.php?title=FlatRedBall.TimeManager.SecondDifference "FlatRedBall.TimeManager.SecondDifference") to measure framerate. This will not return accurate framerate values if you do not turn off fixed time step and vsync (as done above). For more information, see the [TimeManager.SecondDifference page](/frb/docs/index.php?title=FlatRedBall.TimeManager.SecondDifference "FlatRedBall.TimeManager.SecondDifference").
 
 ![BaselineRenderBreaks.png](/media/migrated_media-BaselineRenderBreaks.png) Although my screen shot reads 25 fps, the emulator actually was pegged at around 29 fps normally. Also, the engine currently creates two render breaks while rendering this frame. This is likely because of the Sprites creating one and the Text used to render the output creating a second. This small number doesn't matter so much. Render breaks can become an issue when dealing dozens or hundreds of render breaks, as we will show soon.
 

@@ -4,7 +4,7 @@ Windows RT supports a custom cursor. This article discusses how to modify the cu
 
 ## Setup
 
-This project assumes a working Windows RT project. It also assumes that the cursor is visible. For more information on making the cursor visible, see [this page](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsMouseVisible.md "Microsoft.Xna.Framework.Game.IsMouseVisible").
+This project assumes a working Windows RT project. It also assumes that the cursor is visible. For more information on making the cursor visible, see [this page](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsMouseVisible "Microsoft.Xna.Framework.Game.IsMouseVisible").
 
 ## Creating a C++ project to house the resource
 

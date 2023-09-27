@@ -23,4 +23,4 @@ The following code shows how to create AxisAlignedRectangles with the cursor. Th
         }
     }
 
-[![](/wp-content/uploads/2021/04/2021_April_06_215452.gif.md)](/wp-content/uploads/2021/04/2021_April_06_215452.gif.md)
+[![](/wp-content/uploads/2021/04/2021_April_06_215452.gif)](/wp-content/uploads/2021/04/2021_April_06_215452.gif)

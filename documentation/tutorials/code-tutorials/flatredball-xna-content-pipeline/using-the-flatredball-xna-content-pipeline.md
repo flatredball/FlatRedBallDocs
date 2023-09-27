@@ -6,7 +6,7 @@ The FlatRedBall.Content.dll library provides the functionality for converting va
 
 The following steps cover how to add a .scnx file to your project, load it from XNB at run time, then add the instance to the engine for management. Keep in mind that the process for adding any content is almost identical.
 
-1.  First, you will need a .scnx to load. I will use the official FlatRedBall splash screen which can be found [here](/frb/docs/images/2/2e/SplashScreen.zip.md "SplashScreen.zip").
+1.  First, you will need a .scnx to load. I will use the official FlatRedBall splash screen which can be found [here](/frb/docs/images/2/2e/SplashScreen.zip "SplashScreen.zip").
 2.  Next, create folders for the scene. It is common to create folders to hold assets in FlatRedBall XNA projects. Right click on your Content project which is embedded in your project (this should be present in all XNA projects), select Add-\>New Folder. Name the new folder Scenes. **The "Content" project should automatically exist in your project. It will have been created when you first made the FRB XNA template**. If not you may not be using FlatRedBall XNA. In that case, there is no built-in content pipeline support, so you may have to create your own. ![EmptyScenesInContent.png](/media/migrated_media-EmptyScenesInContent.png)
 3.  Navigate to the folder containing your .scnx file. Drag the .scnx file to your Content/Scenes folder in the Solution Explorer. The File should appear in your solution explorer. ![SceneInScenesFolder.png](/media/migrated_media-SceneInScenesFolder.png)
 4.  The folder where your .scnx was unzipped should also have a Frblogo.png file. Also drag this into the Scenes folder where your .scnx was dragged to in the last step. ![FrbLogoInScenesFolder.png](/media/migrated_media-FrbLogoInScenesFolder.png)
@@ -50,5 +50,5 @@ If you've followed the steps above but you are experiencing problems (such as a 
 
 ## Additional Information
 
--   [FlatRedBallServices wiki entry](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.md "FlatRedBall.FlatRedBallServices") - Includes information on the Load method.
--   [FlatRedBall Content Manager wiki entry](/frb/docs/index.php?title=FlatRedBall_Content_Manager.md "FlatRedBall Content Manager") - Includes information on loading using content managers.
+-   [FlatRedBallServices wiki entry](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices "FlatRedBall.FlatRedBallServices") - Includes information on the Load method.
+-   [FlatRedBall Content Manager wiki entry](/frb/docs/index.php?title=FlatRedBall_Content_Manager "FlatRedBall Content Manager") - Includes information on loading using content managers.

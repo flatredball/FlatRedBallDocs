@@ -2,7 +2,7 @@
 
 Pixel size (also referred to as PixelSize in FlatRedBall code) is a value that controls the relationship between the size of a Sprite and the texture that it is displaying.
 
-Pixel size controls scale, which is the measurement of a Sprite from its center to edge. For more information about pixel size, see [the PixelSize page](/frb/docs/index.php?title=FlatRedBall.Sprite.PixelSize.md).
+Pixel size controls scale, which is the measurement of a Sprite from its center to edge. For more information about pixel size, see [the PixelSize page](/frb/docs/index.php?title=FlatRedBall.Sprite.PixelSize).
 
 ## Changing pixel size
 

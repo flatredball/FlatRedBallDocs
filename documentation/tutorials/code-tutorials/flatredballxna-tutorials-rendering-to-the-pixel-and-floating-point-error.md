@@ -1,6 +1,6 @@
 ## Introduction
 
-If you've read the tutorial on [2D in FlatRedBall](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:2D_In_FlatRedBall.md "FlatRedBallXna:Tutorials:2D In FlatRedBall") then you're aware that FlatRedBall can handle pure 2D graphics. Unfortunately, even if you follow the information in that article it's still possible to experience graphical issues related to rendering 2D images which should be pixel-perfect.
+If you've read the tutorial on [2D in FlatRedBall](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:2D_In_FlatRedBall "FlatRedBallXna:Tutorials:2D In FlatRedBall") then you're aware that FlatRedBall can handle pure 2D graphics. Unfortunately, even if you follow the information in that article it's still possible to experience graphical issues related to rendering 2D images which should be pixel-perfect.
 
 These issues arise due to floating point inaccuracies. This article will discuss why these issues happen and how to resolve them.
 

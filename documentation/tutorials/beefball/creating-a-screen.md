@@ -46,7 +46,7 @@ The PlayerBallList object will contain all of the PlayerBalls we plan on adding 
 
 Once you have at least one Screen in your game (GameScreen), you can add Entity instances to that Screen. Entities can be added through the editor or through game code. The editor provides a number of ways to add an entity:
 
--   Drag+drop an entity on a screen to add an instance... [![](/wp-content/uploads/2016/01/03_08-28-03.gif.md)](/wp-content/uploads/2016/01/03_08-28-03.gif.md)
+-   Drag+drop an entity on a screen to add an instance... [![](/wp-content/uploads/2016/01/03_08-28-03.gif)](/wp-content/uploads/2016/01/03_08-28-03.gif)
 
 -   ... or add an instance to the GameScreen by selecting **PlayerBall** and clicking the **Add PlayerBall Instance to GameScreen** quick action. Note that this option will only exist if you have a Screen called GameScreen...
 
@@ -91,7 +91,7 @@ By default the center of the screen is at the origin (0,0), and objects are posi
 
 ![](/media/2023-09-img_65044991b53a6.png)
 
-For more information on how to control the screen's resolution and world units, see the FlatRedBall Resolution section: [/documentation/tools/glue-reference/camera.md](/documentation/tools/glue-reference/camera.md) For more information on how to control the Camera to change the center of the screen, see the Camera code reference: [/documentation/api/flatredball/flatredball-camera.md](/documentation/api/flatredball/flatredball-camera.md)
+For more information on how to control the screen's resolution and world units, see the FlatRedBall Resolution section: [https://flatredball.com/documentation/tools/glue-reference/camera/](/documentation/tools/glue-reference/camera.md) For more information on how to control the Camera to change the center of the screen, see the Camera code reference: [https://flatredball.com/documentation/api/flatredball/flatredball-camera/](/documentation/api/flatredball/flatredball-camera.md)
 
 ## Conclusion
 

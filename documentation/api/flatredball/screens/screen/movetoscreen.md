@@ -44,7 +44,7 @@ When the MoveToScreen method is called, the current Screen will be destroyed and
 -   Any files loaded through Glue for the current Screen or any Entities added to the Screen through Glue
 -   Any instances of Entities that have been added to Glue
 
-If you have added objects that should be destroyed (such as additional Entities) in your custom code, then you need to make sure to destroy these objects in your CustomInitialize. For more information on whether you need to destroy an Entity or not, and how to destroy Entities which must be destroyed manually, see [the Destroying Entities article](/frb/docs/index.php?title=Glue:Tutorials:Destroying_Entity_Instances.md "Glue:Tutorials:Destroying Entity Instances").
+If you have added objects that should be destroyed (such as additional Entities) in your custom code, then you need to make sure to destroy these objects in your CustomInitialize. For more information on whether you need to destroy an Entity or not, and how to destroy Entities which must be destroyed manually, see [the Destroying Entities article](/frb/docs/index.php?title=Glue:Tutorials:Destroying_Entity_Instances "Glue:Tutorials:Destroying Entity Instances").
 
 ## "The Screen that was just unloaded did not clean up after itself" Exception
 
@@ -52,4 +52,4 @@ For more information on this error and how to clean it up, see [Cleaning Up Scre
 
 ## Passing information to new Screens
 
-The MoveToScreen method has only one parameter - the Screen to move to. It does not accept additional parameters. For information on how to pass additional information to new Screens, see the the [Proper Information Access](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access.md "Glue:Tutorials:Proper Information Access") tutorial.
+The MoveToScreen method has only one parameter - the Screen to move to. It does not accept additional parameters. For information on how to pass additional information to new Screens, see the the [Proper Information Access](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access "Glue:Tutorials:Proper Information Access") tutorial.

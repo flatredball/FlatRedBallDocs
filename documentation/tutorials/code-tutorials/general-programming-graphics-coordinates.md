@@ -2,7 +2,7 @@
 
 When dealing with 3D graphics, most API calls attempt to abstract out the pixel. What that means is that usually no calls directly reference pixels - rather - they use values which represent ratios.
 
-For example, consider [TextureCoordinates](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureCoordinate.md "FlatRedBall.Sprite.TextureCoordinate"). When referending [TextureCoordinates](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureCoordinate.md "FlatRedBall.Sprite.TextureCoordinate") you do not specify pixel values. Instead, the left edge of a texture has a coordinate of 0 and the right edge has a coordinate of 1 regardless of the actual dimensions of the memory buffer which makes up the Texture, or regardless of the source image which was used to create the Texture.
+For example, consider [TextureCoordinates](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureCoordinate "FlatRedBall.Sprite.TextureCoordinate"). When referending [TextureCoordinates](/frb/docs/index.php?title=FlatRedBall.Sprite.TextureCoordinate "FlatRedBall.Sprite.TextureCoordinate") you do not specify pixel values. Instead, the left edge of a texture has a coordinate of 0 and the right edge has a coordinate of 1 regardless of the actual dimensions of the memory buffer which makes up the Texture, or regardless of the source image which was used to create the Texture.
 
 Similarly, screen coordinates by default are independent of pixels. Pixels and screen coordinates \*\*\*can\*\*\* line up \*\*\*if\*\*\* the projection matrices are set up, but a shader which does not have any matrices set or modified will use not consider pixel coordinates.
 

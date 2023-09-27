@@ -128,7 +128,7 @@ CustomInitialize always runs before an InputDevice is assigned. We want our shoo
 
 ## shootingInput.WasJustPressed
 
-Finally, we check our shootingInput.WasJustPressed to see if the user just pushed the input. If so, we create a bullet and set its XVelocity according to the direction that the Player is facing. If we run our game now, we can shoot bullets in the direction we're facing. [![](/wp-content/uploads/2021/04/2021_April_19_204105.gif.md)](/wp-content/uploads/2021/04/2021_April_19_204105.gif.md)
+Finally, we check our shootingInput.WasJustPressed to see if the user just pushed the input. If so, we create a bullet and set its XVelocity according to the direction that the Player is facing. If we run our game now, we can shoot bullets in the direction we're facing. [![](/wp-content/uploads/2021/04/2021_April_19_204105.gif)](/wp-content/uploads/2021/04/2021_April_19_204105.gif)
 
 ## Destroying Bullets
 
@@ -136,7 +136,7 @@ Currently, our bullets can move through walls and enemies. First we'll add colli
 
 1.  Expand the **GameScreen** **Objects** folder
 
-2.  Drag **BulletList** onto **SolidCollision** to create a new collision relationship [![](/wp-content/uploads/2021/04/2021_April_19_202908.gif.md)](/wp-content/uploads/2021/04/2021_April_19_202908.gif.md)
+2.  Drag **BulletList** onto **SolidCollision** to create a new collision relationship [![](/wp-content/uploads/2021/04/2021_April_19_202908.gif)](/wp-content/uploads/2021/04/2021_April_19_202908.gif)
 
 3.  Select the new **BulletListVsSolidCollision** relationship
 
@@ -164,7 +164,7 @@ Now we can destroy the bullet whenever the event occurs:
         first.Destroy();    
     }
 
-Now we can shoot bullets and they will get destroyed when they hit the wall. [![](/wp-content/uploads/2021/04/2021_April_19_202018-1.gif.md)](/wp-content/uploads/2021/04/2021_April_19_202018-1.gif.md)  
+Now we can shoot bullets and they will get destroyed when they hit the wall. [![](/wp-content/uploads/2021/04/2021_April_19_202018-1.gif)](/wp-content/uploads/2021/04/2021_April_19_202018-1.gif)  
 
 ## Conclusion
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-Xna's Model class is the class that's used to draw 3D geometry. Usually in FlatRedBall this object is contained within a [PositionedModel](/frb/docs/index.php?title=FlatRedBall.Graphics.Model.PositionedModel.md "FlatRedBall.Graphics.Model.PositionedModel") and is accessed by the [PositionedModel's](/frb/docs/index.php?title=FlatRedBall.Graphics.Model.PositionedModel.md "FlatRedBall.Graphics.Model.PositionedModel") XnaModel property.
+Xna's Model class is the class that's used to draw 3D geometry. Usually in FlatRedBall this object is contained within a [PositionedModel](/frb/docs/index.php?title=FlatRedBall.Graphics.Model.PositionedModel "FlatRedBall.Graphics.Model.PositionedModel") and is accessed by the [PositionedModel's](/frb/docs/index.php?title=FlatRedBall.Graphics.Model.PositionedModel "FlatRedBall.Graphics.Model.PositionedModel") XnaModel property.
 
 ## Setting Effects
 

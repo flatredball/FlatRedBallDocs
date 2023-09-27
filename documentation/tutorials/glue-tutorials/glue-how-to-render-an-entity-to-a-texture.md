@@ -8,8 +8,8 @@ You may want to render an Entity to a texture for a number of reasons:
 
 -   Enable visual effects on an entire entity such as transparency or color operations
 -   Enable scaling of an entire Entity by rendering it with a single Sprite
--   Improve performance by [reducing render breaks](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Render_State_Changes.md "FlatRedBallXna:Tutorials:Render State Changes")
--   Improve performance by [reducing the number of managed objects](/frb/docs/index.php?title=FlatRedballXna:Tutorials:Manually_Updated_Objects:Measuring_Automatic_Updates.md "FlatRedballXna:Tutorials:Manually Updated Objects:Measuring Automatic Updates")
+-   Improve performance by [reducing render breaks](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Render_State_Changes "FlatRedBallXna:Tutorials:Render State Changes")
+-   Improve performance by [reducing the number of managed objects](/frb/docs/index.php?title=FlatRedballXna:Tutorials:Manually_Updated_Objects:Measuring_Automatic_Updates "FlatRedballXna:Tutorials:Manually Updated Objects:Measuring Automatic Updates")
 -   Render FlatRedBall Entities in XNA SpriteBatch or other non-FlatRedBall rendering environment/engine.
 
 ## Setup

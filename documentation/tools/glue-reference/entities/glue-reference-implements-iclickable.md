@@ -1,6 +1,6 @@
 ## Introduction
 
-The Implements IClickable property is a property that controls whether the Entity has a HasCursorOver  method. In other words, Entities which are IClickable can be tested to see if the user has highlighed or clicked an object with the [Cursor](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.md "FlatRedBall.Gui.Cursor")
+The Implements IClickable property is a property that controls whether the Entity has a HasCursorOver  method. In other words, Entities which are IClickable can be tested to see if the user has highlighed or clicked an object with the [Cursor](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor "FlatRedBall.Gui.Cursor")
 
 ## Setting IClickable
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-LoadStaticContent is a generated method which is automatically called when a Screen/Entity is created. By default this method does not ever need to be called manually; however it can be called manually to preload content. If an Entity is part of a Screen in Glue, then its LoadStaticContent is automatically called. If the Entity is either not part of the Screen, or if it is going to be created by custom code then the LoadStaticContent can be called in custom code to pre-load the content. LoadStaticContent internally calls [CustomLoadStaticContent](/frb/docs/index.php?title=Glue:Reference:Screens:CustomLoadStaticContent.md "Glue:Reference:Screens:CustomLoadStaticContent").
+LoadStaticContent is a generated method which is automatically called when a Screen/Entity is created. By default this method does not ever need to be called manually; however it can be called manually to preload content. If an Entity is part of a Screen in Glue, then its LoadStaticContent is automatically called. If the Entity is either not part of the Screen, or if it is going to be created by custom code then the LoadStaticContent can be called in custom code to pre-load the content. LoadStaticContent internally calls [CustomLoadStaticContent](/frb/docs/index.php?title=Glue:Reference:Screens:CustomLoadStaticContent "Glue:Reference:Screens:CustomLoadStaticContent").
 
 ## When to call LoadStaticContent
 
@@ -25,7 +25,7 @@ The contentManagerName argument specifies which content manager to use to load t
 
 ## This type has been loaded with a global content manager, then loaded with a non-global. This can lead to a lot of bugs
 
-Calling LoadStaticContent with a [global content manager](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.GlobalContentManager.md "FlatRedBall.FlatRedBallServices.GlobalContentManager") will load the Screen/Entity into the global content manager. This content will never be unloaded. If a Screen/Entity is loaded into a global content manager, then later into a non-global content manager, then generated code will throw an exception. The two reasons for this exception are:
+Calling LoadStaticContent with a [global content manager](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.GlobalContentManager "FlatRedBall.FlatRedBallServices.GlobalContentManager") will load the Screen/Entity into the global content manager. This content will never be unloaded. If a Screen/Entity is loaded into a global content manager, then later into a non-global content manager, then generated code will throw an exception. The two reasons for this exception are:
 
 1.  Loading in global content manager, then non-global results in two times as much memory being used for content. Since the global content is already in memory, there is no reason to use non-global content for a Screen/Entity that has used global content.
 2.  Entities and Screens which do not use global content will set their file references to null after their respective content managers are unloaded. However, if entities use global content, then file references are not set to null. This conflict of behavior may result in global content being nulled-out, causing difficult-to-debug crashes in your game.

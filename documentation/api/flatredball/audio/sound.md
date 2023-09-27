@@ -1,6 +1,6 @@
 ## Introduction
 
-The Sound class is used to manage and play a sound cue. It can be obtained from the [AudioManager](/frb/docs/index.php?title=FlatRedBall.Audio.AudioManager.md "FlatRedBall.Audio.AudioManager") using the GetSound(CueName) method.
+The Sound class is used to manage and play a sound cue. It can be obtained from the [AudioManager](/frb/docs/index.php?title=FlatRedBall.Audio.AudioManager "FlatRedBall.Audio.AudioManager") using the GetSound(CueName) method.
 
 ## Sound Control
 

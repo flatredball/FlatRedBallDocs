@@ -1,6 +1,6 @@
 ## Introduction
 
-The GetRay method can be used to get a Ray representing objects which the Cursor is over. This Ray can be used for complex object picking, and will work even when the Camera is rotated, unlike the [WorldXAt](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.WorldXAt.md "FlatRedBall.Gui.Cursor.WorldXAt") and [WorldYAt](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.WorldXAt.md "FlatRedBall.Gui.Cursor.WorldXAt") methods.
+The GetRay method can be used to get a Ray representing objects which the Cursor is over. This Ray can be used for complex object picking, and will work even when the Camera is rotated, unlike the [WorldXAt](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.WorldXAt "FlatRedBall.Gui.Cursor.WorldXAt") and [WorldYAt](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.WorldXAt "FlatRedBall.Gui.Cursor.WorldXAt") methods.
 
 ## Code Example
 
@@ -34,4 +34,4 @@ The following code shows how the GetRay function can be used to get a Ray repres
 
 ## Community Code
 
-[Mouse world coordinates for a rotated Camera by Scott Dancer](/frb/docs/index.php?title=ScottDancer:Mouse_World_Coordinates_for_a_Rotated_Camera.md "ScottDancer:Mouse World Coordinates for a Rotated Camera")
+[Mouse world coordinates for a rotated Camera by Scott Dancer](/frb/docs/index.php?title=ScottDancer:Mouse_World_Coordinates_for_a_Rotated_Camera "ScottDancer:Mouse World Coordinates for a Rotated Camera")

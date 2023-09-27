@@ -12,7 +12,7 @@ This produces the following code in GlobalContent:
 
     public static Microsoft.Xna.Framework.Graphics.Texture2D InFolderTexture { get; set; }
 
-Notice the name in code does not include Folder1. If this file is copied into Folder2, the FlatRedBall Editor renames the copy as to avoid naming conflicts. [![](/wp-content/uploads/2023/02/07_06-33-51.gif.md)](/wp-content/uploads/2023/02/07_06-33-51.gif.md) The generated code matches the name:
+Notice the name in code does not include Folder1. If this file is copied into Folder2, the FlatRedBall Editor renames the copy as to avoid naming conflicts. [![](/wp-content/uploads/2023/02/07_06-33-51.gif)](/wp-content/uploads/2023/02/07_06-33-51.gif) The generated code matches the name:
 
     public static Microsoft.Xna.Framework.Graphics.Texture2D InFolderTexture { get; set; }
     public static Microsoft.Xna.Framework.Graphics.Texture2D InFolderTexture1 { get; set; }
@@ -25,7 +25,7 @@ Once this is set, the property generated includes the Folder1 prefix:
 
     public static Microsoft.Xna.Framework.Graphics.Texture2D Folder1_InFolderTexture { get; set; }
 
-This allows the same-named files to exist in different directories, because they will ultimately produce different property names. For example, copying the InFolderTexture.png file into Folder2 now results in the file copied without being renamed. [![](/wp-content/uploads/2023/02/07_06-45-05.gif.md)](/wp-content/uploads/2023/02/07_06-45-05.gif.md) Each property is now uniquely qualified by its folder.
+This allows the same-named files to exist in different directories, because they will ultimately produce different property names. For example, copying the InFolderTexture.png file into Folder2 now results in the file copied without being renamed. [![](/wp-content/uploads/2023/02/07_06-45-05.gif)](/wp-content/uploads/2023/02/07_06-45-05.gif) Each property is now uniquely qualified by its folder.
 
     public static Microsoft.Xna.Framework.Graphics.Texture2D Folder1_InFolderTexture { get; set; }
     public static Microsoft.Xna.Framework.Graphics.Texture2D Folder2_InFolderTexture { get; set; }

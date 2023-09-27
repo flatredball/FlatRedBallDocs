@@ -8,7 +8,7 @@ Although IWindow can be implemented manually in code, the IWindow interface is m
 
 ## IWindow Members
 
--   [FlatRedBall.Gui.IWindow.CallClick](/frb/docs/index.php?title=FlatRedBall.Gui.IWindow.CallClick.md "FlatRedBall.Gui.IWindow.CallClick")
--   [FlatRedBall.Gui.IWindow.Enabled](/frb/docs/index.php?title=FlatRedBall.Gui.IWindow.Enabled.md "FlatRedBall.Gui.IWindow.Enabled")
+-   [FlatRedBall.Gui.IWindow.CallClick](/frb/docs/index.php?title=FlatRedBall.Gui.IWindow.CallClick "FlatRedBall.Gui.IWindow.CallClick")
+-   [FlatRedBall.Gui.IWindow.Enabled](/frb/docs/index.php?title=FlatRedBall.Gui.IWindow.Enabled "FlatRedBall.Gui.IWindow.Enabled")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

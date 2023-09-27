@@ -13,7 +13,7 @@ The requirements for this example are:
 There are currently a few known issues regarding using FRB in a windows form.
 
 -   Mouse position also updates outside the form.
--   Method [FlatRedBall.Input.Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.Input.Mouse").IsInGameWindow() can incorrectly return true whilst the cursor is outside the window.
+-   Method [FlatRedBall.Input.Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse").IsInGameWindow() can incorrectly return true whilst the cursor is outside the window.
 
 ## Creating a new Project
 

@@ -4,7 +4,7 @@ The AddSafe method is a thread-safe way to add instructions to the engine. Typic
 
 ## Code Example
 
-The AddSafe method takes an [Instruction](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.md "FlatRedBall.Instructions.Instruction") argument. The following code shows how to call AddSafe assuming you have a valid [Instruction](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.md "FlatRedBall.Instructions.Instruction").
+The AddSafe method takes an [Instruction](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction") argument. The following code shows how to call AddSafe assuming you have a valid [Instruction](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction").
 
     // Assumes instructionToAdd is a valid Instruction
     InstructionManager.AddSafe(instructionToAdd);

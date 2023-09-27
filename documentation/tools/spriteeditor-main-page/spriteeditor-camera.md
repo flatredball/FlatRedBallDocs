@@ -2,13 +2,13 @@ This article is written for the September 2007 (and later) release of the Sprite
 
 ## Creating a 2D Scene
 
-Although the SpriteEditor is made for editing [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") it displays a 3D view by default. Many users are surprised to find that two [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") which reference [Textures](/frb/docs/index.php?title=Texture.md "Texture") of different sizes will by default appear to be the same size in the SpriteEditor. The reason for this is because the [Scale](/frb/docs/index.php?title=Scale.md) properties are dominant for determining the size of [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite"), not the [Sprite's](/frb/docs/index.php?title=Sprite.md "Sprite") source [Texture](/frb/docs/index.php?title=Texture.md "Texture"). However, it is still possible to tie a [Sprite's](/frb/docs/index.php?title=Sprite.md "Sprite") size to its source [Texture](/frb/docs/index.php?title=Texture.md "Texture"). This is the first step in creating a traditional 2D scene.
+Although the SpriteEditor is made for editing [Sprites](/frb/docs/index.php?title=Sprite "Sprite") it displays a 3D view by default. Many users are surprised to find that two [Sprites](/frb/docs/index.php?title=Sprite "Sprite") which reference [Textures](/frb/docs/index.php?title=Texture "Texture") of different sizes will by default appear to be the same size in the SpriteEditor. The reason for this is because the [Scale](/frb/docs/index.php?title=Scale) properties are dominant for determining the size of [Sprites](/frb/docs/index.php?title=Sprite "Sprite"), not the [Sprite's](/frb/docs/index.php?title=Sprite "Sprite") source [Texture](/frb/docs/index.php?title=Texture "Texture"). However, it is still possible to tie a [Sprite's](/frb/docs/index.php?title=Sprite "Sprite") size to its source [Texture](/frb/docs/index.php?title=Texture "Texture"). This is the first step in creating a traditional 2D scene.
 
 ### Pixel Size
 
-To set the [Sprite's](/frb/docs/index.php?title=Sprite.md "Sprite") [Scale](/frb/docs/index.php?title=Scale.md) based on its source [Texture](/frb/docs/index.php?title=Texture.md "Texture"), it can be manually set in the SpriteEditor through the properties window; however this can become tedious for large numbers of Sprites. Instead, the scale relative to texture size - also known as pixel size - can be set across the scene.
+To set the [Sprite's](/frb/docs/index.php?title=Sprite "Sprite") [Scale](/frb/docs/index.php?title=Scale) based on its source [Texture](/frb/docs/index.php?title=Texture "Texture"), it can be manually set in the SpriteEditor through the properties window; however this can become tedious for large numbers of Sprites. Instead, the scale relative to texture size - also known as pixel size - can be set across the scene.
 
-To access this value, click on the Window menu item -\> Editor Properties. The default pixel size is 0 which tells the SpriteEditor to ignore source texture when setting [Scale](/frb/docs/index.php?title=Scale.md).
+To access this value, click on the Window menu item -\> Editor Properties. The default pixel size is 0 which tells the SpriteEditor to ignore source texture when setting [Scale](/frb/docs/index.php?title=Scale).
 
 Since
 
@@ -18,7 +18,7 @@ and
 
     ScaleY * 2 = Height
 
-Then we know that if a [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") should match its [Texture's](/frb/docs/index.php?title=Texture.md "Texture") width and height, then its ScaleX should be half of its source [Texture's](/frb/docs/index.php?title=Texture.md "Texture") width and ScaleY should be half of its source [Texture's](/frb/docs/index.php?title=Texture.md "Texture") height. That is:
+Then we know that if a [Sprite](/frb/docs/index.php?title=Sprite "Sprite") should match its [Texture's](/frb/docs/index.php?title=Texture "Texture") width and height, then its ScaleX should be half of its source [Texture's](/frb/docs/index.php?title=Texture "Texture") width and ScaleY should be half of its source [Texture's](/frb/docs/index.php?title=Texture "Texture") height. That is:
 
     ScaleX = TextureWidth * .5
     ScaleY = TextureHeight * .5
@@ -43,4 +43,4 @@ If the camera is zoomed in the blue bounds may not be visible. Change the camera
 
 ### Filtering
 
-Filtering is used to blur textures and reduce the pixellated look when a [Sprite](/frb/docs/index.php?title=Sprite.md "Sprite") is viewed closely. While this can improve the appearance of Sprites in a 3D scene it can reduce the crisp look of Sprites when drawn in 2D, and also has a slight impact on performance. Filtering can be turned off for 2D scenes through the Editor Properties window which is accessed through the Window menu item -\> Editor Properties.
+Filtering is used to blur textures and reduce the pixellated look when a [Sprite](/frb/docs/index.php?title=Sprite "Sprite") is viewed closely. While this can improve the appearance of Sprites in a 3D scene it can reduce the crisp look of Sprites when drawn in 2D, and also has a slight impact on performance. Filtering can be turned off for 2D scenes through the Editor Properties window which is accessed through the Window menu item -\> Editor Properties.

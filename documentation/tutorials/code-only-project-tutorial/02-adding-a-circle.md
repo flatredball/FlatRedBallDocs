@@ -70,7 +70,7 @@ To add a circle whenever the mouse is clicked, we will use the Cursor class to d
         base.Update(gameTime);
     }
 
-[![](/wp-content/uploads/2019/10/18_08-40-34.gif.md)](/wp-content/uploads/2019/10/18_08-40-34.gif.md)
+[![](/wp-content/uploads/2019/10/18_08-40-34.gif)](/wp-content/uploads/2019/10/18_08-40-34.gif)
 
 ## Circle Movement
 
@@ -100,4 +100,4 @@ Circles (and most other FlatRedBall objects) can be positioned directly by setti
         base.Update(gameTime);
     }
 
-The circles will now move to the right and up, but fall naturally. [![](/wp-content/uploads/2019/10/18_08-44-03.gif.md)](/wp-content/uploads/2019/10/18_08-44-03.gif.md) Notice that the velocity and acceleration values apply automatically once they are assigned. The ShapeManager keeps track of all Circles and applies these values every frame. For more information on working with the Circle object in code, see the [Circle page](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-circle.md).
+The circles will now move to the right and up, but fall naturally. [![](/wp-content/uploads/2019/10/18_08-44-03.gif)](/wp-content/uploads/2019/10/18_08-44-03.gif) Notice that the velocity and acceleration values apply automatically once they are assigned. The ShapeManager keeps track of all Circles and applies these values every frame. For more information on working with the Circle object in code, see the [Circle page](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-circle.md).

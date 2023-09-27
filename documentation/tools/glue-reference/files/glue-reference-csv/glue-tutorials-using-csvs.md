@@ -86,7 +86,7 @@ There are a few things to note in the code above:
 
 ## Additional Information
 
-This tutorial covers the basics of using CSVs. There's a lot of functionality in CSVs and special syntax that you can use to achieve things like Lists of primitives inside each instance that is deserialized. For more information, check out the [CsvFileManager page](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager.md "FlatRedBall.IO.Csv.CsvFileManager").
+This tutorial covers the basics of using CSVs. There's a lot of functionality in CSVs and special syntax that you can use to achieve things like Lists of primitives inside each instance that is deserialized. For more information, check out the [CsvFileManager page](/frb/docs/index.php?title=FlatRedBall.IO.Csv.CsvFileManager "FlatRedBall.IO.Csv.CsvFileManager").
 
 ## Conclusion
 

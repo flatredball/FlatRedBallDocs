@@ -1,6 +1,6 @@
 ## Introduction
 
-IsOn returns whether the calling Cursor is over a given object. This function will not behave properly if the Camera is not viewing down the Z axis (default). If you have a rotated Camera, then you should use IsOn3D. This function does a position check - it does not consider if anything is covering the argument, or if the Cursor is over any other UI component. For more information on checking of the Cursor is over UI (as a test before performing IsOn checks), see the [WindowOver](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.WindowOver.md "FlatRedBall.Gui.Cursor.WindowOver") page.
+IsOn returns whether the calling Cursor is over a given object. This function will not behave properly if the Camera is not viewing down the Z axis (default). If you have a rotated Camera, then you should use IsOn3D. This function does a position check - it does not consider if anything is covering the argument, or if the Cursor is over any other UI component. For more information on checking of the Cursor is over UI (as a test before performing IsOn checks), see the [WindowOver](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.WindowOver "FlatRedBall.Gui.Cursor.WindowOver") page.
 
 ## IsOn(Layer)
 

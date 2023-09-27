@@ -1,8 +1,8 @@
 ## Introduction
 
-The Points property is an array of [Point](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Point.md "FlatRedBall.Math.Geometry.Point") values which contain the position of each point on the polygon. These values are in "object space". In other words, they are relative to the containing Polygon's position and rotation values.
+The Points property is an array of [Point](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Point "FlatRedBall.Math.Geometry.Point") values which contain the position of each point on the polygon. These values are in "object space". In other words, they are relative to the containing Polygon's position and rotation values.
 
-The Points property can be assigned - this essentially changes the shape of the Polygon. This is a more-efficient and often more-convenient way to change a Polygon rather than to construct a new one if your game requires dynamic shapes. For more information, see [this section](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon#Creating_a_Polygon.md "FlatRedBall.Math.Geometry.Polygon").
+The Points property can be assigned - this essentially changes the shape of the Polygon. This is a more-efficient and often more-convenient way to change a Polygon rather than to construct a new one if your game requires dynamic shapes. For more information, see [this section](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon#Creating_a_Polygon "FlatRedBall.Math.Geometry.Polygon").
 
 ## Code Example - Setting Points
 
@@ -27,9 +27,9 @@ The Points property can be assigned - this essentially changes the shape of the 
 
 The values in the Points array are all relative to the containing Polygon. This means that if the Polygon moves or rotates, the values stored in the Points property will remain the same.
 
-To retrieve the absolute position of each [Point](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Point.md "FlatRedBall.Math.Geometry.Point"), the relative points must be converted into world (or absolute) coordinates.
+To retrieve the absolute position of each [Point](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Point "FlatRedBall.Math.Geometry.Point"), the relative points must be converted into world (or absolute) coordinates.
 
-The following code creates a Polygon which spins automatically and is repositioned based off of [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard") activity. Three [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") are positioned in the world coordinates of each of the Polygon's points in the Update method. Since the [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") are being positioned in world space, the position of the points must be converted to world space so that the [Sprites](/frb/docs/index.php?title=Sprite.md "Sprite") appear in the proper position.
+The following code creates a Polygon which spins automatically and is repositioned based off of [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard") activity. Three [Sprites](/frb/docs/index.php?title=Sprite "Sprite") are positioned in the world coordinates of each of the Polygon's points in the Update method. Since the [Sprites](/frb/docs/index.php?title=Sprite "Sprite") are being positioned in world space, the position of the points must be converted to world space so that the [Sprites](/frb/docs/index.php?title=Sprite "Sprite") appear in the proper position.
 
 Add the following using statements:
 

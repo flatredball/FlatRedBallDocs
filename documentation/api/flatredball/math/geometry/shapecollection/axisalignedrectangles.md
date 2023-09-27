@@ -1,6 +1,6 @@
 ## Introduction
 
-The AxisAlignedRectangles property is a property of type [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList.md "FlatRedBall.Math.PositionedObjectList"). Therefore, you can use this member the same way you would use a PositionedObjectList\<AxisAlignedRectangle\>.
+The AxisAlignedRectangles property is a property of type [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList "FlatRedBall.Math.PositionedObjectList"). Therefore, you can use this member the same way you would use a PositionedObjectList\<AxisAlignedRectangle\>.
 
 ## Code Example
 

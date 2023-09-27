@@ -4,16 +4,16 @@ The RelativeX and RelativeY values in an AnimationFrame can be used to offset an
 
 ## Requirements for use
 
-Simply setting the RelativeX and RelativeY values on an AnimationFrame is not sufficient to change the position of an [IAnimationChainAnimatable](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.md "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable") (such as a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). The following conditions must be met:
+Simply setting the RelativeX and RelativeY values on an AnimationFrame is not sufficient to change the position of an [IAnimationChainAnimatable](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable") (such as a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). The following conditions must be met:
 
--   The object (such as the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite")) that is displaying the animation must be attached to another PositionedObject.
--   The [UseAnimationRelativePosition](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.md.UseAnimationRelativePosition "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.UseAnimationRelativePosition") property must be true.
+-   The object (such as the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite")) that is displaying the animation must be attached to another PositionedObject.
+-   The [UseAnimationRelativePosition](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.UseAnimationRelativePosition "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.UseAnimationRelativePosition") property must be true.
 
 If you are using objects created in Glue, then both of the above will usually be true.
 
 ## Example
 
-The following code creates an AnimationFrame which displays the four quadrants of a redball.bmp graphic, then displays it in its entirety. The RelativeX and RelativeY values are used to offset the frames which display a single quadrant. Notice that the animated [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") must be attached to an object and that the [Sprite's](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") UseAnimationRelativePosition property must be set to true.
+The following code creates an AnimationFrame which displays the four quadrants of a redball.bmp graphic, then displays it in its entirety. The RelativeX and RelativeY values are used to offset the frames which display a single quadrant. Notice that the animated [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") must be attached to an object and that the [Sprite's](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") UseAnimationRelativePosition property must be set to true.
 
     // Create the animationChain
     AnimationChain animationChain = new AnimationChain();

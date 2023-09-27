@@ -4,7 +4,7 @@ Now that the game is somewhat playable - bullets destroy rocks and the player ca
 
 ## Downloading Gum
 
-Before we begin, you must have Gum downloaded on your machine. You can [download Gum here](/content/Tools/Gum/Gum.zip.md). For more information on Gum, see the [Gum website](http://gumui.net/). You will also want to set up the Gum tool association with the .gumx and .gusx files. For information on how to do that, see the [first Gum tutorial](/documentation/tools/gum/gum-tutorials/tutorials-gum-introduction-and-setup.md).
+Before we begin, you must have Gum downloaded on your machine. You can [download Gum here](/content/Tools/Gum/Gum.zip). For more information on Gum, see the [Gum website](http://gumui.net/). You will also want to set up the Gum tool association with the .gumx and .gusx files. For information on how to do that, see the [first Gum tutorial](/documentation/tools/gum/gum-tutorials/tutorials-gum-introduction-and-setup.md).
 
 ## Creating a Text Instance in Gum
 
@@ -22,7 +22,7 @@ Gum follows many of the same concepts as Glue, but it is primarily a visual tool
 2.  Drag+drop the Text object onto the GameScreenGum
 3.  Adjust the position of the Text to its desired location in the Editor window
 
-[![](/wp-content/uploads/2016/01/2021_March_13_200519.gif.md)](/wp-content/uploads/2016/01/2021_March_13_200519.gif.md)   That's all there is to it! Gum automatically saves all changes, and Glue (if open) automatically reacts to these file changes, so we can run the game and see the **Hello** TextInstance right away.
+[![](/wp-content/uploads/2016/01/2021_March_13_200519.gif)](/wp-content/uploads/2016/01/2021_March_13_200519.gif)   That's all there is to it! Gum automatically saves all changes, and Glue (if open) automatically reacts to these file changes, so we can run the game and see the **Hello** TextInstance right away.
 
 ![](/media/2021-03-img_604d810fec276.png)
 
@@ -38,7 +38,7 @@ To access the TextInstance which is inside GameScreenGum:
 2.  Use the **Source Name** dropdown to select **TextInstance**
 3.  Click **OK**
 
-[![](/wp-content/uploads/2016/01/2021_March_13_200727.gif.md)](/wp-content/uploads/2016/01/2021_March_13_200727.gif.md) We can access the TextInstance in code and change any of its variables. For example, we can change the Text property in CustomActivity. As a test, open GameScreen.cs and add the following code in CustomActivity:
+[![](/wp-content/uploads/2016/01/2021_March_13_200727.gif)](/wp-content/uploads/2016/01/2021_March_13_200727.gif) We can access the TextInstance in code and change any of its variables. For example, we can change the Text property in CustomActivity. As a test, open GameScreen.cs and add the following code in CustomActivity:
 
     void CustomActivity(bool firstTimeCalled)
     {
@@ -49,7 +49,7 @@ To access the TextInstance which is inside GameScreenGum:
 
 ## Where to store player score
 
-Now that the TextInstance can display a score, we need to actually keep track of the score so we can display it. We need to decide where to keep the score. As outlined in [this article](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access.md "Glue:Tutorials:Proper Information Access") information such as the player's score should not be tied to any Screen or Entity. Rather, it should be stored independently and globally as an object contained in GlobalData. We'll create two classes to store our data:
+Now that the TextInstance can display a score, we need to actually keep track of the score so we can display it. We need to decide where to keep the score. As outlined in [this article](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access "Glue:Tutorials:Proper Information Access") information such as the player's score should not be tied to any Screen or Entity. Rather, it should be stored independently and globally as an object contained in GlobalData. We'll create two classes to store our data:
 
 1.  PlayerData
 2.  GlobalData

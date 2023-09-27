@@ -1,6 +1,6 @@
 ## Introduction
 
-[Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") object added through Glue will use the default FlatRedBall font. This section will show you how to change the font to a custom font file. Any font which is installed on your machine can be used as a font in the game. Fonts which are installed on your machine must be convered to [BitmapFonts](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont.md "FlatRedBall.Graphics.BitmapFont"). Bitmap fonts are represented as .fnt files.
+[Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object added through Glue will use the default FlatRedBall font. This section will show you how to change the font to a custom font file. Any font which is installed on your machine can be used as a font in the game. Fonts which are installed on your machine must be convered to [BitmapFonts](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont "FlatRedBall.Graphics.BitmapFont"). Bitmap fonts are represented as .fnt files.
 
 Glue enables you to create bitmap fonts and to use them on Text objects with no code at all. Of course, anything that is done in Glue can also be done completely in code.
 
@@ -27,7 +27,7 @@ To create a Text object:
 
 ## Creating a .fnt file
 
-FlatRedBall uses the .fnt file format created by [Angelcode Bitmap Font Generator](http://www.angelcode.com/products/bmfont/). To create a .fnt file, see [this page](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont.md#Creating_a_BitmapFont "FlatRedBall.Graphics.BitmapFont").
+FlatRedBall uses the .fnt file format created by [Angelcode Bitmap Font Generator](http://www.angelcode.com/products/bmfont/). To create a .fnt file, see [this page](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont#Creating_a_BitmapFont "FlatRedBall.Graphics.BitmapFont").
 
 Once you have created a .fnt file:
 

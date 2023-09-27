@@ -1,6 +1,6 @@
 ## Introduction
 
-The ICodeGeneratorPlugin interface allows you to create plugins that generate code. Not only can these plugins create new code files, but you can also insert your own code into the .Generated.cs file that is created by Glue normally. Injecting custom code into the .Generated.cs file is done through the use of [ElementComponentCodeGenerator](/frb/docs/index.php?title=FlatRedBall.Glue.CodeGeneration.ElementComponentCodeGenerator&action=edit&redlink=1.md "FlatRedBall.Glue.CodeGeneration.ElementComponentCodeGenerator (page does not exist)").
+The ICodeGeneratorPlugin interface allows you to create plugins that generate code. Not only can these plugins create new code files, but you can also insert your own code into the .Generated.cs file that is created by Glue normally. Injecting custom code into the .Generated.cs file is done through the use of [ElementComponentCodeGenerator](/frb/docs/index.php?title=FlatRedBall.Glue.CodeGeneration.ElementComponentCodeGenerator&action=edit&redlink=1 "FlatRedBall.Glue.CodeGeneration.ElementComponentCodeGenerator (page does not exist)").
 
 ## Adding a custom class to your project
 
@@ -87,7 +87,7 @@ The CreateAndAddPartialFile will add the .cs file that we pass to the project. T
 
 ## Adding code to the default .Generated.cs file
 
-The example above shows how to create a brand new file and generate code. You may want to add code directly in the .Generated.cs file (the one that Glue creates for every Screen and Entity). This section will show you how to do this. For the sake of keeping the tutorial shorter, we'll assume that you already have a class that implements and exports the ICodeGeneratorPlugin interface as shown above. The first step is to create a class that inherits from the [ElementComponentCodeGenerator](/frb/docs/index.php?title=FlatRedBall.Glue.CodeGeneration.ElementComponentCodeGenerator&action=edit&redlink=1.md "FlatRedBall.Glue.CodeGeneration.ElementComponentCodeGenerator (page does not exist)") class:
+The example above shows how to create a brand new file and generate code. You may want to add code directly in the .Generated.cs file (the one that Glue creates for every Screen and Entity). This section will show you how to do this. For the sake of keeping the tutorial shorter, we'll assume that you already have a class that implements and exports the ICodeGeneratorPlugin interface as shown above. The first step is to create a class that inherits from the [ElementComponentCodeGenerator](/frb/docs/index.php?title=FlatRedBall.Glue.CodeGeneration.ElementComponentCodeGenerator&action=edit&redlink=1 "FlatRedBall.Glue.CodeGeneration.ElementComponentCodeGenerator (page does not exist)") class:
 
 -   Add a new file to plugin template and call it CodeGenerationComponent
 -   Add the following using statements:

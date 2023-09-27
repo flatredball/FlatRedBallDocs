@@ -22,7 +22,7 @@ If you run the game you should now see the Sprite rendering on the Layer:![Regul
 
 Now the Sprite (and anything on the same Layer) will appear at 8x zoom:![Sprite8xzoom.PNG](/media/migrated_media-Sprite8xzoom.PNG)
 
-## Matching Layer to [Camera](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera") coordinates
+## Matching Layer to [Camera](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera") coordinates
 
 You can match the LayerCameraSettings to match the Camera by setting the OrthogonalWidth/OrthogonalHeight of the LayerCameraSettings to the Camera's OrthogonalWidth/OrthogonalHeight. This assumes that both the Layer and Camera are using orthogonal values.
 

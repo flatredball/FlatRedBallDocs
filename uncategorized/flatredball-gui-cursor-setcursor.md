@@ -1,4 +1,4 @@
-**SetCursor is no longer supported:**This method is no longer supported in new versions of FlatRedBall; however its functionality is fully supported through the use of the Cursor class and Sprites. For an example on how to perform equivalent functionality, see [this page](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.WorldXAt#Using_custom_Cursor_graphics.md "FlatRedBall.Gui.Cursor.WorldXAt").
+**SetCursor is no longer supported:**This method is no longer supported in new versions of FlatRedBall; however its functionality is fully supported through the use of the Cursor class and Sprites. For an example on how to perform equivalent functionality, see [this page](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.WorldXAt#Using_custom_Cursor_graphics "FlatRedBall.Gui.Cursor.WorldXAt").
 
 ## Introduction
 
@@ -9,7 +9,7 @@ The SetCursor method can be used to customize the look and behavior of the FlatR
 
 ## Code Example
 
-The following code example changes the Cursor's texture to the redball.bmp texture. It also changes the tip offset for the Cursor to the right. Finally it creates a [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle") that is positioned with the Cursor. Notice that the [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle") is positioned to the right of the Cursor.
+The following code example changes the Cursor's texture to the redball.bmp texture. It also changes the tip offset for the Cursor to the right. Finally it creates a [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle") that is positioned with the Cursor. Notice that the [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle") is positioned to the right of the Cursor.
 
 Add the following using statements:
 

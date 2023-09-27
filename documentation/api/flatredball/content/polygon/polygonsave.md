@@ -1,8 +1,8 @@
 ## Introduction
 
-The PolygonSave class is a "save" object which corresponds to the [FlatRedBall.Math.Geometry.Polygon](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.md "FlatRedBall.Math.Geometry.Polygon") runtime object.
+The PolygonSave class is a "save" object which corresponds to the [FlatRedBall.Math.Geometry.Polygon](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon "FlatRedBall.Math.Geometry.Polygon") runtime object.
 
-For more information on the save pattern, see [this page](/frb/docs/index.php?title=Tutorials:Save_Classes.md "Tutorials:Save Classes")
+For more information on the save pattern, see [this page](/frb/docs/index.php?title=Tutorials:Save_Classes "Tutorials:Save Classes")
 
 ## Creating a PolygonSave
 

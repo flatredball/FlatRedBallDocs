@@ -1,20 +1,20 @@
 ## Introduction
 
-The IColorable interface defines properties for interacting with an object which can have its color dynamically modified and which can specify how it "blends" with objects behind it. Common objects which implement the IColorable interface include the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") object.
+The IColorable interface defines properties for interacting with an object which can have its color dynamically modified and which can specify how it "blends" with objects behind it. Common objects which implement the IColorable interface include the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object.
 
-## Applying [ColorOperations](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation")
+## Applying [ColorOperations](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation")
 
-[ColorOperations](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation") can be used to change the color of a IColorable at runtime. [ColorOperations](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation") require two pieces of information: the color specified by three values (Red, Green, and Blue) and the operation to perform with the specified color.
+[ColorOperations](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation") can be used to change the color of a IColorable at runtime. [ColorOperations](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation") require two pieces of information: the color specified by three values (Red, Green, and Blue) and the operation to perform with the specified color.
 
-The default [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation") for most IColorables (like [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite")) is [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation").None. Unless the [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation") is changed, the Red, Green, and Blue properties will have no effect on way the IColorable is rendered. The default [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation") for [Texts](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") is [Modulate](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md.Modulate "FlatRedBall.Graphics.ColorOperation.Modulate").
+The default [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation") for most IColorables (like [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite")) is [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation").None. Unless the [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation") is changed, the Red, Green, and Blue properties will have no effect on way the IColorable is rendered. The default [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation") for [Texts](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") is [Modulate](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.Modulate "FlatRedBall.Graphics.ColorOperation.Modulate").
 
-The Red, Green, and Blue properties provide access to the components of the color which is used to change the IColorable's color. The [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation") property specifies how to modify the color.
+The Red, Green, and Blue properties provide access to the components of the color which is used to change the IColorable's color. The [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation") property specifies how to modify the color.
 
 Color values range between 0 and 1 and are all set to 0 by default.
 
-The exception is the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") object. The Text object has its Red, Green, and Blue color values set to 1 so that the text appears as white. Furthermore, the [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation") defaults to [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation").Modulate for the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") object.
+The exception is the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object. The Text object has its Red, Green, and Blue color values set to 1 so that the text appears as white. Furthermore, the [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation") defaults to [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation").Modulate for the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object.
 
-The following code will create five Sprites, each with a different [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation").
+The following code will create five Sprites, each with a different [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation").
 
      // To reduce code, add the following #using statement to your Game class
      using FlatRedBall.Graphics;
@@ -62,11 +62,11 @@ The following code will create five Sprites, each with a different [ColorOperati
 
 ![ColorOperations.png](/media/migrated_media-ColorOperations.png)
 
-For more information on specific [ColorOperation values](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation"), see the [ColorOperation page](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation").
+For more information on specific [ColorOperation values](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation"), see the [ColorOperation page](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation").
 
 ## Color Rates
 
-Color rates are values which change the Red, Green, and Blue values over time. The rates, just like all velocity values, indicate units changed per second. The following code creates 80 Sprites and randomly varies their colors using a [SpriteCustomBehavior](/frb/docs/index.php?title=FlatRedBall.Sprite.mdCustomBehavior "FlatRedBall.SpriteCustomBehavior").
+Color rates are values which change the Red, Green, and Blue values over time. The rates, just like all velocity values, indicate units changed per second. The following code creates 80 Sprites and randomly varies their colors using a [SpriteCustomBehavior](/frb/docs/index.php?title=FlatRedBall.SpriteCustomBehavior "FlatRedBall.SpriteCustomBehavior").
 
      // To reduce code, add the following #using statement to your Game class
      using FlatRedBall.Graphics;
@@ -133,7 +133,7 @@ Color rates are values which change the Red, Green, and Blue values over time. T
 
 ## Alpha and BlendOperation
 
-The Alpha and BlendOperation properties are related just as the components of color and [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.md "FlatRedBall.Graphics.ColorOperation") properties. The Alpha property is used to control the transparency of an IColorable.
+The Alpha and BlendOperation properties are related just as the components of color and [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation") properties. The Alpha property is used to control the transparency of an IColorable.
 
 Unlike the color components, modifying the Alpha value will affect the appearance of an IColorable with its default BlendOperation.
 
@@ -187,11 +187,11 @@ Therefore, we can see that an AlphaRate value of -2 will cause an object to disa
 
 ## IColorable Members
 
--   [FlatRedBall.Graphics.IColorable.Alpha](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Alpha.md "FlatRedBall.Graphics.IColorable.Alpha")
--   [FlatRedBall.Graphics.IColorable.BlendOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.BlendOperation.md "FlatRedBall.Graphics.IColorable.BlendOperation")
--   [FlatRedBall.Graphics.IColorable.Blue](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Blue.md "FlatRedBall.Graphics.IColorable.Blue")
--   [FlatRedBall.Graphics.IColorable.ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.ColorOperation.md "FlatRedBall.Graphics.IColorable.ColorOperation")
--   [FlatRedBall.Graphics.IColorable.Green](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Blue.md "FlatRedBall.Graphics.IColorable.Blue")
--   [FlatRedBall.Graphics.IColorable.Red](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Blue.md "FlatRedBall.Graphics.IColorable.Blue")
+-   [FlatRedBall.Graphics.IColorable.Alpha](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Alpha "FlatRedBall.Graphics.IColorable.Alpha")
+-   [FlatRedBall.Graphics.IColorable.BlendOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.BlendOperation "FlatRedBall.Graphics.IColorable.BlendOperation")
+-   [FlatRedBall.Graphics.IColorable.Blue](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Blue "FlatRedBall.Graphics.IColorable.Blue")
+-   [FlatRedBall.Graphics.IColorable.ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.ColorOperation "FlatRedBall.Graphics.IColorable.ColorOperation")
+-   [FlatRedBall.Graphics.IColorable.Green](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Blue "FlatRedBall.Graphics.IColorable.Blue")
+-   [FlatRedBall.Graphics.IColorable.Red](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.Blue "FlatRedBall.Graphics.IColorable.Blue")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

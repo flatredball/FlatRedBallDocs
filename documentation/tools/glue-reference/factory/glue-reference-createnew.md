@@ -1,6 +1,6 @@
 ## Introduction
 
-The CreateNew function is used to create a new instance of the Entity corresponding to the calling factory. In simple cases, the only requirement is simply calling this method an a new instance will be created and available for use in your code. For information on CreateNew in the context of a tutorial, see [this page](/frb/docs/index.php?title=Glue:Tutorials:Entities_Created_by_Other_Entities#Using_the_Factory_in_code.md "Glue:Tutorials:Entities Created by Other Entities").
+The CreateNew function is used to create a new instance of the Entity corresponding to the calling factory. In simple cases, the only requirement is simply calling this method an a new instance will be created and available for use in your code. For information on CreateNew in the context of a tutorial, see [this page](/frb/docs/index.php?title=Glue:Tutorials:Entities_Created_by_Other_Entities#Using_the_Factory_in_code "Glue:Tutorials:Entities Created by Other Entities").
 
 ## Code Example
 
@@ -41,7 +41,7 @@ If you are creating an Entity through a Factory in a Screen, then you can pass t
 
 ### Passing a Layer in an Entity
 
-If the Entity that is being instantiated through the Factory is to be on the same Layer as the Entity calling the code, then the [LayerProvidedByContainer](/frb/docs/index.php?title=Glue:Reference:Entities:LayerProvidedByContainer.md "Glue:Reference:Entities:LayerProvidedByContainer") can be used:
+If the Entity that is being instantiated through the Factory is to be on the same Layer as the Entity calling the code, then the [LayerProvidedByContainer](/frb/docs/index.php?title=Glue:Reference:Entities:LayerProvidedByContainer "Glue:Reference:Entities:LayerProvidedByContainer") can be used:
 
     Button newButton = ButtonFactory.CreateNew(this.LayerProvidedByContainer);
 
@@ -49,4 +49,4 @@ If this is not the case, then the creating Entity must have reference to the Lay
 
 ## You must first initialize the factory to use it
 
-If you are calling CreateNew you may see an exception indicating that you must call Initialize before using the factory. ![CreateNewException.PNG](/media/migrated_media-CreateNewException.PNG). If you are seeing this exception it means that the factory that you are trying to use when calling CreateNew has not yet been initialized. If you've used factories before then you may be thinking "I never had to call Initialize before, why do I have to now?" Initialize will automatically be called for you if you are using a Screen which contains a list of the given Entity type, and if that list was created through Glue. In other words, if you have an Entity called Bullet, and a factory called BulletFactory, then BulletFactory will automatically be initialized if your game is currently in a Screen which has a list of Bullets added to it in Glue. If you do not have a list of the given object type, but you want to instantiate that object at runtime, then you will manually need to call Initialize on the factory. For more information about Initialize, see [this page](/frb/docs/index.php?title=Glue:Reference:Factory:Initialize.md "Glue:Reference:Factory:Initialize").
+If you are calling CreateNew you may see an exception indicating that you must call Initialize before using the factory. ![CreateNewException.PNG](/media/migrated_media-CreateNewException.PNG). If you are seeing this exception it means that the factory that you are trying to use when calling CreateNew has not yet been initialized. If you've used factories before then you may be thinking "I never had to call Initialize before, why do I have to now?" Initialize will automatically be called for you if you are using a Screen which contains a list of the given Entity type, and if that list was created through Glue. In other words, if you have an Entity called Bullet, and a factory called BulletFactory, then BulletFactory will automatically be initialized if your game is currently in a Screen which has a list of Bullets added to it in Glue. If you do not have a list of the given object type, but you want to instantiate that object at runtime, then you will manually need to call Initialize on the factory. For more information about Initialize, see [this page](/frb/docs/index.php?title=Glue:Reference:Factory:Initialize "Glue:Reference:Factory:Initialize").

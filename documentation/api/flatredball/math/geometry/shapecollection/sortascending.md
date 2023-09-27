@@ -26,4 +26,4 @@ Note that CalculateMaxRadii must be called in order for the ShapeCollection to k
 
 ## Additional information
 
--   [Axis Based Partitioning and Collision](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Axis_Based_Partitioning_And_Collision.md "FlatRedBallXna:Tutorials:Axis Based Partitioning And Collision") - Talks about axis-based partitioning which is what the CollideAgainst uses internally when performing partitioned collisions.
+-   [Axis Based Partitioning and Collision](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Axis_Based_Partitioning_And_Collision "FlatRedBallXna:Tutorials:Axis Based Partitioning And Collision") - Talks about axis-based partitioning which is what the CollideAgainst uses internally when performing partitioned collisions.

@@ -4,11 +4,11 @@ The GraphicsDevice is the object which FlatRedBall interacts with. Since FlatRed
 
 You may want to work with the GraphicsDevice in the following scenarios:
 
--   When using [DrawableBatches](/frb/docs/index.php?title=FlatRedBall.Graphics.DrawableBatch.md "FlatRedBall.Graphics.DrawableBatch").
--   When using [render targets](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget.md "Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget").
+-   When using [DrawableBatches](/frb/docs/index.php?title=FlatRedBall.Graphics.DrawableBatch "FlatRedBall.Graphics.DrawableBatch").
+-   When using [render targets](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget "Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget").
 
 ## GraphicsDevice Members
 
-[Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget.md "Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget")
+[Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget "Microsoft.Xna.Framework.Graphics.GraphicsDevice.SetRenderTarget")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

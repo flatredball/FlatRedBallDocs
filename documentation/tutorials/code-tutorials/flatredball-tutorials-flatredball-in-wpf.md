@@ -8,4 +8,4 @@ FlatRedBall can be contained within a WPF control. This is is a common approach 
 
 ## Option 2 - FlatRedBall with floating WPF controls
 
-WPF controls can be added to existing FlatRedBall projects without much additional work. Fortunately this does not require many changes to existing FlatRedBall projects, so WPF controls can even be added to games already in-development. ![OneInstance.PNG](/media/migrated_media-OneInstance.PNG) For more information on this option, see [this page](/frb/docs/index.php?title=Adding_WPF_to_an_Existing_Game.md "Adding WPF to an Existing Game").
+WPF controls can be added to existing FlatRedBall projects without much additional work. Fortunately this does not require many changes to existing FlatRedBall projects, so WPF controls can even be added to games already in-development. ![OneInstance.PNG](/media/migrated_media-OneInstance.PNG) For more information on this option, see [this page](/frb/docs/index.php?title=Adding_WPF_to_an_Existing_Game "Adding WPF to an Existing Game").

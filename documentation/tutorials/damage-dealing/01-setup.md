@@ -54,7 +54,7 @@ In the example above, the EnemyVsBullet collision relationship was created autom
 2.  The Enemy has a Team Index (1) different than the already-created Bullet Team Index (0)
 3.  The Enemy is IDamageable and the Bullet is IDamageArea
 
-It is possible to manually create collision relationships between IDamageable and IDamageArea lists. For example, the default Bullet Team Index matches the Player Team Index, but your game may allow Enemy instances to shoot bullets too. In this case we can still create a collision relationship between the PlayerList and BulletList. If the PlayerList is drag+dropped on the BulletList, a collision relationship is created with the damage-related checkboxes checked. [![](/wp-content/uploads/2023/01/10_18_36_39.gif.md)](/wp-content/uploads/2023/01/10_18_36_39.gif.md)
+It is possible to manually create collision relationships between IDamageable and IDamageArea lists. For example, the default Bullet Team Index matches the Player Team Index, but your game may allow Enemy instances to shoot bullets too. In this case we can still create a collision relationship between the PlayerList and BulletList. If the PlayerList is drag+dropped on the BulletList, a collision relationship is created with the damage-related checkboxes checked. [![](/wp-content/uploads/2023/01/10_18_36_39.gif)](/wp-content/uploads/2023/01/10_18_36_39.gif)
 
 ## Conclusion
 

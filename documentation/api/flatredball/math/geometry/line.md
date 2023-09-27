@@ -4,7 +4,7 @@ A line is defined by two endpoints, so in mathematical terms it is actually a se
 
 ## Line Sample
 
-The following sample creates a line, a [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.md "FlatRedBall.Math.Geometry.Circle"), and an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle"). The line is controlled with the keyboard and it changes colors when it collides with the other two shapes. Add the following using statements:
+The following sample creates a line, a [Circle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle"), and an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle"). The line is controlled with the keyboard and it changes colors when it collides with the other two shapes. Add the following using statements:
 
     using Microsoft.Xna.Framework.Graphics;
     using FlatRedBall.Math.Geometry;
@@ -49,7 +49,7 @@ Add the following in Update:
 
 ## RelativePoint Properties
 
-A line can be modified by changing both its [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") properties as well as through the RelativePoint property. The following code connects two rectangles with a line. Add the following in Update:
+A line can be modified by changing both its [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") properties as well as through the RelativePoint property. The following code connects two rectangles with a line. Add the following in Update:
 
     using Microsoft.Xna.Framework.Graphics;
     using FlatRedBall.Math.Geometry;
@@ -83,17 +83,17 @@ Add the following in Initialize after Initializing FlatRedBall:
 
 ## Line limitations
 
--   Lines, just like any other [Shapes](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager.md "FlatRedBall.Math.Geometry.ShapeManager"), can either be drawn on top of or below types that can sort with each other, such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and [Texts](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text"). They will not sort according to their Z value.
+-   Lines, just like any other [Shapes](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeManager "FlatRedBall.Math.Geometry.ShapeManager"), can either be drawn on top of or below types that can sort with each other, such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and [Texts](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text"). They will not sort according to their Z value.
 -   Lines must be one pixel thick. Thicker lines are not supported.
 -   Lines can only draw solid colors - patterns and gradients are not supported.
 
 ## Line Members
 
--   [FlatRedBall.Math.Geometry.Line.AsSegment](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.AsSegment&action=edit&redlink=1.md "FlatRedBall.Math.Geometry.Line.AsSegment (page does not exist)")
--   [FlatRedBall.Math.Geometry.Line.LastCollisionPoint](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.LastCollisionPoint.md "FlatRedBall.Math.Geometry.Line.LastCollisionPoint")
--   [FlatRedBall.Math.Geometry.Line.RelativePoint1](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.RelativePoint1.md "FlatRedBall.Math.Geometry.Line.RelativePoint1")
--   [FlatRedBall.Math.Geometry.Line.RelativePoint2](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.RelativePoint1.md "FlatRedBall.Math.Geometry.Line.RelativePoint1")
--   [FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints.md "FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints")
--   [FlatRedBall.Math.Geometry.Line.Visible](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.Visible.md "FlatRedBall.Math.Geometry.Polygon.Visible")
+-   [FlatRedBall.Math.Geometry.Line.AsSegment](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.AsSegment&action=edit&redlink=1 "FlatRedBall.Math.Geometry.Line.AsSegment (page does not exist)")
+-   [FlatRedBall.Math.Geometry.Line.LastCollisionPoint](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.LastCollisionPoint "FlatRedBall.Math.Geometry.Line.LastCollisionPoint")
+-   [FlatRedBall.Math.Geometry.Line.RelativePoint1](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.RelativePoint1 "FlatRedBall.Math.Geometry.Line.RelativePoint1")
+-   [FlatRedBall.Math.Geometry.Line.RelativePoint2](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.RelativePoint1 "FlatRedBall.Math.Geometry.Line.RelativePoint1")
+-   [FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints "FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints")
+-   [FlatRedBall.Math.Geometry.Line.Visible](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.Visible "FlatRedBall.Math.Geometry.Polygon.Visible")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

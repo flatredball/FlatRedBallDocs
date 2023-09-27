@@ -6,7 +6,7 @@ Raid a hotel as a cross-dressing man in a maid disguise. Compete against other m
 
 ## Download
 
--   [Download Free Towels (Global Game Jam 2010)](/games/FreeTowels.zip.md)
+-   [Download Free Towels (Global Game Jam 2010)](/games/FreeTowels.zip)
 
 ## Screen Shots
 

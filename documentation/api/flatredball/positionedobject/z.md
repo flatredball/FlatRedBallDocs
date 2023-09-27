@@ -39,4 +39,4 @@ The Z value controls the distance of an object from the Camera. When using a 2D 
 
 For information on how Z affects the sorting of objects, check the following articles:
 
--   [Sprite sorting and overlapping](/frb/docs/index.php?title=FlatRedBall.Sprite:Sorting_and_Overlapping#Setting_Z_Value.md "FlatRedBall.Sprite:Sorting and Overlapping")
+-   [Sprite sorting and overlapping](/frb/docs/index.php?title=FlatRedBall.Sprite:Sorting_and_Overlapping#Setting_Z_Value "FlatRedBall.Sprite:Sorting and Overlapping")

@@ -4,7 +4,7 @@ Filtering is a process to reduce the pixellated look of textures when viewed fro
 
 ## Turning Filtering On/Off
 
-For more information on how to enable and disable Filtering in your FlatRedBall project, see: [GraphicsOption's Filtering property](/frb/docs/index.php?title=FlatRedBall.Graphics.GraphicsOptions.TextureFilter.md "FlatRedBall.Graphics.GraphicsOptions.TextureFilter")
+For more information on how to enable and disable Filtering in your FlatRedBall project, see: [GraphicsOption's Filtering property](/frb/docs/index.php?title=FlatRedBall.Graphics.GraphicsOptions.TextureFilter "FlatRedBall.Graphics.GraphicsOptions.TextureFilter")
 
 ## Filtering Halo
 
@@ -12,7 +12,7 @@ Although Filtering can greatly improve the appearance of a Sprite, it can also c
 
 ## Solving filtering halo with FilteringHaloRemover
 
-Kao Martin provided a wonderful tool for removing filtering halo from files. It can be found [here](/content/Resources/FilteringHaloRemover.exe.md).
+Kao Martin provided a wonderful tool for removing filtering halo from files. It can be found [here](/content/Resources/FilteringHaloRemover.exe).
 
 ## Solving filtering halo with The GIMP
 

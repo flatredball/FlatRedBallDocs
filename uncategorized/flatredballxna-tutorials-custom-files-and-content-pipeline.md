@@ -15,12 +15,12 @@ For those of you who are familiar with writing your own content saving/loading c
 
 The following sections provide information on how to create a custom file format and a content pipeline.
 
-1.  [Setting up your projects](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Setting_up_your_projects.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Setting up your projects")
-2.  [Creating a Runtime Class](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Runtime_Class.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Runtime Class")
-3.  [Creating a "Save" class](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_%22Save%22_class.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "Save" class")
-4.  [Creating a "SaveContent" Class](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_%22SaveContent%22_Class.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "SaveContent" Class")
-5.  [Creating an Importer](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_an_Importer.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating an Importer")
-6.  [Creating a Processor](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Processor.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Processor")
-7.  [Creating a Writer](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Writer.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Writer")
-8.  [Creating a Reader](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Reader.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Reader")
-9.  [Using the Level Classes](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Using_the_Level_Classes.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Using the Level Classes")
+1.  [Setting up your projects](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Setting_up_your_projects "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Setting up your projects")
+2.  [Creating a Runtime Class](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Runtime_Class "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Runtime Class")
+3.  [Creating a "Save" class](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_%22Save%22_class "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "Save" class")
+4.  [Creating a "SaveContent" Class](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_%22SaveContent%22_Class "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "SaveContent" Class")
+5.  [Creating an Importer](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_an_Importer "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating an Importer")
+6.  [Creating a Processor](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Processor "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Processor")
+7.  [Creating a Writer](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Writer "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Writer")
+8.  [Creating a Reader](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_Reader "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a Reader")
+9.  [Using the Level Classes](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Using_the_Level_Classes "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Using the Level Classes")

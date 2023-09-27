@@ -10,4 +10,4 @@ is the same as:
     TextInstance.Green = 1;
     TextInstance.Blue = .5f;
 
-For more information on how the Red, Green, and Blue colors impact rendering, see the [IColorable page](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable.md "FlatRedBall.Graphics.IColorable").
+For more information on how the Red, Green, and Blue colors impact rendering, see the [IColorable page](/frb/docs/index.php?title=FlatRedBall.Graphics.IColorable "FlatRedBall.Graphics.IColorable").

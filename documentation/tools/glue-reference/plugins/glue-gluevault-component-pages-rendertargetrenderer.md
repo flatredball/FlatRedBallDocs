@@ -7,7 +7,7 @@ The RenderTargetRenderer class can be used to greatly increase the performance o
 This example will show how to render a very large number of Entities with essentially no slowdown. To set up the project:
 
 1.  Create a new Glue project
-2.  Import the following Entity: [File:GraphicWithText.entz](/frb/docs/index.php?title=File:GraphicWithText.entz.md "File:GraphicWithText.entz")
+2.  Import the following Entity: [File:GraphicWithText.entz](/frb/docs/index.php?title=File:GraphicWithText.entz "File:GraphicWithText.entz")
 3.  Create a new Screen. I'll call mine GameScreen
 
 Before we add anything to the game we'll want to turn off any framerate throttling so we can see actual performance differences. To do this open Game1.cs and add the following code to the Game1 constructor:
@@ -42,7 +42,7 @@ Next we'll add code to our GameScreen. To do this, open the GameScreen.cs file a
         FlatRedBall.Debugging.Debugger.Write(1 / TimeManager.SecondDifference);
     }
 
-This results in the game running around 7 frames per second (on my hardware at the time of this writing): ![LowFpsPart1.PNG](/media/migrated_media-LowFpsPart1.PNG) Notice that the entities are converted to being manually updated, which reduces the update load significantly. The low frame rate in this case comes almost purely from rendering. For more information on ConvertToManuallyUpdated, [see this page](/frb/docs/index.php?title=Glue:Reference:Code:ConvertToManuallyUpdated.md "Glue:Reference:Code:ConvertToManuallyUpdated"). In this case we'll assume that once the Entities have been placed they will not need to move or change otherwise. We can therefore take a "snapshot" of the screen using the RenderTargetRenderer and improve the performance significantly. Since the RenderTargetRender only creates a Texture2D, we will need to create an object to display it. To do this:
+This results in the game running around 7 frames per second (on my hardware at the time of this writing): ![LowFpsPart1.PNG](/media/migrated_media-LowFpsPart1.PNG) Notice that the entities are converted to being manually updated, which reduces the update load significantly. The low frame rate in this case comes almost purely from rendering. For more information on ConvertToManuallyUpdated, [see this page](/frb/docs/index.php?title=Glue:Reference:Code:ConvertToManuallyUpdated "Glue:Reference:Code:ConvertToManuallyUpdated"). In this case we'll assume that once the Entities have been placed they will not need to move or change otherwise. We can therefore take a "snapshot" of the screen using the RenderTargetRenderer and improve the performance significantly. Since the RenderTargetRender only creates a Texture2D, we will need to create an object to display it. To do this:
 
 1.  Switch to Glue
 2.  Right-click on the Objects folder under the GameScreen
@@ -210,4 +210,4 @@ The examples above show how to create entity instances and manually place them o
     SpriteManager.RemoveLayer(LayerInstance);
     renderer.Camera.AddLayer(LayerInstance);
 
-Now anything that is added to that Layer will be part of the RenderTargetRenderer. For more information see the [FlatRedBall.SpriteManager.RemoveLayer](/frb/docs/index.php?title=FlatRedBall.SpriteManager.RemoveLayer.md "FlatRedBall.SpriteManager.RemoveLayer") and [FlatRedBall.Camera.AddLayer](/frb/docs/index.php?title=FlatRedBall.Camera.AddLayer.md "FlatRedBall.Camera.AddLayer") pages.
+Now anything that is added to that Layer will be part of the RenderTargetRenderer. For more information see the [FlatRedBall.SpriteManager.RemoveLayer](/frb/docs/index.php?title=FlatRedBall.SpriteManager.RemoveLayer "FlatRedBall.SpriteManager.RemoveLayer") and [FlatRedBall.Camera.AddLayer](/frb/docs/index.php?title=FlatRedBall.Camera.AddLayer "FlatRedBall.Camera.AddLayer") pages.

@@ -1,6 +1,6 @@
 ## Introduction
 
-AreSoundEffectsEnabled can be used to make the [Play](/frb/docs/index.php?title=FlatRedBall.Audio.AudioManager.Play.md "FlatRedBall.Audio.AudioManager.Play") function produce no audio. This is often set by options screens so that the game code does not need to be cluttered with if-checks surrounding all audio playing.
+AreSoundEffectsEnabled can be used to make the [Play](/frb/docs/index.php?title=FlatRedBall.Audio.AudioManager.Play "FlatRedBall.Audio.AudioManager.Play") function produce no audio. This is often set by options screens so that the game code does not need to be cluttered with if-checks surrounding all audio playing.
 
 ## Code Example
 

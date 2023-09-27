@@ -6,7 +6,7 @@ The GetManagerInformation method returns counts of all of the different types of
 
 ## Code Example
 
-The following code creates a [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") object to display the result of the GetManagerInformation method. Even though there are no changes, the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") is updated every frame. If you are testing for accumulation errors (see below) then you will likely want to update the display frequently.
+The following code creates a [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object to display the result of the GetManagerInformation method. Even though there are no changes, the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") is updated every frame. If you are testing for accumulation errors (see below) then you will likely want to update the display frequently.
 
 Add the following using statements:
 

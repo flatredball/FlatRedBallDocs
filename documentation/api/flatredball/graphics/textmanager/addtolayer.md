@@ -1,6 +1,6 @@
 ## Code Example
 
-The following code creates a [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") object and adds it to a layer.
+The following code creates a [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object and adds it to a layer.
 
     Layer layer = SpriteManager.AddLayer();
 

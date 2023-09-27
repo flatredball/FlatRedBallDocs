@@ -1,6 +1,6 @@
 ## Introduction
 
-A BitmapFont is a class defining the texture and rendering values used to render a bitmap font. The [Text object](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") uses BitmapFonts when drawing itself. Fonts can be also assigned in Glue without any custom code. For more information, see [this article](/frb/docs/index.php?title=Glue:How_To:Using_Fonts_in_Glue.md "Glue:How To:Using Fonts in Glue")
+A BitmapFont is a class defining the texture and rendering values used to render a bitmap font. The [Text object](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") uses BitmapFonts when drawing itself. Fonts can be also assigned in Glue without any custom code. For more information, see [this article](/frb/docs/index.php?title=Glue:How_To:Using_Fonts_in_Glue "Glue:How To:Using Fonts in Glue")
 
 ## Creating a BitmapFont
 
@@ -25,7 +25,7 @@ Bitmap Fonts require two files - a texture file and a .fnt file. Both can be cre
 
 ## Using a BitmapFont in Glue
 
-For information on how to use BitmapFonts in Glue, see [this page](/frb/docs/index.php?title=Glue:How_To:Using_Fonts_in_Glue.md "Glue:How To:Using Fonts in Glue").
+For information on how to use BitmapFonts in Glue, see [this page](/frb/docs/index.php?title=Glue:How_To:Using_Fonts_in_Glue "Glue:How To:Using Fonts in Glue").
 
 ## Adding custom letters to a .fnt file
 
@@ -67,7 +67,7 @@ Note that if you are using Glue you may not have to add fonts to your project ma
 
 ## Loading a BitmapFont
 
-Once the files are created they need to be loaded into a BitmapFont. The following code loads a BitmapFont and assigns it to a Text object. **Files used:** [font18arial_0.png](/content/Tutorials/Graphics/font18arial_0.png.md), [font18arial.fnt](/content/Tutorials/Graphics/font18arial.fnt.md) Add the following using statement
+Once the files are created they need to be loaded into a BitmapFont. The following code loads a BitmapFont and assigns it to a Text object. **Files used:** [font18arial_0.png](/content/Tutorials/Graphics/font18arial_0.png), [font18arial.fnt](/content/Tutorials/Graphics/font18arial.fnt) Add the following using statement
 
     using FlatRedBall.Graphics;
 
@@ -110,16 +110,16 @@ Add the following wherever you are loading your font:
 
 ## Bitmap and Text size
 
-While it may not be immediately obvious, there is a difference between BitmapFonts and [Texts](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") (the [FlatRedBall.Graphics.Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") class). A [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") contains information such as location, rotation, and the string to write out. The BitmapFont contains the texture information to use which represents the font. Specifically, it contains a Texture2D as well as the texture coordinates for each character. One notable consideration is that the properties in both the BitmapFont class as well as the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") class can contain the size of the letters in a Text object. Let's investigate why this is the case. Ultimately, there are three properties which are related to the size that a [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text") takes up when it is rendered:
+While it may not be immediately obvious, there is a difference between BitmapFonts and [Texts](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") (the [FlatRedBall.Graphics.Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") class). A [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") contains information such as location, rotation, and the string to write out. The BitmapFont contains the texture information to use which represents the font. Specifically, it contains a Texture2D as well as the texture coordinates for each character. One notable consideration is that the properties in both the BitmapFont class as well as the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") class can contain the size of the letters in a Text object. Let's investigate why this is the case. Ultimately, there are three properties which are related to the size that a [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") takes up when it is rendered:
 
 -   Scale
 -   Spacing
 -   NewlineDistance
 
-Information and code samples on these properties can be found [here](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md#Text_Size "FlatRedBall.Graphics.Text"). These three properties ultimately control the absolute size and spacing of each letter in the Text object. However, a BitmapFont that has letters at a higher resolution will result in a larger Text on screen. The reason for this is because the [TextManager](/frb/docs/index.php?title=TextManager.md "TextManager") adjusts these three values according to the current [Camera](/frb/docs/index.php?title=Camera.md "Camera") setup when the AddText method is called so that the Text is drawn to-the-pixel. This means that a Text that is created through the TextManager which is displaying a large BitmapFont will have higher Scale, Spacing, and NewlineDistance values than one displaying a smaller BitmapFont. This behavior simply exists as a convenience, and it can be easily overridden if necessary by changing these values.
+Information and code samples on these properties can be found [here](/frb/docs/index.php?title=FlatRedBall.Graphics.Text#Text_Size "FlatRedBall.Graphics.Text"). These three properties ultimately control the absolute size and spacing of each letter in the Text object. However, a BitmapFont that has letters at a higher resolution will result in a larger Text on screen. The reason for this is because the [TextManager](/frb/docs/index.php?title=TextManager "TextManager") adjusts these three values according to the current [Camera](/frb/docs/index.php?title=Camera "Camera") setup when the AddText method is called so that the Text is drawn to-the-pixel. This means that a Text that is created through the TextManager which is displaying a large BitmapFont will have higher Scale, Spacing, and NewlineDistance values than one displaying a smaller BitmapFont. This behavior simply exists as a convenience, and it can be easily overridden if necessary by changing these values.
 
 ## Related Articles
 
--   [Fnt File](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont:Fnt_File.md "FlatRedBall.Graphics.BitmapFont:Fnt File")
--   [Bmfc File](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont:Bmfc_File.md "FlatRedBall.Graphics.BitmapFont:Bmfc File")
--   [Glyphs](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont:Glyphs.md "FlatRedBall.Graphics.BitmapFont:Glyphs")
+-   [Fnt File](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont:Fnt_File "FlatRedBall.Graphics.BitmapFont:Fnt File")
+-   [Bmfc File](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont:Bmfc_File "FlatRedBall.Graphics.BitmapFont:Bmfc File")
+-   [Glyphs](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont:Glyphs "FlatRedBall.Graphics.BitmapFont:Glyphs")

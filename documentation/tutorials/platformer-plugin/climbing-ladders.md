@@ -1,6 +1,6 @@
 ## Introduction
 
-This walkthrough covers the concepts of climbing ladders. When climbing a ladder, the platformer Player is able to move vertically by pressing up or down on the analog stick or d-pad. Ladders and vines are used to provide access to areas normally not reachable by jumping alone. \[embed\]https://youtu.be/htFJTiVH5Ao?t=1465\[/embed\] The sample project can be downloaded from GitHub: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/LadderDemo> [![](/wp-content/uploads/2021/05/2021_May_08_094324.gif.md)](/wp-content/uploads/2021/05/2021_May_08_094324.gif.md) This walkthrough refers to LadderDemo as *this demo* and *the demo*.
+This walkthrough covers the concepts of climbing ladders. When climbing a ladder, the platformer Player is able to move vertically by pressing up or down on the analog stick or d-pad. Ladders and vines are used to provide access to areas normally not reachable by jumping alone. \[embed\]https://youtu.be/htFJTiVH5Ao?t=1465\[/embed\] The sample project can be downloaded from GitHub: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/LadderDemo> [![](/wp-content/uploads/2021/05/2021_May_08_094324.gif)](/wp-content/uploads/2021/05/2021_May_08_094324.gif) This walkthrough refers to LadderDemo as *this demo* and *the demo*.
 
 ## Main Concepts
 

@@ -10,4 +10,4 @@ The .glux extension means "Glue XML". Just like other FRB file formats that have
 -   It can have syntax coloring and folding if you open it in an XML viewer/editor
 -   It can be (usually) edited by hand to perform specific tasks or eliminate errors
 
-For a general overview of the XML format, see [this article](/frb/docs/index.php?title=General_Programming:XML.md "General Programming:XML").
+For a general overview of the XML format, see [this article](/frb/docs/index.php?title=General_Programming:XML "General Programming:XML").

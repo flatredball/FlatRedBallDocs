@@ -49,4 +49,4 @@ In most cases if you modify RelativePosition, you never have to worry about upda
     // After this call, somePositionedObject's Position values will be up-to-date
     somePositionedObject.ForceUpdateDependencies();
 
-For more information, see [the ForceUpdateDependencies page](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ForceUpdateDependencies.md "FlatRedBall.PositionedObject.ForceUpdateDependencies").
+For more information, see [the ForceUpdateDependencies page](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ForceUpdateDependencies "FlatRedBall.PositionedObject.ForceUpdateDependencies").

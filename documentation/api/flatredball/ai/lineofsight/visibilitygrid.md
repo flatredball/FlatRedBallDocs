@@ -1,6 +1,6 @@
 ## Introduction
 
-The VisibilityGrid can be used to quickly calculate line of sight between [IViewers](/frb/docs/index.php?title=FlatRedBall.AI.LineOfSight.IViewer&action=edit&redlink=1.md "FlatRedBall.AI.LineOfSight.IViewer (page does not exist)"). The VisibilityGrid is a very efficient class when dealing with a small number of squares. For example, if each IViewer has a radius smaller than 10, visibility updates can be incredibly fast. The larger the radius (in tiles), the slower performance becomes. Visibility calculations require O(n^2) operations where N is the view radius in tiles, so be careful with larger view radii.
+The VisibilityGrid can be used to quickly calculate line of sight between [IViewers](/frb/docs/index.php?title=FlatRedBall.AI.LineOfSight.IViewer&action=edit&redlink=1 "FlatRedBall.AI.LineOfSight.IViewer (page does not exist)"). The VisibilityGrid is a very efficient class when dealing with a small number of squares. For example, if each IViewer has a radius smaller than 10, visibility updates can be incredibly fast. The larger the radius (in tiles), the slower performance becomes. Visibility calculations require O(n^2) operations where N is the view radius in tiles, so be careful with larger view radii.
 
 ## VisibilityGrid and IViewer
 

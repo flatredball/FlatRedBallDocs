@@ -4,7 +4,7 @@ Gum is an open source, general purpose, platform-agnostic UI layout tool. Althou
 
 ## Downloading Gum
 
-The first step in using Gum is to download the project. If you have downloaded the FRBDK.zip file from the main downloads page on this site, you already have Gum in the \<unzipped FRBDK location\>/Gum/Data/Gum.exe. You can also get Gum as a standalone [downloaded here](/content/Tools/Gum/Gum.zip.md). You will also need to install the [XNA 4.0 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=20914) on your machine to run Gum. Remember the location for Gum.exe**, we'll need it later.**
+The first step in using Gum is to download the project. If you have downloaded the FRBDK.zip file from the main downloads page on this site, you already have Gum in the \<unzipped FRBDK location\>/Gum/Data/Gum.exe. You can also get Gum as a standalone [downloaded here](/content/Tools/Gum/Gum.zip). You will also need to install the [XNA 4.0 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=20914) on your machine to run Gum. Remember the location for Gum.exe**, we'll need it later.**
 
 ## Gum projects
 
@@ -32,7 +32,7 @@ If you do not want to run the Glue wizard, or if your project already has Screen
 
     ![](/media/2021-03-img_604417b7e19a7.png)
 
-**Troubleshooting Missing Gum Options:** If you do not see any of the options shown above, you can verify that the plugin has installed correctly and that it is running through the [Manage Plugins Window](/frb/docs/index.php?title=Glue:Reference:Menu:Plugins:Manage_Plugin.md "Glue:Reference:Menu:Plugins:Manage Plugin").
+**Troubleshooting Missing Gum Options:** If you do not see any of the options shown above, you can verify that the plugin has installed correctly and that it is running through the [Manage Plugins Window](/frb/docs/index.php?title=Glue:Reference:Menu:Plugins:Manage_Plugin "Glue:Reference:Menu:Plugins:Manage Plugin").
 
   Also, you will see a button in the toolbar for opening the Gum project. ![](/media/2019-03-img_5c78b2870eb69.png)
 

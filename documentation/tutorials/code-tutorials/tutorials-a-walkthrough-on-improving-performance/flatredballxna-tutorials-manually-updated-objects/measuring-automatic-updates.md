@@ -8,7 +8,7 @@ This article assumes that you already have a working project in FlatRedBall - pr
 
 ## FlatRedBall Debugger
 
-The FlatRedBall Engine includes a class called [Debugger](/frb/docs/index.php?title=FlatRedBall.Debugging.Debugger.md "FlatRedBall.Debugging.Debugger") which can help you debug and diagnose problems in your project. In this case we'll be using a function called WriteAutomaticallyUpdatedObjectInformation. This method will print the number of managed objects to the screen in real time. It's a very simple method to use which provides a lot of useful information. To use it:
+The FlatRedBall Engine includes a class called [Debugger](/frb/docs/index.php?title=FlatRedBall.Debugging.Debugger "FlatRedBall.Debugging.Debugger") which can help you debug and diagnose problems in your project. In this case we'll be using a function called WriteAutomaticallyUpdatedObjectInformation. This method will print the number of managed objects to the screen in real time. It's a very simple method to use which provides a lot of useful information. To use it:
 
 1.  Open your project in Visual Studio
 
@@ -43,11 +43,11 @@ For the most part the cost of each type of object is equal. In other words, mana
 
 ### PositionedObjects
 
-If you are using Glue then it's likely that a large number of your automatically updated PositionedObjects are Entities. For more information on making these manually updated, see the [ConvertToManuallyUpdated page](/frb/docs/index.php?title=Glue:Reference:Code:ConvertToManuallyUpdated.md "Glue:Reference:Code:ConvertToManuallyUpdated").
+If you are using Glue then it's likely that a large number of your automatically updated PositionedObjects are Entities. For more information on making these manually updated, see the [ConvertToManuallyUpdated page](/frb/docs/index.php?title=Glue:Reference:Code:ConvertToManuallyUpdated "Glue:Reference:Code:ConvertToManuallyUpdated").
 
 ### Sprites
 
-For information on how to improve the performance of your game if it has a large number of Sprites, see [this page](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Manually_Updated_Objects:Measuring_Sprite_Automatic_Updates.md "FlatRedBallXna:Tutorials:Manually Updated Objects:Measuring Sprite Automatic Updates").
+For information on how to improve the performance of your game if it has a large number of Sprites, see [this page](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Manually_Updated_Objects:Measuring_Sprite_Automatic_Updates "FlatRedBallXna:Tutorials:Manually Updated Objects:Measuring Sprite Automatic Updates").
 
 ### SpriteFrames
 

@@ -1,10 +1,10 @@
 ## Introduction
 
-The IMouseOver interface is an interface that is used to standardize checks between an object and the [Cursor](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.md "FlatRedBall.Gui.Cursor").
+The IMouseOver interface is an interface that is used to standardize checks between an object and the [Cursor](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor "FlatRedBall.Gui.Cursor").
 
 ## IsMouseOver Code Example
 
-The following code checks to see if the Cursor is over an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle"). This example was created inside an Entity which contains an AxisAlignedRectangle instance called AxisAlignedRectangleInstance:
+The following code checks to see if the Cursor is over an [AxisAlignedRectangle](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle "FlatRedBall.Math.Geometry.AxisAlignedRectangle"). This example was created inside an Entity which contains an AxisAlignedRectangle instance called AxisAlignedRectangleInstance:
 
 Add the following to CustomInitialize to force the cursor to be visible:
 

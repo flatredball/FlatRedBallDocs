@@ -59,7 +59,7 @@ This can be summarised as - the popup itself should not raise events, but its ch
 
 ## Adding a Popup to Our Game
 
-Now that we have a fully-functional Popup instance, we can add it to our Gum screen (such as MainMenuGum). [![](/wp-content/uploads/2017/03/13_07-31-43.gif.md)](/wp-content/uploads/2017/03/13_07-31-43.gif.md) Now that our popup is in our MainMenuGum, we can access it in our MainMenu.cs file in Visual Studio. For example, we can respond to click events on the OK and Cancel buttons by hiding the popup and displaying some debug text.
+Now that we have a fully-functional Popup instance, we can add it to our Gum screen (such as MainMenuGum). [![](/wp-content/uploads/2017/03/13_07-31-43.gif)](/wp-content/uploads/2017/03/13_07-31-43.gif) Now that our popup is in our MainMenuGum, we can access it in our MainMenu.cs file in Visual Studio. For example, we can respond to click events on the OK and Cancel buttons by hiding the popup and displaying some debug text.
 
     void CustomInitialize()
     {
@@ -91,7 +91,7 @@ The previous tutorial showed how to control whether Gum objects are considered o
 FlatRedBall.Debugging.Debugger.Write(FlatRedBall.Gui.GuiManager.Cursor.WindowOver);
 ```
 
-This code produces the following behavior in our game: [![](/wp-content/uploads/2017/03/13_07-42-11.gif.md)](/wp-content/uploads/2017/03/13_07-42-11.gif.md) Now that we've covered events related to contained objects (a Button inside of a Popup), we can look at other ways to diagnose event problems.
+This code produces the following behavior in our game: [![](/wp-content/uploads/2017/03/13_07-42-11.gif)](/wp-content/uploads/2017/03/13_07-42-11.gif) Now that we've covered events related to contained objects (a Button inside of a Popup), we can look at other ways to diagnose event problems.
 
 ### Parent Container Receives Events
 

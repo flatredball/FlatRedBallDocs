@@ -1,6 +1,6 @@
 ## Introduction
 
-The RotationZ property controls the rotation along the Z axis which impacts the orientation of the Emitter. The RotationZ value can impact child [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject"). For more information on all behavior inherited from [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject"), see the [PositionedObject wiki entry](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject").
+The RotationZ property controls the rotation along the Z axis which impacts the orientation of the Emitter. The RotationZ value can impact child [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject"). For more information on all behavior inherited from [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject"), see the [PositionedObject wiki entry](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject").
 
 ## Rotation and Emission
 

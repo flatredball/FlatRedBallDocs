@@ -36,7 +36,7 @@ Notice that the level is composed of small squares which are called *tiles*. Th
 
 ![](/media/2021-03-img_6048f692c467b.png)
 
-Once you have a tileset created, making new levels is easy. [![](/wp-content/uploads/2021/03/2021_March_10_095342.gif.md)](/wp-content/uploads/2021/03/2021_March_10_095342.gif.md)
+Once you have a tileset created, making new levels is easy. [![](/wp-content/uploads/2021/03/2021_March_10_095342.gif)](/wp-content/uploads/2021/03/2021_March_10_095342.gif)
 
 ## Entities
 
@@ -65,7 +65,7 @@ You can use Gum to create interactive menu screens (as shown above) or in-game H
 
 ## Live Editor
 
-FlatRedBall's Editor is also a live editor, enabling the creation of content in real time. The live editor comes out-of-the-box with powerful features, but it can be customized by adding code to your game. You can add error checking, real time visualizations, and custom logic in response to variable assignments. The editor runs your game, so your code runs while you are making changes. [![](/wp-content/uploads/2021/03/20_09-29-28.gif.md)](/wp-content/uploads/2021/03/20_09-29-28.gif.md)
+FlatRedBall's Editor is also a live editor, enabling the creation of content in real time. The live editor comes out-of-the-box with powerful features, but it can be customized by adding code to your game. You can add error checking, real time visualizations, and custom logic in response to variable assignments. The editor runs your game, so your code runs while you are making changes. [![](/wp-content/uploads/2021/03/20_09-29-28.gif)](/wp-content/uploads/2021/03/20_09-29-28.gif)
 
 ## FlatRedBall is Active
 

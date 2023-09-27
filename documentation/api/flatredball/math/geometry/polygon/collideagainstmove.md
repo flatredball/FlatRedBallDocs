@@ -1,6 +1,6 @@
 ## Introduction
 
-The CollideAgainstMove is a method which can be used to test whether two Shapes are touching, and if they are to move one or both so that they no longer overlap. CollideAgainstMove also works between all types of [shapes](/frb/docs/index.php?title=Shape.md "Shape").
+The CollideAgainstMove is a method which can be used to test whether two Shapes are touching, and if they are to move one or both so that they no longer overlap. CollideAgainstMove also works between all types of [shapes](/frb/docs/index.php?title=Shape "Shape").
 
 The CollideAgainstMove is a very common method used in games which include solid collision. Sometimes the collision is between two movable objects (such as a player and a box which can be pushed), and sometimes the collision is between a movable and static object (such as a player and a wall).
 
@@ -8,7 +8,7 @@ The CollideAgainstMove is a very common method used in games which include solid
 
 CollideAgainstMove lets you specify how objects should behave when colliding. The first argument is the object to collide against, the second is the mass of the caller, and the third is the mass of the object colliding against.
 
-For example, to collide a Player entity against a wall (assuming the entity [implements ICollidable](/frb/docs/index.php?title=Glue:Reference:Entities:Implements_ICollidable.md "Glue:Reference:Entities:Implements ICollidable")):
+For example, to collide a Player entity against a wall (assuming the entity [implements ICollidable](/frb/docs/index.php?title=Glue:Reference:Entities:Implements_ICollidable "Glue:Reference:Entities:Implements ICollidable")):
 
     // Player has a mass of 0, wall has a mass of 1
     PlayerInstance.CollideAgainstMove(WallCollision, 0, 1);
@@ -21,7 +21,7 @@ Inversely to have a player push a block, and have the player not slow down at al
     // Player has a mass of 1, wall has a mass of 0
     PlayerInstance.CollideAgainstMove(BlockInstance, 1, 0);
 
-To have both objects impacted equally by the collision, the same mass can be used. For example, if two cars collide (again assuming that the cars implement [ICollidable](/frb/docs/index.php?title=Glue:Reference:Entities:Implements_ICollidable.md "Glue:Reference:Entities:Implements ICollidable"))
+To have both objects impacted equally by the collision, the same mass can be used. For example, if two cars collide (again assuming that the cars implement [ICollidable](/frb/docs/index.php?title=Glue:Reference:Entities:Implements_ICollidable "Glue:Reference:Entities:Implements ICollidable"))
 
     CarInstance1.CollideAgainstMove(CarInstance2, 1, 1);
 
@@ -32,9 +32,9 @@ Any value can be used for the mass of the two objects - you're not limited to us
 
 ## Code Example
 
-The following code loads a .plylstx to create a [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList.md "FlatRedBall.Math.PositionedObjectList") containing Polygons. Another Polygon is created which is controlled by the [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard.md "FlatRedBall.Input.Keyboard"). Move collision is used to keep the moving Polygon and the Polygons loaded from the .plylstx from overlapping. Notice that the mass variables can be modified to allow for different collision behavior.
+The following code loads a .plylstx to create a [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList "FlatRedBall.Math.PositionedObjectList") containing Polygons. Another Polygon is created which is controlled by the [Keyboard](/frb/docs/index.php?title=FlatRedBall.Input.Keyboard "FlatRedBall.Input.Keyboard"). Move collision is used to keep the moving Polygon and the Polygons loaded from the .plylstx from overlapping. Notice that the mass variables can be modified to allow for different collision behavior.
 
-Files Used: [Smiley.plylstx](/frb/docs/images/7/79/Smiley.plylstx.md "Smiley.plylstx")
+Files Used: [Smiley.plylstx](/frb/docs/images/7/79/Smiley.plylstx "Smiley.plylstx")
 
 Add the following using statements:
 
@@ -96,9 +96,9 @@ Since this CollideAgainstMove resolves this penetration, it is never seen when t
 
 ## RepositionDirections
 
-If one of the colliding shapes is an AxisAlignedRectangle then the direction of the "move" (the reposition) is subject to this value. For more information, see the [RepositionDirections page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.RepositionDirections.md "FlatRedBall.Math.Geometry.AxisAlignedRectangle.RepositionDirections").
+If one of the colliding shapes is an AxisAlignedRectangle then the direction of the "move" (the reposition) is subject to this value. For more information, see the [RepositionDirections page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.AxisAlignedRectangle.RepositionDirections "FlatRedBall.Math.Geometry.AxisAlignedRectangle.RepositionDirections").
 
 ## Additional Information
 
--   [CollideAgainstMove used on Entities](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Entities_and_Collision.md "FlatRedBallXna:Tutorials:Entities and Collision")
--   [CollideAgainstMove and Attachments](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove_and_Attachments.md "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove and Attachments")
+-   [CollideAgainstMove used on Entities](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Entities_and_Collision "FlatRedBallXna:Tutorials:Entities and Collision")
+-   [CollideAgainstMove and Attachments](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove_and_Attachments "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove and Attachments")

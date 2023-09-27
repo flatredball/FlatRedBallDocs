@@ -1,6 +1,6 @@
 ## Introduction
 
-The ShapeDrawingOrder controls whether all Shapes are drawn under or over other FlatRedBall-drawn objects (for example [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"), [Models](/frb/docs/index.php?title=FlatRedBall.Graphics.Model.PositionedModel.md "FlatRedBall.Graphics.Model.PositionedModel"), and [Texts](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text")). Currently shape drawing order cannot be controlled by the shape's Z value; however, as of the June 2009 release of FlatRedBall, most shapes can be placed on layers which provides some control over ordering.
+The ShapeDrawingOrder controls whether all Shapes are drawn under or over other FlatRedBall-drawn objects (for example [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"), [Models](/frb/docs/index.php?title=FlatRedBall.Graphics.Model.PositionedModel "FlatRedBall.Graphics.Model.PositionedModel"), and [Texts](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text")). Currently shape drawing order cannot be controlled by the shape's Z value; however, as of the June 2009 release of FlatRedBall, most shapes can be placed on layers which provides some control over ordering.
 
 The ShapeDrawingOrder has two options:
 
@@ -11,7 +11,7 @@ Since the default for the ShapeManager's ShapeDrawingOrder is OverEverything, th
 
 ## Code Example
 
-The following example adds a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and a [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line"), then sets ShapeDrawingOrder to UnderEverything so that the added [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line.md "FlatRedBall.Math.Geometry.Line") appears under the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite").
+The following example adds a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and a [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line"), then sets ShapeDrawingOrder to UnderEverything so that the added [Line](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Line "FlatRedBall.Math.Geometry.Line") appears under the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite").
 
 Add the following using statements:
 

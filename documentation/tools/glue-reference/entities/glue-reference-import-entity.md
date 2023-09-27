@@ -1,6 +1,6 @@
 ## Introduction
 
-Screens and Entities [can be exported](/frb/docs/index.php?title=Glue:Reference:Entities:Export_Entity.md "Glue:Reference:Entities:Export Entity") from Glue. These exported Screens/Entities can then be imported back into a project. You can get exported Screens/Entities from files that you have previously exported, from other Glue users, or from [GlueVault.com](http://www.gluevault.com).
+Screens and Entities [can be exported](/frb/docs/index.php?title=Glue:Reference:Entities:Export_Entity "Glue:Reference:Entities:Export Entity") from Glue. These exported Screens/Entities can then be imported back into a project. You can get exported Screens/Entities from files that you have previously exported, from other Glue users, or from [GlueVault.com](http://www.gluevault.com).
 
 ## Importing a Screen/Entity
 

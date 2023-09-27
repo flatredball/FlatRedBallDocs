@@ -1,1 +1,1 @@
--   [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1.md "Gui:Tools Window (page does not exist)")
+-   [Tools Window](/frb/docs/index.php?title=Gui:Tools_Window&action=edit&redlink=1 "Gui:Tools Window (page does not exist)")

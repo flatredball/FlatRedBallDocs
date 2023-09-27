@@ -49,4 +49,4 @@ Screen's CustomActivity:
 
 ## Additional Information
 
--   [GetPositionAfterTime](/frb/docs/index.php?title=FlatRedBall.Math.MathFunctions.GetPositionAfterTime.md "FlatRedBall.Math.MathFunctions.GetPositionAfterTime") - This function can be used to predict the position of objects given an object's starting position, velocity, and acceleration.
+-   [GetPositionAfterTime](/frb/docs/index.php?title=FlatRedBall.Math.MathFunctions.GetPositionAfterTime "FlatRedBall.Math.MathFunctions.GetPositionAfterTime") - This function can be used to predict the position of objects given an object's starting position, velocity, and acceleration.

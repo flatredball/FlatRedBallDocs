@@ -4,7 +4,7 @@ Many games include a Gum screen for every Glue screen. Gum screens can be used f
 
 ## Automatic Gum Screen Addition on New Glue Screen
 
-If you have an existing project which already has a Gum project, then by default your project will receive a new Gum screen any time you add a new Glue screen. [![](/wp-content/uploads/2021/05/2021_May_13_112104.gif.md)](/wp-content/uploads/2021/05/2021_May_13_112104.gif.md) This behavior is default, and it can be controlled by selecting the .gumx file.
+If you have an existing project which already has a Gum project, then by default your project will receive a new Gum screen any time you add a new Glue screen. [![](/wp-content/uploads/2021/05/2021_May_13_112104.gif)](/wp-content/uploads/2021/05/2021_May_13_112104.gif) This behavior is default, and it can be controlled by selecting the .gumx file.
 
 ![](/media/2021-05-img_609d5c7e6a6e3.png)
 

@@ -8,14 +8,14 @@ The ICollidable interface provides a standard collision implementation. Objects 
 
 ## ICollidable Entities
 
-Entities in Glue can be marked as ICollidable. For more information on ICollidable in Glue, see [this page](/frb/docs/index.php?title=Glue:Reference:Entities:Implements_ICollidable.md "Glue:Reference:Entities:Implements ICollidable").
+Entities in Glue can be marked as ICollidable. For more information on ICollidable in Glue, see [this page](/frb/docs/index.php?title=Glue:Reference:Entities:Implements_ICollidable "Glue:Reference:Entities:Implements ICollidable").
 
 ## ICollidable and Collision
 
 ICollidables provide the same three functions for collision as FlatRedBall shapes. For more information check the following pages:
 
--   [CollideAgainst](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.CollideAgainst.md "FlatRedBall.Math.Geometry.Circle.CollideAgainst")
--   [CollideAgainstMove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove.md "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove")
+-   [CollideAgainst](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.CollideAgainst "FlatRedBall.Math.Geometry.Circle.CollideAgainst")
+-   [CollideAgainstMove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove")
 -   [CollideAgainstBounce](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-circle/flatredball-math-geometry-circle-collideagainstbounce.md "FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce")
 
  

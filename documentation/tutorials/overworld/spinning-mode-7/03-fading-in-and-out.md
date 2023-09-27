@@ -32,7 +32,7 @@ To add an overlay ColoredRectangle:
 
 2.  Drag+drop the **ColoredRectangle** type onto the **Mode7ScreenGum**
 
-3.  Rename the newly-created ColoredRectangle to **OverlayRectangle [![](/wp-content/uploads/2021/03/2021_March_20_123824.gif.md)](/wp-content/uploads/2021/03/2021_March_20_123824.gif.md)**
+3.  Rename the newly-created ColoredRectangle to **OverlayRectangle [![](/wp-content/uploads/2021/03/2021_March_20_123824.gif)](/wp-content/uploads/2021/03/2021_March_20_123824.gif)**
 
 4.  Change the color of the rectangle to Black (Red, Green, and Blue values set to 0)
 
@@ -80,7 +80,7 @@ Notice that when a state is selected, Glue informs you that you are editing that
 
     ![](/media/2021-03-img_6056444888835.png)
 
-The Opaque state automatically inherits the default value of 255, so no changes are needed on this state. We can see the two states by clicking on them and observing the change in the Editor window. [![](/wp-content/uploads/2021/03/2021_March_20_124352.gif.md)](/wp-content/uploads/2021/03/2021_March_20_124352.gif.md)
+The Opaque state automatically inherits the default value of 255, so no changes are needed on this state. We can see the two states by clicking on them and observing the change in the Editor window. [![](/wp-content/uploads/2021/03/2021_March_20_124352.gif)](/wp-content/uploads/2021/03/2021_March_20_124352.gif)
 
 ## Creating Gum Animations
 
@@ -114,11 +114,11 @@ The two states we created above (Opaque and Transparent) will be keyframes in ou
 
 8.  Repeat the steps above to add the Transparent state
 
-Gum adds the second keyframe at time 1.00, and we can use the play button to view the animation in the editor window. [![](/wp-content/uploads/2021/03/2021_March_20_135102.gif.md)](/wp-content/uploads/2021/03/2021_March_20_135102.gif.md) Repeat the steps above to add a **FadeOut** animation. The first state should be **Opacity/Transparent**, and the second should be **Opacity/Opaque**.
+Gum adds the second keyframe at time 1.00, and we can use the play button to view the animation in the editor window. [![](/wp-content/uploads/2021/03/2021_March_20_135102.gif)](/wp-content/uploads/2021/03/2021_March_20_135102.gif) Repeat the steps above to add a **FadeOut** animation. The first state should be **Opacity/Transparent**, and the second should be **Opacity/Opaque**.
 
 ![](/media/2021-03-img_605647cc4a7bf.png)
 
-By default both of our animations are 1 second in length. The fade in and fade out in ActRaiser are much shorter, around .3 seconds. We can speed the animations up by changing the Time variable on the second state in both **FadeIn** and **FadeOut**. [![](/wp-content/uploads/2021/03/2021_March_20_133208.gif.md)](/wp-content/uploads/2021/03/2021_March_20_133208.gif.md)
+By default both of our animations are 1 second in length. The fade in and fade out in ActRaiser are much shorter, around .3 seconds. We can speed the animations up by changing the Time variable on the second state in both **FadeIn** and **FadeOut**. [![](/wp-content/uploads/2021/03/2021_March_20_133208.gif)](/wp-content/uploads/2021/03/2021_March_20_133208.gif)
 
 ## Playing Animation in Code
 
@@ -180,7 +180,7 @@ We want the FadeOut animation to finish right when the camera reaches the ground
 
         // ...
 
-Now when we run the game, it begins with a black screen which fades in, the camera falls, and before it hits the ground it fades back to black. [![](/wp-content/uploads/2021/03/2021_April_06_181021.gif.md)](/wp-content/uploads/2021/03/2021_April_06_181021.gif.md)
+Now when we run the game, it begins with a black screen which fades in, the camera falls, and before it hits the ground it fades back to black. [![](/wp-content/uploads/2021/03/2021_April_06_181021.gif)](/wp-content/uploads/2021/03/2021_April_06_181021.gif)
 
 ## Conclusion
 

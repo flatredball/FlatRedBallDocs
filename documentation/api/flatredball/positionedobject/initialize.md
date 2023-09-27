@@ -5,11 +5,11 @@ The Initialize method can be used to reset the PositionedObject variables back t
 -   Position (absolute and relative)
 -   Velocity (absolute and relative)
 -   Acceleration (absolute and relative)
--   All ["real" values](/frb/docs/index.php?title=FlatRedBall.PositionedObject#Real_Velocity_and_Acceleration.md "FlatRedBall.PositionedObject")
+-   All ["real" values](/frb/docs/index.php?title=FlatRedBall.PositionedObject#Real_Velocity_and_Acceleration "FlatRedBall.PositionedObject")
 -   Rotation (absolute and relative)
 -   Rotation Velocity (absolute and relative)
 -   Attachments (detach from parents)
--   Attachment properties ([ParentRotationChangesPosition](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.ParentRotationChangesPosition.md "FlatRedBall.Math.IAttachable.ParentRotationChangesPosition") and [ParentRotationChangesRotation](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.ParentRotationChangesRotation.md "FlatRedBall.Math.IAttachable.ParentRotationChangesRotation"))
+-   Attachment properties ([ParentRotationChangesPosition](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.ParentRotationChangesPosition "FlatRedBall.Math.IAttachable.ParentRotationChangesPosition") and [ParentRotationChangesRotation](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.ParentRotationChangesRotation "FlatRedBall.Math.IAttachable.ParentRotationChangesRotation"))
 -   Instructions
 -   Name
 -   List membership **(see below for more information)**
@@ -23,11 +23,11 @@ The signature for Initialize is as follows:
 
 Arguments:
 
--   bool clearListsBelongingTo - Whether the object should clear its [ListsBelongingTo](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ListsBelongingTo&action=edit&redlink=1.md "FlatRedBall.PositionedObject.ListsBelongingTo (page does not exist)") property. If this property is not specified, then the default value is true.
+-   bool clearListsBelongingTo - Whether the object should clear its [ListsBelongingTo](/frb/docs/index.php?title=FlatRedBall.PositionedObject.ListsBelongingTo&action=edit&redlink=1 "FlatRedBall.PositionedObject.ListsBelongingTo (page does not exist)") property. If this property is not specified, then the default value is true.
 
 ## The dangers of clearListsBelongingTo
 
-The FlatRedBall Engine depends on the two-way relationship that exists between [IAttachables](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.md "FlatRedBall.Math.IAttachable") (an interface of the PositionedObject) and two-way lists that the [IAttachable](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.md "FlatRedBall.Math.IAttachable") belongs to. Calling the no-argument version of Initialize, or passing **true** as the argument will result in the the PositionedObject breaking its two-way relationships with other objects, **but it will not be removed from those lists**. Let's look at a simple example where this can cause errors. The following code creates a PositionedObject, adds it to the SpriteManager for management, initializes, then attempts to remove it:
+The FlatRedBall Engine depends on the two-way relationship that exists between [IAttachables](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable "FlatRedBall.Math.IAttachable") (an interface of the PositionedObject) and two-way lists that the [IAttachable](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable "FlatRedBall.Math.IAttachable") belongs to. Calling the no-argument version of Initialize, or passing **true** as the argument will result in the the PositionedObject breaking its two-way relationships with other objects, **but it will not be removed from those lists**. Let's look at a simple example where this can cause errors. The following code creates a PositionedObject, adds it to the SpriteManager for management, initializes, then attempts to remove it:
 
     PositionedObject positionedObjectInstance = new PositionedObject();
     SpriteManager.AddPositionedObject(positionedObjectInstance);

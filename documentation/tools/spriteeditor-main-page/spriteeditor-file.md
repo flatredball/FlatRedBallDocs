@@ -12,7 +12,7 @@
 
 -   Load Sprite Rig loads a premade Sprite Rig into the SpriteEditor's workspace
 -   For more information on Sprite Rigs:
-    -   [/frb/docs/index.php?title=FlatRedBall.ManagedSpriteGroups.SpriteRig.md](/frb/docs/index.php?title=FlatRedBall.ManagedSpriteGroups.SpriteRig.md)
+    -   [http://www.flatredball.com/frb/docs/index.php?title=FlatRedBall.ManagedSpriteGroups.SpriteRig](/frb/docs/index.php?title=FlatRedBall.ManagedSpriteGroups.SpriteRig)
 
 ## Save Scene
 

@@ -8,7 +8,7 @@ As you might have guessed, the first step is to add PNGs and a Sprite to the Roc
 
 1.  Download the following four images: ![Rock1.png](/media/migrated_media-Rock1.png)![Rock2.png](/media/migrated_media-Rock2.png)![Rock3.png](/media/migrated_media-Rock3.png)![Rock4.png](/media/migrated_media-Rock4.png)
 2.  Expand the **Rock** Entity in Glue
-3.  Drag+drop the four files into the **Files** folder [![](/wp-content/uploads/2016/01/2021_March_13_161132.gif.md)](/wp-content/uploads/2016/01/2021_March_13_161132.gif.md)
+3.  Drag+drop the four files into the **Files** folder [![](/wp-content/uploads/2016/01/2021_March_13_161132.gif)](/wp-content/uploads/2016/01/2021_March_13_161132.gif)
 
 Now you should have four files in the Rock entity. Like before, the PNG files will be copied into the game project. To add the Sprite to the Rock entity:
 

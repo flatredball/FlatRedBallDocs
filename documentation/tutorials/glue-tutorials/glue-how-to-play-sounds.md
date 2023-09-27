@@ -14,7 +14,7 @@ The following will show you how to add a SoundEffect to a Screen. The same metho
 
         ![](/media/2022-09-img_63291e0635a58.png)
 
-Note: WAV files are used for sound effects. MP3 and WMA files are used for songs. For information on MP3 files, see [this file](/frb/docs/index.php?title=Glue:Reference:Files:MP3_file_(.mp3).md "Glue:Reference:Files:MP3 file (.mp3)").
+Note: WAV files are used for sound effects. MP3 and WMA files are used for songs. For information on MP3 files, see [this file](/frb/docs/index.php?title=Glue:Reference:Files:MP3_file_(.mp3) "Glue:Reference:Files:MP3 file (.mp3)").
 
 Your WAV file should now be part of of the Screen.
 
@@ -29,7 +29,7 @@ To play the sound in code, add the following code to your GameScreen. This assum
         SoundEffectFile.Play();
     }
 
-The SoundEffectFile object in this example is a SoundEffect instance created by Glue. For information on working with the SoundEffect class, see [the SoundEffect code reference page](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-audio/microsoft-xna-framework-audio-soundeffect.md). The SoundEffect (which is added to a Screen/Entity when adding a WAV file) can also be played using the [AudioManager](/frb/docs/index.php?title=FlatRedBall.Audio.AudioManager.md "FlatRedBall.Audio.AudioManager").
+The SoundEffectFile object in this example is a SoundEffect instance created by Glue. For information on working with the SoundEffect class, see [the SoundEffect code reference page](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-audio/microsoft-xna-framework-audio-soundeffect.md). The SoundEffect (which is added to a Screen/Entity when adding a WAV file) can also be played using the [AudioManager](/frb/docs/index.php?title=FlatRedBall.Audio.AudioManager "FlatRedBall.Audio.AudioManager").
 
 ## Limiting Number of Playing SoundEffects
 
@@ -37,7 +37,7 @@ By default the SoundEffect is fire-and-forget, and the only limitation on simult
 
 ## Volume, Looping, and Panning
 
-To control volume, looping, and panning, you will need to use a SoundEffectInstance object. For information on this, see the [SoundEffectInstance Glue reference page](/frb/docs/index.php?title=Glue:Reference:Objects:SoundEffectInstance.md "Glue:Reference:Objects:SoundEffectInstance").
+To control volume, looping, and panning, you will need to use a SoundEffectInstance object. For information on this, see the [SoundEffectInstance Glue reference page](/frb/docs/index.php?title=Glue:Reference:Objects:SoundEffectInstance "Glue:Reference:Objects:SoundEffectInstance").
 
 ## Troubleshooting
 

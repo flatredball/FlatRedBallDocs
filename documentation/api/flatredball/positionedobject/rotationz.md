@@ -18,4 +18,4 @@ The following code shows how to apply RotationZ to a Sprite in code. This assume
         }
     }
 
-[![](/wp-content/uploads/2019/07/2021_March_16_092026.gif.md)](/wp-content/uploads/2019/07/2021_March_16_092026.gif.md)  
+[![](/wp-content/uploads/2019/07/2021_March_16_092026.gif)](/wp-content/uploads/2019/07/2021_March_16_092026.gif)  

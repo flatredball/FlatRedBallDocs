@@ -8,7 +8,7 @@ Before a PNG can be loaded, it must be added to your project. Normally the manag
 
 1.  Find or create a PNG file that you would like to use
 
-2.  Drag+drop the file into your Visual Studio project. Usually content is added to the Content folder, or a subfolder inside of the Content folder. [![](/wp-content/uploads/2022/08/17_16_47_41.gif.md)](/wp-content/uploads/2022/08/17_16_47_41.gif.md)
+2.  Drag+drop the file into your Visual Studio project. Usually content is added to the Content folder, or a subfolder inside of the Content folder. [![](/wp-content/uploads/2022/08/17_16_47_41.gif)](/wp-content/uploads/2022/08/17_16_47_41.gif)
 
 3.  Right-click on the file and select ****Properties****
 
@@ -23,7 +23,7 @@ This tells Visual Studio to copy the Bear.png file to the output directory (wher
 To add a PNG to your project in Visual Studio Code:
 
 1.  Find or create a PNG file that you would like to use
-2.  Drag+drop the file from an explorer window into your project's Content folder [![](/wp-content/uploads/2022/08/13_08-11-58.gif.md)](/wp-content/uploads/2022/08/13_08-11-58.gif.md)
+2.  Drag+drop the file from an explorer window into your project's Content folder [![](/wp-content/uploads/2022/08/13_08-11-58.gif)](/wp-content/uploads/2022/08/13_08-11-58.gif)
 
 We need to add an entry for the newly-added TextureFile so that it is copied to our project. We will need to do this for any PNG file (or other content file) that we add to our project in the future. To do this:
 

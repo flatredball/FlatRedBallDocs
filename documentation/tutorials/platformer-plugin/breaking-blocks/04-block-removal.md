@@ -110,7 +110,7 @@ As mentioned above, Glue supports objects with multiple collision shapes. To add
     -   Width = 1
     -   Height = 5
 
-Our player now has a small rectangle at the top. However, this rectangle is currently considered as part of the entire player. This is most evident when hitting blocks from below. Notice that the new sub-collision performs solid collision. [![](/wp-content/uploads/2021/04/2021_April_09_080126.gif.md)](/wp-content/uploads/2021/04/2021_April_09_080126.gif.md) We don't want this rectangle to perform solid collision - it should only be used in our code to check which block to break. To fix this, we can mark the BlockRectangle as being excluded from the default list of shapes used in collision. To do this:
+Our player now has a small rectangle at the top. However, this rectangle is currently considered as part of the entire player. This is most evident when hitting blocks from below. Notice that the new sub-collision performs solid collision. [![](/wp-content/uploads/2021/04/2021_April_09_080126.gif)](/wp-content/uploads/2021/04/2021_April_09_080126.gif) We don't want this rectangle to perform solid collision - it should only be used in our code to check which block to break. To fix this, we can mark the BlockRectangle as being excluded from the default list of shapes used in collision. To do this:
 
 1.  Select the **BlockCollision** object under Player
 
@@ -120,7 +120,7 @@ Our player now has a small rectangle at the top. However, this rectangle is curr
 
     ![](/media/2021-04-img_607064aca548a.png)
 
-Now BlockCollision will still be part of the Player object but will not be considered in any CollisionRelationships (by default). [![](/wp-content/uploads/2021/04/2021_April_09_084732.gif.md)](/wp-content/uploads/2021/04/2021_April_09_084732.gif.md)
+Now BlockCollision will still be part of the Player object but will not be considered in any CollisionRelationships (by default). [![](/wp-content/uploads/2021/04/2021_April_09_084732.gif)](/wp-content/uploads/2021/04/2021_April_09_084732.gif)
 
 ## Adding Block Destroying Logic
 
@@ -195,7 +195,7 @@ Now we can perform our destroy logic. As mentioned above, we will first check if
         }
     }
 
-Now if we run the game, the Player can only destroy one Block at a time. If the Player collides with multiple Blocks, then the one which is directly above the Player will be destroyed. Of course, we there are some collision problems caused by the RepositionDirections not being adjusted properly. This is evident when trying to destroy the top row of blocks. [![](/wp-content/uploads/2021/04/2021_April_09_091143.gif.md)](/wp-content/uploads/2021/04/2021_April_09_091143.gif.md)  
+Now if we run the game, the Player can only destroy one Block at a time. If the Player collides with multiple Blocks, then the one which is directly above the Player will be destroyed. Of course, we there are some collision problems caused by the RepositionDirections not being adjusted properly. This is evident when trying to destroy the top row of blocks. [![](/wp-content/uploads/2021/04/2021_April_09_091143.gif)](/wp-content/uploads/2021/04/2021_April_09_091143.gif)  
 
 ### 4. Once a Block is Destroyed, Update RepositionDirections
 
@@ -234,7 +234,7 @@ The RepositionDirections are initially set when all of the Blocks are created, a
         }
     }
 
-Notice that the rectangle is removed **before** the Block is destroyed. Also, notice that the RemoveRectangle method is called in two spots since we destroy blocks in two spots in the code above. Now the RepositionDirections are updated properly and the player will be able to collide with the blocks properly even after blocks are destroyed. [![](/wp-content/uploads/2021/04/2021_April_09_094421.gif.md)](/wp-content/uploads/2021/04/2021_April_09_094421.gif.md)
+Notice that the rectangle is removed **before** the Block is destroyed. Also, notice that the RemoveRectangle method is called in two spots since we destroy blocks in two spots in the code above. Now the RepositionDirections are updated properly and the player will be able to collide with the blocks properly even after blocks are destroyed. [![](/wp-content/uploads/2021/04/2021_April_09_094421.gif)](/wp-content/uploads/2021/04/2021_April_09_094421.gif)
 
 ## Conclusion
 

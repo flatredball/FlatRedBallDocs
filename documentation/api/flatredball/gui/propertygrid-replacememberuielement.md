@@ -4,7 +4,7 @@ The ReplaceMemberUIElement method replaces the current UI element for the argume
 
 ## Code Example
 
-The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") PropertyGrid. To keep the code simple, the only member included is the Alpha member. A [TimeLine](/frb/docs/index.php?title=FlatRedBall.Gui.TimeLine.md "FlatRedBall.Gui.TimeLine") is used instead of the default [UpDown](/frb/docs/index.php?title=FlatRedBall.Gui.UpDown&action=edit&redlink=1.md "FlatRedBall.Gui.UpDown (page does not exist)") UI element to provide an interface to the Alpha member.
+The following code creates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") PropertyGrid. To keep the code simple, the only member included is the Alpha member. A [TimeLine](/frb/docs/index.php?title=FlatRedBall.Gui.TimeLine "FlatRedBall.Gui.TimeLine") is used instead of the default [UpDown](/frb/docs/index.php?title=FlatRedBall.Gui.UpDown&action=edit&redlink=1 "FlatRedBall.Gui.UpDown (page does not exist)") UI element to provide an interface to the Alpha member.
 
 Add the following using statement:
 

@@ -2,13 +2,13 @@
 
 The CollideAgainstBounce method can be used to have two 3D shapes collide against each other and bounce (modify their or their top parent's velocity appropriately).
 
-This function works the same as the CollideAgainstBounce provided for 2D shapes, so for a more detailed discussion, see [this page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce.md "FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce").
+This function works the same as the CollideAgainstBounce provided for 2D shapes, so for a more detailed discussion, see [this page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce "FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce").
 
 ## Code Example
 
 The following code creates two AxisAlignedCubes, sets the acceleration of one so it falls towards the other, and calls CollideAgainstBounce so that the two collide.
 
-Note that for this example the project is using a 3D camera rather than a 2D camera. For information on how to set up a 3D camera in Glue, see [this page](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:Camera_Settings.md "Glue:Reference:Menu:Settings:Camera Settings").
+Note that for this example the project is using a 3D camera rather than a 2D camera. For information on how to set up a 3D camera in Glue, see [this page](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:Camera_Settings "Glue:Reference:Menu:Settings:Camera Settings").
 
 Add the following at class scope in your Screen:
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-The IsOn3D method is a very powerful method that can be used to test if the cursor is over an object. IsOn3D is used by [Glue](/frb/docs/index.php?title=Glue.md "Glue") generated code to test if the Cursor is over an Entity if the Entity implements IClickable or IWindow. The IsOn3D method is very powerful and flexible. It considers:
+The IsOn3D method is a very powerful method that can be used to test if the cursor is over an object. IsOn3D is used by [Glue](/frb/docs/index.php?title=Glue "Glue") generated code to test if the Cursor is over an Entity if the Entity implements IClickable or IWindow. The IsOn3D method is very powerful and flexible. It considers:
 
 -   Object position
 -   Camera position
@@ -56,10 +56,10 @@ The IsOn3D method can be used to detect if the Cursor has clicked on an object. 
        // The user has clicked on the Sprite, do something
     }
 
-For more information on PrimaryClick, see the [PrimaryClick page](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.PrimaryClick.md "FlatRedBall.Gui.Cursor.PrimaryClick").
+For more information on PrimaryClick, see the [PrimaryClick page](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.PrimaryClick "FlatRedBall.Gui.Cursor.PrimaryClick").
 
 ## IsOn3D and Layers
 
-The IsOn3D method supports [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer.md "FlatRedBall.Graphics.Layer") as well. For example, assuming mySprite is a valid Sprite and myLayer is valid Layer:
+The IsOn3D method supports [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer") as well. For example, assuming mySprite is a valid Sprite and myLayer is valid Layer:
 
     bool isCursorOn = GuiManager.Cursor.IsOn3D(mySprite, myLayer);

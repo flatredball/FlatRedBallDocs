@@ -4,4 +4,4 @@ The PluginBase class acts as a base class for all plugins. It simplifies the pro
 
 ## PluginBase Members
 
--   [FlatRedBall.Glue.Plugins.PluginBase.GetFilesReferencedBy](/frb/docs/index.php?title=FlatRedBall.Glue.Plugins.PluginBase.GetFilesReferencedBy.md "FlatRedBall.Glue.Plugins.PluginBase.GetFilesReferencedBy")
+-   [FlatRedBall.Glue.Plugins.PluginBase.GetFilesReferencedBy](/frb/docs/index.php?title=FlatRedBall.Glue.Plugins.PluginBase.GetFilesReferencedBy "FlatRedBall.Glue.Plugins.PluginBase.GetFilesReferencedBy")

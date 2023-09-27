@@ -12,7 +12,7 @@ The type of information can be categorized into three groups:
 
 ## Creating a new Project
 
-You will need a Glue project to follow along this tutorial. For information on how to create Glue projects, see [this page](/frb/docs/index.php?title=Glue:Tutorials:Creating_a_new_project.md "Glue:Tutorials:Creating a new project").
+You will need a Glue project to follow along this tutorial. For information on how to create Glue projects, see [this page](/frb/docs/index.php?title=Glue:Tutorials:Creating_a_new_project "Glue:Tutorials:Creating a new project").
 
 ## Creating an Entity
 
@@ -184,9 +184,9 @@ So far we've shown how to set AnimalInfo in Glue. This is very handy for preview
 
     AnimalInfo.Bear
 
-. You can do this with CTRL+dot. More info [here](/frb/docs/index.php?title=Visual_Studio_Tutorials:Qualifying_Types.md "Visual Studio Tutorials:Qualifying Types")
+. You can do this with CTRL+dot. More info [here](/frb/docs/index.php?title=Visual_Studio_Tutorials:Qualifying_Types "Visual Studio Tutorials:Qualifying Types")
 
-You can change this from Bear to Slug and the AnimalInstance will respond appropriately. Of course, you don't have to do this just in CustomInitialize, you can do this at any point, and on any Entity that supports this pattern, whether it is created in Glue, or [created purely in code](/frb/docs/index.php?title=Glue:Tutorials:Basic_coding_in_Glue#Creating_an_Entity_Programatically.md "Glue:Tutorials:Basic coding in Glue").
+You can change this from Bear to Slug and the AnimalInstance will respond appropriately. Of course, you don't have to do this just in CustomInitialize, you can do this at any point, and on any Entity that supports this pattern, whether it is created in Glue, or [created purely in code](/frb/docs/index.php?title=Glue:Tutorials:Basic_coding_in_Glue#Creating_an_Entity_Programatically "Glue:Tutorials:Basic coding in Glue").
 
 ## Considerations and moving forward
 

@@ -4,7 +4,7 @@ IAttachables provide properties and methods to control attachments.
 
 ## What are attachments?
 
-An attachment is a relationship between two [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") in which one is identified as the parent object and one as the child object. The child object's absolute rotation and position values become read-only and its position and rotation are controlled by its parent's absolute position and rotation values as well as its own relative position and rotation values.
+An attachment is a relationship between two [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") in which one is identified as the parent object and one as the child object. The child object's absolute rotation and position values become read-only and its position and rotation are controlled by its parent's absolute position and rotation values as well as its own relative position and rotation values.
 
 The following examples highlight some of the uses of attachments:
 
@@ -12,7 +12,7 @@ The following examples highlight some of the uses of attachments:
 
 &nbsp;
 
--   Orbits: Attached [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") do not have to be touching for the attachment to be valid. We could easily have one object orbit around another by attaching the orbiting [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") to an invisible, spinning [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") positioned at the center of the orbit.
+-   Orbits: Attached [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") do not have to be touching for the attachment to be valid. We could easily have one object orbit around another by attaching the orbiting [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") to an invisible, spinning [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") positioned at the center of the orbit.
 
 &nbsp;
 
@@ -20,7 +20,7 @@ The following examples highlight some of the uses of attachments:
 
 &nbsp;
 
--   Redefining a [PositionedObject's](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") rotational center: Some objects may need to be rotated, but their â€œcenterâ€? is not at the center of the object. One example is a turret on a space ship. The barrel and round base may be one long [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"), however, it should rotate about its base rather than the center of the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"), which may be somewhere on the barrel. A joint [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") can be positioned at the desired rotational center, and the turret can be attached to the joint. Now, rotating the joint will rotate the gun along its base. The joint can also be attached to a ship, and behavior will be the same, assuming relative rotation is used rather than absolute rotation.
+-   Redefining a [PositionedObject's](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") rotational center: Some objects may need to be rotated, but their â€œcenterâ€? is not at the center of the object. One example is a turret on a space ship. The barrel and round base may be one long [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"), however, it should rotate about its base rather than the center of the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"), which may be somewhere on the barrel. A joint [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") can be positioned at the desired rotational center, and the turret can be attached to the joint. Now, rotating the joint will rotate the gun along its base. The joint can also be attached to a ship, and behavior will be the same, assuming relative rotation is used rather than absolute rotation.
 
 &nbsp;
 
@@ -32,7 +32,7 @@ The relative values in an IAttachable are effective **only if an IAttachable has
 
 ## Creating Attachments
 
-The following code creates two [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). The larger [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") is the parent [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). The smaller [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") is the child [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") which is attached to the parent [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). Notice that attachments are created through the child and not the parent.
+The following code creates two [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). The larger [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") is the parent [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). The smaller [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") is the child [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") which is attached to the parent [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). Notice that attachments are created through the child and not the parent.
 
     // Replace your Initialize method with the following:
     protected override void Initialize()
@@ -72,11 +72,11 @@ The AttachTo method creates a child-parent relationship between to IAttachables.
 
 The second argument determines whether relative values change, which also determines whether absolute values remain the same before and after the AttachTo call.
 
-For more information see the [AttachTo page](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObject.AttachTo&action=edit&redlink=1.md "FlatRedBall.Math.PositionedObject.AttachTo (page does not exist)").
+For more information see the [AttachTo page](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObject.AttachTo&action=edit&redlink=1 "FlatRedBall.Math.PositionedObject.AttachTo (page does not exist)").
 
 ### Relative Positioning
 
-All IAttachables have relative versions of position, velocity, acceleration, rotation, and rotational velocity. Relative properties are named the same as their absolute counterparts prefixed with the word "Relative". If the IAttachable is a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") as is the case with [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"), [Cameras](/frb/docs/index.php?title=FlatRedBall.Camera.md "FlatRedBall.Camera"), [Text objects](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text"), and [Emitters](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.md "FlatRedBall.Graphics.Particle.Emitter"), then the following relationships hold:
+All IAttachables have relative versions of position, velocity, acceleration, rotation, and rotational velocity. Relative properties are named the same as their absolute counterparts prefixed with the word "Relative". If the IAttachable is a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") as is the case with [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"), [Cameras](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera"), [Text objects](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text"), and [Emitters](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter "FlatRedBall.Graphics.Particle.Emitter"), then the following relationships hold:
 
 | "Absolute" Property | "Relative" Property       |
 |---------------------|---------------------------|
@@ -98,7 +98,7 @@ All IAttachables have relative versions of position, velocity, acceleration, rot
 
 ### Remember, child absolute values are read-only
 
-As mentioned before, if a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") has a parent, then its absolute values are read only. For example, consider the X (or Position.X) value. If an object has a parent, then its X position (ignoring rotation) is:
+As mentioned before, if a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") has a parent, then its absolute values are read only. For example, consider the X (or Position.X) value. If an object has a parent, then its X position (ignoring rotation) is:
 
     child.X = parent.X + object.RelativeX;
 
@@ -120,13 +120,13 @@ The Velocity will add itself (considering time) every frame, but just before dra
 
 Reading Velocity can also be misleading because velocity is not by default a "reactive" property. That means that if an object is moved by its Parent, the Velocity property will not automatically update itself according to the movement performed due to the attachment.
 
-However, making velocity reactive is possible using ["Real" values](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md#Real_Velocity_and_Acceleration "FlatRedBall.PositionedObject").
+However, making velocity reactive is possible using ["Real" values](/frb/docs/index.php?title=FlatRedBall.PositionedObject#Real_Velocity_and_Acceleration "FlatRedBall.PositionedObject").
 
-## "Changing the center" of a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject")
+## "Changing the center" of a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject")
 
-By default all [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") are positioned at their center (the exception to this is the [Text object](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text")). This can be changed using attachments.
+By default all [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") are positioned at their center (the exception to this is the [Text object](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text")). This can be changed using attachments.
 
-First, let's look at the default center and points of rotation. We'll use a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") to show how this works ([Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") inherits from [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") which implements IAttachable.
+First, let's look at the default center and points of rotation. We'll use a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to show how this works ([Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") inherits from [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") which implements IAttachable.
 
     Sprite sprite = SpriteManager.AddSprite("redball.bmp");
     sprite.ScaleX = 5;
@@ -135,9 +135,9 @@ First, let's look at the default center and points of rotation. We'll use a [Spr
 
 ![RotatingSprite.png](/media/migrated_media-RotatingSprite.png)
 
-As expected the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") rotates about its center. To change the point that the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") rotates about, we need to use an additional [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject").
+As expected the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") rotates about its center. To change the point that the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") rotates about, we need to use an additional [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject").
 
-We'll add a simple [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject"), attach the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") to it, then make the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") rotate. Notice that we must add the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") to the [SpriteManager](/frb/docs/index.php?title=FlatRedBall.Sprite.mdManager "FlatRedBall.SpriteManager") or else the RotationZVelocity member will not apply automatically.
+We'll add a simple [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject"), attach the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to it, then make the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") rotate. Notice that we must add the [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") to the [SpriteManager](/frb/docs/index.php?title=FlatRedBall.SpriteManager "FlatRedBall.SpriteManager") or else the RotationZVelocity member will not apply automatically.
 
     PositionedObject anchor = new PositionedObject();
     SpriteManager.AddPositionedObject(anchor);
@@ -162,14 +162,14 @@ We'll add a simple [PositionedObject](/frb/docs/index.php?title=FlatRedBall.Posi
 
 ## IAttachable Members
 
--   [FlatRedBall.Math.IAttachable.Detach](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.Detach.md "FlatRedBall.Math.IAttachable.Detach")
--   [FlatRedBall.Math.IAttachable.ParentRotationChangesPosition](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.ParentRotationChangesPosition.md "FlatRedBall.Math.IAttachable.ParentRotationChangesPosition")
--   [FlatRedBall.Math.IAttachable.ParentRotationChangesRotation](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.ParentRotationChangesRotation.md "FlatRedBall.Math.IAttachable.ParentRotationChangesRotation")
--   [FlatRedBall.Math.IAttachable.TopParent](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.TopParent.md "FlatRedBall.Math.IAttachable.TopParent")
+-   [FlatRedBall.Math.IAttachable.Detach](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.Detach "FlatRedBall.Math.IAttachable.Detach")
+-   [FlatRedBall.Math.IAttachable.ParentRotationChangesPosition](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.ParentRotationChangesPosition "FlatRedBall.Math.IAttachable.ParentRotationChangesPosition")
+-   [FlatRedBall.Math.IAttachable.ParentRotationChangesRotation](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.ParentRotationChangesRotation "FlatRedBall.Math.IAttachable.ParentRotationChangesRotation")
+-   [FlatRedBall.Math.IAttachable.TopParent](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.TopParent "FlatRedBall.Math.IAttachable.TopParent")
 
 ## Additional Information
 
--   [FlatRedBall.Math.IAttachable:Attachment Updates in the Engine](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable:Attachment_Updates_in_the_Engine.md "FlatRedBall.Math.IAttachable:Attachment Updates in the Engine")
--   [Two-way relationships](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships.md "FlatRedBall.Math.AttachableList") - Explains how two-way relationships work between IAttachables and the lists they belong to.
+-   [FlatRedBall.Math.IAttachable:Attachment Updates in the Engine](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable:Attachment_Updates_in_the_Engine "FlatRedBall.Math.IAttachable:Attachment Updates in the Engine")
+-   [Two-way relationships](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships "FlatRedBall.Math.AttachableList") - Explains how two-way relationships work between IAttachables and the lists they belong to.
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -1,6 +1,6 @@
 ## Introduction
 
-Links represent a one-way path to a [PositionedNode](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode.md "FlatRedBall.AI.Pathfinding.PositionedNode"). [PositionedNodes](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode.md "FlatRedBall.AI.Pathfinding.PositionedNode") store a list of links to other [PositionedNodes](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode.md "FlatRedBall.AI.Pathfinding.PositionedNode") internally. These are used by [NodeNetworks](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.NodeNetwork.md "FlatRedBall.AI.Pathfinding.NodeNetwork") to find the shortest path between two nodes.
+Links represent a one-way path to a [PositionedNode](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode "FlatRedBall.AI.Pathfinding.PositionedNode"). [PositionedNodes](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode "FlatRedBall.AI.Pathfinding.PositionedNode") store a list of links to other [PositionedNodes](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode "FlatRedBall.AI.Pathfinding.PositionedNode") internally. These are used by [NodeNetworks](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.NodeNetwork "FlatRedBall.AI.Pathfinding.NodeNetwork") to find the shortest path between two nodes.
 
 ## One-Way Links
 
@@ -8,13 +8,13 @@ Links are one-way to support wider functionality with pathfinding. In other word
 
 ## References
 
--   [FlatRedBall.AI.Pathfinding Namespace](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding_(Namespace).md "FlatRedBall.AI.Pathfinding (Namespace)")
--   [FlatRedBall.AI.Pathfinding.NodeNetwork](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.NodeNetwork.md "FlatRedBall.AI.Pathfinding.NodeNetwork")
--   [FlatRedBall.AI.Pathfinding.PositionedNode](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode.md "FlatRedBall.AI.Pathfinding.PositionedNode")
+-   [FlatRedBall.AI.Pathfinding Namespace](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding_(Namespace) "FlatRedBall.AI.Pathfinding (Namespace)")
+-   [FlatRedBall.AI.Pathfinding.NodeNetwork](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.NodeNetwork "FlatRedBall.AI.Pathfinding.NodeNetwork")
+-   [FlatRedBall.AI.Pathfinding.PositionedNode](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.PositionedNode "FlatRedBall.AI.Pathfinding.PositionedNode")
 
 ## Link Members
 
--   [FlatRedBall.AI.Pathfinding.Link.Cost](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link.Cost.md "FlatRedBall.AI.Pathfinding.Link.Cost")
--   [FlatRedBall.AI.Pathfinding.Link.NodeLinkingTo](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link.NodeLinkingTo.md "FlatRedBall.AI.Pathfinding.Link.NodeLinkingTo")
+-   [FlatRedBall.AI.Pathfinding.Link.Cost](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link.Cost "FlatRedBall.AI.Pathfinding.Link.Cost")
+-   [FlatRedBall.AI.Pathfinding.Link.NodeLinkingTo](/frb/docs/index.php?title=FlatRedBall.AI.Pathfinding.Link.NodeLinkingTo "FlatRedBall.AI.Pathfinding.Link.NodeLinkingTo")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

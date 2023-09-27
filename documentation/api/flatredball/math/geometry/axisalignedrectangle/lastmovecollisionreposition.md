@@ -1,6 +1,6 @@
 ## Introduction
 
-The LastMoveCollisionReposition is a property that exists for all [Shapes](/frb/docs/index.php?title=Shape.md "Shape"). If using CollisionRelationships, this property is set on any type of collision relationship that moves an object. This includes:
+The LastMoveCollisionReposition is a property that exists for all [Shapes](/frb/docs/index.php?title=Shape "Shape"). If using CollisionRelationships, this property is set on any type of collision relationship that moves an object. This includes:
 
 -   Move Collision
 -   Bounce Collision
@@ -54,11 +54,11 @@ The following code can be used in a platformer to detect if a character is on th
        character.IsOnGround = false;
     }
 
-This code uses the [CollideAgainstBounce](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce.md "FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce") method. For more information on this method, see [this page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce.md "FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce"). Let's look at the individual pieces of code above to see what is happening. The first line is:
+This code uses the [CollideAgainstBounce](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce "FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce") method. For more information on this method, see [this page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce "FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce"). Let's look at the individual pieces of code above to see what is happening. The first line is:
 
     if(character.Collision.CollideAgainstBounce(LevelCollision, 0, 1, 0))
 
-This line of code tests to see if the character's collision (which we assume is a circle) collides against the "LevelCollision" which can be any shape or an entire [ShapeCollection](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeCollection.md "FlatRedBall.Math.Geometry.ShapeCollection"). This method does the following:
+This line of code tests to see if the character's collision (which we assume is a circle) collides against the "LevelCollision" which can be any shape or an entire [ShapeCollection](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.ShapeCollection "FlatRedBall.Math.Geometry.ShapeCollection"). This method does the following:
 
 -   It adjusts the velocity of the calling object (the character in this case) so that it is no longer falling. This prevents gravity accumulation errors.
 -   It adjusts the calling shape's (the character.Collision in this case) LastMoveCollisionReposition.
@@ -68,7 +68,7 @@ So, as we can see, this first if-statement does \*a lot\*. Well, the most import
 
     bool wasRepositionedUpward = character.Collision.LastMoveCollisionReposition.Y > 0;
 
-This line of code tells us whether the collision that occurred should be treated as a ground collision. The reason this works is because "move" and "bounce" collision methods move the calling objects so they no longer overlap. For more information on how this works, check [this page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove#Understanding_the_CollideAgainstMove_Implementation.md "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove").![CollideAgainstMoveReposition.png](/media/migrated_media-CollideAgainstMoveReposition.png) If the player is standing on the ground, then gravity will move the player "into the ground", but the CollideAgainstBounce method will separate the two - repositioning the Circle. If the player is on the ground, then this position is vertical; in other words, it has a Y value of greater than 0. By contrast, if the character is jumping and hits the ceiling with his head, then he will be repositioned downward; the Y value will have a value less than 0. Finally we assign this value to our character's IsOnGround property:
+This line of code tells us whether the collision that occurred should be treated as a ground collision. The reason this works is because "move" and "bounce" collision methods move the calling objects so they no longer overlap. For more information on how this works, check [this page](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove#Understanding_the_CollideAgainstMove_Implementation "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove").![CollideAgainstMoveReposition.png](/media/migrated_media-CollideAgainstMoveReposition.png) If the player is standing on the ground, then gravity will move the player "into the ground", but the CollideAgainstBounce method will separate the two - repositioning the Circle. If the player is on the ground, then this position is vertical; in other words, it has a Y value of greater than 0. By contrast, if the character is jumping and hits the ceiling with his head, then he will be repositioned downward; the Y value will have a value less than 0. Finally we assign this value to our character's IsOnGround property:
 
     character.IsOnGround = wasRepositionedUpward;
 

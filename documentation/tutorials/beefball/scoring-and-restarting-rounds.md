@@ -12,7 +12,7 @@ Conceptually detecting a goal is simple - whenever the Puck collides with a cert
 4.  Select the **AxisAlignedRectangle** option under **Collisions**
 5.  Click **OK**
 
-[![](/wp-content/uploads/2016/01/2021_July_25_141031.gif.md)](/wp-content/uploads/2016/01/2021_July_25_141031.gif.md) The default rectangle size for a Goal is too small, so we will make it bigger:
+[![](/wp-content/uploads/2016/01/2021_July_25_141031.gif)](/wp-content/uploads/2016/01/2021_July_25_141031.gif) The default rectangle size for a Goal is too small, so we will make it bigger:
 
 1.  Select the **AxisAlignedRectangleInstance** in the **Goal** entity
 2.  Click the **Variables** tab
@@ -28,7 +28,7 @@ Just like before, we'll also add a list of goals in our GameScreen:
 
 ![](/media/2021-07-img_60fdcc7a9eb64.png)
 
-Next we'll add two goal rectangles to the GameScreen. Instead of using the Quick Actions tab, we'll show an alternative method here by drag+dropping the Goal entity onto GameScreen. Do this twice, changing the name of the first to LeftGoal and the second to RightGoal: [![](/wp-content/uploads/2016/01/2021_July_25_141042.gif.md)](/wp-content/uploads/2016/01/2021_July_25_141042.gif.md)
+Next we'll add two goal rectangles to the GameScreen. Instead of using the Quick Actions tab, we'll show an alternative method here by drag+dropping the Goal entity onto GameScreen. Do this twice, changing the name of the first to LeftGoal and the second to RightGoal: [![](/wp-content/uploads/2016/01/2021_July_25_141042.gif)](/wp-content/uploads/2016/01/2021_July_25_141042.gif)
 
 **Why do goal names matter? **In an earlier tutorial we created the wall collision and named them sequentially (Wall1, Wall2, etc). However, the goals are slightly different - we will be checking which goal we collided with in code to determine whether the left or right team should earn a point. Setting clear names will make it easier to keep track of which goal is on each side.
 
@@ -51,7 +51,7 @@ If you tried playing the game, you may have noticed that the PlayerBall instance
 5.  Change the **Collision Physics** to **Bounce Collision**
 6.  Set the **PlayerBall Mass** to **0**
 
-[![](/wp-content/uploads/2016/01/2021_July_25_144446.gif.md)](/wp-content/uploads/2016/01/2021_July_25_144446.gif.md)   If you run the game, you will no longer be able to leave the play area with either PlayerBall. [![](/wp-content/uploads/2016/01/2021_July_25_140248.gif.md)](/wp-content/uploads/2016/01/2021_July_25_140248.gif.md)
+[![](/wp-content/uploads/2016/01/2021_July_25_144446.gif)](/wp-content/uploads/2016/01/2021_July_25_144446.gif)   If you run the game, you will no longer be able to leave the play area with either PlayerBall. [![](/wp-content/uploads/2016/01/2021_July_25_140248.gif)](/wp-content/uploads/2016/01/2021_July_25_140248.gif)
 
 ## Detecting Goals
 
@@ -65,14 +65,14 @@ Now we'll create another collision relationship, but this time we won't use any 
 1.  Expand the **GameScreen's Objects** folder
 2.  Drag+drop the **PuckList** object onto the **GoalList**
 
-[![](/wp-content/uploads/2016/01/2021_July_25_145051.gif.md)](/wp-content/uploads/2016/01/2021_July_25_145051.gif.md) Now we'll create an event, which is a function that is automatically called whenever the collision occurs:
+[![](/wp-content/uploads/2016/01/2021_July_25_145051.gif)](/wp-content/uploads/2016/01/2021_July_25_145051.gif) Now we'll create an event, which is a function that is automatically called whenever the collision occurs:
 
 1.  Select the new **PuckListVsGoalList** collision relationship
 2.  Select the Collision tab
 3.  Scroll to the bottom and click the **Add Event** button
 4.  Accept the defaults and click **OK**
 
-[![](/wp-content/uploads/2016/01/2021_July_25_145051-1.gif.md)](/wp-content/uploads/2016/01/2021_July_25_145051-1.gif.md) When an event is added, Glue automatically adds a new file to contain events called GameScreen.Events.cs. We can find the new event there. You will need to expand the GameScreen.cs in Visual Studio's Solution Explorer to see this file.
+[![](/wp-content/uploads/2016/01/2021_July_25_145051-1.gif)](/wp-content/uploads/2016/01/2021_July_25_145051-1.gif) When an event is added, Glue automatically adds a new file to contain events called GameScreen.Events.cs. We can find the new event there. You will need to expand the GameScreen.cs in Visual Studio's Solution Explorer to see this file.
 
 ![](/media/2021-07-img_60fdcfbde9882.png)
 

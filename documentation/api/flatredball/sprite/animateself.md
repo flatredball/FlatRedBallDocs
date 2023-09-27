@@ -4,7 +4,7 @@ The AnimateSelf function updates advances a Sprite through its animation (if it 
 
 ## Code Example
 
-Typicalily the AnimateSelf function takes the [TimeManager.CurrentTime](/frb/docs/index.php?title=FlatRedBall.TimeManager.CurrentTime.md "FlatRedBall.TimeManager.CurrentTime") value. The following code would animate a Sprite:
+Typicalily the AnimateSelf function takes the [TimeManager.CurrentTime](/frb/docs/index.php?title=FlatRedBall.TimeManager.CurrentTime "FlatRedBall.TimeManager.CurrentTime") value. The following code would animate a Sprite:
 
     // assuming the Sprite SpriteInstance exists:
     SpriteInstance.AnimateSelf(TimeManager.CurrentTime);

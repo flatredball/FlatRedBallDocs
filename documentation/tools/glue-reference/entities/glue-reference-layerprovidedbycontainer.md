@@ -1,6 +1,6 @@
 ## Introduction
 
-The LayerProvidedByContainer property gives you access to the layer that the containing Screen or Entity has passed to this through Glue or through the AddToManagers method call. For more information on working with Layers in code, see the [Layer page](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer.md "FlatRedBall.Graphics.Layer").
+The LayerProvidedByContainer property gives you access to the layer that the containing Screen or Entity has passed to this through Glue or through the AddToManagers method call. For more information on working with Layers in code, see the [Layer page](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer").
 
 ## Usage
 

@@ -10,13 +10,13 @@ To explain what this property means, we'll start from the back and go to the fro
 
 ### OnLastMoveCollision
 
-This phrase indicates that the property that we are investigating will give us information about the last time a "Move" collision was called. In other words, the last time [CollideAgainstMove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove.md "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove") was called. That's all!
+This phrase indicates that the property that we are investigating will give us information about the last time a "Move" collision was called. In other words, the last time [CollideAgainstMove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove") was called. That's all!
 
 ### OnLastMoveCollision + Tangent
 
 Next, we'll add the Tangent property. In math, a tangent is a line which moves parallel (in the same direction) as a surface. The following image shows a blue line which is a tangent on the yellow circle![TangentLine.png](/media/migrated_media-TangentLine.png)
 
-The phrase "on last move collision tangent" means that we are going to do something with the line (or Vector in more precise terms) that is tangential to the point where the collision happened the last time [CollideAgainstMove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove.md "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove") was called.
+The phrase "on last move collision tangent" means that we are going to do something with the line (or Vector in more precise terms) that is tangential to the point where the collision happened the last time [CollideAgainstMove](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove "FlatRedBall.Math.Geometry.Polygon.CollideAgainstMove") was called.
 
 ### Project...Velocity + OnLastMoveCollisionTangent
 
@@ -28,11 +28,11 @@ Assuming there is no bouncing, friction, or energy loss from the collision, this
 
 ### Project + **Parent** + VelocityOnLastMoveCollisionTangent
 
-Finally we introduce the word "Parent". The reason Parent appears in this method name is because most shapes are never used alone, but rather are used as children of another object (usually [Entities](/frb/docs/index.php?title=Entity.md "Entity")). Therefore, the shape shouldn't modify its own Velocity, but rather the Velocity of its parent.
+Finally we introduce the word "Parent". The reason Parent appears in this method name is because most shapes are never used alone, but rather are used as children of another object (usually [Entities](/frb/docs/index.php?title=Entity "Entity")). Therefore, the shape shouldn't modify its own Velocity, but rather the Velocity of its parent.
 
 ## CollideAgainstBounce
 
-This method is only used in more complex situations. You can usually accomplish the exact same behavior by simply calling [CollideAgainstBounce](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce.md "FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce") with an elasticity of 0.
+This method is only used in more complex situations. You can usually accomplish the exact same behavior by simply calling [CollideAgainstBounce](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce "FlatRedBall.Math.Geometry.Polygon.CollideAgainstBounce") with an elasticity of 0.
 
 ## Method Signature
 

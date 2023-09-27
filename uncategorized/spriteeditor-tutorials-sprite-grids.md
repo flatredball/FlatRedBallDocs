@@ -1,13 +1,13 @@
 ## Introduction
 
-SpriteGrids are objects which allow you to quickly define groups of tiled Sprites. SpriteGrids are often used as tile maps, but can also be used in other situations to create Sprites, such as platformer games. The [TileEditor](/frb/docs/index.php?title=TileEditor.md "TileEditor") makes extensive use of SpriteGrids, but the SpriteEditor also supports viewing and editing them.
+SpriteGrids are objects which allow you to quickly define groups of tiled Sprites. SpriteGrids are often used as tile maps, but can also be used in other situations to create Sprites, such as platformer games. The [TileEditor](/frb/docs/index.php?title=TileEditor "TileEditor") makes extensive use of SpriteGrids, but the SpriteEditor also supports viewing and editing them.
 
 ## Creating a SpriteGrid
 
 To create a new SpriteGrid in the SpriteEditor:
 
 1.  Select Add-\>SpriteGrid![SE AddSpriteGrid.PNG](/media/migrated_media-SE_AddSpriteGrid.PNG)
-2.  Navigate to select a graphical image to use in your SpriteGrid. This example will use a [checkerboard pattern which you can download here](/frb/docs/images/8/88/CheckerTile.png.md "CheckerTile.png").![SE AddSpriteGrid 2.PNG](/media/migrated_media-SE_AddSpriteGrid_2.PNG)
+2.  Navigate to select a graphical image to use in your SpriteGrid. This example will use a [checkerboard pattern which you can download here](/frb/docs/images/8/88/CheckerTile.png "CheckerTile.png").![SE AddSpriteGrid 2.PNG](/media/migrated_media-SE_AddSpriteGrid_2.PNG)
 3.  Once you select your image, you should see a pop-up window displaying options for the SpriteGrid. Leave the values to default and press the OK button.![SE AddSpriteGrid 3.PNG](/media/migrated_media-SE_AddSpriteGrid_3.PNG)
 4.  Now you should see your SpriteGrid in the SpriteEditor![SE SpriteGrid 1.PNG](/media/migrated_media-SE_SpriteGrid_1.PNG)
 
@@ -40,7 +40,7 @@ Navigate to the texture tab of the Sprite Property Window
 
 ![SE SpriteGrid Paint 2.PNG](/media/migrated_media-SE_SpriteGrid_Paint_2.PNG)
 
-Click on the large square next to the Texture label to bring up the pop-up window to load a texture. Let's select the RedTile (right-click here to download the [tile](/frb/docs/images/8/8c/RedTile.JPG.md "RedTile.JPG"))
+Click on the large square next to the Texture label to bring up the pop-up window to load a texture. Let's select the RedTile (right-click here to download the [tile](/frb/docs/images/8/8c/RedTile.JPG "RedTile.JPG"))
 
 ![SE SpriteGrid Paint 3.PNG](/media/migrated_media-SE_SpriteGrid_Paint_3.PNG)
 
@@ -54,7 +54,7 @@ Alternatively, a slightly easier way to paint SpriteGrids is to use the Painting
 
 ![SE SpriteGrid Paint v2 1.PNG](/media/migrated_media-SE_SpriteGrid_Paint_v2_1.PNG)
 
-Next, click on the Texture window (4th row, middle icon). It will bring up a file selection window. Let's use the GreenTile (right-click here to download the [tile](/frb/docs/images/8/8e/GreenTile.JPG.md "GreenTile.JPG"))
+Next, click on the Texture window (4th row, middle icon). It will bring up a file selection window. Let's use the GreenTile (right-click here to download the [tile](/frb/docs/images/8/8e/GreenTile.JPG "GreenTile.JPG"))
 
 ![SE SpriteGrid Paint v2 2.PNG](/media/migrated_media-SE_SpriteGrid_Paint_v2_2.PNG)
 
@@ -72,10 +72,10 @@ And, that's all there is to it.
 
 (right-click file -\> "Save Link As")
 
-[Tile.JPG](/frb/docs/images/d/d1/Tile.JPG.md "Tile.JPG")
+[Tile.JPG](/frb/docs/images/d/d1/Tile.JPG "Tile.JPG")
 
-[RedTile.JPG](/frb/docs/images/8/8c/RedTile.JPG.md "RedTile.JPG")
+[RedTile.JPG](/frb/docs/images/8/8c/RedTile.JPG "RedTile.JPG")
 
-[GreenTile.JPG](/frb/docs/images/8/8e/GreenTile.JPG.md "GreenTile.JPG")
+[GreenTile.JPG](/frb/docs/images/8/8e/GreenTile.JPG "GreenTile.JPG")
 
-[SpriteGridDemo.scnx](/frb/docs/index.php?title=Special:Upload&wpDestFile=SpriteGridDemo.scnx.md "SpriteGridDemo.scnx")
+[SpriteGridDemo.scnx](/frb/docs/index.php?title=Special:Upload&wpDestFile=SpriteGridDemo.scnx "SpriteGridDemo.scnx")

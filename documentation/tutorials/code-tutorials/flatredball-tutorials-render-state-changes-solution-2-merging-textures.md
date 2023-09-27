@@ -8,7 +8,7 @@ Although the two are closely related, image files and textures are not the same 
 
 One option is to combine the two .PNG files into a single file and use texture coordinates on the Sprite to select whether the Sprite is a green or red Sprite.
 
-The other option is to load both .PNGs, but then combine the two resulting Texture2Ds into one Texture2D either through XNA calls or by using [the ImageData class](/frb/docs/index.php?title=FlatRedBall.Graphics.Texture.ImageData.md "FlatRedBall.Graphics.Texture.ImageData").
+The other option is to load both .PNGs, but then combine the two resulting Texture2Ds into one Texture2D either through XNA calls or by using [the ImageData class](/frb/docs/index.php?title=FlatRedBall.Graphics.Texture.ImageData "FlatRedBall.Graphics.Texture.ImageData").
 
 To keep the code simple, we'll combine the two .PNGs into one.
 

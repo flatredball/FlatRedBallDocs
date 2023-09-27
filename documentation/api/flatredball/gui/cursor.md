@@ -1,6 +1,6 @@
 ## Introduction
 
-The Cursor class represents the moving cursor (on desktop) or the touch screen (on touch screens). The Cursor class is similar to the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse.md "FlatRedBall.Input.Mouse") class in its interface, but provides a few additional features:
+The Cursor class represents the moving cursor (on desktop) or the touch screen (on touch screens). The Cursor class is similar to the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse") class in its interface, but provides a few additional features:
 
 -   The Cursor is a more abstract class supporting a variety of input sources such as Mouse, Xbox360Gamepad, and TouchScreen
 -   The Cursor works very well with the Window class and IWindow interface
@@ -56,7 +56,7 @@ The following code creates a Circle wherever the Cursor is pushed:
 
 ## Additional Information
 
--   [Customizing Cursor Visuals](/frb/docs/index.php?title=Customizing_Cursor_Visuals.md "Customizing Cursor Visuals")
+-   [Customizing Cursor Visuals](/frb/docs/index.php?title=Customizing_Cursor_Visuals "Customizing Cursor Visuals")
 
   \[subpages depth="1"\]
 

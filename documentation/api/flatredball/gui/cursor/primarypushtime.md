@@ -1,4 +1,4 @@
-[FlatRedBall.Gui.Cursor](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.md "FlatRedBall.Gui.Cursor")
+[FlatRedBall.Gui.Cursor](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor "FlatRedBall.Gui.Cursor")
 
 ## Introduction
 

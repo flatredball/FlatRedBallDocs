@@ -18,7 +18,7 @@ First let's start by creating a Scene:
 Now that we have a Scene created, we need to add a Sprite to it. To do this:
 
 1.  Double-click your .scnx file under your Character's "Files" tree item. If you set up the file assocation in the previous tutorial, the SpriteEditor should open.
-2.  Add a new Sprite to the SpriteEditor. If you need help working with the SpriteEditor, click [here](/frb/docs/index.php?title=SpriteEditor:Main_Page.md "SpriteEditor:Main Page").
+2.  Add a new Sprite to the SpriteEditor. If you need help working with the SpriteEditor, click [here](/frb/docs/index.php?title=SpriteEditor:Main_Page "SpriteEditor:Main Page").
 3.  Modify the Sprite so it is different from your level. I'll give mine an "Add" color operation and give it a neon green color At the time of this writing, the Windows Phone 7 version of FlatRedBall does not support the "Add" color operation, so you may want to pick something else to differentiate your objects if using this version of the engine. ![GlueEntitySprite.png](/media/migrated_media-GlueEntitySprite.png)
 4.  Save your Scene. **Remember to copy your files locally**
 
@@ -86,7 +86,7 @@ Now that we have a Character instance, let's set it up to use our Character Enti
 
 ## Viewing your Entity
 
-Now that you've added a Character instance to your GameScreen, you will be able to view your Entity in game. Simply open your project in Visual Studio and Start Debugging. For a reminder on how to do this, check [this page](/frb/docs/index.php?title=Glue:Tutorials:Adding_files_to_Screens#Seeing_it_in_action.md "Glue:Tutorials:Adding files to Screens"). ![EntityInGame.png](/media/migrated_media-EntityInGame.png)
+Now that you've added a Character instance to your GameScreen, you will be able to view your Entity in game. Simply open your project in Visual Studio and Start Debugging. For a reminder on how to do this, check [this page](/frb/docs/index.php?title=Glue:Tutorials:Adding_files_to_Screens#Seeing_it_in_action "Glue:Tutorials:Adding files to Screens"). ![EntityInGame.png](/media/migrated_media-EntityInGame.png)
 
 **Where is my Entity?!?** You may have just run your game, but not seen your green Entity. Instead, you might see a red ball. Why is it red and not green? Actually, it is Green...it's just being covered up by a red ball. FRB templates currently have a red ball Sprite automatically added. If you want to get rid of it:
 
@@ -98,4 +98,4 @@ Now that you've added a Character instance to your GameScreen, you will be able 
 
     SpriteManager.AddSprite("redball.bmp");
 
-[To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Custom_variables_and_behaviors.md "Glue:Tutorials:Custom variables and behaviors")
+[To the next tutorial -\>](/frb/docs/index.php?title=Glue:Tutorials:Custom_variables_and_behaviors "Glue:Tutorials:Custom variables and behaviors")

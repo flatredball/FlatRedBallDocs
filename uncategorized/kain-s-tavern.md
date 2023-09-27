@@ -1,6 +1,6 @@
 ## Welcome
 
-Welcome to my tavern! I have been eagerly awaiting your arrival. Come, join me... we have much to discuss. If you don't get what you need here, you can always email me at [ddatti@gmail.com](mailto:ddatti@gmail.com.md)
+Welcome to my tavern! I have been eagerly awaiting your arrival. Come, join me... we have much to discuss. If you don't get what you need here, you can always email me at [ddatti@gmail.com](mailto:ddatti@gmail.com)
 
 ## Spriter Integration Plugin
 
@@ -16,13 +16,13 @@ To be continued...
 
 ## Tiled Map Editor, TMX, Glue and you.
 
-To begin, for your enjoyment, I have an offering of substantial value for you. My creation and first contribution to the FRB community: [TMXGlue](http://www.gluevault.com/plug/44-tiled-map-editor-tmx-scnxnntxshcx-glue-integration-toolkit). This [open source](https://github.com/kainazzzo/TiledMap-FlatRedBall-Conversion) tool integrates the popular and stable [Tiled Map Editor](http://www.mapeditor.org/) into [Glue](/frb/docs/index.php?title=Glue.md "Glue")
+To begin, for your enjoyment, I have an offering of substantial value for you. My creation and first contribution to the FRB community: [TMXGlue](http://www.gluevault.com/plug/44-tiled-map-editor-tmx-scnxnntxshcx-glue-integration-toolkit). This [open source](https://github.com/kainazzzo/TiledMap-FlatRedBall-Conversion) tool integrates the popular and stable [Tiled Map Editor](http://www.mapeditor.org/) into [Glue](/frb/docs/index.php?title=Glue "Glue")
 
 [Download TMXGlue here](http://www.gluevault.com/plug/44-tiled-map-editor-tmx-scnxnntxshcx-glue-integration-toolkit)
 
 ### General overview
 
-This is a tool that is designed to integrate directly into [Glue](/frb/docs/index.php?title=Glue.md "Glue") which will let you specify Tiled Map Editor files (.tmx) with the "Add Externally Built File" option in [Glue](/frb/docs/index.php?title=Glue.md "Glue"). Once you have the tool installed, you just add an external file, pick the .tmx file you saved from the map editor, and [Glue](/frb/docs/index.php?title=Glue.md "Glue") does the rest! Glue will automatically run the tmx file through the build tool, and generate a .scnx, .nntx, or .shcx file in your Glue project based on your dialog selection. All changes to the .tmx file will automatically trigger Glue to rebuild the destination (scnx/nntx/shcx) file.
+This is a tool that is designed to integrate directly into [Glue](/frb/docs/index.php?title=Glue "Glue") which will let you specify Tiled Map Editor files (.tmx) with the "Add Externally Built File" option in [Glue](/frb/docs/index.php?title=Glue "Glue"). Once you have the tool installed, you just add an external file, pick the .tmx file you saved from the map editor, and [Glue](/frb/docs/index.php?title=Glue "Glue") does the rest! Glue will automatically run the tmx file through the build tool, and generate a .scnx, .nntx, or .shcx file in your Glue project based on your dialog selection. All changes to the .tmx file will automatically trigger Glue to rebuild the destination (scnx/nntx/shcx) file.
 
 ### Installation instructions
 
@@ -47,20 +47,20 @@ The tool is now integrated into Glue. In order to use it, follow these steps:
 
 ## Scenes (TMX -\> SCNX)
 
--   [Kain's Tavern:TMX to SCNX](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_SCNX.md "Kain's Tavern:TMX to SCNX")
+-   [Kain's Tavern:TMX to SCNX](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_SCNX "Kain's Tavern:TMX to SCNX")
 
 ## Tiled Binary (TMX -\> TILB)
 
--   [Kain's Tavern:TMX to TILB](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_TILB.md "Kain's Tavern:TMX to TILB")
+-   [Kain's Tavern:TMX to TILB](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_TILB "Kain's Tavern:TMX to TILB")
 
 ## Node Networks (TMX -\> NNTX)
 
--   [Kain's Tavern:TMX to NNTX](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_NNTX.md "Kain's Tavern:TMX to NNTX")
+-   [Kain's Tavern:TMX to NNTX](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_NNTX "Kain's Tavern:TMX to NNTX")
 
 ## ShapeCollections (TMX -\> SHCX)
 
--   [Kain's Tavern:TMX to SHCX](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_SHCX.md "Kain's Tavern:TMX to SHCX")
+-   [Kain's Tavern:TMX to SHCX](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_SHCX "Kain's Tavern:TMX to SHCX")
 
 ## Comma Separated Values (TMX -\> CSV)
 
--   [Kain's Tavern:TMX to CSV](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_CSV.md "Kain's Tavern:TMX to CSV")
+-   [Kain's Tavern:TMX to CSV](/frb/docs/index.php?title=Kain%27s_Tavern:TMX_to_CSV "Kain's Tavern:TMX to CSV")

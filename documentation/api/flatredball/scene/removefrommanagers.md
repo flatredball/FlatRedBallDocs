@@ -11,4 +11,4 @@ If you do not want the Scene to be cleared when calling RemoveFromManagers, you 
     SceneInstance.MakeOneWay();
     SceneInstance.RemoveFromManagers();
 
-For more information see the [MakeOneWay page](/frb/docs/index.php?title=FlatRedBall.Scene.MakeOneWay.md "FlatRedBall.Scene.MakeOneWay").
+For more information see the [MakeOneWay page](/frb/docs/index.php?title=FlatRedBall.Scene.MakeOneWay "FlatRedBall.Scene.MakeOneWay").

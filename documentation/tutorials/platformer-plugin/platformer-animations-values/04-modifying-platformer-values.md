@@ -119,4 +119,4 @@ Now that we have our platformer movement values created in Glue, we can assign t
 
 ## Additional Challenges
 
-Now the Player will switch its values according to input, of course, the running animations are not currently being used. Use what was covered in the previous tutorial to see if you can modify the Player's animations to play the running and running jump animations as shown in the following animation. [![](/wp-content/uploads/2021/03/2021_March_28_165247.gif.md)](/wp-content/uploads/2021/03/2021_March_28_165247.gif.md)  
+Now the Player will switch its values according to input, of course, the running animations are not currently being used. Use what was covered in the previous tutorial to see if you can modify the Player's animations to play the running and running jump animations as shown in the following animation. [![](/wp-content/uploads/2021/03/2021_March_28_165247.gif)](/wp-content/uploads/2021/03/2021_March_28_165247.gif)  

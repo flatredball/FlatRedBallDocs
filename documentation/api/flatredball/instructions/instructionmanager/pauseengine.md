@@ -2,7 +2,7 @@
 
 The PauseEngine method can be used to freeze all velocity, rate, and acceleration, properties as well as delay all Instructions that belong to objects managed by engine managers. Calling PauseEngine and UnpauseEngine will temporarily stop then resume nearly all behavior for objects which are managed by the FlatRedBall, and in many cases is all that is necessary to implement pause functionality.
 
-The PauseEngine method is used by the [PauseThisScreen](/frb/docs/index.php?title=Glue:Reference:Screens:PauseThisScreen.md "Glue:Reference:Screens:PauseThisScreen") method in the Screen class.
+The PauseEngine method is used by the [PauseThisScreen](/frb/docs/index.php?title=Glue:Reference:Screens:PauseThisScreen "Glue:Reference:Screens:PauseThisScreen") method in the Screen class.
 
 Keep in mind that calling PauseEngine does NOT stop the management of objects by the engine. In other words, if an object with a non-zero velocity is stopped by calling PauseEngine, but its velocity is then set to a non-zero value before calling UnpauseEngine, the object will resume movement.
 
@@ -12,7 +12,7 @@ Also keep in mind that any behavior which is not dependent on properties managed
 
 ## Code Sample
 
-The following code creates an [Emitter](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.md "FlatRedBall.Graphics.Particle.Emitter") which emits [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). The sprites have velocity, rate, and acceleration methods set. Despite the complex behavior of the Sprites, a simple call to PauseEngine stops all behavior. Similarly, calling UnpauseEngine resumes all behavior as expected.
+The following code creates an [Emitter](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter "FlatRedBall.Graphics.Particle.Emitter") which emits [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). The sprites have velocity, rate, and acceleration methods set. Despite the complex behavior of the Sprites, a simple call to PauseEngine stops all behavior. Similarly, calling UnpauseEngine resumes all behavior as expected.
 
 Notice that the TimedEmit is a method which is explicitly called in the Update method. Since it is not managed by the engine, it must manually be called only when the program is not stopped.
 

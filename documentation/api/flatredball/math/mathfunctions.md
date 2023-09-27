@@ -6,7 +6,7 @@ The MathFunctions class provides helper methods for performing common game math.
 
 ### World to Pixel
 
-The following code returns the screen pixel coordinates of a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject"). Remember, by by default in world coordinates:
+The following code returns the screen pixel coordinates of a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject"). Remember, by by default in world coordinates:
 
 -   Positive X points to the right
 -   Positive Y points up
@@ -20,7 +20,7 @@ Add the following using statements
 
     using FlatRedBall.Math;
 
-Assuming myObject is a valid [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject")
+Assuming myObject is a valid [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject")
 
     int screenX = 0;
     int screenY = 0;
@@ -36,4 +36,4 @@ Assuming myObject is a valid [PositionedObject](/frb/docs/index.php?title=FlatRe
 
 ### Pixel to World
 
-See [FlatRedBall.Math.MathFunctions.WindowToAbsolute](/frb/docs/index.php?title=FlatRedBall.Math.MathFunctions.WindowToAbsolute.md "FlatRedBall.Math.MathFunctions.WindowToAbsolute")
+See [FlatRedBall.Math.MathFunctions.WindowToAbsolute](/frb/docs/index.php?title=FlatRedBall.Math.MathFunctions.WindowToAbsolute "FlatRedBall.Math.MathFunctions.WindowToAbsolute")

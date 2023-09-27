@@ -24,7 +24,7 @@ The first solution to the thin polygon problem is to simply make your objects no
 
 ### Increasing the frame rate
 
-Increasing the frame rate of your game by reducing the [Game's TargetElapsedTime](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-game/microsoft-xna-framework-game-targetelapsedtime.md "Microsoft.Xna.Framework.Game.TargetElapsedTime") is an effective but very expensive approach to solving this problem. More information on this can be found [here](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.TargetElapsedTime.md "Microsoft.Xna.Framework.Game.TargetElapsedTime").
+Increasing the frame rate of your game by reducing the [Game's TargetElapsedTime](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-game/microsoft-xna-framework-game-targetelapsedtime.md "Microsoft.Xna.Framework.Game.TargetElapsedTime") is an effective but very expensive approach to solving this problem. More information on this can be found [here](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.TargetElapsedTime "Microsoft.Xna.Framework.Game.TargetElapsedTime").
 
 ### Multiple collision calls per frame
 
@@ -47,7 +47,7 @@ One solution which simulates increasing the frame rate, but isolates the perform
 
 ### Limiting movement speed
 
-One of the most common situations where tunneling exists is in platformers that use YAcceleration for gravity. The reason this can cause so many problems is because the speed that the distance that the game character falls impacts how fast the character hits the ground. If your game includes large drops, you may notice that the character sometimes falls through the world when falling long distances. Most professionally-made platformers include a maximum falling speed for game play reasons. Implementing this maximum falling speed (also known as "terminal velocity") can both improve the feel of your game as well as possibly solve tunneling. For a discussion on how to limit falling speed, [see this article](/frb/docs/index.php?title=Tutorials:Platformer:Limiting_Falling_Speed.md "Tutorials:Platformer:Limiting Falling Speed").
+One of the most common situations where tunneling exists is in platformers that use YAcceleration for gravity. The reason this can cause so many problems is because the speed that the distance that the game character falls impacts how fast the character hits the ground. If your game includes large drops, you may notice that the character sometimes falls through the world when falling long distances. Most professionally-made platformers include a maximum falling speed for game play reasons. Implementing this maximum falling speed (also known as "terminal velocity") can both improve the feel of your game as well as possibly solve tunneling. For a discussion on how to limit falling speed, [see this article](/frb/docs/index.php?title=Tutorials:Platformer:Limiting_Falling_Speed "Tutorials:Platformer:Limiting Falling Speed").
 
 ## Sweeping Shape Collision
 
@@ -55,7 +55,7 @@ Depending on the shape of your object you may be able to create a swept shape. T
 
 ### Subdividing your Polygon
 
-So far we've talked about tunneling issues, but there are also situations where two polygons may report a collision, but not separate correctly. This occurs in the [example that uses the smiley polygon](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon#Loading_Polygons_from_File_.28.plylstx.29.md "FlatRedBall.Math.Geometry.Polygon") if you move the moving Polygon to the edges of the mouth polygon. To solve this, you can add additional points to the smiley polygon in the PolygonEditor as described [here](/frb/docs/index.php?title=PolygonEditor:Tutorials:Tools_Window#Add_Point_Button.md "PolygonEditor:Tutorials:Tools Window").
+So far we've talked about tunneling issues, but there are also situations where two polygons may report a collision, but not separate correctly. This occurs in the [example that uses the smiley polygon](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon#Loading_Polygons_from_File_.28.plylstx.29 "FlatRedBall.Math.Geometry.Polygon") if you move the moving Polygon to the edges of the mouth polygon. To solve this, you can add additional points to the smiley polygon in the PolygonEditor as described [here](/frb/docs/index.php?title=PolygonEditor:Tutorials:Tools_Window#Add_Point_Button "PolygonEditor:Tutorials:Tools Window").
 
 ## Using simpler shapes
 

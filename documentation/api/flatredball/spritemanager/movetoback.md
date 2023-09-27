@@ -1,6 +1,6 @@
 ## Introduction
 
-The MoveToBack and MoveToFront methods can be used to control the order that Layers are drawn. Layers will, by default, draw in the order that they are added to the engine. If you are using Glue, Layers are drawn top-to-bottom. More information on Layer ordering in Glue can be found [here](/frb/docs/index.php?title=Glue:Reference:Objects:Layer.md "Glue:Reference:Objects:Layer").
+The MoveToBack and MoveToFront methods can be used to control the order that Layers are drawn. Layers will, by default, draw in the order that they are added to the engine. If you are using Glue, Layers are drawn top-to-bottom. More information on Layer ordering in Glue can be found [here](/frb/docs/index.php?title=Glue:Reference:Objects:Layer "Glue:Reference:Objects:Layer").
 
 ## Code Example
 

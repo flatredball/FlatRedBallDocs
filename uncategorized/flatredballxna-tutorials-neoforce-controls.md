@@ -8,7 +8,7 @@ Since it uses XNA, Neoforce Controls is a great alternative to FlatRedBall's GUI
 
 ## Tutorials
 
-1.  [Downloading requirements](/frb/docs/index.php?title=Neoforce:Tutorials:Downloading_requirements.md "Neoforce:Tutorials:Downloading requirements")
-2.  [Creating a simple project](/frb/docs/index.php?title=Neoforce:Tutorials:Creating_a_simple_project.md "Neoforce:Tutorials:Creating a simple project")
+1.  [Downloading requirements](/frb/docs/index.php?title=Neoforce:Tutorials:Downloading_requirements "Neoforce:Tutorials:Downloading requirements")
+2.  [Creating a simple project](/frb/docs/index.php?title=Neoforce:Tutorials:Creating_a_simple_project "Neoforce:Tutorials:Creating a simple project")
 
 ## Code Reference

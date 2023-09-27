@@ -78,4 +78,4 @@ If your game followed the previous tutorials, then your GameScreen has a PlayerL
      }
     }
 
-To see more than one player you must have at least two gamepads plugged in to your computer. Also, keep in mind that the players will initially overlap so you must move one to see both. [![](/wp-content/uploads/2020/09/2021_March_06_163127.gif.md)](/wp-content/uploads/2020/09/2021_March_06_163127.gif.md)  
+To see more than one player you must have at least two gamepads plugged in to your computer. Also, keep in mind that the players will initially overlap so you must move one to see both. [![](/wp-content/uploads/2020/09/2021_March_06_163127.gif)](/wp-content/uploads/2020/09/2021_March_06_163127.gif)  

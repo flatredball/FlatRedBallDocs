@@ -1,6 +1,6 @@
 ## Introduction
 
-The VerticesForDrawing member that is sometimes used internally by FlatRedBall to draw Sprites. This member can be used to perform custom drawing in [IDrawableBatches](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch.md "FlatRedBall.Graphics.IDrawableBatch").
+The VerticesForDrawing member that is sometimes used internally by FlatRedBall to draw Sprites. This member can be used to perform custom drawing in [IDrawableBatches](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch "FlatRedBall.Graphics.IDrawableBatch").
 
 ## When is the VerticesForDrawing member valid?
 
@@ -17,11 +17,11 @@ The first step in creating a Sprite for custom rendering is to use the SpriteMan
 
     Sprite newSprite = SpriteManager.AddManagedInvisibleSprite();
 
-This will instantiate a Sprite and add it to the engine for every-frame updates so that properties like Velocity and Acceleration are applied and so that attachments work properly. However, this Sprite will not be drawn by FlatRedBall. This Sprite can now be used in [IDrawableBatches](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch.md "FlatRedBall.Graphics.IDrawableBatch") for custom rendering.
+This will instantiate a Sprite and add it to the engine for every-frame updates so that properties like Velocity and Acceleration are applied and so that attachments work properly. However, this Sprite will not be drawn by FlatRedBall. This Sprite can now be used in [IDrawableBatches](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch "FlatRedBall.Graphics.IDrawableBatch") for custom rendering.
 
 ## Updating VerticesForDrawing
 
-To update a Sprite's VerticesForDrawing, its ManualUpdate method must be called. In general this should be called inside your [IDrawableBatch's](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch.md "FlatRedBall.Graphics.IDrawableBatch") Update method:
+To update a Sprite's VerticesForDrawing, its ManualUpdate method must be called. In general this should be called inside your [IDrawableBatch's](/frb/docs/index.php?title=FlatRedBall.Graphics.IDrawableBatch "FlatRedBall.Graphics.IDrawableBatch") Update method:
 
     SpriteManager.ManualUpdate(spriteToDraw);
 
@@ -33,4 +33,4 @@ The VerticesForDrawing array is an array of four [VertexPositionColorTextures](h
 
 ## Code Example
 
-For an example on how to perform custom Sprite rendering, see [this page](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Sprite_Effects.md "FlatRedBallXna:Tutorials:Custom Sprite Effects").
+For an example on how to perform custom Sprite rendering, see [this page](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Sprite_Effects "FlatRedBallXna:Tutorials:Custom Sprite Effects").

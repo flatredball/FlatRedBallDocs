@@ -1,6 +1,6 @@
 ## Introduction
 
-GlobalContent is a category of content which is available anywhere in your project as opposed to being tied to a specific Screen or Entity. All content that is added as GlobalContent is available at all times. Globalcontent doesn't have a lifespan tied to any ContentManager - normally content is loaded and tied to a ContentManager associated with the active Screen which is unloaded when the current Screen is Destroyed. Content can also be globally loaded if an Entity's [UseGlobalContent](/frb/docs/index.php?title=Glue:Reference:Entities:UseGlobalContent.md "Glue:Reference:Entities:UseGlobalContent") property is true. For information on this property and also on how it interacts with GlobalContent, see [this page](/frb/docs/index.php?title=Glue:Reference:Entities:UseGlobalContent.md "Glue:Reference:Entities:UseGlobalContent").
+GlobalContent is a category of content which is available anywhere in your project as opposed to being tied to a specific Screen or Entity. All content that is added as GlobalContent is available at all times. Globalcontent doesn't have a lifespan tied to any ContentManager - normally content is loaded and tied to a ContentManager associated with the active Screen which is unloaded when the current Screen is Destroyed. Content can also be globally loaded if an Entity's [UseGlobalContent](/frb/docs/index.php?title=Glue:Reference:Entities:UseGlobalContent "Glue:Reference:Entities:UseGlobalContent") property is true. For information on this property and also on how it interacts with GlobalContent, see [this page](/frb/docs/index.php?title=Glue:Reference:Entities:UseGlobalContent "Glue:Reference:Entities:UseGlobalContent").
 
 ## Using Global Content
 
@@ -19,7 +19,7 @@ Once a file has been added to the "Global Content Files" tree item, it can be ac
 
 Global Content Files are usually used:
 
--   For data that is needed across multiple Screens, like [a localization database](/frb/docs/index.php?title=Glue:Reference:Files:IsDatabaseForLocalizing.md "Glue:Reference:Files:IsDatabaseForLocalizing").
+-   For data that is needed across multiple Screens, like [a localization database](/frb/docs/index.php?title=Glue:Reference:Files:IsDatabaseForLocalizing "Glue:Reference:Files:IsDatabaseForLocalizing").
 -   For data that is not tied to any particular Screen or Entity.
 
 ## Async content loading

@@ -24,7 +24,7 @@ The Puck entity should appear in Glue.
 
 ![](/media/2021-07-img_60fdcb7c2a8d0.png)
 
-For more information on how to perform the above steps, you may want to review the tutorial which created the PlayerBall Entity [here](/frb/docs/index.php?title=Tutorials:Beefball:Creating_an_Entity.md "Tutorials:Beefball:Creating an Entity").
+For more information on how to perform the above steps, you may want to review the tutorial which created the PlayerBall Entity [here](/frb/docs/index.php?title=Tutorials:Beefball:Creating_an_Entity "Tutorials:Beefball:Creating an Entity").
 
 ## Differentiating the Puck
 
@@ -99,7 +99,7 @@ We will create these two collision relationships just like the previou PlayerLis
 6.  Change the **Puck Mass** to **0**
 7.  Optionally adjust the Elasticity value
 
-[![](/wp-content/uploads/2016/01/2021_July_25_141703.gif.md)](/wp-content/uploads/2016/01/2021_July_25_141703.gif.md) To create a relationship between the PuckList and PlayerBallList:
+[![](/wp-content/uploads/2016/01/2021_July_25_141703.gif)](/wp-content/uploads/2016/01/2021_July_25_141703.gif) To create a relationship between the PuckList and PlayerBallList:
 
 1.  Expand **GameScreen's Objects** folder in Glue
 2.  Drag+drop the **PlayerBallList** onto the **PuckList** object
@@ -109,7 +109,7 @@ We will create these two collision relationships just like the previou PlayerLis
 6.  Change the **Puck Mass** to **0.3** - this will make it 30% the mass of the PlayerBall
 7.  Optionally adjust the Elasticity value
 
-[![](/wp-content/uploads/2016/01/2021_July_25_145507.gif.md)](/wp-content/uploads/2016/01/2021_July_25_145507.gif.md)   Notice that the mass variables for PlayerInstance vs. PuckInstance differ compared to wall collision. The PuckInstance is given a mass of .3 relative to a mass of 1 for the PlayerInstance, resulting in the PuckInstance behaving as if it has 30% of the mass of the PlayerInstance. If you run the game, you should be able to hit the Puck around the level. [![](/wp-content/uploads/2016/01/2021_July_25_140010.gif.md)](/wp-content/uploads/2016/01/2021_July_25_140010.gif.md)
+[![](/wp-content/uploads/2016/01/2021_July_25_145507.gif)](/wp-content/uploads/2016/01/2021_July_25_145507.gif)   Notice that the mass variables for PlayerInstance vs. PuckInstance differ compared to wall collision. The PuckInstance is given a mass of .3 relative to a mass of 1 for the PlayerInstance, resulting in the PuckInstance behaving as if it has 30% of the mass of the PlayerInstance. If you run the game, you should be able to hit the Puck around the level. [![](/wp-content/uploads/2016/01/2021_July_25_140010.gif)](/wp-content/uploads/2016/01/2021_July_25_140010.gif)
 
 ## Adding Drag
 

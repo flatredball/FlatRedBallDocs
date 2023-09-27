@@ -1,10 +1,10 @@
 ## Introduction
 
-Emitters are [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") which are used to create [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). The behavior of the created [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") (such as Velocity and Rotation) depends on the Emitter's properties. All [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") created by Emitters are regular [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"). This means that they can be modified just like other [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") after they are emitted.
+Emitters are [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") which are used to create [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). The behavior of the created [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") (such as Velocity and Rotation) depends on the Emitter's properties. All [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") created by Emitters are regular [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"). This means that they can be modified just like other [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") after they are emitted.
 
 ## How to Create an Emitter in Glue
 
-See [this page](/frb/docs/index.php?title=Glue:How_To:Add_Emitters.md "Glue:How To:Add Emitters") for information on how to add Emitters in Glue.
+See [this page](/frb/docs/index.php?title=Glue:How_To:Add_Emitters "Glue:How To:Add Emitters") for information on how to add Emitters in Glue.
 
 ## How to Create an Emitter in Code
 
@@ -58,15 +58,15 @@ Emitters are loaded through the Content Pipeline just like any other content typ
     EmitterList emitterList = FlatRedBallServices.Load<EmitterList>(
         @"Content\myEmitter", "ContentManagerName");
 
-For more information about loading through the Content Pipeline, see the [FlatRedBall XNA Content Pipeline](/frb/docs/index.php?title=FlatRedBall_XNA_Content_Pipeline.md "FlatRedBall XNA Content Pipeline") wiki entry.
+For more information about loading through the Content Pipeline, see the [FlatRedBall XNA Content Pipeline](/frb/docs/index.php?title=FlatRedBall_XNA_Content_Pipeline "FlatRedBall XNA Content Pipeline") wiki entry.
 
 ## Timed Emitters
 
-See the [TimedEmit](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.TimedEmit.md "FlatRedBall.Graphics.Particle.Emitter.TimedEmit") entry.
+See the [TimedEmit](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.TimedEmit "FlatRedBall.Graphics.Particle.Emitter.TimedEmit") entry.
 
 ## Storing Particle References and Customizing Particle Behavior
 
-See the [Emit](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.Emit.md "FlatRedBall.Graphics.Particle.Emitter.Emit") page.
+See the [Emit](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.Emit "FlatRedBall.Graphics.Particle.Emitter.Emit") page.
 
 ## Particle Blueprint
 
@@ -77,7 +77,7 @@ The ParticleBlueprint property provides control over emitted particles. The foll
 
 ## Velocity Range Type
 
-The VelocityRangeType property in the Emitter's [EmissionSettings](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.EmissionSettings.md "FlatRedBall.Graphics.Particle.EmissionSettings") gives control over the velocity of the particles that are emitted. The following code creates an emitter that emits in a wedge: **Add the following using statement:**
+The VelocityRangeType property in the Emitter's [EmissionSettings](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.EmissionSettings "FlatRedBall.Graphics.Particle.EmissionSettings") gives control over the velocity of the particles that are emitted. The following code creates an emitter that emits in a wedge: **Add the following using statement:**
 
     using FlatRedBall.Graphics.Particle;
 
@@ -154,18 +154,18 @@ Emitters can have areas defined for emission. This can simplifying the creation 
 
 ## Emitter Members
 
--   [FlatRedBall.Graphics.Particle.Emitter.EmissionSettings](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.EmissionSettings.md "FlatRedBall.Graphics.Particle.Emitter.EmissionSettings")
--   [FlatRedBall.Graphics.Particle.Emitter.Emit](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.Emit.md "FlatRedBall.Graphics.Particle.Emitter.Emit")
--   [FlatRedBall.Graphics.Particle.Emitter.LayerToEmitOn](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.LayerToEmitOn.md "FlatRedBall.Graphics.Particle.Emitter.LayerToEmitOn")
--   [FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission.md "FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission")
--   [FlatRedBall.Graphics.Particle.Emitter.ParentVelocityChangesEmissionVelocity](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.ParentVelocityChangesEmissionVelocity.md "FlatRedBall.Graphics.Particle.Emitter.ParentVelocityChangesEmissionVelocity")
--   [FlatRedBall.Graphics.Particle.Emitter.RotationZ](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.RotationZ.md "FlatRedBall.Graphics.Particle.Emitter.RotationZ")
--   [FlatRedBall.Graphics.Particle.Emitter.SecondsLasting](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.SecondsLasting.md "FlatRedBall.Graphics.Particle.Emitter.SecondsLasting")
+-   [FlatRedBall.Graphics.Particle.Emitter.EmissionSettings](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.EmissionSettings "FlatRedBall.Graphics.Particle.Emitter.EmissionSettings")
+-   [FlatRedBall.Graphics.Particle.Emitter.Emit](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.Emit "FlatRedBall.Graphics.Particle.Emitter.Emit")
+-   [FlatRedBall.Graphics.Particle.Emitter.LayerToEmitOn](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.LayerToEmitOn "FlatRedBall.Graphics.Particle.Emitter.LayerToEmitOn")
+-   [FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission "FlatRedBall.Graphics.Particle.Emitter.NumberPerEmission")
+-   [FlatRedBall.Graphics.Particle.Emitter.ParentVelocityChangesEmissionVelocity](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.ParentVelocityChangesEmissionVelocity "FlatRedBall.Graphics.Particle.Emitter.ParentVelocityChangesEmissionVelocity")
+-   [FlatRedBall.Graphics.Particle.Emitter.RotationZ](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.RotationZ "FlatRedBall.Graphics.Particle.Emitter.RotationZ")
+-   [FlatRedBall.Graphics.Particle.Emitter.SecondsLasting](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter.SecondsLasting "FlatRedBall.Graphics.Particle.Emitter.SecondsLasting")
 
 ## Additional Information
 
--   [SpriteManager's MaxParticleCount property](/frb/docs/index.php?title=FlatRedBall.Sprite.mdManager.MaxParticleCount "FlatRedBall.SpriteManager.MaxParticleCount") - This controls how many live particles can exist at one time.
--   [Particle Collision](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter:Particle_Collision.md "FlatRedBall.Graphics.Particle.Emitter:Particle Collision")
--   [Particle Performance](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter:Particle_Performance.md "FlatRedBall.Graphics.Particle.Emitter:Particle Performance")
+-   [SpriteManager's MaxParticleCount property](/frb/docs/index.php?title=FlatRedBall.SpriteManager.MaxParticleCount "FlatRedBall.SpriteManager.MaxParticleCount") - This controls how many live particles can exist at one time.
+-   [Particle Collision](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter:Particle_Collision "FlatRedBall.Graphics.Particle.Emitter:Particle Collision")
+-   [Particle Performance](/frb/docs/index.php?title=FlatRedBall.Graphics.Particle.Emitter:Particle_Performance "FlatRedBall.Graphics.Particle.Emitter:Particle Performance")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

@@ -1,12 +1,12 @@
 ## Introduction
 
-If you've been reading the tutorials in order, then you have just finished the [tutorial on IClickable](/frb/docs/index.php?title=Glue:Tutorials:Using_IClickable.md "Glue:Tutorials:Using IClickable"). IClickable can be used to tell you if a Cursor is over an Entity, which is the basis for creating GUIs in games that use a mouse or touch screen. However, while the IClickable gets us a lot of functionality, there are a number of problems which must still be solved in custom code when writing a UI system. For more advanced UI systems, Glue offers the IWindow interface. IWindow extends the IClickable interface by adding events for common UI input actions such as an object being clicked or the cursor moving over an object.
+If you've been reading the tutorials in order, then you have just finished the [tutorial on IClickable](/frb/docs/index.php?title=Glue:Tutorials:Using_IClickable "Glue:Tutorials:Using IClickable"). IClickable can be used to tell you if a Cursor is over an Entity, which is the basis for creating GUIs in games that use a mouse or touch screen. However, while the IClickable gets us a lot of functionality, there are a number of problems which must still be solved in custom code when writing a UI system. For more advanced UI systems, Glue offers the IWindow interface. IWindow extends the IClickable interface by adding events for common UI input actions such as an object being clicked or the cursor moving over an object.
 
 ## What problems can IWindow solve?
 
 There are a number of benefits to using the IWindow interface:
 
--   Addition of Events which are automatically called by the [GuiManager](/frb/docs/index.php?title=FlatRedBall.Gui.GuiManager.md "FlatRedBall.Gui.GuiManager")
+-   Addition of Events which are automatically called by the [GuiManager](/frb/docs/index.php?title=FlatRedBall.Gui.GuiManager "FlatRedBall.Gui.GuiManager")
 -   Support for preventing "click-throughs" (a click registering on two objects at once, such as overlapping buttons)
 
 In short, the IWindow interface can give your Entities the functionality and ease of use you'd get from using the non-customizable FRB GUI system, or even Windows Forms, but with all of the customization and code generation you get from Glue.

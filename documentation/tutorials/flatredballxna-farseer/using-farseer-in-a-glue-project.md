@@ -228,4 +228,4 @@ public partial class GameScreen
 }
 ```
 
-If we run the game we'll see our blocks falling and colliding: [![fallingblocks](/wp-content/uploads/2016/11/FallingBlocks.gif.md)](/wp-content/uploads/2016/11/FallingBlocks.gif.md)    
+If we run the game we'll see our blocks falling and colliding: [![fallingblocks](/wp-content/uploads/2016/11/FallingBlocks.gif)](/wp-content/uploads/2016/11/FallingBlocks.gif)    

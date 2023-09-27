@@ -37,7 +37,7 @@ It is common to use values form CSVs in Lists. For example, let's say that the T
 
 This would dynamically loop through the list and create UI elements for each item in the CSV. If an item is added or removed, your code would automatically adjust to this and only show which values are appropriately.
 
-**Dictionary order is undefined**The order of entries in a dictionary is not always the same as the order of entries in a CSV. For more information on retrieving the order, see [this page](/frb/docs/index.php?title=Glue:Reference:Files:CSV:OrderedList.md "Glue:Reference:Files:CSV:OrderedList").
+**Dictionary order is undefined**The order of entries in a dictionary is not always the same as the order of entries in a CSV. For more information on retrieving the order, see [this page](/frb/docs/index.php?title=Glue:Reference:Files:CSV:OrderedList "Glue:Reference:Files:CSV:OrderedList").
 
 ### Accessing values directly
 

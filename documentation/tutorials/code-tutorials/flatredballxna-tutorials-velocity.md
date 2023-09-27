@@ -36,13 +36,13 @@ To guarantee that the code gets hit when the object moves past 1.0, the followin
 
 Since implementing velocity is nothing more than the continual changing of position over time, we can implement velocity rather easily.
 
-However, there is one thing to keep in mind when implementing movement: frame time may not be constant! In some cases, it may be constant if you are [not turning off the default constant framerate](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game#Disabling_Fixed_Time_Step.md "Microsoft.Xna.Framework.Game"). However, even if your game is running at a fixed frame rate, you should not depend on this to move your object. In other words, **don't do this:**
+However, there is one thing to keep in mind when implementing movement: frame time may not be constant! In some cases, it may be constant if you are [not turning off the default constant framerate](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game#Disabling_Fixed_Time_Step "Microsoft.Xna.Framework.Game"). However, even if your game is running at a fixed frame rate, you should not depend on this to move your object. In other words, **don't do this:**
 
     // NO NO NO NO NO NO NO NO!!!!
     myObject.X += 5;
     // In case you forgot, NO NO NO NO NO NO!!!!
 
-You may at some time in the future decide to turn off the fixed frame rate, or you may want to change it. If that happens you will suddenly find that your objects are moving at a different rate - and this rate may even fluctuate as you play your game. Instead, use the [TimeManager's](/frb/docs/index.php?title=FlatRedBall.TimeManager.md "FlatRedBall.TimeManager") SecondDifference property to move your objects:
+You may at some time in the future decide to turn off the fixed frame rate, or you may want to change it. If that happens you will suddenly find that your objects are moving at a different rate - and this rate may even fluctuate as you play your game. Instead, use the [TimeManager's](/frb/docs/index.php?title=FlatRedBall.TimeManager "FlatRedBall.TimeManager") SecondDifference property to move your objects:
 
     float unitsPerSecond = 5;
     myObject.X += unitsPerSecond * TimeManager.SecondDifference;
@@ -53,7 +53,7 @@ In this code if your frame rate changes, then SecondDifference will automaticall
 
 As mentioned at the beginning of this article, velocity is an essential element of nearly all video games. So what kind of game engine would FlatRedBall be if it didn't provide you with support for one of the most common behaviors in game development? Surprisingly enough, there are many engines which **do not** even handle velocity for the user. But before this turns into a full commercial, let's get to the point.
 
-The [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject") is a class that is used for many common FlatRedBall objects such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite"), [Text objects](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.md "FlatRedBall.Graphics.Text"), and even custom types like [Entity classes](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Creating_a_Game_Entity.md "FlatRedBallXna:Tutorials:Creating a Game Entity"). This object has the following members available:
+The [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") is a class that is used for many common FlatRedBall objects such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"), [Text objects](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text"), and even custom types like [Entity classes](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Creating_a_Game_Entity "FlatRedBallXna:Tutorials:Creating a Game Entity"). This object has the following members available:
 
 -   XVelocity
 -   YVelocity
@@ -65,7 +65,7 @@ All three are also available in a Vector3:
 
 Either can be used, and modifying one automatically modifies the other.
 
-Any object which is managed by one of the FlatRedBall Managers will automatically have its position be modified by its Velocity every frame using time-based movement (using the [TimeManager's](/frb/docs/index.php?title=FlatRedBall.TimeManager.md "FlatRedBall.TimeManager") SecondDifference property). Therefore, to reproduce the above code where myObject is moving along the X axis by 5 units/second, the following code would be used:
+Any object which is managed by one of the FlatRedBall Managers will automatically have its position be modified by its Velocity every frame using time-based movement (using the [TimeManager's](/frb/docs/index.php?title=FlatRedBall.TimeManager "FlatRedBall.TimeManager") SecondDifference property). Therefore, to reproduce the above code where myObject is moving along the X axis by 5 units/second, the following code would be used:
 
     myObject.XVelocity = 5;
 
@@ -77,7 +77,7 @@ Keep in mind that velocity **persists from frame to frame**. That means that you
 
 ## Code Example
 
-The following code creates 30 [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and sets their velocities to random values. Keep in mind that the following code is placed in the Initialize method. That is, it's called **only once**. Even though you never explicitly touch the Sprite's positions, and even though velocity is never set again, the objects continue to move.
+The following code creates 30 [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and sets their velocities to random values. Keep in mind that the following code is placed in the Initialize method. That is, it's called **only once**. Even though you never explicitly touch the Sprite's positions, and even though velocity is never set again, the objects continue to move.
 
 Add the following to Initialize after initializing FlatRedBall:
 

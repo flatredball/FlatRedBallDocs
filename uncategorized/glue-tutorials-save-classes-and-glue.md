@@ -1,6 +1,6 @@
 ## Introduction
 
-The tutorial on [proper information access](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access.md "Glue:Tutorials:Proper Information Access") discusses how to share information between different Screens and Entities in your game as well as how to have information persist after a Screen is destroyed. The tutorial suggested using "Save" classes to contain information. This pattern as it is used in the FlatRedBall Engine is discussed [here](/frb/docs/index.php?title=Tutorials:Save_Classes.md "Tutorials:Save Classes"). Save classes as they are commonly used with Glue and Entities will be discussed in this article.
+The tutorial on [proper information access](/frb/docs/index.php?title=Glue:Tutorials:Proper_Information_Access "Glue:Tutorials:Proper Information Access") discusses how to share information between different Screens and Entities in your game as well as how to have information persist after a Screen is destroyed. The tutorial suggested using "Save" classes to contain information. This pattern as it is used in the FlatRedBall Engine is discussed [here](/frb/docs/index.php?title=Tutorials:Save_Classes "Tutorials:Save Classes"). Save classes as they are commonly used with Glue and Entities will be discussed in this article.
 
 ## A common scenario
 
@@ -144,7 +144,7 @@ That's all you need to do to create an Entity using your Save class! Now you can
 
 ## Creating the right "type" of Entity
 
-As we'll show in a [later tutorial](/frb/docs/index.php?title=Glue:Tutorials:Optionally_Loaded_Content.md "Glue:Tutorials:Optionally Loaded Content"), Glue supports optionally loaded content. This is important so that you can reuse your Entities even though they may use different content. In this particular case, we may want our Hero class to have a lot of common functionality, but the content should be different - in other words one Hero will probably use a different set of AnimationChains than the other.
+As we'll show in a [later tutorial](/frb/docs/index.php?title=Glue:Tutorials:Optionally_Loaded_Content "Glue:Tutorials:Optionally Loaded Content"), Glue supports optionally loaded content. This is important so that you can reuse your Entities even though they may use different content. In this particular case, we may want our Hero class to have a lot of common functionality, but the content should be different - in other words one Hero will probably use a different set of AnimationChains than the other.
 
 However, which content is used should be determined inside the Hero class, and not outside of it. Therefore, the Save class should not store information like file names. Instead, it should only store values that should be used to load content internally in the Entity. Therefore, we may want to create an enumeration as follows:
 

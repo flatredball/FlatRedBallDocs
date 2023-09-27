@@ -12,7 +12,7 @@ The following code will tell the game logic to run at 10 frames per second:
 
 ## Fixing collision tunneling with higher frame rate
 
-As explained in [this article](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon:Thin_Polygon_Problem.md "FlatRedBall.Math.Geometry.Polygon:Thin Polygon Problem"), tunneling occurs when the speed of a moving object is large relative to objects it is colliding against. More accurately, tunneling occurs when the amount of distance an object travels in one frame is large relative to the objects it is colliding against. By increasing the frame rate of your game, you can reduce the distance covered by an object per-frame. The following example presents a situation where a lot of tunneling is occurring, then shows how increasing the frame rate can solve this problem:
+As explained in [this article](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon:Thin_Polygon_Problem "FlatRedBall.Math.Geometry.Polygon:Thin Polygon Problem"), tunneling occurs when the speed of a moving object is large relative to objects it is colliding against. More accurately, tunneling occurs when the amount of distance an object travels in one frame is large relative to the objects it is colliding against. By increasing the frame rate of your game, you can reduce the distance covered by an object per-frame. The following example presents a situation where a lot of tunneling is occurring, then shows how increasing the frame rate can solve this problem:
 
 Add the following using statements:
 

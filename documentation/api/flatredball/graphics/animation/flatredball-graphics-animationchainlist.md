@@ -1,6 +1,6 @@
 ## Introduction
 
-Represents a list of [AnimationChains](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain.md "FlatRedBall.Graphics.Animation.AnimationChain"). This object can be loaded from file and saved to file as well. This object is associated with the .achx file. For information on how to use AnimationChainLists in Glue, see [this article](/frb/docs/index.php?title=Glue:Tutorials:Using_Animation_Chains.md "Glue:Tutorials:Using Animation Chains"). AnimationChains can be displayed by [IAnimationChainAnimatables](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.md "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable") such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") and [SpriteFrames](/frb/docs/index.php?title=FlatRedBall.ManagedSpriteGroups.SpriteFrame.md "FlatRedBall.ManagedSpriteGroups.SpriteFrame"). For more information on how to work with AnimationChains in code, see the [IAnimationChainAnimatables page](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable.md "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable").
+Represents a list of [AnimationChains](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain "FlatRedBall.Graphics.Animation.AnimationChain"). This object can be loaded from file and saved to file as well. This object is associated with the .achx file. For information on how to use AnimationChainLists in Glue, see [this article](/frb/docs/index.php?title=Glue:Tutorials:Using_Animation_Chains "Glue:Tutorials:Using Animation Chains"). AnimationChains can be displayed by [IAnimationChainAnimatables](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable") such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and [SpriteFrames](/frb/docs/index.php?title=FlatRedBall.ManagedSpriteGroups.SpriteFrame "FlatRedBall.ManagedSpriteGroups.SpriteFrame"). For more information on how to work with AnimationChains in code, see the [IAnimationChainAnimatables page](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.IAnimationChainAnimatable "FlatRedBall.Graphics.Animation.IAnimationChainAnimatable").
 
 ## Loading from file
 
@@ -20,14 +20,14 @@ In Initialize after FlatRedBallServices.InitializeFlatRedBall:
 
     Sprite sprite = SpriteManager.AddSprite(list);
 
-For information on loading through the Content Pipeline, see the [FlatRedBall XNA Content Pipeline](/frb/docs/index.php?title=FlatRedBall_XNA_Content_Pipeline.md "FlatRedBall XNA Content Pipeline") wiki entry.
+For information on loading through the Content Pipeline, see the [FlatRedBall XNA Content Pipeline](/frb/docs/index.php?title=FlatRedBall_XNA_Content_Pipeline "FlatRedBall XNA Content Pipeline") wiki entry.
 
 ## Saving AnimationChainLists
 
-To save an AnimationChainList to file, you can use the [AnimationChainListSave](/frb/docs/index.php?title=FlatRedBall.Content.AnimationChain.AnimationChainListSave.md "FlatRedBall.Content.AnimationChain.AnimationChainListSave") object. For more information, see [this page](/frb/docs/index.php?title=FlatRedBall.Content.AnimationChain.AnimationChainListSave.md "FlatRedBall.Content.AnimationChain.AnimationChainListSave").
+To save an AnimationChainList to file, you can use the [AnimationChainListSave](/frb/docs/index.php?title=FlatRedBall.Content.AnimationChain.AnimationChainListSave "FlatRedBall.Content.AnimationChain.AnimationChainListSave") object. For more information, see [this page](/frb/docs/index.php?title=FlatRedBall.Content.AnimationChain.AnimationChainListSave "FlatRedBall.Content.AnimationChain.AnimationChainListSave").
 
 ## AnimationChainList Methods
 
--   [FlatRedBall.Graphics.Animation.AnimationChainList.Clone](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChain.mdList.Clone "FlatRedBall.Graphics.Animation.AnimationChainList.Clone")
+-   [FlatRedBall.Graphics.Animation.AnimationChainList.Clone](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationChainList.Clone "FlatRedBall.Graphics.Animation.AnimationChainList.Clone")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

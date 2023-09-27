@@ -16,14 +16,14 @@ This goes for any file type, so keep this in mind. That is, if loading a model t
 
 ## Subsections
 
--   [Using the FlatRedBall XNA Content Pipeline](/frb/docs/index.php?title=FlatRedBall_XNA_Content_Pipeline:Using_the_FlatRedBall_XNA_Content_Pipeline.md "FlatRedBall XNA Content Pipeline:Using the FlatRedBall XNA Content Pipeline")
--   [External References in the Content Pipeline](/frb/docs/index.php?title=FlatRedBall_XNA_Content_Pipeline:External_References_in_the_Content_Pipeline.md "FlatRedBall XNA Content Pipeline:External References in the Content Pipeline")
+-   [Using the FlatRedBall XNA Content Pipeline](/frb/docs/index.php?title=FlatRedBall_XNA_Content_Pipeline:Using_the_FlatRedBall_XNA_Content_Pipeline "FlatRedBall XNA Content Pipeline:Using the FlatRedBall XNA Content Pipeline")
+-   [External References in the Content Pipeline](/frb/docs/index.php?title=FlatRedBall_XNA_Content_Pipeline:External_References_in_the_Content_Pipeline "FlatRedBall XNA Content Pipeline:External References in the Content Pipeline")
 
 ## Additional Links
 
--   [Adding files to your project](/frb/docs/index.php?title=Tutorials:Adding_files_to_your_project.md "Tutorials:Adding files to your project") - A discussion of from-file loading, content pipeline loading, and "Content" loading.
--   [Managing Files](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Managing_Files.md "FlatRedBallXna:Tutorials:Managing Files") - Read this for more information on how to manage files in FlatRedBall.
--   [Custom files and the content pipeline](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline.md "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline")
--   [XNA Content Pipelines](/frb/docs/index.php?title=General_Programming:XNA:Content_Pipeline.md "General Programming:XNA:Content Pipeline")
+-   [Adding files to your project](/frb/docs/index.php?title=Tutorials:Adding_files_to_your_project "Tutorials:Adding files to your project") - A discussion of from-file loading, content pipeline loading, and "Content" loading.
+-   [Managing Files](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Managing_Files "FlatRedBallXna:Tutorials:Managing Files") - Read this for more information on how to manage files in FlatRedBall.
+-   [Custom files and the content pipeline](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline")
+-   [XNA Content Pipelines](/frb/docs/index.php?title=General_Programming:XNA:Content_Pipeline "General Programming:XNA:Content Pipeline")
 
 Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.

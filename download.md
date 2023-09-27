@@ -26,7 +26,7 @@ The most common approach to making FlatRedBall games is to use the FlatRedBall E
 
 ## Downloading and Running FlatRedBall
 
-1.  Download the latest zip file from [/content/FrbXnaTemplates/DailyBuild/FRBDK.zip.md](/content/FrbXnaTemplates/DailyBuild/FRBDK.zip.md)
+1.  Download the latest zip file from [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip](/content/FrbXnaTemplates/DailyBuild/FRBDK.zip)
 2.  Unzip the file after downloading
 3.  Go to the folder where the .zip file unzipped to (by default called FRBDK)
 4.  Open the Run FlatRedBall.bat file (double click it)
@@ -146,4 +146,4 @@ Here's some more options on getting or updating FlatRedBall:
 
 ## Gum Download
 
--   [Gum](/content/Tools/Gum/Gum.zip.md)
+-   [Gum](/content/Tools/Gum/Gum.zip)

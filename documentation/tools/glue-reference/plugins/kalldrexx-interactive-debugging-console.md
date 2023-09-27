@@ -94,7 +94,7 @@ Unlike when receiving output, your code does not need to do any registration pri
 
 ## Input Processing
 
-The actual processing of commands is done through an implementation of the IConsoleProcessor interface. This abstraction allows developers to extend the console system to use any language they want, from python to Lua. All that needs to be done is to create a new class that implements IConsoleProcessor and code in all the required methods. See the [Python example](/frb/docs/index.php?title=KallDrexx:Interactive_Debugging_Console#Add_Python_Support.md) for how this is done.
+The actual processing of commands is done through an implementation of the IConsoleProcessor interface. This abstraction allows developers to extend the console system to use any language they want, from python to Lua. All that needs to be done is to create a new class that implements IConsoleProcessor and code in all the required methods. See the [Python example](/frb/docs/index.php?title=KallDrexx:Interactive_Debugging_Console#Add_Python_Support) for how this is done.
 
 The zip uploaded to GlueVault includes the JavascriptProcessor class, which allows console commands to utilize Javascript via the [Javascript.net](http://javascriptdotnet.codeplex.com/) engine.
 

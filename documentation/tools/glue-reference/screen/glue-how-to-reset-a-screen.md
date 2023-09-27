@@ -4,4 +4,4 @@ You may want to reset a screen under certain situations. For example when the pl
 
 ## Code
 
-To reset a screen, see the [MoveToScreen page](/frb/docs/index.php?title=Glue:Reference:Screens:MoveToScreen#Resetting_a_Screen.md "Glue:Reference:Screens:MoveToScreen").
+To reset a screen, see the [MoveToScreen page](/frb/docs/index.php?title=Glue:Reference:Screens:MoveToScreen#Resetting_a_Screen "Glue:Reference:Screens:MoveToScreen").

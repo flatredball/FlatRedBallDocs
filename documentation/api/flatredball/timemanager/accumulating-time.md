@@ -13,11 +13,11 @@ If you are working on a game which requires actions to be performed at a particu
         // Time's up!  Do whatever action
      }
 
-We generally recommend not implementing this type of solution in your code because it can lead to timing bugs due to the inaccuracy of numerical operations. Also, this makes your code a little less flexible for additional functionality such as [pausing your game](/frb/docs/index.php?title=FlatRedBall.Instructions.InstructionManager.PauseEngine.md "FlatRedBall.Instructions.InstructionManager.PauseEngine"). Whenever possible we recommend reducing the number of operations it takes to get to a particular value by using base time values and using those in operations. To clarify, this article will present a number of common scenarios, then show the proper way to achieve the desired functionality. For comparison, we'll also show an improper way of implementing the desired functionality.
+We generally recommend not implementing this type of solution in your code because it can lead to timing bugs due to the inaccuracy of numerical operations. Also, this makes your code a little less flexible for additional functionality such as [pausing your game](/frb/docs/index.php?title=FlatRedBall.Instructions.InstructionManager.PauseEngine "FlatRedBall.Instructions.InstructionManager.PauseEngine"). Whenever possible we recommend reducing the number of operations it takes to get to a particular value by using base time values and using those in operations. To clarify, this article will present a number of common scenarios, then show the proper way to achieve the desired functionality. For comparison, we'll also show an improper way of implementing the desired functionality.
 
 ## If using Glue
 
-If you are using Glue, then the Screen class has a lot of timing and pausing functionality built in. See [this page](/frb/docs/index.php?title=Glue:Reference:Screens:PauseAdjustedCurrentTime.md "Glue:Reference:Screens:PauseAdjustedCurrentTime") for a current time value that can be used which considers paused time.
+If you are using Glue, then the Screen class has a lot of timing and pausing functionality built in. See [this page](/frb/docs/index.php?title=Glue:Reference:Screens:PauseAdjustedCurrentTime "Glue:Reference:Screens:PauseAdjustedCurrentTime") for a current time value that can be used which considers paused time.
 
 ## Performing activity at time
 
@@ -67,7 +67,7 @@ Similarly, it is improper to store a value to decrement the value every frame an
 
 ## Dividing a time period
 
-You may want to perform an action at a given interval, or according to some value set in data. If you are going to store these values in an array of doubles or [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction.md "FlatRedBall.Instructions.Instruction"), you may need to calculate these values up front.
+You may want to perform an action at a given interval, or according to some value set in data. If you are going to store these values in an array of doubles or [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction"), you may need to calculate these values up front.
 
 ### Proper
 

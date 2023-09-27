@@ -2,7 +2,7 @@
 
 This guide is a modified version of the guide available here: https://gist.github.com/roy-t/2f089414078bf7218350e8c847951255
 
-1.  Download a modified version of **MXA Game Studio**, which is a set of installers for adding XNA to Visual Studio. [files.flatredball.com/content/XnaInstall/XnaForVS2019.zip](/content/XnaInstall/XnaForVS2019.zip.md) (right-click and save link as)
+1.  Download a modified version of **MXA Game Studio**, which is a set of installers for adding XNA to Visual Studio. [files.flatredball.com/content/XnaInstall/XnaForVS2019.zip](/content/XnaInstall/XnaForVS2019.zip) (right-click and save link as)
 2.  After downloading, unzip the **XNAForVS2019.zip** file
 3.  The unzipped folder contains 4 folders. Each one contains an executable. Run them in order:
     1.  DirectX\DXSETUP.exe

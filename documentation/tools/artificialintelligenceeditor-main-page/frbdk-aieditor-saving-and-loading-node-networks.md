@@ -16,4 +16,4 @@ To load a .nntx file select:
 
 The NodeNetwork will load and display in the AIEditor.
 
-[Template:Post in Forums](/frb/docs/index.php?title=Template:Post_in_Forums&action=edit&redlink=1.md "Template:Post in Forums (page does not exist)")
+[Template:Post in Forums](/frb/docs/index.php?title=Template:Post_in_Forums&action=edit&redlink=1 "Template:Post in Forums (page does not exist)")

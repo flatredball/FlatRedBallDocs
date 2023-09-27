@@ -1,6 +1,6 @@
 ## Introduction
 
-The SourceFile property is a property which controls which file a given object is defined in. This value is only available if the object's [SourceType](/frb/docs/index.php?title=Glue:Reference:Objects:SourceType.md "Glue:Reference:Objects:SourceType") is set to "File". If this value is available, then the drop-down will list all files in the Entity. The selected SourceFile will determine the available [SourceName](/frb/docs/index.php?title=Glue:Reference:Objects:SourceName&action=edit&redlink=1.md "Glue:Reference:Objects:SourceName (page does not exist)").
+The SourceFile property is a property which controls which file a given object is defined in. This value is only available if the object's [SourceType](/frb/docs/index.php?title=Glue:Reference:Objects:SourceType "Glue:Reference:Objects:SourceType") is set to "File". If this value is available, then the drop-down will list all files in the Entity. The selected SourceFile will determine the available [SourceName](/frb/docs/index.php?title=Glue:Reference:Objects:SourceName&action=edit&redlink=1 "Glue:Reference:Objects:SourceName (page does not exist)").
 
 ## Clone vs. Reference
 

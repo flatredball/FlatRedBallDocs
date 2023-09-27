@@ -6,7 +6,7 @@ If you are making a platformer which is using the CollideAgainstBounce method an
 
 This code uses the following ShapeCollection file:
 
--   [File:SampleGround.shcx](/frb/docs/index.php?title=File:SampleGround.shcx.md "File:SampleGround.shcx")
+-   [File:SampleGround.shcx](/frb/docs/index.php?title=File:SampleGround.shcx "File:SampleGround.shcx")
 
 You will need to load this in code or in Glue in your current Screen.
 

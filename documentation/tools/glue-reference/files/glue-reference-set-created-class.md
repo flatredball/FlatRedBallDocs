@@ -39,4 +39,4 @@ Glue automatically creates a class called PlatformerValues if a game includes pl
 
 ## Additional Information
 
--   [Glue:Reference:Files:Set Created Class:Generate Data Class](/frb/docs/index.php?title=Glue:Reference:Files:Set_Created_Class:Generate_Data_Class.md "Glue:Reference:Files:Set Created Class:Generate Data Class")
+-   [Glue:Reference:Files:Set Created Class:Generate Data Class](/frb/docs/index.php?title=Glue:Reference:Files:Set_Created_Class:Generate_Data_Class "Glue:Reference:Files:Set Created Class:Generate Data Class")

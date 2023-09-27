@@ -4,7 +4,7 @@ The Draw function is the function that initiates all FlatRedBall rendering. This
 
 ## Breaking down Draw
 
-The Draw function can be broken down into two calls: [UpdateDependencies](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.UpdateDependencies&action=edit&redlink=1.md "FlatRedBall.FlatRedBallServices.UpdateDependencies (page does not exist)") and [RenderAll](/documentation/api/flatredball/flatredball-flatredballservices/flatredball-flatredballservices-renderall.md "FlatRedBall.FlatRedBallServices.RenderAll"). Therefore, the following line:
+The Draw function can be broken down into two calls: [UpdateDependencies](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.UpdateDependencies&action=edit&redlink=1 "FlatRedBall.FlatRedBallServices.UpdateDependencies (page does not exist)") and [RenderAll](/documentation/api/flatredball/flatredball-flatredballservices/flatredball-flatredballservices-renderall.md "FlatRedBall.FlatRedBallServices.RenderAll"). Therefore, the following line:
 
     FlatRedBallServices.Draw();
 

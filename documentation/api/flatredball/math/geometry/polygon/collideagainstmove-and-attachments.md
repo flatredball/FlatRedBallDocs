@@ -1,16 +1,16 @@
 ## Introduction
 
-Due to the popularity of the [Entity pattern](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Creating_a_Game_Entity.md "FlatRedBallXna:Tutorials:Creating a Game Entity"), it is very common to have shapes attached to other [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject.md "FlatRedBall.PositionedObject"). Because of this common setup, all shapes have special behavior in their collision methods to reposition or change the velocity of their [TopParent](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.TopParent.md "FlatRedBall.Math.IAttachable.TopParent").
+Due to the popularity of the [Entity pattern](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Creating_a_Game_Entity "FlatRedBallXna:Tutorials:Creating a Game Entity"), it is very common to have shapes attached to other [PositionedObjects](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject"). Because of this common setup, all shapes have special behavior in their collision methods to reposition or change the velocity of their [TopParent](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.TopParent "FlatRedBall.Math.IAttachable.TopParent").
 
 ## The Attachment Hierarchy
 
-The attachment hierarchy is a collection of [IAttachables](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.md "FlatRedBall.Math.IAttachable") and their attachments - or child/parent relationships - which define which objects control the position and rotation of other objects. The following shows a typical attachment hierarchy for an [Entity](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Creating_a_Game_Entity.md "FlatRedBallXna:Tutorials:Creating a Game Entity").
+The attachment hierarchy is a collection of [IAttachables](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable "FlatRedBall.Math.IAttachable") and their attachments - or child/parent relationships - which define which objects control the position and rotation of other objects. The following shows a typical attachment hierarchy for an [Entity](/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Creating_a_Game_Entity "FlatRedBallXna:Tutorials:Creating a Game Entity").
 
 ![AttachmentHierarchy.png](/media/migrated_media-AttachmentHierarchy.png)
 
-In this hierarchy the entity itself is considered the "root" or [TopParent](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.TopParent.md "FlatRedBall.Math.IAttachable.TopParent"). This means that by default absolute changes to position and rotation will affect ONLY the root object. In other words, if the VisibleRepresentation's X is changed in code, the change will not be drawn or persist next frame. To change the VisibleRepresentation's absolute position or rotation, code must either change the root's absolute values, or the relative values of the VisibleRepresentation.
+In this hierarchy the entity itself is considered the "root" or [TopParent](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.TopParent "FlatRedBall.Math.IAttachable.TopParent"). This means that by default absolute changes to position and rotation will affect ONLY the root object. In other words, if the VisibleRepresentation's X is changed in code, the change will not be drawn or persist next frame. To change the VisibleRepresentation's absolute position or rotation, code must either change the root's absolute values, or the relative values of the VisibleRepresentation.
 
-This characteristic is not unique to [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite.md "FlatRedBall.Sprite") - it applies to all [IAttachables](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.md "FlatRedBall.Math.IAttachable") including all shapes.
+This characteristic is not unique to [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") - it applies to all [IAttachables](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable "FlatRedBall.Math.IAttachable") including all shapes.
 
 ## Shapes and the Attachment Hierarchy
 
@@ -18,7 +18,7 @@ Methods like CollideAgainstMove and CollideAgainstBounce are commonly used to pr
 
 This may seem to present a problem; shapes have their absolute properties modified through the CollideAgainstMove and CollideAgainstBounce methods; however, as shown in the entity pattern above, shapes are often not at the root of the attachment hierarchy. Therefore it would seem as if these methods will only work when the shapes involved are the roots of their respective attachment hierarchies.
 
-Fortunately, this is not the case. Since shapes are often children of other [IAttachables](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable.md "FlatRedBall.Math.IAttachable"), any modification to position or velocity gets "pushed up" to the root of the attachment hierarchy.
+Fortunately, this is not the case. Since shapes are often children of other [IAttachables](/frb/docs/index.php?title=FlatRedBall.Math.IAttachable "FlatRedBall.Math.IAttachable"), any modification to position or velocity gets "pushed up" to the root of the attachment hierarchy.
 
 ![CollisionMethodModifications.png](/media/migrated_media-CollisionMethodModifications.png)
 

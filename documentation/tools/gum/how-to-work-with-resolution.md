@@ -10,7 +10,7 @@ When you work with a Gum project, you can specify the resolutions that you're ta
 2.  Change the "DefaultCanvasHeight" or "DefaultCanvasWidth" to the desired values.
 3.  Notice the blue dotted line changing in response to the changed values.
 
-![ChangeGumResolution.gif](/media/migrated_media-ChangeGumResolution.gif) If your game is going to run at a fixed resolution, then you can set the resolution of your Gum project and everything will match. For information on how to set the resolution of your project in Glue, see [this page](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:Camera_Settings.md "Glue:Reference:Menu:Settings:Camera Settings").
+![ChangeGumResolution.gif](/media/migrated_media-ChangeGumResolution.gif) If your game is going to run at a fixed resolution, then you can set the resolution of your Gum project and everything will match. For information on how to set the resolution of your project in Glue, see [this page](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:Camera_Settings "Glue:Reference:Menu:Settings:Camera Settings").
 
 ## Zooming UI
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-The Camera's View property is a matrix which contains the "view" matrix commonly used when working with shaders. The View is internally calculated using the Matrix.CreateLookAt method. The View matrix is constructed using the Camera's absolute [Postiion](/frb/docs/index.php?title=FlatRedBall.Camera.Position.md "FlatRedBall.Camera.Position"), its [RotationMatrix](/frb/docs/index.php?title=FlatRedBall.Camera.RotationMatrix.md "FlatRedBall.Camera.RotationMatrix"), and its [UpVector](/frb/docs/index.php?title=FlatRedBall.Camera.UpVector.md "FlatRedBall.Camera.UpVector").
+The Camera's View property is a matrix which contains the "view" matrix commonly used when working with shaders. The View is internally calculated using the Matrix.CreateLookAt method. The View matrix is constructed using the Camera's absolute [Postiion](/frb/docs/index.php?title=FlatRedBall.Camera.Position "FlatRedBall.Camera.Position"), its [RotationMatrix](/frb/docs/index.php?title=FlatRedBall.Camera.RotationMatrix "FlatRedBall.Camera.RotationMatrix"), and its [UpVector](/frb/docs/index.php?title=FlatRedBall.Camera.UpVector "FlatRedBall.Camera.UpVector").
 
 ## Code Example
 
