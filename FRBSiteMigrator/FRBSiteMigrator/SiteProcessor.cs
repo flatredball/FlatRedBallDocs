@@ -188,19 +188,29 @@ namespace FRBSiteMigrator
             var content = page.RawContent;
 
             // convert local links to be relative
-            foreach(var link in page.Links)
+            var links = page.Links.ToList();
+            foreach (var link in links)
             {
                 if(!link.Contains("http") || link.Contains(site.SiteUrl))
                 {
-                    var relative = link.MakeLinkRelative() + ".md";
-                    content = content.Replace(link, relative);
+                    var relative = link.MakeLinkRelative();
+                    if (string.IsNullOrWhiteSpace(Path.GetExtension(link)))
+                    {
+                        relative += ".md";
+                    }
+                    // we do this because we don't want to accidentally replace
+                    // parts of links that contain other links
+                    var strictFind = $"\"{link}\"";
+                    var strictReplace = $"\"{relative}\"";
+                    content = content.Replace(strictFind, strictReplace);
                 }
             }
 
             // convert image links to their new path, note that we search
             // for the relative path since protocols are mixed between http/s
             // and relative links
-            foreach(var img in page.Images)
+            var imgs = page.Images.ToList();
+            foreach(var img in imgs)
             {
                 if (!img.Contains("http") || img.Contains(site.SiteUrl))
                 {
@@ -209,7 +219,12 @@ namespace FRBSiteMigrator
                     if (media != null)
                     {
                         var newLink = "/media/" + media.ProcessedPath;
-                        content = content.Replace(img, newLink);
+
+                        // we do this because we don't want to accidentally replace
+                        // parts of links that contain other links
+                        var strictFind = $"\"{img}\"";
+                        var strictReplace = $"\"{newLink}\"";
+                        content = content.Replace(strictFind, strictReplace);
                     }
                     else
                     {
