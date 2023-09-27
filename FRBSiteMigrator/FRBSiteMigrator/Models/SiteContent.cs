@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿
+using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 
 namespace FRBSiteMigrator.Models
