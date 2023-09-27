@@ -1,5 +1,5 @@
 ﻿using FRBSiteMigrator;
 
-var processor = new SiteProcessor("flatredball.com");
+var processor = new SiteProcessor();
 
-processor.Process();
+processor.Process("flatredball.com");

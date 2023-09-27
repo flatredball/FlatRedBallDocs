@@ -3,8 +3,10 @@ using FRBSiteMigrator.Models;
 using Newtonsoft.Json;
 using System;
 using System.Globalization;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Xml.Serialization;
 
 namespace FRBSiteMigrator
 {
@@ -33,61 +35,205 @@ namespace FRBSiteMigrator
     {
         const string CsvFilename = "siteData.csv";
         const string JsonFilename = "siteContents.json";
-        const string SiteFolder = "docs";
-        const string MediaFolder = "media";
+        
+        HttpClient client = new HttpClient();
         Site site = new Site();
         Dictionary<string, string> mediaPaths = new Dictionary<string, string>();
-        
 
-        public SiteProcessor(string siteUrl)
+        string SiteFolder { get; set; } = "../../../../../";
+        string MediaFolder => Path.Combine(SiteFolder, "media");
+        string JsonPath => Path.Combine(SiteFolder, JsonFilename);
+
+        public void Process(string siteUrl)
         {
+            Directory.CreateDirectory(SiteFolder);
+            Directory.CreateDirectory(MediaFolder);
+
+
             site.SiteUrl = siteUrl;
-        }
 
-        public void Process()
-        {
-            ReadCsvIntoSiteContents();
+            // get all of the CSV dump contents and populate the Site object
+            GetSiteFromCsv();
 
+            // create full file paths for each file
+            Write("Calculating file paths for all content.");
             foreach(var content in site.AllContent)
             {
                 content.ProcessedPath = GetUrlRecursive(content);
             }
 
-            var json = JsonConvert.SerializeObject(site, Formatting.Indented);
-            File.WriteAllText(JsonFilename, json);
+            // check if any pages link to media that we don't know about
+            Write("Checking for untracked media references.");
+            foreach(var page in site.Pages)
+            {
+                FindAndAddUntrackedMedia(page);
+            }
+            foreach(var post in site.Posts)
+            {
+                FindAndAddUntrackedMedia(post);
+            }
+
+            // write a backup out so we can see it before we start the
+            // slow processing stuff
+            WriteSiteBackupToDisk();
+
+            // now we should have a complete list of media, fetch all
+            // images locally... this will take awhile. Note that this is
+            // intentionally not parallel because the server can't handle it
+            Write($"Making local copies of {site.MediaCount} media.");
+            foreach (var media in site.Media)
+            {
+                FetchAndSaveMedia(media);
+            }
+
+            // now we fix links and images, convert html to markdown, and save out file
+            foreach(var post in site.Posts)
+            {
+                ProcessPostOrPage(post);
+            }
+
+            // write out a backup again
+            WriteSiteBackupToDisk();
         }
 
-        public string GetUrlRecursive(SiteContent content)
+        void FindAndAddUntrackedMedia(SiteContent content)
         {
-            // EARLY OUT: special handling of media
-            if(content.Type == "attachment")
+            var images = content.Images;
+            foreach (var img in images)
             {
-                var url = content.Guid;
-                var index = url.IndexOf("wp-content");
-                return url.Substring(index).Replace("wp-content", "");
-            }
-
-            // EARLY OUT: special handling of posts
-            if(content.Type == "post")
-            {
-                return "/news/" + content.Name;
-            }
-
-            var path = "";
-            if(content.ParentId != 0)
-            {
-                var parent = site.Pages.Where(p => p.Id == content.ParentId).FirstOrDefault();
-                if(parent != null)
+                // if the image link does NOT contain "http" it is relative and thus local
+                // if the image DOES contain "http" and it contains the site url, it is local
+                if (!img.Contains("http") || img.Contains(site.SiteUrl))
                 {
-                    path += GetUrlRecursive(parent);
+                    // we have to strip the protocol because image sources are a mashup
+                    // of http and https
+                    var srcSansProtocol = img.StripProtocol();
+                    var known = site.Media.Any(m => m.Guid.Contains(srcSansProtocol));
+
+                    // if we don't have any matches, this is an untracked image and we
+                    // need to add a record for it so we can make a local copy and repoint
+                    // all doc URLs
+                    if (!known)
+                    {
+                        var name = Path.GetFileNameWithoutExtension(img);
+                        var media = new SiteContent()
+                        {
+                            Id = -1,
+                            Type = "attachment",
+                            Author = "SiteProcessor",
+                            Created = DateTime.UtcNow,
+                            Name = name,
+                            Guid = img,
+                            ParentId = 0,
+                            SiteStatus = "inherit",
+                            Title = name,
+                            RawContent = "",
+                        };
+                        media.ProcessedPath = GetUrlRecursive(media);
+                        Write($"Found unknown media: {media.ProcessedPath}");
+                        site.Media.Add(media);
+                    }
                 }
             }
-            return path + "/" + content.Name;
-
         }
 
-        public void ReadCsvIntoSiteContents()
+        void FetchAndSaveMedia(SiteContent media)
         {
+            Uri uri;
+            if(media.Guid.Contains("http"))
+            {
+                uri = new Uri(media.Guid);
+            }
+            else
+            {
+                var builder = new UriBuilder("https", site.SiteUrl);
+                builder.Path = media.Guid;
+                uri = builder.Uri;
+            }
+
+            try
+            {
+                var flattenedFilename = media.ProcessedPath;
+                var localPath = Path.Combine(MediaFolder, flattenedFilename);
+
+                if(!File.Exists(localPath))
+                {
+                    var bytes = client.GetByteArrayAsync(uri).GetAwaiter().GetResult();
+                    File.WriteAllBytes(localPath, bytes);
+                    Write($"Saved image: {localPath}");
+                }
+            }
+            catch(Exception ex)
+            {
+                Write($"Failed to fetch media: {media.Guid}.");
+                site.BadMediaPaths.Add(media.Guid);
+            }
+        }
+
+        void ProcessPostOrPage(SiteContent page)
+        {
+            var content = page.RawContent;
+
+            // convert links to be relative
+            foreach(var link in page.Links)
+            {
+                var relative = link.MakeLinkRelative() + ".md";
+                content.Replace(link, relative);
+            }
+
+            // convert images to be relative
+            foreach(var img in page.Images)
+            {
+                var relative = img.MakeLinkRelative();
+                content.Replace(img, relative);
+            }
+
+            page.ProcessedContent = content;
+
+            // convert to markdown
+
+
+            // save
+        }
+
+        string GetUrlRecursive(SiteContent content)
+        {
+            var url = "";
+
+            if(content.Type == "attachment")
+            {
+                url = content.Guid;
+                if(url.Contains("wp-content/uploads"))
+                {
+                    var index = url.IndexOf("wp-content/uploads");
+                    url = url.Substring(index).Replace("wp-content/uploads", "").ToFilenameSafeString();
+                }
+            }
+            else if(content.Type == "post")
+            {
+                url = "/news/" + content.Name;
+            }
+            else if(content.Type == "page")
+            {
+                var path = "";
+                if (content.ParentId != 0)
+                {
+                    var parent = site.Pages.Where(p => p.Id == content.ParentId).FirstOrDefault();
+                    if (parent != null)
+                    {
+                        path += GetUrlRecursive(parent);
+                    }
+                }
+                url += "/" + content.Name;
+            }
+
+            return url;
+        }
+
+        void GetSiteFromCsv()
+        {
+            Write($"Processing {CsvFilename}");
+            int records = 0;
             using(var reader = new StreamReader(CsvFilename))
             using(var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
@@ -109,8 +255,23 @@ namespace FRBSiteMigrator
                         RawContent = csv.GetField("post_content"),                        
                     };
                     site.AddContent(content);
+                    records++;
                 }
             }
+            Write($"Found {site.PageCount} pages, {site.MediaCount} media, and {site.PostCount} posts from {records} records.");
+        }
+
+        void Write(string msg)
+        {
+            Console.WriteLine(msg);
+        }
+
+        void WriteSiteBackupToDisk()
+        {
+            Write($"Saving metadata file.");
+            var json = JsonConvert.SerializeObject(site, Formatting.Indented);
+            File.WriteAllText(JsonPath, json);
+            Write($"File saved to {JsonPath}");
         }
     }
 }

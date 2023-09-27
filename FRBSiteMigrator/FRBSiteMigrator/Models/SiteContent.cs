@@ -16,6 +16,7 @@ namespace FRBSiteMigrator.Models
         public List<SiteContent> Pages { get; set; } = new List<SiteContent>();
         public List<SiteContent> Media { get; set; } = new List<SiteContent>();
         public List<SiteContent> Posts { get; set; } = new List<SiteContent>();
+        public List<string> BadMediaPaths { get; set; } = new List<string>();
 
         [JsonIgnore]
         public List<SiteContent> AllContent =>
@@ -68,11 +69,14 @@ namespace FRBSiteMigrator.Models
         public string SiteStatus { get; set; }
         public string Title { get; set; }
         public string RawContent { get; set; }
+
+        public string ProcessedContent { get; set; }
         
         
         // processing fields
         public string ProcessedPath { get; set; }
 
+        [JsonIgnore]
         public List<string> Links
         {
             get
@@ -92,6 +96,7 @@ namespace FRBSiteMigrator.Models
             }
         }
 
+        [JsonIgnore]
         public List<string> Images
         {
             get
