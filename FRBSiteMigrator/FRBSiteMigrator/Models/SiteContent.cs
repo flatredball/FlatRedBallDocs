@@ -17,6 +17,7 @@ namespace FRBSiteMigrator.Models
         public List<SiteContent> Media { get; set; } = new List<SiteContent>();
         public List<SiteContent> Posts { get; set; } = new List<SiteContent>();
         public List<string> BadMediaPaths { get; set; } = new List<string>();
+        public List<string> FailedPageConversions { get; set; } = new List<string>();
 
         [JsonIgnore]
         public List<SiteContent> AllContent =>

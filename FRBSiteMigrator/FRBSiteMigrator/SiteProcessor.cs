@@ -35,6 +35,7 @@ namespace FRBSiteMigrator
     {
         const string CsvFilename = "siteData.csv";
         const string JsonFilename = "siteContents.json";
+        const string TempFolder = "temp";
         
         HttpClient client = new HttpClient();
         Site site = new Site();
@@ -43,6 +44,7 @@ namespace FRBSiteMigrator
         string SiteFolder { get; set; } = "../../../../../";
         string MediaFolder => Path.Combine(SiteFolder, "media");
         string JsonPath => Path.Combine(SiteFolder, JsonFilename);
+        string TempPath => Path.Combine(SiteFolder, TempFolder);
 
         public void Process(string siteUrl)
         {
@@ -190,10 +192,53 @@ namespace FRBSiteMigrator
 
             page.ProcessedContent = content;
 
-            // convert to markdown
+            // create folder structure for this page
+            var dirs = page.ProcessedPath.Split('/');
+            var dirPath = SiteFolder;
+            for(var i = 0; i < dirs.Length - 1; i++)
+            {
+                dirPath = Path.Combine(dirPath, dirs[i]);
+                Directory.CreateDirectory(dirPath);
+            }
 
+            // save out as a temporary html file, required to use pandoc
+            var htmlPath = Path.Combine(TempPath, "temp.html");
+            File.WriteAllText(htmlPath, page.ProcessedContent);
 
-            // save
+            // convert to markdown and save
+            var markdownPath = Path.Combine(SiteFolder, page.ProcessedPath);
+            try
+            {
+                ConvertHtmlToMarkdown(htmlPath, markdownPath);
+            }
+            catch(Exception ex)
+            {
+                Write($"Failed to convert page: {page.ProcessedPath}");
+                site.FailedPageConversions.Add(page.ProcessedPath);
+            }
+            
+        }
+
+        // NOTE: this method requires a path instead of a string because passing
+        // HTML via commandline arguments does not work properly. Pandoc must
+        // open, read, convert, and close the files. It's more IO ops but it
+        // is the only reliable way to convert via Process Wrapping
+        public void ConvertHtmlToMarkdown(string htmlInputPath, string markdownOutputPath)
+        {
+            var processName = "pandoc";
+            var arguments = $"-t gfm -o {markdownOutputPath} {htmlInputPath} --wrap=none";
+
+            using (var pandoc = new ProcessWrapper(processName, arguments))
+            {
+                if (pandoc.Run())
+                {
+                    // execution worked, nothing to do here!
+                }
+                else
+                {
+                    throw new Exception($"Pandoc conversion failed: {pandoc.Error}");
+                }
+            }
         }
 
         string GetUrlRecursive(SiteContent content)
