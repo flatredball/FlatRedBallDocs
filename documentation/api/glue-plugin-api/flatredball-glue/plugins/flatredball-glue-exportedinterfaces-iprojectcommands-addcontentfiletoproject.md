@@ -1,0 +1,3 @@
+## Introduction
+
+The AddContentFileToProject method can be called to add an existing file to the project. The file must already be located relative to the main project's content folder. For XNA applications this means relative to the folder that contains the .contentproj file. Non-XNA projects usually have a Content folder relative to the .csproj (or .vcproj) file. If so, the file should be located in this location. This simply adds a code file to the Visual Studio project - it does not add it to Glue, nor does it perform any code generation. The absolute file name must be passed to the method.

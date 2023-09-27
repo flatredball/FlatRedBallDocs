@@ -112,7 +112,7 @@ The VelocityRangeType property in the Emitter's [EmissionSettings](/frb/docs/ind
 
     emitter.TimedEmit();
 
-![WedgeEmission.png](/media//migrated_media/WedgeEmission.png)
+![WedgeEmission.png](/media/migrated_media-WedgeEmission.png)
 
 ### Velocity Range Type and Velocity Properties
 
@@ -157,7 +157,7 @@ Emitters can have areas defined for emission. This can simplifying the creation 
 
     emitter.TimedEmit();
 
-![RectangleEmissionArea.png](/media//migrated_media/RectangleEmissionArea.png)
+![RectangleEmissionArea.png](/media/migrated_media-RectangleEmissionArea.png)
 
 ## Emitter Members
 

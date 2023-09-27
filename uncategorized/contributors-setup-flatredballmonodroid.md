@@ -1,0 +1,1 @@
+let's see, you'll need to install mono which will install a lot of stuff. You'll need the driver for your phone installed and set your phone for debug. You'll need to get FlatRedBallMonoDroid and MonoGame checked out. You'll need TortoiseGit if you don't already have that. You'll need to install SDK 14, I think.

@@ -28,7 +28,7 @@ With this new equipment in hand, you receive the following orders:
 
 In this situation, you should have moved as shown in the following image.
 
-![WalkInSquare.png](/media//migrated_media/WalkInSquare.png)
+![WalkInSquare.png](/media/migrated_media-WalkInSquare.png)
 
 This of course assumes that north is up, east is right, and so on.
 
@@ -36,7 +36,7 @@ This of course assumes that north is up, east is right, and so on.
 
 So far, we assume that the compass and the measuring stick are accurate. Or perhaps another way to look at it is that the person who gave you the two devices was honest. However, consider what would happen if the person who gave you the compass decided to play a joke. He modified the compass so that it is slightly inaccurate. That is, when the compass indicates that you are facing north, you are actually facing north-east. When the compass indicates east, you are actually facing south-east. South becomes south-west, and west becomes north-west.
 
-![RotatedWalkAround.png](/media//migrated_media/RotatedWalkAround.png)
+![RotatedWalkAround.png](/media/migrated_media-RotatedWalkAround.png)
 
 An important point to make is that the square still appears to be a regular "square" to you, but to someone who knows which way true north is, it appears rotated by 45 degrees. Another interesting point is that the directions that you received didn't change at all - the only thing that changed is the compass. In fact, by changing the way that the compass points, you can actually draw a square of any orientation. To you, you are simply moving north, south, east, and west according to the compass.
 
@@ -56,7 +56,7 @@ You may recall first learning about the Cartesian plane in school. One of the fi
 
 Another way to think about how to graph (3,2) is to use two "lines". That is, consider having one horizontal line of one unit in length and one vertical line also of one unit in length. To move to (3,2), you could use the horizontal line and place it end to end 3 times, then use the vertical line, start at the end of the 3rd horizontal line and move in the vertical line's direction the length of two lines.
 
-![EndToEnd.png](/media//migrated_media/EndToEnd.png)
+![EndToEnd.png](/media/migrated_media-EndToEnd.png)
 
 The idea is similar to the example from before. To find the point at (3,2), simply place 3 horizontal lines end to end, then 2 vertical lines. Notice that (3,2) no longer means "Move 3 units to the right and 2 units up", but rather "Move 3 units along the blue line and 2 units along the red line". The lines are now our compass and measuring stick and (3,2) are the instructions.
 

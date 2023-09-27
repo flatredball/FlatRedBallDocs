@@ -89,7 +89,7 @@ We've seen that if you move one speed for half of the time, then another speed f
 
 To approach a more realistic scenario, if a car is increasing speed (accelerating) at a linear rate, then the average velocity is the average of the starting and ending velocity for that period of time. Keep in mind this is **only** the case when accelerating at a constant rate.
 
-![AverageSpeed.png](/media//migrated_media/AverageSpeed.png)
+![AverageSpeed.png](/media/migrated_media-AverageSpeed.png)
 
 So if the image above was a graph of a car accelerating linearly from 0 to 60 mph, during the time it spent accelerating, it would have travelled the same distance as a car going a constant 30 mph for the same amount of time. We can generalize this to the following:
 
@@ -113,7 +113,7 @@ endingVelocity = 40
 
 You can verify that this is the case by averaging the starting velocity and ending velocity to see that it does indeed equal 60.
 
-![AverageSpeed2.png](/media//migrated_media/AverageSpeed2.png)
+![AverageSpeed2.png](/media/migrated_media-AverageSpeed2.png)
 
 With the knowledge presented so far, we can already solve a common problem - decelerating an object to rest at a given position in a certain amount of time. For a pracical example, consider a menu system which has a cursor that the user can move from one item to the next. When the user pushes a direction, you would like the cursor to move to the next selectable position, but you'd like the cursor to slow down as it approaches its destination and stop on the menu item. Again, I'll present the example using only one axis, but the exact same can be done for both X and Y to have the object move around in 2 dimensions.
 
@@ -166,13 +166,13 @@ Another problem which is related is that the curved interpolation described in t
 
 The following graphic shows a situation where the object is to be in rest at both the starting and ending positions, but it must travel a distance.
 
-![InterpolationProblem.png](/media//migrated_media/InterpolationProblem.png)
+![InterpolationProblem.png](/media/migrated_media-InterpolationProblem.png)
 
 Fortunately, we can simply extend a little on what we know so far to solve this problem easily. Consider the following example. A car begins its trip at 0 mph, and linearly accelerates to 60 mph in a certain amount of time. Since the acceleration is linear, we know that the average speed of that trip is 30 mph. Now consider the opposite - a car begins its trip at 60 mph and ends its trip at 0 mph, also linearly accelerating (or decelerating) in the exact same amount of time. Again, in this situation, the average velocity is also 30 mph.
 
 What is interesting about this is that if take two trips which both took the exact same amount of time and combine them into one trip, then the average velocity for the new two-in-one trip is the average of the average times of the other two trips. That is, the 0 to 60 trip averaged 30 mph, and the 60 to 0 trip also averaged 30 mph. Therefore, putting one right after the other will also average 30 mph, as shown in the following graph:
 
-![CombinedTrip.png](/media//migrated_media/CombinedTrip.png)
+![CombinedTrip.png](/media/migrated_media-CombinedTrip.png)
 
 Observe that this graph shows the solution to our previous problem - that is, the starting and ending velocities are both less than the required average velocity. By inserting a "midpoint" velocity and splitting up the trip into two trips, we are able to meet the required average velocity without changing the start or end velocities. In fact, by splitting up a trip into two trips, any problem can be solved regardless of starting velocity, ending velocity, or amount of time to take on the trip (which sets the required velocity).
 
@@ -231,14 +231,14 @@ Or rather, with the list of a few point coordinates and time, this method could 
 
 To begin, consider the following points.
 
-![3Points.png](/media//migrated_media/3Points.png)
+![3Points.png](/media/migrated_media-3Points.png)
 
 To move between these points, we have a few options. The first is simple linear interpolation. To do this, calculate the differences in X and Y and set the velocities so that the object moves between the points correctly. As discussed in the previous sections, we can calculate the required average velocity to get between one point to the next, calculate what the midpoint velocity will have to be, then set the accelerations at the given time. However, this method is still not what would be considered curved movement. If the velocities at each point is 0, the object will speed up as it moves away from the previous point and slow down as it approaches the next point, but the path followed is the same path as a linear interpolation, as shown in the following image.
 
-![3PointLinear.png](/media//migrated_media/3PointLinear.png)
+![3PointLinear.png](/media/migrated_media-3PointLinear.png)
 
 The key to curved movement is to set a velocity at the points so that the object doesn't stop when reaching each point. One simple way to determine the velocity at a given point is to look at the previous and next points and calculate the required velocity if the object were to move directly from the previous to the next point. That is, the velocity to move from t = 0 to t = 2 would be set as the velocity at t = 1. Running the formula using this velocity gives the following result.
 
-![CurvedMovement.png](/media//migrated_media/CurvedMovement.png)
+![CurvedMovement.png](/media/migrated_media-CurvedMovement.png)
 
 Obviously, you will only be able to use this method to calculate velocities at points which are not endpoints. This method is great for creating curved movement through a set of points, but it is not a requirement. Any velocity can be set at points. Doing so will allows for deformation of the curve, as shown in the following image.

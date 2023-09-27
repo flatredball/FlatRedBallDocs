@@ -1,0 +1,12 @@
+## Introduction
+
+The MaxWidth value controls the available area that the Text object can render text inside. The Text object will either wrap or clamp text according to its [MaxWidthBehavior](/frb/docs/index.php?title=FlatRedBall.Graphics.Text.MaxWidthBehavior.md "FlatRedBall.Graphics.Text.MaxWidthBehavior").
+
+## Code Example
+
+     Text text = TextManager.AddText("");
+     text.DisplayText = "Hello, I am some really long text that will wrap";
+     text.MaxWidth = 60;
+     text.MaxWidthBehavior = MaxWidthBehavior.Wrap;
+
+![WrappingText.PNG](/media/migrated_media-WrappingText.PNG)

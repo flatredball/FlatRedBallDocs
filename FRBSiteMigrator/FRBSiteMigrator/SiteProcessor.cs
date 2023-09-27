@@ -63,6 +63,7 @@ namespace FRBSiteMigrator
             foreach(var content in site.AllContent)
             {
                 content.ProcessedPath = GetUrlRecursive(content);
+                Write($"Got url: {content.ProcessedPath}");
             }
 
             // check if any pages link to media that we don't know about
@@ -85,6 +86,15 @@ namespace FRBSiteMigrator
             // THIS IS WHERE THE HEAVY LIFTING/SLOW PART STARTS!
             // ==================================================
 
+            // we should have a complete list of media, fetch all locally
+            // Note that this is
+            // intentionally not parallel because the server can't handle it
+            Write($"Making local copies of {site.MediaCount} media.");
+            foreach (var media in site.Media)
+            {
+                FetchAndSaveMedia(media);
+            }
+
             // now we fix links and images, convert html to markdown, and save out file
             foreach (var post in site.Posts)
             {
@@ -93,15 +103,6 @@ namespace FRBSiteMigrator
             foreach(var page in site.Pages)
             {
                 ProcessPostOrPage(page);
-            }
-
-            // we should have a complete list of media, fetch all locally
-            // Note that this is
-            // intentionally not parallel because the server can't handle it
-            Write($"Making local copies of {site.MediaCount} media.");
-            foreach (var media in site.Media)
-            {
-                FetchAndSaveMedia(media);
             }
 
             // write out a backup again
@@ -165,7 +166,7 @@ namespace FRBSiteMigrator
 
             try
             {
-                var flattenedFilename = media.ProcessedPath;
+                var flattenedFilename = media.ProcessedPath.Trim('/');
                 var localPath = Path.Combine(MediaFolder, flattenedFilename);
 
                 if(!File.Exists(localPath))
@@ -278,8 +279,9 @@ namespace FRBSiteMigrator
                 if(url.Contains("wp-content/uploads"))
                 {
                     var index = url.IndexOf("wp-content/uploads");
-                    url = url.Substring(index).Replace("wp-content/uploads", "").ToFilenameSafeString();
+                    url = url.Substring(index).Replace("wp-content/uploads", "");
                 }
+                url = url.ToFilenameSafeString();
             }
             else if(content.Type == "post")
             {
@@ -287,15 +289,31 @@ namespace FRBSiteMigrator
             }
             else if(content.Type == "page")
             {
+                var myName = content.Name;
                 if (content.ParentId != 0)
                 {
                     var parent = site.Pages.Where(p => p.Id == content.ParentId).FirstOrDefault();
                     if (parent != null)
                     {
+                        // we do this because the api paths are like:
+                        // flatredball/flatredball-math/flatredball-math-collision
+                        // which results in filenames that are way too long
+                        // so this converts that into
+                        // flatredball/math/collision
+                        if(myName.Contains(parent.Name))
+                        {
+                            myName = myName.Replace(parent.Name + "-", "");
+                        }
+
                         url += GetUrlRecursive(parent);
                     }
                 }
-                url += "/" + content.Name;
+                url += "/" + myName;
+            }
+
+            if(url.Length > 100)
+            {
+                int m = 5;
             }
 
             return url;

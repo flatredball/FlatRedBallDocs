@@ -22,7 +22,7 @@ First, consider the space ship example. For simplicity, the space ship may simpl
 
 The first step is to determine the orientation of the ship when not rotated. This isn't too difficult - simply look at the graphic outside of the engine, or load it up in the SpriteEditor or in code. In my example, as shown in the following graphic, the ship is facing "up" or along the positive Y axis.
 
-![Ship](/media//migrated_media/Ship)
+![Ship](/media/migrated_media-Ship)
 
 For simplicity's sake, we'll say the ship has a ScaleY of 1 (or a total height of 2 units), and that we want the bullets to appear at the tip of the nose of the ship. Therefore, when the ship is not rotated, bullets will appear with the same X value as the ship, and their Y value will equal the ships Y value plus 1. Or in other words, the relative X position of new bullets is 0, and the relative Y position of new bullets is 1.
 
@@ -104,11 +104,11 @@ Consider the example of needing to determine the normal of a surface for bouncin
 
 In this example, the surface is represented by a red Sprite. When unrotated, the top of the Sprite is a flat surface - that is, its normal is aligned with the Y axis.
 
-![Surface with Normal](/media//migrated_media/Surface_with_Normal)
+![Surface with Normal](/media/migrated_media-Surface_with_Normal)
 
 When rotated, the normal obviously rotates with the object itself.
 
-![Rotated surface with Normal](/media//migrated_media/Rotated_surface_with_Normal)
+![Rotated surface with Normal](/media/migrated_media-Rotated_surface_with_Normal)
 
 Since we know the normal to the surface aligns with the local Y axis, we can simply read the 2nd row of values from the rotationMatrix to retrieve the Y axis. The following code would create a new Vector3 representing the direction pointed by the red arrow:
 
