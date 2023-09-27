@@ -260,7 +260,9 @@ namespace FRBSiteMigrator
             // create folder structure for this page
             var dirs = page.ProcessedPath.Trim('/').Split('/');
             var dirPath = SiteFolder;
-            for(var i = 0; i < dirs.Length - 1; i++)
+            var hasChildren = site.AllContent.Any(c => c.Type != "attachment" && c.ParentId == page.Id);
+            var stopAt = hasChildren ? dirs.Length : dirs.Length - 1;
+            for (var i = 0; i < stopAt; i++)
             {
                 dirPath = Path.Combine(dirPath, dirs[i]);
                 Directory.CreateDirectory(dirPath);
@@ -270,8 +272,18 @@ namespace FRBSiteMigrator
             var htmlPath = Path.Combine(TempPath, "temp.html");
             File.WriteAllText(htmlPath, page.ProcessedContent);
 
+            // figure out if this page is a directory index page
+            var markdownPath = Path.Combine(SiteFolder, page.ProcessedPath.Trim('/'));
+            if(hasChildren)
+            {
+                markdownPath += "/README.md";
+            }
+            else
+            {
+                markdownPath += ".md";
+            }
+
             // convert to markdown and save
-            var markdownPath = Path.Combine(SiteFolder, page.ProcessedPath.Trim('/')) + ".md";
             try
             {
                 ConvertHtmlToMarkdown(htmlPath, markdownPath);
