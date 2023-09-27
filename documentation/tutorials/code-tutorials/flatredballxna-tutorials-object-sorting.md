@@ -21,7 +21,7 @@ If two objects have the same Z value, their sorting priority is undefined. While
 
 ### Sorting on Y
 
-Many top-down games have objects that should overlap each other depending on their Y positions. This functionality is built-in to FlatRedBall. For more information see the [SpriteManager's SortYSpritesSecondary article](/documentation/api/flatredball/flatredball-spritemanager/flatredball-spritemanager-sortyspritessecondary.md "FlatRedBall.SpriteManager.SortYSpritesSecondary").
+Many top-down games have objects that should overlap each other depending on their Y positions. This functionality is built-in to FlatRedBall. For more information see the [SpriteManager's SortYSpritesSecondary article](/documentation/api/flatredball/spritemanager/sortyspritessecondary.md "FlatRedBall.SpriteManager.SortYSpritesSecondary").
 
 ## Using the depth buffer
 

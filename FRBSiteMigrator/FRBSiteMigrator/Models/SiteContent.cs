@@ -74,6 +74,8 @@ namespace FRBSiteMigrator.Models
         public string ProcessedContent { get; set; }
         
         
+        public string OriginalUrl { get; set; }
+
         // processing fields
         public string ProcessedPath { get; set; }
 

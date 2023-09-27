@@ -16,7 +16,7 @@ Also, your entity type should have a corresponding list, typically in GameScreen
 
 ![](/media/2022-01-img_61ec1d019c2ae.png)
 
-For more information on how to create lists, see the [List page](/documentation/tools/glue-reference/objects/glue-reference-objects-positionedobjectlist.md).
+For more information on how to create lists, see the [List page](/documentation/tools/glue-reference/objects/glue-reference-positionedobjectlist.md).
 
 ## Adding an Enemy to Tiled using a Tile Layer
 

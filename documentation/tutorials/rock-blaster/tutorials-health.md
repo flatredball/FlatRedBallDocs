@@ -98,4 +98,4 @@ Now the HealthBar appears above the player and does not rotate with the player. 
 
 ## Conclusion
 
-Now we have our HealthBars in game and ready to be used. The next tutorial will hook up the logic to display the player's health and will modify the collision code so the player takes damage when hitting rocks. [\<- 10. Multiple Players](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-multiple-players.md "Tutorials:Rock Blaster:Multiple Players") -- [12. Health Part 2 -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-health-part-2.md "Tutorials:Rock Blaster:Health Part 2")
+Now we have our HealthBars in game and ready to be used. The next tutorial will hook up the logic to display the player's health and will modify the collision code so the player takes damage when hitting rocks. [\<- 10. Multiple Players](/documentation/tutorials/rock-blaster/tutorials-multiple-players.md "Tutorials:Rock Blaster:Multiple Players") -- [12. Health Part 2 -\>](/documentation/tutorials/rock-blaster/tutorials-health-part-2.md "Tutorials:Rock Blaster:Health Part 2")

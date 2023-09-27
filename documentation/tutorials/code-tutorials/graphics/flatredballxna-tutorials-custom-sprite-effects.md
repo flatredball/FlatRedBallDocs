@@ -1,12 +1,12 @@
 ## Introduction
 
-[Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") appearance can be modified through a number of properties including [Texture](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D "Microsoft.Xna.Framework.Graphics.Texture2D"), [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation"), and [BlendOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.BlendOperation "FlatRedBall.Graphics.BlendOperation"). Full rendering control can be achieved by using custom shaders, applied through an [IDrawableBatch](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-drawablebatch.md). This guide covers how to render a Sprite using a custom IDrawableBatch.
+[Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") appearance can be modified through a number of properties including [Texture](/frb/docs/index.php?title=Microsoft.Xna.Framework.Graphics.Texture2D "Microsoft.Xna.Framework.Graphics.Texture2D"), [ColorOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation "FlatRedBall.Graphics.ColorOperation"), and [BlendOperation](/frb/docs/index.php?title=FlatRedBall.Graphics.BlendOperation "FlatRedBall.Graphics.BlendOperation"). Full rendering control can be achieved by using custom shaders, applied through an [IDrawableBatch](/documentation/api/flatredball/graphics/drawablebatch.md). This guide covers how to render a Sprite using a custom IDrawableBatch.
 
 ##  Adding files to Glue
 
 Before writing any code, we'll add a few files to our project. This requires an existing Glue project with at least one Screen. To add a shader file:
 
-1.  Download this file: [Shader.fx](/content/Tutorials/Graphics/Shader.fx)
+1.  Download this file: [Shader.fx](http://files.flatredball.com/content/Tutorials/Graphics/Shader.fx)
 2.  Add the file to your Glue screen
 
 To add an image file:
@@ -16,7 +16,7 @@ To add an image file:
 
 ## Creating an IDrawableBatch
 
-Next we'll create a [IDrawableBatch](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-drawablebatch.md) which will handle our rendering. To do this:
+Next we'll create a [IDrawableBatch](/documentation/api/flatredball/graphics/drawablebatch.md) which will handle our rendering. To do this:
 
 1.  Add a new file to your project in Visual Studio
 2.  Name the file CustomShaderSprite

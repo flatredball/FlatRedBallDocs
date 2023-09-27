@@ -10,7 +10,7 @@ The following table lists color operations and supported platforms:
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----|-----|---------|
 | ColorOperation                                                                                                                                            | PC (XNA and DesktopGL) | UWP | iOS | Android |
 | [Modulate](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.Modulate "FlatRedBall.Graphics.ColorOperation.Modulate")                         | X                      | X   | X   | X       |
-| [Texture](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-coloroperation/texture.md)                                             | X                      | X   | X   | X       |
+| [Texture](/documentation/api/flatredball/graphics/coloroperation/texture.md)                                                                              | X                      | X   | X   | X       |
 | [Color](/frb/docs/index.php?title=FlatRedBall.Graphics.ColorOperation.Color "FlatRedBall.Graphics.ColorOperation.Color")                                  | X                      | X   | X   | X       |
 | ColorTextureAlpha                                                                                                                                         | X                      | X   | X   | X       |
 | Add                                                                                                                                                       | X                      |     |     |         |

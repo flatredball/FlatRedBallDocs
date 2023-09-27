@@ -9,11 +9,11 @@ We recommend using the Cursor class instead of Mouse for games which have any ki
 
 ## Cursor and touch screens
 
-The Cursor can handle both mouse and touch screen input. Many games can use the exact same Cursor class whether written for the mouse or touch screen. Games needing more control over touch screen input can use the [TouchScreen](/documentation/api/flatredball/flatredball-input/flatredball-input-touchscreen.md "FlatRedBall.Input.TouchScreen") class.
+The Cursor can handle both mouse and touch screen input. Many games can use the exact same Cursor class whether written for the mouse or touch screen. Games needing more control over touch screen input can use the [TouchScreen](/documentation/api/flatredball/input/touchscreen.md "FlatRedBall.Input.TouchScreen") class.
 
 ## Accessing the Cursor
 
-The Cursor class can be accessed through the [GuiManager's](/documentation/api/flatredball/flatredball-gui/flatredball-gui-guimanager.md "FlatRedBall.Gui.GuiManager") Cursor property as follows:
+The Cursor class can be accessed through the [GuiManager's](/documentation/api/flatredball/gui/guimanager.md "FlatRedBall.Gui.GuiManager") Cursor property as follows:
 
     GuiManager.Cursor
 

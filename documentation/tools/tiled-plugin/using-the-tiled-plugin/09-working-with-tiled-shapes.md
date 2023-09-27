@@ -42,7 +42,7 @@ As always, don't forget to save your changes in Tiled.
 
 ## Working with ShapeCollections
 
-Each object layer with one or more shape is loaded as a separate ShapeCollection at runtime. This tutorial covers the basics of working with a ShapeCollection, but more information can be found on the [ShapeCollection page](/documentation/api/flatredball/flatredball-math/flatredball-math-geometry/flatredball-math-geometry-shapecollection.md). All ShapeCollections are invisible by default, but can be made visible. Add the following method to GameScreen :
+Each object layer with one or more shape is loaded as a separate ShapeCollection at runtime. This tutorial covers the basics of working with a ShapeCollection, but more information can be found on the [ShapeCollection page](/documentation/api/flatredball/math/geometry/shapecollection.md). All ShapeCollections are invisible by default, but can be made visible. Add the following method to GameScreen :
 
 ``` lang:c#
 private void ShapeTutorialLogic()

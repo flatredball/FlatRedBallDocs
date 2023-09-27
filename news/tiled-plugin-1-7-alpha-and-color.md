@@ -35,7 +35,7 @@ When adjusting layer color and alpha values, keep in mind:
 
 -   Each layer can be adjusted independently
 -   Alpha values in code will overwrite the **Opacity** value set in Tiled
--   Color values apply a *Modulate* (also called *multiply*) effect. For information on how Modulate works, see the [Modulate page](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-coloroperation/flatredball-graphics-coloroperation-modulate.md).
+-   Color values apply a *Modulate* (also called *multiply*) effect. For information on how Modulate works, see the [Modulate page](/documentation/api/flatredball/graphics/coloroperation/modulate.md).
 -   Color values of 1 will result in the map being drawn without any modifications. A value of 0 will remove the particular color. In the example above, Green and Blue are set to 0, which is why the map draws red.
 -   Values can be greater than 1 to make maps draw with additional brightness
 

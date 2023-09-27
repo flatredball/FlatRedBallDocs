@@ -41,4 +41,4 @@ Now we can add code in our HandleClick method to perform any custom logic when t
 
 ### No defining declaration found for implementing declaration of partial method
 
-This is usually caused by having a mismatched namespace in your partial compared to the partial of the generated code. [\<- 7. States](/documentation/tools/gum/gum-tutorials/tutorials-gum-states.md) -- [Back to Tutorials -\>](/documentation/tutorials.md)
+This is usually caused by having a mismatched namespace in your partial compared to the partial of the generated code. [\<- 7. States](/documentation/tools/gum/tutorials/tutorials-gum-states.md) -- [Back to Tutorials -\>](/documentation/tutorials.md)

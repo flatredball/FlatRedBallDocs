@@ -2,7 +2,7 @@ The latest monthly named [Teotihuacan](https://en.wikipedia.org/wiki/Teotihuacan
 
 ## Playing the Game
 
-The game can be [downloaded here](/content/Games/Teotihuacan.zip). No prerequisites are required, aside from the .NET Framework and a Windows computer.
+The game can be [downloaded here](http://files.flatredball.com/content/Games/Teotihuacan.zip). No prerequisites are required, aside from the .NET Framework and a Windows computer.
 
 ## Creating a Glue Project
 

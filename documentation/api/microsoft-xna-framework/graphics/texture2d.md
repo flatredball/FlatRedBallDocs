@@ -30,7 +30,7 @@ For more information on the Texture2D class, see [the MSDN entry](http://msdn2.m
 Each pixel in a Texture2D can be fully opaque, completely transparent, or have partial transparency. There are two ways to set the transparency of pixels in a Texture:
 
 1.  Save your image in a format that supports transparency, such as .tga or .png. When you save your image, make sure that you have transparent pixels set as transparent in the program that you are using to create or modify the image.
-2.  Use a color key for your image. You can specify a color that should be transparent when the engine creates a Texture2D out of it. The default value is black. For more information on a color key, see the [TextureLoadingColorKey page](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-graphicsoptions/flatredball-graphics-graphicsoptions-textureloadingcolorkey.md "FlatRedBall.Graphics.GraphicsOptions.TextureLoadingColorKey").
+2.  Use a color key for your image. You can specify a color that should be transparent when the engine creates a Texture2D out of it. The default value is black. For more information on a color key, see the [TextureLoadingColorKey page](/documentation/api/flatredball/graphics/graphicsoptions/textureloadingcolorkey.md "FlatRedBall.Graphics.GraphicsOptions.TextureLoadingColorKey").
 
 ## Creating a Texture2D from a Bitmap Object
 

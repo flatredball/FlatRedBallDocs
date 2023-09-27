@@ -29,7 +29,7 @@ To play the sound in code, add the following code to your GameScreen. This assum
         SoundEffectFile.Play();
     }
 
-The SoundEffectFile object in this example is a SoundEffect instance created by Glue. For information on working with the SoundEffect class, see [the SoundEffect code reference page](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-audio/microsoft-xna-framework-audio-soundeffect.md). The SoundEffect (which is added to a Screen/Entity when adding a WAV file) can also be played using the [AudioManager](/frb/docs/index.php?title=FlatRedBall.Audio.AudioManager "FlatRedBall.Audio.AudioManager").
+The SoundEffectFile object in this example is a SoundEffect instance created by Glue. For information on working with the SoundEffect class, see [the SoundEffect code reference page](/documentation/api/microsoft-xna-framework/audio/soundeffect.md). The SoundEffect (which is added to a Screen/Entity when adding a WAV file) can also be played using the [AudioManager](/frb/docs/index.php?title=FlatRedBall.Audio.AudioManager "FlatRedBall.Audio.AudioManager").
 
 ## Limiting Number of Playing SoundEffects
 

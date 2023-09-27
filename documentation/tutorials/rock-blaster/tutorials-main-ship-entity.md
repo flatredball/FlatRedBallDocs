@@ -57,4 +57,4 @@ If we run the game now, we will see our ship displaying the MainShip1 Texture on
 
 ## Conclusion
 
-At this point our Player instance in GameScreen is using a Sprite defined in Glue. However, nothing is happening in our game so far. The next tutorial will add some simple behavior to our Player Entity. [\<- 03. Game Skeleton](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-game-skeleton.md "Tutorials:Rock Blaster:Game Skeleton") -- [05. Player Behavior -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-main-ship-behavior.md "Tutorials:Rock Blaster:Main Ship Behavior")
+At this point our Player instance in GameScreen is using a Sprite defined in Glue. However, nothing is happening in our game so far. The next tutorial will add some simple behavior to our Player Entity. [\<- 03. Game Skeleton](/documentation/tutorials/rock-blaster/tutorials-game-skeleton.md "Tutorials:Rock Blaster:Game Skeleton") -- [05. Player Behavior -\>](/documentation/tutorials/rock-blaster/tutorials-main-ship-behavior.md "Tutorials:Rock Blaster:Main Ship Behavior")

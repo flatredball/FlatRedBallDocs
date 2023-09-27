@@ -26,4 +26,4 @@ If the wrong window is being returned by WindowOver, you can diagnose/correct th
 
 ### Gum and WindowOver
 
-All Gum objects implement the IWindow interface, so all are (at least by interface) eligible for Cursor interaction. However, not all Gum objects will interact with the cursor. For more information, see the [Events on Gum Objects](/documentation/tools/gum/gum-tutorials/tutorials-gum-events-on-gum-objects.md) tutorial.
+All Gum objects implement the IWindow interface, so all are (at least by interface) eligible for Cursor interaction. However, not all Gum objects will interact with the cursor. For more information, see the [Events on Gum Objects](/documentation/tools/gum/tutorials/tutorials-gum-events-on-gum-objects.md) tutorial.

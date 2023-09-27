@@ -49,7 +49,7 @@ As mentioned above, Glue will automatically generate a file based on the CSV. Sp
 | Bear            | Bears are strong |
 | Slug            | Slugs are slow   |
 
-For a full list of supported types, see the [CsvManager page](/documentation/api/flatredball/flatredball-io/flatredball-io-csv/flatredball-io-csv-csvfilemanager.md).
+For a full list of supported types, see the [CsvManager page](/documentation/api/flatredball/io/csv/csvfilemanager.md).
 
 ## CSVs and Lists
 

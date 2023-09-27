@@ -10,9 +10,9 @@
 
 These tutorials walk you through creating a full game from scratch.
 
-[![](/media/2016-12-img_585345a4df251.png)](/documentation/tutorials/tutorials-beefball.md)
+[![](/media/2016-12-img_585345a4df251.png)](/documentation/tutorials/beefball.md)
 
-[Beefball](/documentation/tutorials/tutorials-beefball.md) Beefball is a local multi-player game similar to air hockey. This tutorial provides step-by-step instructions for creating your first FlatRedBall project.  
+[Beefball](/documentation/tutorials/beefball.md) Beefball is a local multi-player game similar to air hockey. This tutorial provides step-by-step instructions for creating your first FlatRedBall project.  
 
 ## Platformer tutorials
 
@@ -72,7 +72,7 @@ Combine Tiled with a platformer entity to create a platformer game.
 
 ## Technology-Specific Tutorials
 
-Technology-specific tutorials cover a single technology, typically ![](/media/2017-02-img_58b11501ccb60.png)[Tiled Tutorials](/documentation/tools/tiled-plugin/using-the-tiled-plugin.md) Learn to work with Tiled, the most popular tile map editing program.   ![](/media/2017-02-img_58b2ef68ecf47.png)[Gum Tutorials](/documentation/tools/gum/gum-tutorials.md) Use Gum to define and lay out flexible graphical layouts in your FlatRedBall game for HUDs and other UI.  
+Technology-specific tutorials cover a single technology, typically ![](/media/2017-02-img_58b11501ccb60.png)[Tiled Tutorials](/documentation/tools/tiled-plugin/using-the-tiled-plugin.md) Learn to work with Tiled, the most popular tile map editing program.   ![](/media/2017-02-img_58b2ef68ecf47.png)[Gum Tutorials](/documentation/tools/gum/tutorials.md) Use Gum to define and lay out flexible graphical layouts in your FlatRedBall game for HUDs and other UI.  
 
 ![](/media/2023-09-img_6504462fb1a98.png)
 

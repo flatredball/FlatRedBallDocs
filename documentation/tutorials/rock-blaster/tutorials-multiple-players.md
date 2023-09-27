@@ -85,4 +85,4 @@ Now that we're calling SetPlayerIndex, we'll need to make a public function for
 
 ## Conclusion
 
-Now each ship will use a different texture so that players will be able to tell each other apart. The next tutorial will improve on the way player death is handled by adding the concept of player health and a health bar. [\<- 09. Hud](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-hud.md "Tutorials:Rock Blaster:Hud") -- [11. Health -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-health.md "Tutorials:Rock Blaster:Health")
+Now each ship will use a different texture so that players will be able to tell each other apart. The next tutorial will improve on the way player death is handled by adding the concept of player health and a health bar. [\<- 09. Hud](/documentation/tutorials/rock-blaster/tutorials-hud.md "Tutorials:Rock Blaster:Hud") -- [11. Health -\>](/documentation/tutorials/rock-blaster/tutorials-health.md "Tutorials:Rock Blaster:Health")

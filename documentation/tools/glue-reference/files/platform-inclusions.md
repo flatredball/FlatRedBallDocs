@@ -4,4 +4,4 @@ By default, files added to Glue will automatically be added to all associated Vi
 
 ## Inclusions Details
 
-Excluding a file from a project will exclude the project from the Visual Studio .csproj or .contentproj, but the code generation currently does not consider whether the file has been excluded. This means that code generation may throw a file not found exception (or equivalent) when the project executes on a platform from which the file has been excluded. For this reason, files should only be excluded when [LoadedAtRuntime](/documentation/tools/glue-reference/files/glue-reference-files-loadedatruntime.md) is set to false.
+Excluding a file from a project will exclude the project from the Visual Studio .csproj or .contentproj, but the code generation currently does not consider whether the file has been excluded. This means that code generation may throw a file not found exception (or equivalent) when the project executes on a platform from which the file has been excluded. For this reason, files should only be excluded when [LoadedAtRuntime](/documentation/tools/glue-reference/files/glue-reference-loadedatruntime.md) is set to false.

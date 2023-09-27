@@ -116,4 +116,4 @@ By default a parent will only check events on its children if the children are c
 
 ## Conclusion
 
-This tutorial has shown how to work with events on Gum component instances which are contained in other instances. [\<- 4. Events on Gum Objects](/documentation/tools/gum/gum-tutorials/tutorials-gum-events-on-gum-objects.md) -- [6. Exposed Variables -\>](/documentation/tools/gum/gum-tutorials/tutorials-gum-exposed-variables.md)
+This tutorial has shown how to work with events on Gum component instances which are contained in other instances. [\<- 4. Events on Gum Objects](/documentation/tools/gum/tutorials/tutorials-gum-events-on-gum-objects.md) -- [6. Exposed Variables -\>](/documentation/tools/gum/tutorials/tutorials-gum-exposed-variables.md)

@@ -124,4 +124,4 @@ Currently the Puck will move indefinitely after being hit. We'll assign the Drag
 
 ![](/media/2021-07-img_60fdc59ea563f.png)
 
-Now the Puck will slow down over time just like the PlayerBall. [\<- Advanced PlayerBall Controls](/documentation/tutorials/tutorials-beefball/tutorials-beefball-advanced-playerball-controls.md "Tutorials:Beefball:Advanced PlayerBall Controls") -- [Adding multiple players -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-adding-multiple-players.md "Tutorials:Beefball:Adding multiple players")
+Now the Puck will slow down over time just like the PlayerBall. [\<- Advanced PlayerBall Controls](/documentation/tutorials/beefball/advanced-playerball-controls.md "Tutorials:Beefball:Advanced PlayerBall Controls") -- [Adding multiple players -\>](/documentation/tutorials/beefball/adding-multiple-players.md "Tutorials:Beefball:Adding multiple players")

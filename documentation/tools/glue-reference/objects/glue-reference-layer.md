@@ -29,6 +29,6 @@ To add an object to a layer:
 
 ## Additional Information
 
--   [Is2D](/documentation/tools/glue-reference/objects/glue-reference-objects-layer/glue-reference-objects-is2d.md) - Property controlling whether the layer is 2D.
+-   [Is2D](/documentation/tools/glue-reference/objects/glue-reference-layer/glue-reference-objects-is2d.md) - Property controlling whether the layer is 2D.
 
  

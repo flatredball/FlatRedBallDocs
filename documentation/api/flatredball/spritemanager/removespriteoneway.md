@@ -28,4 +28,4 @@ SpriteManager.RemoveSpriteOneWay(TorchInstance.LightSprite);
 SpriteManager.AddToLayer(TorchInstance.LightSprite, LightLayer);
 ```
 
-Note that the code above assumes that LightSprite is publicly available. If the Sprite is part of a Glue entity, this can be made public in Glue by setting [HasPublicProperty](/documentation/tools/glue-reference/objects/glue-reference-objects-haspublicproperty.md) to true.
+Note that the code above assumes that LightSprite is publicly available. If the Sprite is part of a Glue entity, this can be made public in Glue by setting [HasPublicProperty](/documentation/tools/glue-reference/objects/glue-reference-haspublicproperty.md) to true.

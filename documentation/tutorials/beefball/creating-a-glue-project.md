@@ -52,4 +52,4 @@ You can also open the project in visual studio by opening the .sln file. The pro
 
 ## Conclusion
 
-That was easy! So far you have a fully-functional game using FlatRedBall. The next tutorial will cover making our first Entity. -- [Creating an Entity -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-an-entity.md "Tutorials:Beefball:Creating an Entity")
+That was easy! So far you have a fully-functional game using FlatRedBall. The next tutorial will cover making our first Entity. -- [Creating an Entity -\>](/documentation/tutorials/beefball/creating-an-entity.md "Tutorials:Beefball:Creating an Entity")

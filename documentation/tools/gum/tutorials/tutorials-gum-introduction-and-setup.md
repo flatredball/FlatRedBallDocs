@@ -54,4 +54,4 @@ Gum is a very powerful tool with lots of functionality. This tutorial assumes th
 
 ## Conclusion
 
-If you've gotten this far then you have a Gum project which is ready to be used with Glue. Next, we'll cover some of the basics of working with Gum in Glue. -- [2. Screens in Gum -\>](/documentation/tools/gum/gum-tutorials/tutorials-gum-screens-in-gum.md)
+If you've gotten this far then you have a Gum project which is ready to be used with Glue. Next, we'll cover some of the basics of working with Gum in Glue. -- [2. Screens in Gum -\>](/documentation/tools/gum/tutorials/tutorials-gum-screens-in-gum.md)

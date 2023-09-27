@@ -61,7 +61,7 @@ This can be called at any point and your game will exit properly.
 
 ## Disabling Fixed Time Step
 
-For more information, see the [IsFixedTimeStep](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-game/microsoft-xna-framework-game-isfixedtimestep.md) page.
+For more information, see the [IsFixedTimeStep](/documentation/api/microsoft-xna-framework/game/isfixedtimestep.md) page.
 
 ## Additional Information
 

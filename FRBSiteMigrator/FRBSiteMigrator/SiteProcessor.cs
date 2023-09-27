@@ -58,10 +58,11 @@ namespace FRBSiteMigrator
             // get all of the CSV dump contents and populate the Site object
             GetSiteFromCsv();
 
-            // create full file paths for each file
+            // rebuild original URLs and updated file paths for content
             Write("Calculating file paths for all content.");
             foreach(var content in site.AllContent)
             {
+                content.OriginalUrl = GetUrlRecursive(content, true);
                 content.ProcessedPath = GetUrlRecursive(content);
                 Write($"Got url: {content.ProcessedPath}");
             }
@@ -85,6 +86,12 @@ namespace FRBSiteMigrator
             // ==================================================
             // THIS IS WHERE THE HEAVY LIFTING/SLOW PART STARTS!
             // ==================================================
+
+            var beefball = site.Pages.FirstOrDefault(p => p.Title == "Beefball");
+            if(beefball != null)
+            {
+                ProcessPostOrPage(beefball);
+            }
 
             // we should have a complete list of media, fetch all locally
             // Note that this is
@@ -187,17 +194,32 @@ namespace FRBSiteMigrator
         {
             var content = page.RawContent;
 
-            // convert local links to be relative
+            // convert local links that aren't subdomain links to be relative
             var links = page.Links.ToList();
             foreach (var link in links)
             {
-                if(!link.Contains("http") || link.Contains(site.SiteUrl))
+                if((!link.Contains("http") || link.Contains(site.SiteUrl)) && !link.Contains("http://files."))
                 {
                     var relative = link.MakeLinkRelative();
-                    if (string.IsNullOrWhiteSpace(Path.GetExtension(link)))
+
+                    // see if we match any pages based on full or relative URL
+                    var targetPage = site.AllContent.Where(c => string.Equals(c.OriginalUrl, link)).FirstOrDefault();
+                    if(targetPage == null)
+                    {
+                        targetPage = site.AllContent.Where(c => string.Equals(c.OriginalUrl, relative)).FirstOrDefault();
+                    }
+
+                    // if we got the target page, use the path we built for it, otherwise
+                    // use the relative URL we created
+                    if(targetPage != null)
+                    {
+                        relative = targetPage.ProcessedPath + ".md";
+                    }
+                    else if(string.IsNullOrWhiteSpace(Path.GetExtension(link)))
                     {
                         relative += ".md";
                     }
+                    
                     // we do this because we don't want to accidentally replace
                     // parts of links that contain other links
                     var strictFind = $"\"{link}\"";
@@ -284,7 +306,7 @@ namespace FRBSiteMigrator
             }
         }
 
-        string GetUrlRecursive(SiteContent content)
+        string GetUrlRecursive(SiteContent content, bool preserveOriginalStructure = false)
         {
             var url = "";
 
@@ -315,12 +337,12 @@ namespace FRBSiteMigrator
                         // which results in filenames that are way too long
                         // so this converts that into
                         // flatredball/math/collision
-                        if(myName.Contains(parent.Name))
+                        if(!preserveOriginalStructure && myName.Contains(parent.Name))
                         {
                             myName = myName.Replace(parent.Name + "-", "");
                         }
 
-                        url += GetUrlRecursive(parent);
+                        url += GetUrlRecursive(parent, preserveOriginalStructure);
                     }
                 }
                 url += "/" + myName;

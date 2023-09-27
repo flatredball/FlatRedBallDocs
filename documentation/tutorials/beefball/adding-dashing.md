@@ -216,4 +216,4 @@ You can now tell the difference between each player.
 
 ## You just made a game!
 
-If you've read this far, then you have officially just finished your first FlatRedBall game. Way to go! At this point, you can continue reading other tutorials, tweak this game more, or start on your own brand new game. Good luck! [\<- Scoring HUD Logic](/documentation/tutorials/tutorials-beefball/tutorials-beefball-scoring-hud-logic.md "Tutorials:Beefball:Scoring Hud Logic")
+If you've read this far, then you have officially just finished your first FlatRedBall game. Way to go! At this point, you can continue reading other tutorials, tweak this game more, or start on your own brand new game. Good luck! [\<- Scoring HUD Logic](/documentation/tutorials/beefball/scoring-hud-logic.md "Tutorials:Beefball:Scoring Hud Logic")

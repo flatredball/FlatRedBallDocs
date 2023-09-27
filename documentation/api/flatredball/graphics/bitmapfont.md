@@ -67,7 +67,7 @@ Note that if you are using Glue you may not have to add fonts to your project ma
 
 ## Loading a BitmapFont
 
-Once the files are created they need to be loaded into a BitmapFont. The following code loads a BitmapFont and assigns it to a Text object. **Files used:** [font18arial_0.png](/content/Tutorials/Graphics/font18arial_0.png), [font18arial.fnt](/content/Tutorials/Graphics/font18arial.fnt) Add the following using statement
+Once the files are created they need to be loaded into a BitmapFont. The following code loads a BitmapFont and assigns it to a Text object. **Files used:** [font18arial_0.png](/content/Tutorials/Graphics/font18arial_0.png), [font18arial.fnt](http://files.flatredball.com/content/Tutorials/Graphics/font18arial.fnt) Add the following using statement
 
     using FlatRedBall.Graphics;
 

@@ -8,7 +8,7 @@ To understand how a RenderTargetSprite works, we can compare it with a normal F
 
 ### RenderTargetSprite vs Layer.RenderTarget
 
-FlatRedBall provides a number of ways to render to a render target. The RenderTargetSprite allows you to perform rendering onto a FlatRedBall Sprite. This is useful if you would like that resulting RenderTarget (texture) to be drawn to screen using a FlatRedBall Sprite. This can make it easier to position the render target and perform standard color operations. If you would like to create a RenderTarget (texture) which you process yourself (such as by rendering using SpriteBatch) then the Layer's RenderTarget property can be used as a more lightweight option. For more information see the [Layer.RenderTarget](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-layer/rendertarget.md) page.
+FlatRedBall provides a number of ways to render to a render target. The RenderTargetSprite allows you to perform rendering onto a FlatRedBall Sprite. This is useful if you would like that resulting RenderTarget (texture) to be drawn to screen using a FlatRedBall Sprite. This can make it easier to position the render target and perform standard color operations. If you would like to create a RenderTarget (texture) which you process yourself (such as by rendering using SpriteBatch) then the Layer's RenderTarget property can be used as a more lightweight option. For more information see the [Layer.RenderTarget](/documentation/api/flatredball/graphics/layer/rendertarget.md) page.
 
 ## Example Code - Darkness with Moving Lights
 

@@ -62,4 +62,4 @@ public partial class PostProcessingEntity
 
 ## Additional Information
 
-For more information and code samples related to IDrawableBatch, see the [IDrawableBatch](/documentation/api/flatredball/flatredball-graphics/flatredball-graphics-drawablebatch.md) page.
+For more information and code samples related to IDrawableBatch, see the [IDrawableBatch](/documentation/api/flatredball/graphics/drawablebatch.md) page.

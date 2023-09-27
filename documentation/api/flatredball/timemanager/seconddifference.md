@@ -11,7 +11,7 @@ const int PixelsPerSecond = 100;
 MyObject.X += TimeManager.SecondDifference * PixelsPerSecond;
 ```
 
-Note that if you are working with Entities, you can also the [Velocity property](/documentation/api/flatredball/flatredball-positionedobject/flatredball-positionedobject-velocity.md) to achieve the same result.
+Note that if you are working with Entities, you can also the [Velocity property](/documentation/api/flatredball/positionedobject/velocity.md) to achieve the same result.
 
 ## Measuring Framerate
 
@@ -58,4 +58,4 @@ Since SecondDifference reports the amount of time since your last frame, then yo
 
     float framerate = 1 / TimeManager.SecondDifference;
 
-Keep in mind that FRB XNA by default keeps framerate at 60 fps. For more information, see the [disabling fixed time step wiki entry](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-game/microsoft-xna-framework-game-isfixedtimestep.md "Microsoft.Xna.Framework.Game").
+Keep in mind that FRB XNA by default keeps framerate at 60 fps. For more information, see the [disabling fixed time step wiki entry](/documentation/api/microsoft-xna-framework/game/isfixedtimestep.md "Microsoft.Xna.Framework.Game").

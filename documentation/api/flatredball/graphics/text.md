@@ -53,7 +53,7 @@ myTextObject.X = 50;
 myTextObject.Y = -20;
 ```
 
-For more information on [PositionedObject](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject") fields and properties, see the [PositionedObject entry](/documentation/api/flatredball/flatredball-positionedobject.md "FlatRedBall.PositionedObject").
+For more information on [PositionedObject](/documentation/api/flatredball/positionedobject.md "FlatRedBall.PositionedObject") fields and properties, see the [PositionedObject entry](/documentation/api/flatredball/positionedobject.md "FlatRedBall.PositionedObject").
 
 ## Text Size
 

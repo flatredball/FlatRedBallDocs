@@ -88,4 +88,4 @@ I've you've spent some time in Gum you may notice that the coordinate system in 
 
 ## Conclusion
 
-This tutorial has shown how to access objects from Gum in code. FlatRedBall generates objects which we can edit in code with full compile-time protection and Visual Studio IntelliSense. The next tutorial will show you how to use UI events (such as Click) on Gum components. [\<- 2. Screens in Gum](/documentation/tools/gum/gum-tutorials/tutorials-gum-screens-in-gum.md) -- [4. Events on Gum Objects -\>](/documentation/tools/gum/gum-tutorials/tutorials-gum-events-on-gum-objects.md)
+This tutorial has shown how to access objects from Gum in code. FlatRedBall generates objects which we can edit in code with full compile-time protection and Visual Studio IntelliSense. The next tutorial will show you how to use UI events (such as Click) on Gum components. [\<- 2. Screens in Gum](/documentation/tools/gum/tutorials/tutorials-gum-screens-in-gum.md) -- [4. Events on Gum Objects -\>](/documentation/tools/gum/tutorials/tutorials-gum-events-on-gum-objects.md)

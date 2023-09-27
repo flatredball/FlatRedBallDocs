@@ -2,7 +2,7 @@
 
 This guide is a modified version of the guide available here: https://gist.github.com/roy-t/2f089414078bf7218350e8c847951255
 
-1.  Download a modified version of **MXA Game Studio**, which is a set of installers for adding XNA to Visual Studio. [files.flatredball.com/content/XnaInstall/XnaForVS2017.zip](/content/XnaInstall/XnaForVS2017.zip)
+1.  Download a modified version of **MXA Game Studio**, which is a set of installers for adding XNA to Visual Studio. [files.flatredball.com/content/XnaInstall/XnaForVS2017.zip](http://files.flatredball.com/content/XnaInstall/XnaForVS2017.zip)
 
 2.  After downloading, unzip the **XNAForVS2017.zip** file
 

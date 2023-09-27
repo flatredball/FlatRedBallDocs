@@ -183,4 +183,4 @@ We'll implement the AssignInput method in **GameScreen.cs**:
 
 ## Conclusion
 
-Now we have a PlayerBall Entity which is cleanly written, has speed which can be customized through the FlatRedBall Editor, and can be moved with the game pad or keyboard. The next tutorial will cover defining collision in the GameScreen. [\<- Creating a Screen](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-a-screen.md "Tutorials:Beefball:Creating a Screen") -- [Creating the Screen Collision -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-creating-the-screen-collision.md "Tutorials:Beefball:Creating the Screen Collision")
+Now we have a PlayerBall Entity which is cleanly written, has speed which can be customized through the FlatRedBall Editor, and can be moved with the game pad or keyboard. The next tutorial will cover defining collision in the GameScreen. [\<- Creating a Screen](/documentation/tutorials/beefball/creating-a-screen.md "Tutorials:Beefball:Creating a Screen") -- [Creating the Screen Collision -\>](/documentation/tutorials/beefball/creating-the-screen-collision.md "Tutorials:Beefball:Creating the Screen Collision")

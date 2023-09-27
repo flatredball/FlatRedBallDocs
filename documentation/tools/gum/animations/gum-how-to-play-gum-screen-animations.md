@@ -4,7 +4,7 @@ Gum screens support animations which can be played through code. This article sh
 
 ## Setup
 
-To access a Gum screen in code you must first create an object in Glue for the Gum screen. For information on how to do this, see [this article](/documentation/tools/gum/gum-how-to-work-with-screens-in-code.md "Gum:How To:Work with Screens in Code"). Animations can be defined in Gum or in code. To define an animation in Gum, see the [Gum Usage Guide](https://flatredball.gitbook.io/gum/animation-tutorials/creating-an-animation).
+To access a Gum screen in code you must first create an object in Glue for the Gum screen. For information on how to do this, see [this article](/documentation/tools/gum/how-to-work-with-screens-in-code.md "Gum:How To:Work with Screens in Code"). Animations can be defined in Gum or in code. To define an animation in Gum, see the [Gum Usage Guide](https://flatredball.gitbook.io/gum/animation-tutorials/creating-an-animation).
 
 ## Accessing animations in code
 

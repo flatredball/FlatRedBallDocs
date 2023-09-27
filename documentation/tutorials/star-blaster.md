@@ -61,7 +61,7 @@ Notice that the keys for movement are assigned in the Get2DInput  and GetKey  
 movementInput = InputManager.Keyboard.Get2DInput(Keys.Left, Keys.Right, Keys.Up, Keys.Down);
 ```
 
-The two fields used for input use the FlatRedBall input interface classes. These classes allow using any input hardware without changing the logic to read the input. For more information, see the [I2DInput](/documentation/api/flatredball/flatredball-input/flatredball-input-i2dinput.md) and [IPressableInput](/documentation/api/flatredball/flatredball-input/flatredball-input-ipressableinput.md) pages.
+The two fields used for input use the FlatRedBall input interface classes. These classes allow using any input hardware without changing the logic to read the input. For more information, see the [I2DInput](/documentation/api/flatredball/input/i2dinput.md) and [IPressableInput](/documentation/api/flatredball/input/ipressableinput.md) pages.
 
 ### Movement Acceleration
 

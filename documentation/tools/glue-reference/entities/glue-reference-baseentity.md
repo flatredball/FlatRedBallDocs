@@ -28,4 +28,4 @@ A new entity can be created as a derived entity in the new entity window.
 
 ## Inheriting from FlatRedBall Types
 
-Entities can inherit from FlatRedBall types, such as Sprites. By default Entities inherit from PositionedObject, but this inheritance can be modified through Glue. The reason this feature exists is primarily to improve performance and reduce memory consumption. For more information, see the [Inheriting from FlatRedBall Types tutorial](/documentation/tools/glue-reference/entities/glue-tutorials-entities-inheriting-from-flatredball-types.md "Glue:Tutorials:Entities:Inheriting from FlatRedBall Types").
+Entities can inherit from FlatRedBall types, such as Sprites. By default Entities inherit from PositionedObject, but this inheritance can be modified through Glue. The reason this feature exists is primarily to improve performance and reduce memory consumption. For more information, see the [Inheriting from FlatRedBall Types tutorial](/documentation/tools/glue-reference/entities/glue-tutorials-inheriting-from-flatredball-types.md "Glue:Tutorials:Entities:Inheriting from FlatRedBall Types").

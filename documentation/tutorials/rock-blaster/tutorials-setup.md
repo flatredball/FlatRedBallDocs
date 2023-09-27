@@ -60,4 +60,4 @@ If we run our game now we will see our player which is a white circle.
 
 ## Conclusion
 
-That was easy! You now have a project that we will use in the following tutorials. Next we will set up the skeleton (the general structure) of our game. [\<- 01. Introduction](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-introduction.md "Tutorials:Rock Blaster:Introduction") -- [03. Game Skeleton -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-game-skeleton.md "Tutorials:Rock Blaster:Game Skeleton")
+That was easy! You now have a project that we will use in the following tutorials. Next we will set up the skeleton (the general structure) of our game. [\<- 01. Introduction](/documentation/tutorials/rock-blaster/tutorials-introduction.md "Tutorials:Rock Blaster:Introduction") -- [03. Game Skeleton -\>](/documentation/tutorials/rock-blaster/tutorials-game-skeleton.md "Tutorials:Rock Blaster:Game Skeleton")

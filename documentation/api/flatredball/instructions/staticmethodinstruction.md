@@ -1,4 +1,4 @@
-**Note** - StaticMethodInstruction is now marked as obsolete in favor of using [DelegateInstruction](/documentation/api/flatredball/flatredball-instructions/flatredball-instructions-delegateinstruction.md) and [Call](/documentation/api/flatredball/flatredball-instructions/flatredball-instructions-iinstructable/flatredball-instructions-iinstructable-call.md).
+**Note** - StaticMethodInstruction is now marked as obsolete in favor of using [DelegateInstruction](/documentation/api/flatredball/instructions/delegateinstruction.md) and [Call](/documentation/api/flatredball/instructions/iinstructable/call.md).
 
 ## Introduction
 

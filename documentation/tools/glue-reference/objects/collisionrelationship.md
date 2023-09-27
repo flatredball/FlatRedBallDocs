@@ -1,6 +1,6 @@
 ## Introduction
 
-The FRB Editor supports the creation and management of CollisionRelationship objects. This document covers the features provided by the FRB Editor, and explains common scenarios where you may need to interact with the CollisionsRelationships in code. Most cases can be handled by CollisionRelationships in the FRB Editor; however, more advanced situations can be handled in code. For information about creating and working with CollisionRelationships in code, see the [CollisionManager page](/documentation/api/flatredball/flatredball-math/collision/collisionmanager.md).
+The FRB Editor supports the creation and management of CollisionRelationship objects. This document covers the features provided by the FRB Editor, and explains common scenarios where you may need to interact with the CollisionsRelationships in code. Most cases can be handled by CollisionRelationships in the FRB Editor; however, more advanced situations can be handled in code. For information about creating and working with CollisionRelationships in code, see the [CollisionManager page](/documentation/api/flatredball/math/collision/collisionmanager.md).
 
 ## What is a CollisionRelationship?
 
@@ -22,7 +22,7 @@ Collision relationships can be created between:
 -   TileShapeCollections
 -   ShapeCollections (regular, as opposed to TileShapeCollections)
 
-All CollisionRelationships will at include at least one Entity or Entity list, so it is important to mark Entities which you intend to use in relationships as ICollidable. For information on ICollidable entities, see the [ICollidable Entity page](/documentation/tools/glue-reference/entities/glue-reference-entities-implements-icollidable.md).
+All CollisionRelationships will at include at least one Entity or Entity list, so it is important to mark Entities which you intend to use in relationships as ICollidable. For information on ICollidable entities, see the [ICollidable Entity page](/documentation/tools/glue-reference/entities/glue-reference-implements-icollidable.md).
 
 ## Creating a CollisionRelationship
 
@@ -35,7 +35,7 @@ CollisionRelationships can be created a few ways. Typically collision relationsh
 
 ![](/media/2023-08-img_64e425d030d81.png)
 
-Note that the TileShapeCollection may have its [SetByDerived](/documentation/tools/glue-reference/objects/glue-reference-objects-setbyderived.md) value set to true. This allows the creation of CollisionRelationships in a base Screen even though the TileShapeCollection is created in a derived Screen.
+Note that the TileShapeCollection may have its [SetByDerived](/documentation/tools/glue-reference/objects/glue-reference-setbyderived.md) value set to true. This allows the creation of CollisionRelationships in a base Screen even though the TileShapeCollection is created in a derived Screen.
 
 ### Option 1 - Drag+drop
 

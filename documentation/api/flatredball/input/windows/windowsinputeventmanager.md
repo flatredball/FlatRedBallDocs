@@ -1,6 +1,6 @@
 ## Introduction
 
-The WindowsInputEventManager is a class which can be used to read character-based input from the keyboard (as opposed to key-based input, as provided by the [FlatRedBall Keyboard class](/documentation/api/flatredball/flatredball-input/flatredball-input-keyboard.md)). Character based input (where character refers to the char  type) is useful for games which need to read string input from the keyboard. For example, games may need input for entering a player's name.
+The WindowsInputEventManager is a class which can be used to read character-based input from the keyboard (as opposed to key-based input, as provided by the [FlatRedBall Keyboard class](/documentation/api/flatredball/input/keyboard.md)). Character based input (where character refers to the char  type) is useful for games which need to read string input from the keyboard. For example, games may need input for entering a player's name.
 
 ## WindowsInputEventManager is Platform-Specific
 

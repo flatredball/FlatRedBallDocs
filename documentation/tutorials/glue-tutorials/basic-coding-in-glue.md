@@ -77,7 +77,7 @@ If your Screen is using [PositionedObjectLists](/frb/docs/index.php?title=FlatRe
 
 ## Performing Collisions between Entities
 
-The recommended way to perform collision between Entities is to use the CollisionManager. For more information see the [CollisionManager page](/documentation/tutorials/glue-tutorials/glue-tutorials-basic-coding-in-glue.md). Of course you can also manually write collision loops. For example we'll assume we have two Entities: one called Bullet and one called Enemy:
+The recommended way to perform collision between Entities is to use the CollisionManager. For more information see the [CollisionManager page](/documentation/tutorials/glue-tutorials/basic-coding-in-glue.md). Of course you can also manually write collision loops. For example we'll assume we have two Entities: one called Bullet and one called Enemy:
 
     for(int enemyIndex = EnemyList.Count - 1; enemyIndex > -1; enemyIndex--)
     {

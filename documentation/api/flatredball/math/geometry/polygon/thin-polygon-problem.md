@@ -24,7 +24,7 @@ The first solution to the thin polygon problem is to simply make your objects no
 
 ### Increasing the frame rate
 
-Increasing the frame rate of your game by reducing the [Game's TargetElapsedTime](/documentation/api/microsoft-xna-framework/microsoft-xna-framework-game/microsoft-xna-framework-game-targetelapsedtime.md "Microsoft.Xna.Framework.Game.TargetElapsedTime") is an effective but very expensive approach to solving this problem. More information on this can be found [here](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.TargetElapsedTime "Microsoft.Xna.Framework.Game.TargetElapsedTime").
+Increasing the frame rate of your game by reducing the [Game's TargetElapsedTime](/documentation/api/microsoft-xna-framework/game/targetelapsedtime.md "Microsoft.Xna.Framework.Game.TargetElapsedTime") is an effective but very expensive approach to solving this problem. More information on this can be found [here](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.TargetElapsedTime "Microsoft.Xna.Framework.Game.TargetElapsedTime").
 
 ### Multiple collision calls per frame
 

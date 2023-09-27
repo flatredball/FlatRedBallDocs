@@ -62,4 +62,4 @@ If you are seeing a conversion error similar to Cannot implicitly convert type 
 
 ## Conclusion
 
-Well, that was easy! Now we have scoring working. At this point we could call the game done. The next tutorial will be adding some extra finishing touches to the controls to make it more competitive and make the game play deeper. [\<- Scoring HUD](/documentation/tutorials/tutorials-beefball/tutorials-beefball-scoring-hud.md "Tutorials:Beefball:Scoring HUD") -- [Adding Dashing -\>](/documentation/tutorials/tutorials-beefball/tutorials-beefball-adding-dashing.md "Tutorials:Beefball:Adding Dashing")
+Well, that was easy! Now we have scoring working. At this point we could call the game done. The next tutorial will be adding some extra finishing touches to the controls to make it more competitive and make the game play deeper. [\<- Scoring HUD](/documentation/tutorials/beefball/scoring-hud.md "Tutorials:Beefball:Scoring HUD") -- [Adding Dashing -\>](/documentation/tutorials/beefball/adding-dashing.md "Tutorials:Beefball:Adding Dashing")

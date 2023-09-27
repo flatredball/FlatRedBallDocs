@@ -56,4 +56,4 @@ The object will have moved roughly 40 units on the X axis, and 145 units on the 
 
 ## Summary
 
-The majority of the problems in 2D gamedev are about figuring out where things are in space, how they are rotated, and how far apart they are. The equations above can combine in powerful ways to implement velocity, perform targeting and chase logic for NPCs, and much more! To see more about trigonometry in game development, check out the [Math:Trigonometry documentation](/documentation/tutorials/math/math-trigonometry.md).
+The majority of the problems in 2D gamedev are about figuring out where things are in space, how they are rotated, and how far apart they are. The equations above can combine in powerful ways to implement velocity, perform targeting and chase logic for NPCs, and much more! To see more about trigonometry in game development, check out the [Math:Trigonometry documentation](/documentation/tutorials/math/trigonometry.md).

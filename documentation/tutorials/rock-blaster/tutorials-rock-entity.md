@@ -324,4 +324,4 @@ If you run the game at this point you will notice that the RockSpawner spawns ro
 
 ![](/media/2021-03-img_604d53c1829a6.png)
 
-Now the game is really making progress. If you run the game now you will be able to fly around and fire bullets at rocks. Of course, we haven't put collision in just yet. We'll do that next tutorial. [\<- 05. Main Ship Behavior](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-main-ship-behavior.md "Tutorials:Rock Blaster:Main Ship Behavior") -- [06. Collision -\>](/documentation/tutorials/rock-blaster/tutorials-rock-blaster-collision.md "Tutorials:Rock Blaster:Collision")
+Now the game is really making progress. If you run the game now you will be able to fly around and fire bullets at rocks. Of course, we haven't put collision in just yet. We'll do that next tutorial. [\<- 05. Main Ship Behavior](/documentation/tutorials/rock-blaster/tutorials-main-ship-behavior.md "Tutorials:Rock Blaster:Main Ship Behavior") -- [06. Collision -\>](/documentation/tutorials/rock-blaster/tutorials-collision.md "Tutorials:Rock Blaster:Collision")
