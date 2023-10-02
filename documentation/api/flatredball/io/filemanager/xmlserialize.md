@@ -1,12 +1,14 @@
-## Introduction
+# xmlserialize
 
-The XmlSerialize and XmlDeserialize methods are methods which can be used to easily convert a class to an XML file, or an XML file back into an instance of a given type. XmlSerialize and XmlDeserialize are often used to save and load game data, such as player progress. Internally the FileManager uses the System.Xml.Serialization.XmlSerializer for serialization and deserialization. This means that any XML file created by the FileManager can be deserialized using the XmlSerializer if FlatRedBall is not available. Similarly, FlatRedBall can deserialize files created in other applications which use the XmlSerializer to save XML files. XmlSerialize uses the [FileManager's RelativeDirectory](/documentation/api/flatredball/io/filemanager/relativedirectory.md "FlatRedBall.IO.FileManager.RelativeDirectory") when given relative paths to serialize.
+### Introduction
 
-## Example
+The XmlSerialize and XmlDeserialize methods are methods which can be used to easily convert a class to an XML file, or an XML file back into an instance of a given type. XmlSerialize and XmlDeserialize are often used to save and load game data, such as player progress. Internally the FileManager uses the System.Xml.Serialization.XmlSerializer for serialization and deserialization. This means that any XML file created by the FileManager can be deserialized using the XmlSerializer if FlatRedBall is not available. Similarly, FlatRedBall can deserialize files created in other applications which use the XmlSerializer to save XML files. XmlSerialize uses the [FileManager's RelativeDirectory](relativedirectory.md) when given relative paths to serialize.
 
-As mentioned above, game data can be saved to disk as XML files. For example, the following class could be used to save information about the user's progress:
+### Example
 
-``` lang:c#
+As mentioned above, game data can be saved to disk as XML files. For example, the following class could be used to save information about the user's progress:
+
+```lang:c#
 public class ProfileSaveData
 {
     public string Name { get; set; }
@@ -17,7 +19,7 @@ public class ProfileSaveData
 
 A screen can be modified to save and load the project:
 
-``` lang:c#
+```lang:c#
 void CustomActivity(bool firstTimeCalled)
 {
     if(InputManager.Keyboard.KeyPushed(Keys.S))
@@ -72,24 +74,24 @@ private void PerformLoad()
 }
 ```
 
- 
+&#x20;
 
-![](/media/2017-02-img_58913fffc58ee.png)
+![](../../../../../media/2017-02-img\_58913fffc58ee.png)
 
- 
+&#x20;
 
-## Customizing Serialization
+### Customizing Serialization
 
 The XmlSerialize internally uses [XmlSerializer](http://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlserializer.aspx) and [XmlWriter](http://msdn.microsoft.com/en-us/library/system.xml.xmlwriter.aspx) classes. This means that all XML attributes (such as [XmlIgnore](http://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlattributes.xmlignore.aspx)) will apply normally.
 
-## XmlSerialize can create a directory
+### XmlSerialize can create a directory
 
 If the path of the file to save does not exist, then the XmlSerialize method will attempt to create the appropriate directory before saving the XML file.
 
-## "There was an error reflecting type"
+### "There was an error reflecting type"
 
-The FileManager uses the [internally](http://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlserializer.aspx%7CXmlSerializer). Therefore if the type cannot be serialized by the internal XmlSerializer then the FileManager.XmlSerialize will throw an exception. For information on this error, [see this page](http://stackoverflow.com/questions/60573/xmlserializer-there-was-an-error-reflecting-type).
+The FileManager uses the [internally](http://msdn.microsoft.com/en-us/library/system.xml.serialization.xmlserializer.aspx|XmlSerializer). Therefore if the type cannot be serialized by the internal XmlSerializer then the FileManager.XmlSerialize will throw an exception. For information on this error, [see this page](http://stackoverflow.com/questions/60573/xmlserializer-there-was-an-error-reflecting-type).
 
-## Additional Information
+### Additional Information
 
--   [Creating Save Classes](/documentation/tutorials/code-tutorials/tutorials-save-classes.md "Tutorials:Save Classes") - Discusses the "Save" class coding pattern commonly used to save game data.
+* [Creating Save Classes](../../../../tutorials/code-tutorials/tutorials-save-classes.md) - Discusses the "Save" class coding pattern commonly used to save game data.

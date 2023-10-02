@@ -1,8 +1,10 @@
-## Topics
+# linear-algebra
 
--   [Matrix](/frb/docs/index.php?title=Matrix "Matrix")
--   [Vector](/documentation/tutorials/math/vector.md "Vector")
+### Topics
 
-## External References
+* [Matrix](../../../frb/docs/index.php)
+* [Vector](vector.md)
+
+### External References
 
 [MIT Linear Algebra Video Lectures](http://ocw.mit.edu/OcwWeb/Mathematics/18-06Spring-2005/VideoLectures/index.htm)

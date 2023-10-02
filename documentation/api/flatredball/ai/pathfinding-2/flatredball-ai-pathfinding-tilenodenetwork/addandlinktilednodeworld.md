@@ -1,12 +1,14 @@
-## Introduction
+# addandlinktilednodeworld
 
-AddAndLinkTiledNodeWorld adds a new node at the given position, and links it to any adjacent nodes following the DirectionalType specified in the argument call, or using the default DirectionalType specified in the TileNodeNetwork's constructor.
+### Introduction
 
-## Code Example: Adding Nodes by Clicking
+AddAndLinkTiledNodeWorld adds a new node at the given position, and links it to any adjacent nodes following the DirectionalType specified in the argument call, or using the default DirectionalType specified in the TileNodeNetwork's constructor.
+
+### Code Example: Adding Nodes by Clicking
 
 The following code can be added to a screen to allow the user to click the mouse and add new nodes. Newly-created nodes will be connected to adjacent nodes using the DirectionType specified in the constructor (four-way).
 
-``` lang:c#
+```lang:c#
 // Define the TileNodeNetwork at class scope
 // so we can access it in both CustomInitialize
 // and CustomActivity
@@ -53,4 +55,4 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](/media/2019-08-2019-08-26_07-59-23.gif)](/media/2019-08-2019-08-26_07-59-23.gif)    
+[![](../../../../../../media/2019-08-2019-08-26\_07-59-23.gif)](../../../../../../media/2019-08-2019-08-26\_07-59-23.gif)   &#x20;

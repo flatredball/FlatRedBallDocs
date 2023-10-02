@@ -1,14 +1,16 @@
-## Introduction
+# glue-reference-file-new-project
 
-The "New Project" menu item allows you to create a new project. When creating a new project, Glue provides two categories:
+### Introduction
 
-1.  Starter Project - a fully functional FlatRedBall game including art. Starter projects let you see how FlatRedBall works with a complete game which can be modified.
-2.  Empty Project - an empty project for any platform
+The "New Project" menu item allows you to create a new project. When creating a new project, Glue provides two categories:
 
-![](/media/2017-01-img_58823b8dbc491.png)
+1. Starter Project - a fully functional FlatRedBall game including art. Starter projects let you see how FlatRedBall works with a complete game which can be modified.
+2. Empty Project - an empty project for any platform
 
-Both empty and starter projects are covered in the [FlatRedBall Tutorials page](/documentation/tutorials.md).
+![](../../../../media/2017-01-img\_58823b8dbc491.png)
 
-## NewProjectCreator
+Both empty and starter projects are covered in the [FlatRedBall Tutorials page](../../../tutorials.md).
 
-The "New Project" menu item brings up a new program called "NewProjectCreator". For more information see the [NewProjectCreator page](/frb/docs/index.php?title=NewProjectCreator "NewProjectCreator").
+### NewProjectCreator
+
+The "New Project" menu item brings up a new program called "NewProjectCreator". For more information see the [NewProjectCreator page](../../../../frb/docs/index.php).

@@ -1,12 +1,16 @@
-## Introduction
+# axisalignedrectangles
 
-The AxisAlignedRectangles property is a property of type [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList "FlatRedBall.Math.PositionedObjectList"). Therefore, you can use this member the same way you would use a PositionedObjectList\<AxisAlignedRectangle\>.
+### Introduction
 
-## Code Example
+The AxisAlignedRectangles property is a property of type [PositionedObjectList](../../../../../../frb/docs/index.php). Therefore, you can use this member the same way you would use a PositionedObjectList\<AxisAlignedRectangle>.
+
+### Code Example
 
 The following shows how to loop through all rectangles in a ShapeCollection and perform collision between the rectangles and a Circle named CircleInstance:
 
-    for(int i = 0; i < ShapeCollectionInstance.AxisAlignedRectangles.Count; i++)
-    {
-        circle.CollideAgainstMove(ShapeCollectionInstance.AxisAlignedRectangles[i], 0, 1);
-    }
+```
+for(int i = 0; i < ShapeCollectionInstance.AxisAlignedRectangles.Count; i++)
+{
+    circle.CollideAgainstMove(ShapeCollectionInstance.AxisAlignedRectangles[i], 0, 1);
+}
+```

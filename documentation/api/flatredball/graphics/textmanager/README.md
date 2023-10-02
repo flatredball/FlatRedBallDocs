@@ -1,39 +1,47 @@
-## Introduction
+# textmanager
 
-The TextManager is a static class which handles [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object addition, removal, and common behavior. The TextManager has many of the same methods (in concept) as the [SpriteManager](/frb/docs/index.php?title=FlatRedBall.SpriteManager "FlatRedBall.SpriteManager"). The TextManager is automatically instantiated by FlatRedBall so you do not need to create an instance yourself.
+### Introduction
 
-## Text Object
+The TextManager is a static class which handles [Text](../../../../../frb/docs/index.php) object addition, removal, and common behavior. The TextManager has many of the same methods (in concept) as the [SpriteManager](../../../../../frb/docs/index.php). The TextManager is automatically instantiated by FlatRedBall so you do not need to create an instance yourself.
 
-The TextManager provides numerous methods for for working with the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object. The following sections provide code samples for working with [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text")-related methods.
+### Text Object
 
-## Text Addition
+The TextManager provides numerous methods for for working with the [Text](../../../../../frb/docs/index.php) object. The following sections provide code samples for working with [Text](../../../../../frb/docs/index.php)-related methods.
 
-Most AddText methods both instantiate a new [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object as well as add it to TextManager for management. The following methods instantiate and add a [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object to the SpriteManager:
+### Text Addition
 
-    Text text = TextManager.AddText("FlatRedBall Rocks!"); // uses default font
+Most AddText methods both instantiate a new [Text](../../../../../frb/docs/index.php) object as well as add it to TextManager for management. The following methods instantiate and add a [Text](../../../../../frb/docs/index.php) object to the SpriteManager:
 
-Custom [BitmapFonts](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont "FlatRedBall.Graphics.BitmapFont") can be used when creating [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") objects as well.
+```
+Text text = TextManager.AddText("FlatRedBall Rocks!"); // uses default font
+```
 
-    BitmapFont bitmapFont = new BitmapFont("textureFile.png", "fontFile.txt", "content manager name");
-    Text text = TextManager.AddText("Text with custom font", bitmapFont);
+Custom [BitmapFonts](../../../../../frb/docs/index.php) can be used when creating [Text](../../../../../frb/docs/index.php) objects as well.
 
-For information see the [BitmapFont wiki entry](/frb/docs/index.php?title=FlatRedBall.Graphics.BitmapFont "FlatRedBall.Graphics.BitmapFont").
+```
+BitmapFont bitmapFont = new BitmapFont("textureFile.png", "fontFile.txt", "content manager name");
+Text text = TextManager.AddText("Text with custom font", bitmapFont);
+```
 
-#### Adding Text and Layers
+For information see the [BitmapFont wiki entry](../../../../../frb/docs/index.php).
 
-[Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") objects can also be added to [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer").
+**Adding Text and Layers**
 
-     // Layers must be created through the SpriteManager
-     Layer layer = SpriteManager.AddLayer();
+[Text](../../../../../frb/docs/index.php) objects can also be added to [Layers](../../../../../frb/docs/index.php).
 
-     Text text = TextManager.AddText("I'm on a layer.", layer);
+```
+ // Layers must be created through the SpriteManager
+ Layer layer = SpriteManager.AddLayer();
 
-For more information, see the [Layer wiki entry](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer") and the [AddToLayer method](/frb/docs/index.php?title=FlatRedBall.Graphics.TextManager.AddToLayer "FlatRedBall.Graphics.TextManager.AddToLayer").
+ Text text = TextManager.AddText("I'm on a layer.", layer);
+```
 
-## Text Removal
+For more information, see the [Layer wiki entry](../../../../../frb/docs/index.php) and the [AddToLayer method](../../../../../frb/docs/index.php).
 
-The RemoveText methods remove [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") objects from the engine as well as any [two-way](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList#Two_Way_Relationships "FlatRedBall.Math.AttachableList") [AttachableLists](/frb/docs/index.php?title=FlatRedBall.Math.AttachableList "FlatRedBall.Math.AttachableList") (such as [PositionedObjectList](/frb/docs/index.php?title=FlatRedBall.Math.PositionedObjectList "FlatRedBall.Math.PositionedObjectList")) that the [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object belong to. For more information, see the [RemoveText page](/frb/docs/index.php?title=FlatRedBall.Graphics.TextManager.RemoveText "FlatRedBall.Graphics.TextManager.RemoveText").
+### Text Removal
 
-## TextManager Members
+The RemoveText methods remove [Text](../../../../../frb/docs/index.php) objects from the engine as well as any [two-way](../../../../../frb/docs/index.php#Two\_Way\_Relationships) [AttachableLists](../../../../../frb/docs/index.php) (such as [PositionedObjectList](../../../../../frb/docs/index.php)) that the [Text](../../../../../frb/docs/index.php) object belong to. For more information, see the [RemoveText page](../../../../../frb/docs/index.php).
 
-\[subpages depth="1"\]
+### TextManager Members
+
+\[subpages depth="1"]

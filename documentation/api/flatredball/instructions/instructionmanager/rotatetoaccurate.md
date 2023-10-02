@@ -1,37 +1,47 @@
-## Introduction
+# rotatetoaccurate
 
-The RotateToAccurate method creates and adds [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction") for rotating the argument PositionedObject to the argument rotation. The method takes three values as it can perform rotation on the X, Y, and Z rotation components.
+### Introduction
 
-## Code Example
+The RotateToAccurate method creates and adds [Instructions](../../../../../frb/docs/index.php) for rotating the argument PositionedObject to the argument rotation. The method takes three values as it can perform rotation on the X, Y, and Z rotation components.
 
-The following code creates and rotates a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") so that its rotation matches the angle from the [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.InputManager.Mouse&action=edit&redlink=1 "FlatRedBall.Input.InputManager.Mouse (page does not exist)") when the user clicks the left button. Add the following using statements:
+### Code Example
 
-    using FlatRedBall.Input;
-    using FlatRedBall.Instructions;
+The following code creates and rotates a [Sprite](../../../../../frb/docs/index.php) so that its rotation matches the angle from the [Sprite](../../../../../frb/docs/index.php) to the [Mouse](../../../../../frb/docs/index.php) when the user clicks the left button. Add the following using statements:
+
+```
+using FlatRedBall.Input;
+using FlatRedBall.Instructions;
+```
 
 Add the following at class scope:
 
-    Sprite sprite;
+```
+Sprite sprite;
+```
 
 Add the following in Initialize after initializing FlatRedBall:
 
-    sprite = SpriteManager.AddSprite("redball.bmp");
-    sprite.ScaleX = 4;
+```
+sprite = SpriteManager.AddSprite("redball.bmp");
+sprite.ScaleX = 4;
+```
 
 Add the following in Update:
 
-    if (InputManager.Mouse.ButtonReleased(FlatRedBall.Input.Mouse.MouseButtons.LeftButton))
-    {
-        float angle = (float)(System.Math.Atan2(
-            InputManager.Mouse.WorldYAt(0) - sprite.Y,
-            InputManager.Mouse.WorldXAt(0) - sprite.X));
-        float secondsToTake = 1;
-        // Just in case there are other instructions around from the 
-        // last call: 
-        sprite.Instructions.Clear();
+```
+if (InputManager.Mouse.ButtonReleased(FlatRedBall.Input.Mouse.MouseButtons.LeftButton))
+{
+    float angle = (float)(System.Math.Atan2(
+        InputManager.Mouse.WorldYAt(0) - sprite.Y,
+        InputManager.Mouse.WorldXAt(0) - sprite.X));
+    float secondsToTake = 1;
+    // Just in case there are other instructions around from the 
+    // last call: 
+    sprite.Instructions.Clear();
 
-        // Adds instructions to the Sprite's Instructions list. 
-        InstructionManager.RotateToAccurate(sprite, 0, 0, angle, secondsToTake); 
-    }
+    // Adds instructions to the Sprite's Instructions list. 
+    InstructionManager.RotateToAccurate(sprite, 0, 0, angle, secondsToTake); 
+}
+```
 
-![RotateToAccurate.png](/media/migrated_media-RotateToAccurate.png)
+![RotateToAccurate.png](../../../../../media/migrated\_media-RotateToAccurate.png)

@@ -1,8 +1,10 @@
-## Introduction
+# defaultformscomponents
+
+### Introduction
 
 DefaultFormsComponents is a static property in the FrameworkElement class which associates a FlatRedBall.Forms control to a default Gum component type. DefaultFormsComponent is used whenever code instantiated a FlatRedball.forms object, allowing the internal engine to automatically create visuals for it. In other words, this association defines the default appearance of a FlatRedBall.Forms object by associating it with a Gum type. For example, the following code shows how a simple button can be created without specifying a Visual for the button:
 
-``` lang:c#
+```lang:c#
 // Notice that a visual is not specified for the button
 // The button will automatically create its own visual
 // according to the association in DefaultFormsComponents
@@ -15,11 +17,11 @@ button.Click += HandleButtonClick;
 
 Notice that in the code above there is no creation of a visual Gum object. The Button object uses the DefaultFormsComponent property automatically construct a Gum object.
 
-## DefaultFormsComponents in Generated Code
+### DefaultFormsComponents in Generated Code
 
-The Gum plugin in Glue will automatically populate the DefaultFormsComponents dictionary according to behaviors assigned to components in the Gum project. Unmodified projects which include Forms components will have a standard component for each Forms control. The code for this is added to the GumIdb.Generated.cs file.  For example, the code may look like this:
+The Gum plugin in Glue will automatically populate the DefaultFormsComponents dictionary according to behaviors assigned to components in the Gum project. Unmodified projects which include Forms components will have a standard component for each Forms control. The code for this is added to the GumIdb.Generated.cs file.  For example, the code may look like this:
 
-``` lang:c#
+```lang:c#
 FlatRedBall.Forms.Controls.FrameworkElement.DefaultFormsComponents[typeof(FlatRedBall.Forms.Controls.Button)] = typeof(ProjectName.GumRuntimes.DefaultForms.ButtonRuntime);
 FlatRedBall.Forms.Controls.FrameworkElement.DefaultFormsComponents[typeof(FlatRedBall.Forms.Controls.CheckBox)] = typeof(ProjectName.GumRuntimes.DefaultForms.CheckBoxRuntime);
 FlatRedBall.Forms.Controls.FrameworkElement.DefaultFormsComponents[typeof(FlatRedBall.Forms.Controls.ComboBox)] = typeof(ProjectName.GumRuntimes.DefaultForms.ComboBoxRuntime);
@@ -38,7 +40,7 @@ FlatRedBall.Forms.Controls.FrameworkElement.DefaultFormsComponents[typeof(FlatRe
 
 Keep in mind this association can be overridden. For example, you may add the following to your screen's CustomInitialize:
 
-``` lang:c#
+```lang:c#
 FrameworkElement.DefaultFormsComponents[typeof(FlatRedBall.Forms.Controls.Button)] = 
     typeof(ProjectName.GumRuntimes.LargeMenuButtonRuntime);
 ```

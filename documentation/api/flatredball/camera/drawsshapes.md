@@ -1,13 +1,17 @@
-## Introduction
+# drawsshapes
 
-The DrawsShapes property can be used to control whether the Camera will render any shapes (such as [Polygons](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon "FlatRedBall.Math.Geometry.Polygon") and [Circles](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Circle "FlatRedBall.Math.Geometry.Circle")). This is on by default, and can be turned off to hide all shape rendering.
+### Introduction
 
-## Common Usage
+The DrawsShapes property can be used to control whether the Camera will render any shapes (such as [Polygons](../../../../frb/docs/index.php) and [Circles](../../../../frb/docs/index.php)). This is on by default, and can be turned off to hide all shape rendering.
+
+### Common Usage
 
 Shapes are often used for collision, and their visible representation can be useful in debugging. Shapes can be easily turned off for non-debug builds as follows:
 
-    #if DEBUG
-        SpriteManager.Camera.DrawsShapes = true; // <- This is the default so not necessary, but it's more expressive
-    #else
-        SpriteManager.Camera.DrawShapes = false;
-    #endif
+```
+#if DEBUG
+    SpriteManager.Camera.DrawsShapes = true; // <- This is the default so not necessary, but it's more expressive
+#else
+    SpriteManager.Camera.DrawShapes = false;
+#endif
+```

@@ -1,68 +1,82 @@
-## Introduction
+# drag
+
+### Introduction
 
 The Drag property is a linear approximation of deceleration which is tied to the PositionedObject's absolute velocity. Internally drag is applied as follows (you do not need to write this code, it's just an explanation):
 
-    Velocity.X -= Velocity.X * Drag * TimeManager.SecondDifference;
-    Velocity.Y -= Velocity.Y * Drag * TimeManager.SecondDifference;
-    Velocity.Z -= Velocity.Z * Drag * TimeManager.SecondDifference;
+```
+Velocity.X -= Velocity.X * Drag * TimeManager.SecondDifference;
+Velocity.Y -= Velocity.Y * Drag * TimeManager.SecondDifference;
+Velocity.Z -= Velocity.Z * Drag * TimeManager.SecondDifference;
+```
 
 Drag is independently applied to each component of velocity.
 
-## Drag Example
+### Drag Example
 
-Drag is a linear approximation of deceleration which is tied to absolute velocity. It can be used to create terminal velocities (maximum velocities) when objects are moved by acceleration. The following code shows the effect of Drag on three [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite").
+Drag is a linear approximation of deceleration which is tied to absolute velocity. It can be used to create terminal velocities (maximum velocities) when objects are moved by acceleration. The following code shows the effect of Drag on three [Sprites](../../../../frb/docs/index.php).
 
-    Sprite sprite1 = SpriteManager.AddSprite("redball.bmp");
-    sprite1.XVelocity = 10;
-    sprite1.Y = 3;
-    // default Drag is 0
+```
+Sprite sprite1 = SpriteManager.AddSprite("redball.bmp");
+sprite1.XVelocity = 10;
+sprite1.Y = 3;
+// default Drag is 0
 
-    Sprite sprite2 = SpriteManager.AddSprite("redball.bmp");
-    sprite2.XVelocity = 10;
-    sprite2.Drag = .4f;
+Sprite sprite2 = SpriteManager.AddSprite("redball.bmp");
+sprite2.XVelocity = 10;
+sprite2.Drag = .4f;
 
-    Sprite sprite3 = SpriteManager.AddSprite("redball.bmp");
-    sprite3.XVelocity = 10;
-    sprite3.Drag = 1;
-    sprite3.Y = -3;
+Sprite sprite3 = SpriteManager.AddSprite("redball.bmp");
+sprite3.XVelocity = 10;
+sprite3.Drag = 1;
+sprite3.Y = -3;
+```
 
-![3SpritesWithDrag.png](/media/migrated_media-3SpritesWithDrag.png) Managed PositionedObjects such as [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") automatically have their Drag applied every frame.
+![3SpritesWithDrag.png](../../../../media/migrated\_media-3SpritesWithDrag.png) Managed PositionedObjects such as [Sprites](../../../../frb/docs/index.php) automatically have their Drag applied every frame.
 
-## When Is Drag Useful?
+### When Is Drag Useful?
 
 For objects which are controlled by the player such as a space ship or car, Drag is usually only used when the object is controlled by setting its acceleration value. If an object's velocity value is set every frame based off of input, then Drag will only slightly reduce the velocity for that frame. Next frame input will overwrite the velocity - effectively making Drag a dampening value.
 
-## Drag and Equilibrium
+### Drag and Equilibrium
 
 When an object has a non-zero Drag value and is controlled through acceleration it will always reach a maximum velocity or "terminal velocity" - a term which defines the fastest that an object can fall through an atmosphere. To understand this, let's consider the amount by which the XVelocity of a PositionedObject is reduced when Drag is non-zero:
 
-    float xVelocityModification = -(Velocity.X * Drag * TimeManager.SecondDifference);
+```
+float xVelocityModification = -(Velocity.X * Drag * TimeManager.SecondDifference);
+```
 
-### Drag Equilibrium
+#### Drag Equilibrium
 
 Equilibrium is reached when acceleration and drag apply equal forces. Keep in mind that the velocity over time when using drag and acceleration is an asymptote. Mathematically this means the actual terminal velocity is never reached. However, over time the velocity will get closer and closer to terminal velocity. In practical applications, a terminal velocity may be reached due to floating point inaccuracy, but it may not be exactly the same as the terminal velocity calculated mathematically. Mathematically, equilibrium can be calculated as follows:
 
-    EqulibriumVelocity = Acceleration / Drag;
+```
+EqulibriumVelocity = Acceleration / Drag;
+```
 
-  This formula is easiest to calculate when Drag is 1. If Drag is 1, that means that terminal velocity will be reached when Velocity reaches Acceleration. If Drag is 2, then terminal velocity will be reached when Velocity is half of acceleration. This makes sense because higher Drag means that top speed will be reduced.
+&#x20; This formula is easiest to calculate when Drag is 1. If Drag is 1, that means that terminal velocity will be reached when Velocity reaches Acceleration. If Drag is 2, then terminal velocity will be reached when Velocity is half of acceleration. This makes sense because higher Drag means that top speed will be reduced.
 
-### Distance to Stop
+#### Distance to Stop
 
 Drag applies a continual acceleration proportional (and in the opposite direction of) the current Velocity. Over time, an object with drag slows down to 0 (or near 0) velocity. The distance that an object travels given a starting Velocity and Drag can be calculated with the following formula:
 
-    var distanceTravelled = Item.Velocity / Item.Drag;
+```
+var distanceTravelled = Item.Velocity / Item.Drag;
+```
 
-### Drag Modification Examples
+#### Drag Modification Examples
 
 For this example we will use the following values:
 
-    Drag = 1
-    TimeManager.SecondDifference = .01
+```
+Drag = 1
+TimeManager.SecondDifference = .01
+```
 
 These values will make our computations simple. Velocity.X will be variable. Now, consider the effect of Drag with different Velocity.X values:
 
 |            |                |
-|------------|----------------|
+| ---------- | -------------- |
 | Velocity.X | Effect of Drag |
 | 0          | 0              |
 | 1          | -.01           |
@@ -73,7 +87,7 @@ These values will make our computations simple. Velocity.X will be variable. Now
 The "Effect of Drag" column displays the amount by which velocity will decrease each frame. Consider an object which has an XAcceleration of 50. This will add 50 \* TimeManager.SecondDifference to the velocity each frame, or in our case where TimeManager.SecondDifference is fixed at .01, XAcceleration will increase velocity by .5 each frame. Consider the net change in Velocity.X at the different Velocity.X values:
 
 |            |                |                                             |
-|------------|----------------|---------------------------------------------|
+| ---------- | -------------- | ------------------------------------------- |
 | Velocity.X | Effect of Drag | Net Velocity Change with XAcceleration = 50 |
 | 0          | 0              | .5                                          |
 | 1          | -.01           | .49                                         |

@@ -1,1 +1,3 @@
-This page is a *Duplicate*, the main copy can be found here: [Kain's Tavern](/frb/docs/index.php?title=Kain%27s_Tavern "Kain's Tavern")
+# kainazzzo
+
+This page is a _Duplicate_, the main copy can be found here: [Kain's Tavern](../frb/docs/index.php)

@@ -1,1 +1,3 @@
-The total length obtained by adding the [FrameTimes](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationFrame.FrameTime&action=edit&redlink=1 "FlatRedBall.Graphics.Animation.AnimationFrame.FrameTime (page does not exist)") of all contained [AnimationFrames](/frb/docs/index.php?title=FlatRedBall.Graphics.Animation.AnimationFrame "FlatRedBall.Graphics.Animation.AnimationFrame").
+# totallength
+
+The total length obtained by adding the [FrameTimes](../../../../../../frb/docs/index.php) of all contained [AnimationFrames](../../../../../../frb/docs/index.php).

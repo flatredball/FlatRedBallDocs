@@ -1,12 +1,16 @@
-## Introduction
+# ispointinside
+
+### Introduction
 
 The IsPointInside method returns whether the argument X,Y are inside the Circle. The X and Y values are absolute values.
 
-## Code Example
+### Code Example
 
-The following shows how to check if the [Cursor](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor "FlatRedBall.Gui.Cursor") is inside a Circle instance:
+The following shows how to check if the [Cursor](../../../../../../frb/docs/index.php) is inside a Circle instance:
 
-    float worldX = GuiManager.Cursor.WorldXAt(0);
-    float worldY = GuiManager.Cursor.WorldYAt(0);
+```
+float worldX = GuiManager.Cursor.WorldXAt(0);
+float worldY = GuiManager.Cursor.WorldYAt(0);
 
-    bool isInside = CircleInstance.IsPointInside(worldX, worldY);
+bool isInside = CircleInstance.IsPointInside(worldX, worldY);
+```

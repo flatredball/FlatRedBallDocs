@@ -1,90 +1,84 @@
-## Introduction
+# using-farseer-in-a-glue-project
+
+### Introduction
 
 This walkthrough shows how to add Farseer to a simple Glue project. We will create a diagonal stack of blocks which will fall and collide against a static surface. This tutorial uses the FlatRedBall desktop engine, which means it uses proper XNA (as opposed to MonoGame). MonoGame projects must use the MonoGame version of the Farseer .dll.
 
-## Creating the Block Entity
+### Creating the Block Entity
 
 We will begin with an empty Glue project:
 
-![](/media/2016-11-img_583523104d726.png)
+![](../../../media/2016-11-img\_583523104d726.png)
 
 Add a new Block entity:
 
-1.  Right-click on Entities
-2.  Select **Add Entity**
-3.  Enter the name Block
-4.  Click **OK**
+1. Right-click on Entities
+2. Select **Add Entity**
+3. Enter the name Block
+4. Click **OK**
 
-![](/media/2016-11-img_58352352c6f2c.png)
+![](../../../media/2016-11-img\_58352352c6f2c.png)
 
 Next, we'll add a Sprite to the Block so we can see it in-game:
 
-1.  Expand the Block entity
-
-2.  Right-click on Objects
-
-3.  Select **Add Object**
-
+1. Expand the Block entity
+2. Right-click on Objects
+3. Select **Add Object**
 4.  Select Sprite
 
-    ![](/media/2016-11-img_58352394527bd.png)
-
-5.  Click **OK**
+    ![](../../../media/2016-11-img\_58352394527bd.png)
+5. Click **OK**
 
 The Sprite needs to be modified so it will show up in game:
 
-1.  Change the Sprite's **Color Operation** to **Color**. This allows us to use solid colors to draw the sprite instead of a texture.
+1. Change the Sprite's **Color Operation** to **Color**. This allows us to use solid colors to draw the sprite instead of a texture.
+2. Set the **Red** value to **1**
+3. Delete the **Texture Scale** value
+4. Enter a **Width** of **32**
+5.  Enter a **Height** of **32**
 
-2.  Set the **Red** value to **1**
+    ![](../../../media/2016-11-img\_583524551f2fb.png)
 
-3.  Delete the **Texture Scale** value
-
-4.  Enter a **Width** of **32**
-
-5.  Enter a **Height** of ****32****
-
-    ![](/media/2016-11-img_583524551f2fb.png)
-
-## Creating the GameScreen
+### Creating the GameScreen
 
 Next we'll create a screen to hold our Block instances and the Farseer logic:
 
-1.  Right-click on **Screens**
-2.  Select **Add Screen**
-3.  Enter the name **Game Screen**
-4.  Click **OK**
+1. Right-click on **Screens**
+2. Select **Add Screen**
+3. Enter the name **Game Screen**
+4. Click **OK**
 
-![](/media/2016-11-img_583526c9914a3.png)
+![](../../../media/2016-11-img\_583526c9914a3.png)
 
 GameScreen needs a Block list so that we can construct the blocks in code and have them be automatically managed. To do this:
 
-1.  Push and hold the right mouse button on the **Block** entity
-2.  Drag the entity onto **GameScreen**
-3.  Release the mouse button
-4.  Select **Add Entity List**
+1. Push and hold the right mouse button on the **Block** entity
+2. Drag the entity onto **GameScreen**
+3. Release the mouse button
+4. Select **Add Entity List**
 
-![](/media/2016-11-img_58352798ddb2d.png)
+![](../../../media/2016-11-img\_58352798ddb2d.png)
 
-## Adding Farseer to the Visual Studio Project
+### Adding Farseer to the Visual Studio Project
 
 Now that our Glue project has been created, we'll add Farseer to the Visual Studio project:
 
-1.  Download the Farseer precompiled .dll: <https://github.com/vchelaru/FlatRedBall/blob/master/Engines/FlatRedBallXNA/3rd%20Party%20Libraries/Farseer/FarseerPhysics%20XNA.dll?raw=true>
-2.  Open the game project in Visual Studio
-3.  Right-click on **References** in Visual Studio under your game project
-4.  Select **Add Reference**...
-5.  Click the **Browse** category
-6.  Click the **Browse...** button
-7.  Navigate to where you saved the Farseer dll file
-8.  Select the file and click **Add**
+1. Download the Farseer precompiled .dll: [https://github.com/vchelaru/FlatRedBall/blob/master/Engines/FlatRedBallXNA/3rd%20Party%20Libraries/Farseer/FarseerPhysics%20XNA.dll?raw=true](https://github.com/vchelaru/FlatRedBall/blob/master/Engines/FlatRedBallXNA/3rd%20Party%20Libraries/Farseer/FarseerPhysics%20XNA.dll?raw=true)
+2. Open the game project in Visual Studio
+3. Right-click on **References** in Visual Studio under your game project
+4. Select **Add Reference**...
+5. Click the **Browse** category
+6. Click the **Browse...** button
+7. Navigate to where you saved the Farseer dll file
+8. Select the file and click **Add**
 
-![](/media/2016-11-img_583528ae9657b.png)
+![](../../../media/2016-11-img\_583528ae9657b.png)
 
-## Preparing the Block Entity for Farseer
+### Preparing the Block Entity for Farseer
 
-We'll add the code to create a Farseer Body  instance in the Block.cs  file. Open the Block file and modify the class so it appears as shown in the following code:
+We'll add the code to create a Farseer Body  instance in the Block.cs  file. Open the Block file and modify the class so it appears as shown in the following code:
 
-``` lang:c#
+```lang:c#
 public partial class Block
 {
     Body physicsBody;
@@ -137,11 +131,11 @@ public partial class Block
 }
 ```
 
-## Adding code to GameScreen
+### Adding code to GameScreen
 
-Finally we'll add code to our GameScreen . Modify your GameScreen.cs  file so it looks like the following code:
+Finally we'll add code to our GameScreen . Modify your GameScreen.cs  file so it looks like the following code:
 
-``` lang:c#
+```lang:c#
 public partial class GameScreen
 {
     World world;
@@ -228,4 +222,4 @@ public partial class GameScreen
 }
 ```
 
-If we run the game we'll see our blocks falling and colliding: [![fallingblocks](/media/2016-11-FallingBlocks.gif)](/media/2016-11-FallingBlocks.gif)    
+If we run the game we'll see our blocks falling and colliding: [![fallingblocks](../../../media/2016-11-FallingBlocks.gif)](../../../media/2016-11-FallingBlocks.gif)   &#x20;

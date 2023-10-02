@@ -1,8 +1,10 @@
-## Introduction
+# flatredball-glue-exportedinterfaces-iprojectcommands
 
-IProjectCommands provides methods that apply to the entire project. IProjectCommands can be accessed through the [IGlueCommands](/frb/docs/index.php?title=FlatRedBall.Glue.Plugins.ExportedInterfaces.IGlueCommands "FlatRedBall.Glue.Plugins.ExportedInterfaces.IGlueCommands") interface.
+### Introduction
 
-## Members
+IProjectCommands provides methods that apply to the entire project. IProjectCommands can be accessed through the [IGlueCommands](../../../../../frb/docs/index.php) interface.
 
--   [FlatRedBall.Glue.Plugins.ExportedInterfaces.IProjectCommands.AddContentFileToProject](/frb/docs/index.php?title=FlatRedBall.Glue.Plugins.ExportedInterfaces.IProjectCommands.AddContentFileToProject "FlatRedBall.Glue.Plugins.ExportedInterfaces.IProjectCommands.AddContentFileToProject")
--   [FlatRedBall.Glue.Plugins.ExportedInterfaces.IProjectCommands.MakeAbsolute](/frb/docs/index.php?title=FlatRedBall.Glue.Plugins.ExportedInterfaces.IProjectCommands.MakeAbsolute "FlatRedBall.Glue.Plugins.ExportedInterfaces.IProjectCommands.MakeAbsolute")
+### Members
+
+* [FlatRedBall.Glue.Plugins.ExportedInterfaces.IProjectCommands.AddContentFileToProject](../../../../../frb/docs/index.php)
+* [FlatRedBall.Glue.Plugins.ExportedInterfaces.IProjectCommands.MakeAbsolute](../../../../../frb/docs/index.php)

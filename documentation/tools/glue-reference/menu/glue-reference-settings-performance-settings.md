@@ -1,7 +1,9 @@
-## Introduction
+# glue-reference-settings-performance-settings
+
+### Introduction
 
 The Glue Performance Settings window controls how Glue generates the project and code to help you improve the performance of your project.
 
-## Subsections
+### Subsections
 
--   [Glue:Reference:Menu:Settings:Performance Settings:RecordInitializeSegments](/frb/docs/index.php?title=Glue:Reference:Menu:Settings:Performance_Settings:RecordInitializeSegments "Glue:Reference:Menu:Settings:Performance Settings:RecordInitializeSegments")
+* [Glue:Reference:Menu:Settings:Performance Settings:RecordInitializeSegments](../../../../frb/docs/index.php)

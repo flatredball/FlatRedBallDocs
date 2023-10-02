@@ -1,36 +1,31 @@
-## Introduction
+# 04-adding-ui-to-glue
+
+### Introduction
 
 Glue plugins can add custom UI to Glue which are hosted in tabs. Tabs can be always visible or in response to events (such as when a file is selected). This tutorial will show how to create a tab that displays information about the selected file.
 
-## Defining a Control
+### Defining a Control
 
 First we will create a WPF user control in our project:
 
-1.  Right-click on your project and select **Add** -\> **New** **Folder**
+1. Right-click on your project and select **Add** -> **New** **Folder**
+2.  Name the folder **Controls**
 
-2.  Name the folder ****Controls****
+    ![](../../../media/2018-02-img\_5a8061301231f.png)
+3. Right-click on the newly-created folder
+4. Select **Add** -> **New Item...**
+5. Select the **Installed** -> **Visual C# Items** -> **WPF** category
+6.  Select **User Controls (WPF)**
 
-    ![](/media/2018-02-img_5a8061301231f.png)
+    ![](../../../media/2018-02-img\_5a8062529e30e.png)
+7. Enter the name **MainControl** (more complicated plugins may have multiple controls)
+8. Click **Add**
 
-3.  Right-click on the newly-created folder
-
-4.  Select **Add** -\> **New Item...**
-
-5.  Select the **Installed** -\> **Visual C# Items** -\> **WPF** category
-
-6.  Select **User Controls (WPF)**
-
-    ![](/media/2018-02-img_5a8062529e30e.png)
-
-7.  Enter the name **MainControl** (more complicated plugins may have multiple controls)
-
-8.  Click **Add**
-
-## Showing the Control
+### Showing the Control
 
 To test the control, we will add a TextBlock at first. Modify the XAML code as shown in the following code:
 
-``` lang:c#
+```lang:c#
 <UserControl x:Class="TutorialPlugin.Controls.MainControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -47,7 +42,7 @@ To test the control, we will add a TextBlock at first. Modify the XAML code as s
 
 Now we'll show the control whenever the user selects a file, but hide it whenever another object is selected. To do this, modify the **MainTutorialPlugin.cs** file as shown in the following snippet:
 
-``` lang:c#
+```lang:c#
 using FlatRedBall.Glue.Plugins;
 using FlatRedBall.Glue.Plugins.ExportedImplementations;
 using System;
@@ -98,24 +93,24 @@ namespace TutorialPlugin
 
 Let's break down some of the parts of the code above.
 
-### ReactToItemSelectHandler
+#### ReactToItemSelectHandler
 
 This is a delegate which is raised whenever an item is selected. Subscribing to this allows a plugin to perform custom logic when the user selects an item in the tree view. In this case, we will call the HandleItemSelected method. Glue plugins define dozens of delegates such as when a project is loaded, a file changes, or an object is added to an entity.
 
-### GlueState.Self
+#### GlueState.Self
 
-GlueState.Self  provides information about the current state of Glue, including which objects are selected in the tree view. In this case we are checking if a file is selected, which would be represented by the CurrentReferencedFileSave  member.
+GlueState.Self  provides information about the current state of Glue, including which objects are selected in the tree view. In this case we are checking if a file is selected, which would be represented by the CurrentReferencedFileSave  member.
 
-### RemoveTab
+#### RemoveTab
 
 Removes the tab associated with this plugin from Glue - the tab will still be held in memory but it will not display.
 
-### AddToTab and AddTab
+#### AddToTab and AddTab
 
-AddToTab  adds the argument control to the argument tab. In this case we are adding our main control to the center tab control. We only need to call this method once - after that the tab is associated with the center tab and we can call AddTab .
+AddToTab  adds the argument control to the argument tab. In this case we are adding our main control to the center tab control. We only need to call this method once - after that the tab is associated with the center tab and we can call AddTab .
 
-## Testing the Plugin
+### Testing the Plugin
 
 Rebuilding the plugin (make sure to build solution or explicitly select Build on the plugin project) will result in the tab being shown when a file is selected.
 
-![](/media/2018-02-img_5a807055eaa60.png)
+![](../../../media/2018-02-img\_5a807055eaa60.png)

@@ -1,3 +1,3 @@
-## Introduction
+# Introduction
 
-The ProjectParentVelocityOnLastMoveCollisionTangent method can be used to create realistic collisions between a Circle and any other [Shape](/frb/docs/index.php?title=Shape "Shape"). The Circle's version of ProjectParentVelocityOnLastMoveCollisionTangent behaves the same as the [Polygon](/frb/docs/index.php?title=Polygon "Polygon")'s version. For more information, see the [Polygon's ProjectParentVelocityOnLastMoveCollisionTangent article](/frb/docs/index.php?title=FlatRedBall.Math.Geometry.Polygon.ProjectParentVelocityOnLastMoveCollisionTangent "FlatRedBall.Math.Geometry.Polygon.ProjectParentVelocityOnLastMoveCollisionTangent").
+The ProjectParentVelocityOnLastMoveCollisionTangent method can be used to create realistic collisions between a Circle and any other [Shape](../../../../../../frb/docs/index.php). The Circle's version of ProjectParentVelocityOnLastMoveCollisionTangent behaves the same as the [Polygon](../../../../../../frb/docs/index.php)'s version. For more information, see the [Polygon's ProjectParentVelocityOnLastMoveCollisionTangent article](../../../../../../frb/docs/index.php).

@@ -1,24 +1,26 @@
-## Introduction
+# button
 
-Button is a standard clickable object with states for enabled (default), hover, pressed, and disabled. [![](/media/2017-12-2017-12-13_07-05-39.gif)](/media/2017-12-2017-12-13_07-05-39.gif)
+### Introduction
 
-## Layout Requirements
+Button is a standard clickable object with states for enabled (default), hover, pressed, and disabled. [![](../../../../media/2017-12-2017-12-13\_07-05-39.gif)](../../../../media/2017-12-2017-12-13\_07-05-39.gif)
+
+### Layout Requirements
 
 The Button control has no requirements - an empty container is sufficient.
 
-![](/media/2017-12-img_5a485e78076db.png)
+![](../../../../media/2017-12-img\_5a485e78076db.png)
 
-## TextInstance
+### TextInstance
 
-The Button control can optionally include a Text instance named **TextInstance**. Setting the Button control's **Text** property changes the **TextInstance's** displayed string.
+The Button control can optionally include a Text instance named **TextInstance**. Setting the Button control's **Text** property changes the **TextInstance's** displayed string.
 
-![](/media/2017-12-img_5a485fa592a56.png)
+![](../../../../media/2017-12-img\_5a485fa592a56.png)
 
-## Code Example
+### Code Example
 
 Buttons provide events for Click and Push events. The following code shows how to handle these events on a button obtained from a gum runtime object named **ButtonInstance**:
 
-``` lang:c#
+```lang:c#
 void CustomInitialize()
 {
 
@@ -41,9 +43,9 @@ private void HandleButtonPush(object sender, EventArgs e)
 }
 ```
 
-## Code Example - Code-Only Creation
+### Code Example - Code-Only Creation
 
-``` lang:c#
+```lang:c#
 void CustomInitialize()
 {
     // This will construct a button using the default
@@ -67,4 +69,4 @@ private void HandleButtonPush(object sender, EventArgs e)
 }
 ```
 
- 
+&#x20;

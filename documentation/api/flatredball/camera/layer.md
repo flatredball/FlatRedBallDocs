@@ -1,65 +1,69 @@
-## Introduction
+# layer
 
-Each Camera has a list of Layers which can be used to draw objects which should only appear on one Camera. This is commonly used for HUD elements such as score and health. By default each Camera has one [Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer") (no code necessary to add this). Therefore, if using only one [Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer"), then no layer instantiation is necessary. To create additional layers, see the [Camera's AddLayer method](/frb/docs/index.php?title=FlatRedBall.Camera.AddLayer "FlatRedBall.Camera.AddLayer").
+### Introduction
 
-## Code Example
+Each Camera has a list of Layers which can be used to draw objects which should only appear on one Camera. This is commonly used for HUD elements such as score and health. By default each Camera has one [Layer](../../../../frb/docs/index.php) (no code necessary to add this). Therefore, if using only one [Layer](../../../../frb/docs/index.php), then no layer instantiation is necessary. To create additional layers, see the [Camera's AddLayer method](../../../../frb/docs/index.php).
 
-The following code creates two [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite"), each which represents a player. The code splits the view into two screens and adds a [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") object displaying which player's view is shown on the Camera layer. Notice that only one [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") appears in each camera although there are two [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") objects. The bool value can be changed to compare the behavior of Camera-layered [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text") and regular [Text](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text").
+### Code Example
 
-    string contentManagerName = "ContentManager";
-    // Create a 2nd camera:
-    SpriteManager.Cameras.Add(new Camera(contentManagerName));
+The following code creates two [Sprites](../../../../frb/docs/index.php), each which represents a player. The code splits the view into two screens and adds a [Text](../../../../frb/docs/index.php) object displaying which player's view is shown on the Camera layer. Notice that only one [Text](../../../../frb/docs/index.php) appears in each camera although there are two [Text](../../../../frb/docs/index.php) objects. The bool value can be changed to compare the behavior of Camera-layered [Text](../../../../frb/docs/index.php) and regular [Text](../../../../frb/docs/index.php).
 
-    // There are 2 cameras now.  One at index 0, one at index 1
-    // Make them split screen.
-    SpriteManager.Cameras[0].SetSplitScreenViewport(
-       Camera.SplitScreenViewport.LeftHalf);
-    SpriteManager.Cameras[1].SetSplitScreenViewport(
-       Camera.SplitScreenViewport.RightHalf);
+```
+string contentManagerName = "ContentManager";
+// Create a 2nd camera:
+SpriteManager.Cameras.Add(new Camera(contentManagerName));
 
-    // Create our "players"
-    Sprite player1 = SpriteManager.AddSprite("redball.bmp");
-    player1.X = -2;
+// There are 2 cameras now.  One at index 0, one at index 1
+// Make them split screen.
+SpriteManager.Cameras[0].SetSplitScreenViewport(
+   Camera.SplitScreenViewport.LeftHalf);
+SpriteManager.Cameras[1].SetSplitScreenViewport(
+   Camera.SplitScreenViewport.RightHalf);
 
-    // to distinguish player 1 from player 2
-    player1.ColorOperation = ColorOperation.Modulate;
-    player1.Green = 1;
-    player1.Red = 0;
+// Create our "players"
+Sprite player1 = SpriteManager.AddSprite("redball.bmp");
+player1.X = -2;
 
-    Sprite player2 = SpriteManager.AddSprite("redball.bmp");
-    player2.X = 2;
+// to distinguish player 1 from player 2
+player1.ColorOperation = ColorOperation.Modulate;
+player1.Green = 1;
+player1.Red = 0;
 
-    // Now create the labels.
-    // This is included so that the two behaviors can easily be compared.
-    bool onCameraLayers = true;
+Sprite player2 = SpriteManager.AddSprite("redball.bmp");
+player2.X = 2;
 
-    Text player1Text;
-    Text player2Text;
+// Now create the labels.
+// This is included so that the two behaviors can easily be compared.
+bool onCameraLayers = true;
 
-    if (onCameraLayers)
-    {
-        player1Text = TextManager.AddText("Player 1", 
-           SpriteManager.Cameras[0].Layer);
-        player2Text = TextManager.AddText("Player 2", 
-           SpriteManager.Cameras[1].Layer);
-    }
-    else
-    {
-        player1Text = TextManager.AddText("Player 1");
-        player2Text = TextManager.AddText("Player 2");
-    }
+Text player1Text;
+Text player2Text;
 
-    player1Text.AttachTo(SpriteManager.Cameras[0], true);
-    player1Text.RelativeY = 5;
+if (onCameraLayers)
+{
+    player1Text = TextManager.AddText("Player 1", 
+       SpriteManager.Cameras[0].Layer);
+    player2Text = TextManager.AddText("Player 2", 
+       SpriteManager.Cameras[1].Layer);
+}
+else
+{
+    player1Text = TextManager.AddText("Player 1");
+    player2Text = TextManager.AddText("Player 2");
+}
 
-    player2Text.AttachTo(SpriteManager.Cameras[1], true);
-    player2Text.RelativeY = 5;
+player1Text.AttachTo(SpriteManager.Cameras[0], true);
+player1Text.RelativeY = 5;
 
-    // Move the cameras so they can see the Player:
-    SpriteManager.Cameras[0].X = player1.X;
-    SpriteManager.Cameras[0].Y = player1.Y;
+player2Text.AttachTo(SpriteManager.Cameras[1], true);
+player2Text.RelativeY = 5;
 
-    SpriteManager.Cameras[1].X = player2.X;
-    SpriteManager.Cameras[1].Y = player2.Y;
+// Move the cameras so they can see the Player:
+SpriteManager.Cameras[0].X = player1.X;
+SpriteManager.Cameras[0].Y = player1.Y;
 
-![CameraLayers.png](/media/migrated_media-CameraLayers.png)
+SpriteManager.Cameras[1].X = player2.X;
+SpriteManager.Cameras[1].Y = player2.Y;
+```
+
+![CameraLayers.png](../../../../media/migrated\_media-CameraLayers.png)

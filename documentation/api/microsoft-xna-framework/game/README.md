@@ -1,79 +1,97 @@
-## Introduction
+# game
+
+### Introduction
 
 Base class for class used in default XNA Template and FlatRedBall XNA Template.
 
-## Accessing Game
+### Accessing Game
 
-The Game class holds many useful methods and properties which are often needed deep inside game logic code where the Game reference is not available. The [FlatRedBallServices class](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices "FlatRedBall.FlatRedBallServices") provides a reference to the game class:
+The Game class holds many useful methods and properties which are often needed deep inside game logic code where the Game reference is not available. The [FlatRedBallServices class](../../../../frb/docs/index.php) provides a reference to the game class:
 
-    FlatRedBallServices.Game
+```
+FlatRedBallServices.Game
+```
 
 For example, to view the mouse cursor (as shown below) outside of the game class, you would use the following code:
 
-    FlatRedBallServices.Game.IsMouseVisible = true;
+```
+FlatRedBallServices.Game.IsMouseVisible = true;
+```
 
 Since FlatRedBallServices is static this can be used anywhere in code.
 
-## Setting Resolution
+### Setting Resolution
 
-The resolution of FlatRedBall is controlled through the [GraphicsOptions object](/frb/docs/index.php?title=FlatRedBall.Graphics.GraphicsOptions "FlatRedBall.Graphics.GraphicsOptions"). For more informatin, see the [GraphicsOptions page.](/frb/docs/index.php?title=FlatRedBall.Graphics.GraphicsOptions "FlatRedBall.Graphics.GraphicsOptions")
+The resolution of FlatRedBall is controlled through the [GraphicsOptions object](../../../../frb/docs/index.php). For more informatin, see the [GraphicsOptions page.](../../../../frb/docs/index.php)
 
-## Resizing
+### Resizing
 
 FlatRedBall will attempt to react to the window changing as a result of the user grabbing and dragging the corners or edges. The following code can be called in the Game class to enable resizing:
 
-    this.Window.AllowUserResizing = true;
+```
+this.Window.AllowUserResizing = true;
+```
 
-## Setting Fullscreen
+### Setting Fullscreen
 
 FlatRedBall applications can run in full screen mode. The following code (which must be called after FlatRedBall is initialized) will set the FlatRedBall application to run at full screen.
 
-    int desiredWidth = 640;
-    int desiredHeight = 480;
-    FlatRedBallServices.GraphicsOptions.SetFullScreen(desiredWidth, desiredHeight);
+```
+int desiredWidth = 640;
+int desiredHeight = 480;
+FlatRedBallServices.GraphicsOptions.SetFullScreen(desiredWidth, desiredHeight);
+```
 
-### Fullscreen vs. Maximized
+#### Fullscreen vs. Maximized
 
 When FlatRedBall is in fullscreen mode, it "owns" the graphics device. This means that nothing else will be drawing underneath the Window. This can improve performance, but also makes alt-tabbing slower, and now other Windows can be drawn on top of the Window. For this code to work, you must include a reference to the System.Windows.Forms library in your project's References folder. You can sacrifice performance for this convenience by simply maximizing the game as follows: Add the following using statement:
 
-    using System.Windows.Forms;
+```
+using System.Windows.Forms;
+```
 
 Add the following to Initialize after initializing FlatRedBall:
 
-    Form ownerAsForm = FlatRedBallServices.Owner as Form;
-    ownerAsForm.FormBorderStyle = FormBorderStyle.None;
+```
+Form ownerAsForm = FlatRedBallServices.Owner as Form;
+ownerAsForm.FormBorderStyle = FormBorderStyle.None;
 
-    FlatRedBallServices.GraphicsOptions.SetResolution(
-        GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width,
-        GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height);
+FlatRedBallServices.GraphicsOptions.SetResolution(
+    GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width,
+    GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height);
+```
 
-## Exiting
+### Exiting
 
 The Exit method ends the application. This can be called to exit the game as follows: If inside the Game class:
 
-    this.Exit();
+```
+this.Exit();
+```
 
 If the Game class is not in scope:
 
-    FlatRedBallServices.Game.Exit();
+```
+FlatRedBallServices.Game.Exit();
+```
 
 This can be called at any point and your game will exit properly.
 
-## Disabling Fixed Time Step
+### Disabling Fixed Time Step
 
-For more information, see the [IsFixedTimeStep](/documentation/api/microsoft-xna-framework/game/isfixedtimestep.md) page.
+For more information, see the [IsFixedTimeStep](isfixedtimestep.md) page.
 
-## Additional Information
+### Additional Information
 
--   [Resizing the Game Window for Tools](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game:Resizing_the_Game_Window_for_Tools "Microsoft.Xna.Framework.Game:Resizing the Game Window for Tools")
--   [Information about the GameWindow](/frb/docs/index.php?title=Microsoft.Xna.Framework.GameWindow "Microsoft.Xna.Framework.GameWindow")
--   [Game Window as a Control](/frb/docs/index.php?title=FlatRedBall.FlatRedBallServices.Owner "FlatRedBall.FlatRedBallServices.Owner") - FlatRedBallService's Owner property returns the game window as a Control which provides more functionality.
+* [Resizing the Game Window for Tools](../../../../frb/docs/index.php)
+* [Information about the GameWindow](../../../../frb/docs/index.php)
+* [Game Window as a Control](../../../../frb/docs/index.php) - FlatRedBallService's Owner property returns the game window as a Control which provides more functionality.
 
-## Game Members
+### Game Members
 
--   [Microsoft.Xna.Framework.Game.IsActive](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsActive "Microsoft.Xna.Framework.Game.IsActive")
--   [Microsoft.Xna.Framework.Game.IsFixedTimeStep](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsFixedTimeStep "Microsoft.Xna.Framework.Game.IsFixedTimeStep")
--   [Microsoft.Xna.Framework.Game.IsMouseVisible](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.IsMouseVisible "Microsoft.Xna.Framework.Game.IsMouseVisible")
--   [Microsoft.Xna.Framework.Game.TargetElapsedTime](/frb/docs/index.php?title=Microsoft.Xna.Framework.Game.TargetElapsedTime "Microsoft.Xna.Framework.Game.TargetElapsedTime")
+* [Microsoft.Xna.Framework.Game.IsActive](../../../../frb/docs/index.php)
+* [Microsoft.Xna.Framework.Game.IsFixedTimeStep](../../../../frb/docs/index.php)
+* [Microsoft.Xna.Framework.Game.IsMouseVisible](../../../../frb/docs/index.php)
+* [Microsoft.Xna.Framework.Game.TargetElapsedTime](../../../../frb/docs/index.php)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

@@ -1,46 +1,54 @@
-## Tutorial
+# spriteframe
 
-See [SpriteFrame Tutorial](/frb/docs/index.php?title=SpriteFrame_Tutorial "SpriteFrame Tutorial")
+### Tutorial
 
-## Creating a SpriteFrame in code
+See [SpriteFrame Tutorial](../frb/docs/index.php)
+
+### Creating a SpriteFrame in code
 
 The following code shows you how to create a SpriteFrame purely in code:
 
-    Texture2D texture = FlatRedBallServices.Load<Texture2D>("redball.bmp", contentManager);
-    SpriteFrame spriteFrame = SpriteManager.AddSpriteFrame(texture, SpriteFrame.BorderSides.All);
+```
+Texture2D texture = FlatRedBallServices.Load<Texture2D>("redball.bmp", contentManager);
+SpriteFrame spriteFrame = SpriteManager.AddSpriteFrame(texture, SpriteFrame.BorderSides.All);
+```
 
-## SpriteFrames and Layers
+### SpriteFrames and Layers
 
-Just like [Sprites](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") and [Text objects](/frb/docs/index.php?title=FlatRedBall.Graphics.Text "FlatRedBall.Graphics.Text"), SpriteFrames can be added to [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer"). The following code creates two SpriteFrames. One is left at its default Z location of 0 while the other is placed further in the distance. Since the SpriteFrame which is further in the distance is placed on a [Layer](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer") it will still be drawn on top of the SpriteFrame that is closer to the [Camera](/frb/docs/index.php?title=FlatRedBall.Camera "FlatRedBall.Camera").
+Just like [Sprites](../frb/docs/index.php) and [Text objects](../frb/docs/index.php), SpriteFrames can be added to [Layers](../frb/docs/index.php). The following code creates two SpriteFrames. One is left at its default Z location of 0 while the other is placed further in the distance. Since the SpriteFrame which is further in the distance is placed on a [Layer](../frb/docs/index.php) it will still be drawn on top of the SpriteFrame that is closer to the [Camera](../frb/docs/index.php).
 
 Add the following using statements:
 
-    using FlatRedBall.ManagedSpriteGroups;
+```
+using FlatRedBall.ManagedSpriteGroups;
+```
 
 Add the following to Initialize after initializing FlatRedBall:
 
-    string contentManager = "someContentManager";
-     
-    SpriteFrame spriteFrame = SpriteManager.AddSpriteFrame(
-        FlatRedBallServices.Load<Texture2D>("redball.bmp", contentManager),
-        SpriteFrame.BorderSides.All);
+```
+string contentManager = "someContentManager";
+ 
+SpriteFrame spriteFrame = SpriteManager.AddSpriteFrame(
+    FlatRedBallServices.Load<Texture2D>("redball.bmp", contentManager),
+    SpriteFrame.BorderSides.All);
 
-    // create the 2nd SpriteFrame and place it on a Layer
-    Layer layer = SpriteManager.AddLayer();
+// create the 2nd SpriteFrame and place it on a Layer
+Layer layer = SpriteManager.AddLayer();
 
-    SpriteFrame layeredSpriteFrame = SpriteManager.AddSpriteFrame(
-        spriteFrame.Texture, // might as well use the same Texture2D
-        SpriteFrame.BorderSides.All);
+SpriteFrame layeredSpriteFrame = SpriteManager.AddSpriteFrame(
+    spriteFrame.Texture, // might as well use the same Texture2D
+    SpriteFrame.BorderSides.All);
 
-    // To make it visibly distinguishable
-    layeredSpriteFrame.ColorOperation = ColorOperation.Add;
-    layeredSpriteFrame.Blue = 1;
+// To make it visibly distinguishable
+layeredSpriteFrame.ColorOperation = ColorOperation.Add;
+layeredSpriteFrame.Blue = 1;
 
-    SpriteManager.AddToLayer(layeredSpriteFrame, layer);
+SpriteManager.AddToLayer(layeredSpriteFrame, layer);
 
-    // To prove it worked, push the SpriteFrame back
-    layeredSpriteFrame.Z = -25; // positive 25 in FRB MDX
+// To prove it worked, push the SpriteFrame back
+layeredSpriteFrame.Z = -25; // positive 25 in FRB MDX
+```
 
-![LayeredSpriteFrame.png](/media/migrated_media-LayeredSpriteFrame.png)
+![LayeredSpriteFrame.png](../media/migrated\_media-LayeredSpriteFrame.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](/frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../frb/forum.md) for a rapid response.

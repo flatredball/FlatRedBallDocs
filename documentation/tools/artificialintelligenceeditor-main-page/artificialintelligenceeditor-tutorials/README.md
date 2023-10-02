@@ -1,1 +1,3 @@
--   [Tutorials:Editing Node Networks](/frb/docs/index.php?title=ArtificialIntelligenceEditor:Tutorials:Editing_Node_Networks "ArtificialIntelligenceEditor:Tutorials:Editing Node Networks")
+# artificialintelligenceeditor-tutorials
+
+* [Tutorials:Editing Node Networks](../../../../frb/docs/index.php)

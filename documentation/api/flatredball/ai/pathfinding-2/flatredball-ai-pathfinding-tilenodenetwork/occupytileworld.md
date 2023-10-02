@@ -1,12 +1,14 @@
-## Introduction
+# occupytileworld
 
-OccupyTileWorld marks the tile at the given location (in world coordinates) as occupied. Occupied tiles can have an occupier which can be checked with the GetOccupier function. Note that occupied tiles will still be considered in pathfinding.
+### Introduction
 
-## Code Example
+OccupyTileWorld marks the tile at the given location (in world coordinates) as occupied. Occupied tiles can have an occupier which can be checked with the GetOccupier function. Note that occupied tiles will still be considered in pathfinding.
+
+### Code Example
 
 The following code shows how to check if a tile is occupied, and if so, to move a character to the given tile. To keep the code shorter, it only considers moving in one direction.
 
-``` lang:c#
+```lang:c#
 // Assumes Player is a valid entity
 if(InputManager.Keyboard.KeyDown(Keys.Right))
 {
@@ -31,4 +33,4 @@ if(InputManager.Keyboard.KeyDown(Keys.Right))
 }
 ```
 
- 
+&#x20;

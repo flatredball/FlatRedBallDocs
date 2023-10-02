@@ -1,8 +1,10 @@
-## Introduction
+# customizing-cursor-visuals
+
+### Introduction
 
 The Cursor can be customized in code to display a separate image.
 
-## Subsections
+### Subsections
 
--   [Windows Desktop](/documentation/tutorials/code-tutorials/customizing-cursor-visuals/windows-desktop.md)
--   [Windows RT](/frb/docs/index.php?title=Customizing_Cursor_Visuals:Windows_RT "Customizing Cursor Visuals:Windows RT")
+* [Windows Desktop](windows-desktop.md)
+* [Windows RT](../../../../frb/docs/index.php)

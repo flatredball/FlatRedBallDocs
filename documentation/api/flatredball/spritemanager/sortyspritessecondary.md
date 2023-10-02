@@ -1,11 +1,15 @@
-[\<- SpriteManager](/frb/docs/index.php?title=FlatRedBall.SpriteManager "FlatRedBall.SpriteManager")
+# sortyspritessecondary
 
-## Introduction
+[<- SpriteManager](../../../../frb/docs/index.php)
 
-The SortYSpritesSecondary performs a sort on all ordered [Sprites](/frb/docs/index.php?title=Sprite "Sprite") so that sprites with a larger Y are drawn first. The sorting based off of Y is only done on Sprites which have the same Z value. Therefore, Z takes first priority, then [Sprites](/frb/docs/index.php?title=Sprite "Sprite") with the same Z will be sorted so Sprites at the bottom of the screen (smaller Y values) will be drawn last (on top). If you desire to sort the Sprites by their Y to control drawing order, it is usually better to assign [FlatRedBall.SpriteManager.OrderedSortType](/frb/docs/index.php?title=FlatRedBall.SpriteManager.OrderedSortType "FlatRedBall.SpriteManager.OrderedSortType") so that the ordered sort type doesn't conflict with the manual Y-based sorting.
+### Introduction
 
-## Code Example - Manually Calling SortYSpritesSecondary
+The SortYSpritesSecondary performs a sort on all ordered [Sprites](../../../../frb/docs/index.php) so that sprites with a larger Y are drawn first. The sorting based off of Y is only done on Sprites which have the same Z value. Therefore, Z takes first priority, then [Sprites](../../../../frb/docs/index.php) with the same Z will be sorted so Sprites at the bottom of the screen (smaller Y values) will be drawn last (on top). If you desire to sort the Sprites by their Y to control drawing order, it is usually better to assign [FlatRedBall.SpriteManager.OrderedSortType](../../../../frb/docs/index.php) so that the ordered sort type doesn't conflict with the manual Y-based sorting.
 
-The SortYSpritesSecondary method can be called manually. Note that this is not needed if you have set the [OrderedSortType](/documentation/api/flatredball/spritemanager/orderedsorttype.md). To use SortYSpritesSecondary manually, call the method every frame **at the end of Update**. Add the following code at the end of your Update call (or your [Screen's](/frb/docs/index.php?title=Screen "Screen") Activity method):
+### Code Example - Manually Calling SortYSpritesSecondary
 
-    SpriteManager.SortYSpritesSecondary();
+The SortYSpritesSecondary method can be called manually. Note that this is not needed if you have set the [OrderedSortType](orderedsorttype.md). To use SortYSpritesSecondary manually, call the method every frame **at the end of Update**. Add the following code at the end of your Update call (or your [Screen's](../../../../frb/docs/index.php) Activity method):
+
+```
+SpriteManager.SortYSpritesSecondary();
+```

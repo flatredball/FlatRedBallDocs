@@ -1,1 +1,3 @@
--   [Emission Settings](/frb/docs/index.php?title=Emission_Settings&action=edit&redlink=1 "Emission Settings (page does not exist)")
+# particleeditor-reference
+
+* [Emission Settings](../../../frb/docs/index.php)

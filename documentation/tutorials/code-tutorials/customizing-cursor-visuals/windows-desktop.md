@@ -1,23 +1,25 @@
-## Introduction
+# windows-desktop
+
+### Introduction
 
 Windows Desktop games can display custom cursors. The default XNA window is a Windows Forms window, so customization of the cursor visuals is done the same as for any other Windows Forms app.
 
-## Example Code
+### Example Code
 
-The following code loads a .cur file and sets the window's default cursor:  
+The following code loads a .cur file and sets the window's default cursor: &#x20;
 
-``` lang:c#
+```lang:c#
 var cursor = new System.Windows.Forms.Cursor("Content/GlobalContent/Cursor.cur");
 System.Windows.Forms.Form asForm =
     (System.Windows.Forms.Form)System.Windows.Forms.Control.FromHandle(this.Window.Handle);
 asForm.Cursor = cursor;
 ```
 
-## Creating Cursors from .png files
+### Creating Cursors from .png files
 
 .cur files have a 32x32 pixel size limit. This can be bypassed by loading a .png into a Bitmap object, then using that object to construct a Cursor, as shown in the following code:
 
-``` lang:c#
+```lang:c#
 // code obtained from StackOverflow, as posted by user "Nick"
 // http://stackoverflow.com/questions/550918/change-cursor-hotspot-in-winforms-net
 public struct IconInfo
@@ -58,4 +60,4 @@ void Initialize()
 }
 ```
 
- 
+&#x20;

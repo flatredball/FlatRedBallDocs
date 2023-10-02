@@ -1,12 +1,14 @@
-## Introduction
+# get2dinput
 
-Get2DInput returns an I2DInput instance using the argument keys. This function can be used to abstract input, allowing the same input code to use keyboards and Xbox360GamePad instances. For more information see the [I2DInput](/documentation/api/flatredball/input/i2dinput.md) page.
+### Introduction
 
-## Code Example
+Get2DInput returns an I2DInput instance using the argument keys. This function can be used to abstract input, allowing the same input code to use keyboards and Xbox360GamePad instances. For more information see the [I2DInput](../i2dinput.md) page.
+
+### Code Example
 
 The following code can be used to create an I2DInput instance:
 
-``` lang:c#
+```lang:c#
 // at class scope:
 I2DInput input;
 
@@ -15,4 +17,4 @@ I2DInput input;
 input = InputManager.Keyboard.Get2DInput(Keys.Left, Keys.Right, Keys.Up, Keys.Down);
 ```
 
- 
+&#x20;

@@ -1,21 +1,23 @@
-## Introduction
+# 04-manual-particle-systems
+
+### Introduction
 
 Particles may require a large number of FlatRedBall Sprite instances. This guide shows how to create an incredibly efficient particle system using manual particle sprites.
 
-## What is a Manual Particle Sprite?
+### What is a Manual Particle Sprite?
 
 Manual sprites are sprites which the engine does not automatically update every frame. Manual sprites are an efficient alternative to automatically-updates sprites (the default) if:
 
--   The sprite does not change often (such as a static background object)
--   The sprite changes frequently, but only uses a subset of variables that change every frame
+* The sprite does not change often (such as a static background object)
+* The sprite changes frequently, but only uses a subset of variables that change every frame
 
 The term "particle sprite" implies it is used for particle effects, but technically a particle sprite is pooled - supporting rapid addition and removal without any memory allocation.
 
-## Code Example
+### Code Example
 
-The following code is written in a screen which has access to a Texture2D called Texture. Notice that it creates sprites very quickly (60 per second), and even at large numbers the game will run at a reasonable speed:  
+The following code is written in a screen which has access to a Texture2D called Texture. Notice that it creates sprites very quickly (60 per second), and even at large numbers the game will run at a reasonable speed: &#x20;
 
-``` lang:c#
+```lang:c#
 public partial class GameScreen
 {
     // Keep track of the sprites created, these need to be destroyed...somewhere
@@ -76,6 +78,6 @@ public partial class GameScreen
 }
 ```
 
- 
+&#x20;
 
-![](/media/2017-06-img_59495601556b0.png)
+![](../../../../../media/2017-06-img\_59495601556b0.png)

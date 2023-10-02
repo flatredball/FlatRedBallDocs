@@ -1,23 +1,25 @@
-## Introduction
+# isassetloadedbyname
 
-The IsAssetLoadedByName method returns whether a file of a given type is already loaded and stored in RAM by the given [ContentManager](/documentation/api/flatredball/content/contentmanager.md).
+### Introduction
 
-## Code Example
+The IsAssetLoadedByName method returns whether a file of a given type is already loaded and stored in RAM by the given [ContentManager](../contentmanager.md).
 
-The following code can be used to check if a file Background.png  is loaded as a [Texture2D](/documentation/api/microsoft-xna-framework/graphics/texture2d.md) in the current screen's content manager:
+### Code Example
 
-``` lang:c#
+The following code can be used to check if a file Background.png  is loaded as a [Texture2D](../../../microsoft-xna-framework/graphics/texture2d.md) in the current screen's content manager:
+
+```lang:c#
 var contentManagerName = this.ContentManagerName;
 var contentManager = FlatRedBallServices.GetContentManagerByName(contentManagerName);
 bool isAlreadyLoaded = contentManager.IsAssetLoadedByName<Texture2D>("content/background.png");
 ```
 
-## Name Details
+### Name Details
 
-IsAssetLoadedByDetail processes the assetName parameter before checking if it has been loaded. Specifically, the following modifications are made:
+IsAssetLoadedByDetail processes the assetName parameter before checking if it has been loaded. Specifically, the following modifications are made:
 
-1.  If the argument is relative (such as content/background.png ), then it is converted to an absolute path (such as c:/MyGame/bin/debug/content/background.png ).
-2.  The file is standardized using the [FileManager.Standardize](/documentation/api/flatredball/io/filemanager/standardize.md) method.
-3.  The content type is appended to the file name. This allows the same file to be loaded into multiple types.
+1. If the argument is relative (such as content/background.png ), then it is converted to an absolute path (such as c:/MyGame/bin/debug/content/background.png ).
+2. The file is standardized using the [FileManager.Standardize](../../io/filemanager/standardize.md) method.
+3. The content type is appended to the file name. This allows the same file to be loaded into multiple types.
 
-For example, loading "content\Background.png" may result in the string "c:/folder/content/background.pngTexture2D"  being stored in the ContentManager.
+For example, loading "content\Background.png" may result in the string "c:/folder/content/background.pngTexture2D"  being stored in the ContentManager.

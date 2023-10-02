@@ -1,65 +1,77 @@
-## Introduction
+# ison3d
 
-The IsOn3D method is a very powerful method that can be used to test if the cursor is over an object. IsOn3D is used by [Glue](/frb/docs/index.php?title=Glue "Glue") generated code to test if the Cursor is over an Entity if the Entity implements IClickable or IWindow. The IsOn3D method is very powerful and flexible. It considers:
+### Introduction
 
--   Object position
--   Camera position
--   Object orientation
--   Camera orientation
--   Camera perspective settings
--   Layers
+The IsOn3D method is a very powerful method that can be used to test if the cursor is over an object. IsOn3D is used by [Glue](../../../../../frb/docs/index.php) generated code to test if the Cursor is over an Entity if the Entity implements IClickable or IWindow. The IsOn3D method is very powerful and flexible. It considers:
+
+* Object position
+* Camera position
+* Object orientation
+* Camera orientation
+* Camera perspective settings
+* Layers
 
 It can be used to check if the cursor is over any of the following objects:
 
--   Sprite
--   Text
--   AxisAlignedCube
--   Sphere
--   Any other object implementing IPositionable, IScalable, IRotatable
+* Sprite
+* Text
+* AxisAlignedCube
+* Sphere
+* Any other object implementing IPositionable, IScalable, IRotatable
 
-## Code Example
+### Code Example
 
 The following code creates a group of Sprites which turn invisible when the cursor moves over them. Add the following at class scope:
 
-    PositionedObjectList<Sprite> mSprites = new PositionedObjectList<Sprite>();
+```
+PositionedObjectList<Sprite> mSprites = new PositionedObjectList<Sprite>();
+```
 
 Add the following in Initialize after initializing FlatRedBall:
 
-    for (int i = 0; i < 40; i++)
-    {
-        Sprite sprite = SpriteManager.AddSprite("redball.bmp");
-        SpriteManager.Camera.PositionRandomlyInView(sprite, 20, 60);
-        mSprites.Add(sprite);
-    }
+```
+for (int i = 0; i < 40; i++)
+{
+    Sprite sprite = SpriteManager.AddSprite("redball.bmp");
+    SpriteManager.Camera.PositionRandomlyInView(sprite, 20, 60);
+    mSprites.Add(sprite);
+}
+```
 
 Add the following to Update:
 
-    for (int i = 0; i < mSprites.Count; i++)
+```
+for (int i = 0; i < mSprites.Count; i++)
+{
+    Sprite sprite = mSprites[i];
+
+    if (sprite.Visible && GuiManager.Cursor.IsOn3D(sprite))
     {
-        Sprite sprite = mSprites[i];
-
-        if (sprite.Visible && GuiManager.Cursor.IsOn3D(sprite))
-        {
-            sprite.Visible = false;
-        }
+        sprite.Visible = false;
     }
+}
+```
 
-![CursorIsOn3D.png](/media/migrated_media-CursorIsOn3D.png)
+![CursorIsOn3D.png](../../../../../media/migrated\_media-CursorIsOn3D.png)
 
-## IsOn3D for clicking UI
+### IsOn3D for clicking UI
 
 The IsOn3D method can be used to detect if the Cursor has clicked on an object. For example, the following code shows how to check if the user has clicked on a Sprite:
 
-    // Assuming spriteInstance is a valid Sprite:
-    if(GuiManager.Cursor.PrimaryClick && GuiManager.Cursor.IsOn3D(spriteInstance))
-    {
-       // The user has clicked on the Sprite, do something
-    }
+```
+// Assuming spriteInstance is a valid Sprite:
+if(GuiManager.Cursor.PrimaryClick && GuiManager.Cursor.IsOn3D(spriteInstance))
+{
+   // The user has clicked on the Sprite, do something
+}
+```
 
-For more information on PrimaryClick, see the [PrimaryClick page](/frb/docs/index.php?title=FlatRedBall.Gui.Cursor.PrimaryClick "FlatRedBall.Gui.Cursor.PrimaryClick").
+For more information on PrimaryClick, see the [PrimaryClick page](../../../../../frb/docs/index.php).
 
-## IsOn3D and Layers
+### IsOn3D and Layers
 
-The IsOn3D method supports [Layers](/frb/docs/index.php?title=FlatRedBall.Graphics.Layer "FlatRedBall.Graphics.Layer") as well. For example, assuming mySprite is a valid Sprite and myLayer is valid Layer:
+The IsOn3D method supports [Layers](../../../../../frb/docs/index.php) as well. For example, assuming mySprite is a valid Sprite and myLayer is valid Layer:
 
-    bool isCursorOn = GuiManager.Cursor.IsOn3D(mySprite, myLayer);
+```
+bool isCursorOn = GuiManager.Cursor.IsOn3D(mySprite, myLayer);
+```

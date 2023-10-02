@@ -1,12 +1,14 @@
-## Introduction
+# painttiletexturecoordinates
+
+### Introduction
 
 PaintTileTextureCoordinates can be used to change the texture coordinates on a tile by its ordered index. This method can specify all four coordiantes (left, top, right, bottom) or just the top and left. If only the top and left are specified, the bottom and right are automatically determined based on the tileset's tile dimensions.
 
-## Code Example
+### Code Example
 
-Note that this requires the ordered tile index. This sample assumes that tiles have been added manually, and then painted later.
+Note that this requires the ordered tile index. This sample assumes that tiles have been added manually, and then painted later.
 
-``` lang:c#
+```lang:c#
 // assuming map is a valid MapDrawableBatch:
 
 var position = new Vector3(0,0,0);
@@ -24,4 +26,4 @@ const float textureHeight = 1024;
 map.PaintTileTextureCoordinates(index, 32/textureWidth, 32/textureHeight);
 ```
 
- 
+&#x20;

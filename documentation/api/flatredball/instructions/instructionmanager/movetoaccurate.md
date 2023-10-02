@@ -1,23 +1,29 @@
-## Introduction
+# movetoaccurate
 
-The MoveToAccurate creates a set of [Instructions](/frb/docs/index.php?title=FlatRedBall.Instructions.Instruction "FlatRedBall.Instructions.Instruction") for moving a [PositionedObject](/frb/docs/index.php?title=FlatRedBall.PositionedObject "FlatRedBall.PositionedObject") to a given point in a set amount of time.
+### Introduction
 
-## Code Example
+The MoveToAccurate creates a set of [Instructions](../../../../../frb/docs/index.php) for moving a [PositionedObject](../../../../../frb/docs/index.php) to a given point in a set amount of time.
 
-The following code moves a [Sprite](/frb/docs/index.php?title=FlatRedBall.Sprite "FlatRedBall.Sprite") to the position where the user clicks the [Mouse](/frb/docs/index.php?title=FlatRedBall.Input.Mouse "FlatRedBall.Input.Mouse"). Note that this could be implemented with any PositionedObject, including any Glue entity. Add the following using statements to your Glue screen:
+### Code Example
 
-    using FlatRedBall;
-    using FlatRedBall.Input;
-    using FlatRedBall.Instructions;
+The following code moves a [Sprite](../../../../../frb/docs/index.php) to the position where the user clicks the [Mouse](../../../../../frb/docs/index.php). Note that this could be implemented with any PositionedObject, including any Glue entity. Add the following using statements to your Glue screen:
+
+```
+using FlatRedBall;
+using FlatRedBall.Input;
+using FlatRedBall.Instructions;
+```
 
 Add the following to your screen's CustomInitialize to show the mouse:
 
-     // to show the cursor
-     IsMouseVisible = true;
+```
+ // to show the cursor
+ IsMouseVisible = true;
+```
 
 Add the following to your Screen's CustomActivity, assuming SpriteInstance is a Sprite in your Screen:
 
-``` lang:c#
+```lang:c#
  void CustomActivity()
  {
      // The number of seconds to take to move to where the user

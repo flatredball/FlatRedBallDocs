@@ -1,7 +1,9 @@
-## Introduction
+# flatredball-glue-projectmanager
 
-The ProjectManager class provides information about the currently-loaded projects. The ProjectManager provides access to information about the current [GlueProjectSave](/frb/docs/index.php?title=FlatRedBall.Glue.SaveClasses.GlueProjectSave&action=edit&redlink=1 "FlatRedBall.Glue.SaveClasses.GlueProjectSave (page does not exist)") as well as the current Visual Studio Projects.
+### Introduction
 
-## ProjectManager Members
+The ProjectManager class provides information about the currently-loaded projects. The ProjectManager provides access to information about the current [GlueProjectSave](../../../frb/docs/index.php) as well as the current Visual Studio Projects.
 
--   [FlatRedBall.Glue.ProjectManager.SyncedProjects](/frb/docs/index.php?title=FlatRedBall.Glue.ProjectManager.SyncedProjects "FlatRedBall.Glue.ProjectManager.SyncedProjects")
+### ProjectManager Members
+
+* [FlatRedBall.Glue.ProjectManager.SyncedProjects](../../../frb/docs/index.php)

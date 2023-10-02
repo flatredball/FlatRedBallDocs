@@ -1,7 +1,7 @@
-## Introduction
+# Introduction
 
 The Activity function in the ScreenManager is responsible for:
 
--   Calling Activity on the current [Screen](/frb/docs/index.php?title=FlatRedBall.Screens.Screen "FlatRedBall.Screens.Screen")
--   Performing async screen loading activity
--   Transitioning between Screens if the current Screen's [IsActivityFinished](/frb/docs/index.php?title=FlatRedBall.Screens.Screen.IsActivityFinished "FlatRedBall.Screens.Screen.IsActivityFinished") is true.
+* Calling Activity on the current [Screen](../../../../../frb/docs/index.php)
+* Performing async screen loading activity
+* Transitioning between Screens if the current Screen's [IsActivityFinished](../../../../../frb/docs/index.php) is true.

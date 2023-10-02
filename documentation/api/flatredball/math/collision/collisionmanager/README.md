@@ -1,37 +1,39 @@
-## Introduction
+# collisionmanager
 
-The CollisionManager class provides methods for handling collision (the touching of game objects) in FlatRedBall games. The CollisionManager has built-in methods for handling collision between collidable entities (entities which implement the ICollidable interface). Use of the CollisionManager is not necessary, but it can reduce and standardize code for handling collisions. The CollisionManager provides a rich set of functionality for performing collision in code, but usually games do not need to write code against the CollisionManager. Instead, the FlatRedBall Editor provides support for creating CollisionRelationships without any code. For more information, see the [FlatRedBall Editor CollisionRelationship page](/documentation/tools/glue-reference/objects/collisionrelationship.md).
+### Introduction
 
-## Collision Relationships
+The CollisionManager class provides methods for handling collision (the touching of game objects) in FlatRedBall games. The CollisionManager has built-in methods for handling collision between collidable entities (entities which implement the ICollidable interface). Use of the CollisionManager is not necessary, but it can reduce and standardize code for handling collisions. The CollisionManager provides a rich set of functionality for performing collision in code, but usually games do not need to write code against the CollisionManager. Instead, the FlatRedBall Editor provides support for creating CollisionRelationships without any code. For more information, see the [FlatRedBall Editor CollisionRelationship page](../../../../../tools/glue-reference/objects/collisionrelationship.md).
 
-The CollisionManager is built around the concept of *collision relationships*. A collision relationship is created by specifying the two objects (or groups of objects) which are used in the relationship. The following list shows common relationships in games:
+### Collision Relationships
 
--   Player vs. Enemy Bullet List
--   Player Bullet List vs. Environment
--   Race Car List vs. Boost Entity List
--   Explosion List vs. Destructible Block List
+The CollisionManager is built around the concept of _collision relationships_. A collision relationship is created by specifying the two objects (or groups of objects) which are used in the relationship. The following list shows common relationships in games:
+
+* Player vs. Enemy Bullet List
+* Player Bullet List vs. Environment
+* Race Car List vs. Boost Entity List
+* Explosion List vs. Destructible Block List
 
 The relationship detects collision and provides automatic and custom handling of the collision. Automatic handling includes separating objects (preventing overlapping) and adjusting the velocity of colliding objects (bouncing the objects). Custom handling is done by assigning a collision event.
 
-## Creating a Collidable Entity
+### Creating a Collidable Entity
 
 The CollisionManager is built to work with collidable entities. To create a collidable entity in Glue:
 
-1.  Open Glue
-2.  Right-click on the Entities folder
-3.  Click **Add Entity**
-4.  Check one of the objects under the **Collisions** category, such as **Circle**
-5.  Notice that the ICollidable checkbox is automatically checked
+1. Open Glue
+2. Right-click on the Entities folder
+3. Click **Add Entity**
+4. Check one of the objects under the **Collisions** category, such as **Circle**
+5. Notice that the ICollidable checkbox is automatically checked
 
-![](/media/2018-01-img_5a59900256da4.png)
+![](../../../../../../media/2018-01-img\_5a59900256da4.png)
 
 The entity will now implement the ICollidable interface, which means it can be used as an instance or in a list with the CollisionManager.
 
-## Example - Entity vs. Entity Collision
+### Example - Entity vs. Entity Collision
 
-A relationship may define that two individual entities should perform collision logic against one another. The following assumes that PlayerInstance  and EnemyInstance  are entities added to the screen in Glue:
+A relationship may define that two individual entities should perform collision logic against one another. The following assumes that PlayerInstance  and EnemyInstance  are entities added to the screen in Glue:
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var relationship = CollisionManager.Self.CreateRelationship(
@@ -48,11 +50,11 @@ private void HandlePlayerVsEnemyCollision(Player player, Enemy enemy)
 
 Notice that the HandlePlayerVsEnemyCollision is used to perform custom logic whenever a collision occurs.
 
-## Example - Entity List Relationships
+### Example - Entity List Relationships
 
 Entities which are dynamically created or destroyed during the life of a screen (such as bullets fired by a turret) are usually added to lists. The following code can be used to detect collision between a single Player instance and a list of Bullets:
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var relationship = CollisionManager.Self.CreateRelationship(
@@ -67,9 +69,9 @@ private void HandlePlayerVsBulletCollision(Player player, Bullet bullet)
 }
 ```
 
-Notice that the CollisionOccurred  delegate passes a single bullet even though the type passed to CreateRelationship  is a list. This allows the code to handle collision on a case-by-case basis. Similarly, relationships can be created between two lists. The following example shows how to respond to collision between a list of Enemies and a list of Bullets:
+Notice that the CollisionOccurred  delegate passes a single bullet even though the type passed to CreateRelationship  is a list. This allows the code to handle collision on a case-by-case basis. Similarly, relationships can be created between two lists. The following example shows how to respond to collision between a list of Enemies and a list of Bullets:
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var relationship = CollisionManager.Self.CreateRelationship(
@@ -84,11 +86,11 @@ private void HandleEnemyVsBulletCollision(Enemy enemy, Bullet bullet)
 }
 ```
 
-## Example - Entity/Entity List vs. TileShapeCollection
+### Example - Entity/Entity List vs. TileShapeCollection
 
 Entities can be collied against TileShapeCollections through the CollisionManager. TileShapeCollections are an efficient and convenient way to store a group of rectangles for collision.
 
-``` lang:c#
+```lang:c#
 // Since this is an extension method, you must have the following
 // using statement in your class:
 using FlatRedBall.Math.Collision;
@@ -104,11 +106,11 @@ private void CreateCollisionRelationships()
 
 See the Move Collision section below for more information.
 
-## Example - Move Collision
+### Example - Move Collision
 
-Collision relationships can specify automatic behavior in addition to assigning the CollisionOccurred delegate. This can be achieved by calling various *Set* methods. For example, the following results in colliding objects being separated. The SetMoveCollision  method takes the relative masses of each object. In this example the colliding player and blocks have equal mass:
+Collision relationships can specify automatic behavior in addition to assigning the CollisionOccurred delegate. This can be achieved by calling various _Set_ methods. For example, the following results in colliding objects being separated. The SetMoveCollision  method takes the relative masses of each object. In this example the colliding player and blocks have equal mass:
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var relationship = CollisionManager.Self.CreateRelationship(
@@ -122,14 +124,14 @@ private void CreateCollisionRelationships()
 
 The most common ways to call is either with the values of (0,1) and (1,1)
 
--   (0,1) - The first object (typically an entity) will have a mass of 0, meaning it will not be able to move the second object.
--   (1,1) - Both objects have equal masses, and will push each other
+* (0,1) - The first object (typically an entity) will have a mass of 0, meaning it will not be able to move the second object.
+* (1,1) - Both objects have equal masses, and will push each other
 
-## Example - Bounce Collision with Per-Entity Mass
+### Example - Bounce Collision with Per-Entity Mass
 
 Both Move and Bounce collisions can be performed automatically by the relationship by calling either SetMoveCollision or SetBounceCollision. While convenient, these methods require the same mass to be used for all entities in a relationship. In some cases entities may need to have a custom mass per entity. In this example a list of asteroids collides with itself (every asteroid tests for collision against every other asteroid). Each Asteroid has a different Mass value so we can't set one mass for the entire relationship. Instead, the collision is detected and an event is raised, then the bounce collision occurs inside the collision event handler.
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var relationship = CollisionManager.Self.CreateRelationship(
@@ -146,16 +148,16 @@ private void HandleEnemyVsBulletCollision(Asteroid first, Asteroid second)
 
 Note that the example above shows how to do self-collision, but the same approach of handling the move or bounce collision in an event could be performed between two different separate lists.
 
-## Example - Partitioning
+### Example - Partitioning
 
 The CollisionManager can perform partitioning to improve collision performance. In most cases partitioning can make even large numbers of objects (tens of thousands) have minimal or no impact on your game's frame rate. Partitioning requires two pieces of information:
 
-1.  The axis to partition (X or Y). This should be the axis along which objects are most distributed. For example, a platformer with horizontal levels should partition on the X axis.
-2.  The width or height of each object involved in partitioning.
+1. The axis to partition (X or Y). This should be the axis along which objects are most distributed. For example, a platformer with horizontal levels should partition on the X axis.
+2. The width or height of each object involved in partitioning.
 
-Both objects in a relationship must be partitioned on the same axis before a relationship will be able to use the partitioning to reduce collision calls. Partitioned objects must be sorted for partitioning to function properly. If the order of objects in the list can change, the CollisionManager can automatically sort the lists. If the order does not change once the list has been created, or if the order is explicitly maintained in custom code, then the sortEveryFrame  parameter can be false. The following creates a partitioned collision relationship between a list of Enemies and a list of Bullets.
+Both objects in a relationship must be partitioned on the same axis before a relationship will be able to use the partitioning to reduce collision calls. Partitioned objects must be sorted for partitioning to function properly. If the order of objects in the list can change, the CollisionManager can automatically sort the lists. If the order does not change once the list has been created, or if the order is explicitly maintained in custom code, then the sortEveryFrame  parameter can be false. The following creates a partitioned collision relationship between a list of Enemies and a list of Bullets.
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var maxEnemyWidth = 48;
@@ -177,7 +179,7 @@ private void HandeEnemyVsBulletCollision(Enemy enemy player, Bullet bullet)
 
 Partitioning must set on both objects in a relationship even if one of the objects is a single instance - in that case the Partition call is needed to get the width or height of the object's collision.
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var maxPlayerWidth = 30;
@@ -199,7 +201,7 @@ private void HandeEnemyVsBulletCollision(Enemy enemy player, Bullet bullet)
 
 The Partition method only needs to be called once, even if an object is used in multiple relationships.
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var maxPlayerWidth = 30;
@@ -226,11 +228,11 @@ private void CreateCollisionRelationships()
 }
 ```
 
-## Counting Collisions
+### Counting Collisions
 
-In general reducing collision count improves the performance of your game. To measure whether your efforts to reduce collision are working (such as by implementing partitioning), the CollisionManager returns the number of *deep collisions* performed every frame. The term deep collision refers to collision methods which rely on the actual shapes of a collidable object, as opposed to partitioned checks which can eliminate large numbers of objects very quickly. The following code shows how to count and display the number of collisions performed every frame:
+In general reducing collision count improves the performance of your game. To measure whether your efforts to reduce collision are working (such as by implementing partitioning), the CollisionManager returns the number of _deep collisions_ performed every frame. The term deep collision refers to collision methods which rely on the actual shapes of a collidable object, as opposed to partitioned checks which can eliminate large numbers of objects very quickly. The following code shows how to count and display the number of collisions performed every frame:
 
-``` lang:c#
+```lang:c#
 void CustomActivity(bool firstTimeCalled)
 {
     FlatRedBall.Debugging.Debugger.Write(
@@ -238,11 +240,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-## Example - SubCollision
+### Example - SubCollision
 
-Entities may include multiple collision objects used for different responses. For example, a SpaceShip entity may have a small collision shape for its body (for taking damage) and a larger collision shape for a radar ( to detect enemies and display them on a radar HUD). Collision relationships will use the entire entity by default, but can be configured to only use a single shape by calling SetFirstSubCollision  or SetSecondSubCollision  for the first or second object in the relationship, respectively. The following code shows how to handle SpaceShip body vs. a list of Bullets:
+Entities may include multiple collision objects used for different responses. For example, a SpaceShip entity may have a small collision shape for its body (for taking damage) and a larger collision shape for a radar ( to detect enemies and display them on a radar HUD). Collision relationships will use the entire entity by default, but can be configured to only use a single shape by calling SetFirstSubCollision  or SetSecondSubCollision  for the first or second object in the relationship, respectively. The following code shows how to handle SpaceShip body vs. a list of Bullets:
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var relationship = CollisionManager.Self.CreateRelationship(SpaceShipInstance, BulletList);
@@ -251,9 +253,9 @@ private void CreateCollisionRelationships()
 }
 ```
 
-SetFirstSubCollision  refers to the first argument in the CreateRelationship  call, which is SpaceShipInstance  in the example above. SetSecondSubCollision  refers to the second argument in the CreateRelationship  call, which is BulletList  in the example above. Note that if the argument to CreateRelationship  is a list, then the SetFirstSubCollision  and SetSecondSubCollision  will work with a single instance rather than a list. For example, the code above could call SetSecondSubCollision  for the BulletList , but the argument would take a single bullet as shown in the following snippet:
+SetFirstSubCollision  refers to the first argument in the CreateRelationship  call, which is SpaceShipInstance  in the example above. SetSecondSubCollision  refers to the second argument in the CreateRelationship  call, which is BulletList  in the example above. Note that if the argument to CreateRelationship  is a list, then the SetFirstSubCollision  and SetSecondSubCollision  will work with a single instance rather than a list. For example, the code above could call SetSecondSubCollision  for the BulletList , but the argument would take a single bullet as shown in the following snippet:
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     var relationship = CollisionManager.Self.CreateRelationship(SpaceShipInstance, BulletList);
@@ -263,11 +265,11 @@ private void CreateCollisionRelationships()
 }
 ```
 
-### SubCollision and Partitioning
+#### SubCollision and Partitioning
 
-When using a sub collision, the partition values may be different to account for the different collision object size. For example, the body of a space ship may be much smaller than the radar. Relationships can override the width or height values used for partitioning. The following code shows how to provide different collision width values (for X axis partitioning) for radar and body collision relationships:
+When using a sub collision, the partition values may be different to account for the different collision object size. For example, the body of a space ship may be much smaller than the radar. Relationships can override the width or height values used for partitioning. The following code shows how to provide different collision width values (for X axis partitioning) for radar and body collision relationships:
 
-``` lang:c#
+```lang:c#
 private void CreateCollisionRelationships()
 {
     // The Partition calls will define the default width values for the ship, bullet, and enemy entities,
@@ -298,27 +300,29 @@ private void CreateCollisionRelationships()
 }
 ```
 
-## Example: Optional Collision Physics
+### Example: Optional Collision Physics
 
 At times collision physics needs to be applied optionally. For example, a Player may be able to transform into a ghost. Normally the player may perform solid collision (Move or Bounce) against enemies, but while in the ghost phase the player can move through enemies. This can be done by telling the collision relationship to optionally apply collision as shown in the following code:
 
-    // Assuming PlayerVsEnemy is a valid collision relationship
-    PlayerVsEnemy.ArePhysicsAppliedAutomatically = false;
-    PlayerVsEnemy.CollisionOccurred += PlayerVsEnemyCollided;
-    // handle the event:
-    void PlayerVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
+```
+// Assuming PlayerVsEnemy is a valid collision relationship
+PlayerVsEnemy.ArePhysicsAppliedAutomatically = false;
+PlayerVsEnemy.CollisionOccurred += PlayerVsEnemyCollided;
+// handle the event:
+void PlayerVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
+{
+    if(player.IsGhost == false)
     {
-        if(player.IsGhost == false)
-        {
-            PlayerVsEnemy.DoCollisionPhysics(player, enemy);
-        }
+        PlayerVsEnemy.DoCollisionPhysics(player, enemy);
     }
+}
+```
 
-## Manual Collision with DoCollisions
+### Manual Collision with DoCollisions
 
 The default behavior for relationships is to perform collisions every-frame. The CollisionRelationship class provides additional control for when collisions are called. The DoCollisions method can be called in custom code to perform collisions as desired. This can be useful if collisions need to happen after certain logic has executed in a frame, or only in certain situations. The following code shows how to create a CollisionRelationship which is only collided when the user holds the Space key:
 
-``` lang:c#
+```lang:c#
 CollisionRelationship relationship;
 
 private void CreateCollisionRelationships()
@@ -339,4 +343,4 @@ void CustomActivity()
 }
 ```
 
- 
+&#x20;

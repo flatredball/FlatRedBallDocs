@@ -1,25 +1,27 @@
-## For Dark Backgrounds
+# flatredball-logo
 
-128 pixels [![logo-reverse-128](/media/2016-01-logo-reverse-128.png)](/media/2016-01-logo-reverse-128.png)   256 pixels [![logo-reverse-256](/media/2016-01-logo-reverse-256.png)](/media/2016-01-logo-reverse-256.png)   512 pixels [![logo-reverse-512](/media/2016-01-logo-reverse-512.png)](/media/2016-01-logo-reverse-512.png)   1024 pixels [![logo-reverse-1024](/media/2016-01-logo-reverse-1024-1024x175.png)](/media/2016-01-logo-reverse-1024.png)  
+### For Dark Backgrounds
 
-## For Light Backgrounds
+128 pixels [![logo-reverse-128](../media/2016-01-logo-reverse-128.png)](../media/2016-01-logo-reverse-128.png)   256 pixels [![logo-reverse-256](../media/2016-01-logo-reverse-256.png)](../media/2016-01-logo-reverse-256.png)   512 pixels [![logo-reverse-512](../media/2016-01-logo-reverse-512.png)](../media/2016-01-logo-reverse-512.png)   1024 pixels [![logo-reverse-1024](../media/2016-01-logo-reverse-1024-1024x175.png)](../media/2016-01-logo-reverse-1024.png) &#x20;
 
-### 128 pixels
+### For Light Backgrounds
 
-[![logo-128](/media/2016-01-logo-128.png)](/media/2016-01-logo-128.png)  
+#### 128 pixels
 
-### 256 pixels
+[![logo-128](../media/2016-01-logo-128.png)](../media/2016-01-logo-128.png) &#x20;
 
-[![logo-256](/media/2016-01-logo-256.png)](/media/2016-01-logo-256.png)  
+#### 256 pixels
 
-### 512 pixels
+[![logo-256](../media/2016-01-logo-256.png)](../media/2016-01-logo-256.png) &#x20;
 
-[![logo-512](/media/2016-01-logo-512.png)](/media/2016-01-logo-512.png)  
+#### 512 pixels
 
-## 1024 pixels
+[![logo-512](../media/2016-01-logo-512.png)](../media/2016-01-logo-512.png) &#x20;
 
-[![logo-1024](/media/2016-01-logo-1024-1024x175.png)](/media/2016-01-logo-1024.png)  
+### 1024 pixels
 
-## Icon
+[![logo-1024](../media/2016-01-logo-1024-1024x175.png)](../media/2016-01-logo-1024.png) &#x20;
 
-[![Icon](/media/2016-01-Icon.png)](/media/2016-01-Icon.png)      
+### Icon
+
+[![Icon](../media/2016-01-Icon.png)](../media/2016-01-Icon.png)     &#x20;
