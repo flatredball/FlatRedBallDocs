@@ -46,7 +46,7 @@ The PlayerBallList object will contain all of the PlayerBalls we plan on adding 
 
 Once you have at least one Screen in your game (GameScreen), you can add Entity instances to that Screen. Entities can be added through the editor or through game code. The editor provides a number of ways to add an entity:
 
--   Drag+drop an entity on a screen to add an instance... [![](/wp-content/uploads/2016/01/03_08-28-03.gif)](/wp-content/uploads/2016/01/03_08-28-03.gif)
+-   Drag+drop an entity on a screen to add an instance... [![](/media/2016-01-03_08-28-03.gif)](/media/2016-01-03_08-28-03.gif)
 
 -   ... or add an instance to the GameScreen by selecting **PlayerBall** and clicking the **Add PlayerBall Instance to GameScreen** quick action. Note that this option will only exist if you have a Screen called GameScreen...
 

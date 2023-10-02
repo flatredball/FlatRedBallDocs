@@ -2,7 +2,7 @@ The latest version of the Tiled plugin adds per-layer Alpha and Color (Red, Gree
 
 ## Alpha From TMX
 
-The Tiled program supports alpha values on each layer. Setting the alpha on a layer will automatically apply that alpha when the game runs. [![](/wp-content/uploads/2018/09/2018-09-30_13-28-22.gif)](/wp-content/uploads/2018/09/2018-09-30_13-28-22.gif)
+The Tiled program supports alpha values on each layer. Setting the alpha on a layer will automatically apply that alpha when the game runs. [![](/media/2018-09-2018-09-30_13-28-22.gif)](/media/2018-09-2018-09-30_13-28-22.gif)
 
 ## Changing Color/Alpha in Code
 

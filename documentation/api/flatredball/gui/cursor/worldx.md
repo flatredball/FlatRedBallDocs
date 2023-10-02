@@ -34,4 +34,4 @@ The following code shows how to move an entity instance towards the cursor.
         PlayerInstance.Velocity = Vector3.Zero;
     }
 
-  [![](/wp-content/uploads/2021/07/19_08-21-23.gif)](/wp-content/uploads/2021/07/19_08-21-23.gif)    
+  [![](/media/2021-07-19_08-21-23.gif)](/media/2021-07-19_08-21-23.gif)    

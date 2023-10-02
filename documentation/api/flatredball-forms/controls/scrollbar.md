@@ -1,6 +1,6 @@
 ## Introduction
 
-Scrollbar is a common control used when scrolling is needed to display information. ScrollBars are included in other standard FlatRedBall.Forms controls such as ListBox and ComboBox, but they can be used in custom controls as well. [![](/wp-content/uploads/2017/12/2017-12-24_07-28-34.gif)](/wp-content/uploads/2017/12/2017-12-24_07-28-34.gif)
+Scrollbar is a common control used when scrolling is needed to display information. ScrollBars are included in other standard FlatRedBall.Forms controls such as ListBox and ComboBox, but they can be used in custom controls as well. [![](/media/2017-12-2017-12-24_07-28-34.gif)](/media/2017-12-2017-12-24_07-28-34.gif)
 
 ## Layout Requirements
 
@@ -73,6 +73,6 @@ scrollBar.SmallChange = 10;
 scrollBar.LargeChange = 30;
 ```
 
-This code produces the behavior shown in the following animation: [![](/wp-content/uploads/2017/12/2017-12-24_11-09-14.gif)](/wp-content/uploads/2017/12/2017-12-24_11-09-14.gif)
+This code produces the behavior shown in the following animation: [![](/media/2017-12-2017-12-24_11-09-14.gif)](/media/2017-12-2017-12-24_11-09-14.gif)
 
 ## 

@@ -47,7 +47,7 @@ All entities can have their Velocity value assigned. This example shows how to c
         }
     }
 
-[![](/wp-content/uploads/2016/01/16_08-10-08.gif)](/wp-content/uploads/2016/01/16_08-10-08.gif) The code could also be modified to shoot the bullets at angles. For example, the following code shows how to shoot 5 bullets in a spread angle:
+[![](/media/2016-01-16_08-10-08.gif)](/media/2016-01-16_08-10-08.gif) The code could also be modified to shoot the bullets at angles. For example, the following code shows how to shoot 5 bullets in a spread angle:
 
     using Microsoft.Xna.Framework;
     ...
@@ -73,7 +73,7 @@ All entities can have their Velocity value assigned. This example shows how to c
         }
     }
 
-##  [![](/wp-content/uploads/2016/01/16_08-14-14.gif)](/wp-content/uploads/2016/01/16_08-14-14.gif)
+##  [![](/media/2016-01-16_08-14-14.gif)](/media/2016-01-16_08-14-14.gif)
 
 ## The persistence of Velocity
 

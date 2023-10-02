@@ -37,7 +37,7 @@ First, we'll create a MainMenu FlatRedBall screen. To do this:
 5.  Enter the name **Main Menu**
 6.  Click **OK**
 
-You should now have a screen in FlatRedBall called **MainMenu** and a Gum screen called MainMenuGum (assuming you left the **Automatically Create Gum Screens for Glue Screens** option checked). [![](/wp-content/uploads/2016/01/2021_March_07_074750.gif)](/wp-content/uploads/2016/01/2021_March_07_074750.gif) Next, let's add some objects to the Gum screen:
+You should now have a screen in FlatRedBall called **MainMenu** and a Gum screen called MainMenuGum (assuming you left the **Automatically Create Gum Screens for Glue Screens** option checked). [![](/media/2016-01-2021_March_07_074750.gif)](/media/2016-01-2021_March_07_074750.gif) Next, let's add some objects to the Gum screen:
 
 1.  Double-click the **MainMenuGum** file to open it in Gum (assuming you have set up file associations)
 2.  Expand the **Standard** folder
@@ -45,7 +45,7 @@ You should now have a screen in FlatRedBall called **MainMenu** and a Gum screen
 4.  Move the colored rectangle away from the top-left of the screen
 5.  Drag+drop a **Text** from the **Standards** into **MainMenuGum**
 
-You should now have a **Text** and a **ColoredRectangle** in your Screen in Gum. [![](/wp-content/uploads/2016/01/2021_March_07_072857.gif)](/wp-content/uploads/2016/01/2021_March_07_072857.gif) Gum auto-saves your changes (just like the FlatRedBall Editor) so once you've made these changes, you do not need to manually save the Screen. Since the Gum screen was automatically added, you can run your game and you will see the Gum screen showing up in your FlatRedBall game automatically - no code necessary. ![GumInFrb1.PNG](/media/migrated_media-GumInFrb1.PNG) At this point, you have the basics working for laying out Screens. In the next tutorial, we'll look at how to interact with Gum objects in code.
+You should now have a **Text** and a **ColoredRectangle** in your Screen in Gum. [![](/media/2016-01-2021_March_07_072857.gif)](/media/2016-01-2021_March_07_072857.gif) Gum auto-saves your changes (just like the FlatRedBall Editor) so once you've made these changes, you do not need to manually save the Screen. Since the Gum screen was automatically added, you can run your game and you will see the Gum screen showing up in your FlatRedBall game automatically - no code necessary. ![GumInFrb1.PNG](/media/migrated_media-GumInFrb1.PNG) At this point, you have the basics working for laying out Screens. In the next tutorial, we'll look at how to interact with Gum objects in code.
 
 ## Adding Gum to Existing Screens
 

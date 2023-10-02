@@ -12,7 +12,7 @@ In code all of the objects mentioned above inherit from the [FlatRedBall.Positio
 
 ## Default Functionality - Glue Creates Lists in GameScreen
 
-By default Glue will attempt to create lists for new entities automatically if the default options are left. For example, the following animation shows that Glue will add a new list to GameScreen when an entity called EnemyEntity is created. [![](/wp-content/uploads/2016/01/07_10-22-16.gif)](/wp-content/uploads/2016/01/07_10-22-16.gif)
+By default Glue will attempt to create lists for new entities automatically if the default options are left. For example, the following animation shows that Glue will add a new list to GameScreen when an entity called EnemyEntity is created. [![](/media/2016-01-07_10-22-16.gif)](/media/2016-01-07_10-22-16.gif)
 
 ## Creating a PositionedObjectList
 
@@ -20,11 +20,11 @@ Glue provides a number of methods for creating a new PositionedObjectList in a G
 
 ### Option 1 - Add List to GameScreen Quick Action
 
-If your game has a GameScreen, and if your GameScreen does not already contain a list for an entity, then the Quick Actions tab shows a button to add a list to the GameScreen. Clicking this button will automatically add the list to the GameScreen. [![](/wp-content/uploads/2016/01/07_10-25-05.gif)](/wp-content/uploads/2016/01/07_10-25-05.gif)
+If your game has a GameScreen, and if your GameScreen does not already contain a list for an entity, then the Quick Actions tab shows a button to add a list to the GameScreen. Clicking this button will automatically add the list to the GameScreen. [![](/media/2016-01-07_10-25-05.gif)](/media/2016-01-07_10-25-05.gif)
 
 ### Option 2 - Right-Click Drag+Drop
 
-Entity lists can be created by right-click drag+dropping an entity into a screen: [![rightclickdragdrop](/wp-content/uploads/2016/01/RightClickDragDrop.gif)](/wp-content/uploads/2016/01/RightClickDragDrop.gif)
+Entity lists can be created by right-click drag+dropping an entity into a screen: [![rightclickdragdrop](/media/2016-01-RightClickDragDrop.gif)](/media/2016-01-RightClickDragDrop.gif)
 
 ### Option 3 - Right-click Add Object Menu
 
@@ -52,4 +52,4 @@ Once a list has been created, instances of the list's type can be added:
 2.  Select **Add Object**
 3.  Glue will only ask for the new instance's name (the type will match the list type), so enter a name and click **OK** ![](/media/2016-11-img_58391f350f699.png)
 
-Instances can also be added to a list by first creating them outside of the list and dragging them onto the list. This is how instances of a derived entity type can be added to a list of a base type: [![basederivedlist](/wp-content/uploads/2016/01/BaseDerivedList.gif)](/wp-content/uploads/2016/01/BaseDerivedList.gif) Instances (of the same type or of derived type) can be added to a list by dragging the entity directly on the list: [![basederivedlist2](/wp-content/uploads/2016/01/BaseDerivedList2.gif)](/wp-content/uploads/2016/01/BaseDerivedList2.gif)  
+Instances can also be added to a list by first creating them outside of the list and dragging them onto the list. This is how instances of a derived entity type can be added to a list of a base type: [![basederivedlist](/media/2016-01-BaseDerivedList.gif)](/media/2016-01-BaseDerivedList.gif) Instances (of the same type or of derived type) can be added to a list by dragging the entity directly on the list: [![basederivedlist2](/media/2016-01-BaseDerivedList2.gif)](/media/2016-01-BaseDerivedList2.gif)  

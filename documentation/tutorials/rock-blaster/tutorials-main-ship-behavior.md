@@ -94,7 +94,7 @@ Next we will give the Bullet a PNG file and a Sprite to use. This process is ess
 2.  Expand the **Bullet** entity in Glue
 3.  Drag+drop Bullet1.png onto the Files folder in the Bullet
 
-[![](/wp-content/uploads/2016/01/2021_March_13_141331.gif)](/wp-content/uploads/2016/01/2021_March_13_141331.gif) To add a Sprite to the **Bullet **entity:
+[![](/media/2016-01-2021_March_13_141331.gif)](/media/2016-01-2021_March_13_141331.gif) To add a Sprite to the **Bullet **entity:
 
 1.  Select the **Bullet** entity in Glue
 

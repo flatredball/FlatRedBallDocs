@@ -51,7 +51,7 @@ These are created in Glue so the screen starts as shown in the following image:
         RedRectangle.CollideAgainstMove(BlueRectangle, 0, 1);
     }
 
-Notice that when the first rectangle is moved (with the keyboard), it will only be repositioned to the left. [![](/wp-content/uploads/2016/01/2021_April_07_083318.gif)](/wp-content/uploads/2016/01/2021_April_07_083318.gif)
+Notice that when the first rectangle is moved (with the keyboard), it will only be repositioned to the left. [![](/media/2016-01-2021_April_07_083318.gif)](/media/2016-01-2021_April_07_083318.gif)
 
 ## 
 

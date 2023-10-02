@@ -41,7 +41,7 @@ Next we will add logic to our collision. When talking about collision, it's help
 2.  Player vs Rock - destroy the player and the rock. Eventually we'll want to handle a game over state.
 3.  Rock vs Rock - this is an example of a self-colliding list. When one rock collides against another we want to have them *bounce* off of each other.
 
-To create a collision relationship, drag+drop one list in the GameScreen onto another list. For example, dragging the BulletList on top of the RockList will create a collision relationship between these two lists. [![](/wp-content/uploads/2016/01/2021_March_13_170938.gif)](/wp-content/uploads/2016/01/2021_March_13_170938.gif) We can also repeat this process to create a relationship between the PlayerList and RockList. [![](/wp-content/uploads/2016/01/2021_March_13_171539.gif)](/wp-content/uploads/2016/01/2021_March_13_171539.gif) To create a self-collision, we cannot use the drag+drop method. Instead, we can use the **Collision** tab:
+To create a collision relationship, drag+drop one list in the GameScreen onto another list. For example, dragging the BulletList on top of the RockList will create a collision relationship between these two lists. [![](/media/2016-01-2021_March_13_170938.gif)](/media/2016-01-2021_March_13_170938.gif) We can also repeat this process to create a relationship between the PlayerList and RockList. [![](/media/2016-01-2021_March_13_171539.gif)](/media/2016-01-2021_March_13_171539.gif) To create a self-collision, we cannot use the drag+drop method. Instead, we can use the **Collision** tab:
 
 1.  Select the **RockList** object under **GameScreen**
 
@@ -65,7 +65,7 @@ For now we'll focus on the **Collision Physics** section, which lets us specify 
 
 ![](/media/2021-03-img_604d5dadd28b0.png)
 
-Now if we run our game, the rocks will bounce off of each other. You may need to let the game run for a while to accumulate enough rocks for a collision to occur. [![](/wp-content/uploads/2016/01/2021_March_13_175151.gif)](/wp-content/uploads/2016/01/2021_March_13_175151.gif)
+Now if we run our game, the rocks will bounce off of each other. You may need to let the game run for a while to accumulate enough rocks for a collision to occur. [![](/media/2016-01-2021_March_13_175151.gif)](/media/2016-01-2021_March_13_175151.gif)
 
 ## Collision Relationship Events
 
@@ -107,4 +107,4 @@ Notice that the methods created provide access to the objects that have collided
 
 ## Conclusion
 
-This tutorial did a lot to make our game feel like a real game! Now we can shoot rocks and take damage. Of course, once the player dies the game continues to run. We'll improve that behavior in a future tutorial. [![](/wp-content/uploads/2016/01/2021_March_13_182107.gif)](/wp-content/uploads/2016/01/2021_March_13_182107.gif) [\<- 06. Rock Entity](/documentation/tutorials/rock-blaster/tutorials-rock-entity.md "Tutorials:Rock Blaster:Rock Entity") -- [08. Rock States -\>](/documentation/tutorials/rock-blaster/tutorials-rock-states.md "Tutorials:Rock Blaster:Rock States")
+This tutorial did a lot to make our game feel like a real game! Now we can shoot rocks and take damage. Of course, once the player dies the game continues to run. We'll improve that behavior in a future tutorial. [![](/media/2016-01-2021_March_13_182107.gif)](/media/2016-01-2021_March_13_182107.gif) [\<- 06. Rock Entity](/documentation/tutorials/rock-blaster/tutorials-rock-entity.md "Tutorials:Rock Blaster:Rock Entity") -- [08. Rock States -\>](/documentation/tutorials/rock-blaster/tutorials-rock-states.md "Tutorials:Rock Blaster:Rock States")

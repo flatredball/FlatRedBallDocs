@@ -13,7 +13,7 @@ Before we look at how to work with States in code, we'll do a brief overview of 
 
 A disabled button could change these variables in code when it became disabled, but it's far more expressive and maintainable to create a state in Gum that assigns all of these values. This allows the code to simply set the state and not worry about the visual details. States can be added to Screens, Components, and Standard Elements in Gum. States should almost always be categorized, so for the remainder of this tutorial we will be working with categorized states. Categorized states can help avoid some of the most common pitfalls of working with states, such as unset variables when switching between states. The following screen shot shows a typical Button object with states for controlling the button in response to various UI interactions and enabled values:
 
-[![](/wp-content/uploads/2019/01/img_5c46551c3c3e3-e1548113244713.png)](/wp-content/uploads/2019/01/img_5c46551c3c3e3-e1548113244713.png)
+[![](/media/2019-01-img_5c46551c3c3e3-e1548113244713.png)](/media/2019-01-img_5c46551c3c3e3-e1548113244713.png)
 
 The screenshot shows a **Button** component with a category called **UiStates.** This category contains the following states:
 

@@ -22,4 +22,4 @@ We can paint these tiles, along with more solid collision tiles, to create a tes
 
 ## Conclusion
 
-We have a level where the player can collide with the solid ground, but ice and water do not yet affect the Player's movement. [![](/wp-content/uploads/2021/04/05_16-10-02.gif)](/wp-content/uploads/2021/04/05_16-10-02.gif) The next tutorial shows how to add collision and change the player's movement values on ice and in water.
+We have a level where the player can collide with the solid ground, but ice and water do not yet affect the Player's movement. [![](/media/2021-04-05_16-10-02.gif)](/media/2021-04-05_16-10-02.gif) The next tutorial shows how to add collision and change the player's movement values on ice and in water.

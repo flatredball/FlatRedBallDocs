@@ -20,4 +20,4 @@ if(GuiManager.Cursor.PrimaryClick)
 }
 ```
 
-[![](/wp-content/uploads/2016/01/2017-12-14_08-49-02-1.gif)](/wp-content/uploads/2016/01/2017-12-14_08-49-02-1.gif)
+[![](/media/2016-01-2017-12-14_08-49-02-1.gif)](/media/2016-01-2017-12-14_08-49-02-1.gif)

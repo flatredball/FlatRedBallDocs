@@ -17,7 +17,7 @@ Next we will add these four ship files to the Player entity. To do this:
 1.  Expand the **Player** Entity in Glue
 2.  Drag+drop the four files onto the **Files** folder in your entity
 
-[![](/wp-content/uploads/2016/01/2021_March_13_104407.gif)](/wp-content/uploads/2016/01/2021_March_13_104407.gif) You should now see the files as part of your Player Entity.  
+[![](/media/2016-01-2021_March_13_104407.gif)](/media/2016-01-2021_March_13_104407.gif) You should now see the files as part of your Player Entity.  
 
 **Where are my files located?** If you saved the .png files in the project's Content folder, then Glue will reference the .png files from their current location. If you saved the files outside of this folder, then Glue will copy them into a folder specific to the Player Entity. If you ever need to find the files, you can right-click on the files in Glue and select **View in explorer.**
 

@@ -30,9 +30,9 @@ We will be replacing this with the CustomTown.tmx file downloaded earlier. To do
 
     ![](/media/2021-03-img_6057ab79561f1.png)
 
-4.  Drag+drop the downloaded **CustomTown.tmx** file into **Level1** **Files** in Glue. Glue will automatically copy the other files which are referenced by CustomTown.tmx to your project, so you only need to include that one file. [![](/wp-content/uploads/2021/03/2021_March_21_142825.gif)](/wp-content/uploads/2021/03/2021_March_21_142825.gif)
+4.  Drag+drop the downloaded **CustomTown.tmx** file into **Level1** **Files** in Glue. Glue will automatically copy the other files which are referenced by CustomTown.tmx to your project, so you only need to include that one file. [![](/media/2021-03-2021_March_21_142825.gif)](/media/2021-03-2021_March_21_142825.gif)
 
-5.  Drag+drop CustomTown.tmx from the Files folder onto the Map object in Level1 [![](/wp-content/uploads/2021/03/2021_March_21_141127.gif)](/wp-content/uploads/2021/03/2021_March_21_141127.gif)
+5.  Drag+drop CustomTown.tmx from the Files folder onto the Map object in Level1 [![](/media/2021-03-2021_March_21_141127.gif)](/media/2021-03-2021_March_21_141127.gif)
 
 The game now runs and will display this map.
 
@@ -52,9 +52,9 @@ The map that we dropped into our game (**CustomTown.tmx)** does not have any col
 
     ![](/media/2021-03-img_6057ae385faf8.png)
 
-4.  Drag+drop StandardTileset.tsx onto Tiled to access this tileset in your map [![](/wp-content/uploads/2021/03/2021_March_21_140637.gif)](/wp-content/uploads/2021/03/2021_March_21_140637.gif)
+4.  Drag+drop StandardTileset.tsx onto Tiled to access this tileset in your map [![](/media/2021-03-2021_March_21_140637.gif)](/media/2021-03-2021_March_21_140637.gif)
 
-5.  Add a new layer to the map called **GameplayLayer [![](/wp-content/uploads/2021/03/2021_March_21_144339.gif)](/wp-content/uploads/2021/03/2021_March_21_144339.gif)**
+5.  Add a new layer to the map called **GameplayLayer [![](/media/2021-03-2021_March_21_144339.gif)](/media/2021-03-2021_March_21_144339.gif)**
 
 6.  Use the solid collision tile (top left tile) to paint solid collision on the map to block the NPC from walking over walls, buildings, pots, and trees. Make sure to add these tiles to the Gameplay layer - adding them to the existing visual layer will remove the visuals and will also cause the game to crash. FlatRedBall does not support multiple tilesets on a single layer.
 

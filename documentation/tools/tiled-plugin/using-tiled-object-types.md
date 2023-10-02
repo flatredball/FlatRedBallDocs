@@ -40,7 +40,7 @@ Once you have imported the file, Tiled will let you apply this type to tiles in 
 
     ![](/media/2017-11-img_5a076066b498e.png)
 
-4.  In the properties window, begin typing the type. Notice that Tiled will list all available entities to help you make a selection [![](/wp-content/uploads/2017/11/2017-11-11_13-42-57.gif)](/wp-content/uploads/2017/11/2017-11-11_13-42-57.gif)
+4.  In the properties window, begin typing the type. Notice that Tiled will list all available entities to help you make a selection [![](/media/2017-11-2017-11-11_13-42-57.gif)](/media/2017-11-2017-11-11_13-42-57.gif)
 
   Now this tile can be painted on a tilemap.
 
@@ -56,9 +56,9 @@ If we select the Monster type in Tiled we will see the XP and Gold variables as 
 
 To create entity instances on an object layer:
 
-1.  Add an Object Layer to your tilemap [![](/wp-content/uploads/2017/11/2017-11-11_16-22-34.gif)](/wp-content/uploads/2017/11/2017-11-11_16-22-34.gif)
+1.  Add an Object Layer to your tilemap [![](/media/2017-11-2017-11-11_16-22-34.gif)](/media/2017-11-2017-11-11_16-22-34.gif)
 
-2.  Paint a new tile onto your map [![](/wp-content/uploads/2017/11/2017-11-11_16-24-45.gif)](/wp-content/uploads/2017/11/2017-11-11_16-24-45.gif)
+2.  Paint a new tile onto your map [![](/media/2017-11-2017-11-11_16-24-45.gif)](/media/2017-11-2017-11-11_16-24-45.gif)
 
 3.  Give the newly-created object a Type of **Monster** (or whatever entity type you want). Notice that doing so will automatically display the variables added in the FRB editor under the **Custom Properties** section. Notice that X, Y, and Z variables do not appear in the Custom Properties section - X and Y are already part of the regular properties of an object. The Z value is set according to the object's layer.
 

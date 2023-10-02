@@ -40,7 +40,7 @@ The new color operations are implemented using a custom shader (the same shader 
 6.  Change the newly-created file's **Build Action** to **Content**
 7.  Change **Copy to Output Directory** to **Copy if newer**
 
-[![](/wp-content/uploads/2018/07/2018-07-28_09-39-36.gif)](/wp-content/uploads/2018/07/2018-07-28_09-39-36.gif)
+[![](/media/2018-07-2018-07-28_09-39-36.gif)](/media/2018-07-2018-07-28_09-39-36.gif)
 
 ### 'ColorOperation' does not contain a definition for 'None'
 

@@ -78,7 +78,7 @@ To tunnel the variable:
 6.  For brevity, change the "Alternative Name:" to "CurrentChain" ![AddAnimationChainTunneledVariable.png](/media/migrated_media-AddAnimationChainTunneledVariable.png)
 7.  Click **OK**
 
-Now you can change the variable by selecting the Sprite in Glue by selecting the Variables folder. [![](/wp-content/uploads/2016/01/2019-04-30_16-32-05.gif)](/wp-content/uploads/2016/01/2019-04-30_16-32-05.gif) If you are interested in changing the current AnimationChain on a Sprite in code, see [this article](/documentation/tutorials/glue-tutorials/glue-how-to-control-animation-at-runtime.md "Glue:How To:Control Animation at Runtime").
+Now you can change the variable by selecting the Sprite in Glue by selecting the Variables folder. [![](/media/2016-01-2019-04-30_16-32-05.gif)](/media/2016-01-2019-04-30_16-32-05.gif) If you are interested in changing the current AnimationChain on a Sprite in code, see [this article](/documentation/tutorials/glue-tutorials/glue-how-to-control-animation-at-runtime.md "Glue:How To:Control Animation at Runtime").
 
 ## WHEW, all done!
 

@@ -11,7 +11,7 @@ To play an MP3 in your game:
 3.  Drag+drop the MP3 file from the explorer into a Screen's **Files** node.
     1.  Alternatively you can right-click on the Files tree node and select **Add File**-\>**Existing File** and browse to the location of the MP3
 
-[![](/wp-content/uploads/2016/01/2018-06-25_07-42-05.gif)](/wp-content/uploads/2016/01/2018-06-25_07-42-05.gif) The song will automatically play when the Screen starts up. The song will automatically stop playing when the Screen exits. You do not need write any code to play or stop the music. If a Screen contains multiple audio files, then additional settings and logic are needed to select which song should be played.
+[![](/media/2016-01-2018-06-25_07-42-05.gif)](/media/2016-01-2018-06-25_07-42-05.gif) The song will automatically play when the Screen starts up. The song will automatically stop playing when the Screen exits. You do not need write any code to play or stop the music. If a Screen contains multiple audio files, then additional settings and logic are needed to select which song should be played.
 
 ## 
 

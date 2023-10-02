@@ -1,6 +1,6 @@
 ## Introduction
 
-This walkthrough covers concepts related to creating moving platforms. Moving platforms can be used to transport a player vertically or horizontally, and can provide challenge and variety to a platformer level. When walking on a moving platform, the platformer Player is able to move faster and jump further. \[embed\]https://youtu.be/wd2NqblSmIY?t=2535\[/embed\] This sample can be downloaded from GitHub: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo> [![](/wp-content/uploads/2021/05/2021_May_13_071539.gif)](/wp-content/uploads/2021/05/2021_May_13_071539.gif) This walkthrough refers to MovingPlatfomDemo as *this demo* and *the demo*.
+This walkthrough covers concepts related to creating moving platforms. Moving platforms can be used to transport a player vertically or horizontally, and can provide challenge and variety to a platformer level. When walking on a moving platform, the platformer Player is able to move faster and jump further. \[embed\]https://youtu.be/wd2NqblSmIY?t=2535\[/embed\] This sample can be downloaded from GitHub: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo> [![](/media/2021-05-2021_May_13_071539.gif)](/media/2021-05-2021_May_13_071539.gif) This walkthrough refers to MovingPlatfomDemo as *this demo* and *the demo*.
 
 ## Main Concepts
 

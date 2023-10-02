@@ -188,7 +188,7 @@ This version also generates the IPlatformer interface into projects. This is use
 
 ### Version 20 - New Default FlatRedBall.Forms Components
 
-This version introduces a new set of FlatRedBall.Forms controls. [![](/wp-content/uploads/2022/02/04_08-12-25.gif)](/wp-content/uploads/2022/02/04_08-12-25.gif) These controls provide more flexibility, and the defaults are cleaner and look better overall. New FlatRedBall projects will automatically add these controls when Gum/Forms is added (usually through the wizard). ✅ Upgrading to this version is safe under a number of conditions:
+This version introduces a new set of FlatRedBall.Forms controls. [![](/media/2022-02-04_08-12-25.gif)](/media/2022-02-04_08-12-25.gif) These controls provide more flexibility, and the defaults are cleaner and look better overall. New FlatRedBall projects will automatically add these controls when Gum/Forms is added (usually through the wizard). ✅ Upgrading to this version is safe under a number of conditions:
 
 1.  If you do not intend to use FlatRedBall.Forms at all, then you can safely upgrade to this version.
 2.  If you have not yet added FlatRedBall.Forms to your game project, you can upgrade to this version first, and then add FlatRedBall.Forms through the Gum tab by selecting the .gumx file.

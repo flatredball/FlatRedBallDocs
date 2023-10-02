@@ -33,4 +33,4 @@ In other words, this has all of the pieces needed to get your game developed eve
 
 ## How Fast Can You Make a Game?
 
-[![](/wp-content/uploads/2021/03/2021_March_03_104340.gif)](/wp-content/uploads/2021/03/2021_March_03_104340.gif) It's currently available in the latest build of FlatRedBall so download it and give it a shot!  
+[![](/media/2021-03-2021_March_03_104340.gif)](/media/2021-03-2021_March_03_104340.gif) It's currently available in the latest build of FlatRedBall so download it and give it a shot!  

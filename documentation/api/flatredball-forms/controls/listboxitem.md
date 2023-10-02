@@ -1,14 +1,14 @@
 ## Introduction
 
-ListBoxItem is a selectable control used in the ListBox control or controls which contain a ListBox (such as ComboBox). ListBoxItem instances can be manually instantiated just like any control, or may be instantiated internally by the ListBox control. [![](/wp-content/uploads/2017/12/2017-12-13_17-52-13.gif)](/wp-content/uploads/2017/12/2017-12-13_17-52-13.gif)
+ListBoxItem is a selectable control used in the ListBox control or controls which contain a ListBox (such as ComboBox). ListBoxItem instances can be manually instantiated just like any control, or may be instantiated internally by the ListBox control. [![](/media/2017-12-2017-12-13_17-52-13.gif)](/media/2017-12-2017-12-13_17-52-13.gif)
 
 ## Layout Requirements
 
-The ListBoxItem control has no requirements – an empty container is sufficient. [![](/wp-content/uploads/2017/12/img_5a485e78076db.png)](/wp-content/uploads/2017/12/img_5a485e78076db.png)
+The ListBoxItem control has no requirements – an empty container is sufficient. [![](/media/2017-12-img_5a485e78076db.png)](/media/2017-12-img_5a485e78076db.png)
 
 ## TextInstance
 
-The ListBoxItem control can optionally include a Text instance named **TextInstance**. Setting the ListBoxItem control’s **Text** property changes the **TextInstance’s** displayed string. [![](/wp-content/uploads/2017/12/img_5a485fa592a56.png)](/wp-content/uploads/2017/12/img_5a485fa592a56.png)
+The ListBoxItem control can optionally include a Text instance named **TextInstance**. Setting the ListBoxItem control’s **Text** property changes the **TextInstance’s** displayed string. [![](/media/2017-12-img_5a485fa592a56.png)](/media/2017-12-img_5a485fa592a56.png)
 
 ## Creating ListBoxItems
 

@@ -60,7 +60,7 @@ Synced Android projects are created just like any other synced project. The firs
 5.  Enter a project name
 6.  Click **Make my project!**
 
-[![](/wp-content/uploads/2016/01/2019-04-08_07-55-31.gif)](/wp-content/uploads/2016/01/2019-04-08_07-55-31.gif) The project will take a moment to download and be created, but once it is, you will see the Android project listed in the Androids project list. Since your Glue project now has multiple platforms, you can choose which project to open through the Projects tab.
+[![](/media/2016-01-2019-04-08_07-55-31.gif)](/media/2016-01-2019-04-08_07-55-31.gif) The project will take a moment to download and be created, but once it is, you will see the Android project listed in the Androids project list. Since your Glue project now has multiple platforms, you can choose which project to open through the Projects tab.
 
 ![](/media/2019-04-img_5cab537d772c4.png)
 

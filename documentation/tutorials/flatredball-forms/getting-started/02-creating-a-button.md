@@ -43,7 +43,7 @@ private void HandleButtonClick(object sender, EventArgs e)
 }
 ```
 
-This results in the button updating its text to indicate when it was last clicked: [![](/wp-content/uploads/2017/11/12_17-03-31.gif)](/wp-content/uploads/2017/11/12_17-03-31.gif)
+This results in the button updating its text to indicate when it was last clicked: [![](/media/2017-11-12_17-03-31.gif)](/media/2017-11-12_17-03-31.gif)
 
 ### Code Details
 
@@ -75,7 +75,7 @@ private void HandleCheckboxClicked(object sender, EventArgs e)
 }
 ```
 
-Clicking the CheckBox  results in the value being printed to the screen. [![](/wp-content/uploads/2017/11/12_20-15-00.gif)](/wp-content/uploads/2017/11/12_20-15-00.gif)
+Clicking the CheckBox  results in the value being printed to the screen. [![](/media/2017-11-12_20-15-00.gif)](/media/2017-11-12_20-15-00.gif)
 
 ## Working with ListBox
 
@@ -101,7 +101,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-Typing the A, B, or C characters on the keyboard results in items added to the list box: [![](/wp-content/uploads/2017/11/12_20-16-58.gif)](/wp-content/uploads/2017/11/12_20-16-58.gif)
+Typing the A, B, or C characters on the keyboard results in items added to the list box: [![](/media/2017-11-12_20-16-58.gif)](/media/2017-11-12_20-16-58.gif)
 
 ## Working with TextBox
 
@@ -120,4 +120,4 @@ private void HandleTextBoxTextChanged(object sender, EventArgs e)
 }
 ```
 
-Note that the TextChanged event will be raised for each new character (including spaces) or whenever a character is deleted. [![](/wp-content/uploads/2017/11/12_20-23-02.gif)](/wp-content/uploads/2017/11/12_20-23-02.gif)          
+Note that the TextChanged event will be raised for each new character (including spaces) or whenever a character is deleted. [![](/media/2017-11-12_20-23-02.gif)](/media/2017-11-12_20-23-02.gif)          

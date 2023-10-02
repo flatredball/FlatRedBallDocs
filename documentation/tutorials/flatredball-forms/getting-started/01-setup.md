@@ -52,7 +52,7 @@ The Button should now appear in the Gum.
 
 ![](/media/2023-08-img_64d80cf03468c.png)
 
-Running the game will also show a fully-functional button. [![](/wp-content/uploads/2017/11/12_16-52-55.gif)](/wp-content/uploads/2017/11/12_16-52-55.gif)
+Running the game will also show a fully-functional button. [![](/media/2017-11-12_16-52-55.gif)](/media/2017-11-12_16-52-55.gif)
 
 ## Gum vs Forms
 

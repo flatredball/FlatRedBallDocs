@@ -46,4 +46,4 @@ The following code can be added to a GameScreen to draw a line from the camera's
         line.Visible = false;
     }
 
-  [![](/wp-content/uploads/2023/05/24_06-09-22.gif)](/wp-content/uploads/2023/05/24_06-09-22.gif)
+  [![](/media/2023-05-24_06-09-22.gif)](/media/2023-05-24_06-09-22.gif)

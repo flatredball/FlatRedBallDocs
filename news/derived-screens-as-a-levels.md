@@ -50,7 +50,7 @@ if(shouldMoveToScreen)
 }
 ```
 
-This change allows entities which control level navigation to specify the level without full qualification. For example, a Door entity in Tiled could simply include the level without namespace. [![](/wp-content/uploads/2018/09/img_5b9e5b145d021.png)](/wp-content/uploads/2018/09/img_5b9e5b145d021.png) This property can be checked and used in a custom collision handler.
+This change allows entities which control level navigation to specify the level without full qualification. For example, a Door entity in Tiled could simply include the level without namespace. [![](/media/2018-09-img_5b9e5b145d021.png)](/media/2018-09-img_5b9e5b145d021.png) This property can be checked and used in a custom collision handler.
 
 ``` lang:c#
 private void HandlePlayerVsDoorCollision(Player player, Door door)

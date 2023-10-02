@@ -50,7 +50,7 @@ We can adjust the two values at the beginning to change the rotation speed of th
         }
     }
 
-The line which assigns the UpVector is necessary to allow the main Camera to rotate on its Z axis. By default, FlatRedBall Cameras cannot rotate on Z unless this line of code is added. The remainder of the function allows us to start and restart the falling movement. We can now run the game and press the space bar to begin falling. [![](/wp-content/uploads/2021/03/2021_April_06_182918.gif)](/wp-content/uploads/2021/03/2021_April_06_182918.gif)
+The line which assigns the UpVector is necessary to allow the main Camera to rotate on its Z axis. By default, FlatRedBall Cameras cannot rotate on Z unless this line of code is added. The remainder of the function allows us to start and restart the falling movement. We can now run the game and press the space bar to begin falling. [![](/media/2021-03-2021_April_06_182918.gif)](/media/2021-03-2021_April_06_182918.gif)
 
 ## Conclusion
 

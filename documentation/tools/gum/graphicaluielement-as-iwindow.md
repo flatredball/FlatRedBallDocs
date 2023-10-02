@@ -48,7 +48,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](/wp-content/uploads/2019/12/2019_December_07_151411.gif)](/wp-content/uploads/2019/12/2019_December_07_151411.gif)
+[![](/media/2019-12-2019_December_07_151411.gif)](/media/2019-12-2019_December_07_151411.gif)
 
 ## GuiManager Membership
 

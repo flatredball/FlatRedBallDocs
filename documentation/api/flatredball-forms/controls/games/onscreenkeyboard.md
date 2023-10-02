@@ -1,6 +1,6 @@
 ## Introduction
 
-The OnScreenKeyboard, also referred to as a "software keyboard", can be used to enter text in a TextBox using a GamePad. Console games and games which use a controller as a primary input device will usually include some form of OnScreenKeyboard for text entry. Although the OnScreenKeyboard is primarily designed to be used with a GamePad, the mouse can also be used to click on the individual keys. The OnScreenKeyboard must always be paired with a TextBox. Creating an OnScreenKeyboard without pairing it to a TextBox will result in runtime exceptions when the user attempts to click on one of the keys. [![](/wp-content/uploads/2021/02/2021_February_19_210140.gif)](/wp-content/uploads/2021/02/2021_February_19_210140.gif)
+The OnScreenKeyboard, also referred to as a "software keyboard", can be used to enter text in a TextBox using a GamePad. Console games and games which use a controller as a primary input device will usually include some form of OnScreenKeyboard for text entry. Although the OnScreenKeyboard is primarily designed to be used with a GamePad, the mouse can also be used to click on the individual keys. The OnScreenKeyboard must always be paired with a TextBox. Creating an OnScreenKeyboard without pairing it to a TextBox will result in runtime exceptions when the user attempts to click on one of the keys. [![](/media/2021-02-2021_February_19_210140.gif)](/media/2021-02-2021_February_19_210140.gif)
 
 ## Layout Requirements
 
@@ -106,4 +106,4 @@ Note that the button will not be used except to show that tabbing to a different
     // Sets the button focus away from the keyboard so we can select the keyboard manually
     Forms.ButtonInstance.IsFocused = true;
 
-The code above results in a fully functional keyboard controlled by the gamepad, as shown in the following animation: [![](/wp-content/uploads/2021/02/06_16-42-36.gif)](/wp-content/uploads/2021/02/06_16-42-36.gif)
+The code above results in a fully functional keyboard controlled by the gamepad, as shown in the following animation: [![](/media/2021-02-06_16-42-36.gif)](/media/2021-02-06_16-42-36.gif)

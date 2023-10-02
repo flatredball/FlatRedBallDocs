@@ -84,7 +84,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](/wp-content/uploads/2016/01/2019-07-26_09-19-49.gif)](/wp-content/uploads/2016/01/2019-07-26_09-19-49.gif)
+[![](/media/2016-01-2019-07-26_09-19-49.gif)](/media/2016-01-2019-07-26_09-19-49.gif)
 
 ## Code Example - Lambda Assignments
 
@@ -104,7 +104,7 @@ Lambdas can be used to assign properties without creating dedicated functions. F
             easing: FlatRedBall.Glue.StateInterpolation.Easing.Out);
     }
 
-[![](/wp-content/uploads/2016/01/07_13-43-30.gif)](/wp-content/uploads/2016/01/07_13-43-30.gif)
+[![](/media/2016-01-07_13-43-30.gif)](/media/2016-01-07_13-43-30.gif)
 
 ## Tweening vs. Velocity values
 

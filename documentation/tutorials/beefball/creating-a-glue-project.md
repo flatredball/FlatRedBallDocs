@@ -42,7 +42,7 @@ FlatRedBall projects automatically create a Visual Studio project too. To open t
 
 ![Screenshot of Glue showing the Beefball project loaded with the Open Project in Visual Studio button highlighted.](/media/2016-01-2022-03-12-09_15_09-Beefball-Open-Project.png)
 
-You can also open the project in visual studio by opening the .sln file. The project folder can be opened by clicking the folder icon in the task bar. This will open the location of the .csproj file, which is one folder below the .sln file. The following animation shows how to navigate to the solution: [![](/wp-content/uploads/2016/01/03_08-09-28.gif)](/wp-content/uploads/2016/01/03_08-09-28.gif) When you double-click the .sln file you may see a window like this:
+You can also open the project in visual studio by opening the .sln file. The project folder can be opened by clicking the folder icon in the task bar. This will open the location of the .csproj file, which is one folder below the .sln file. The following animation shows how to navigate to the solution: [![](/media/2016-01-03_08-09-28.gif)](/media/2016-01-03_08-09-28.gif) When you double-click the .sln file you may see a window like this:
 
 ![VSVersionSelector.PNG](/media/migrated_media-VSVersionSelector.PNG) If so you will want to select the version of Visual Studio that is compatible with the type of project you are running. At the time of this writing, Visual Studio 2022 Community is the most common version to use with FlatRedBall. Once Visual Studio is open, you can run your project by pressing the green "play" button, or by pressing F5.
 

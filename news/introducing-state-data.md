@@ -40,7 +40,7 @@ Once a state category is created, the State Data plugin provides a new tab for a
 
 ![](/media/2018-06-img_5b23247aafa0e.png)
 
-Now creating new states is as easy as filling in a spreadsheet: [![](/wp-content/uploads/2018/06/2018-06-14_20-41-05.gif)](/wp-content/uploads/2018/06/2018-06-14_20-41-05.gif) Notice that whenever a new row is added, a new state appears under the category.
+Now creating new states is as easy as filling in a spreadsheet: [![](/media/2018-06-2018-06-14_20-41-05.gif)](/media/2018-06-2018-06-14_20-41-05.gif) Notice that whenever a new row is added, a new state appears under the category.
 
 ![](/media/2018-06-img_5b2327963591b.png)
 
@@ -50,7 +50,7 @@ And as mentioned earlier, values which have discrete options appear as dropdowns
 
 ## Excluding Variables
 
-By default state categories include all variables. This is convenient for quick state creation, but sometimes entities define variables which should not be in a state. The State Data plugin introduces the ability to exclude variables from states. The **...** button can be clicked to expand the variable management UI where variables can be excluded from a state. In this case, the X, Y, and Z variables should not be part of the EnemyData. [![](/wp-content/uploads/2018/06/2018-06-14_22-06-07.gif)](/wp-content/uploads/2018/06/2018-06-14_22-06-07.gif)
+By default state categories include all variables. This is convenient for quick state creation, but sometimes entities define variables which should not be in a state. The State Data plugin introduces the ability to exclude variables from states. The **...** button can be clicked to expand the variable management UI where variables can be excluded from a state. In this case, the X, Y, and Z variables should not be part of the EnemyData. [![](/media/2018-06-2018-06-14_22-06-07.gif)](/media/2018-06-2018-06-14_22-06-07.gif)
 
 ## Working With States in Code
 

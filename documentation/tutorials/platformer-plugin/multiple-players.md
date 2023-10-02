@@ -1,6 +1,6 @@
 ## Introduction
 
-This walkthrough looks at the FlatRedBall Multiplayer Platformer project and explains the important details of creating a (local) multiplayer game similar to games like Contra III. \[embed\]https://youtu.be/YHfTVFZHj4E?t=85\[/embed\] The sample project can be downloaded from Github: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MultiplayerPlatformerDemo> [![](/wp-content/uploads/2021/05/2021_April_30_161604.gif)](/wp-content/uploads/2021/05/2021_April_30_161604.gif) We will be referring to the MultiplayerPlatformerDemo as *this demo* and *the demo* throughout this walkthrough.
+This walkthrough looks at the FlatRedBall Multiplayer Platformer project and explains the important details of creating a (local) multiplayer game similar to games like Contra III. \[embed\]https://youtu.be/YHfTVFZHj4E?t=85\[/embed\] The sample project can be downloaded from Github: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MultiplayerPlatformerDemo> [![](/media/2021-05-2021_April_30_161604.gif)](/media/2021-05-2021_April_30_161604.gif) We will be referring to the MultiplayerPlatformerDemo as *this demo* and *the demo* throughout this walkthrough.
 
 ## Selecting and Storing Join Status
 

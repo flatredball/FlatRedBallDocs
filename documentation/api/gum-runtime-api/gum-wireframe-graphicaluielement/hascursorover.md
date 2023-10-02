@@ -15,7 +15,7 @@ The following code can be used to determine if the cursor is over a GraphicalUiE
         FlatRedBall.Debugging.Debugger.Write($"Cursor over: {isCursorOver}");
     }
 
-[![](/wp-content/uploads/2019/09/20_05-26-27.gif)](/wp-content/uploads/2019/09/20_05-26-27.gif)    
+[![](/media/2019-09-20_05-26-27.gif)](/media/2019-09-20_05-26-27.gif)    
 
 ## Code Example - Detecting Screen Coordinates on GraphicalUiElement
 

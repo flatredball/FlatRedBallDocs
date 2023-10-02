@@ -33,7 +33,7 @@ Next we'll add a background ColoredRectangle:
 4.  Click the **Alignment** tab
 5.  Click the **Center Dock** button to have the colored rectangle fill the component
 
-[![](/wp-content/uploads/2016/01/2021_March_13_212209.gif)](/wp-content/uploads/2016/01/2021_March_13_212209.gif) This ColoredRectangle will be the background of our HealthBar which will display if the player takes damage, so we will change its color to red.
+[![](/media/2016-01-2021_March_13_212209.gif)](/media/2016-01-2021_March_13_212209.gif) This ColoredRectangle will be the background of our HealthBar which will display if the player takes damage, so we will change its color to red.
 
 ![](/media/2021-03-img_604d8d29a6a1b.png)
 
@@ -56,13 +56,13 @@ Our HealthBar is almost ready to be used except it doesn't have an easy way to d
 
 ![](/media/2021-03-img_604d8fb05b5ef.png)
 
-Now the Foreground can have its width changed, and the green bar will show the appropriate percent. [![](/wp-content/uploads/2016/01/2021_March_13_213724.gif)](/wp-content/uploads/2016/01/2021_March_13_213724.gif) We want to expose this variable so that it can be accessed on the HealthBar itself:
+Now the Foreground can have its width changed, and the green bar will show the appropriate percent. [![](/media/2016-01-2021_March_13_213724.gif)](/media/2016-01-2021_March_13_213724.gif) We want to expose this variable so that it can be accessed on the HealthBar itself:
 
 1.  Right-click on the Foreground Width property
 2.  Select **Expose Variable**
 3.  Enter the name **PercentFull**
 
-[![](/wp-content/uploads/2016/01/2021_March_13_211926.gif)](/wp-content/uploads/2016/01/2021_March_13_211926.gif)
+[![](/media/2016-01-2021_March_13_211926.gif)](/media/2016-01-2021_March_13_211926.gif)
 
 ## Adding HealthBars to the Player
 
@@ -77,7 +77,7 @@ Entities can contain instances of Gum objects. We will add a HealthBar to our Pl
 
 ![](/media/2022-12-img_63a84de9a55de.png)
 
-If we run the game now, we'll see the HealthBar on top of the Player. [![](/wp-content/uploads/2016/01/2021_March_13_214537.gif)](/wp-content/uploads/2016/01/2021_March_13_214537.gif) First we'll adjust the Y value of the HealthBar so that it doesn't overlap the ship.
+If we run the game now, we'll see the HealthBar on top of the Player. [![](/media/2016-01-2021_March_13_214537.gif)](/media/2016-01-2021_March_13_214537.gif) First we'll adjust the Y value of the HealthBar so that it doesn't overlap the ship.
 
 1.  Select the HealthBar component in Gum
 2.  Change Y to -28. By default, negative Y moves an object up in Gum.
@@ -94,7 +94,7 @@ Next we'll adjust the HealthBar so it doesn't rotate with the ship. At the time 
     var hudParent = gumAttachmentWrappers[0];
     hudParent.ParentRotationChangesRotation = false;
 
-Now the HealthBar appears above the player and does not rotate with the player. [![](/wp-content/uploads/2016/01/2021_March_13_220225.gif)](/wp-content/uploads/2016/01/2021_March_13_220225.gif)
+Now the HealthBar appears above the player and does not rotate with the player. [![](/media/2016-01-2021_March_13_220225.gif)](/media/2016-01-2021_March_13_220225.gif)
 
 ## Conclusion
 

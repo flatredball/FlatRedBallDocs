@@ -1,4 +1,4 @@
-The latest templates and Glue plugin include support for FlatRedBall.Forms 1.1. This version adds the TreeView control, along with the TreeViewItem used within the TreeView control. [![](/wp-content/uploads/2018/07/2018-07-21_22-18-06-1.gif)](/wp-content/uploads/2018/07/2018-07-21_22-18-06-1.gif)
+The latest templates and Glue plugin include support for FlatRedBall.Forms 1.1. This version adds the TreeView control, along with the TreeViewItem used within the TreeView control. [![](/media/2018-07-2018-07-21_22-18-06-1.gif)](/media/2018-07-2018-07-21_22-18-06-1.gif)
 
 ## Example Code
 

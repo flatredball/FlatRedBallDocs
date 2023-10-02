@@ -17,7 +17,7 @@ Glue can now automatically stop, rebuild, and restart a game when it detects a c
 
 ![](/media/2019-11-img_5dd629b46fa3b.png)
 
-While hot reload is enabled, Glue will watch for any changes to your project. If it detects a change, the project will be stopped, rebuilt, and re-launched. [![](/wp-content/uploads/2019/11/kG6hvklZUo.gif)](/wp-content/uploads/2019/11/kG6hvklZUo.gif) The game will even relaunch but not steal focus, so you can make changes in Visual Studio, save your file, and continue coding while the game compiles and re-launches! [![](/wp-content/uploads/2019/11/cN3NMjUWBD.gif)](/wp-content/uploads/2019/11/cN3NMjUWBD.gif) Changing a file referenced by your project will also result in the game reloading. For example, TMX files can be changed in Tiled. [![](/wp-content/uploads/2019/11/Rrtnku7STP.gif)](/wp-content/uploads/2019/11/Rrtnku7STP.gif) Glue will reload the project if any of the following change:
+While hot reload is enabled, Glue will watch for any changes to your project. If it detects a change, the project will be stopped, rebuilt, and re-launched. [![](/media/2019-11-kG6hvklZUo.gif)](/media/2019-11-kG6hvklZUo.gif) The game will even relaunch but not steal focus, so you can make changes in Visual Studio, save your file, and continue coding while the game compiles and re-launches! [![](/media/2019-11-cN3NMjUWBD.gif)](/media/2019-11-cN3NMjUWBD.gif) Changing a file referenced by your project will also result in the game reloading. For example, TMX files can be changed in Tiled. [![](/media/2019-11-Rrtnku7STP.gif)](/media/2019-11-Rrtnku7STP.gif) Glue will reload the project if any of the following change:
 
 -   Variables changed in Glue
 -   New screens or entities added in Glue
@@ -41,19 +41,19 @@ Once enabled, Glue will have extra control over your game.
 
 ### Play/Pause
 
-Glue can send Pause commands to your game, which will internally call the FlatRedBall Pause function. Once paused, the game can be un-paused by pressing the play button. [![](/wp-content/uploads/2019/11/6Bmuy0rlIH.gif)](/wp-content/uploads/2019/11/6Bmuy0rlIH.gif)
+Glue can send Pause commands to your game, which will internally call the FlatRedBall Pause function. Once paused, the game can be un-paused by pressing the play button. [![](/media/2019-11-6Bmuy0rlIH.gif)](/media/2019-11-6Bmuy0rlIH.gif)
 
 ### Advance One Frame
 
-Once paused, Glue can advance the game by one frame at a time. Internally this sends an un-pause command, lets the game run for one frame, then pauses the game once again. [![](/wp-content/uploads/2019/11/Au5ZSOPx4M.gif)](/wp-content/uploads/2019/11/Au5ZSOPx4M.gif)
+Once paused, Glue can advance the game by one frame at a time. Internally this sends an un-pause command, lets the game run for one frame, then pauses the game once again. [![](/media/2019-11-Au5ZSOPx4M.gif)](/media/2019-11-Au5ZSOPx4M.gif)
 
 ### Fast Forward and Slow Motion
 
-You can change the speed of the game through Glue, from as slow as 10% to as fast as 500% speed. [![](/wp-content/uploads/2019/11/iXhCBDBXsG.gif)](/wp-content/uploads/2019/11/iXhCBDBXsG.gif)
+You can change the speed of the game through Glue, from as slow as 10% to as fast as 500% speed. [![](/media/2019-11-iXhCBDBXsG.gif)](/media/2019-11-iXhCBDBXsG.gif)
 
 ### Restart Current Screen
 
-The red restart icon will stop the game, rebuild it, and restart the game on the same screen. This command is useful if you need to restart the game, but do not want to navigate through menus or levels to continue testing the same part of the game. If rebuilding/restarting the game is not required, the green restart icon will send a command to the game to restart the current screen. [![](/wp-content/uploads/2019/11/orgeVh23yp.gif)](/wp-content/uploads/2019/11/orgeVh23yp.gif) The functionality of restarting on the same screen will automatically be used if hot reload is enabled, making iteration even faster compared to restarting a game from the first screen.
+The red restart icon will stop the game, rebuild it, and restart the game on the same screen. This command is useful if you need to restart the game, but do not want to navigate through menus or levels to continue testing the same part of the game. If rebuilding/restarting the game is not required, the green restart icon will send a command to the game to restart the current screen. [![](/media/2019-11-orgeVh23yp.gif)](/media/2019-11-orgeVh23yp.gif) The functionality of restarting on the same screen will automatically be used if hot reload is enabled, making iteration even faster compared to restarting a game from the first screen.
 
 ### Future Changes
 

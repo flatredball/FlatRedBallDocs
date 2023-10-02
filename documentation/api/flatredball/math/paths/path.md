@@ -55,7 +55,7 @@ Paths can be visualized using EditorVisuals when the game is in Edit Mode. This 
         EditorVisuals.DrawPath(PathInstance);
     }
 
-The Path will now update in realtime as it is edited. [![](/wp-content/uploads/2021/11/15_08-43-00.gif)](/wp-content/uploads/2021/11/15_08-43-00.gif)
+The Path will now update in realtime as it is edited. [![](/media/2021-11-15_08-43-00.gif)](/media/2021-11-15_08-43-00.gif)
 
 ## Example - Following a Path
 
@@ -107,4 +107,4 @@ The TangentAtLength returns a Vector2 describing the unit vector parallel (tange
         }
     }
 
-  [![](/wp-content/uploads/2021/11/16_08-54-00.gif)](/wp-content/uploads/2021/11/16_08-54-00.gif)
+  [![](/media/2021-11-16_08-54-00.gif)](/media/2021-11-16_08-54-00.gif)

@@ -38,7 +38,7 @@ You can also add a reference to the ColoredRectangleInstance in the FlatRedBall 
 6.  Use the dropdown next to **Source Name:** to select **ColoredRectangleInstance**
 7.  Click **OK**
 
-[![](/wp-content/uploads/2016/01/2019-02-28_22-30-55.gif)](/wp-content/uploads/2016/01/2019-02-28_22-30-55.gif) Note that the **Source Name:** drop down contains all instances in your Gum project. We selected the **ColoredRectangleInstance** for this example, but you could select any instance. Note that the ColoredRectangle in the FlatRedBall Editor is not a new ColoredRectangle instance - it is a reference to the ColoredRectangle inside the MainMenuGum screen.
+[![](/media/2016-01-2019-02-28_22-30-55.gif)](/media/2016-01-2019-02-28_22-30-55.gif) Note that the **Source Name:** drop down contains all instances in your Gum project. We selected the **ColoredRectangleInstance** for this example, but you could select any instance. Note that the ColoredRectangle in the FlatRedBall Editor is not a new ColoredRectangle instance - it is a reference to the ColoredRectangle inside the MainMenuGum screen.
 
 ## Alternative Option 2 - Getting Objects by Name
 
@@ -78,7 +78,7 @@ The example above shows how to move the rectangle. For this example we will modi
      }
     }
 
-[![](/wp-content/uploads/2016/01/2021_March_07_080847.gif)](/wp-content/uploads/2016/01/2021_March_07_080847.gif) Notice that the TextIntance property matches the exact name in Gum:
+[![](/media/2016-01-2021_March_07_080847.gif)](/media/2016-01-2021_March_07_080847.gif) Notice that the TextIntance property matches the exact name in Gum:
 
 ![](/media/2021-03-img_604b8fae4c068.png)
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected. [![](/wp-content/uploads/2017/12/2017-12-13_17-56-55.gif)](/wp-content/uploads/2017/12/2017-12-13_17-56-55.gif) ListBox inherits from [ScrollViewer](/documentation/api/flatredball-forms/controls/scrollviewer.md).
+The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected. [![](/media/2017-12-2017-12-13_17-56-55.gif)](/media/2017-12-2017-12-13_17-56-55.gif) ListBox inherits from [ScrollViewer](/documentation/api/flatredball-forms/controls/scrollviewer.md).
 
 ## Layout Requirements
 
@@ -10,11 +10,11 @@ The ListBox control requires:
 -   An object named **InnerPanelInstance** of any type (typically a Container)
 -   An object named **ClipContainerInstance** of any type (typically a Container with **ClipsChildren** set to true)
 
-[![](/wp-content/uploads/2017/12/img_5a465ac0d252b.png)](/wp-content/uploads/2017/12/img_5a465ac0d252b.png) The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [http://flatredball.com/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/](/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md)
+[![](/media/2017-12-img_5a465ac0d252b.png)](/media/2017-12-img_5a465ac0d252b.png) The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [http://flatredball.com/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/](/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md)
 
 ## InnerPanelInstance and Children Layout
 
-The ListBox control typically handles the creation and positioning of ListBoxItem instances. The InnerPanelInstance in the list box Gum component will typically use a **Children Layout** value of **TopToBottomStack.** [![](/wp-content/uploads/2017/12/img_5a46645375a35.png)](/wp-content/uploads/2017/12/img_5a46645375a35.png) Alternatively the InnerPanelInstance can use a **Children Layout** value of **LeftToWriteStack** with the **Wraps Children** value set to true.
+The ListBox control typically handles the creation and positioning of ListBoxItem instances. The InnerPanelInstance in the list box Gum component will typically use a **Children Layout** value of **TopToBottomStack.** [![](/media/2017-12-img_5a46645375a35.png)](/media/2017-12-img_5a46645375a35.png) Alternatively the InnerPanelInstance can use a **Children Layout** value of **LeftToWriteStack** with the **Wraps Children** value set to true.
 
 ![](/media/2017-12-img_5a486c2d92c54.png)
 
@@ -201,7 +201,7 @@ private void HandleSelectionChanged(object sender, SelectionChangedEventArgs arg
 }
 ```
 
-[![](/wp-content/uploads/2017/12/2017-12-20_21-07-56.gif)](/wp-content/uploads/2017/12/2017-12-20_21-07-56.gif) The event handling the selection changing can also use the SelectedItem  property, as shown in the following code:
+[![](/media/2017-12-2017-12-20_21-07-56.gif)](/media/2017-12-2017-12-20_21-07-56.gif) The event handling the selection changing can also use the SelectedItem  property, as shown in the following code:
 
 ``` lang:c#
 void CustomInitialize()

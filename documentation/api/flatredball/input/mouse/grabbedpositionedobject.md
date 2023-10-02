@@ -61,7 +61,7 @@ public partial class YourScreenName
     ...
 ```
 
-[![](/wp-content/uploads/2016/01/2019-04-06_22-18-14.gif)](/wp-content/uploads/2016/01/2019-04-06_22-18-14.gif) Setting the GrabbedPositionedObject does the following:
+[![](/media/2016-01-2019-04-06_22-18-14.gif)](/media/2016-01-2019-04-06_22-18-14.gif) Setting the GrabbedPositionedObject does the following:
 
 1.  Stores the reference in the GrabbedPositionedObject property
 2.  Stores offset variables - this is the difference between the GrabbedPositionedObject's position and the cursor's world coordinates.

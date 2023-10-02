@@ -24,7 +24,7 @@ Our game already contains a file named Level1Map.tmx - this is the default name 
 
 ![](/media/2021-04-img_6074e12729024.png)
 
-Once open, drag+drop the three downloaded files into the Level1 content folder. If asked, replace the existing file. [![](/wp-content/uploads/2021/04/2021_April_07_232506.gif)](/wp-content/uploads/2021/04/2021_April_07_232506.gif) Now our game will run and display the level, but our character still falls through the screen. We'll fix this next.
+Once open, drag+drop the three downloaded files into the Level1 content folder. If asked, replace the existing file. [![](/media/2021-04-2021_April_07_232506.gif)](/media/2021-04-2021_April_07_232506.gif) Now our game will run and display the level, but our character still falls through the screen. We'll fix this next.
 
 ![](/media/2021-04-img_606e8fa420c15.png)
 
@@ -40,15 +40,15 @@ Our map already has visuals for a platformer game, but no tiles are marked as so
 
     ![](/media/2021-04-img_6074fe68b1397.png)
 
-4.  Drag+drop the StandardTileset.tsx in the Content folder onto Tiled to access this tileset in Level1Map.tmx [![](/wp-content/uploads/2021/04/2021_April_07_234011.gif)](/wp-content/uploads/2021/04/2021_April_07_234011.gif)
+4.  Drag+drop the StandardTileset.tsx in the Content folder onto Tiled to access this tileset in Level1Map.tmx [![](/media/2021-04-2021_April_07_234011.gif)](/media/2021-04-2021_April_07_234011.gif)
 
-5.  Add a new layer to the map called **GameplayLayer [![](/wp-content/uploads/2021/04/2021_April_07_235312.gif)](/wp-content/uploads/2021/04/2021_April_07_235312.gif)**
+5.  Add a new layer to the map called **GameplayLayer [![](/media/2021-04-2021_April_07_235312.gif)](/media/2021-04-2021_April_07_235312.gif)**
 
 6.  Outline the solid collision areas in the level using the top-left brick tile to mark the SolidCollision tiles. Be sure to place these tiles on the GameplayLayer
 
     ![](/media/2021-04-img_606e9163bed38.png)
 
-Don't forget to save the TMX file after adding the collision. Since we used the StandardTileset.tmx file, our game automatically uses these tiles for the SolidCollision TileShapeCollection, and our player can walk around the level. [![](/wp-content/uploads/2021/04/2021_April_07_235518.gif)](/wp-content/uploads/2021/04/2021_April_07_235518.gif) The GameplayLayer visibility can be toggled in Tiled. You may want this off at times to see the art of the game without the solid collision tiles blocking the visuals, or you may want it on to help diagnose issues.
+Don't forget to save the TMX file after adding the collision. Since we used the StandardTileset.tmx file, our game automatically uses these tiles for the SolidCollision TileShapeCollection, and our player can walk around the level. [![](/media/2021-04-2021_April_07_235518.gif)](/media/2021-04-2021_April_07_235518.gif) The GameplayLayer visibility can be toggled in Tiled. You may want this off at times to see the art of the game without the solid collision tiles blocking the visuals, or you may want it on to help diagnose issues.
 
 ![](/media/2021-04-img_606e92b32e2ac.png)
 

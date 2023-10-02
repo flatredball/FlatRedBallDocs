@@ -12,7 +12,7 @@ To create a new Layer:
 4.  Enter a name for the Layer
 5.  Click **OK**
 
-[![](/wp-content/uploads/2016/01/01_12-19-51.gif)](/wp-content/uploads/2016/01/01_12-19-51.gif)
+[![](/media/2016-01-01_12-19-51.gif)](/media/2016-01-01_12-19-51.gif)
 
 ## Layer-able Types
 

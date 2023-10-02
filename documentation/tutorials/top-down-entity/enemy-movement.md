@@ -110,4 +110,4 @@ Next we need to assign the EnemyInput on the Enemy. To do this:
         }
         ...
 
-Now we can run the game and see the enemy move down to the right. [![](/wp-content/uploads/2022/03/15_10-27-50.gif)](/wp-content/uploads/2022/03/15_10-27-50.gif)
+Now we can run the game and see the enemy move down to the right. [![](/media/2022-03-15_10-27-50.gif)](/media/2022-03-15_10-27-50.gif)

@@ -28,7 +28,7 @@ The following code shows how to pause and unpause the screen using a gamepad's S
         }
     }
 
-When the game is paused, the Sprite automatically stops rotating and resumes when the game is unpaused. [![](/wp-content/uploads/2022/10/28_19-44-16.gif)](/wp-content/uploads/2022/10/28_19-44-16.gif)
+When the game is paused, the Sprite automatically stops rotating and resumes when the game is unpaused. [![](/media/2022-10-28_19-44-16.gif)](/media/2022-10-28_19-44-16.gif)
 
 ## Applying Movement After Pause
 
@@ -67,4 +67,4 @@ The following code assumes an Entity named Ball. Clicking the cursor creates a n
         }
     }
 
-  [![](/wp-content/uploads/2022/10/28_19-51-13.gif)](/wp-content/uploads/2022/10/28_19-51-13.gif)
+  [![](/media/2022-10-28_19-51-13.gif)](/media/2022-10-28_19-51-13.gif)

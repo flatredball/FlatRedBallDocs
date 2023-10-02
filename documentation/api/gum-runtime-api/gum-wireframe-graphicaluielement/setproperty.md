@@ -19,7 +19,7 @@ The following code assigns the Y value of a ColoredRectangle according to keyboa
         }
     }
 
-[![](/wp-content/uploads/2022/01/08_22-28-18.gif)](/wp-content/uploads/2022/01/08_22-28-18.gif)
+[![](/media/2022-01-08_22-28-18.gif)](/media/2022-01-08_22-28-18.gif)
 
 ## Code Example - Assigning States
 
@@ -44,4 +44,4 @@ If you are writing code where you do not have access to the specific types, the 
         GumScreen.ComponentWithStatesInstance.SetProperty("SizeState", "Small");
     }
 
-[![](/wp-content/uploads/2022/01/08_22-39-04.gif)](/wp-content/uploads/2022/01/08_22-39-04.gif)  
+[![](/media/2022-01-08_22-39-04.gif)](/media/2022-01-08_22-39-04.gif)  

@@ -15,7 +15,7 @@ Before we create states, we will decide which variables we want to modify. In th
 3.  Select **Texture** in the **Variable** dropdown
 4.  Click **OK**
 
-[![](/wp-content/uploads/2016/01/2021_March_13_183314.gif)](/wp-content/uploads/2016/01/2021_March_13_183314.gif) Repeat the process above to tunnel the CircleInstance Radius variable. Now the Rock entity has a variable for the SpriteInstance Texture and CircleInstance radius.
+[![](/media/2016-01-2021_March_13_183314.gif)](/media/2016-01-2021_March_13_183314.gif) Repeat the process above to tunnel the CircleInstance Radius variable. Now the Rock entity has a variable for the SpriteInstance Texture and CircleInstance radius.
 
 ![](/media/2022-12-img_63a05108d73ba.png)
 
@@ -47,7 +47,7 @@ The easiest way to edit states is to use the State Data tab:
 
     ![](/media/2022-12-img_63a04fc267e72.png)
 
-Since states usually require setting many variables, FlatRedBall provides a spreadsheet-like view of state data. By default categories do not modify any variables, so we must explicitly include which variables to our RockSize category. The easiest way is to drag+drop the variables that we would like modified onto the RockSize category. [![](/wp-content/uploads/2016/01/19_05-07-25.gif)](/wp-content/uploads/2016/01/19_05-07-25.gif) Alternatively, the **...** button at the top-right of the State Data tab provides more control over included and excluded variables. [![](/wp-content/uploads/2016/01/19_05-08-48.gif)](/wp-content/uploads/2016/01/19_05-08-48.gif) Now we can create four states - one for each size of rock. We will call the states Size1, Size2, Size3, and Size4. Size1 will be the smallest and Size4 will be the largest. Enter the values in the spreadsheet, with the state name being the first column.
+Since states usually require setting many variables, FlatRedBall provides a spreadsheet-like view of state data. By default categories do not modify any variables, so we must explicitly include which variables to our RockSize category. The easiest way is to drag+drop the variables that we would like modified onto the RockSize category. [![](/media/2016-01-19_05-07-25.gif)](/media/2016-01-19_05-07-25.gif) Alternatively, the **...** button at the top-right of the State Data tab provides more control over included and excluded variables. [![](/media/2016-01-19_05-08-48.gif)](/media/2016-01-19_05-08-48.gif) Now we can create four states - one for each size of rock. We will call the states Size1, Size2, Size3, and Size4. Size1 will be the smallest and Size4 will be the largest. Enter the values in the spreadsheet, with the state name being the first column.
 
 ![](/media/2021-03-img_604d65dee8ee2.png)
 

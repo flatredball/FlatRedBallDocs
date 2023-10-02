@@ -1,6 +1,6 @@
 ## Introduction
 
-This walkthrough covers the concept of *doors* - objects which can move the player from one area on the map to another. Doors are often used to subdivide single levels, and are used in games like Super Mario World (pipes and doors) and Mega Man X (doors leading to bosses). \[embed\]https://youtu.be/htFJTiVH5Ao?t=2086\[/embed\] The sample project can be downloaded from Github: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/DoorsDemo> [![](/wp-content/uploads/2021/05/2021_May_08_152255.gif)](/wp-content/uploads/2021/05/2021_May_08_152255.gif) This walkthrough refers to the DoorsDemo as *this demo* and *the demo*.
+This walkthrough covers the concept of *doors* - objects which can move the player from one area on the map to another. Doors are often used to subdivide single levels, and are used in games like Super Mario World (pipes and doors) and Mega Man X (doors leading to bosses). \[embed\]https://youtu.be/htFJTiVH5Ao?t=2086\[/embed\] The sample project can be downloaded from Github: <https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/DoorsDemo> [![](/media/2021-05-2021_May_08_152255.gif)](/media/2021-05-2021_May_08_152255.gif) This walkthrough refers to the DoorsDemo as *this demo* and *the demo*.
 
 ## Main Concepts
 
@@ -51,7 +51,7 @@ The boundsShapeCollection field is used to position the player in the UpdateBoun
         }
     }
 
-Normally the Map object references an entire MapDrawableBatch (the runtime for TMX files), but in this case we replace it with an AxisAlignedRectangle. In either case, the CameraControllingEntityInstance will respect the bounds of the Map object it is assigned. We can observe this behavior by walking to the edge of the map. Notice that the Camera doesn't move further to the right even though it hasn't reached the edge of the TMX file. [![](/wp-content/uploads/2021/05/2021_May_06_202739.gif)](/wp-content/uploads/2021/05/2021_May_06_202739.gif)
+Normally the Map object references an entire MapDrawableBatch (the runtime for TMX files), but in this case we replace it with an AxisAlignedRectangle. In either case, the CameraControllingEntityInstance will respect the bounds of the Map object it is assigned. We can observe this behavior by walking to the edge of the map. Notice that the Camera doesn't move further to the right even though it hasn't reached the edge of the TMX file. [![](/media/2021-05-2021_May_06_202739.gif)](/media/2021-05-2021_May_06_202739.gif)
 
 ## Door Entity
 

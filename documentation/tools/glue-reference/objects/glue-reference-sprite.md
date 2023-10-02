@@ -30,7 +30,7 @@ Sprites can be added to Glue screens or entities, although most games don't incl
 5.  Select the **Sprite** type
 6.  Click **OK**
 
-[![](/wp-content/uploads/2016/01/2019-05-02_06-51-56.gif)](/wp-content/uploads/2016/01/2019-05-02_06-51-56.gif)
+[![](/media/2016-01-2019-05-02_06-51-56.gif)](/media/2016-01-2019-05-02_06-51-56.gif)
 
 ## Sprite Texture
 
@@ -42,6 +42,6 @@ Sprites usually display textures, which are created from image files such as .pn
 4.  Select the Sprite in the same screen or entity with the newly-added file
 5.  Change its **Texture** property to the newly-added file
 
-[![](/wp-content/uploads/2016/01/2019-05-02_06-56-48-1.gif)](/wp-content/uploads/2016/01/2019-05-02_06-56-48-1.gif) For more information about working with textures, see the [Texture2D page](/documentation/tools/glue-reference/files/texture2d.md). The Sprite will now display the texture in the preview window and in game.  
+[![](/media/2016-01-2019-05-02_06-56-48-1.gif)](/media/2016-01-2019-05-02_06-56-48-1.gif) For more information about working with textures, see the [Texture2D page](/documentation/tools/glue-reference/files/texture2d.md). The Sprite will now display the texture in the preview window and in game.  
 
 ![](/media/2019-05-img_5ccae9f711f3f.png)

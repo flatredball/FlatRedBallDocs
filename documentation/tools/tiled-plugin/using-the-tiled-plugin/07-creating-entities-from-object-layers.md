@@ -123,7 +123,7 @@ We can use the Door entity to navigate between levels. We'll check collision bet
 1.  Expand the GameScreen Objects folder in Glue
 2.  Drag the PlayerList onto the DoorList to create a CollisionRelationship
 
-[![](/wp-content/uploads/2016/08/2021_February_20_145845.gif)](/wp-content/uploads/2016/08/2021_February_20_145845.gif)
+[![](/media/2016-08-2021_February_20_145845.gif)](/media/2016-08-2021_February_20_145845.gif)
 
 ``` lang:c#
 ```
@@ -155,7 +155,7 @@ Collision events are added to the Events file for the current screen. In this ca
       MoveToScreen(second.LevelToGoTo);
     }
 
-Now when the player collides with the door in Level2, the game will move to Level1. [![](/wp-content/uploads/2016/08/2021_February_20_155400.gif)](/wp-content/uploads/2016/08/2021_February_20_155400.gif)
+Now when the player collides with the door in Level2, the game will move to Level1. [![](/media/2016-08-2021_February_20_155400.gif)](/media/2016-08-2021_February_20_155400.gif)
 
 ## Conclusion
 

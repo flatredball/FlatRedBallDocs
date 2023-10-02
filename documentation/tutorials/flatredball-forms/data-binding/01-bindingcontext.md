@@ -157,4 +157,4 @@ The ViewModel properties can be updated at any time. Doing so automatically upda
         };
     }
 
-[![](/wp-content/uploads/2020/08/05_18-21-02.gif)](/wp-content/uploads/2020/08/05_18-21-02.gif) Notice that the click events on the buttons do not directly access any UI elements - only the properties on the ViewModel. This makes it much easier to maintain the UI and to continue to add dependencies.  
+[![](/media/2020-08-05_18-21-02.gif)](/media/2020-08-05_18-21-02.gif) Notice that the click events on the buttons do not directly access any UI elements - only the properties on the ViewModel. This makes it much easier to maintain the UI and to continue to add dependencies.  

@@ -84,7 +84,7 @@ Testing your collision using Fill or Border Outline is a handy way to make sure 
 
 4.  Add a Custom Property called SolidCollision. The type of the variable doesn't matter.
 
-    [![](/wp-content/uploads/2016/01/2020_February_03_211827.gif)](/wp-content/uploads/2016/01/2020_February_03_211827.gif)
+    [![](/media/2016-01-2020_February_03_211827.gif)](/media/2016-01-2020_February_03_211827.gif)
 
 5.  Save your tileset (tsx)
 
@@ -187,7 +187,7 @@ By default each rectangle in a TileShapeCollection occupies the entire tile (16x
 
     ![](/media/2022-02-img_621ac7774e2f5.png)
 
-4.  Draw a rectangle or polygon on the tile [![](/wp-content/uploads/2016/01/26_17_38_10.gif)](/wp-content/uploads/2016/01/26_17_38_10.gif)
+4.  Draw a rectangle or polygon on the tile [![](/media/2016-01-26_17_38_10.gif)](/media/2016-01-26_17_38_10.gif)
 
 5.  Set the type on the tile which has the collision. Note that the same type can be given to multiple tiles. Be sure to select the tile and not the shape. You may need to deselect and re-select the tile to force its properties to display rather than the newly-drawn polygon.
 

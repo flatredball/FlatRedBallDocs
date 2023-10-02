@@ -12,7 +12,7 @@ To create a Layer in Glue:
 4.  Select **Layer**
 5.  Click **OK**
 
-[![](/wp-content/uploads/2016/01/2021_July_22_092823.gif)](/wp-content/uploads/2016/01/2021_July_22_092823.gif)
+[![](/media/2016-01-2021_July_22_092823.gif)](/media/2016-01-2021_July_22_092823.gif)
 
 ## Layer Order
 
@@ -25,7 +25,7 @@ To add an object to a layer:
 1.  Make sure you have a Layer in the same Screen as your object
 2.  Drag+drop the object onto the layer
 
-[![](/wp-content/uploads/2016/01/2019-07-19_10-39-04.gif)](/wp-content/uploads/2016/01/2019-07-19_10-39-04.gif) You can verify that the layer was changed by looking at the **LayerOn** property. Entity instances can be moved to a layer in code using the [MoveToLayer](/documentation/tools/glue-reference/entities/movetolayer.md) function.
+[![](/media/2016-01-2019-07-19_10-39-04.gif)](/media/2016-01-2019-07-19_10-39-04.gif) You can verify that the layer was changed by looking at the **LayerOn** property. Entity instances can be moved to a layer in code using the [MoveToLayer](/documentation/tools/glue-reference/entities/movetolayer.md) function.
 
 ## Additional Information
 

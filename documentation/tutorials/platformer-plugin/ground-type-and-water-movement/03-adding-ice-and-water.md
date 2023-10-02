@@ -60,9 +60,9 @@ We'll repeat the process above to create water collision:
 
 Now our game has two new collision relationships: IceCollision and WaterCollision. This means that when our game runs, collision shapes are created based on the water and ice tiles, but we haven't yet told the game how to handle collisions between the Player and these collision relationships. First, we'll set up collisions between the Player and IceCollision:
 
-1.  Drag+drop **PlayerList** onto **IceCollision** [![](/wp-content/uploads/2021/04/05_16-16-01.gif)](/wp-content/uploads/2021/04/05_16-16-01.gif)
+1.  Drag+drop **PlayerList** onto **IceCollision** [![](/media/2021-04-05_16-16-01.gif)](/media/2021-04-05_16-16-01.gif)
 
-The newly-created PlayerVsIceCollision is automatically set up to use **Platformer Solid Collision** physics, so we don't need to make any changes. We also need to create collision between **PlayerList** and **WaterCollision**, but this time we need to disable **Platformer Solid Collision** since the Player should be able to fall into the water. To do this, drag+drop **PlayerList** onto **WaterCollision** and select **No Physics**. [![](/wp-content/uploads/2021/04/05_16-18-42.gif)](/wp-content/uploads/2021/04/05_16-18-42.gif) Now if we run our game we can collide with the ice tiles and fall through water. [![](/wp-content/uploads/2021/04/05_16-20-22.gif)](/wp-content/uploads/2021/04/05_16-20-22.gif)
+The newly-created PlayerVsIceCollision is automatically set up to use **Platformer Solid Collision** physics, so we don't need to make any changes. We also need to create collision between **PlayerList** and **WaterCollision**, but this time we need to disable **Platformer Solid Collision** since the Player should be able to fall into the water. To do this, drag+drop **PlayerList** onto **WaterCollision** and select **No Physics**. [![](/media/2021-04-05_16-18-42.gif)](/media/2021-04-05_16-18-42.gif) Now if we run our game we can collide with the ice tiles and fall through water. [![](/media/2021-04-05_16-20-22.gif)](/media/2021-04-05_16-20-22.gif)
 
 ## Conclusion
 

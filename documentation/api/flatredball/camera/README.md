@@ -49,7 +49,7 @@ Replace CustomInitialize and CustomActivity with the following code:
 
     }
 
-[![](/wp-content/uploads/2016/01/10_08-09-06.gif)](/wp-content/uploads/2016/01/10_08-09-06.gif)
+[![](/media/2016-01-10_08-09-06.gif)](/media/2016-01-10_08-09-06.gif)
 
 ## 2D Cameras and Pixels
 

@@ -8,11 +8,11 @@ The current version (as of this writing) adds support for three new primitive ty
 
 ### RoundedRectangle
 
-RoundedRectangle is similar to ColoredRectangle, but adds support for rounded corners and effects as described below. As the name implies, RoundedRectangle supports rounded corners which are controlled by the CornerRadius property. [![](/wp-content/uploads/2022/12/30_10-18-42.gif)](/wp-content/uploads/2022/12/30_10-18-42.gif)
+RoundedRectangle is similar to ColoredRectangle, but adds support for rounded corners and effects as described below. As the name implies, RoundedRectangle supports rounded corners which are controlled by the CornerRadius property. [![](/media/2022-12-30_10-18-42.gif)](/media/2022-12-30_10-18-42.gif)
 
 ### ColoredCircle
 
-ColoredCircle provides the ability to fill a circle with a solid color. It also supports effects as shown below. It fills the width of its bounding rectangle when its size changes. [![](/wp-content/uploads/2022/12/30_10-21-41.gif)](/wp-content/uploads/2022/12/30_10-21-41.gif)
+ColoredCircle provides the ability to fill a circle with a solid color. It also supports effects as shown below. It fills the width of its bounding rectangle when its size changes. [![](/media/2022-12-30_10-21-41.gif)](/media/2022-12-30_10-21-41.gif)
 
 ### Arc
 
@@ -22,7 +22,7 @@ The Arc object can be used to draw an arc shape which can be used to draw timers
 -   Sweep Angle - the angle controlling the angle drawn by the arc, following the same unit and direction as Start Angle.
 -   Is End Rounded - Whether the end caps are round or a straight line.
 
-[![](/wp-content/uploads/2022/12/30_10-28-57.gif)](/wp-content/uploads/2022/12/30_10-28-57.gif)
+[![](/media/2022-12-30_10-28-57.gif)](/media/2022-12-30_10-28-57.gif)
 
 ### Future Primitives
 
@@ -45,7 +45,7 @@ Gradients can be added to shapes. Gradients are specified using the following va
 -   Gradient X1 and Y1 Units - the Units used to position the first color values
 -   Gradient X2 and Y2 Units - the Units
 
-As shown in the following animation, gradients can be modified and previewed in the editor: [![](/wp-content/uploads/2022/12/30_10-39-22.gif)](/wp-content/uploads/2022/12/30_10-39-22.gif) Gradient units are useful if you want the gradients to respond to width or height changes, as shown in the following animation: [![](/wp-content/uploads/2022/12/30_10-48-08.gif)](/wp-content/uploads/2022/12/30_10-48-08.gif)
+As shown in the following animation, gradients can be modified and previewed in the editor: [![](/media/2022-12-30_10-39-22.gif)](/media/2022-12-30_10-39-22.gif) Gradient units are useful if you want the gradients to respond to width or height changes, as shown in the following animation: [![](/media/2022-12-30_10-48-08.gif)](/media/2022-12-30_10-48-08.gif)
 
 ### Dropshadow
 
@@ -56,11 +56,11 @@ Dropshadows can be added using the Has Dropshadow property. When enabled, drop s
 -   Dropshadow Alpha - Controls the transparency of the drop shadow.
 -   Dropshadow Red/Green/Blue - Allows the drop shadow to be colored. By default the color is black.
 
-Note that the drop shadow renders outside of the shapes bounding rectangle. [![](/wp-content/uploads/2022/12/30_10-55-57.gif)](/wp-content/uploads/2022/12/30_10-55-57.gif)
+Note that the drop shadow renders outside of the shapes bounding rectangle. [![](/media/2022-12-30_10-55-57.gif)](/media/2022-12-30_10-55-57.gif)
 
 ### Stroke and Fill
 
-Stroke and Fill control whether a shape is filled-in or if it only draws its outline. [![](/wp-content/uploads/2022/12/30_10-58-47.gif)](/wp-content/uploads/2022/12/30_10-58-47.gif)
+Stroke and Fill control whether a shape is filled-in or if it only draws its outline. [![](/media/2022-12-30_10-58-47.gif)](/media/2022-12-30_10-58-47.gif)
 
 ### Future Effects
 
@@ -107,7 +107,7 @@ Now your project is set up to support Skia objects in Gum. To add a Skia object 
 
     ![](/media/2022-12-img_63af2c46050ad.png)
 
-4.  Add Standard instances to your Screens or Components just like any other type of Standard object [![](/wp-content/uploads/2022/12/30_11-23-00.gif)](/wp-content/uploads/2022/12/30_11-23-00.gif)
+4.  Add Standard instances to your Screens or Components just like any other type of Standard object [![](/media/2022-12-30_11-23-00.gif)](/media/2022-12-30_11-23-00.gif)
 
 After adding these instances, they will appear in your game.
 

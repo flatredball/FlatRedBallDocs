@@ -32,7 +32,7 @@ Once one of the controls on a screen has focus, the gamepad can interact with it
 
 ![](/media/2022-02-img_61ff02b7561e7.png)
 
-Navigation between elements can be done by pressing up, down, left, or right on the analog stick or d-pad. The A button selects the control: [![](/wp-content/uploads/2022/02/05_16-06-36.gif)](/wp-content/uploads/2022/02/05_16-06-36.gif) The tab order of the items matches the order of the items in Gum. The layout has the following tab order, as shown in Gum:
+Navigation between elements can be done by pressing up, down, left, or right on the analog stick or d-pad. The A button selects the control: [![](/media/2022-02-05_16-06-36.gif)](/media/2022-02-05_16-06-36.gif) The tab order of the items matches the order of the items in Gum. The layout has the following tab order, as shown in Gum:
 
 ![](/media/2022-02-img_61ff06ae95211.png)
 
@@ -50,4 +50,4 @@ By default any control which implements IInputReceiver can be focused through ta
 
     Forms.DurationTextBox.GamepadTabbingFocusBehavior = FlatRedBall.Forms.Controls.TabbingFocusBehavior.SkipOnTab;
 
-[![](/wp-content/uploads/2022/02/02_12-44-26.gif)](/wp-content/uploads/2022/02/02_12-44-26.gif)
+[![](/media/2022-02-02_12-44-26.gif)](/media/2022-02-02_12-44-26.gif)
