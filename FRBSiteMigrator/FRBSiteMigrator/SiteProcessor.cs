@@ -226,7 +226,7 @@ namespace FRBSiteMigrator
                     {
                         if(targetPage.Type == "attachment")
                         {
-                            relative = targetPage.ProcessedPath;
+                            relative = "/media/" + targetPage.ProcessedPath;
                         }
                         else
                         {
@@ -256,12 +256,6 @@ namespace FRBSiteMigrator
                 {
                     var relative = img.MakeLinkRelative();
                     var media = site.Media.Where(m => m.Guid.Contains(relative)).FirstOrDefault();
-
-                    if(relative.Contains("gif"))
-                    {
-                        int m = 5;
-                    }
-
                     if (media != null)
                     {
                         var newLink = "/media/" + media.ProcessedPath;
