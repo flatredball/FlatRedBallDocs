@@ -58,15 +58,6 @@ namespace FRBSiteMigrator
             // get all of the CSV dump contents and populate the Site object
             GetSiteFromCsv();
 
-            // rebuild original URLs and updated file paths for content
-            Write("Calculating file paths for all content.");
-            foreach(var content in site.AllContent)
-            {
-                content.OriginalUrl = GetUrlRecursive(content, true);
-                content.ProcessedPath = GetUrlRecursive(content);
-                Write($"Got url: {content.ProcessedPath}");
-            }
-
             // check if any pages link to media that we don't know about
             Write("Checking for untracked media references.");
             foreach(var page in site.Pages)
@@ -76,6 +67,15 @@ namespace FRBSiteMigrator
             foreach(var post in site.Posts)
             {
                 FindAndAddUntrackedMedia(post);
+            }
+
+            // rebuild original URLs and updated file paths for content
+            Write("Calculating file paths for all content.");
+            foreach (var content in site.AllContent)
+            {
+                content.OriginalUrl = GetUrlRecursive(content, true);
+                content.ProcessedPath = GetUrlRecursive(content);
+                Write($"Got url: {content.ProcessedPath}");
             }
 
             // write a backup out so we can see it before we start the
@@ -185,7 +185,7 @@ namespace FRBSiteMigrator
             }
             catch(Exception ex)
             {
-                Write($"Failed to fetch media: {media.Guid}.");
+                Write($"Failed to fetch media: {media.Guid} - {ex.Message}.");
                 site.BadMediaPaths.Add(media.Guid);
             }
         }
@@ -202,6 +202,11 @@ namespace FRBSiteMigrator
                 {
                     var relative = link.MakeLinkRelative();
 
+                    if(link.Contains("gif"))
+                    {
+                        int m = 5;
+                    }
+
                     // see if we match any pages based on full or relative URL
                     var targetPage = site.AllContent.Where(c => string.Equals(c.OriginalUrl, link)).FirstOrDefault();
                     if(targetPage == null)
@@ -209,11 +214,24 @@ namespace FRBSiteMigrator
                         targetPage = site.AllContent.Where(c => string.Equals(c.OriginalUrl, relative)).FirstOrDefault();
                     }
 
+                    // if we still have a null target page, see if the non-relative link points at a media GUID (which is a full URL)
+                    if(targetPage == null)
+                    {
+                        targetPage = site.Media.Where(m => string.Equals(m.Guid, link)).FirstOrDefault();
+                    }
+
                     // if we got the target page, use the path we built for it, otherwise
                     // use the relative URL we created
                     if(targetPage != null)
                     {
-                        relative = targetPage.ProcessedPath + ".md";
+                        if(targetPage.Type == "attachment")
+                        {
+                            relative = targetPage.ProcessedPath;
+                        }
+                        else
+                        {
+                            relative = targetPage.ProcessedPath + ".md";
+                        }
                     }
                     else if(string.IsNullOrWhiteSpace(Path.GetExtension(link)))
                     {
@@ -238,6 +256,12 @@ namespace FRBSiteMigrator
                 {
                     var relative = img.MakeLinkRelative();
                     var media = site.Media.Where(m => m.Guid.Contains(relative)).FirstOrDefault();
+
+                    if(relative.Contains("gif"))
+                    {
+                        int m = 5;
+                    }
+
                     if (media != null)
                     {
                         var newLink = "/media/" + media.ProcessedPath;
@@ -325,12 +349,17 @@ namespace FRBSiteMigrator
             if(content.Type == "attachment")
             {
                 url = content.Guid;
-                if(url.Contains("wp-content/uploads"))
+                url = url.MakeLinkRelative();
+
+                if(!preserveOriginalStructure)
                 {
-                    var index = url.IndexOf("wp-content/uploads");
-                    url = url.Substring(index).Replace("wp-content/uploads", "");
+                    if (url.Contains("wp-content/uploads"))
+                    {
+                        var index = url.IndexOf("wp-content/uploads");
+                        url = url.Substring(index).Replace("wp-content/uploads", "");
+                    }
+                    url = url.ToFilenameSafeString();
                 }
-                url = url.ToFilenameSafeString();
             }
             else if(content.Type == "post")
             {
@@ -358,11 +387,6 @@ namespace FRBSiteMigrator
                     }
                 }
                 url += "/" + myName;
-            }
-
-            if(url.Length > 100)
-            {
-                int m = 5;
             }
 
             return url;
