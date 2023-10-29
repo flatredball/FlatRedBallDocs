@@ -1,4 +1,4 @@
-# flatredball-source
+# Building FlatRedBall From Source
 
 Currently all development is being done on the NetStandard branch, so if you would like to build FlatRedBall Glue form source, we recommend pulling the **NetStandard** branch. The FlatRedBall Game Engine and Tools are all open source:
 
@@ -17,10 +17,15 @@ The easiest way to download and keep FlatRedBall source up to date is to use a G
 1. Install Github for Desktop
 2.  Select File -> Clone Repository
 
-    ![](media/2021-08-img\_6112a86031125.png)
+    <div align="left" data-full-width="true">
+
+    <img src="media/2021-08-img_6112a86031125.png" alt="">
+
+    </div>
 3. Select the URL tab
 4. Enter the FlatRedBall url: https://github.com/vchelaru/FlatRedBall. Keep the default folder as **FlatRedBall**
-5. Click the Clone button ![](media/2021-08-img\_6112a90f42a84.png)
+5. Click the Clone button \
+   ![](media/2021-08-img\_6112a90f42a84.png)
 6.  Switch to the appropriate branch. The default branch is NetStandard
 
     ![](media/2022-11-img\_636b193cd624c.png)
@@ -44,10 +49,18 @@ To add the FRB source to your project:
 1. Open your project in the FlatRedBall Editor
 2.  Select the **Project** -> \*\*Link Game to FRB Source \*\*menu item
 
-    ![](media/2023-07-img\_64b5303d1f0e2.png)
+    <div align="left">
+
+    <img src="media/2023-07-img_64b5303d1f0e2.png" alt="">
+
+    </div>
 3.  The \*\*Add FRB Source \*\*tab appears, showing a text box for FlatRedBAll and Gum root folders. If your current project is also a Git project which is cloned to the same folder as FlatRedBall and Gum, then the FRB Editor attempts to fill in the file paths.
 
-    ![](media/2023-07-img\_64b531293eff9.png)
+    <div align="left">
+
+    <img src="media/2023-07-img_64b531293eff9.png" alt="">
+
+    </div>
 4. If your paths are blank or incorrect, use the ... button to select the file paths for each repository.
 5. If you are planning to use Gum Skia, check the option
 6. Click **Link to Source**
@@ -66,11 +79,15 @@ If you would like to use the engine source in your game project:
 3. Expand the References item
 4.  Find the **FlatRedBall** entry. This is the reference to the prebuilt-dll
 
-    ![](media/2017-02-img\_5892095362770.png)
+    <div align="left">
+
+    <img src="media/2017-02-img_5892095362770.png" alt="">
+
+    </div>
 5. Press the Delete key to remove this reference
 6. Right-click on the solution
 7. Select **Add -> Existing Project...**
-8.  Navigate to the location of the FlatRedBall .csproj file for your given platform. For example, for PC, add \*\*\<FlatRedBall Root>\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallDesktopGL.csproj \*\*
+8.  Navigate to the location of the FlatRedBall .csproj file for your given platform. For example, for PC, add **\<FlatRedBall Root>\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallDesktopGL.csproj**&#x20;
 
     ![](media/2021-08-img\_6112a9f5767f4.png)
 9. Click Open to add the project to your game's solution
@@ -84,30 +101,58 @@ If you would like to use the engine source in your game project:
 
 ### Building Glue
 
-#### Prequisites
+Verify that you have .NET 6 SDK installed [https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.309-windows-x64-installer](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.309-windows-x64-installer)  &#x20;
 
-Verify that you have .NET 6 SDK installed [https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.309-windows-x64-installer](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.309-windows-x64-installer)   The Glue solutions (.sln files) reference the FlatRedBall engine, so you do not have to open the FlatRedBall engine .sln files first. To build Glue, follow these steps:
+To build the FlatRedBall Editor (also referred to as Glue):
 
-1. Download the FlatRedBall repository (either clone it or download the .zip file from Github)
-2.  Download the [Gum repository](https://github.com/vchelaru/Gum). Make sure to download it to the same folder where you downloaded the FlatRedBall repository, and name the folder Gum. See below for an example.
+1. Download the FlatRedBall repository (either clone it or download the .zip file from Github) following the steps above
+2.  Download the [Gum repository](https://github.com/vchelaru/Gum) following the steps above. Make sure to download it to the same folder where you downloaded the FlatRedBall repository, and name the folder Gum. See below for an example. If you do not do this, you will have reference errors when opening the solution.
 
     ![](media/2016-11-img\_583909d260b0c.png)
 3.  Open the file **\<FlatRedBall Root>\FRBDK\Glue\Glue with All.sln.**
 
     ![](media/2021-08-img\_6112b22407f6b.png)
-4. Verify that your build configuration is Debug, x86
-5. Build the project
+4.  To rebuild Glue with all plugins, select **Build** -> **Build Solution** in Visual Studio. You must **Build or Rebuild** the first time you run FlatRedBall. If you make further changes to any plugins, you must either build the entire solution, or build the project that contains the plugin. Simply building the GlueFormsCore project, or pressing F5 to build and run Glue, will not build all plugins.\
+
+
+    <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+5. Set **GlueFormsCore** as the **StartUp Project**
+
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+1.  For Rider users, you will need to set GlueFormsCore as the project to run in the Configuration dialog.\
+    \
+    ![](<.gitbook/assets/image (3).png>)\
+
+
+    <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 It's important that Gum and FlatRedBall are checked out to the same folder. For example, you may have:
 
 * c:/MyDocuments/FlatRedBall
 * c:/MyDocuments/Gum
 
-### GlueWithGum.sln
-
-The "GlueWithGum.sln" solution includes Glue and the Gum plugin. If you run Glue from Visual Studio, you must first "Build Solution" so that the Gum plugin gets built. Simply debugging (pressing F5) does not build the Gum plugin.
-
 ### Troubleshooting
+
+#### Gum Project References Broken
+
+The Glue project references Gum projects, so the two project folders must be in the same root folder. To verify:
+
+1. Open **Glue with All.sln**
+2. Open the Solution Explorer
+3. Expand the GumProjects folder
+
+If the references are correct, your window should look similar to the following image:
+
+![](media/2020-04-img\_5e9098ba3d6ef.png)
+
+If your references are broken, then you may see something similar to the following image: &#x20;
+
+<figure><img src="media/2020-04-img_5e9098e234103.png" alt=""><figcaption></figcaption></figure>
+
+Notice that the projects are marked as **unloaded**. To solve this make sure that both of the projects (FlatRedBall and Gum) are in the same root folder. If you unzipped the files, then they may need to be moved up one folder.
 
 #### Microsoft.Windows.UI.Xaml.CSharp.targets was not found...
 

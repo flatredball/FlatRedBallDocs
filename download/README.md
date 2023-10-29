@@ -8,8 +8,6 @@
 
 ![](../media/2021-08-img\_610caaac075b7.png)
 
-####
-
 #### 2. XNA 4.0 Redistributable
 
 [https://www.microsoft.com/en-us/download/details.aspx?id=27598](https://www.microsoft.com/en-us/download/details.aspx?id=27598) Although this is not required to build and run FlatRedBall games, it is required to use Gum, which is the preferred FlatRedBall UI tool.
@@ -42,8 +40,6 @@ If you see the **Windows protected your PC** dialog, click **More info** -> **Ru
 The FlatRedBall Editor should appear.
 
 ![](../media/2022-12-img\_639d07e85b8d9.png)
-
-\[/frb\_toggle] \[frb\_toggle title="Building and Running FlatRedBall From Source"]
 
 ### Download Source
 
@@ -120,7 +116,11 @@ If the references are correct, your window should look similar to the following 
 
 ![](../media/2020-04-img\_5e9098ba3d6ef.png)
 
-If your references are broken, then you may see something similar to the following image: ![](../media/2020-04-img\_5e9098e234103.png) Notice that the projects are marked as **unloaded**. To solve this make sure that both of the projects (FlatRedBall and Gum) are in the same root folder. If you unzipped the files, then they may need to be moved up one folder. \[/frb\_toggle]
+If your references are broken, then you may see something similar to the following image: &#x20;
+
+<figure><img src="../media/2020-04-img_5e9098e234103.png" alt=""><figcaption></figcaption></figure>
+
+Notice that the projects are marked as **unloaded**. To solve this make sure that both of the projects (FlatRedBall and Gum) are in the same root folder. If you unzipped the files, then they may need to be moved up one folder. \[/frb\_toggle]
 
 #### Additional Troublshooting
 
@@ -132,7 +132,7 @@ Here's some more options on getting or updating FlatRedBall:
 
 * [Setup for FlatRedBall Android](../documentation/tools/glue-reference/multi-platform/glue-how-to-create-a-flatredball-android-project/android-setup.md)
 * [Building FlatRedBall from source](../flatredball-source.md)
-* [FlatRedBall DLLs (binaries)](../flatredball-dlls.md)
+* [FlatRedBall DLLs (binaries)](broken-reference)
 * [Installing XNA (for AnimationEditor, Gum, and older projects)](../visual-studio-2019-xna-setup.md)
 
 &#x20;

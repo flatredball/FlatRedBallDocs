@@ -1,27 +1,25 @@
-# flatredball-logo
+# FlatRedBall LOG
 
 ### For Dark Backgrounds
 
-128 pixels [![logo-reverse-128](../media/2016-01-logo-reverse-128.png)](../media/2016-01-logo-reverse-128.png)   256 pixels [![logo-reverse-256](../media/2016-01-logo-reverse-256.png)](../media/2016-01-logo-reverse-256.png)   512 pixels [![logo-reverse-512](../media/2016-01-logo-reverse-512.png)](../media/2016-01-logo-reverse-512.png)   1024 pixels [![logo-reverse-1024](../media/2016-01-logo-reverse-1024-1024x175.png)](../media/2016-01-logo-reverse-1024.png) &#x20;
+<figure><img src="../media/2016-01-logo-reverse-128.png" alt=""><figcaption><p>128 pixels</p></figcaption></figure>
+
+<figure><img src="../media/2016-01-logo-reverse-256.png" alt=""><figcaption><p>256 pixels</p></figcaption></figure>
+
+<figure><img src="../media/2016-01-logo-reverse-512.png" alt=""><figcaption><p>512 pixels</p></figcaption></figure>
+
+<figure><img src="../media/2016-01-logo-reverse-1024-1024x175.png" alt=""><figcaption><p>1024 pixels</p></figcaption></figure>
 
 ### For Light Backgrounds
 
-#### 128 pixels
+<figure><img src="../media/2016-01-logo-128.png" alt=""><figcaption><p>128 pixels</p></figcaption></figure>
 
-[![logo-128](../media/2016-01-logo-128.png)](../media/2016-01-logo-128.png) &#x20;
+<figure><img src="../media/2016-01-logo-256.png" alt=""><figcaption><p>256 pixels</p></figcaption></figure>
 
-#### 256 pixels
+<figure><img src="../media/2016-01-logo-512.png" alt=""><figcaption><p>512 pixels</p></figcaption></figure>
 
-[![logo-256](../media/2016-01-logo-256.png)](../media/2016-01-logo-256.png) &#x20;
-
-#### 512 pixels
-
-[![logo-512](../media/2016-01-logo-512.png)](../media/2016-01-logo-512.png) &#x20;
-
-### 1024 pixels
-
-[![logo-1024](../media/2016-01-logo-1024-1024x175.png)](../media/2016-01-logo-1024.png) &#x20;
+<figure><img src="../media/2016-01-logo-1024-1024x175.png" alt=""><figcaption><p>1024 pixels</p></figcaption></figure>
 
 ### Icon
 
-[![Icon](../media/2016-01-Icon.png)](../media/2016-01-Icon.png)     &#x20;
+<figure><img src="../media/2016-01-Icon.png" alt=""><figcaption></figcaption></figure>
