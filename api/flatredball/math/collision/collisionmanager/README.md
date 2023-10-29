@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The CollisionManager class provides methods for handling collision (the touching of game objects) in FlatRedBall games. The CollisionManager has built-in methods for handling collision between collidable entities (entities which implement the ICollidable interface). Use of the CollisionManager is not necessary, but it can reduce and standardize code for handling collisions. The CollisionManager provides a rich set of functionality for performing collision in code, but usually games do not need to write code against the CollisionManager. Instead, the FlatRedBall Editor provides support for creating CollisionRelationships without any code. For more information, see the [FlatRedBall Editor CollisionRelationship page](../../../../../documentation/tools/glue-reference/objects/collisionrelationship.md).
+The CollisionManager class provides methods for handling collision (the touching of game objects) in FlatRedBall games. The CollisionManager has built-in methods for handling collision between collidable entities (entities which implement the ICollidable interface). Use of the CollisionManager is not necessary, but it can reduce and standardize code for handling collisions. The CollisionManager provides a rich set of functionality for performing collision in code, but usually games do not need to write code against the CollisionManager. Instead, the FlatRedBall Editor provides support for creating CollisionRelationships without any code. For more information, see the [FlatRedBall Editor CollisionRelationship page](../../../../../glue-reference/objects/collisionrelationship.md).
 
 ### Collision Relationships
 

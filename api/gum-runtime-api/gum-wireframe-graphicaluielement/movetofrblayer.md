@@ -2,7 +2,7 @@
 
 ### Introduction
 
-MoveToFrbLayer can be used to move a GraphicalUiElement to a FlatRedBall layer. For information on moving objects to a layer in Glue, see the [Adding Gum Components to Layers](../../../documentation/tools/gum/how-to-add-components-to-layers.md) page. At the time of this writing, Gum objects can only exist on one FlatRedBall/Gum layer.
+MoveToFrbLayer can be used to move a GraphicalUiElement to a FlatRedBall layer. For information on moving objects to a layer in Glue, see the [Adding Gum Components to Layers](../../../gum/how-to-add-components-to-layers.md) page. At the time of this writing, Gum objects can only exist on one FlatRedBall/Gum layer.
 
 ### Gum Layers vs FlatRedBall Layers
 

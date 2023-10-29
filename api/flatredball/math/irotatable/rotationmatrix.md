@@ -12,4 +12,4 @@ The Matrix object contains numerous Vector3 properties which can be used to extr
 CarInstance.Velocity = CarInstance.RotationMatrix.Up * CarInstance.Speed;
 ```
 
-For a more-complete example, check the Rock Blaster tutorial, specifically [this page](../../../../documentation/tutorials/rock-blaster/tutorials-main-ship-behavior.md).
+For a more-complete example, check the Rock Blaster tutorial, specifically [this page](../../../../tutorials/rock-blaster/tutorials-main-ship-behavior.md).

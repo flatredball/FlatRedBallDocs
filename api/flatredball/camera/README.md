@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The Camera encapsulates functionality to simplify and control the display of a FlatRedBall application to the user. The camera controls view position, rotation, and background color. If the Camera is 3D, it can also control, field of view, and viewable distance. By default the camera in FlatRedBall looks down the negative Z axis - that is negative Z points away from the camera. Increasing the Camera's Z moves it backwards while decreasing moves it forward. Of course, if the Camera is rotated, the forward and backward directions change. Most games can change camera properties through the [FlatRedBall Editor's Camera Window](../../../documentation/tools/glue-reference/camera.md). Alternatively, the Camera can be modified in code.
+The Camera encapsulates functionality to simplify and control the display of a FlatRedBall application to the user. The camera controls view position, rotation, and background color. If the Camera is 3D, it can also control, field of view, and viewable distance. By default the camera in FlatRedBall looks down the negative Z axis - that is negative Z points away from the camera. Increasing the Camera's Z moves it backwards while decreasing moves it forward. Of course, if the Camera is rotated, the forward and backward directions change. Most games can change camera properties through the [FlatRedBall Editor's Camera Window](../../../glue-reference/camera.md). Alternatively, the Camera can be modified in code.
 
 ### Accessing the Camera
 

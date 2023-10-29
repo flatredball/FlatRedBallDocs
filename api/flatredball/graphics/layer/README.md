@@ -147,6 +147,6 @@ Layers will render to the full screen by default. Layers can be adjusted to only
 
 ### Adding Gum Screens to Layers
 
-For more information, see the [Adding Gum Components to Layers](../../../../documentation/tools/gum/how-to-add-components-to-layers.md) page.
+For more information, see the [Adding Gum Components to Layers](../../../../gum/how-to-add-components-to-layers.md) page.
 
 ###
