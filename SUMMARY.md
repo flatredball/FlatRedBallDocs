@@ -1,6 +1,8 @@
 # Table of contents
 
 * [FlatRedBall Features](README.md)
+* [Downloading FlatRedBall](download/README.md)
+  * [visual-studio-minimum-requirements](download/visual-studio-minimum-requirements.md)
 * [Building FlatRedBall From Source](flatredball-source.md)
 * [Need Help?](help.md)
 * [Introduction](visual-studio-2019-xna-setup.md)
@@ -1320,8 +1322,6 @@
       * [debug-and-release-dlls](documentation/tutorials/visual-studio-tutorials/debug-and-release-dlls.md)
       * [determining-your-version](documentation/tutorials/visual-studio-tutorials/determining-your-version.md)
       * [qualifying-types](documentation/tutorials/visual-studio-tutorials/qualifying-types.md)
-* [download](download/README.md)
-  * [visual-studio-minimum-requirements](download/visual-studio-minimum-requirements.md)
 * [games](games/README.md)
   * [angry-boy](games/angry-boy.md)
   * [avatar-skate](games/avatar-skate.md)
