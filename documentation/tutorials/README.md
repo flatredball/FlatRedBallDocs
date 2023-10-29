@@ -20,61 +20,117 @@ These tutorials walk you through creating a full game from scratch.
 
 Combine Tiled with a platformer entity to create a platformer game.
 
-![](../../media/2021-04-img\_608abcb912e5b.png)
+<div align="left">
+
+<img src="../../media/2021-04-img_608abcb912e5b.png" alt="">
+
+</div>
 
 [Platformer Basics](platformer-plugin/platformer-basics.md) Introduction to working with platformers in Glue. &#x20;
 
-![](../../media/2021-04-img\_608abd041ec2f.png)
+<div align="left">
+
+<img src="../../media/2021-04-img_608abd041ec2f.png" alt="">
+
+</div>
 
 [Ground Type and Water Movement](platformer-plugin/ground-type-and-water-movement.md) Change platformer player’s movement in response to various ground types (such as ice). &#x20;
 
-![](../../media/2021-04-img\_608abdc4f0b8c.png)
+<div align="left">
+
+<img src="../../media/2021-04-img_608abdc4f0b8c.png" alt="">
+
+</div>
 
 [Animation and Platformer Values](platformer-plugin/platformer-animations-values.md) Control platformer animation and change values according to input (such as a run button and ducking). &#x20;
 
-![](../../media/2021-04-img\_608ac0c76217a.png)
+<div align="left">
+
+<img src="../../media/2021-04-img_608ac0c76217a.png" alt="">
+
+</div>
 
 [Enemy Movement](platformer-plugin/enemy-movement.md) Create enemy movement in a platformer game. &#x20;
 
-![](../../media/2021-05-img\_608d930ad7c84.png)
+<div align="left">
+
+<img src="../../media/2021-05-img_608d930ad7c84.png" alt="">
+
+</div>
 
 [Multiple Players](platformer-plugin/multiple-players.md) Walkthrough of a local multiplayer platformer. &#x20;
 
-![](../../media/2021-05-img\_608f71ebd4855.png)
+<div align="left">
+
+<img src="../../media/2021-05-img_608f71ebd4855.png" alt="">
+
+</div>
 
 [NPC Dialog](platformer-plugin/npc-dialog.md) Walkthrough of creating NPCs with dialog boxes. &#x20;
 
-![](../../media/2021-05-img\_609545cbd7cd4.png)
+<div align="left">
+
+<img src="../../media/2021-05-img_609545cbd7cd4.png" alt="">
+
+</div>
 
 [Doors](platformer-plugin/doors.md) Walkthrough of creating doors to move between different parts in a level. &#x20;
 
-![](../../media/2021-05-img\_609a05dd95b5d.png)
+<div align="left">
+
+<img src="../../media/2021-05-img_609a05dd95b5d.png" alt="">
+
+</div>
 
 [Climbing Ladders](platformer-plugin/climbing-ladders.md) Walkthrough of adding ladder climbing. &#x20;
 
-![](../../media/2021-05-img\_609de79ca3716.png)
+<div align="left">
+
+<img src="../../media/2021-05-img_609de79ca3716.png" alt="">
+
+</div>
 
 [Moving Platforms](platformer-plugin/moving-platforms.md) Platforming on entities with velocity. &#x20;
 
-![](../../media/2021-06-img\_60b8d141dff6c.png)
+<div align="left">
+
+<img src="../../media/2021-06-img_60b8d141dff6c.png" alt="">
+
+</div>
 
 [Checkpoint and Level End](platformer-plugin/checkpoint-and-level-end.md) Checkpoints entities to respawn the player and midpoint and end of level entities for moving to the next level. &#x20;
 
-![](../../media/2021-04-img\_608ac10579aed.png)
+<div align="left">
+
+<img src="../../media/2021-04-img_608ac10579aed.png" alt="">
+
+</div>
 
 [Dealing Damage](platformer-plugin/dealing-damage.md) Create enemies which receive damage from player bullets. &#x20;
 
-![](../../media/2021-04-img\_608ac1378f975.png)
+<div align="left">
+
+<img src="../../media/2021-04-img_608ac1378f975.png" alt="">
+
+</div>
 
 [Breaking Blocks](platformer-plugin/breaking-blocks.md) Add breakable blocks to your platformer game. &#x20;
 
-###
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+Wall Jumping Wall sliding and jumping.
 
 ###
 
 ### Technology-Specific Tutorials
 
-Technology-specific tutorials cover a single technology, typically ![](../../media/2017-02-img\_58b11501ccb60.png)[Tiled Tutorials](../tools/tiled-plugin/using-the-tiled-plugin.md) Learn to work with Tiled, the most popular tile map editing program.   ![](../../media/2017-02-img\_58b2ef68ecf47.png)[Gum Tutorials](../tools/gum/tutorials.md) Use Gum to define and lay out flexible graphical layouts in your FlatRedBall game for HUDs and other UI. &#x20;
+Technology-specific tutorials cover a single technology
+
+![](../../media/2017-02-img\_58b11501ccb60.png)[Tiled Tutorials](../tools/tiled-plugin/using-the-tiled-plugin.md) Learn to work with Tiled, the most popular tile map editing program.   ![](../../media/2017-02-img\_58b2ef68ecf47.png)[Gum Tutorials](../tools/gum/tutorials.md) Use Gum to define and lay out flexible graphical layouts in your FlatRedBall game for HUDs and other UI. &#x20;
 
 ![](../../media/2023-09-img\_6504462fb1a98.png)
 

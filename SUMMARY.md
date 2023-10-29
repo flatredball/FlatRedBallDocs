@@ -1297,6 +1297,7 @@
         * [01-new-project-setup](documentation/tutorials/platformer-plugin/platformer-animations-values/01-new-project-setup.md)
         * [03-creating-animationlayers](documentation/tutorials/platformer-plugin/platformer-animations-values/03-creating-animationlayers.md)
         * [04-modifying-platformer-values](documentation/tutorials/platformer-plugin/platformer-animations-values/04-modifying-platformer-values.md)
+      * [Wall Sliding and Jumping](documentation/tutorials/platformer-plugin/wall-sliding-and-jumping.md)
       * [platformer-basics](documentation/tutorials/platformer-plugin/platformer-basics/README.md)
         * [Introduction](documentation/tutorials/platformer-plugin/platformer-basics/01-setup.md)
         * [02-creating-an-entity](documentation/tutorials/platformer-plugin/platformer-basics/02-creating-an-entity.md)
