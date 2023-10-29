@@ -32,7 +32,7 @@ if (InputManager.Keyboard.KeyPushed(Keys.Space))
 }
 ```
 
-The SoundEffectFile object in this example is a SoundEffect instance created by Glue. For information on working with the SoundEffect class, see [the SoundEffect code reference page](../../api/microsoft-xna-framework/audio/soundeffect.md). The SoundEffect (which is added to a Screen/Entity when adding a WAV file) can also be played using the [AudioManager](../../../frb/docs/index.php).
+The SoundEffectFile object in this example is a SoundEffect instance created by Glue. For information on working with the SoundEffect class, see [the SoundEffect code reference page](../../../api/microsoft-xna-framework/audio/soundeffect.md). The SoundEffect (which is added to a Screen/Entity when adding a WAV file) can also be played using the [AudioManager](../../../frb/docs/index.php).
 
 ### Limiting Number of Playing SoundEffects
 

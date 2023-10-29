@@ -49,4 +49,4 @@ var listItem = new ListItem();
 listItem.Parent = listContainerInstance;
 ```
 
-Adding an instance to a Layer For information on adding a Gum runtime instance to a layer, see the [MoveToFrbLayer page](../../api/gum-runtime-api/gum-wireframe-graphicaluielement/movetofrblayer.md).   &#x20;
+Adding an instance to a Layer For information on adding a Gum runtime instance to a layer, see the [MoveToFrbLayer page](../../../api/gum-runtime-api/gum-wireframe-graphicaluielement/movetofrblayer.md).   &#x20;

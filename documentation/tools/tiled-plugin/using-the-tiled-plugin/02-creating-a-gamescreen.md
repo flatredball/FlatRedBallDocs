@@ -235,7 +235,7 @@ FlatRedBallServices.GraphicsOptions.TextureFilter =
     Microsoft.Xna.Framework.Graphics.TextureFilter.Point;
 ```
 
-For more information, see the [TextureFilter page](../../../api/flatredball/graphics/graphicsoptions/texturefilter.md).
+For more information, see the [TextureFilter page](../../../../api/flatredball/graphics/graphicsoptions/texturefilter.md).
 
 ### Troubleshooting
 

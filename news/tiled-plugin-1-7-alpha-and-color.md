@@ -1,14 +1,16 @@
+# tiled-plugin-1-7-alpha-and-color
+
 The latest version of the Tiled plugin adds per-layer Alpha and Color (Red, Green, and Blue) values, enabling even more flexibility in rendering .tmx files.
 
-## Alpha From TMX
+### Alpha From TMX
 
-The Tiled program supports alpha values on each layer. Setting the alpha on a layer will automatically apply that alpha when the game runs. [![](/media/2018-09-2018-09-30_13-28-22.gif)](/media/2018-09-2018-09-30_13-28-22.gif)
+The Tiled program supports alpha values on each layer. Setting the alpha on a layer will automatically apply that alpha when the game runs. [![](../media/2018-09-2018-09-30\_13-28-22.gif)](../media/2018-09-2018-09-30\_13-28-22.gif)
 
-## Changing Color/Alpha in Code
+### Changing Color/Alpha in Code
 
 The latest plugin also adds the ability to change the color/alpha values in code. Since each layer is drawn independently, each layer can be adjusted on its own. For example, the following code shows how to adjust the alpha and color values of a map with 2 layers.
 
-``` lang:c#
+```lang:c#
 void CustomInitialize()
 {
     var firstLayer = Level1File.MapLayers[0];
@@ -25,18 +27,18 @@ void CustomInitialize()
 
 This code will produce the following when the game runs:
 
-![](/media/2018-09-img_5bb124aa4dc72.png)
+![](../media/2018-09-img\_5bb124aa4dc72.png)
 
 The above image and code use the following tilemap:
 
-![](/media/2018-09-img_5bb12512acd4b.png)
+![](../media/2018-09-img\_5bb12512acd4b.png)
 
 When adjusting layer color and alpha values, keep in mind:
 
--   Each layer can be adjusted independently
--   Alpha values in code will overwrite the **Opacity** value set in Tiled
--   Color values apply a *Modulate* (also called *multiply*) effect. For information on how Modulate works, see the [Modulate page](/documentation/api/flatredball/graphics/coloroperation/modulate.md).
--   Color values of 1 will result in the map being drawn without any modifications. A value of 0 will remove the particular color. In the example above, Green and Blue are set to 0, which is why the map draws red.
--   Values can be greater than 1 to make maps draw with additional brightness
+* Each layer can be adjusted independently
+* Alpha values in code will overwrite the **Opacity** value set in Tiled
+* Color values apply a _Modulate_ (also called _multiply_) effect. For information on how Modulate works, see the [Modulate page](../api/flatredball/graphics/coloroperation/modulate.md).
+* Color values of 1 will result in the map being drawn without any modifications. A value of 0 will remove the particular color. In the example above, Green and Blue are set to 0, which is why the map draws red.
+* Values can be greater than 1 to make maps draw with additional brightness
 
 Version 1.7.0 of the [Tiled plugin is available now](http://www.gluevault.com/plug/94-tiled-plugin), so you can start modifying your game's tile map color and alpha values right away.

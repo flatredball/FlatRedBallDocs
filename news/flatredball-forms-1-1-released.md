@@ -1,10 +1,12 @@
-The latest templates and Glue plugin include support for FlatRedBall.Forms 1.1. This version adds the TreeView control, along with the TreeViewItem used within the TreeView control. [![](/media/2018-07-2018-07-21_22-18-06-1.gif)](/media/2018-07-2018-07-21_22-18-06-1.gif)
+# flatredball-forms-1-1-released
 
-## Example Code
+The latest templates and Glue plugin include support for FlatRedBall.Forms 1.1. This version adds the TreeView control, along with the TreeViewItem used within the TreeView control. [![](../media/2018-07-2018-07-21\_22-18-06-1.gif)](../media/2018-07-2018-07-21\_22-18-06-1.gif)
 
-The latest Glue + Gum plugin includes default implementations for TreeView and TreeViewItem. This means that the TreeView can be created purely in Gum, purely in code, or any combination of the two. For example, the following code creates a TreeView and adds a **Monsters** category, then adds a few monster types embedded under **Monsters**.
+### Example Code
 
-``` lang:c#
+The latest Glue + Gum plugin includes default implementations for TreeView and TreeViewItem. This means that the TreeView can be created purely in Gum, purely in code, or any combination of the two. For example, the following code creates a TreeView and adds a **Monsters** category, then adds a few monster types embedded under **Monsters**.
+
+```lang:c#
 var treeView = new TreeView();
 
 var treeViewItem = new TreeViewItem();
@@ -20,16 +22,16 @@ treeView.Items.Add(treeViewItem);
 treeView.Visual.AddToManagers();
 ```
 
-## Additional Improvements
+### Additional Improvements
 
 Along with the TreeView control, the latest version of Glue + Gum adds:
 
--   Added support for font smoothing
--   Improvements to the Layout call, making certain types of changes happen more quickly
--   Glue plugin no longer crashes if standard elements (like Circle) are missing
--   Fixed scroll bars sometimes scrolling outside of their bounds
--   Fixed toggle buttons not defaulting to the unchecked state
+* Added support for font smoothing
+* Improvements to the Layout call, making certain types of changes happen more quickly
+* Glue plugin no longer crashes if standard elements (like Circle) are missing
+* Fixed scroll bars sometimes scrolling outside of their bounds
+* Fixed toggle buttons not defaulting to the unchecked state
 
-## Additional Information
+### Additional Information
 
-Check out the [TreeView](/documentation/api/flatredball-forms/controls/treeview.md) and [TreeViewItem](/documentation/api/flatredball-forms/controls/treeviewitem.md) pages for additional details.
+Check out the [TreeView](../api/flatredball-forms/controls/treeview.md) and [TreeViewItem](../api/flatredball-forms/controls/treeviewitem.md) pages for additional details.

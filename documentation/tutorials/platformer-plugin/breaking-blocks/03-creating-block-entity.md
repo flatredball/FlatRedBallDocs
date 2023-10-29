@@ -69,7 +69,7 @@ Our Block objects are currently displaying a black dot in the center of the coll
 
        ![](../../../../media/2021-04-img\_606f334622496.png)
 
-For more information on texture pixels, see the [Sprite.Texture Coordinates](../../../api/flatredball/sprite/texture-coordinates.md) page. Now our entity is using the breakable block graphic.
+For more information on texture pixels, see the [Sprite.Texture Coordinates](../../../../api/flatredball/sprite/texture-coordinates.md) page. Now our entity is using the breakable block graphic.
 
 ![](../../../../media/2021-04-img\_606f337266e68.png)
 
@@ -89,7 +89,7 @@ The Player can now collide with the blocks. [![](../../../../media/2021-04-2021\
 
 So far our game seems fairly functional, but it has a collision bug which can result in _snagging_ - the unexpected stopping of the Player's velocity when moving across flat surfaces. This bug can be difficult to reproduce, so you may not have noticed it in the game yet, but it can definitely happen given our current setup. This problem is caused by the Block instances currently having AxisAlignedRectangles with RepositionDirections in all four directions. The following image provides a visualization of this problem: ![](../../../../media/2021-04-img\_606f1937e27db.png) The purple lines indicate possible RepositionDirections which can occur, and if these occur the Player will experience snagging. The topic of RepositionDirections is fairly extensive, and interested readers can see the following pages for more information:
 
-* [AxisAlignedRectangle.RepositionDirections](../../../api/flatredball/math/geometry/axisalignedrectangle/repositiondirections.md)
+* [AxisAlignedRectangle.RepositionDirections](../../../../api/flatredball/math/geometry/axisalignedrectangle/repositiondirections.md)
 * [TileShapeCollection.AdjustRepositionDirectionsOnAddAndRemove](../../../tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/adjustrepositiondirectionsonaddandremove.md)
 * [TileShapeCollection.InsertCollidables](../../../tools/tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/insertcollidables.md)
 

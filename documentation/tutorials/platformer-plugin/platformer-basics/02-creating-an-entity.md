@@ -62,7 +62,7 @@ Now that we have the **MainCharater** set up with platfomer control values, we c
 
 ### Adding a CameraControllingEntity Instance (Optional)
 
-This tutorial series primarily focuses on creating a platformer entity. If you would like to control the camera manually, you can do so by modifying Camera.Main. More information about the Camera object can be found on the [Camera documentation page](../../../api/flatredball/camera.md). Alternatively, if you would like to have automatic camera control, see the [CameraControllingEntity documentation](../../../api/flatredball/entities/cameracontrollingentity.md). &#x20;
+This tutorial series primarily focuses on creating a platformer entity. If you would like to control the camera manually, you can do so by modifying Camera.Main. More information about the Camera object can be found on the [Camera documentation page](../../../api/flatredball/camera.md). Alternatively, if you would like to have automatic camera control, see the [CameraControllingEntity documentation](../../../../api/flatredball/entities/cameracontrollingentity.md). &#x20;
 
 ### Conclusion
 

@@ -1,0 +1,3 @@
+# Introduction
+
+ClientSizeChanged is an event which is raised whenever the window is resized. Unfortunately this event is only raised when the window is resized by dragging the corners/edges, or when the window is maximized. Once the window is maximized, clicking the maximize button to restore the window will not raise this event. Therefore, it is recommended that Windows Desktop games the [CornerGrabbingResize](../../flatredball/flatredballservices/cornergrabbingresize.md) event. For more information on this event, see the [this page](http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.gamewindow.clientsizechanged.aspx).
