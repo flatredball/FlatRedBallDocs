@@ -1,8 +1,16 @@
-# npc-dialog
+# NPC Dialog
 
 ### Introduction
 
-This walkthrough looks at the FlatRedBall DialogBoxDemo project and explains important details of implementing a dialog box in response to talking to NPCs. Platformers may include dialog boxes to display conversations between characters either as part of a cutscene (such as in Mega Man X) or in response to player input (such as in Castlevania 2). \[embed]https://youtu.be/wd2NqblSmIY?t=326\[/embed] The sample project can be downloaded from Github: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/DialogBoxDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/DialogBoxDemo) [![](../../media/2021-05-2021\_May\_01\_160053.gif)](../../media/2021-05-2021\_May\_01\_160053.gif) This walkthrough will refer to the DialogBoxDemo as _this demo_ and _the demo_.
+This walkthrough looks at the FlatRedBall DialogBoxDemo project and explains important details of implementing a dialog box in response to talking to NPCs. Platformers may include dialog boxes to display conversations between characters either as part of a cutscene (such as in Mega Man X) or in response to player input (such as in Castlevania 2).&#x20;
+
+{% embed url="https://youtu.be/wd2NqblSmIY?t=326" %}
+
+The sample project can be downloaded from Github: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/DialogBoxDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/DialogBoxDemo) &#x20;
+
+<figure><img src="../../media/2021-05-2021_May_01_160053.gif" alt=""><figcaption></figcaption></figure>
+
+This walkthrough will refer to the DialogBoxDemo as _this demo_ and _the demo_.
 
 ### Main Concepts
 

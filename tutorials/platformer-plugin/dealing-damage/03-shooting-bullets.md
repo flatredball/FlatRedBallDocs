@@ -1,4 +1,4 @@
-# 03-shooting-bullets
+# Shooting Bullets
 
 ### Introduction
 
@@ -16,12 +16,12 @@ To create a Bullet:
 1. Click the **Quick Actions** tab
 2.  Click the **Add Entity** button
 
-    ![](../../../../media/2021-04-img\_607e1fd7e03e3.png)
+    ![](../../../media/2021-04-img\_607e1fd7e03e3.png)
 3. Enter the name **Bullet**
 4. Click the **Circle** checkbox under **Collisions**
 5.  Leave all of the rest of the values default and click **OK**
 
-    ![](../../../../media/2021-04-img\_607e20336ee94.png)
+    ![](../../../media/2021-04-img\_607e20336ee94.png)
 
 When a Bullet is created, it will move either left or right. We need to control the speed of the bullet. We will create a variable which we'll use in our code later:
 
@@ -29,15 +29,15 @@ When a Bullet is created, it will move either left or right. We need to control 
 2. Click on the **Variables** tab
 3.  Click the **Add New Variable** button
 
-    ![](../../../../media/2021-04-img\_607e2221603ae.png)
+    ![](../../../media/2021-04-img\_607e2221603ae.png)
 4. Verify that **float** type is selected
 5. Enter the name **BulletSpeed**
 6.  Click **OK**
 
-    ![](../../../../media/2021-04-img\_607e22630ea62.png)
+    ![](../../../media/2021-04-img\_607e22630ea62.png)
 7.  Enter a value of **300** for **BulletSpeed**
 
-    ![](../../../../media/2021-04-img\_607e229ab79a5.png)
+    ![](../../../media/2021-04-img\_607e229ab79a5.png)
 
 We will also want to change the radius of the Bullet's CircleInstance:
 
@@ -46,7 +46,7 @@ We will also want to change the radius of the Bullet's CircleInstance:
 3. Click the **Variables** tab
 4. Change **Radius** to **6**
 
-![](../../../../media/2021-04-img\_607e2fd8d283a.png)
+![](../../../media/2021-04-img\_607e2fd8d283a.png)
 
 ### Creating a Bullet in Player
 
@@ -108,11 +108,11 @@ public partial class Player
 
 #### IPressableInput
 
-The first line of code in the Player class defines an IPressableInput. This is an object which can reference any pressable input hardware such as a keyboard key or an Xbox360GamePad button. We create this IPressableInput so that we can write code which will work regardless of input device. For more information on IPressableInput, see the [IPressableInput page](../../../../api/flatredball/input/ipressableinput.md).
+The first line of code in the Player class defines an IPressableInput. This is an object which can reference any pressable input hardware such as a keyboard key or an Xbox360GamePad button. We create this IPressableInput so that we can write code which will work regardless of input device. For more information on IPressableInput, see the [IPressableInput page](../../../api/flatredball/input/ipressableinput.md).
 
 #### CustomInitializePlatformerInput
 
-Whenever the input device is set on a platformer entity, the **CustomInitializePlatformerInput** method is called. Since our entity has custom input for shooting, we add the **CustomInitializePlatformerInput** where we assign **shootingInput** according to our **InputDevice** type. In this case we assign shooting to the right ALT key if using a keyboard and the X button if using an Xbox360GamePad. Any re-assignment of input should be done in \*\*CustomInitializePlatformerInput \*\*rather than **CustomInitialize**. This is because the order in which code is executed. When considering input, assignment, the following is performed:
+Whenever the input device is set on a platformer entity, the **CustomInitializePlatformerInput** method is called. Since our entity has custom input for shooting, we add the **CustomInitializePlatformerInput** where we assign **shootingInput** according to our **InputDevice** type. In this case we assign shooting to the right ALT key if using a keyboard and the X button if using an Xbox360GamePad. Any re-assignment of input should be done in **CustomInitializePlatformerInput** rather than **CustomInitialize**. This is because the order in which code is executed. When considering input, assignment, the following is performed:
 
 1. CustomInitialize
 2. InputDevice is assigned (can be assigned in generated code or custom code)
@@ -122,22 +122,26 @@ CustomInitialize always runs before an InputDevice is assigned. We want our shoo
 
 ### shootingInput.WasJustPressed
 
-Finally, we check our shootingInput.WasJustPressed to see if the user just pushed the input. If so, we create a bullet and set its XVelocity according to the direction that the Player is facing. If we run our game now, we can shoot bullets in the direction we're facing. [![](../../../../media/2021-04-2021\_April\_19\_204105.gif)](../../../../media/2021-04-2021\_April\_19\_204105.gif)
+Finally, we check our shootingInput.WasJustPressed to see if the user just pushed the input. If so, we create a bullet and set its XVelocity according to the direction that the Player is facing. If we run our game now, we can shoot bullets in the direction we're facing.&#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_19_204105.gif" alt=""><figcaption></figcaption></figure>
 
 ### Destroying Bullets
 
 Currently, our bullets can move through walls and enemies. First we'll add collision between our GameScreen BulletList and SolidCollision:
 
 1. Expand the **GameScreen** **Objects** folder
-2. Drag **BulletList** onto **SolidCollision** to create a new collision relationship [![](../../../../media/2021-04-2021\_April\_19\_202908.gif)](../../../../media/2021-04-2021\_April\_19\_202908.gif)
+2.  Drag **BulletList** onto **SolidCollision** to create a new collision relationship&#x20;
+
+    <figure><img src="../../../media/2021-04-2021_April_19_202908.gif" alt=""><figcaption></figcaption></figure>
 3. Select the new **BulletListVsSolidCollision** relationship
 4. Click the **Collision** tab
 5.  Click the **Add Event** button
 
-    ![](../../../../media/2021-04-img\_607e3811765b5.png)
+    ![](../../../media/2021-04-img\_607e3811765b5.png)
 6.  Click **OK** to accept the defaults
 
-    ![](../../../../media/2021-04-img\_607e38d7b39ff.png)
+    ![](../../../media/2021-04-img\_607e38d7b39ff.png)
 
 Now we can destroy the bullet whenever the event occurs:
 
@@ -155,7 +159,9 @@ void OnBulletListVsSolidCollisionCollisionOccurred (Entities.Bullet first, FlatR
 }
 ```
 
-Now we can shoot bullets and they will get destroyed when they hit the wall. [![](../../../../media/2021-04-2021\_April\_19\_202018-1.gif)](../../../../media/2021-04-2021\_April\_19\_202018-1.gif) &#x20;
+Now we can shoot bullets and they will get destroyed when they hit the wall.  &#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_19_202018-1.gif" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 

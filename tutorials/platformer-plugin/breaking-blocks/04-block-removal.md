@@ -1,8 +1,10 @@
-# 04-block-removal
+# Block Removal
 
 ### Introduction
 
-Currently our game is fully playable as a platformer, but it is missing the feature we've been working towards on this whole tutorial - the removal of blocks on collision. Games which remove blocks based on collision are common. Some games, such as Mega Man and Metroid, remove blocks in response t being shot by a weapon. Super Mario Bros removes blocks in response to collision with the player. Specifically, if Mario has collected a power-up which makes him grow, then hitting a block from below destroys it. This tutorial will implement this type of destruction since it will give us the opportunity to perform more advanced collision logic.
+Currently our game is fully playable as a platformer, but it is missing the feature we've been working towards on this whole tutorial - the removal of blocks on collision. Games which remove blocks based on collision are common. Some games, such as Mega Man and Metroid, remove blocks in response t being shot by a weapon. Super Mario Bros removes blocks in response to collision with the player. Specifically, if Mario has collected a power-up which makes him grow, then hitting a block from below destroys it.&#x20;
+
+This tutorial will implement this type of destruction since it will give us the opportunity to perform more advanced collision logic.
 
 ### Adjusting the Player and Camera
 
@@ -13,7 +15,7 @@ Before we add logic to destroy Blocks, we will make some minor adjustments to th
 3. Change the Width to 16
 4. Change the Height to 24
 
-![](../../../../media/2021-04-img\_606fc0e7e01cd.png)
+![](../../../media/2021-04-img\_606fc0e7e01cd.png)
 
 We'll also adjust the movement of the player so it's a little easier to control.
 
@@ -26,7 +28,7 @@ We'll also adjust the movement of the player so it's a little easier to control.
    * Air
      * Max Speed = 130
 
-![](../../../../media/2021-04-img\_606fe479beb9a.png)
+![](../../../media/2021-04-img\_606fe479beb9a.png)
 
 Next we'll zoom in the camera to make it easier to see the player.
 
@@ -34,7 +36,7 @@ Next we'll zoom in the camera to make it easier to see the player.
 2. Change Resolution to 360x240
 3. Change Scale to 300%
 
-![](../../../../media/2021-04-img\_606fe3702465c.png)
+![](../../../media/2021-04-img\_606fe3702465c.png)
 
 Now our character is easier to control and see.
 
@@ -53,19 +55,19 @@ Of the four concepts listed above, the one which requires the most attention is 
 
 To understand why breaking one block at a time adds complexity to our implementation, let's consider a few possible collision scenarios. The first scenario is the simplest - where the player collides with a single block as shown in the following image:
 
-![](../../../../media/2021-04-img\_6070577dba681.png)
+![](../../../media/2021-04-img\_6070577dba681.png)
 
 The player is represented by a blue rectangle and the block is represented by a red rectangle. In this case, the two overlap, and the player is hitting the block _from below_ so the block should break. Keep in mind that the player may not be exactly below the block. The block should break even if the player is slightly offset, as shown in the following image:
 
-![](../../../../media/2021-04-img\_607057f619403.png)
+![](../../../media/2021-04-img\_607057f619403.png)
 
 In the image above, the block would still break. Of course things get a little more complicated when we add multiple blocks. For example, consider the following image:
 
-![](../../../../media/2021-04-img\_6070589fad185.png)
+![](../../../media/2021-04-img\_6070589fad185.png)
 
 Which block should break in this situation? The player overlaps more of the block on the right than the block on the left, so breaking the block on the right seems best. Unfortunately, when we perform collision between entities and players, the block on the right may not ever collide with the player. CollisionRelationships perform collisions between one player/block pair at a time, and which pair is checked first depends on the order of blocks in the BlockList, which can change depending on partitioning. In other words, when using CollisionRelationships, we cannot depend on collision being performed in a particular order. With this in mind, it's possible that the left-most tile collides with the player first, which would result in the player being shifted down, as shown in the following image:
 
-![](../../../../media/2021-04-img\_60705acc1cc7c.png)
+![](../../../media/2021-04-img\_60705acc1cc7c.png)
 
 If the left block collides first and the player is pushed down as a result of the collision, the right block will not perform collision with the player. The events raised for collision will only be raised for the left block. As explained above, the block which actually collides with the player is arbitrary - it could be the left or it could be the right. This means that we cannot rely purely on the Player vs Block relationship to decide which block to destroy - at least, not if we plan on controlling which block is destroyed in such a situation.
 
@@ -73,11 +75,11 @@ If the left block collides first and the player is pushed down as a result of th
 
 We can solve this problem by adding a second collision object to the Player to help us decide which block to destroy. Glue supports objects with multiple collision objects. Consider the following image, where the Player object has two collision shapes - a blue rectangle for the body and a green rectangle for determining which rectangle to destroy.
 
-![](../../../../media/2021-04-img\_60705e31e0f3a.png)
+![](../../../media/2021-04-img\_60705e31e0f3a.png)
 
 Of course, it is possible that a block collision may occur even without the green rectangle colliding, as is the case in a single-block collision where the player is offset from the block.
 
-![](../../../../media/2021-04-img\_60705f2f19758.png)
+![](../../../media/2021-04-img\_60705f2f19758.png)
 
 This means that we can not rely completely on either the body (blue) or sub collision (green) to decide which block to destroy. Instead, we need to use both to decide which to destroy. The logic should be as follows:
 
@@ -94,27 +96,37 @@ As mentioned above, Glue supports objects with multiple collision shapes. To add
 1. Select the **Player** in Glue
 2.  Select the **Quick Actions** tab and click the **Add Object to Player** button
 
-    ![](../../../../media/2021-04-img\_6070628955273.png)
+    ![](../../../media/2021-04-img\_6070628955273.png)
 3. Select the **AxisAlignedRectangle** object type
 4. Enter the name **BlockCollision**
 5.  Click **OK**
 
-    ![](../../../../media/2021-04-img\_607062e7da44b.png)
+    ![](../../../media/2021-04-img\_607062e7da44b.png)
 6. Select the newly-created BlockCollision
 7. Set the following values:
    * Y = 12
    * Width = 1
    * Height = 5
 
-Our player now has a small rectangle at the top. However, this rectangle is currently considered as part of the entire player. This is most evident when hitting blocks from below. Notice that the new sub-collision performs solid collision. [![](../../../../media/2021-04-2021\_April\_09\_080126.gif)](../../../../media/2021-04-2021\_April\_09\_080126.gif) We don't want this rectangle to perform solid collision - it should only be used in our code to check which block to break. To fix this, we can mark the BlockRectangle as being excluded from the default list of shapes used in collision. To do this:
+Our player now has a small rectangle at the top. However, this rectangle is currently considered as part of the entire player. This is most evident when hitting blocks from below. Notice that the new sub-collision performs solid collision.
+
+&#x20;&#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_09_080126.gif" alt=""><figcaption></figcaption></figure>
+
+We don't want this rectangle to perform solid collision - it should only be used in our code to check which block to break. To fix this, we can mark the BlockRectangle as being excluded from the default list of shapes used in collision. To do this:
 
 1. Select the **BlockCollision** object under Player
 2. Click the **Properties** tab
 3.  Set the **IncludeInICollidable** to **false**
 
-    ![](../../../../media/2021-04-img\_607064aca548a.png)
+    ![](../../../media/2021-04-img\_607064aca548a.png)
 
-Now BlockCollision will still be part of the Player object but will not be considered in any CollisionRelationships (by default). [![](../../../../media/2021-04-2021\_April\_09\_084732.gif)](../../../../media/2021-04-2021\_April\_09\_084732.gif)
+Now BlockCollision will still be part of the Player object but will not be considered in any CollisionRelationships (by default).
+
+&#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_09_084732.gif" alt=""><figcaption></figcaption></figure>
 
 ### Adding Block Destroying Logic
 
@@ -130,14 +142,14 @@ We can handle Player vs Block collision by adding an event to this collision rel
 4. Select the **Collision** tab
 5.  Click the **Add Event** button
 
-    ![](../../../../media/2021-04-img\_607066c97bf69.png)
+    ![](../../../media/2021-04-img\_607066c97bf69.png)
 6.  Click **OK** to accept the defaults
 
-    ![](../../../../media/2021-04-img\_607066fa1a6bc.png)
+    ![](../../../media/2021-04-img\_607066fa1a6bc.png)
 
 Glue has now added an event to the **GameScreen.Events.cs** file which is called whenever the Player collides with a Block.
 
-![](../../../../media/2021-04-img\_60706761f3e47.png)
+![](../../../media/2021-04-img\_60706761f3e47.png)
 
 #### The Player Must Hit the Block From Below
 
@@ -188,7 +200,9 @@ void OnPlayerListVsBlockListCollisionOccurred (Entities.Player first, Entities.B
 }
 ```
 
-Now if we run the game, the Player can only destroy one Block at a time. If the Player collides with multiple Blocks, then the one which is directly above the Player will be destroyed. Of course, we there are some collision problems caused by the RepositionDirections not being adjusted properly. This is evident when trying to destroy the top row of blocks. [![](../../../../media/2021-04-2021\_April\_09\_091143.gif)](../../../../media/2021-04-2021\_April\_09\_091143.gif) &#x20;
+Now if we run the game, the Player can only destroy one Block at a time. If the Player collides with multiple Blocks, then the one which is directly above the Player will be destroyed. Of course, we there are some collision problems caused by the RepositionDirections not being adjusted properly. This is evident when trying to destroy the top row of blocks.  &#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_09_091143.gif" alt=""><figcaption></figcaption></figure>
 
 #### 4. Once a Block is Destroyed, Update RepositionDirections
 
@@ -229,7 +243,11 @@ void OnPlayerListVsBlockListCollisionOccurred (Entities.Player first, Entities.B
 }
 ```
 
-Notice that the rectangle is removed **before** the Block is destroyed. Also, notice that the RemoveRectangle method is called in two spots since we destroy blocks in two spots in the code above. Now the RepositionDirections are updated properly and the player will be able to collide with the blocks properly even after blocks are destroyed. [![](../../../../media/2021-04-2021\_April\_09\_094421.gif)](../../../../media/2021-04-2021\_April\_09\_094421.gif)
+Notice that the rectangle is removed **before** the Block is destroyed. Also, notice that the RemoveRectangle method is called in two spots since we destroy blocks in two spots in the code above. Now the RepositionDirections are updated properly and the player will be able to collide with the blocks properly even after blocks are destroyed.
+
+&#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_09_094421.gif" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 

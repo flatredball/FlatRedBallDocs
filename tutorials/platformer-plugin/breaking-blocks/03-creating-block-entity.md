@@ -1,4 +1,4 @@
-# 03-creating-block-entity
+# Creating the Block Entity
 
 ### Introduction
 
@@ -83,11 +83,21 @@ Currently our Player can jump through blocks rather than being able to hit and s
 
     ![](../../../media/2021-04-img\_606f34a321491.png)
 
-The Player can now collide with the blocks. [![](../../../media/2021-04-2021\_April\_08\_104753.gif)](../../../media/2021-04-2021\_April\_08\_104753.gif)
+The Player can now collide with the blocks.
+
+&#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_08_104753.gif" alt=""><figcaption></figcaption></figure>
 
 ### Adjusting RepositionDirections
 
-So far our game seems fairly functional, but it has a collision bug which can result in _snagging_ - the unexpected stopping of the Player's velocity when moving across flat surfaces. This bug can be difficult to reproduce, so you may not have noticed it in the game yet, but it can definitely happen given our current setup. This problem is caused by the Block instances currently having AxisAlignedRectangles with RepositionDirections in all four directions. The following image provides a visualization of this problem: ![](../../../media/2021-04-img\_606f1937e27db.png) The purple lines indicate possible RepositionDirections which can occur, and if these occur the Player will experience snagging. The topic of RepositionDirections is fairly extensive, and interested readers can see the following pages for more information:
+So far our game seems fairly functional, but it has a collision bug which can result in _snagging_ - the unexpected stopping of the Player's velocity when moving across flat surfaces. This bug can be difficult to reproduce, so you may not have noticed it in the game yet, but it can definitely happen given our current setup. This problem is caused by the Block instances currently having AxisAlignedRectangles with RepositionDirections in all four directions. The following image provides a visualization of this problem:
+
+&#x20;&#x20;
+
+<figure><img src="../../../media/2021-04-img_606f1937e27db.png" alt=""><figcaption></figcaption></figure>
+
+The purple lines indicate possible RepositionDirections which can occur, and if these occur the Player will experience snagging. The topic of RepositionDirections is fairly extensive, and interested readers can see the following pages for more information:
 
 * [AxisAlignedRectangle.RepositionDirections](../../../api/flatredball/math/geometry/axisalignedrectangle/repositiondirections.md)
 * [TileShapeCollection.AdjustRepositionDirectionsOnAddAndRemove](../../../tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/adjustrepositiondirectionsonaddandremove.md)
@@ -109,8 +119,6 @@ Now we can add the rectangles from our BlockList to the CombinedShapeCollection.
 
 1. Open **GameScreen.cs** in Visual Studio
 2. Modify CustomInitialize as shown in the following code snippet
-
-&#x20;
 
 ```
 void CustomInitialize()
