@@ -1,7 +1,6 @@
 # Table of contents
 
-* [FlatRedBall Features](README.md)
-* [Downloading FlatRedBall](download.md)
+* [Downloading FlatRedBall](README.md)
 * [Building FlatRedBall From Source](flatredball-source.md)
 * [Need Help?](help.md)
 * [Tutorials](tutorials/README.md)
@@ -19,7 +18,6 @@
     * [Scoring Hud](tutorials/beefball/scoring-hud.md)
     * [Scoring Hud Logic](tutorials/beefball/scoring-hud-logic.md)
     * [Adding Dashing](tutorials/beefball/adding-dashing.md)
-  * [star-blaster](tutorials/star-blaster.md)
   * [tortoise-svn-excluding-files-by-type](tutorials/tortoise-svn-excluding-files-by-type.md)
   * [troubleshooting-new-projects](tutorials/troubleshooting-new-projects.md)
   * [Introduction](tutorials/code-only-project-tutorial/README.md)

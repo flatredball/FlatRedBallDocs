@@ -1,61 +1,44 @@
-# features
+# Downloading FlatRedBall
 
-### FlatRedBall Makes Game Development Faster
+### Prerequisites
 
-![GlueGifFaster](media/2016-04-GlueGifFaster.gif)
+#### 1 - Visual Studio 2022 or Newer
 
-* Work on your game and see changes in real time.
-* Click play and your game starts in seconds.
-* Add files, tune variables, and create events in Glue - the FlatRedBall visual editor.
+[https://visualstudio.microsoft.com/vs/community/](https://visualstudio.microsoft.com/vs/community/) Although it is possible to make games without Visual Studio or Rider, doing so requires advanced knowledge of MSBuild. We recommend downloading and installing Visual Studio Community which is free.
 
-***
+Note - if you plan on using a different IDE such as Rider, then you will need to install the .NET 6 SDK manually. At a minimum you will need to install **.NET desktop development**.
 
-&#x20;
+![](media/2021-08-img\_610caaac075b7.png)
 
-### FlatRedBall Works with the Best Game Development Tools
+#### 2. XNA 4.0 Redistributable
 
-![TiledGifFast](media/2016-04-TiledGifFast.gif)
+[https://www.microsoft.com/en-us/download/details.aspx?id=27598](https://www.microsoft.com/en-us/download/details.aspx?id=27598) Although this is not required to build and run FlatRedBall games, it is required to use Gum, which is the preferred FlatRedBall UI tool.
 
-* Easy integration with Tiled, Texture Packer, Spriter, and more!
-* Plugin system allows adding additional content types with minimal effort - 3rd party tools behave like 1st party tools.
+#### 3. .NET 6 SDK
 
-***
+[https://dotnet.microsoft.com/en-us/download/dotnet/6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
-### Need to make content? We've got you covered!
+![](media/2023-03-img\_6415bcb385f79.png)
 
-![GumGifShort2](media/2016-04-GumGifShort2.gif)
+Visual Studio 2022 (as of version 17.5.1) installs .NET SDK 7.0 which has a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you will need to manually install .NET 6 SDK.
 
-* Use Gum to define UI components and lay out screens visually.
-* Built-in support for sprite animations, custom data formats, particles, and splines.
-* No project management necessary. Add content and it automatically shows up in game.
+### Downloading FlatRedBall
 
-***
+The most common approach to making FlatRedBall games is to use the FlatRedBall Editor. The Editor can be downloaded from a pre-built .zip file, or it can be built from source. New users should expand **Downloading Pre-Built FlatRedBall**. \[frb\_toggle title="Downloading Pre-Built FlatRedBall"]
 
-### Write Game Code with No Compromises
+### Downloading and Running FlatRedBall
 
-![Codegen5](media/2016-04-Codegen5.gif)
+1. Download the latest zip file from [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip](content/FrbXnaTemplates/DailyBuild/FRBDK.zip)
+2. Unzip the file after downloading
+3. Go to the folder where the .zip file unzipped to (by default called FRBDK)
+4. Open the Run FlatRedBall.bat file (double click it)
 
-* Use the latest Visual Studio and C# features and the full power of the .NET Framework.
-* Glue’s generated code is optimized to reduce load times.
-* Full engine and tool source available on Github.
+![](media/2023-07-img\_64b932f820fb5.png)
 
-***
+If you see the **Windows protected your PC** dialog, click **More info** -> **Run Anyway**
 
-### Need Custom Data? No Problem!
+![](media/2023-07-img\_64b938bddd912.png)
 
-![CsvGifFast](media/2016-04-CsvGifFast.gif)
+The FlatRedBall Editor should appear.
 
-* Create custom content and load it in game without writing any code.
-* Full auto-complete support for data. No more magic strings, no more wondering if content changes have broken your game.
-
-***
-
-&#x20;
-
-### Effortlessly Move Your Game to New Platforms
-
-![AndroidEmulatorGif2Fast](media/2016-04-AndroidEmulatorGif2Fast.gif)
-
-* Add new platforms at any point in development.
-* FlatRedBall handles all the nitty gritty - nearly 100% code and content shared across all platforms.
-* Develop for PC, Windows tablets, iOS, Android, and more...for free!
+![](media/2022-12-img\_639d07e85b8d9.png)
