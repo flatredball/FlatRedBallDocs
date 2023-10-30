@@ -1,8 +1,8 @@
-# tutorials-adding-files-to-a-project
+# Adding Files to a Game Project
 
 ### Introduction
 
-This tutorial will cover how to add files to a project using Glue plugins. We will be adding .cs files to a project when the project is initially loaded.
+This tutorial will cover how to add files to a project using FlatRedBall plugins. We will be adding .cs files to a project when the project is initially loaded.
 
 ### Creating a project
 
@@ -23,7 +23,7 @@ Next we'll add files that we want added to our project. To do this:
 3. For each file in your project, right-click and select "Properties"
 4. Change "Build Action" to "Embedded Resource"
 
-![BuildActionEmbeddedResource.png](../../../media/migrated\_media-BuildActionEmbeddedResource.png)
+![BuildActionEmbeddedResource.png](../../media/migrated\_media-BuildActionEmbeddedResource.png)
 
 ### Editing the PluginBase-inheriting Class
 
@@ -69,7 +69,7 @@ If your files do not show up, you can troubleshoot the process as follows:
 
 1. Look at the output window of Glue - if your plugin has crashed then Glue will display a callstack
 2. Put try/catch statements around relevant code, such as PerformAddAndSave, and see the exception message for more information on what might be happening
-3. Select [Plugins->Manage Plugins](../../../frb/docs/index.php) to see all plugins and investigate any failures which may have occurred.
+3. Select [Plugins->Manage Plugins](../../frb/docs/index.php) to see all plugins and investigate any failures which may have occurred.
 
 ### Conclusion
 

@@ -1,10 +1,10 @@
-# 06-creating-a-namedobjectsave-editing-plugin
+# Creating a NamedObjectSave-Editing Plugin
 
 ### Introduction
 
-A common plugin type is one that can modify NamedObjectSave instances. Thee types of plugins exist throughout Glue. For example, the Collision tab is a plugin which allows modifying NamedObjectSave instances which are collision relationships.
+A common plugin type is one that can modify NamedObjectSave instances. Thee types of plugins exist throughout FlatRedBall. For example, the Collision tab is a plugin which allows modifying NamedObjectSave instances which are collision relationships.
 
-![](../../../media/2023-04-img\_644745cc39879.png)
+![](../../media/2023-04-img\_644745cc39879.png)
 
 This tutorial shows how to create a plugin which can display and modify custom properties on a NamedObjectSave.
 
@@ -57,7 +57,7 @@ The ExampleView defines the UI for editing the properties on the selected NamedO
 
 The preview for this view should look like the following image:
 
-![](../../../media/2023-04-img\_64474930d5649.png)
+![](../../media/2023-04-img\_64474930d5649.png)
 
 Note that this view expects a ViewModel with properties BoolProperty and StringProperty.
 
@@ -145,4 +145,8 @@ public class MainExampleNamedObjectPlugin : PluginBase
 }
 ```
 
-The example above uses the ViewModel's null status to determine if the view and viewmodel have been created. If ViewModel is null, then CreateViewAndViewModel is called which performs a one-time initialization of the view and viewmodel. Assigning the ViewModel's GlueObject automatically associates the namedObjectSave with the ViewModel, resulting in its properties being used to populate StringProperty and BoolProperty - the two properties with the SyncedProperty attributes. Setting these properties through the bound UI automatically updates the JSON for the entity, as shown in the following gif: [![](../../../media/2023-04-24\_21-50-32.gif)](../../../media/2023-04-24\_21-50-32.gif) No additional work is needed to persist the properties to disk. Whenever the values are assigned, they are automatically saved to disk. If Glue is closed and re-opened, the values will be loaded from the Entity's JSON file and automatically displayed in the UI. &#x20;
+The example above uses the ViewModel's null status to determine if the view and viewmodel have been created. If ViewModel is null, then CreateViewAndViewModel is called which performs a one-time initialization of the view and viewmodel. Assigning the ViewModel's GlueObject automatically associates the namedObjectSave with the ViewModel, resulting in its properties being used to populate StringProperty and BoolProperty - the two properties with the SyncedProperty attributes. Setting these properties through the bound UI automatically updates the JSON for the entity, as shown in the following gif:&#x20;
+
+<figure><img src="../../media/2023-04-24_21-50-32.gif" alt=""><figcaption></figcaption></figure>
+
+No additional work is needed to persist the properties to disk. Whenever the values are assigned, they are automatically saved to disk. If Glue is closed and re-opened, the values will be loaded from the Entity's JSON file and automatically displayed in the UI. &#x20;

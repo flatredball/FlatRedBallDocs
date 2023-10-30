@@ -1,4 +1,4 @@
-# 01-creating-a-flatredball-project
+# Creating a FlatRedBall Project
 
 ### Introduction
 
@@ -6,24 +6,30 @@ This tutorial will walk you through installing and creating an empty FlatRedBall
 
 ### Downloading FlatRedBall
 
-Before you can begin to create your game, you may want to download the FlatRedBall Editor. Download and installation instructions can be found on our [Downloads Page](../../../download.md). Keep in mind that the download page focuses on Windows. If you are running on a Linux or Mac machine, then your installation steps will differ. We recommend using the FlatRedBall Editor, however, you can create FlatRedBall games without the FlatRedBall Editor. If you would like to skip using the FlatRedBall Editor, you can go do so by installing the .NET SDK (as shown below).l
+Before you can begin to create your game, you may want to download the FlatRedBall Editor. Download and installation instructions can be found on our [Downloads Page](../../download.md). Keep in mind that the download page focuses on Windows. If you are running on a Linux or Mac machine, then your installation steps will differ.&#x20;
+
+We recommend using the FlatRedBall Editor, however, you can create FlatRedBall games without the FlatRedBall Editor. If you would like to skip using the FlatRedBall Editor, you can go do so by installing the .NET SDK (as shown below).
 
 ### Creating a New Project Using the FlatRedBall Editor
 
-Once installed, you can create a new FlatRedBall project using the FlatRedBall Glue Editor. Don't worry, you only need to use the editor to create the project. Once the project has been created, you don't have to use it anymore. If you've downloaded and unzipped the FRBDK.zip file, then you should already have Glue on your machine. Unzip the file, open the Xna 4 Tools folder, and run GlueFormsCore.exe. ![](../../../media/2020-06-img\_5ed717015ee58.png) Once you the FlatRedBall editor, you can create a new project. To create a new Project:
+Once installed, you can create a new FlatRedBall project using the FlatRedBall Glue Editor. Don't worry, you only need to use the editor to create the project. Once the project has been created, you don't have to use it anymore. If you've downloaded and unzipped the FRBDK.zip file, then you should already have Glue on your machine. Unzip the file, open the XNA 4 Tools folder, and run GlueFormsCore.exe.
 
-1.  Select \*\*File \*\*-> **New Project**
+<figure><img src="../../media/2020-06-img_5ed717015ee58.png" alt=""><figcaption></figcaption></figure>
 
-    ![](../../../media/2021-07-img\_60fca048b4f9f.png)
+Once you the FlatRedBall editor, you can create a new project. To create a new Project:
+
+1.  Select **File**-> **New Project**
+
+    ![](../../media/2021-07-img\_60fca048b4f9f.png)
 2. Enter a name for the **Project Name.**
 3. Select your platform.
 4.  Uncheck **Open New Project Wizard**. This way the project will remain empty
 
-    ![](../../../media/2021-10-img\_6163ab93aed48.png)
+    ![](../../media/2021-10-img\_6163ab93aed48.png)
 
 After your project is created, you can open the project folder in the editor using the folder icon:
 
-![](../../../media/2021-10-img\_616d84d75ed54.png)
+![](../../media/2021-10-img\_616d84d75ed54.png)
 
 To find your new project solution file (.sln), navigate up a folder from the location opened by Glue. Alternatively you can navigate to the folder displayed in the new project window and open the .sln from the Windows Explorer. That's it; now you won't have to open the FRB editor anymore.
 
@@ -31,8 +37,8 @@ To find your new project solution file (.sln), navigate up a folder from the loc
 
 If you would like to avoid using the FlatRedBall Editor completely, or if you are running on Linux or Mac, then you can directly download a project template .zip file. To do this:
 
-1. Go to [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/](../../../content/FrbXnaTemplates/DailyBuild/ZippedTemplates.md)
-2. Select your target platform. For example, if developing for desktop select [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip](../../../content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip)
+1. Go to [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/](../../content/FrbXnaTemplates/DailyBuild/ZippedTemplates.md)
+2. Select your target platform. For example, if developing for desktop select [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip](../../content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip)
 3. Download and unzip the file to your machine
 4. Open the .sln in Visual Studio or Visual Studio Code (see below for Visual Studio Code instructions)
 
@@ -46,24 +52,24 @@ Visual Studio is not a requirement for using FlatRedBall. You can write, compile
 
 Open the folder where the .sln is located for your project.
 
-![](../../../media/2023-08-img\_64d8e28919fe6.png)
+![](../../media/2023-08-img\_64d8e28919fe6.png)
 
 Select the folder where you have unzipped your project earlier.
 
-![](../../../media/2023-08-img\_64d8e2d376c20.png)
+![](../../media/2023-08-img\_64d8e2d376c20.png)
 
 If asked, check **Yes, I trust the authors**.
 
-![](../../../media/2023-08-img\_64d8e207f1e75.png)
+![](../../media/2023-08-img\_64d8e207f1e75.png)
 
 ### Alternative - Adding FlatRedBall to your MonoGame Project
 
 If you have an existing MonoGame project, you can add FlatRedBall with the following steps:
 
-1. Download the .dll for the project you are working on from this folder: [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/](../../../content/FrbXnaTemplates/DailyBuild/SingleDlls.md)
+1. Download the .dll for the project you are working on from this folder: [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/](../../content/FrbXnaTemplates/DailyBuild/SingleDlls.md)
 2. Save the .dll to a location relative to your project, such as a Libraries folder
 3. Link your game project to the newly-downloaded .dll
-4. Modify Game1 so it contains the following calls:
+4. Modify `Game1` so it contains the following calls:
 
 In Initialize:
 
@@ -88,11 +94,13 @@ FlatRedBallServices.Draw();
 To run your newly-created project:
 
 1. Double-click the .sln file to open it in Visual Studio
-2. Once your project opens, click the **Start** button in Visual Studio
+2. Once your project opens, click the **Start** button in Visual Studio&#x20;
 
-![](../../../media/2017-09-img\_59bff6110e49e.png) Your project will compile and run, displaying an empty (black) screen.
+<figure><img src="../../media/2017-09-img_59bff6110e49e.png" alt=""><figcaption></figcaption></figure>
 
-![](../../../media/2017-09-img\_59bff64728002.png)
+Your project will compile and run, displaying an empty (black) screen.
+
+![](../../media/2017-09-img\_59bff64728002.png)
 
 ### Running your Project Without Visual Studio
 
@@ -100,6 +108,6 @@ If you would like to run your project without Visual Studio, you can use the dot
 
 1. Open a command window (like Windows PowerShell)
 2. Go to the folder where your .sln is located
-3. Type the command **dotnet build YourSolutionFile.sln**
+3. Type the command `dotnet build YourSolutionFile.sln`
 
 This will produce a .exe which you can then run. &#x20;

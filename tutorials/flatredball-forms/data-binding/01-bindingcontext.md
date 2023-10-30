@@ -1,4 +1,4 @@
-# 01-bindingcontext
+# BindingContext Property
 
 ### Introduction
 
@@ -16,18 +16,18 @@ For this tutorial we will create a Gum screen which contains the following:
 
 Normally the actions performed by the buttons listed above would occur through regular game logic (such as collision) but we will use buttons for the sake of simplicity. The specifics of the visuals do not matter, so your screen may look like the following:
 
-![](../../../../media/2020-08-img\_5f2ac2ffa2a12.png)
+![](../../../media/2020-08-img\_5f2ac2ffa2a12.png)
 
 A few details in the screen above are important:
 
 *   The three buttons are FlatRedBall.Forms Button objects. In other words, the three buttons are created in Gum using components which implement the Button behavior. The most common of these is ButtonStandard.
 
-    ![](../../../../media/2023-08-img\_64d11c2da310a.png)
+    ![](../../../media/2023-08-img\_64d11c2da310a.png)
 * The HealthBar (ColoredRectangle) is contained within a HealthContainer (Container) using the Percent Width Units
 * Each object in the screen is descriptively named. This will make data binding easier.
 *   The screen is called GameScreenGum. This is the default Gum Screen name for a FlatRedBall Screen called GameScreen. If you have created a game with a GameScreen using the wizard, you will also have a GameScreenGum
 
-    ![](../../../../media/2022-01-img\_61d634c5ae081.png)
+    ![](../../../media/2022-01-img\_61d634c5ae081.png)
 
 ### Creating a ViewModel
 
@@ -145,7 +145,7 @@ While this is less verbose, it produces code which is easier to break. Using nam
 
 Once the binding is set up, assigning properties on the ViewModel will automatically update the UI. For example, the values above initialize the score and health as shown in the following screenshot:
 
-![](../../../../media/2022-01-img\_61d6411c3f082.png)
+![](../../../media/2022-01-img\_61d6411c3f082.png)
 
 ### Updating ViewModel Properties
 
@@ -164,4 +164,8 @@ void CustomInitialize()
 }
 ```
 
-[![](../../../../media/2020-08-05\_18-21-02.gif)](../../../../media/2020-08-05\_18-21-02.gif) Notice that the click events on the buttons do not directly access any UI elements - only the properties on the ViewModel. This makes it much easier to maintain the UI and to continue to add dependencies. &#x20;
+&#x20;
+
+<figure><img src="../../../media/2020-08-05_18-21-02.gif" alt=""><figcaption></figcaption></figure>
+
+Notice that the click events on the buttons do not directly access any UI elements - only the properties on the ViewModel. This makes it much easier to maintain the UI and to continue to add dependencies. &#x20;

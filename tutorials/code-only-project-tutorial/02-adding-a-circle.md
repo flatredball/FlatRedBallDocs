@@ -1,8 +1,8 @@
-# 02-adding-a-circle
+# Adding a Circle
 
 ### Introduction
 
-FlatRedBall provides a number of \*primitives \*which can be used to render your game, and to perform collision. These include:
+FlatRedBall provides a number of **primitives** which can be used to render your game, and to perform collision. These include:
 
 * Sprite - draws an image to screen. This image is often referred to as a _Texture_.
 * Text - draws text to screen.
@@ -112,4 +112,8 @@ protected override void Update(GameTime gameTime)
 }
 ```
 
-The circles will now move to the right and up, but fall naturally. [![](../../media/2019-10-18\_08-44-03.gif)](../../media/2019-10-18\_08-44-03.gif) Notice that the velocity and acceleration values apply automatically once they are assigned. The ShapeManager keeps track of all Circles and applies these values every frame. For more information on working with the Circle object in code, see the [Circle page](../../documentation/api/flatredball/math/geometry/circle.md).
+The circles will now move to the right and up, but fall naturally. &#x20;
+
+<figure><img src="../../media/2019-10-18_08-44-03.gif" alt=""><figcaption></figcaption></figure>
+
+Notice that the velocity and acceleration values apply automatically once they are assigned. The ShapeManager keeps track of all Circles and applies these values every frame. For more information on working with the Circle object in code, see the [Circle page](../../documentation/api/flatredball/math/geometry/circle.md).

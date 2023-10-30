@@ -1,8 +1,8 @@
-# 03-creating-a-plugin-class
+# Creating a Plugin Class
 
 ### Introduction
 
-Every Glue plugin must have one class which implements PluginBase. This tutorial provides instructions for implementing the PluginBase  class in a plugin.
+Every FlatRedBall plugin must have one class which implements PluginBase. This tutorial provides instructions for implementing the PluginBase  class in a plugin.
 
 ### Creating the MainTutorialPlugin Class
 
@@ -13,7 +13,7 @@ To add a main plugin class to your project:
 3. Enter the name for your plugin (I will name mine **MainTutorialPlugin**)
 4. Click the **Add** button
 
-![](../../../media/2018-05-img\_5aef1d54301a8.png)
+![](../../media/2018-05-img\_5aef1d54301a8.png)
 
 We will make the following modifications to our class:
 
@@ -62,7 +62,7 @@ Glue will automatically load any files in the **plugins** folder. Our plugin is 
 2. Once Glue has finished loading, select the **Plugin** -> **Manage Plugins** menu item
 3. Look for **Tutorial Plugin** in the list of plugins (or whatever **FriendlyName** your plugin is returning)
 
-![](../../../media/2018-02-img\_5a7f74cb52277.png)
+![](../../media/2018-02-img\_5a7f74cb52277.png)
 
 Note that the plugin is displaying its version of 1.0. Increasing the version number is a good way to verify that your changes are making their way into Glue if you're unsure. You can optionally specify the version number in your plugin, as shown in the following code:
 
