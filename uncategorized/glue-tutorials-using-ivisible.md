@@ -16,9 +16,9 @@ Just like the IWindow and IClickable properties, the great thing about the IVisi
 Setting IVisible is as simple as setting the other interface values:
 
 1. Select the Entity you would like to make IVisible
-2. Change the "Implements IVisible" property to "True"![ImplementsIVisible.png](../media/migrated\_media-ImplementsIVisible.png)
+2. Change the "Implements IVisible" property to "True"![ImplementsIVisible.png](../media/migrated_media-ImplementsIVisible.png)
 
-At this point you will be able to simply set the Visible property on any instance of the given Entity you have set this to true on, and as always, with the help of auto-complete:![VisibleInVisualStudio.png](../media/migrated\_media-VisibleInVisualStudio.png)
+At this point you will be able to simply set the Visible property on any instance of the given Entity you have set this to true on, and as always, with the help of auto-complete:![VisibleInVisualStudio.png](../media/migrated_media-VisibleInVisualStudio.png)
 
 ### Visible vs. States
 
@@ -30,7 +30,7 @@ Let's consider a situation where you have an Entity which we'll call GameResults
 * PlayerOneWins
 * PlayerTwoWins
 
-![GameResultsInGlue.png](../media/migrated\_media-GameResultsInGlue.png)
+![GameResultsInGlue.png](../media/migrated_media-GameResultsInGlue.png)
 
 To continue defining the scenario, the GameScreen Screen has an instance of GameResults. As expected, when this instance is added to the GameScreen and the game is run, the GameResults is showing. To solve this, you decide to make the GameResults "Implement IVisible", then set its Visible to false in CustomInitialize of the GameScreen.
 
@@ -46,22 +46,22 @@ This can easily be solved using States. Since the GameResults needs to set some 
 6. Select "PlayerOneWins" for Object
 7. Select "Visible" for Variable
 8. Click OK
-9. Repeat to tunnel in to PlayerTwoWins' Visible property![VisiblePropertiesToUseInStates.png](../media/migrated\_media-VisiblePropertiesToUseInStates.png)
+9. Repeat to tunnel in to PlayerTwoWins' Visible property![VisiblePropertiesToUseInStates.png](../media/migrated_media-VisiblePropertiesToUseInStates.png)
 
 Now that the three variables have been created, we can create the three necessary states. First, we'll just define the three empty states:
 
 1. Right-click on the States item, and select "Add State"
 2. Enter the name "AllInvisible" and click OK
-3. Repeat the steps above to create a state called "PlayerOneVisible" and "PlayerTwoVisible"![EmptyStates.png](../media/migrated\_media-EmptyStates.png)
+3. Repeat the steps above to create a state called "PlayerOneVisible" and "PlayerTwoVisible"![EmptyStates.png](../media/migrated_media-EmptyStates.png)
 
 Finally, we can fill in the variables for the states. The AllInvisible one is the easiest:
 
 1. Select the AllInvisible property
-2. Change the "Visible" variable to "False"![VisibleInStateToFalse.png](../media/migrated\_media-VisibleInStateToFalse.png)
+2. Change the "Visible" variable to "False"![VisibleInStateToFalse.png](../media/migrated_media-VisibleInStateToFalse.png)
 3. Select the "PlayerOneVisible" state
-4. Set the "Visible" to "True" and the "PlayerTwoWinsVisible" to "False"![PlayerOneVisibleState.png](../media/migrated\_media-PlayerOneVisibleState.png)
+4. Set the "Visible" to "True" and the "PlayerTwoWinsVisible" to "False"![PlayerOneVisibleState.png](../media/migrated_media-PlayerOneVisibleState.png)
 5. Select the "PlayerTwoVisible" state
-6. Set the "Visible" to "True" and the "PlayerOneWinsVisible" to "False"![PlayerTwoVisibleState.png](../media/migrated\_media-PlayerTwoVisibleState.png)
+6. Set the "Visible" to "True" and the "PlayerOneWinsVisible" to "False"![PlayerTwoVisibleState.png](../media/migrated_media-PlayerTwoVisibleState.png)
 
 This last section may be a little confusing, so let's cover why we made the states the way we did. The first State (AllInvisible) was the easiest one. This one sets the Visible property on the Entity to false, which sets the Visibility of all contained elements to false.
 
@@ -69,7 +69,7 @@ The second state (PlayerOneVisible) sets the entire Entity's Visible to true, wh
 
 The PlayerTwoVisible state follows the same pattern as PlayerOneVisible - it turns everything on, then turns the PlayerOneWinsVisible variable to false.
 
-The reason this method works is because States set variables in the order that they appear in Glue. If at some point in the future you come across a situation where you need to re-order variables, you can do so simply by right-clicking on a Variable and selecting the appropriate action to move it up or down![RightClickToReorderVariables.png](../media/migrated\_media-RightClickToReorderVariables.png).
+The reason this method works is because States set variables in the order that they appear in Glue. If at some point in the future you come across a situation where you need to re-order variables, you can do so simply by right-clicking on a Variable and selecting the appropriate action to move it up or down![RightClickToReorderVariables.png](../media/migrated_media-RightClickToReorderVariables.png).
 
 ### IVisible and Lists
 

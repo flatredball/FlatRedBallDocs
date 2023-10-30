@@ -26,9 +26,9 @@ The list can be a very basic list, such as a List of [Sprites](../frb/docs/index
 
 ### Sample Code
 
-The following code creates a spinning [Sprite](../frb/docs/index.php) in the top right corner of the screen. Pressing the space bar tells the program to load the FRB\_logo.png file from disk to a Texture2D and create a Sprite using this Texture on the second thread. Then an instruction is created to add the Sprite to the engine on the first thread using the [InstructionQueue](../frb/docs/images/8/88/InstructionQueue.cs).
+The following code creates a spinning [Sprite](../frb/docs/index.php) in the top right corner of the screen. Pressing the space bar tells the program to load the FRB_logo.png file from disk to a Texture2D and create a Sprite using this Texture on the second thread. Then an instruction is created to add the Sprite to the engine on the first thread using the [InstructionQueue](../frb/docs/images/8/88/InstructionQueue.cs).
 
-Files used:![FRB logo.png](../media/migrated\_media-FRB\_logo.png), [InstructionQueue.cs (click to download)](../frb/docs/images/8/88/InstructionQueue.cs)
+Files used:![FRB logo.png](../media/migrated_media-FRB_logo.png), [InstructionQueue.cs (click to download)](../frb/docs/images/8/88/InstructionQueue.cs)
 
 Add the following using statements:
 
@@ -89,7 +89,7 @@ private void AddLogoSprite(Sprite spriteToAdd)
 }
 ```
 
-![ThreadedLoading.png](../media/migrated\_media-ThreadedLoading.png)
+![ThreadedLoading.png](../media/migrated_media-ThreadedLoading.png)
 
 ### Multithreaded Scene (.scnx) Loading
 
@@ -172,6 +172,6 @@ private void LoadScene()
 }
 ```
 
-![ThreadedLoadingScene.png](../media/migrated\_media-ThreadedLoadingScene.png)
+![ThreadedLoadingScene.png](../media/migrated_media-ThreadedLoadingScene.png)
 
 Did this article leave any questions unanswered? Post any question in our [forums](../frb/forum.md) for a rapid response.

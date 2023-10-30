@@ -24,7 +24,7 @@ spriteInFront.Height = 100;
 spriteInFront.Z = 1;
 ```
 
-![SpriteZ.PNG](../../../media/migrated\_media-SpriteZ.PNG)
+![SpriteZ.PNG](../../../media/migrated_media-SpriteZ.PNG)
 
 ### Z in 2D
 
@@ -43,4 +43,4 @@ The Z value controls the distance of an object from the Camera. When using a 2D 
 
 For information on how Z affects the sorting of objects, check the following articles:
 
-* [Sprite sorting and overlapping](../../../frb/docs/index.php#Setting\_Z\_Value)
+* [Sprite sorting and overlapping](../../../frb/docs/index.php#Setting_Z_Value)

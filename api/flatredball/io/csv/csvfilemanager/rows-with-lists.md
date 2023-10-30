@@ -42,7 +42,7 @@ The class shown above for Car is all that you need to do code-side to prepare yo
 
 If using the CSV plugin, the CSV would appear as shown in the following image:
 
-![](../../../../../../media/2017-05-img\_59189f093974d.png)
+![](../../../../../../media/2017-05-img_59189f093974d.png)
 
 In this case the Ford Taurus has 2 modifications ("Paint protection" and "After-market stereo"). The Toyota Corolla has 3 modifications ("Tinted Windows", "4-way rear speakers", and "Remote start system"). The spreadsheet displayed above has two things that are needed for lists. The first, which is quite obvious, is to declare the type for the appropriate header as a List\<string> (or whatever other primitive type you are using). In this case, we're using List\<string>, so the header is declared as follows:
 

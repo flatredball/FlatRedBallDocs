@@ -10,7 +10,7 @@ To add a SoundEffectInstance to your project:
 
 1. Make sure you have a Glue project with a Screen or Entity which will contain the SoundEffectInstance.
 2. Add a new WAV file to your Screen or Entity. For more information, the [.WAV file page](../files/glue-reference-wav-file-wav.md).
-3. Once the file has been added to Glue, you need to change the RuntimeType to SoundEffectInstance:![RuntimeTypeSoundEffectInstance.png](../../media/migrated\_media-RuntimeTypeSoundEffectInstance.png)
+3. Once the file has been added to Glue, you need to change the RuntimeType to SoundEffectInstance:![RuntimeTypeSoundEffectInstance.png](../../media/migrated_media-RuntimeTypeSoundEffectInstance.png)
 
 At this point the SoundEffectInstance will be available in code, but you cannot change any variables on the SoundEffectInstance. To do this:
 
@@ -22,11 +22,11 @@ At this point the SoundEffectInstance will be available in code, but you cannot 
 6. Select the newly-created object
 7. Change "SourceName" to "Entire File (SoundEffectInstance)"
 
-![SoundEffectInstanceObjectSourceName.png](../../media/migrated\_media-SoundEffectInstanceObjectSourceName.png)
+![SoundEffectInstanceObjectSourceName.png](../../media/migrated_media-SoundEffectInstanceObjectSourceName.png)
 
 ### Modifying Variables
 
-After setting up the object, you can modify the variables of the object in Glue. To do so, select the object and scroll to the "Unset Variables" category. ![SoundEffectInstanceObjectVariables.png](../../media/migrated\_media-SoundEffectInstanceObjectVariables.png) These variables can also be set through code:
+After setting up the object, you can modify the variables of the object in Glue. To do so, select the object and scroll to the "Unset Variables" category. ![SoundEffectInstanceObjectVariables.png](../../media/migrated_media-SoundEffectInstanceObjectVariables.png) These variables can also be set through code:
 
 ```
 // 50% volume:

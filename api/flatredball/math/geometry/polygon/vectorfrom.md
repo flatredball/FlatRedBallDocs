@@ -58,4 +58,4 @@ text.DisplayText = vectorFrom.ToString();
 connectingLine.RelativePoint2 = vectorFrom;
 ```
 
-![VectorFrom.png](../../../../../../media/migrated\_media-VectorFrom.png)
+![VectorFrom.png](../../../../../../media/migrated_media-VectorFrom.png)

@@ -128,7 +128,7 @@ public partial class TestScreen
 
 
 
-<figure><img src="../../../../../media/2020-12-2020\_December\_18\_113601.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2020-12-2020_December_18_113601.gif" alt=""><figcaption></figcaption></figure>
 
  &#x20;
 

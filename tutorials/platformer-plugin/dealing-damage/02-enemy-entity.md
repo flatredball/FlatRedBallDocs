@@ -12,7 +12,7 @@ To import the entity
 2. In Glue, right-click on the Entities folder
 3.  Select **Import Entity**
 
-    ![](../../../media/2021-04-img\_607e09e77abbf.png)
+    ![](../../../media/2021-04-img_607e09e77abbf.png)
 4. Navigate to the location where you saved the Enemy file earlier and click OK
 
 We now have a fully-functional enemy which has:
@@ -22,7 +22,7 @@ We now have a fully-functional enemy which has:
 * Platformer values so that it can collide with solid collision
 * EnemyInput object which will keep the enemy from moving (does not use the gamepad or keyboard)
 
-![](../../../media/2021-04-img\_607e0a6f79d2f.png)
+![](../../../media/2021-04-img_607e0a6f79d2f.png)
 
 ### Adding EnemyList to GameScreen
 
@@ -33,7 +33,7 @@ We will add a list to our GameScreen and an instance of our Enemy to Level1 so w
 3. Click the **Add Enemy List to GameScreen** button - this creates a list of enemies which we'll use to create collision relationships later
 4. Click the **Add Enemy Factory** button - this allows us to create enemies in code and Tiled maps.
 
-![](../../../media/2021-04-img\_607e0b2c6c289.png)
+![](../../../media/2021-04-img_607e0b2c6c289.png)
 
 To add an enemy to your Level1:
 
@@ -45,7 +45,7 @@ To add an enemy to your Level1:
 3. Set **X** to **160**
 4.  Set **Y** to **-160**
 
-    ![](../../../media/2021-04-img\_607e10dfcde24.png)
+    ![](../../../media/2021-04-img_607e10dfcde24.png)
 
 Now we have an enemy in the game, but it falls through the level. We can fix this by telling the enemies to collide against our GameScreen's SolidCollision object:
 
@@ -59,6 +59,6 @@ Now we have an enemy in the game, but it falls through the level. We can fix thi
 
 If we run the game now, the enemy will fall and land in the level next to the player.
 
-![](../../../media/2021-04-img\_607e1e1cb80cb.png)
+![](../../../media/2021-04-img_607e1e1cb80cb.png)
 
 &#x20;

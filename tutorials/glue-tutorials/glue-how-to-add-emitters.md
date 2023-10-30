@@ -13,10 +13,10 @@ The first step in creating an Emitter is to create a .emix file. Just like any o
 3. Select "Add File" -> "New File"
 4. Select "Emitter List (.emix)" as the file type
 5. Enter a name or leave it as the default and click "OK"
-6. Double-click the file to open it. You may need to set up your [file associations](../../../frb/docs/index.php) to open the .emix file in the ParticleEditor.![ParticleEditor.PNG](../../../media/migrated\_media-ParticleEditor.PNG)
+6. Double-click the file to open it. You may need to set up your [file associations](../../../frb/docs/index.php) to open the .emix file in the ParticleEditor.![ParticleEditor.PNG](../../../media/migrated_media-ParticleEditor.PNG)
 7. Click the "Add Emitter" button
 8. Enter a name for the new emitter
-9. Click the "Start All" button![EmittingParticle.PNG](../../../media/migrated\_media-EmittingParticle.PNG)
+9. Click the "Start All" button![EmittingParticle.PNG](../../../media/migrated_media-EmittingParticle.PNG)
 10. Click File->"Save .emix (Emitter List XML)" and click OK to save the file. If asked, select the "Copy All Locally" file, then click "Save".
 
 For more information on how to edit the file in the [ParticleEditor](../../../frb/docs/index.php), see the [ParticleEditor](../../../frb/docs/index.php) wiki page.
@@ -25,7 +25,7 @@ For more information on how to edit the file in the [ParticleEditor](../../../fr
 
 As of October 2012 Emitters which are added to Screens and Entities will automatically emit. You can even preview emitters in GlueView. Simply select the GlueView -> "Launch GlueView" option from Glue:
 
-![EmitterInGView.PNG](../../../media/migrated\_media-EmitterInGView.PNG)
+![EmitterInGView.PNG](../../../media/migrated_media-EmitterInGView.PNG)
 
 **Note:** You may need to switch the camera from 3D to 2D in GlueView if the emitter does not show up.
 

@@ -15,18 +15,18 @@ For this game, the Player will continuously move forward at a constant speed. Th
 5. Enter the name **MovementSpeed**
 6. Click **OK**
 
-![](../../../media/2021-03-img\_604d0631101c7.png)
+![](../../../media/2021-03-img_604d0631101c7.png)
 
 Repeat the steps above to also add a **TurningSpeed** variable.
 
-![](../../../media/2021-03-img\_604d06a43dc27.png)
+![](../../../media/2021-03-img_604d06a43dc27.png)
 
 Next let's give the variables some default values:
 
 1. Enter a value of 100 for **MovementSpeed**. This is the number of pixels the Player will travel in one second.
 2. Enter a value of 3.14 for **TurningSpeed**. This is the maximum number of radians the Player will rotate in one second.
 
-![](../../../media/2021-03-img\_604d071fb51e9.png)
+![](../../../media/2021-03-img_604d071fb51e9.png)
 
 ### Applying Movement
 
@@ -34,10 +34,10 @@ To apply movement we will need to write some C# code. To do this:
 
 1.  Open the project in Visual Studio (or switch to Visual Studio if you already have it open)
 
-    ![](../../../media/2021-03-img\_604d0780c1ed3.png)
+    ![](../../../media/2021-03-img_604d0780c1ed3.png)
 2.  Open **Player.cs**. This will be in the **Entities** folder in the **Solution Explorer**.
 
-    ![](../../../media/2021-03-img\_604d0807644d9.png)
+    ![](../../../media/2021-03-img_604d0807644d9.png)
 3. Scroll to the **CustomActivity** method in Player.cs
 
 Modify CustomActivity as shown in the following snippet:
@@ -88,19 +88,19 @@ private void CustomActivity()
 
 &#x20; Note that all of the code we have written uses coefficients (**MovementSpeed** and **TurningSpeed**) defined in Glue. This means that you can modify these values in the Player Entity at any time if you want to tune how the game feels. For example, if you want the ship to turn faster, increase **TurningSpeed** to a larger value.
 
-![](../../../media/2021-03-img\_604d2cab34a53.png)
+![](../../../media/2021-03-img_604d2cab34a53.png)
 
 ### Adding Bullet Sprite
 
 Next we will give the Bullet a PNG file and a Sprite to use. This process is essentially the same as when we added PNG files and a Sprite to our Player Entity so you may find these steps familiar. To add the PNG:
 
-1. Download the following file to your computer: ![Bullet1.png](../../../media/migrated\_media-Bullet1.png)
+1. Download the following file to your computer: ![Bullet1.png](../../../media/migrated_media-Bullet1.png)
 2. Expand the **Bullet** entity in Glue
 3. Drag+drop Bullet1.png onto the Files folder in the Bullet
 
 
 
-<figure><img src="../../../media/2016-01-2021\_March\_13\_141331.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_March_13_141331.gif" alt=""><figcaption></figcaption></figure>
 
  To add a Sprite to the \*\*Bullet \*\*entity:
 
@@ -108,11 +108,11 @@ Next we will give the Bullet a PNG file and a Sprite to use. This process is ess
 2. Click the **Quick Actions** tab
 3.  Click the **Add Object to Bullet** button
 
-    ![](../../../media/2021-03-img\_604d30bc42574.png)
+    ![](../../../media/2021-03-img_604d30bc42574.png)
 4. Select the Sprite type
 5. Click OK
 
-![](../../../media/2021-03-img\_604d31520f539.png)
+![](../../../media/2021-03-img_604d31520f539.png)
 
 Now we can set the Sprite's Texture:
 
@@ -121,7 +121,7 @@ Now we can set the Sprite's Texture:
 3. Select the **Variables** tab
 4. Set the **Texture** drop-down to **Bullet1**
 
-![](../../../media/2021-03-img\_604d328d7090b.png)
+![](../../../media/2021-03-img_604d328d7090b.png)
 
 ### Shooting
 
@@ -131,14 +131,14 @@ The next step is to add firing bullets. We'll be using the BulletFactory which w
 2. Click the Variables tab
 3.  Click the **Add New Variable** button
 
-    ![](../../../media/2021-03-img\_604d334e219f9.png)
+    ![](../../../media/2021-03-img_604d334e219f9.png)
 4. Leave the defaults
 5.  Set the variable name to **MovementSpeed**
 
-    ![](../../../media/2021-03-img\_604d33b6286ff.png)
+    ![](../../../media/2021-03-img_604d33b6286ff.png)
 6. Set **MovementSpeed** to 300
 
-![](../../../media/2021-03-img\_604d33e35b72d.png)
+![](../../../media/2021-03-img_604d33e35b72d.png)
 
 Now we can use BulletFactory to create bullets when the player shoots. To do this:
 
@@ -207,7 +207,7 @@ Notice that we are using the RotationMatrix of the MainShip to adjust the initia
 
 If you run the game you should be able to fly, turn, and shoot.
 
-![](../../../media/2021-03-img\_604d4a8fd17ba.png)
+![](../../../media/2021-03-img_604d4a8fd17ba.png)
 
 ### Conclusion
 

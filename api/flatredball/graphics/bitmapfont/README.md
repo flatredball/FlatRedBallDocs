@@ -8,8 +8,8 @@ A BitmapFont is a class defining the texture and rendering values used to render
 
 Bitmap Fonts require two files - a texture file and a .fnt file. Both can be created with [AngelCode.com's Bitmap Font Generator](http://www.angelcode.com/products/bmfont/). The following steps outline the creation of the two files used in BitmapFonts:
 
-1. Open Bitmap font generator. ![SearchBMFont.png](../../../../../media/migrated\_media-SearchBMFont.png)![BitmapFontGenerator.PNG](../../../../../media/migrated\_media-BitmapFontGenerator.PNG)
-2. Click or push+drag to select the letters that you'd like included in your exported font. Selected letters will highlight.![SelectedLettersInBFG.PNG](../../../../../media/migrated\_media-SelectedLettersInBFG.PNG)
+1. Open Bitmap font generator. ![SearchBMFont.png](../../../../../media/migrated_media-SearchBMFont.png)![BitmapFontGenerator.PNG](../../../../../media/migrated_media-BitmapFontGenerator.PNG)
+2. Click or push+drag to select the letters that you'd like included in your exported font. Selected letters will highlight.![SelectedLettersInBFG.PNG](../../../../../media/migrated_media-SelectedLettersInBFG.PNG)
 3. Click Options->Font Settings
    1. Select the font that you'd like to use in the "Font" drop down. All fonts installed on your machine will appear here.
    2. Enter the font size that you want next to "Size (px)": The larger this is, the larger each letter will be in your game. If you are using PhotoShop, you can test font sizes there (see next item)
@@ -60,14 +60,14 @@ Note that if you are using Glue you may not have to add fonts to your project ma
 1. Create or download a .fnt file and matching image file (.png is typical)
 2.  Drag+drop the files into your project's **Content** folder
 
-    ![](../../../../../media/2019-06-img\_5d09a2256425b.png)
+    ![](../../../../../media/2019-06-img_5d09a2256425b.png)
 3.  Mark both files as **Copy if Newer** in their properties
 
-    ![](../../../../../media/2019-06-img\_5d09a2636c758.png)
+    ![](../../../../../media/2019-06-img_5d09a2636c758.png)
 
 ### Loading a BitmapFont
 
-Once the files are created they need to be loaded into a BitmapFont. The following code loads a BitmapFont and assigns it to a Text object. **Files used:** [font18arial\_0.png](../../../../../content/Tutorials/Graphics/font18arial\_0.png), [font18arial.fnt](http://files.flatredball.com/content/Tutorials/Graphics/font18arial.fnt) Add the following using statement
+Once the files are created they need to be loaded into a BitmapFont. The following code loads a BitmapFont and assigns it to a Text object. **Files used:** [font18arial_0.png](../../../../../content/Tutorials/Graphics/font18arial_0.png), [font18arial.fnt](http://files.flatredball.com/content/Tutorials/Graphics/font18arial.fnt) Add the following using statement
 
 ```
 using FlatRedBall.Graphics;
@@ -93,14 +93,14 @@ Text text = TextManager.AddText("Hi, I'm another text.");
 otherText.Font = customFont;
 ```
 
-![CustomFontExample.png](../../../../../media/migrated\_media-CustomFontExample.png)
+![CustomFontExample.png](../../../../../media/migrated_media-CustomFontExample.png)
 
 #### Loading a BitmapFont through the Content Pipeline
 
 The .fnt file is simply a text file which must be copied to build folder, while the referenced texture must be built through the content pipeline. Therefore, each file must be handled slightly differently. The following steps outline how to add a BitmapFont to a project through the content pipeline:
 
-1. Add the two font files to the Content folder. You can simply drag them into the Solution Explorer and they will be added. ![FontInContentPipeline.png](../../../../../media/migrated\_media-FontInContentPipeline.png)
-2. Highlight the .fnt file and press F4 to bring up the Properties window. Make sure that its "Build Action" is "None" and its "Copy to Output Directory" is "Copy if newer" ![FntProperties.png](../../../../../media/migrated\_media-FntProperties.png)
+1. Add the two font files to the Content folder. You can simply drag them into the Solution Explorer and they will be added. ![FontInContentPipeline.png](../../../../../media/migrated_media-FontInContentPipeline.png)
+2. Highlight the .fnt file and press F4 to bring up the Properties window. Make sure that its "Build Action" is "None" and its "Copy to Output Directory" is "Copy if newer" ![FntProperties.png](../../../../../media/migrated_media-FntProperties.png)
 3. Add the following code to load the bitmapFont:
 
 Add the following using statements:
@@ -126,7 +126,7 @@ While it may not be immediately obvious, there is a difference between BitmapFon
 * Spacing
 * NewlineDistance
 
-Information and code samples on these properties can be found [here](../../../../../frb/docs/index.php#Text\_Size). These three properties ultimately control the absolute size and spacing of each letter in the Text object. However, a BitmapFont that has letters at a higher resolution will result in a larger Text on screen. The reason for this is because the [TextManager](../../../../../frb/docs/index.php) adjusts these three values according to the current [Camera](../../../../../frb/docs/index.php) setup when the AddText method is called so that the Text is drawn to-the-pixel. This means that a Text that is created through the TextManager which is displaying a large BitmapFont will have higher Scale, Spacing, and NewlineDistance values than one displaying a smaller BitmapFont. This behavior simply exists as a convenience, and it can be easily overridden if necessary by changing these values.
+Information and code samples on these properties can be found [here](../../../../../frb/docs/index.php#Text_Size). These three properties ultimately control the absolute size and spacing of each letter in the Text object. However, a BitmapFont that has letters at a higher resolution will result in a larger Text on screen. The reason for this is because the [TextManager](../../../../../frb/docs/index.php) adjusts these three values according to the current [Camera](../../../../../frb/docs/index.php) setup when the AddText method is called so that the Text is drawn to-the-pixel. This means that a Text that is created through the TextManager which is displaying a large BitmapFont will have higher Scale, Spacing, and NewlineDistance values than one displaying a smaller BitmapFont. This behavior simply exists as a convenience, and it can be easily overridden if necessary by changing these values.
 
 ### Related Articles
 

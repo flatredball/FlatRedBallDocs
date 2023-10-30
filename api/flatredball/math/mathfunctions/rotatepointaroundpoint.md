@@ -45,4 +45,4 @@ Add the following to Update:
  }
 ```
 
-![RotatePointAroundPoint.png](../../../../../media/migrated\_media-RotatePointAroundPoint.png)
+![RotatePointAroundPoint.png](../../../../../media/migrated_media-RotatePointAroundPoint.png)

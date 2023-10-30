@@ -30,13 +30,13 @@ The first step in creating your custom data is to add a CSV file to your project
 * Expand your GameScreen item.
 * Right-click on your File item under GameScreen.
 * Select "Add File"->"New File"
-* Select "Spreadsheet (.csv)" as the file type and enter "EnemyLocationFile" as the file's name![GlueAddCsvFile.png](../../../../../media/migrated\_media-GlueAddCsvFile.png)
+* Select "Spreadsheet (.csv)" as the file type and enter "EnemyLocationFile" as the file's name![GlueAddCsvFile.png](../../../../../media/migrated_media-GlueAddCsvFile.png)
 
 Now your project has a new CSV file. The next step is to enter the information we want to use in our game in the CSV file.
 
 ### Editing the CSV
 
-The CSV file can be edited just like any other file in Glue by double-clicking it. This will open the CSV file with the default editor. If you would like to override the default file association that can also be done through the Settings->"File Assocation" menu item. The images of the CSV contents will show Microsoft Excel 2007; however, as mentioned above other spreadsheet applications can be used. Initially the CSV file contains four Entries![DefaultSpreadsheet.png](../../../../../media/migrated\_media-DefaultSpreadsheet.png) These default values simply provide an example of how data can exist in a spreadsheet. CSV files have a fairly simple format. The first row defines the properties that will be used for each instance. The default CSV file has two properties:
+The CSV file can be edited just like any other file in Glue by double-clicking it. This will open the CSV file with the default editor. If you would like to override the default file association that can also be done through the Settings->"File Assocation" menu item. The images of the CSV contents will show Microsoft Excel 2007; however, as mentioned above other spreadsheet applications can be used. Initially the CSV file contains four Entries![DefaultSpreadsheet.png](../../../../../media/migrated_media-DefaultSpreadsheet.png) These default values simply provide an example of how data can exist in a spreadsheet. CSV files have a fairly simple format. The first row defines the properties that will be used for each instance. The default CSV file has two properties:
 
 1. A property called StringMember. This member doesn't define a type, so it defaults to string.
 2. A property called TypedMember. This member defines a type in parentheses which is float.
@@ -46,9 +46,9 @@ As suggested above, if a property does not define its type, then Glue will defau
 1. Change the first member from StringMember to "X (float)"
 2. Change the second member from "TypedMember (float)" to "Y (float)". At this point you could continue to add more variables but for this example we only need X and Y.
 3. Change the value of the first column in the second row from "StringValueMember" to 10.
-4. Change the value of the second column from 100 to 10.![GlueChangedSpreadsheetValues.png](../../../../../media/migrated\_media-GlueChangedSpreadsheetValues.png)
+4. Change the value of the second column from 100 to 10.![GlueChangedSpreadsheetValues.png](../../../../../media/migrated_media-GlueChangedSpreadsheetValues.png)
 
-At this point we've specified that we are going to create a new data type that has X and Y variables. We've also created one instance with the values of 10, 10. Additional rows can be added to the spreadsheet to add more instances. Also, additional properties can be added as new columns in the spreadsheet. Simply changing and saving the CSV file will result in the data being updated automatically. To make things more interesting, I'll add one more row to the spreadsheet file.![GlueExtraRowInSpreadsheet.png](../../../../../media/migrated\_media-GlueExtraRowInSpreadsheet.png)
+At this point we've specified that we are going to create a new data type that has X and Y variables. We've also created one instance with the values of 10, 10. Additional rows can be added to the spreadsheet to add more instances. Also, additional properties can be added as new columns in the spreadsheet. Simply changing and saving the CSV file will result in the data being updated automatically. To make things more interesting, I'll add one more row to the spreadsheet file.![GlueExtraRowInSpreadsheet.png](../../../../../media/migrated_media-GlueExtraRowInSpreadsheet.png)
 
 ### The flexibility of the CSV file format
 
@@ -64,9 +64,9 @@ Once you save your CSV file, Glue performs actions:
 Since CSV files can define any information, there is no standardized way of converting this data into Entities; however, despite its flexibility the code needed to create Entities from the CSV information is very straight-forward. Since we added the CSV file to our "GameScreen", then this is where we need to add the code to process it. To do this:
 
 1. Open your project in Visual Studio
-2. In Visual Studio, expand your Screens folder![GlueExpandScreensInVisualStudio.png](../../../../../media/migrated\_media-GlueExpandScreensInVisualStudio.png)
-3. Double-click "GameScreen.cs" to open the code file in the code view window![GlueDoubleClickScreenInVS.png](../../../../../media/migrated\_media-GlueDoubleClickScreenInVS.png)
-4. Scroll down in the file until you find a function called "CustomInitialize". This is a function which gets called when the Screen is first created. This is where you want to perform any one-time game logic such as setting the initial placement of your enemies.![CustomInitializeFunction.png](../../../../../media/migrated\_media-CustomInitializeFunction.png)
+2. In Visual Studio, expand your Screens folder![GlueExpandScreensInVisualStudio.png](../../../../../media/migrated_media-GlueExpandScreensInVisualStudio.png)
+3. Double-click "GameScreen.cs" to open the code file in the code view window![GlueDoubleClickScreenInVS.png](../../../../../media/migrated_media-GlueDoubleClickScreenInVS.png)
+4. Scroll down in the file until you find a function called "CustomInitialize". This is a function which gets called when the Screen is first created. This is where you want to perform any one-time game logic such as setting the initial placement of your enemies.![CustomInitializeFunction.png](../../../../../media/migrated_media-CustomInitializeFunction.png)
 5. Add the following code inside of your CustomInitialize function:
 
 &#x20;
@@ -88,7 +88,7 @@ There are a few things to note in the code above:
 * We created a new Enemy, then set its X and Y positions using the EnemyLocation's X and Y values.
 * Finally we add the the newly-created Enemy to the Enemies list.
 
-![GlueEnemiesInGame.png](../../../../../media/migrated\_media-GlueEnemiesInGame.png)
+![GlueEnemiesInGame.png](../../../../../media/migrated_media-GlueEnemiesInGame.png)
 
 ### Additional Information
 

@@ -8,7 +8,7 @@ Velocity, another term for movement, is an essential element of nearly all video
 
 Similar to movies and television, the display of video games is broken up into frames. Unlike physical movement, objects which move in video games will actually perform small "hops" from one position to the next every frame. For example, the following image shows the positions of a red ball that is moving along the X axis.
 
-![SpriteMovement.png](../../../media/migrated\_media-SpriteMovement.png)
+![SpriteMovement.png](../../../media/migrated_media-SpriteMovement.png)
 
 As you can tell there are distinct positions that the red ball falls on every frame. While this may appear to be jarring, when played at a high frame rate the animation appears smooth to the user.
 
@@ -44,7 +44,7 @@ if(object.X > 1.0f && !hasDoneSomething)
 
 Since implementing velocity is nothing more than the continual changing of position over time, we can implement velocity rather easily.
 
-However, there is one thing to keep in mind when implementing movement: frame time may not be constant! In some cases, it may be constant if you are [not turning off the default constant framerate](../../../frb/docs/index.php#Disabling\_Fixed\_Time\_Step). However, even if your game is running at a fixed frame rate, you should not depend on this to move your object. In other words, **don't do this:**
+However, there is one thing to keep in mind when implementing movement: frame time may not be constant! In some cases, it may be constant if you are [not turning off the default constant framerate](../../../frb/docs/index.php#Disabling_Fixed_Time_Step). However, even if your game is running at a fixed frame rate, you should not depend on this to move your object. In other words, **don't do this:**
 
 ```
 // NO NO NO NO NO NO NO NO!!!!
@@ -108,6 +108,6 @@ for (int i = 0; i < 30; i++)
 }
 ```
 
-**KABOOM!** ![VelocityTutorial.png](../../../media/migrated\_media-VelocityTutorial.png)
+**KABOOM!** ![VelocityTutorial.png](../../../media/migrated_media-VelocityTutorial.png)
 
 Did this article leave any questions unanswered? Post any question in our [forums](../../../frb/forum.md) for a rapid response.

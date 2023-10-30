@@ -16,12 +16,12 @@ To create a Bullet:
 1. Click the **Quick Actions** tab
 2.  Click the **Add Entity** button
 
-    ![](../../../media/2021-04-img\_607e1fd7e03e3.png)
+    ![](../../../media/2021-04-img_607e1fd7e03e3.png)
 3. Enter the name **Bullet**
 4. Click the **Circle** checkbox under **Collisions**
 5.  Leave all of the rest of the values default and click **OK**
 
-    ![](../../../media/2021-04-img\_607e20336ee94.png)
+    ![](../../../media/2021-04-img_607e20336ee94.png)
 
 When a Bullet is created, it will move either left or right. We need to control the speed of the bullet. We will create a variable which we'll use in our code later:
 
@@ -29,15 +29,15 @@ When a Bullet is created, it will move either left or right. We need to control 
 2. Click on the **Variables** tab
 3.  Click the **Add New Variable** button
 
-    ![](../../../media/2021-04-img\_607e2221603ae.png)
+    ![](../../../media/2021-04-img_607e2221603ae.png)
 4. Verify that **float** type is selected
 5. Enter the name **BulletSpeed**
 6.  Click **OK**
 
-    ![](../../../media/2021-04-img\_607e22630ea62.png)
+    ![](../../../media/2021-04-img_607e22630ea62.png)
 7.  Enter a value of **300** for **BulletSpeed**
 
-    ![](../../../media/2021-04-img\_607e229ab79a5.png)
+    ![](../../../media/2021-04-img_607e229ab79a5.png)
 
 We will also want to change the radius of the Bullet's CircleInstance:
 
@@ -46,7 +46,7 @@ We will also want to change the radius of the Bullet's CircleInstance:
 3. Click the **Variables** tab
 4. Change **Radius** to **6**
 
-![](../../../media/2021-04-img\_607e2fd8d283a.png)
+![](../../../media/2021-04-img_607e2fd8d283a.png)
 
 ### Creating a Bullet in Player
 
@@ -138,10 +138,10 @@ Currently, our bullets can move through walls and enemies. First we'll add colli
 4. Click the **Collision** tab
 5.  Click the **Add Event** button
 
-    ![](../../../media/2021-04-img\_607e3811765b5.png)
+    ![](../../../media/2021-04-img_607e3811765b5.png)
 6.  Click **OK** to accept the defaults
 
-    ![](../../../media/2021-04-img\_607e38d7b39ff.png)
+    ![](../../../media/2021-04-img_607e38d7b39ff.png)
 
 Now we can destroy the bullet whenever the event occurs:
 

@@ -10,15 +10,15 @@ For example, consider a racing game where the player can choose his car. Each in
 
 The first step to making your content optionally-loaded is to set the Loaded Only When Referenced property. In this example we'll begin with a project that has four files:
 
-![GlueFourCarFiles.png](../../../media/migrated\_media-GlueFourCarFiles.png)
+![GlueFourCarFiles.png](../../../media/migrated_media-GlueFourCarFiles.png)
 
 Next, we'll set the "Loaded Only When Referenced" property to be true on all of the files:
 
-![GlueLoadedOnlyWhenReferenced.png](../../../media/migrated\_media-GlueLoadedOnlyWhenReferenced.png)
+![GlueLoadedOnlyWhenReferenced.png](../../../media/migrated_media-GlueLoadedOnlyWhenReferenced.png)
 
 Let's look at what the generated code looks like after we've set these properties.
 
-![GeneratedLoadingCode.png](../../../media/migrated\_media-GeneratedLoadingCode.png)
+![GeneratedLoadingCode.png](../../../media/migrated_media-GeneratedLoadingCode.png)
 
 As you can see, the getter loads the content when it's first accessed. If it's not accessed, then the file is never loaded.
 
@@ -37,11 +37,11 @@ Now we need to add a new Sprite which will display the car texture. To do this:
 * Double-click on the newly-added .scnx file in Glue. This will open the SpriteEditor.
 * Click on the "Add" menu item.
 * Click on "Sprite ->"
-* Click on "Untextured"![SpriteEditorAddUntextured.png](../../../media/migrated\_media-SpriteEditorAddUntextured.png)
+* Click on "Untextured"![SpriteEditorAddUntextured.png](../../../media/migrated_media-SpriteEditorAddUntextured.png)
 
 You should now see a new red Sprite in the center of the Screen:
 
-![SpriteEditorUntexturedSprite.png](../../../media/migrated\_media-SpriteEditorUntexturedSprite.png)
+![SpriteEditorUntexturedSprite.png](../../../media/migrated_media-SpriteEditorUntexturedSprite.png)
 
 Now you can save your Scene and exit the SpriteEditor.
 
@@ -117,11 +117,11 @@ So instead, we should put this all in the hands of the content creator by writin
 
 One of the challenges of presenting a system like this in an article is that it has the potential of becoming **very large**. Sure, we've already written the code to set the texture, and we've shown how to set the texture with a hard-coded value such as "BlueCar", but how would we handle the selection though data?
 
-The answer lies in the .csv file format. Whenever you encounter a problem like this, we recommend making .csv files. A previous Glue tutorial covers how to work with .csv files [here](../../../frb/docs/index.php#Introducing\_CSV) so we'll skip over the details. Make sure that when you create your CSV file you either add it to the Screen that will select the car texture (like a menu screen) or add it to "Global Content Files" in Glue.
+The answer lies in the .csv file format. Whenever you encounter a problem like this, we recommend making .csv files. A previous Glue tutorial covers how to work with .csv files [here](../../../frb/docs/index.php#Introducing_CSV) so we'll skip over the details. Make sure that when you create your CSV file you either add it to the Screen that will select the car texture (like a menu screen) or add it to "Global Content Files" in Glue.
 
 Your .csv might look something like this:
 
-![AvaialbleCarsSpreadsheet.png](../../../media/migrated\_media-AvaialbleCarsSpreadsheet.png)
+![AvaialbleCarsSpreadsheet.png](../../../media/migrated_media-AvaialbleCarsSpreadsheet.png)
 
 Once you save your .csv file Glue will generate code for a list of objects which will contain the information which you can access. For example, in my code, I could do the following:
 

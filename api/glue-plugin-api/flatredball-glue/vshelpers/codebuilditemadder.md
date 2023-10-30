@@ -14,8 +14,8 @@ The steps for adding code to a project using the CodeBuildItemAdder  are:
 
 1.  Add a .cs file to your project as an embedded resource:
 
-    ![](../../../../../media/2016-04-img\_571b83de50fd8.png)
-2.  (Optional) Set the namespace to use the $PROJECT\_NAMESPACE$  keyword to indicate that it should match the game project's namespace:
+    ![](../../../../../media/2016-04-img_571b83de50fd8.png)
+2.  (Optional) Set the namespace to use the $PROJECT_NAMESPACE$  keyword to indicate that it should match the game project's namespace:
 
     ```lang:c#
     namespace $PROJECT_NAMESPACE$.OcularPlaneRuntime

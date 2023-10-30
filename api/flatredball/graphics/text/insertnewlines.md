@@ -28,7 +28,7 @@ float maxWidth = axisAlignedRectangle.ScaleX * 2;
 text.InsertNewLines(maxWidth);
 ```
 
-![InsertNewLines.png](../../../../../media/migrated\_media-InsertNewLines.png)
+![InsertNewLines.png](../../../../../media/migrated_media-InsertNewLines.png)
 
 ### Additional Information
 

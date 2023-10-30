@@ -4,7 +4,7 @@
 
 The Points property is an array of [Point](../../../../../../frb/docs/index.php) values which contain the position of each point on the polygon. These values are in "object space". In other words, they are relative to the containing Polygon's position and rotation values.
 
-The Points property can be assigned - this essentially changes the shape of the Polygon. This is a more-efficient and often more-convenient way to change a Polygon rather than to construct a new one if your game requires dynamic shapes. For more information, see [this section](../../../../../../frb/docs/index.php#Creating\_a\_Polygon).
+The Points property can be assigned - this essentially changes the shape of the Polygon. This is a more-efficient and often more-convenient way to change a Polygon rather than to construct a new one if your game requires dynamic shapes. For more information, see [this section](../../../../../../frb/docs/index.php#Creating_a_Polygon).
 
 ### Code Example - Setting Points
 
@@ -91,4 +91,4 @@ Add the following in Update:
  }
 ```
 
-![PolygonPointPosition.png](../../../../../../media/migrated\_media-PolygonPointPosition.png)
+![PolygonPointPosition.png](../../../../../../media/migrated_media-PolygonPointPosition.png)

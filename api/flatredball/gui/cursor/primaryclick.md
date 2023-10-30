@@ -24,6 +24,6 @@ if(GuiManager.Cursor.PrimaryClick)
 
 
 
-<figure><img src="../../../../../media/2016-01-2017-12-14\_08-49-02-1.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2016-01-2017-12-14_08-49-02-1.gif" alt=""><figcaption></figcaption></figure>
 
 

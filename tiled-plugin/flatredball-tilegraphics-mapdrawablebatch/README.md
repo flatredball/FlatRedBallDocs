@@ -56,7 +56,7 @@ void CustomInitialize()
 }
 ```
 
-![](../../media/2023-01-img\_63b97849def36.png)
+![](../../media/2023-01-img_63b97849def36.png)
 
 #### Creation Considerations
 

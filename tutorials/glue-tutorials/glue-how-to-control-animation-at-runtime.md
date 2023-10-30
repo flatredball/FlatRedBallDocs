@@ -14,7 +14,7 @@ The first step is to create a CurrentChainName variable:
 4. Select "Tunnel a variable in a contained object"
 5. Select "Sprite" as your object (or whatever your Character's Sprite is named)
 6. Select "CurrentChainName" as the Variable
-7. Enter "ChainName" as the Alternative Name ![CurrentChainNameNewVariable.PNG](../../../media/migrated\_media-CurrentChainNameNewVariable.PNG)
+7. Enter "ChainName" as the Alternative Name ![CurrentChainNameNewVariable.PNG](../../../media/migrated_media-CurrentChainNameNewVariable.PNG)
 
 At this point you can set the default value of ChainName and you should be able to see your animations play in GlueView.
 
@@ -27,7 +27,7 @@ Next create states for each of the walking directions. To do this:
 3. Right-click on the new category and add a state called "WalkUp"
 4. Repeat the above step to also create "WalkDown", "WalkLeft", and "WalkRight"
 
-Select each of the new States and set the ChainName variable to the appropriate value. ![SettingAnimationInStates.png](../../../media/migrated\_media-SettingAnimationInStates.png)
+Select each of the new States and set the ChainName variable to the appropriate value. ![SettingAnimationInStates.png](../../../media/migrated_media-SettingAnimationInStates.png)
 
 **Why create states for AnimationChains?** You can also directly set your Sprite's CurrentChainName as follows in custom code:
 
@@ -77,6 +77,6 @@ else
 }
 ```
 
-![AnimatedCharacterInGame.PNG](../../../media/migrated\_media-AnimatedCharacterInGame.PNG)
+![AnimatedCharacterInGame.PNG](../../../media/migrated_media-AnimatedCharacterInGame.PNG)
 
 **Note:** If your Character appears really large, you may want to change your [camera settings](../../../frb/docs/index.php) to be 2D.

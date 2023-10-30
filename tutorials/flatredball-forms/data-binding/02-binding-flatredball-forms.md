@@ -15,7 +15,7 @@ This tutorial uses a Glue screen which contains the following:
 
 These instances are all default FlatRedBall.Forms objects which are available in all FlatRedBall projects created with the wizard.
 
-![](../../../media/2022-01-img\_61d66401c8680.png)
+![](../../../media/2022-01-img_61d66401c8680.png)
 
 ### Creating a ViewModel
 

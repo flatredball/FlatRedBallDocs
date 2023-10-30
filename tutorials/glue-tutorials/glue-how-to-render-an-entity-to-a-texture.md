@@ -40,7 +40,7 @@ Next add the LotsOfCircles Entity:
 6. Select the list type as Circle
 7. Enter the name CircleList
 
-![CreateLotsOfCircles.gif](../../../media/migrated\_media-CreateLotsOfCircles.gif)
+![CreateLotsOfCircles.gif](../../../media/migrated_media-CreateLotsOfCircles.gif)
 
 #### Add Circles in code
 
@@ -83,13 +83,13 @@ Next add a Screen to contain the LotsOfCircles instance:
 3. Enter the name MainScree and click OK
 4. Drag+drop the LotsOfCircles onto the MainScreen and click OK
 
-![LotsOfCirclesInstanceInScreen.gif](../../../media/migrated\_media-LotsOfCirclesInstanceInScreen.gif)
+![LotsOfCirclesInstanceInScreen.gif](../../../media/migrated_media-LotsOfCirclesInstanceInScreen.gif)
 
 #### You should see a lot of circles
 
 If you run the game now you will see a lot of circles. Of course, these circles are all part of the LotsOfCircles entity.
 
-![LotsOfCirclesRuntime.gif](../../../media/migrated\_media-LotsOfCirclesRuntime.gif)
+![LotsOfCirclesRuntime.gif](../../../media/migrated_media-LotsOfCirclesRuntime.gif)
 
 ### Adding a new Camera
 

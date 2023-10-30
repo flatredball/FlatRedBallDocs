@@ -10,12 +10,12 @@ The easiest way to use a TMX file is to create a standard GameScreen and Level. 
 
 1.  Run the Wizard when creating a new project - this will automatically add TMX files to your project.
 
-    ![](../../../../media/2021-10-img\_6166edc84073b.png) Existing (empty) projects can also run the wizard through the Quick Actions tab.
+    ![](../../../../media/2021-10-img_6166edc84073b.png) Existing (empty) projects can also run the wizard through the Quick Actions tab.
 
-    ![](../../../../media/2021-10-img\_6166ee164da74.png)
-2.  Create a GameScreen and Level screens and check the options for creating TMX files. ![](../../../../media/2021-10-img\_6166ee3ba4c28.png)
+    ![](../../../../media/2021-10-img_6166ee164da74.png)
+2.  Create a GameScreen and Level screens and check the options for creating TMX files. ![](../../../../media/2021-10-img_6166ee3ba4c28.png)
 
-    ![](../../../../media/2021-10-img\_6166ee644e2ae.png)
+    ![](../../../../media/2021-10-img_6166ee644e2ae.png)
 
 ### Manually Adding a MapDrawableBatch From TMX to a Screen
 
@@ -28,7 +28,7 @@ If you are not using the GameScreen/Level pattern, you can add your own TMX file
 
 
 
-<figure><img src="../../../../media/2016-01-2020\_February\_04\_172542.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-2020_February_04_172542.gif" alt=""><figcaption></figcaption></figure>
 
  No additional code is necessary - your map will now show up in the screen.
 
@@ -40,11 +40,11 @@ If using the GameScreen/Level pattern, FlatRedBall will automatically set up a M
 
 Once you have a TMX file in your screen's Files folder, you can create a Map object by drag+dropping the TMX onto the Screen's Objects folder. 
 
-<figure><img src="../../../../media/2016-01-13\_08-39-26.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-13_08-39-26.gif" alt=""><figcaption></figcaption></figure>
 
  Once the Map object has been created, its **Create Entities From Tiles** property can be checked.
 
-![](../../../../media/2021-10-img\_6166f03c272a0.png)
+![](../../../../media/2021-10-img_6166f03c272a0.png)
 
 ### LayeredTileMap as a list of MapDrawableBatches
 
@@ -60,4 +60,4 @@ foreach (var layer in TestLevel.MapLayers)
 }
 ```
 
-![MapLayerInfo.PNG](../../../../media/migrated\_media-MapLayerInfo.PNG)   \[subpages depth="1"]
+![MapLayerInfo.PNG](../../../../media/migrated_media-MapLayerInfo.PNG)   \[subpages depth="1"]

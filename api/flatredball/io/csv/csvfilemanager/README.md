@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The CsvFileManager is a class which provides functionality for working with [.csv files](http://en.wikipedia.org/wiki/Comma-separated\_values). The CSV file format is a simple file format that can be loaded and saved by spreadsheet programs. Glue provides a lot of functionality for working with CSV files. For information on working with CSV and Glue, see the [using CSVs in Glue tutorial](../../../../../../frb/docs/index.php).
+The CsvFileManager is a class which provides functionality for working with [.csv files](http://en.wikipedia.org/wiki/Comma-separated_values). The CSV file format is a simple file format that can be loaded and saved by spreadsheet programs. Glue provides a lot of functionality for working with CSV files. For information on working with CSV and Glue, see the [using CSVs in Glue tutorial](../../../../../../frb/docs/index.php).
 
 ### Benefits of CSV
 
@@ -59,11 +59,11 @@ The CsvfileManager provides methods for loading CSV files and creating lists of 
 
 1. Go to the Google Docs website: [http://docs.google.com/](http://docs.google.com/).
 2. Log in to Google Docs. If you have never logged in before, but have a GMail address, use your GMail address and password to log in. Otherwise, you will need to create a new account.
-3. Select New->Spreadsheet: ![NewSpreadsheet.png](../../../../../../media/migrated\_media-NewSpreadsheet.png)
-4. Enter the headers for the spreadsheet. These headers will be the fields of the class that we'll be creating later in this article: ![PropertiesInSpreadsheet.png](../../../../../../media/migrated\_media-PropertiesInSpreadsheet.png)
-5. Enter values for each of the structs. Each row represents an item in the list that will be created when the CSV file is deserialized. In this case I'll create four entries: ![SpreadsheetWithValues.png](../../../../../../media/migrated\_media-SpreadsheetWithValues.png)
-6. Export the files to a .csv file. ![ExportToCsv.png](../../../../../../media/migrated\_media-ExportToCsv.png)
-7. Depending on your browser the CSV file may open right in the browser. If that's the case, save the file out from the browser through the File menu: ![SaveFromBrowser.png](../../../../../../media/migrated\_media-SaveFromBrowser.png)
+3. Select New->Spreadsheet: ![NewSpreadsheet.png](../../../../../../media/migrated_media-NewSpreadsheet.png)
+4. Enter the headers for the spreadsheet. These headers will be the fields of the class that we'll be creating later in this article: ![PropertiesInSpreadsheet.png](../../../../../../media/migrated_media-PropertiesInSpreadsheet.png)
+5. Enter values for each of the structs. Each row represents an item in the list that will be created when the CSV file is deserialized. In this case I'll create four entries: ![SpreadsheetWithValues.png](../../../../../../media/migrated_media-SpreadsheetWithValues.png)
+6. Export the files to a .csv file. ![ExportToCsv.png](../../../../../../media/migrated_media-ExportToCsv.png)
+7. Depending on your browser the CSV file may open right in the browser. If that's the case, save the file out from the browser through the File menu: ![SaveFromBrowser.png](../../../../../../media/migrated_media-SaveFromBrowser.png)
 
 At this point you should have a CSV file saved on your computer. The file should be similar to: [Export.csv](../../../../../../frb/docs/images/3/38/Export.csv) Either save this file in the the same folder as your project's EXE file, or add it to the solution and set the file to copy.
 
@@ -99,7 +99,7 @@ foreach (SpriteProperties spriteProperties in list)
 }
 ```
 
-![SpritesFromCsv.png](../../../../../../media/migrated\_media-SpritesFromCsv.png)
+![SpritesFromCsv.png](../../../../../../media/migrated_media-SpritesFromCsv.png)
 
 ### Supported Types
 

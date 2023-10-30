@@ -35,4 +35,4 @@ void CreateNewSpriteEachFrame(Sprite sprite)
 }
 ```
 
-![RealVelocitySpiral.png](../../../../media/migrated\_media-RealVelocitySpiral.png) **Note**: The previous code section uses the [Sprite's](../../../../frb/docs/index.php) [CustomBehavior](../../../../frb/docs/index.php) event. This event exists in the [Sprite](../../../../frb/docs/index.php) class, not in the PositionedObject class. For more information, see the [SpriteCustomBehavior wiki entry](../../../../frb/docs/index.php).
+![RealVelocitySpiral.png](../../../../media/migrated_media-RealVelocitySpiral.png) **Note**: The previous code section uses the [Sprite's](../../../../frb/docs/index.php) [CustomBehavior](../../../../frb/docs/index.php) event. This event exists in the [Sprite](../../../../frb/docs/index.php) class, not in the PositionedObject class. For more information, see the [SpriteCustomBehavior wiki entry](../../../../frb/docs/index.php).

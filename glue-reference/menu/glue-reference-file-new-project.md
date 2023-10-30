@@ -7,7 +7,7 @@ The "New Project" menu item allows you to create a new project. When creating a 
 1. Starter Project - a fully functional FlatRedBall game including art. Starter projects let you see how FlatRedBall works with a complete game which can be modified.
 2. Empty Project - an empty project for any platform
 
-![](../../media/2017-01-img\_58823b8dbc491.png)
+![](../../media/2017-01-img_58823b8dbc491.png)
 
 Both empty and starter projects are covered in the [FlatRedBall Tutorials page](../../documentation/tutorials.md).
 

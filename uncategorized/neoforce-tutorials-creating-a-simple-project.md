@@ -76,7 +76,7 @@ window.Height = 350;
 manager.Add(window);
 ```
 
-![NeforceWindow.png](../media/migrated\_media-NeforceWindow.png)
+![NeforceWindow.png](../media/migrated_media-NeforceWindow.png)
 
 ### A note about Neoforce coordinates
 

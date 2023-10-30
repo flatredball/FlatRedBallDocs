@@ -4,7 +4,7 @@
 
 States allow you to modify your object in an organized, type-safe, way. States can also be previewed when the game is running in edit mode, speeding up iteration. States are a lightweight alternative to using inheritance, and can even be used to change a Screen or Entity multiple times. States can exist on any Screen or Entity, and appear under the States folder in Glue. States can be added as either categorized or uncategorized states. Categorized states are the most common, and avoid confusion which can be caused by uncategorized state. The following image shows a **PowerUp** entity with a **PowerUpType** category containing three states.
 
-![](../../../../media/2021-03-img\_605613d04048a.png)
+![](../../../../media/2021-03-img_605613d04048a.png)
 
 ###
 
@@ -16,23 +16,23 @@ Glue provides two different ways to add states. The preferred method is using th
 
 Once a category has been created, states can be added in the State Data tab.
 
-![](../../../../media/2021-03-img\_60562f9698889.png)
+![](../../../../media/2021-03-img_60562f9698889.png)
 
 New states can be added by entering names in the left-most column. Adding a new name creates a new state. 
 
-<figure><img src="../../../../media/2016-01-2021\_March\_20\_112624.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-2021_March_20_112624.gif" alt=""><figcaption></figcaption></figure>
 
  By default, all variables in the Entity or Screen appear in the **State Data** tab. This includes tunneled variables too. For example, consider a tunneled SpriteInstance Texture variable. 
 
-<figure><img src="../../../../media/2016-01-2021\_March\_20\_111428.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-2021_March_20_111428.gif" alt=""><figcaption></figcaption></figure>
 
  This variable will appear as a column in the **State Data** tab.
 
-![](../../../../media/2021-03-img\_6056315a35c47.png)
+![](../../../../media/2021-03-img_6056315a35c47.png)
 
 Variables can be added and removed from the **State Data** tab for a given category. It's best to remove variables which aren't used in a category to prevent mistakes. 
 
-<figure><img src="../../../../media/2016-01-2021\_March\_20\_110432.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-2021_March_20_110432.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -40,7 +40,7 @@ Variables can be added and removed from the **State Data** tab for a given categ
 
 States can also be added through the right-click menu on a category. 
 
-<figure><img src="../../../../media/2016-01-2021\_March\_20\_112411.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-2021_March_20_112411.gif" alt=""><figcaption></figcaption></figure>
 
  This method is the _old way_ of adding states. It is still supported, but it is a little more cumbersome compared to using _state data_. States added this way will still appear in the State Data tab.
 
@@ -48,7 +48,7 @@ States can also be added through the right-click menu on a category.
 
 Every state category generates a class which is embedded in the screen or entity containing the state. By default states can only be assigned inside the entity or screen defining the state. For example, if the **PowerUp** entity defines a state category named **PowerUpCategory**, then states can be assigned in code.
 
-![](../../../../media/2021-03-img\_605635c67dd65.png)
+![](../../../../media/2021-03-img_605635c67dd65.png)
 
 Assigning the state will apply all variables set in the state in Glue.
 

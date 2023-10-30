@@ -155,7 +155,7 @@ To create a ProgressBar Entity:
 2. Select "Add Entity"
 3. Name the Entity "ProgressBar"
 
-![ProgressBarEntity.PNG](../media/migrated\_media-ProgressBarEntity.PNG)
+![ProgressBarEntity.PNG](../media/migrated_media-ProgressBarEntity.PNG)
 
 #### Adding the Frame object
 
@@ -168,7 +168,7 @@ Next we'll create the objects in the ProgressBar:
 5. Change the SourceType to "FlatRedBall Type"
 6. Change the SourceClassType to AxisAlignedRectangle
 
-![FrameObject.PNG](../media/migrated\_media-FrameObject.PNG)In GlueView:![FrameInGView.PNG](../media/migrated\_media-FrameInGView.PNG)
+![FrameObject.PNG](../media/migrated_media-FrameObject.PNG)In GlueView:![FrameInGView.PNG](../media/migrated_media-FrameInGView.PNG)
 
 #### Adding the Fill object
 
@@ -180,7 +180,7 @@ To create the Fill object:
 4. Change the SourceType to "FlatRedBal Type"
 5. Change the SourceClassType to Sprite
 
-![FillObject.PNG](../media/migrated\_media-FillObject.PNG)
+![FillObject.PNG](../media/migrated_media-FillObject.PNG)
 
 #### Tunneling into Variables
 
@@ -195,7 +195,7 @@ Next we'll tunnel in to the variables of our objects. To do this:
 7. Repeat the above steps to tunnel into the "Fill" object's "ColorOperation" variable
 8. Repeat the above steps to tunnel into the "Fill" object's "Red" variable
 
-![TunneledVariablesProgressBar.PNG](../media/migrated\_media-TunneledVariablesProgressBar.PNG)
+![TunneledVariablesProgressBar.PNG](../media/migrated_media-TunneledVariablesProgressBar.PNG)
 
 ### Setting initial values
 
@@ -207,7 +207,7 @@ Before creating the states we'll set some default values for the variables:
 4. Select and set the FillColorOperation variable to Color
 5. Select and set the FillRed variable to 1
 
-![ProgressBarInGlue1.PNG](../media/migrated\_media-ProgressBarInGlue1.PNG)
+![ProgressBarInGlue1.PNG](../media/migrated_media-ProgressBarInGlue1.PNG)
 
 #### Creating the states
 
@@ -228,7 +228,7 @@ First we'll define the "Empty" state:
 
 Notice that both FillScaleX and FillX have the wavy blue icon - this indicates that the values can interpolate. In other words, when we interpolate between the Full and Empty states any variables that have this icon will combine depending on the value we pass to InterpolateBetween.
 
-![EmptyVariables.PNG](../media/migrated\_media-EmptyVariables.PNG) ![EmptyInGView.PNG](../media/migrated\_media-EmptyInGView.PNG)
+![EmptyVariables.PNG](../media/migrated_media-EmptyVariables.PNG) ![EmptyInGView.PNG](../media/migrated_media-EmptyInGView.PNG)
 
 #### Defining the Full State
 
@@ -238,7 +238,7 @@ Next we'll define the "Full" state:
 2. Set the FillScaleX to 10
 3. Set the FillX to 0
 
-![FullState.PNG](../media/migrated\_media-FullState.PNG) ![FullStateInGView.PNG](../media/migrated\_media-FullStateInGView.PNG)
+![FullState.PNG](../media/migrated_media-FullState.PNG) ![FullStateInGView.PNG](../media/migrated_media-FullStateInGView.PNG)
 
 #### Creating a Screen
 

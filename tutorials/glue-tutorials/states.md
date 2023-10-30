@@ -25,9 +25,9 @@ States are easy to create, but this tutorial will provide a real-world example o
 To add a state:
 
 1. Expand your Button Entity
-2. Right-click on "States"![AddState.png](../../../media/migrated\_media-AddState.png)
-3. Name the state "Normal" and press OK![NormalState.png](../../../media/migrated\_media-NormalState.png)
-4. Repeat the process to add "Pressed" and "Inactive" states![3States.png](../../../media/migrated\_media-3States.png)
+2. Right-click on "States"![AddState.png](../../../media/migrated_media-AddState.png)
+3. Name the state "Normal" and press OK![NormalState.png](../../../media/migrated_media-NormalState.png)
+4. Repeat the process to add "Pressed" and "Inactive" states![3States.png](../../../media/migrated_media-3States.png)
 
 Now you have 3 states, but these states don't do anything yet. We need to make each one set the appropriate AnimationChain.
 
@@ -36,7 +36,7 @@ Now you have 3 states, but these states don't do anything yet. We need to make e
 To make a State set variables:
 
 1. Select the Normal State
-2. Change the CurrentChain to "Normal"![NormalStateToNormal.png](../../../media/migrated\_media-NormalStateToNormal.png)
+2. Change the CurrentChain to "Normal"![NormalStateToNormal.png](../../../media/migrated_media-NormalStateToNormal.png)
 3. Repeat the steps for the other two States
 
 Now you have states which can be used in Glue and in code to change the State of any object.
@@ -51,9 +51,9 @@ Objects with states will by default not use these states when they are created. 
 2. Right-click on the "Objects"
 3. Select "Add Object"
 4. Enter the name "ButtonInstance" and click OK
-5. Select your newly-created object and change its "Layer On" to "Layer2D" (or the name of your 2D Layer)![ButtonInGlue.png](../../../media/migrated\_media-ButtonInGlue.png)
+5. Select your newly-created object and change its "Layer On" to "Layer2D" (or the name of your 2D Layer)![ButtonInGlue.png](../../../media/migrated_media-ButtonInGlue.png)
 
-At this point if you run your game you should see the button in the middle of the screen.![ButtonInMiddleOfScreen.png](../../../media/migrated\_media-ButtonInMiddleOfScreen.png) Now that you have a Button instance, you can set its default state. To do this, simply change the "Current State" property in Glue: ![CurrentStateInGlue.png](../../../media/migrated\_media-CurrentStateInGlue.png)![InactiveButton.png](../../../media/migrated\_media-InactiveButton.png)
+At this point if you run your game you should see the button in the middle of the screen.![ButtonInMiddleOfScreen.png](../../../media/migrated_media-ButtonInMiddleOfScreen.png) Now that you have a Button instance, you can set its default state. To do this, simply change the "Current State" property in Glue: ![CurrentStateInGlue.png](../../../media/migrated_media-CurrentStateInGlue.png)![InactiveButton.png](../../../media/migrated_media-InactiveButton.png)
 
 ### Wait, why did we go through all of that trouble?
 
@@ -61,7 +61,7 @@ You may be wondering why you went through the trouble of setting up states for a
 
 ### How to set States in code
 
-States are very convenient in code. One reason is because they let you abstract what an actual state does away from the logic that controls it. In other words, you can simply set a Button's state according to whether the cursor has pressed on it or if it is disabled - and that's all you have to worry about. The design team (or you at a later time) can worry about what it actually means to be "Inactive" or "Pressed". However, States are also very handy because they generate enumerations and a CurrentState property. You can check it yourself in code:![AutoCompleteState.png](../../../media/migrated\_media-AutoCompleteState.png)
+States are very convenient in code. One reason is because they let you abstract what an actual state does away from the logic that controls it. In other words, you can simply set a Button's state according to whether the cursor has pressed on it or if it is disabled - and that's all you have to worry about. The design team (or you at a later time) can worry about what it actually means to be "Inactive" or "Pressed". However, States are also very handy because they generate enumerations and a CurrentState property. You can check it yourself in code:![AutoCompleteState.png](../../../media/migrated_media-AutoCompleteState.png)
 
 ### Thinking about States as "variable groups"
 
@@ -92,4 +92,4 @@ Now we can think about the variable states we have in two categories:
   * Pressed
   * Inactive
 
-This means that we could set the LeftSide or RightSide states in Glue, and then later (in code) set states like Pressed or Normal, and the position from LeftSide or RightSide would persist. In a way, it's as if multiple states can exist at the same time. In practice having states that can "coexist" is very common. When this happens, states will usually group together according to the variables they set without you (the creator of the states) even thinking about it! In this particular case the Position States are States which are set when the Button is first created, while the Clicking States are States which can change in the code. Therefore, in practice you would probably want to set the CurrentState on any Button instance to one of the Position States, and the other States would be set in code. To see this in action, try creating a second Button instance and setting its "Current State" to "RightSide", then changing the other Button instance's "Current State" to "LeftSide". ![TwoButtons.png](../../../media/migrated\_media-TwoButtons.png)
+This means that we could set the LeftSide or RightSide states in Glue, and then later (in code) set states like Pressed or Normal, and the position from LeftSide or RightSide would persist. In a way, it's as if multiple states can exist at the same time. In practice having states that can "coexist" is very common. When this happens, states will usually group together according to the variables they set without you (the creator of the states) even thinking about it! In this particular case the Position States are States which are set when the Button is first created, while the Clicking States are States which can change in the code. Therefore, in practice you would probably want to set the CurrentState on any Button instance to one of the Position States, and the other States would be set in code. To see this in action, try creating a second Button instance and setting its "Current State" to "RightSide", then changing the other Button instance's "Current State" to "LeftSide". ![TwoButtons.png](../../../media/migrated_media-TwoButtons.png)

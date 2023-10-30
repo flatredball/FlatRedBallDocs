@@ -28,7 +28,7 @@ As we'll see later in the tutorial, using classes and structs also allows for yo
 
 ### Creating the CSV
 
-First we'll start by creating the CSV that contains our information, then we'll explain the syntax. The following is a screenshot from Excel, but you can use any spreadsheet editing program (such as OpenOffice or Google Docs): ![CsvWithClasses1.PNG](../../../../../../media/migrated\_media-CsvWithClasses1.PNG) There's a few things to note here:
+First we'll start by creating the CSV that contains our information, then we'll explain the syntax. The following is a screenshot from Excel, but you can use any spreadsheet editing program (such as OpenOffice or Google Docs): ![CsvWithClasses1.PNG](../../../../../../media/migrated_media-CsvWithClasses1.PNG) There's a few things to note here:
 
 1. The Name property is marked as "required". This is common practice so that the CSV can be deserialized to a Dictionary. For more info on deserializing to Dictionaries in Glue, see [this page](../../../../../../frb/docs/index.php).
 2. The type for AttackInfo must be fully-qualified - in other words we use "MyGame.DataTypes.AttackInfo", not just "AttackInfo". This requirement may be eased in a future version of Glue.
@@ -82,7 +82,7 @@ public class FireAttackInfo : AttackInfo
 
 ### Defining a CSV that supports inheritance
 
-Using the code above, we now have FireAttackInfo and SlashingAttackInfo, both of which inherit from AttackInfo. We can now instantiate any of those three types in our AttackInfo column. The following shows a CSV that instantiates different types: ![CsvSupportingInheritance.PNG](../../../../../../media/migrated\_media-CsvSupportingInheritance.PNG) When using inheritance we must specify the type that we want to use in each column. The syntax for this is the same as it is when instantiating an object in code - use the keyword "new" followed by the type. The contents of the parenthesis are the same as as before. You can assign values defined in the derived class as well as the base class. You can also leave out assignments that you want to keep as the default. For example the EndBoss enemy does not define the AreaOfEffect - it defaults to 0.
+Using the code above, we now have FireAttackInfo and SlashingAttackInfo, both of which inherit from AttackInfo. We can now instantiate any of those three types in our AttackInfo column. The following shows a CSV that instantiates different types: ![CsvSupportingInheritance.PNG](../../../../../../media/migrated_media-CsvSupportingInheritance.PNG) When using inheritance we must specify the type that we want to use in each column. The syntax for this is the same as it is when instantiating an object in code - use the keyword "new" followed by the type. The contents of the parenthesis are the same as as before. You can assign values defined in the derived class as well as the base class. You can also leave out assignments that you want to keep as the default. For example the EndBoss enemy does not define the AreaOfEffect - it defaults to 0.
 
 ### Using Existing Types
 

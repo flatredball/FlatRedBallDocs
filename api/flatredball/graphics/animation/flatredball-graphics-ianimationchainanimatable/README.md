@@ -6,7 +6,7 @@ The IAnimationChainAnimatable interface defines methods and properties for objec
 
 ### Setting AnimationChains
 
-The following shows various ways to set a [Sprite's](../../../../../../frb/docs/index.php) current [AnimationChain](../../../../../../frb/docs/index.php). The reason there are so many examples is because Sprites and AnimationChains can be created many different ways. What follows are examples which cover the most common scenarios. For information on how to create [AnimationChains](../../../../../../frb/docs/index.php), see the [Creating AnimationChains wiki Entry](../../../../../../frb/docs/index.php#Creating\_AnimationChains).
+The following shows various ways to set a [Sprite's](../../../../../../frb/docs/index.php) current [AnimationChain](../../../../../../frb/docs/index.php). The reason there are so many examples is because Sprites and AnimationChains can be created many different ways. What follows are examples which cover the most common scenarios. For information on how to create [AnimationChains](../../../../../../frb/docs/index.php), see the [Creating AnimationChains wiki Entry](../../../../../../frb/docs/index.php#Creating_AnimationChains).
 
 #### If the Sprite and .achx are created in Glue
 
@@ -73,11 +73,11 @@ if(mySprite.JustChangedFrame)
 }
 ```
 
-![AnimatedDrone.png](../../../../../../media/migrated\_media-AnimatedDrone.png)
+![AnimatedDrone.png](../../../../../../media/migrated_media-AnimatedDrone.png)
 
 ### Internal AnimationChainList and Common Usage
 
-Objects which implement the IAnimationChainAnimatable interface hold an AnimationChainList reference internally. This AnimationChainList is referenced by IAnimationChainAnimatables to standardize the setting of [AnimationChains](../../../../../../frb/docs/index.php) according to state or behavior. The game Warcraft 2 will be used as an example of how the internal storage of [AnimationChains](../../../../../../frb/docs/index.php) can standardize code and simplify development. ![Warcraft2 Screenshot.jpg](../../../../../../media/migrated\_media-Warcraft2\_Screenshot.jpg) Warcraft 2 has numerous characters which share similar behavior. All ground units have the following behavior:
+Objects which implement the IAnimationChainAnimatable interface hold an AnimationChainList reference internally. This AnimationChainList is referenced by IAnimationChainAnimatables to standardize the setting of [AnimationChains](../../../../../../frb/docs/index.php) according to state or behavior. The game Warcraft 2 will be used as an example of how the internal storage of [AnimationChains](../../../../../../frb/docs/index.php) can standardize code and simplify development. ![Warcraft2 Screenshot.jpg](../../../../../../media/migrated_media-Warcraft2_Screenshot.jpg) Warcraft 2 has numerous characters which share similar behavior. All ground units have the following behavior:
 
 * Walk North
 * Walk South

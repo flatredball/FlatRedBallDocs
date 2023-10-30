@@ -37,7 +37,7 @@ Add the following to Initialize after initializing FlatRedBall:
  SpriteManager.AddToLayer(sprite, layer);
 ```
 
-![LayerCameraSettingsDestinationValues.png](../../../../../media/migrated\_media-LayerCameraSettingsDestinationValues.png)
+![LayerCameraSettingsDestinationValues.png](../../../../../media/migrated_media-LayerCameraSettingsDestinationValues.png)
 
 ### Exceptions related to display size
 

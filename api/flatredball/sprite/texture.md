@@ -6,7 +6,7 @@ The Sprite's Texture property controls which image the Sprite is displaying. Thi
 
 ### Code Example
 
-The following code explains how Textures are assigned. Files used:![FRB logo.png](../../../../media/migrated\_media-FRB\_logo.png) Add the following at class scope:
+The following code explains how Textures are assigned. Files used:![FRB logo.png](../../../../media/migrated_media-FRB_logo.png) Add the following at class scope:
 
 ```
 Sprite sprite;
@@ -31,4 +31,4 @@ else if(InputManager.Keyboard.KeyPushed(Keys.D2))
 }
 ```
 
-![LogoSmall.png](../../../../media/migrated\_media-LogoSmall.png)
+![LogoSmall.png](../../../../media/migrated_media-LogoSmall.png)

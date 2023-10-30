@@ -25,4 +25,4 @@ wrapText.MaxWidth = 10;
 wrapText.Y = -5;
 ```
 
-![TextMaxWidthBehavior.PNG](../../../../../media/migrated\_media-TextMaxWidthBehavior.PNG)
+![TextMaxWidthBehavior.PNG](../../../../../media/migrated_media-TextMaxWidthBehavior.PNG)

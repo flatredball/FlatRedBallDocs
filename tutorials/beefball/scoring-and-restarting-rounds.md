@@ -16,7 +16,7 @@ Conceptually detecting a goal is simple - whenever the Puck collides with a cert
 
 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_141031.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_141031.gif" alt=""><figcaption></figcaption></figure>
 
  The default rectangle size for a Goal is too small, so we will make it bigger:
 
@@ -24,7 +24,7 @@ Conceptually detecting a goal is simple - whenever the Puck collides with a cert
 2. Click the **Variables** tab
 3. Change **Height** to **200**
 
-![](../../../media/2021-07-img\_60fdca7071514.png)
+![](../../../media/2021-07-img_60fdca7071514.png)
 
 Just like before, we'll also add a list of goals in our GameScreen:
 
@@ -32,11 +32,11 @@ Just like before, we'll also add a list of goals in our GameScreen:
 2. Select the Quick Actions tab
 3. Click the Add Goal List to GameScreen button
 
-![](../../../media/2021-07-img\_60fdcc7a9eb64.png)
+![](../../../media/2021-07-img_60fdcc7a9eb64.png)
 
 Next we'll add two goal rectangles to the GameScreen. Instead of using the Quick Actions tab, we'll show an alternative method here by drag+dropping the Goal entity onto GameScreen. Do this twice, changing the name of the first to LeftGoal and the second to RightGoal: 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_141042.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_141042.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -63,11 +63,11 @@ If you tried playing the game, you may have noticed that the PlayerBall instance
 
 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_144446.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_144446.gif" alt=""><figcaption></figcaption></figure>
 
    If you run the game, you will no longer be able to leave the play area with either PlayerBall. 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_140248.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_140248.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -87,7 +87,7 @@ Now we'll create another collision relationship, but this time we won't use any 
 
 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_145051.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_145051.gif" alt=""><figcaption></figcaption></figure>
 
  Now we'll create an event, which is a function that is automatically called whenever the collision occurs:
 
@@ -98,11 +98,11 @@ Now we'll create another collision relationship, but this time we won't use any 
 
 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_145051-1.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_145051-1.gif" alt=""><figcaption></figcaption></figure>
 
  When an event is added, Glue automatically adds a new file to contain events called GameScreen.Events.cs. We can find the new event there. You will need to expand the GameScreen.cs in Visual Studio's Solution Explorer to see this file.
 
-![](../../../media/2021-07-img\_60fdcfbde9882.png)
+![](../../../media/2021-07-img_60fdcfbde9882.png)
 
 We can check which Goal collided with the Puck in the code and perform different logic. We will Modify the OnPuckListVsGoalListCollisionOccurred method and add a new ReactToNewScore method to the GameScreen.Event.cs file as shown in the following snippet: &#x20;
 

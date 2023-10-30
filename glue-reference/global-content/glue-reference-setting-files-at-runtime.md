@@ -95,7 +95,7 @@ Now that we have a Text object, let's set its Text in CustomInitialize of our Sc
     this.TextInstance.DisplayText = whatToWrite;
 ```
 
-If you run your game now you will see that the game has 5 levels (according to LevelInfo): ![FiveLevelsPrintedOut.PNG](../../../../media/migrated\_media-FiveLevelsPrintedOut.PNG)
+If you run your game now you will see that the game has 5 levels (according to LevelInfo): ![FiveLevelsPrintedOut.PNG](../../../../media/migrated_media-FiveLevelsPrintedOut.PNG)
 
 ### Changing LevelInfo
 
@@ -110,7 +110,7 @@ All files in GlobalContent have setters. This means that you can simply set the 
 GlobalContent.LevelInfo = GlobalContent.DemoLevelInfo;
 ```
 
-Now if you run your game you'll see that only the first level is available: ![DemoLevelOnly.PNG](../../../../media/migrated\_media-DemoLevelOnly.PNG)
+Now if you run your game you'll see that only the first level is available: ![DemoLevelOnly.PNG](../../../../media/migrated_media-DemoLevelOnly.PNG)
 
 ### Making the example more realistic
 

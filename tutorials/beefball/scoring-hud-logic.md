@@ -60,7 +60,7 @@ If you are seeing a conversion error similar to Cannot implicitly convert type '
 2. Select the **Properties** tab
 3.  Change **OverridingPropertyType** to **int**
 
-    ![](../../media/2018-08-img\_5b7db0c6336f4.png)
+    ![](../../media/2018-08-img_5b7db0c6336f4.png)
 
 ### Conclusion
 

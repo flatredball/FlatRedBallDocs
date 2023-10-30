@@ -75,4 +75,4 @@ PositionedObject parent = new PositionedObject();
 animatedSprite.AttachTo(parent, false);
 ```
 
-![AnimatedSprite.png](../../../../../../media/migrated\_media-AnimatedSprite.png)
+![AnimatedSprite.png](../../../../../../media/migrated_media-AnimatedSprite.png)

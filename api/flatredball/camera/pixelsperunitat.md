@@ -51,7 +51,7 @@ float PixelsToUnits(int numberOfPixels, float absoluteZ)
 }
 ```
 
-![PixelsPerUnit.png](../../../../media/migrated\_media-PixelsPerUnit.png)
+![PixelsPerUnit.png](../../../../media/migrated_media-PixelsPerUnit.png)
 
 ### Code Example - Spacing Objects on Screen
 
@@ -82,7 +82,7 @@ void CustomInitialize()
 }
 ```
 
-![](../../../../media/2017-02-img\_589de828605c9.png)
+![](../../../../media/2017-02-img_589de828605c9.png)
 
 ### PixelsPerUnitAt and FieldOfView
 

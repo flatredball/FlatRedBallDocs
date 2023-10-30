@@ -8,7 +8,7 @@ Attachments are an effective way to keep one [PositionedObject](../frb/docs/inde
 
 The following diagram shows a high-level view of the execution of a FlatRedBall game.
 
-![HighLevelFlow.png](../media/migrated\_media-HighLevelFlow.png)
+![HighLevelFlow.png](../media/migrated_media-HighLevelFlow.png)
 
 Attachment code is executed in three places:
 

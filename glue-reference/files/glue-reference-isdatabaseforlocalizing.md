@@ -19,10 +19,10 @@ The next step is to tell Glue that this file is a database for localization. To 
 1. Select the newly-created LocalizationDatabase file
 2.  Change **IsDatabaseForLocalizing** to **True**
 
-    ![](../../../../media/2023-05-img\_6472186ead348.png)
+    ![](../../../../media/2023-05-img_6472186ead348.png)
 3.  You will get a popup notifying you that all code needs to be regenerated. Click OK, close, then re-open the FlatRedBall Editor to force a full code regeneration.
 
-    ![](../../../../media/2021-01-img\_5ffa10dabd7e8.png)
+    ![](../../../../media/2021-01-img_5ffa10dabd7e8.png)
 
 ### Modifying the Spreadsheet
 
@@ -31,8 +31,8 @@ The next step is to begin filling out the database. To do this:
 1. Double-click the file to open it in a spreadsheet editing program such as Excel or Open Office
 2. Change the top-left cell to read "ID (required)". Make sure "required" is not capitalized.
 3. Change the first row in the second column to say "English", or whatever you prefer your default language to be.
-4. Change the first row in the third column to say "Spanish" or the secondary language. You can continually add columns for any language you may want to support. ![LanguagesInExcel.png](../../../../media/migrated\_media-LanguagesInExcel.png)
-5. Enter a string ID under the "ID" column. You may want to use a particular prefix to differentiate between string IDs and actual text - this can help you spot bugs in development. For this tutorial, I'll use "T\_" before IDs. Therefore, I'll enter "T\_Hello" for my first string.
+4. Change the first row in the third column to say "Spanish" or the secondary language. You can continually add columns for any language you may want to support. ![LanguagesInExcel.png](../../../../media/migrated_media-LanguagesInExcel.png)
+5. Enter a string ID under the "ID" column. You may want to use a particular prefix to differentiate between string IDs and actual text - this can help you spot bugs in development. For this tutorial, I'll use "T_" before IDs. Therefore, I'll enter "T_Hello" for my first string.
 6. Enter the English and Spanish versions of this string
 7. Save the spreasheet
 
@@ -53,7 +53,7 @@ Be sure that this is set **before** ScreenManager.Start is called, or else the S
 
 ### Manually Translating Text
 
-To translate text, you can use the LocalizationManager's Translate method. For example, if you wanted to translate the string ID "T\_Tutorial1" you could do so as follows:
+To translate text, you can use the LocalizationManager's Translate method. For example, if you wanted to translate the string ID "T_Tutorial1" you could do so as follows:
 
 ```
 string translatedTutorialString = LocalizationManager.Translate("T_Tutorial1");
@@ -65,7 +65,7 @@ You could then use translatedTutorialString in your game.
 
 So far we've covered static translations. Of course, you may want to have variables embedded in your text. The LocalizationManager supports this through a syntax that is very similar to the string.Format method. To support variables in your text:
 
-1. Add an entry to your database spreadsheet using the { and } characters surrounding the variable index. For example, to inform the player of how many goals are left, you might enter: "You have completed {0} goals and you have {1} goals left." ![TranslatedTextWithVariables.png](../../../../media/migrated\_media-TranslatedTextWithVariables.png)
+1. Add an entry to your database spreadsheet using the { and } characters surrounding the variable index. For example, to inform the player of how many goals are left, you might enter: "You have completed {0} goals and you have {1} goals left." ![TranslatedTextWithVariables.png](../../../../media/migrated_media-TranslatedTextWithVariables.png)
 2. In your code you can use the Translate overload which takes arguments to "format" the string. For example, your code may look like this:
 
 &#x20;

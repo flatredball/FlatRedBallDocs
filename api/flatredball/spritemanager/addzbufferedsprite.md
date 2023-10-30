@@ -26,7 +26,7 @@ The following code creates two [Z buffered](../../../../frb/docs/index.php) [Spr
  sprite2.RotationY = -(float)Math.PI / 3.0f;
 ```
 
-![ModifiedZBuffered.png](../../../../media/migrated\_media-ModifiedZBuffered.png)
+![ModifiedZBuffered.png](../../../../media/migrated_media-ModifiedZBuffered.png)
 
 #### Example without Z Buffer
 
@@ -50,11 +50,11 @@ The following code creates two Sprites with the same properties as above, but th
  sprite2.RotationY = -(float)Math.PI / 3.0f;
 ```
 
-![OrderedLayeredSprites.png](../../../../media/migrated\_media-OrderedLayeredSprites.png)
+![OrderedLayeredSprites.png](../../../../media/migrated_media-OrderedLayeredSprites.png)
 
 ### Overlapping Problems
 
-File used:![WhiteGradient.png](../../../../media/migrated\_media-WhiteGradient.png)[WhiteGradient.png](../../../../frb/docs/images/1/1b/WhiteGradient.png) Since [Z buffered](../../../../frb/docs/index.php) Sprites write to the [depth buffer](../../../../frb/docs/index.php), partial transparency can block things behind it. For example, consider the following code: ![UnorderedProblems.png](../../../../media/migrated\_media-UnorderedProblems.png)
+File used:![WhiteGradient.png](../../../../media/migrated_media-WhiteGradient.png)[WhiteGradient.png](../../../../frb/docs/images/1/1b/WhiteGradient.png) Since [Z buffered](../../../../frb/docs/index.php) Sprites write to the [depth buffer](../../../../frb/docs/index.php), partial transparency can block things behind it. For example, consider the following code: ![UnorderedProblems.png](../../../../media/migrated_media-UnorderedProblems.png)
 
 #### Z Buffered Sprites and Transparency
 

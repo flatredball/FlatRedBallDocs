@@ -25,7 +25,7 @@ The CollisionManager is built to work with collidable entities. To create a coll
 4. Check one of the objects under the **Collisions** category, such as **Circle**
 5. Notice that the ICollidable checkbox is automatically checked
 
-![](../../../../../media/2018-01-img\_5a59900256da4.png)
+![](../../../../../media/2018-01-img_5a59900256da4.png)
 
 The entity will now implement the ICollidable interface, which means it can be used as an instance or in a list with the CollisionManager.
 

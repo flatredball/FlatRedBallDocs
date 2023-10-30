@@ -9,7 +9,7 @@ The ListBox type includes the ability to customize individual items using templa
 
 The following screenshot shows a list box which displays levels with images and a check box.
 
-![](../../../../media/2022-11-img\_637e23a9e9252.png)
+![](../../../../media/2022-11-img_637e23a9e9252.png)
 
 Although the appearance of each item in the ListBox is different from the default appearance, the ListBox itself is still a standard ListBox with a custom VisualTemplate. VisualTemplates can be used for any type of modification to the ListBoxItem. Common examples include:
 
@@ -25,14 +25,14 @@ Most of the time games will use a VisualTemplate and do not need to use a Framew
 
 By default the ListBox creates one ListBoxItem for every item in its Items property. The ListBoxItem is defined in the Gum project under the Controls folder as shown in the following screenshot:
 
-![](../../../../media/2023-08-img\_64d1b98838807.png)
+![](../../../../media/2023-08-img_64d1b98838807.png)
 
 The first step in replacing this ListBoxItem in our ListBox is to create a new component in Gum. This component can be structured however you want. There are no requirements for what it must contain, how it must be named, or what states it must contain. If you would like your custom list box item to be selectable, then you will want to implement the ListBoxBehavior. This is optional, and if you do not intend to have list box selection behavior, then you do not need to implement this behavior. This tutorial will not provide step-by-step instructions for creating a custom CustomListBoxItem, so feel free to structure this component however you like. However, if you would like to follow along , the code in this tutorial will assume two Text objects:
 
 * MainTextInstance
 * SubtextInstance
 
-![](../../../../media/2023-08-img\_64d1bb0594b14.png)
+![](../../../../media/2023-08-img_64d1bb0594b14.png)
 
 &#x20;
 
@@ -40,7 +40,7 @@ The first step in replacing this ListBoxItem in our ListBox is to create a new c
 
 To use the CustomListBoxItem, first you will need a screen which contains a ListBox. For example, the following screenshot shows a single ListBox in the MainMenuGum screen.
 
-![](../../../../media/2023-08-img\_64d1bb63c3069.png)
+![](../../../../media/2023-08-img_64d1bb63c3069.png)
 
 Once this ListBox is added, the following code can be used to populate the ListBoxInstance, including using the new CustomListBoxItem as the template:
 
@@ -58,7 +58,7 @@ void CustomInitialize()
 
 This code produces the following screenshot when the application runs:
 
-![](../../../../media/2023-08-img\_64d1bbee8ad3d.png)
+![](../../../../media/2023-08-img_64d1bbee8ad3d.png)
 
 The ListBox contains ten (10) instances of the CustomListBoxItemRuntime Gum component - one for each integer added to the listBox.Items. the VisualTemplate assignment tells the ListBox that each Item should result in a new CustomListBoxItemRuntime being created.
 
@@ -145,6 +145,6 @@ public partial class CustomListBoxItemRuntime
 
 Now if we run our application, each item will display the text specified in each ViewModel.
 
-![](../../../../media/2023-08-img\_64d1be5cbbf49.png)
+![](../../../../media/2023-08-img_64d1be5cbbf49.png)
 
 &#x20;

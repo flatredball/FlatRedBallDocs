@@ -76,7 +76,7 @@ private void PerformLoad()
 
 &#x20;
 
-![](../../../../media/2017-02-img\_58913fffc58ee.png)
+![](../../../../media/2017-02-img_58913fffc58ee.png)
 
 &#x20;
 

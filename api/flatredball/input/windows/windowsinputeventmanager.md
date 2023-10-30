@@ -45,6 +45,6 @@ static void CustomLoadStaticContent(string contentManagerName)
 }
 ```
 
-![](../../../../media/2017-09-img\_59b58514dd33d.png)
+![](../../../../media/2017-09-img_59b58514dd33d.png)
 
 Notice that CustomDestroy  unsubscribes from the events subscribed to in CustomInitialize .

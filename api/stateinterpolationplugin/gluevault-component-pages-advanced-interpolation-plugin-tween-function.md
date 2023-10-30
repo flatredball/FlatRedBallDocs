@@ -89,7 +89,7 @@ void CustomActivity(bool firstTimeCalled)
 
 
 
-<figure><img src="../../../media/2016-01-2019-07-26\_09-19-49.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2019-07-26_09-19-49.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -115,7 +115,7 @@ if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Space))
 
 
 
-<figure><img src="../../../media/2016-01-07\_13-43-30.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-07_13-43-30.gif" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -38,7 +38,7 @@ clampSprite.X = 200;
 clampSprite.TextureScale = 1;
 ```
 
-![TextureAddressModes.PNG](../../../../media/migrated\_media-TextureAddressModes.PNG) This article uses the [TextureScale property](../../../../frb/docs/index.php) to automatically size the Sprites according to their texture coordinates.
+![TextureAddressModes.PNG](../../../../media/migrated_media-TextureAddressModes.PNG) This article uses the [TextureScale property](../../../../frb/docs/index.php) to automatically size the Sprites according to their texture coordinates.
 
 **Note:** The Wrap texture address mode requires that textures are a power of 2 on the Windows Phone.
 
@@ -67,4 +67,4 @@ mSprite.LeftTextureCoordinate += scrollSpeed * TimeManager.SecondDifference;
 mSprite.RightTextureCoordinate += scrollSpeed * TimeManager.SecondDifference;
 ```
 
-![Scrolling.png](../../../../media/migrated\_media-Scrolling.png)
+![Scrolling.png](../../../../media/migrated_media-Scrolling.png)

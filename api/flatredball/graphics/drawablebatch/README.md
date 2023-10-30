@@ -114,7 +114,7 @@ public partial class GameScreen
 
 The code above produces the following when the game runs:
 
-![](../../../../../media/2016-06-img\_57616a108d6e8.png)
+![](../../../../../media/2016-06-img_57616a108d6e8.png)
 
 &#x20;
 

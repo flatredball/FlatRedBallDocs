@@ -6,4 +6,4 @@ You may want to reset a screen under certain situations. For example when the pl
 
 ### Code
 
-To reset a screen, see the [MoveToScreen page](../../../../frb/docs/index.php#Resetting\_a\_Screen).
+To reset a screen, see the [MoveToScreen page](../../../../frb/docs/index.php#Resetting_a_Screen).

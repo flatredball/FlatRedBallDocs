@@ -30,7 +30,7 @@ The first step in creating a multiple-level Screen is to create a Screen which w
 * Enter the name "GamePlayScreen"
 * Press OK
 
-![GamePlayScreen.png](../../../media/migrated\_media-GamePlayScreen.png)
+![GamePlayScreen.png](../../../media/migrated_media-GamePlayScreen.png)
 
 ### Defining Objects
 
@@ -50,7 +50,7 @@ To create the collision:
 4. Change the SourceType to FlatRedBall Type (the file association will be done in code, not Glue)
 5. Change the SourceClassType to ShapeCollection
 
-![VisibleRepresentationAndCollision.png](../../../media/migrated\_media-VisibleRepresentationAndCollision.png) Now you have 2 objects which will represent the current visible representation and collision. When you write your logic in your game (such as collision logic) you will use these objects.
+![VisibleRepresentationAndCollision.png](../../../media/migrated_media-VisibleRepresentationAndCollision.png) Now you have 2 objects which will represent the current visible representation and collision. When you write your logic in your game (such as collision logic) you will use these objects.
 
 ### Creating Folders
 
@@ -80,7 +80,7 @@ Keep in mind that each level may contain multiple files. In this tutorial each l
 4. Enter the name "Forest" to represent a forest level
 5. Repeat the steps above to also create "Desert" and "Arctic" folders
 
-![ThreeLevelFolders.png](../../../media/migrated\_media-ThreeLevelFolders.png)
+![ThreeLevelFolders.png](../../../media/migrated_media-ThreeLevelFolders.png)
 
 ### Creating files
 
@@ -92,14 +92,14 @@ Next we'll be creating files for our levels. To do this:
 4. Enter the name ForestScene
 5. Repeat the above steps, but select "ShapeCollection (.scnx)" and name it ForestCollision
 
-![ForestLevelFiles.png](../../../media/migrated\_media-ForestLevelFiles.png) Next, repeat the steps above in the Desert and Arctic folders as well. In total you should have 6 files: ![SixFiles.PNG](../../../media/migrated\_media-SixFiles.PNG)
+![ForestLevelFiles.png](../../../media/migrated_media-ForestLevelFiles.png) Next, repeat the steps above in the Desert and Arctic folders as well. In total you should have 6 files: ![SixFiles.PNG](../../../media/migrated_media-SixFiles.PNG)
 
 ### Making the files optionally loaded
 
 At this point we have six files in our game, but they are not treated as optionally loaded. In other words, if we were to run our game, all six files would get loaded in the same Screen. Instead, we want to only pick one pair of files (arctic, forest, or desert). To make them optionally loaded:
 
 1. Select ArcticScene.scnx
-2. Change its LoadedOnlyWhenReferenced to True![ArcticLoadedOnlyWhenReferenced.png](../../../media/migrated\_media-ArcticLoadedOnlyWhenReferenced.png)
+2. Change its LoadedOnlyWhenReferenced to True![ArcticLoadedOnlyWhenReferenced.png](../../../media/migrated_media-ArcticLoadedOnlyWhenReferenced.png)
 3. Repeat this for the other five files so that all of the files have LoadedOnlyWhenReferenced set to true.
 
 ### Writing the code

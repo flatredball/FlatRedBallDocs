@@ -45,4 +45,4 @@ for(int i = 0; i < newlyEmittedSprites.Count; i++)
 }
 ```
 
-The above code shows how to populate a list of newly emitted Sprites. A second SpriteList (allEmittedSprites) is created to store all emitted Sprites if you need to perform continual logic on these Sprites. The allEmittedSprites will automatically be cleaned of old Sprites due to the [two-way relationship between Sprites and SpriteLists](../../../../../../frb/docs/index.php#Two\_Way\_Relationships).
+The above code shows how to populate a list of newly emitted Sprites. A second SpriteList (allEmittedSprites) is created to store all emitted Sprites if you need to perform continual logic on these Sprites. The allEmittedSprites will automatically be cleaned of old Sprites due to the [two-way relationship between Sprites and SpriteLists](../../../../../../frb/docs/index.php#Two_Way_Relationships).

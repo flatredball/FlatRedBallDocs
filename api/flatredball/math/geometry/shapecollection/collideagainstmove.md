@@ -72,7 +72,7 @@ ShapeCollectionInstance.CollideAgainstMove(
     1, 0);
 ```
 
-![CollideAgainstMovePartitioned.PNG](../../../../../../media/migrated\_media-CollideAgainstMovePartitioned.PNG)
+![CollideAgainstMovePartitioned.PNG](../../../../../../media/migrated_media-CollideAgainstMovePartitioned.PNG)
 
 #### Performance benefits
 

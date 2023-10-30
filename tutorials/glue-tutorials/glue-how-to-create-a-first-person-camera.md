@@ -24,7 +24,7 @@ Now we'll set the Camera to be in 3D mode:
 1. In Glue, click the camera icon
 2. Change the **Perspective** to **3D**
 
-![](../../../media/2021-07-img\_60f97747cad48.png)
+![](../../../media/2021-07-img_60f97747cad48.png)
 
 Finally create a Screen which will contain the rest of our project. This is not necessary if you already have a GameScreen:
 
@@ -52,7 +52,7 @@ Now that the Sprite has been created, let's make it really large and repeating:
 5. Set the Sprite's RightTextureCoordinate to 32000 - this makes the Sprite repeat 1000 times on the X axis
 6. Set the Sprite's BottomTextureCoordinate to 32000 - this makes the Sprite repeat 1000 times on the Y axis
 
-![](../../../media/2021-07-img\_60f97cd471063.png)
+![](../../../media/2021-07-img_60f97cd471063.png)
 
 ### Create CameraController Entity
 
@@ -88,7 +88,7 @@ this.CameraInstance.RelativePosition = new Vector3();
 this.RotationX = Microsoft.Xna.Framework.MathHelper.PiOver2;
 ```
 
-At this point we can run the game and we should see the Camera looking into the distance: ![LookingAtHorizon.PNG](../../../media/migrated\_media-LookingAtHorizon.PNG)
+At this point we can run the game and we should see the Camera looking into the distance: ![LookingAtHorizon.PNG](../../../media/migrated_media-LookingAtHorizon.PNG)
 
 ### Implement code to move and look
 

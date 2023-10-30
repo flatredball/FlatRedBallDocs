@@ -10,7 +10,7 @@ To access a Gum screen in code you must first create an object in Glue for the G
 
 ### Accessing animations in code
 
-Animations added to Gum screens can be accessed in code. The Glue code generator will append the word "Animation" to animation names. For example, consider a Gum screen containing an animation called MoveToRight: ![MoveToRightAnimationInGum.PNG](../../../../media/migrated\_media-MoveToRightAnimationInGum.PNG) Then this animation can be accessed in code:
+Animations added to Gum screens can be accessed in code. The Glue code generator will append the word "Animation" to animation names. For example, consider a Gum screen containing an animation called MoveToRight: ![MoveToRightAnimationInGum.PNG](../../../../media/migrated_media-MoveToRightAnimationInGum.PNG) Then this animation can be accessed in code:
 
 ```
 // Assuming the object is called "GumScreen":
@@ -24,7 +24,7 @@ Similar to screens, components can also contain animations which can be played a
 1. Add an animation to a Gum component
 2.  Obtain a reference to the component at runtime. For example, get a reference from a Gum screen in a Glue screen's Objects.
 
-    ![](../../../../media/2017-06-img\_594c7ea4b26f7.png)
+    ![](../../../../media/2017-06-img_594c7ea4b26f7.png)
 3. Call the Play method on the desired animation within the component instance in code. For example, if the ButtonRuntime has an animation called FadeOutAnimation, the following code could be used to play the animation:
 
 ```lang:c#

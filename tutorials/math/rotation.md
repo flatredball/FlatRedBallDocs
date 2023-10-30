@@ -6,7 +6,7 @@ Rotation is the property or collection of properties which control the orientati
 
 ### Radians and Degrees
 
-The FlatRedBall Engine uses [radians](http://en.wikipedia.org/wiki/Radians) instead of [degrees](http://en.wikipedia.org/wiki/Degree\_\(angle\)) to measure orientation. ![RadiansAndDegrees.png](../../../media/migrated\_media-RadiansAndDegrees.png)
+The FlatRedBall Engine uses [radians](http://en.wikipedia.org/wiki/Radians) instead of [degrees](http://en.wikipedia.org/wiki/Degree_\(angle\)) to measure orientation. ![RadiansAndDegrees.png](../../../media/migrated_media-RadiansAndDegrees.png)
 
 ### Shooting Entities From a Rotated Turret
 

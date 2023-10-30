@@ -15,16 +15,16 @@ To add a new PlayerBall:
 3. Select the **Quick Actions** tab
 4. Click the **Add a new PlayerBall to PlayerBall List**. Alternatively, you can right-click on the PlayerBallList and select Add Object 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_145416.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_145416.gif" alt=""><figcaption></figcaption></figure>
 
 
 5.  Change the new PlayerBall's X value to 180
 
-    ![](../../../media/2021-07-img\_60fdc6f8e4b71.png)
+    ![](../../../media/2021-07-img_60fdc6f8e4b71.png)
 
 You should now see two PlayerBall instances under the PlayerBallList and in game. Also, since we created our collision relationships between the lists, the new PlayerBall can already collide against the walls and the Puck. 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_145219.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_145219.gif" alt=""><figcaption></figcaption></figure>
 
  &#x20;
 
@@ -40,7 +40,7 @@ Now that we have two PlayerBall instances, we need to add a new collision relati
 
 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_143723.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_143723.gif" alt=""><figcaption></figcaption></figure>
 
    If you run you game now, the two PlayerBall instances will collide against each other. Also, if we added more players (a third or fourth player) those would also collide with each other automatically.
 

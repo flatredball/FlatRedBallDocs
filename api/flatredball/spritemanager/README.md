@@ -54,7 +54,7 @@ For more information, see the [Layer wiki entry](../../../../frb/docs/index.php)
 
 #### Sprite Removal
 
-The RemoveSprite methods remove [Sprites](../../../../frb/docs/index.php) from the engine as well as any [two-way](../../../../frb/docs/index.php#Two\_Way\_Relationships) [AttachableLists](../../../../frb/docs/index.php) (such as [SpriteLists](../../../../frb/docs/index.php)) that the [Sprites](../../../../frb/docs/index.php) belong to.
+The RemoveSprite methods remove [Sprites](../../../../frb/docs/index.php) from the engine as well as any [two-way](../../../../frb/docs/index.php#Two_Way_Relationships) [AttachableLists](../../../../frb/docs/index.php) (such as [SpriteLists](../../../../frb/docs/index.php)) that the [Sprites](../../../../frb/docs/index.php) belong to.
 
 ```
 // Assuming sprite is a valid Sprite which has been added to the SpriteManager
@@ -76,7 +76,7 @@ For more information see [AttachableLists](../../../../frb/docs/index.php).
 
 ### Managing [PositionedObjects](../../../../frb/docs/index.php)
 
-See the [PositionedObject wiki entry](../../../../frb/docs/index.php#Managing\_PositionedObjects).
+See the [PositionedObject wiki entry](../../../../frb/docs/index.php#Managing_PositionedObjects).
 
 ### Read Only Lists
 

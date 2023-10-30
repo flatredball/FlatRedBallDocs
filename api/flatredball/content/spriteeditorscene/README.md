@@ -4,11 +4,11 @@
 
 A SpriteEditorScene is a "ready to save" or "just loaded" [Scene](../../../../../frb/docs/index.php). It is used to load a Scene from a .scnx file and it can be used to write .scnx files easily. The [FlatRedBallServices](../../../../../frb/docs/index.php) class internally uses the SpriteEditorScene class when you use it to load Scenes.
 
-You will not need to use the SpriteEditorScene class in most cases because you can load .scnx files through the FlatRedBallServices.Load method as shown [here](../../../../../frb/docs/index.php#Loading\_a\_Scene\_From\_File).
+You will not need to use the SpriteEditorScene class in most cases because you can load .scnx files through the FlatRedBallServices.Load method as shown [here](../../../../../frb/docs/index.php#Loading_a_Scene_From_File).
 
 ### Loading a .scnx into a Scene
 
-Using the SpriteEditorScene can give you additional information and control over how Scenes are created. In most cases you will want to use the [FlatRedBallServices' Load method](../../../../../frb/docs/index.php#Loading\_a\_Scene\_From\_File).
+Using the SpriteEditorScene can give you additional information and control over how Scenes are created. In most cases you will want to use the [FlatRedBallServices' Load method](../../../../../frb/docs/index.php#Loading_a_Scene_From_File).
 
 The following code shows how to load a .scnx file using the SpriteEditorScene instead of the FlatRedBallServices method:
 
@@ -29,7 +29,7 @@ Scene scene = saveObject.ToScene(contentManagerName );
 scene.AddToManagers();
 ```
 
-![SplashScreen.png](../../../../../media/migrated\_media-SplashScreen.png)
+![SplashScreen.png](../../../../../media/migrated_media-SplashScreen.png)
 
 The **SpriteEditorScene**.FromFile method loads and returns an instance of a **SpriteEditorScene** which is loaded from the argument .scnx. This **SpriteEditorScene** is then converted to a Scene by calling the ToScene method. The ToScene method takes a [content manager](../../../../../frb/docs/index.php) name. For more information on content managers, see the [FlatRedBall content manager](../../../../../frb/docs/index.php) entry.
 
@@ -134,9 +134,9 @@ First the SpriteEditorScene instance is created. Next 20 [Sprites](../../../../.
 
 Once all [Sprites](../../../../../frb/docs/index.php) have been created the Scene is saved to a .scnx file. Be sure to use a .scnx extension so the SpriteEditor recognizes this file as a valid scene.
 
-Executing the code:![SpritesInCode.png](../../../../../media/migrated\_media-SpritesInCode.png)
+Executing the code:![SpritesInCode.png](../../../../../media/migrated_media-SpritesInCode.png)
 
-.scnx loaded in the SpriteEditor:![FromCodeToSpriteEditor.png](../../../../../media/migrated\_media-FromCodeToSpriteEditor.png)
+.scnx loaded in the SpriteEditor:![FromCodeToSpriteEditor.png](../../../../../media/migrated_media-FromCodeToSpriteEditor.png)
 
 #### Saving SpriteGrids
 
@@ -175,9 +175,9 @@ In Initialize:
  spriteEditorScene.Save("spriteGridFromCode.scnx");
 ```
 
-Executing the code:![SpriteGridCreatedInCode.png](../../../../../media/migrated\_media-SpriteGridCreatedInCode.png)
+Executing the code:![SpriteGridCreatedInCode.png](../../../../../media/migrated_media-SpriteGridCreatedInCode.png)
 
-.scnx loaded in the SpriteEditor:![SpriteGridFromCodeInSpriteEditor.png](../../../../../media/migrated\_media-SpriteGridFromCodeInSpriteEditor.png)
+.scnx loaded in the SpriteEditor:![SpriteGridFromCodeInSpriteEditor.png](../../../../../media/migrated_media-SpriteGridFromCodeInSpriteEditor.png)
 
 ### SpriteEditorScene Members
 

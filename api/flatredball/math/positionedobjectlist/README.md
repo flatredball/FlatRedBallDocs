@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The PositionedObjectList is an object which can store lists of [PositionedObjects](../../../../../frb/docs/index.php). It is the base class of the [SpriteList](../../../../../frb/docs/index.php) class and is commonly used to store lists of [Entities](../../../../../frb/docs/index.php) and shapes such as [Polygons](../../../../../frb/docs/index.php). The PositionedObjectList inherits from the [AttachableList](../../../../../frb/docs/index.php) and it establishes [two-way relationships](../../../../../frb/docs/index.php#Two\_Way\_Relationships) with objects that are added to it.
+The PositionedObjectList is an object which can store lists of [PositionedObjects](../../../../../frb/docs/index.php). It is the base class of the [SpriteList](../../../../../frb/docs/index.php) class and is commonly used to store lists of [Entities](../../../../../frb/docs/index.php) and shapes such as [Polygons](../../../../../frb/docs/index.php). The PositionedObjectList inherits from the [AttachableList](../../../../../frb/docs/index.php) and it establishes [two-way relationships](../../../../../frb/docs/index.php#Two_Way_Relationships) with objects that are added to it.
 
 ### Common Usage
 
@@ -15,7 +15,7 @@ The PositionedObjectList is a dynamic list which is made to specifically store [
 * [FlatRedBall.Math.Geometry.Circle](../../../../../frb/docs/index.php)
 * [FlatRedBall.Math.Geometry.Polygon](../../../../../frb/docs/index.php)
 * [FlatRedBall.Math.Geometry.AxisAlignedRectangle](../../../../../frb/docs/index.php)
-* [Entities](../../../../../frb/docs/index.php#Entity\_Tutorials) - Any entity created in Glue can be stored in a PositionedObjectList. Lists added to Screens or other Entities inside Glue are PositionedObjects.
+* [Entities](../../../../../frb/docs/index.php#Entity_Tutorials) - Any entity created in Glue can be stored in a PositionedObjectList. Lists added to Screens or other Entities inside Glue are PositionedObjects.
 
 Sprites are usually stored in the [FlatRedBall.SpriteList](../../../../../frb/docs/index.php) class; however since PositionedObjectList is the base class for [SpriteList](../../../../../frb/docs/index.php) all of the information presented here applies to [SpriteList](../../../../../frb/docs/index.php) as well.
 
@@ -83,7 +83,7 @@ public partial class GameScreen
 
 #### Combined with FlatRedBall Patterns
 
-The PositionedObjectList class is an essential part of the standard FlatRedBall Screen. For the rest of this discussion we'll assume that you are using [Screens](../../../../../frb/docs/index.php) and [Entities](../../../../../frb/docs/index.php#Entity\_Tutorials).
+The PositionedObjectList class is an essential part of the standard FlatRedBall Screen. For the rest of this discussion we'll assume that you are using [Screens](../../../../../frb/docs/index.php) and [Entities](../../../../../frb/docs/index.php#Entity_Tutorials).
 
 #### PositionedObjectLists represent categories
 
@@ -100,7 +100,7 @@ In most cases PositionedObjectLists should be defined at class (usually [Screen]
 
 #### Removing items from lists
 
-This section might seem silly. You might be thinking, "I just call Remove, right?". Actually, the Remove method in the PositionedObjectList class is almost never called explicitly. Keep in mind that the PositionedObjectList is a [AttachableList](../../../../../frb/docs/index.php) so that means that it shares a [two-way relationship](../../../../../frb/docs/index.php#Two\_Way\_Relationships) with all of its contained elements. That means that simply removing a [PositionedObject](../../../../../frb/docs/index.php) from its [manager](../../../../../frb/docs/index.php#FlatRedBall\_PositionedObject-Inheriting\_Classes\_and\_Associated\_Managers) will remove the [PositionedObject](../../../../../frb/docs/index.php) from any list that it belongs to. Let's look at how this works in practice. In our first example we have a PositionedObjectList of [Circles](../../../../../frb/docs/index.php) which represent enemy bullets. If the bullet collides with the player [Entity](../../../../../frb/docs/index.php), then the bullet should be destroyed. That means it should be removed from the engine as well as from any PositionedObjectLists that contain it.
+This section might seem silly. You might be thinking, "I just call Remove, right?". Actually, the Remove method in the PositionedObjectList class is almost never called explicitly. Keep in mind that the PositionedObjectList is a [AttachableList](../../../../../frb/docs/index.php) so that means that it shares a [two-way relationship](../../../../../frb/docs/index.php#Two_Way_Relationships) with all of its contained elements. That means that simply removing a [PositionedObject](../../../../../frb/docs/index.php) from its [manager](../../../../../frb/docs/index.php#FlatRedBall_PositionedObject-Inheriting_Classes_and_Associated_Managers) will remove the [PositionedObject](../../../../../frb/docs/index.php) from any list that it belongs to. Let's look at how this works in practice. In our first example we have a PositionedObjectList of [Circles](../../../../../frb/docs/index.php) which represent enemy bullets. If the bullet collides with the player [Entity](../../../../../frb/docs/index.php), then the bullet should be destroyed. That means it should be removed from the engine as well as from any PositionedObjectLists that contain it.
 
 ```
 // do a reverse loop ... see below for an explanation of why
@@ -167,7 +167,7 @@ for ( int i = 0; i < mEnemies.Count; i++)
 }
 ```
 
-However, there is a subtle problem here. If the Activity method can result in the destruction of an Enemy (say by checking its health or some other condition), then mEnemies may be modified. Remember, since mEnemies is a PositionedObjectList, if an Enemy destroys itself, it will likely call the [SpriteManager's](../../../../../frb/docs/index.php) [RemovePositionedObject](../../../../../frb/docs/index.php#Managing\_PositionedObjects) method. This will remove itself from all PositionedObjectLists that it belongs to, including mEnemies. Now, consider what happens when this occurs. Let's say that i = 1, and mEnemies\[1] is ready to be destroyed. When this occurs, the Enemy at index \[2] "slides over" to index \[1]. However, after the Activity is called, I increments to 2, which is the "new position" of the Enemy that was at index \[3]. In other words, the removal of the enemy at index \[1] caused the next Enemy to have its Activity method skipped over. Depending on your game this may be a very benign side-effect. That is, next frame the enemy that was moved to index \[1] may get its Activity method called and all will be well; however, it may be the case that your Activity method needs to be called every frame. Or it may be the case that later on in development you add some logic to the Enemy class's Activity method that causes problems if not called every frame. In short, removal inside a forward for loop can cause inconsistent behavior, and this can potentially cause bugs - specifically bugs which can be very difficult to track down. Fortunately, this can be remedied by a reverse for loop. The above code could be modified to be the following:
+However, there is a subtle problem here. If the Activity method can result in the destruction of an Enemy (say by checking its health or some other condition), then mEnemies may be modified. Remember, since mEnemies is a PositionedObjectList, if an Enemy destroys itself, it will likely call the [SpriteManager's](../../../../../frb/docs/index.php) [RemovePositionedObject](../../../../../frb/docs/index.php#Managing_PositionedObjects) method. This will remove itself from all PositionedObjectLists that it belongs to, including mEnemies. Now, consider what happens when this occurs. Let's say that i = 1, and mEnemies\[1] is ready to be destroyed. When this occurs, the Enemy at index \[2] "slides over" to index \[1]. However, after the Activity is called, I increments to 2, which is the "new position" of the Enemy that was at index \[3]. In other words, the removal of the enemy at index \[1] caused the next Enemy to have its Activity method skipped over. Depending on your game this may be a very benign side-effect. That is, next frame the enemy that was moved to index \[1] may get its Activity method called and all will be well; however, it may be the case that your Activity method needs to be called every frame. Or it may be the case that later on in development you add some logic to the Enemy class's Activity method that causes problems if not called every frame. In short, removal inside a forward for loop can cause inconsistent behavior, and this can potentially cause bugs - specifically bugs which can be very difficult to track down. Fortunately, this can be remedied by a reverse for loop. The above code could be modified to be the following:
 
 ```
 for ( int i = mEnemies.Count -1; i > -1; i--)

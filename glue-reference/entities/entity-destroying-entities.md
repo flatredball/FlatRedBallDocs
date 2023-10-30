@@ -31,7 +31,7 @@ Custom code may need to call Destroy. Usually custom code only needs to destroy 
 
 The most common situation where Destroy is called is in collision handling events. For example, consider a game where the player can shoot bullets, and bullets can hit walls (typically represented by a SolidCollision TileShapeCollection). The collision relationship may be defined as shown in the following image. Notice that the collision relationship has an event:
 
-![](../../../../media/2021-11-img\_61814c88b1382.png)
+![](../../../../media/2021-11-img_61814c88b1382.png)
 
 The collision relationship event handler might look like as shown in the following code snippet:
 

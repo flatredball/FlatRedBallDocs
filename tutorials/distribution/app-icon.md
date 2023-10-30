@@ -17,7 +17,7 @@ To change the icon on your game's .exe:
 2. Locate **Icon.ico**
 3. Open the Icon.ico to edit it, or replace it with an existing .ico file. Note that the file must still be called Icon.ico.
 
-![](../../../media/2020-12-img\_5fc8f4d8bb1a8.png)
+![](../../../media/2020-12-img_5fc8f4d8bb1a8.png)
 
 If you have changed your .ico file you may still see the old icon in Windows Explorer. Windows caches .ico files so you need to clear the cache. For more information see the following link: [https://neosmart.net/wiki/clear-icons-cache/](https://neosmart.net/wiki/clear-icons-cache/) To change the icon in the taskbar and on the window:
 

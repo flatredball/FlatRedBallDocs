@@ -8,7 +8,7 @@ The GetFile method is a method which lets you get a file using a string instead 
 Texture2D texture = (Texture2D)GetFile("Bear");
 ```
 
-The argument (in the example above "Bear") matches the name of the variable in the screen or entity. This will usually be the name of the file, without any path or extension. The exception to this rule is if the [IncludeDirectoryRelativeToContainer](../../../frb/docs/index.php) value is true. ![](../../../media/2017-05-img\_591898eae0479.png) Similary, GetFile can be called to obtain files from GlobalContent. For example, the following returns a song called BattleSong from GlobalContent:
+The argument (in the example above "Bear") matches the name of the variable in the screen or entity. This will usually be the name of the file, without any path or extension. The exception to this rule is if the [IncludeDirectoryRelativeToContainer](../../../frb/docs/index.php) value is true. ![](../../../media/2017-05-img_591898eae0479.png) Similary, GetFile can be called to obtain files from GlobalContent. For example, the following returns a song called BattleSong from GlobalContent:
 
 ```lang:c#
 Song song = (Song)GlobalContent.GetFile("BattleSong");

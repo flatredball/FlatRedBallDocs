@@ -13,6 +13,6 @@ The AnimationSpeed property controls the speed at which an Animation is playing.
 
 A Sprite's AnimationSpeed can be changed in the FlatRedBall Editor in the Variables tab.
 
-![](../../../../../../media/2022-07-img\_62e69faa9b168.png)
+![](../../../../../../media/2022-07-img_62e69faa9b168.png)
 
 ###

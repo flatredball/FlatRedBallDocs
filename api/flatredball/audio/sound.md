@@ -25,6 +25,6 @@ It could be set using the following line:
 mySound.Variables["Volume"] = 6.0f;
 ```
 
-For more information on setting variables in an XACT project, read the XNA Creator's Club's Advanced Audio Tutorial on [controlling pitch and volume with variables](http://creators.xna.com/Headlines/tutorialscol1/archive/2007/04/26/Advanced-Audio-Tutorial-1\_3A00\_-Controlling-Pitch-and-Volume-with-Variables.aspx).
+For more information on setting variables in an XACT project, read the XNA Creator's Club's Advanced Audio Tutorial on [controlling pitch and volume with variables](http://creators.xna.com/Headlines/tutorialscol1/archive/2007/04/26/Advanced-Audio-Tutorial-1_3A00_-Controlling-Pitch-and-Volume-with-Variables.aspx).
 
 Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

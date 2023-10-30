@@ -23,9 +23,9 @@ We'll begin with perhaps the most common type of content - a Scene used as a bac
 
 1. Expand your Screen in the tree view in Glue
 2. Right-click on Files
-3. Select Add File->New File![GlueAddNewFile.png](../../../media/migrated\_media-GlueAddNewFile.png)
-4. A new window will appear. Select "Scene (.scnx)" and enter the name "LevelBackground" as the new file name.![GlueEnterNewFileInfo.png](../../../media/migrated\_media-GlueEnterNewFileInfo.png)
-5. The new file will appear under your Screen's Files tree item![GlueNewFileInTreeView.png](../../../media/migrated\_media-GlueNewFileInTreeView.png)
+3. Select Add File->New File![GlueAddNewFile.png](../../../media/migrated_media-GlueAddNewFile.png)
+4. A new window will appear. Select "Scene (.scnx)" and enter the name "LevelBackground" as the new file name.![GlueEnterNewFileInfo.png](../../../media/migrated_media-GlueEnterNewFileInfo.png)
+5. The new file will appear under your Screen's Files tree item![GlueNewFileInTreeView.png](../../../media/migrated_media-GlueNewFileInTreeView.png)
 
 At this point you've created an empty file which will be automatically loaded by your Screen. You've also added the file to your project. In other words, simply doing this means your file is already part of the project. Now all you need to do is edit the file.
 
@@ -39,30 +39,30 @@ Glue provides quick access to any file that is part of the project. To open a fi
 
 If you feel you need to set up custom file associations, the following steps will show you how:
 
-1. Click on Settings->File Associations![GlueFileAssociationsMenu.png](../../../media/migrated\_media-GlueFileAssociationsMenu.png)
-2. The File Associations window will appear![GlueFileAssociationsWindow.png](../../../media/migrated\_media-GlueFileAssociationsWindow.png)
+1. Click on Settings->File Associations![GlueFileAssociationsMenu.png](../../../media/migrated_media-GlueFileAssociationsMenu.png)
+2. The File Associations window will appear![GlueFileAssociationsWindow.png](../../../media/migrated_media-GlueFileAssociationsWindow.png)
 3. At first all files will be associated with "\<DEFAULT>". This means that files will open with whatever application is associated with this file format through Windows. If you have set up the associations already between the files used by the FRBDK, then you can leave these values to \<DEFAULT>.
-4. To set Glue-specific associations between files and applications, click the drop-down next to one of the file types and select "New Application..."![GlueNewAssociationApplication.png](../../../media/migrated\_media-GlueNewAssociationApplication.png)
+4. To set Glue-specific associations between files and applications, click the drop-down next to one of the file types and select "New Application..."![GlueNewAssociationApplication.png](../../../media/migrated_media-GlueNewAssociationApplication.png)
 5. As you add applications, Glue remembers them, and they will always be listed in the combo box for easy switching.
-6. Navigate to the location where the given tool you want to use is located. If you want to manually set the association to the location where the FRBDK was installed, this is likely in \<Program Files>\FlatRedBall\FRBDK\\. You will want to pick the SpriteEditor.exe for the .scnx assocation.![GlueAssociateScnx.png](../../../media/migrated\_media-GlueAssociateScnx.png)
+6. Navigate to the location where the given tool you want to use is located. If you want to manually set the association to the location where the FRBDK was installed, this is likely in \<Program Files>\FlatRedBall\FRBDK\\. You will want to pick the SpriteEditor.exe for the .scnx assocation.![GlueAssociateScnx.png](../../../media/migrated_media-GlueAssociateScnx.png)
 
 ### Editing Files
 
 Once you have set up the association between file types and FRBDK applications, you can open the editors for these files through Glue. To do this, simply double-click the file. In this case, double-click your .scnx file under your Screen's Files to open the SpriteEditor.
 
-![SpriteEditorShot.png](../../../media/migrated\_media-SpriteEditorShot.png)
+![SpriteEditorShot.png](../../../media/migrated_media-SpriteEditorShot.png)
 
 Since this tutorial covers Glue, we won't go into the details of how to work with any of the other FRBDK tools. However, if you would like to learn more, check [this page](../../../frb/docs/index.php), and specifically for the SpriteEditor you can check [this page](../../../frb/docs/index.php).
 
 To create our level, let's add some Sprites to the scene.
 
-![SimpleScene.png](../../../media/migrated\_media-SimpleScene.png)
+![SimpleScene.png](../../../media/migrated_media-SimpleScene.png)
 
 Finally, you need to save your scene. To save your scene in the SpriteEditor:
 
 1. Click File->Save Scene.
 2. The file name should already be entered in the file window, so simply click OK.
-3. \*\*VERY IMPORTANT:\*\*When you save your .scnx file, the SpriteEditor checks to see if any referenced files (such as image files and .achx files) are referenced relative to the .scnx you are saving. If not, you will see a window that tells you which files are not relative, then asks you want you want to do. **In most cases you will want to make sure all files are copied locally.**![MakeTexturesRelative2.png](../../../media/migrated\_media-MakeTexturesRelative2.png)
+3. \*\*VERY IMPORTANT:\*\*When you save your .scnx file, the SpriteEditor checks to see if any referenced files (such as image files and .achx files) are referenced relative to the .scnx you are saving. If not, you will see a window that tells you which files are not relative, then asks you want you want to do. **In most cases you will want to make sure all files are copied locally.**![MakeTexturesRelative2.png](../../../media/migrated_media-MakeTexturesRelative2.png)
 
 Once you save your Scene (.scnx file), you can close the SpriteEditor.
 
@@ -74,10 +74,10 @@ If you've worked with FlatRedBall in the past and have added files like .achx or
 
 Now that we have a Screen that references a Scene, and now that we've added some Sprites to our Scene, we can test our project out. To do this:
 
-1. Select Project->"View in Visual Studio"![GlueViewInVisualStudioMenu.png](../../../media/migrated\_media-GlueViewInVisualStudioMenu.png)
+1. Select Project->"View in Visual Studio"![GlueViewInVisualStudioMenu.png](../../../media/migrated_media-GlueViewInVisualStudioMenu.png)
 2. Visual Studio will open with your project.
-3. Select Debug->"Start Debugging"![VSStartDebugging.png](../../../media/migrated\_media-VSStartDebugging.png)
-4. Your project should load up and your Screen will become active - resulting your Scene being loaded![GlueTutorialRunning.png](../../../media/migrated\_media-GlueTutorialRunning.png)
+3. Select Debug->"Start Debugging"![VSStartDebugging.png](../../../media/migrated_media-VSStartDebugging.png)
+4. Your project should load up and your Screen will become active - resulting your Scene being loaded![GlueTutorialRunning.png](../../../media/migrated_media-GlueTutorialRunning.png)
 
 ### Custom Tools for Scenes
 

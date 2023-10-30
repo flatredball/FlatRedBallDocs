@@ -14,7 +14,7 @@ This tutorial will use the a Button Entity which can be found [here on GlueVault
 4. Launch Glue View
 5. Change the view to "Default2D"
 
-![ButtonsInGlueView.png](../../../media/migrated\_media-ButtonsInGlueView.png) Now that you have four buttons in your Screen, you can edit them and you should see changes immediately show up in GlueView. To modify the first Button:
+![ButtonsInGlueView.png](../../../media/migrated_media-ButtonsInGlueView.png) Now that you have four buttons in your Screen, you can edit them and you should see changes immediately show up in GlueView. To modify the first Button:
 
 1. Select "ButtonInstance"
 2. Change X to 100
@@ -43,4 +43,4 @@ To modify the fourth Button:
 4. Change ScaleY to 16
 5. Change DisplayText to "Exit"
 
-![ButtonLayoutGlueView.png](../../../media/migrated\_media-ButtonLayoutGlueView.png)
+![ButtonLayoutGlueView.png](../../../media/migrated_media-ButtonLayoutGlueView.png)

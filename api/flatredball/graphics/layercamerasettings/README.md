@@ -37,7 +37,7 @@ sprite.PixelSize = 1;
 SpriteManager.AddToLayer(sprite, layer);
 ```
 
-![2DLayerCameraSettings.png](../../../../../media/migrated\_media-2DLayerCameraSettings.png)
+![2DLayerCameraSettings.png](../../../../../media/migrated_media-2DLayerCameraSettings.png)
 
 ### &#x20;LayerCameraSettings and Glue Layers
 

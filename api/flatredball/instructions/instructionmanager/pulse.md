@@ -35,4 +35,4 @@ Add the following to Initialize after initializing FlatRedBall;
      period);
 ```
 
-![InstructionManagerPulse.png](../../../../../media/migrated\_media-InstructionManagerPulse.png)
+![InstructionManagerPulse.png](../../../../../media/migrated_media-InstructionManagerPulse.png)

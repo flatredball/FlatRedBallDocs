@@ -117,7 +117,7 @@ There are a few things to note in the code above:
 
 * The code uses "enemyIndex" and "bulletIndex" instead of i and j for the index variables. This can help you avoid bugs in nested for-loops.
 * The for loops are reverse loops. This is because removal may happen in the loops. This makes sure every object will be hit once even if there is removal.
-* The bullet.Destroy call will remove the bullet from the [PositionedObjectList](../../../frb/docs/index.php) because of its two-way relationship with the list. For more information check [this page](../../../frb/docs/index.php#Two\_Way\_Relationships).
+* The bullet.Destroy call will remove the bullet from the [PositionedObjectList](../../../frb/docs/index.php) because of its two-way relationship with the list. For more information check [this page](../../../frb/docs/index.php#Two_Way_Relationships).
 * This code assumes that both Bullet and Enemy have Collision objects, and that they are public. Objects in Glue can be made public by changing "Has Public Property" to true.
 
 ### Controlling Entity Movement (and other PositionedObject properties)

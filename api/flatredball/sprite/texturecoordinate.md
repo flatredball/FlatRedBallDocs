@@ -76,7 +76,7 @@ sprite3.Vertices[0].TextureCoordinate.Y = .3f;
 sprite3.X = 6;
 ```
 
-![DifferentSpriteTextureCoordinates.png](../../../../media/migrated\_media-DifferentSpriteTextureCoordinates.png)
+![DifferentSpriteTextureCoordinates.png](../../../../media/migrated_media-DifferentSpriteTextureCoordinates.png)
 
 ### TextureCoordinate Properties
 

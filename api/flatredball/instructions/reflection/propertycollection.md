@@ -18,7 +18,7 @@ propertyCollection.Add("RotationZ", (float)Math.PI / 8.0f);
 propertyCollection.ApplyTo(sprite);
 ```
 
-![SpriteWithChangedProperties.png](../../../../../media/migrated\_media-SpriteWithChangedProperties.png)
+![SpriteWithChangedProperties.png](../../../../../media/migrated_media-SpriteWithChangedProperties.png)
 
 ### Lack of Type Conversion in PropertyCollections
 

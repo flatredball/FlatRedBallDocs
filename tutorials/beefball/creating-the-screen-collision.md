@@ -20,7 +20,7 @@ First we'll create a ShapeCollection called Walls. This ShapeCollection will con
 
 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_130007.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_130007.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -35,7 +35,7 @@ Now that we have a ShapeCollection for our walls, we will add the individual wal
 
 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_133309.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_133309.gif" alt=""><figcaption></figcaption></figure>
 
  Now we can modify the properties of this wall. Select **Wall1** and change the values as follows:
 
@@ -45,13 +45,13 @@ Now that we have a ShapeCollection for our walls, we will add the individual wal
 
 Doing so will move the rectangle to the top of the screen. If you run the game you will see the wall at the top of the screen.
 
-![](../../../media/2021-07-img\_60fdb75161810.png)
+![](../../../media/2021-07-img_60fdb75161810.png)
 
 Now that we've created a single wall, we can duplicate it by right-clicking on it and selecting the "Duplicate" command:
 
-![](../../../media/2021-07-img\_60fdb7890ef6f.png)
+![](../../../media/2021-07-img_60fdb7890ef6f.png)
 
-Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectangle instances: ![SixWalls.PNG](../../../media/migrated\_media-SixWalls.PNG) Next set the X, Y, Width, and Height variables for for the newly-created walls as follows: **Wall2**
+Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectangle instances: ![SixWalls.PNG](../../../media/migrated_media-SixWalls.PNG) Next set the X, Y, Width, and Height variables for for the newly-created walls as follows: **Wall2**
 
 * X = 0
 * Y = -300
@@ -88,13 +88,13 @@ Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectan
 
 When finished, the game should have walls made of AxisAlignedRectangles with gaps on the left and right sides for goals:
 
-![](../../../media/2021-07-img\_60fdbae917a81.png)
+![](../../../media/2021-07-img_60fdbae917a81.png)
 
 ### Implementing Collision
 
 Next we'll use collision relationships to define collision between the PlayerBall and Walls. We'll revisit collisions in later tutorials, so keep in mind that this is only the first step in setting up our game's collision. When we created our PlayerBall entity in an earlier tutorial, we marked that the entity should contain a Circle object. Doing so automatically marked the Entity as using the ICollidable interface. As a reminder, the following image shows the window we used to create the PlayerBall entity:
 
-![](../../../media/2021-07-img\_60fdb8d652c26.png)
+![](../../../media/2021-07-img_60fdb8d652c26.png)
 
 Since our PlayerBall is an ICollidable, that means it can collide with any other ICollidable and with any shapes - like the Walls. We need to tell our game that we want the PlayerList to collide against the PlayerWalls. The easiest way to do this is to create a Collision Relationship in Glue. To do this:
 
@@ -106,7 +106,7 @@ Since our PlayerBall is an ICollidable, that means it can collide with any other
 
 If we run the game now, the PlayerBall will collide with the walls. 
 
-<figure><img src="../../../media/2016-01-2021\_July\_25\_135826.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_July_25_135826.gif" alt=""><figcaption></figcaption></figure>
 
  We use CollisionRelationships here because they are very powerful and require no code. Just like everything else in Glue, collisions can also be managed in code. If you are interested in writing collision purely in code, see the [CollideAgainstMove page](../../../frb/docs/index.php).
 

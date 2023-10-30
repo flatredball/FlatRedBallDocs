@@ -13,15 +13,15 @@ Texture coordiantes can be manually set on a Sprite in Glue. For example, consid
 * Top = 128
 * Bottom = 144
 
-![](../../../../media/2021-04-img\_6074bfeed2cae.png)
+![](../../../../media/2021-04-img_6074bfeed2cae.png)
 
 These values can be obtained through most image editors. The following image shows how to obtain these values in Paint.NET:
 
-![](../../../../media/2021-04-img\_6074b92ea2b46.png)
+![](../../../../media/2021-04-img_6074b92ea2b46.png)
 
 These values can be set in Glue as shown in the following image:
 
-![](../../../../media/2021-04-img\_6074b9a2509fa.png)
+![](../../../../media/2021-04-img_6074b9a2509fa.png)
 
 Keep in mind that Glue uses **pixels** as its unit, while code can use pixels or **UV coordinates** (values between 0 to 1).
 
@@ -97,7 +97,7 @@ sprite3.Vertices[0].TextureCoordinate.Y = .3f;
 sprite3.X = 6;
 ```
 
-![DifferentSpriteTextureCoordinates.png](../../../../media/migrated\_media-DifferentSpriteTextureCoordinates.png)
+![DifferentSpriteTextureCoordinates.png](../../../../media/migrated_media-DifferentSpriteTextureCoordinates.png)
 
 ### TextureCoordinate Properties
 

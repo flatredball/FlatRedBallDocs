@@ -75,7 +75,7 @@ public void RemoveSprite(Sprite sprite)
 }
 ```
 
-![MethodInstructions.png](../../../../media/migrated\_media-MethodInstructions.png)
+![MethodInstructions.png](../../../../media/migrated_media-MethodInstructions.png)
 
 ### "arguments" argument
 

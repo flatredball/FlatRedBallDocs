@@ -55,7 +55,7 @@ sprite.ScaleX = 10;
 sprite.ScaleY = 10;
 ```
 
-![ImageDataToTexture2D.png](../../../../../../media/migrated\_media-ImageDataToTexture2D.png)
+![ImageDataToTexture2D.png](../../../../../../media/migrated_media-ImageDataToTexture2D.png)
 
 **Note:** This code uses the Color and Texture2D classes. Remember, if you are using a version of FlatRedBall other than FlatRedBall XNA, your using statements will be different. For more information, see:
 

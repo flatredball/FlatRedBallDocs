@@ -57,6 +57,6 @@ void CustomActivity(bool firstTimeCalled)
 
 
 
-<figure><img src="../../../../../../media/2019-08-2019-08-26\_07-59-23.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../media/2019-08-2019-08-26_07-59-23.gif" alt=""><figcaption></figcaption></figure>
 
    &#x20;

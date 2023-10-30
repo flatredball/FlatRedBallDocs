@@ -6,7 +6,7 @@ FlatRedBall is well-suited to make 2D games; however, due to the lower resolutio
 
 For this tutorial we'll use the following image, which matches the default resolution of the NES (256x240):
 
-![MountainsAndOcean.png](../../../media/migrated\_media-MountainsAndOcean.png)
+![MountainsAndOcean.png](../../../media/migrated_media-MountainsAndOcean.png)
 
 ### Setup
 
@@ -17,7 +17,7 @@ This tutorial will use Glue. To begin:
 3. Download the MountainsAndOcean file from above
 4. Drag+drop the downloaded .PNG into your Screen's "Files"
 
-![MountainsAndOceanInGlue.png](../../../media/migrated\_media-MountainsAndOceanInGlue.png)
+![MountainsAndOceanInGlue.png](../../../media/migrated_media-MountainsAndOceanInGlue.png)
 
 ### Creating a Sprite
 
@@ -31,13 +31,13 @@ Next we'll add a Sprite to view this graphic. In a typical game you might have m
 6. Select the newly-created SpriteInstance object
 7. Change its Texture to "MountainsAndOcean"
 
-![SpriteWithMountainTexture.PNG](../../../media/migrated\_media-SpriteWithMountainTexture.PNG)
+![SpriteWithMountainTexture.PNG](../../../media/migrated_media-SpriteWithMountainTexture.PNG)
 
 ### Running the game
 
 At this point if we run the game we'll see that the Sprite is visible and rendered; however, there is a lot of black space around the Sprite.
 
-![LowResDemo1.PNG](../../../media/migrated\_media-LowResDemo1.PNG)
+![LowResDemo1.PNG](../../../media/migrated_media-LowResDemo1.PNG)
 
 ### Setting the game's resolution
 
@@ -49,11 +49,11 @@ To do this:
 2. Click the "Set Resolution" check box
 3. Enter 256 as the width and 240 as the height
 
-![CameraSettingsForLowResDemo1.PNG](../../../media/migrated\_media-CameraSettingsForLowResDemo1.PNG)
+![CameraSettingsForLowResDemo1.PNG](../../../media/migrated_media-CameraSettingsForLowResDemo1.PNG)
 
 Close the window and run the game again, and you should see that the game runs at a much smaller resolution:
 
-![LowResDemo2.PNG](../../../media/migrated\_media-LowResDemo2.PNG)
+![LowResDemo2.PNG](../../../media/migrated_media-LowResDemo2.PNG)
 
 ### Making the window bigger
 
@@ -71,11 +71,11 @@ Of course, increasing the resolution will also increase how many units wide our 
 3. Set the Width to 256
 4. Set the Height to 240
 
-![ResolutionAndOrthoSet.PNG](../../../media/migrated\_media-ResolutionAndOrthoSet.PNG)
+![ResolutionAndOrthoSet.PNG](../../../media/migrated_media-ResolutionAndOrthoSet.PNG)
 
 Now if you run the game you'll notice that the game window is much larger, but there are no black borders:
 
-![LargerWindowLowResDemo3.PNG](../../../media/migrated\_media-LargerWindowLowResDemo3.PNG)
+![LargerWindowLowResDemo3.PNG](../../../media/migrated_media-LargerWindowLowResDemo3.PNG)
 
 ### The game is "blurry"
 
@@ -94,4 +94,4 @@ FlatRedBallServices.GraphicsOptions.TextureFilter = TextureFilter.Point;
 
 Now if you run the game you will see sharp pixels:
 
-![LowResDemo4.PNG](../../../media/migrated\_media-LowResDemo4.PNG)
+![LowResDemo4.PNG](../../../media/migrated_media-LowResDemo4.PNG)

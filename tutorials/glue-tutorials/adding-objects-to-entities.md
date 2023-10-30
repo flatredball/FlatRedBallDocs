@@ -21,7 +21,7 @@ Now that we have a Scene created, we need to add a Sprite to it. To do this:
 
 1. Double-click your .scnx file under your Character's "Files" tree item. If you set up the file assocation in the previous tutorial, the SpriteEditor should open.
 2. Add a new Sprite to the SpriteEditor. If you need help working with the SpriteEditor, click [here](../../../frb/docs/index.php).
-3. Modify the Sprite so it is different from your level. I'll give mine an "Add" color operation and give it a neon green color At the time of this writing, the Windows Phone 7 version of FlatRedBall does not support the "Add" color operation, so you may want to pick something else to differentiate your objects if using this version of the engine. ![GlueEntitySprite.png](../../../media/migrated\_media-GlueEntitySprite.png)
+3. Modify the Sprite so it is different from your level. I'll give mine an "Add" color operation and give it a neon green color At the time of this writing, the Windows Phone 7 version of FlatRedBall does not support the "Add" color operation, so you may want to pick something else to differentiate your objects if using this version of the engine. ![GlueEntitySprite.png](../../../media/migrated_media-GlueEntitySprite.png)
 4. Save your Scene. **Remember to copy your files locally**
 
 As was mentioned in the previous tutorial, if you modify a .scnx, Glue automatically adds all necessary files to your project. Therefore, you don't need to do anything to Visual Studio to get this Scene to load. However, **you do need to modify your Entity by adding an object.** This is one extra step that has to be done for Entities which you didn't have to do before for Screens. Let's see why:
@@ -55,18 +55,18 @@ But there are a lot of other things that we may want like creating Entities that
 The way we can achieve this extra behavior is by adding objects. Let's make our Entity visible by adding a Sprite:
 
 1. Right-click on your Character Entity's "Objects" tree item,
-2. Select "Add Object" ![GlueRightClickAddObject.png](../../../media/migrated\_media-GlueRightClickAddObject.png)
-3. Enter the name "VisibleRepresentation" for your new object ![GlueNewObjectName.png](../../../media/migrated\_media-GlueNewObjectName.png)
-4. Press OK. The new object should appear under your Character Entity's "Objects" tree item ![GlueObjectInGlue.png](../../../media/migrated\_media-GlueObjectInGlue.png)
+2. Select "Add Object" ![GlueRightClickAddObject.png](../../../media/migrated_media-GlueRightClickAddObject.png)
+3. Enter the name "VisibleRepresentation" for your new object ![GlueNewObjectName.png](../../../media/migrated_media-GlueNewObjectName.png)
+4. Press OK. The new object should appear under your Character Entity's "Objects" tree item ![GlueObjectInGlue.png](../../../media/migrated_media-GlueObjectInGlue.png)
 
 One thing that may jump out at you is that there are a lot of properties available when you select an object. We won't cover most of these properties in this tutorial. However, keep in mind that these properties give you considerable amount of flexibility and power defining how your objects will behave and what type of code they will generate.
 
 ### Connecting an object to a file
 
-Now that we have a Scene (.scnx) file and an object, we simply need to connect the two. By default your new object has its "Source Type" set to "File".![GlueSourceTypeFile.png](../../../media/migrated\_media-GlueSourceTypeFile.png) To finish connecting the object to the file:
+Now that we have a Scene (.scnx) file and an object, we simply need to connect the two. By default your new object has its "Source Type" set to "File".![GlueSourceTypeFile.png](../../../media/migrated_media-GlueSourceTypeFile.png) To finish connecting the object to the file:
 
-1. Select the drop-down next to "Source File" and select your .scnx file ![GlueSelectedFile.png](../../../media/migrated\_media-GlueSelectedFile.png)
-2. Select the drop-down next to "Source Name" and select the Sprite in your Scene (.scnx) file ![GlueSelectedSprite.png](../../../media/migrated\_media-GlueSelectedSprite.png)
+1. Select the drop-down next to "Source File" and select your .scnx file ![GlueSelectedFile.png](../../../media/migrated_media-GlueSelectedFile.png)
+2. Select the drop-down next to "Source Name" and select the Sprite in your Scene (.scnx) file ![GlueSelectedSprite.png](../../../media/migrated_media-GlueSelectedSprite.png)
 
 Great! Now we have our object and file connected. This means that from this point on you can make modifications to the Scene (.scnx) and these changes will be reflected in your Entity.
 
@@ -83,12 +83,12 @@ Even though we've defined our Entity, given it a file, created an object, and co
 
 Now that we have a Character instance, let's set it up to use our Character Entity. To do this:
 
-1. Select the drop-down next for "Source Type" and change it from "File" to "Entity" ![GlueSourceTypeEntity.png](../../../media/migrated\_media-GlueSourceTypeEntity.png)
-2. Select the drop-down next to "Source Class Type" and select "Entities\Character". ![GlueSourceClassTypeEntity.png](../../../media/migrated\_media-GlueSourceClassTypeEntity.png)
+1. Select the drop-down next for "Source Type" and change it from "File" to "Entity" ![GlueSourceTypeEntity.png](../../../media/migrated_media-GlueSourceTypeEntity.png)
+2. Select the drop-down next to "Source Class Type" and select "Entities\Character". ![GlueSourceClassTypeEntity.png](../../../media/migrated_media-GlueSourceClassTypeEntity.png)
 
 ### Viewing your Entity
 
-Now that you've added a Character instance to your GameScreen, you will be able to view your Entity in game. Simply open your project in Visual Studio and Start Debugging. For a reminder on how to do this, check [this page](../../../frb/docs/index.php#Seeing\_it\_in\_action). ![EntityInGame.png](../../../media/migrated\_media-EntityInGame.png)
+Now that you've added a Character instance to your GameScreen, you will be able to view your Entity in game. Simply open your project in Visual Studio and Start Debugging. For a reminder on how to do this, check [this page](../../../frb/docs/index.php#Seeing_it_in_action). ![EntityInGame.png](../../../media/migrated_media-EntityInGame.png)
 
 **Where is my Entity?!?** You may have just run your game, but not seen your green Entity. Instead, you might see a red ball. Why is it red and not green? Actually, it is Green...it's just being covered up by a red ball. FRB templates currently have a red ball Sprite automatically added. If you want to get rid of it:
 

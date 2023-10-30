@@ -15,7 +15,7 @@ First we'll need to define which controls are needed in our game. Our PlayerBall
 * Movement in the X and Y coordinates - also known as "2D input"
 * Input for executing a boost. Boosts temporarily increase the player's speed when executed for a short amount of time. The user does not need to hold the input down, simply pressing the button/key is enough.
 
-We'll want to write the PlayerBall so that it will work with any input device, whether that's Xbox 360 controller, Keyboard, or any other device. To add code to PlayerBall, open PlayerBall.cs in Visual Studio. This will be located in your project's Entities folder.![PlayerBallInVS.png](../../../media/migrated\_media-PlayerBallInVS.png)
+We'll want to write the PlayerBall so that it will work with any input device, whether that's Xbox 360 controller, Keyboard, or any other device. To add code to PlayerBall, open PlayerBall.cs in Visual Studio. This will be located in your project's Entities folder.![PlayerBallInVS.png](../../../media/migrated_media-PlayerBallInVS.png)
 
 Modify the **PlayerBall.cs** file so it contains two input properties as follows:
 
@@ -80,7 +80,7 @@ For more information on the Keyboard class, see [the Keyboard page](../../../frb
 The code we wrote above has a number of problems:
 
 * The velocity (which was set to 10) is set right in the method where it's used. In this case the velocity value is considered "data" and its application is considered "logic". The separation of data from logic is a fundamental concept in keeping game projects maintainable.
-* The game includes logic in the CustomActivity method. We encourage no logic, only method calls in the standard "Custom" methods. For more information, click [here.](../../../frb/docs/index.php#CustomActivity\_and\_CustomInitialize\_methods\_should\_contain\_no\_logic)
+* The game includes logic in the CustomActivity method. We encourage no logic, only method calls in the standard "Custom" methods. For more information, click [here.](../../../frb/docs/index.php#CustomActivity_and_CustomInitialize_methods_should_contain_no_logic)
 
 ### Separating Data from Logic using Glue Variables
 
@@ -93,7 +93,7 @@ Glue provides a number of ways to separate data from logic. The simplest of thes
 5. Enter the name "MovementSpeed" and click the OK button
 6. Verify "Variables" is selected and set MovementSpeed to 100
 
-![AddMovementSpeedVariable.gif](../../../media/migrated\_media-AddMovementSpeedVariable.gif)
+![AddMovementSpeedVariable.gif](../../../media/migrated_media-AddMovementSpeedVariable.gif)
 
 Finally, return to the movement code **inside PlayerBall.cs** and change the code to:
 
@@ -110,7 +110,7 @@ private void CustomActivity()
 
 If we run the game now we can control the player with the W, A, S, and D keys:
 
-![MovingBeefballWithKeyboard.gif](../../../media/migrated\_media-MovingBeefballWithKeyboard.gif)
+![MovingBeefballWithKeyboard.gif](../../../media/migrated_media-MovingBeefballWithKeyboard.gif)
 
 ### Adding Xbox360 Controls
 

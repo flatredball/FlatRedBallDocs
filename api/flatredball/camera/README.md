@@ -58,13 +58,13 @@ void CustomActivity(bool firstTimeCalled)
 
 
 
-<figure><img src="../../../media/2016-01-10\_08-09-06.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-10_08-09-06.gif" alt=""><figcaption></figcaption></figure>
 
 
 
 ### 2D Cameras and Pixels
 
-For information about 2D coordinates and how to create 2D scenes, see the [2D In FlatRedBall tutorial](../../../frb/docs/index.php). To convert between world and pixel coordinates, see the [World and Screen Coordinates page](../../../frb/docs/index.php#World\_and\_Screen\_Coordinates).
+For information about 2D coordinates and how to create 2D scenes, see the [2D In FlatRedBall tutorial](../../../frb/docs/index.php). To convert between world and pixel coordinates, see the [World and Screen Coordinates page](../../../frb/docs/index.php#World_and_Screen_Coordinates).
 
 ### Camera Edges
 
@@ -92,7 +92,7 @@ FlatRedBall supports multiple cameras for different viewports (split screen). Th
  SpriteManager.Cameras[1].Z = 5;
 ```
 
-![SplitScreen.png](../../../media/migrated\_media-SplitScreen.png) For info on the [content manager argument](../../../frb/docs/index.php) see the [FlatRedBall Content Manager wiki entry](../../../frb/docs/index.php).
+![SplitScreen.png](../../../media/migrated_media-SplitScreen.png) For info on the [content manager argument](../../../frb/docs/index.php) see the [FlatRedBall Content Manager wiki entry](../../../frb/docs/index.php).
 
 #### Manually Setting Destination Rectangle
 
@@ -116,6 +116,6 @@ For more information, see the [DestinationRectangle entry](../../../frb/docs/ind
 ### Extra Information
 
 * [2D In FlatRedBall tutorial](../../../frb/docs/index.php)
-* [Camera Layers](../../../frb/docs/index.php#Camera\_Layers) - Camera Layers can be used to render objects to only one camera, such as HUDs.
+* [Camera Layers](../../../frb/docs/index.php#Camera_Layers) - Camera Layers can be used to render objects to only one camera, such as HUDs.
 
 \[subpages depth="1"]

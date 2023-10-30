@@ -1,6 +1,6 @@
 # flatredball-gui-cursor-setcursor
 
-\*\*SetCursor is no longer supported:\*\*This method is no longer supported in new versions of FlatRedBall; however its functionality is fully supported through the use of the Cursor class and Sprites. For an example on how to perform equivalent functionality, see [this page](../frb/docs/index.php#Using\_custom\_Cursor\_graphics).
+\*\*SetCursor is no longer supported:\*\*This method is no longer supported in new versions of FlatRedBall; however its functionality is fully supported through the use of the Cursor class and Sprites. For an example on how to perform equivalent functionality, see [this page](../frb/docs/index.php#Using_custom_Cursor_graphics).
 
 ### Introduction
 
@@ -47,4 +47,4 @@ Add the following to Activity:
  circle.Y = GuiManager.Cursor.WorldYAt(0);
 ```
 
-![CursorSetCursor.png](../media/migrated\_media-CursorSetCursor.png)
+![CursorSetCursor.png](../media/migrated_media-CursorSetCursor.png)

@@ -47,4 +47,4 @@ The Camera can be rotated to be facing any direction. Keep in mind that many sys
  SpriteManager.Camera.CameraCullMode = CameraCullMode.None;
 ```
 
-![RotatedCamera.PNG](../../../../media/migrated\_media-RotatedCamera.PNG)
+![RotatedCamera.PNG](../../../../media/migrated_media-RotatedCamera.PNG)

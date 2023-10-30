@@ -14,16 +14,16 @@ You can use the depth parameter to limit how much information is being displayed
 mSection.ToStringVerbose(1);
 ```
 
-![ToStringVerboseDepth1.PNG](../../../../../../media/migrated\_media-ToStringVerboseDepth1.PNG)
+![ToStringVerboseDepth1.PNG](../../../../../../media/migrated_media-ToStringVerboseDepth1.PNG)
 
 ```
 mSection.ToStringVerbose(2);
 ```
 
-![ToStringVerboseDepth2.PNG](../../../../../../media/migrated\_media-ToStringVerboseDepth2.PNG)
+![ToStringVerboseDepth2.PNG](../../../../../../media/migrated_media-ToStringVerboseDepth2.PNG)
 
 ```
 mSection.ToStringVerbose(3);
 ```
 
-![ToStringVerboseDepth3.PNG](../../../../../../media/migrated\_media-ToStringVerboseDepth3.PNG)
+![ToStringVerboseDepth3.PNG](../../../../../../media/migrated_media-ToStringVerboseDepth3.PNG)

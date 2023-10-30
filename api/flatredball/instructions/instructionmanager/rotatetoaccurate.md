@@ -44,4 +44,4 @@ if (InputManager.Mouse.ButtonReleased(FlatRedBall.Input.Mouse.MouseButtons.LeftB
 }
 ```
 
-![RotateToAccurate.png](../../../../../media/migrated\_media-RotateToAccurate.png)
+![RotateToAccurate.png](../../../../../media/migrated_media-RotateToAccurate.png)

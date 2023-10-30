@@ -28,13 +28,13 @@ To combine the images in Paint.NET:
 6. With greenball.png showing, select the menu option "Image"->"Canvas Size..."
 7. Change the Anchor to "Left" (through the drop-down or by clicking on the middle-left square)
 8. Change width to 64 (verify "Maintain aspect ratio" is not selected)
-9. Click OK![PaintDotNetMerging1.PNG](../../../media/migrated\_media-PaintDotNetMerging1.PNG)
+9. Click OK![PaintDotNetMerging1.PNG](../../../media/migrated_media-PaintDotNetMerging1.PNG)
 10. Switch back to the redball.png
 11. Press CTRL+A to select the entire image
 12. Press CTRL+C to copy it
 13. Switch to the greenball.png image
 14. Press CTRL+V to paste it
-15. Use the mouse or arrow keys to slide the pasted image to the right. You can hold the CTRL key and scroll the moue wheel to zoom in![TwoInOneBalls.PNG](../../../media/migrated\_media-TwoInOneBalls.PNG)
+15. Use the mouse or arrow keys to slide the pasted image to the right. You can hold the CTRL key and scroll the moue wheel to zoom in![TwoInOneBalls.PNG](../../../media/migrated_media-TwoInOneBalls.PNG)
 16. Save the file as combined.png
 
 ### Using combined.png
@@ -65,7 +65,7 @@ for (int i = 0; i < 1000; i++)
 // We no longer need to sort by textures - we only have 1 texture we're using
 ```
 
-As expected we see a significant boost in performance (and reduction in render breaks):![RenderingUsingCombined.png](../../../media/migrated\_media-RenderingUsingCombined.png) This solution is a very powerful solution because once the initial art and Sprites are set-up there are no restrictions. We can instantiate objects however we want, and we can draw them in any order. Since texture coordinate changes do not require render breaks, then combining textures into larger images can greatly improve performance. This is one of the main reasons why sprite sheets (single files containing multiple images) are so common in games.
+As expected we see a significant boost in performance (and reduction in render breaks):![RenderingUsingCombined.png](../../../media/migrated_media-RenderingUsingCombined.png) This solution is a very powerful solution because once the initial art and Sprites are set-up there are no restrictions. We can instantiate objects however we want, and we can draw them in any order. Since texture coordinate changes do not require render breaks, then combining textures into larger images can greatly improve performance. This is one of the main reasons why sprite sheets (single files containing multiple images) are so common in games.
 
 ### Drawbacks to using sprite sheets
 

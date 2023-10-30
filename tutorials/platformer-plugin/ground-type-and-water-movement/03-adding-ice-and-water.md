@@ -11,19 +11,19 @@ As shown in the previous tutorial, the Player already collides with the solid co
 1. Click **GameScreen**
 2.  Select the **Quick Actions** tab and click the **Add Object to Game Screen** button
 
-    ![](../../../../media/2023-02-img\_63e037b075cad.png)
+    ![](../../../../media/2023-02-img_63e037b075cad.png)
 3. Select **TileShapeCollection**
 4. Enter the name **IceCollision**
 5.  Click **OK**
 
-    ![](../../../../media/2021-04-img\_6075038fee823.png)
+    ![](../../../../media/2021-04-img_6075038fee823.png)
 6. Select the newly-created **IceCollision** object
 7. Click the **TileShapeCollection Properties** tab
 8. Click the **From Type** option
 9. Change the **Source TMX File/Object** to **Map**
 10. Change the **Type** to **IceCollision**
 
-    ![](../../../../media/2023-02-img\_63e03832d521a.png)
+    ![](../../../../media/2023-02-img_63e03832d521a.png)
 
 We'll repeat the process above to create water collision:
 
@@ -38,7 +38,7 @@ We'll repeat the process above to create water collision:
 9. Change the **Source TMX File/Object** to **Map**
 10. Change the **Type** to **Water**
 
-    ![](../../../../media/2023-02-img\_63e03881857da.png)
+    ![](../../../../media/2023-02-img_63e03881857da.png)
 
 ### Creating Collision Relationships
 
@@ -46,17 +46,17 @@ Now our game has two new collision relationships: IceCollision and WaterCollisio
 
 1. Drag+drop **PlayerList** onto **IceCollision** 
 
-<figure><img src="../../../../media/2021-04-05\_16-16-01.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2021-04-05_16-16-01.gif" alt=""><figcaption></figcaption></figure>
 
 
 
 The newly-created PlayerVsIceCollision is automatically set up to use **Platformer Solid Collision** physics, so we don't need to make any changes. We also need to create collision between **PlayerList** and **WaterCollision**, but this time we need to disable **Platformer Solid Collision** since the Player should be able to fall into the water. To do this, drag+drop **PlayerList** onto **WaterCollision** and select **No Physics**. 
 
-<figure><img src="../../../../media/2021-04-05\_16-18-42.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2021-04-05_16-18-42.gif" alt=""><figcaption></figcaption></figure>
 
  Now if we run our game we can collide with the ice tiles and fall through water. 
 
-<figure><img src="../../../../media/2021-04-05\_16-20-22.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2021-04-05_16-20-22.gif" alt=""><figcaption></figcaption></figure>
 
 
 

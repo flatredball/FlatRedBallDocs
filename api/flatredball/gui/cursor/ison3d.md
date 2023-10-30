@@ -52,7 +52,7 @@ for (int i = 0; i < mSprites.Count; i++)
 }
 ```
 
-![CursorIsOn3D.png](../../../../../media/migrated\_media-CursorIsOn3D.png)
+![CursorIsOn3D.png](../../../../../media/migrated_media-CursorIsOn3D.png)
 
 ### IsOn3D for clicking UI
 

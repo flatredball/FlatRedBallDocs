@@ -38,7 +38,7 @@ The following code creates 10 [Sprites](../../../../../frb/docs/index.php), rota
  SpriteManager.OrderedSortType = SortType.DistanceFromCamera;
 ```
 
-![OrderedByDistanceFromCamera.png](../../../../../media/migrated\_media-OrderedByDistanceFromCamera.png)
+![OrderedByDistanceFromCamera.png](../../../../../media/migrated_media-OrderedByDistanceFromCamera.png)
 
 #### Example with default OrderedSortType
 
@@ -57,7 +57,7 @@ The default OrderedSortType is SortType.Z. This sort type will result in [Sprite
  SpriteManager.OrderedSortType = SortType.Z;
 ```
 
-![OrderedByZ.png](../../../../../media/migrated\_media-OrderedByZ.png) Since all [Sprites](../../../../../frb/docs/index.php) have an equal Z value (default of 0), then they are drawn in the order that they were added to the SpriteManager; from bottom-up. That means that the [Sprites](../../../../../frb/docs/index.php) seen from below (at the top of the screen) will appear to overlap incorrectly.
+![OrderedByZ.png](../../../../../media/migrated_media-OrderedByZ.png) Since all [Sprites](../../../../../frb/docs/index.php) have an equal Z value (default of 0), then they are drawn in the order that they were added to the SpriteManager; from bottom-up. That means that the [Sprites](../../../../../frb/docs/index.php) seen from below (at the top of the screen) will appear to overlap incorrectly.
 
 ### CustomComparer
 
@@ -94,23 +94,23 @@ public class SortByX : IComparer<Sprite>
 }
 ```
 
-![CustomSpriteSorting.png](../../../../../media/migrated\_media-CustomSpriteSorting.png)
+![CustomSpriteSorting.png](../../../../../media/migrated_media-CustomSpriteSorting.png)
 
 ### ZSecondaryParentY Details
 
 The ZSecondaryParentY sort type is useful for top down and 3/4 view games. It allows moving objects (such as character entities) to be sorted based on their Y.
 
-![](../../../../../media/2017-04-img\_58dfc9a83a342.png)
+![](../../../../../media/2017-04-img_58dfc9a83a342.png)
 
 #### Using Entities to Set Sprite Origin
 
 For Sprites, the sorting is performed according to the sprite's parent. This allows sorting to be performed at a point other than the Sprite's origin (center) for more natural sorting. For example, consider a game with units with different sizes. In this situation, developers are advised to align the Sprite objects to the bottom of the entity. For example, the red X marks the origin of the entity:
 
-![](../../../../../media/2017-04-img\_58dfce31e94be.png)
+![](../../../../../media/2017-04-img_58dfce31e94be.png)
 
 If these origins are used, then units will sort properly according to where they are "standing" as shown in the following image:
 
-![](../../../../../media/2017-04-img\_58dfd1e3d11d0.png)
+![](../../../../../media/2017-04-img_58dfd1e3d11d0.png)
 
 #### IDrawableBatch Sorting Details
 

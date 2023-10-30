@@ -4,15 +4,15 @@
 
 The Camera Settings (also known as Display Settings) in Glue allows you to set your Camera and resolution project-wide. To access the settings click the camera icon.
 
-![](../../../../../media/2022-12-img\_639a5e39a39d6.png)
+![](../../../../../media/2022-12-img_639a5e39a39d6.png)
 
 Clicking the **Settings**-> **Camera Settings** menu item brings up the same menu as well.
 
-![](../../../../../media/2020-04-img\_5e86035ed6651.png)
+![](../../../../../media/2020-04-img_5e86035ed6651.png)
 
 This will bring up the Display Settings window.
 
-![](../../../../../media/2022-12-img\_639a5e763ecab.png)
+![](../../../../../media/2022-12-img_639a5e763ecab.png)
 
 ### Camera and Resolution Variables
 
@@ -37,7 +37,7 @@ If checked, the game will maintain a fixed aspect ratio as specified by the hori
 * Fixed Aspect Ratio = true
 * Aspect Ratio = 16 : 9
 
-![](../../../../../media/2018-04-img\_5ac5950d11861.png)
+![](../../../../../media/2018-04-img_5ac5950d11861.png)
 
 #### Fullscreen
 
@@ -55,19 +55,19 @@ A percentage value used to make the window larger or smaller. A larger value wil
 
 If your game includes a Gum project then the Display Settings tab will include a Gum Scale text box. By default this value is 100%, so the Gum pixels will match your game 1:1.
 
-![](../../../../../media/2020-09-img\_5f72b0da6a76d.png)
+![](../../../../../media/2020-09-img_5f72b0da6a76d.png)
 
 For example, under this setting a game of 800 pixels wide and 600 pixels tall would display Gum at native resolution, as shown in the following image:
 
-![](../../../../../media/2020-09-img\_5f72b12b694db.png)
+![](../../../../../media/2020-09-img_5f72b12b694db.png)
 
 Changing the **Scale (Gum)** to 200% doubles the size of all Gum objects, as shown in the following image:
 
-![](../../../../../media/2020-09-img\_5f72b1674a6e0.png)
+![](../../../../../media/2020-09-img_5f72b1674a6e0.png)
 
 Values less than 100% are also supported. The following image shows the same layout with the **Scale (Gum)** set to 50%:
 
-![](../../../../../media/2020-09-img\_5f72b19f152ca.png)
+![](../../../../../media/2020-09-img_5f72b19f152ca.png)
 
 **On Resize** Controls the behavior of the contents of the game window when the game window is resized. If set to **Preserve (Stretch) Visible Area**, stretching the game window will not allow the user to see more of the game world - instead objects will become larger as the window is stretched. If set to **Increase Visible Area**, stretching the game window will allow the user to see more of the game world - objects will remain the same size.
 

@@ -4,7 +4,7 @@
 
 The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected. 
 
-<figure><img src="../../../media/2017-12-2017-12-13\_17-56-55.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2017-12-2017-12-13_17-56-55.gif" alt=""><figcaption></figcaption></figure>
 
  ListBox inherits from [ScrollViewer](scrollviewer.md).
 
@@ -16,13 +16,13 @@ The ListBox control requires:
 * An object named **InnerPanelInstance** of any type (typically a Container)
 * An object named **ClipContainerInstance** of any type (typically a Container with **ClipsChildren** set to true)
 
-[![](../../../media/2017-12-img\_5a465ac0d252b.png)](../../../media/2017-12-img\_5a465ac0d252b.png) The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [http://flatredball.com/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/](../../../documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md)
+[![](../../../media/2017-12-img_5a465ac0d252b.png)](../../../media/2017-12-img_5a465ac0d252b.png) The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [http://flatredball.com/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/](../../../documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md)
 
 ### InnerPanelInstance and Children Layout
 
-The ListBox control typically handles the creation and positioning of ListBoxItem instances. The InnerPanelInstance in the list box Gum component will typically use a **Children Layout** value of **TopToBottomStack.** [![](../../../media/2017-12-img\_5a46645375a35.png)](../../../media/2017-12-img\_5a46645375a35.png) Alternatively the InnerPanelInstance can use a **Children Layout** value of **LeftToWriteStack** with the **Wraps Children** value set to true.
+The ListBox control typically handles the creation and positioning of ListBoxItem instances. The InnerPanelInstance in the list box Gum component will typically use a **Children Layout** value of **TopToBottomStack.** [![](../../../media/2017-12-img_5a46645375a35.png)](../../../media/2017-12-img_5a46645375a35.png) Alternatively the InnerPanelInstance can use a **Children Layout** value of **LeftToWriteStack** with the **Wraps Children** value set to true.
 
-![](../../../media/2017-12-img\_5a486c2d92c54.png)
+![](../../../media/2017-12-img_5a486c2d92c54.png)
 
 ### Items
 
@@ -105,7 +105,7 @@ listBoxItem3.UpdateToObject("Tank A");
 listBox.Items.Add(listBoxItem3);
 ```
 
-![](../../../media/2017-12-img\_5a31e49caa5d6.png) Icons in screenshot obtained from [http://game-icons.net/](http://game-icons.net/) . The same could be achieved by setting the ListBoxItemGumType before calling AddItem, as shown in the following code:
+![](../../../media/2017-12-img_5a31e49caa5d6.png) Icons in screenshot obtained from [http://game-icons.net/](http://game-icons.net/) . The same could be achieved by setting the ListBoxItemGumType before calling AddItem, as shown in the following code:
 
 ```lang:c#
 var listBox = TutorialScreenGum
@@ -130,7 +130,7 @@ The ListBox provides a number of ways to customize a ListBox.
 
 By default each instance added to the ListBox's Items (either directly or through binding) will have its ToString method called. If strings are added to Items, then the string's contents is displayed automatically. If a non-primitive type is added, then its ToString will (by default) display the type of the object which is usually not desirable.
 
-![](../../../media/2022-09-img\_63305ee979db7.png)
+![](../../../media/2022-09-img_63305ee979db7.png)
 
 If the class is a ViewModel that is custom-made for UI, then its ToString can be modified as shown in the following code:
 
@@ -146,7 +146,7 @@ public class SBWaveDefinitionViewModel : ViewModel
 }
 ```
 
-![](../../../media/2022-09-img\_63305f68284f8.png)
+![](../../../media/2022-09-img_63305f68284f8.png)
 
 #### ListBoxItemFormsType
 
@@ -211,7 +211,7 @@ private void HandleSelectionChanged(object sender, SelectionChangedEventArgs arg
 
 
 
-<figure><img src="../../../media/2017-12-2017-12-20\_21-07-56.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2017-12-2017-12-20_21-07-56.gif" alt=""><figcaption></figcaption></figure>
 
  The event handling the selection changing can also use the SelectedItem  property, as shown in the following code:
 

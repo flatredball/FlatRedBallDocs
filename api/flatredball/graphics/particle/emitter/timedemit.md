@@ -37,7 +37,7 @@ Simply call the following code every frame (in Update):
 emitter.TimedEmit(null);
 ```
 
-![TimedEmitter.png](../../../../../../media/migrated\_media-TimedEmitter.png)
+![TimedEmitter.png](../../../../../../media/migrated_media-TimedEmitter.png)
 
 #### Timed Emitters require TimedEmit to be true
 

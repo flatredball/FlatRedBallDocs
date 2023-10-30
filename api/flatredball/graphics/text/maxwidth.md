@@ -13,4 +13,4 @@ The MaxWidth value controls the available area that the Text object can render t
  text.MaxWidthBehavior = MaxWidthBehavior.Wrap;
 ```
 
-![WrappingText.PNG](../../../../../media/migrated\_media-WrappingText.PNG)
+![WrappingText.PNG](../../../../../media/migrated_media-WrappingText.PNG)

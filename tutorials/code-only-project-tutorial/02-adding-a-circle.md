@@ -82,7 +82,7 @@ protected override void Update(GameTime gameTime)
 
 
 
-<figure><img src="../../media/2019-10-18\_08-40-34.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2019-10-18_08-40-34.gif" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -8,11 +8,11 @@ FlatRedBall Forms is a set of classes which are used to give UI controls _automa
 
 To understand how Forms and Gum objects interact, we will consider a simple example - a Screen with a single Button. The following image shows a default Button instance in a Gum screen:
 
-![](../../../media/2022-02-img\_620e597708581.png)
+![](../../../media/2022-02-img_620e597708581.png)
 
 In this example, the MenuScreenGum is loaded by the FlatRedBall screen **MenuScreen.**
 
-![](../../../media/2022-02-img\_620e59a697383.png)
+![](../../../media/2022-02-img_620e59a697383.png)
 
 We can access both the Gum and Forms objects in Visual Studio as shown in the following code. Keep in mind that every Screen with Gum and Forms objects will have **GumScreen** and **Forms** properties. These make it easy to access objects the same way no matter which Screen you are working on:
 
@@ -36,7 +36,7 @@ public partial class MenuScreen
 
 Notice that this code modifies the same object at runtime - it appears as a square.
 
-![](../../../media/2022-02-img\_620e5b2a484f3.png)
+![](../../../media/2022-02-img_620e5b2a484f3.png)
 
 You may be wondering - which object should I access in code? The answer is - usually it's best to use the Forms object, but sometimes you must access the Gum object for more detailed control over position and size.
 

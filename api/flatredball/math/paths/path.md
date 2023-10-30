@@ -11,13 +11,13 @@ To define a path in the FlatRedBall Editor:
 1. Add a new object to a Screen or Entity
 2.  Select **Path** as the type
 
-    ![](../../../../../media/2021-11-img\_61927e51d938c.png)
+    ![](../../../../../media/2021-11-img_61927e51d938c.png)
 3.  Select the newly-created Path and click on the Variables tab
 
-    ![](../../../../../media/2021-11-img\_61927e9eec6be.png)
+    ![](../../../../../media/2021-11-img_61927e9eec6be.png)
 4.  Click the Add to Path button to add segments to the path
 
-    ![](../../../../../media/2021-11-img\_61927eccef025.png)
+    ![](../../../../../media/2021-11-img_61927eccef025.png)
 
 ### Example - Creating a Path in Code
 
@@ -40,7 +40,7 @@ pathInstance.MoveToRelative(0, -100);
 pathInstance.LineToRelative(200, 0);
 ```
 
-![](../../../../../media/2021-11-img\_6193daaacff55.png)
+![](../../../../../media/2021-11-img_6193daaacff55.png)
 
 ### Example - Visualizing Paths in Edit Mode
 
@@ -60,7 +60,7 @@ partial void CustomActivityEditMode()
 
 The Path will now update in realtime as it is edited. 
 
-<figure><img src="../../../../../media/2021-11-15\_08-43-00.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2021-11-15_08-43-00.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -83,7 +83,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![](../../../../../media/2021-11-15\_09-00-17.gif)
+![](../../../../../media/2021-11-15_09-00-17.gif)
 
 ### Example - TangentAtLength
 
@@ -120,6 +120,6 @@ void CustomActivity(bool firstTimeCalled)
 
 &#x20; 
 
-<figure><img src="../../../../../media/2021-11-16\_08-54-00.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2021-11-16_08-54-00.gif" alt=""><figcaption></figcaption></figure>
 
 

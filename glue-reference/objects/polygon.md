@@ -12,11 +12,11 @@ Polygons can be added to entities:
 2. Select the Quick Actions tab
 3.  Click the Add Object button
 
-    ![](../../media/2021-08-img\_612e5ad3416db.png)
+    ![](../../media/2021-08-img_612e5ad3416db.png)
 4. Select the Polygon type
 5.  Click OK
 
-    ![](../../media/2021-08-img\_612e5b0569ed2.png)
+    ![](../../media/2021-08-img_612e5b0569ed2.png)
 
 If the containing Entity is an ICollidable, the Polygon will automatically be used when performing collision.
 
@@ -24,6 +24,6 @@ If the containing Entity is an ICollidable, the Polygon will automatically be us
 
 Polygons can be edited through the Points tab, which appears when selecting a Polygon.
 
-![](../../media/2017-01-img\_58750dacc45f8.png)
+![](../../media/2017-01-img_58750dacc45f8.png)
 
 &#x20;

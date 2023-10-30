@@ -8,7 +8,7 @@ At this point the tutorials have covered placing objects and moving them using V
 
 ### 3D coordinates
 
-If using a 3D camera, the coordiantes viewed on screen depend on the Z value. For example, if the Z of the camera is set to 40, the following coordinates would roughly match what is on screen: ![DefaultCoordinates.png](../../../media/migrated\_media-DefaultCoordinates.png) The image above shows shows a coordinate system roughly between -20 to positive 20 on the X, and -15 to + 15 on the Y. You may be asking a few questions while looking at the above image such as:
+If using a 3D camera, the coordiantes viewed on screen depend on the Z value. For example, if the Z of the camera is set to 40, the following coordinates would roughly match what is on screen: ![DefaultCoordinates.png](../../../media/migrated_media-DefaultCoordinates.png) The image above shows shows a coordinate system roughly between -20 to positive 20 on the X, and -15 to + 15 on the Y. You may be asking a few questions while looking at the above image such as:
 
 1. Why do values differ from pixel coordiantes?
 2. Why is the width and height not an easy-to-identify number like 20 or 15? Why is there a small border making the edges have an odd number like 17.56?
@@ -18,7 +18,7 @@ The short answer to all three questions is because the camera is displaying a 3D
 
 ### World Space
 
-World space refers to a position inside the "virtual world" that you create when you run FlatRedBall. As shown in [a previous tutorial on Sprites](../../../frb/docs/index.php#A\_note\_about\_persistence), it can be useful to think of FlatRedBall as a real simulation where objects exist and continue to exist until their state or presence is changed by the logic of your application. If we consider the application to be a virtual world, then the Camera is our view of this world. To carry this analogy forward, consider watching a television program about the [Eiffel Tower](http://en.wikipedia.org/wiki/Eiffel\_Tower). ![EiffelTower.jpg](../../../media/migrated\_media-EiffelTower.jpg) If asked where the Eiffel Tower is, you might say one of two things:
+World space refers to a position inside the "virtual world" that you create when you run FlatRedBall. As shown in [a previous tutorial on Sprites](../../../frb/docs/index.php#A_note_about_persistence), it can be useful to think of FlatRedBall as a real simulation where objects exist and continue to exist until their state or presence is changed by the logic of your application. If we consider the application to be a virtual world, then the Camera is our view of this world. To carry this analogy forward, consider watching a television program about the [Eiffel Tower](http://en.wikipedia.org/wiki/Eiffel_Tower). ![EiffelTower.jpg](../../../media/migrated_media-EiffelTower.jpg) If asked where the Eiffel Tower is, you might say one of two things:
 
 * "It's in Paris, France."
 * "It's in the center of my television screen."
@@ -39,4 +39,4 @@ SpriteManager.Camera.X = 10;
 SpriteManager.Camera.Y = 10;
 ```
 
-The coordinates would be seen as follows: ![MovedCamera.png](../../../media/migrated\_media-MovedCamera.png) Now the center of the screen is focused at 10,10. Therefore, as you can see, it's often misleading to describe the position of an object using screen coordinates as they can change. Many FlatRedBall games use a moving camera as it is an effective way to implement scrolling. Keep this in mind, both when defining the position of your objects as well as when considering ways to implement scrolling.
+The coordinates would be seen as follows: ![MovedCamera.png](../../../media/migrated_media-MovedCamera.png) Now the center of the screen is focused at 10,10. Therefore, as you can see, it's often misleading to describe the position of an object using screen coordinates as they can change. Many FlatRedBall games use a moving camera as it is an effective way to implement scrolling. Keep this in mind, both when defining the position of your objects as well as when considering ways to implement scrolling.

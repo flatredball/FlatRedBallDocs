@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The PaintSpriteDisplayRegion method can be used to apply permanent texture coordinates to the Sprite found at the argument position. Calling this method will permanently modify the Sprite's texture coordinates, just like the [PaintSprite](../frb/docs/index.php#SpriteGrids\_and\_Textures) method permanently modifies the texture at the argument location. In other words, [Sprites](../frb/docs/index.php) which are painted by a display region will always show that display region even if the [Camera](../frb/docs/index.php) moves the [Sprite](../frb/docs/index.php) off screen, then back on.
+The PaintSpriteDisplayRegion method can be used to apply permanent texture coordinates to the Sprite found at the argument position. Calling this method will permanently modify the Sprite's texture coordinates, just like the [PaintSprite](../frb/docs/index.php#SpriteGrids_and_Textures) method permanently modifies the texture at the argument location. In other words, [Sprites](../frb/docs/index.php) which are painted by a display region will always show that display region even if the [Camera](../frb/docs/index.php) moves the [Sprite](../frb/docs/index.php) off screen, then back on.
 
 However, this only works on sprites that are currently in view. If you are trying to change the texture coordinates of a sprite that is not in view, you must use the DisplayRegionGrid.PaintGridAtPosition method instead.
 
@@ -36,4 +36,4 @@ spriteGrid.PaintSpriteDisplayRegion(
     0, 0, 0, ref floatRectangle);
 ```
 
-![SpriteDisplayRegion.png](../media/migrated\_media-SpriteDisplayRegion.png)
+![SpriteDisplayRegion.png](../media/migrated_media-SpriteDisplayRegion.png)

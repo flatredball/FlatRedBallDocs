@@ -17,12 +17,12 @@ Movement values can be defined in Glue or code. If your game has a limited set o
 3. Verify that your entity is using the **Top Down** option for **Input Movement Type**
 4.  Click the **Add Control Values** button
 
-    ![](../../../../media/2021-03-img\_6044126bc1b1e.png)
+    ![](../../../../media/2021-03-img_6044126bc1b1e.png)
 5. Modify the newly-added movement values as necessary
 
 The **Top Down** tab displays all movement values for the selected entity.
 
-![](../../../../media/2020-10-img\_5f9870a558060.png)
+![](../../../../media/2020-10-img_5f9870a558060.png)
 
 ### Assigning Movement Values
 

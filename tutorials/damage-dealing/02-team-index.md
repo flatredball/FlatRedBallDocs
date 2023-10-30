@@ -53,7 +53,7 @@ Now we can click on the screen with the mouse to add enemies, and we can shoot t
 
 The game already has functionality built in for destroying bullets when they collide with the enemy. This is happening because the **EnemyVsBullet** collision relationship has the **Destroy Bullet on Damage** option checked.
 
-![](../../media/2023-01-img\_63bebc9d3e9ff.png)
+![](../../media/2023-01-img_63bebc9d3e9ff.png)
 
 If we uncheck this option, bullets will no longer be destroyed on collision. Keep this in mind if you would like to handle destruction of bullets yourself. For this tutorial we will keep this option checked.
 
@@ -73,11 +73,11 @@ We can see the this logic work by shooting an enemy enough times to kill it - by
 
 The default variables used to deal damage and kill the enemy are defined in the Entity and Bullet entities. All entities created with the IDamageable interface default to have 100 health.
 
-![](../../media/2023-01-img\_63bebedcd0d20.png)
+![](../../media/2023-01-img_63bebedcd0d20.png)
 
 All Entities created with the IDamageArea interface default to dealing 10 damage.
 
-![](../../media/2023-01-img\_63bebf1ca3662.png)
+![](../../media/2023-01-img_63bebf1ca3662.png)
 
 If we change these values we can change how many shots it takes to kill an enemy. For example, if the enemy is changed to have 20 health, it only takes 2 shots to kill each enemy.&#x20;
 

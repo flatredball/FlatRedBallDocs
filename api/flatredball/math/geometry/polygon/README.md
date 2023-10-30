@@ -48,7 +48,7 @@ polygon.Points = points;
 ShapeManager.AddPolygon(polygon);
 ```
 
-![](../../../../../../media/2017-06-img\_593f455263322.png)
+![](../../../../../../media/2017-06-img_593f455263322.png)
 
 ### Polygon as a PositionedObject
 

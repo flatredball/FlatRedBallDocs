@@ -43,7 +43,7 @@ WeightedObject secondObject = firstObject.Clone<WeightedObject>();
 TextManager.AddText(secondObject.ToString());
 ```
 
-![PositionedObjectClone.png](../../../../media/migrated\_media-PositionedObjectClone.png)
+![PositionedObjectClone.png](../../../../media/migrated_media-PositionedObjectClone.png)
 
 ### What does Clone actually copy?
 

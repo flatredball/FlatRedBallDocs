@@ -42,7 +42,7 @@ For more information, see the [Layer wiki entry](../frb/docs/index.php) and the 
 
 ### Text Removal
 
-The RemoveText methods remove [Text](../frb/docs/index.php) objects from the engine as well as any [two-way](../frb/docs/index.php#Two\_Way\_Relationships) [AttachableLists](../frb/docs/index.php) (such as [PositionedObjectList](../frb/docs/index.php)) that the [Text](../frb/docs/index.php) object belong to. For more information, see the [RemoveText page](../frb/docs/index.php).
+The RemoveText methods remove [Text](../frb/docs/index.php) objects from the engine as well as any [two-way](../frb/docs/index.php#Two_Way_Relationships) [AttachableLists](../frb/docs/index.php) (such as [PositionedObjectList](../frb/docs/index.php)) that the [Text](../frb/docs/index.php) object belong to. For more information, see the [RemoveText page](../frb/docs/index.php).
 
 ### TextManager Members
 

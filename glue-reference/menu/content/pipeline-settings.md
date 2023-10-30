@@ -4,7 +4,7 @@
 
 The Content Pipeline Settings menu item opens the Content Pipeline tab in Glue. This tab controls settings for content pipeline behavior in Glue.
 
-![](../../../../../media/2017-10-img\_59dd8fb600f11.png)
+![](../../../../../media/2017-10-img_59dd8fb600f11.png)
 
 This plugin is still in the early stages. Additional options may be added in the future to control how content is built.
 

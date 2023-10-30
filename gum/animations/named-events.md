@@ -14,7 +14,7 @@ Named events can be added to animations in Gum in the animation window. To add a
 4. Select the event
 5. Enter a time for the event
 
-![](../../../../media/2017-12-img\_5a245ac4d4b0a.png)
+![](../../../../media/2017-12-img_5a245ac4d4b0a.png)
 
 Gum animations have an AddAction  method which can be used to add custom actions at certain times: For example, if the screen were accessible in code as GameScreenGumRuntime in a Glue screen, the MakeYellow named event could be reacted to as shown in the following code:
 

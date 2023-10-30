@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The term "Factories" comes from the [factory design pattern](http://en.wikipedia.org/wiki/Factory\_method\_pattern). Factories are objects which can create new instances of certain types of Entities. Factories provide the following benefits:
+The term "Factories" comes from the [factory design pattern](http://en.wikipedia.org/wiki/Factory_method_pattern). Factories are objects which can create new instances of certain types of Entities. Factories provide the following benefits:
 
 1. Entities created in a factory will automatically be added to screen lists (by default).
 2. Factories provide a standard way to create entities which is especially useful for systems like Tiled to instantiate new entities.
@@ -17,17 +17,17 @@ To use a factory in Glue:
 1. Create or select an existing entity
 2.  Select the Quick Action tab
 
-    ![](../../../../media/2020-10-img\_5f793e1367e56.png)
+    ![](../../../../media/2020-10-img_5f793e1367e56.png)
 3.  Click the **Add Player Factory** button. Your button may have a different text matching your selected Entity's name.
 
-    ![](../../../../media/2020-10-img\_5f793e525d6f5.png)
+    ![](../../../../media/2020-10-img_5f793e525d6f5.png)
 
     1.  If you do not see this, your entity may already have a factory. To check this, look at the properties tab for your entity and find the Created by Other Entities property. If it's true, you already have a factory.
 
-        ![](../../../../media/2021-03-img\_604114a81cedb.png)
+        ![](../../../../media/2021-03-img_604114a81cedb.png)
 4.  Click **Add Player List to GameScreen**. Note that if your main screen is not titled GameScreen, then you will need to manually add a list to the desired screen. A screen must exist in your current screen or the created entities will not have their CustomActivity methods called.
 
-    ![](../../../../media/2020-10-img\_5f793ebe3bf10.png)
+    ![](../../../../media/2020-10-img_5f793ebe3bf10.png)
 5.  In any code, such as in GameScreen or any other entity, create a Player instance using the CreateNew method as shown in the following code:
 
     ```lang:c#

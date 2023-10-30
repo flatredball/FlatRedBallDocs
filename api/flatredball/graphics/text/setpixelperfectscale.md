@@ -58,4 +58,4 @@ Add the following to the same Screens' CustomActivity:
 text2.SetPixelPerfectScale(SpriteManager.Camera);
 ```
 
-![TextResizing.png](../../../../../media/migrated\_media-TextResizing.png)
+![TextResizing.png](../../../../../media/migrated_media-TextResizing.png)

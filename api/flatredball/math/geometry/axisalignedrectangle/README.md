@@ -6,7 +6,7 @@ The AxisAlignedRectangle is a [PositionedObject](../../../../../../frb/docs/inde
 
 ### What does "axis aligned" mean?
 
-The "AxisAligned" part of AxisAlignedRectangle indicates that the sides of the rectangle are "axis aligned". In other words, the top, bottom, left, and right are all parallel to either the X or Y axes. ![AxisAligned.png](../../../../../../media/migrated\_media-AxisAligned.png) AxisAlignedRectangles are always axis aligned for performance reasons. Therefore, if you rotate an AxisAlignedRectangle (set its RotationZ), this will have no impact on the collision behavior or its visible representation. If your game requires rotation, you should use the [Polygon](../../../../../../frb/docs/index.php) class. Of course, performance will suffer slightly if collision performance is a consideration for your game. For more information on axis alignment and a discussion of axis aligned object rotation and children positions, see [this page](../../../../../../frb/docs/index.php).
+The "AxisAligned" part of AxisAlignedRectangle indicates that the sides of the rectangle are "axis aligned". In other words, the top, bottom, left, and right are all parallel to either the X or Y axes. ![AxisAligned.png](../../../../../../media/migrated_media-AxisAligned.png) AxisAlignedRectangles are always axis aligned for performance reasons. Therefore, if you rotate an AxisAlignedRectangle (set its RotationZ), this will have no impact on the collision behavior or its visible representation. If your game requires rotation, you should use the [Polygon](../../../../../../frb/docs/index.php) class. Of course, performance will suffer slightly if collision performance is a consideration for your game. For more information on axis alignment and a discussion of axis aligned object rotation and children positions, see [this page](../../../../../../frb/docs/index.php).
 
 ### AxisAlignedRectangles are [PositionedObjects](../../../../../../frb/docs/index.php)
 
@@ -30,7 +30,7 @@ rectangle.ScaleX = 5;
 rectangle.ScaleY = 7;
 ```
 
-![SimpleRectangle.png](../../../../../../media/migrated\_media-SimpleRectangle.png)
+![SimpleRectangle.png](../../../../../../media/migrated_media-SimpleRectangle.png)
 
 ### Relationship with ShapeManager
 
@@ -81,7 +81,7 @@ Add the following in Update:
  movableBlockRectangle.CollideAgainstMove(solidRectangle, 0, 1);
 ```
 
-![SolidCollision.png](../../../../../../media/migrated\_media-SolidCollision.png)
+![SolidCollision.png](../../../../../../media/migrated_media-SolidCollision.png)
 
 ### Determining Collision Side
 

@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The Z value of an entity controls its distance away from the camera. If using a 3D Camera/Layer then making the Z a smaller (including negative) number will make the entity smaller and will make it sort behind other graphical objects. If using a 2D Camera/Layer then the Z value will not change the Entity's size, but will impact its sorting. The Z property is a property which comes from the [PositionedObject](../../../../frb/docs/index.php) class. More information on the Z value can be found [here](../../../../frb/docs/index.php). You can change the Z of most objects in Glue through the property grid: ![ZInGlue.png](../../../../media/migrated\_media-ZInGlue.png)
+The Z value of an entity controls its distance away from the camera. If using a 3D Camera/Layer then making the Z a smaller (including negative) number will make the entity smaller and will make it sort behind other graphical objects. If using a 2D Camera/Layer then the Z value will not change the Entity's size, but will impact its sorting. The Z property is a property which comes from the [PositionedObject](../../../../frb/docs/index.php) class. More information on the Z value can be found [here](../../../../frb/docs/index.php). You can change the Z of most objects in Glue through the property grid: ![ZInGlue.png](../../../../media/migrated_media-ZInGlue.png)
 
 ### Z and Ordering
 

@@ -10,7 +10,7 @@ Glue supports creating objects of type ShapeCollection. You can create ShapeColl
    2. Select "Add Object"
    3. Verify that "FlatRedBall or Custom Type" is selected.
    4. Select "ShapeCollection"
-   5. Click OK ![AddShapeCollectionObject.PNG](../../../../media/migrated\_media-AddShapeCollectionObject.PNG)
+   5. Click OK ![AddShapeCollectionObject.PNG](../../../../media/migrated_media-AddShapeCollectionObject.PNG)
 
 ### Adding Shapes to a ShapeCollection in Glue
 

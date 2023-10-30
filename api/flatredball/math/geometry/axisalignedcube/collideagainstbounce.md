@@ -43,4 +43,4 @@ Add the following to CustomActivity:
 second.CollideAgainstBounce(first, 0, 1, 1);
 ```
 
-![AACubeCollideAgainstBounce.png](../../../../../../media/migrated\_media-AACubeCollideAgainstBounce.png)
+![AACubeCollideAgainstBounce.png](../../../../../../media/migrated_media-AACubeCollideAgainstBounce.png)

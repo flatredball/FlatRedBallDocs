@@ -32,7 +32,7 @@ Now that we have a Screen, we can add an [AxisAlignedRectangle](../../../frb/doc
 Next we'll add a [Sprite](../../../frb/docs/index.php) to our Screen. This [Sprite](../../../frb/docs/index.php) will be clipped as it moves around the screen:
 
 1. Add a new [Sprite](../../../frb/docs/index.php) to your Screen. See [this page](../../../frb/docs/index.php) for information on Sprites in Glue.
-2. Add a new Texture file to your Screen. For this demo I'll use a bear graphic: ![Bear.png](../../../media/migrated\_media-Bear.png)
+2. Add a new Texture file to your Screen. For this demo I'll use a bear graphic: ![Bear.png](../../../media/migrated_media-Bear.png)
 3. Set the newly-added Sprite's Texture to the newly added Texture.
 
 ### Setting the Sprite's initial position
@@ -106,7 +106,7 @@ if (SpriteInstance.Visible)
 }
 ```
 
-![ClippedBear.PNG](../../../media/migrated\_media-ClippedBear.PNG)
+![ClippedBear.PNG](../../../media/migrated_media-ClippedBear.PNG)
 
 ### Creating a portable function
 

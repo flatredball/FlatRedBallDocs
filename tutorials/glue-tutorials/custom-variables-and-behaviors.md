@@ -29,12 +29,12 @@ You may be wondering why you have to go through the trouble of manually exposing
 To add an exposed variable:
 
 1. Expand your Character Entity.
-2. Right-click on the Variables tree item and select "Add Variable"![GlueAddVariable.png](../../../media/migrated\_media-GlueAddVariable.png)
+2. Right-click on the Variables tree item and select "Add Variable"![GlueAddVariable.png](../../../media/migrated_media-GlueAddVariable.png)
 3. Notice that the "Expose Existing" tab is selected by default.
-4. Use the drop-down to select the X variable![ExposeExistingX.png](../../../media/migrated\_media-ExposeExistingX.png)
+4. Use the drop-down to select the X variable![ExposeExistingX.png](../../../media/migrated_media-ExposeExistingX.png)
 5. Click the OK button
 
-You should now have an X variable under your Character Entity, and it will have a default value of 0.![ExposedExistingXInList.png](../../../media/migrated\_media-ExposedExistingXInList.png)
+You should now have an X variable under your Character Entity, and it will have a default value of 0.![ExposedExistingXInList.png](../../../media/migrated_media-ExposedExistingXInList.png)
 
 #### Variables can have default and instance values
 
@@ -45,12 +45,12 @@ Whenever you create a variable in Glue, you can set a default value for it. This
 Now that you've exposed an X variable in your Character Entity, you can modify the default X value as show in the image above, or you can modify the X variable on the instance in your Screen. To do this:
 
 1. Select your CharacterInstance object under your GameScreen
-2. Notice that it has an "X" property under the "Custom Variables" category![CustomVariableXInInstance.png](../../../media/migrated\_media-CustomVariableXInInstance.png)
+2. Notice that it has an "X" property under the "Custom Variables" category![CustomVariableXInInstance.png](../../../media/migrated_media-CustomVariableXInInstance.png)
 3. This value is blank, meaning that it will use the default value. Enter a value such as 5 for the X value. If you ever want to revert to the default, simply right-click on the variable name and select "Set to Default"
 
 If you run the game, you will now see that your object has moved 5 units to the right. Don't worry if your game looks different, I have removed the background from my Screen so we can focus on the Entity.
 
-![InstanceVariableInGame.png](../../../media/migrated\_media-InstanceVariableInGame.png)
+![InstanceVariableInGame.png](../../../media/migrated_media-InstanceVariableInGame.png)
 
 ### Tunneled Variables
 
@@ -66,9 +66,9 @@ To add a tunneled variable:
 
 1. Expand your Character Entity.
 2. Right-click on the Variables tree item and select "Add Variable"
-3. Select the "Tunneling" tab![TunnelingTab.png](../../../media/migrated\_media-TunnelingTab.png)
-4. Use the drop-down to select the Sprite object in your Entity![TunnelObjectSelection.png](../../../media/migrated\_media-TunnelObjectSelection.png)
-5. Use the second drop-down to select the variable you want to change. We'll pick "ScaleX" (you will need to scroll through the list to find it)![TunnelingVariableSelection.png](../../../media/migrated\_media-TunnelingVariableSelection.png)
+3. Select the "Tunneling" tab![TunnelingTab.png](../../../media/migrated_media-TunnelingTab.png)
+4. Use the drop-down to select the Sprite object in your Entity![TunnelObjectSelection.png](../../../media/migrated_media-TunnelObjectSelection.png)
+5. Use the second drop-down to select the variable you want to change. We'll pick "ScaleX" (you will need to scroll through the list to find it)![TunnelingVariableSelection.png](../../../media/migrated_media-TunnelingVariableSelection.png)
 6. Glue will automatically name the variable for you. In this case, it will be named "VisibleRepresentationScaleX"
 7. Click the OK button
 
@@ -76,17 +76,17 @@ To add a tunneled variable:
 
 If you select the VisibleRepresentationScaleX variable that we just created, you'll notice that the default value is 0. This means that the Sprite in your Entity will be too small to see. Make sure to change the default to 1 (or some other valid value).
 
-![TunnelingDefault.png](../../../media/migrated\_media-TunnelingDefault.png)
+![TunnelingDefault.png](../../../media/migrated_media-TunnelingDefault.png)
 
 #### Changing the instance value
 
 Now you can simply select your CharacterInstance inside of your GameScreen and you should see its "VisibleRepresentationScaleX" variable as an editable property. Change this value to 4.
 
-![TunnelingOnInstance.png](../../../media/migrated\_media-TunnelingOnInstance.png)
+![TunnelingOnInstance.png](../../../media/migrated_media-TunnelingOnInstance.png)
 
 Now run the game and you should see your Character be much larger.
 
-![TunnelingInGame.png](../../../media/migrated\_media-TunnelingInGame.png)
+![TunnelingInGame.png](../../../media/migrated_media-TunnelingInGame.png)
 
 #### Why tunnel instead of changing the source content?
 
@@ -107,15 +107,15 @@ If you are not a programmer, you will need to work with your programming team to
 The process of creating new variables is almost the same as for creating exposed and tunneled variables. To create a new variable:
 
 1. Right-click on the Variables item
-2. Select the "Create New" tab![CreateNewTab.png](../../../media/migrated\_media-CreateNewTab.png)
-3. Select a type for your variable. "float" represents a number with a decimal (such as 3.2), and it is selected by default. Set the name of the variable, such as "WalkSpeed". Spaces are not allowed, and capitalization is recommended.![NewVariableName.png](../../../media/migrated\_media-NewVariableName.png)
-4. Press OK. Your variable will appear in the Variables list. You can edit it the same as any other variable.![NewVariableInList.png](../../../media/migrated\_media-NewVariableInList.png)
+2. Select the "Create New" tab![CreateNewTab.png](../../../media/migrated_media-CreateNewTab.png)
+3. Select a type for your variable. "float" represents a number with a decimal (such as 3.2), and it is selected by default. Set the name of the variable, such as "WalkSpeed". Spaces are not allowed, and capitalization is recommended.![NewVariableName.png](../../../media/migrated_media-NewVariableName.png)
+4. Press OK. Your variable will appear in the Variables list. You can edit it the same as any other variable.![NewVariableInList.png](../../../media/migrated_media-NewVariableInList.png)
 
 ### Using a new variable in code
 
 When a new variable is added, a new field is added to the Screen or Entity class. You can use this variable in code just like you would any other variable. In fact, you can add a variable in Glue, then switch back to Visual Studio and you will immediately have access to the variable - even with auto-complete!
 
-![IntellisenseAndNewVariables.png](../../../media/migrated\_media-IntellisenseAndNewVariables.png)
+![IntellisenseAndNewVariables.png](../../../media/migrated_media-IntellisenseAndNewVariables.png)
 
 If you ever find yourself creating coefficients for behavior in code, consider where that should be promoted to a variable in Glue. It gives you freedom as a programmer to be able to worry about the system while allowing the designers to tune behaviors without any conflict or possibility of them writing bad code.
 

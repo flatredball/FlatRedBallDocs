@@ -65,7 +65,7 @@ public partial class YourScreenName
 
 
 
-<figure><img src="../../../../../media/2016-01-2019-04-06\_22-18-14.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2016-01-2019-04-06_22-18-14.gif" alt=""><figcaption></figcaption></figure>
 
  Setting the GrabbedPositionedObject does the following:
 

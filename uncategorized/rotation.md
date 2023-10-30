@@ -8,9 +8,9 @@ Objects which implement the [IRotatable](../frb/docs/index.php) interface can be
 
 ### Radians and Degrees
 
-The FlatRedBall Engine uses [radians](http://en.wikipedia.org/wiki/Radians) instead of [degrees](http://en.wikipedia.org/wiki/Degree\_\(angle\)) to measure orientation.
+The FlatRedBall Engine uses [radians](http://en.wikipedia.org/wiki/Radians) instead of [degrees](http://en.wikipedia.org/wiki/Degree_\(angle\)) to measure orientation.
 
-![RadiansAndDegrees.png](../media/migrated\_media-RadiansAndDegrees.png)
+![RadiansAndDegrees.png](../media/migrated_media-RadiansAndDegrees.png)
 
 ### Rotating a Sprite so it faces the cursor
 

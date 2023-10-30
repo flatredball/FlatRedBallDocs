@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Rotation controls the 3D orientation of [PositionedObjects](../../../../documentation/api/flatredball/positionedobject.md). Although some [PositionedObjects](../../../../documentation/api/flatredball/positionedobject.md) such as [Sprites](../../../../frb/docs/index.php) and [Text](../../../../frb/docs/index.php) objects are 2D, all [PositionedObjects](../../../../documentation/api/flatredball/positionedobject.md) can be rotated in 3D space. Rotation can be represented using the RotationMatrix property or individual rotation components. These components (RotationX, RotationY, RotationZ) are measured in radians, not degrees:![RadiansAndDegrees.png](../../../../media/migrated\_media-RadiansAndDegrees.png) For more information on working with rotations, see the [Rotation wiki entry](../../../../frb/docs/index.php).
+Rotation controls the 3D orientation of [PositionedObjects](../../../../documentation/api/flatredball/positionedobject.md). Although some [PositionedObjects](../../../../documentation/api/flatredball/positionedobject.md) such as [Sprites](../../../../frb/docs/index.php) and [Text](../../../../frb/docs/index.php) objects are 2D, all [PositionedObjects](../../../../documentation/api/flatredball/positionedobject.md) can be rotated in 3D space. Rotation can be represented using the RotationMatrix property or individual rotation components. These components (RotationX, RotationY, RotationZ) are measured in radians, not degrees:![RadiansAndDegrees.png](../../../../media/migrated_media-RadiansAndDegrees.png) For more information on working with rotations, see the [Rotation wiki entry](../../../../frb/docs/index.php).
 
 ### The Math of Rotation
 
@@ -10,7 +10,7 @@ IRotatables represent their rotations as individual components (RotationX, Rotat
 
 #### Degrees vs. Radians
 
-If you recall your math classes, you may be familiar with the degree measurement. FlatRedBall uses radians as a measurement for its rotations. For more information on radians vs. degrees and why FlatRedBall uses radians, see the [radians and degrees section on the Trigonometry page](../../../../frb/docs/index.php#Radians\_and\_Degrees).
+If you recall your math classes, you may be familiar with the degree measurement. FlatRedBall uses radians as a measurement for its rotations. For more information on radians vs. degrees and why FlatRedBall uses radians, see the [radians and degrees section on the Trigonometry page](../../../../frb/docs/index.php#Radians_and_Degrees).
 
 ### IRotatable Properties
 
@@ -58,7 +58,7 @@ The following code creates three rows of Sprites. Each row is rotated on a diffe
  }
 ```
 
-![RotatedSprites.png](../../../../media/migrated\_media-RotatedSprites.png)
+![RotatedSprites.png](../../../../media/migrated_media-RotatedSprites.png)
 
 ### Rotational Velocity
 
@@ -70,11 +70,11 @@ spinningSprite.ScaleX = 3;
 spinningSprite.RotationZVelocity = 1;
 ```
 
-![SpinningSprite.png](../../../../media/migrated\_media-SpinningSprite.png)
+![SpinningSprite.png](../../../../media/migrated_media-SpinningSprite.png)
 
 ### Facing Objects
 
-Rotation can be used to make an object (such as a gun turret) face toward another object (such as an enemy). For information on how to perform this, see the [Rotating a Sprite so it faces the cursor](../../../../frb/docs/index.php#Rotating\_a\_Sprite\_so\_it\_faces\_the\_cursor) wiki entry.
+Rotation can be used to make an object (such as a gun turret) face toward another object (such as an enemy). For information on how to perform this, see the [Rotating a Sprite so it faces the cursor](../../../../frb/docs/index.php#Rotating_a_Sprite_so_it_faces_the_cursor) wiki entry.
 
 ### Rotating About an Axis
 

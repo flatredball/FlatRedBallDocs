@@ -66,4 +66,4 @@ private void UpdateUI(Window callingwindow)
 }
 ```
 
-![ReplaceMemberUIElement.png](../../../../media/migrated\_media-ReplaceMemberUIElement.png)
+![ReplaceMemberUIElement.png](../../../../media/migrated_media-ReplaceMemberUIElement.png)

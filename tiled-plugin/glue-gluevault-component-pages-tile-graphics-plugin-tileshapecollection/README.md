@@ -13,7 +13,7 @@ TileShapeCollection is a class created specifically for tile based collision. It
 
 If you have created your project using the FlatRedBall Editor Wizard (either platformer or top-down), then your game already has TileShapeCollections. For example, the GameScreen should have a SolidCollision TileShapeCollection.
 
-![](../../../../media/2023-01-img\_63bb3de436e54.png)
+![](../../../../media/2023-01-img_63bb3de436e54.png)
 
 ### Creating TileShapeCollections in the FlatRedBall Editor
 
@@ -24,7 +24,7 @@ To add a TileShapeCollection:
 3. Verify **FlatRedBall or Custom Type** is selected
 4.  Select the **TileShapeCollection** option
 
-    ![](../../../../media/2020-02-img\_5e38ef034ce17.png)
+    ![](../../../../media/2020-02-img_5e38ef034ce17.png)
 5. Click **OK**
 
 Now that you have created a TileShapeCollection, you can fill it using a variety of methods as shown before.
@@ -38,7 +38,7 @@ The most common usage of TileShapeCollections is to add collision from a particu
 3. Select the **From Type** option
 4. Use the dropdown to select the type. These types will match the types defined in your map's Tileset (tsx) file
 
-![](../../../../media/2022-04-img\_62686492a966c.png)
+![](../../../../media/2022-04-img_62686492a966c.png)
 
 ### Example - Filling a TileShapeCollection Completely
 
@@ -47,42 +47,42 @@ When creating a game, you may want to add some placeholder collisions to test yo
 1. Select your TileShapeCollection in Glue
 2.  Click the **TileShapeCollection Properties**
 
-    ![](../../../../media/2020-02-img\_5e38efad33db9.png)
+    ![](../../../../media/2020-02-img_5e38efad33db9.png)
 3. Select the **Fill Completely** option
 4.  Set the **Tiles Wide** and **Tiles High** to define the size of collision block you want
 
-    ![](../../../../media/2020-02-img\_5e38f03167fff.png)
+    ![](../../../../media/2020-02-img_5e38f03167fff.png)
 5. Click the **Variables** tab
 6.  Check the **Visible** checkbox
 
-    ![](../../../../media/2020-02-img\_5e38f068e44d4.png)
+    ![](../../../../media/2020-02-img_5e38f068e44d4.png)
 
 Now the TileShapeCollection will appear in your game and can be used for testing.
 
-![](../../../../media/2020-02-img\_5e38f096cfeac.png)
+![](../../../../media/2020-02-img_5e38f096cfeac.png)
 
 ### Defining Collision from a TMX File
 
-Testing your collision using Fill or Border Outline is a handy way to make sure your game is working as you expect it, but eventually you will want to have collision defined in a map. For this tutorial we'll work with a simple game with a single TMX file already added to the GameScreen which also contains a TileShapeCollection. ![](../../../../media/2020-02-img\_5e38f2156c957.png) First we'll specify which tiles should have collision:
+Testing your collision using Fill or Border Outline is a handy way to make sure your game is working as you expect it, but eventually you will want to have collision defined in a map. For this tutorial we'll work with a simple game with a single TMX file already added to the GameScreen which also contains a TileShapeCollection. ![](../../../../media/2020-02-img_5e38f2156c957.png) First we'll specify which tiles should have collision:
 
 1. Open Tiled
 2.  Click the wrench icon to edit the tileset
 
-    ![](../../../../media/2020-02-img\_5e38f25d139e7.png)
+    ![](../../../../media/2020-02-img_5e38f25d139e7.png)
 3.  Select one (or more) tiles which should have collision
 
-    ![](../../../../media/2020-02-img\_5e38f27e1f95e.png)
+    ![](../../../../media/2020-02-img_5e38f27e1f95e.png)
 4.  Add a Custom Property called SolidCollision. The type of the variable doesn't matter.
 
     
 
-<figure><img src="../../../../media/2016-01-2020\_February\_03\_211827.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-2020_February_03_211827.gif" alt=""><figcaption></figcaption></figure>
 
 
 5. Save your tileset (tsx)
 6.  Place some tiles in your map
 
-    ![](../../../../media/2020-02-img\_5e38f2f89de53.png)
+    ![](../../../../media/2020-02-img_5e38f2f89de53.png)
 7. Save your TMX
 
 &#x20; Now in Glue we can associate the SolidCollision with the TileShapeCollection:
@@ -93,11 +93,11 @@ Testing your collision using Fill or Border Outline is a handy way to make sure 
 4. Use the dropdown to select your TMX file
 5.  Enter the property SolidCollision
 
-    ![](../../../../media/2020-02-img\_5e38f3824da91.png)
+    ![](../../../../media/2020-02-img_5e38f3824da91.png)
 
 Now if you run your game you will see collision wherever you placed your tiles.
 
-![](../../../../media/2020-02-img\_5e38f3a99c37c.png)
+![](../../../../media/2020-02-img_5e38f3a99c37c.png)
 
 &#x20;
 
@@ -170,28 +170,28 @@ By default each rectangle in a TileShapeCollection occupies the entire tile (16x
 
 1.  Open the TSX file in Tiled
 
-    ![](../../../../media/2022-02-img\_621ac68f5ff1a.png)
+    ![](../../../../media/2022-02-img_621ac68f5ff1a.png)
 2.  Select the tile which should have partial collision
 
-    ![](../../../../media/2022-02-img\_621ac745799f1.png)
+    ![](../../../../media/2022-02-img_621ac745799f1.png)
 3.  Select **View** -> **View and Toolbars** -> **Tile Collision Editor**
 
-    ![](../../../../media/2022-02-img\_621ac7774e2f5.png)
+    ![](../../../../media/2022-02-img_621ac7774e2f5.png)
 4. Draw a rectangle or polygon on the tile 
 
-<figure><img src="../../../../media/2016-01-26\_17\_38\_10.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-26_17_38_10.gif" alt=""><figcaption></figcaption></figure>
 
 
 5.  Set the type on the tile which has the collision. Note that the same type can be given to multiple tiles. Be sure to select the tile and not the shape. You may need to deselect and re-select the tile to force its properties to display rather than the newly-drawn polygon.
 
-    ![](../../../../media/2022-02-img\_621ac85c92bd0.png)
+    ![](../../../../media/2022-02-img_621ac85c92bd0.png)
 6. Repeat this process for any other tile which should have custom shapes.
 7. Once you have added shapes to all of the tiles, and once you have set the types on the tiles, save the TSX file.
 8.  Paint the tiles in their desired locations. Note that tile collision can be previewed in Tiled by selecting the **View** -> **Show Tile Collision Shapes** option
 
-    ![](../../../../media/2022-02-img\_621b99413e7ec.png)
+    ![](../../../../media/2022-02-img_621b99413e7ec.png)
 
-    ![](../../../../media/2022-02-img\_621b99668f609.png)
+    ![](../../../../media/2022-02-img_621b99668f609.png)
 9. Save the Tiled (TMX) file.
 
 To use these shapes:
@@ -201,7 +201,7 @@ To use these shapes:
 3. Select the **From TMX Collision (use tileset shapes)** option
 4. Set **Source TMX File/Object** to **Map**
 
-![](../../../../media/2022-02-img\_621b97d866e9f.png)
+![](../../../../media/2022-02-img_621b97d866e9f.png)
 
 The TileShapeCollection will now include custom shapes as defined in Tiled.   &#x20;
 

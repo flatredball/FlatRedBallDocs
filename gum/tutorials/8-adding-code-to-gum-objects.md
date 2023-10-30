@@ -8,18 +8,18 @@ Although Gum provides extensive layout control, many games require Gum component
 
 Partial classes, which use the partial keyword, allow the definition of a single class to be spread out across multiple files. Glue uses partial classes to separate custom code from generated code (so that generated code does not overwrite custom code). In fact, all screens and entities in a Glue project already use partial classes. You can see this by expanding any screen or entity in your project in Visual Studio. The following image shows a GameScreen's custom code:
 
-![](../../media/2017-03-img\_58cfeb9a17f5e.png)
+![](../../media/2017-03-img_58cfeb9a17f5e.png)
 
 The following image shows a GameScreen's generated code:
 
-![](../../media/2017-03-img\_58cfee3498a7b.png)
+![](../../media/2017-03-img_58cfee3498a7b.png)
 
 Similarly, your Visual Studio project will have two files for each Gum screen and component: One for generated code and one for custom code. For example, if you have been following this tutorial, you will have a
 
 * MainMenuGumRuntime.cs
 * MainMenuGumRuntime.Generated.cs
 
-![](../../media/2019-03-img\_5c78c5ff4febe.png)
+![](../../media/2019-03-img_5c78c5ff4febe.png)
 
 ### Adding CustomInitialize
 

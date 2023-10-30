@@ -56,7 +56,7 @@ else
 }
 ```
 
-![TwoCirclesOverlapping.png](../../../../../../media/migrated\_media-TwoCirclesOverlapping.png)
+![TwoCirclesOverlapping.png](../../../../../../media/migrated_media-TwoCirclesOverlapping.png)
 
 ### Circle Members
 

@@ -14,31 +14,31 @@ Next we'll add a level. To add a level:
 4. Check the **Add Standard TMX File** option
 5. Click **OK**
 
-![](../../../media/2021-02-img\_60329d77e6082.png)
+![](../../../media/2021-02-img_60329d77e6082.png)
 
 Glue will ask you to name the new map. Enter the name **Level1Map** and click **OK**.
 
-![](../../../media/2021-02-img\_60329dfc01022.png)
+![](../../../media/2021-02-img_60329dfc01022.png)
 
 Now you should have a new screen called Level1 in Glue.
 
-![](../../../media/2021-02-img\_60329e7747e9f.png)
+![](../../../media/2021-02-img_60329e7747e9f.png)
 
 Finally we'll add collision to our level for the MainCharacter to walk on. To do this:
 
 1.  Open Level1Map in Tiled
 
-    ![](../../../media/2021-02-img\_60329f6d60104.png)
+    ![](../../../media/2021-02-img_60329f6d60104.png)
 2.  Select the top-left tile in the **TiledIcons** tileset
 
-    ![](../../../media/2021-05-img\_609210cca57a1.png)
+    ![](../../../media/2021-05-img_609210cca57a1.png)
 3.  Once this tile is selected, click on the map to paint this tile. Doing so will add collision to your map.
 
-    ![](../../../media/2021-05-img\_6092105d05917.png)
+    ![](../../../media/2021-05-img_6092105d05917.png)
 
 Now if we run the game, we have our level set up, but the player will still fall through the level. Next we'll add a CollisionRelationship between the player and the solid collision. 
 
-<figure><img src="../../../media/2018-01-2021\_February\_21\_110609.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2018-01-2021_February_21_110609.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -49,24 +49,24 @@ Currently our game has collision defined through the Level1Map, but we haven't t
 1. Expand GameScreen Objects
 2. Drag+drop the **MainCharacterList** onto the **SolidCollision** to create a relationship 
 
-<figure><img src="../../../media/2018-01-2021\_February\_21\_113719.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2018-01-2021_February_21_113719.gif" alt=""><figcaption></figcaption></figure>
 
 
 3. Mark the newly-created CollisionRelationship as **Platformer Solid Collision**
 
 Now the player will collide with the level.
 
-![](../../../media/2021-02-img\_6032a4dcaa5cc.png)
+![](../../../media/2021-02-img_6032a4dcaa5cc.png)
 
 ### Controlling the Entity with Input
 
 By default the platformer entity already supports a default set of controls. To see this, select the MainCharacter, then select the **Entity Input Movement** tab.
 
-![](../../../media/2021-02-img\_6032a55db4f63.png)
+![](../../../media/2021-02-img_6032a55db4f63.png)
 
 By default the platformer will be controllable with a plugged-in Xbox Gamepad. If no Gamepad is detected, then the entity can be controlled with WASD and Space. 
 
-<figure><img src="../../../media/2018-01-2021\_February\_21\_112625.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2018-01-2021_February_21_112625.gif" alt=""><figcaption></figcaption></figure>
 
  If you want to override this functionality, you can change the controls. These controls can be changed in the MovementInput code (to apply to all players) or in the GameScreen. We recommend making the changes in GameScreen so that different characters can have different input in a multi-player game. To change the character to jump with the Enter key and to move with the arrow keys:
 

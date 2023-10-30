@@ -8,7 +8,7 @@ This page covers all control values in available on a platformer entity. It also
 
 In a previous tutorial we defined a set of default control values for our character. These values serve as a starting point for platformers - they can be tuned to provide a custom feel to platformer entities. The platformer control values can be viewed and edited by selecting the **MainCharacter** entity and clicking on the \*\*Entity Input Movement \*\*tab.
 
-![](../../../../media/2023-05-img\_645b94f3c5629.png)
+![](../../../../media/2023-05-img_645b94f3c5629.png)
 
 ### Max Speed
 
@@ -43,11 +43,11 @@ Variable-height jumping can be implemented a number of different ways. The platf
 
 The following image shows two jump arcs. The first is the movement of the character when the button is held, the second is without:
 
-![](../../../../media/2018-01-img\_5a6e23637b9ad.png)
+![](../../../../media/2018-01-img_5a6e23637b9ad.png)
 
 &#x20; Although it may be difficult to see, the entity moves in a straight line on the first part of the first jump, rather than moving in an arc. This is the result of gravity being turned off while the button is held. If we color the first part red, the linear movement is a little easier to see:
 
-![](../../../../media/2018-01-img\_5a6e249b232c5.png)
+![](../../../../media/2018-01-img_5a6e249b232c5.png)
 
 ### Max Jump Hold Time
 

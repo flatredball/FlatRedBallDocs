@@ -58,4 +58,4 @@ sprite.Position.X = (float)closestPoint.X;
 sprite.Position.Y = (float)closestPoint.Y;
 ```
 
-![ClosestPoint.png](../../../../../../media/migrated\_media-ClosestPoint.png)
+![ClosestPoint.png](../../../../../../media/migrated_media-ClosestPoint.png)

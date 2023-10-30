@@ -22,7 +22,7 @@ To create the Entity:
 
 Now that we have an Entity, let's set the Sprite to use a Texture:
 
-1. Download the Bear.png image from here:![Bear.png](../../../../media/migrated\_media-Bear.png)
+1. Download the Bear.png image from here:![Bear.png](../../../../media/migrated_media-Bear.png)
 2. Go to the location where you saved the file
 3. Drag+drop the PNG from the location where you saved it into the SpriteEntity's "Files"
 4. Select the SpriteInstance object
@@ -68,7 +68,7 @@ Finally let's populate the List in code:
  }
 ```
 
-You should see a large number of spinning bears: ![InheritanceProject1.PNG](../../../../media/migrated\_media-InheritanceProject1.PNG)
+You should see a large number of spinning bears: ![InheritanceProject1.PNG](../../../../media/migrated_media-InheritanceProject1.PNG)
 
 ### Measuring resource usage
 
@@ -83,7 +83,7 @@ If you're running this project on a modern computer then it's likely that you ma
 FlatRedBall.Debugging.Debugger.WriteAutomaticallyUpdatedObjectInformation();
 ```
 
-Now your program will be outputting information about how many automatically updated objects exist in the engine: ![AutomaticallyUpdatedOutput1.PNG](../../../../media/migrated\_media-AutomaticallyUpdatedOutput1.PNG) For more information on this method call, see the [WriteAutomaticallyUpdatedObjectInformation](../../../../api/flatredball/debugging/debugger/writeautomaticallyupdatedobjectinformation.md) page. We can see that we have 4000 Sprites (one for each instance of our SpriteEntity) and also 4000 PositionedObjects (each SpriteEntity inherits from PositionedObject).
+Now your program will be outputting information about how many automatically updated objects exist in the engine: ![AutomaticallyUpdatedOutput1.PNG](../../../../media/migrated_media-AutomaticallyUpdatedOutput1.PNG) For more information on this method call, see the [WriteAutomaticallyUpdatedObjectInformation](../../../../api/flatredball/debugging/debugger/writeautomaticallyupdatedobjectinformation.md) page. We can see that we have 4000 Sprites (one for each instance of our SpriteEntity) and also 4000 PositionedObjects (each SpriteEntity inherits from PositionedObject).
 
 ### Using Inheritance to reduce automatically-updated object count
 
@@ -97,4 +97,4 @@ Now we can simply have the SpriteInstance inside of SpriteEntity be a reference 
 1. Select SpriteInstance
 2. Set "IsContainer" to true
 
-![IsContainer.png](../../../../media/migrated\_media-IsContainer.png) Now that the SpriteEntity inherits from a Sprite, and the SpriteInstance is the container, we have essentially eliminated half of our runtime objects. To see this result, run the game again: ![ReducedObjectCountFromInheritance.PNG](../../../../media/migrated\_media-ReducedObjectCountFromInheritance.PNG) You can see that since all of the entity instances are Sprites, all PositionedObjects have been removed (the engine reports 0 PositionedObjects).
+![IsContainer.png](../../../../media/migrated_media-IsContainer.png) Now that the SpriteEntity inherits from a Sprite, and the SpriteInstance is the container, we have essentially eliminated half of our runtime objects. To see this result, run the game again: ![ReducedObjectCountFromInheritance.PNG](../../../../media/migrated_media-ReducedObjectCountFromInheritance.PNG) You can see that since all of the entity instances are Sprites, all PositionedObjects have been removed (the engine reports 0 PositionedObjects).

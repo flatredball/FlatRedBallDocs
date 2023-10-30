@@ -4,11 +4,11 @@
 
 When creating a tool using FlatRedBall XNA, the tool must react to window resizing events. By default when the Game Window is resized, the [Camera](../../../../frb/docs/index.php) only changes its DestinationRectangle and AspectRatio. Therefore, if a Sprite takes up the entire screen horizontally, it will take up the entire screen horizontally after the resize, as shown by the following images:
 
-**Before Resize**![BeforeResizeNoCameraModification.png](../../../../media/migrated\_media-BeforeResizeNoCameraModification.png) **After Resize**![AfterResizeNoCameraModification.png](../../../../media/migrated\_media-AfterResizeNoCameraModification.png)
+**Before Resize**![BeforeResizeNoCameraModification.png](../../../../media/migrated_media-BeforeResizeNoCameraModification.png) **After Resize**![AfterResizeNoCameraModification.png](../../../../media/migrated_media-AfterResizeNoCameraModification.png)
 
 Tools users will not anticipate this behavior. Rather, they will expect that objects will take up the same amount of total space on their monitors before and after the resize as shown by the following images:
 
-**After Resize Expected Behavior**![AfterResize.png](../../../../media/migrated\_media-AfterResize.png)
+**After Resize Expected Behavior**![AfterResize.png](../../../../media/migrated_media-AfterResize.png)
 
 ### Code Example
 

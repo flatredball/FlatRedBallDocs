@@ -29,7 +29,7 @@ NodeNetwork nodeNetwork = save.ToNodeNetwork();
 nodeNetwork.Visible = true;
 ```
 
-![NodeNetworkFromFile.png](../../../../../../media/migrated\_media-NodeNetworkFromFile.png) For more information on file loading in FlatRedBall, see the [FlatRedBall File Types](../../../../../../frb/docs/index.php) wiki entry.
+![NodeNetworkFromFile.png](../../../../../../media/migrated_media-NodeNetworkFromFile.png) For more information on file loading in FlatRedBall, see the [FlatRedBall File Types](../../../../../../frb/docs/index.php) wiki entry.
 
 ### Creating a NodeNetwork
 
@@ -132,7 +132,7 @@ Add the following in Update:
  }
 ```
 
-![NodeNetwork.png](../../../../../../media/migrated\_media-NodeNetwork.png)
+![NodeNetwork.png](../../../../../../media/migrated_media-NodeNetwork.png)
 
 ### References
 

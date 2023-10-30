@@ -16,11 +16,11 @@ This example will be written completely inside a [Screen](../../../frb/docs/inde
 
 The very first step is to create a new FlatRedBall template using any version of the engine. This article is written for 3D coordinates, so if you are using pixel coordinates, or a version of FlatRedBall that defaults to 2D (such as FlatSilverBall) you may need to perform some conversions between the numbers you see here and what you put in your code.
 
-Once you have an empty template, add a new Screen called CameraMovementScreen. If you need help doing this, check the [How to use Screens page](../../../frb/docs/index.php#Downloading\_the\_Screen\_Template).
+Once you have an empty template, add a new Screen called CameraMovementScreen. If you need help doing this, check the [How to use Screens page](../../../frb/docs/index.php#Downloading_the_Screen_Template).
 
 Once you do this you should have an empty Screen that is ready to be filled in.
 
-![NewScreen.png](../../../media/migrated\_media-NewScreen.png)
+![NewScreen.png](../../../media/migrated_media-NewScreen.png)
 
 ### Using the Screen
 

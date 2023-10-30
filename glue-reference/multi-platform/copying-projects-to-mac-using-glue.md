@@ -20,9 +20,9 @@ Be sure that you can open a Windows Explorer window to view your Mac files on th
 Make sure that Windows file sharing is enabled on your mac. To do this:
 
 1. Click the Apple icon in the top left of the screen and select "System Preferences"
-2. Select "Sharing" ![SharingWindow.jpg](../../../../media/migrated\_media-SharingWindow.jpg)
+2. Select "Sharing" ![SharingWindow.jpg](../../../../media/migrated_media-SharingWindow.jpg)
 3. Click "Options..."
-4. Make sure all check boxes are checked ![SharingOptionsWindow.jpg](../../../../media/migrated\_media-SharingOptionsWindow.jpg)
+4. Make sure all check boxes are checked ![SharingOptionsWindow.jpg](../../../../media/migrated_media-SharingOptionsWindow.jpg)
 5. Click Done
 
 #### Navigating to the Mac using its IP
@@ -34,14 +34,14 @@ Make sure that Windows file sharing is enabled on your mac. To do this:
     \\192.168.0.16
     ```
 
-    ![SharingWindow.jpg](../../../../media/migrated\_media-SharingWindow.jpg)
+    ![SharingWindow.jpg](../../../../media/migrated_media-SharingWindow.jpg)
 3.  You may be asked to log in. Use the login name as specified in the Windows File Sharing screen (including spacing). For example, the username as specified in this window is
 
     ```
     Richard Blaylock
     ```
 
-    (including the space) ![SharingOptionsWindow.jpg](../../../../media/migrated\_media-SharingOptionsWindow.jpg)
+    (including the space) ![SharingOptionsWindow.jpg](../../../../media/migrated_media-SharingOptionsWindow.jpg)
 
 ### Creating a FlatRedBall iOS project on Windows
 
@@ -61,9 +61,9 @@ The next step is to set up Glue to copy the project over to your OSX computer.
 
 Once you can access the file system on OSX, you can tell Glue to copy the project over to the desired location. To do this:
 
-1. Click the "Copy Project" tab at the bottom of the Glue screen![CopyProjectTabs.png](../../../../media/migrated\_media-CopyProjectTabs.png)
-2. Click the "..." button to select the folder where you'd like to copy the project. You may need to create a new directory. Note that if you navigated to the folder in an earlier step using the IP of the Mac, you can also paste the target directory in the text box rather than clicking the browse button.![ClickDotDotDotCopyProject.png](../../../../media/migrated\_media-ClickDotDotDotCopyProject.png)![NetworkBrowseFolder.PNG](../../../../media/migrated\_media-NetworkBrowseFolder.PNG)
-3. Once you have selected the folder, click "Copy Projects!". The project will be copied and the progress bar will update to show progress. ![ProjectCopying.png](../../../../media/migrated\_media-ProjectCopying.png)
+1. Click the "Copy Project" tab at the bottom of the Glue screen![CopyProjectTabs.png](../../../../media/migrated_media-CopyProjectTabs.png)
+2. Click the "..." button to select the folder where you'd like to copy the project. You may need to create a new directory. Note that if you navigated to the folder in an earlier step using the IP of the Mac, you can also paste the target directory in the text box rather than clicking the browse button.![ClickDotDotDotCopyProject.png](../../../../media/migrated_media-ClickDotDotDotCopyProject.png)![NetworkBrowseFolder.PNG](../../../../media/migrated_media-NetworkBrowseFolder.PNG)
+3. Once you have selected the folder, click "Copy Projects!". The project will be copied and the progress bar will update to show progress. ![ProjectCopying.png](../../../../media/migrated_media-ProjectCopying.png)
 
 If you have a large project, you may notice that the copy process can be lengthy. Don't worry, the project copier checks the dates on files when performing copying. This means that subsequent copies will go much faster!
 
@@ -74,12 +74,12 @@ At this point the project is fully copied to the OSX computer and it can be run 
 To do this:
 
 1. Open Xamarin Studio
-2. Select "Run"->"Start Debugging"![XamarinStudioRunStartDebugging.png](../../../../media/migrated\_media-XamarinStudioRunStartDebugging.png)
-3. Your program will appear in the iPhone Simulator ![FrbiOSInSimulator.png](../../../../media/migrated\_media-FrbiOSInSimulator.png)
+2. Select "Run"->"Start Debugging"![XamarinStudioRunStartDebugging.png](../../../../media/migrated_media-XamarinStudioRunStartDebugging.png)
+3. Your program will appear in the iPhone Simulator ![FrbiOSInSimulator.png](../../../../media/migrated_media-FrbiOSInSimulator.png)
 
 ### Making changes in Glue
 
-Once you have verified that the project runs in the iPhone simulator, you can develop normally in Glue. After making changes in Glue or on the PC, you can simply copy the project using the Copy Project tab. Unfortunately at the time of this writing, Xamarin Studio does not automatically re-load the project when files have been changed. Therefore, you will need to manually reload the project by right-clicking on the project in the OSX IDE and selecting Reload:![ReloadXamarinStudio.png](../../../../media/migrated\_media-ReloadXamarinStudio.png)
+Once you have verified that the project runs in the iPhone simulator, you can develop normally in Glue. After making changes in Glue or on the PC, you can simply copy the project using the Copy Project tab. Unfortunately at the time of this writing, Xamarin Studio does not automatically re-load the project when files have been changed. Therefore, you will need to manually reload the project by right-clicking on the project in the OSX IDE and selecting Reload:![ReloadXamarinStudio.png](../../../../media/migrated_media-ReloadXamarinStudio.png)
 
 ### Making changes on OSX
 
@@ -89,4 +89,4 @@ This can be done through the Glue plugin by swapping the "Copy From" and "Copy T
 
 Keep in mind that the entire folder structure is copied when the "Copy Projects!" button is checked, so changes from the "From" folder will overwrite changes in the "To" folder. We recommend taking advantage of version control software to back up your project to prevent unintentional overwriting of data.
 
-![SwappedCopyFromCopyTo.PNG](../../../../media/migrated\_media-SwappedCopyFromCopyTo.PNG)
+![SwappedCopyFromCopyTo.PNG](../../../../media/migrated_media-SwappedCopyFromCopyTo.PNG)

@@ -71,4 +71,4 @@ public void TileBasedMovement(Sprite sprite)
 }
 ```
 
-![TileBasedMovement.png](../../../media/migrated\_media-TileBasedMovement.png)
+![TileBasedMovement.png](../../../media/migrated_media-TileBasedMovement.png)

@@ -31,7 +31,7 @@ Add the following to Update
 InputManager.Keyboard.ControlPositionedObject(Camera.Main, 100);
 ```
 
-![MinimumMaximumCameraValues.png](../../../../media/migrated\_media-MinimumMaximumCameraValues.png)
+![MinimumMaximumCameraValues.png](../../../../media/migrated_media-MinimumMaximumCameraValues.png)
 
 ### Removing Minimum and Maximum Values
 

@@ -32,7 +32,7 @@ Add the following using statement:
 Circle circle = ShapeManager.AddCircle();
 ```
 
-![SimpleCircle.png](../media/migrated\_media-SimpleCircle.png)
+![SimpleCircle.png](../media/migrated_media-SimpleCircle.png)
 
 #### Shapes and Visibility
 

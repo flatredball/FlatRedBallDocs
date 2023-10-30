@@ -15,7 +15,7 @@ mCube.ScaleX = 3;
 mCube.ScaleY = 4;
 ```
 
-Alternatively, you can create an AxisAlignedCube with the Visible property set first by doing this Create the instance globally AxisAlignedCube mCube = ShapeManager.AddAxisAlignedCube(); ![SimpleCube.png](../../../../../../media/migrated\_media-SimpleCube.png)
+Alternatively, you can create an AxisAlignedCube with the Visible property set first by doing this Create the instance globally AxisAlignedCube mCube = ShapeManager.AddAxisAlignedCube(); ![SimpleCube.png](../../../../../../media/migrated_media-SimpleCube.png)
 
 ### Relationship with ShapeManager
 
@@ -64,7 +64,7 @@ if (mCube2.CollideAgainst(mCube))
 }
 ```
 
-![PreCubeCollision.png](../../../../../../media/migrated\_media-PreCubeCollision.png) ![PostCubeCollision.png](../../../../../../media/migrated\_media-PostCubeCollision.png)
+![PreCubeCollision.png](../../../../../../media/migrated_media-PreCubeCollision.png) ![PostCubeCollision.png](../../../../../../media/migrated_media-PostCubeCollision.png)
 
 ### Determining Collision Side
 

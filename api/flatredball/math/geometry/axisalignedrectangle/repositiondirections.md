@@ -8,7 +8,7 @@ The RepositionDirections member controls which direction colliding objects will 
 
 The default value is _All_, which means that any objects colliding with the AxisAlignedRectangle can be moved in any of the four directions (Up, Down, Left, and Right) as shown in the following diagram:
 
-![](../../../../../../media/2016-12-img\_5861de789ebf2.png)
+![](../../../../../../media/2016-12-img_5861de789ebf2.png)
 
 RepositionDirections can be changed to any of the four cardinal directions, as shown in the following code:
 
@@ -18,7 +18,7 @@ RectangleInstance.RepositionDirections = RepositionDirections.Up;
 
 The code above results in all objects being moved upward:
 
-![](../../../../../../media/2016-12-img\_5861e3b4255d1.png)
+![](../../../../../../media/2016-12-img_5861e3b4255d1.png)
 
 RepositionDirections can be combined with the | (or) operator, as shown in the following code:
 
@@ -26,7 +26,7 @@ RepositionDirections can be combined with the | (or) operator, as shown in the f
 RectangleInstance.RepositionDirections = RepositionDirections.Left | RepositionDirections.Down;
 ```
 
-![](../../../../../../media/2016-12-img\_5861e7c41533a.png)
+![](../../../../../../media/2016-12-img_5861e7c41533a.png)
 
 ### Code Example - RepositionDirections on Static Rectangle
 
@@ -37,7 +37,7 @@ This example shows how RepositionDirections modifies the CollideAgainstMove meth
 
 These are created in Glue so the screen starts as shown in the following image:
 
-![](../../../../../../media/2021-04-img\_606dbd93e2eaa.png)
+![](../../../../../../media/2021-04-img_606dbd93e2eaa.png)
 
 **RepositionDirections** value can be adjusted in code or in Glue. Typically this property is adjusted in code, so this example uses the following code:
 
@@ -57,7 +57,7 @@ void CustomActivity(bool firstTimeCalled)
 
 Notice that when the first rectangle is moved (with the keyboard), it will only be repositioned to the left. 
 
-<figure><img src="../../../../../../media/2016-01-2021\_April\_07\_083318.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../media/2016-01-2021_April_07_083318.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -67,7 +67,7 @@ Notice that when the first rectangle is moved (with the keyboard), it will only 
 
 If two AxisAlignedRectangle instances are colliding against each other, then the RepositionDirection of both rectangles are considered. For example, consider the following situation:
 
-![](../../../../../../media/2016-12-img\_5861f6e6e2248.png)
+![](../../../../../../media/2016-12-img_5861f6e6e2248.png)
 
 For this example the red rectangle on the left will be called RedRectangle  and the blue rectangle on the right will be called BlueRectangle . We'll assume that the BlueRectangle's RepositionDirection  value is set to RepositionDirection.All . We'll also use the following collision code between the two:
 
@@ -105,15 +105,15 @@ RepositionDirections defines which direction objects will move in when either Co
 
 The use of RepositionDirections is critical for proper collision when using TileShapeCollections. For simple situations, a developer does not need to understand the RepositionDirections behavior that is happening when creating TileShapeCollections. This section discusses the behavior of RepositionDirections in TileShapeCollections. To begin, consider a TileShapeCollection which contains a single AxisAlignedRectangle. In this case, the rectangle will have all four RepositionDirections as shown by red arrows.
 
-![](../../../../../../media/2021-04-img\_606dc6d566b53.png)
+![](../../../../../../media/2021-04-img_606dc6d566b53.png)
 
 If a second rectangle is added to the first, then both of them remove their _inward_ reposition directions. This is important to prevent _collision snagging_ - the stopping of a moving object when moving across a smooth surface created by multiple rectangles.
 
-![](../../../../../../media/2021-04-img\_606dc7edb35b3.png)
+![](../../../../../../media/2021-04-img_606dc7edb35b3.png)
 
 As more rectangles are added, the TileShapeCollection adjusts the RepositionDirections of each to prevent snagging. Usually this happens automatically and no custom code is needed.
 
-![](../../../../../../media/2021-04-img\_606dc913b62c6.png)
+![](../../../../../../media/2021-04-img_606dc913b62c6.png)
 
 ### Code Example - Detecting Corners
 

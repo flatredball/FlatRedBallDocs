@@ -45,7 +45,7 @@ else
 }
 ```
 
-![RedRectanglePolygon.png](../../../../../../media/migrated\_media-RedRectanglePolygon.png)
+![RedRectanglePolygon.png](../../../../../../media/migrated_media-RedRectanglePolygon.png)
 
 ### IsPointInside and ForceUpdateDependencies
 

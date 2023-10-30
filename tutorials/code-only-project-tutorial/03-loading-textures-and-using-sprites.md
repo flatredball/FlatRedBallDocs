@@ -15,7 +15,7 @@ Before a PNG can be loaded, it must be added to your project. Normally the manag
     <figure><img src="../../media/2022-08-17_16_47_41.gif" alt=""><figcaption></figcaption></figure>
 3.  Right-click on the file and select **Properties**
 
-    ![](../../media/2022-08-img\_62fd70599f0a8.png)
+    ![](../../media/2022-08-img_62fd70599f0a8.png)
 4.  Set the **Copy to Output Directory** item to **Copy if Newer**&#x20;
 
     <figure><img src="../../media/2022-08-img_62fd70994f0f8.png" alt=""><figcaption></figcaption></figure>
@@ -35,13 +35,13 @@ We need to add an entry for the newly-added TextureFile so that it is copied to 
 
 1.  Select your .csproj file to display its contents
 
-    ![](../../media/2023-08-img\_64d8e5b6f2b8c.png)
+    ![](../../media/2023-08-img_64d8e5b6f2b8c.png)
 2.  Look for a section of the .csproj where existing content is already handled
 
-    ![](../../media/2023-08-img\_64d8e5f37d97b.png)
+    ![](../../media/2023-08-img_64d8e5f37d97b.png)
 3.  Copy/paste one of the **None** blocks to copy the newly-added TextureFile.png
 
-    ![](../../media/2023-08-img\_64d8e63ce8f41.png)
+    ![](../../media/2023-08-img_64d8e63ce8f41.png)
 
 ### Creating a Texture2D
 
@@ -114,7 +114,7 @@ protected override void Initialize()
 
 The game now loads a Bear and shows it in the center of the screen.
 
-![](../../media/2022-08-img\_62fd72dc705cd.png)
+![](../../media/2022-08-img_62fd72dc705cd.png)
 
 ### Modifying a Sprite
 
@@ -144,4 +144,4 @@ protected override void Initialize()
 
 This code creates five sprites, each using the same Texture2D.
 
-![](../../media/2022-08-img\_62fd7890cbed7.png)
+![](../../media/2022-08-img_62fd7890cbed7.png)

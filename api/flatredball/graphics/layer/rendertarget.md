@@ -15,17 +15,17 @@ To set a RenderTarget in the FRB Editor:
 
 1.  Create a RenderTarget object
 
-    ![](../../../../../media/2023-09-img\_64fb24b11ded2.png)
+    ![](../../../../../media/2023-09-img_64fb24b11ded2.png)
 2.  Create a Layer instance
 
-    ![](../../../../../media/2023-09-img\_64fb24cd08880.png)
+    ![](../../../../../media/2023-09-img_64fb24cd08880.png)
 3.  Set the RenderTarget property on the layer to the previously-created RenderTarget
 
-    ![](../../../../../media/2023-09-img\_64fb24ee2132b.png)
+    ![](../../../../../media/2023-09-img_64fb24ee2132b.png)
 
 As mentioned above, the contents of the Layer will render to its RenderTarget instead of the screen. The easiest way to see the contents of the RenderTarget is to add a Sprite and use the RenderTarget as its Texture.
 
-![](../../../../../media/2023-09-img\_64fb2531b979d.png)
+![](../../../../../media/2023-09-img_64fb2531b979d.png)
 
 ### Code Example
 
@@ -80,7 +80,7 @@ public partial class GameScreen
 }
 ```
 
-![](../../../../../media/2016-06-img\_5769f95188b7c.png)
+![](../../../../../media/2016-06-img_5769f95188b7c.png)
 
 Note that the above code creates a Layer in code instead of creating one in Glue. This is done purely to keep the example short - Layer instances created in Glue can be used as well.
 
@@ -154,7 +154,7 @@ public partial class GameScreen
 }
 ```
 
-![](../../../../../media/2018-01-img\_5a6e96a1624c5.png)
+![](../../../../../media/2018-01-img_5a6e96a1624c5.png)
 
 #### One-Time Renders and entities
 
@@ -227,7 +227,7 @@ The RenderTarget2D constructor takes width and height parameters. These values c
     }
 ```
 
-![](../../../../../media/2016-06-img\_5769fc648f937.png)
+![](../../../../../media/2016-06-img_5769fc648f937.png)
 
 We can adjust the RenderTarget2D constructor so the RenderTarget is 1/4 the resolution, as shown in the following code snippet:
 
@@ -245,7 +245,7 @@ We can adjust the RenderTarget2D constructor so the RenderTarget is 1/4 the reso
 
 Since the Sprite uses a TextureScale of 1, shrinking the RenderTarget2D will also shrink the Sprite:
 
-![](../../../../../media/2016-06-img\_5769fe5a1b19d.png)
+![](../../../../../media/2016-06-img_5769fe5a1b19d.png)
 
 To compensate for this, the Sprite.TextureScale property can be changed to 4. This will result in the RenderTarget2D being drawn at the same size as before, but it will be 1/4 the resolution, so it will appear pixellated (or blurred due to linear filtering):
 
@@ -260,4 +260,4 @@ To compensate for this, the Sprite.TextureScale property can be changed to 4. Th
     }
 ```
 
-![](../../../../../media/2016-06-img\_576a01725c7a7.png) Rendering to a RenderTarget2D which is smaller than the game's resolution can improve performance, especially if the RenderTarget2D is used with effects which do not need full-resolution images, such as blurring.   &#x20;
+![](../../../../../media/2016-06-img_576a01725c7a7.png) Rendering to a RenderTarget2D which is smaller than the game's resolution can improve performance, especially if the RenderTarget2D is used with effects which do not need full-resolution images, such as blurring.   &#x20;

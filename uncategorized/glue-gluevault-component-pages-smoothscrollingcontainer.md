@@ -19,7 +19,7 @@ This example will show how to create a scrolling Text object. This example will 
 
 The first step is to download the SmoothScrollingContainer.entz file which can be found [here](http://www.gluevault.com/entity/42-smooth-scrolling-container). Once you have downloaded the file, open Glue and import the file. For information on how to import Entities, see [this article](../frb/docs/index.php).
 
-![SmoothScrollingInWiki.PNG](../media/migrated\_media-SmoothScrollingInWiki.PNG)
+![SmoothScrollingInWiki.PNG](../media/migrated_media-SmoothScrollingInWiki.PNG)
 
 #### How to create a new Entity that uses SmoothScrollingContainer as its base
 
@@ -29,7 +29,7 @@ Next we will create a new Entity which will use the SmoothScrollingContainer as 
 2. Name the new Entity "ScrollingText" and click OK
 3. Select the newly-created Entity and set its BaseEntity property to "Entities\SmoothScrollingContainer". For more information on the BaseEntity property and the concept of inheritance, see [the Entity Inheritance article](../frb/docs/index.php).
 
-![SmoothScrollingAsBase.PNG](../media/migrated\_media-SmoothScrollingAsBase.PNG)
+![SmoothScrollingAsBase.PNG](../media/migrated_media-SmoothScrollingAsBase.PNG)
 
 #### How to add text to the new Entity
 

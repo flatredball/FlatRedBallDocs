@@ -10,7 +10,7 @@ There are two parts to a content pipeline. One is the compile-time code which co
 
 ### Compile-Time Components
 
-The following image shows an outline of steps that a raw file takes to become a processed file (.xnb in XNA). ![ContentPipelineCompileTime.png](../../../media/migrated\_media-ContentPipelineCompileTime.png) The following sections explain each step in the compile-time pipeline.
+The following image shows an outline of steps that a raw file takes to become a processed file (.xnb in XNA). ![ContentPipelineCompileTime.png](../../../media/migrated_media-ContentPipelineCompileTime.png) The following sections explain each step in the compile-time pipeline.
 
 #### Saved Raw Asset
 
@@ -49,7 +49,7 @@ This is a (usually) binary file which results from the compile-time content pipe
 
 ### Runtime Components
 
-The runtime portion of the content pipeline is responsible for loading a .XNB file and converting it to an instance of a runtime class. Examples of runtime classes include the Texture2D and Scene classes. The following image shows an outline of steps that a XNB file takes to become an instance of a runtime class. ![ContentPipelineRuntime.png](../../../media/migrated\_media-ContentPipelineRuntime.png) The following sections explain each step in the runtime pipeline.
+The runtime portion of the content pipeline is responsible for loading a .XNB file and converting it to an instance of a runtime class. Examples of runtime classes include the Texture2D and Scene classes. The following image shows an outline of steps that a XNB file takes to become an instance of a runtime class. ![ContentPipelineRuntime.png](../../../media/migrated_media-ContentPipelineRuntime.png) The following sections explain each step in the runtime pipeline.
 
 #### .XNB (processed) File
 
@@ -75,4 +75,4 @@ The runtime class is the class that is used in the game. Examples include XNA's 
 
 ### Additional Reading
 
-The following article discusses the XNA Content Pipeline in more detail: [XNA Content Pipeline on Ziggyware](http://www.ziggyware.com/readarticle.php?article\_id=69)
+The following article discusses the XNA Content Pipeline in more detail: [XNA Content Pipeline on Ziggyware](http://www.ziggyware.com/readarticle.php?article_id=69)

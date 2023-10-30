@@ -11,13 +11,13 @@ We'll be creating an Enemy entity ourselves since it wasn't automatically create
 1. Click the **Quick Actions** tab
 2.  Click the **Add Entity** button
 
-    ![](../../../media/2021-04-img\_60778d5b43a87.png)
+    ![](../../../media/2021-04-img_60778d5b43a87.png)
 3. Enter the name **Enemy**
 4. Check **AxisAlignedRectangle**
 5. Check **Platformer** for the **Input Movement Type**
 6.  Leave the rest of the defaults and click **OK**
 
-    ![](../../../media/2022-06-img\_62a0d9af55429.png)
+    ![](../../../media/2022-06-img_62a0d9af55429.png)
 
 We will also change the color of the enemy rectangle so we can tell it apart from the Player:
 
@@ -28,7 +28,7 @@ We will also change the color of the enemy rectangle so we can tell it apart fro
 5. Change **Height** to **16**
 6. Change **Color** to **Red**
 
-![](../../../media/2021-04-img\_60778f4feef7e.png)
+![](../../../media/2021-04-img_60778f4feef7e.png)
 
 ### Adding an Enemy to Level1
 
@@ -39,11 +39,11 @@ Normally entities like Enemies are added through Tiled files, as shown in the [b
 3. Click the **Properties** tab
 4. Set **ExposedInDerived** to **True**
 
-![](../../../media/2021-04-img\_607790a49c1d6.png)
+![](../../../media/2021-04-img_607790a49c1d6.png)
 
 Now that this is true, the EnemyList appears in all of the Level screens (which are derived from the GameScreen), and we can add instances to these lists.
 
-![](../../../media/2021-04-img\_607790f455d7c.png)
+![](../../../media/2021-04-img_607790f455d7c.png)
 
 To add an enemy to Level 1, drag+drop the **Enemy** entity onto the **Level1** Screen.
 
@@ -58,7 +58,7 @@ We also need to modify the Enemy so it is positioned inside of the solid boundar
 3. Change **X** to **160**
 4. Change **Y** to **-160**
 
-![](../../../media/2021-04-img\_60779420c673c.png)
+![](../../../media/2021-04-img_60779420c673c.png)
 
 ### EnemyList vs SolidCollision
 
@@ -72,7 +72,7 @@ Now we have a fully-functional enemy, but it falls through the solid collision s
 
 Glue automatically sets the **Collision Physics** to **Platformer Solid Collision** since the Enemy entity is marked as a Platformer.
 
-![](../../../media/2021-04-img\_6077966149575.png)
+![](../../../media/2021-04-img_6077966149575.png)
 
 ### Conclusion
 

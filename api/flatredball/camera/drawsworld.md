@@ -34,4 +34,4 @@ text.Y = 15;
 TextManager.AddToLayer(text, hudCamera.Layer);
 ```
 
-![DrawsWorld.png](../../../../media/migrated\_media-DrawsWorld.png)
+![DrawsWorld.png](../../../../media/migrated_media-DrawsWorld.png)

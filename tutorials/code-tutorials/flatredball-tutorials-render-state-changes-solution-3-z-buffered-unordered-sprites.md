@@ -45,7 +45,7 @@ for (int i = 0; i < 1000; i++)
 }
 ```
 
-As expected, since we're not yet doing anything to manage the order in which Sprites render we will see a reduction in performance and an increase in render breaks:![ZBufferedRandomOrder.png](../../../media/migrated\_media-ZBufferedRandomOrder.png)
+As expected, since we're not yet doing anything to manage the order in which Sprites render we will see a reduction in performance and an increase in render breaks:![ZBufferedRandomOrder.png](../../../media/migrated_media-ZBufferedRandomOrder.png)
 
 Now we can simply add the following line of code after the for-loop to re-enable the engine sorting the Sprites by their texture:
 
@@ -53,7 +53,7 @@ Now we can simply add the following line of code after the for-loop to re-enable
 SpriteManager.SortTexturesSecondary();
 ```
 
-Since z buffered Sprites do not have any primary form of sorting (regular Sprites primarily sort by their Z value) then the Sprites become sorted only by their Textures. The result is, as we might expect, a boost in performance:![ZBufferedOrderedByTexture.png](../../../media/migrated\_media-ZBufferedOrderedByTexture.png)
+Since z buffered Sprites do not have any primary form of sorting (regular Sprites primarily sort by their Z value) then the Sprites become sorted only by their Textures. The result is, as we might expect, a boost in performance:![ZBufferedOrderedByTexture.png](../../../media/migrated_media-ZBufferedOrderedByTexture.png)
 
 ### Z Buffered downsides
 

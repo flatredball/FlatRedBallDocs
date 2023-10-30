@@ -42,6 +42,6 @@ else
 
 &#x20; 
 
-<figure><img src="../../../../../media/2021-07-19\_08-21-23.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2021-07-19_08-21-23.gif" alt=""><figcaption></figcaption></figure>
 
    &#x20;

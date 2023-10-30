@@ -22,7 +22,7 @@ Just like in [the general PositionedObject measuring tutorial](../../../../../fr
     ```
 5. Run your game
 
-Here is an example of what output might look like: ![BaronSpriteOutput.PNG](../../../../../media/migrated\_media-BaronSpriteOutput.PNG)
+Here is an example of what output might look like: ![BaronSpriteOutput.PNG](../../../../../media/migrated_media-BaronSpriteOutput.PNG)
 
 ### Understanding the output
 

@@ -21,11 +21,11 @@ Sprite sprite = SpriteManager.AddSprite("redball.bmp");
 sprite.PixelSize = .5f;
 ```
 
-![UsePixelCoordinates1.png](../../../../media/migrated\_media-UsePixelCoordinates1.png)
+![UsePixelCoordinates1.png](../../../../media/migrated_media-UsePixelCoordinates1.png)
 
 ### Canvas Resolution vs. Screen Coordinates
 
-When programming on Windows, you have [control of the "back buffer resolution"](../../../../frb/docs/index.php#Setting\_Resolution). However, on the Xbox 360 the resolution is chosen by the user, either. Usually this is done through the switch on the video cable: ![Cableswitch5ia.jpg](../../../../media/migrated\_media-Cableswitch5ia.jpg) Depending on the setting the user may be running the game in one of the following resolutions:
+When programming on Windows, you have [control of the "back buffer resolution"](../../../../frb/docs/index.php#Setting_Resolution). However, on the Xbox 360 the resolution is chosen by the user, either. Usually this is done through the switch on the video cable: ![Cableswitch5ia.jpg](../../../../media/migrated_media-Cableswitch5ia.jpg) Depending on the setting the user may be running the game in one of the following resolutions:
 
 * Standard Resolution (640 X 480)
 * High Definition 720 (1280 X 720)
@@ -52,4 +52,4 @@ The following modifies the coordinates of the camera so that the entire redball.
      (int)System.Math.Round(sprite.Texture.Width * aspectRatio), sprite.Texture.Height);
 ```
 
-![UsePixelCoordinates2.png](../../../../media/migrated\_media-UsePixelCoordinates2.png)
+![UsePixelCoordinates2.png](../../../../media/migrated_media-UsePixelCoordinates2.png)

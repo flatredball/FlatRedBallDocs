@@ -38,7 +38,7 @@ logo.TextureScale = 1;
 logo.Y = 200;
 ```
 
-![PixelSizeExample.png](../../../../media/migrated\_media-PixelSizeExample.png)
+![PixelSizeExample.png](../../../../media/migrated_media-PixelSizeExample.png)
 
 ### TextureScale and Power of Two
 

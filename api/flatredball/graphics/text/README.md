@@ -24,7 +24,7 @@ A common mistake is to add and remove text every frame to change what it display
 myText.DisplayText = CurrentScore.ToString();
 ```
 
-For more information on the persistence of objects, see [this article](../../../../frb/docs/index.php#A\_note\_about\_persistence). For code example comparing the approach of creating a new text vs. setting the DisplayText, see the [DisplayText page](../../../../frb/docs/index.php).
+For more information on the persistence of objects, see [this article](../../../../frb/docs/index.php#A_note_about_persistence). For code example comparing the approach of creating a new text vs. setting the DisplayText, see the [DisplayText page](../../../../frb/docs/index.php).
 
 ### DisplayText Property
 
@@ -50,7 +50,7 @@ using FlatRedBall.Graphics;
  }
 ```
 
-![DisconnectedText.png](../../../../media/migrated\_media-DisconnectedText.png)
+![DisconnectedText.png](../../../../media/migrated_media-DisconnectedText.png)
 
 ### Text Object as PositionedObject
 
@@ -111,7 +111,7 @@ The following code creates three text objects which have non-default values for 
  text3.X = -18;
 ```
 
-![ThreeTextObjects.png](../../../../media/migrated\_media-ThreeTextObjects.png)
+![ThreeTextObjects.png](../../../../media/migrated_media-ThreeTextObjects.png)
 
 ### Text Members
 
@@ -139,7 +139,7 @@ The following code creates three text objects which have non-default values for 
 
 ### Related Articles
 
-* [Adding Text to Layers](../../../../frb/docs/index.php#Adding\_Text\_to\_Layers)
+* [Adding Text to Layers](../../../../frb/docs/index.php#Adding_Text_to_Layers)
 * [IAttachable Wiki Entry](../../../../frb/docs/index.php) - Text implements the IAttachable interface.
 
 Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

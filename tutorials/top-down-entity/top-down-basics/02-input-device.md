@@ -12,7 +12,7 @@ The Top Down entity code interacts with the IInputDevice interface, which provid
 
 As mentioned earlier, our Player entity defaults to using an Xbox gamepad if one exists. If not, it uses the keyboard. Even though we won't customize this code, we can see its implementation by looking in Player.Generated.cs and searching for InitializeInput.
 
-![](../../../../media/2021-03-img\_6043fa97cd7aa.png)
+![](../../../../media/2021-03-img_6043fa97cd7aa.png)
 
 Ultimately, these calls make their way to calling CustomInitializeTopDownInput. Since this is a partial method, we need to add it ourselves to our Player if we want to customize the input. To do this:
 
@@ -90,6 +90,6 @@ void CustomInitialize()
 
 To see more than one player you must have at least two gamepads plugged in to your computer. Also, keep in mind that the players will initially overlap so you must move one to see both. 
 
-<figure><img src="../../../../media/2020-09-2021\_March\_06\_163127.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2020-09-2021_March_06_163127.gif" alt=""><figcaption></figcaption></figure>
 
  &#x20;

@@ -29,7 +29,7 @@ Remember, in the first code where the [Camera's](../../../frb/docs/index.php) or
 
 ### Coordinate Systems
 
-FlatRedBall XNA and FlatSilverBall use what's called a "[right-handed](http://en.wikipedia.org/wiki/Cartesian\_coordinate#Orientation\_and\_handedness)" coordinate system. In the default setup, that means that positive X points right, positive Y points up, and positive Z points out of the screen. FlatRedBall MDX uses a "[left-handed](http://en.wikipedia.org/wiki/Cartesian\_coordinate#Orientation\_and\_handedness)" coordinate system. To keep things simple, the only axis that is inverted is the Z, so X and Y point in the same direction, but Z inverts so that positive Z points into the screen.
+FlatRedBall XNA and FlatSilverBall use what's called a "[right-handed](http://en.wikipedia.org/wiki/Cartesian_coordinate#Orientation_and_handedness)" coordinate system. In the default setup, that means that positive X points right, positive Y points up, and positive Z points out of the screen. FlatRedBall MDX uses a "[left-handed](http://en.wikipedia.org/wiki/Cartesian_coordinate#Orientation_and_handedness)" coordinate system. To keep things simple, the only axis that is inverted is the Z, so X and Y point in the same direction, but Z inverts so that positive Z points into the screen.
 
 #### Why not use a Top-Left oriented coordinate system?
 
@@ -55,7 +55,7 @@ sprite.X = sprite.ScaleX;
 sprite.Y = sprite.ScaleY;
 ```
 
-![PixelSprite.png](../../../media/migrated\_media-PixelSprite.png) Prior to this block of code I called SpriteManager.Camera.UsePixelCoordinates(true) which makes the origin the bottom left of the screen. Therefore the above image shows the Sprite at the bottom left of the screen. Finally, rather than manually using the [Texture'a](../../../frb/docs/index.php) Width and Height properties, the Sprite's PixelSize property can be set to automatically set the Scale according to the referenced [Texture's](../../../frb/docs/index.php) dimensions. The following code accomplishes the same as the previous block:
+![PixelSprite.png](../../../media/migrated_media-PixelSprite.png) Prior to this block of code I called SpriteManager.Camera.UsePixelCoordinates(true) which makes the origin the bottom left of the screen. Therefore the above image shows the Sprite at the bottom left of the screen. Finally, rather than manually using the [Texture'a](../../../frb/docs/index.php) Width and Height properties, the Sprite's PixelSize property can be set to automatically set the Scale according to the referenced [Texture's](../../../frb/docs/index.php) dimensions. The following code accomplishes the same as the previous block:
 
 ```
 Sprite sprite = SpriteManager.AddSprite("redball.bmp");

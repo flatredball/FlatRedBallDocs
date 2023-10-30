@@ -8,6 +8,6 @@ Screens and Entities [can be exported](../../../../frb/docs/index.php) from Glue
 
 To import a Screen/Entity:
 
-1. Right-click on the "Screens" or "Entities" item in Glue and select "Import Screen"/"Import Entity"![ImportEntity.png](../../../../media/migrated\_media-ImportEntity.png)
+1. Right-click on the "Screens" or "Entities" item in Glue and select "Import Screen"/"Import Entity"![ImportEntity.png](../../../../media/migrated_media-ImportEntity.png)
 2. Navigate to the location of the .scrz or .entz file you want to import and click OK
 3. Your Screen/Entity should now appear in your Glue project

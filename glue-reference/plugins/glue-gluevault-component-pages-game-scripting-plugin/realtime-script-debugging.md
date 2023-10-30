@@ -32,7 +32,7 @@ You need to add references to your project which are used by the debugging code.
 3. Select **Add Reference...**
 4.  Select the **Assemblies** -> **Framework** category
 
-    ![](../../../../../media/2018-04-img\_5ac4cfb2eabe2.png)
+    ![](../../../../../media/2018-04-img_5ac4cfb2eabe2.png)
 5. Check the following items:
    1. Select System.Data
    2. System.Drawing
@@ -45,7 +45,7 @@ Next we'll add debug controls to our project.
 1. Open or focus Glue
 2.  Select **Plugins** -> **Add Game Script Debugging Classes**
 
-    ![](../../../../../media/2018-04-img\_5ac4dd179a0b9.png)
+    ![](../../../../../media/2018-04-img_5ac4dd179a0b9.png)
 
 The Debug control is only available on Windows platforms (because it uses Windows Forms), so the code is surrounded by a WINDOWS pre-compile directive. To access this, you will need to add WINDOWS to your project's conditional compilation symbols:
 
@@ -54,7 +54,7 @@ The Debug control is only available on Windows platforms (because it uses Window
 3. Click the **Build** category
 4.  Add WINDOWS to the **Conditional compilation symbols** text box (all values should be separated by a semicolon)
 
-    ![](../../../../../media/2018-04-img\_5ac4dfb980ee4.png)
+    ![](../../../../../media/2018-04-img_5ac4dfb980ee4.png)
 
 ### Creating the Debug Form
 
@@ -84,8 +84,8 @@ mScriptDebuggingForm.Activity();
 using FlatRedBall.Scripting;
 ```
 
-If you run the game you will now see the debug window list the events you have in your game. ![ScriptDebugWindow.png](../../../../../media/migrated\_media-ScriptDebugWindow.png)
+If you run the game you will now see the debug window list the events you have in your game. ![ScriptDebugWindow.png](../../../../../media/migrated_media-ScriptDebugWindow.png)
 
 ### Available information
 
-The Script window already shows us some useful information. We can see that we have 3 scripts which have conditions "HasPlayerPassed". This name comes from the "HasPlayerPassed" function which is called in our If's in the game script. The debugging form automatically detects this as the name based off of the method that created the delegate. Also, the debugging window tells us how many actions exist in the script in parentheses. Each script has one action, so each says (1) after the If call. The scripts will default as written in black. When they execute, they will change to green, so you will be able to see how scripts execute in real-time. Finally, you can expand the scripts to see the names of the actions that will execute. ![ScriptDebugExpanded.png](../../../../../media/migrated\_media-ScriptDebugExpanded.png)
+The Script window already shows us some useful information. We can see that we have 3 scripts which have conditions "HasPlayerPassed". This name comes from the "HasPlayerPassed" function which is called in our If's in the game script. The debugging form automatically detects this as the name based off of the method that created the delegate. Also, the debugging window tells us how many actions exist in the script in parentheses. Each script has one action, so each says (1) after the If call. The scripts will default as written in black. When they execute, they will change to green, so you will be able to see how scripts execute in real-time. Finally, you can expand the scripts to see the names of the actions that will execute. ![ScriptDebugExpanded.png](../../../../../media/migrated_media-ScriptDebugExpanded.png)

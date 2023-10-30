@@ -60,7 +60,7 @@ else
 }
 ```
 
-You will notice that this approach results in sliding down slopes![SlideDownSlope.png](../media/migrated\_media-SlideDownSlope.png)
+You will notice that this approach results in sliding down slopes![SlideDownSlope.png](../media/migrated_media-SlideDownSlope.png)
 
 ### Solution 1: Simple, but not perfect
 

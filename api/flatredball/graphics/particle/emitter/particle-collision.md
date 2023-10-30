@@ -70,4 +70,4 @@ for (int i = 0; i < mAllSprites.Count; i++)
 }
 ```
 
-![EmitterWithCollision.png](../../../../../../media/migrated\_media-EmitterWithCollision.png)
+![EmitterWithCollision.png](../../../../../../media/migrated_media-EmitterWithCollision.png)

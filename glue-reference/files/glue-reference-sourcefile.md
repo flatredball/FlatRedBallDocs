@@ -9,7 +9,7 @@ Files in Glue can support "external" or "source" files. A source file is a file 
 To add a file with a source file:
 
 1. Right-click on the "Files" item under a Screen or entity
-2. Select "Add Externally Built File"![AddExternallyBuiltFile.png](../../../../media/migrated\_media-AddExternallyBuiltFile.png)
+2. Select "Add Externally Built File"![AddExternallyBuiltFile.png](../../../../media/migrated_media-AddExternallyBuiltFile.png)
 
 ### Source files require builders
 

@@ -49,6 +49,6 @@ SpriteManager.AddToLayer(layeredSpriteFrame, layer);
 layeredSpriteFrame.Z = -25; // positive 25 in FRB MDX
 ```
 
-![LayeredSpriteFrame.png](../../../../media/migrated\_media-LayeredSpriteFrame.png)
+![LayeredSpriteFrame.png](../../../../media/migrated_media-LayeredSpriteFrame.png)
 
 Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

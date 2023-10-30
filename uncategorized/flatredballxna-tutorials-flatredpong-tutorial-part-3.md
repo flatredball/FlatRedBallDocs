@@ -74,11 +74,11 @@ this.mSprites.Add(scoreSpriteRight);
 this.mTexts.Add(gameOverText);
 ```
 
-You should place these statements into the Initialize() method of the GameScreen to the according blocks in the code. The objects in these lists will be destroyed when the Screen is destroyed. Compile and run the code. When everything was moved correctly the game should work in the same way as before. But your code is more organized now. ![Screen FlatRedPong Tut2 1.png](../media/migrated\_media-Screen\_FlatRedPong\_Tut2\_1.png)
+You should place these statements into the Initialize() method of the GameScreen to the according blocks in the code. The objects in these lists will be destroyed when the Screen is destroyed. Compile and run the code. When everything was moved correctly the game should work in the same way as before. But your code is more organized now. ![Screen FlatRedPong Tut2 1.png](../media/migrated_media-Screen_FlatRedPong_Tut2_1.png)
 
 ### Adding a menu screen
 
-Create another Screen named MenuScreen and add it to your project. You will need a background and a button graphics. Again you can create your own graphics or you take these: ![YellowButton.png](../media/migrated\_media-YellowButton.png) ![Flp Background.png](../media/migrated\_media-Flp\_Background.png) In the menu Screen there will be two buttons:
+Create another Screen named MenuScreen and add it to your project. You will need a background and a button graphics. Again you can create your own graphics or you take these: ![YellowButton.png](../media/migrated_media-YellowButton.png) ![Flp Background.png](../media/migrated_media-Flp_Background.png) In the menu Screen there will be two buttons:
 
 * Start new game
 * Exit game
@@ -192,7 +192,7 @@ Since the new screen should be seen on startup, you have to add it to the Screen
 ScreenManager.Start(typeof(MenuScreen).FullName);
 ```
 
-Compile and run the code. You will see the new menu screen on startup. ![Screen FlatRedPong Tut3 1.png](../media/migrated\_media-Screen\_FlatRedPong\_Tut3\_1.png) Now some logic is needed in the screen. First the game should be started again. Add the following code to the Activity() method:
+Compile and run the code. You will see the new menu screen on startup. ![Screen FlatRedPong Tut3 1.png](../media/migrated_media-Screen_FlatRedPong_Tut3_1.png) Now some logic is needed in the screen. First the game should be started again. Add the following code to the Activity() method:
 
 ```
 // Check mouse collision
@@ -261,11 +261,11 @@ private void StartGame()
 }
 ```
 
-This method sets the MenuScreens property IsActivityFinished to true and calls the method MoveToScreen(â€¦) to proceed to the GameScreen. Compile and run the code. When you hover the mouse over the buttons you will see the text color of the button will turn red. Furthermore will there be a tip text next to the buttons. When you click on the button â€œExitâ€? the game will exit. Clicking the button â€œNew Gameâ€? will start a new game. ![Screen FlatRedPong Tut3 2.png](../media/migrated\_media-Screen\_FlatRedPong\_Tut3\_2.png)
+This method sets the MenuScreens property IsActivityFinished to true and calls the method MoveToScreen(â€¦) to proceed to the GameScreen. Compile and run the code. When you hover the mouse over the buttons you will see the text color of the button will turn red. Furthermore will there be a tip text next to the buttons. When you click on the button â€œExitâ€? the game will exit. Clicking the button â€œNew Gameâ€? will start a new game. ![Screen FlatRedPong Tut3 2.png](../media/migrated_media-Screen_FlatRedPong_Tut3_2.png)
 
 ### Adding Pause Function
 
-The last action of this part of the tutorial is to add another Screen to the game. This screen handles a paused game. Pressing the keys â€œPâ€? or â€œEscapeâ€? will pause the game. You will need a background graphics. Again you can create your own graphics or take the one below: ![Flp Pause.png](../media/migrated\_media-Flp\_Pause.png) I added the complete text of the screen to the image. So there are not many objects around in the screen.
+The last action of this part of the tutorial is to add another Screen to the game. This screen handles a paused game. Pressing the keys â€œPâ€? or â€œEscapeâ€? will pause the game. You will need a background graphics. Again you can create your own graphics or take the one below: ![Flp Pause.png](../media/migrated_media-Flp_Pause.png) I added the complete text of the screen to the image. So there are not many objects around in the screen.
 
 **Note:** The Image has a semi transparent gradient from the center to all borders. This will have the effect that you can still see the paddles, ball and score when game pauses.
 
@@ -415,6 +415,6 @@ private void ContinueGame()
 }
 ```
 
-To continue the game, the balls velocity reset from the class variable. Then the pause flag is set to false. The initialization of the save variable is not necessary, but good style. You need to define the variable ballVelocity of type Vector3 at class scope. Compile and run the code. Now we have a comfortable, pausable pong game! ![Screen FlatRedPong Tut3 3.png](../media/migrated\_media-Screen\_FlatRedPong\_Tut3\_3.png)
+To continue the game, the balls velocity reset from the class variable. Then the pause flag is set to false. The initialization of the save variable is not necessary, but good style. You need to define the variable ballVelocity of type Vector3 at class scope. Compile and run the code. Now we have a comfortable, pausable pong game! ![Screen FlatRedPong Tut3 3.png](../media/migrated_media-Screen_FlatRedPong_Tut3_3.png)
 
 Did this article leave any questions unanswered? Post any question in our [forums](../frb/forum.md) for a rapid response.

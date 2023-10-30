@@ -21,7 +21,7 @@ void CustomActivity(bool firstTimeCalled)
 
 
 
-<figure><img src="../../../../media/2019-09-20\_05-26-27.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2019-09-20_05-26-27.gif" alt=""><figcaption></figcaption></figure>
 
    &#x20;
 

@@ -12,7 +12,7 @@ Entire Gum Screens can be added to a Glue Layer. The following steps assume:
 * A Gum screen called MainScreen
 * The Gum screen added as a file under the Glue screen
 
-![LayeredGumScreen1.PNG](../../../media/migrated\_media-LayeredGumScreen1.PNG) The first step is to add the entire Gum screen as an object in the Glue screen:
+![LayeredGumScreen1.PNG](../../../media/migrated_media-LayeredGumScreen1.PNG) The first step is to add the entire Gum screen as an object in the Glue screen:
 
 1. Right-click on Objects
 2. Select "Add Object"
@@ -22,7 +22,7 @@ Entire Gum Screens can be added to a Glue Layer. The following steps assume:
 6. Enter the name GumScreenInstance
 7. Click OK
 
-![AddingGumScreenInstanceToGlue.gif](../../../media/migrated\_media-AddingGumScreenInstanceToGlue.gif) Now the Screen can be added to the Glue Layer:
+![AddingGumScreenInstanceToGlue.gif](../../../media/migrated_media-AddingGumScreenInstanceToGlue.gif) Now the Screen can be added to the Glue Layer:
 
 1. Right-click on Objects
 2. Select "Add Object"
@@ -31,7 +31,7 @@ Entire Gum Screens can be added to a Glue Layer. The following steps assume:
 5. Click OK
 6. Drag+drop the GumScreenInstance onto the newly-created Layer
 
-![AddGumScreenToLayer.gif](../../../media/migrated\_media-AddGumScreenToLayer.gif) Now the entire GumScreenInstance (that is the entire MainScreen from Gum) will be drawn on LayerInstance.
+![AddGumScreenToLayer.gif](../../../media/migrated_media-AddGumScreenToLayer.gif) Now the entire GumScreenInstance (that is the entire MainScreen from Gum) will be drawn on LayerInstance.
 
 ### Adding an Entire Gum Screen to a Layer in Code
 
@@ -69,4 +69,4 @@ Individual objects within a Gum screen can be added to a Layer. To add an object
 7. Select the object within the Gum screen which you'd like to move to a new layer
 8. Drag+drop the object onto the Glue layer
 
-![AddGumInstanceToLayer.gif](../../../media/migrated\_media-AddGumInstanceToLayer.gif)
+![AddGumInstanceToLayer.gif](../../../media/migrated_media-AddGumInstanceToLayer.gif)

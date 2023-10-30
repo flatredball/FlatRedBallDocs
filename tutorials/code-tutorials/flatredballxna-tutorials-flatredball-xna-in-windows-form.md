@@ -225,7 +225,7 @@ Once those are pasted into your class, you can declare the game class in the for
 
 Most samples on the FlatRedBall website use the redball.bmp image. If you made a new project then it likely doesn't have this file. So, be sure to add the redball.bmp graphic to the project as follows:
 
-* Save the redball.bmp image somewhere on your computer: ![Redball.bmp](../../../media/migrated\_media-Redball.png)
+* Save the redball.bmp image somewhere on your computer: ![Redball.bmp](../../../media/migrated_media-Redball.png)
 * Navigate to this location on your computer.
 * Drag the redball.bmp image into your Project.
 * Select the redball.bmp item and press F4 to bring up the properties window.
@@ -310,7 +310,7 @@ We'll need to modify the constructor, but before we do we need to add a panel. T
 * Click and drag to draw the new Panel on your form.
 * Name the panel "Viewport".
 
-![Frb windows form panel.jpg](../../../media/migrated\_media-Frb\_windows\_form\_panel.jpg)
+![Frb windows form panel.jpg](../../../media/migrated_media-Frb_windows_form_panel.jpg)
 
 Modify the constructor method:
 
@@ -354,7 +354,7 @@ Modify the constructor method:
 
 And you are done. Press F5 and if FRB initialised the panel will now be black with the red ball in the middle.
 
-![InWinform.png](../../../media/migrated\_media-InWinform.png)
+![InWinform.png](../../../media/migrated_media-InWinform.png)
 
 In case you wish to resize your form, please add the following to the ResizeEnd event of the form. This enforces FRB to use the new ClientSize.
 

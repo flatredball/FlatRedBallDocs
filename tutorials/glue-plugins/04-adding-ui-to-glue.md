@@ -11,13 +11,13 @@ First we will create a WPF user control in our project:
 1. Right-click on your project and select **Add** -> **New** **Folder**
 2.  Name the folder **Controls**
 
-    ![](../../media/2018-02-img\_5a8061301231f.png)
+    ![](../../media/2018-02-img_5a8061301231f.png)
 3. Right-click on the newly-created folder
 4. Select **Add** -> **New Item...**
 5. Select the **Installed** -> **Visual C# Items** -> **WPF** category
 6.  Select **User Controls (WPF)**
 
-    ![](../../media/2018-02-img\_5a8062529e30e.png)
+    ![](../../media/2018-02-img_5a8062529e30e.png)
 7. Enter the name **MainControl** (more complicated plugins may have multiple controls)
 8. Click **Add**
 
@@ -113,4 +113,4 @@ AddToTab  adds the argument control to the argument tab. In this case we are add
 
 Rebuilding the plugin (make sure to build solution or explicitly select Build on the plugin project) will result in the tab being shown when a file is selected.
 
-![](../../media/2018-02-img\_5a807055eaa60.png)
+![](../../media/2018-02-img_5a807055eaa60.png)

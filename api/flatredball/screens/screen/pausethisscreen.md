@@ -34,7 +34,7 @@ void CustomActivity(bool firstTimeCalled)
 
 When the game is paused, the Sprite automatically stops rotating and resumes when the game is unpaused. 
 
-<figure><img src="../../../../../media/2022-10-28\_19-44-16.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2022-10-28_19-44-16.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -79,6 +79,6 @@ void CustomActivity(bool firstTimeCalled)
 
 &#x20; 
 
-<figure><img src="../../../../../media/2022-10-28\_19-51-13.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2022-10-28_19-51-13.gif" alt=""><figcaption></figcaption></figure>
 
 

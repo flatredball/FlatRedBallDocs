@@ -26,7 +26,7 @@ Bullets will now be destroyed automatically when they collide with the wall.&#x2
 
 Although the automatic removal is handy, we may want to control the removal of bullets. For example, we can modify our game so the bullets do not immediately disappear when hitting an enemy, but instead deal continuous damage over time. First, we'll modify the BulletVsEnemy collision relationship so bullets are not removed automatically by unchecking the **Destroy Bullet on Damage** option.
 
-![](../../media/2023-01-img\_63bee46fe1326.png)
+![](../../media/2023-01-img_63bee46fe1326.png)
 
 Now bullets will continually deal damage to the Enemy, one time per frame. This results in enemies dying very quickly.&#x20;
 
@@ -36,7 +36,7 @@ Now bullets will continually deal damage to the Enemy, one time per frame. This 
 
 As mentioned above, since the Bullet instance does not get destroyed immediately, it continues to live and it deals damage every frame. In this case the game runs at 60 frames per second, dealing 10 damage each frame. Therefore, enemies die after overlapping a bullet after 10 frames (1/6 of a second). We can change this behavior by changing the Bullet's default Seconds Between Damage. For example, if we change the value to 0.5, then bullets deal damage once every half second.
 
-![](../../media/2023-01-img\_63bee5c23f867.png)
+![](../../media/2023-01-img_63bee5c23f867.png)
 
 Each enemy automatically keeps track of the last time it took damage, so it will take damage only 2 times per second. To see this clearly, we'll also change the bullet speed in Player.cs so bullets move slower (50 instead of 200 pixels per second).
 

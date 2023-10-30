@@ -132,7 +132,7 @@ emitter.RemovalEvent = Emitter.RemovalEventType.OutOfScreen;
 emitter.TimedEmit();
 ```
 
-![WedgeEmission.png](../../../../../../media/migrated\_media-WedgeEmission.png)
+![WedgeEmission.png](../../../../../../media/migrated_media-WedgeEmission.png)
 
 #### Velocity Range Type and Velocity Properties
 
@@ -184,7 +184,7 @@ emitter.ScaleY = 2;
 emitter.TimedEmit();
 ```
 
-![RectangleEmissionArea.png](../../../../../../media/migrated\_media-RectangleEmissionArea.png)
+![RectangleEmissionArea.png](../../../../../../media/migrated_media-RectangleEmissionArea.png)
 
 ### Emitter Members
 

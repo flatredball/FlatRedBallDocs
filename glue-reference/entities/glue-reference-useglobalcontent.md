@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The UseGlobalContent property tells an Entity/Screen to use the "Global" content manager when loading its content. This means that its content will only be loaded the first time it is accessed and it will never be unloaded. The UseGlobalContent is not the same thing as [Global Content Files](../../../../frb/docs/index.php). Global Content Files is a collection of files which by default are pre-loaded when the application starts and are never unloaded. Files which are part of Screens and Entities which UseGlobalContent will not be preloaded, but will never be unloaded once they are loaded. It is possible for a file to both be part of an Entity as well as Global Content Files, as shown [here](../../../../frb/docs/index.php#Using\_both\_UseGlobalContent\_and\_.22Global\_Content\_Files.22).
+The UseGlobalContent property tells an Entity/Screen to use the "Global" content manager when loading its content. This means that its content will only be loaded the first time it is accessed and it will never be unloaded. The UseGlobalContent is not the same thing as [Global Content Files](../../../../frb/docs/index.php). Global Content Files is a collection of files which by default are pre-loaded when the application starts and are never unloaded. Files which are part of Screens and Entities which UseGlobalContent will not be preloaded, but will never be unloaded once they are loaded. It is possible for a file to both be part of an Entity as well as Global Content Files, as shown [here](../../../../frb/docs/index.php#Using_both_UseGlobalContent_and_.22Global_Content_Files.22).
 
 ### What is the default behavior
 
@@ -13,7 +13,7 @@ The default value for UseGlobalContent is false. Entities will (by default) use 
 UseGlobalContent can be set by:
 
 1. Selecting an Entity/Screen
-2. Changing the "UseGlobalContent" property to "True"![UseGlobalContent.png](../../../../media/migrated\_media-UseGlobalContent.png)
+2. Changing the "UseGlobalContent" property to "True"![UseGlobalContent.png](../../../../media/migrated_media-UseGlobalContent.png)
 
 Your Entity/Screen will no longer unload files that it uses.
 

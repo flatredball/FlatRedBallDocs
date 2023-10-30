@@ -54,4 +54,4 @@ FlatRedBallServices.AddDisposable(
 SpriteManager.AddSprite(texture2D);
 ```
 
-![GeneratedTexture.png](../../../../../media/migrated\_media-GeneratedTexture.png)
+![GeneratedTexture.png](../../../../../media/migrated_media-GeneratedTexture.png)

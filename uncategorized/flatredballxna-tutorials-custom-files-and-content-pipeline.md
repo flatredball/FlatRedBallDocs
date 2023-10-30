@@ -19,8 +19,8 @@ The following sections provide information on how to create a custom file format
 
 1. [Setting up your projects](../frb/docs/index.php)
 2. [Creating a Runtime Class](../frb/docs/index.php)
-3. \[Creating a "Save" class]\(/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom\_Files\_and\_Content\_Pipeline:Creating\_a\_%22Save%22\_class "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "Save" class")
-4. \[Creating a "SaveContent" Class]\(/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom\_Files\_and\_Content\_Pipeline:Creating\_a\_%22SaveContent%22\_Class "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "SaveContent" Class")
+3. \[Creating a "Save" class]\(/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_%22Save%22_class "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "Save" class")
+4. \[Creating a "SaveContent" Class]\(/frb/docs/index.php?title=FlatRedBallXna:Tutorials:Custom_Files_and_Content_Pipeline:Creating_a_%22SaveContent%22_Class "FlatRedBallXna:Tutorials:Custom Files and Content Pipeline:Creating a "SaveContent" Class")
 5. [Creating an Importer](../frb/docs/index.php)
 6. [Creating a Processor](../frb/docs/index.php)
 7. [Creating a Writer](../frb/docs/index.php)

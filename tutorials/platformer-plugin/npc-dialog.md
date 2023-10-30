@@ -24,13 +24,13 @@ This demo includes a number of important concepts which combine to create NPCs w
 
 A typical game which supports NPC dialog may have hundreds or even thousands of pages of dialog. While it is possible to write the dialog directly into the C# code, maintaining this dialog can be very difficult. This is especially true if the game is being developed with a dedicated writing team, or if the game supports multiple languages. To address both of these considerations, FlatRedBall provides a standard way to store and access dialog. The demo includes a CSV file called LocalizationDatabase.csv which contains all dialog. This is added to **Global Content Files** so that the dialog can be accessed throughout the entire project, and it is marked as IsDatabaseForLocalizing.
 
-![](../../media/2021-05-img\_608efd44ac48e.png)
+![](../../media/2021-05-img_608efd44ac48e.png)
 
 For detailed information about how to create a localization database, see the [IsDatabaseForLocalizing page](../../glue-reference/files/glue-reference-isdatabaseforlocalizing.md). The LocalizationDatabase.csv file includes two columns. The leftmost column is the string ID - this is how code accesses the text in the CSV. The second column is the text for the string ID in English (as the column name indicates).
 
-![](../../media/2021-05-img\_608efdd6b78eb.png)
+![](../../media/2021-05-img_608efdd6b78eb.png)
 
-Additional columns can be added for games which support multiple languages. Similarly, additional rows can be added to support more NPCs. We separate each page of text with a newline. The English text for T\_Npc2 and T\_Npc3 both have two pages. Even if the game includes a single language, it must be told whether to display this language or whether it should display the string IDs. This is done in the initialization for GameScreen. A game with more screens may set the CurrentLanguage property in the first screen which is shown (such as a splash screen) or even in Game1. Also, if the game supports multiple languages, this property would change if the user changes the current language in a settings page.
+Additional columns can be added for games which support multiple languages. Similarly, additional rows can be added to support more NPCs. We separate each page of text with a newline. The English text for T_Npc2 and T_Npc3 both have two pages. Even if the game includes a single language, it must be told whether to display this language or whether it should display the string IDs. This is done in the initialization for GameScreen. A game with more screens may set the CurrentLanguage property in the first screen which is shown (such as a splash screen) or even in Game1. Also, if the game supports multiple languages, this property would change if the user changes the current language in a settings page.
 
 ```
 void CustomInitialize()
@@ -69,21 +69,21 @@ private async Task ShowDialogBox(IInputDevice inputDevice, string stringId)
 }
 ```
 
-The call to Translate passes in stringId which will be one of the IDs (T\_Npc1, T\_Npc2, or T\_Npc3) depending on which NPC the player has talked to. For example, calling Translate with the string "T\_Npc1" results in the string "Hi, I'm just hanging out over here." being returned. The returned string is then split according to the newline character ('\n') to create an IEnumerable\<string> where each string is a separate page. The pages are passed to the currentDialogBox.ShowDialog call.
+The call to Translate passes in stringId which will be one of the IDs (T_Npc1, T_Npc2, or T_Npc3) depending on which NPC the player has talked to. For example, calling Translate with the string "T_Npc1" results in the string "Hi, I'm just hanging out over here." being returned. The returned string is then split according to the newline character ('\n') to create an IEnumerable\<string> where each string is a separate page. The pages are passed to the currentDialogBox.ShowDialog call.
 
 ### Npc in Glue
 
 The demo includes an entity called Npc which represents a character in the game which the player can talk to. These NPCs are entities similar to the Player entity. Specifically, they are marked as platformer entities and collide with the level's solid collision.
 
-![](../../media/2021-05-img\_608f02e32f03e.png)
+![](../../media/2021-05-img_608f02e32f03e.png)
 
 &#x20;
 
-![](../../media/2021-05-img\_608f0300ca7c6.png)
+![](../../media/2021-05-img_608f0300ca7c6.png)
 
 It's worth noting that the Npc instances do not move in this game, so they could have been implemented as static entities with no collision. A full game may include NPCs which walk around a level, follow the player, or move in response to cinematic sequences. Therefore, they have been created as platformer entities so that they can be fully functional if a larger game calls for it. NPCs should not respond to input, so we mark the input device as None in Glue.
 
-![](../../media/2021-05-img\_608f0354bd88b.png)
+![](../../media/2021-05-img_608f0354bd88b.png)
 
 We must assign an input device to avoid NullReferenceExceptions from being thrown, so we do so in the Npc's CustomInitialize code by calling InitializePlatformerInput.
 
@@ -104,7 +104,7 @@ private void CustomInitialize()
 
 As shown in the code above, the demo also creates an AnimationController so that the Npc faces left or right in response to its **DirectionFacing** property. As we'll see later, we use this so the Npc faces the Player when dialog is shown. As mentioned earlier, each Npc includes its own dialog. This dialog is assigned in Tiled, but to support this we must create a variable in Glue so the Npc entity includes a DialogId variable.
 
-![](../../media/2021-05-img\_608f095cc4303.png)
+![](../../media/2021-05-img_608f095cc4303.png)
 
 This variable is defined in Glue, but set in Tiled.
 
@@ -112,13 +112,13 @@ This variable is defined in Glue, but set in Tiled.
 
 Npc instances can be added to levels through Tiled. To do this, a Tile must have its **Type** set to **Npc**. We use one of the tiles in the standard tileset.
 
-![](../../media/2021-05-img\_608f09e24c794.png)
+![](../../media/2021-05-img_608f09e24c794.png)
 
 Any instance of this tile in Level1Map will result in an Npc instance at runtime.
 
-![](../../media/2021-05-img\_608f0a5158aff.png)
+![](../../media/2021-05-img_608f0a5158aff.png)
 
-Notice that the instances are on an object layer rather than a tile layer. This allows the setting of properties on each instance. For example, the selected tile in the screenshot above has a DialogId of T\_Npc1. This must match one of the entries in the localization CSV file mentioned earlier. When the Level1Map is loaded, Npc instances are created automatically and added to their respective list (in this case NpcList) in GameScreen. The DialogId variable is also assigned automatically and it can be used to display dialog, as is done in GameScreen.Event.cs where the ShowDialogBox method is called.
+Notice that the instances are on an object layer rather than a tile layer. This allows the setting of properties on each instance. For example, the selected tile in the screenshot above has a DialogId of T_Npc1. This must match one of the entries in the localization CSV file mentioned earlier. When the Level1Map is loaded, Npc instances are created automatically and added to their respective list (in this case NpcList) in GameScreen. The DialogId variable is also assigned automatically and it can be used to display dialog, as is done in GameScreen.Event.cs where the ShowDialogBox method is called.
 
 ```
 async void OnPlayerListTalkCollisionVsNpcListCollisionOccurred (Entities.Player first, Entities.Npc second)
@@ -193,11 +193,11 @@ The demo uses the same input for running and talking, but this could be any butt
 
 As mentioned earlier, the Player includes an AxisAlignedRectangle named TalkCollision. This is excluded from the iCollidable collision so that it does not bump into walls or keep the player on a ledge.
 
-![](../../media/2021-05-img\_608f11bc9aab6.png)
+![](../../media/2021-05-img_608f11bc9aab6.png)
 
 A collision relationship specifically checking the TalkCollision vs the NpcList is included in the GameScreen.
 
-![](../../media/2021-05-img\_608f12068d3b3.png)
+![](../../media/2021-05-img_608f12068d3b3.png)
 
 This is handled in an event in GameScreen.Event.cs.
 

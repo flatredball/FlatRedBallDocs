@@ -8,7 +8,7 @@ TestCollision  is a method which is automatically called by the FlatRedBall engi
 
 TestCollision  is part of the GumRuntime.IWindow.cs  file, which is added to all projects which use Gum. Therefore, this can be easily debugged by calling the method and stepping in to see the logic flow. IWindow instances are either directly added to the GuiManager (if it's the root) or indirectly added as a child of a root object. The FlatRedBall code does not directly call TestCollision  on all living UI elements. Rather, it calls it on the top-level, which is then responsible for calling it on its children. Therefore, when testing TestCollision, it's best to begin the test at the top level UI element (ignoring the Screen itself). For example, consider the following image:
 
-![](../../../../media/2017-05-img\_590df177b4381.png)
+![](../../../../media/2017-05-img_590df177b4381.png)
 
 In this case the top-level object is **ChildStandardContainerInstance**. If testing collision against **ButtonInstance**, then TestCollision  should be called on **ChildStandardContainerInstance** to simulate the engine's behavior. To access the ChildStandardContainerInstance at runtime:
 
@@ -41,4 +41,4 @@ void CustomActivity(bool firstTimeCalled)
 
 Now we can add a breakpoint to the TestCollision  call. Notice that the call is wrapped in an if statement. This gives you the chance to position the cursor where you want it before hitting the breakpoint. Without the if statement, the breakpoint would hit immediately, making debugging more difficult.
 
-![](../../../../media/2017-05-img\_590df49498b85.png)
+![](../../../../media/2017-05-img_590df49498b85.png)

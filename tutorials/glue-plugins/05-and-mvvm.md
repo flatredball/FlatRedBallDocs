@@ -14,7 +14,7 @@ Developers familiar with MVVM can implement view models according to their own p
 4. Enter the name **MainControlViewModel**
 5. Click **Add**
 
-![](../../media/2018-02-img\_5a807b9335783.png)
+![](../../media/2018-02-img_5a807b9335783.png)
 
 Next we'll modify the view model to implement the base ViewModel class and to have properties for displaying information about the file. Modify MainControlViewModel.cs as shown in the following code snippet:
 
@@ -125,7 +125,7 @@ namespace TutorialPlugin
 
 Now we can run our project and see information about the selected file.
 
-![](../../media/2018-02-img\_5a8094e5f23ce.png)
+![](../../media/2018-02-img_5a8094e5f23ce.png)
 
 ### Reacting to File Changes
 

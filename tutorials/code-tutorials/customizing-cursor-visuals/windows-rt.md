@@ -17,7 +17,7 @@ Unfortunately to create a resource to hold the Cursor graphic you must create a 
 3. Select Add->"New Project"
 4. On the left select the category "Visual C++"->"Store Apps"->"Windows Apps"
 5. Select the "DLL (Windows)" project type
-6. Enter the name "ProjectForCursor"![C++DllProject.PNG](../../../../media/migrated\_media-C--DllProject.PNG)
+6. Enter the name "ProjectForCursor"![C++DllProject.PNG](../../../../media/migrated_media-C--DllProject.PNG)
 7. Click OK
 
 ### Adding a resource to the C++ Project
@@ -28,7 +28,7 @@ Next we'll add a resource file to contain our cursor resource. To do this:
 2. Select Add->"Resource..."
 3. Select "Cursor" when the popup appears and click "New"
 
-![AddCursorToC++Project.gif](../../../../media/migrated\_media-AddCursorToC--Project.gif)
+![AddCursorToC++Project.gif](../../../../media/migrated_media-AddCursorToC--Project.gif)
 
 ### Editing the .cur file
 

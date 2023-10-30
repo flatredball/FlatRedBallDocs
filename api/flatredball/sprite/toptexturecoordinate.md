@@ -29,8 +29,8 @@ The texture coordinate is a coordinate which measures location on a texture, but
 
 Texture coordinates can be adjusted to create objects which show only part of a texture, such as health bars. The following code shows how to create a Diablo-like health meter (of course, using a red ball): Files used:
 
-* [Media:Fill.png](../../../../frb/docs/images/e/ed/Fill.png)![Fill.png](../../../../media/migrated\_media-Fill.png)
-* [Media:Frame.png](../../../../frb/docs/images/c/c5/Frame.png)![Frame.png](../../../../media/migrated\_media-Frame.png)
+* [Media:Fill.png](../../../../frb/docs/images/e/ed/Fill.png)![Fill.png](../../../../media/migrated_media-Fill.png)
+* [Media:Frame.png](../../../../frb/docs/images/c/c5/Frame.png)![Frame.png](../../../../media/migrated_media-Frame.png)
 
 Add the following at class scope:
 
@@ -92,7 +92,7 @@ Add UpdateFill at class scope:
  }
 ```
 
-![TopTextureCoordinate.png](../../../../media/migrated\_media-TopTextureCoordinate.png)
+![TopTextureCoordinate.png](../../../../media/migrated_media-TopTextureCoordinate.png)
 
 ### For Glue users
 

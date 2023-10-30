@@ -146,7 +146,7 @@ public partial class GameScreen
 
 &#x20; Running the project will result in the following being shown on screen:
 
-![](../../../media/2016-06-img\_576375d67b639.png)
+![](../../../media/2016-06-img_576375d67b639.png)
 
 ### Modifying Shader.fx
 

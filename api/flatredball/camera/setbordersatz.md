@@ -49,4 +49,4 @@ Add the following to Update:
 InputManager.Keyboard.ControlPositionedObject(SpriteManager.Camera);
 ```
 
-![CameraBounds.png](../../../../media/migrated\_media-CameraBounds.png)
+![CameraBounds.png](../../../../media/migrated_media-CameraBounds.png)

@@ -15,4 +15,4 @@ You can change the pixel size of the Sprite that is displaying animations in the
 3. Click the "Animation" category.
 4. Change the Main Sprite pixel size value as desired.
 
-![PixelSize.png](../media/migrated\_media-PixelSize.png)
+![PixelSize.png](../media/migrated_media-PixelSize.png)

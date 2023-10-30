@@ -22,7 +22,7 @@ The FlatRedBall Engine includes a class called [Debugger](../../../../../frb/doc
     ```
 5. Run your game
 
-Now you should see information about the objects that are present in your game. The top-left of your screen may look similar to: ![WriteAutomaticallyUpdatedObjectInformation.png](../../../../../media/migrated\_media-WriteAutomaticallyUpdatedObjectInformation.png)
+Now you should see information about the objects that are present in your game. The top-left of your screen may look similar to: ![WriteAutomaticallyUpdatedObjectInformation.png](../../../../../media/migrated_media-WriteAutomaticallyUpdatedObjectInformation.png)
 
 ### What does this information mean?
 

@@ -19,7 +19,7 @@ If you know that your entity needs a Sprite, you can check the Sprite option in 
 3. Check the **Sprite** option
 4. Click **OK**
 
-![](../../../../media/2019-06-img\_5d18bae01c0a8.png)
+![](../../../../media/2019-06-img_5d18bae01c0a8.png)
 
 ### Adding a Sprite
 
@@ -34,7 +34,7 @@ Sprites can be added to Glue screens or entities, although most games don't incl
 
 
 
-<figure><img src="../../../../media/2016-01-2019-05-02\_06-51-56.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-2019-05-02_06-51-56.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -50,8 +50,8 @@ Sprites usually display textures, which are created from image files such as .pn
 
 
 
-<figure><img src="../../../../media/2016-01-2019-05-02\_06-56-48-1.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-2019-05-02_06-56-48-1.gif" alt=""><figcaption></figcaption></figure>
 
  For more information about working with textures, see the [Texture2D page](../files/texture2d.md). The Sprite will now display the texture in the preview window and in game. &#x20;
 
-![](../../../../media/2019-05-img\_5ccae9f711f3f.png)
+![](../../../../media/2019-05-img_5ccae9f711f3f.png)

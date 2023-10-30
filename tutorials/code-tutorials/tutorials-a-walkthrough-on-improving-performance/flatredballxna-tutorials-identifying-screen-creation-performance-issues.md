@@ -49,7 +49,7 @@ void CustomInitialize()
 }
 ```
 
-![MeasuringCustomInitialize.PNG](../../../../media/migrated\_media-MeasuringCustomInitialize.PNG)
+![MeasuringCustomInitialize.PNG](../../../../media/migrated_media-MeasuringCustomInitialize.PNG)
 
 ### Measuring all Initialization including generated code
 
@@ -88,7 +88,7 @@ if(firstTimeCalled)
 }
 ```
 
-Your game should now output information about initialization time: ![RecordSegmentsOutput.PNG](../../../../media/migrated\_media-RecordSegmentsOutput.PNG) Notice that this output method uses exponential notation for very small values. For example in the image above GameScreenPooled PostInitialize took "4E-07". This is the equivalent of 4 \* 10^(-7), or in other words 0.0000004. Typically if you see exponential notation you are dealing with time values which are so small that they will not have much if any of an impact on performance, so they can be treated as if they're 0. If the output from ToStringVerbose is too large to view on screen you can also output this to the Visual Studio output window as follows:
+Your game should now output information about initialization time: ![RecordSegmentsOutput.PNG](../../../../media/migrated_media-RecordSegmentsOutput.PNG) Notice that this output method uses exponential notation for very small values. For example in the image above GameScreenPooled PostInitialize took "4E-07". This is the equivalent of 4 \* 10^(-7), or in other words 0.0000004. Typically if you see exponential notation you are dealing with time values which are so small that they will not have much if any of an impact on performance, so they can be treated as if they're 0. If the output from ToStringVerbose is too large to view on screen you can also output this to the Visual Studio output window as follows:
 
 ```
 if(firstTimeCalled)
@@ -98,7 +98,7 @@ if(firstTimeCalled)
 }
 ```
 
-![VerboseToOutputWindow.PNG](../../../../media/migrated\_media-VerboseToOutputWindow.PNG)
+![VerboseToOutputWindow.PNG](../../../../media/migrated_media-VerboseToOutputWindow.PNG)
 
 ### Where is the slowdown?
 

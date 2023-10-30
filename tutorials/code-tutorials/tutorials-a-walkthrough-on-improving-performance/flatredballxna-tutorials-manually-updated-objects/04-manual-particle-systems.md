@@ -80,4 +80,4 @@ public partial class GameScreen
 
 &#x20;
 
-![](../../../../../media/2017-06-img\_59495601556b0.png)
+![](../../../../../media/2017-06-img_59495601556b0.png)

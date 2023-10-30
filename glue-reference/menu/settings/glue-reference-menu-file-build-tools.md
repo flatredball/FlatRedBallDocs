@@ -10,10 +10,10 @@ To add a new File Build Tool:
 
 1.  Click the Settings->File Build Tools menu item
 
-    ![](../../../../../media/2017-01-img\_58902130439d7.png)
-2. Click "Add new build tool"![AddNewBuildToolButton.PNG](../../../../../media/migrated\_media-AddNewBuildToolButton.PNG)
-3. Add the source and destination extensions of whatever your file build tool supports. For example, the source might be "psd" and the destination might be "png".![AddSourceAndDestinationTypes.PNG](../../../../../media/migrated\_media-AddSourceAndDestinationTypes.PNG)
-4. Click the BuildTool text field, then click the browse button![BuildToolSelectionButton.png](../../../../../media/migrated\_media-BuildToolSelectionButton.png)
+    ![](../../../../../media/2017-01-img_58902130439d7.png)
+2. Click "Add new build tool"![AddNewBuildToolButton.PNG](../../../../../media/migrated_media-AddNewBuildToolButton.PNG)
+3. Add the source and destination extensions of whatever your file build tool supports. For example, the source might be "psd" and the destination might be "png".![AddSourceAndDestinationTypes.PNG](../../../../../media/migrated_media-AddSourceAndDestinationTypes.PNG)
+4. Click the BuildTool text field, then click the browse button![BuildToolSelectionButton.png](../../../../../media/migrated_media-BuildToolSelectionButton.png)
 5. Select your build tool in the file window
 6. Click OK
 

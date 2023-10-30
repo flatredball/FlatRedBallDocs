@@ -8,4 +8,4 @@ The ControlPositionedObject method is a method which can be used to move a Posit
 
 ### Code Example
 
-For an example, see [this example on the main Keyboard page](../../../../../frb/docs/index.php#Controlling\_Objects\_With\_the\_Keyboard).
+For an example, see [this example on the main Keyboard page](../../../../../frb/docs/index.php#Controlling_Objects_With_the_Keyboard).

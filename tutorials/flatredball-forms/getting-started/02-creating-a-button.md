@@ -15,15 +15,15 @@ The previous tutorial showed how to create a new project with a Button control. 
 
 All controls are present in the Components/Controls folder.
 
-![](../../../media/2023-03-img\_64264c34bfb86.png)
+![](../../../media/2023-03-img_64264c34bfb86.png)
 
 To create these controls, drag drop them into your current screen, such as **GameScreenGum** or **MainMenuGum.** If you have a GameScreen, but would like to create a screen with only UI, you can add a new MainMenu screen to your FlatRedBall project.
 
-![](../../../media/2023-08-img\_64d80de02a89d.png)
+![](../../../media/2023-08-img_64d80de02a89d.png)
 
 You can drag+drop controls into your screen. The following screenshot shows a Gum screen with four controls:
 
-![](../../../media/2023-08-img\_64d80ebea7f91.png)
+![](../../../media/2023-08-img_64d80ebea7f91.png)
 
 ### Working with Button
 
@@ -58,7 +58,7 @@ Let's take a look at a few parts of the code. First, we should note that the cod
 
 In the code above we accessed the button through the Forms.ButtonStandardInstance property. Note that ButtonStandardInstance is the same name as the object in Gum.
 
-![](../../../media/2023-08-img\_64d810334fa4b.png)
+![](../../../media/2023-08-img_64d810334fa4b.png)
 
 Notice that we are accessing the object through Forms allows us to interact with the Gum object casted as a FlatRedBall.Forms Button. Once we have access to the button we can interact with it in a standard way, such as by assigning a click event or by setting its Text property.
 

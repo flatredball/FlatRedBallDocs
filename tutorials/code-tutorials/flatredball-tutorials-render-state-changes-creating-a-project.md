@@ -28,7 +28,7 @@ Once your project is created, add a Screen:
 
 We'll use two textures to adjust how many render breaks occur per frame. To add the two textures:
 
-1. Download the following two files:![Greenball.png](../../../media/migrated\_media-Greenball.png)![Redball.png](../../../media/migrated\_media-Redball.png)
+1. Download the following two files:![Greenball.png](../../../media/migrated_media-Greenball.png)![Redball.png](../../../media/migrated_media-Redball.png)
 2. Expand TextureTestScreen
 3. Add both files to Glue - either by dropping the files onto the Files tree node from an explorer, or by right-clicking on the Files item and selecting "Add File"->"Existing File"
 
@@ -84,7 +84,7 @@ FlatRedBall.Debugging.Debugger.Write(debugMessage);
 
 This code uses the [TimeManager.SecondDifference](../../../frb/docs/index.php) to measure framerate. This will not return accurate framerate values if you do not turn off fixed time step and vsync (as done above). For more information, see the [TimeManager.SecondDifference page](../../../frb/docs/index.php).
 
-![BaselineRenderBreaks.png](../../../media/migrated\_media-BaselineRenderBreaks.png) Although my screen shot reads 25 fps, the emulator actually was pegged at around 29 fps normally. Also, the engine currently creates two render breaks while rendering this frame. This is likely because of the Sprites creating one and the Text used to render the output creating a second. This small number doesn't matter so much. Render breaks can become an issue when dealing dozens or hundreds of render breaks, as we will show soon.
+![BaselineRenderBreaks.png](../../../media/migrated_media-BaselineRenderBreaks.png) Although my screen shot reads 25 fps, the emulator actually was pegged at around 29 fps normally. Also, the engine currently creates two render breaks while rendering this frame. This is likely because of the Sprites creating one and the Text used to render the output creating a second. This small number doesn't matter so much. Render breaks can become an issue when dealing dozens or hundreds of render breaks, as we will show soon.
 
 ### Introducing Render Breaks
 
@@ -107,7 +107,7 @@ for (int i = 0; i < 1000; i++)
 }
 ```
 
-![LotsOfRenderBreaks.png](../../../media/migrated\_media-LotsOfRenderBreaks.png)
+![LotsOfRenderBreaks.png](../../../media/migrated_media-LotsOfRenderBreaks.png)
 
 Notice that the frame rate which was previously pegged at 29 (the Windows Phone limits it to 30) is now around 5. We're still rendering the same number of Sprites, and they're approximately the same distance away from the camera so fill rate should be about the same. We only introduced a second texture which we switch back and forth between on every Sprite.
 

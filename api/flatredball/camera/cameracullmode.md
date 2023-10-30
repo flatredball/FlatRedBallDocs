@@ -27,7 +27,7 @@ for (int i = 0; i < 200; i++)
 Camera.Main.RotationYVelocity = -.1f;
 ```
 
-![200SpritesWithCulling.png](../../../../media/migrated\_media-200SpritesWithCulling.png) To fix this the Camera's CameraCullMode can be changed to None:
+![200SpritesWithCulling.png](../../../../media/migrated_media-200SpritesWithCulling.png) To fix this the Camera's CameraCullMode can be changed to None:
 
 ```
 for (int i = 0; i < 200; i++)
@@ -40,4 +40,4 @@ Camera.Main.RotationYVelocity = -.1f;
 Camera.Main.CameraCullMode = CameraCullMode.None;
 ```
 
-![200SpritesCullingOff.png](../../../../media/migrated\_media-200SpritesCullingOff.png)
+![200SpritesCullingOff.png](../../../../media/migrated_media-200SpritesCullingOff.png)

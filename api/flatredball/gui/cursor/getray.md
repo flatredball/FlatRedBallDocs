@@ -34,7 +34,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![GetRay.png](../../../../../media/migrated\_media-GetRay.png)
+![GetRay.png](../../../../../media/migrated_media-GetRay.png)
 
 ### Community Code
 

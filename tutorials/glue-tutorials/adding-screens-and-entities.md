@@ -48,9 +48,9 @@ Here are some examples of Entities:
 A good place to start when making a game is to create a Screen for your game. Initially when you create any object in Glue, you specify only its name. For the rest of the Glue tutorials we'll create a simple game where you can move a ball through a level using the arrow keys on the keyboard. This will all occur in a Screen which we'll call "GameScreen". To create your GameScreen:
 
 1. Right-click on the Screens item
-2. Select "Add Screen"![GlueAddScreenRightClick.png](../../../media/migrated\_media-GlueAddScreenRightClick.png)
-3. Enter "GameScreen" for the name of your new Screen and press OK![GlueEnterScreenName.png](../../../media/migrated\_media-GlueEnterScreenName.png)
-4. Notice that you can now expand the Screens node in the list on the right and it contains your new Screen![GlueNewScreenExpanded.png](../../../media/migrated\_media-GlueNewScreenExpanded.png)
+2. Select "Add Screen"![GlueAddScreenRightClick.png](../../../media/migrated_media-GlueAddScreenRightClick.png)
+3. Enter "GameScreen" for the name of your new Screen and press OK![GlueEnterScreenName.png](../../../media/migrated_media-GlueEnterScreenName.png)
+4. Notice that you can now expand the Screens node in the list on the right and it contains your new Screen![GlueNewScreenExpanded.png](../../../media/migrated_media-GlueNewScreenExpanded.png)
 
 Now your project has a new Screen called GameScreen. Although it might not seem like you've done much, by adding a new Screen you've actually generated a brand new Screen class (new code), you've added it to your project, and you've modified your project so that this Screen will automatically become active when the game starts. That's a lot for not having written even one line of code!
 
@@ -63,9 +63,9 @@ Notice that the newly-added Screen is red in Glue. This means that it is the Scr
 So far you've created a Screen where your game will take place. The next step is to create an Entity that the player can control. We'll call this our "Character". Adding an Entity is very similar to adding a new Screen:
 
 1. Right-click on the Entities item
-2. Select "Add Entity"![GlueAddEntityScreen.png](../../../media/migrated\_media-GlueAddEntityScreen.png)
-3. Enter "Character" for the name of your new Entity and press OK![GlueEntityName.png](../../../media/migrated\_media-GlueEntityName.png)
-4. Notice that you can now expand the Entities node in the list on the right and it contains your new Entity![GlueExpandedEntityInTreeView.png](../../../media/migrated\_media-GlueExpandedEntityInTreeView.png)
+2. Select "Add Entity"![GlueAddEntityScreen.png](../../../media/migrated_media-GlueAddEntityScreen.png)
+3. Enter "Character" for the name of your new Entity and press OK![GlueEntityName.png](../../../media/migrated_media-GlueEntityName.png)
+4. Notice that you can now expand the Entities node in the list on the right and it contains your new Entity![GlueExpandedEntityInTreeView.png](../../../media/migrated_media-GlueExpandedEntityInTreeView.png)
 
 After completing these steps, your game has a new Entity called Character. The addition of the new Entity resulted in a new Entity class (new code) as well modification of your project to add this new code.
 
@@ -78,7 +78,7 @@ This section discusses details about the Screen and Entity code generation in Gl
 * \<NameOfSceenOrEntity>.cs
 * \<NameOfScreenOrEntity>.Generated.cs
 
-![GlueCodePreview.png](../../../media/migrated\_media-GlueCodePreview.png)
+![GlueCodePreview.png](../../../media/migrated_media-GlueCodePreview.png)
 
 This means that there are **two files for every Screen or Entity** in your project. Once Glue creates them, it stuffs them in your Visual Studio project. Let's look at these two files separately.
 

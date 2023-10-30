@@ -29,7 +29,7 @@ The first step in creating a scrollable Entity list is to create an Entity that 
 4. Select "Import Entity"
 5. Select the .entz file and select OK. For more information on importing, see [the Importing Entities tutorial here](../../../../frb/docs/index.php).
 
-![ImportedButtonEntity.png](../../../../media/migrated\_media-ImportedButtonEntity.png)
+![ImportedButtonEntity.png](../../../../media/migrated_media-ImportedButtonEntity.png)
 
 ### Creating a ButtonList Entity
 
@@ -41,7 +41,7 @@ To create a ButtonList Entity:
 4. Select the newly-created ButtonList entity
 5. Set the "IsScrollableEntityList" to "True"
 
-![IsScrollableEntityList.png](../../../../media/migrated\_media-IsScrollableEntityList.png)
+![IsScrollableEntityList.png](../../../../media/migrated_media-IsScrollableEntityList.png)
 
 ### Setting the scrollable Entity list variables
 
@@ -49,12 +49,12 @@ Next we'll need to tell the ButtonList that it should create instances of a Butt
 
 1. Select the Button Entity
 2. Set its "CreatedByOtherEntities" to "True"
-3. Set its "PooledByFactory" to "False"![ButtonCreatedByOtherEntities.png](../../../../media/migrated\_media-ButtonCreatedByOtherEntities.png)
+3. Set its "PooledByFactory" to "False"![ButtonCreatedByOtherEntities.png](../../../../media/migrated_media-ButtonCreatedByOtherEntities.png)
 4. Select the "ButtonList" Entity
 5. Change its ItemType to "Entities\Button"
 6. Set the "ListTopBound" to 256
 7. Set the "ListBottomBound" to -256
-8. Set the "SpacingBetweenItems to 64![ScrollableListVariables.png](../../../../media/migrated\_media-ScrollableListVariables.png)
+8. Set the "SpacingBetweenItems to 64![ScrollableListVariables.png](../../../../media/migrated_media-ScrollableListVariables.png)
 
 ### Creating ButtonScreen and Layer
 
@@ -70,7 +70,7 @@ Now we'll create a Screen that will store an instance of our ButtonList. We'll a
 8. Select the Layer2D Object
 9. Set its "SourceType" to "FlatRedBallType"
 10. Set its "SourceClass" to "Layer"
-11. Set its "Is2D" to "True"![2DLayerSettings.png](../../../../media/migrated\_media-2DLayerSettings.png)
+11. Set its "Is2D" to "True"![2DLayerSettings.png](../../../../media/migrated_media-2DLayerSettings.png)
 
 ### Adding a ButtonList Instance to the ButtonScreen
 
@@ -79,7 +79,7 @@ Next we'll create an instance of ButtonList in ButtonScreen. To do this:
 1. Select the ButtonList Entity
 2. Push and drag the ButtonList Entity onto the ButtonScreen
 3. Glue will ask if you'd like to create a ButtonList instance. Click Yes.
-4. Push and drag the newly-created ButtonListInstance onto the Layer2D Object to add it to that Layer. The "LayerOn" property should automatically update![ButtonListOn2DLayer.png](../../../../media/migrated\_media-ButtonListOn2DLayer.png)
+4. Push and drag the newly-created ButtonListInstance onto the Layer2D Object to add it to that Layer. The "LayerOn" property should automatically update![ButtonListOn2DLayer.png](../../../../media/migrated_media-ButtonListOn2DLayer.png)
 
 ### Populating the ButtonList
 
@@ -100,7 +100,7 @@ for (int i = 0; i < 100; i++)
 ButtonListInstance.ListShowing = intList;
 ```
 
-In this case we're creating a simple List of integers to help keep the tutorial shorter. In an actual game you may use a list of scores, level information from a CSV, or any other list data that you'd like to display. If you run the game you should see the list of buttons. This list is scrollable by clicking+dragging with the mouse or on the touch screen. ![ButtonListInGame.png](../../../../media/migrated\_media-ButtonListInGame.png)
+In this case we're creating a simple List of integers to help keep the tutorial shorter. In an actual game you may use a list of scores, level information from a CSV, or any other list data that you'd like to display. If you run the game you should see the list of buttons. This list is scrollable by clicking+dragging with the mouse or on the touch screen. ![ButtonListInGame.png](../../../../media/migrated_media-ButtonListInGame.png)
 
 ### Displaying information from items in the List
 
@@ -122,7 +122,7 @@ void UpdateButtonToInteger(GlueTestbed.Entities.Button button)
 }
 ```
 
-![ButtonsWithNumbers.png](../../../../media/migrated\_media-ButtonsWithNumbers.png)
+![ButtonsWithNumbers.png](../../../../media/migrated_media-ButtonsWithNumbers.png)
 
 ### Understanding the scrollable Entity list values
 
@@ -130,7 +130,7 @@ Scrollable Entity lists present a few properties which can control how the Entit
 
 #### ListTopBound positions the first element
 
-The ListTopBound value is a good place to begin understanding now scrollable Entity lists work because it controls the starting location of the first Entity in the list. In other words, if ListTopBound is 256 (as it is in our example) then the very first button created will be at Y = 256. Graphically this means: ![ListBoundsExplanation1.png](../../../../media/migrated\_media-ListBoundsExplanation1.png)
+The ListTopBound value is a good place to begin understanding now scrollable Entity lists work because it controls the starting location of the first Entity in the list. In other words, if ListTopBound is 256 (as it is in our example) then the very first button created will be at Y = 256. Graphically this means: ![ListBoundsExplanation1.png](../../../../media/migrated_media-ListBoundsExplanation1.png)
 
 **Entity Position Matters** We mentioned above that the position of the first Entity in the list will be at ListTopBound (which is 256 in this case). However, the position is actually ListTopBound + Y. In other words, if you expose or tunnel in to the ButtonList's Y value, or if you modify the ButtonList's Y value in custom code, this will impact the position of the first Entity in the list - and as a result every Entity that follows. However, for simplicity this article assumes that the ButtonList is at Y = 0.
 
@@ -138,13 +138,13 @@ Try modifying the ListTopBound value. You will notice that the first item will a
 
 #### SpacingBetweenItems controls the vertical distance between items
 
-The SpacingBetweenItems controls how Entities in the list are positioned relative to each other. In this case our SpacingBetweenItems value is 64. This means that each Entity is positioned 64 units from each Entity below and above. Increasing this value will increase how far apart they are (creating a gap between the Entities). Decreasing this value decreases how far apart the Entities are (which may cause them to overlap). ![SpacingBetweenItems.png](../../../../media/migrated\_media-SpacingBetweenItems.png)
+The SpacingBetweenItems controls how Entities in the list are positioned relative to each other. In this case our SpacingBetweenItems value is 64. This means that each Entity is positioned 64 units from each Entity below and above. Increasing this value will increase how far apart they are (creating a gap between the Entities). Decreasing this value decreases how far apart the Entities are (which may cause them to overlap). ![SpacingBetweenItems.png](../../../../media/migrated_media-SpacingBetweenItems.png)
 
-**Why did we use 64?** You may be wondering why the spacing is set to 64, or put another way - if you were to create a new scrollable Entity list, how would you know what to set the value to? In this particular case we were able to accurately set the scrollable Entity list value because the Entity we're using (Button) has a ScaleY variable:![ButtonScaleY.png](../../../../media/migrated\_media-ButtonScaleY.png) **But the ScaleY is 32. Why did we use 64?** The word "Scale" has a special meaning in FlatRedBall. Scale means "the distance from center to edge". In other words, if our ScaleY value is 32, that means the distance from the center of our Entity to the edge of our Entity is 32. Therefore, the height is 2 times the ScaleY. Since 2 \* 32 = 64, we used a value of 64 for SpacingBetweenItems. You can read more information about Scale in the [IScalable page here](../../../../frb/docs/index.php)
+**Why did we use 64?** You may be wondering why the spacing is set to 64, or put another way - if you were to create a new scrollable Entity list, how would you know what to set the value to? In this particular case we were able to accurately set the scrollable Entity list value because the Entity we're using (Button) has a ScaleY variable:![ButtonScaleY.png](../../../../media/migrated_media-ButtonScaleY.png) **But the ScaleY is 32. Why did we use 64?** The word "Scale" has a special meaning in FlatRedBall. Scale means "the distance from center to edge". In other words, if our ScaleY value is 32, that means the distance from the center of our Entity to the edge of our Entity is 32. Therefore, the height is 2 times the ScaleY. Since 2 \* 32 = 64, we used a value of 64 for SpacingBetweenItems. You can read more information about Scale in the [IScalable page here](../../../../frb/docs/index.php)
 
 #### Bounds values and when Entities disappear
 
-You may not have noticed it, but Entities will disappear when scrolling the list. To make this more obvious, you may want to change the ListTopBound and ListBottomBound values to 128 (and -128) instead of 256. This will lower the top bound and raise the bottom bound so that fewer items are visible on screen ![ReducedList.png](../../../../media/migrated\_media-ReducedList.png) If you reduce the bounds and then try scrolling the list, you will notice that as you scroll it up, new Entities are created at the bottom of the list (with increasing values) and existing Entities are removed off of the top of the List. This is desirable for a number of reasons:
+You may not have noticed it, but Entities will disappear when scrolling the list. To make this more obvious, you may want to change the ListTopBound and ListBottomBound values to 128 (and -128) instead of 256. This will lower the top bound and raise the bottom bound so that fewer items are visible on screen ![ReducedList.png](../../../../media/migrated_media-ReducedList.png) If you reduce the bounds and then try scrolling the list, you will notice that as you scroll it up, new Entities are created at the bottom of the list (with increasing values) and existing Entities are removed off of the top of the List. This is desirable for a number of reasons:
 
 1. It keeps the number of live Entities small to improve performance and keep memory usage low
 2. It allows you to place Entities within a container instead of having the list always extend to the top and bottom of the Screen
@@ -155,7 +155,7 @@ The ListTopBound and ListBottomBound values control how high (or low) an Entity 
 * ListBottomBound = -128
 * SpacingBetweenItems = 64
 
-This means that an Entity will disappear from the top when its Y is greater than 128 + 64 = 196. An Entity will disappear from the bottom when its Y is less than -128 - 64 = -196. Grapically this looks like this: ![RemovalZone.png](../../../../media/migrated\_media-RemovalZone.png)
+This means that an Entity will disappear from the top when its Y is greater than 128 + 64 = 196. An Entity will disappear from the bottom when its Y is less than -128 - 64 = -196. Grapically this looks like this: ![RemovalZone.png](../../../../media/migrated_media-RemovalZone.png)
 
 **Why is Button "5" not removed?** You may be looking at the list and wondering why button #5 is present. The reason for this is because the scrollable Entity list has no idea how large the Button is - the logic for creating and removing Entities does not work based off of size. Instead, it works based off of position. Therefore, an Entity is removed **if its center is within the striped pink area**. Of course, you may be wondering why Button "5" isn't removed - it appears as if its position falls within the area. The reason is because its position is right on the border. Due to floating point inaccuracy, it's difficult to predict whether an Entity will be included or excluded when it falls right on the border. The important thing, however, is that you understand that once it moves into the area, it will be removed.
 

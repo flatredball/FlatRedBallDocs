@@ -8,7 +8,7 @@ Due to the popularity of the [Entity pattern](../../../../../../frb/docs/index.p
 
 The attachment hierarchy is a collection of [IAttachables](../../../../../../frb/docs/index.php) and their attachments - or child/parent relationships - which define which objects control the position and rotation of other objects. The following shows a typical attachment hierarchy for an [Entity](../../../../../../frb/docs/index.php).
 
-![AttachmentHierarchy.png](../../../../../../media/migrated\_media-AttachmentHierarchy.png)
+![AttachmentHierarchy.png](../../../../../../media/migrated_media-AttachmentHierarchy.png)
 
 In this hierarchy the entity itself is considered the "root" or [TopParent](../../../../../../frb/docs/index.php). This means that by default absolute changes to position and rotation will affect ONLY the root object. In other words, if the VisibleRepresentation's X is changed in code, the change will not be drawn or persist next frame. To change the VisibleRepresentation's absolute position or rotation, code must either change the root's absolute values, or the relative values of the VisibleRepresentation.
 
@@ -22,13 +22,13 @@ This may seem to present a problem; shapes have their absolute properties modifi
 
 Fortunately, this is not the case. Since shapes are often children of other [IAttachables](../../../../../../frb/docs/index.php), any modification to position or velocity gets "pushed up" to the root of the attachment hierarchy.
 
-![CollisionMethodModifications.png](../../../../../../media/migrated\_media-CollisionMethodModifications.png)
+![CollisionMethodModifications.png](../../../../../../media/migrated_media-CollisionMethodModifications.png)
 
 ### Shared Root Conflicts
 
 As mentioned above, the CollideAgainstMove and CollideAgainstBounce methods will update the root's absolute properties. However, if two shapes share the same root, the collision methods will not be able to reposition the objects properly. The following image shows the conflict:
 
-![CollideAgainstMoveConflict.png](../../../../../../media/migrated\_media-CollideAgainstMoveConflict.png)
+![CollideAgainstMoveConflict.png](../../../../../../media/migrated_media-CollideAgainstMoveConflict.png)
 
 Notice that in this situation both children will be modifying the parents' property. However, the parent's absolute values control the absolute values of the attached shapes.
 

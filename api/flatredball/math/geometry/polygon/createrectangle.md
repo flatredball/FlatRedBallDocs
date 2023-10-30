@@ -28,7 +28,7 @@ Polygon polygon = Polygon.CreateRectangle(scaleX, scaleY);
 ShapeManager.AddPolygon(polygon);
 ```
 
-![PolygonCreateRectangle.png](../../../../../../media/migrated\_media-PolygonCreateRectangle.png)
+![PolygonCreateRectangle.png](../../../../../../media/migrated_media-PolygonCreateRectangle.png)
 
 ### Value Explanation
 

@@ -8,7 +8,7 @@ The [Window](../frb/docs/index.php) class is the base class for all UI elements 
 
 This article contains a class called NumericalComboBox. This is a UI element which controls the brush size of a few tools in the open-source image editing software [Paint.NET](http://www.getpaint.net/).
 
-![NumericalComboBox.png](../media/migrated\_media-NumericalComboBox.png)
+![NumericalComboBox.png](../media/migrated_media-NumericalComboBox.png)
 
 Files Used: [NumericalComboBox.cs](../frb/docs/images/f/f2/NumericalComboBox.cs), [EventArgs.cs](../frb/docs/images/5/5e/EventArgs.cs)
 
@@ -43,4 +43,4 @@ void ValueChange(object sender, EventArgs<int> e)
 }
 ```
 
-![NumericalComboBoxInEngine.png](../media/migrated\_media-NumericalComboBoxInEngine.png)
+![NumericalComboBoxInEngine.png](../media/migrated_media-NumericalComboBoxInEngine.png)

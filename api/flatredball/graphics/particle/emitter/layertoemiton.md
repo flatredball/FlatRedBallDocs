@@ -45,4 +45,4 @@ Add the following to Update:
 emitter.TimedEmit();
 ```
 
-![EmitterOnLayer.png](../../../../../../media/migrated\_media-EmitterOnLayer.png)
+![EmitterOnLayer.png](../../../../../../media/migrated_media-EmitterOnLayer.png)

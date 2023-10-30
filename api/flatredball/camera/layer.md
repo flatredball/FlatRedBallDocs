@@ -66,4 +66,4 @@ SpriteManager.Cameras[1].X = player2.X;
 SpriteManager.Cameras[1].Y = player2.Y;
 ```
 
-![CameraLayers.png](../../../../media/migrated\_media-CameraLayers.png)
+![CameraLayers.png](../../../../media/migrated_media-CameraLayers.png)

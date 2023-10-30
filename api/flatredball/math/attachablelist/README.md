@@ -86,14 +86,14 @@ The reason for two-way relationships is to remove unused [IAttachables](../../..
   // The SpriteList is referenced only by the "spriteList" instance.
 ```
 
-![TwoWay1.png](../../../../../media/migrated\_media-TwoWay1.png)
+![TwoWay1.png](../../../../../media/migrated_media-TwoWay1.png)
 
 ```
   spriteList.Add(sprite);
   // Notice the two-way relationship between the Sprite and SpriteList
 ```
 
-![TwoWay2.png](../../../../../media/migrated\_media-TwoWay2.png)
+![TwoWay2.png](../../../../../media/migrated_media-TwoWay2.png)
 
 ```
 }
@@ -102,7 +102,7 @@ The reason for two-way relationships is to remove unused [IAttachables](../../..
 // anymore, but it still remains in memory.
 ```
 
-![TwoWay3.png](../../../../../media/migrated\_media-TwoWay3.png) Now, consider the result of using AddOneWay instead of Add:
+![TwoWay3.png](../../../../../media/migrated_media-TwoWay3.png) Now, consider the result of using AddOneWay instead of Add:
 
 ```
 {  // brackets to force scope
@@ -113,14 +113,14 @@ The reason for two-way relationships is to remove unused [IAttachables](../../..
   // The SpriteList is referenced only by the "spriteList" instance.
 ```
 
-![TwoWay1.png](../../../../../media/migrated\_media-TwoWay1.png)
+![TwoWay1.png](../../../../../media/migrated_media-TwoWay1.png)
 
 ```
   spriteList.AddOneWay(sprite);
   // Notice the one-way relationship.  The Sprite doesn't know about the SpriteList
 ```
 
-![OneWay2.png](../../../../../media/migrated\_media-OneWay2.png)
+![OneWay2.png](../../../../../media/migrated_media-OneWay2.png)
 
 ```
 }
@@ -129,7 +129,7 @@ The reason for two-way relationships is to remove unused [IAttachables](../../..
 // unused SpriteList is ready to be cleaned up.
 ```
 
-![OneWay3.png](../../../../../media/migrated\_media-OneWay3.png)
+![OneWay3.png](../../../../../media/migrated_media-OneWay3.png)
 
 ### Converting Between Two-Way and One-Way
 

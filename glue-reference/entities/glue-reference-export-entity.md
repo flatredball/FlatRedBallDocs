@@ -8,7 +8,7 @@ Screens and Entities can be exported through Glue [and later imported](../../../
 
 Once you have a Screen/Entity that you are ready to export, you can:
 
-1. Right-click on the Screen/Entity and select "Export Screen"/"Export Entity"![ExportScreen.png](../../../../media/migrated\_media-ExportScreen.png)
+1. Right-click on the Screen/Entity and select "Export Screen"/"Export Entity"![ExportScreen.png](../../../../media/migrated_media-ExportScreen.png)
 2. Navigate to the folder where you would like to save the exported element and click OK
 3. An Explorer window will appear showing you your exported file
 

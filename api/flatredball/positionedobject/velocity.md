@@ -57,7 +57,7 @@ void CustomActivity(bool firstTimeCalled)
 
 
 
-<figure><img src="../../../../media/2016-01-16\_08-10-08.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-16_08-10-08.gif" alt=""><figcaption></figcaption></figure>
 
  The code could also be modified to shoot the bullets at angles. For example, the following code shows how to shoot 5 bullets in a spread angle:
 
@@ -89,7 +89,7 @@ void CustomActivity(bool firstTimeCalled)
 
 ### &#x20;
 
-<figure><img src="../../../../media/2016-01-16\_08-14-14.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-16_08-14-14.gif" alt=""><figcaption></figcaption></figure>
 
 
 

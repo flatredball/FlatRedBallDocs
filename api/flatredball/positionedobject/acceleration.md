@@ -51,7 +51,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![AccelerationGif.gif](../../../../media/migrated\_media-AccelerationGif.gif)
+![AccelerationGif.gif](../../../../media/migrated_media-AccelerationGif.gif)
 
 ### Additional Information
 

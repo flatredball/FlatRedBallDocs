@@ -2,7 +2,7 @@
 
 ### Introduction
 
-To "billboard" a Sprite means to adjust its rotation so that it is always facing the Camera. Games like Doom used a billboard effect on enemies and items. Mario 64 also used a billboard effect on its trees. This effect is evident when running around billboarded Sprites. ![N64 super mario 64 start.jpg](../../../../media/migrated\_media-N64\_super\_mario\_64\_start.jpg) The AddSpriteToBillboard will tell the calling Camera to hold a reference to the argument [Sprite](../../../../frb/docs/index.php) and adjust its rotation every frame so that it faces the Camera.
+To "billboard" a Sprite means to adjust its rotation so that it is always facing the Camera. Games like Doom used a billboard effect on enemies and items. Mario 64 also used a billboard effect on its trees. This effect is evident when running around billboarded Sprites. ![N64 super mario 64 start.jpg](../../../../media/migrated_media-N64_super_mario_64_start.jpg) The AddSpriteToBillboard will tell the calling Camera to hold a reference to the argument [Sprite](../../../../frb/docs/index.php) and adjust its rotation every frame so that it faces the Camera.
 
 ### Usage
 

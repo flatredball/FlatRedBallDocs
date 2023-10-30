@@ -90,7 +90,7 @@ void BounceAgainstEdges(Sprite sprite)
 }
 ```
 
-![PauseEngine.png](../../../../../media/migrated\_media-PauseEngine.png)
+![PauseEngine.png](../../../../../media/migrated_media-PauseEngine.png)
 
 ### PauseEngine and Screens
 

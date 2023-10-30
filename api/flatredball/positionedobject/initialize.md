@@ -7,7 +7,7 @@ The Initialize method can be used to reset the PositionedObject variables back t
 * Position (absolute and relative)
 * Velocity (absolute and relative)
 * Acceleration (absolute and relative)
-* All ["real" values](../../../../frb/docs/index.php#Real\_Velocity\_and\_Acceleration)
+* All ["real" values](../../../../frb/docs/index.php#Real_Velocity_and_Acceleration)
 * Rotation (absolute and relative)
 * Rotation Velocity (absolute and relative)
 * Attachments (detach from parents)

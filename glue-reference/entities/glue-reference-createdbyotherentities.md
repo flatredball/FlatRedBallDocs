@@ -2,7 +2,7 @@
 
 The CreatedByOtherEntities property can be used if instances of an Entity will be created at runtime (such as bullets fired by a Spaceship Entity) in a location other than your current screen.
 
-![](../../media/2019-07-img\_5d38c53bac271.png)
+![](../../media/2019-07-img_5d38c53bac271.png)
 
 Setting this property to true does the following:
 

@@ -83,7 +83,7 @@ for (int i = mCircles.Count - 1; i > -1; i--)
 }
 ```
 
-With the frame rate adjustment code commented (not used):![GameTunnelingExample.png](../../../../media/migrated\_media-GameTunnelingExample.png) With the frame rate adjustment code used:![GameWithNoTunneling.png](../../../../media/migrated\_media-GameWithNoTunneling.png)
+With the frame rate adjustment code commented (not used):![GameTunnelingExample.png](../../../../media/migrated_media-GameTunnelingExample.png) With the frame rate adjustment code used:![GameWithNoTunneling.png](../../../../media/migrated_media-GameWithNoTunneling.png)
 
 ### TargetElapsedTime and performance
 

@@ -36,7 +36,7 @@ Add the following to Update:
 text.DisplayText = FlatRedBallServices.GetManagerInformation();
 ```
 
-![GetManagerInformation.png](../../../../media/migrated\_media-GetManagerInformation.png)
+![GetManagerInformation.png](../../../../media/migrated_media-GetManagerInformation.png)
 
 ### Accumulation Errors
 

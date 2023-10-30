@@ -55,7 +55,7 @@ else
 }
 ```
 
-![LineTutorial.png](../../../../../../media/migrated\_media-LineTutorial.png) Note that FlatRedBall expects shape colors to be pre-multiplied. Therefore a half-transparent red value would have a R,G,B,A value of (128,0,0,128).
+![LineTutorial.png](../../../../../../media/migrated_media-LineTutorial.png) Note that FlatRedBall expects shape colors to be pre-multiplied. Therefore a half-transparent red value would have a R,G,B,A value of (128,0,0,128).
 
 ### RelativePoint Properties
 
@@ -93,7 +93,7 @@ connectingLine.RelativePoint2 = new Point3D(
     rectangle2.Z - rectangle1.Z); // will be 0 in our case
 ```
 
-![ConnectedRectangles.png](../../../../../../media/migrated\_media-ConnectedRectangles.png)
+![ConnectedRectangles.png](../../../../../../media/migrated_media-ConnectedRectangles.png)
 
 ### Line limitations
 

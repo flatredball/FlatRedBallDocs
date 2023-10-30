@@ -4,7 +4,7 @@
 
 The StackPanel control is a container which can be used to hold children elements which can be stacked either horizontally or vertically.
 
-![](../../../../media/2018-08-img\_5b70b62069463.png)
+![](../../../../media/2018-08-img_5b70b62069463.png)
 
 ### Layout Requirements
 
@@ -37,6 +37,6 @@ stackPanel.AddChild(new Button());
 stackPanel.AddChild(new Button());
 ```
 
-![](../../../../media/2018-08-img\_5b70b85ea9907.png)
+![](../../../../media/2018-08-img_5b70b85ea9907.png)
 
 &#x20;   &#x20;

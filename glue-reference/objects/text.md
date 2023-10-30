@@ -20,7 +20,7 @@ To create a Text object in Glue:
 2. Set its Display Text value to some value like "Hello"
 3.  Click the **Preview** checkbox in Glue
 
-    ![](../../../../media/2017-02-img\_58acb9edc57c5.png)
+    ![](../../../../media/2017-02-img_58acb9edc57c5.png)
 
 ### Common Text Usage
 

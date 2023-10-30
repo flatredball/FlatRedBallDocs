@@ -27,23 +27,23 @@ This walkthrough covers a number of concepts for checkpoints and end of level:
 
 This demo includes two levels: Level1 and Level2. Each level has its own TMX file: Level1Map.tmx and Level2Map.TMX.
 
-![](../../media/2021-05-img\_60b55bea0ba64.png)
+![](../../media/2021-05-img_60b55bea0ba64.png)
 
 Each level includes an object layer with Checkpoint and EndOfLevel instances. These objects must be defined on an Object layer rather than a Tiled layer so that each instance can have custom properties like Name or LevelToGoTo. For example, the following Checkpoint instance in Level1Map.tmx is named **LevelStart.**
 
-![](../../media/2021-06-img\_60b636d787baf.png)
+![](../../media/2021-06-img_60b636d787baf.png)
 
 &#x20;The EndOfLevel instances also require a custom property to indicate which level is next. For example, the EndOfLevel instance on the right side of Level1Map.tmx has its NextLevel value set to Level2 as shown in the following image.
 
-![](../../media/2021-06-img\_60b637403706b.png)
+![](../../media/2021-06-img_60b637403706b.png)
 
 This custom property will automatically be assigned as long as it matches the property defined in Glue, including capitalization.
 
-![](../../media/2021-06-img\_60b637ecdd2cf.png)
+![](../../media/2021-06-img_60b637ecdd2cf.png)
 
 This demo assumes that each level has at least one Checkpoint instance named **LevelStart.** This instance sets where the player begins whenever the level is first created. Additional Checkpoint instances can be added. For example, Level1Map.tmx includes a second **Midpoint** checkpoint.
 
-![](../../media/2021-06-img\_60b6395479628.png)
+![](../../media/2021-06-img_60b6395479628.png)
 
 ### LastCheckpointName and Spawning
 
@@ -109,7 +109,7 @@ This code restarts the screen, which results in the entire screen being complete
 
 The PitCollision object is a ShapeCollection created in the GameScreen in Glue. It is referenced by the PlayerListVsPitCollision relationship which has a collision event as mentioned above.
 
-![](../../media/2021-06-img\_60b6f1da20081.png)
+![](../../media/2021-06-img_60b6f1da20081.png)
 
 The PitCollision is initially empty, but populated from the Map object - Level1Map.tmx or Level2Map.tmx depending on the current level. This population is done in the GameScreen's CustomInitialize using the AddToThis method.
 
@@ -131,7 +131,7 @@ void CustomInitialize()
 
 The code above searches the current Map for a ShapeCollection with the name PitCollision. The loaded TMX will automatically create ShapeCollections for every object layer with a shape in it. The Level1Map.tmx file includes a layer named PitCollision with a single large rectangle for collision.
 
-![](../../media/2021-06-img\_60b6f592f1073.png)
+![](../../media/2021-06-img_60b6f592f1073.png)
 
 A gap is left between the bottom of the map and the position of the rectangle so the player falls fully off-screen before colliding with the rectangle and respawning.&#x20;
 
@@ -146,7 +146,7 @@ The demo includes two types of checkpoints:
 
 Whether a checkpoint is visible or not is controlled by an exposed Visible property.
 
-![](../../media/2021-06-img\_60b8cf51505df.png)
+![](../../media/2021-06-img_60b8cf51505df.png)
 
 Only Visible Checkpoint instances are considered in the Player vs Checkpoint relationship event.
 

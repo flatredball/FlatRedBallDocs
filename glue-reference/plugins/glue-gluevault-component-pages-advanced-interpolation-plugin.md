@@ -10,7 +10,7 @@ If you have been using Glue for your projects then you may be familiar with stat
 
 ### What Are the Different Kinds of Interpolations
 
-A visualization of the different interpolations can be found [on this page](https://tweenjs.github.io/tween.js/examples/03\_graphs.html).
+A visualization of the different interpolations can be found [on this page](https://tweenjs.github.io/tween.js/examples/03_graphs.html).
 
 ### Creating Interpolation Endpoints
 
@@ -23,7 +23,7 @@ Interpolation endpoints are the "start" and "end" of your interpolation. These e
 
 ### Enabling Advanced Interpolation
 
-The first step in using advanced interpolation is to enable it on a given Screen/Entity. Since the presence of advanced interpolation adds a small amount of overhead, it must be manually added to Entities/Screens which need it. To add advanced interpolation, set the "HasAdvancedInterpolation" property to true in Glue: ![HasAdvancedInterpolation.PNG](../../../../media/migrated\_media-HasAdvancedInterpolation.PNG)
+The first step in using advanced interpolation is to enable it on a given Screen/Entity. Since the presence of advanced interpolation adds a small amount of overhead, it must be manually added to Entities/Screens which need it. To add advanced interpolation, set the "HasAdvancedInterpolation" property to true in Glue: ![HasAdvancedInterpolation.PNG](../../../../media/migrated_media-HasAdvancedInterpolation.PNG)
 
 ###
 

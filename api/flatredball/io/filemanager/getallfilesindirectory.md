@@ -59,4 +59,4 @@ foreach (string s in allFiles)
 }
 ```
 
-![GetAllFilesInDirectory.png](../../../../../media/migrated\_media-GetAllFilesInDirectory.png)
+![GetAllFilesInDirectory.png](../../../../../media/migrated_media-GetAllFilesInDirectory.png)

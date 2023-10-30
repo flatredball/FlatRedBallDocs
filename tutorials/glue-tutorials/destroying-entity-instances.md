@@ -10,11 +10,11 @@ In short, if you are manually adding an instance from the game then you should a
 
 The simplest scenario is when an instance exists as an Object in a Screen or Entity. The following image shows an instance called "CharacterInstance" under the GameScreen:
 
-![CharacterInstanceInScreen.png](../../../media/migrated\_media-CharacterInstanceInScreen.png)
+![CharacterInstanceInScreen.png](../../../media/migrated_media-CharacterInstanceInScreen.png)
 
 In this situation, the generated code will automatically handle calling Destroy. We can look at the GameScreen's Destroy method to verify:
 
-![CharacterInstanceDestroy.png](../../../media/migrated\_media-CharacterInstanceDestroy.png)
+![CharacterInstanceDestroy.png](../../../media/migrated_media-CharacterInstanceDestroy.png)
 
 ### Instances added to PositionedObjectLists which are created in Glue
 
@@ -22,7 +22,7 @@ The second situation is slightly more complicated, but still requires no manual 
 
 First we'll need a PositionedObjectList in Glue:
 
-![CharacterListInGlue.png](../../../media/migrated\_media-CharacterListInGlue.png)
+![CharacterListInGlue.png](../../../media/migrated_media-CharacterListInGlue.png)
 
 Now instances created in custom code can be added to this list. For example, the following code could be used in CustomInitialize of GameScreen:
 
@@ -36,11 +36,11 @@ for(int i = 0; i < 4; i++)
 
 Since the CharacterList is a PositionedObjectList added in Glue, there is no need to manually destroy the Character instances added to CharacterList. Let's look at the generated code to verify:
 
-![GeneratedCodeDestroyList.png](../../../media/migrated\_media-GeneratedCodeDestroyList.png)
+![GeneratedCodeDestroyList.png](../../../media/migrated_media-GeneratedCodeDestroyList.png)
 
 #### How does the Generated code work?
 
-You may be wondering how the generated code shown above works. The reason this code clears the list (and destroys all contained instances) is because all Entities inherit from PositionedObject. This means that they share a [two-way relationship](../../../frb/docs/index.php#Two\_Way\_Relationships) with any PositionedObjectList that they are added to. When an Entity instance is destroyed, it removes itself from any PositionedObjectLists that it is a part of. Therefore, when a Character instance it is destroyed, it removes itself from the CharacterList.
+You may be wondering how the generated code shown above works. The reason this code clears the list (and destroys all contained instances) is because all Entities inherit from PositionedObject. This means that they share a [two-way relationship](../../../frb/docs/index.php#Two_Way_Relationships) with any PositionedObjectList that they are added to. When an Entity instance is destroyed, it removes itself from any PositionedObjectLists that it is a part of. Therefore, when a Character instance it is destroyed, it removes itself from the CharacterList.
 
 ### Destroying instances created in custom code
 
@@ -98,7 +98,7 @@ for(int i = BulletList.Count - 1; i > -1; i--)
 }
 ```
 
-Notice that the code uses a "reverse for-loop". For more information on this, see [this page](../../../frb/docs/index.php#Reverse\_For\_Loops)
+Notice that the code uses a "reverse for-loop". For more information on this, see [this page](../../../frb/docs/index.php#Reverse_For_Loops)
 
 WARNING: Unless you are otherwise accounting for Entities in a PositionedObjectList which has been created in Glue, you should **never** call methods on the List itself which remove elements from it. In other words:
 

@@ -19,12 +19,12 @@ The FlatRedBall Editor supports the creation and population of TileNodeNetworks.
 1. Select the **GameScreen**
 2.  Click **Add Object to GameScreen** in the **Quick Actions** tab
 
-    ![](../../../../../media/2021-08-img\_61278ef517345.png)
+    ![](../../../../../media/2021-08-img_61278ef517345.png)
 3. Select **TileNodeNetwork** as the type
 4. Enter a name for your TileNodeNetwork such as **WalkingNodeNetwork**
 5.  Click **OK**
 
-    ![](../../../../../media/2021-08-img\_61278f797745d.png)
+    ![](../../../../../media/2021-08-img_61278f797745d.png)
 
 Be sure to create the TileNodeNetwork in the **GameScreen** so it is included in all levels. Once you have created a TileNodeNetwork, it can be filled from certain tiles. It can also be convenient to fill a TileNodeNetwork from the absence of tiles if the tiles represent solid areas such as walls. To create nodes where there are no tiles:
 
@@ -34,7 +34,7 @@ Be sure to create the TileNodeNetwork in the **GameScreen** so it is included in
 4. Select your map and the layer. Typically this will be **Map** and **GameplayPlay** layer.
 5.  Verify the **All Empty** option is selected
 
-    ![](../../../../../media/2021-08-img\_612791599f0de.png)
+    ![](../../../../../media/2021-08-img_612791599f0de.png)
 
 Optionally you may want to make the TileNodeNetwork visible so you can verify that it has been filled in:
 
@@ -42,21 +42,21 @@ Optionally you may want to make the TileNodeNetwork visible so you can verify th
 2. Click the **Variables** tab
 3.  Check the **Visible** checkbox
 
-    ![](../../../../../media/2021-08-img\_6127925fcfb97.png)
+    ![](../../../../../media/2021-08-img_6127925fcfb97.png)
 
 The game should display the node network wherever no tiles are present.
 
-![](../../../../../media/2021-08-img\_61279322b6383.png)
+![](../../../../../media/2021-08-img_61279322b6383.png)
 
 #### Filling TileNodeNetwork from Specific Types
 
 Some games include specific tiles for pathfinding rather than all empty tiles. The first step is to determine which tile to use as walkable tiles. Whichever tile is used should have a type specified in the tileset in Tiled.
 
-![](../../../../../media/2021-08-img\_612793df73271.png)
+![](../../../../../media/2021-08-img_612793df73271.png)
 
 Once this tile Type  is set (and the .tsx is saved), this tile can be used to mark walkable areas in the map.
 
-![](../../../../../media/2021-08-img\_6127946f19390.png)
+![](../../../../../media/2021-08-img_6127946f19390.png)
 
 To use these tiles:
 
@@ -68,7 +68,7 @@ To use these tiles:
 
 The TileNodeNetwork will now place a node wherever the walkable tiles are present.
 
-![](../../../../../media/2021-08-img\_6127951030eb7.png)
+![](../../../../../media/2021-08-img_6127951030eb7.png)
 
 ### Example - Creating a TileNodeNetwork In Code
 
@@ -100,7 +100,7 @@ tileNodeNetwork.FillCompletely();
 tileNodeNetwork.Visible = true;
 ```
 
-![TileNodeNetwork.png](../../../../../media/migrated\_media-TileNodeNetwork.png)
+![TileNodeNetwork.png](../../../../../media/migrated_media-TileNodeNetwork.png)
 
 ### Example - Creating a TileNodeNetwork from a TileMap in Code
 

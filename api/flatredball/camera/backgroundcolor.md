@@ -21,7 +21,7 @@ if (FlatRedBall.Input.InputManager.Keyboard.KeyPushed(Keys.Down))
 }
 ```
 
-![CameraBackgroundColor.png](../../../../media/migrated\_media-CameraBackgroundColor.png)
+![CameraBackgroundColor.png](../../../../media/migrated_media-CameraBackgroundColor.png)
 
 ### Transparent Background Color
 

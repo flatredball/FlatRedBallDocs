@@ -130,7 +130,7 @@ We can add sliding animations by checking the IsSlidingOnWall variable either in
    ![](<../../../.gitbook/assets/image (2) (1).png>)
 4. Select **CharacterWallSlide** animation on the new row
 5. Enter **IsSlidingOnWall** for the **Custom Condition** on the new row\
-   ![](http://flatredball.com/wp-content/uploads/2023/10/img\_6521cf490bf72.png)
+   ![](http://flatredball.com/wp-content/uploads/2023/10/img_6521cf490bf72.png)
 
 The player will now play the CharacterWallSlide animations if the IsSlidingOnWall property is set to true. Note that the .achx file contains CharacterWallSlideLeft and CharacterWallSlideRight, but the generated code selects the appropriate one based on which way the player is facing.
 

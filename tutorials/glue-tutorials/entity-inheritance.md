@@ -24,14 +24,14 @@ Inheritance requires at least two Entities. However, to show the value of inheri
 3. Right-click (again) on your Entities tree item and select "Add Entity"
 4. Name your new Entity "Enemy"
 
-Now you should have three Entities![Glue3Entities.png](../../../media/migrated\_media-Glue3Entities.png)
+Now you should have three Entities![Glue3Entities.png](../../../media/migrated_media-Glue3Entities.png)
 
 ### Setting up the inheritance
 
 Now that we have our three Entities, let's make the Player and Enemy inherit from Character. To do this:
 
 1. Select your "Player" Entity
-2. Next to "Base Entity", use the drop-down window to select "Entity\Character"![GlueSetCharacterBase.png](../../../media/migrated\_media-GlueSetCharacterBase.png)
+2. Next to "Base Entity", use the drop-down window to select "Entity\Character"![GlueSetCharacterBase.png](../../../media/migrated_media-GlueSetCharacterBase.png)
 3. Repeat the two steps above for your "Enemy" Entity by selecting it, and setting its "Base Entity" to "Entity\Character"
 
 ### Setting Variables in derived Entities
@@ -39,12 +39,12 @@ Now that we have our three Entities, let's make the Player and Enemy inherit fro
 To review the terminology, if "Enemy" inherits from "Character", then "Character" is the **base** class and "Enemy" is the **derived** class. For this example, we'll use a custom variable called "MovementSpeed". If you don't have a MovementSpeed variable, you can add it to the Character to follow along, or you can use the WalkSpeed variable created in the previous tutorials. At this point the Character Entity defines the MovementSpeed variable, but the other Entities (Player and Enemy) do not have access to this variable. We can give them access so that they can set their own MovementSpeed values as follows:
 
 1. Expand your Character's Variables item and select "MovementSpeed"
-2. Set the "Set By Derived" property to "True"![GlueSetByDerived.png](../../../media/migrated\_media-GlueSetByDerived.png)
-3. If you deselect your "MovementSpeed" variable, you'll notice that the tree item is a darker color to indicate that derived classes can change the value![GlueDimmedVariableItem.png](../../../media/migrated\_media-GlueDimmedVariableItem.png)
+2. Set the "Set By Derived" property to "True"![GlueSetByDerived.png](../../../media/migrated_media-GlueSetByDerived.png)
+3. If you deselect your "MovementSpeed" variable, you'll notice that the tree item is a darker color to indicate that derived classes can change the value![GlueDimmedVariableItem.png](../../../media/migrated_media-GlueDimmedVariableItem.png)
 
 Now that you've set the variable to be "Set By Derived", you can set the value in any derived class. To do that:
 
-1. Expand your Enemy's Variables tree item. Since it inherits from Character and since "MovementSpeed" is "Set By Derived", then you'll see the "MovementSpeed" variable there. Notice that it's yellow to indicate that it's a variable that's inherited from a base Entity.![GlueInheritedCustomVariable.png](../../../media/migrated\_media-GlueInheritedCustomVariable.png)
+1. Expand your Enemy's Variables tree item. Since it inherits from Character and since "MovementSpeed" is "Set By Derived", then you'll see the "MovementSpeed" variable there. Notice that it's yellow to indicate that it's a variable that's inherited from a base Entity.![GlueInheritedCustomVariable.png](../../../media/migrated_media-GlueInheritedCustomVariable.png)
 
 Now you can simply edit this value just as you would any other normal value, only it can be used in the base or inherited Entity. Very convenient!
 
@@ -58,25 +58,25 @@ Objects can be defined in base Entities but set in derived Entities - just like 
 
 Now the newly-created "Collision" object should be selected. We'll need to set the type of object we'll be using, and also change the properties so that the derived Entities have access to the "Collision" object:
 
-1. Change the "Source Type" to "FlatRedBall Type"![GlueFlatRedBallType.png](../../../media/migrated\_media-GlueFlatRedBallType.png)
-2. Change the "Source Class Type" to "Circle![GlueCircleType.png](../../../media/migrated\_media-GlueCircleType.png)
-3. Change the "Set By Derived" property to True![GlueSetByDerivedCircle.png](../../../media/migrated\_media-GlueSetByDerivedCircle.png)
+1. Change the "Source Type" to "FlatRedBall Type"![GlueFlatRedBallType.png](../../../media/migrated_media-GlueFlatRedBallType.png)
+2. Change the "Source Class Type" to "Circle![GlueCircleType.png](../../../media/migrated_media-GlueCircleType.png)
+3. Change the "Set By Derived" property to True![GlueSetByDerivedCircle.png](../../../media/migrated_media-GlueSetByDerivedCircle.png)
 
-Notice that we didn't set this to be set from file. Instead, we said that it's simply going to be a Circle, but the derived Entities will control how it is actually set. Just like before, if you expand your Enemy's (or Player's) Objects item, you should see "Collision" showing up as a yellow item![GlueCollisionInherited.png](../../../media/migrated\_media-GlueCollisionInherited.png)
+Notice that we didn't set this to be set from file. Instead, we said that it's simply going to be a Circle, but the derived Entities will control how it is actually set. Just like before, if you expand your Enemy's (or Player's) Objects item, you should see "Collision" showing up as a yellow item![GlueCollisionInherited.png](../../../media/migrated_media-GlueCollisionInherited.png)
 
 ### Setting derived Collision properties
 
 The next step is to set the properties of the Collision object in the derived Entities. To do this:
 
 1. Select the Collision object in your Enemy Entity (make sure it's yellow)
-2. Change its SourceType from "FlatRedBall Type" to "File"![GlueCollisionSourceType.png](../../../media/migrated\_media-GlueCollisionSourceType.png)
-3. We'll use a shortcut feature here. Change the "Source File" to "\<New File...>"![GlueNewFileShortcut.png](../../../media/migrated\_media-GlueNewFileShortcut.png)
-4. In the new file window, select the type as "ShapeCollection (.shcx)" and set the name as CollisionFile![GlueNewCollisionFile.png](../../../media/migrated\_media-GlueNewCollisionFile.png)
-5. If you haven't yet, set the file association for .shcx files (different from Scene (.scnx) files) to the PolygonEditor. If you need help with this step, see [this page](../../../frb/docs/index.php#Setting\_up\_File\_Associaton).
+2. Change its SourceType from "FlatRedBall Type" to "File"![GlueCollisionSourceType.png](../../../media/migrated_media-GlueCollisionSourceType.png)
+3. We'll use a shortcut feature here. Change the "Source File" to "\<New File...>"![GlueNewFileShortcut.png](../../../media/migrated_media-GlueNewFileShortcut.png)
+4. In the new file window, select the type as "ShapeCollection (.shcx)" and set the name as CollisionFile![GlueNewCollisionFile.png](../../../media/migrated_media-GlueNewCollisionFile.png)
+5. If you haven't yet, set the file association for .shcx files (different from Scene (.scnx) files) to the PolygonEditor. If you need help with this step, see [this page](../../../frb/docs/index.php#Setting_up_File_Associaton).
 6. Double-click the newly-created file under your Enemy Entity's "Files" tree item. This should open the [PolygonEditor](../../../frb/docs/index.php).
 7. Add a new Circle. For help on working with the [PolygonEditor](../../../frb/docs/index.php), see [this page](../../../frb/docs/index.php).
-8. Save your ShapeCollection in the [PolygonEditor](../../../frb/docs/index.php). Be sure to save a ShapeCollection, not a Scene or Polygon List.![GlueSaveShapeCollection.png](../../../media/migrated\_media-GlueSaveShapeCollection.png)
-9. Return to your Enemy's "Collision" object and finally set the "Source Name" to the Circle you just created![GlueSetCircleSourceName.png](../../../media/migrated\_media-GlueSetCircleSourceName.png)
+8. Save your ShapeCollection in the [PolygonEditor](../../../frb/docs/index.php). Be sure to save a ShapeCollection, not a Scene or Polygon List.![GlueSaveShapeCollection.png](../../../media/migrated_media-GlueSaveShapeCollection.png)
+9. Return to your Enemy's "Collision" object and finally set the "Source Name" to the Circle you just created![GlueSetCircleSourceName.png](../../../media/migrated_media-GlueSetCircleSourceName.png)
 
 Now you can repeat the above steps for your Player Entity, but it will have its own .shcx file, and the Circle in that .shcx file can be completely different. Keep in mind that since the source type defines Collision as a Circle, then all classes that inherit that property must assign a Circle to it.
 

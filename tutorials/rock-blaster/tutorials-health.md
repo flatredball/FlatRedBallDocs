@@ -11,7 +11,7 @@ Previously we added a score Text object in Gum. This Text object existed in _scr
 1. Open Gum
 2.  Right-click on the **Components** folder and select **Add Component**
 
-    ![](../../../media/2021-03-img\_604d883db3d10.png)
+    ![](../../../media/2021-03-img_604d883db3d10.png)
 3. Enter the name HealthBar and click OK
 
 ### Creating HealthBar Visuals
@@ -23,7 +23,7 @@ First we'll adjust main component values to be sized properly and to be position
 * Width = 48
 * Height = 12
 
-![](../../../media/2021-03-img\_604d8b4084d1a.png)
+![](../../../media/2021-03-img_604d8b4084d1a.png)
 
 Next we'll add a background ColoredRectangle:
 
@@ -35,18 +35,18 @@ Next we'll add a background ColoredRectangle:
 
 
 
-<figure><img src="../../../media/2016-01-2021\_March\_13\_212209.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_March_13_212209.gif" alt=""><figcaption></figcaption></figure>
 
  This ColoredRectangle will be the background of our HealthBar which will display if the player takes damage, so we will change its color to red.
 
-![](../../../media/2021-03-img\_604d8d29a6a1b.png)
+![](../../../media/2021-03-img_604d8d29a6a1b.png)
 
 Repeat the steps above, except this time:
 
 * Set the name to Foreground
 * Set the color to a light green color
 
-![](../../../media/2021-03-img\_604d8da489655.png)
+![](../../../media/2021-03-img_604d8da489655.png)
 
 ### Creating a Percent Variable
 
@@ -58,11 +58,11 @@ Our HealthBar is almost ready to be used except it doesn't have an easy way to d
 4. Change **Width** to **100**
 5. Change its **Width Unit** to **Percentage of Container**
 
-![](../../../media/2021-03-img\_604d8fb05b5ef.png)
+![](../../../media/2021-03-img_604d8fb05b5ef.png)
 
 Now the Foreground can have its width changed, and the green bar will show the appropriate percent. 
 
-<figure><img src="../../../media/2016-01-2021\_March\_13\_213724.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_March_13_213724.gif" alt=""><figcaption></figcaption></figure>
 
  We want to expose this variable so that it can be accessed on the HealthBar itself:
 
@@ -72,7 +72,7 @@ Now the Foreground can have its width changed, and the green bar will show the a
 
 
 
-<figure><img src="../../../media/2016-01-2021\_March\_13\_211926.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_March_13_211926.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -87,18 +87,18 @@ Entities can contain instances of Gum objects. We will add a HealthBar to our Pl
 5. Select the **HealthBarRuntime** option. Note that this is the same name as the **HealthBar** Component in Gum with the word "Runtime" at the end.
 6. Click **OK**
 
-![](../../../media/2022-12-img\_63a84de9a55de.png)
+![](../../../media/2022-12-img_63a84de9a55de.png)
 
 If we run the game now, we'll see the HealthBar on top of the Player. 
 
-<figure><img src="../../../media/2016-01-2021\_March\_13\_214537.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_March_13_214537.gif" alt=""><figcaption></figcaption></figure>
 
  First we'll adjust the Y value of the HealthBar so that it doesn't overlap the ship.
 
 1. Select the HealthBar component in Gum
 2. Change Y to -28. By default, negative Y moves an object up in Gum.
 
-![](../../../media/2021-03-img\_604d93d39b18b.png)
+![](../../../media/2021-03-img_604d93d39b18b.png)
 
 Next we'll adjust the HealthBar so it doesn't rotate with the ship. At the time of this writing, this cannot be done through Gum, so it must be done in code. To do this:
 
@@ -114,7 +114,7 @@ hudParent.ParentRotationChangesRotation = false;
 
 Now the HealthBar appears above the player and does not rotate with the player. 
 
-<figure><img src="../../../media/2016-01-2021\_March\_13\_220225.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-2021_March_13_220225.gif" alt=""><figcaption></figcaption></figure>
 
 
 

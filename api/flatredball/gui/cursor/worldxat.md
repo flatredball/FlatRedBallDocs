@@ -35,7 +35,7 @@ circle.X = GuiManager.Cursor.WorldXAt(0);
 circle.Y = GuiManager.Cursor.WorldYAt(0);
 ```
 
-![CursorWorldXAt.png](../../../../../media/migrated\_media-CursorWorldXAt.png)
+![CursorWorldXAt.png](../../../../../media/migrated_media-CursorWorldXAt.png)
 
 ### Additional Arguments
 

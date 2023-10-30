@@ -18,11 +18,11 @@ For more information on Glue versions, see the [gluj/glux page](../../glue-refer
 
 For this example we will assume a Sprite named SpriteInstance.
 
-![](../../media/2022-02-img\_621bdf9420500.png)
+![](../../media/2022-02-img_621bdf9420500.png)
 
 This Sprite is contained in a page named MainMenuGum which is assumed to be inside a FlatRedBall Screen named MainMenu.
 
-![](../../media/2022-02-img\_621bdfc9e687d.png)
+![](../../media/2022-02-img_621bdfc9e687d.png)
 
 We can set the Sprite to be animated using the following code in CustomInitialize:
 
@@ -39,6 +39,6 @@ gumSprite.TextureAddress = Gum.Managers.TextureAddress.Custom;
 
 The Gum Sprite now animates when running the game. 
 
-<figure><img src="../../media/2022-02-27\_13-39-06.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2022-02-27_13-39-06.gif" alt=""><figcaption></figcaption></figure>
 
 

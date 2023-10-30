@@ -66,7 +66,7 @@ Add the following to Update to display frame time:
 text.DisplayText = TimeManager.SecondDifference.ToString();
 ```
 
-Automatically Updated: ![AutomaticallyUpdatedSprites.png](../../../../media/migrated\_media-AutomaticallyUpdatedSprites.png) Manually Updated: ![ManuallyUpdatedSprites.png](../../../../media/migrated\_media-ManuallyUpdatedSprites.png)
+Automatically Updated: ![AutomaticallyUpdatedSprites.png](../../../../media/migrated_media-AutomaticallyUpdatedSprites.png) Manually Updated: ![ManuallyUpdatedSprites.png](../../../../media/migrated_media-ManuallyUpdatedSprites.png)
 
 ### Related Articles
 

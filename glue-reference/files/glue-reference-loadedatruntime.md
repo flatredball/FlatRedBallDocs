@@ -4,7 +4,7 @@
 
 The LoadedAtRuntime property can be used to tell FlatRedBall whether to load a particular file when its Screen or Entity is created. By default the LoadedAtRuntime property is set to true, which means that an instance of a runtime object for the given file will be created. For example, if a PNG file is added to a Screen, then that Screen will contain a Texture2D instance.
 
-![](../../../../media/2023-06-img\_6491c586e85be.png)
+![](../../../../media/2023-06-img_6491c586e85be.png)
 
 If this value is set to false, then generated code will not contain a property for that file, nor will it automatically load the file. However, the file will still be part of the project, so you can load it and work with it in custom code.
 

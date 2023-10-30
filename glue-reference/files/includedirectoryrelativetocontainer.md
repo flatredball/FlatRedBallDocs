@@ -8,7 +8,7 @@ The IncludeDirectoryRelativeToContainer property controls whether the generated 
 
 As mentioned above, by default this value is false. Therefore, files added to folders will not include their folder in the generated property name. For example, consider the InFolderTexture.png file which is contained in Folder1
 
-![](../../../../media/2023-02-img\_63e252deee778.png)
+![](../../../../media/2023-02-img_63e252deee778.png)
 
 This produces the following code in GlobalContent:
 
@@ -18,7 +18,7 @@ public static Microsoft.Xna.Framework.Graphics.Texture2D InFolderTexture { get; 
 
 Notice the name in code does not include Folder1. If this file is copied into Folder2, the FlatRedBall Editor renames the copy as to avoid naming conflicts. 
 
-<figure><img src="../../../../media/2023-02-07\_06-33-51.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2023-02-07_06-33-51.gif" alt=""><figcaption></figcaption></figure>
 
  The generated code matches the name:
 
@@ -29,7 +29,7 @@ public static Microsoft.Xna.Framework.Graphics.Texture2D InFolderTexture1 { get;
 
 If the IncludeDirectoryRelativeToContainer can be set to true so that the generated property includes the folder name.
 
-![](../../../../media/2023-02-img\_63e2541e712d1.png)
+![](../../../../media/2023-02-img_63e2541e712d1.png)
 
 Once this is set, the property generated includes the Folder1 prefix:
 
@@ -39,7 +39,7 @@ public static Microsoft.Xna.Framework.Graphics.Texture2D Folder1_InFolderTexture
 
 This allows the same-named files to exist in different directories, because they will ultimately produce different property names. For example, copying the InFolderTexture.png file into Folder2 now results in the file copied without being renamed. 
 
-<figure><img src="../../../../media/2023-02-07\_06-45-05.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2023-02-07_06-45-05.gif" alt=""><figcaption></figcaption></figure>
 
  Each property is now uniquely qualified by its folder.
 

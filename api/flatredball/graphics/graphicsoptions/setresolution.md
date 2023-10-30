@@ -12,7 +12,7 @@ The following code resizes the screen to display a resolution of 320X240.
 FlatRedBallServices.GraphicsOptions.SetResolution(320, 240);
 ```
 
-![ResizedWindow.png](../../../../../media/migrated\_media-ResizedWindow.png)
+![ResizedWindow.png](../../../../../media/migrated_media-ResizedWindow.png)
 
 ### Changing Resolutions
 
@@ -43,4 +43,4 @@ FlatRedBallServices.GraphicsOptions.SetResolution(GraphicsDevice.DisplayMode.Wid
     GraphicsDevice.DisplayMode.Height);
 ```
 
-While this may seem fine, let's investigate what happens. The SetResolution method sets the resolution to the monitor's width/height; however, it can't actually set it to the full height. The reason for this is because Windows prevents the game window from being much taller than your current resolution. In other words, Windows resizes your game window's height to allow for the title bar and window borders. Here's a screen shot from Visual Studio showing the variables being different: ![ResolutionSettingIssue.png](../../../../../media/migrated\_media-ResolutionSettingIssue.png) Notice that the code above sets the resolution to the GraphicsDevice.DisplayMode.Height which clearly shows up as 768 on my monitor; however, the FlatRedBallServices.GraphicsOptions.ResolutionHeight (stored in a height variable) is only 752. The moral of the story is - when in windowed mode, don't set your resolution to the monitor's full-screen resolution.
+While this may seem fine, let's investigate what happens. The SetResolution method sets the resolution to the monitor's width/height; however, it can't actually set it to the full height. The reason for this is because Windows prevents the game window from being much taller than your current resolution. In other words, Windows resizes your game window's height to allow for the title bar and window borders. Here's a screen shot from Visual Studio showing the variables being different: ![ResolutionSettingIssue.png](../../../../../media/migrated_media-ResolutionSettingIssue.png) Notice that the code above sets the resolution to the GraphicsDevice.DisplayMode.Height which clearly shows up as 768 on my monitor; however, the FlatRedBallServices.GraphicsOptions.ResolutionHeight (stored in a height variable) is only 752. The moral of the story is - when in windowed mode, don't set your resolution to the monitor's full-screen resolution.

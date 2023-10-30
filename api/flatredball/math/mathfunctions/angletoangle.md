@@ -56,11 +56,11 @@ Add the following to Update:
  }
 ```
 
-![AngleToAngle.png](../../../../../media/migrated\_media-AngleToAngle.png)
+![AngleToAngle.png](../../../../../media/migrated_media-AngleToAngle.png)
 
 ### Range Checks
 
-The AngleToAngle can be used to check if one object is within an angle range. For example, you may be making a stealth game where the player must avoid being seen by enemies. We'll assume that the enemies have a property called ViewAngle which represents the edge-to-edge angle that the enemies can see. We'll also assume that this code has calculated the angle from the enemy to the player. For information on how to calculate this, see [this page](../../../../../frb/docs/index.php#Angle\_Between\_Two\_Points).
+The AngleToAngle can be used to check if one object is within an angle range. For example, you may be making a stealth game where the player must avoid being seen by enemies. We'll assume that the enemies have a property called ViewAngle which represents the edge-to-edge angle that the enemies can see. We'll also assume that this code has calculated the angle from the enemy to the player. For information on how to calculate this, see [this page](../../../../../frb/docs/index.php#Angle_Between_Two_Points).
 
 ```
 // angleToPlayer is the angle from the enemy to the player

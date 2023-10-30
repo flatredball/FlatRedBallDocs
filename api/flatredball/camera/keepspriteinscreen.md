@@ -44,7 +44,7 @@ InputManager.Keyboard.ControlPositionedObject(mSprite);
 SpriteManager.Camera.KeepSpriteInScreen(mSprite);
 ```
 
-![CameraKeepSpriteInScreen.png](../../../../media/migrated\_media-CameraKeepSpriteInScreen.png)
+![CameraKeepSpriteInScreen.png](../../../../media/migrated_media-CameraKeepSpriteInScreen.png)
 
 ### KeepSpriteInScreen and Entities
 

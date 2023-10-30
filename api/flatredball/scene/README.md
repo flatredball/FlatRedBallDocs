@@ -28,7 +28,7 @@ You can load a Scene just like any other file (such as a .png) though the FlatRe
  scene.AddToManagers();
 ```
 
-![SplashScreen.png](../../../../media/migrated\_media-SplashScreen.png) The Scene adds all of its contained objects to the appropriate managers through the AddToManagers method. Prior to calling AddToManagers all objects referenced by the Scene are stored in memory but they are not managed or drawn. Notice that the last line calls the Clear method. The reason for this is because Scenes holds most referenced instances in [AttachableLists](../../../../frb/docs/index.php) which have two way relationships. If the reference to the scene object is lost but it is not cleared, all referenced [IAttachables](../../../../frb/docs/index.php) will continue to reference all [AttachableLists](../../../../frb/docs/index.php) held in the Scene. While this is not a critical problem, it can increase memory use slightly and reduce the speed of the garbage collector. For more information on two-way relationships and an explanation on why [AttachableLists](../../../../frb/docs/index.php) must be cleared, see the [AttachableList entry](../../../../frb/docs/index.php). Calling the Clear method **will not remove all objects from the engine**, so you can call this after adding eveything to the engine with the AddToManagers call.
+![SplashScreen.png](../../../../media/migrated_media-SplashScreen.png) The Scene adds all of its contained objects to the appropriate managers through the AddToManagers method. Prior to calling AddToManagers all objects referenced by the Scene are stored in memory but they are not managed or drawn. Notice that the last line calls the Clear method. The reason for this is because Scenes holds most referenced instances in [AttachableLists](../../../../frb/docs/index.php) which have two way relationships. If the reference to the scene object is lost but it is not cleared, all referenced [IAttachables](../../../../frb/docs/index.php) will continue to reference all [AttachableLists](../../../../frb/docs/index.php) held in the Scene. While this is not a critical problem, it can increase memory use slightly and reduce the speed of the garbage collector. For more information on two-way relationships and an explanation on why [AttachableLists](../../../../frb/docs/index.php) must be cleared, see the [AttachableList entry](../../../../frb/docs/index.php). Calling the Clear method **will not remove all objects from the engine**, so you can call this after adding eveything to the engine with the AddToManagers call.
 
 **Note:** For more information on how to add files to Visual Studio and how to control how they are built, see the ["adding files to your project" page](../../../../frb/docs/index.php).
 
@@ -50,7 +50,7 @@ myScene.RemoveFromManagers();
 
 ### Saving a Scene
 
-See the [Saving a .scnx wiki entry](../../../../frb/docs/index.php#Saving\_a\_.scnx).
+See the [Saving a .scnx wiki entry](../../../../frb/docs/index.php#Saving_a_.scnx).
 
 ### Getting References to Objects Inside Scenes
 

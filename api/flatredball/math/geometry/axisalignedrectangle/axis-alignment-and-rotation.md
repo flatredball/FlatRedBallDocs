@@ -6,7 +6,7 @@ Although AxisAlignedRectangles inherit from the [PositionedObject](../../../../.
 
 ### AxisAlignment and the collision/visible representation of an AxisAlignedRectangle
 
-As far as the visible representation and collision behavior of an AxisAlignedRectangle, rotation will have no impact on an AxisAlignedRectangle. For more information, see [this section](../../../../../../frb/docs/index.php#What\_does\_.22axis\_aligned.22\_mean.3F).
+As far as the visible representation and collision behavior of an AxisAlignedRectangle, rotation will have no impact on an AxisAlignedRectangle. For more information, see [this section](../../../../../../frb/docs/index.php#What_does_.22axis_aligned.22_mean.3F).
 
 ### How do children of AxisAlignedRectangles behave?
 

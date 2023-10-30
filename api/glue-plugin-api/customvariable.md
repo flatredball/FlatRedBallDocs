@@ -10,7 +10,7 @@ The CustomVariable object is a variable directly contained inside of a Screen or
 
 These three types match the three options provided by the New Variable window.
 
-![](../../../media/2023-04-img\_6445f9ab03d5c.png)
+![](../../../media/2023-04-img_6445f9ab03d5c.png)
 
 When the user adds a new variable to a GlueElement, a new CustomVariable instance is added to the GlueElement. Plugins can modify existing CustomVariables or add new CustomVariable instances to a GlueElement.
 

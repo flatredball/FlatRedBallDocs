@@ -30,4 +30,4 @@ So let's get started!
 
 ### Special thanks to Dan Cook (aka Danc)
 
-The following tutorials will use a set of art from a classic PC game named [Tyrian](http://en.wikipedia.org/wiki/Tyrian\_\(video\_game\)) which [has been opened](http://www.lostgarden.com/2007/04/free-game-graphics-tyrian-ships-and.html) by [Dan Cook](https://plus.google.com/105363132599081141035/posts), the original artist on the game. Thanks to Danc for supporting game development! -- [02. Setup ->](tutorials-setup.md)
+The following tutorials will use a set of art from a classic PC game named [Tyrian](http://en.wikipedia.org/wiki/Tyrian_\(video_game\)) which [has been opened](http://www.lostgarden.com/2007/04/free-game-graphics-tyrian-ships-and.html) by [Dan Cook](https://plus.google.com/105363132599081141035/posts), the original artist on the game. Thanks to Danc for supporting game development! -- [02. Setup ->](tutorials-setup.md)

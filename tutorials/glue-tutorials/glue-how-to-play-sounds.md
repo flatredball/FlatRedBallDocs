@@ -13,13 +13,13 @@ The following will show you how to add a SoundEffect to a Screen. The same metho
    1. If you have an existing .wav file, select **Add File**->**Existing File**
    2.  If you would like to add a placeholder .wav file, or if you would like to test playing sound effects, select \*\*Add File \*\*-> **New File** and select **Sound Effect (.wav)**
 
-       ![](../../../media/2022-09-img\_63291e0635a58.png)
+       ![](../../../media/2022-09-img_63291e0635a58.png)
 
 Note: WAV files are used for sound effects. MP3 and WMA files are used for songs. For information on MP3 files, see [this file](../../../frb/docs/index.php).
 
 Your WAV file should now be part of of the Screen.
 
-![](../../../media/2022-09-img\_63291e90d60eb.png)
+![](../../../media/2022-09-img_63291e90d60eb.png)
 
 ### Playing the sound in code
 

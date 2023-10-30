@@ -17,15 +17,15 @@ The MaxHP is a _designer variable_ - a variable which a game designer may change
 2. Click on the **Variables** tab
 3.  Click the **Add New Variable** button
 
-    ![](../../../media/2021-04-img\_607e404f51080.png)
+    ![](../../../media/2021-04-img_607e404f51080.png)
 4. Select the **int** type
 5. Enter the name **MaxHP**
 6.  Click **OK**
 
-    ![](../../../media/2021-04-img\_607e40a147c17.png)
+    ![](../../../media/2021-04-img_607e40a147c17.png)
 7.  Set the new **MaxHP** variable to **6**
 
-    ![](../../../media/2021-04-img\_607e41aedaa1c.png)
+    ![](../../../media/2021-04-img_607e41aedaa1c.png)
 
 Now we can add the CurrentHP value to the Enemy:
 
@@ -82,10 +82,10 @@ Now we can create a collision relationship between the BulletList and EnemyList 
 4. Click on the **Collision** tab
 5.  Click the **Add Event** button
 
-    ![](../../../media/2021-04-img\_607e44a841524.png)
+    ![](../../../media/2021-04-img_607e44a841524.png)
 6.  Accept the defaults and click **OK**
 
-    ![](../../../media/2021-04-img\_607e44d00fcdb.png)
+    ![](../../../media/2021-04-img_607e44d00fcdb.png)
 
 Now we can fill in the event method. Open **GameScreen.Event.cs** and modify the **BulletListVsEnemyListCollisionOccurred** method as shown in the following snippet:
 

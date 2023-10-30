@@ -40,7 +40,7 @@ Add the following to Initialize after initializing FlatRedBall:
  secondText.DisplayText = "My Y in Initialize is: " + secondText.Y;
 ```
 
-![ForceUpdateDependencies.png](../../../../media/migrated\_media-ForceUpdateDependencies.png)
+![ForceUpdateDependencies.png](../../../../media/migrated_media-ForceUpdateDependencies.png)
 
 ### Code Example - Modifying parent absolute values
 
@@ -76,4 +76,4 @@ Add the following to Initialize after initializing FlatRedBall:
  Text text = TextManager.AddText(stringToOutput);
 ```
 
-![ForceUpdateDependenciesParentReposition.png](../../../../media/migrated\_media-ForceUpdateDependenciesParentReposition.png)
+![ForceUpdateDependenciesParentReposition.png](../../../../media/migrated_media-ForceUpdateDependenciesParentReposition.png)

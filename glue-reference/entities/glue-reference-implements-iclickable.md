@@ -8,7 +8,7 @@ The Implements IClickable property is a property that controls whether the Entit
 
 Entities can be created as IClickable in the add entity window.
 
-![](../../../../media/2022-02-img\_61fb3a85b6f71.png)
+![](../../../../media/2022-02-img_61fb3a85b6f71.png)
 
 Existing entities can be converted to IClickable in the Properties
 
@@ -16,7 +16,7 @@ Existing entities can be converted to IClickable in the Properties
 2. Click the **Properties** tab
 3. Set\*\* Implements IClickable\*\* to T**rue**
 
-![](../../../../media/2019-04-img\_5caa9bbeb7bba.png)
+![](../../../../media/2019-04-img_5caa9bbeb7bba.png)
 
 ### Code Example - Clicking UI
 

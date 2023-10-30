@@ -30,7 +30,7 @@ ExplosionSound.Volume = 0.5f;
 
 To change whether a .wav file is loaded as a SoundEffect or SoundEffectInstance, change its **RuntimeType** in Glue:
 
-![](../../../../media/2021-09-img\_6150ca47f1f0d.png)
+![](../../../../media/2021-09-img_6150ca47f1f0d.png)
 
 ### Adding a .wav to a Glue project
 
@@ -42,7 +42,7 @@ To add a .wav file to Glue:
 
 You should see the .wav file in your Glue project:
 
-![](../../../../media/2021-02-img\_603bcad7e65c9.png)
+![](../../../../media/2021-02-img_603bcad7e65c9.png)
 
 ### Playing a SoundEffect in custom code
 

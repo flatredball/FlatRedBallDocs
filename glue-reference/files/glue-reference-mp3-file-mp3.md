@@ -15,7 +15,7 @@ To play an MP3 in your game:
 
 
 
-<figure><img src="../../../../media/2016-01-2018-06-25\_07-42-05.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-2018-06-25_07-42-05.gif" alt=""><figcaption></figcaption></figure>
 
  The song will automatically play when the Screen starts up. The song will automatically stop playing when the Screen exits. You do not need write any code to play or stop the music. If a Screen contains multiple audio files, then additional settings and logic are needed to select which song should be played.
 
@@ -29,7 +29,7 @@ A song can be controlled in the Song tab. To view the Song tab:
 2. Select the newly-created song
 3. Select the **Song** tab
 
-![](../../../../media/2020-01-img\_5e2b20a46ac51.png)
+![](../../../../media/2020-01-img_5e2b20a46ac51.png)
 
 ### Moving between Screens (Glue)
 
@@ -40,8 +40,8 @@ Songs added in Glue belong to a particular Screen. To have songs persist between
 You can add multiple songs to your Screen if you would like to select which one to play in custom code. To do this:
 
 1. Create a Screen
-2. Add any number of .mp3 files to your Screen ![MultipleSongsInScreen.PNG](../../../../media/migrated\_media-MultipleSongsInScreen.PNG)
-3. Set each of them to LoadedOnlyWhenReferenced. For more information on this property, see [the LoadedOnlyWhenReferenced page](../../../../frb/docs/index.php). ![SongLoadedOnlyWhenReferenced.png](../../../../media/migrated\_media-SongLoadedOnlyWhenReferenced.png)
+2. Add any number of .mp3 files to your Screen ![MultipleSongsInScreen.PNG](../../../../media/migrated_media-MultipleSongsInScreen.PNG)
+3. Set each of them to LoadedOnlyWhenReferenced. For more information on this property, see [the LoadedOnlyWhenReferenced page](../../../../frb/docs/index.php). ![SongLoadedOnlyWhenReferenced.png](../../../../media/migrated_media-SongLoadedOnlyWhenReferenced.png)
 4. In custom code, play the song you would like to play. For example, if your song is called MySong, then add the following code:
 
 &#x20;

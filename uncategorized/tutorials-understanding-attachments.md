@@ -23,7 +23,7 @@ bool keepSamePosition = true;
 child.AttachTo(parent, keepSamePosition);
 ```
 
-![RotateAndAttachment.png](../media/migrated\_media-RotateAndAttachment.png)
+![RotateAndAttachment.png](../media/migrated_media-RotateAndAttachment.png)
 
 The child [Sprite](../frb/docs/index.php) is attached to the parent Sprite. This means that if the parent rotates or moves, the child follows, always preserving the same relative position and rotation. To show this we've made the parent rotate and shown that the child is automatically updating its position.
 
@@ -76,7 +76,7 @@ bool keepSamePosition = false; //<------- This changed
 child.AttachTo(parent, keepSamePosition);
 ```
 
-![AttachmentWithoutPreservingAbsolute.png](../media/migrated\_media-AttachmentWithoutPreservingAbsolute.png)
+![AttachmentWithoutPreservingAbsolute.png](../media/migrated_media-AttachmentWithoutPreservingAbsolute.png)
 
 Now the child [Sprite](../frb/docs/index.php) is centered on the parent. Of course, the parent's rotation still impacts the rotation of the child, and if the parent were to move, the child would also move with it. As mentioned in the comments above, **the setting of the position of the child before the attachment has no impact on the child after the attachment.** Its **absolute position is ignored** and **overwritten** according to the absolute position of the parent and the child's relative values. You can try changing the setting of X = 6 to any other value and you'll see that it has no impact on the position of the child.
 
@@ -88,7 +88,7 @@ So, you may be asking, when should the second argument be true? In practice atta
 
 If the attachment occurs when the object is created, usually the second argument should be false. For example, if you are creating a character who is going to always wear a hat, then you may first create the character [Sprite](../frb/docs/index.php), then the hat [Sprite](../frb/docs/index.php), then you'll want to attach the hat to the character. In this case, you'll probably want to simply set the relative value of the hat, and the absolute position of the hat before attachment doesn't really matter.
 
-If the attachment occurs at some point during runtime, you may want to have the second argument be true. For example, consider a game like [Katamari Damacy](http://en.wikipedia.org/wiki/Katamari\_Damacy). This game is played by controlling a ball around an environment, picking up objects to grow the ball. As soon as an object is touched by the ball, it sticks to the ball and continues to rotate with the ball. This is a perfect example of where attachments would be used and the second argument would be true. Any object that touches the ball should immediately stick to it, but at the moment when the "sticking" occurs, the object should stay in the same position and orientation. After the "sticking", the object is then subject to the movement and rotation of the parent ball.
+If the attachment occurs at some point during runtime, you may want to have the second argument be true. For example, consider a game like [Katamari Damacy](http://en.wikipedia.org/wiki/Katamari_Damacy). This game is played by controlling a ball around an environment, picking up objects to grow the ball. As soon as an object is touched by the ball, it sticks to the ball and continues to rotate with the ball. This is a perfect example of where attachments would be used and the second argument would be true. Any object that touches the ball should immediately stick to it, but at the moment when the "sticking" occurs, the object should stay in the same position and orientation. After the "sticking", the object is then subject to the movement and rotation of the parent ball.
 
 ### Setting child relative values before attachment
 
@@ -119,7 +119,7 @@ child.X = 10;
 
 In the code above I first perform an attachment, then after the attachment occurs I set the child's X to 10. But does the child's X remain at 10? No, as the image shows, the child's X stays at 0.
 
-![AttachmentWithoutPreservingAbsolute.png](../media/migrated\_media-AttachmentWithoutPreservingAbsolute.png)
+![AttachmentWithoutPreservingAbsolute.png](../media/migrated_media-AttachmentWithoutPreservingAbsolute.png)
 
 This isn't just for X; any absolute property (Y, Z, Velocity, Acceleration, RotationZ) is ignored.
 
@@ -138,7 +138,7 @@ child.AttachTo(parent, keepSamePosition);
 child.RelativeX = 10;
 ```
 
-![RelativeValuesInAction.png](../media/migrated\_media-RelativeValuesInAction.png)
+![RelativeValuesInAction.png](../media/migrated_media-RelativeValuesInAction.png)
 
 ### Attachments and [Entities](../frb/docs/index.php)
 

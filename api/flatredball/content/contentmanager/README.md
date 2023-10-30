@@ -182,7 +182,7 @@ The following code simulates the creation and destruction of 3 levels. Levels ca
  }
 ```
 
-[Full Source](http://pastebin.ca/498688) ![SpritesAndDifferentContentManagers.png](../../../../../media/migrated\_media-SpritesAndDifferentContentManagers.png)
+[Full Source](http://pastebin.ca/498688) ![SpritesAndDifferentContentManagers.png](../../../../../media/migrated_media-SpritesAndDifferentContentManagers.png)
 
 ### Which content manager should I use?
 
@@ -195,6 +195,6 @@ Even if you understand the concept that content managers can be thought of as a 
 
 ### Additional Information
 
-* [Texture caching example](../../../../../frb/docs/index.php#Texture\_Caching) - Shows an example of how Content Managers cache content.
+* [Texture caching example](../../../../../frb/docs/index.php#Texture_Caching) - Shows an example of how Content Managers cache content.
 * [FlatRedBall.FlatRedBallServices.AddDisposable](../../../../../frb/docs/index.php) - AddDisposable can be used to add IDisposables to Content Managers.
 * [FlatRedBall Content Manager:Multiple Content Managers](../../../../../frb/docs/index.php) - Discusses the purpose of having multiple content managers.

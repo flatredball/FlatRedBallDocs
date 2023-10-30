@@ -11,14 +11,14 @@ Cameras added to a Screen can be modified in the FlatRedBall Editor. By default,
 1. Select the Screen to contain the object. To make changes for all levels, select the GameScreen.
 2.  Click the **Add Object** button to add a new object to the screen
 
-    ![](../../../../media/2022-03-img\_62323de2907f4.png)
+    ![](../../../../media/2022-03-img_62323de2907f4.png)
 3.  Select Camera as the type and click OK
 
-    ![](../../../../media/2022-03-img\_62323dfe257e0.png)
+    ![](../../../../media/2022-03-img_62323dfe257e0.png)
 
 The new camera appears in the GameScreen. It can be modified to make changes to the game, including in edit mode. For example, the Background Color can be changed from Black to any desired color. 
 
-<figure><img src="../../../../media/2016-01-16\_13-54-48.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-16_13-54-48.gif" alt=""><figcaption></figcaption></figure>
 
 
 

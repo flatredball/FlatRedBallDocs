@@ -8,7 +8,7 @@ FlatRedBall Forms has full support for control with a mouse and keyboard as well
 
 FlatRedBall.Forms controls have built-in support for gamepad navigation. Once gamepad input is enabled for Forms objects, the user can move between controls and perform common UI operations. For example, consider the following layout using default Forms elements:
 
-![](../../media/2022-02-img\_61fefae41a54a.png)
+![](../../media/2022-02-img_61fefae41a54a.png)
 
 The layout above contains the following interactive Forms elements:
 
@@ -33,7 +33,7 @@ To enable gamepad interaction with these elements:
 
 Once one of the controls on a screen has focus, the gamepad can interact with it. For example, the following images and animations show interaction which can be performed with a gamepad including clicking a button, selecting items in a list box, and moving the slider. Once the ButtonInstance IsFocused is set to true, the button appears focused with a white rectangle.
 
-![](../../media/2022-02-img\_61ff02b7561e7.png)
+![](../../media/2022-02-img_61ff02b7561e7.png)
 
 Navigation between elements can be done by pressing up, down, left, or right on the analog stick or d-pad. The A button selects the control: &#x20;
 
@@ -41,7 +41,7 @@ Navigation between elements can be done by pressing up, down, left, or right on 
 
 The tab order of the items matches the order of the items in Gum. The layout has the following tab order, as shown in Gum:
 
-![](../../media/2022-02-img\_61ff06ae95211.png)
+![](../../media/2022-02-img_61ff06ae95211.png)
 
 ### OnScreenKeyboard
 
@@ -61,6 +61,6 @@ Forms.DurationTextBox.GamepadTabbingFocusBehavior = FlatRedBall.Forms.Controls.T
 
 
 
-<figure><img src="../../media/2022-02-02\_12-44-26.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2022-02-02_12-44-26.gif" alt=""><figcaption></figcaption></figure>
 
 

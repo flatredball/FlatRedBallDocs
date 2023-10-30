@@ -17,7 +17,7 @@ First we'll need to define which controls are needed in our game. Our PlayerBall
 
 We'll want to write the PlayerBall so that it will work with any input device, whether that's Xbox 360 controller, Keyboard, or any other device. To add code to PlayerBall, double click **PlayerBall.cs** in Visual Studio. This will be located in your project's **Entities** folder.
 
-![](../../../media/2022-01-img\_61d31a7f303e9.png)
+![](../../../media/2022-01-img_61d31a7f303e9.png)
 
 Modify the **PlayerBall.cs** file so it contains two input properties as follows:
 
@@ -73,7 +73,7 @@ public partial class GameScreen
 
 Notice that the object we are assigning code to (PlayerBall1) matches the name of the entity in the editor. FlatRedBall objects in the editor will always have a matching name in code, as shown in the following image:
 
-![](../../../media/2022-01-img\_61d31b3936349.png)
+![](../../../media/2022-01-img_61d31b3936349.png)
 
 For more information on the Keyboard class, see [the Keyboard page](../../../frb/docs/index.php).
 
@@ -82,7 +82,7 @@ For more information on the Keyboard class, see [the Keyboard page](../../../frb
 **Clean code is very important.** This is something we stress at FlatRedBall for all developers making any kind of game regardless of size. Therefore, this tutorial (and others in the future) will discuss how code can be improved to be cleaner and more flexible. The code we wrote above has a number of problems:
 
 * The velocity (which was set to 10) is set right in the method where it's used. This velocity value is typically considered "data", while its application is considered "logic". The separation of data from logic is a fundamental concept in keeping game projects maintainable.
-* The game includes logic in the CustomActivity method. We encourage no logic, only method calls in the standard "Custom" methods. For more information, click [here.](../../../frb/docs/index.php#CustomActivity\_and\_CustomInitialize\_methods\_should\_contain\_no\_logic)
+* The game includes logic in the CustomActivity method. We encourage no logic, only method calls in the standard "Custom" methods. For more information, click [here.](../../../frb/docs/index.php#CustomActivity_and_CustomInitialize_methods_should_contain_no_logic)
 
 ### Separating Data from Logic using Glue Variables
 
@@ -97,7 +97,7 @@ FlatRedBall provides a number of ways to separate data from logic. The simplest 
 
 
 
-<figure><img src="../../../media/2016-01-03\_08-51-45.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2016-01-03_08-51-45.gif" alt=""><figcaption></figcaption></figure>
 
  Finally, return to the movement code **inside PlayerBall.cs** and change the code to:
 
@@ -112,7 +112,7 @@ private void CustomActivity()
 }
 ```
 
-If we run the game now we can control the player with the W, A, S, and D keys: ![MovingBeefballWithKeyboard.gif](../../../media/migrated\_media-MovingBeefballWithKeyboard.gif)
+If we run the game now we can control the player with the W, A, S, and D keys: ![MovingBeefballWithKeyboard.gif](../../../media/migrated_media-MovingBeefballWithKeyboard.gif)
 
 ### Adding Xbox360 Controls
 

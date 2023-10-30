@@ -20,16 +20,16 @@ Once you the FlatRedBall editor, you can create a new project. To create a new P
 
 1.  Select **File**-> **New Project**
 
-    ![](../../media/2021-07-img\_60fca048b4f9f.png)
+    ![](../../media/2021-07-img_60fca048b4f9f.png)
 2. Enter a name for the **Project Name.**
 3. Select your platform.
 4.  Uncheck **Open New Project Wizard**. This way the project will remain empty
 
-    ![](../../media/2021-10-img\_6163ab93aed48.png)
+    ![](../../media/2021-10-img_6163ab93aed48.png)
 
 After your project is created, you can open the project folder in the editor using the folder icon:
 
-![](../../media/2021-10-img\_616d84d75ed54.png)
+![](../../media/2021-10-img_616d84d75ed54.png)
 
 To find your new project solution file (.sln), navigate up a folder from the location opened by Glue. Alternatively you can navigate to the folder displayed in the new project window and open the .sln from the Windows Explorer. That's it; now you won't have to open the FRB editor anymore.
 
@@ -52,15 +52,15 @@ Visual Studio is not a requirement for using FlatRedBall. You can write, compile
 
 Open the folder where the .sln is located for your project.
 
-![](../../media/2023-08-img\_64d8e28919fe6.png)
+![](../../media/2023-08-img_64d8e28919fe6.png)
 
 Select the folder where you have unzipped your project earlier.
 
-![](../../media/2023-08-img\_64d8e2d376c20.png)
+![](../../media/2023-08-img_64d8e2d376c20.png)
 
 If asked, check **Yes, I trust the authors**.
 
-![](../../media/2023-08-img\_64d8e207f1e75.png)
+![](../../media/2023-08-img_64d8e207f1e75.png)
 
 ### Alternative - Adding FlatRedBall to your MonoGame Project
 
@@ -100,7 +100,7 @@ To run your newly-created project:
 
 Your project will compile and run, displaying an empty (black) screen.
 
-![](../../media/2017-09-img\_59bff64728002.png)
+![](../../media/2017-09-img_59bff64728002.png)
 
 ### Running your Project Without Visual Studio
 

@@ -10,11 +10,11 @@ These issues arise due to floating point inaccuracies. This article will discuss
 
 Let's say that you've created a Sprite that you want to be drawn to-the-pixel in your 2D game. You're going to have your Sprite use the following image for its Texture:
 
-![BlueGreenCheckers.png](../../../media/migrated\_media-BlueGreenCheckers.png)
+![BlueGreenCheckers.png](../../../media/migrated_media-BlueGreenCheckers.png)
 
 Let's zoom in a little so we can see more detail:
 
-![BlueGreenCheckersLarge.png](../../../media/migrated\_media-BlueGreenCheckersLarge.png)
+![BlueGreenCheckersLarge.png](../../../media/migrated_media-BlueGreenCheckersLarge.png)
 
 So, this texture is one that's highly sensitive to repeating textures because patterns will immediately become evident.
 
@@ -32,7 +32,7 @@ sprite.PixelSize = .5f;
 sprite.X = .0019399f; // This value causes problems for some reason...
 ```
 
-![PixelInaccuracy.png](../../../media/migrated\_media-PixelInaccuracy.png)
+![PixelInaccuracy.png](../../../media/migrated_media-PixelInaccuracy.png)
 
 ### The green strip problem
 
@@ -46,29 +46,29 @@ The following is an illustration of how the rendering works. We're going to igno
 
 The outlines on top represents pixels on screen, while the blue/green pattern represents a row of pixels from the texture. Keep in mind for this example we're assuming **no filtering**.
 
-![RenderingProblem1.png](../../../media/migrated\_media-RenderingProblem1.png)
+![RenderingProblem1.png](../../../media/migrated_media-RenderingProblem1.png)
 
 During rendering, the bottom pattern will be "applied" to the pixels above. The arrows show which pixels on the Texture get applied to which pixels on screen. Again, there are more details to how this works in actual rendering, but the arrows represent the concept of how pixels are applied when rendered.
 
-![RenderingProblem2.png](../../../media/migrated\_media-RenderingProblem2.png)
+![RenderingProblem2.png](../../../media/migrated_media-RenderingProblem2.png)
 
 If the Sprite shifts slightly, then we might have the following situation:
 
-![RenderingProblem3.png](../../../media/migrated\_media-RenderingProblem3.png)
+![RenderingProblem3.png](../../../media/migrated_media-RenderingProblem3.png)
 
 Well, even though this might look weird, it's actually ok. The Sprite has shifted, but it's shifted less than the distance of one pixel, so nothing will change. And of course, once the Sprite shifts enough, then the location where the pixels draw will shift over one pixel as well. But what happens if we shift so that the pixels fall right in-between two screen pixels?
 
-![RenderingProblem4.png](../../../media/migrated\_media-RenderingProblem4.png)
+![RenderingProblem4.png](../../../media/migrated_media-RenderingProblem4.png)
 
 This creates a problem, because essentially the rendering API (that is, XNA or DirectX) has to "pick" a side to render on:
 
-![RenderingProblem5.png](../../../media/migrated\_media-RenderingProblem5.png)
+![RenderingProblem5.png](../../../media/migrated_media-RenderingProblem5.png)
 
 ### A small clarification
 
 So far we've been talking about colors moving **from** the texture **to** the screen. Actually, in 3D graphics it works slightly different... actually not just slightly, but completely **the opposite!**. So instead of the texture "pushing" its color onto the screen, the screen "pulls" colors from the texture. So we can actually invert the arrows and see how this works:
 
-![RenderingProblem6.png](../../../media/migrated\_media-RenderingProblem6.png)
+![RenderingProblem6.png](../../../media/migrated_media-RenderingProblem6.png)
 
 ### Floating point to the ~~rescue~~ failure
 
@@ -76,7 +76,7 @@ Of course, when we look at the image above we can tell what we want to happen: W
 
 And to make matters worse, whether to "go left" or "go right" is actually a question of precision! That is, if we had infinite precision, then all arrows would always go the same direction no matter what. Unfortunately, we don't have this kind of precision, which means that in some cases it's possible to get the API to "go left" on some pixels and to "go right" on others:
 
-![RenderingProblem7.png](../../../media/migrated\_media-RenderingProblem7.png)
+![RenderingProblem7.png](../../../media/migrated_media-RenderingProblem7.png)
 
 ### The pixels don't match!
 

@@ -17,7 +17,7 @@ otherText.X = 150;
 otherText.NewLineDistance = 30;
 ```
 
-![NewlineDistance2D.PNG](../../../../../media/migrated\_media-NewlineDistance2D.PNG)
+![NewlineDistance2D.PNG](../../../../../media/migrated_media-NewlineDistance2D.PNG)
 
 ### Code Example (3D Camera/Layer)
 
@@ -34,7 +34,7 @@ otherText.NewLineDistance = 3;
 otherText.AdjustPositionForPixelPerfectDrawing = false;
 ```
 
-![NewlineDistance.PNG](../../../../../media/migrated\_media-NewlineDistance.PNG)
+![NewlineDistance.PNG](../../../../../media/migrated_media-NewlineDistance.PNG)
 
 ### NewlineDistance rounds to whole numbers if AdjustPositionForPixelPerfectDrawing is true
 

@@ -8,7 +8,7 @@ The IDamageArea interface creates a standard way to define that an entity can de
 
 To set an entity as a damage area, set the property on entity in the Properties tab.
 
-![](../../../../media/2021-05-img\_60a125377d75d.png)
+![](../../../../media/2021-05-img_60a125377d75d.png)
 
 A game which has entities implementing IDamageArea will also need entities which implement IDamageable.
 
@@ -19,11 +19,11 @@ For this example uses two entities:
 1. Bullet - an entity which implements IDamageArea and is ICollidable
 2. Enemy - an entity which implements IDamageable and is ICollidable
 
-![](../../../../media/2021-05-img\_60a65c5549716.png)
+![](../../../../media/2021-05-img_60a65c5549716.png)
 
 The GameScreen also has a list for each and a collision relationship with an event.
 
-![](../../../../media/2021-05-img\_60a65cb463bcd.png)
+![](../../../../media/2021-05-img_60a65cb463bcd.png)
 
 When the bullet and enemy collide, the ShouldTakeDamage method can be used to determine if the enemy should take damage from the bullet, as shown in the following code snippet.
 

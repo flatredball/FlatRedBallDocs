@@ -10,10 +10,10 @@ The code example below assumes the following:
 
 *   An entity named **Entity** with the **CreatedByOtherEntities** value set to **True**:
 
-    ![](../../../../media/2017-09-img\_59afffd7d749e.png)
+    ![](../../../../media/2017-09-img_59afffd7d749e.png)
 *   A screen with an **Enemy** list:
 
-    ![](../../../../media/2017-09-img\_59b000338a29c.png)
+    ![](../../../../media/2017-09-img_59b000338a29c.png)
 
 The following code in the GameScreen.CustomInitialize  method will result in a sorted list of enemies:
 
@@ -42,7 +42,7 @@ FlatRedBall.Debugging.Debugger.CommandLineWrite(outputValue);
 
 This code produces results shown in the following image:
 
-![](../../../../media/2017-09-img\_59b001245f7ca.png)
+![](../../../../media/2017-09-img_59b001245f7ca.png)
 
 ### SortAxis Duration
 

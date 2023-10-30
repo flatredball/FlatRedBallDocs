@@ -16,13 +16,13 @@ To create a Layer in Glue:
 
 
 
-<figure><img src="../../../../../media/2016-01-2021\_July\_22\_092823.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2016-01-2021_July_22_092823.gif" alt=""><figcaption></figcaption></figure>
 
 
 
 ### Layer Order
 
-Layers are drawn in the same order that they are added in code. In other words, if Layer1 was added first, then Layer2, Layer1 would draw first, then Layer2 would be drawn on top of Layer1. Similarly, the order of Layers in Glue impacts the order that they are drawn. Layers draw top-to-bottom. Therefore, the first layer when looking at the list of elements in Glue will be drawn first, and any subsequent Layers will be drawn on top. ![LayerOrderInGlue.PNG](../../../../../media/migrated\_media-LayerOrderInGlue.PNG) You can adjust the order of layers by right-clicking on a Layer and selecting one of the options to move it: ![MoveLayerUpOrDown.png](../../../../../media/migrated\_media-MoveLayerUpOrDown.png)
+Layers are drawn in the same order that they are added in code. In other words, if Layer1 was added first, then Layer2, Layer1 would draw first, then Layer2 would be drawn on top of Layer1. Similarly, the order of Layers in Glue impacts the order that they are drawn. Layers draw top-to-bottom. Therefore, the first layer when looking at the list of elements in Glue will be drawn first, and any subsequent Layers will be drawn on top. ![LayerOrderInGlue.PNG](../../../../../media/migrated_media-LayerOrderInGlue.PNG) You can adjust the order of layers by right-clicking on a Layer and selecting one of the options to move it: ![MoveLayerUpOrDown.png](../../../../../media/migrated_media-MoveLayerUpOrDown.png)
 
 ### Adding an Object to a Layer
 
@@ -33,7 +33,7 @@ To add an object to a layer:
 
 
 
-<figure><img src="../../../../../media/2016-01-2019-07-19\_10-39-04.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2016-01-2019-07-19_10-39-04.gif" alt=""><figcaption></figcaption></figure>
 
  You can verify that the layer was changed by looking at the **LayerOn** property. Entity instances can be moved to a layer in code using the [MoveToLayer](../../entities/movetolayer.md) function.
 

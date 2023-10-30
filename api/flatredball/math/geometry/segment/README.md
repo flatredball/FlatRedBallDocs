@@ -65,7 +65,7 @@ else
 }
 ```
 
-![Intersection.png](../../../../../../media/migrated\_media-Intersection.png)
+![Intersection.png](../../../../../../media/migrated_media-Intersection.png)
 
 ### Segment Members
 

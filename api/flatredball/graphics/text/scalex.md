@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The ScaleX and ScaleY properties are read-only properties in the Text class. You may be familiar with these properties through classes such as [Sprite](../../../../../frb/docs/index.php) or [AxisAlignedRectangle](../../../../../frb/docs/index.php). Unlike those classes, the Text class's ScaleX and ScaleY properties are only used to read the dimensions of the Text object, not to set it. To set the size of your Text, you need to use the Scale, Spacing, and NewlineDistance properties. You can find out more about them [here](../../../../../frb/docs/index.php#Text\_Size).
+The ScaleX and ScaleY properties are read-only properties in the Text class. You may be familiar with these properties through classes such as [Sprite](../../../../../frb/docs/index.php) or [AxisAlignedRectangle](../../../../../frb/docs/index.php). Unlike those classes, the Text class's ScaleX and ScaleY properties are only used to read the dimensions of the Text object, not to set it. To set the size of your Text, you need to use the Scale, Spacing, and NewlineDistance properties. You can find out more about them [here](../../../../../frb/docs/index.php#Text_Size).
 
 ### Scale and Position
 
@@ -40,4 +40,4 @@ Add the following to the Initialize method after initializing FlatRedBallService
  aaRect2.ScaleY = text2.ScaleY;
 ```
 
-![TextScaleAndCenter.png](../../../../../media/migrated\_media-TextScaleAndCenter.png)
+![TextScaleAndCenter.png](../../../../../media/migrated_media-TextScaleAndCenter.png)

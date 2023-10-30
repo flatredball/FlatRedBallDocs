@@ -67,4 +67,4 @@ Sprite ship;
  }
 ```
 
-![CameraAttachedToRotatingSprite.png](../../../../media/migrated\_media-CameraAttachedToRotatingSprite.png) Notice that although the [Camera](../../../../frb/docs/index.php) is attached to the ship [Sprite](../../../../frb/docs/index.php), it does not rotate. Try setting the [Camera's](../../../../frb/docs/index.php) ParentRotationChangesRotation property to true and observe the behavior.
+![CameraAttachedToRotatingSprite.png](../../../../media/migrated_media-CameraAttachedToRotatingSprite.png) Notice that although the [Camera](../../../../frb/docs/index.php) is attached to the ship [Sprite](../../../../frb/docs/index.php), it does not rotate. Try setting the [Camera's](../../../../frb/docs/index.php) ParentRotationChangesRotation property to true and observe the behavior.

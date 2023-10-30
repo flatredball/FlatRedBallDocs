@@ -20,9 +20,9 @@ This next example will create a list of Enemies. To do this:
 * Expand your GameScreen item
 * Right-click on the Objects item and select "Add Object"
 * Name the new object "Enemies"
-* Change the Source Type to "FlatRedBall Type"![GlueSourceTypeFlatRedBallType.png](../../../media/migrated\_media-GlueSourceTypeFlatRedBallType.png)
-* Change the Source Class Type to "PositionedObjectList\<T>"![GlueSourceClassTypePOList.png](../../../media/migrated\_media-GlueSourceClassTypePOList.png)
-* Change the Source Class Generic Type to "Entities\Enemy"![GlueSourceClassGenericTypeEntity.png](../../../media/migrated\_media-GlueSourceClassGenericTypeEntity.png)
+* Change the Source Type to "FlatRedBall Type"![GlueSourceTypeFlatRedBallType.png](../../../media/migrated_media-GlueSourceTypeFlatRedBallType.png)
+* Change the Source Class Type to "PositionedObjectList\<T>"![GlueSourceClassTypePOList.png](../../../media/migrated_media-GlueSourceClassTypePOList.png)
+* Change the Source Class Generic Type to "Entities\Enemy"![GlueSourceClassGenericTypeEntity.png](../../../media/migrated_media-GlueSourceClassGenericTypeEntity.png)
 
 ### The list is created
 
@@ -48,9 +48,9 @@ To add objects to a list in Glue:
 
 1. Expand your GameScreen
 2. Expand your Objects. You should have an object named "Enemies"
-3. Right-click on Enemies and select "Add Object". Until now you have been right-clicking on the Objects item, but you can right-click on an individual Object as long as it is a List and add instances directly to it![AddObjectToAList.png](../../../media/migrated\_media-AddObjectToAList.png)
+3. Right-click on Enemies and select "Add Object". Until now you have been right-clicking on the Objects item, but you can right-click on an individual Object as long as it is a List and add instances directly to it![AddObjectToAList.png](../../../media/migrated_media-AddObjectToAList.png)
 4. Name your new Object "Enemy1" and click OK
-5. You should now have an Enemy in your list called Enemy1![EnemyInList.png](../../../media/migrated\_media-EnemyInList.png)
+5. You should now have an Enemy in your list called Enemy1![EnemyInList.png](../../../media/migrated_media-EnemyInList.png)
 
 That's it, you now have an Enemy in your list. You can repeat this for as many instances as you want. Keep in mind that you can expose variables on Entities like the Enemey, and then set individual positions for each instance in your list. This means you can populate your Screen with objects in Glue, but still keep them in a list for the convenience of programmers!
 

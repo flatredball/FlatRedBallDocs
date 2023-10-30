@@ -56,7 +56,7 @@ float velocityToApply = 10;
 InputManager.Keyboard.ControlPositionedObject(positionedObject, velocityToApply);
 ```
 
-For more control over input controlling movement, see the following entry on [controlling the camera with the keyboard](../../../../../frb/docs/index.php#Controlling\_the\_Camera).
+For more control over input controlling movement, see the following entry on [controlling the camera with the keyboard](../../../../../frb/docs/index.php#Controlling_the_Camera).
 
 ###
 

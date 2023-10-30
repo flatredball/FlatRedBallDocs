@@ -20,21 +20,21 @@ This tutorial uses three components:
 
 The Button component will need some kind of visual (such as a ColoredRectangle). We will include a Text object for the button, but it is not necessary for this tutorial. When finished your Button should look similar to the following image:
 
-![](../../../../media/2017-03-img\_58cd81643eb36.png)
+![](../../../../media/2017-03-img_58cd81643eb36.png)
 
 The only important detail for this component is to make sure the **HasEvents** value is set to true. We will look at **ExposeChildrenEvents** later.
 
-![](../../../../media/2023-08-img\_64d8d90945476.png)
+![](../../../../media/2023-08-img_64d8d90945476.png)
 
 #### Creating the Label Component
 
 The label component is only a container with a single Text object. Functionally we could skip creating a Label component and add a Text object directly to the Popup component. We will be creating a Label component to show how to include some components in events (Buttons) and exclude others (Label). When finished your Label should look similar to the following image:
 
-![](../../../../media/2017-03-img\_58cd840b932af.png)
+![](../../../../media/2017-03-img_58cd840b932af.png)
 
 For this tutorial we want to make sure Label instances are not clickable, so make sure the HasEvents property is set to false.
 
-![](../../../../media/2023-08-img\_64d8d9858fc06.png)
+![](../../../../media/2023-08-img_64d8d9858fc06.png)
 
 #### Creating the Popup Component
 
@@ -47,7 +47,7 @@ Finally, we'll create our Popup Component. It should contain the following insta
 
 When finished, the popup will appear as shown in the following image:
 
-![](../../../../media/2017-03-img\_58cd866b0b6d3.png)
+![](../../../../media/2017-03-img_58cd866b0b6d3.png)
 
 Let's consider the event behavior we want for our popup object:
 
@@ -57,13 +57,13 @@ Let's consider the event behavior we want for our popup object:
 
 This can be summarised as - the popup itself should not raise events, but its children should. We can get this combination of behaviour by setting the **HasEvents** value to false and the **ExposeChildrenEvents** value to true.
 
-![](../../../../media/2023-08-img\_64d8da78f2ecb.png)
+![](../../../../media/2023-08-img_64d8da78f2ecb.png)
 
 ### Adding a Popup to Our Game
 
 Now that we have a fully-functional Popup instance, we can add it to our Gum screen (such as MainMenuGum). 
 
-<figure><img src="../../../../media/2017-03-13\_07-31-43.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2017-03-13_07-31-43.gif" alt=""><figcaption></figcaption></figure>
 
  Now that our popup is in our MainMenuGum, we can access it in our MainMenu.cs file in Visual Studio. For example, we can respond to click events on the OK and Cancel buttons by hiding the popup and displaying some debug text.
 
@@ -101,7 +101,7 @@ FlatRedBall.Debugging.Debugger.Write(FlatRedBall.Gui.GuiManager.Cursor.WindowOve
 
 This code produces the following behavior in our game: 
 
-<figure><img src="../../../../media/2017-03-13\_07-42-11.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2017-03-13_07-42-11.gif" alt=""><figcaption></figcaption></figure>
 
  Now that we've covered events related to contained objects (a Button inside of a Popup), we can look at other ways to diagnose event problems.
 
@@ -109,11 +109,11 @@ This code produces the following behavior in our game:
 
 One of the most common event-related bugs is when the container of a set of instances receives input events instead of the contained instances. If the parent of an object does not have its ExposeChildrenEvents set to true, then children will not raise their events. For screens with deep hierarchies, any object in the parent/child, then any object in the chain can break events by having this set to false. For example, consider a button which is part of a standard Container:
 
-![](../../../../media/2017-05-img\_5908a5918a41b.png)
+![](../../../../media/2017-05-img_5908a5918a41b.png)
 
-If the Container Standard object does not have its **ExposeChildrenEvents** value checked, then the Button will not raise events. ![](../../../../media/2017-05-img\_5908a60746056.png) This can be fixed by checking the **ExposeChildrenEvents** value.
+If the Container Standard object does not have its **ExposeChildrenEvents** value checked, then the Button will not raise events. ![](../../../../media/2017-05-img_5908a60746056.png) This can be fixed by checking the **ExposeChildrenEvents** value.
 
-![](../../../../media/2017-05-img\_5908a65d704fe.png)
+![](../../../../media/2017-05-img_5908a65d704fe.png)
 
 If a particular component acts purely as a container but should never receive events itself, then its HasEvents should be set to false.
 

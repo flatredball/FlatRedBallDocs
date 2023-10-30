@@ -16,7 +16,7 @@ To create a new Layer:
 
 
 
-<figure><img src="../../../../media/2016-01-01\_12-19-51.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2016-01-01_12-19-51.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -41,7 +41,7 @@ Although ordering does normally obey objects' Z value, changing Z also changes a
 
 ### Understanding the purpose of Layers
 
-Layers are used **only** to control the drawing order of objects. This means that layers have nothing to do with the position of the objects that they contain. For example, consider the [Entity pattern](../../../../frb/docs/index.php#Entity\_Tutorials). Entities usually are composed of 3 [PositionedObjects](../../../../frb/docs/index.php):
+Layers are used **only** to control the drawing order of objects. This means that layers have nothing to do with the position of the objects that they contain. For example, consider the [Entity pattern](../../../../frb/docs/index.php#Entity_Tutorials). Entities usually are composed of 3 [PositionedObjects](../../../../frb/docs/index.php):
 
 * The Entity itself
 * The visible representation which is attached to the Entity
@@ -68,7 +68,7 @@ Layers are created through the [SpriteManager](../../../../frb/docs/index.php). 
  farSprite.Z = -5;
 ```
 
-![LayeredSpriteBehindUnlayered.png](../../../../media/migrated\_media-LayeredSpriteBehindUnlayered.png)
+![LayeredSpriteBehindUnlayered.png](../../../../media/migrated_media-LayeredSpriteBehindUnlayered.png)
 
 ### AddToLayer Method
 
@@ -143,7 +143,7 @@ See [FlatRedBall.Camera.Layer](../../../../frb/docs/index.php).
 
 ### Adding an Entity to a Layer
 
-If you are using [Glue](../../../../frb/docs/index.php) then you can add an Entity to a Layer. See [this article](../../../../frb/docs/index.php#Adding\_an\_Entity\_to\_a\_Layer) for information on this.
+If you are using [Glue](../../../../frb/docs/index.php) then you can add an Entity to a Layer. See [this article](../../../../frb/docs/index.php#Adding_an_Entity_to_a_Layer) for information on this.
 
 ### Controlling Destination Rectangle
 

@@ -23,7 +23,7 @@ The Game Script plugin adds a set of classes and interfaces which can be used to
 1. Create a Glue project
 2. Have at least one Screen in your project
 
-Once you have a project open, you can add the files to the project by clicking the "Add Game Script Core Classes" option under the Plugins menu ![AddGameScriptCoreClasses.png](../../../../../media/migrated\_media-AddGameScriptCoreClasses.png) Now your project should contain all of the necessary files to begin creating scripts.
+Once you have a project open, you can add the files to the project by clicking the "Add Game Script Core Classes" option under the Plugins menu ![AddGameScriptCoreClasses.png](../../../../../media/migrated_media-AddGameScriptCoreClasses.png) Now your project should contain all of the necessary files to begin creating scripts.
 
 ### Initializing a ScreenScript
 
@@ -65,7 +65,7 @@ For this tutorial we will use a Circle instance to represent a controllable char
 
 
 
-<figure><img src="../../../../../media/2016-01-2019\_December\_15\_222804.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2016-01-2019_December_15_222804.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -109,7 +109,7 @@ public partial class GameScreen
     ...
 ```
 
-If you run your game you'll see the text update as the circle moves to the right. ![RunningScripting.png](../../../../../media/migrated\_media-RunningScripting.png) Of course in a real game the character wouldn't move on its own, but hopefully you can see how you would use this type of code to create your own scripts based off of player location, time, or any other kind of logic specific to your game.
+If you run your game you'll see the text update as the circle moves to the right. ![RunningScripting.png](../../../../../media/migrated_media-RunningScripting.png) Of course in a real game the character wouldn't move on its own, but hopefully you can see how you would use this type of code to create your own scripts based off of player location, time, or any other kind of logic specific to your game.
 
 ### Script Details
 

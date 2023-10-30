@@ -25,7 +25,7 @@ This walkthrough covers a number of concepts for climbing ladders:
 
 The Player entity defines a set of movement values for climbing called **Climbing**.
 
-![](../../media/2021-05-img\_60aefd701ead6.png)
+![](../../media/2021-05-img_60aefd701ead6.png)
 
 When this is set as the CurrentMovement, the player has direct control over vertical movement. When climbing up and down, the Climbing Speed is set as the player's Y velocity. As we will see later in the walkthrough, these values are explicitly set when the player presses **Up** to grab the ladder. Notice that the Player has a non-zero **Max Speed** under the Horizontal Movement section. This means that the player can move horizontally on the ladder. Some games like Super Mario world allow horizontal movement on ladders. Other games like Mega Man X only allow vertical movement on ladders. This game allows vertical movement, but changing the value to 0 results in no horizontal movement.
 
@@ -33,23 +33,23 @@ When this is set as the CurrentMovement, the player has direct control over vert
 
 Ladders are placed in the TMX file as tiles. The following image shows just the GameplayLayer with ladders.
 
-![](../../media/2021-05-img\_6097123e95d11.png)
+![](../../media/2021-05-img_6097123e95d11.png)
 
 Notice that the ladder tiles define the maximum height that the player can climb.
 
-![](../../media/2021-05-img\_609fd8ba05c63.png)
+![](../../media/2021-05-img_609fd8ba05c63.png)
 
 The code for this is defined below, but we can add extra climb height by adding additional tiles to the map. Keep in mind the GameplayLayer tiles do not need to match the visual layer exactly.
 
-![](../../media/2021-05-img\_609fd97cac79a.png)
+![](../../media/2021-05-img_609fd97cac79a.png)
 
 These ladders tiles use the **Ladder** type.
 
-![](../../media/2021-05-img\_60971250dca22.png)
+![](../../media/2021-05-img_60971250dca22.png)
 
 This allows the creation of a **LadderCollision** TileShapeCollection.
 
-![](../../media/2021-05-img\_609712da913c8.png)
+![](../../media/2021-05-img_609712da913c8.png)
 
 ### Changing to Climbing Movement
 
@@ -127,7 +127,7 @@ public partial class Player
 
 This value is controlled by GameScreen. The ladder collision requires logic to be executed before collision occurs, so the PlayerListVsLadderCollision relationship does not automatically run.
 
-![](../../media/2021-05-img\_60971a6308e58.png)
+![](../../media/2021-05-img_60971a6308e58.png)
 
 Instead, all Players have their LastCollisionLadderRectangle explicitly set to null, then the PlayerListVsLadderCollision relationship is manually called in GameScreen CustomActivity.
 

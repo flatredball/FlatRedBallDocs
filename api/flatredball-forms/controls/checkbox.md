@@ -4,19 +4,19 @@
 
 CheckBox is a component which can be used to represent a bool value (true or false) at runtime. 
 
-<figure><img src="../../../../media/2017-12-2017-12-13\_07-13-04.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2017-12-2017-12-13_07-13-04.gif" alt=""><figcaption></figcaption></figure>
 
 
 
 ### Layout Requirements
 
-The CheckBox control has no requirements – an empty container is sufficient. [![](../../../../media/2017-12-img\_5a485e78076db.png)](../../../../media/2017-12-img\_5a485e78076db.png)
+The CheckBox control has no requirements – an empty container is sufficient. [![](../../../../media/2017-12-img_5a485e78076db.png)](../../../../media/2017-12-img_5a485e78076db.png)
 
 ### TextInstance
 
 The CheckBox control can optionally include a Text instance named **TextInstance**. Setting the CheckBox control’s \*\*Text \*\*property changes the **TextInstance’s** displayed string.
 
-![](../../../../media/2017-12-img\_5a49250c06a00.png)
+![](../../../../media/2017-12-img_5a49250c06a00.png)
 
 ### IsChecked
 

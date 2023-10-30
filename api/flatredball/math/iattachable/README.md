@@ -66,7 +66,7 @@ void PositionSpriteAtCursor(Sprite sprite)
 }
 ```
 
-![ChildAndParentSprite.png](../../../../../media/migrated\_media-ChildAndParentSprite.png)
+![ChildAndParentSprite.png](../../../../../media/migrated_media-ChildAndParentSprite.png)
 
 ### AttachTo Method
 
@@ -113,7 +113,7 @@ Therefore, if your code sets the X value, it will just get overwritten before re
 
 #### Child absolute velocity and acceleration
 
-While absolute position and rotation values are read-only, velocity and acceleration values should not be used at all. Let's examine why velocity is not usable. As mentioned above, attachments result in the absolute position being set every frame according to the Parent's absolute position and the child's relative position. That means that the Position variable is reset every frame. But the Velocity variable also changes the variable every frame. That means that both attachments and Velocity will modify the absolute position of your object. So what happens if you have a non-zero Velocity? The Velocity will add itself (considering time) every frame, but just before drawing, attachments will set the Position property - overriding the changes that occurred earlier in the frame when Velocity was applied. Reading Velocity can also be misleading because velocity is not by default a "reactive" property. That means that if an object is moved by its Parent, the Velocity property will not automatically update itself according to the movement performed due to the attachment. However, making velocity reactive is possible using ["Real" values](../../../../../frb/docs/index.php#Real\_Velocity\_and\_Acceleration).
+While absolute position and rotation values are read-only, velocity and acceleration values should not be used at all. Let's examine why velocity is not usable. As mentioned above, attachments result in the absolute position being set every frame according to the Parent's absolute position and the child's relative position. That means that the Position variable is reset every frame. But the Velocity variable also changes the variable every frame. That means that both attachments and Velocity will modify the absolute position of your object. So what happens if you have a non-zero Velocity? The Velocity will add itself (considering time) every frame, but just before drawing, attachments will set the Position property - overriding the changes that occurred earlier in the frame when Velocity was applied. Reading Velocity can also be misleading because velocity is not by default a "reactive" property. That means that if an object is moved by its Parent, the Velocity property will not automatically update itself according to the movement performed due to the attachment. However, making velocity reactive is possible using ["Real" values](../../../../../frb/docs/index.php#Real_Velocity_and_Acceleration).
 
 ### "Changing the center" of a [PositionedObject](../../../../../frb/docs/index.php)
 
@@ -126,7 +126,7 @@ sprite.ScaleY = 5;
 sprite.RotationZVelocity = 1;
 ```
 
-![RotatingSprite.png](../../../../../media/migrated\_media-RotatingSprite.png) As expected the [Sprite](../../../../../frb/docs/index.php) rotates about its center. To change the point that the [Sprite](../../../../../frb/docs/index.php) rotates about, we need to use an additional [PositionedObject](../../../../../frb/docs/index.php). We'll add a simple [PositionedObject](../../../../../frb/docs/index.php), attach the [Sprite](../../../../../frb/docs/index.php) to it, then make the [PositionedObject](../../../../../frb/docs/index.php) rotate. Notice that we must add the [PositionedObject](../../../../../frb/docs/index.php) to the [SpriteManager](../../../../../frb/docs/index.php) or else the RotationZVelocity member will not apply automatically.
+![RotatingSprite.png](../../../../../media/migrated_media-RotatingSprite.png) As expected the [Sprite](../../../../../frb/docs/index.php) rotates about its center. To change the point that the [Sprite](../../../../../frb/docs/index.php) rotates about, we need to use an additional [PositionedObject](../../../../../frb/docs/index.php). We'll add a simple [PositionedObject](../../../../../frb/docs/index.php), attach the [Sprite](../../../../../frb/docs/index.php) to it, then make the [PositionedObject](../../../../../frb/docs/index.php) rotate. Notice that we must add the [PositionedObject](../../../../../frb/docs/index.php) to the [SpriteManager](../../../../../frb/docs/index.php) or else the RotationZVelocity member will not apply automatically.
 
 ```
 PositionedObject anchor = new PositionedObject();
@@ -147,7 +147,7 @@ bool changeRelative = true;
 sprite.AttachTo(anchor, changeRelative);
 ```
 
-![NewRotationPoint.png](../../../../../media/migrated\_media-NewRotationPoint.png)
+![NewRotationPoint.png](../../../../../media/migrated_media-NewRotationPoint.png)
 
 **Stop right there!** The code shown above for attaching is as brief as possible and simply shows the raw syntax behind attachments. However, you may be using Glue, and if so you shouldn't be writing the code above. Instead, you will likely have the above situation mostly set up - the PositionedObject will be the Entity itself and the Sprite will be a Sprite (or Entire Scene) Object in Glue. Instead of doing this in code, you should simply offset the Sprite in the SpriteEditor. Then when the Entity rotates, the Sprite will rotate about an offset naturally.
 
@@ -161,6 +161,6 @@ sprite.AttachTo(anchor, changeRelative);
 ### Additional Information
 
 * [FlatRedBall.Math.IAttachable:Attachment Updates in the Engine](../../../../../frb/docs/index.php)
-* [Two-way relationships](../../../../../frb/docs/index.php#Two\_Way\_Relationships) - Explains how two-way relationships work between IAttachables and the lists they belong to.
+* [Two-way relationships](../../../../../frb/docs/index.php#Two_Way_Relationships) - Explains how two-way relationships work between IAttachables and the lists they belong to.
 
 Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.

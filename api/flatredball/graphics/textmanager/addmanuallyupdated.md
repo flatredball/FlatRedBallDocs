@@ -39,7 +39,7 @@ for(int i = 0; i < numberOfTexts; i++)
 
 On an i7 (in 2018) this code renders at around 464 frames per second, as shown in the following screenshot:
 
-![](../../../../../media/2018-08-img\_5b7cbd967850d.png)
+![](../../../../../media/2018-08-img_5b7cbd967850d.png)
 
 By contrast, calling AddText instead of AddManuallyUpdated  results in a framerate of around 150 frames per second.
 

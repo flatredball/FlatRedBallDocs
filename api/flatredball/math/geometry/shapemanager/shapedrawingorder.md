@@ -33,4 +33,4 @@ Add the following to Initialize after initializing FlatRedBall:
  ShapeManager.ShapeDrawingOrder = ShapeDrawingOrder.UnderEverything;
 ```
 
-![ShapeDrawingOrder.png](../../../../../../media/migrated\_media-ShapeDrawingOrder.png)
+![ShapeDrawingOrder.png](../../../../../../media/migrated_media-ShapeDrawingOrder.png)

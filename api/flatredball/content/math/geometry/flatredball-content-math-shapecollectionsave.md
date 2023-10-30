@@ -4,7 +4,7 @@
 
 The ShapeCollectionSave class is a ["save"](../../../../../../frb/docs/index.php) class. Save classes are classes which allow you to load XML files to runtime objects as well as to save data contained in runtime objects to XML files. For more information on Save files, check [this article](../../../../../../frb/docs/index.php).
 
-You do not need to use the ShapeCollectionSave class in most cases since the FlatRedBallServices' Load method can load ShapeCollections. If you are simply looking to load a ShapeCollection, see [this page](../../../../../../frb/docs/index.php#Loading\_a\_ShapeCollection).
+You do not need to use the ShapeCollectionSave class in most cases since the FlatRedBallServices' Load method can load ShapeCollections. If you are simply looking to load a ShapeCollection, see [this page](../../../../../../frb/docs/index.php#Loading_a_ShapeCollection).
 
 You can use ShapeCollectionSave if you are making a tool that works with the .shcx file format.
 

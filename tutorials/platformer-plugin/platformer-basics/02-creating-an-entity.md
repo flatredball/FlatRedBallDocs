@@ -12,7 +12,7 @@ The FlatRedBall Editor provides a quick setup for creating a platformer project.
 2. Create a new project
 3. Wait for the project to finish loading
 4. Wait for the Wizard window to appear
-5. Select the Platformer project option ![](../../../media/2022-10-img\_634748f242105.png)
+5. Select the Platformer project option ![](../../../media/2022-10-img_634748f242105.png)
 6. Wait for the wizard to finish processing
 7. Run the game from either Visual Studio or the FlatRedBall Editor
 
@@ -28,7 +28,7 @@ Although this tutorial is focused on creating a platformer entity, we will first
 4. Check both the \*\*Add SolidCollision ShapeCollection \*\*and **Add CloudCollision ShapeCollection** options
 5. Click **OK**
 
-![](../../../media/2021-02-img\_6031e691c6b63.png)
+![](../../../media/2021-02-img_6031e691c6b63.png)
 
 We will return to the GameScreen in future tutorials, but having one created before we create entities will speed up the process.
 
@@ -45,14 +45,14 @@ To create an entity with platformer behavior:
 7. Leave the Tiled options selected to automatically create a list for this new entity in GameScreen
 8. Click **OK**
 
-![](../../../media/2021-02-img\_6031e7e167807.png)
+![](../../../media/2021-02-img_6031e7e167807.png)
 
 This will create a new platformer entity with a rich set of default functionality. We can verify that the entity is marked as a platformer by checking its **Entity Input Movement** tab to verify that it is marked as a platformer and that it has two movement types:
 
 * Ground
 * Air
 
-![](../../../media/2021-02-img\_6031e8c27e4d7.png)
+![](../../../media/2021-02-img_6031e8c27e4d7.png)
 
 ### Adding MainCharacter to the GameScreen
 
@@ -60,7 +60,7 @@ Now that we have the **MainCharater** set up with platfomer control values, we c
 
 
 
-<figure><img src="../../../media/2018-01-2021\_February\_20\_220001.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2018-01-2021_February_20_220001.gif" alt=""><figcaption></figcaption></figure>
 
 
 

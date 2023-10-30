@@ -20,7 +20,7 @@ Each of these animations is played in response to logic determining which should
 
 By default our Player already has an AnimationController. It doesn't appear in the Player object in the FlatRedBall Editor, but it is generated automatically based on the default settings on the Player. AnimationControllers (both in code and in the FlatRedBall Editor) are containers for AnimationLayers. Each AnimationLayer typically maps to a single animation (or two animations - a left and right facing version). By default, our player has animations for idle, walk, fall (in air, moving downward), and jump (in air, moving upward). We can see these layers by selecting the Player, clicking on the **Entity Input Movement** tab, and selecting the **Animation**
 
-![](../../../../media/2023-02-img\_63e26f184ed36.png)
+![](../../../../media/2023-02-img_63e26f184ed36.png)
 
 Each animation layer plays if its conditions evaluate to true and if the animations below it evaluate to false. Another way to think about this is, entries further down can "overwrite" the current animation if they evaluate to true, with the bottom-most getting the highest priority if it evaluates to true.
 
@@ -28,11 +28,11 @@ Each animation layer plays if its conditions evaluate to true and if the animati
 
 Each animation layer defines which animation is played, conditions for playing, and animation speed to play. For example, the CharacterWalk animation plays only if the player has a greater velocity than 1 and if all other animations (CharacterFall and CharacterJump) fail to play.
 
-![](../../../../media/2023-02-img\_63e26fe527a06.png)
+![](../../../../media/2023-02-img_63e26fe527a06.png)
 
 If we change the Min X Velocity Absolute, we can modify the behavior of the player. For example, if we change the value to 140, the player will only play the walk animation if walking faster than 140 units per second. 
 
-<figure><img src="../../../../media/2021-03-07\_08-43-26.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2021-03-07_08-43-26.gif" alt=""><figcaption></figcaption></figure>
 
  While this specific example may not be a practical change to the game, it shows how the logic controls whether an animation is played, and how that logic can cascade up through the layers. The following conditions can be used to control whether an animation plays:
 
@@ -40,12 +40,12 @@ If we change the Min X Velocity Absolute, we can modify the behavior of the play
 * Max X Velocity Absolute - this is the maximum speed that the player can move to play the animation. For example, setting the maximum speed to 200 means that if the player is moving faster than 200 units (absolute), then the animation will not play.
 *   Min Y Velocity - the minimum Y velocity (vertical movement) the player must have to play the animation. For example our player has CharacterJump animation which plays only if the velocity is greater than 0.
 
-    ![](../../../../media/2023-02-img\_63e272ccc6ca9.png)
+    ![](../../../../media/2023-02-img_63e272ccc6ca9.png)
 * Max Y Velocity - the maximum Y Velocity (vertical movement) that the player can move to play the animation. If the player is moving faster than this value upward, then animation will no longer play.
 * Movement Type - this option restricts an animation to whether the player is on the ground, air, or either. For example, this can be used to restrict animations to only play when in the air, such as the CharacterFall and CharacterJump animations.
 *   Movement Name - this option restricts an animation to only play when a particular set of Movement Values are active. This is a dropdown which contains all of the movement values defined in the **Movement Values** section. This is especially effective if you have logic which is already setting the Movement Values in code - such as allowing a user to run when the run button is held.
 
-    ![](../../../../media/2023-02-img\_63e2746de5bba.png)
+    ![](../../../../media/2023-02-img_63e2746de5bba.png)
 * Custom Condition - This allows the entry of code (such as a bool variable name) to be checked for whether an animation should be played. See the section below for more information on this property.
 
 ### Custom Condition
@@ -58,26 +58,26 @@ public bool IsTired => CurrentHealth / MaxHealth <= .1m;
 
 This can be used by the animation layer by entering the **IsTired** variable in the **Custom Condition** text box.
 
-![](../../../../media/2023-02-img\_63e2762263a37.png)
+![](../../../../media/2023-02-img_63e2762263a37.png)
 
 This produces generated code which checked IsTired in code. The text entered in Custom Condition is directly copied over so you can add any text there which evaluates to true, although the recommended approach is to encapsulate any logic in a property (as shown above) which is then referenced.
 
 ### Animation Name
 
-The Player contains an .achx file (Animation Chain List XML) which defines all available animations for the Player. ![](../../../../media/2023-02-img\_63e2772a7e27e.png) This file can be opened in the Animation Editor to view all animations. To open this file, either:
+The Player contains an .achx file (Animation Chain List XML) which defines all available animations for the Player. ![](../../../../media/2023-02-img_63e2772a7e27e.png) This file can be opened in the Animation Editor to view all animations. To open this file, either:
 
 * Double-click the .achx file. The FlatRedBall Editor uses the Windows file association for .achx --or--
 * Go to the \<unzipped FRBDK location>/FRBDK/Xna 4 Tools/AnimationEditor/AnimationEditor.exe
 
-![](../../../../media/2023-02-img\_63e277bb4069f.png)
+![](../../../../media/2023-02-img_63e277bb4069f.png)
 
 Notice that this .achx file happens to include animations which are not used by the Player - that's okay because not all animations must be used, and a single file can be shared by multiple entities. The FlatRedBall Editor scans this file and provides these animations in the dropdown.
 
-![](../../../../media/2023-02-img\_63e279776e780.png)
+![](../../../../media/2023-02-img_63e279776e780.png)
 
 Note that the .achx file contains "Left" and "Right" versions of character animations, but the FlatRedBall Editor only provides the names without Left/Right suffixes. This keeps the Animation Name dropdown smaller and makes it easier to read. This naming convention is encouraged for character animations, and if the **Has Left and Right** checkbox is checked, then only animations with Left and Right suffixes appear in the dropdown. If animations do not have left and right options, then this option can be unchecked. Then the full name of all animations show up in the dropdown.
 
-![](../../../../media/2023-02-img\_63e27bf1a89fb.png)
+![](../../../../media/2023-02-img_63e27bf1a89fb.png)
 
 ### Animation Speed
 
@@ -90,7 +90,7 @@ The Animation Speed Assignment dropdown provides the animation speed assignment 
 
 For example, the CharacterWalk animation can be set to use **BasedOnMaxSpeedRatioMultiplier** with a **Max Speed X Ratio Mutiplier** of 2. This results in the walk animation playing faster based on the movement speed of the player. 
 
-<figure><img src="../../../../media/2021-03-07\_09-55-20.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2021-03-07_09-55-20.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -98,11 +98,11 @@ For example, the CharacterWalk animation can be set to use **BasedOnMaxSpeedRati
 
 Animation layers can be added in the FlatRedBall Editor. New animations layers can be added through the Add button at the bottom of the animation list.
 
-![](../../../../media/2023-02-img\_63e283b2c849d.png)
+![](../../../../media/2023-02-img_63e283b2c849d.png)
 
 Also, existing animations can be copied with the copy button.
 
-![](../../../../media/2023-02-img\_63e283d21f873.png)
+![](../../../../media/2023-02-img_63e283d21f873.png)
 
 ### Conclusion
 

@@ -4,7 +4,7 @@
 
 A common plugin type is one that can modify NamedObjectSave instances. Thee types of plugins exist throughout FlatRedBall. For example, the Collision tab is a plugin which allows modifying NamedObjectSave instances which are collision relationships.
 
-![](../../media/2023-04-img\_644745cc39879.png)
+![](../../media/2023-04-img_644745cc39879.png)
 
 This tutorial shows how to create a plugin which can display and modify custom properties on a NamedObjectSave.
 
@@ -57,7 +57,7 @@ The ExampleView defines the UI for editing the properties on the selected NamedO
 
 The preview for this view should look like the following image:
 
-![](../../media/2023-04-img\_64474930d5649.png)
+![](../../media/2023-04-img_64474930d5649.png)
 
 Note that this view expects a ViewModel with properties BoolProperty and StringProperty.
 

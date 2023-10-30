@@ -26,6 +26,6 @@ StaticMethodInstruction addingSprite = new StaticMethodInstruction(
 InstructionManager.Instructions.Add(addingSprite);
 ```
 
-![SpriteAddedThroughInstruction.png](../../../../media/migrated\_media-SpriteAddedThroughInstruction.png)
+![SpriteAddedThroughInstruction.png](../../../../media/migrated_media-SpriteAddedThroughInstruction.png)
 
 Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

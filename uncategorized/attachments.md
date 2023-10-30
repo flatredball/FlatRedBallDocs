@@ -68,7 +68,7 @@ void PositionSpriteAtCursor(Sprite sprite)
 }
 ```
 
-![ChildAndParentSprite.png](../media/migrated\_media-ChildAndParentSprite.png)
+![ChildAndParentSprite.png](../media/migrated_media-ChildAndParentSprite.png)
 
 ### AttachTo Method
 
@@ -126,7 +126,7 @@ The Velocity will add itself (considering time) every frame, but just before dra
 
 Reading Velocity can also be misleading because velocity is not by default a "reactive" property. That means that if an object is moved by its Parent, the Velocity property will not automatically update itself according to the movement performed due to the attachment.
 
-However, making velocity reactive is possible using ["Real" values](../frb/docs/index.php#Real\_Velocity\_and\_Acceleration).
+However, making velocity reactive is possible using ["Real" values](../frb/docs/index.php#Real_Velocity_and_Acceleration).
 
 ### "Changing the center" of a [PositionedObject](../frb/docs/index.php)
 
@@ -141,7 +141,7 @@ sprite.ScaleY = 5;
 sprite.RotationZVelocity = 1;
 ```
 
-![RotatingSprite.png](../media/migrated\_media-RotatingSprite.png)
+![RotatingSprite.png](../media/migrated_media-RotatingSprite.png)
 
 As expected the [Sprite](../frb/docs/index.php) rotates about its center. To change the point that the [Sprite](../frb/docs/index.php) rotates about, we need to use an additional [PositionedObject](../frb/docs/index.php).
 
@@ -166,7 +166,7 @@ bool changeRelative = true;
 sprite.AttachTo(anchor, changeRelative);
 ```
 
-![NewRotationPoint.png](../media/migrated\_media-NewRotationPoint.png)
+![NewRotationPoint.png](../media/migrated_media-NewRotationPoint.png)
 
 **Stop right there!** The code shown above for attaching is as brief as possible and simply shows the raw syntax behind attachments. However, you may be using Glue, and if so you shouldn't be writing the code above. Instead, you will likely have the above situation mostly set up - the PositionedObject will be the Entity itself and the Sprite will be a Sprite (or Entire Scene) Object in Glue. Instead of doing this in code, you should simply offset the Sprite in the SpriteEditor. Then when the Entity rotates, the Sprite will rotate about an offset naturally.
 
@@ -180,6 +180,6 @@ sprite.AttachTo(anchor, changeRelative);
 ### Additional Information
 
 * [FlatRedBall.Math.IAttachable:Attachment Updates in the Engine](../frb/docs/index.php)
-* [Two-way relationships](../frb/docs/index.php#Two\_Way\_Relationships) - Explains how two-way relationships work between IAttachables and the lists they belong to.
+* [Two-way relationships](../frb/docs/index.php#Two_Way_Relationships) - Explains how two-way relationships work between IAttachables and the lists they belong to.
 
 Did this article leave any questions unanswered? Post any question in our [forums](../frb/forum.md) for a rapid response.

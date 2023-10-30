@@ -23,7 +23,7 @@ This guide is a modified version of the guide available here: https://gist.githu
 7. Open the start menu and search for `Developer command prompt for VS 2017`
 8.  Right-click on the result and select "Run as administrator"
 
-    ![](media/2017-07-img\_5968d629a8021.png)
+    ![](media/2017-07-img_5968d629a8021.png)
 9. Execute the following code: (this will add the new version of Microsoft.Build and Microsoft.Build.Framework to the Global Assembly Cache). **Note:** that you will need to adjust your folder **if your Visual Studio is installed on a different directory** (such as the D drive).
    1.  If using Visual Studio Community 2017
 

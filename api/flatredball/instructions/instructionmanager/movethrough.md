@@ -43,4 +43,4 @@ float velocity = 3;
 InstructionManager.MoveThrough<Sprite>(sprite, list, velocity );
 ```
 
-![MoveThrough.png](../../../../../media/migrated\_media-MoveThrough.png)
+![MoveThrough.png](../../../../../media/migrated_media-MoveThrough.png)

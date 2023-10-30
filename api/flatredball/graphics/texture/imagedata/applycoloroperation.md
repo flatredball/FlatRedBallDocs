@@ -30,4 +30,4 @@ ApplyColorOperation can be used to modify a texture so that when rendered normal
  SpriteManager.Camera.BackgroundColor = Color.White;
 ```
 
-![ImageDataApplyColorOperation.png](../../../../../../media/migrated\_media-ImageDataApplyColorOperation.png)
+![ImageDataApplyColorOperation.png](../../../../../../media/migrated_media-ImageDataApplyColorOperation.png)

@@ -20,4 +20,4 @@ for (int i = 0; i < 100; i++)
 }
 ```
 
-![PositionRandomlyInView.png](../../../../media/migrated\_media-PositionRandomlyInView.png)
+![PositionRandomlyInView.png](../../../../media/migrated_media-PositionRandomlyInView.png)

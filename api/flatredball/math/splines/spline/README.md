@@ -49,7 +49,7 @@ using FlatRedBall.Math.Splines;
  spline.Visible = true;
 ```
 
-![SplineExample1.png](../../../../../../media/migrated\_media-SplineExample1.png)
+![SplineExample1.png](../../../../../../media/migrated_media-SplineExample1.png)
 
 ### Creating a Spline from .splx
 
@@ -71,7 +71,7 @@ using FlatRedBall.Math.Splines;
  splineList[0].Visible = true;
 ```
 
-![SplineFromSplx.png](../../../../../../media/migrated\_media-SplineFromSplx.png) There are a few things to keep in mind:
+![SplineFromSplx.png](../../../../../../media/migrated_media-SplineFromSplx.png) There are a few things to keep in mind:
 
 * A .splx file can contain multiple Splines. In this case the .splx file only contains one. Splines implement the [INameable](../../../../../../frb/docs/index.php) interface, so you can find Splines in the loaded list by their name if your .splx file contains multiple Splines.
 * In this example I added the .splx to my project's "Content" folder. Therefore, the file name is prepended with "Content\\". Make sure to modify this according to where you place your file.

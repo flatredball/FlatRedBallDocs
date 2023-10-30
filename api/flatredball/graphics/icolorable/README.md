@@ -64,7 +64,7 @@ The following code will create five Sprites, each with a different [ColorOperati
  }
 ```
 
-![ColorOperations.png](../../../../../media/migrated\_media-ColorOperations.png)
+![ColorOperations.png](../../../../../media/migrated_media-ColorOperations.png)
 
 For more information on specific [ColorOperation values](../../../../../frb/docs/index.php), see the [ColorOperation page](../../../../../frb/docs/index.php).
 
@@ -135,7 +135,7 @@ Color rates are values which change the Red, Green, and Blue values over time. T
  }
 ```
 
-![SpritesWithColorRates.png](../../../../../media/migrated\_media-SpritesWithColorRates.png)
+![SpritesWithColorRates.png](../../../../../media/migrated_media-SpritesWithColorRates.png)
 
 ### Alpha and BlendOperation
 
@@ -175,7 +175,7 @@ BlendOperations control how IColorables blend with objects behind them. The foll
  }
 ```
 
-![AlphaAndBlendOperation.png](../../../../../media/migrated\_media-AlphaAndBlendOperation.png)
+![AlphaAndBlendOperation.png](../../../../../media/migrated_media-AlphaAndBlendOperation.png)
 
 ### AlphaRate
 

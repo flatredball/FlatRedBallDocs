@@ -18,7 +18,7 @@ All of these objects share the [PositionedObject](../../../../../../frb/docs/ind
 
 Any shape added to the FlatRedBall Editor (either as part of a Screen or Entity) will also be added to the ShapeManager by default. For example, the Player entity in the following screenshot contains an AxisAlignedRectangle which is automatically added to the ShapeManager.
 
-![](../../../../../../media/2023-01-img\_63bc1a57b884a.png)
+![](../../../../../../media/2023-01-img_63bc1a57b884a.png)
 
 ### Adding Shapes in Code
 
@@ -34,7 +34,7 @@ Add the following using statement:
 Circle circle = ShapeManager.AddCircle();
 ```
 
-![SimpleCircle.png](../../../../../../media/migrated\_media-SimpleCircle.png) If a Shape is added in code, it must be removed in code as well, typically in a Screen or Entity's CustomDestroy.
+![SimpleCircle.png](../../../../../../media/migrated_media-SimpleCircle.png) If a Shape is added in code, it must be removed in code as well, typically in a Screen or Entity's CustomDestroy.
 
 #### Shapes and Visibility
 

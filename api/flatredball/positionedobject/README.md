@@ -38,7 +38,7 @@ Absolute position can be directly controlled through the X, Y, and Z properties 
  sprite3.Z = 14;
 ```
 
-![PositionedSprites.png](../../../../media/migrated\_media-PositionedSprites.png) Since the Position and X/Y/Z properties are all part of the PositionedObject class, any class that inherits from the PositionedObject class (list can be viewed above in the table) has these properties. In other words, the code above uses [Sprites](../../../../frb/docs/index.php), but it could have used any PositionedObject-inheriting object to achieve the same results.
+![PositionedSprites.png](../../../../media/migrated_media-PositionedSprites.png) Since the Position and X/Y/Z properties are all part of the PositionedObject class, any class that inherits from the PositionedObject class (list can be viewed above in the table) has these properties. In other words, the code above uses [Sprites](../../../../frb/docs/index.php), but it could have used any PositionedObject-inheriting object to achieve the same results.
 
 #### Z Position
 
@@ -62,7 +62,7 @@ Velocity represents the speed at which an object is moving. Mathematically, it r
  secondPolygon.Acceleration.Y = -3;
 ```
 
-![TwoPolygons.png](../../../../media/migrated\_media-TwoPolygons.png) For more information on Velocity, see the [Velocity page](../../../../frb/docs/index.php). For more information on Acceleration, see the [Acceleration page](../../../../frb/docs/index.php).
+![TwoPolygons.png](../../../../media/migrated_media-TwoPolygons.png) For more information on Velocity, see the [Velocity page](../../../../frb/docs/index.php). For more information on Acceleration, see the [Acceleration page](../../../../frb/docs/index.php).
 
 ### Rotation
 
@@ -78,7 +78,7 @@ PositionedObjects implement the [IInstructable](../../../../frb/docs/index.php) 
 
 ### Managing PositionedObjects
 
-Most PositionedObjects like [Text objects](../../../../frb/docs/index.php) and [Sprites](../../../../frb/docs/index.php) are managed by managers as listed [above](./#FlatRedBall\_PositionedObject-Inheriting\_Classes\_and\_Associated\_Managers.md). However, it is common practice to create objects which inherit from PositionedObjects. When one of these objects is instantiated it is not automatically managed, therefore fields like Velocity and Acceleration are not applied. In other words, the following code will **NOT** result in an object that moves across the screen:
+Most PositionedObjects like [Text objects](../../../../frb/docs/index.php) and [Sprites](../../../../frb/docs/index.php) are managed by managers as listed [above](./#FlatRedBall_PositionedObject-Inheriting_Classes_and_Associated_Managers.md). However, it is common practice to create objects which inherit from PositionedObjects. When one of these objects is instantiated it is not automatically managed, therefore fields like Velocity and Acceleration are not applied. In other words, the following code will **NOT** result in an object that moves across the screen:
 
 ```
 PositionedObject myObject = new PositionedObject();

@@ -20,7 +20,7 @@ Whether you create a new .sln depends on whether you plan on making a plugin tha
 2. Create a copy of **Glue with all.sln** in the same folder
 3.  Rename the newly-created file to indicate the plugin you are developing. For example, I will name mine **Glue with TutorialPlugin.sln**
 
-    ![](../../media/2023-01-img\_63b4728413a0f.png)
+    ![](../../media/2023-01-img_63b4728413a0f.png)
 
 ### Creating a Plugin Project
 
@@ -29,28 +29,28 @@ Now that we have a .sln file to hold our plugin, we can create a new .csproj (pr
 1. Open the newly-created .sln file (mine is called **Glue with TutorialPlugin.sln**)
 2.  Collapse the projects in the solution explorer - this will make it easier to add new projects
 
-    ![](../../media/2018-02-img\_5a7f0d5c0c1f5.png)
+    ![](../../media/2018-02-img_5a7f0d5c0c1f5.png)
 3.  You can choose how you prefer to organize your plugin. Common approaches include adding a new folder for your plugin at the root of the solution, or adding your plugin to the existing Plugins folder. For this tutorial I will create a new folder at the root of the solution called Tutorial. Right-click on the solution and select **Add** -> **New Solution Folder**
 
-    ![](../../media/2018-02-img\_5a7f0e76ee93f.png)
+    ![](../../media/2018-02-img_5a7f0e76ee93f.png)
 4.  Name the folder **Tutorial**
 
-    ![](../../media/2018-02-img\_5a7f0ebc176c7.png)
+    ![](../../media/2018-02-img_5a7f0ebc176c7.png)
 
 Larger plugin projects may contain multiple projects, so creating  a folder for your plugin is a good way to keep the projects organized. Next we'll create a new .csproj file for the plugin:
 
 1.  Right-click on the **Tutorial** folder and select **Add** -> **New Project**
 
-    ![](../../media/2018-02-img\_5a7f0f6177819.png)
+    ![](../../media/2018-02-img_5a7f0f6177819.png)
 2.  Select the **Class Library (not .NET Framework)** category
 
-    ![](../../media/2023-01-img\_63b472ef08e0b.png)
+    ![](../../media/2023-01-img_63b472ef08e0b.png)
 3.  Name your plugin something like **TutorialPlugin**
 
-    ![](../../media/2023-01-img\_63b47314c3d19.png)
+    ![](../../media/2023-01-img_63b47314c3d19.png)
 4.  Verify that you are targeting .NET 6.0. This is the current version of the FlatRedBall Editor as of 2023, but it will likely change in the future
 
-    ![](../../media/2023-01-img\_63b4734808217.png)
+    ![](../../media/2023-01-img_63b4734808217.png)
 
 After clicking **OK**, the project will appear in the **Solution Explorer.**&#x20;
 
@@ -64,14 +64,14 @@ Tutorial projects must reference FlatRedBall and Glue libraries to be able to ma
 2. Right-click on the \*\*Dependencies \*\*item and select **Add Project Reference...**
 3.  Check Plugin Libraries:
 
-    ![](../../media/2023-04-img\_644d173f66308.png)
+    ![](../../media/2023-04-img_644d173f66308.png)
 
 The library should also target Windows:
 
 1. Right-click on the plugin library and select Properties
 2.  Change the Target OS to Windows
 
-    ![](../../media/2023-01-img\_63b474f814127.png)
+    ![](../../media/2023-01-img_63b474f814127.png)
 
 &#x20; Glue plugins typically often require a set of libraries for WPF development, as Glue plugins can host WPF controls. To add these libraries:
 
@@ -83,6 +83,6 @@ The library should also target Windows:
  <UseWPF>true</UseWPF>
 ```
 
-![](../../media/2023-01-img\_63b4758c7d999.png)
+![](../../media/2023-01-img_63b4758c7d999.png)
 
 Now you have a project that is ready to go as a plugin project! Next we'll create our first plugin class.

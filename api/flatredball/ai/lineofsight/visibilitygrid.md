@@ -116,7 +116,7 @@ if (visibilityGrid.Activity())
 }
 ```
 
-![VisibilityGrid.png](../../../../../media/migrated\_media-VisibilityGrid.png)
+![VisibilityGrid.png](../../../../../media/migrated_media-VisibilityGrid.png)
 
 ### Adding blockers
 
@@ -132,6 +132,6 @@ visibilityGrid.BlockWorld(5, 0);
 FlatRedBallServices.GraphicsOptions.TextureFilter = TextureFilter.Point;
 ```
 
-![VisibilityGridWithBlockers.png](../../../../../media/migrated\_media-VisibilityGridWithBlockers.png)
+![VisibilityGridWithBlockers.png](../../../../../media/migrated_media-VisibilityGridWithBlockers.png)
 
 Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.

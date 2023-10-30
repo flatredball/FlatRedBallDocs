@@ -13,5 +13,5 @@ Rendering (the process of displaying graphics on screen) can be a source of perf
 
 Rendering slowdowns can occur due to a number of problems:
 
-1. Render State changes - for more information see [FlatRedBallXna:Tutorials:Render\_State\_Changes](../../../../frb/docs/index.php)
+1. Render State changes - for more information see [FlatRedBallXna:Tutorials:Render_State_Changes](../../../../frb/docs/index.php)
 2. Fill rate/vertex count - for more information see the [PIX page](../../../../frb/docs/index.php)

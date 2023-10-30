@@ -120,7 +120,7 @@ The following is an example that demonstrates how to use ContentLoadBatch for bo
 
 When you run this example, the result should be a blank screen with a single moving ball. Pressing 1 to load the FlatRedBall logo pauses the ball's motion while loading, and pressing 2 loads the image in a separate thread without interrupting the ball's motion.
 
-![ContentLoadBatchScreenShot.png](../../../../media/migrated\_media-ContentLoadBatchScreenShot.png)
+![ContentLoadBatchScreenShot.png](../../../../media/migrated_media-ContentLoadBatchScreenShot.png)
 
 ### ContentLoadBatch.Load() vs FlatRedBallServices.Load()
 

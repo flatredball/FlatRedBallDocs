@@ -35,7 +35,7 @@ CollisionRelationships can be created a few ways. Typically collision relationsh
 * EnemyList (a list of Enemy entities)
 * SolidCollision (a TileShapeCollection)
 
-![](../../media/2023-08-img\_64e425d030d81.png)
+![](../../media/2023-08-img_64e425d030d81.png)
 
 Note that the TileShapeCollection may have its [SetByDerived](glue-reference-setbyderived.md) value set to true. This allows the creation of CollisionRelationships in a base Screen even though the TileShapeCollection is created in a derived Screen.
 
@@ -43,7 +43,7 @@ Note that the TileShapeCollection may have its [SetByDerived](glue-reference-set
 
 You can drag+drop one collidable object (such as a list) onto another collidable object (such as another list or a TileShapeCollection) so long as the two objects are in the same screen. This will create a CollisionRelationship between the two objects. 
 
-<figure><img src="../../media/2019-08-21\_21-07-45.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2019-08-21_21-07-45.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -51,11 +51,11 @@ You can drag+drop one collidable object (such as a list) onto another collidable
 
 The Collision tab displays when a collidable object or list is selected
 
-![](../../media/2023-08-img\_64e426fdc1df4.png)
+![](../../media/2023-08-img_64e426fdc1df4.png)
 
 The image above displays the **Collision** tab for the **BulletList**. Notice that the **BulletList** can collide with any of the other collidable objects in the **GameScreen** including itself. Adding collision is easy - just click the **Add** button next to the object in the Collision tab to create a new relationship. For example, clicking on the **Add** button next to **EnemyList** creates a relationship between **BulletList** and **EnemyList**. 
 
-<figure><img src="../../media/2019-08-21\_21-10-50.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2019-08-21_21-10-50.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -71,7 +71,7 @@ CollisionRelationships are regular Objects which can be created through the righ
 
 
 
-<figure><img src="../../media/2019-08-21\_21-12-46.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2019-08-21_21-12-46.gif" alt=""><figcaption></figcaption></figure>
 
  In this case the newly-created CollisionRelationship will not yet reference any collidable objects in the screen, and the game will not compile until the objects in the relationship are set (as shown in the next section).
 
@@ -81,7 +81,7 @@ Once a CollisionRelationship is created, it can be edited by selecting it under 
 
 
 
-<figure><img src="../../media/2019-08-21\_21-14-36.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2019-08-21_21-14-36.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -91,7 +91,7 @@ A CollisionRelationship objects can be changed using the two drop-downs. Note th
 
 Subcollision allows specifying a specific shape within a collidable entity to use when performing collision. This is useful if an entity includes multiple shapes, each for different purposes. For example, an enemy may have a circle for solid collision (preventing the enemy from walking through walls) but it may also have a line for line-of-sight collision. In this case, we do not want the line to collide against the walls, so we would specify that only the enemy's circle should collide with the walls. All available shapes for subcollisions appear in the **Subcollision** dropdowns for each object. Note that changing the subcollision will also rename the CollisionRelationship if the **Auto-name Relationship** option is checked. 
 
-<figure><img src="../../media/2019-08-2019-08-21\_09-26-26.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2019-08-2019-08-21_09-26-26.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -101,16 +101,16 @@ Physics can be set up through the Collision tab using one of three options:
 
 *   **No Physics** - Colliding objects will not automatically be moved by the CollisionRelationship.
 
-    ![](../../media/2019-08-img\_5d5cb7d56fab4.png)
+    ![](../../media/2019-08-img_5d5cb7d56fab4.png)
 *   **Move Collision** - Colliding objects will be separated if a collision occurs using their relative mass values. The most common values for **First Mass** and **Second Mass** are 1, 1 if both objects have equal mass and 0, 1 if the first object should not be able to push the second (in the case of colliding against a solid TileShapeCollection)
 
-    ![](../../media/2019-08-img\_5d5cb850a57b1.png)
+    ![](../../media/2019-08-img_5d5cb850a57b1.png)
 
     * **First Mass** - the mass of the first object in the relationship (the mass of enemies) relative to the mass of the second object. If this object should not be able to push the second object, it should have a mass of 0.
     * **Second Mass** - the mass of the second object relative to the first object. If this object should not be able to push the first object, it should have a mass of 0.
 *   **Bounce Collision** - Colliding objects will be separated if a collision occurs. They will also have their velocity adjusted in response to the elasticity value. An elasticity value of 1 will preserve momentum. An elasticity of 0 will be an _inelastic_ collision - where momentum is lost.
 
-    ![](../../media/2019-08-img\_5d5cb8df8e850.png)
+    ![](../../media/2019-08-img_5d5cb8df8e850.png)
 
     * **First Mass/Second Mass** - see Move collision
     * **Elasticity** - A multiplier for an object's velocity when it collides. A value of 0 will absorb momentum. A value of 1 will preserve momentum. A value greater than 1 will add momentum.
@@ -125,11 +125,11 @@ In some cases games will need to perform custom logic when a collision occurs. F
 
 Collision events can be created by dropping a CollisionRelationship on a Screen's **Events** folder. 
 
-<figure><img src="../../media/2019-08-2019-08-21\_07-37-57.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2019-08-2019-08-21_07-37-57.gif" alt=""><figcaption></figcaption></figure>
 
  For more information on Glue events, see the [Glue Events page](../../documentation/tools/glue-reference/events.md). Like all other events, collision events can be edited in code. In the example above, the **GameScreen.Event.cs** file now includes an function OnEnemyListVsPlayerListCollisionOccurred  which is called whenever a collision occurs between an Enemy and Player instance. Make sure to add code to **\<YourGameScreen>.Event.cs** and not the **\<YourScreen>.Genererated.Event.cs**.
 
-![](../../media/2019-08-img\_5d5d4a287ca7b.png)
+![](../../media/2019-08-img_5d5d4a287ca7b.png)
 
 Notice that the CollisionRelationship used in this example is between a list of Enemies and a list of Players, but the event is raised for a single Enemy and a single Player. Since each enemy may collide with each player, the event method may get raised multiple times per frame. Every time the event is raised, the arguments tell you which two objects collided.
 

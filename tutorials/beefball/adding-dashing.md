@@ -103,7 +103,7 @@ Just like before, we need to create a DashFrequency variable in the FRB Editor:
 6. Click **OK**
 7. Enter a value of \*\*2 \*\*for \*\*DashFrequency \*\*to indicate a 2 second frequency
 
-![](../../../media/2021-07-img\_60fdd587a661f.png)
+![](../../../media/2021-07-img_60fdd587a661f.png)
 
 Now the player will only be able to dash once every two seconds.
 
@@ -119,7 +119,7 @@ Now that the player's dashing is limited, we need to add some visible indication
 4. Select **Circle**
 5. Enter the name **CooldownCircle**
 
-![](../../../media/2021-07-img\_60fdd66d44b61.png)
+![](../../../media/2021-07-img_60fdd66d44b61.png)
 
 ### Defining States
 
@@ -132,24 +132,24 @@ All states must be categorized, so the first step is to create a new category:
 
 1.  Right-click on the States item under PlayerBall and select **Add State Category**
 
-    ![](../../../media/2022-01-img\_61d31c434473b.png)
+    ![](../../../media/2022-01-img_61d31c434473b.png)
 2.  Name the category **DashCategory** and click **OK**
 
-    ![](../../../media/2022-01-img\_61d31c76a0789.png)
+    ![](../../../media/2022-01-img_61d31c76a0789.png)
 
 Now the PlayerBall has a category named DashCategory.
 
-![](../../../media/2022-01-img\_61d31c922a1c1.png)
+![](../../../media/2022-01-img_61d31c922a1c1.png)
 
 Next we'll add states to the category:
 
 1. Right-click on **DashCategory**
 2.  Select **Add State**
 
-    ![](../../../media/2022-01-img\_61d31cb2b4f4f.png)
+    ![](../../../media/2022-01-img_61d31cb2b4f4f.png)
 3.  Enter the name **Tired** and click **OK**
 
-    ![](../../../media/2022-01-img\_61d31cd31f224.png)
+    ![](../../../media/2022-01-img_61d31cd31f224.png)
 4. Repeat the above steps to create a "Rested" state as well
 
 As mentioned above, we'll want the CooldownCircle ball to grow (increase its Radius) to give the player an indication of how much time is left in the cooldown. To do this, we'll need to tunnel in to the CooldownCircle's Radius property:
@@ -164,7 +164,7 @@ As mentioned above, we'll want the CooldownCircle ball to grow (increase its Rad
 
 Categories must be told which variables to modify. By default, categories do not modify any variables.
 
-![](../../../media/2022-01-img\_61d31d6a8c5dc.png)
+![](../../../media/2022-01-img_61d31d6a8c5dc.png)
 
 To add a variable to a state, drag+drop the variable onto the category: &#x20;
 
@@ -228,7 +228,7 @@ Now that the color variables is exposed, lets change one circle in GameScreen
 2. Change both CircleInstanceColor and CooldownCircleColor custom variables to Cyan, or the color of your choosing.
 3. Run the game!
 
-![Screenshot of BeefBall game showing player 1 in white on left, player 2 in cyan on right, and the puck in red in the middle.](../../../media/2021-05-img\_60a440858f9f1.png)
+![Screenshot of BeefBall game showing player 1 in white on left, player 2 in cyan on right, and the puck in red in the middle.](../../../media/2021-05-img_60a440858f9f1.png)
 
 You can now tell the difference between each player.
 

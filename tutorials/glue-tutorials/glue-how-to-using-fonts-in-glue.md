@@ -24,12 +24,12 @@ To create a Text object:
 2. Right-click on the "Objects" item
 3. Selct "Add Object"
 4. Select the "FlatRedBall Type" option
-5. Select "Text" in the list![NewTextInstance.PNG](../../../media/migrated\_media-NewTextInstance.PNG)
+5. Select "Text" in the list![NewTextInstance.PNG](../../../media/migrated_media-NewTextInstance.PNG)
 6. Enter a name (or leave it to the default value) and click OK
 
 ### Creating a .fnt file
 
-FlatRedBall uses the .fnt file format created by [Angelcode Bitmap Font Generator](http://www.angelcode.com/products/bmfont/). To create a .fnt file, see [this page](../../../frb/docs/index.php#Creating\_a\_BitmapFont).
+FlatRedBall uses the .fnt file format created by [Angelcode Bitmap Font Generator](http://www.angelcode.com/products/bmfont/). To create a .fnt file, see [this page](../../../frb/docs/index.php#Creating_a_BitmapFont).
 
 Once you have created a .fnt file:
 
@@ -43,6 +43,6 @@ After both a Text object and a .fnt file have been added to your project, you ca
 
 1. Select the Text object
 2. Find the "Font" variable
-3. Use the drop-down to change the value to the name of your font![SetFontVariable.png](../../../media/migrated\_media-SetFontVariable.png)
+3. Use the drop-down to change the value to the name of your font![SetFontVariable.png](../../../media/migrated_media-SetFontVariable.png)
 
 Now your Text object will use the given Font both in your game as well as in GlueView.

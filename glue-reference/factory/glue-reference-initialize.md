@@ -58,7 +58,7 @@ But what if the Screen only contains a PositionedObjectList of Dragon (the type 
 
 If your screen contains multiple lists of the same type, Glue will generate code to add entities to all lists. For example, if your game has an entity called Enemy and you have two lists (GroundEnemies and AirEnemies), then any Enemy factory (or factory of entity deriving from Enemy) will insert into both lists. A list can be removed from automatic association with a factory in Glue (this requires GLUX version 3 or greater). This value is true by default, but can be set to false to prevent Glue from automatically associating any factories with the list.
 
-![](../../../../media/2020-02-img\_5e438e9f4f62f.png)
+![](../../../../media/2020-02-img_5e438e9f4f62f.png)
 
 &#x20; Factory-List association can also be adjusted in code by calling RemoveList. To remove the lists from the factory:
 

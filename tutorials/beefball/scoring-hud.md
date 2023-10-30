@@ -13,7 +13,7 @@ First we'll create an Entity to store all of our scoring information. We could p
 3. Enter the name **ScoreHud**
 4. Click **OK**
 
-![](../../media/2021-07-img\_60fdd1776370c.png)
+![](../../media/2021-07-img_60fdd1776370c.png)
 
 ### Creating the ScoreHud Text objects
 
@@ -26,14 +26,14 @@ For the ScoreHud we'll define the Text objects in Glue (just like we defined the
 5. Enter the name **Team1Score**
 6.  Click **OK**
 
-    ![](../../media/2021-07-img\_60fdd21643893.png)
+    ![](../../media/2021-07-img_60fdd21643893.png)
 7. Repeat the steps above to create another Text object called Team2Score
 8. Repeat the steps above to create another Text object called Team1ScoreLabel
 9. Repeat the steps above to create another Text object called Team2ScoreLabel
 
 You should now have 4 Text objects:
 
-![](../../media/2021-07-img\_60fdd24f94751.png)
+![](../../media/2021-07-img_60fdd24f94751.png)
 
 Now we'll change the following variables on the Text objects in Glue. Select the following Text objects and set the variables as defined below: **Team1Score**
 
@@ -65,11 +65,11 @@ To add the ScoreHud to the GameScreen:
 2. Select the Quick Actions tab
 3. Click the **Add ScoreHud Instance to GameScreen** button
 
-![](../../media/2021-07-img\_60fdd305ee7ac.png)
+![](../../media/2021-07-img_60fdd305ee7ac.png)
 
 You should now see everything showing up correctly in your game
 
-![Screenshot of in-progress BeefBall game showing player one and player two score HUD at the top.](../../media/2021-05-img\_609de61e7870f.png)
+![Screenshot of in-progress BeefBall game showing player one and player two score HUD at the top.](../../media/2021-05-img_609de61e7870f.png)
 
 ### Conclusion
 

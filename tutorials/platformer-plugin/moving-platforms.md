@@ -76,11 +76,11 @@ This code loops continually until the entity is destroyed. The entity sets this 
 
 The GameScreen contains a list of Players and a list of MovingPlatforms.
 
-![](../../media/2021-05-img\_609de4dc3733b.png)
+![](../../media/2021-05-img_609de4dc3733b.png)
 
 The PlayerList collides against the MovingPlatformList using **Platformer Solid Collision** physics
 
-![](../../media/2021-05-img\_609de5820e820.png)
+![](../../media/2021-05-img_609de5820e820.png)
 
 Note that usually platformer entities like Player collide against TileShapeCollections using Platformer Solid Collision, but this can also be used when colliding against another entity list.
 

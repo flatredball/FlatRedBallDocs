@@ -28,7 +28,7 @@ text.Y = SpriteManager.Camera.DestinationRectangle.Height / 2.0f;
 text.SetPixelPerfectScale(layer);
 ```
 
-![Layer2D.png](../../../../../media/migrated\_media-Layer2D.png)
+![Layer2D.png](../../../../../media/migrated_media-Layer2D.png)
 
 ### A note about attachments
 

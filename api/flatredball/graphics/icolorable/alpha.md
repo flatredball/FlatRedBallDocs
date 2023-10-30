@@ -26,4 +26,4 @@ for (int i = 0; i < count; i++)
 }
 ```
 
-![TextAlpha.PNG](../../../../../media/migrated\_media-TextAlpha.PNG)
+![TextAlpha.PNG](../../../../../media/migrated_media-TextAlpha.PNG)

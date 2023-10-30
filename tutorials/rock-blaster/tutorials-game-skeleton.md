@@ -6,7 +6,7 @@ So far we have created an simple project called Rock Blaster. Next we will creat
 
 ### A skeleton...with bones?
 
-When we refer to a game skeleton, we mean an initial setup which contains empty or nearly-empty Screens and Entities. We are not referring to an actual skeleton, but rather the simplified structure that a skeleton implies. ![NoSkeleton.png](../../../media/migrated\_media-NoSkeleton.png) Creating a skeleton is a great exercise because it can quickly get you to think about what your game will contain. You can add Screens and Entities as  you think them up because there is no implementation required. As you become more experienced with making games (especially with Glue) you will find it easier to create skeletons.
+When we refer to a game skeleton, we mean an initial setup which contains empty or nearly-empty Screens and Entities. We are not referring to an actual skeleton, but rather the simplified structure that a skeleton implies. ![NoSkeleton.png](../../../media/migrated_media-NoSkeleton.png) Creating a skeleton is a great exercise because it can quickly get you to think about what your game will contain. You can add Screens and Entities as  you think them up because there is no implementation required. As you become more experienced with making games (especially with Glue) you will find it easier to create skeletons.
 
 ### How to start creating a skeleton
 
@@ -34,16 +34,16 @@ Let's start with the Rock entity:
 1. Select the **Quick Actions** tab in Glue
 2.  Click **Add Entity**
 
-    ![](../../../media/2021-03-img\_604cdc3e88ab2.png)
+    ![](../../../media/2021-03-img_604cdc3e88ab2.png)
 3. Enter the name **Rock**
 4. Check the **Circle** option. We check this option to identify that our Rock entity can collide with other objects (such as our Player) and that the collision shape is a circle.
 5. Click OK
 
-![](../../../media/2021-03-img\_604cdc96adfb4.png)
+![](../../../media/2021-03-img_604cdc96adfb4.png)
 
 To add the bullet, repeat the steps above, but this time name the entity **Bullet**. Otherwise, all options should be the same including **Circle** collision.
 
-![](../../../media/2021-03-img\_604cdd111f81c.png)
+![](../../../media/2021-03-img_604cdd111f81c.png)
 
 ### Adding Entity Lists to GameScreen
 
@@ -53,10 +53,10 @@ Now we have three entities in our game: Player, Bullet, and Rock. Our GameScreen
 2. Select the **Quick Actions** tab
 3.  Click the **Add Rock List to GameScreen** button
 
-    ![](../../../media/2021-03-img\_604ce7b4c3013.png)
+    ![](../../../media/2021-03-img_604ce7b4c3013.png)
 4.  Click the **Add Rock Factory** button
 
-    ![](../../../media/2021-03-img\_604ce81a9c62e.png)
+    ![](../../../media/2021-03-img_604ce81a9c62e.png)
 
 Repeat the steps above for the Bullet entity:
 
@@ -67,7 +67,7 @@ Repeat the steps above for the Bullet entity:
 
 You should now have a **BulletList** and **RockList** in the GameScreen.
 
-![](../../../media/2021-03-img\_604cec80d6343.png)
+![](../../../media/2021-03-img_604cec80d6343.png)
 
 Notice that we have a PlayerList in the game, which suggests that Rock Blaster is a multi-player game. In practice, we recommend a PlayerList even if you intend to make your game single-player. There's no downside to using a PlayerList and it helps keep code consistent. In short, it's best to always have a PlayerList. &#x20;
 

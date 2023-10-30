@@ -10,7 +10,7 @@ leftEdge = object.X - object.ScaleX;
 rightEdge = object.X + object.ScaleX;
 ```
 
-In other words, ScaleX is half of width and ScaleY is half of height. ![ScaleDiagram.png](../../../../../../media/migrated\_media-ScaleDiagram.png)
+In other words, ScaleX is half of width and ScaleY is half of height. ![ScaleDiagram.png](../../../../../../media/migrated_media-ScaleDiagram.png)
 
 ###
 
@@ -38,7 +38,7 @@ pixelPerfectSprite.ScaleX = .5f * pixelPerfectSprite.Texture.Width / pixelsPerUn
 pixelPerfectSprite.ScaleY = .5f * pixelPerfectSprite.Texture.Height / pixelsPerUnit;
 ```
 
-![LogoWithDifferentScales.png](../../../../../../media/migrated\_media-LogoWithDifferentScales.png)
+![LogoWithDifferentScales.png](../../../../../../media/migrated_media-LogoWithDifferentScales.png)
 
 ### Sizing and Positioning Objects
 

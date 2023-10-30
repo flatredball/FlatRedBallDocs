@@ -62,7 +62,7 @@ foreach (Polygon polygon in mLoadedPolygons)
 }
 ```
 
-![EntityCollision.png](../media/migrated\_media-EntityCollision.png)
+![EntityCollision.png](../media/migrated_media-EntityCollision.png)
 
 **Not sure how to load a file?** If you're unclear or can't remember how to add the Smiley.plylstx file linked above, then you might want to check out [**this article**](../frb/docs/index.php)**.**
 

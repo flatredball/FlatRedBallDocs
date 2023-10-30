@@ -41,7 +41,7 @@ if (InputManager.Keyboard.KeyPushed(Keys.Space))
 }
 ```
 
-TextureFilter.Linear: ![LinearFiltering.png](../../../../../media/migrated\_media-LinearFiltering.png) TextureFilter.Point: ![PointFiltering.png](../../../../../media/migrated\_media-PointFiltering.png)
+TextureFilter.Linear: ![LinearFiltering.png](../../../../../media/migrated_media-LinearFiltering.png) TextureFilter.Point: ![PointFiltering.png](../../../../../media/migrated_media-PointFiltering.png)
 
 ### TextureFilter.Point and Tile Maps
 

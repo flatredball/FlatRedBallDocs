@@ -4,7 +4,7 @@
 
 The ExposedInDerived property on an object allows an object to be accessible in a derived Entity. This is useful if a base Entity defines that an object must exist (such as an AxisAlignedRectangle in a collidable entity), but the entity modifies its values (such as a derived enemy entity modifying the size of its collision). Objects which are ExposedInDerived will appear as normal white entities in the tree view, and objects which are created as a result of setting ExposedInDerived to true appear as green in derived entities. The following image shows an AxisAlignedRectangleInstance in BaseEntity which has its ExposedInDerived set to true. The AxisAlignedRectangleInstance in DerivedEntity is green to indicate that it is created in the base entity.
 
-![](../../../../media/2021-05-img\_60aa8c9f21571.png)
+![](../../../../media/2021-05-img_60aa8c9f21571.png)
 
 ### Object Access
 

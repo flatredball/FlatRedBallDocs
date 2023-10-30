@@ -68,7 +68,7 @@ textBox.ScaleX = 5;
 InputManager.ReceivingInput = textBox;
 ```
 
-![IInputReceiverFocus.png](../../../../media/migrated\_media-IInputReceiverFocus.png)
+![IInputReceiverFocus.png](../../../../media/migrated_media-IInputReceiverFocus.png)
 
 ### TakingInput
 

@@ -11,13 +11,13 @@ First we'll download the FlatRedBall .dll files. Note that FlatRedBall provides 
 1. Go to the [prebuilt file location](http://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/).
 2.  Select your platform
 
-    ![](../../../../media/2018-10-img\_5bbb6fec05e77.png)
+    ![](../../../../media/2018-10-img_5bbb6fec05e77.png)
 3.  Select **Debug** or **Release.** You may want to start with Debug, then grab the release .dlls when you are ready to test your game for release.
 
-    ![](../../../../media/2018-10-img\_5bbb7036d4f9c.png)
+    ![](../../../../media/2018-10-img_5bbb7036d4f9c.png)
 4.  Download the .dll for FlatRedBall, and the associated .pdb file if you would like additional debugging information.
 
-    ![](../../../../media/2018-10-img\_5bbb70c0eeb35.png)
+    ![](../../../../media/2018-10-img_5bbb70c0eeb35.png)
 
     Note that the folder will include other files, which may be needed if you would like to add FlatRedBall.Forms to your project. However if you are interested in only the core FlatRedBall functionality, you will only need the single .dll.
 
@@ -30,11 +30,11 @@ Most FlatRedBall platforms only require a single - the engine .dll.  Add this fi
 3. Right-click on the \*\*References \*\*item
 4.  Select **Add Reference**...
 
-    ![](../../../../media/2018-10-img\_5bbb72137e780.png)
+    ![](../../../../media/2018-10-img_5bbb72137e780.png)
 5. Select the **Browse** category
 6.  Click the **Browse...** button
 
-    ![](../../../../media/2018-10-img\_5bbb725ed1603.png)
+    ![](../../../../media/2018-10-img_5bbb725ed1603.png)
 7. Navigate to where you have downloaded the .dll in the previous steps and select it to add it to your project.
 
 ### Adding Code

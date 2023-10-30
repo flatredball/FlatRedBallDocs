@@ -38,7 +38,7 @@ SpriteManager.Camera.Z -= InputManager.Mouse.ScrollWheel;
 
 ### Cursor Visibility
 
-See [the showing cursor wiki entry](../../../../../frb/docs/index.php#Showing\_Cursor).
+See [the showing cursor wiki entry](../../../../../frb/docs/index.php#Showing_Cursor).
 
 ### Mouse Pixel Coordinates
 
@@ -62,7 +62,7 @@ float xWorldPosition = InputManager.Mouse.WorldXAt(zPosition);
 float yWorldPosition = InputManager.Mouse.WorldYAt(zPosition);
 ```
 
-For a more detailed example see [this entry](../../../../../frb/docs/index.php#Creating\_Attachments) on moving a [Sprite](../../../../../frb/docs/index.php) by positioning it to the cursor's coordinates.
+For a more detailed example see [this entry](../../../../../frb/docs/index.php#Creating_Attachments) on moving a [Sprite](../../../../../frb/docs/index.php) by positioning it to the cursor's coordinates.
 
 ### Detecting Mouse in Window
 

@@ -32,11 +32,11 @@ Next we'll add an AnimationChain List File (.achx). The file is a list of Animat
 1. Right-click on the Files item
 2. Select "Add File"->"New File"
 3. Select "Animation Chain List (.achx)" as the type
-4. Click OK ![AddAnimationChainListFile.png](../../media/migrated\_media-AddAnimationChainListFile.png)
+4. Click OK ![AddAnimationChainListFile.png](../../media/migrated_media-AddAnimationChainListFile.png)
 
 ### Creating AnimationChains
 
-We'll create three AnimationChains in this step, but first you'll need to download the files we'll use. These are: ![Button inactive.png](../../media/migrated\_media-Button\_inactive.png)[Download](../../frb/docs/images/6/6a/Button\_inactive.png) ![Button normal.png](../../media/migrated\_media-Button\_normal.png)[Download](../../frb/docs/images/b/bf/Button\_normal.png) ![Button press.png](../../media/migrated\_media-Button\_press.png)[Download](../../frb/docs/images/f/fb/Button\_press.png) Once you've downloaded these files, double-click your AnimationChainFile under your Button Entity's Files item and the AnimationEditor should open. For information on using the AnimationEditor, see the [AnimationEditor Tutorial](../../documentation/tools/glue-gluevault-component-pages-animationeditor-plugin.md). Once the AnimationEditor is open, create three AnimationChains - each one referencing one of the images you downloaded ![ThreeAnimationChains.png](../../media/migrated\_media-ThreeAnimationChains.png) Notice that each AnimationChain has just one image representing the visual state of the button. Once you are finished creating your three AnimationChains, save your AnimationChain and be sure to copy all files.
+We'll create three AnimationChains in this step, but first you'll need to download the files we'll use. These are: ![Button inactive.png](../../media/migrated_media-Button_inactive.png)[Download](../../frb/docs/images/6/6a/Button_inactive.png) ![Button normal.png](../../media/migrated_media-Button_normal.png)[Download](../../frb/docs/images/b/bf/Button_normal.png) ![Button press.png](../../media/migrated_media-Button_press.png)[Download](../../frb/docs/images/f/fb/Button_press.png) Once you've downloaded these files, double-click your AnimationChainFile under your Button Entity's Files item and the AnimationEditor should open. For information on using the AnimationEditor, see the [AnimationEditor Tutorial](../../documentation/tools/glue-gluevault-component-pages-animationeditor-plugin.md). Once the AnimationEditor is open, create three AnimationChains - each one referencing one of the images you downloaded ![ThreeAnimationChains.png](../../media/migrated_media-ThreeAnimationChains.png) Notice that each AnimationChain has just one image representing the visual state of the button. Once you are finished creating your three AnimationChains, save your AnimationChain and be sure to copy all files.
 
 ### Creating a Sprite Object
 
@@ -46,7 +46,7 @@ Now that we've defined all of our animations in a .achx file, we'll create a Spr
 2. Select **Add Object**
 3. Select **FlatRedBall or Custom Type**
 4. Select **Sprite** from the list
-5. Click **OK** ![CreateSprite.PNG](../../media/migrated\_media-CreateSprite.PNG)
+5. Click **OK** ![CreateSprite.PNG](../../media/migrated_media-CreateSprite.PNG)
 
 Now your Button has a Sprite object. To associate the .achx file you created with the Sprite:
 
@@ -55,7 +55,7 @@ Now your Button has a Sprite object. To associate the .achx file you created wit
 3. Change the **Animation Chains** value to **AnimationListChainFile**
 4.  Change the **Current Chain Name** to **Normal**. This sets the default animation for the Sprite.
 
-    ![](../../media/2019-04-img\_5cc8bf69006f4.png)
+    ![](../../media/2019-04-img_5cc8bf69006f4.png)
 
 Note that the AnimationChainListFile must be in the same entity as the Sprite - otherwise AnimaitonChainListFile will not appear in the drop down. You can change the Current Chain Name to any value to give the Sprite a default value.
 
@@ -74,12 +74,12 @@ To tunnel the variable:
 3. Click on the "Tunneling" tab
 4. Select the SpriteInstance as the Object
 5. Select the CurrentChain name as Variable
-6. For brevity, change the "Alternative Name:" to "CurrentChain" ![AddAnimationChainTunneledVariable.png](../../media/migrated\_media-AddAnimationChainTunneledVariable.png)
+6. For brevity, change the "Alternative Name:" to "CurrentChain" ![AddAnimationChainTunneledVariable.png](../../media/migrated_media-AddAnimationChainTunneledVariable.png)
 7. Click **OK**
 
 Now you can change the variable by selecting the Sprite in Glue by selecting the Variables folder. 
 
-<figure><img src="../../media/2016-01-2019-04-30\_16-32-05.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2016-01-2019-04-30_16-32-05.gif" alt=""><figcaption></figcaption></figure>
 
  If you are interested in changing the current AnimationChain on a Sprite in code, see [this article](glue-how-to-control-animation-at-runtime.md).
 

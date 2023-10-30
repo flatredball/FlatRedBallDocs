@@ -2,7 +2,7 @@
 
 ### Introduction
 
-![](../media/2021-03-img\_6048dd6d7dd6d.png)
+![](../media/2021-03-img_6048dd6d7dd6d.png)
 
 [Introduction to FlatRedBall](introduction-to-flatredball.md) This guide explores concepts in FlatRedBall. Start here if you want to know what it's all about! &#x20;
 
@@ -12,7 +12,7 @@
 
 These tutorials walk you through creating a full game from scratch.
 
-[![](../media/2016-12-img\_585345a4df251.png)](../documentation/tutorials/beefball.md)
+[![](../media/2016-12-img_585345a4df251.png)](../documentation/tutorials/beefball.md)
 
 [Beefball](../documentation/tutorials/beefball.md) Beefball is a local multi-player game similar to air hockey. This tutorial provides step-by-step instructions for creating your first FlatRedBall project. &#x20;
 
@@ -130,13 +130,13 @@ Wall Jumping Wall sliding and jumping.
 
 Technology-specific tutorials cover a single technology
 
-![](../media/2017-02-img\_58b11501ccb60.png)[Tiled Tutorials](../documentation/tools/tiled-plugin/using-the-tiled-plugin.md) Learn to work with Tiled, the most popular tile map editing program.   ![](../media/2017-02-img\_58b2ef68ecf47.png)[Gum Tutorials](../documentation/tools/gum/tutorials.md) Use Gum to define and lay out flexible graphical layouts in your FlatRedBall game for HUDs and other UI. &#x20;
+![](../media/2017-02-img_58b11501ccb60.png)[Tiled Tutorials](../documentation/tools/tiled-plugin/using-the-tiled-plugin.md) Learn to work with Tiled, the most popular tile map editing program.   ![](../media/2017-02-img_58b2ef68ecf47.png)[Gum Tutorials](../documentation/tools/gum/tutorials.md) Use Gum to define and lay out flexible graphical layouts in your FlatRedBall game for HUDs and other UI. &#x20;
 
-![](../media/2023-09-img\_6504462fb1a98.png)
+![](../media/2023-09-img_6504462fb1a98.png)
 
 [FlatRedBall.Forms Tutorials](../documentation/tutorials/flatredball-forms.md) FlatRedBall.Forms is a layer on top of Gum for creating standard forms UI such as TextBoxes and Buttons. &#x20;
 
-![](../media/2017-02-img\_58b2f19b935a6.png)[Animation Editor Tutorials](../documentation/tools/animationeditor/glue-gluevault-component-pages-animationeditor-plugin.md)
+![](../media/2017-02-img_58b2f19b935a6.png)[Animation Editor Tutorials](../documentation/tools/animationeditor/glue-gluevault-component-pages-animationeditor-plugin.md)
 
 The AnimationEditor simplifies the creation of frame-flipping animations.   &#x20;
 

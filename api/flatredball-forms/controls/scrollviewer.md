@@ -12,7 +12,7 @@ The ScrollViewer control requires:
 * An object named **InnerPanelInstance** of any type (typically a Container)
 * An object named **ClipContainerInstance** of any type (typically a Container with **ClipsChildren** set to true)
 
-![](../../../../media/2017-12-img\_5a465ac0d252b.png)
+![](../../../../media/2017-12-img_5a465ac0d252b.png)
 
 ### ClipContainerInstance Recommendations
 
@@ -33,11 +33,11 @@ ScrollViewer instances support hiding or showing the VerticalScrollBarInstance. 
 1. NoScrollBar
 2. VerticalScrollVisible
 
-![](../../../../media/2020-12-img\_5fe0bcaf3e58d.png)
+![](../../../../media/2020-12-img_5fe0bcaf3e58d.png)
 
 These two states should adjust the visibility of the VerticalScrollBarInstance and the width of the ClipContainerInstance as shown in the following diagram:
 
-![](../../../../media/2020-12-img\_5fe0c0267cc93.png)
+![](../../../../media/2020-12-img_5fe0c0267cc93.png)
 
 Keep in mind that this category applies to any control which inherits from ScrollBar, such as ListBox. Also, these values should not be directly assigned in code, but rather are controlled through the ScrollBar's VerticalScrollBarVisibility property (see below).
 
@@ -62,11 +62,11 @@ Currently the ScrollViewer control only supports vertical scrolling, so the inne
 
 Setting **HeightUnits** to **RelativeToChildren** results in the inner panel enables automatic resizing according to the inner panel's children (which are added at runtime).
 
-![](../../../../media/2017-12-img\_5a46645375a35.png)
+![](../../../../media/2017-12-img_5a46645375a35.png)
 
 As additional controls are added to inner panel, it will expand vertically. Controls which fall outside of the clip container will not be rendered. The following diagram shows this, but has controls outside of the clip container dimmed for illustrative purposes:
 
-![](../../../../media/2017-12-img\_5a47a33404776.png)
+![](../../../../media/2017-12-img_5a47a33404776.png)
 
 ### InnerPanelInstance and Children Layout
 
@@ -82,7 +82,7 @@ The VerticalScrollBarVisibility property controls the behavior of the scrollbar 
 
 
 
-<figure><img src="../../../../media/2017-12-17\_07-34-31.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2017-12-17_07-34-31.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -125,7 +125,7 @@ When viewing the code above, keep in mind:
 
 The code above adjusts the ScrollViewer such that the view displays 40% (400 / 1000) of the available height of the InnerPanel. The scroll bar can be used to to scroll through the container. 
 
-<figure><img src="../../../../media/2017-12-2017-12-24\_14-54-40.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2017-12-2017-12-24_14-54-40.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -133,22 +133,22 @@ The code above adjusts the ScrollViewer such that the view displays 40% (400 / 1
 
 Objects can be added to ScrollViewer instances in Gum, but it requires manually entering the suffix ".InnerPanelInstance" to the parent name of the child. For example, consider a page with a ScrollViewer in Gum:
 
-![](../../../../media/2022-03-img\_623a6c4d39216.png)
+![](../../../../media/2022-03-img_623a6c4d39216.png)
 
 To add an instance to the ScrollViewerInstance:
 
 1.  Add an object as a child to the ScrollViewerInstance, by either drag+dropping the item in the tree view, or by manually setting the Parent of the child to ScrollViewerInstance.
 
-    ![](../../../../media/2022-03-img\_623a6c8718e24.png)
+    ![](../../../../media/2022-03-img_623a6c8718e24.png)
 2. Select the child
 3. Scroll to find the Parent property
 4.  Append **.InnerPanelInstance** to the parent name
 
-    ![](../../../../media/2022-03-img\_623a6cd2209df.png)
+    ![](../../../../media/2022-03-img_623a6cd2209df.png)
 
 Notice the dotted line shows the expansion of the InnerPanelInstance. Also, the reason we append **.InnerPanelInstance** is because we want to attach to the InnerPanelInstance inside the ScrollViewerInstance, and InnerPanelInstance is the name of the panel, as is shown if the ScrollViewer is selected in Gum.
 
-![](../../../../media/2022-03-img\_623a6ddb9e16a.png)
+![](../../../../media/2022-03-img_623a6ddb9e16a.png)
 
 ### Example - Adding to InnerPanel in Code
 
@@ -182,7 +182,7 @@ for(int i = 0; i < 20; i++)
 
 The code above will produce the following ScrollViewer: 
 
-<figure><img src="../../../../media/2017-12-2017-12-24\_18-58-12.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2017-12-2017-12-24_18-58-12.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -216,6 +216,6 @@ for(int i = 0; i < 10; i++)
 
 
 
-<figure><img src="../../../../media/2017-12-2017-12-24\_19-18-14.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2017-12-2017-12-24_19-18-14.gif" alt=""><figcaption></figcaption></figure>
 
  &#x20;

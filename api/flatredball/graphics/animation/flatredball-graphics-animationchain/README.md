@@ -39,7 +39,7 @@ Note: The AnimationFrame class is used to define individual frames in an Animati
 
 #### Loading an AnimationChainList from file
 
-For information on loading an AnimationChainList from a .achx file, see [this page](../../../../../../frb/docs/index.php#Loading\_from\_file).
+For information on loading an AnimationChainList from a .achx file, see [this page](../../../../../../frb/docs/index.php#Loading_from_file).
 
 ### Accessing [AnimationFrames](../../../../../../frb/docs/index.php)
 

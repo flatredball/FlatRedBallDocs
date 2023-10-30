@@ -21,17 +21,17 @@ This tutorial will use a NineSliceButton, which can be imported from this file (
 3. Right-click on the Components folder
 4.  Select "Import Component"
 
-    ![](../../media/2019-01-img\_5c3e082a718b5.png)
+    ![](../../media/2019-01-img_5c3e082a718b5.png)
 5. Browse for and select the **NineSliceButton.gucx** file that you saved
 6. Click OK, and click OK if told that the file will be copied.
 
 The Component should now appear in Gum:
 
-![](../../media/2023-08-img\_64d0e12288bb6.png)
+![](../../media/2023-08-img_64d0e12288bb6.png)
 
 Gum asks to copy your file so that your entire Gum project remains portable. If you would like to save your component, or import future components from the default Components folder, you can right-click on the **Components** folder and select **View in explorer**.
 
-![](../../media/2023-08-img\_64d0e033e30e6.png)
+![](../../media/2023-08-img_64d0e033e30e6.png)
 
 ### Adding a Click event to the Button
 
@@ -40,7 +40,7 @@ Next, we need to mark the Button as being clickable. To do this in Gum:
 1. Verify **NineSliceButton** is selected
 2. Check the **HasEvents** check box
 
-![](../../media/2023-08-img\_64d0e13e8e6c0.png)
+![](../../media/2023-08-img_64d0e13e8e6c0.png)
 
 ###
 
@@ -53,7 +53,7 @@ Now that you have a NineSliceButton component, you can add it to your Gum screen
 
 
 
-<figure><img src="../../media/2016-01-07\_06-21-22.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2016-01-07_06-21-22.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -61,7 +61,7 @@ Now that you have a NineSliceButton component, you can add it to your Gum screen
 
 Once you have an object in a Gum screen, you can access it in code by using the GumScreen property which is part of every FlatRedBall screen.  GumScreen is automatically generated to provide access to all Gum objects in the related screen. In this case, the screen is MainMenuGum. By typing GumScreen and a period, auto complete provides options for accessing Gum objects in your screen as shown in the following screenshot:
 
-![](../../media/2023-08-img\_64d0e7f661d0b.png)
+![](../../media/2023-08-img_64d0e7f661d0b.png)
 
 You can subscribe to the Click event by creating a method such as HandleClick, as shown in the following code snippet.
 
@@ -74,7 +74,7 @@ void HandleClick(FlatRedBall.Gui.IWindow callingWindow)
 
 If you run the game now and click on the button you will notice that it gets wider every time it is clicked. Of course, this is not a very practical example. In a real game, you could move to the next screen or switch the logical or visual state of your game elements as appropriate.
 
-**Where is my mouse cursor?** FlatRedBall projects have the mouse cursor invisible by default. To make the mouse cursor visible, see this page: [Microsoft.Xna.Framework.Game#Showing\_Cursor](../../frb/docs/index.php#Showing\_Cursor)
+**Where is my mouse cursor?** FlatRedBall projects have the mouse cursor invisible by default. To make the mouse cursor visible, see this page: [Microsoft.Xna.Framework.Game#Showing_Cursor](../../frb/docs/index.php#Showing_Cursor)
 
 ### Diagnosing Problems
 

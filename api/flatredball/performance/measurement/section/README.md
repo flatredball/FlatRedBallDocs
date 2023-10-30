@@ -34,4 +34,4 @@ Section result = Section.EndContextAndTime();
 FlatRedBall.Debugging.Debugger.CommandLineWrite(result);
 ```
 
-![SectionPrintedOut.PNG](../../../../../media/migrated\_media-SectionPrintedOut.PNG) For more information on CommandLineWrite, see the [CommandLineWrite page](../../../debugging/debugger/commandlinewrite.md).
+![SectionPrintedOut.PNG](../../../../../media/migrated_media-SectionPrintedOut.PNG) For more information on CommandLineWrite, see the [CommandLineWrite page](../../../debugging/debugger/commandlinewrite.md).

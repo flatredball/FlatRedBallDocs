@@ -16,10 +16,10 @@ To create a new Entity:
 1. Right-click on the Entities folder
 2.  Select **Add Entity**
 
-    ![](../../../../media/2023-02-img\_63fd1ead9bd9b.png)
+    ![](../../../../media/2023-02-img_63fd1ead9bd9b.png)
 3.  Select the desired options for the entity in the pop-up window
 
-    ![](../../../../media/2023-02-img\_63fd1ece35bef.png)
+    ![](../../../../media/2023-02-img_63fd1ece35bef.png)
 4. Click **OK**
 
 &#x20;

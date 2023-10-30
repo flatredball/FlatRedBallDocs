@@ -4,7 +4,7 @@
 
 The OnScreenKeyboard, also referred to as a "software keyboard", can be used to enter text in a TextBox using a GamePad. Console games and games which use a controller as a primary input device will usually include some form of OnScreenKeyboard for text entry. Although the OnScreenKeyboard is primarily designed to be used with a GamePad, the mouse can also be used to click on the individual keys. The OnScreenKeyboard must always be paired with a TextBox. Creating an OnScreenKeyboard without pairing it to a TextBox will result in runtime exceptions when the user attempts to click on one of the keys. 
 
-<figure><img src="../../../../../media/2021-02-2021\_February\_19\_210140.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2021-02-2021_February_19_210140.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -20,7 +20,7 @@ Strictly speaking, the OnScreenKeyboard has no layout requirements - it can have
 
 Any button which does not have one of the names listed above will insert the same character as its text into the text box. This behavior allows keyboards to be fully customizable - they can provide as many or as few characters as desired.
 
-![](../../../../../media/2021-02-img\_6030989f78e65.png)
+![](../../../../../media/2021-02-img_6030989f78e65.png)
 
 Note that although the diagram above displays buttons as direct children of the OnScreenKeyboard, buttons can be added as children of containers, and the hierarchy can be of any depth. All buttons will be recursively found and used by the keyboard.
 
@@ -38,7 +38,7 @@ The code above assumes that the OnScreenKeyboard and TextBox are named KeyboardI
 
 As mentioned above, the OnScreenKeyboard requires an associated TextBox. The easiest approach for implementing an OnScreenKeyboard is to place both controls in a Gum page.
 
-![](../../../../../media/2021-02-img\_6031dc3ac3a39.png)
+![](../../../../../media/2021-02-img_6031dc3ac3a39.png)
 
 This implementation will create a matching Forms class. For example, if above is in GameScreenGum, then your project would have a class called \*\*GameScreenGumForms. \*\*This Forms class will contain both the Keyboard and TextBox so the setup can be performed as shown in the following code: &#x20;
 
@@ -64,7 +64,7 @@ void CustomInitialize()
 
 For this example, the following Gum layout will be used:
 
-![](../../../../../media/2022-02-img\_62005c691db5c.png)
+![](../../../../../media/2022-02-img_62005c691db5c.png)
 
 Note that the button will not be used except to show that tabbing to a different control is possible when the keyboard is not active. The following code enables full control of the text box with the gamepad:
 
@@ -122,6 +122,6 @@ Forms.ButtonInstance.IsFocused = true;
 
 The code above results in a fully functional keyboard controlled by the gamepad, as shown in the following animation: 
 
-<figure><img src="../../../../../media/2021-02-06\_16-42-36.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2021-02-06_16-42-36.gif" alt=""><figcaption></figcaption></figure>
 
 

@@ -2,11 +2,11 @@
 
 ### Introduction
 
-CreatesDictionary is a property that tells Glue whether to deserialize a given CSV file to either a List or Dictionary. If you are accessing entries within a CSV according to some common key (such as the Name of an enemy type), then you should use the CreatesDictionary property to simplify access. The CreatesDictionary property is a property that only appears on CSV files, or TXT files which are treated as CSVs. You will be given the option to create a Dictionary or List when first adding new CSV files through Glue: ![SpreadsheetDictionaryOrList.PNG](../../../../../media/migrated\_media-SpreadsheetDictionaryOrList.PNG)
+CreatesDictionary is a property that tells Glue whether to deserialize a given CSV file to either a List or Dictionary. If you are accessing entries within a CSV according to some common key (such as the Name of an enemy type), then you should use the CreatesDictionary property to simplify access. The CreatesDictionary property is a property that only appears on CSV files, or TXT files which are treated as CSVs. You will be given the option to create a Dictionary or List when first adding new CSV files through Glue: ![SpreadsheetDictionaryOrList.PNG](../../../../../media/migrated_media-SpreadsheetDictionaryOrList.PNG)
 
 ### "required" keyword
 
-Glue must know which property you want to use as the key for the dictionary. Glue does this by looking for the "required" keyword in the header of your CSV. For example, the following CSV marks the "Name" as required: ![CsvWithRequiredName.PNG](../../../../../media/migrated\_media-CsvWithRequiredName.PNG)
+Glue must know which property you want to use as the key for the dictionary. Glue does this by looking for the "required" keyword in the header of your CSV. For example, the following CSV marks the "Name" as required: ![CsvWithRequiredName.PNG](../../../../../media/migrated_media-CsvWithRequiredName.PNG)
 
 **Name is common** The most common key for data is "Name". Unless you have a reason to not use this, consider using "Name" as your required property.
 
@@ -14,11 +14,11 @@ If you have a CSV without a "required" field, then Glue will not be able to crea
 
 ### Setting CreatesDictionary" to True
 
-The next step is to set the CSV file's CreateDictionary property to True in Glue: ![CreatesDictionaryProperty.png](../../../../../media/migrated\_media-CreatesDictionaryProperty.png)
+The next step is to set the CSV file's CreateDictionary property to True in Glue: ![CreatesDictionaryProperty.png](../../../../../media/migrated_media-CreatesDictionaryProperty.png)
 
 ### Accessing the Dictionary in code
 
-Now that you have created a CSV that has CreatesDictionary set to true, you can access the file in code and get instances using the Name property: ![DictionaryInCode.png](../../../../../media/migrated\_media-DictionaryInCode.png)
+Now that you have created a CSV that has CreatesDictionary set to true, you can access the file in code and get instances using the Name property: ![DictionaryInCode.png](../../../../../media/migrated_media-DictionaryInCode.png)
 
 ### Concerns about using strings as keys
 

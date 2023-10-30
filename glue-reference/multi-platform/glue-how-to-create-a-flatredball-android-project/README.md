@@ -35,11 +35,11 @@ Creating an Android project is essentially identical to creating any other platf
 4. Set the **Platform** to **Android**
 5. Click **Create project!**
 
-![](../../../../../media/2022-03-img\_6235dcc952264.png)
+![](../../../../../media/2022-03-img_6235dcc952264.png)
 
 Select the desired project type in the wizard, or close the wizard to begin with an empty project. Click the Visual Studio icon to open the project in Visual Studio:
 
-![](../../../../../media/2022-03-img\_6235dd408496f.png)
+![](../../../../../media/2022-03-img_6235dd408496f.png)
 
 Now that the project is in Visual Studio, you can develop an Android game the same as if you were making a PC game, including using Glue. To launch the game:
 
@@ -47,9 +47,9 @@ Now that the project is in Visual Studio, you can develop an Android game the sa
 2. Verify that the **Play** button in Visual Studio has the desired emulator selected. Note that if a physical Android device is connected to your computer and is set up for debugging, then Visual Studio will detect it as a deployment option.
 3. Press the Play button
 
-![](../../../../../media/2016-11-img\_581ac5bb6021e.png)
+![](../../../../../media/2016-11-img_581ac5bb6021e.png)
 
-![RunningGenymotion.png](../../../../../media/migrated\_media-RunningGenymotion.png)
+![RunningGenymotion.png](../../../../../media/migrated_media-RunningGenymotion.png)
 
 ### Creating a synced Android project
 
@@ -64,11 +64,11 @@ Synced Android projects are created just like any other synced project. The firs
 
 
 
-<figure><img src="../../../../../media/2016-01-2019-04-08\_07-55-31.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../media/2016-01-2019-04-08_07-55-31.gif" alt=""><figcaption></figcaption></figure>
 
  The project will take a moment to download and be created, but once it is, you will see the Android project listed in the Androids project list. Since your Glue project now has multiple platforms, you can choose which project to open through the Projects tab.
 
-![](../../../../../media/2019-04-img\_5cab537d772c4.png)
+![](../../../../../media/2019-04-img_5cab537d772c4.png)
 
 ### Releasing an Android Project
 
@@ -93,6 +93,6 @@ This happens on newer versions of .NET. To fix this:
 2. Copy the Xamarin folder from this location into the location reported in the error dialog.
 3. Restart the FlatRedBall Editor
 
-![](../../../../../media/2022-12-img\_63b0c60e2d31f.png)
+![](../../../../../media/2022-12-img_63b0c60e2d31f.png)
 
 &#x20;

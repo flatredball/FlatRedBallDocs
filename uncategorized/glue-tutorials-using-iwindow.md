@@ -17,11 +17,11 @@ In short, the IWindow interface can give your Entities the functionality and eas
 
 Implementing IWindow on an Entity is essentially the same as implementing IClickable - simply change the "Implements IWindow" property to true:
 
-![](../media/2016-11-img\_581f9c05be9ab.png)
+![](../media/2016-11-img_581f9c05be9ab.png)
 
 **Got a popup about IVisible?** You may get a popup about implementing IVisible as follows:
 
-![](../media/2016-11-img\_581f9be988634.png)
+![](../media/2016-11-img_581f9be988634.png)
 
 This tutorial specifies that IWindows must also implement the IVisible interface. The IVisible interface simply means that the object has a Visible property. Don't worry, if you get this it just means Glue is going to automatically make a Visible property for your Entity.
 
@@ -37,7 +37,7 @@ Once an Entity implements IWindow, Glue will automatically generate a number of 
 2. Right-click on Events
 3. Select "Add Event"
 4. Select the "Expose" option
-5. Use the drop-down to select "Click" ![ExposeClickEvent.png](../media/migrated\_media-ExposeClickEvent.png)
+5. Use the drop-down to select "Click" ![ExposeClickEvent.png](../media/migrated_media-ExposeClickEvent.png)
 
 Glue will add an implementation for the Click event. You can access this in one of two ways:
 

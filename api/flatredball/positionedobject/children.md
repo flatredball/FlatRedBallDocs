@@ -31,4 +31,4 @@ string displayString =
 TextManager.AddText(displayString);
 ```
 
-![ChildrenTutorial.png](../../../../media/migrated\_media-ChildrenTutorial.png)
+![ChildrenTutorial.png](../../../../media/migrated_media-ChildrenTutorial.png)

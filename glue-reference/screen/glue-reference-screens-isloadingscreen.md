@@ -6,7 +6,7 @@ The IsLoadingScreen property can be used to mark a Screen as a loading screen. L
 
 ### Setting IsLoadingScreen
 
-To mark a Screen as a loading screen, simply set the IsLoadingScreen property to "True": ![IsLoadingScreen.PNG](../../../../media/migrated\_media-IsLoadingScreen.PNG)
+To mark a Screen as a loading screen, simply set the IsLoadingScreen property to "True": ![IsLoadingScreen.PNG](../../../../media/migrated_media-IsLoadingScreen.PNG)
 
 ### Using a loading screen
 

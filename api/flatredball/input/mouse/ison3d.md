@@ -46,7 +46,7 @@ else
 }
 ```
 
-![IsOn3DText.png](../../../../../media/migrated\_media-IsOn3DText.png)
+![IsOn3DText.png](../../../../../media/migrated_media-IsOn3DText.png)
 
 **Warning**: You should always use the non-generic version of IsOn3D when performing tests on [Text](../../../../../frb/docs/index.php) objects. Want to know more? Read on!
 
@@ -139,4 +139,4 @@ At the time of this writing there is no method to simply return all of the objec
 1. Performance may suffer if you have a lot of objects in your scene. If you are suffering from performance issues you may need to perform some type of higher-level partitioning to reduce calls to this method.
 2. You will need to manually loop through objects and maintain a list of objects which you are over if you are interested in performing multiple-selection.
 
-![MultipleCameraMousePicking.png](../../../../../media/migrated\_media-MultipleCameraMousePicking.png)
+![MultipleCameraMousePicking.png](../../../../../media/migrated_media-MultipleCameraMousePicking.png)

@@ -16,7 +16,7 @@ In code all of the objects mentioned above inherit from the [FlatRedBall.Positio
 
 By default Glue will attempt to create lists for new entities automatically if the default options are left. For example, the following animation shows that Glue will add a new list to GameScreen when an entity called EnemyEntity is created. 
 
-<figure><img src="../../media/2016-01-07\_10-22-16.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2016-01-07_10-22-16.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -28,7 +28,7 @@ Glue provides a number of methods for creating a new PositionedObjectList in a G
 
 If your game has a GameScreen, and if your GameScreen does not already contain a list for an entity, then the Quick Actions tab shows a button to add a list to the GameScreen. Clicking this button will automatically add the list to the GameScreen. 
 
-<figure><img src="../../media/2016-01-07\_10-25-05.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2016-01-07_10-25-05.gif" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -51,7 +51,7 @@ PositionedObjectLists can also be created through the regular right-click menu i
 5. Select the type of list to create using the dropdown
 6.  Enter the name of the list
 
-    ![](../../media/2016-11-img\_58391dc463d98.png)
+    ![](../../media/2016-11-img_58391dc463d98.png)
 
 ### Adding to a List
 
@@ -59,7 +59,7 @@ Once a list has been created, instances of the list's type can be added:
 
 1. Right-click on the list
 2. Select **Add Object**
-3. Glue will only ask for the new instance's name (the type will match the list type), so enter a name and click **OK** ![](../../media/2016-11-img\_58391f350f699.png)
+3. Glue will only ask for the new instance's name (the type will match the list type), so enter a name and click **OK** ![](../../media/2016-11-img_58391f350f699.png)
 
 Instances can also be added to a list by first creating them outside of the list and dragging them onto the list. This is how instances of a derived entity type can be added to a list of a base type: 
 

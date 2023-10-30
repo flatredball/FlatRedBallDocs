@@ -6,7 +6,7 @@ To assist in debugging I have created an extensible interactive input and output
 
 With this system it is possible for developers to view debugging output and interact and update C# objects and methods from within their game. This allows developers to change AI behaviors, spawn entities, load levels, and much more.
 
-![Console5.PNG](../../../../media/migrated\_media-Console5.PNG)
+![Console5.PNG](../../../../media/migrated_media-Console5.PNG)
 
 ## Install / Quick Start
 
@@ -104,7 +104,7 @@ Unlike when receiving output, your code does not need to do any registration pri
 
 ### Input Processing
 
-The actual processing of commands is done through an implementation of the IConsoleProcessor interface. This abstraction allows developers to extend the console system to use any language they want, from python to Lua. All that needs to be done is to create a new class that implements IConsoleProcessor and code in all the required methods. See the [Python example](../../../../frb/docs/index.php#Add\_Python\_Support) for how this is done.
+The actual processing of commands is done through an implementation of the IConsoleProcessor interface. This abstraction allows developers to extend the console system to use any language they want, from python to Lua. All that needs to be done is to create a new class that implements IConsoleProcessor and code in all the required methods. See the [Python example](../../../../frb/docs/index.php#Add_Python_Support) for how this is done.
 
 The zip uploaded to GlueVault includes the JavascriptProcessor class, which allows console commands to utilize Javascript via the [Javascript.net](http://javascriptdotnet.codeplex.com/) engine.
 
@@ -223,7 +223,7 @@ The code on [\[1\]](https://github.com/KallDrexx/ConsoleLib) contains a project 
 In order to enable this for your game:
 
 1. Follow the install instructions to add the ConsoleLib project or dll to your FRB game
-2. Add the following code to your Game1 constructor: \_consoleServiceHost = new ConsoleServiceHost("localhost", 4000);. This will allow you to start receiving console commands with a corrosponding protected variable to your Game1 class.
+2. Add the following code to your Game1 constructor: _consoleServiceHost = new ConsoleServiceHost("localhost", 4000);. This will allow you to start receiving console commands with a corrosponding protected variable to your Game1 class.
 3. Compile the ConsoleClient project.
 4. Run your game and run the ConsoleClient
 5. In ConsoleClient, click the Connection menu item and select Connect

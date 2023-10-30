@@ -26,7 +26,7 @@ void CustomInitialize()
 
 The first line tells the camera to use a 3D projection. By default the camera has **Orthogonal=true** which means it is using a 2D camera. A 3D camera will be necessary so that the ground Sprite will appear larger as the camera gets closer. The starting Z value can be thought of as the **altitude** that the camera starts at. A larger value results in the camera starting higher up. This value of 750 results in the map appearing at a similar height to the real ActRaiser game. This was obtained through iterative changes while comparing the view to the YouTube video in the previous tutorial. The camera will begin at roughly the right height, just like the real game.
 
-![](../../../../media/2021-04-img\_606cf9b6eaddc.png)
+![](../../../../media/2021-04-img_606cf9b6eaddc.png)
 
 ### Adding the Falling Logic
 
@@ -60,7 +60,7 @@ void CustomActivity(bool firstTimeCalled)
 
 The line which assigns the UpVector is necessary to allow the main Camera to rotate on its Z axis. By default, FlatRedBall Cameras cannot rotate on Z unless this line of code is added. The remainder of the function allows us to start and restart the falling movement. We can now run the game and press the space bar to begin falling. 
 
-<figure><img src="../../../../media/2021-03-2021\_April\_06\_182918.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2021-03-2021_April_06_182918.gif" alt=""><figcaption></figcaption></figure>
 
 
 

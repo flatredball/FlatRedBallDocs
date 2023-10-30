@@ -54,7 +54,7 @@ void CustomActivity(bool firstTimeCalled)
 
 
 
-<figure><img src="../media/2019-12-2019\_December\_07\_151411.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../media/2019-12-2019_December_07_151411.gif" alt=""><figcaption></figcaption></figure>
 
 
 

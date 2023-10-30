@@ -44,4 +44,4 @@ Add the following to Update:
 emitter.TimedEmit();
 ```
 
-![EmitterRotation.png](../../../../../../media/migrated\_media-EmitterRotation.png)
+![EmitterRotation.png](../../../../../../media/migrated_media-EmitterRotation.png)
