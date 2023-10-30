@@ -1,1 +1,3 @@
-The following tutorials provide an introduction to working with Platformers in Glue. \[subpages depth="1"\]
+# Platformer Basics
+
+The following tutorials provide an introduction to working with Platformers in the FlatRedBall Editor.

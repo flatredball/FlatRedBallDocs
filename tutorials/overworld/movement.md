@@ -1,1 +1,0 @@
-This tutorial series covers how to create overworld movement similar to games like Super Mario Bros 3. The player will be able to move according to the layout of the map which will be defined in a TMX file. \[embed\]https://youtu.be/7i9omPUt9iQ?t=942\[/embed\] \[subpages depth="1"\]

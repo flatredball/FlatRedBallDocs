@@ -1,4 +1,4 @@
-# 04-control-values
+# Movement Values
 
 ### Introduction
 
@@ -8,19 +8,27 @@ This page covers all control values in available on a platformer entity. It also
 
 In a previous tutorial we defined a set of default control values for our character. These values serve as a starting point for platformers - they can be tuned to provide a custom feel to platformer entities. The platformer control values can be viewed and edited by selecting the **MainCharacter** entity and clicking on the \*\*Entity Input Movement \*\*tab.
 
-![](../../../../media/2023-05-img_645b94f3c5629.png)
+![](../../../media/2023-05-img\_645b94f3c5629.png)
 
 ### Max Speed
 
-This is the maximum speed (maximum velocity) that the character can move through input. Note that if using **Immediate** horizontal movement, then this is  a hard value - not other forces can modify the character movement. For more information, see the next section. Increasing this value will make the character move more quickly , but doing so can make the game more difficult to control if the value is too large.
+This is the maximum speed (maximum velocity) that the character can move through input. Note that if using **Immediate** horizontal movement, then this is a hard value - not other forces can modify the character movement. For more information, see the next section. Increasing this value will make the character move more quickly , but doing so can make the game more difficult to control if the value is too large.
 
 ### Immediate and Speed Up/Down
 
-This value controls whether the character reaches maximum velocity immediately, or if it takes time for the character to speed up and slow down to the maximum velocity and back to standing still. Using **Immediate** will increase the responsiveness of your game, and allows players to move very accurately. Examples of immediate-movement games include Mega Man and Castlevania. https://www.youtube.com/watch?v=mOTUVXrAOE8 The **Speed Up/Down** option results in the platformer entity accelerating to max speed and back down to a standstill over time, instead of immediately. This option creates more natural movement and requires more planning on the player's part (such as building up speed before a big jump). Examples of speed up/down movement include the Super Mario Bros. series and the Donkey Kong Country series. https://www.youtube.com/watch?v=Vxg5eOPmzHI
+This value controls whether the character reaches maximum velocity immediately, or if it takes time for the character to speed up and slow down to the maximum velocity and back to standing still. Using **Immediate** will increase the responsiveness of your game, and allows players to move very accurately. Examples of immediate-movement games include Mega Man and Castlevania.&#x20;
+
+{% embed url="https://www.youtube.com/watch?v=mOTUVXrAOE8" %}
+
+The **Speed Up/Down** option results in the platformer entity accelerating to max speed and back down to a standstill over time, instead of immediately. This option creates more natural movement and requires more planning on the player's part (such as building up speed before a big jump). Examples of speed up/down movement include the Super Mario Bros. series and the Donkey Kong Country series.&#x20;
+
+{% embed url="https://www.youtube.com/watch?v=Vxg5eOPmzHI" %}
 
 ### Speed Up Time
 
-The **Speed Up Time** value controls how many seconds are required for the platformer entity to reach max speed. This value is only available if using **Speed Up/Down** horizontal movement. Increasing this value makes the character makes the platformer entity feel sluggish. Decreasing this value makes the platformer entity feel more responsive. A value of 0 is identical to using **Immediate** horizontal movement. A larger speed up time can also be used for different terrains and environments. For example, a larger value can make the ground feel more slippery (if the character is walking on ice). A larger value can also make the character seem more heavy, or can be used to simulate under-water movement. A larger **Speed Up Time** can be used for air movement so that control is less precise when in the air. https://youtu.be/n9G9Vzd2l8U?t=212
+The **Speed Up Time** value controls how many seconds are required for the platformer entity to reach max speed. This value is only available if using **Speed Up/Down** horizontal movement. Increasing this value makes the character makes the platformer entity feel sluggish. Decreasing this value makes the platformer entity feel more responsive. A value of 0 is identical to using **Immediate** horizontal movement. A larger speed up time can also be used for different terrains and environments. For example, a larger value can make the ground feel more slippery (if the character is walking on ice). A larger value can also make the character seem more heavy, or can be used to simulate under-water movement. A larger **Speed Up Time** can be used for air movement so that control is less precise when in the air.&#x20;
+
+{% embed url="https://youtu.be/n9G9Vzd2l8U?t=212" %}
 
 ### Slow Down Time
 
@@ -43,11 +51,11 @@ Variable-height jumping can be implemented a number of different ways. The platf
 
 The following image shows two jump arcs. The first is the movement of the character when the button is held, the second is without:
 
-![](../../../../media/2018-01-img_5a6e23637b9ad.png)
+![](../../../media/2018-01-img\_5a6e23637b9ad.png)
 
-&#x20; Although it may be difficult to see, the entity moves in a straight line on the first part of the first jump, rather than moving in an arc. This is the result of gravity being turned off while the button is held. If we color the first part red, the linear movement is a little easier to see:
+Although it may be difficult to see, the entity moves in a straight line on the first part of the first jump, rather than moving in an arc. This is the result of gravity being turned off while the button is held. If we color the first part red, the linear movement is a little easier to see:
 
-![](../../../../media/2018-01-img_5a6e249b232c5.png)
+![](../../../media/2018-01-img\_5a6e249b232c5.png)
 
 ### Max Jump Hold Time
 
@@ -63,8 +71,14 @@ This is the distance to fall when pressing down + jump on a cloud platform befor
 
 ### Gravity
 
-**Gravity** controls how fast a character accelerates downward when falling. This value is assigned to the PositionedObject.YAcceleration  property. Increasing this value makes the entity fall more quickly, while a smaller value makes the entity fall slower, or seem to float.
+**Gravity** controls how fast a character accelerates downward when falling. This value is assigned to the PositionedObject.YAcceleration property. Increasing this value makes the entity fall more quickly, while a smaller value makes the entity fall slower, or seem to float.
 
 ### Max Falling Speed
 
-**Max Falling Speed** sets a limit to the platformer entity's y velocity. A smaller max falling speed results in the entity falling more slowly, even if **Gravity** is large. A smaller max falling speed can be used to slow a player's fall down with special abilities such as the raccoon tail in Super Mario Bros 3. https://youtu.be/1DfSMLXGYRc?t=9 A smaller M**ax Falling Speed** and low **Gravity** can be used to implement water physics such as the water levels in Donkey Kong Country. https://www.youtube.com/watch?v=GH-UGtfGH8I
+**Max Falling Speed** sets a limit to the platformer entity's y velocity. A smaller max falling speed results in the entity falling more slowly, even if **Gravity** is large. A smaller max falling speed can be used to slow a player's fall down with special abilities such as the raccoon tail in Super Mario Bros 3.&#x20;
+
+{% embed url="https://youtu.be/1DfSMLXGYRc?t=9" %}
+
+&#x20;A smaller M**ax Falling Speed** and low **Gravity** can be used to implement water physics such as the water levels in Donkey Kong Country.&#x20;
+
+{% embed url="https://www.youtube.com/watch?v=GH-UGtfGH8I" %}
