@@ -512,7 +512,7 @@
       * [lineofsight](api/flatredball/ai/lineofsight/README.md)
         * [visibilitygrid](api/flatredball/ai/lineofsight/visibilitygrid.md)
       * [pathfinding-2](api/flatredball/ai/pathfinding-2/README.md)
-        * [flatredball-ai-pathfinding-positionednode](api/flatredball/ai/pathfinding-2/flatredball-ai-pathfinding-positionednode.md)
+        * [PositionedNode](api/flatredball/ai/pathfinding-2/flatredball-ai-pathfinding-positionednode.md)
         * [flatredball-ai-pathfinding-link](api/flatredball/ai/pathfinding-2/flatredball-ai-pathfinding-link/README.md)
           * [Introduction](api/flatredball/ai/pathfinding-2/flatredball-ai-pathfinding-link/cost.md)
           * [Introduction](api/flatredball/ai/pathfinding-2/flatredball-ai-pathfinding-link/nodelinkingto.md)
