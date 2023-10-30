@@ -1,4 +1,4 @@
-# 02-enemy-entity
+# Enemy Entity
 
 ### Introduction
 
@@ -45,7 +45,13 @@ Now that this is true, the EnemyList appears in all of the Level screens (which 
 
 ![](../../../media/2021-04-img\_607790f455d7c.png)
 
-To add an enemy to Level 1, drag+drop the **Enemy** entity onto the **Level1** Screen.[![](../../../media/2021-04-2021\_April\_14\_192104.gif)](../../../media/2021-04-2021\_April\_14\_192104.gif) We also need to modify the Enemy so it is positioned inside of the solid boundary of our game screen. To do this:
+To add an enemy to Level 1, drag+drop the **Enemy** entity onto the **Level1** Screen.
+
+&#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_14_192104.gif" alt=""><figcaption></figcaption></figure>
+
+We also need to modify the Enemy so it is positioned inside of the solid boundary of our game screen. To do this:
 
 1. Select the newly-created **Enemy1** in **Level1**
 2. Select the **Variables** tab
@@ -59,7 +65,10 @@ To add an enemy to Level 1, drag+drop the **Enemy** entity onto the **Level1** S
 Now we have a fully-functional enemy, but it falls through the solid collision since we haven't yet set up an EnemyList vs SolidCollision relationship. To do this:
 
 1. Expand **GameScreen** **Objects** folder
-2. Drag+drop the **EnemyList** onto \*\*SolidCollision. \*\*Notice that we are doing this in the GameScreen rather than Level1 because we want all enemies to collide with the SolidCollision regardless of level. [![](../../../media/2021-04-2021\_April\_14\_195924.gif)](../../../media/2021-04-2021\_April\_14\_195924.gif)
+2. Drag+drop the **EnemyList** onto \*\*SolidCollision. \*\*Notice that we are doing this in the GameScreen rather than Level1 because we want all enemies to collide with the SolidCollision regardless of level.&#x20;
+3.
+
+    <figure><img src="../../../media/2021-04-2021_April_14_195924.gif" alt=""><figcaption></figcaption></figure>
 
 Glue automatically sets the **Collision Physics** to **Platformer Solid Collision** since the Enemy entity is marked as a Platformer.
 

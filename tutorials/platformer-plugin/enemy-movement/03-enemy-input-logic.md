@@ -1,4 +1,4 @@
-# 03-enemy-input-logic
+# Enemy Input Logic
 
 ### Introduction
 
@@ -12,7 +12,7 @@ First we'll remove the Input Device from the Enemy entity:
 2. Select the **Enemy Input Movement** tab
 3. Check **None** under **Input Device**
 
-![](../../../../media/2021-04-img\_607797eac1c0f.png)
+![](../../../media/2021-04-img\_607797eac1c0f.png)
 
 Now the Enemy will not move in response to keyboard or gamepad input.
 
@@ -23,7 +23,7 @@ Next we will create our own custom InputDevice which will control the movement o
 1. Open the project in Visual Studio
 2.  Create a new class called EnemyInput. I will place mine in an Input folder
 
-    ![](../../../../media/2021-04-img\_6077995742261.png)
+    ![](../../../media/2021-04-img\_6077995742261.png)
 3. Modify the code so that the EnemyInput class inherits from **FlatRedBall.Input.InputDeviceBase**
 
 &#x20;
@@ -52,7 +52,7 @@ class EnemyInput : FlatRedBall.Input.InputDeviceBase
 
 To use **EnemyInput**, we can modify the **CustomInitialize** method in the **Enemy.cs** class to assign its **InputDevice.** The **Enemy.cs** file can be found in the **Entities** folder in the Visual Studio Solution Explorer.
 
-![](../../../../media/2021-04-img\_60779b423c26b.png)
+![](../../../media/2021-04-img\_60779b423c26b.png)
 
 To use EnemyInput as the Enemy's InputDevice, modify the Enemy CustomInitialize method as shown in the following code snippet:
 
@@ -67,7 +67,11 @@ public partial class Enemy
     // ...
 ```
 
-Now if we run the game, the Enemy automatically walks to the right and ignores keyboard and gamepad input. [![](../../../../media/2021-04-2021\_April\_14\_194852.gif)](../../../../media/2021-04-2021\_April\_14\_194852.gif)
+Now if we run the game, the Enemy automatically walks to the right and ignores keyboard and gamepad input.
+
+&#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_14_194852.gif" alt=""><figcaption></figcaption></figure>
 
 #### Jumping
 
@@ -132,10 +136,13 @@ Many platformer games include enemies which turn around when colliding with othe
 1. Expand the **GameScreen -> Objects -> Collision Relationships** item in Glue
 2. Select **EnemyListVsSolidCollision**
 3. Select the **Collision** tab
-4. Click the **Add Event** button ![](../../../../media/2021-04-img\_6077b6189b433.png)
+4.  Click the **Add Event** button\
+    &#x20;
+
+    <figure><img src="../../../media/2021-04-img_6077b6189b433.png" alt=""><figcaption></figcaption></figure>
 5.  Click **OK** to accept the defaults
 
-    ![](../../../../media/2021-04-img\_6077b70441b42.png)
+    ![](../../../media/2021-04-img\_6077b70441b42.png)
 
 Glue will add an event to GameScreen.Event.cs which we can modify to adjust the EnemyInput DesiredDirection, as shown in the following snippet.
 
@@ -167,24 +174,28 @@ The code above is assigns the EnemyInput DesiredDirection according to the enemy
 
 The collision relationship between Enemies and SolidCollision prevents Enemy instances from overlapping the SolidCollision TileShapeCollection. Whenever an Enemy overlaps one of the rectangles in the SolidCollision TileShapeCollection, the Enemy must be _repositioned_ so it does not overlap the solid collision. For example, consider a falling Enemy (white). Initially the enemy may be falling but  not overlapping any solid collision (red).
 
-![](../../../../media/2021-04-img\_60783a690fdef.png)
+![](../../../media/2021-04-img\_60783a690fdef.png)
 
 As the Enemy continues to fall, it eventually overlaps the solid collision.
 
-![](../../../../media/2021-04-img\_60783bce4c53b.png)
+![](../../../media/2021-04-img\_60783bce4c53b.png)
 
 When this happens, the Enemy must be _repositioned_ up to resolve the overlapping collision.
 
-![](../../../../media/2021-04-img\_60783cc8cb303.png)
+![](../../../media/2021-04-img\_60783cc8cb303.png)
 
 In this case, the RepositionDirection would have a positive Y value. For example, it may be (0,1,0). Similarly, whenever an Enemy collides with a wall in the SolidCollision TileShapeCollection, the Enemy is repositioned horizontally, so the X value of the RepositionDirection is non-zero, as shown in the following diagram:
 
-![](../../../../media/2021-04-img\_60783e6668121.png)
+![](../../../media/2021-04-img\_60783e6668121.png)
 
 In the diagram above, the RepositionDirection has a negative X value (points to the left) so we know that the wall is to the right of the Enemy. If the RepositionDirection has a positive X value, then the wall is to the left of the Enemy.
 
-![](../../../../media/2021-04-img\_60783ebc5efb7.png)
+![](../../../media/2021-04-img\_60783ebc5efb7.png)
 
 ### Conclusion
 
-Now that we have this logic in place, our Enemy will automatically walk until colliding with a wall, then it turns around and walks in the other direction. [![](../../../../media/2021-04-2021\_April\_15\_075827.gif)](../../../../media/2021-04-2021\_April\_15\_075827.gif) The next tutorial will enable Enemies to turn around when reaching the end of a platform.
+Now that we have this logic in place, our Enemy will automatically walk until colliding with a wall, then it turns around and walks in the other direction. &#x20;
+
+<figure><img src="../../../media/2021-04-2021_April_15_075827.gif" alt=""><figcaption></figcaption></figure>
+
+The next tutorial will enable Enemies to turn around when reaching the end of a platform.
