@@ -2,7 +2,11 @@
 
 ### Introduction
 
-Button is a standard clickable object with states for enabled (default), hover, pressed, and disabled. [![](../../../../media/2017-12-2017-12-13\_07-05-39.gif)](../../../../media/2017-12-2017-12-13\_07-05-39.gif)
+Button is a standard clickable object with states for enabled (default), hover, pressed, and disabled. 
+
+<figure><img src="../../../../media/2017-12-2017-12-13\_07-05-39.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Layout Requirements
 

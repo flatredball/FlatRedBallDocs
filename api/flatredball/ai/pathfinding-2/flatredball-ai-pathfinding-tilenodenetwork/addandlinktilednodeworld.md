@@ -55,4 +55,8 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](../../../../../../media/2019-08-2019-08-26\_07-59-23.gif)](../../../../../../media/2019-08-2019-08-26\_07-59-23.gif)   &#x20;
+
+
+<figure><img src="../../../../../../media/2019-08-2019-08-26\_07-59-23.gif" alt=""><figcaption></figcaption></figure>
+
+   &#x20;

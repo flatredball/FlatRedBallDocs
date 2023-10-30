@@ -1,6 +1,10 @@
 ## Introduction
 
-The Slider control can be used to set a value between a minimum and maximum value. For example, Sliders can be used to set color values in a game tool. [![](/media/2017-12-2017-12-24_19-44-32.gif)](/media/2017-12-2017-12-24_19-44-32.gif)
+The Slider control can be used to set a value between a minimum and maximum value. For example, Sliders can be used to set color values in a game tool. 
+
+<figure><img src="/media/2017-12-2017-12-24_19-44-32.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Layout Requirements
 
@@ -72,7 +76,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](/media/2017-12-2017-12-24_19-52-10.gif)](/media/2017-12-2017-12-24_19-52-10.gif)
+
+
+<figure><img src="/media/2017-12-2017-12-24_19-52-10.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## ValueChanged
 
@@ -98,7 +106,11 @@ private void HandleValueChanged(object sender, EventArgs e)
 }
 ```
 
-[![](/media/2017-12-2019_December_06_071242.gif)](/media/2017-12-2019_December_06_071242.gif)
+
+
+<figure><img src="/media/2017-12-2019_December_06_071242.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## TicksFrequency
 
@@ -109,7 +121,11 @@ slider.IsSnapToTickEnabled = true;
 slider.TicksFrequency = 1;
 ```
 
-[![](/media/2017-12-2017-12-24_20-07-06.gif)](/media/2017-12-2017-12-24_20-07-06.gif)
+
+
+<figure><img src="/media/2017-12-2017-12-24_20-07-06.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## IsMoveToPointEnabled
 
@@ -121,7 +137,11 @@ slider.TicksFrequency = 1;
 slider.IsMoveToPointEnabled = true;
 ```
 
-[![](/media/2017-12-2017-12-24_20-13-28.gif)](/media/2017-12-2017-12-24_20-13-28.gif)
+
+
+<figure><img src="/media/2017-12-2017-12-24_20-13-28.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## SmallChange
 
@@ -131,4 +151,8 @@ The SmallChange property controls the change in value when pressing left or ri
     MusicSlider.Maximum = 1;
     MusicSlider.SmallChange = .1;
 
-[![](/media/2017-12-02_11-27-57.gif)](/media/2017-12-02_11-27-57.gif)
+
+
+<figure><img src="/media/2017-12-02_11-27-57.gif" alt=""><figcaption></figcaption></figure>
+
+

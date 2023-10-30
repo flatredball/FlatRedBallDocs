@@ -33,7 +33,11 @@ To add a rectangle:
 1. In Tiled, click the Insert Rectangle button
 2.  Push and drag the left mouse button to draw a Rectangle
 
-    [![](../../media/2016-08-2021\_February\_20\_153435.gif)](../../media/2016-08-2021\_February\_20\_153435.gif)
+    
+
+<figure><img src="../../media/2016-08-2021\_February\_20\_153435.gif" alt=""><figcaption></figcaption></figure>
+
+
 3.  Enter the name "Rectangle1" for the new rectangle. This is needed to find the shape at run time.
 
     ![](../../media/2016-08-img\_57b770362661b.png)

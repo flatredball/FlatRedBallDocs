@@ -93,7 +93,15 @@ If a game runs in fullscreen mode, it technically is running at the same resolut
 
 ### Allow Window Resizing
 
-If Allow Window Resizing is checked, the game window can be resized by the user when running in windowed mode. [![](../../../media/2021-10-05\_17-20-27.gif)](../../../media/2021-10-05\_17-20-27.gif) In the animation above the aspect ratio is not forced, so the game responds to resizes by keeping the height at 600 units (6 squares) while the width is adjusted to match the aspect ratio set from resizing the game. If the aspect ratio is forced then the game will add letterboxing and pillarboxing to maintain the forced aspect ratio as shown in the following animation: [![](../../../media/2021-10-05\_17-22-23.gif)](../../../media/2021-10-05\_17-22-23.gif)
+If Allow Window Resizing is checked, the game window can be resized by the user when running in windowed mode. 
+
+<figure><img src="../../../media/2021-10-05\_17-20-27.gif" alt=""><figcaption></figcaption></figure>
+
+ In the animation above the aspect ratio is not forced, so the game responds to resizes by keeping the height at 600 units (6 squares) while the width is adjusted to match the aspect ratio set from resizing the game. If the aspect ratio is forced then the game will add letterboxing and pillarboxing to maintain the forced aspect ratio as shown in the following animation: 
+
+<figure><img src="../../../media/2021-10-05\_17-22-23.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Scale
 
@@ -105,4 +113,12 @@ The scale value impacts only the size of the window (and the internal resolution
 
 ### On Resize - Preserve vs Increase Visible Area
 
-The **On Resize** option sets whether the amount of in-game units visible should change when the game resizes. By default this value is set to **Preserve (Stretch) Area** which means the in-game units will stretch to preserve the bounds. For example in the following example the height of the in-game area remains 400 units regardless of how the window is resized. [![](../../../media/2021-10-05\_22\_17\_34.gif)](../../../media/2021-10-05\_22\_17\_34.gif) Changing this value to **Increase Visible Area** enables more of the game world to be seen if the window is made larger. [![](../../../media/2021-10-05\_22\_19\_04.gif)](../../../media/2021-10-05\_22\_19\_04.gif) Note that this may result in unexpected behavior if your game expects the visible area to be of a constant size. &#x20;
+The **On Resize** option sets whether the amount of in-game units visible should change when the game resizes. By default this value is set to **Preserve (Stretch) Area** which means the in-game units will stretch to preserve the bounds. For example in the following example the height of the in-game area remains 400 units regardless of how the window is resized. 
+
+<figure><img src="../../../media/2021-10-05\_22\_17\_34.gif" alt=""><figcaption></figcaption></figure>
+
+ Changing this value to **Increase Visible Area** enables more of the game world to be seen if the window is made larger. 
+
+<figure><img src="../../../media/2021-10-05\_22\_19\_04.gif" alt=""><figcaption></figcaption></figure>
+
+ Note that this may result in unexpected behavior if your game expects the visible area to be of a constant size. &#x20;

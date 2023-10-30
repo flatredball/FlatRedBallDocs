@@ -9,7 +9,11 @@ Variables in entities and screens can have events which are raised whenever the 
 To add an event to a variable:
 
 1. Expand your Screen or Entity's **Objects** folder
-2. Drag+drop the variable onto the Events folder [![](../../../../media/2016-01-10\_06-31-21.gif)](../../../../media/2016-01-10\_06-31-21.gif)
+2. Drag+drop the variable onto the Events folder 
+
+<figure><img src="../../../../media/2016-01-10\_06-31-21.gif" alt=""><figcaption></figcaption></figure>
+
+
 3. Open your project in Visual Studio
 4.  Look for the Events file for your Screen or Entity, which will be named **ScreenOrEntityName.Events.cs**. In this example, the file is named **FanRight.Events.cs**.
 

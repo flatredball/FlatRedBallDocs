@@ -51,7 +51,11 @@ Now that you have a NineSliceButton component, you can add it to your Gum screen
 1. Select the **MainMenuGum** screen
 2. Drag+drop the **NineSliceButton** into the edit window of Gum, or onto the MainMenuScreen in the tree view
 
-[![](../../media/2016-01-07\_06-21-22.gif)](../../media/2016-01-07\_06-21-22.gif)
+
+
+<figure><img src="../../media/2016-01-07\_06-21-22.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Accessing Gum Objects in Your Game
 

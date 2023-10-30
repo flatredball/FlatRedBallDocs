@@ -52,7 +52,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](../media/2019-12-2019\_December\_07\_151411.gif)](../media/2019-12-2019\_December\_07\_151411.gif)
+
+
+<figure><img src="../media/2019-12-2019\_December\_07\_151411.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### GuiManager Membership
 

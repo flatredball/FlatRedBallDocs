@@ -19,7 +19,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](../../../../media/2019-09-20\_05-26-27.gif)](../../../../media/2019-09-20\_05-26-27.gif)   &#x20;
+
+
+<figure><img src="../../../../media/2019-09-20\_05-26-27.gif" alt=""><figcaption></figcaption></figure>
+
+   &#x20;
 
 ### Code Example - Detecting Screen Coordinates on GraphicalUiElement
 

@@ -55,7 +55,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](../../../../media/2016-01-16\_08-10-08.gif)](../../../../media/2016-01-16\_08-10-08.gif) The code could also be modified to shoot the bullets at angles. For example, the following code shows how to shoot 5 bullets in a spread angle:
+
+
+<figure><img src="../../../../media/2016-01-16\_08-10-08.gif" alt=""><figcaption></figcaption></figure>
+
+ The code could also be modified to shoot the bullets at angles. For example, the following code shows how to shoot 5 bullets in a spread angle:
 
 ```
 using Microsoft.Xna.Framework;
@@ -83,7 +87,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-### &#x20;[![](../../../../media/2016-01-16\_08-14-14.gif)](../../../../media/2016-01-16\_08-14-14.gif)
+### &#x20;
+
+<figure><img src="../../../../media/2016-01-16\_08-14-14.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### The persistence of Velocity
 

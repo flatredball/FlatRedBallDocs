@@ -23,7 +23,15 @@ To add an instance of the HealthBar component to a Glue entity:
 5. Select the type **HealthBarRuntime.** Glue will provide options for every component in your Gum project, with the word **Runtime** appended to the name. Keep in mind that the search bar can help narrow down the options.
 6. Click **OK**
 
-[![](../../../media/2018-04-2018-04-03\_06-56-33.gif)](../../../media/2018-04-2018-04-03\_06-56-33.gif) An instance of the HealthBar component will now be a part of the entity and will be attached (moves with) the entity automatically. [![](../../../media/2018-04-2018-04-03\_07-47-13.gif)](../../../media/2018-04-2018-04-03\_07-47-13.gif)
+
+
+<figure><img src="../../../media/2018-04-2018-04-03\_06-56-33.gif" alt=""><figcaption></figcaption></figure>
+
+ An instance of the HealthBar component will now be a part of the entity and will be attached (moves with) the entity automatically. 
+
+<figure><img src="../../../media/2018-04-2018-04-03\_07-47-13.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Changing Component Variables
 

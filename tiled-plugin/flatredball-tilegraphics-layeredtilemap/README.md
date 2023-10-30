@@ -26,7 +26,11 @@ If you are not using the GameScreen/Level pattern, you can add your own TMX file
 3. Create a game screen
 4. Drag+drop the TMX file into your Screen's **Files** folder
 
-[![](../../../../media/2016-01-2020\_February\_04\_172542.gif)](../../../../media/2016-01-2020\_February\_04\_172542.gif) No additional code is necessary - your map will now show up in the screen.
+
+
+<figure><img src="../../../../media/2016-01-2020\_February\_04\_172542.gif" alt=""><figcaption></figcaption></figure>
+
+ No additional code is necessary - your map will now show up in the screen.
 
 ### Creating Entities From a TMX
 
@@ -34,7 +38,11 @@ If using the GameScreen/Level pattern, FlatRedBall will automatically set up a M
 
 #### Creating a Map object for Entity Creation in Glue
 
-Once you have a TMX file in your screen's Files folder, you can create a Map object by drag+dropping the TMX onto the Screen's Objects folder. [![](../../../../media/2016-01-13\_08-39-26.gif)](../../../../media/2016-01-13\_08-39-26.gif) Once the Map object has been created, its **Create Entities From Tiles** property can be checked.
+Once you have a TMX file in your screen's Files folder, you can create a Map object by drag+dropping the TMX onto the Screen's Objects folder. 
+
+<figure><img src="../../../../media/2016-01-13\_08-39-26.gif" alt=""><figcaption></figcaption></figure>
+
+ Once the Map object has been created, its **Create Entities From Tiles** property can be checked.
 
 ![](../../../../media/2021-10-img\_6166f03c272a0.png)
 

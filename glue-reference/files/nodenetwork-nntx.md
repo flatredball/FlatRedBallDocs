@@ -13,7 +13,11 @@ Glue has built-in support for working with NodeNetworks. To add a NodeNetwork to
 5.  Change the name of the file if desired
 6.  Click **OK**
 
-[![](/media/2018-10-2018-10-04_08-47-39.gif)](/media/2018-10-2018-10-04_08-47-39.gif)
+
+
+<figure><img src="/media/2018-10-2018-10-04_08-47-39.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Editing a NodeNetwork File
 

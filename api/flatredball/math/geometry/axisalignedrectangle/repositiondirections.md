@@ -55,7 +55,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-Notice that when the first rectangle is moved (with the keyboard), it will only be repositioned to the left. [![](../../../../../../media/2016-01-2021\_April\_07\_083318.gif)](../../../../../../media/2016-01-2021\_April\_07\_083318.gif)
+Notice that when the first rectangle is moved (with the keyboard), it will only be repositioned to the left. 
+
+<figure><img src="../../../../../../media/2016-01-2021\_April\_07\_083318.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ###
 

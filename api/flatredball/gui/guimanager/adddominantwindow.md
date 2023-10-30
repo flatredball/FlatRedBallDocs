@@ -36,4 +36,8 @@ void CustomInitialize()
 }
 ```
 
-[![](../../../../../media/2016-01-23\_09-19-49.gif)](../../../../../media/2016-01-23\_09-19-49.gif) &#x20;
+
+
+<figure><img src="../../../../../media/2016-01-23\_09-19-49.gif" alt=""><figcaption></figcaption></figure>
+
+ &#x20;

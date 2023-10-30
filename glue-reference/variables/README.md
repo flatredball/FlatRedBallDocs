@@ -39,7 +39,11 @@ You may want to change the color of the AxisAlignedRectangle per instance (or th
 3. Optionally - change the **Alternative Name**
 4. Click **OK**
 
-&#x20; Note that variables can be tunneled by right-clicking on the Variables folder, but this drag+drop approach auto-selects the **Tunnel a variable in a contained object** option, and selects the object in the **Object** dropdown. [![](../../../../media/2016-05-03\_11-07-58.gif)](../../../../media/2016-05-03\_11-07-58.gif)
+&#x20; Note that variables can be tunneled by right-clicking on the Variables folder, but this drag+drop approach auto-selects the **Tunnel a variable in a contained object** option, and selects the object in the **Object** dropdown. 
+
+<figure><img src="../../../../media/2016-05-03\_11-07-58.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Create a new variable
 

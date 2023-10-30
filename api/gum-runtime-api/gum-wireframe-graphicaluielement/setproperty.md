@@ -23,7 +23,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](../../../../media/2022-01-08\_22-28-18.gif)](../../../../media/2022-01-08\_22-28-18.gif)
+
+
+<figure><img src="../../../../media/2022-01-08\_22-28-18.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Code Example - Assigning States
 
@@ -50,4 +54,8 @@ if (keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Down))
 }
 ```
 
-[![](../../../../media/2022-01-08\_22-39-04.gif)](../../../../media/2022-01-08\_22-39-04.gif) &#x20;
+
+
+<figure><img src="../../../../media/2022-01-08\_22-39-04.gif" alt=""><figcaption></figcaption></figure>
+
+ &#x20;

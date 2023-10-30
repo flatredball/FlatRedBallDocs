@@ -44,4 +44,8 @@ Similarly, the Map object can be set to control the visible bounds of the camera
 
 ![](/media/2021-07-img_60f9c00a8b0c6.png)
 
-At runtime the Camera will automatically follow the target with no additional code required. [![](/media/2021-07-2021_July_22_130201.gif)](/media/2021-07-2021_July_22_130201.gif)
+At runtime the Camera will automatically follow the target with no additional code required. 
+
+<figure><img src="/media/2021-07-2021_July_22_130201.gif" alt=""><figcaption></figcaption></figure>
+
+

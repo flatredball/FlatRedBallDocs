@@ -80,7 +80,11 @@ The VerticalScrollBarVisibility property controls the behavior of the scrollbar 
 * Hidden - the vertical scrollbar will never show, but the ScrollViewer still supports scrolling with the mouse wheel or swiping on the touchscreen
 * Visibile - the vertical scrollbar will always display
 
-[![](../../../../media/2017-12-17\_07-34-31.gif)](../../../../media/2017-12-17\_07-34-31.gif)
+
+
+<figure><img src="../../../../media/2017-12-17\_07-34-31.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Example - Manually Sizing ScrollViewer in Code
 
@@ -119,7 +123,11 @@ When viewing the code above, keep in mind:
 * At the time of this writing the ScrollViewer object only supports scrolling vertically (up and down).
 * We set the scrollViewer.Visual's WidthUnits, Width, HeightUnits, and Height for the sake of making a clear example. This is not necessary (and often not desirable) in a real world example where layout is controlled by the Gum tool.
 
-The code above adjusts the ScrollViewer such that the view displays 40% (400 / 1000) of the available height of the InnerPanel. The scroll bar can be used to to scroll through the container. [![](../../../../media/2017-12-2017-12-24\_14-54-40.gif)](../../../../media/2017-12-2017-12-24\_14-54-40.gif)
+The code above adjusts the ScrollViewer such that the view displays 40% (400 / 1000) of the available height of the InnerPanel. The scroll bar can be used to to scroll through the container. 
+
+<figure><img src="../../../../media/2017-12-2017-12-24\_14-54-40.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Example - Adding to InnerPanelInstance in Gum
 
@@ -172,7 +180,11 @@ for(int i = 0; i < 20; i++)
 }
 ```
 
-The code above will produce the following ScrollViewer: [![](../../../../media/2017-12-2017-12-24\_18-58-12.gif)](../../../../media/2017-12-2017-12-24\_18-58-12.gif)
+The code above will produce the following ScrollViewer: 
+
+<figure><img src="../../../../media/2017-12-2017-12-24\_18-58-12.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Example - Expanding Stacking ScrollViewer in Code
 
@@ -202,4 +214,8 @@ for(int i = 0; i < 10; i++)
 }
 ```
 
-[![](../../../../media/2017-12-2017-12-24\_19-18-14.gif)](../../../../media/2017-12-2017-12-24\_19-18-14.gif) &#x20;
+
+
+<figure><img src="../../../../media/2017-12-2017-12-24\_19-18-14.gif" alt=""><figcaption></figcaption></figure>
+
+ &#x20;

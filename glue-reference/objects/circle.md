@@ -13,7 +13,11 @@ To add a circle to an existing entity:
 5.  Select **Circle**
 6.  Click **OK**
 
-[![](/media/2019-07-2019-07-02_22-28-11.gif)](/media/2019-07-2019-07-02_22-28-11.gif)
+
+
+<figure><img src="/media/2019-07-2019-07-02_22-28-11.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Adding a Circle to a New Entity
 

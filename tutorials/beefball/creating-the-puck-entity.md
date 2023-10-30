@@ -93,7 +93,11 @@ We will create these two collision relationships just like the previou PlayerLis
 6. Change the **Puck Mass** to **0**
 7. Optionally adjust the Elasticity value
 
-[![](../../../media/2016-01-2021\_July\_25\_141703.gif)](../../../media/2016-01-2021\_July\_25\_141703.gif) To create a relationship between the PuckList and PlayerBallList:
+
+
+<figure><img src="../../../media/2016-01-2021\_July\_25\_141703.gif" alt=""><figcaption></figcaption></figure>
+
+ To create a relationship between the PuckList and PlayerBallList:
 
 1. Expand **GameScreen's Objects** folder in Glue
 2. Drag+drop the **PlayerBallList** onto the **PuckList** object
@@ -103,7 +107,15 @@ We will create these two collision relationships just like the previou PlayerLis
 6. Change the **Puck Mass** to **0.3** - this will make it 30% the mass of the PlayerBall
 7. Optionally adjust the Elasticity value
 
-[![](../../../media/2016-01-2021\_July\_25\_145507.gif)](../../../media/2016-01-2021\_July\_25\_145507.gif)   Notice that the mass variables for PlayerInstance vs. PuckInstance differ compared to wall collision. The PuckInstance is given a mass of .3 relative to a mass of 1 for the PlayerInstance, resulting in the PuckInstance behaving as if it has 30% of the mass of the PlayerInstance. If you run the game, you should be able to hit the Puck around the level. [![](../../../media/2016-01-2021\_July\_25\_140010.gif)](../../../media/2016-01-2021\_July\_25\_140010.gif)
+
+
+<figure><img src="../../../media/2016-01-2021\_July\_25\_145507.gif" alt=""><figcaption></figcaption></figure>
+
+   Notice that the mass variables for PlayerInstance vs. PuckInstance differ compared to wall collision. The PuckInstance is given a mass of .3 relative to a mass of 1 for the PlayerInstance, resulting in the PuckInstance behaving as if it has 30% of the mass of the PlayerInstance. If you run the game, you should be able to hit the Puck around the level. 
+
+<figure><img src="../../../media/2016-01-2021\_July\_25\_140010.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Adding Drag
 

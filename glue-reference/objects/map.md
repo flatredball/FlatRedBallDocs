@@ -30,4 +30,8 @@ Under the default setup (as set up by the new screen dialog), the Map object in 
 
 ### Optional - Assigning Map to a TMX File
 
-If your game does not have the Map object assigned to a TMX file you may need to manually make the connection between the object and the file. This can happen if you delete the default TMX file, or if you are manually adding the TMX file at a later time. To assign the Map object to use the TMX file, drag+drop the TMX File onto the Map object in your Level screen. [![](/media/2021-10-27_08-46-19.gif)](/media/2021-10-27_08-46-19.gif) Alternatively, you can assign the Source properties on the map object: ![](/media/2021-10-img_61796597f0fc4.png)
+If your game does not have the Map object assigned to a TMX file you may need to manually make the connection between the object and the file. This can happen if you delete the default TMX file, or if you are manually adding the TMX file at a later time. To assign the Map object to use the TMX file, drag+drop the TMX File onto the Map object in your Level screen. 
+
+<figure><img src="/media/2021-10-27_08-46-19.gif" alt=""><figcaption></figcaption></figure>
+
+ Alternatively, you can assign the Source properties on the map object: ![](/media/2021-10-img_61796597f0fc4.png)

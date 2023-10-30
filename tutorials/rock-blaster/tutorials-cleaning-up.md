@@ -30,7 +30,11 @@ Now our game looks much better without the white circles:
 If the user dies currently the game simply sits there and doesn't let the player know what's going on. We can add an end-game UI in Gum to announce that the game has ended.
 
 1. Open Gum
-2. Drag+drop a **Text** object from the Standards folder onto **GameScreenGum** [![](../../media/2016-01-2021\_March\_14\_093302.gif)](../../media/2016-01-2021\_March\_14\_093302.gif)
+2. Drag+drop a **Text** object from the Standards folder onto **GameScreenGum** 
+
+<figure><img src="../../media/2016-01-2021\_March\_14\_093302.gif" alt=""><figcaption></figcaption></figure>
+
+
 3. Rename the **Text** to **GameOverAnnouncement**
 4.  Change the Text property on **GameOverAnnouncement** to **Game Over**. You may need to press the TAB key to apply the changes to the Text property. Pressing the Enter key results in a newline being added to the Text.
 
@@ -52,7 +56,11 @@ Just like with the score hud, we will access the GameOverAnnouncement in Glue:
 4. Use the drop-down to select **GameOverAnnouncement**
 5. Click **OK**
 
-[![](../../media/2016-01-2021\_March\_14\_090510.gif)](../../media/2016-01-2021\_March\_14\_090510.gif)
+
+
+<figure><img src="../../media/2016-01-2021\_March\_14\_090510.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Detecting GameOver
 

@@ -26,4 +26,8 @@ The following code assumes a Circle has been added to the current Screen:
         CircleInstance.Position = worldPosition;
     }
 
-[![](/media/2022-10-27_14-38-33.gif)](/media/2022-10-27_14-38-33.gif)
+
+
+<figure><img src="/media/2022-10-27_14-38-33.gif" alt=""><figcaption></figcaption></figure>
+
+

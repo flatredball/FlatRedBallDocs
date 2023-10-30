@@ -63,7 +63,11 @@ For this tutorial we will use a Circle instance to represent a controllable char
 4. Select the **Circle** type
 5. Click **OK**
 
-[![](../../../../../media/2016-01-2019\_December\_15\_222804.gif)](../../../../../media/2016-01-2019\_December\_15\_222804.gif)
+
+
+<figure><img src="../../../../../media/2016-01-2019\_December\_15\_222804.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Writing Game Scripts
 

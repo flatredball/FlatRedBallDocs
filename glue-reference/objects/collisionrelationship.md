@@ -41,7 +41,11 @@ Note that the TileShapeCollection may have its [SetByDerived](glue-reference-set
 
 #### Option 1 - Drag+drop
 
-You can drag+drop one collidable object (such as a list) onto another collidable object (such as another list or a TileShapeCollection) so long as the two objects are in the same screen. This will create a CollisionRelationship between the two objects. [![](../../media/2019-08-21\_21-07-45.gif)](../../media/2019-08-21\_21-07-45.gif)
+You can drag+drop one collidable object (such as a list) onto another collidable object (such as another list or a TileShapeCollection) so long as the two objects are in the same screen. This will create a CollisionRelationship between the two objects. 
+
+<figure><img src="../../media/2019-08-21\_21-07-45.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 #### Option 2 - Collision Tab
 
@@ -49,7 +53,11 @@ The Collision tab displays when a collidable object or list is selected
 
 ![](../../media/2023-08-img\_64e426fdc1df4.png)
 
-The image above displays the **Collision** tab for the **BulletList**. Notice that the **BulletList** can collide with any of the other collidable objects in the **GameScreen** including itself. Adding collision is easy - just click the **Add** button next to the object in the Collision tab to create a new relationship. For example, clicking on the **Add** button next to **EnemyList** creates a relationship between **BulletList** and **EnemyList**. [![](../../media/2019-08-21\_21-10-50.gif)](../../media/2019-08-21\_21-10-50.gif)
+The image above displays the **Collision** tab for the **BulletList**. Notice that the **BulletList** can collide with any of the other collidable objects in the **GameScreen** including itself. Adding collision is easy - just click the **Add** button next to the object in the Collision tab to create a new relationship. For example, clicking on the **Add** button next to **EnemyList** creates a relationship between **BulletList** and **EnemyList**. 
+
+<figure><img src="../../media/2019-08-21\_21-10-50.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 #### Option 3 - Create CollisionRelationship Object Manually
 
@@ -61,19 +69,31 @@ CollisionRelationships are regular Objects which can be created through the righ
 4. Select the **CollisionRelationship** type
 5. Click **OK**
 
-[![](../../media/2019-08-21\_21-12-46.gif)](../../media/2019-08-21\_21-12-46.gif) In this case the newly-created CollisionRelationship will not yet reference any collidable objects in the screen, and the game will not compile until the objects in the relationship are set (as shown in the next section).
+
+
+<figure><img src="../../media/2019-08-21\_21-12-46.gif" alt=""><figcaption></figcaption></figure>
+
+ In this case the newly-created CollisionRelationship will not yet reference any collidable objects in the screen, and the game will not compile until the objects in the relationship are set (as shown in the next section).
 
 ### Editing a CollisionRelationship in Glue
 
 Once a CollisionRelationship is created, it can be edited by selecting it under the Screen's **Objects** folder and clicking the **Collision** tab.
 
-[![](../../media/2019-08-21\_21-14-36.gif)](../../media/2019-08-21\_21-14-36.gif)
+
+
+<figure><img src="../../media/2019-08-21\_21-14-36.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 A CollisionRelationship objects can be changed using the two drop-downs. Note that if the **Auto-name Relationship** checkbox is checked, the name of the relationship will automatically change when either of the two objects in the relationship changes. Of course, if you create CollisionRelationships using either the **Add** button or the drag-drop method, you do not need to set the object types.
 
 #### Subcollision
 
-Subcollision allows specifying a specific shape within a collidable entity to use when performing collision. This is useful if an entity includes multiple shapes, each for different purposes. For example, an enemy may have a circle for solid collision (preventing the enemy from walking through walls) but it may also have a line for line-of-sight collision. In this case, we do not want the line to collide against the walls, so we would specify that only the enemy's circle should collide with the walls. All available shapes for subcollisions appear in the **Subcollision** dropdowns for each object. Note that changing the subcollision will also rename the CollisionRelationship if the **Auto-name Relationship** option is checked. [![](../../media/2019-08-2019-08-21\_09-26-26.gif)](../../media/2019-08-2019-08-21\_09-26-26.gif)
+Subcollision allows specifying a specific shape within a collidable entity to use when performing collision. This is useful if an entity includes multiple shapes, each for different purposes. For example, an enemy may have a circle for solid collision (preventing the enemy from walking through walls) but it may also have a line for line-of-sight collision. In this case, we do not want the line to collide against the walls, so we would specify that only the enemy's circle should collide with the walls. All available shapes for subcollisions appear in the **Subcollision** dropdowns for each object. Note that changing the subcollision will also rename the CollisionRelationship if the **Auto-name Relationship** option is checked. 
+
+<figure><img src="../../media/2019-08-2019-08-21\_09-26-26.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 #### Collision Physics
 
@@ -103,7 +123,11 @@ In some cases games will need to perform custom logic when a collision occurs. F
 * The Bullet entity being destroyed when colliding with a wall
 * An Enemy entity's movement speed being slowed when colliding with mud TileShapeCollection.
 
-Collision events can be created by dropping a CollisionRelationship on a Screen's **Events** folder. [![](../../media/2019-08-2019-08-21\_07-37-57.gif)](../../media/2019-08-2019-08-21\_07-37-57.gif) For more information on Glue events, see the [Glue Events page](../../documentation/tools/glue-reference/events.md). Like all other events, collision events can be edited in code. In the example above, the **GameScreen.Event.cs** file now includes an function OnEnemyListVsPlayerListCollisionOccurred  which is called whenever a collision occurs between an Enemy and Player instance. Make sure to add code to **\<YourGameScreen>.Event.cs** and not the **\<YourScreen>.Genererated.Event.cs**.
+Collision events can be created by dropping a CollisionRelationship on a Screen's **Events** folder. 
+
+<figure><img src="../../media/2019-08-2019-08-21\_07-37-57.gif" alt=""><figcaption></figcaption></figure>
+
+ For more information on Glue events, see the [Glue Events page](../../documentation/tools/glue-reference/events.md). Like all other events, collision events can be edited in code. In the example above, the **GameScreen.Event.cs** file now includes an function OnEnemyListVsPlayerListCollisionOccurred  which is called whenever a collision occurs between an Enemy and Player instance. Make sure to add code to **\<YourGameScreen>.Event.cs** and not the **\<YourScreen>.Genererated.Event.cs**.
 
 ![](../../media/2019-08-img\_5d5d4a287ca7b.png)
 

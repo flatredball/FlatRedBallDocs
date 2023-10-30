@@ -32,7 +32,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-When the game is paused, the Sprite automatically stops rotating and resumes when the game is unpaused. [![](../../../../../media/2022-10-28\_19-44-16.gif)](../../../../../media/2022-10-28\_19-44-16.gif)
+When the game is paused, the Sprite automatically stops rotating and resumes when the game is unpaused. 
+
+<figure><img src="../../../../../media/2022-10-28\_19-44-16.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Applying Movement After Pause
 
@@ -73,4 +77,8 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-&#x20; [![](../../../../../media/2022-10-28\_19-51-13.gif)](../../../../../media/2022-10-28\_19-51-13.gif)
+&#x20; 
+
+<figure><img src="../../../../../media/2022-10-28\_19-51-13.gif" alt=""><figcaption></figcaption></figure>
+
+

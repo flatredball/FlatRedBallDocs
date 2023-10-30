@@ -63,7 +63,11 @@ public partial class YourScreenName
     ...
 ```
 
-[![](../../../../../media/2016-01-2019-04-06\_22-18-14.gif)](../../../../../media/2016-01-2019-04-06\_22-18-14.gif) Setting the GrabbedPositionedObject does the following:
+
+
+<figure><img src="../../../../../media/2016-01-2019-04-06\_22-18-14.gif" alt=""><figcaption></figcaption></figure>
+
+ Setting the GrabbedPositionedObject does the following:
 
 1. Stores the reference in the GrabbedPositionedObject property
 2. Stores offset variables - this is the difference between the GrabbedPositionedObject's position and the cursor's world coordinates.

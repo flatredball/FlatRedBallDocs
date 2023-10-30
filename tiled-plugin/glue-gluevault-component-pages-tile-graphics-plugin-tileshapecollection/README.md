@@ -74,7 +74,11 @@ Testing your collision using Fill or Border Outline is a handy way to make sure 
     ![](../../../../media/2020-02-img\_5e38f27e1f95e.png)
 4.  Add a Custom Property called SolidCollision. The type of the variable doesn't matter.
 
-    [![](../../../../media/2016-01-2020\_February\_03\_211827.gif)](../../../../media/2016-01-2020\_February\_03\_211827.gif)
+    
+
+<figure><img src="../../../../media/2016-01-2020\_February\_03\_211827.gif" alt=""><figcaption></figcaption></figure>
+
+
 5. Save your tileset (tsx)
 6.  Place some tiles in your map
 
@@ -173,7 +177,11 @@ By default each rectangle in a TileShapeCollection occupies the entire tile (16x
 3.  Select **View** -> **View and Toolbars** -> **Tile Collision Editor**
 
     ![](../../../../media/2022-02-img\_621ac7774e2f5.png)
-4. Draw a rectangle or polygon on the tile [![](../../../../media/2016-01-26\_17\_38\_10.gif)](../../../../media/2016-01-26\_17\_38\_10.gif)
+4. Draw a rectangle or polygon on the tile 
+
+<figure><img src="../../../../media/2016-01-26\_17\_38\_10.gif" alt=""><figcaption></figcaption></figure>
+
+
 5.  Set the type on the tile which has the collision. Note that the same type can be given to multiple tiles. Be sure to select the tile and not the shape. You may need to deselect and re-select the tile to force its properties to display rather than the newly-drawn polygon.
 
     ![](../../../../media/2022-02-img\_621ac85c92bd0.png)

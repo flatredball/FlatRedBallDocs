@@ -14,7 +14,11 @@ In this case the top-level object is **ChildStandardContainerInstance**. If test
 
 1. Drag+drop the Gum screen file (.gusx) onto the Glue Screen's Objects
 2. Use the **Source Name** dropdown to select the desired object (ChildStandardContainerInstance in this case)
-3. Click OK [![](../../../../media/2017-05-DragDropGumObject.gif)](../../../../media/2017-05-DragDropGumObject.gif)
+3. Click OK 
+
+<figure><img src="../../../../media/2017-05-DragDropGumObject.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 To follow the logic:
 

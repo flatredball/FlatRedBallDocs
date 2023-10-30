@@ -15,4 +15,8 @@ sprite.ColorOperation = ColorOperation.Texture;
 
 ## Color Values
 
-As mentioned above, the Red, Green, and Blue values have no impact on an object which uses the Texture color operation. [![](/media/2018-07-2018-07-28_12-47-59.gif)](/media/2018-07-2018-07-28_12-47-59.gif)
+As mentioned above, the Red, Green, and Blue values have no impact on an object which uses the Texture color operation. 
+
+<figure><img src="/media/2018-07-2018-07-28_12-47-59.gif" alt=""><figcaption></figcaption></figure>
+
+

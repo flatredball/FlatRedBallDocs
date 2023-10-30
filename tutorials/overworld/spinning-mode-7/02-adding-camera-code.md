@@ -58,7 +58,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-The line which assigns the UpVector is necessary to allow the main Camera to rotate on its Z axis. By default, FlatRedBall Cameras cannot rotate on Z unless this line of code is added. The remainder of the function allows us to start and restart the falling movement. We can now run the game and press the space bar to begin falling. [![](../../../../media/2021-03-2021\_April\_06\_182918.gif)](../../../../media/2021-03-2021\_April\_06\_182918.gif)
+The line which assigns the UpVector is necessary to allow the main Camera to rotate on its Z axis. By default, FlatRedBall Cameras cannot rotate on Z unless this line of code is added. The remainder of the function allows us to start and restart the falling movement. We can now run the game and press the space bar to begin falling. 
+
+<figure><img src="../../../../media/2021-03-2021\_April\_06\_182918.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Conclusion
 

@@ -22,4 +22,8 @@ if(GuiManager.Cursor.PrimaryClick)
 }
 ```
 
-[![](../../../../../media/2016-01-2017-12-14\_08-49-02-1.gif)](../../../../../media/2016-01-2017-12-14\_08-49-02-1.gif)
+
+
+<figure><img src="../../../../../media/2016-01-2017-12-14\_08-49-02-1.gif" alt=""><figcaption></figcaption></figure>
+
+

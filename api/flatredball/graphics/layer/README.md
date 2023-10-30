@@ -14,7 +14,11 @@ To create a new Layer:
 4. Enter a name for the Layer
 5. Click **OK**
 
-[![](../../../../media/2016-01-01\_12-19-51.gif)](../../../../media/2016-01-01\_12-19-51.gif)
+
+
+<figure><img src="../../../../media/2016-01-01\_12-19-51.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Layer-able Types
 

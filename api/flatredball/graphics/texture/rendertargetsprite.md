@@ -126,7 +126,11 @@ public partial class TestScreen
 }
 ```
 
-[![](../../../../../media/2020-12-2020\_December\_18\_113601.gif)](../../../../../media/2020-12-2020\_December\_18\_113601.gif) &#x20;
+
+
+<figure><img src="../../../../../media/2020-12-2020\_December\_18\_113601.gif" alt=""><figcaption></figcaption></figure>
+
+ &#x20;
 
 ### Refresh
 

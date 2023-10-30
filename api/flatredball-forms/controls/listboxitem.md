@@ -2,7 +2,11 @@
 
 ### Introduction
 
-ListBoxItem is a selectable control used in the ListBox control or controls which contain a ListBox (such as ComboBox). ListBoxItem instances can be manually instantiated just like any control, or may be instantiated internally by the ListBox control. [![](../../../../media/2017-12-2017-12-13\_17-52-13.gif)](../../../../media/2017-12-2017-12-13\_17-52-13.gif)
+ListBoxItem is a selectable control used in the ListBox control or controls which contain a ListBox (such as ComboBox). ListBoxItem instances can be manually instantiated just like any control, or may be instantiated internally by the ListBox control. 
+
+<figure><img src="../../../../media/2017-12-2017-12-13\_17-52-13.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Layout Requirements
 

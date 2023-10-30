@@ -1,6 +1,10 @@
 ## Introduction
 
-The TextBox control can be used to let the user enter text input such as a profile name. [![](/media/2017-12-2017-12-24_20-24-50.gif)](/media/2017-12-2017-12-24_20-24-50.gif)
+The TextBox control can be used to let the user enter text input such as a profile name. 
+
+<figure><img src="/media/2017-12-2017-12-24_20-24-50.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Layout Requirements
 
@@ -42,7 +46,11 @@ private void HandleTextChanged(object sender, EventArgs e)
 }
 ```
 
-[![](/media/2017-12-2017-12-25_14-40-10.gif)](/media/2017-12-2017-12-25_14-40-10.gif)
+
+
+<figure><img src="/media/2017-12-2017-12-25_14-40-10.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## LosesFocusWhenClickedOff
 
