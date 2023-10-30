@@ -66,4 +66,8 @@ private async void StartAddingTexts()
 }
 ```
 
-This code might produce the following result: [![](../../../media/2021-09-22\_18-20-58.gif)](../../../media/2021-09-22\_18-20-58.gif) Notice that although the code has a while(true) statement, the code does not block the execution of the normal game loop. However, a loop like this would normally never end, but if we move to the next screen the loop will end. In short, code can be safely written without considering whether the screen has changed when using await calls.
+This code might produce the following result: 
+
+<figure><img src="../../../media/2021-09-22\_18-20-58.gif" alt=""><figcaption></figcaption></figure>
+
+ Notice that although the code has a while(true) statement, the code does not block the execution of the normal game loop. However, a loop like this would normally never end, but if we move to the next screen the loop will end. In short, code can be safely written without considering whether the screen has changed when using await calls.

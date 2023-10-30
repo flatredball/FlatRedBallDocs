@@ -36,4 +36,12 @@ Notice that the entity already has a set of movement values called **Default**. 
 
 ### Adding an Entity to GameScreen
 
-Now that our Entity is created and is a Top Down entity, we can add an instance to our \*\*GameScreen \*\*by drag+dropping the entity on the GameScreen item in Glue: [![](../../../../../../media/2020-02-2020\_February\_03\_213300.gif)](../../../../../../media/2020-02-2020\_February\_03\_213300.gif) If we run the game, the entity is in our game and can move around. If you have a game controller plugged in, then the analog and dpad move the entity. Otherwise, the W,A,S,D keys on the keyboard move the entity. [![](../../../../../../media/2020-02-2020\_February\_03\_213503.gif)](../../../../../../media/2020-02-2020\_February\_03\_213503.gif)
+Now that our Entity is created and is a Top Down entity, we can add an instance to our \*\*GameScreen \*\*by drag+dropping the entity on the GameScreen item in Glue: 
+
+<figure><img src="../../../../../../media/2020-02-2020\_February\_03\_213300.gif" alt=""><figcaption></figcaption></figure>
+
+ If we run the game, the entity is in our game and can move around. If you have a game controller plugged in, then the analog and dpad move the entity. Otherwise, the W,A,S,D keys on the keyboard move the entity. 
+
+<figure><img src="../../../../../../media/2020-02-2020\_February\_03\_213503.gif" alt=""><figcaption></figcaption></figure>
+
+

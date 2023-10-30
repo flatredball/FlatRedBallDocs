@@ -2,7 +2,11 @@
 
 ### Introduction
 
-The TreeView control is a scrollable view which can contain a hierarchy of TreeViewItems. The TreeView is conceptually similar to the [ListBox](listbox.md) control, but allows items to be embedded within other items. [![](../../../media/2018-07-2018-07-21\_22-18-06.gif)](../../../media/2018-07-2018-07-21\_22-18-06.gif)
+The TreeView control is a scrollable view which can contain a hierarchy of TreeViewItems. The TreeView is conceptually similar to the [ListBox](listbox.md) control, but allows items to be embedded within other items. 
+
+<figure><img src="../../../media/2018-07-2018-07-21\_22-18-06.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Layout Requirements
 
@@ -43,7 +47,11 @@ treeView.Items.Add(treeViewItem);
 treeView.Visual.AddToManagers();
 ```
 
-[![](../../../media/2018-07-2018-07-22\_11-08-33.gif)](../../../media/2018-07-2018-07-22\_11-08-33.gif) Note that the TreeView's Items property only contains the top-level item. In the example above, the treeView.Items property only contains a single entry - Monster. The specific monster types are contained in the Items property of the parent TreeViewItem.
+
+
+<figure><img src="../../../media/2018-07-2018-07-22\_11-08-33.gif" alt=""><figcaption></figcaption></figure>
+
+ Note that the TreeView's Items property only contains the top-level item. In the example above, the treeView.Items property only contains a single entry - Monster. The specific monster types are contained in the Items property of the parent TreeViewItem.
 
 ### Customizing TreeViewItems
 
@@ -75,4 +83,8 @@ if(treeView.SelectedItem != null)
 }
 ```
 
-[![](../../../media/2018-07-2018-07-22\_11-35-01.gif)](../../../media/2018-07-2018-07-22\_11-35-01.gif)
+
+
+<figure><img src="../../../media/2018-07-2018-07-22\_11-35-01.gif" alt=""><figcaption></figcaption></figure>
+
+

@@ -58,7 +58,11 @@ partial void CustomActivityEditMode()
 }
 ```
 
-The Path will now update in realtime as it is edited. [![](../../../../../media/2021-11-15\_08-43-00.gif)](../../../../../media/2021-11-15\_08-43-00.gif)
+The Path will now update in realtime as it is edited. 
+
+<figure><img src="../../../../../media/2021-11-15\_08-43-00.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Example - Following a Path
 
@@ -114,4 +118,8 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-&#x20; [![](../../../../../media/2021-11-16\_08-54-00.gif)](../../../../../media/2021-11-16\_08-54-00.gif)
+&#x20; 
+
+<figure><img src="../../../../../media/2021-11-16\_08-54-00.gif" alt=""><figcaption></figcaption></figure>
+
+

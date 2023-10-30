@@ -51,4 +51,8 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](/media/2017-10-2017-10-25_08-24-45.gif)](/media/2017-10-2017-10-25_08-24-45.gif)
+
+
+<figure><img src="/media/2017-10-2017-10-25_08-24-45.gif" alt=""><figcaption></figcaption></figure>
+
+

@@ -31,7 +31,11 @@ By default all variables appear in the the State Data tab when viewing one of th
 
 ![](../../media/2021-10-img\_617bf658b5b63.png)
 
-Usually states should only set a few of the variables. In the example shown here, the category might set variables related to Player armor. To exclude variables click the **...** button in the State Data tab and use the **<<** and \*\*>> \*\*buttons to include and exclude variables. In this case, only armor-related variables are included. All other variables are excluded and will be removed from the grid view as they are removed. [![](../../media/2016-01-29\_07-28-14.gif)](../../media/2016-01-29\_07-28-14.gif)
+Usually states should only set a few of the variables. In the example shown here, the category might set variables related to Player armor. To exclude variables click the **...** button in the State Data tab and use the **<<** and \*\*>> \*\*buttons to include and exclude variables. In this case, only armor-related variables are included. All other variables are excluded and will be removed from the grid view as they are removed. 
+
+<figure><img src="../../media/2016-01-29\_07-28-14.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 #### Excluding Variables Prevents Accidental Assignment
 

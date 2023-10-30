@@ -2,7 +2,11 @@
 
 ### Introduction
 
-The ComboBox control (also often referred to as a drop-down control) allows the user to select a value from a list of options. It expands and collapses in response to user activity. [![](../../../../media/2017-12-2017-12-13\_07-47-12.gif)](../../../../media/2017-12-2017-12-13\_07-47-12.gif)
+The ComboBox control (also often referred to as a drop-down control) allows the user to select a value from a list of options. It expands and collapses in response to user activity. 
+
+<figure><img src="../../../../media/2017-12-2017-12-13\_07-47-12.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Layout Requirements
 

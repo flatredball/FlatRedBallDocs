@@ -95,7 +95,11 @@ FlatRedBall provides a number of ways to separate data from logic. The simplest 
 5. Enter the name **MovementSpeed** and click the **OK** button
 6. Verify **Variables** is selected and set **MovementSpeed** to **100**. Deselect the text box or press ENTER to apply the value.
 
-[![](../../../media/2016-01-03\_08-51-45.gif)](../../../media/2016-01-03\_08-51-45.gif) Finally, return to the movement code **inside PlayerBall.cs** and change the code to:
+
+
+<figure><img src="../../../media/2016-01-03\_08-51-45.gif" alt=""><figcaption></figcaption></figure>
+
+ Finally, return to the movement code **inside PlayerBall.cs** and change the code to:
 
 ```
 private void CustomActivity()

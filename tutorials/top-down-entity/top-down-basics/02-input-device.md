@@ -88,4 +88,8 @@ void CustomInitialize()
 }
 ```
 
-To see more than one player you must have at least two gamepads plugged in to your computer. Also, keep in mind that the players will initially overlap so you must move one to see both. [![](../../../../media/2020-09-2021\_March\_06\_163127.gif)](../../../../media/2020-09-2021\_March\_06\_163127.gif) &#x20;
+To see more than one player you must have at least two gamepads plugged in to your computer. Also, keep in mind that the players will initially overlap so you must move one to see both. 
+
+<figure><img src="../../../../media/2020-09-2021\_March\_06\_163127.gif" alt=""><figcaption></figcaption></figure>
+
+ &#x20;

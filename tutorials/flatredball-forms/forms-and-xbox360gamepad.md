@@ -59,4 +59,8 @@ By default any control which implements IInputReceiver can be focused through ta
 Forms.DurationTextBox.GamepadTabbingFocusBehavior = FlatRedBall.Forms.Controls.TabbingFocusBehavior.SkipOnTab;
 ```
 
-[![](../../media/2022-02-02\_12-44-26.gif)](../../media/2022-02-02\_12-44-26.gif)
+
+
+<figure><img src="../../media/2022-02-02\_12-44-26.gif" alt=""><figcaption></figcaption></figure>
+
+

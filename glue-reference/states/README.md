@@ -18,15 +18,31 @@ Once a category has been created, states can be added in the State Data tab.
 
 ![](../../../../media/2021-03-img\_60562f9698889.png)
 
-New states can be added by entering names in the left-most column. Adding a new name creates a new state. [![](../../../../media/2016-01-2021\_March\_20\_112624.gif)](../../../../media/2016-01-2021\_March\_20\_112624.gif) By default, all variables in the Entity or Screen appear in the **State Data** tab. This includes tunneled variables too. For example, consider a tunneled SpriteInstance Texture variable. [![](../../../../media/2016-01-2021\_March\_20\_111428.gif)](../../../../media/2016-01-2021\_March\_20\_111428.gif) This variable will appear as a column in the **State Data** tab.
+New states can be added by entering names in the left-most column. Adding a new name creates a new state. 
+
+<figure><img src="../../../../media/2016-01-2021\_March\_20\_112624.gif" alt=""><figcaption></figcaption></figure>
+
+ By default, all variables in the Entity or Screen appear in the **State Data** tab. This includes tunneled variables too. For example, consider a tunneled SpriteInstance Texture variable. 
+
+<figure><img src="../../../../media/2016-01-2021\_March\_20\_111428.gif" alt=""><figcaption></figcaption></figure>
+
+ This variable will appear as a column in the **State Data** tab.
 
 ![](../../../../media/2021-03-img\_6056315a35c47.png)
 
-Variables can be added and removed from the **State Data** tab for a given category. It's best to remove variables which aren't used in a category to prevent mistakes. [![](../../../../media/2016-01-2021\_March\_20\_110432.gif)](../../../../media/2016-01-2021\_March\_20\_110432.gif)
+Variables can be added and removed from the **State Data** tab for a given category. It's best to remove variables which aren't used in a category to prevent mistakes. 
+
+<figure><img src="../../../../media/2016-01-2021\_March\_20\_110432.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 #### Right-Click Menu
 
-States can also be added through the right-click menu on a category. [![](../../../../media/2016-01-2021\_March\_20\_112411.gif)](../../../../media/2016-01-2021\_March\_20\_112411.gif) This method is the _old way_ of adding states. It is still supported, but it is a little more cumbersome compared to using _state data_. States added this way will still appear in the State Data tab.
+States can also be added through the right-click menu on a category. 
+
+<figure><img src="../../../../media/2016-01-2021\_March\_20\_112411.gif" alt=""><figcaption></figcaption></figure>
+
+ This method is the _old way_ of adding states. It is still supported, but it is a little more cumbersome compared to using _state data_. States added this way will still appear in the State Data tab.
 
 ### Setting States in Code
 

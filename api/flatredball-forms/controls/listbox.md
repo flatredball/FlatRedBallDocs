@@ -2,7 +2,11 @@
 
 ### Introduction
 
-The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected. [![](../../../media/2017-12-2017-12-13\_17-56-55.gif)](../../../media/2017-12-2017-12-13\_17-56-55.gif) ListBox inherits from [ScrollViewer](scrollviewer.md).
+The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected. 
+
+<figure><img src="../../../media/2017-12-2017-12-13\_17-56-55.gif" alt=""><figcaption></figcaption></figure>
+
+ ListBox inherits from [ScrollViewer](scrollviewer.md).
 
 ### Layout Requirements
 
@@ -205,7 +209,11 @@ private void HandleSelectionChanged(object sender, SelectionChangedEventArgs arg
 }
 ```
 
-[![](../../../media/2017-12-2017-12-20\_21-07-56.gif)](../../../media/2017-12-2017-12-20\_21-07-56.gif) The event handling the selection changing can also use the SelectedItem  property, as shown in the following code:
+
+
+<figure><img src="../../../media/2017-12-2017-12-20\_21-07-56.gif" alt=""><figcaption></figcaption></figure>
+
+ The event handling the selection changing can also use the SelectedItem  property, as shown in the following code:
 
 ```lang:c#
 void CustomInitialize()

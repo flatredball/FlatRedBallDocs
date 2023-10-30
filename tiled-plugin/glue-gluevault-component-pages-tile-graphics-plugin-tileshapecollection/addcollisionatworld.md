@@ -27,4 +27,8 @@ if(cursor.PrimaryDown)
 }
 ```
 
-[![](../../../../media/2021-04-2021\_April\_06\_215452.gif)](../../../../media/2021-04-2021\_April\_06\_215452.gif)
+
+
+<figure><img src="../../../../media/2021-04-2021\_April\_06\_215452.gif" alt=""><figcaption></figcaption></figure>
+
+

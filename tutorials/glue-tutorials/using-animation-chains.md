@@ -77,7 +77,11 @@ To tunnel the variable:
 6. For brevity, change the "Alternative Name:" to "CurrentChain" ![AddAnimationChainTunneledVariable.png](../../media/migrated\_media-AddAnimationChainTunneledVariable.png)
 7. Click **OK**
 
-Now you can change the variable by selecting the Sprite in Glue by selecting the Variables folder. [![](../../media/2016-01-2019-04-30\_16-32-05.gif)](../../media/2016-01-2019-04-30\_16-32-05.gif) If you are interested in changing the current AnimationChain on a Sprite in code, see [this article](glue-how-to-control-animation-at-runtime.md).
+Now you can change the variable by selecting the Sprite in Glue by selecting the Variables folder. 
+
+<figure><img src="../../media/2016-01-2019-04-30\_16-32-05.gif" alt=""><figcaption></figcaption></figure>
+
+ If you are interested in changing the current AnimationChain on a Sprite in code, see [this article](glue-how-to-control-animation-at-runtime.md).
 
 ### WHEW, all done!
 

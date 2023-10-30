@@ -2,7 +2,11 @@
 
 ### Introduction
 
-The RadioButton control can be used to select from a number of options. RadioButton instances are grouped according to their parent and a group name. Only one RadioButton in a parent/group combination can be selected at once. Selecting another RadioButton in the same group will deselect other RadioButton instances. [![](../../../../media/2017-12-2017-12-21\_07-04-05.gif)](../../../../media/2017-12-2017-12-21\_07-04-05.gif)
+The RadioButton control can be used to select from a number of options. RadioButton instances are grouped according to their parent and a group name. Only one RadioButton in a parent/group combination can be selected at once. Selecting another RadioButton in the same group will deselect other RadioButton instances. 
+
+<figure><img src="../../../../media/2017-12-2017-12-21\_07-04-05.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Layout Requirements
 
@@ -14,7 +18,11 @@ The RadioButton control can optionally include a Text instance named **TextInsta
 
 ### Groups and Parents
 
-The default Group for RadioButton instances is an empty string. Therefore, all grouping is done by parent. This is sufficient for most cases as groups of radio buttons may need to be visually separated from one another, and this is often done by assigning different parents in Gum. [![](../../../../media/2017-12-2017-12-21\_07-27-46.gif)](../../../../media/2017-12-2017-12-21\_07-27-46.gif)
+The default Group for RadioButton instances is an empty string. Therefore, all grouping is done by parent. This is sufficient for most cases as groups of radio buttons may need to be visually separated from one another, and this is often done by assigning different parents in Gum. 
+
+<figure><img src="../../../../media/2017-12-2017-12-21\_07-27-46.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Handling Events
 

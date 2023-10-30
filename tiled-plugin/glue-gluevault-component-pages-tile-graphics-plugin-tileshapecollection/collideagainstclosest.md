@@ -50,4 +50,8 @@ void CustomDestroy()
 }
 ```
 
-&#x20; [![](../../../../media/2023-05-24\_06-09-22.gif)](../../../../media/2023-05-24\_06-09-22.gif)
+&#x20; 
+
+<figure><img src="../../../../media/2023-05-24\_06-09-22.gif" alt=""><figcaption></figcaption></figure>
+
+

@@ -101,4 +101,8 @@ private void CustomActivity()
 
 ### Conclusion
 
-This concludes the platformer movement value tutorials where we use multiple TileShapeCollections to change the movement values for the player between regular ground/air movement, ice, and water movement. [![](../../../../media/2021-04-05\_16-33-47.gif)](../../../../media/2021-04-05\_16-33-47.gif)
+This concludes the platformer movement value tutorials where we use multiple TileShapeCollections to change the movement values for the player between regular ground/air movement, ice, and water movement. 
+
+<figure><img src="../../../../media/2021-04-05\_16-33-47.gif" alt=""><figcaption></figcaption></figure>
+
+

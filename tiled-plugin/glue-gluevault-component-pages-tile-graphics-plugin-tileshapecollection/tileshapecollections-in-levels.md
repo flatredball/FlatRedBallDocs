@@ -22,7 +22,11 @@ First we'll add a LayeredTileMap object to the GameScreen. This will represent t
 4.  Select **LayeredTileMap**
 5.  Name the new object **Map**
 
-[![](/media/2020-02-2020_February_04_172458.gif)](/media/2020-02-2020_February_04_172458.gif)
+
+
+<figure><img src="/media/2020-02-2020_February_04_172458.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 Next we'll make the newly-created Map object available to our levels:
 
@@ -38,6 +42,10 @@ Now we need to associate the TMX from each of our levels to the Map object:
 3.  Expand **Objects**
 4.  Drag+drop the TMX onto Map
 
-[![](/media/2020-02-2020_February_04_183802.gif)](/media/2020-02-2020_February_04_183802.gif) Repeat the process above for all levels, and anytime you create a new level. Now the Map can be used to set up the collisions on the TileShapeCollection:
+
+
+<figure><img src="/media/2020-02-2020_February_04_183802.gif" alt=""><figcaption></figcaption></figure>
+
+ Repeat the process above for all levels, and anytime you create a new level. Now the Map can be used to set up the collisions on the TileShapeCollection:
 
 ![](/media/2020-02-img_5e3a14811d3f0.png)

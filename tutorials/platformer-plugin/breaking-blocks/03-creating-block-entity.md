@@ -60,7 +60,11 @@ Our Block objects are currently displaying a black dot in the center of the coll
 4.  Search for **FRBPlatformer.png** and click **OK**
 
     ![](../../../media/2021-04-img\_606f32708b584.png)
-5. Drag+drop the FRBPlatformer file onto the SpriteInstance to set its Texture [![](../../../media/2021-04-2021\_April\_08\_100843.gif)](../../../media/2021-04-2021\_April\_08\_100843.gif)
+5. Drag+drop the FRBPlatformer file onto the SpriteInstance to set its Texture 
+
+<figure><img src="../../../media/2021-04-2021\_April\_08\_100843.gif" alt=""><figcaption></figcaption></figure>
+
+
 6. Change the pixel coordinates to the following:
    * Left Texture Pixel = 0
    * Right Texture Pixel = 16
@@ -78,7 +82,11 @@ For more information on texture pixels, see the [Sprite.Texture Coordinates](../
 Currently our Player can jump through blocks rather than being able to hit and stand on them. We can fix this by creating a CollisionRelationship:
 
 1. Expand the GameScreen Objects folder in Glue
-2. Drag+drop the **PlayerList** onto the **BlockList** to create a new CollisionRelationship [![](../../../media/2021-04-2021\_April\_08\_100749.gif)](../../../media/2021-04-2021\_April\_08\_100749.gif)
+2. Drag+drop the **PlayerList** onto the **BlockList** to create a new CollisionRelationship 
+
+<figure><img src="../../../media/2021-04-2021\_April\_08\_100749.gif" alt=""><figcaption></figcaption></figure>
+
+
 3.  Select the newly-created **PlayerListVsBlockList** and change the **Collision Physics** to **Platformer Solid Collision**
 
     ![](../../../media/2021-04-img\_606f34a321491.png)

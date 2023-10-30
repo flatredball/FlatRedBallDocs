@@ -44,7 +44,11 @@ You can also add a reference to the ColoredRectangleInstance in the FlatRedBall 
 6. Use the dropdown next to **Source Name:** to select **ColoredRectangleInstance**
 7. Click **OK**
 
-[![](../../../../media/2016-01-2019-02-28\_22-30-55.gif)](../../../../media/2016-01-2019-02-28\_22-30-55.gif) Note that the **Source Name:** drop down contains all instances in your Gum project. We selected the **ColoredRectangleInstance** for this example, but you could select any instance. Note that the ColoredRectangle in the FlatRedBall Editor is not a new ColoredRectangle instance - it is a reference to the ColoredRectangle inside the MainMenuGum screen.
+
+
+<figure><img src="../../../../media/2016-01-2019-02-28\_22-30-55.gif" alt=""><figcaption></figcaption></figure>
+
+ Note that the **Source Name:** drop down contains all instances in your Gum project. We selected the **ColoredRectangleInstance** for this example, but you could select any instance. Note that the ColoredRectangle in the FlatRedBall Editor is not a new ColoredRectangle instance - it is a reference to the ColoredRectangle inside the MainMenuGum screen.
 
 ### Alternative Option 2 - Getting Objects by Name
 
@@ -88,7 +92,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](../../../../media/2016-01-2021\_March\_07\_080847.gif)](../../../../media/2016-01-2021\_March\_07\_080847.gif) Notice that the TextIntance property matches the exact name in Gum:
+
+
+<figure><img src="../../../../media/2016-01-2021\_March\_07\_080847.gif" alt=""><figcaption></figcaption></figure>
+
+ Notice that the TextIntance property matches the exact name in Gum:
 
 ![](../../../../media/2021-03-img\_604b8fae4c068.png)
 

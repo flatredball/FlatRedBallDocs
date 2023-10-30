@@ -98,7 +98,11 @@ Next we will give the Bullet a PNG file and a Sprite to use. This process is ess
 2. Expand the **Bullet** entity in Glue
 3. Drag+drop Bullet1.png onto the Files folder in the Bullet
 
-[![](../../../media/2016-01-2021\_March\_13\_141331.gif)](../../../media/2016-01-2021\_March\_13\_141331.gif) To add a Sprite to the \*\*Bullet \*\*entity:
+
+
+<figure><img src="../../../media/2016-01-2021\_March\_13\_141331.gif" alt=""><figcaption></figcaption></figure>
+
+ To add a Sprite to the \*\*Bullet \*\*entity:
 
 1. Select the **Bullet** entity in Glue
 2. Click the **Quick Actions** tab

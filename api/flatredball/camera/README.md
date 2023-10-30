@@ -56,7 +56,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](../../../media/2016-01-10\_08-09-06.gif)](../../../media/2016-01-10\_08-09-06.gif)
+
+
+<figure><img src="../../../media/2016-01-10\_08-09-06.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### 2D Cameras and Pixels
 

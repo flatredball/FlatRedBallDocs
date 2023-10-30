@@ -103,4 +103,8 @@ public partial class Enemy
     ...
 ```
 
-Now we can run the game and see the enemy move down to the right. [![](../../../media/2022-03-15\_10-27-50.gif)](../../../media/2022-03-15\_10-27-50.gif)
+Now we can run the game and see the enemy move down to the right. 
+
+<figure><img src="../../../media/2022-03-15\_10-27-50.gif" alt=""><figcaption></figcaption></figure>
+
+

@@ -109,7 +109,11 @@ Now that we've created a map, we will change the "Tile Layer Format" to "Base64 
     ![](../../../../media/2018-04-img\_5ad9ef60d069a.png)
 3. Change the **Tile Layer Format** to **Base64 (gzip compressed)** ![](../../../../media/2016-08-img\_57abb3401128c.png)
 
-Now that the format has been changed, save the file again. Finally the file can be added to the Level1 screen by drag+dropping the file from windows explorer to the Files item under Level1. [![](../../../../media/2016-08-2019-07-03\_06-48-05.gif)](../../../../media/2016-08-2019-07-03\_06-48-05.gif) The game now references the .tmx file, and when executed the game loads the empty .tmx file. \[/frb\_toggle]
+Now that the format has been changed, save the file again. Finally the file can be added to the Level1 screen by drag+dropping the file from windows explorer to the Files item under Level1. 
+
+<figure><img src="../../../../media/2016-08-2019-07-03\_06-48-05.gif" alt=""><figcaption></figcaption></figure>
+
+ The game now references the .tmx file, and when executed the game loads the empty .tmx file. \[/frb\_toggle]
 
 ### Editing the TMX File
 
@@ -117,8 +121,16 @@ If you have Tiled installed, then the installer should have associated the .TMX 
 
 *   Double-click the TMX file under **Level1 Files**
 
-    [![](../../../../media/2016-08-2021\_February\_20\_104104.gif)](../../../../media/2016-08-2021\_February\_20\_104104.gif)
-* Use the drop-down in the toolbar to select the map to edit [![](../../../../media/2016-08-2021\_February\_20\_102205.gif)](../../../../media/2016-08-2021\_February\_20\_102205.gif)
+    
+
+<figure><img src="../../../../media/2016-08-2021\_February\_20\_104104.gif" alt=""><figcaption></figcaption></figure>
+
+
+* Use the drop-down in the toolbar to select the map to edit 
+
+<figure><img src="../../../../media/2016-08-2021\_February\_20\_102205.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 If you followed the previous steps, your map should include:
 
@@ -131,7 +143,11 @@ This tileset was automatically added in an earlier step so that you can hit the 
 
 ![](../../../../media/2021-02-img\_603143ca04832.png)
 
-We can click this tile and place it on the **GameplayLayer** to create walls, floors, or any other type of solid collision. [![](../../../../media/2016-08-2021\_February\_20\_103417-1.gif)](../../../../media/2016-08-2021\_February\_20\_103417-1.gif) Don't forget to save your work in Tiled - otherwise it won't show up in game.
+We can click this tile and place it on the **GameplayLayer** to create walls, floors, or any other type of solid collision. 
+
+<figure><img src="../../../../media/2016-08-2021\_February\_20\_103417-1.gif" alt=""><figcaption></figcaption></figure>
+
+ Don't forget to save your work in Tiled - otherwise it won't show up in game.
 
 ![](../../../../media/2021-02-img\_6031449fb6101.png)
 
@@ -177,12 +193,20 @@ Tilesets define the appearance of a collection of tiles along with properties wh
 
 The content folder for GameScreen will be open (and empty). ![](../../../../media/2018-09-img\_5b991adb938e1.png) Save the tileset (shown above) to the GameScreen content folder (which we just opened).
 
-[![](../../../../media/2016-08-2018-09-12\_07-57-59.gif)](../../../../media/2016-08-2018-09-12\_07-57-59.gif)
+
+
+<figure><img src="../../../../media/2016-08-2018-09-12\_07-57-59.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 To use the dungeonTileSet.png file in the tile map:
 
 1. Open **Level1Map.tmx** (double-click it in the FRB editor or open it in Windows Explorer)
-2. Drag+drop the **dungeonTileSet.png** file into the **Tilesets** tab (the bottom right pane in Tiled) [![](../../../../media/2016-08-2021\_February\_20\_102048.gif)](../../../../media/2016-08-2021\_February\_20\_102048.gif)
+2. Drag+drop the **dungeonTileSet.png** file into the **Tilesets** tab (the bottom right pane in Tiled) 
+
+<figure><img src="../../../../media/2016-08-2021\_February\_20\_102048.gif" alt=""><figcaption></figcaption></figure>
+
+
 3. Verify that **Tile width** and **Tile height** are both **16px**
 4.  Click **Save As...**
 
@@ -222,7 +246,11 @@ Once a tileset has been created, tiles can be placed by clicking on a tile in th
 4. Select the dungeonTileSet
 5. Paint tiles on the new layer
 
-[![](../../../../media/2016-08-2021\_February\_20\_105257.gif)](../../../../media/2016-08-2021\_February\_20\_105257.gif)   Keep in mind that changes made to the .tmx file in Tiled must be saved before they will show up in game. Also, the FRB editor automatically manages files referenced by .tmx files, so we do not need to manually add the dungeonTileSet.png file to the GameScreen.
+
+
+<figure><img src="../../../../media/2016-08-2021\_February\_20\_105257.gif" alt=""><figcaption></figcaption></figure>
+
+   Keep in mind that changes made to the .tmx file in Tiled must be saved before they will show up in game. Also, the FRB editor automatically manages files referenced by .tmx files, so we do not need to manually add the dungeonTileSet.png file to the GameScreen.
 
 ###
 

@@ -123,4 +123,8 @@ private void CustomActivity()
 
 ### Additional Challenges
 
-Now the Player will switch its values according to input, of course, the running animations are not currently being used. Use what was covered in the previous tutorial to see if you can modify the Player's animations to play the running and running jump animations as shown in the following animation. [![](../../../../media/2021-03-2021\_March\_28\_165247.gif)](../../../../media/2021-03-2021\_March\_28\_165247.gif) &#x20;
+Now the Player will switch its values according to input, of course, the running animations are not currently being used. Use what was covered in the previous tutorial to see if you can modify the Player's animations to play the running and running jump animations as shown in the following animation. 
+
+<figure><img src="../../../../media/2021-03-2021\_March\_28\_165247.gif" alt=""><figcaption></figcaption></figure>
+
+ &#x20;

@@ -41,7 +41,11 @@ The easiest way to add an instance of an entity to a game is by dropping a Tile 
 
     ![](../../../media/2022-01-img\_61ec1fb952cd1.png)
 
-Now you can paint the tiles onto your map and they will automatically be converted into entities when you run your game. [![](../../../media/2020-02-22\_08-18-38.gif)](../../../media/2020-02-22\_08-18-38.gif) &#x20;
+Now you can paint the tiles onto your map and they will automatically be converted into entities when you run your game. 
+
+<figure><img src="../../../media/2020-02-22\_08-18-38.gif" alt=""><figcaption></figcaption></figure>
+
+ &#x20;
 
 ### Manually Instantiating Entities in Code
 

@@ -87,7 +87,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-[![](../../../media/2016-01-2019-07-26\_09-19-49.gif)](../../../media/2016-01-2019-07-26\_09-19-49.gif)
+
+
+<figure><img src="../../../media/2016-01-2019-07-26\_09-19-49.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Code Example - Lambda Assignments
 
@@ -109,7 +113,11 @@ if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Space))
 }
 ```
 
-[![](../../../media/2016-01-07\_13-43-30.gif)](../../../media/2016-01-07\_13-43-30.gif)
+
+
+<figure><img src="../../../media/2016-01-07\_13-43-30.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Tweening vs. Velocity values
 

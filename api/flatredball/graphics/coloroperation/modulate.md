@@ -1,6 +1,10 @@
 ## Usage Example - Coloring Grayscale Image
 
-Images which are grayscale can be colored using the Modulate color operation. This is a fast way to create variety for entities such as enemies or equipment. The following animation shows tinting using the FlatRedBall Editor on a Sprite with Modulate color operation. [![](/media/2016-01-22_09-46-22.gif)](/media/2016-01-22_09-46-22.gif)
+Images which are grayscale can be colored using the Modulate color operation. This is a fast way to create variety for entities such as enemies or equipment. The following animation shows tinting using the FlatRedBall Editor on a Sprite with Modulate color operation. 
+
+<figure><img src="/media/2016-01-22_09-46-22.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Code Example - Darkening
 

@@ -84,7 +84,15 @@ To make the entity move in response to keyboard input:
 
 ### Adding Player to GameScreen
 
-Our entity is ready to go - we just need to add it to GameScreen. Note that we're adding the Player to the GameScreen rather than Level1 because we want every level to have a player. To add the entity to GameScreen, drag+drop the entity onto the screen: [![](../../media/2016-08-2021\_February\_20\_135021.gif)](../../media/2016-08-2021\_February\_20\_135021.gif) The Player will now appear on the game screen in the PlayerList and can move with the arrow keys. [![](../../media/2016-08-2021\_February\_20\_131426.gif)](../../media/2016-08-2021\_February\_20\_131426.gif) We can change the starting position of the player by changing the Player1 X and Y values in the FRB editor.
+Our entity is ready to go - we just need to add it to GameScreen. Note that we're adding the Player to the GameScreen rather than Level1 because we want every level to have a player. To add the entity to GameScreen, drag+drop the entity onto the screen: 
+
+<figure><img src="../../media/2016-08-2021\_February\_20\_135021.gif" alt=""><figcaption></figcaption></figure>
+
+ The Player will now appear on the game screen in the PlayerList and can move with the arrow keys. 
+
+<figure><img src="../../media/2016-08-2021\_February\_20\_131426.gif" alt=""><figcaption></figcaption></figure>
+
+ We can change the starting position of the player by changing the Player1 X and Y values in the FRB editor.
 
 1. Select the Player1 in the GameScreen
 2. Click the Variables tab
@@ -105,9 +113,17 @@ Solid collision can be used to prevent an entity from passing through solid obje
 2. Drag+drop the PlayerList onto the SolidCollision object. This creates a new CollisionRelationship named **PlayerListVsSolidCollision** and automatically selects it.
 3. Change the **Collision Physics** to **Move Collision**
 
-[![](../../media/2016-08-2021\_February\_20\_131433.gif)](../../media/2016-08-2021\_February\_20\_131433.gif)
 
-As shown in the FRB editor, **Move Collision** prevents the objects from overlapping. If we run the game now, you will notice that the Player can no longer move through the walls. [![](../../media/2016-08-2021\_February\_20\_133236.gif)](../../media/2016-08-2021\_February\_20\_133236.gif)
+
+<figure><img src="../../media/2016-08-2021\_February\_20\_131433.gif" alt=""><figcaption></figcaption></figure>
+
+
+
+As shown in the FRB editor, **Move Collision** prevents the objects from overlapping. If we run the game now, you will notice that the Player can no longer move through the walls. 
+
+<figure><img src="../../media/2016-08-2021\_February\_20\_133236.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Colliding Platformer Entities
 

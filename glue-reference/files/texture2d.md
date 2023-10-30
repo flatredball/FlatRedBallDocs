@@ -13,7 +13,11 @@ Texture2D's which are added to a screen or entity can be accessed by objects in 
     ![](../../../../media/2019-06-img\_5d18b9a876102.png)
 2.  Drag+drop a .png file from any location on your computer onto the entity's Files object. Note that if the file is not located outside of your game's Content folder, the file will be copied.
 
-    [![](../../../../media/2016-07-2019-06-30\_07-32-33.gif)](../../../../media/2016-07-2019-06-30\_07-32-33.gif)
+    
+
+<figure><img src="../../../../media/2016-07-2019-06-30\_07-32-33.gif" alt=""><figcaption></figcaption></figure>
+
+
 3. Select the Sprite object
 4. Locate the "Texture" property
 5.  Use the drop-down to select the desired texture

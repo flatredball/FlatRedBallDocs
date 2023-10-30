@@ -37,4 +37,8 @@ gumSprite.SetProperty("SourceFile", "../Screens/MainMenu/PlatformerAnimations.ac
 gumSprite.TextureAddress = Gum.Managers.TextureAddress.Custom;
 ```
 
-The Gum Sprite now animates when running the game. [![](../../media/2022-02-27\_13-39-06.gif)](../../media/2022-02-27\_13-39-06.gif)
+The Gum Sprite now animates when running the game. 
+
+<figure><img src="../../media/2022-02-27\_13-39-06.gif" alt=""><figcaption></figcaption></figure>
+
+

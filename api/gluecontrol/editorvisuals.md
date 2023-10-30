@@ -29,7 +29,11 @@ If you are creating visuals which are specifically for edit mode, you can make y
 
 ## CustomActivityEditMode
 
-Every entity and screen can support displaying information in edit mode. The first step is to add a CustomActivityEditMode method. Generated code is already prepared to call this (it is a partial method), so once it is added, it will be called in edit mode. Visual Studio will help create this method if the word **partial** is written in a screen or entity. [![](/media/2021-12-24_11-26-39.gif)](/media/2021-12-24_11-26-39.gif) Once the CustomActivityEditMode method has been added, calls to EditorVisuals can be used to display information in the game when it is running in edit mode. For example, the following can be added to an entity to display its name:
+Every entity and screen can support displaying information in edit mode. The first step is to add a CustomActivityEditMode method. Generated code is already prepared to call this (it is a partial method), so once it is added, it will be called in edit mode. Visual Studio will help create this method if the word **partial** is written in a screen or entity. 
+
+<figure><img src="/media/2021-12-24_11-26-39.gif" alt=""><figcaption></figcaption></figure>
+
+ Once the CustomActivityEditMode method has been added, calls to EditorVisuals can be used to display information in the game when it is running in edit mode. For example, the following can be added to an entity to display its name:
 
     partial void CustomActivityEditMode()
     {
@@ -65,4 +69,8 @@ CustomActivityEditMode has access to all FlatRedBall calls. For example, the fol
         }
     }
 
-[![](/media/2021-12-24_11-54-34.gif)](/media/2021-12-24_11-54-34.gif)
+
+
+<figure><img src="/media/2021-12-24_11-54-34.gif" alt=""><figcaption></figcaption></figure>
+
+

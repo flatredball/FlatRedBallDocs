@@ -24,7 +24,15 @@ To add a new level we will create a new screen. These steps are the same as what
 7.  On the New File window, enter the name **Level2Map** and leave the defaults checked
 8.  Click **OK**
 
-[![](/media/2016-08-11_08-56-58.gif)](/media/2016-08-11_08-56-58.gif) Now our game has two levels: Level1 and Level2. We can choose which level we want to play by using the drop-down next to the Play button in Glue. [![](/media/2016-08-2021_February_20_132044.gif)](/media/2016-08-2021_February_20_132044.gif) If we play Level2, we will have an empty level since we haven't added any tiles yet. We can edit Level2Map by selecting it in the Tiled dropdown.
+
+
+<figure><img src="/media/2016-08-11_08-56-58.gif" alt=""><figcaption></figcaption></figure>
+
+ Now our game has two levels: Level1 and Level2. We can choose which level we want to play by using the drop-down next to the Play button in Glue. 
+
+<figure><img src="/media/2016-08-2021_February_20_132044.gif" alt=""><figcaption></figcaption></figure>
+
+ If we play Level2, we will have an empty level since we haven't added any tiles yet. We can edit Level2Map by selecting it in the Tiled dropdown.
 
 ![](/media/2021-02-img_603174ef881fe.png)
 
@@ -32,7 +40,11 @@ Level2Map already has the TiledIcons referenced, and it already has a GameplayLa
 
 ![](/media/2021-02-img_60317559d4c13.png)
 
-As always, don't forget to save your work or the map won't appear in game. The tiles should appear in your game, along with the collision for the tiles. [![](/media/2016-08-2021_February_20_134848.gif)](/media/2016-08-2021_February_20_134848.gif)
+As always, don't forget to save your work or the map won't appear in game. The tiles should appear in your game, along with the collision for the tiles. 
+
+<figure><img src="/media/2016-08-2021_February_20_134848.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Levels and Inheritance
 
@@ -64,4 +76,8 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-Now we can run the game and press the space bar to switch between levels. [![](/media/2016-08-2021_February_20_134150.gif)](/media/2016-08-2021_February_20_134150.gif)
+Now we can run the game and press the space bar to switch between levels. 
+
+<figure><img src="/media/2016-08-2021_February_20_134150.gif" alt=""><figcaption></figcaption></figure>
+
+

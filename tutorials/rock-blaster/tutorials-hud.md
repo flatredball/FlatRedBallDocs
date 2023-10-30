@@ -24,7 +24,11 @@ Gum follows many of the same concepts as Glue, but it is primarily a visual tool
 2. Drag+drop the Text object onto the GameScreenGum
 3. Adjust the position of the Text to its desired location in the Editor window
 
-[![](../../media/2016-01-2021\_March\_13\_200519.gif)](../../media/2016-01-2021\_March\_13\_200519.gif)   That's all there is to it! Gum automatically saves all changes, and Glue (if open) automatically reacts to these file changes, so we can run the game and see the **Hello** TextInstance right away.
+
+
+<figure><img src="../../media/2016-01-2021\_March\_13\_200519.gif" alt=""><figcaption></figcaption></figure>
+
+   That's all there is to it! Gum automatically saves all changes, and Glue (if open) automatically reacts to these file changes, so we can run the game and see the **Hello** TextInstance right away.
 
 ![](../../media/2021-03-img\_604d810fec276.png)
 
@@ -40,7 +44,11 @@ To access the TextInstance which is inside GameScreenGum:
 2. Use the **Source Name** dropdown to select **TextInstance**
 3. Click **OK**
 
-[![](../../media/2016-01-2021\_March\_13\_200727.gif)](../../media/2016-01-2021\_March\_13\_200727.gif) We can access the TextInstance in code and change any of its variables. For example, we can change the Text property in CustomActivity. As a test, open GameScreen.cs and add the following code in CustomActivity:
+
+
+<figure><img src="../../media/2016-01-2021\_March\_13\_200727.gif" alt=""><figcaption></figcaption></figure>
+
+ We can access the TextInstance in code and change any of its variables. For example, we can change the Text property in CustomActivity. As a test, open GameScreen.cs and add the following code in CustomActivity:
 
 ```
 void CustomActivity(bool firstTimeCalled)

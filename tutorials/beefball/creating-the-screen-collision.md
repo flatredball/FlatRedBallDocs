@@ -18,7 +18,11 @@ First we'll create a ShapeCollection called Walls. This ShapeCollection will con
 5. Enter the name **Walls**
 6. Click **OK**
 
-[![](../../../media/2016-01-2021\_July\_25\_130007.gif)](../../../media/2016-01-2021\_July\_25\_130007.gif)
+
+
+<figure><img src="../../../media/2016-01-2021\_July\_25\_130007.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Adding Wall AxisAlignedRectangles
 
@@ -29,7 +33,11 @@ Now that we have a ShapeCollection for our walls, we will add the individual wal
 3. Select **AxisAlignedRectangle** as the type. Notice that available types are limited to shapes since we are adding to a ShapeCollection.
 4. Enter the name **Wall1** and click **OK**.
 
-[![](../../../media/2016-01-2021\_July\_25\_133309.gif)](../../../media/2016-01-2021\_July\_25\_133309.gif) Now we can modify the properties of this wall. Select **Wall1** and change the values as follows:
+
+
+<figure><img src="../../../media/2016-01-2021\_July\_25\_133309.gif" alt=""><figcaption></figcaption></figure>
+
+ Now we can modify the properties of this wall. Select **Wall1** and change the values as follows:
 
 * Y = 300
 * Width = 800
@@ -96,7 +104,11 @@ Since our PlayerBall is an ICollidable, that means it can collide with any other
 4. Change the **Collision Physics** to **Bounce Collision** so that our **PlayerBall** bounces against the walls
 5. Change the PlayerBall Mass to 0. This means that the PlayerBall will behave as if it has no mass, so it will not be able to move the walls. Be sure to press Enter or Tab to save the change.
 
-If we run the game now, the PlayerBall will collide with the walls. [![](../../../media/2016-01-2021\_July\_25\_135826.gif)](../../../media/2016-01-2021\_July\_25\_135826.gif) We use CollisionRelationships here because they are very powerful and require no code. Just like everything else in Glue, collisions can also be managed in code. If you are interested in writing collision purely in code, see the [CollideAgainstMove page](../../../frb/docs/index.php).
+If we run the game now, the PlayerBall will collide with the walls. 
+
+<figure><img src="../../../media/2016-01-2021\_July\_25\_135826.gif" alt=""><figcaption></figcaption></figure>
+
+ We use CollisionRelationships here because they are very powerful and require no code. Just like everything else in Glue, collisions can also be managed in code. If you are interested in writing collision purely in code, see the [CollideAgainstMove page](../../../frb/docs/index.php).
 
 ### Why doesn't the PlayerBall Bounce?
 

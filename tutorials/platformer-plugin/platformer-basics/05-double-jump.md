@@ -30,8 +30,16 @@ Finally we need to change the **Jump Speed** value on the **Air** movement value
 
 ![](../../../../media/2021-03-img\_605790f178ded.png)
 
-Now the entity supports double jumping. [![](../../../../media/2021-03-2021\_March\_21\_123132.gif)](../../../../media/2021-03-2021\_March\_21\_123132.gif)
+Now the entity supports double jumping. 
+
+<figure><img src="../../../../media/2021-03-2021\_March\_21\_123132.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Infinite Double Jumps
 
-We can also support infinite double jumps by either setting the AfterDoubleJump Jump Speed value to greater than zero, or by setting the AfterDoubleJump variable to be Air. This results in the character being able to jump indefinitely which can be useful if implementing swimming or abilities like the flying racoon power-up in Super Mario Bros 3. [![](../../../../media/2021-03-2021\_March\_21\_122535.gif)](../../../../media/2021-03-2021\_March\_21\_122535.gif)   &#x20;
+We can also support infinite double jumps by either setting the AfterDoubleJump Jump Speed value to greater than zero, or by setting the AfterDoubleJump variable to be Air. This results in the character being able to jump indefinitely which can be useful if implementing swimming or abilities like the flying racoon power-up in Super Mario Bros 3. 
+
+<figure><img src="../../../../media/2021-03-2021\_March\_21\_122535.gif" alt=""><figcaption></figcaption></figure>
+
+   &#x20;

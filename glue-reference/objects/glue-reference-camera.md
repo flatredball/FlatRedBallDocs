@@ -16,7 +16,11 @@ Cameras added to a Screen can be modified in the FlatRedBall Editor. By default,
 
     ![](../../../../media/2022-03-img\_62323dfe257e0.png)
 
-The new camera appears in the GameScreen. It can be modified to make changes to the game, including in edit mode. For example, the Background Color can be changed from Black to any desired color. [![](../../../../media/2016-01-16\_13-54-48.gif)](../../../../media/2016-01-16\_13-54-48.gif)
+The new camera appears in the GameScreen. It can be modified to make changes to the game, including in edit mode. For example, the Background Color can be changed from Black to any desired color. 
+
+<figure><img src="../../../../media/2016-01-16\_13-54-48.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### IsNewCamera
 

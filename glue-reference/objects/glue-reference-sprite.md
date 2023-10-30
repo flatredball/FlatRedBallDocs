@@ -32,7 +32,11 @@ Sprites can be added to Glue screens or entities, although most games don't incl
 5. Select the **Sprite** type
 6. Click **OK**
 
-[![](../../../../media/2016-01-2019-05-02\_06-51-56.gif)](../../../../media/2016-01-2019-05-02\_06-51-56.gif)
+
+
+<figure><img src="../../../../media/2016-01-2019-05-02\_06-51-56.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Sprite Texture
 
@@ -44,6 +48,10 @@ Sprites usually display textures, which are created from image files such as .pn
 4. Select the Sprite in the same screen or entity with the newly-added file
 5. Change its **Texture** property to the newly-added file
 
-[![](../../../../media/2016-01-2019-05-02\_06-56-48-1.gif)](../../../../media/2016-01-2019-05-02\_06-56-48-1.gif) For more information about working with textures, see the [Texture2D page](../files/texture2d.md). The Sprite will now display the texture in the preview window and in game. &#x20;
+
+
+<figure><img src="../../../../media/2016-01-2019-05-02\_06-56-48-1.gif" alt=""><figcaption></figcaption></figure>
+
+ For more information about working with textures, see the [Texture2D page](../files/texture2d.md). The Sprite will now display the texture in the preview window and in game. &#x20;
 
 ![](../../../../media/2019-05-img\_5ccae9f711f3f.png)

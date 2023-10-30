@@ -2,7 +2,11 @@
 
 ### Introduction
 
-CheckBox is a component which can be used to represent a bool value (true or false) at runtime. [![](../../../../media/2017-12-2017-12-13\_07-13-04.gif)](../../../../media/2017-12-2017-12-13\_07-13-04.gif)
+CheckBox is a component which can be used to represent a bool value (true or false) at runtime. 
+
+<figure><img src="../../../../media/2017-12-2017-12-13\_07-13-04.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Layout Requirements
 

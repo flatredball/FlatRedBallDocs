@@ -58,7 +58,11 @@ The first step is to decide which tile you would like to use for your collision.
     ![](../../../../media/2021-02-img\_603159b33ab60.png)
 6. Don't forget to save your tileset file
 
-Now that the type has been set and the tileset has been saved, you can place the tile in your level. Make sure to place it on the GameplayLayer in case your game has multiple layers. [![](../../../../media/2016-08-2021\_February\_20\_112950.gif)](../../../../media/2016-08-2021\_February\_20\_112950.gif) Be sure to save your map after adding tiles.
+Now that the type has been set and the tileset has been saved, you can place the tile in your level. Make sure to place it on the GameplayLayer in case your game has multiple layers. 
+
+<figure><img src="../../../../media/2016-08-2021\_February\_20\_112950.gif" alt=""><figcaption></figcaption></figure>
+
+ Be sure to save your map after adding tiles.
 
 ### Creating a New TileShapeCollection
 

@@ -36,14 +36,22 @@ Finally we'll add collision to our level for the MainCharacter to walk on. To do
 
     ![](../../../media/2021-05-img\_6092105d05917.png)
 
-Now if we run the game, we have our level set up, but the player will still fall through the level. Next we'll add a CollisionRelationship between the player and the solid collision. [![](../../../media/2018-01-2021\_February\_21\_110609.gif)](../../../media/2018-01-2021\_February\_21\_110609.gif)
+Now if we run the game, we have our level set up, but the player will still fall through the level. Next we'll add a CollisionRelationship between the player and the solid collision. 
+
+<figure><img src="../../../media/2018-01-2021\_February\_21\_110609.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Adding a Collision Relationship
 
 Currently our game has collision defined through the Level1Map, but we haven't told our game that the MainCharacterInstance should collide against it. To do this:
 
 1. Expand GameScreen Objects
-2. Drag+drop the **MainCharacterList** onto the **SolidCollision** to create a relationship [![](../../../media/2018-01-2021\_February\_21\_113719.gif)](../../../media/2018-01-2021\_February\_21\_113719.gif)
+2. Drag+drop the **MainCharacterList** onto the **SolidCollision** to create a relationship 
+
+<figure><img src="../../../media/2018-01-2021\_February\_21\_113719.gif" alt=""><figcaption></figcaption></figure>
+
+
 3. Mark the newly-created CollisionRelationship as **Platformer Solid Collision**
 
 Now the player will collide with the level.
@@ -56,7 +64,11 @@ By default the platformer entity already supports a default set of controls. To 
 
 ![](../../../media/2021-02-img\_6032a55db4f63.png)
 
-By default the platformer will be controllable with a plugged-in Xbox Gamepad. If no Gamepad is detected, then the entity can be controlled with WASD and Space. [![](../../../media/2018-01-2021\_February\_21\_112625.gif)](../../../media/2018-01-2021\_February\_21\_112625.gif) If you want to override this functionality, you can change the controls. These controls can be changed in the MovementInput code (to apply to all players) or in the GameScreen. We recommend making the changes in GameScreen so that different characters can have different input in a multi-player game. To change the character to jump with the Enter key and to move with the arrow keys:
+By default the platformer will be controllable with a plugged-in Xbox Gamepad. If no Gamepad is detected, then the entity can be controlled with WASD and Space. 
+
+<figure><img src="../../../media/2018-01-2021\_February\_21\_112625.gif" alt=""><figcaption></figcaption></figure>
+
+ If you want to override this functionality, you can change the controls. These controls can be changed in the MovementInput code (to apply to all players) or in the GameScreen. We recommend making the changes in GameScreen so that different characters can have different input in a multi-player game. To change the character to jump with the Enter key and to move with the arrow keys:
 
 1. Go to GameScreen.cs
 2. Modify the CustomInitialize  function to contain the following input assignment code:

@@ -12,4 +12,8 @@ Glue allows renaming of a file by changing the file's **Name** property. Renamin
 2.  Change the name of the file in the Visual Studio project (including all synced projects)
 3.  Change the name of the file on disk
 
-Note that if the file is referenced by another file, Glue may not be able to update the reference. For example, changing a .PNG file which is referenced by a .TMX file may result in errors due to the .TMX file still referencing the old .PNG. [![](/media/2019-07-2019-07-02_09-58-49.gif)](/media/2019-07-2019-07-02_09-58-49.gif)
+Note that if the file is referenced by another file, Glue may not be able to update the reference. For example, changing a .PNG file which is referenced by a .TMX file may result in errors due to the .TMX file still referencing the old .PNG. 
+
+<figure><img src="/media/2019-07-2019-07-02_09-58-49.gif" alt=""><figcaption></figcaption></figure>
+
+
