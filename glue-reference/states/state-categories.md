@@ -9,7 +9,7 @@ State Categories can be thought of as folders for states. State Categories are u
 * To create multiple enumerations for more expressive code (if not sharing variables between states)
 * To enable including and excluding particular variables from assignment
 
-State categories will appear as folders in Glue which can contain any number of States. ![StateCategories.PNG](../../../../media/migrated\_media-StateCategories.PNG) Note that categorized cannot be added inside of other categories.
+State categories will appear as folders in Glue which can contain any number of States. ![StateCategories.PNG](../../media/migrated\_media-StateCategories.PNG) Note that categorized cannot be added inside of other categories.
 
 ### Adding a State Category
 
@@ -17,7 +17,7 @@ To add a state category:
 
 1. Expand a Screen or Entity that you want to add a category to
 2. Right-click on the States item
-3. Select "Add State Category" ![AddStateCategory.png](../../../../media/migrated\_media-AddStateCategory.png)
+3. Select "Add State Category" ![AddStateCategory.png](../../media/migrated\_media-AddStateCategory.png)
 4. Enter the name for the new category
 5. Click OK
 
@@ -25,13 +25,13 @@ To add a state category:
 
 By default a category has access to all variables on a Screen or Entity. For example, the following Player entity includes 10 variables:
 
-![](../../../../media/2021-10-img\_617bf592855c2.png)
+![](../../media/2021-10-img\_617bf592855c2.png)
 
 By default all variables appear in the the State Data tab when viewing one of the categories, as shown in the following image:
 
-![](../../../../media/2021-10-img\_617bf658b5b63.png)
+![](../../media/2021-10-img\_617bf658b5b63.png)
 
-Usually states should only set a few of the variables. In the example shown here, the category might set variables related to Player armor. To exclude variables click the **...** button in the State Data tab and use the **<<** and \*\*>> \*\*buttons to include and exclude variables. In this case, only armor-related variables are included. All other variables are excluded and will be removed from the grid view as they are removed. [![](../../../../media/2016-01-29\_07-28-14.gif)](../../../../media/2016-01-29\_07-28-14.gif)
+Usually states should only set a few of the variables. In the example shown here, the category might set variables related to Player armor. To exclude variables click the **...** button in the State Data tab and use the **<<** and \*\*>> \*\*buttons to include and exclude variables. In this case, only armor-related variables are included. All other variables are excluded and will be removed from the grid view as they are removed. [![](../../media/2016-01-29\_07-28-14.gif)](../../media/2016-01-29\_07-28-14.gif)
 
 #### Excluding Variables Prevents Accidental Assignment
 
@@ -112,9 +112,9 @@ This state will likely cause a bug since it assigns the position of the Player a
 
 StateData is the concept of treating states similar to CSV data. Glue supports treating States as CSV data by providing a CSV-like interface when selecting a category, as shown in the following image:
 
-![](../../../../media/2020-06-img\_5ee783d044f32.png)
+![](../../media/2020-06-img\_5ee783d044f32.png)
 
-For an in-depth discussion of State Data, including how to exclude variables from inclusion, see the [State Data blog post](../../../../news/introducing-state-data.md).
+For an in-depth discussion of State Data, including how to exclude variables from inclusion, see the [State Data blog post](broken-reference).
 
 ### SharesVariablesWithOtherCategories
 
@@ -122,6 +122,6 @@ The SharesVariablesWithOtherCategories controls whether the State Category share
 
 * Will create a separate enum value
 * Will create a separate property of this enum type in the given Screen/Entity
-* Will create [InterpolateToState](../../../../frb/docs/index.php) and InterpolateBetween functions for this enum type
+* Will create [InterpolateToState](../../frb/docs/index.php) and InterpolateBetween functions for this enum type
 * Will allow exposing and tunneling of a new variable type in Glue
 * Will allow setting the new category state in GlueView

@@ -1,12 +1,14 @@
-## Introduction
+# glue-reference-state-enumerations
 
-Glue creates a custom class for every state category, and a separate class for all uncategorized states. Note that previous versions of Glue used to create enumerations for states, but this behavior was changed in 2018. For details about the change, see the [post about state data](/news/introducing-state-data.md).
+### Introduction
 
-## Class Names
+Glue creates a custom class for every state category, and a separate class for all uncategorized states. Note that previous versions of Glue used to create enumerations for states, but this behavior was changed in 2018. For details about the change, see the [post about state data](broken-reference).
 
-The default class for uncategorized states in an entity is VariableState . To prevent naming conflicts, the class is defined inside the generated class for the screen/entity. For example, if a Screen named **GameScreen** includes uncategorized states, then the following qualified class is generated:
+### Class Names
 
-``` lang:c#
+The default class for uncategorized states in an entity is VariableState . To prevent naming conflicts, the class is defined inside the generated class for the screen/entity. For example, if a Screen named **GameScreen** includes uncategorized states, then the following qualified class is generated:
+
+```lang:c#
 public class VariableState
 {
     public string Name;
@@ -25,6 +27,8 @@ public class VariableState
 
 The class is an embedded class, so it must be accessed through the screen class. For example, the fully qualified name of the VariableState class would be:
 
-    ProjectNamespace.Screens.GameScreen.VariableState
+```
+ProjectNamespace.Screens.GameScreen.VariableState
+```
 
-States will appear in the VariableState class if they are either uncategorized.
+States will appear in the VariableState class if they are either uncategorized.

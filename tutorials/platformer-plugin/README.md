@@ -1,1 +1,3 @@
-Glue makes platformer game creation easy. Check out all of the tutorials covering various Platformer topics from beginner to expert: \[subpages depth="1"\]
+# Platformer Tutorials
+
+FlatRedBall makes platformer game creation easy. This section includes tutorials covering various platformer topics from beginner to expert.

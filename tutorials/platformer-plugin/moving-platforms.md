@@ -1,8 +1,16 @@
-# moving-platforms
+# Moving Platforms
 
 ### Introduction
 
-This walkthrough covers concepts related to creating moving platforms. Moving platforms can be used to transport a player vertically or horizontally, and can provide challenge and variety to a platformer level. When walking on a moving platform, the platformer Player is able to move faster and jump further. \[embed]https://youtu.be/wd2NqblSmIY?t=2535\[/embed] This sample can be downloaded from GitHub: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo) [![](../../../media/2021-05-2021\_May\_13\_071539.gif)](../../../media/2021-05-2021\_May\_13\_071539.gif) This walkthrough refers to MovingPlatfomDemo as _this demo_ and _the demo_.
+This walkthrough covers concepts related to creating moving platforms. Moving platforms can be used to transport a player vertically or horizontally, and can provide challenge and variety to a platformer level. When walking on a moving platform, the platformer Player is able to move faster and jump further.
+
+{% embed url="https://youtu.be/wd2NqblSmIY?t=2535" %}
+
+This sample can be downloaded from GitHub: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo) &#x20;
+
+<figure><img src="../../media/2021-05-2021_May_13_071539.gif" alt=""><figcaption></figcaption></figure>
+
+This walkthrough refers to MovingPlatfomDemo as _this demo_ and _the demo_.
 
 ### Main Concepts
 
@@ -68,11 +76,11 @@ This code loops continually until the entity is destroyed. The entity sets this 
 
 The GameScreen contains a list of Players and a list of MovingPlatforms.
 
-![](../../../media/2021-05-img\_609de4dc3733b.png)
+![](../../media/2021-05-img\_609de4dc3733b.png)
 
 The PlayerList collides against the MovingPlatformList using **Platformer Solid Collision** physics
 
-![](../../../media/2021-05-img\_609de5820e820.png)
+![](../../media/2021-05-img\_609de5820e820.png)
 
 Note that usually platformer entities like Player collide against TileShapeCollections using Platformer Solid Collision, but this can also be used when colliding against another entity list.
 
