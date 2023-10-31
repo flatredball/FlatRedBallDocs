@@ -1,4 +1,4 @@
-# Need Help?
+# ❓ Need Help?
 
 If you're stuck on a problem or if you believe you've found a bug, there's lots of ways to get in touch with us.
 

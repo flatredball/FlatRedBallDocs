@@ -1,4 +1,4 @@
-# flatredballxna-tutorials-velocity
+# Velocity
 
 ### Introduction
 
@@ -8,7 +8,7 @@ Velocity, another term for movement, is an essential element of nearly all video
 
 Similar to movies and television, the display of video games is broken up into frames. Unlike physical movement, objects which move in video games will actually perform small "hops" from one position to the next every frame. For example, the following image shows the positions of a red ball that is moving along the X axis.
 
-![SpriteMovement.png](../../../media/migrated_media-SpriteMovement.png)
+![SpriteMovement.png](../../media/migrated\_media-SpriteMovement.png)
 
 As you can tell there are distinct positions that the red ball falls on every frame. While this may appear to be jarring, when played at a high frame rate the animation appears smooth to the user.
 
@@ -44,7 +44,7 @@ if(object.X > 1.0f && !hasDoneSomething)
 
 Since implementing velocity is nothing more than the continual changing of position over time, we can implement velocity rather easily.
 
-However, there is one thing to keep in mind when implementing movement: frame time may not be constant! In some cases, it may be constant if you are [not turning off the default constant framerate](../../../frb/docs/index.php#Disabling_Fixed_Time_Step). However, even if your game is running at a fixed frame rate, you should not depend on this to move your object. In other words, **don't do this:**
+However, there is one thing to keep in mind when implementing movement: frame time may not be constant! In some cases, it may be constant if you are [not turning off the default constant framerate](../../frb/docs/index.php#Disabling\_Fixed\_Time\_Step). However, even if your game is running at a fixed frame rate, you should not depend on this to move your object. In other words, **don't do this:**
 
 ```
 // NO NO NO NO NO NO NO NO!!!!
@@ -52,7 +52,7 @@ myObject.X += 5;
 // In case you forgot, NO NO NO NO NO NO!!!!
 ```
 
-You may at some time in the future decide to turn off the fixed frame rate, or you may want to change it. If that happens you will suddenly find that your objects are moving at a different rate - and this rate may even fluctuate as you play your game. Instead, use the [TimeManager's](../../../frb/docs/index.php) SecondDifference property to move your objects:
+You may at some time in the future decide to turn off the fixed frame rate, or you may want to change it. If that happens you will suddenly find that your objects are moving at a different rate - and this rate may even fluctuate as you play your game. Instead, use the [TimeManager's](../../frb/docs/index.php) SecondDifference property to move your objects:
 
 ```
 float unitsPerSecond = 5;
@@ -65,7 +65,7 @@ In this code if your frame rate changes, then SecondDifference will automaticall
 
 As mentioned at the beginning of this article, velocity is an essential element of nearly all video games. So what kind of game engine would FlatRedBall be if it didn't provide you with support for one of the most common behaviors in game development? Surprisingly enough, there are many engines which **do not** even handle velocity for the user. But before this turns into a full commercial, let's get to the point.
 
-The [PositionedObject](../../../frb/docs/index.php) is a class that is used for many common FlatRedBall objects such as [Sprites](../../../frb/docs/index.php), [Text objects](../../../frb/docs/index.php), and even custom types like [Entity classes](../../../frb/docs/index.php). This object has the following members available:
+The [PositionedObject](../../frb/docs/index.php) is a class that is used for many common FlatRedBall objects such as [Sprites](../../frb/docs/index.php), [Text objects](../../frb/docs/index.php), and even custom types like [Entity classes](../../frb/docs/index.php). This object has the following members available:
 
 * XVelocity
 * YVelocity
@@ -77,7 +77,7 @@ All three are also available in a Vector3:
 
 Either can be used, and modifying one automatically modifies the other.
 
-Any object which is managed by one of the FlatRedBall Managers will automatically have its position be modified by its Velocity every frame using time-based movement (using the [TimeManager's](../../../frb/docs/index.php) SecondDifference property). Therefore, to reproduce the above code where myObject is moving along the X axis by 5 units/second, the following code would be used:
+Any object which is managed by one of the FlatRedBall Managers will automatically have its position be modified by its Velocity every frame using time-based movement (using the [TimeManager's](../../frb/docs/index.php) SecondDifference property). Therefore, to reproduce the above code where myObject is moving along the X axis by 5 units/second, the following code would be used:
 
 ```
 myObject.XVelocity = 5;
@@ -93,7 +93,7 @@ Keep in mind that velocity **persists from frame to frame**. That means that you
 
 ### Code Example
 
-The following code creates 30 [Sprites](../../../frb/docs/index.php) and sets their velocities to random values. Keep in mind that the following code is placed in the Initialize method. That is, it's called **only once**. Even though you never explicitly touch the Sprite's positions, and even though velocity is never set again, the objects continue to move.
+The following code creates 30 [Sprites](../../frb/docs/index.php) and sets their velocities to random values. Keep in mind that the following code is placed in the Initialize method. That is, it's called **only once**. Even though you never explicitly touch the Sprite's positions, and even though velocity is never set again, the objects continue to move.
 
 Add the following to Initialize after initializing FlatRedBall:
 
@@ -108,6 +108,8 @@ for (int i = 0; i < 30; i++)
 }
 ```
 
-**KABOOM!** ![VelocityTutorial.png](../../../media/migrated_media-VelocityTutorial.png)
+**KABOOM!**&#x20;
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../frb/forum.md) for a rapid response.
+<figure><img src="../../media/migrated_media-VelocityTutorial.png" alt=""><figcaption></figcaption></figure>
+
+Did this article leave any questions unanswered? Post any question in our [forums](../../frb/forum.md) for a rapid response.

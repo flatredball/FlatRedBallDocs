@@ -1,4 +1,4 @@
-# xmlserialize
+# XmlSerialize
 
 ### Introduction
 
@@ -74,11 +74,7 @@ private void PerformLoad()
 }
 ```
 
-&#x20;
-
-![](../../../../media/2017-02-img_58913fffc58ee.png)
-
-&#x20;
+![](../../../../media/2017-02-img\_58913fffc58ee.png)
 
 ### Customizing Serialization
 
@@ -94,4 +90,4 @@ The FileManager uses the [internally](http://msdn.microsoft.com/en-us/library/sy
 
 ### Additional Information
 
-* [Creating Save Classes](../../../../tutorials/code-tutorials/tutorials-save-classes.md) - Discusses the "Save" class coding pattern commonly used to save game data.
+* [Creating Save Classes](broken-reference) - Discusses the "Save" class coding pattern commonly used to save game data.

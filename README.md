@@ -1,4 +1,4 @@
-# Downloading FlatRedBall
+# 🖥 Downloading FlatRedBall
 
 ### Prerequisites
 
@@ -8,7 +8,7 @@
 
 Note - if you plan on using a different IDE such as Rider, then you will need to install the .NET 6 SDK manually. At a minimum you will need to install **.NET desktop development**.
 
-![](media/2021-08-img_610caaac075b7.png)
+![](media/2021-08-img\_610caaac075b7.png)
 
 #### 2. XNA 4.0 Redistributable
 
@@ -18,13 +18,13 @@ Note - if you plan on using a different IDE such as Rider, then you will need to
 
 [https://dotnet.microsoft.com/en-us/download/dotnet/6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
-![](media/2023-03-img_6415bcb385f79.png)
+![](media/2023-03-img\_6415bcb385f79.png)
 
 Visual Studio 2022 (as of version 17.5.1) installs .NET SDK 7.0 which has a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you will need to manually install .NET 6 SDK.
 
 ### Downloading FlatRedBall
 
-The most common approach to making FlatRedBall games is to use the FlatRedBall Editor. The Editor can be downloaded from a pre-built .zip file, or it can be built from source. New users should expand **Downloading Pre-Built FlatRedBall**. \[frb_toggle title="Downloading Pre-Built FlatRedBall"]
+The most common approach to making FlatRedBall games is to use the FlatRedBall Editor. The Editor can be downloaded from a pre-built .zip file, or it can be built from source. New users should expand **Downloading Pre-Built FlatRedBall**. \[frb\_toggle title="Downloading Pre-Built FlatRedBall"]
 
 ### Downloading and Running FlatRedBall
 
@@ -33,12 +33,12 @@ The most common approach to making FlatRedBall games is to use the FlatRedBall E
 3. Go to the folder where the .zip file unzipped to (by default called FRBDK)
 4. Open the Run FlatRedBall.bat file (double click it)
 
-![](media/2023-07-img_64b932f820fb5.png)
+![](media/2023-07-img\_64b932f820fb5.png)
 
 If you see the **Windows protected your PC** dialog, click **More info** -> **Run Anyway**
 
-![](media/2023-07-img_64b938bddd912.png)
+![](media/2023-07-img\_64b938bddd912.png)
 
 The FlatRedBall Editor should appear.
 
-![](media/2022-12-img_639d07e85b8d9.png)
+![](media/2022-12-img\_639d07e85b8d9.png)

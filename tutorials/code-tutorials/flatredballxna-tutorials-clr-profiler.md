@@ -1,4 +1,8 @@
-# flatredballxna-tutorials-clr-profiler
+# CLR Profiler
+
+### CLR Profiler is Obsolete
+
+The CLR Profier was a common way to measure memory usage for games. It is no longer maintained by Microsoft and now memory profiling is performed through Visual Studio. This document is kept here for older games which may still benefit from its usage if they are still on .NET Framework 4.X.
 
 ### Introduction
 
@@ -22,7 +26,7 @@ To install the CLR Profiler:
 4. Open the **64** or \*\*32 \*\*folders depending on whether your application is 64 or 32 bit. At the time of this writing all FRB apps default to 32 bit.
 5. Double-click CLRProfiler.exe to run the CLR Profiler.
 
-![](../../../media/2017-10-img_59d1a638ba1d7.png)
+![](../../media/2017-10-img\_59d1a638ba1d7.png)
 
 If you get a "Waiting for application to start common language runtime" message in Vista, try running the CLR Profiler as an administrator.
 
@@ -55,7 +59,7 @@ Add the following to Update:
  }
 ```
 
-![FallingBunchOfSprites.png](../../../media/migrated_media-FallingBunchOfSprites.png)
+![FallingBunchOfSprites.png](../../media/migrated\_media-FallingBunchOfSprites.png)
 
 ### Profiling the demo
 
@@ -66,7 +70,7 @@ The CLR Profiler can now be used to test the application that you've created. To
 3. Make sure **Allocations** is checked. This must be checked before the program starts (it seems to be a bug)
 4.  Optionally - uncheck **Profiling active**, so you can check it later exactly when you want profiling to start
 
-    ![](../../../media/2020-09-img_5f5e8dc97a428.png)
+    ![](../../media/2020-09-img\_5f5e8dc97a428.png)
 5. Click **Start Desktop App...**
 6. Navigate to the folder where your .exe was built.
 7. Select your .exe and click the "Open" button. If **Profiling active** is checked profiling will begin immediately. Otherwise, navigate to where you want the profiling to start, then check **Profiling active**.
@@ -74,31 +78,31 @@ The CLR Profiler can now be used to test the application that you've created. To
 9. Once you're finished, simply close your application, or click the "Kill application" button.
 10. Once the application ends, the CLR Profiler will generate a log. A window will appear which provides access to the information in the log.
 
-![ClrProfilingResults.png](../../../media/migrated_media-ClrProfilingResults.png)
+![ClrProfilingResults.png](../../media/migrated\_media-ClrProfilingResults.png)
 
 ### Reading the results - Allocations by object type
 
-The information in the log is interesting, but the most useful information can be found in the Histograms. First, click on the first "Histogram" button - the one to the right of "Allocated bytes:". You'll see a window appear: ![AllocatedBytesHistogram.png](../../../media/migrated_media-AllocatedBytesHistogram.png) According to the graph above, the most-allocated object by size is the Sprite class. This is expected as the example code written above was intentionally written to be heavy on allocations. We have a pretty good sense of where this allocation is happening by looking at our code...but what about the second most-allocated object? According to the graph above, it's the string object. But where is this happening? Fortunately, we can see exactly where our allocations happen.
+The information in the log is interesting, but the most useful information can be found in the Histograms. First, click on the first "Histogram" button - the one to the right of "Allocated bytes:". You'll see a window appear: ![AllocatedBytesHistogram.png](../../media/migrated\_media-AllocatedBytesHistogram.png) According to the graph above, the most-allocated object by size is the Sprite class. This is expected as the example code written above was intentionally written to be heavy on allocations. We have a pretty good sense of where this allocation is happening by looking at our code...but what about the second most-allocated object? According to the graph above, it's the string object. But where is this happening? Fortunately, we can see exactly where our allocations happen.
 
 ### Allocations by method
 
-To see where objects are being allocated , close the "Histogram by Size for Allocated Objects" window, then click the "Allocation Graph" to the right of the "Histogram" to the right of "Allocated bytes:". ![AllocationGraph.png](../../../media/migrated_media-AllocationGraph.png) This will bring up a window that shows the allocation by method call. You can easily trace where your allocations are happening using this. On the very left side you should see a rectangle tyat says
+To see where objects are being allocated , close the "Histogram by Size for Allocated Objects" window, then click the "Allocation Graph" to the right of the "Histogram" to the right of "Allocated bytes:". ![AllocationGraph.png](../../media/migrated\_media-AllocationGraph.png) This will bring up a window that shows the allocation by method call. You can easily trace where your allocations are happening using this. On the very left side you should see a rectangle tyat says
 
 ```
 <root> X.X MB (100.00%)
 ```
 
-This indicates that 100% of your allocations are originating from \<root> which is basically the very bottom of the call stack. Since \<root> is around as long as your program is running, it makes sense why it is responsible for all of the allocations in your program. The next method to the right is Main, where virtually all of my allocations were from (99.80%). You may be wondering where the other .2% went - well, you can actually find out if you increase the detail. While it might be interesting to see how the insides of how a .NET application runs, it's not very useful for profiling. In general, we're interested in knocking out the biggest allocators first, and keeping the detail to the default value of 1 helps eliminate some of the noise so we can focus on the most important calls. Scrolling to the very right shows the most allocated objects by type. The most-allocated by memory are on the top. You'll notice that just like the previous graph, the Sprite class sits at the very top, then next is System.String, then Graphics.SpriteVertex, then Graphics.VertexPositionColorTexture, and so on. What's interesting is that we can actually start to trace where these calls are coming from. If you click a rectangle, then anything that allocated it and anything that it allocates will be easily traceable because the curved lines will become a diamond pattern. You should use this graph to see exactly what methods are allocating the most memory. If a method that you didn't write is allocating memory (such as a FlatRedBall or .NET call), then you should look at the method that calls that one and see if you can reduce the number of times that the allocating method is being called ![HighlightedCall.png](../../../media/migrated_media-HighlightedCall.png)
+This indicates that 100% of your allocations are originating from \<root> which is basically the very bottom of the call stack. Since \<root> is around as long as your program is running, it makes sense why it is responsible for all of the allocations in your program. The next method to the right is Main, where virtually all of my allocations were from (99.80%). You may be wondering where the other .2% went - well, you can actually find out if you increase the detail. While it might be interesting to see how the insides of how a .NET application runs, it's not very useful for profiling. In general, we're interested in knocking out the biggest allocators first, and keeping the detail to the default value of 1 helps eliminate some of the noise so we can focus on the most important calls. Scrolling to the very right shows the most allocated objects by type. The most-allocated by memory are on the top. You'll notice that just like the previous graph, the Sprite class sits at the very top, then next is System.String, then Graphics.SpriteVertex, then Graphics.VertexPositionColorTexture, and so on. What's interesting is that we can actually start to trace where these calls are coming from. If you click a rectangle, then anything that allocated it and anything that it allocates will be easily traceable because the curved lines will become a diamond pattern. You should use this graph to see exactly what methods are allocating the most memory. If a method that you didn't write is allocating memory (such as a FlatRedBall or .NET call), then you should look at the method that calls that one and see if you can reduce the number of times that the allocating method is being called ![HighlightedCall.png](../../media/migrated\_media-HighlightedCall.png)
 
 ### Skipping Initialization
 
-A large portion of initialization comes from the initialization of FlatRedBall. For example, FlatRedBall pre-allocates a pool of [Sprites](../../../frb/docs/index.php) which it uses for particles. Not only can this allocation introduce noise in the results if you are focused on your every-frame execution, but since you can't impact the FlatRedBall initialization there's really no benefit to including the initialization in your report. To skip initialization, uncheck the "Profiling active" check box, then begin running your application. Once your application has started running for a second, check the "Profiling active" check box so that the CLR Profiler begins measuring. If you do this you will avoid recording the initialization allocations. Also, you'll notice that the Allocation Graph gives a much clearer picture of where your allocations are occurring. ![AllocationWithNoInitialization.png](../../../media/migrated_media-AllocationWithNoInitialization.png) It's clear from this graph that almost all allocations (98.23%) occur from calling AddSprite. This gives you a strong direction on where allocations could be improved. In this case, there are a number of options for reducing the memory footprint. As an exercise, consider some of the following:
+A large portion of initialization comes from the initialization of FlatRedBall. For example, FlatRedBall pre-allocates a pool of [Sprites](../../frb/docs/index.php) which it uses for particles. Not only can this allocation introduce noise in the results if you are focused on your every-frame execution, but since you can't impact the FlatRedBall initialization there's really no benefit to including the initialization in your report. To skip initialization, uncheck the "Profiling active" check box, then begin running your application. Once your application has started running for a second, check the "Profiling active" check box so that the CLR Profiler begins measuring. If you do this you will avoid recording the initialization allocations. Also, you'll notice that the Allocation Graph gives a much clearer picture of where your allocations are occurring. ![AllocationWithNoInitialization.png](../../media/migrated\_media-AllocationWithNoInitialization.png) It's clear from this graph that almost all allocations (98.23%) occur from calling AddSprite. This gives you a strong direction on where allocations could be improved. In this case, there are a number of options for reducing the memory footprint. As an exercise, consider some of the following:
 
 * Cache off the Texture2D for "redball.bmp" and use that as an argument instead of calling Load.
 * Try calling AddParticleSprite instead of AddSprite.
-* Try creating your own pool of Sprites which you add and remove from the [SpriteManager](../../../frb/docs/index.php).
+* Try creating your own pool of Sprites which you add and remove from the [SpriteManager](../../frb/docs/index.php).
 
-You can find more performance-enhancing solutions in the [Performance Tutorials](../../../frb/docs/index.php#Performance_Tutorials) section.
+You can find more performance-enhancing solutions in the [Performance Tutorials](../../frb/docs/index.php#Performance\_Tutorials) section.
 
 ### Troubleshooting the CLR Profiler
 
@@ -107,6 +111,6 @@ Sometimes the CLR Profiler is a little tricky to get running. If you're having p
 * Copy the CLR Profiler binary files (exes and dlls) to the location where your game's EXE is located and then try running the CLR Profiler
 *   Right-click on each .dll and each .pdb used by the CLR Profiler, select "Properties", then click the "Unblock" button
 
-    ![](../../../media/2017-10-img_59d1a955bbb87.png)
+    ![](../../media/2017-10-img\_59d1a955bbb87.png)
 * Run the CLR Profiler as administrator
 * Turn Memory Allocations on, but turn profiling off, then turn profiling back on when the app is running.

@@ -1,4 +1,4 @@
-# flatredballxna-tutorials-flatredball-xna-in-windows-form
+# FlatRedBall XNA in Windows Form
 
 ### Implementing FRB in a form
 
@@ -14,8 +14,9 @@ The requirements for this example are:
 
 There are currently a few known issues regarding using FRB in a windows form.
 
+* This tutorial is written for FlatRedBall XNA. It has not been tested and will probably not work with modern versions of FlatRedBall (MonoGame or FNA).
 * Mouse position also updates outside the form.
-* Method [FlatRedBall.Input.Mouse](../../../frb/docs/index.php).IsInGameWindow() can incorrectly return true whilst the cursor is outside the window.
+* Method [FlatRedBall.Input.Mouse](../../frb/docs/index.php).IsInGameWindow() can incorrectly return true whilst the cursor is outside the window.
 
 ### Creating a new Project
 
@@ -34,8 +35,6 @@ FlatRedBall needs to be added to the project. To do this:
 * Select Add->New Folder
 * Rename the new folder "Libraries"
 * Locate the FlatRedBall.dll file. If you downloaded the template, then it'll be located inside the .zipped template file on your computer. On Windows Vista, it's probably:
-
-&#x20;
 
 ```
 C:\Users\<YOUR NAME>\Documents\Visual Studio 2008\Templates\ProjectTemplates
@@ -225,7 +224,7 @@ Once those are pasted into your class, you can declare the game class in the for
 
 Most samples on the FlatRedBall website use the redball.bmp image. If you made a new project then it likely doesn't have this file. So, be sure to add the redball.bmp graphic to the project as follows:
 
-* Save the redball.bmp image somewhere on your computer: ![Redball.bmp](../../../media/migrated_media-Redball.png)
+* Save the redball.bmp image somewhere on your computer: ![Redball.bmp](../../media/migrated\_media-Redball.png)
 * Navigate to this location on your computer.
 * Drag the redball.bmp image into your Project.
 * Select the redball.bmp item and press F4 to bring up the properties window.
@@ -310,7 +309,7 @@ We'll need to modify the constructor, but before we do we need to add a panel. T
 * Click and drag to draw the new Panel on your form.
 * Name the panel "Viewport".
 
-![Frb windows form panel.jpg](../../../media/migrated_media-Frb_windows_form_panel.jpg)
+![Frb windows form panel.jpg](../../media/migrated\_media-Frb\_windows\_form\_panel.jpg)
 
 Modify the constructor method:
 
@@ -354,7 +353,7 @@ Modify the constructor method:
 
 And you are done. Press F5 and if FRB initialised the panel will now be black with the red ball in the middle.
 
-![InWinform.png](../../../media/migrated_media-InWinform.png)
+![InWinform.png](../../media/migrated\_media-InWinform.png)
 
 In case you wish to resize your form, please add the following to the ResizeEnd event of the form. This enforces FRB to use the new ClientSize.
 
@@ -364,4 +363,4 @@ In case you wish to resize your form, please add the following to the ResizeEnd 
 
 Congratulations. You just implemented FRB on a windows form.
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../frb/forum.md) for a rapid response.
