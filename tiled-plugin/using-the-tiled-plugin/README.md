@@ -1,3 +1,3 @@
-# Introduction
+# Tiled Basics
 
-The following walk-throughs show how to use Tiled to create levels in a FlatRedBall project. It covers creating multiple levels, creating collision from tiles, and creating entities from tiles. [01. Installing Requirements](01-installing-requirements.md) [02. Creating a GameScreen](02-creating-a-gamescreen.md) [03. Adding Collision](03-adding-collision.md) [04. Colliding Entities against TileShapeCollections](04-colliding-entities-against-tileshapecollections.md) [05. Working with Multiple Levels](05-working-with-multiple-levels.md) [06. Creating Entities from Tiles](06-creating-entities-from-tiles.md) [07. Creating Entities from Object Layers](07-creating-entities-from-object-layers.md) [08. Accessing Tiled Properties](08-accessing-tiled-properties.md) [09. Working with Tiled Shapes](09-working-with-tiled-shapes.md)
+The following walk-throughs show how to use Tiled to create levels in a FlatRedBall project. It covers creating multiple levels, creating collision from tiles, and creating entities from tiles.
