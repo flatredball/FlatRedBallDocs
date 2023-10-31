@@ -7,7 +7,3 @@ FlatRedBall.Forms is a library built on top of the core FlatRedBall library and 
 ## Tutorials
 
 For information on getting started with FlatRedBall.Forms, see the FlatRedBall.Forms tutorial section: http://flatredball.com/documentation/tutorials/flatredball-forms/
-
-## FlatRedBall.Forms Reference
-
-\[subpages depth="2"\]
