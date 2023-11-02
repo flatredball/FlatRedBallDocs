@@ -19,7 +19,7 @@ Each layer in the the tile map can contain its own list of tiles. For performanc
 7.  Click **OK**
 
     ![](../../../../media/2018-09-img_5b9e9bad2aa34.png)
-8.  Set the value for the **Name** property to Goal \*\*\*\*
+8.  Set the value for the **Name** property to Goal
 
     ![](../../../../media/2021-02-img_603188f602d54.png)
 

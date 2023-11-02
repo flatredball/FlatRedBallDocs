@@ -6,7 +6,7 @@ Gum is an open source, general purpose, platform-agnostic UI layout tool. Althou
 
 ### Downloading Gum
 
-The first step in using Gum is to download the project. If you have downloaded the FRBDK.zip file from the main downloads page on this site, you already have Gum in the \<unzipped FRBDK location>/Gum/Data/Gum.exe. You can also get Gum as a standalone [downloaded here](../../../../content/Tools/Gum/Gum.zip). You will also need to install the [XNA 4.0 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=20914) on your machine to run Gum. Remember the location for Gum.exe\*\*, we'll need it later.\*\*
+The first step in using Gum is to download the project. If you have downloaded the FRBDK.zip file from the main downloads page on this site, you already have Gum in the \<unzipped FRBDK location>/Gum/Data/Gum.exe. You can also get Gum as a standalone [downloaded here](../../../../content/Tools/Gum/Gum.zip). You will also need to install the [XNA 4.0 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=20914) on your machine to run Gum. Remember the location for Gum.exe, **we'll need it later.**
 
 ### Gum projects
 

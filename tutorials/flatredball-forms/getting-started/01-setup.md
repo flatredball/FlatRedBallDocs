@@ -47,7 +47,7 @@ If you open Gum, it will have a GameScreenGum screen.&#x20;
 To add a Button to your GameScreen:
 
 1. Expand the **Components** -> **Controls** folder
-2.  Drag+drop the **ButtonStandard** component onto the **GameScreenGum** or **MainMenuGum** (depending on which project type you created) \*\*\*\*\*\*\*\*
+2.  Drag+drop the **ButtonStandard** component onto the **GameScreenGum** or **MainMenuGum** (depending on which project type you created)
 
     ![](../../../media/2023-08-img_64d80cd2ef344.png)
 

@@ -15,7 +15,7 @@ Our first entity will be called "PlayerBall".
 
 To create an Entity:
 
-1.  Click the **Add Entity** in the **Quick Actions** tab \*\*\*\*
+1.  Click the **Add Entity** in the **Quick Actions** tab
 
     ![](../../media/2022-01-img\_61d3125436c42.png)
 

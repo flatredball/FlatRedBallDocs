@@ -14,7 +14,7 @@ Existing entities can be converted to IClickable in the Properties
 
 1. Select the entity in Glue
 2. Click the **Properties** tab
-3. Set\*\* Implements IClickable\*\* to T**rue**
+3. Set **Implements IClickable** to **True**
 
 ![](../../../../media/2019-04-img_5caa9bbeb7bba.png)
 
