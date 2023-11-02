@@ -16,7 +16,7 @@ If you haven't yet downloaded the FRBDK.zip file, you can get it from the [Downl
 
 Once you open the editor, you can create a new project. To create a new Project:
 
-1.  Select \*\*File \*\*-> **New Project**
+1.  Select **File** -> **New Project**
 
     ![](../../media/2022-01-img\_61d256005734c.png)
 2. Enter **Beefball** for the **Project Name.**
