@@ -14,7 +14,7 @@ The CheckBox control has no requirements – an empty container is sufficient. [
 
 ### TextInstance
 
-The CheckBox control can optionally include a Text instance named **TextInstance**. Setting the CheckBox control’s \*\*Text \*\*property changes the **TextInstance’s** displayed string.
+The CheckBox control can optionally include a Text instance named **TextInstance**. Setting the CheckBox control’s **Text** property changes the **TextInstance’s** displayed string.
 
 ![](../../../../media/2017-12-img_5a49250c06a00.png)
 

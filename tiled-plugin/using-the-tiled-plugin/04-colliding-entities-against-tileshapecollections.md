@@ -35,7 +35,7 @@ Since the Player entity has its ImplementsICollidable set to true, any shape (Ci
 To make the entity move in response to keyboard input:
 
 1. Open the project in Visual Studio
-2.  Open \*\*\*\*Player.cs \*\*\*\*
+2.  Open \*\***Player.cs** \*\*
 
     ![](../../media/2021-02-img\_6031701d1758d.png)
 

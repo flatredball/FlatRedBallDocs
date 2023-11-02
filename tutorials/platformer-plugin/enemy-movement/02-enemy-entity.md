@@ -65,7 +65,7 @@ We also need to modify the Enemy so it is positioned inside of the solid boundar
 Now we have a fully-functional enemy, but it falls through the solid collision since we haven't yet set up an EnemyList vs SolidCollision relationship. To do this:
 
 1. Expand **GameScreen** **Objects** folder
-2. Drag+drop the **EnemyList** onto \*\*SolidCollision. \*\*Notice that we are doing this in the GameScreen rather than Level1 because we want all enemies to collide with the SolidCollision regardless of level.&#x20;
+2. Drag+drop the **EnemyList** onto **SolidCollision.** Notice that we are doing this in the GameScreen rather than Level1 because we want all enemies to collide with the SolidCollision regardless of level.&#x20;
 3.
 
     <figure><img src="../../../media/2021-04-2021_April_14_195924.gif" alt=""><figcaption></figcaption></figure>

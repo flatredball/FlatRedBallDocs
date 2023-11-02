@@ -36,7 +36,7 @@ Notice that the entity already has a set of movement values called **Default**. 
 
 ### Adding an Entity to GameScreen
 
-Now that our Entity is created and is a Top Down entity, we can add an instance to our \*\*GameScreen \*\*by drag+dropping the entity on the GameScreen item in Glue: 
+Now that our Entity is created and is a Top Down entity, we can add an instance to our **GameScreen** by drag+dropping the entity on the GameScreen item in Glue: 
 
 <figure><img src="../../../../../../media/2020-02-2020_February_03_213300.gif" alt=""><figcaption></figcaption></figure>
 

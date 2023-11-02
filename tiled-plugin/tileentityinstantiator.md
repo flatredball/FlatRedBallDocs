@@ -34,7 +34,7 @@ The easiest way to add an instance of an entity to a game is by dropping a Tile 
 4.  Select which tile you would like to use for your entity type
 
     ![](../../../media/2022-01-img_61ec1e616a3ea.png)
-5.  Enter the name of your entity as the \*\*Type. \*\*Capitalization matters, so be sure to match the name as it is written in the FlatRedBall Editor
+5.  Enter the name of your entity as the **Type.** Capitalization matters, so be sure to match the name as it is written in the FlatRedBall Editor
 
     ![](../../../media/2022-01-img_61ec1efa0ab5a.png)
 6.  Save your TileSet

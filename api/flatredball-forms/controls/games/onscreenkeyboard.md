@@ -40,7 +40,7 @@ As mentioned above, the OnScreenKeyboard requires an associated TextBox. The eas
 
 ![](../../../../../media/2021-02-img_6031dc3ac3a39.png)
 
-This implementation will create a matching Forms class. For example, if above is in GameScreenGum, then your project would have a class called \*\*GameScreenGumForms. \*\*This Forms class will contain both the Keyboard and TextBox so the setup can be performed as shown in the following code: &#x20;
+This implementation will create a matching Forms class. For example, if above is in GameScreenGum, then your project would have a class called **GameScreenGumForms.** This Forms class will contain both the Keyboard and TextBox so the setup can be performed as shown in the following code: &#x20;
 
 ```
 partial void CustomInitialize () 

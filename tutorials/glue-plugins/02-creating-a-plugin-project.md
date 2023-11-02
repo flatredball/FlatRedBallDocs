@@ -61,7 +61,7 @@ After clicking **OK**, the project will appear in the **Solution Explorer.**&#x2
 Tutorial projects must reference FlatRedBall and Glue libraries to be able to make changes to Glue at runtime. Most plugins also require referencing a few other libraries for displaying UI. Fortunately you can solve this by adding a single project reference. To add the project reference:
 
 1. Expand the newly-created **TutorialPlugin** project in the **Solution Explorer**
-2. Right-click on the \*\*Dependencies \*\*item and select **Add Project Reference...**
+2. Right-click on the **Dependencies** item and select **Add Project Reference...**
 3.  Check Plugin Libraries:
 
     ![](../../media/2023-04-img_644d173f66308.png)

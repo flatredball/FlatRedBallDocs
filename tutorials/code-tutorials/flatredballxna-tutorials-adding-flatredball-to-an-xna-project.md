@@ -27,7 +27,7 @@ Most FlatRedBall platforms only require a single - the engine .dll.  Add this fi
 
 1. Open your project in **Visual Studio**
 2. Expand the game project in the **Solution Explorer**
-3. Right-click on the \*\*References \*\*item
+3. Right-click on the **References** item
 4.  Select **Add Reference**...
 
     ![](../../../../media/2018-10-img_5bbb72137e780.png)

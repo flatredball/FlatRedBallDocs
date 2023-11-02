@@ -13,7 +13,7 @@ First we'll create a screen called GameScreen. Many FlatRedBall projects contain
 
     ![](../../media/2021-02-img\_603139d62debc.png)
 3. Notice that Glue suggests creating a **GameScreen**. We recommend always having one screen called GameScreen, so this default helps you set your project up quickly.
-4. Click the option to \*\*Add Map LayeredTileMap. \*\*This sets up a base object for your map which will be used in all levels.
+4. Click the option to **Add Map LayeredTileMap.** This sets up a base object for your map which will be used in all levels.
 5. Click the option to **Add SolidCollision ShapeCollection**. Most games need solid collision so this will set up your game for that.
 6.  Leave all other defaults and click **OK**
 
@@ -184,7 +184,7 @@ Now the game will be focused on the map.
 
 Tilesets define the appearance of a collection of tiles along with properties which can be specified per-tile to provide functionality in your game (such as collision). We recommend that games have a dedicated tileset for gameplay functionality such as collision. We used the TiledIcons tileset for this earlier. This section will show you how to add a second tileset for visuals. We will use the following image which you can download: [![dungeonTileSet](../../media/2016-08-dungeonTileSet.png)](../../media/2016-08-dungeonTileSet.png) Files which are used by TMX levels should either be saved in the content folder of one of the level screens or in the content folder in the GameScreen. For this tutorial we'll save the file in the GameScreen folder, since the file will be used by multiple levels. First we'll open the content folder for GameScreen:
 
-1. Expand \*\*GameScreen \*\*in the FRB editor
+1. Expand **GameScreen** in the FRB editor
 2. Right-click on the **Files** folder under GameScreen
 3. Select **View in explorer**
 

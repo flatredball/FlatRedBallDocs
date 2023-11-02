@@ -26,7 +26,7 @@ We need to create a variable for which level to load when the Player collides wi
 2.  Select **Add Variable**
 
     ![](../../../../media/2018-04-img_5adba32cc76c8.png)
-3. Select the \*\*Create a new variable \*\*option
+3. Select the **Create a new variable** option
 4. Select **string** as the **Type**
 5.  Enter the Name **LevelToGoTo**
 
@@ -41,7 +41,7 @@ Tiled object layers allow placing geometric shapes (such as rectangles, circles,
 
 1. Open **TiledIcons.tsx** in Tiled (click the edit button if the tsx file is not already open)
 2. Select the door tile
-3.  Enter **Door** as the \*\*Type. \*\*Note that this may already be the default.
+3.  Enter **Door** as the **Type.** Note that this may already be the default.
 
     ![](../../../../media/2021-02-img_60317fcf1bad9.png)
 4.  Click the + button to add a new property

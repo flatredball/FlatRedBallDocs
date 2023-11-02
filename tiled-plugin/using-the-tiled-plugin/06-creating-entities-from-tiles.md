@@ -40,13 +40,13 @@ We will be using the **Type** property to set the entity type. For a deeper dive
 4.  Select a tile on your map to represent the monsters. For example, select the red monster icon.
 
     ![](../../../../media/2021-02-img_60317b4090261.png)
-5.  Enter the entity name **Monster** as the **Type** for this tile. Depending on what version of Tiled that you are using, you may see \*\*Class \*\*instead of **Type**, but they both mean the same thing. Also, note that the name needs to match the entity name exactly, including capitalization
+5.  Enter the entity name **Monster** as the **Type** for this tile. Depending on what version of Tiled that you are using, you may see **Class** instead of **Type**, but they both mean the same thing. Also, note that the name needs to match the entity name exactly, including capitalization
 
     ![](../../../../media/2021-02-img_60317b80e081e.png)
 
 ### Placing Monster Tiles
 
-Any tiles placed with the **Type** or \*\*Class \*\*of **Monster** will create Monster instances at runtime. Tiles for creating entities are placed just like any other tiles. We can place a few monster tiles in either level. &#x20;
+Any tiles placed with the **Type** or **Class** of **Monster** will create Monster instances at runtime. Tiles for creating entities are placed just like any other tiles. We can place a few monster tiles in either level. &#x20;
 
 ![](../../../../media/2021-02-img_60317c045fefa.png)
 

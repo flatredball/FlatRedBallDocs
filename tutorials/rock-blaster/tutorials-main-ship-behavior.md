@@ -102,7 +102,7 @@ Next we will give the Bullet a PNG file and a Sprite to use. This process is ess
 
 <figure><img src="../../../media/2016-01-2021_March_13_141331.gif" alt=""><figcaption></figcaption></figure>
 
- To add a Sprite to the \*\*Bullet \*\*entity:
+ To add a Sprite to the **Bullet** entity:
 
 1. Select the **Bullet** entity in Glue
 2. Click the **Quick Actions** tab

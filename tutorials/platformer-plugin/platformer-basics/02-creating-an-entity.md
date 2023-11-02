@@ -26,7 +26,7 @@ Although this tutorial is focused on creating a platformer entity, we will first
 1. Select the **Quick Actions** tab in Glue
 2. Click the **Add Screen/Level** button
 3. Leave the default **GameScreen** name
-4. Check both the \*\*Add SolidCollision ShapeCollection \*\*and **Add CloudCollision ShapeCollection** options
+4. Check both the **Add SolidCollision ShapeCollection** and **Add CloudCollision ShapeCollection** options
 5. Click **OK**
 
 ![](../../../media/2021-02-img\_6031e691c6b63.png)

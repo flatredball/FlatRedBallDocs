@@ -57,12 +57,12 @@ You should now see your art in the AnimationEditor plugin: ![TextureInAE.PNG](..
 
 The FRB editor provides a number of ways to specify the region of a texture which will be displayed by a frame. If you are using separate image files for each frame of animation then you will not need to change the region values. However, if you are using a sprite sheet, then you will need to adjust the region that the frame displays.
 
-\*\*What is a sprite sheet? \*\*In the context of the AnimationEditor plugin, a sprite sheet is a image file which contains multiple frames of animation. Although not necessary, many sprite sheets arrange each animation frame in a grid, and all frames are spread out evenly.
+**What is a sprite sheet?** In the context of the AnimationEditor plugin, a sprite sheet is a image file which contains multiple frames of animation. Although not necessary, many sprite sheets arrange each animation frame in a grid, and all frames are spread out evenly.
 
 First we'll cover how to create animation frames using sprite sheets. To do this in the AnimationEditor plugin, the frames must be evenly spaced out. The Idle.png file supplied above is evenly spaced out, so it will work fine for this tutorial. First we need to tell the AnimationEditor plugin that we want to use sprite sheet coordinates. To do this:
 
 1. Set the combo box value at the top of the property grid to "SpriteSheet" ![SpriteSheetCoordinates.png](../media/migrated\_media-SpriteSheetCoordinates.png)
-2. Find and select where it says \*\*\<UNTEXTURED> \*\*in the leftmost menu area. You should then see an option for editing the cell width and cell height of the texture. Set the cell height to "2 cells". Notice that the plugin automatically calculates this value as 64 pixels after the value is selected. ![2CellsHigh.png](../media/migrated\_media-2CellsHigh.png)
+2. Find and select where it says **\<UNTEXTURED>** in the leftmost menu area. You should then see an option for editing the cell width and cell height of the texture. Set the cell height to "2 cells". Notice that the plugin automatically calculates this value as 64 pixels after the value is selected. ![2CellsHigh.png](../media/migrated\_media-2CellsHigh.png)
 3. Set the cell width to "4 cells"
 4. Notice that the preview window now shows the image divided up into its cells according to the values you just selected ![DividedImage.PNG](../media/migrated\_media-DividedImage.PNG)
 
@@ -99,7 +99,7 @@ To edit the frame using pixel coordinates, change the "Sprite Sheet" value to "P
 
 The AnimationEditor plugin provides rulers and guides to help you verify that animations are positioned properly. Next, we'll use guides to align our animations. The animations that we have been working with so far (idle and run) are created for a side-view game (specifically a platformer game). The location of the ground is an important consideration when working on games like these. Therefore, we will use guides to verify that the animations are aligned properly.
 
-\*\*Note: \*\*I intentionally created the animations so that they were of different sizes. Your animations may or may not be set up this way, so keep that in mind when working through the rest of this guide tutorial.
+**Note:** I intentionally created the animations so that they were of different sizes. Your animations may or may not be set up this way, so keep that in mind when working through the rest of this guide tutorial.
 
 The first step is to decide which animation we want to set up our guides to. I'll use the idle animation since we created it with sprite sheet coordinates, so it is likely more accurate. To do this:
 

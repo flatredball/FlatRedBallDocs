@@ -30,7 +30,7 @@ You can drag+drop controls into your screen. The following screenshot shows a Gu
 Now we can access all of our controls from the Gum screen in code. Every Gum object can be accessed in its respective screen using the Forms object. For example, to add a click event to the button:
 
 1. Open the project in Visual Studio
-2. Go to your screen's code file (\*\*GameScreen.cs \*\*or **MainMenu.cs**, for example)
+2. Go to your screen's code file (**GameScreen.cs** or **MainMenu.cs**, for example)
 3. Add the following code to the GameScreen:
 
 ```lang:c#

@@ -6,7 +6,7 @@ This page covers all control values in available on a platformer entity. It also
 
 ### Modifying Control Values
 
-In a previous tutorial we defined a set of default control values for our character. These values serve as a starting point for platformers - they can be tuned to provide a custom feel to platformer entities. The platformer control values can be viewed and edited by selecting the **MainCharacter** entity and clicking on the \*\*Entity Input Movement \*\*tab.
+In a previous tutorial we defined a set of default control values for our character. These values serve as a starting point for platformers - they can be tuned to provide a custom feel to platformer entities. The platformer control values can be viewed and edited by selecting the **MainCharacter** entity and clicking on the **Entity Input Movement** tab.
 
 ![](../../../media/2023-05-img\_645b94f3c5629.png)
 
@@ -59,7 +59,7 @@ Although it may be difficult to see, the entity moves in a straight line on the 
 
 ### Max Jump Hold Time
 
-The **Max Jump Hold Time** value sets the maximum amount of time that the player can hold the jump button to extend the platformer entity's jump. A large value gives the player the option to hold the button to jump higher. A small value results in the max and min jump heights not differing by much. A very large value may result in the player appearing to "float" while jumping, so keep this in mind when setting large values (such as over 1 second). A large \*\*Max Jump Hold Time \*\*may be used with a small **Max Jump Speed** to create swimming controls.
+The **Max Jump Hold Time** value sets the maximum amount of time that the player can hold the jump button to extend the platformer entity's jump. A large value gives the player the option to hold the button to jump higher. A small value results in the max and min jump heights not differing by much. A very large value may result in the player appearing to "float" while jumping, so keep this in mind when setting large values (such as over 1 second). A large **Max Jump Hold Time** may be used with a small **Max Jump Speed** to create swimming controls.
 
 ### **Can Fall Through Clouds**
 

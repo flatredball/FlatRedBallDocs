@@ -40,7 +40,7 @@ The Team Index specified in the **new Entity** window defines the default team i
 3. Add appropriate collision (such as an AxisAlignedRectangle)
 4. Check the option for IDamageable so the enemy can take damage from the bullet. Also, enemies may deal damage to the player so the enemy could also be marked as IDamageArea in a full game. To keep things simple we'll only check IDamageable.
 5. Change the Team Index to 1 (Enemy Team)
-6. Check the \*\*Add Opposing Team Index Collision Relationships to GameScreen \*\*option.
+6. Check the **Add Opposing Team Index Collision Relationships to GameScreen** option.
 
 ![](../../media/2023-01-img_63be0357174fe.png)
 
@@ -52,7 +52,7 @@ In this case the game now has an IDamageArea entity (Bullet) and IDamageable ent
 
 In the example above, the EnemyVsBullet collision relationship was created automatically because:
 
-1. \*\*Add Opposing Team Index Collision Relationships to GameScreen \*\*was checked when creating Enemy
+1. **Add Opposing Team Index Collision Relationships to GameScreen** was checked when creating Enemy
 2. The Enemy has a Team Index (1) different than the already-created Bullet Team Index (0)
 3. The Enemy is IDamageable and the Bullet is IDamageArea
 

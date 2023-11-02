@@ -11,7 +11,7 @@ The following will show you how to add a SoundEffect to a Screen. The same metho
 1. Right-click on a Screen's Files tree node
 2. Add a file to the Screen
    1. If you have an existing .wav file, select **Add File**->**Existing File**
-   2.  If you would like to add a placeholder .wav file, or if you would like to test playing sound effects, select \*\*Add File \*\*-> **New File** and select **Sound Effect (.wav)**
+   2.  If you would like to add a placeholder .wav file, or if you would like to test playing sound effects, select **Add File** -> **New File** and select **Sound Effect (.wav)**
 
        ![](../../../media/2022-09-img_63291e0635a58.png)
 

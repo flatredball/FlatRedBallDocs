@@ -8,7 +8,7 @@ This tutorial begins with the creation of a new project in Glue. We'll make a ne
 
 First we'll make a project in Glue.
 
-1. Select \*\*File \*\*-> **New Project** or click the **New Project** button in the **Quick Actions** tab if you do not have a project open already
+1. Select **File** -> **New Project** or click the **New Project** button in the **Quick Actions** tab if you do not have a project open already
 2. Enter the name **RockBlaster** (no spaces) as your project name
 3. Click **Create Project!**
 

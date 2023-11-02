@@ -23,7 +23,7 @@ To install the CLR Profiler:
 1. Download **CLRProfiler45Binaries** at: [https://github.com/MicrosoftArchive/clrprofiler/releases](https://github.com/MicrosoftArchive/clrprofiler/releases)
 2. Unzip the **CLRProfiler45Binaries.zip** file
 3. It is recommended that you leave the default unzip folder c:\CLRProfiler
-4. Open the **64** or \*\*32 \*\*folders depending on whether your application is 64 or 32 bit. At the time of this writing all FRB apps default to 32 bit.
+4. Open the **64** or **32** folders depending on whether your application is 64 or 32 bit. At the time of this writing all FRB apps default to 32 bit.
 5. Double-click CLRProfiler.exe to run the CLR Profiler.
 
 ![](../../media/2017-10-img\_59d1a638ba1d7.png)

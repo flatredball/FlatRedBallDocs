@@ -83,7 +83,7 @@ The map contains four doors. Each door in the map has another door which marks w
 
 ![](../../media/2021-05-img_60953bd9cdaac.png)
 
-When collision occurs between a Door and  Player and the up direction is pressed, the demo obtains the **otherDoor** to determine where to place the player. This code is used in the \*\*OnPlayerListVsDoorListCollisionOccurred \*\*method.
+When collision occurs between a Door and  Player and the up direction is pressed, the demo obtains the **otherDoor** to determine where to place the player. This code is used in the **OnPlayerListVsDoorListCollisionOccurred** method.
 
 ```
 ...

@@ -59,7 +59,7 @@ Single files can be shared across multiple Screens, Entities, and Global Content
 
 <figure><img src="../../../../media/2016-02-2019-05-27_06-48-58.gif" alt=""><figcaption></figcaption></figure>
 
- Notice that the file added to Player has a name of \*\*Entities/Enemy/MainImage.png. \*\*Glue will not duplicate the file on disk, and will only load the image once if both Player and Enemy are created in the same screen.
+ Notice that the file added to Player has a name of **Entities/Enemy/MainImage.png.** Glue will not duplicate the file on disk, and will only load the image once if both Player and Enemy are created in the same screen.
 
 ### File Folders
 
