@@ -1,4 +1,4 @@
-# scoring-hud-logic
+# Scoring Hud Logic
 
 ### Introduction
 
@@ -20,7 +20,11 @@ To do this:
 5. Set the **Converted Type** to **int**
 6. Click **OK**
 
-![TunnelConvertedScoreBeefball.gif](../../media/2019-05-TunnelConvertedScoreBeefball.gif) Repeat the steps above, but this time use Team2Score, and create a variable called "Score2".
+&#x20;
+
+<figure><img src="../../media/2019-05-TunnelConvertedScoreBeefball.gif" alt=""><figcaption></figcaption></figure>
+
+Repeat the steps above, but this time use Team2Score, and create a variable called "Score2".
 
 ### Updating the HUD
 
@@ -60,8 +64,8 @@ If you are seeing a conversion error similar to Cannot implicitly convert type '
 2. Select the **Properties** tab
 3.  Change **OverridingPropertyType** to **int**
 
-    ![](../../media/2018-08-img_5b7db0c6336f4.png)
+    ![](../../media/2018-08-img\_5b7db0c6336f4.png)
 
 ### Conclusion
 
-Well, that was easy! Now we have scoring working. At this point we could call the game done. The next tutorial will be adding some extra finishing touches to the controls to make it more competitive and make the game play deeper. [<- Scoring HUD](scoring-hud.md) -- [Adding Dashing ->](adding-dashing.md)
+Well, that was easy! Now we have scoring working. At this point we could call the game done. The next tutorial will be adding some extra finishing touches to the controls to make it more competitive and make the game play deeper.

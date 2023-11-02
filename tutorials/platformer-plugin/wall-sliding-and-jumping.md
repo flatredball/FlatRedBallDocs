@@ -83,7 +83,7 @@ Note that this code uses a property IsSlidingOnWall rather than a local variable
 
 With this code in place, the player can now slide down walls and jump when sliding.
 
-<figure><img src="../../../.gitbook/assets/07_15 16 17.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/07_15 16 17.gif" alt=""><figcaption></figcaption></figure>
 
 ### Jumping Outward
 
@@ -117,7 +117,7 @@ private void HandleJumped()
 
 This code adds a handler to when the player jumps. The jump checks if the player is sliding on the wall and if so, pushes the player "outward". Note that the outwardVelocity is defined here in the HandleJumped method, but you may want to put this variable in the Player entity so that it can be tuned without changing code. Also, keep in mind that a smaller outwardVelocity value results in the player being pushed outward less. If the value is small enough then the player will be able to climb the wall through wall jumping. With the values used here, this value is roughly around 30.
 
-<figure><img src="../../../.gitbook/assets/07_15 27 17.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/07_15 27 17.gif" alt=""><figcaption></figcaption></figure>
 
 ### Playing Sliding Animations
 
@@ -127,11 +127,11 @@ We can add sliding animations by checking the IsSlidingOnWall variable either in
 2. Click on the Animation item\
    <img src="http://flatredball.com/wp-content/uploads/2023/10/img_6521ce5b2ed06.png" alt="" data-size="original">
 3. Copy the CharacterFall animation row\
-   ![](<../../../.gitbook/assets/image (2) (1).png>)
+   ![](<../../.gitbook/assets/image (2) (1) (1).png>)
 4. Select **CharacterWallSlide** animation on the new row
 5. Enter **IsSlidingOnWall** for the **Custom Condition** on the new row\
-   ![](http://flatredball.com/wp-content/uploads/2023/10/img_6521cf490bf72.png)
+   ![](http://flatredball.com/wp-content/uploads/2023/10/img\_6521cf490bf72.png)
 
 The player will now play the CharacterWallSlide animations if the IsSlidingOnWall property is set to true. Note that the .achx file contains CharacterWallSlideLeft and CharacterWallSlideRight, but the generated code selects the appropriate one based on which way the player is facing.
 
-<figure><img src="../../../.gitbook/assets/07_16 11 00 (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/07_16 11 00 (1).gif" alt=""><figcaption></figcaption></figure>

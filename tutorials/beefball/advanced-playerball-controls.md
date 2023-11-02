@@ -1,4 +1,4 @@
-# advanced-playerball-controls
+# Advanced PlayerBall Controls
 
 ### Introduction
 
@@ -26,15 +26,15 @@ private void MovementActivity()
 }
 ```
 
-Notice that the code above still uses the MovementSpeed variable, which can be modified in Glue. This value can be increased to make movement more responsive. You may want to increase this value from 100 to a larger number such as 300. Now our ball can bounce against the walls, and it doesn't immediately speed up or slow down - it takes some time to gain speed. 
+Notice that the code above still uses the MovementSpeed variable, which can be modified in Glue. This value can be increased to make movement more responsive. You may want to increase this value from 100 to a larger number such as 300. Now our ball can bounce against the walls, and it doesn't immediately speed up or slow down - it takes some time to gain speed.
 
-<figure><img src="../../../media/2016-01-2021_July_25_135938.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2016-01-2021_July_25_135938.gif" alt=""><figcaption></figcaption></figure>
 
- Since we're no longer modifying velocity values directly (acceleration values indirectly modify velocity), the ball continues to move even after releasing input. We'll address this in the next section.
+Since we're no longer modifying velocity values directly (acceleration values indirectly modify velocity), the ball continues to move even after releasing input. We'll address this in the next section.
 
 ### Reducing Momentum
 
-We'll use the [Drag](../../../frb/docs/index.php) property to slow the PlayerBall. Drag modifies velocity proportionally and in the opposite direction of current Velocity. In other words, drag slows an object regardless of its movement direction. The faster an object is moving, the more Drag reduces its velocity. Drag is a built-in variable on all Entities, so if you are creating a game which uses acceleration to move an object, you may want to also implement Drag. Drag is applied whether an object is accelerating or not. Since it slows an object down by more when the object is moving faster, it will in effect create a maximum movement speed for our PlayerBall. To add Drag to the PlayerBall Entity:
+We'll use the [Drag](../../frb/docs/index.php) property to slow the PlayerBall. Drag modifies velocity proportionally and in the opposite direction of current Velocity. In other words, drag slows an object regardless of its movement direction. The faster an object is moving, the more Drag reduces its velocity. Drag is a built-in variable on all Entities, so if you are creating a game which uses acceleration to move an object, you may want to also implement Drag. Drag is applied whether an object is accelerating or not. Since it slows an object down by more when the object is moving faster, it will in effect create a maximum movement speed for our PlayerBall. To add Drag to the PlayerBall Entity:
 
 1. Select the **PlayerBall** Entity in Glue
 2. Select the **Variable** tab
@@ -44,11 +44,9 @@ We'll use the [Drag](../../../frb/docs/index.php) property to slow the PlayerBal
 6. Click OK
 7. Change the Drag variable to 1
 
+<figure><img src="../../media/2016-01-2021_July_25_130242.gif" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../../media/2016-01-2021_July_25_130242.gif" alt=""><figcaption></figcaption></figure>
-
- The addition of Drag has changed the way our ball moves:
+The addition of Drag has changed the way our ball moves:
 
 1. The ball now has a maximum speed
 2. Releasing all input results in the ball slowing down
@@ -60,10 +58,10 @@ We'll increase the MovementSpeed to make up for the addition of Drag on the Play
 
 The previous tutorial created a collision relationship between the PlayerBall and Walls. Now that we have bouncing implemented, we can revisit the PlayerListVsWalls collision relationship. Notice that the relationship provides an Elasticity value as shown in the following image:
 
-![](../../../media/2021-07-img_60fdbfcdea17e.png)
+<figure><img src="../../.gitbook/assets/02_07 06 16.png" alt=""><figcaption></figcaption></figure>
 
 This value controls how much velocity is preserved after a collision occurs. A value of 1 indicates that 100% of the velocity is preserved. A value less than 1 will result in some of the velocity being absorbed. Feel free to play with this number to create a bounce elasticity that you like. If you want the balls to remain bouncy, you can keep it at 1. If you want the walls to absorb some of the PlayerBall velocity, try putting a (positive) value less than 1, such as 0.5.
 
 ### Conclusion
 
-Now we're getting somewhere! The game is starting to feel pretty solid. Next we'll add a Puck Entity which can be used to score goals. [<- Creating the Screen Collision](creating-the-screen-collision.md) -- [Creating the Puck Entity ->](creating-the-puck-entity.md)
+Now we're getting somewhere! The game is starting to feel pretty solid. Next we'll add a Puck Entity which can be used to score goals.

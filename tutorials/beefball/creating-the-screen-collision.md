@@ -1,4 +1,4 @@
-# creating-the-screen-collision
+# Creating the Screen Collision
 
 ### Introduction
 
@@ -18,11 +18,7 @@ First we'll create a ShapeCollection called Walls. This ShapeCollection will con
 5. Enter the name **Walls**
 6. Click **OK**
 
-
-
-<figure><img src="../../../media/2016-01-2021_July_25_130007.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/02_06 57 48.gif" alt=""><figcaption></figcaption></figure>
 
 ### Adding Wall AxisAlignedRectangles
 
@@ -33,11 +29,9 @@ Now that we have a ShapeCollection for our walls, we will add the individual wal
 3. Select **AxisAlignedRectangle** as the type. Notice that available types are limited to shapes since we are adding to a ShapeCollection.
 4. Enter the name **Wall1** and click **OK**.
 
+<figure><img src="../../.gitbook/assets/02_06 59 34.gif" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../../media/2016-01-2021_July_25_133309.gif" alt=""><figcaption></figcaption></figure>
-
- Now we can modify the properties of this wall. Select **Wall1** and change the values as follows:
+Now we can modify the properties of this wall. Select **Wall1** and change the values as follows:
 
 * Y = 300
 * Width = 800
@@ -45,13 +39,17 @@ Now that we have a ShapeCollection for our walls, we will add the individual wal
 
 Doing so will move the rectangle to the top of the screen. If you run the game you will see the wall at the top of the screen.
 
-![](../../../media/2021-07-img_60fdb75161810.png)
+![](../../media/2021-07-img\_60fdb75161810.png)
 
 Now that we've created a single wall, we can duplicate it by right-clicking on it and selecting the "Duplicate" command:
 
-![](../../../media/2021-07-img_60fdb7890ef6f.png)
+<figure><img src="../../.gitbook/assets/02_07 00 27.png" alt=""><figcaption></figcaption></figure>
 
-Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectangle instances: ![SixWalls.PNG](../../../media/migrated_media-SixWalls.PNG) Next set the X, Y, Width, and Height variables for for the newly-created walls as follows: **Wall2**
+Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectangle instances: &#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Next set the X, Y, Width, and Height variables for for the newly-created walls as follows: **Wall2**
 
 * X = 0
 * Y = -300
@@ -88,27 +86,32 @@ Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectan
 
 When finished, the game should have walls made of AxisAlignedRectangles with gaps on the left and right sides for goals:
 
-![](../../../media/2021-07-img_60fdbae917a81.png)
+![](../../media/2021-07-img\_60fdbae917a81.png)
 
 ### Implementing Collision
 
 Next we'll use collision relationships to define collision between the PlayerBall and Walls. We'll revisit collisions in later tutorials, so keep in mind that this is only the first step in setting up our game's collision. When we created our PlayerBall entity in an earlier tutorial, we marked that the entity should contain a Circle object. Doing so automatically marked the Entity as using the ICollidable interface. As a reminder, the following image shows the window we used to create the PlayerBall entity:
 
-![](../../../media/2021-07-img_60fdb8d652c26.png)
+![](../../media/2021-07-img\_60fdb8d652c26.png)
 
 Since our PlayerBall is an ICollidable, that means it can collide with any other ICollidable and with any shapes - like the Walls. We need to tell our game that we want the PlayerList to collide against the PlayerWalls. The easiest way to do this is to create a Collision Relationship in Glue. To do this:
 
 1. Drag+drop the **PlayerBallList** onto the **Walls** in the Glue explorer. This will create a new CollisionRelationship
-2. Select the new CollisionRelationship (which will be named **PlayerBallListVsWalls**)
+2.  Select the new CollisionRelationship (which will be named **PlayerBallVsWalls**)\
+
+
+    <figure><img src="../../.gitbook/assets/02_07 02 16.gif" alt=""><figcaption></figcaption></figure>
 3. Select the **Collision** tab
 4. Change the **Collision Physics** to **Bounce Collision** so that our **PlayerBall** bounces against the walls
 5. Change the PlayerBall Mass to 0. This means that the PlayerBall will behave as if it has no mass, so it will not be able to move the walls. Be sure to press Enter or Tab to save the change.
 
-If we run the game now, the PlayerBall will collide with the walls. 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../media/2016-01-2021_July_25_135826.gif" alt=""><figcaption></figcaption></figure>
+If we run the game now, the PlayerBall will collide with the walls.
 
- We use CollisionRelationships here because they are very powerful and require no code. Just like everything else in Glue, collisions can also be managed in code. If you are interested in writing collision purely in code, see the [CollideAgainstMove page](../../../frb/docs/index.php).
+<figure><img src="../../media/2016-01-2021_July_25_135826.gif" alt=""><figcaption></figcaption></figure>
+
+We use CollisionRelationships here because they are very powerful and require no code. Just like everything else in Glue, collisions can also be managed in code. If you are interested in writing collision purely in code, see the [CollideAgainstMove page](../../frb/docs/index.php).
 
 ### Why doesn't the PlayerBall Bounce?
 
@@ -116,4 +119,4 @@ The CollisionRelationship we created in the previous step set the Collision Phys
 
 ### Conclusion
 
-Even though the game isn't really playable yet, we're definitely starting to see something come together. We have a movable object and game boundaries which have solid collision. The next tutorial will dive deeper into the control of our PlayerBall Entity. [<- Controlling an Entity](controlling-an-entity.md) -- [Advanced PlayerBall Controls ->](advanced-playerball-controls.md)
+Even though the game isn't really playable yet, we're definitely starting to see something come together. We have a movable object and game boundaries which have solid collision. The next tutorial will dive deeper into the control of our PlayerBall Entity.
