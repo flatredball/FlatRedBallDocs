@@ -62,7 +62,7 @@ Finally, you need to save your scene. To save your scene in the SpriteEditor:
 
 1. Click File->Save Scene.
 2. The file name should already be entered in the file window, so simply click OK.
-3. \*\*VERY IMPORTANT:\*\*When you save your .scnx file, the SpriteEditor checks to see if any referenced files (such as image files and .achx files) are referenced relative to the .scnx you are saving. If not, you will see a window that tells you which files are not relative, then asks you want you want to do. **In most cases you will want to make sure all files are copied locally.**![MakeTexturesRelative2.png](../../../media/migrated_media-MakeTexturesRelative2.png)
+3. **VERY IMPORTANT:** When you save your .scnx file, the SpriteEditor checks to see if any referenced files (such as image files and .achx files) are referenced relative to the .scnx you are saving. If not, you will see a window that tells you which files are not relative, then asks you want you want to do. **In most cases you will want to make sure all files are copied locally.**![MakeTexturesRelative2.png](../../../media/migrated_media-MakeTexturesRelative2.png)
 
 Once you save your Scene (.scnx file), you can close the SpriteEditor.
 

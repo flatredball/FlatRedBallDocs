@@ -4,7 +4,7 @@
 
 The TouchScreen class provides information about the physical touch screen on devices which provide one. This class can be used on Android, iOS, and touch-enabled Windows RT apps. An instance of the TouchScreen class is automatically instantiated and available through the InputManager, so you do not need to instantiate your own. For more information, see the [TouchScreen page](../../../../../frb/docs/index.php).
 
-\*\*Note:\*\*This class does not work for touch screens for Windows 7. Touch screens for Windows 7 are not exposed to the XNA API. You will need to read touch screen input manually. For more information, see this link: [http://blogs.msdn.com/b/shawnhar/archive/2010/09/09/touch-input-on-windows-in-xna-game-studio-4-0.aspx](http://blogs.msdn.com/b/shawnhar/archive/2010/09/09/touch-input-on-windows-in-xna-game-studio-4-0.aspx)
+**Note:** This class does not work for touch screens for Windows 7. Touch screens for Windows 7 are not exposed to the XNA API. You will need to read touch screen input manually. For more information, see this link: [http://blogs.msdn.com/b/shawnhar/archive/2010/09/09/touch-input-on-windows-in-xna-game-studio-4-0.aspx](http://blogs.msdn.com/b/shawnhar/archive/2010/09/09/touch-input-on-windows-in-xna-game-studio-4-0.aspx)
 
 ### Common Usage
 

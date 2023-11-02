@@ -39,7 +39,7 @@ Now that we have our Variables, let's create States for them:
 * Create a third state called "Big"
 * Create a fourth state called "Small"
 
-\*\*Note:\*\*In this example we created four states which are all uncategorized. In an actual project you would probably want to categorize these under state categories. You would likely want to set these state categories' [SharesVariablesWithOtherCategories](../../../../frb/docs/index.php) value to false as well.
+**Note:** In this example we created four states which are all uncategorized. In an actual project you would probably want to categorize these under state categories. You would likely want to set these state categories' [SharesVariablesWithOtherCategories](../../../../frb/docs/index.php) value to false as well.
 
 These states need to have variables assigned to them:
 
