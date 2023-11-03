@@ -45,9 +45,17 @@ You can also open the project in visual studio by opening the .sln file. The pro
 
 When you double-click the .sln file you may see a window like this:
 
-![VSVersionSelector.PNG](../../media/migrated\_media-VSVersionSelector.PNG) If so you will want to select the version of Visual Studio that is compatible with the type of project you are running. At the time of this writing, Visual Studio 2022 Community is the most common version to use with FlatRedBall. Once Visual Studio is open, you can run your project by pressing the green "play" button, or by pressing F5.
+&#x20;
 
-![PlayButtonInVisualStudio.png](../../media/migrated\_media-PlayButtonInVisualStudio.png) Your game should run if all prerequisites have been properly installed. You should see a blank game
+<figure><img src="../../media/migrated_media-VSVersionSelector.PNG" alt=""><figcaption><p>Select Visual Studio Version</p></figcaption></figure>
+
+If so you will want to select the version of Visual Studio that is compatible with the type of project you are running. At the time of this writing, Visual Studio 2022 Community is the most common version to use with FlatRedBall. Once Visual Studio is open, you can run your project by pressing the green "play" button, or by pressing F5.
+
+&#x20;
+
+<figure><img src="../../media/migrated_media-PlayButtonInVisualStudio.png" alt=""><figcaption><p>Start button in Visual Studio</p></figcaption></figure>
+
+Your game should run if all prerequisites have been properly installed. You should see a blank game
 
 ![](../../media/2020-07-img\_5f07b32cc4a28.png)
 
