@@ -17,7 +17,7 @@ To create an Entity:
 
 1.  Click the **Add Entity** in the **Quick Actions** tab
 
-    ![](../../media/2022-01-img\_61d3125436c42.png)
+    ![](../../.gitbook/assets/02\_21\_21\_30.png)
 
     or right-click on the **Entities** folder and select **Add Entity**
 

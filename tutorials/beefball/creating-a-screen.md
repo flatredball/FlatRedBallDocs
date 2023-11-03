@@ -14,7 +14,7 @@ As you work with Screens you will find that they are very similar to Entities. T
 
 1.  Click on the **Screens** folder and select the **Add Screen** quick action...
 
-    ![](../../media/2022-01-img\_61d31425ed9b7.png)
+    ![](../../.gitbook/assets/02\_21\_28\_12.png)
 
     ...or right-click on the **Screens** folder and select **Add Screen**
 
@@ -24,7 +24,7 @@ As you work with Screens you will find that they are very similar to Entities. T
 
     ![](../../media/2022-01-img\_61d3149d379e1.png)
 
-Notice that FlatRedBall suggests the name **GameScreen** for your screen. Recommended practice is to always have the screen where your game takes place called GameScreen. If your game has multiple levels, each level would inherit from GameScreen. Since Beefball does not have mutiple levels, we will only create GameScreen.
+Notice that FlatRedBall suggests the name **GameScreen** for your screen. Recommended practice is to always have the screen where your game takes place called GameScreen. If your game has multiple levels, each level would inherit from GameScreen. Since Beefball does not have multiple levels, we will only create GameScreen.
 
 ### PlayerBallList in GameScreen
 

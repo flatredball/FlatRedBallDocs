@@ -95,7 +95,7 @@ FlatRedBall provides a number of ways to separate data from logic. The simplest 
 5. Enter the name **MovementSpeed** and click the **OK** button
 6. Verify **Variables** is selected and set **MovementSpeed** to **100**. Deselect the text box or press ENTER to apply the value.
 
-<figure><img src="../../media/2016-01-03_08-51-45.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/02_21_32_32.gif" alt=""><figcaption></figcaption></figure>
 
 Finally, return to the movement code **inside PlayerBall.cs** and change the code to:
 
@@ -110,7 +110,9 @@ private void CustomActivity()
 }
 ```
 
-If we run the game now we can control the player with the W, A, S, and D keys: ![MovingBeefballWithKeyboard.gif](../../media/migrated\_media-MovingBeefballWithKeyboard.gif)
+If we run the game now we can control the player with the W, A, S, and D keys:&#x20;
+
+<figure><img src="../../media/migrated_media-MovingBeefballWithKeyboard.gif" alt=""><figcaption></figcaption></figure>
 
 ### Adding Xbox360 Controls
 
