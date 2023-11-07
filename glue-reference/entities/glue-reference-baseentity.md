@@ -1,10 +1,10 @@
-# glue-reference-baseentity
+# BaseEntit
 
 ### Introduction
 
 The BaseEntity property controls the inheritance of a given Entity. An Entity can inherit from another Entity, or it can inherit from a FlatRedBall type, like Sprite.
 
-![](../../media/2017-02-img_58b3a85f1cdf9.png)
+![](../../media/2017-02-img\_58b3a85f1cdf9.png)
 
 ### Inheriting from other Entities
 
@@ -12,15 +12,15 @@ Entities can inherit from other Entities. Entity inheritance is the current reco
 
 1.  Click on the Add Entity quick action
 
-    ![](../../media/2023-07-img_64b09867579c8.png)
-2.  Use the **Base Entity** dropdown to select the base entity
+    ![](../../media/2023-07-img\_64b09867579c8.png)
+2.  Use the **Base Entity** dropdown to select the base entity. Note that when a Base Entity is selected, most of the options are hidden since the new entity inherits those properties from its base.
 
-    ![](../../media/2023-07-img_64b0988c890c8.png) Note that when a Base Entity is selected, most of the options are hidden since the new entity inherits those properties from its base.
+    <figure><img src="../../media/2023-07-img_64b0988c890c8.png" alt=""><figcaption></figcaption></figure>
 3. Click **OK**
 
 The new entity now inherits from the selected **Base Entity.**
 
-![](../../media/2023-07-img_64b098e3931ba.png)
+![](../../media/2023-07-img\_64b098e3931ba.png)
 
 #### Inheriting when Creating a New Entity
 

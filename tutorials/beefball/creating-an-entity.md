@@ -51,7 +51,11 @@ The previous section showed how to create an entity and add a Circle to the enti
 
     ![](../../media/2022-01-img\_61d313aa162c3.png)
 
-### Entity Data and Code
+### Creating an Entity - the Code and Data
+
+
+
+### Conclusion
 
 When a new Entity or Screen is created, a number of files are created:
 

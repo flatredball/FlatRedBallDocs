@@ -1,8 +1,8 @@
-# z
+# Z
 
 ### Introduction
 
-The Z property controls the absolute Z position of an object. On 3D cameras (Orthogonal=false) , the smaller the Z is, the further away from the camera an object will appear. For information on setting Z in the FlatRedBall Editor, see [this page](../../../glue-reference/objects/glue-reference-z.md).
+The Z property controls the absolute Z position of an object. On 3D cameras (Orthogonal=false) , the smaller the Z is, the further away from the camera an object will appear. For information on setting Z in the FlatRedBall Editor, see [this page](broken-reference).
 
 ### Code Example
 
@@ -24,7 +24,7 @@ spriteInFront.Height = 100;
 spriteInFront.Z = 1;
 ```
 
-![SpriteZ.PNG](../../../media/migrated_media-SpriteZ.PNG)
+![SpriteZ.PNG](../../../media/migrated\_media-SpriteZ.PNG)
 
 ### Z in 2D
 
@@ -43,4 +43,4 @@ The Z value controls the distance of an object from the Camera. When using a 2D 
 
 For information on how Z affects the sorting of objects, check the following articles:
 
-* [Sprite sorting and overlapping](../../../frb/docs/index.php#Setting_Z_Value)
+* [Sprite sorting and overlapping](../../../frb/docs/index.php#Setting\_Z\_Value)
