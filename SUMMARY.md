@@ -214,7 +214,6 @@
     * [Import Entity](glue-reference/entities/glue-reference-import-entity.md)
     * [LayerProvidedByContainer](glue-reference/entities/glue-reference-layerprovidedbycontainer.md)
     * [Use Global Content](glue-reference/entities/glue-reference-useglobalcontent.md)
-    * [glue-tutorials-created-by-other-entities](glue-reference/entities/glue-tutorials-created-by-other-entities.md)
     * [glue-tutorials-inheriting-from-flatredball-types](glue-reference/entities/glue-tutorials-inheriting-from-flatredball-types.md)
     * [implements-idamagearea](glue-reference/entities/implements-idamagearea.md)
     * [implements-igumcollidable](glue-reference/entities/implements-igumcollidable.md)

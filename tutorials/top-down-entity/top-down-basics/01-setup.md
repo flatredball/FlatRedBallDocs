@@ -6,7 +6,9 @@ This tutorial sets up an entity with Top Down controls. It provides a default im
 
 ### Requirements
 
-The top down controls must be added to an entity, so for this tutorial we will create an entity and add it to our game screen. We'll walk through the steps of creating everything in an empty project, but if you already have an existing project, top down controls can be added to any existing entity.
+The FRB Editor provides support for top-down entities through the Entity Input Movement tab. Any entity can be created as a Top Down entity; however, the most common setup is to have a Player entity which uses top down controls.
+
+Empty projects can use the **Project Setup Wizard** to create a top down player entity. Existing games can add top down controls to new or existing entities with a few clicks. This tutorial shows you how to do both.
 
 ### Project Setup Using the New Project Wizard Preset
 
@@ -66,8 +68,6 @@ Finally, add a list of Players the GameScreen. We recommend always creating a li
 You will also need a Player instance in the list. To do this, drag+drop the Player onto the GameScreen and it will be added to the Player list.
 
 <figure><img src="../../../media/2020-09-2021_March_06_144641.gif" alt=""><figcaption></figcaption></figure>
-
-\[/frb\_toggle]
 
 ### Moving the Entity
 
