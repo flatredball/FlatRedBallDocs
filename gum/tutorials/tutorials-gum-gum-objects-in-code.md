@@ -1,4 +1,4 @@
-# tutorials-gum-gum-objects-in-code
+# Gum Objects in Code
 
 ### Introduction
 
@@ -11,8 +11,6 @@ If you've been following along the previous tutorials, then you should have a Sc
 1. Open your Visual Studio project
 2. Navigate to MainMenu.cs (which will be in your Screens folder in Visual Studio)
 3. Modify CustomInitialize so it looks like this:
-
-&#x20;
 
 ```
 void CustomInitialize()
@@ -30,7 +28,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![MovingColoredRectangleFromGum.png](../../../../media/migrated_media-MovingColoredRectangleFromGum.png)
+![MovingColoredRectangleFromGum.png](../../media/migrated\_media-MovingColoredRectangleFromGum.png)
 
 ### Alternative Option 1 - Getting a Gum Object in FlatRedBall Editor
 
@@ -44,11 +42,9 @@ You can also add a reference to the ColoredRectangleInstance in the FlatRedBall 
 6. Use the dropdown next to **Source Name:** to select **ColoredRectangleInstance**
 7. Click **OK**
 
+<figure><img src="../../media/2016-01-2019-02-28_22-30-55.gif" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../../../media/2016-01-2019-02-28_22-30-55.gif" alt=""><figcaption></figcaption></figure>
-
- Note that the **Source Name:** drop down contains all instances in your Gum project. We selected the **ColoredRectangleInstance** for this example, but you could select any instance. Note that the ColoredRectangle in the FlatRedBall Editor is not a new ColoredRectangle instance - it is a reference to the ColoredRectangle inside the MainMenuGum screen.
+Note that the **Source Name:** drop down contains all instances in your Gum project. We selected the **ColoredRectangleInstance** for this example, but you could select any instance. Note that the ColoredRectangle in the FlatRedBall Editor is not a new ColoredRectangle instance - it is a reference to the ColoredRectangle inside the MainMenuGum screen.
 
 ### Alternative Option 2 - Getting Objects by Name
 
@@ -65,11 +61,11 @@ void CustomInitialize()
 
 Notice that we use the name **ColoredRectangleInstance**. This needs to match the name of the instance in the Gum screen exactly, including capitalization:
 
-![](../../../../media/2021-03-img_604b8ddb7fffd.png)
+![](../../media/2021-03-img\_604b8ddb7fffd.png)
 
 Also, notice that we use the type **ColoredRectangleRuntime**. We did this because the type in code should match the type in your Gum project. FlatRedBall automatically generates classes for every type in your Gum project, but it will always append **Runtime** to the end of the name. Therefore, the type **ColoredRectangle** in Gum becomes **ColoredRectangleRuntime** in code.
 
-![](../../../../media/2021-03-img_604b97ecbcab8.png)
+![](../../media/2021-03-img\_604b97ecbcab8.png)
 
 ### Incrementing Score
 
@@ -92,13 +88,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
+<figure><img src="../../media/2016-01-2021_March_07_080847.gif" alt=""><figcaption></figcaption></figure>
 
+Notice that the TextIntance property matches the exact name in Gum:
 
-<figure><img src="../../../../media/2016-01-2021_March_07_080847.gif" alt=""><figcaption></figcaption></figure>
-
- Notice that the TextIntance property matches the exact name in Gum:
-
-![](../../../../media/2021-03-img_604b8fae4c068.png)
+![](../../media/2021-03-img\_604b8fae4c068.png)
 
 ### Gum Coordinate System
 
@@ -106,4 +100,4 @@ I've you've spent some time in Gum you may notice that the coordinate system in 
 
 ### Conclusion
 
-This tutorial has shown how to access objects from Gum in code. FlatRedBall generates objects which we can edit in code with full compile-time protection and Visual Studio IntelliSense. The next tutorial will show you how to use UI events (such as Click) on Gum components. [<- 2. Screens in Gum](tutorials-gum-screens-in-gum.md) -- [4. Events on Gum Objects ->](tutorials-gum-events-on-gum-objects.md)
+This tutorial has shown how to access objects from Gum in code. FlatRedBall generates objects which we can edit in code with full compile-time protection and Visual Studio IntelliSense. The next tutorial will show you how to use UI events (such as Click) on Gum components.
