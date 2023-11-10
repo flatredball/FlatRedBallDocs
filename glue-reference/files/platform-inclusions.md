@@ -1,8 +1,10 @@
-# platform-inclusions
+# Platform Inclusions
 
 ### Introduction
 
-By default, files added to Glue will automatically be added to all associated Visual Studio projects. Some files, however, are only needed on some platforms. Files can be excluded from certain projects through the Platform Inclusions tab. Note that this tab will only appear when a file is selected in Glue project which has more than one code solution (added through [Project Sync](../../documentation/tools/glue-reference/menu/glue-reference-menu-file-new-synced-project.md)). ![PlatformInclusion](../../media/2016-02-PlatformInclusion.png)
+By default, files added to Glue will automatically be added to all associated Visual Studio projects. Some files, however, are only needed on some platforms. Files can be excluded from certain projects through the Platform Inclusions tab. Note that this tab will only appear when a file is selected in Glue project which has more than one code solution (added through [Project Sync](../../documentation/tools/glue-reference/menu/glue-reference-menu-file-new-synced-project.md)).&#x20;
+
+<figure><img src="../../media/2016-02-PlatformInclusion.png" alt=""><figcaption></figcaption></figure>
 
 ### Inclusions Details
 

@@ -1,4 +1,4 @@
-# glue-reference-sourcefile
+# SourceFile
 
 ### Introduction
 
@@ -9,8 +9,10 @@ Files in Glue can support "external" or "source" files. A source file is a file 
 To add a file with a source file:
 
 1. Right-click on the "Files" item under a Screen or entity
-2. Select "Add Externally Built File"![AddExternallyBuiltFile.png](../../../../media/migrated_media-AddExternallyBuiltFile.png)
+2. Select "Add Externally Built File"
+
+<figure><img src="../../media/migrated_media-AddExternallyBuiltFile.png" alt=""><figcaption></figcaption></figure>
 
 ### Source files require builders
 
-Glue must be told how to convert a source file to the file type that Glue understands. To do this builders must be set up. To set up a builder, see the [article on builders](../../../../frb/docs/index.php).
+Glue must be told how to convert a source file to the file type that Glue understands. To do this builders must be set up. To set up a builder, see the [article on builders](../../frb/docs/index.php).
