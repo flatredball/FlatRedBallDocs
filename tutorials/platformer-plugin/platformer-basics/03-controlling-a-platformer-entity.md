@@ -1,90 +1,62 @@
-# 03-controlling-a-platformer-entity
+# Controlling a Platformer Entity
 
 ### Introduction
 
-This tutorial covers how to read input to move a platformer entity. We will also be creating a level to test out our platformer entity. To create a level and collision, we will be using a Tiled level. For more detail on how to create Tiled levels, see the [Tiled tutorial](../../../documentation/tools/tiled-plugin/using-the-tiled-plugin.md).
-
-### Adding a Level
-
-Next we'll add a level. To add a level:
-
-1. Click on the **Quick Actions** tab in Glue
-2. Click **Add Screen/Level**
-3. Enter the name **Level1**
-4. Check the **Add Standard TMX File** option
-5. Click **OK**
-
-![](../../../media/2021-02-img_60329d77e6082.png)
-
-Glue will ask you to name the new map. Enter the name **Level1Map** and click **OK**.
-
-![](../../../media/2021-02-img_60329dfc01022.png)
-
-Now you should have a new screen called Level1 in Glue.
-
-![](../../../media/2021-02-img_60329e7747e9f.png)
-
-Finally we'll add collision to our level for the MainCharacter to walk on. To do this:
-
-1.  Open Level1Map in Tiled
-
-    ![](../../../media/2021-02-img_60329f6d60104.png)
-2.  Select the top-left tile in the **TiledIcons** tileset
-
-    ![](../../../media/2021-05-img_609210cca57a1.png)
-3.  Once this tile is selected, click on the map to paint this tile. Doing so will add collision to your map.
-
-    ![](../../../media/2021-05-img_6092105d05917.png)
-
-Now if we run the game, we have our level set up, but the player will still fall through the level. Next we'll add a CollisionRelationship between the player and the solid collision. 
-
-<figure><img src="../../../media/2018-01-2021_February_21_110609.gif" alt=""><figcaption></figcaption></figure>
-
-
+This tutorial covers how to read input to move a platformer entity. We will also be creating a level to test out our platformer entity. To create a level and collision, we will be using a Tiled level. For more information on working with Tiled, see the [Tiled](../../../tiled-plugin/) documentation.
 
 ### Adding a Collision Relationship
 
-Currently our game has collision defined through the Level1Map, but we haven't told our game that the MainCharacterInstance should collide against it. To do this:
+The previous tutorial created a GameScreen which contains two TileShapeCollections:&#x20;
 
-1. Expand GameScreen Objects
-2. Drag+drop the **MainCharacterList** onto the **SolidCollision** to create a relationship 
+* SolidCollision
+* CloudCollision
 
-<figure><img src="../../../media/2018-01-2021_February_21_113719.gif" alt=""><figcaption></figcaption></figure>
+By default each is associated with a standard tile from the tileset included in our Level1Map.tmx. However, these collisons do not have any affect on our player since we haven't told the player to collide with them.
+
+To set up collision between our PlayerList and SolidCollision:
+
+1. Expand **GameScreen** Objects
+2. Drag+drop the **PlayerList** onto the **SolidCollision** to create a relationship
+
+<figure><img src="../../../.gitbook/assets/11_06 11 55.gif" alt=""><figcaption></figcaption></figure>
+
+Since our Player is marked as a Platformer entity, the FlatRedBall editor assumes that the PlayerVsSolidCollision relationship should use platformer physics. You can verify that this is the case by selecting the PlayerVsSolidCollision object and clicking on the Collision tab.
 
 
-3. Mark the newly-created CollisionRelationship as **Platformer Solid Collision**
 
 Now the player will collide with the level.
 
-![](../../../media/2021-02-img_6032a4dcaa5cc.png)
+![PlayerVsSolidCollision using Platformer Solid Collision](<../../../.gitbook/assets/11\_06 13 50.png>)
 
 ### Controlling the Entity with Input
 
-By default the platformer entity already supports a default set of controls. To see this, select the MainCharacter, then select the **Entity Input Movement** tab.
+By default the platformer entity already supports a default set of controls. To see this, select the Player entity, then select the **Entity Input Movement** tab.
 
-![](../../../media/2021-02-img_6032a55db4f63.png)
+![](<../../../.gitbook/assets/11\_06 15 36.png>)
 
-By default the platformer will be controllable with a plugged-in Xbox Gamepad. If no Gamepad is detected, then the entity can be controlled with WASD and Space. 
+By default the platformer will be controllable with a plugged-in Xbox Gamepad. If no Gamepad is detected, then the entity can be controlled with WASD and Space.
 
-<figure><img src="../../../media/2018-01-2021_February_21_112625.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/11_06 17 12.gif" alt=""><figcaption></figcaption></figure>
 
- If you want to override this functionality, you can change the controls. These controls can be changed in the MovementInput code (to apply to all players) or in the GameScreen. We recommend making the changes in GameScreen so that different characters can have different input in a multi-player game. To change the character to jump with the Enter key and to move with the arrow keys:
+Note - the animation above shows a game that is using the CameraControllingEntity to position the camera in the center of the map. If you are not using the CameraControllingEntity, then you can manually position the camera in your GameScreen by changing the Camera.Main.X and Camera.Main.Y variables in CustomInitialize. Also, note that the Player is inside of the map. You can modify the player's starting X and Y values either in code or by selecting the Player1 object in GameScreen and changing its X and Y values.
+
+If you want to override which input is used to move the player, you can change the controls in code. For example, to change the character to jump with the Enter key and to move with the arrow keys:
 
 1. Go to GameScreen.cs
-2. Modify the CustomInitialize  function to contain the following input assignment code:
+2. Modify the CustomInitialize function to contain the following input assignment code:
 
 ```lang:c#
 void CustomInitialize()
 {
 
-    MainCharacter1.JumpInput = InputManager.Keyboard.GetKey(Microsoft.Xna.Framework.Input.Keys.Enter);
+    Player1.JumpInput = InputManager.Keyboard.GetKey(Microsoft.Xna.Framework.Input.Keys.Enter);
 
-    MainCharacter1.HorizontalInput = InputManager.Keyboard.Get1DInput(
+    Player1.HorizontalInput = InputManager.Keyboard.Get1DInput(
         Microsoft.Xna.Framework.Input.Keys.Left, Microsoft.Xna.Framework.Input.Keys.Right);
 }
 ```
 
-The code above added keyboard controls so that the main character can be moved horizontally with the A and D keys and jumps using the space bar.
+The code above added keyboard controls so that the Player can be moved horizontally with the A and D keys and jumps using the space bar.
 
 ### Conclusion
 

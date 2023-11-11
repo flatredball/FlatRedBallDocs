@@ -6,9 +6,9 @@ This page covers all control values in available on a platformer entity. It also
 
 ### Modifying Control Values
 
-In a previous tutorial we defined a set of default control values for our character. These values serve as a starting point for platformers - they can be tuned to provide a custom feel to platformer entities. The platformer control values can be viewed and edited by selecting the **MainCharacter** entity and clicking on the **Entity Input Movement** tab.
+In a previous tutorial we defined a set of default control values for our character. These values serve as a starting point for platformers - they can be tuned to provide a custom feel to platformer entities. The platformer control values can be viewed and edited by selecting the **Player** entity and clicking on the **Entity Input Movement** tab.
 
-![](../../../media/2023-05-img\_645b94f3c5629.png)
+![](<../../../.gitbook/assets/11\_06 21 02.png>)
 
 ### Max Speed
 
@@ -16,23 +16,37 @@ This is the maximum speed (maximum velocity) that the character can move through
 
 ### Immediate and Speed Up/Down
 
-This value controls whether the character reaches maximum velocity immediately, or if it takes time for the character to speed up and slow down to the maximum velocity and back to standing still. Using **Immediate** will increase the responsiveness of your game, and allows players to move very accurately. Examples of immediate-movement games include Mega Man and Castlevania.&#x20;
+This value controls whether the character reaches maximum velocity immediately, or if it takes time for the character to speed up and slow down to the maximum velocity and back to standing still. Using **Immediate** will increase the responsiveness of your game, and allows players to move very accurately. Examples of immediate-movement games include Mega Man and Castlevania.
 
 {% embed url="https://www.youtube.com/watch?v=mOTUVXrAOE8" %}
 
-The **Speed Up/Down** option results in the platformer entity accelerating to max speed and back down to a standstill over time, instead of immediately. This option creates more natural movement and requires more planning on the player's part (such as building up speed before a big jump). Examples of speed up/down movement include the Super Mario Bros. series and the Donkey Kong Country series.&#x20;
+The **Speed Up/Down** option results in the platformer entity accelerating to max speed and back down to a standstill over time, instead of immediately. This option creates more natural movement and requires more planning on the player's part (such as building up speed before a big jump). Examples of speed up/down movement include the Super Mario Bros. series and the Donkey Kong Country series.
 
 {% embed url="https://www.youtube.com/watch?v=Vxg5eOPmzHI" %}
 
 ### Speed Up Time
 
-The **Speed Up Time** value controls how many seconds are required for the platformer entity to reach max speed. This value is only available if using **Speed Up/Down** horizontal movement. Increasing this value makes the character makes the platformer entity feel sluggish. Decreasing this value makes the platformer entity feel more responsive. A value of 0 is identical to using **Immediate** horizontal movement. A larger speed up time can also be used for different terrains and environments. For example, a larger value can make the ground feel more slippery (if the character is walking on ice). A larger value can also make the character seem more heavy, or can be used to simulate under-water movement. A larger **Speed Up Time** can be used for air movement so that control is less precise when in the air.&#x20;
+The **Speed Up Time** value controls how many seconds are required for the platformer entity to reach max speed. This value is only available if using **Speed Up/Down** horizontal movement. Increasing this value makes the character makes the platformer entity feel sluggish. Decreasing this value makes the platformer entity feel more responsive. A value of 0 is identical to using **Immediate** horizontal movement. A larger speed up time can also be used for different terrains and environments. For example, a larger value can make the ground feel more slippery (if the character is walking on ice). A larger value can also make the character seem more heavy, or can be used to simulate under-water movement. A larger **Speed Up Time** can be used for air movement so that control is less precise when in the air.
 
 {% embed url="https://youtu.be/n9G9Vzd2l8U?t=212" %}
 
 ### Slow Down Time
 
-The **Slow Down Time** value controls how many seconds it takes for the platformer entity to decelerate from full-speed to a standstill. A larger value can make the ground seem more slippery, especially when paired with a larger **Speed Up Time**. Usually **Slow Down Time** should not be larger than **Speed Up Time**. If the two values are similar, then this makes the ground feel slippery. The following table shows common combinations of **Speed Up Time** and **Slow Down Time**. \[container] \[row] \[column md="4"] \[/column] \[column md="4"] Speed Up Time \[/column] \[column md="4"] Slow Down Time \[/column] \[/row] \[row] \[column md="4"] Standard Ground Movement \[/column] \[column md="4"] Low or Medium \[/column] \[column md="4"] Low \[/column] \[/row] \[row] \[column md="4"] Ice Ground Movement \[/column] \[column md="4"] High \[/column] \[column md="4"] High \[/column] \[/row] \[row] \[column md="4"] Underwater Ground Movement \[/column] \[column md="4"] High \[/column] \[column md="4"] Medium \[/column] \[/row] \[row] \[column md="4"] Air Movement \[/column] \[column md="4"] Medium \[/column] \[column md="4"] Medium \[/column] \[/row] \[row] \[column md="4"] Heavy Character Ground Movement \[/column] \[column md="4"] High \[/column] \[column md="4"] Low \[/column] \[/row] \[/container]
+The **Slow Down Time** value controls how many seconds it takes for the platformer entity to decelerate from full-speed to a standstill. A larger value can make the ground seem more slippery, especially when paired with a larger **Speed Up Time**. Usually **Slow Down Time** should not be larger than **Speed Up Time**. If the two values are similar, then this makes the ground feel slippery. The following table shows common combinations of **Speed Up Time** and **Slow Down Time**. The values _High, Medium,_ and _Low_ do not have fixed meaning, but a typical setup may include these values:
+
+* Low .15 seconds
+* Medium .4 seconds
+* High .8 seconds
+
+Of course you should modify values to achieve the desired movement for your specific game.
+
+|                                 | Speed Up Time | Slow Down Time |
+| ------------------------------- | ------------- | -------------- |
+| Standard Ground Movement        | Low or Medium | Low            |
+| Ice Ground Movement             | High          | High           |
+| Underwater Ground Movement      | High          | Medium         |
+| Air Movement                    | Medium        | Medium         |
+| Heavy Character Ground Movement | High          | Low            |
 
 ### Jump Speed
 
@@ -75,10 +89,10 @@ This is the distance to fall when pressing down + jump on a cloud platform befor
 
 ### Max Falling Speed
 
-**Max Falling Speed** sets a limit to the platformer entity's y velocity. A smaller max falling speed results in the entity falling more slowly, even if **Gravity** is large. A smaller max falling speed can be used to slow a player's fall down with special abilities such as the raccoon tail in Super Mario Bros 3.&#x20;
+**Max Falling Speed** sets a limit to the platformer entity's y velocity. A smaller max falling speed results in the entity falling more slowly, even if **Gravity** is large. A smaller max falling speed can be used to slow a player's fall down with special abilities such as the raccoon tail in Super Mario Bros 3.
 
 {% embed url="https://youtu.be/1DfSMLXGYRc?t=9" %}
 
-&#x20;A smaller M**ax Falling Speed** and low **Gravity** can be used to implement water physics such as the water levels in Donkey Kong Country.&#x20;
+A smaller M**ax Falling Speed** and low **Gravity** can be used to implement water physics such as the water levels in Donkey Kong Country.
 
 {% embed url="https://www.youtube.com/watch?v=GH-UGtfGH8I" %}

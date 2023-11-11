@@ -1,8 +1,8 @@
-# 05-double-jump
+# Double Jump
 
 ### Introduction
 
-The default set of values do not include support for double jump, but these can be added in Glue with no additional code needed. This tutorial explores how to add double jump to a platformer character.
+The default set of values do not include support for double jump, but these can be added in FlatRedBall with no additional code needed. This tutorial explores how to add double jump to a platformer character.
 
 ### Double Jump Variables
 
@@ -11,10 +11,10 @@ Double jumping is a feature in many platforms which gives the player more contro
 1. Expand the drop-down next to the **Add Control Values** button
 2.  Select **Default Air Control** option
 
-    ![](../../../../media/2021-03-img_605785f3a0714.png)
+    ![](../../../media/2021-03-img\_605785f3a0714.png)
 3.  Change the name of the new values to **AfterDoubleJump**
 
-    ![](../../../../media/2021-03-img_60578788d5cb5.png)
+    ![](../../../media/2021-03-img\_60578788d5cb5.png)
 
 ### Changing Values
 
@@ -24,22 +24,18 @@ Now that we have a set of values for after double jump, we need to tell our game
 2. Click the Variables tab
 3.  Change the **After Double Jump** value dropdown to the name of the new set of values we just created (**AfterDoubleJump**)
 
-    ![](../../../../media/2021-03-img_6057905aea13f.png)
+    ![](../../../media/2021-03-img\_6057905aea13f.png)
 
 Finally we need to change the **Jump Speed** value on the **Air** movement values to be greater than zero. This is the velocity which will be applied when performing a double jump.
 
-![](../../../../media/2021-03-img_605790f178ded.png)
+![](../../../media/2021-03-img\_605790f178ded.png)
 
-Now the entity supports double jumping. 
+Now the entity supports double jumping.
 
-<figure><img src="../../../../media/2021-03-2021_March_21_123132.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../media/2021-03-2021_March_21_123132.gif" alt=""><figcaption></figcaption></figure>
 
 ### Infinite Double Jumps
 
-We can also support infinite double jumps by either setting the AfterDoubleJump Jump Speed value to greater than zero, or by setting the AfterDoubleJump variable to be Air. This results in the character being able to jump indefinitely which can be useful if implementing swimming or abilities like the flying racoon power-up in Super Mario Bros 3. 
+We can also support infinite double jumps by either setting the AfterDoubleJump Jump Speed value to greater than zero, or by setting the AfterDoubleJump variable to be Air. This results in the character being able to jump indefinitely which can be useful if implementing swimming or abilities like the flying racoon power-up in Super Mario Bros 3.
 
-<figure><img src="../../../../media/2021-03-2021_March_21_122535.gif" alt=""><figcaption></figcaption></figure>
-
-   &#x20;
+<figure><img src="../../../media/2021-03-2021_March_21_122535.gif" alt=""><figcaption></figcaption></figure>

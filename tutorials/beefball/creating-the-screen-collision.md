@@ -47,7 +47,7 @@ Now that we've created a single wall, we can duplicate it by right-clicking on i
 
 Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectangle instances: &#x20;
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next set the X, Y, Width, and Height variables for for the newly-created walls as follows: **Wall2**
 
