@@ -19,7 +19,7 @@ The FlatRedBall Editor provides a quick setup for creating a platformer project.
 6. Wait for the wizard to finish processing
 7. Run the game from either Visual Studio or the FlatRedBall Editor
 
-**If you are using the wizard as shown above, you can skip the remainder of this tutorial series and check out the** [other platformer tutorials](./)**. If you are interested in how to build a platformer in the editor "from scratch", keep reading.**
+**If you are using the wizard as shown above, you can skip this tutorial and the next tutorial and move on to the** [**Movement Values tutorial**](04-control-values.md)**. If you are interested in how to build a platformer in the editor "from scratch", keep reading.**
 
 ### Creating a GameScreen
 
@@ -82,9 +82,11 @@ To add a level:
 3.  Leave all defaults and click **OK**\
 
 
-    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-4. After clicking OK, another popup appears with options for the level tile map (TMX). Leave all defaults and click OK\
-   ![](<../../../.gitbook/assets/image (2).png>)
+    <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Level1 Creation Options</p></figcaption></figure>
+4.  After clicking OK, another popup appears with options for the level tile map (TMX). Leave all defaults and click OK\
+
+
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>TMX Creation Options</p></figcaption></figure>
 
 Your project should now have a Screen named Level1. This is marked as the startup screen (it has the play icon and appears in the startup dropdown).
 
