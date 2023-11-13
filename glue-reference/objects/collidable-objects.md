@@ -1,4 +1,4 @@
-# collidable-objects
+# Collidable Objects
 
 ### Introduction
 
@@ -11,13 +11,17 @@ If an object is collidable, Glue displays a Collision tab. The following types c
 
 The following shows the Collision tab for a BulletList, which is a list of Bullets where the Bullet entity implements the ICollidable interface.
 
-![](../../../../media/2021-03-img_6040f2f675be3.png)
+![](../../media/2021-03-img\_6040f2f675be3.png)
 
 ### Partitioning
 
-If the selected object is a list of collidables, then it can be partitioned. By default partitioning is turned off because incorrect values can cause collision to fail. However, partitioning is critical for games with a large number of objects such as Kosmo Squad. ![](https://cdn.akamai.steamstatic.com/steam/apps/1448070/ss_61c7bc5936ca829c8ea8da9ba38fd17cdb82b100.1920x1080.jpg?t=1605029685) If a list performs collision partitioning, Glue provides a number of options for partitioning, as shown in the following image:
+If the selected object is a list of collidables, then it can be partitioned. By default partitioning is turned off because incorrect values can cause collision to fail. However, partitioning is critical for games with a large number of objects such as Kosmo Squad. &#x20;
 
-![](../../../../media/2021-03-img_6040fe7465256.png)
+<figure><img src="https://cdn.akamai.steamstatic.com/steam/apps/1448070/ss_61c7bc5936ca829c8ea8da9ba38fd17cdb82b100.1920x1080.jpg?t=1605029685" alt=""><figcaption></figcaption></figure>
+
+If a list performs collision partitioning, Glue provides a number of options for partitioning, as shown in the following image:
+
+![](../../media/2021-03-img\_6040fe7465256.png)
 
 #### Should Partitioning be Enabled?
 
@@ -33,4 +37,4 @@ This value indicates the maximum width or height of the entity in the current li
 
 #### Sort List Every Frame
 
-This option tells Glue whether to sort the list every frame for partitioning or not. If objects within the list can move (such as bullets), then sorting should happen every frame. If objects in a list cannot move (such as doors in a level) then sorting does not need to happen every frame.     &#x20;
+This option tells Glue whether to sort the list every frame for partitioning or not. If objects within the list can move (such as bullets), then sorting should happen every frame. If objects in a list cannot move (such as doors in a level) then sorting does not need to happen every frame.

@@ -46,8 +46,8 @@ To add a Player entity:
    1. **Circle** under **Collisions**
    2.  **Top-Down** under **Input Movement Type**
 
-       ![](../../../media/2021-03-img\_6043f61c1110d.png)
-4. Click **OK**
+       ![](<../../../.gitbook/assets/13\_06 03 33.png>)
+4. Leave the rest of the defaults and click **OK**
 
 If you already have an entity created, you can make it a Top Down entity:
 
@@ -57,7 +57,9 @@ If you already have an entity created, you can make it a Top Down entity:
 
 ![](../../../media/2022-03-img\_6230a056728c2.png)
 
-Finally, add a list of Players the GameScreen. We recommend always creating a list of Players even if you intend to only have one player. This standard appears throughout FlatRedBall's documentation and can make moving from one project to another easier.
+By default your GameScreen should have a list of Players (it was an option earlier when creating the Player entity). We recommend always creating a list of Players even if you intend to only have one player. This standard appears throughout FlatRedBall's documentation and can make moving from one project to another easier.
+
+If you did not add a PlayerList earlier by keeping the **Include lists in GameScreen,** or if you created your GameScreen after your Player, you can manually add a PlayerList by following these steps:
 
 1. Verify **Player** is selected
 2. Click the **Quick Actions** tab

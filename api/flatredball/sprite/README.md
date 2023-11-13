@@ -1,8 +1,8 @@
-# sprite
+# Sprite
 
 ### Introduction
 
-The Sprite is a flat graphical object which is commonly used in 2D games as well as for particles, HUDs, and UIs in 3D games. The Sprite class inherits from the [PositionedObject](../../../frb/docs/index.php) class. For information about how to use Sprites in the FlatRedBall Editor, see the [Sprite FlatRedBall page](../../../glue-reference/objects/glue-reference-sprite.md).
+The Sprite is a flat graphical object which is commonly used in 2D games as well as for particles, HUDs, and UIs in 3D games. The Sprite class inherits from the [PositionedObject](../../../frb/docs/index.php) class. For information about how to use Sprites in the FlatRedBall Editor, see the [Sprite FlatRedBall page](../../../glue-reference/objects/object-types/glue-reference-sprite.md).
 
 ### Sprite Scale
 
