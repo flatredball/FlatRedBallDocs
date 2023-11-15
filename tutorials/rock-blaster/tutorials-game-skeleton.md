@@ -10,13 +10,13 @@ When we refer to a game skeleton, we mean an initial setup which contains empty 
 
 ![NoSkeleton.png](../../media/migrated\_media-NoSkeleton.png)&#x20;
 
-Creating a skeleton is a great exercise because it can quickly get you to think about what your game will contain. You can add Screens and Entities as you think them up because there is no implementation required. As you become more experienced with making games (especially with Glue) you will find it easier to create skeletons.
+Creating a skeleton is a great exercise because it can quickly get you to think about what your game will contain. You can add Screens and Entities as you think them up because there is no implementation required. As you become more experienced with making games (especially with FlatRedBall) you will find it easier to create skeletons.
 
 ### How to start creating a skeleton
 
-The first step is purely conceptual. You can start creating a skeleton with any tool that you find comfortable. You may prefer to use a simple text or spreadsheet document, or perhaps you prefer to write a list on a piece of paper. The point of this step is to create a list of screens and entities which you expect to include in your game. This game will be about flying a space ship, shooting rocks, and attempting to stay alive long enough to earn a high score. The Glue Wizard has already taken care of creating our screens (GameScreen and Level1) so we don't need to do anything with screens fo rnow. We'll create a list of Entities needed for our game:
+The first step is purely conceptual. You can start creating a skeleton with any tool that you find comfortable. You may prefer to use a simple text or spreadsheet document, or perhaps you prefer to write a list on a piece of paper. The point of this step is to create a list of screens and entities which you expect to include in your game. This game will be about flying a space ship, shooting rocks, and attempting to stay alive long enough to earn a high score. The Wizard has already taken care of creating our screens (GameScreen and Level1) so we don't need to do anything with screens for now. We'll create a list of Entities needed for our game:
 
-* Player (already created by the Glue Wizard)
+* Player (already created by the Wizard Wizard)
 * Rock
 * Bullet
 * Hud (will be made in Gum)
@@ -31,11 +31,11 @@ If you don't think of all of the Screens and Entities that you'll need, that's o
 
 Now that we created a list of things that we need in our game, we will start by adding the entities.
 
-**You are modifying your Visual Studio Project** All of the work that you do in Glue results mainly in code being generated and in your Visual Studio project (.csproj) being modified. Although Visual Studio will automatically reload any changes to any projects, it will also notify you that the project has changed. As you work with Glue you may encounter popups in Visual Studio notifying you that things have changed. Don't worry, this is expected behavior - your projects will continue to work just fine.
+**You are modifying your Visual Studio Project** All of the work that you do in the FlatRedBall Editor results mainly in code being generated and in your Visual Studio project (.csproj) being modified. Normally you don't need to do anything - when you add things to FRB, they will automatically show up in Visual Studio. However, keep in mind that any changes made in Visual Studio (such as adding new classes) will not be picked up by FlatRedBall until you save your project.
 
 Let's start with the Rock entity:
 
-1. Select the **Quick Actions** tab in Glue
+1. Select the **Quick Actions** tab in FlatRedBall
 2.  Click **Add Entity**
 
     ![](../../media/2021-03-img\_604cdc3e88ab2.png)
