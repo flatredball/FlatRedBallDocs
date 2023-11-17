@@ -1,16 +1,18 @@
-# acceleration
+# Acceleration
 
 ### Introduction
 
 The acceleration property can be used to apply force to your objects in a physically realistic way. A force is anything which continually makes your object move faster and faster (or slower and slower if the force is in the opposite direction of the object's current Velocity). Examples of forces include:
 
 * Gravity
-* Car gas pedal
+* Car accelerator pedal
 * Car brake pedal
 * Space ship rockets
 * Magnetism (varies according to distance)
 
 Acceleration can also be used to create smooth speed-up and slow-down movement for platformers and top down games.
+
+If acceleration is constant (such as gravity in a platformer), it only needs to be assigned once. Acceleration should only be assigned in Custom Activity if it changes every frame, such as the gravity on an orbiting body.
 
 ### Code example
 
@@ -21,7 +23,7 @@ Screen's CustomInitialize:
 ```
 void CustomInitialize()
 {
-    // Normally this is a Glue variable
+    // In a full game, Gravity should probably be assigned as a variable in a Screen or on an Entity
     const float Gravity = -500;
     CircleInstance.YAcceleration = Gravity;
 }
@@ -51,8 +53,14 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![AccelerationGif.gif](../../../../media/migrated_media-AccelerationGif.gif)
+![AccelerationGif.gif](../../../media/migrated\_media-AccelerationGif.gif)
+
+### Acceleration and Velocity
+
+By itself, Acceleration has no impact on an object. Acceleration is applied to the Velocity of managed objects. This velocity is then used to modify the Position, which results in an object moving.
+
+By default, objects (such as entities) are managed, so Acceleration is applied automatically.
 
 ### Additional Information
 
-* [GetPositionAfterTime](../../../../frb/docs/index.php) - This function can be used to predict the position of objects given an object's starting position, velocity, and acceleration.
+* [GetPositionAfterTime](../../../frb/docs/index.php) - This function can be used to predict the position of objects given an object's starting position, velocity, and acceleration.
