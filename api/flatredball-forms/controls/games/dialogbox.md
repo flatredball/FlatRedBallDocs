@@ -8,17 +8,17 @@ The DialogBox control is used to display dialog to the screen. It provides a num
 * Force display of entire page and page advance input
 * Input support using keyboard, mouse, and gamepads
 
-<figure><img src="../../../../../.gitbook/assets/28_17_07_29 (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/28_17_07_29 (1).gif" alt=""><figcaption><p>Standard DialogBox</p></figcaption></figure>
 
 ### Implementation Example
 
 Like other FlatRedBall.Forms controls, the easiest way to create a DialogBox is to add a DialogBox instance into your screen. By default dialog boxes are visible, but you may want to mark yours as invisible in your Gum screen so it doesn't display in game until you need it to display. For most games only a single DialogBox instance is needed unless you intend to have multiple dialog boxes displayed at the same time.
 
-<figure><img src="../../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 To display a dialog box, use one of the Show methods. The simplest is to call Show with a string, as shown in the following code:
 
-```
+```csharp
 void CustomActivity(bool firstTimeCalled)
 {
     if(InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Enter))
@@ -29,11 +29,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-<figure><img src="../../../../../.gitbook/assets/28_17_48_03.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/28_17_48_03.gif" alt=""><figcaption><p>DialogBox shown with one page of text</p></figcaption></figure>
 
 Alternatively, multiple pages can be displayed using an IEnumerable such as a string array as shown in the following code snippet:
 
-```
+```csharp
 var dialogBox = Forms.DialogBoxInstance;
 
 var pages = new string[]
@@ -49,13 +49,13 @@ var pages = new string[]
 dialogBox.Show(pages);
 ```
 
-<figure><img src="../../../../../.gitbook/assets/28_17_53_02.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/28_17_53_02.gif" alt=""><figcaption><p>Multiple pages of text from a string[]</p></figcaption></figure>
 
 ### ShowAsync for async Programming
 
 The ShowAsync method returns a task which can be used to await for all pages to be shown and for the final page to be dismissed. A common usage of ShowAsync is in a scripted sequence. For example, a scripted sequence may combine dialog and player movement. Since the player can choose when to advance text, the amount of time that a DialogBox is displayed must be awaited. The following shows how code might be used to implement a scripted sequence which combines dialog being displayed and player movement.
 
-```
+```csharp
 var dialogBox = Forms.DialogBoxInstance;
 await dialogBox.ShowAsync("Hello? Who is there?");
 await MovePlayerTo(100, 50);
@@ -63,6 +63,51 @@ await dialogBox.ShowAsync("Oh, the room is empty, but I thought I heard a noise.
 await MovePlayerTo(300, 80);
 await dialogBox.ShowAsync("No one is here either. Am I hearing things?");
 ```
+
+### Multiple Pages Using ShowAsync
+
+The DialogBox control provides a few approaches for showing multiple pages. As shown above, the Show method can take an array of `string`s. Alternatively, the `ShowAsync` method can be used to show one page at a time.
+
+```csharp
+private async void ShowMultiplePages()
+{
+    var dialogBox = Forms.DialogBoxInstance;
+
+    await dialogBox.ShowAsync("This is the first page of dialog.");
+    await dialogBox.ShowAsync("This is a second page.");
+    await dialogBox.ShowAsync("And a third page.");
+    await dialogBox.ShowAsync("Finally a fourth page.");
+}
+```
+
+This approach is useful if your DialogBox implementation has additional properties for each page of  dialog. For example, a DialogBox can be modified in Gum to have a Text instance displaying the name of the person speaking.
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>DialogBox with SpeakerTextInstance in Gum</p></figcaption></figure>
+
+Since the Show method exists on the standard DialogBox, it does not have a way to specify the speaker. We can access the visual on the DialogBox to modify the SpeakerTextInstance directly through the Visual property.
+
+```csharp
+var dialogBox = Forms.DialogBoxInstance;
+var dialogBoxVisual = dialogBox.Visual as DialogBoxRuntime;
+
+dialogBoxVisual.SpeakerTextInstance.Text = "Captain";
+await dialogBox.ShowAsync("Which way should we go?");
+
+dialogBoxVisual.SpeakerTextInstance.Text = "Soldier";
+await dialogBox.ShowAsync("...");
+
+dialogBoxVisual.SpeakerTextInstance.Text = "Captain";
+await dialogBox.ShowAsync("I know you are afraid to speak up, but don't worry! " +
+    "We're a team, we need to work together to get through this.");
+
+dialogBoxVisual.SpeakerTextInstance.Text = "Soldier";
+await dialogBox.ShowAsync("Well...it might be best to follow the river.");
+
+```
+
+<figure><img src="../../../../.gitbook/assets/17_05 57 03.gif" alt=""><figcaption><p>Dialog box with speaker</p></figcaption></figure>
+
+Note that to access the SpeakerTextInstance, the Visual must be used, which is a reference to the Gum object. The `dialogBox` is an instance of the standard `DialogBox` forms object, so it ony provides methods and properties common to every `DialogBox`. For more information about Forms vs Gum objects, see the [Forms vs Gum](../../../../tutorials/flatredball-forms/getting-started/forms-and-gum-objects.md) in Code Tutorial.
 
 ### DialogBox Input
 
@@ -97,7 +142,7 @@ The Keyboard's IInputDevice implementation is used for confirm and cancel action
 
 Note that the keyboard actions will only apply if the DialogBox has focus. For example, the following code shows how to give a DialogBox focus:
 
-```
+```csharp
 var dialogBox = Forms.DialogBoxInstance;
 dialogBox.IsFocused = true;
 dialogBox.Show("Press space or ESC to perform confirm or cancel actions, respectively");
@@ -107,7 +152,7 @@ dialogBox.Show("Press space or ESC to perform confirm or cancel actions, respect
 
 Xbox360GamePads can be used to advance dialog. A DialogBox must have focus for the Xbox360GamePads to advance dialog, just like the Keyboard. Furthermore, the desired Xbox360GamePads must be added to the GuiManager's GamePadsForUiControl as shown in the following code:
 
-```
+```csharp
 GuiManager.GamePadsForUiControl.Add(InputManager.Xbox360GamePads[0]);
 ```
 
@@ -121,7 +166,7 @@ To customize advance behavior, the AdvancePageInputPredicate delegate can be use
 
 The following code shows how to advance the page on a secondary click. Note that this code does not perform any additional logic, such as whether the cursor is over the DialogBox. This means that right-clicking anywhere on the screen advances the dialog.
 
-```
+```csharp
 void CustomInitialize()
 {
     Forms.DialogBoxInstance.AdvancePageInputPredicate = AdvanceOnSecondaryClick;
