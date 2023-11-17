@@ -1,4 +1,4 @@
-# drag
+# Drag
 
 ### Introduction
 
@@ -12,9 +12,11 @@ Velocity.Z -= Velocity.Z * Drag * TimeManager.SecondDifference;
 
 Drag is independently applied to each component of velocity.
 
+Drag is typically used to slow objects down over time. A non-zero Drag value is often used on objects which are also affected by acceleration. Examples include Drag slowing down a boat that is moving through water and Drag slowing down an object so that it reaches _terminal velocity._
+
 ### Drag Example
 
-Drag is a linear approximation of deceleration which is tied to absolute velocity. It can be used to create terminal velocities (maximum velocities) when objects are moved by acceleration. The following code shows the effect of Drag on three [Sprites](../../../../frb/docs/index.php).
+Drag is a linear approximation of deceleration which is tied to absolute velocity. It can be used to create terminal velocities (maximum velocities) when objects are moved by acceleration. The following code shows the effect of Drag on three [Sprites](../../../frb/docs/index.php).
 
 ```
 Sprite sprite1 = SpriteManager.AddSprite("redball.bmp");
@@ -32,7 +34,7 @@ sprite3.Drag = 1;
 sprite3.Y = -3;
 ```
 
-![3SpritesWithDrag.png](../../../../media/migrated_media-3SpritesWithDrag.png) Managed PositionedObjects such as [Sprites](../../../../frb/docs/index.php) automatically have their Drag applied every frame.
+![3SpritesWithDrag.png](../../../media/migrated\_media-3SpritesWithDrag.png) Managed PositionedObjects such as [Sprites](../../../frb/docs/index.php) automatically have their Drag applied every frame.
 
 ### When Is Drag Useful?
 
@@ -54,7 +56,7 @@ Equilibrium is reached when acceleration and drag apply equal forces. Keep in mi
 EqulibriumVelocity = Acceleration / Drag;
 ```
 
-&#x20; This formula is easiest to calculate when Drag is 1. If Drag is 1, that means that terminal velocity will be reached when Velocity reaches Acceleration. If Drag is 2, then terminal velocity will be reached when Velocity is half of acceleration. This makes sense because higher Drag means that top speed will be reduced.
+This formula is easiest to calculate when Drag is 1. If Drag is 1, that means that terminal velocity will be reached when Velocity reaches Acceleration. If Drag is 2, then terminal velocity will be reached when Velocity is half of acceleration. This makes sense because higher Drag means that top speed will be reduced.
 
 #### Distance to Stop
 
