@@ -31,7 +31,7 @@ CustomInitialize should not include any code that depends on the current screen.
 
 Using the example of initializing enemy logic, an Enemy entity may have the following code for initialization:
 
-```
+```csharp
 private void CustomInitialize()
 {
   // do any initialization here which does not depend on the GameScreen or any
@@ -46,7 +46,7 @@ public void InitializeAi(PositionedObjectList<Player> players)
 
 In this case, InitializeAi would be called by the GameScreen, as shown in the following example code:
 
-```
+```csharp
 // assuming that newEnemyPosition is a valid Vector3:
 var enemy = Factories.EnemyFactory.CreateNew(newEnemyPosition);
 // `this` refers to the GameScreen, so pass the GameScreen's PlayerList:
@@ -55,26 +55,41 @@ enemy.InitializeAi(this.PlayerList);
 
 ### CustomInitialize and AddToManagers
 
-The CustomInitialize method will only be called when an Entity instance is added to managers. For example consider the following code:
+The CustomInitialize method will only be called when an Entity instance is added to managers.&#x20;
 
+The most common method of creating entities is to use a factory. For example, creating an Enemy entity with the EnemyFactory will result in the newly-created instance being added to managers and having CustomInitialize called:
+
+```csharp
+//This entity will have its CustomInitialize called:
+var enemy = Factories.EnemyFactory.CreateNew();
 ```
+
+The additon of managers can be controlled by calling an Entity's constructor. Of course, doing so may result in the entity being created but not being added to the proper lists. If you are manually creating entities, make sure that you add them to the appropriate lists (such as the GameScreen lists).
+
+```csharp
 // This assumes that the game has an Entity called Enemy:
 
 // enemy1 will have CustomInitialize called
-Enemy enemy1 = new Enemy();
+var enemy1 = new Enemy();
 
 bool addToManagers = false;
 // enemy2 will not have CustomInitialize called since it is
 // not being added to managers:
-Enemy enemy2 = new Enemy(ContentManagerName, addToManagers);
+var enemy2 = new Enemy(ContentManagerName, addToManagers);
 
-// enemy will not have CustomInitialize called since it is
+// enemy3 will not have CustomInitialize called since it is
 // not being added to managers (yet):
-Enemy enemy3 = new Enemy(ContentManagerName, addToManagers);
+var enemy3 = new Enemy(ContentManagerName, addToManagers);
 // ...but now enemy3 will have CustomInitialize called
 enemy3.AddToManagers(null);
 ```
 
 ### CustomInitialize and Inheritance
 
-Entities and Screens which have base types (inheritance) have two or more CustomInitialize functions depending on the inheritance depth. For example, if a screen Level1 inherits from GameScreen, each class (Level1 and GameScreen) has its own CustomInitialize method. Both are called by generated code - a base.CustomInitialize call is not needed. CustomInitialize is called on the base class first, then to more-derived. Using the example above, GameScreen.CustomInitialize is called first, then Level1.CustomInitialize.
+Entities and Screens which have base types (inheritance) have two or more CustomInitialize functions depending on the inheritance depth. For example, if an entity Skeleton inherits from Enemy, each class (Skeleton and Enemy) has its own CustomInitialize method. Both are called by generated code - an explicit `base.CustomInitialize();` call is not needed. CustomInitialize is called on the base class first, then to more-derived. Using the example above, Enemy.CustomInitialize is called first, then Skeleton.CustomInitialize.
+
+```csharp
+// Assuming that Skeleton derives from Enemy, then 
+// CustomInitialize in both Enemy and Skeleton.cs get called:
+var skeleton = Factories.SkeletonFactory.CreateNew();
+```
