@@ -4,6 +4,10 @@
 
 This walk-through creates two screens. The first is a screen called GameScreen which defines what our game has in every level. The second is a screen called Level1 which has files and objects for our first level. GameScreen will be a base class for Level1, and any additional levels will also use GameScreen as a base screen. At the end of this walk-through we will have a tile map rendering in a our game.
 
+### Wizard vs Manual Setup
+
+The New Project Wizard automatically creates a GameScreen and two Levels if you pick either the Platformer or Top Down project types. This is recommended as the starting point for most projects, and most documentation assumes this setup. Therefore, if you have used the project, you can skip this and move to the next tutorial. If you are interested in how to set this up _from scratch_, then you can continue reading.
+
 ### Adding GameScreen
 
 First we'll create a screen called GameScreen. Many FlatRedBall projects contain a GameScreen which typically contains the _main gameplay_ - as opposed to menus to set up the game. The GameScreen also contains any common objects such as lists of entities and game logic. Note that if you have used the Platformer or Top-Down wizard options, you will already have a GameScreen. To add a GameScreen:
@@ -23,9 +27,9 @@ Once you click OK you will have a GameScreen which includes Map and SolidCollisi
 
 ![](../../media/2021-02-img\_60313b3b433db.png)
 
-For now we'll leave our GameScreen empty, but we'll return later to add objects.&#x20;
+For now we'll leave our GameScreen empty, but we'll return later to add objects.
 
-### Alternative - Manually Creating Solid Collision&#x20;
+### Alternative - Manually Creating Solid Collision
 
 Above we automatically created the SolidCollision object through a check box. If you didn't check this option, or if you are interested in how to set this up manually, this section will walk you through the process. To manually create the SolidCollision object:
 
@@ -85,15 +89,18 @@ You should now have a Level1Map file in your Level1 screen.
 
 ![](../../media/2021-02-img\_6031408a58a00.png)
 
-###
+### Alternative - Creating TMX in Tiled
 
-\[frb\_toggle title="Alternative - Creating TMX in Tiled"] To create a tile map file in Tiled:
+To create a tile map file in Tiled:
 
 1. Open the Tiled program
 2. Select **File**->**New**->**New Map...**
 3. Set the **Tile layer format** to **Base64 (zlib compressed)**. Compressing the tile map will make the .tmx file smaller. We will need to change the type of compression used in a later step, since the new file window only lets us pick "zlib".
 4. Set the **Tile size** to a **Width** of **16px** and a **Height** of **16px**. Tile sizes are usually multiples of 2 (2, 4, 8, 16, 32). This guide uses a tile set with 16x16 tiles.
-5. Click **Save As...** ![](../../media/2018-04-img\_5ad9edb5c3a12.png)
+5.  Click **Save As...**\
+    &#x20;
+
+    <figure><img src="../../media/2018-04-img_5ad9edb5c3a12.png" alt=""><figcaption></figcaption></figure>
 6.  Navigate to the Level1's Content folder. You can find this by right-clicking on the GameScreen's **Files** item in Glue and selecting **View in explorer**
 
     ![](../../media/2019-07-img\_5d1ca326b595f.png)
@@ -115,7 +122,7 @@ Now that the format has been changed, save the file again. Finally the file can 
 
 <figure><img src="../../media/2016-08-2019-07-03_06-48-05.gif" alt=""><figcaption></figcaption></figure>
 
-The game now references the .tmx file, and when executed the game loads the empty .tmx file. \[/frb\_toggle]
+The game now references the .tmx file, and when executed the game loads the empty .tmx file.&#x20;
 
 ### Editing the TMX File
 
@@ -188,7 +195,11 @@ Tilesets define the appearance of a collection of tiles along with properties wh
 2. Right-click on the **Files** folder under GameScreen
 3. Select **View in explorer**
 
-The content folder for GameScreen will be open (and empty). ![](../../media/2018-09-img\_5b991adb938e1.png) Save the tileset (shown above) to the GameScreen content folder (which we just opened).
+The content folder for GameScreen will be open (and empty). &#x20;
+
+<figure><img src="../../media/2018-09-img_5b991adb938e1.png" alt=""><figcaption></figcaption></figure>
+
+Save the tileset (shown above) to the GameScreen content folder (which we just opened).
 
 <figure><img src="../../media/2016-08-2018-09-12_07-57-59.gif" alt=""><figcaption></figcaption></figure>
 

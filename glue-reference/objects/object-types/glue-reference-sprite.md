@@ -23,7 +23,7 @@ If you know that your entity needs a Sprite, you can check the Sprite option in 
 
 ### Adding a Sprite
 
-Sprites can be added to Glue screens or entities, although most games don't include Sprites directly in screens. To add a Sprite to an entity:
+Sprites can be added to FlatRedBall screens or entities, although most games don't include Sprites directly in screens. To add a Sprite to an entity:
 
 1. Create or select an existing entity or screen
 2. Right-click on the **Objects** node
@@ -32,7 +32,7 @@ Sprites can be added to Glue screens or entities, although most games don't incl
 5. Select the **Sprite** type
 6. Click **OK**
 
-<figure><img src="../../../media/2016-01-2019-05-02_06-51-56.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/18_07 49 33.gif" alt=""><figcaption></figcaption></figure>
 
 ### Sprite Texture
 
@@ -40,12 +40,10 @@ Sprites usually display textures, which are created from image files such as .pn
 
 1. Create a Sprite in a screen or entity as shown above
 2. Find a .png which you would like to use
-3. Drag+drop the .png file onto your screen or entity's **Files** folder in Glue
+3. Drag+drop the .png file onto your screen or entity's **Files** folder in FlatRedBall
 4. Select the Sprite in the same screen or entity with the newly-added file
 5. Change its **Texture** property to the newly-added file
 
-<figure><img src="../../../media/2016-01-2019-05-02_06-56-48-1.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/18_07 51 43.gif" alt=""><figcaption></figcaption></figure>
 
-For more information about working with textures, see the [Texture2D page](../../files/texture2d.md). The Sprite will now display the texture in the preview window and in game.
-
-![](../../../media/2019-05-img\_5ccae9f711f3f.png)
+For more information about working with textures, see the [Texture2D page](../../files/texture2d.md).&#x20;
