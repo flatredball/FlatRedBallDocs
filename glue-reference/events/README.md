@@ -9,6 +9,21 @@ The FRB Editor supports the addition of events to screens and entities. The most
 
 Other objects such as IWindows can also expose events, but these are less common.
 
+The only type of event which requires using the FlatRedBall Editor is variable events. All other events can be performed purely in code. CollisionRelationship events are often defined in the FlatRedBall Editor since doing so provides a single place to see all responses to a collision.
+
+### Variable Example
+
+Variable events allow for custom code to react to a variable being assigned. To add an event for a variable:
+
+1. Create a variable on your entity
+2. Drag+drop the variable onto the Events folder
+
+<figure><img src="../../.gitbook/assets/21_09 36 56.gif" alt=""><figcaption><p>Drag+drop event</p></figcaption></figure>
+
+This creates an event in the Event.cs file for the container. For example, if the event is created in the Player entity, then the event handler is added to Player.Event.cs.
+
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Event Handler in Visual Studio</p></figcaption></figure>
+
 ### IWindow Example
 
 Note that IWindows are not used as often in modern FlatRedBall development due to the introduction of FlatRedBall.Forms. However, the following example does show how events can be used for custom implementations of IWindow. The events available to a screen, entity, or object depend on the respective container's properties. For example, if an entity implements IWindow (for more information, see the [Implements IWindow page](../../documentation/tools/glue-reference/entities/glue-reference-implements-iwindow.md)), the entity will have additional events available.
