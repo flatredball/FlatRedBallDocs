@@ -1,50 +1,41 @@
-# circle
+# Circle
 
 ### Introduction
 
-The Circle represents a PositionedObject which can be used to draw circles or conduct circular collision which is very efficient. Circles are created and removed through the [ShapeManager](../../../../../../frb/docs/index.php).
-
-### Creating a Circle in Glue
-
-Glue supports the creation of Circles in Screens and Entities. To create a Circle in Glue:
-
-1. Expand a Screen or Entity
-2. Right-click on the Objects folder
-3. Select **Add Object**
-4. Select the **Circle** type
-5. Click **OK**
+The Circle represents a PositionedObject which can be used to draw circles or conduct efficient circular collision. Circles are created and removed through the [ShapeManager](../../../../../frb/docs/index.php).
 
 ### Simple Circle Example
 
-The following example creates two circles and controls one of them with the [Keyboard](../../../../../../frb/docs/index.php).
+The following example creates two circles and controls one of them with the [Keyboard](../../../../../frb/docs/index.php).
 
 Add the following using statement
 
-```
+```csharp
 using FlatRedBall.Math.Geometry;
 using FlatRedBall.Input;
 ```
 
 At Class Scope:
 
-```
+```csharp
 Circle controlledCircle;
 Circle idleCircle;
 ```
 
 In Initialize:
 
-```
- controlledCircle = ShapeManager.AddCircle();
- controlledCircle.X = 5;
+```csharp
+controlledCircle = ShapeManager.AddCircle();
+controlledCircle.Radius = 8;
+controlledCircle.X = 64;
 
- idleCircle = ShapeManager.AddCircle();
- idleCircle.Radius = 3;
+idleCircle = ShapeManager.AddCircle();
+idleCircle.Radius = 24;
 ```
 
 In Update:
 
-```
+```csharp
 InputManager.Keyboard.ControlPositionedObject(controlledCircle);
 if (controlledCircle.CollideAgainst(idleCircle))
 {
@@ -56,18 +47,4 @@ else
 }
 ```
 
-![TwoCirclesOverlapping.png](../../../../../../media/migrated_media-TwoCirclesOverlapping.png)
-
-### Circle Members
-
-* [FlatRedBall.Math.Geometry.Circle.CollideAgainst](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Circle.CollideAgainstBounce](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Circle.CollideAgainstMove](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Circle.IsPointInside](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Circle.LastCollisionTangent](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Circle.LastMoveCollisionReposition](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Circle.ProjectParentVelocityOnLastMoveCollisionTangent](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Circle.Visible](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Circle.Z](../../../../../../frb/docs/index.php)
-
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../../frb/forum.md) for a rapid response.
+![TwoCirclesOverlapping.png](../../../../../media/migrated\_media-TwoCirclesOverlapping.png)
