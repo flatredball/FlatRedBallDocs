@@ -6,7 +6,7 @@
 
 [https://visualstudio.microsoft.com/vs/community/](https://visualstudio.microsoft.com/vs/community/) Although it is possible to make games without Visual Studio or Rider, doing so requires advanced knowledge of MSBuild. We recommend downloading and installing Visual Studio Community which is free.
 
-Note - if you plan on using a different IDE such as Rider, then you will need to install the .NET 6 SDK manually. At a minimum you will need to install **.NET desktop development**.
+At a minimum you will need to install **.NET desktop development**.
 
 ![](media/2021-08-img\_610caaac075b7.png)
 

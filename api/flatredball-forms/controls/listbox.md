@@ -1,12 +1,12 @@
-# listbox
+# ListBox
 
 ### Introduction
 
-The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected. 
+The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected.
 
-<figure><img src="../../../media/2017-12-2017-12-13_17-56-55.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2017-12-2017-12-13_17-56-55.gif" alt=""><figcaption><p>ListBox Example</p></figcaption></figure>
 
- ListBox inherits from [ScrollViewer](scrollviewer.md).
+ListBox inherits from [ScrollViewer](scrollviewer.md).
 
 ### Layout Requirements
 
@@ -16,13 +16,21 @@ The ListBox control requires:
 * An object named **InnerPanelInstance** of any type (typically a Container)
 * An object named **ClipContainerInstance** of any type (typically a Container with **ClipsChildren** set to true)
 
-[![](../../../media/2017-12-img_5a465ac0d252b.png)](../../../media/2017-12-img_5a465ac0d252b.png) The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [http://flatredball.com/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/](../../../documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md)
+&#x20;
+
+<figure><img src="../../../media/2017-12-img_5a465ac0d252b.png" alt=""><figcaption></figcaption></figure>
+
+The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [http://flatredball.com/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/](../../../documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md)
 
 ### InnerPanelInstance and Children Layout
 
-The ListBox control typically handles the creation and positioning of ListBoxItem instances. The InnerPanelInstance in the list box Gum component will typically use a **Children Layout** value of **TopToBottomStack.** [![](../../../media/2017-12-img_5a46645375a35.png)](../../../media/2017-12-img_5a46645375a35.png) Alternatively the InnerPanelInstance can use a **Children Layout** value of **LeftToWriteStack** with the **Wraps Children** value set to true.
+The ListBox control typically handles the creation and positioning of ListBoxItem instances. The InnerPanelInstance in the list box Gum component will typically use a **Children Layout** value of **TopToBottomStack.**&#x20;
 
-![](../../../media/2017-12-img_5a486c2d92c54.png)
+<figure><img src="../../../media/2017-12-img_5a46645375a35.png" alt=""><figcaption></figcaption></figure>
+
+Alternatively the InnerPanelInstance can use a **Children Layout** value of **LeftToWriteStack** with the **Wraps Children** value set to true.
+
+![](../../../media/2017-12-img\_5a486c2d92c54.png)
 
 ### Items
 
@@ -30,9 +38,9 @@ Items represents the data that the ListBox is managing. Items can either contain
 
 ### Items.Add with ListBoxItemGumType
 
-Any object type can be added to a ListBox.  The following code shows how to add strings to the Items property, resulting in the list box displaying a single entry for each item.
+Any object type can be added to a ListBox. The following code shows how to add strings to the Items property, resulting in the list box displaying a single entry for each item.
 
-```lang:c#
+```csharp
 var listBox = TutorialScreenGum
     .GetGraphicalUiElementByName("ListBoxInstance")
     .FormsControlAsObject as ListBox;
@@ -55,7 +63,7 @@ By default Glue will generate code for a default ListBoxItemGumType, so the line
 
 ListBoxItem instances can be manually instantiated and added to a list box, as opposed to relying on the default or explicitly specified ListBoxItemGumType. The following code shows how to manually create and add ListBoxItems. Note that the same Items list is used when adding ListBoxItem instances.
 
-```lang:c#
+```csharp
 var listBox = TutorialScreenGum
     .GetGraphicalUiElementByName("ListBoxInstance")
     .FormsControlAsObject as ListBox;
@@ -86,7 +94,7 @@ listBox.Items.Add(listBoxItem3);
 
 A single ListBox can contain multiple types of ListBoxItems. Multiple types can be used by explicitly instantiating ListBoxItems using different Gum runtime types, or by setting the ListBoxItem property multiple times. The following code shows how to instantiate ListBoxItems using different Gum runtimes:
 
-```lang:c#
+```csharp
 var listBox = TutorialScreenGum
     .GetGraphicalUiElementByName("ListBoxInstance")
     .FormsControlAsObject as ListBox;
@@ -105,9 +113,13 @@ listBoxItem3.UpdateToObject("Tank A");
 listBox.Items.Add(listBoxItem3);
 ```
 
-![](../../../media/2017-12-img_5a31e49caa5d6.png) Icons in screenshot obtained from [http://game-icons.net/](http://game-icons.net/) . The same could be achieved by setting the ListBoxItemGumType before calling AddItem, as shown in the following code:
+&#x20;
 
-```lang:c#
+<figure><img src="../../../media/2017-12-img_5a31e49caa5d6.png" alt=""><figcaption></figcaption></figure>
+
+Icons in screenshot obtained from [http://game-icons.net/](http://game-icons.net/) . The same could be achieved by setting the ListBoxItemGumType before calling AddItem, as shown in the following code:
+
+```csharp
 var listBox = TutorialScreenGum
     .GetGraphicalUiElementByName("ListBoxInstance")
     .FormsControlAsObject as ListBox;
@@ -130,7 +142,7 @@ The ListBox provides a number of ways to customize a ListBox.
 
 By default each instance added to the ListBox's Items (either directly or through binding) will have its ToString method called. If strings are added to Items, then the string's contents is displayed automatically. If a non-primitive type is added, then its ToString will (by default) display the type of the object which is usually not desirable.
 
-![](../../../media/2022-09-img_63305ee979db7.png)
+![](../../../media/2022-09-img\_63305ee979db7.png)
 
 If the class is a ViewModel that is custom-made for UI, then its ToString can be modified as shown in the following code:
 
@@ -146,7 +158,7 @@ public class SBWaveDefinitionViewModel : ViewModel
 }
 ```
 
-![](../../../media/2022-09-img_63305f68284f8.png)
+![](../../../media/2022-09-img\_63305f68284f8.png)
 
 #### ListBoxItemFormsType
 
@@ -160,7 +172,7 @@ The selected item can be controlled using a number of properties.
 
 The SelectedItem property gets and sets the selected item. Setting this value will select the first matching instance found in the Items property. The following code example adds three strings, then selects the second one:
 
-```lang:c#
+```csharp
 listBox.Items.Add("a");
 listBox.Items.Add("b");
 listBox.Items.Add("c");
@@ -170,13 +182,13 @@ listBox.SelectedItem = "b";
 
 Items can be deselected by setting the SelectedItem to null;
 
-```lang:c#
+```csharp
 listBox.SelectedItem = null;
 ```
 
 SelectedIndex The SelectedIndex property gets and sets the index of the currently selected item. A value of -1 indicates no selection. The following code example shows how to deselect the selected item in a ListBox:
 
-```lang:c#
+```csharp
 listBox.SelectedIndex = -1;
 ```
 
@@ -184,7 +196,7 @@ listBox.SelectedIndex = -1;
 
 The SelectionChanged event is raised whenever a selection changes due to a mouse click or code change of the SelectedItem or SelectedIndex. The event provides a list of newly-selected items and deselected items. Note that at the time of this writing only a single item can be selected at a time, but future versions of FlatRedBall.Forms may add multi-selection support. The following code example shows how to react to the selection changing on a ListBox:
 
-```lang:c#
+```csharp
 void CustomInitialize()
 {
     var listBox = TutorialScreenGum
@@ -209,13 +221,11 @@ private void HandleSelectionChanged(object sender, SelectionChangedEventArgs arg
 }
 ```
 
-
-
 <figure><img src="../../../media/2017-12-2017-12-20_21-07-56.gif" alt=""><figcaption></figcaption></figure>
 
- The event handling the selection changing can also use the SelectedItem  property, as shown in the following code:
+The event handling the selection changing can also use the SelectedItem property, as shown in the following code:
 
-```lang:c#
+```csharp
 void CustomInitialize()
 {
     var listBox = TutorialScreenGum
@@ -236,5 +246,3 @@ private void HandleSelectionChanged(object sender, SelectionChangedEventArgs arg
 
 }
 ```
-
-&#x20;
