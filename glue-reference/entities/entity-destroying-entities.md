@@ -1,4 +1,4 @@
-# entity-destroying-entities
+# Destroying Entities
 
 ### Introduction
 
@@ -15,7 +15,7 @@ When an Entity's Destroy method is called, the following happens:
 * If the entity is a collidable entity, its collision will be cleared so future collision calls will return false
 * The entity's CustomDestroy is called, enabling custom code to perform additional object removal.
 
-Note that when writing code in CustomDestroy, the entity **should not unload content**. The content manager used to load content for the Entity should be provided by the [Screen](../../../../frb/docs/index.php) that contains the Entity. [Screens](../../../../frb/docs/index.php) automatically unload their content managers, and this will clean up content loaded by the Entity.
+Note that when writing code in CustomDestroy, the entity **should not unload content**. The content manager used to load content for the Entity should be provided by the [Screen](../../frb/docs/index.php) that contains the Entity. [Screens](../../frb/docs/index.php) automatically unload their content managers, and this will clean up content loaded by the Entity.
 
 ### When is Destroy called?
 
@@ -31,11 +31,11 @@ Custom code may need to call Destroy. Usually custom code only needs to destroy 
 
 The most common situation where Destroy is called is in collision handling events. For example, consider a game where the player can shoot bullets, and bullets can hit walls (typically represented by a SolidCollision TileShapeCollection). The collision relationship may be defined as shown in the following image. Notice that the collision relationship has an event:
 
-![](../../../../media/2021-11-img_61814c88b1382.png)
+![](../../media/2021-11-img\_61814c88b1382.png)
 
 The collision relationship event handler might look like as shown in the following code snippet:
 
-```
+```csharp
 void OnBulletListVsSolidCollisionCollisionOccurred(
     Entities.Bullet bullet,
     FlatRedBall.TileCollisions.TileShapeCollection tileShapeCollection)
@@ -48,14 +48,14 @@ void OnBulletListVsSolidCollisionCollisionOccurred(
 
 If you create a game with Entities, then you will be instantiating and storing these Entities somewhere in your game. For example, you may have a Character and Enemy entity defined as follows:
 
-```
+```csharp
 Character mCharacter;
 PositionedObjectList<Enemy> mEnemies;
 ```
 
 In which case you might instantiate them as follows:
 
-```
+```csharp
 mCharacter = new Character(ContentManagerName);
 mEnemies = new PositionedObjectList<Enemy>();
 
@@ -63,26 +63,26 @@ mEnemies = new PositionedObjectList<Enemy>();
 mEnemies.Add(new Enemy(ContentManagerName));
 ```
 
-The fist thing to note is that the code above uses the [PositionedObjectList](../../../../frb/docs/index.php) class. This is **very important**. Let's investigate why. The idea behind using Entities is that you should be able able to destroy your Entity completely with one call - a call to Destroy. This means that the Entity should remove itself from the FlatRedBall Engine **as well as** from your game. Well, the only way that the Entity can remove itself from your game is if it knows which objects to remove itself from in your game. This means that you **must use a class that supports two-way membership**. The [PositionedObjectList](../../../../frb/docs/index.php) (or any class inheriting from it) supports two-way relationships. If you use the PositionedObjectList class, then any time you call Destroy on an Enemy, it will be automatically removed from your list - assuming of course that your Enemy's Destroy method calls
+The fist thing to note is that the code above uses the [PositionedObjectList](../../frb/docs/index.php) class. This is **very important**. Let's investigate why. The idea behind using Entities is that you should be able able to destroy your Entity completely with one call - a call to Destroy. This means that the Entity should remove itself from the FlatRedBall Engine **as well as** from your game. Well, the only way that the Entity can remove itself from your game is if it knows which objects to remove itself from in your game. This means that you **must use a class that supports two-way membership**. The [PositionedObjectList](../../frb/docs/index.php) (or any class inheriting from it) supports two-way relationships. If you use the PositionedObjectList class, then any time you call Destroy on an Enemy, it will be automatically removed from your list - assuming of course that your Enemy's Destroy method calls
 
-```
+```csharp
 SpriteManager.RemovePositionedObject(this);
 ```
 
-**For Glue users:** As mentioned above, an Entity's generated code will automatically remove the Entity from the [SpriteManager](../../../../frb/docs/index.php). All you have to do is create a [PositionedObjectList](../../../../frb/docs/index.php) in your game to store the Entities. Glue also supports creating PositionedObjectLists so use that type in Glue if you plan on creating lists of Entities.
+**For Glue users:** As mentioned above, an Entity's generated code will automatically remove the Entity from the [SpriteManager](../../frb/docs/index.php). All you have to do is create a [PositionedObjectList](../../frb/docs/index.php) in your game to store the Entities. Glue also supports creating PositionedObjectLists so use that type in Glue if you plan on creating lists of Entities.
 
 ### Destroy and membership in your game
 
-The two-way relationship between Entities (and all other [PositionedObjects](../../../../frb/docs/index.php)) and the [PositionedObjectList](../../../../frb/docs/index.php) class is what enables the Destroy method to remove an Entity from the engine. In fact, the [PositionedObjectList](../../../../frb/docs/index.php) (and any class which inherits from [PositionedObjectList](../../../../frb/docs/index.php)) is the **only** reference that Entities know about. If you store a reference to an individual Entity, the reference will still be valid after you call Destroy unless your code handles this case. Let's look at some simple examples. In our first example we'll create some code where the user is keeping track of an individual player and enemy: At class scope:
+The two-way relationship between Entities (and all other [PositionedObjects](../../frb/docs/index.php)) and the [PositionedObjectList](../../frb/docs/index.php) class is what enables the Destroy method to remove an Entity from the engine. In fact, the [PositionedObjectList](../../frb/docs/index.php) (and any class which inherits from [PositionedObjectList](../../frb/docs/index.php)) is the **only** reference that Entities know about. If you store a reference to an individual Entity, the reference will still be valid after you call Destroy unless your code handles this case. Let's look at some simple examples. In our first example we'll create some code where the user is keeping track of an individual player and enemy: At class scope:
 
-```
+```csharp
 Player mPlayer = new Player();
 Entity mEnemy= new Enemy();
 ```
 
 This piece of code checks for the player attacking the enemy:
 
-```
+```csharp
 if(mPlayer.AttachCollision.CollideAgainst(mEnemy.Collision)
 {
     const float attackDamage = 10;
@@ -97,7 +97,7 @@ if(mPlayer.AttachCollision.CollideAgainst(mEnemy.Collision)
 
 This piece of code checks for the player touching and being hurt by the enemy:
 
-```
+```csharp
 if(mPlayer.Collision.CollideAgainst(mEnemy.Collision)
 {
     const float attackDamage = 5;
@@ -116,9 +116,7 @@ The code above has a logic bug which will cause the game to behave improperly. W
 1. (Preferred solution) Create a PositionedObjectList\<Enemy> and add your Enemy to that list. Then replace all code which checks against mEnemy to instead loop through your PositionedObjectList\<Enemy> and test collision. This should be done **for all logic including player attacking enemy and enemy attacking player**. When your Enemy is destroyed, it will be removed from the PositionedObjectList\<Enemy> and your game will function properly.
 2. (Necessary if you need to keep track of specific Entities) Check your mEnemy's Health before performing collisions. If its health is less than or equal to 0, then it is dead and you shouldn't perform collisions. For example, your collision check should look like:
 
-&#x20;
-
-```
+```csharp
 if(mEnemy.Health > 0 && mPlayer.Collision.CollideAgainst(mEnemy.Collision)
 ...
 ```
