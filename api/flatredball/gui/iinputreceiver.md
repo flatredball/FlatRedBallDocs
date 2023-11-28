@@ -1,8 +1,21 @@
-# iinputreceiver
+# IInputReceiver
 
 ### Introduction
 
-The IInputReceiver interface provides methods and properties common to all UI elements which can receive [Keyboard](../../../../frb/docs/index.php) input. IInputReceiver can be implemented in custom classes (such as Glue Entities) to enable more advanced input focus logic and to prevent multiple objects from receiving input. IInputReceiver is also used in the old FlatRedBall UI which is implemented in many FRB tools.
+The IInputReceiver interface provides methods and properties common to all UI elements which can receive input from devices such as the [Keyboard](../input/keyboard/) or [Xbox360GamePads](../input/xbox360gamepad/). Any object which implements the IInputReceiver can be assigned to the InputManager's InputReceiver. Only one instance can be assigned as the InputReceiver. If assigned, this instance has a number of methods called upon being assigned as well as in response to input. Its OnFocusUpdate is also called every frame automatically.
+
+### OnFocusUpdate and FlatRedBall.Forms
+
+FlatRedBall.Forms elements typically receive input in one of two ways:
+
+1. In response to Cursor clicks. These events are ultimately raised by the underlying Gum objects (GraphicalUiElement)
+2. In response to changes in a keyboard state which is polled every-frame, such as key or button presses.
+
+Forms elements which need to poll input every frame should do so by implementing IInputReceiver and checking input in the OnFocusUpdate.
+
+For an example of implementation, see the ListBox implementation:
+
+[https://github.com/vchelaru/FlatRedBall/blob/NetStandard/Engines/Forms/FlatRedBall.Forms/FlatRedBall.Forms.Shared/Controls/ListBox.cs](https://github.com/vchelaru/FlatRedBall/blob/NetStandard/Engines/Forms/FlatRedBall.Forms/FlatRedBall.Forms.Shared/Controls/ListBox.cs)
 
 ### Preventing multiple objects from receiving input
 
@@ -33,42 +46,7 @@ public void ReceiveInput()
 }
 ```
 
-This method is especially effective because ReceiveInput is called prior to the game's activity. For more information, see [the ReceiveInput page](../../../../frb/docs/index.php).
-
-### FlatRedBall GUI Classes Implementing IInputReceiver
-
-The following lists the classes which implement the IInputReceiver interface. Note that these are all classes which are part of the FRB GUI which only functions in FRB XNA 3.1, thus they are discouraged for use:
-
-* [CollapseListBox](../../../../frb/docs/index.php) and [ListBox](../../../../frb/docs/index.php)
-* [MessageBox](../../../../frb/docs/index.php)
-* [OkCancelWindow](../../../../frb/docs/index.php)
-* [TextBox](../../../../frb/docs/index.php)
-* [UpDown](../../../../frb/docs/index.php)
-
-### Gaining Focus
-
-IInputReceivers automatically gain focus when the user clicks on them. They can also be given focus in code. The following code creates a TextBox that automatically has focus:
-
-Add the following using statements:
-
-```
-using FlatRedBall.Gui;
-using FlatRedBall.Input;
-```
-
-Add the following to Initialize after initializing FlatRedBall:
-
-```
-IsMouseVisible = true;
-GuiManager.IsUIEnabled = true;
-
-TextBox textBox = new TextBox(GuiManager.Cursor);
-GuiManager.AddWindow(textBox);
-textBox.ScaleX = 5;
-InputManager.ReceivingInput = textBox;
-```
-
-![IInputReceiverFocus.png](../../../../media/migrated_media-IInputReceiverFocus.png)
+This method is especially effective because ReceiveInput is called prior to the game's activity. For more information, see [the ReceiveInput page](../../../frb/docs/index.php).
 
 ### TakingInput
 
@@ -78,9 +56,3 @@ IInputReceivers automatically receive input from the keyboard when they have foc
 // assuming the receiver is a valid receiver
 receiver.TakingInput = false; // Will not be able to take input from the keyboard
 ```
-
-### IInputReceiver Members
-
-* [FlatRedBall.Gui.IInputReceiver.ReceiveInput](../../../../frb/docs/index.php)
-
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.
