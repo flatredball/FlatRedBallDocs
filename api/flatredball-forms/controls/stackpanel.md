@@ -1,10 +1,10 @@
-# stackpanel
+# StackPanel
 
 ### Introduction
 
 The StackPanel control is a container which can be used to hold children elements which can be stacked either horizontally or vertically.
 
-![](../../../../media/2018-08-img_5b70b62069463.png)
+![](../../../media/2018-08-img\_5b70b62069463.png)
 
 ### Layout Requirements
 
@@ -14,7 +14,7 @@ Unlike other FlatRedBall.Forms controls, the StackPanel does not use a Gum runti
 
 The following code creates a StackLayout, sets it to be drawn (meaning its children will be drawn), then uses AddChild to add four buttons.
 
-```lang:c#
+```csharp
 var stackPanel = new StackPanel();
 stackPanel.Visual.AddToManagers();
 
@@ -24,11 +24,13 @@ stackPanel.AddChild(new Button());
 stackPanel.AddChild(new Button());
 ```
 
+Note that the above code creates Button instances using the Button constructor. In a normal project this would instantiate the Buttons using the default Gum visual object as specified on the [DefaultFormsComponents](frameworkelement/defaultformscomponents.md) static property.
+
 ### Orientation
 
 The Orientation property sets whether children stack horizontally or vertically. The default value is Orientation.Vertical. The following code shows how to change the orientation to Horizontal.
 
-```lang:c#
+```csharp
 var stackPanel = new StackPanel();
 stackPanel.Visual.AddToManagers();
 stackPanel.Orientation = Orientation.Horizontal;
@@ -37,6 +39,4 @@ stackPanel.AddChild(new Button());
 stackPanel.AddChild(new Button());
 ```
 
-![](../../../../media/2018-08-img_5b70b85ea9907.png)
-
-&#x20;   &#x20;
+![](../../../media/2018-08-img\_5b70b85ea9907.png)
