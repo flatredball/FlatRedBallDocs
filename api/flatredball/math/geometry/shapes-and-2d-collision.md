@@ -30,3 +30,6 @@ In most cases these methods are not called explicitly. Rather, these methods are
 2. To perform collision in custom code where no collision relationships exist. For example, in a code-only project, or in a test project which is not using the FlatRedBall editor for most of its setup.
 3. When modifying the FlatRedBall Engine, or when performing very high-performance logic.
 
+Collision methods can be performed between collision shapes of the same type, or of mixed type. The most efficient form of collision is Circle vs Circle and AxisAlignedRectangle vs AxisAlignedRectangle. Mixing types, such as Circle vs AxisAlignedRectangle, is a slower form of collision. Polygon collision is slower than Circle and AxisAlignedRectangle regardless of whether it is mixed or Polygon vs Polygon.
+
+Of course, even the slower collision methods tend to be fast enough for most real-world game development scenarios, especially when used in CollisionRelatoinships which are partitioned.&#x20;
