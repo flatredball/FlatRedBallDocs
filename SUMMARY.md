@@ -362,6 +362,7 @@
     * [Creating a New Screen](glue-reference/screen/glue-reference-screens-creating-a-new-screen.md)
     * [CustomDestroy](glue-reference/screen/flatredball-screens-screen-customdestroy.md)
     * [CustomInitialize](glue-reference/screen/custominitialize.md)
+    * [GameScreen](glue-reference/screen/gamescreen.md)
     * [IsActivityFinished](glue-reference/screen/flatredball-screens-isactivityfinished.md)
     * [IsLoadingScreen](glue-reference/screen/glue-reference-screens-isloadingscreen.md)
     * [LoadStaticContent](glue-reference/screen/glue-reference-screens-loadstaticcontent.md)
