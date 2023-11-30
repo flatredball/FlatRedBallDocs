@@ -1,22 +1,26 @@
-# camera
+# Camera
 
 ### Introduction
 
-The Camera encapsulates functionality to simplify and control the display of a FlatRedBall application to the user. The camera controls view position, rotation, and background color. If the Camera is 3D, it can also control, field of view, and viewable distance. By default the camera in FlatRedBall looks down the negative Z axis - that is negative Z points away from the camera. Increasing the Camera's Z moves it backwards while decreasing moves it forward. Of course, if the Camera is rotated, the forward and backward directions change. Most games can change camera properties through the [FlatRedBall Editor's Camera Window](../../../glue-reference/camera.md). Alternatively, the Camera can be modified in code.
+The Camera encapsulates functionality to simplify and control the display of a FlatRedBall application to the user. The camera controls view position, rotation, and background color. If the Camera is 3D, it can also control field of view, and viewable distance.&#x20;
+
+By default the camera in FlatRedBall looks down the negative Z axis. In other words negative Z points away from the camera. Increasing the Camera's Z moves it backwards while decreasing moves it forward. FlatRedBall uses a _right handed_ coordinate system.
+
+Of course, if the Camera is rotated, the forward and backward directions change. Most games can change camera properties through the [FlatRedBall Editor's Camera Window](../../../glue-reference/camera.md). Alternatively, the Camera can be modified in code.
 
 ### Accessing the Camera
 
-FlatRedBall projects automatically create a Camera which can be accessed by [Camera.Main](../../../frb/docs/index.php). The following code moves the Camera to X = 5:
+FlatRedBall projects automatically create a Camera which can be accessed by [Camera.Main](main.md). The following code moves the Camera to X = 5:
 
 ```
 Camera.Main.X = 5;
 ```
 
-For more information see the [Camera.Main](../../../frb/docs/index.php) page. In most cases you will never need to create your own Camera - this one is the default camera that all single-Camera games use.
+For more information see the [Camera.Main](main.md) page. In most cases you will never need to create your own Camera - this one is the default camera that all single-Camera games use.
 
 ### Controlling the Camera
 
-The camera inherits from the [PositionedObject](../../../frb/docs/index.php) class so it shares the same interface for positioning, rotation, and attachment. Camera movement is not noticeable without something visible in the scene to compare the movement against. The following code can be added to a Screen such as an empty Screen created in the FlatRedBall Editor: Add the following using statements:
+The camera inherits from the [PositionedObject](../positionedobject/) class so it shares the same interface for positioning, rotation, and attachment. Camera movement is not noticeable without something visible in the scene to compare the movement against. The following code can be added to a Screen such as an empty Screen created in the FlatRedBall Editor: Add the following using statements:
 
 ```
 using FlatRedBall.Input;
@@ -25,7 +29,7 @@ using Microsoft.Xna.Framework.Input;
 
 Replace CustomInitialize and CustomActivity with the following code:
 
-```
+```csharp
 void CustomInitialize()
 {
     // create a single Circle so we can see movement:
@@ -56,15 +60,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-
-
 <figure><img src="../../../media/2016-01-10_08-09-06.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 ### 2D Cameras and Pixels
 
-For information about 2D coordinates and how to create 2D scenes, see the [2D In FlatRedBall tutorial](../../../frb/docs/index.php). To convert between world and pixel coordinates, see the [World and Screen Coordinates page](../../../frb/docs/index.php#World_and_Screen_Coordinates).
+For information about 2D coordinates and how to create 2D scenes, see the [2D In FlatRedBall tutorial](../../../frb/docs/index.php). To convert between world and pixel coordinates, see the [World and Screen Coordinates page](../../../frb/docs/index.php#World\_and\_Screen\_Coordinates).
 
 ### Camera Edges
 
@@ -92,7 +92,7 @@ FlatRedBall supports multiple cameras for different viewports (split screen). Th
  SpriteManager.Cameras[1].Z = 5;
 ```
 
-![SplitScreen.png](../../../media/migrated_media-SplitScreen.png) For info on the [content manager argument](../../../frb/docs/index.php) see the [FlatRedBall Content Manager wiki entry](../../../frb/docs/index.php).
+![SplitScreen.png](../../../media/migrated\_media-SplitScreen.png) For info on the [content manager argument](../../../frb/docs/index.php) see the [FlatRedBall Content Manager wiki entry](../../../frb/docs/index.php).
 
 #### Manually Setting Destination Rectangle
 
@@ -116,6 +116,6 @@ For more information, see the [DestinationRectangle entry](../../../frb/docs/ind
 ### Extra Information
 
 * [2D In FlatRedBall tutorial](../../../frb/docs/index.php)
-* [Camera Layers](../../../frb/docs/index.php#Camera_Layers) - Camera Layers can be used to render objects to only one camera, such as HUDs.
+* [Camera Layers](../../../frb/docs/index.php#Camera\_Layers) - Camera Layers can be used to render objects to only one camera, such as HUDs.
 
 \[subpages depth="1"]
