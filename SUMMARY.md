@@ -310,6 +310,7 @@
     * [Object Types](glue-reference/objects/object-types/README.md)
       * [AxisAlignedRectangle](glue-reference/objects/object-types/glue-reference-axisalignedrectangle.md)
       * [Camera](glue-reference/objects/object-types/glue-reference-camera.md)
+      * [CameraControllingEntity](glue-reference/objects/object-types/cameracontrollingentity.md)
       * [Circle](glue-reference/objects/object-types/circle.md)
       * [CollisionRelationship](glue-reference/objects/object-types/collisionrelationship.md)
       * [Layer](glue-reference/objects/object-types/glue-reference-layer/README.md)
