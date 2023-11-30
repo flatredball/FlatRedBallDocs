@@ -2,7 +2,25 @@
 
 ### Introduction
 
-The Sprite is a flat graphical object which is commonly used in 2D games as well as for particles, HUDs, and UIs in 3D games. The Sprite class inherits from the [PositionedObject](../../../frb/docs/index.php) class. For information about how to use Sprites in the FlatRedBall Editor, see the [Sprite FlatRedBall page](../../../glue-reference/objects/object-types/glue-reference-sprite.md).
+The Sprite is a flat graphical object which is commonly used as the visuals for entities and for particles. Sprites can also be used to display tilemaps and UI, although Tiled and Gum provide more flexibility and performance. The Sprite class inherits from the [PositionedObject](../../../frb/docs/index.php) class.
+
+Sprites are usually created through the FlatRedBall Editor when associated with entities, although Sprites can also be created in code when dynamic visuals are needed.
+
+### Creating a Sprite in Code
+
+In most cases, a Sprite can be created in code by instantiating it, assigning a texture, and adding it to the SpriteManager so that it is drawn. The following code assumes that `TextureFile` is a valid Texture2D:
+
+```
+// Creates a new Sprite instance
+var sprite = new Sprite();
+// Assigns the texture to display. 
+sprite.Texture = TextureFile;
+// Sets the Sprite's scale so that it renders 1:1 relative to its source Texture
+sprite.TextureScale = 1;
+// Adds the Sprite to the SpriteManager so that it is shown, and so that it is
+// "managed" (velocity, acceleration, and attachments are maintained)
+SpriteManager.AddSprite(sprite);
+```
 
 ### Sprite Scale
 
@@ -30,19 +48,6 @@ Sprite newSprite = SpriteManager.AddParticleSprite();
 
 Particle Sprites have all of the same functionality as regular Sprites - in fact, they are just Sprites. The only difference is that there is minimal memory allocation and garbage collection so they can be useful when creating particle effects. Particle Sprites are used by [Emitters](../../../frb/docs/index.php).
 
-### Interfaces
-
-* [FlatRedBall.Graphics.Animation.IAnimationChainAnimatable](../../../frb/docs/index.php) - Interface defining animation properties and methods. See this entry for information on animating Sprites.
-* [FlatRedBall.Math.IAttachable](../../../frb/docs/index.php)
-* [FlatRedBall.Graphics.IColorable](../../../frb/docs/index.php) - Information on setting individual color values and the ColorOperation property.
-* [FlatRedBall.Graphics.IVisible](../../../frb/docs/index.php)
-
-### Extra Information
-
-* [Custom Sprite Effects](../../../frb/docs/index.php) - Can be used for special rendering needs.
-* [FlatRedBall.SpriteManager.OrderedSortType](../../../frb/docs/index.php) - Property that controls how Sprites are sorted.
-* [Inheriting from Sprite](../../../frb/docs/index.php)
-* [Sorting and Overlapping](../../../frb/docs/index.php)
-* [Changing a Sprite's Origin](../../../frb/docs/index.php)
+###
 
 &#x20;
