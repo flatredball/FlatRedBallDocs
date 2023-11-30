@@ -996,6 +996,7 @@
       * [JustCycled](api/flatredball/sprite/justcycled.md)
       * [LeftTextureCoordinate](api/flatredball/sprite/lefttexturecoordinate.md)
       * [PixelSize](api/flatredball/sprite/pixelsize.md)
+      * [Position](api/flatredball/sprite/position.md)
       * [RightTextureCoordinate](api/flatredball/sprite/righttexturecoordinate.md)
       * [SetAnimationChain](api/flatredball/sprite/setanimationchain.md)
       * [SetScaleXRatioToY](api/flatredball/sprite/setscalexratiotoy.md)

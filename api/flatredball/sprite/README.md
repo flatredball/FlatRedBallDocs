@@ -10,7 +10,7 @@ Sprites are usually created through the FlatRedBall Editor when associated with 
 
 In most cases, a Sprite can be created in code by instantiating it, assigning a texture, and adding it to the SpriteManager so that it is drawn. The following code assumes that `TextureFile` is a valid Texture2D:
 
-```
+```csharp
 // Creates a new Sprite instance
 var sprite = new Sprite();
 // Assigns the texture to display. 
