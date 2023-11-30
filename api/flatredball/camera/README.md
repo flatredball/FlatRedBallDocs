@@ -74,7 +74,7 @@ For information on finding the absolute coordinates of the edges of the Camera, 
 
 FlatRedBall supports multiple cameras for different viewports (split screen). The following code creates a Sprite and views it from two different cameras. In Initialize
 
-```
+```csharp
  // Add a Sprite
  SpriteManager.AddSprite("redball.bmp");
 
@@ -92,13 +92,17 @@ FlatRedBall supports multiple cameras for different viewports (split screen). Th
  SpriteManager.Cameras[1].Z = 5;
 ```
 
-![SplitScreen.png](../../../media/migrated\_media-SplitScreen.png) For info on the [content manager argument](../../../frb/docs/index.php) see the [FlatRedBall Content Manager wiki entry](../../../frb/docs/index.php).
+&#x20;
+
+<figure><img src="../../../media/migrated_media-SplitScreen.png" alt=""><figcaption></figcaption></figure>
+
+For info on the [content manager argument](../../../frb/docs/index.php) see the [FlatRedBall Content Manager wiki entry](../../../frb/docs/index.php).
 
 #### Manually Setting Destination Rectangle
 
 Every camera has a DestinationRectangle which defines where on the window it draws. When specifying the DestinationRectangle the top-left of the window is 0,0 and positive Y moves down. Assuming the window is 800 pixels wide and 600 pixels tall the following code creates a 50 pixel border around the DestinationRectangle:
 
-```
+```clike
 // Will work with any camera but for this sample we'll use the default Camera
 Camera camera = Camera.Main;
 // 50 pixel border on each side decreases the dimensions by 100.
@@ -107,15 +111,4 @@ Camera camera = Camera.Main;
 camera.DestinationRectangle = new Rectangle(50, 50, 700, 500);
 ```
 
-For more information, see the [DestinationRectangle entry](../../../frb/docs/index.php).
-
-### Related Tutorials
-
-* [3D Camera Setup](../../../frb/docs/index.php)
-
-### Extra Information
-
-* [2D In FlatRedBall tutorial](../../../frb/docs/index.php)
-* [Camera Layers](../../../frb/docs/index.php#Camera\_Layers) - Camera Layers can be used to render objects to only one camera, such as HUDs.
-
-\[subpages depth="1"]
+For more information, see the [DestinationRectangle](destinationrectangle.md) page.
