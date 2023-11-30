@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial shows you how to access FlatRedBall.Forms controls in code to perform common logic like assigning event handlers and accessing properties. For an in-depth look at every control in FlatRedBall.Forms, see the reference section: http://flatredball.com/documentation/api/flatredball-forms/controls/
+This tutorial shows you how to access FlatRedBall.Forms controls in code to perform common logic like assigning event handlers and accessing properties.&#x20;
 
 ### Setup
 
@@ -15,19 +15,19 @@ The previous tutorial showed how to create a new project with a Button control. 
 
 All controls are present in the Components/Controls folder.
 
-![](../../../media/2023-03-img_64264c34bfb86.png)
+![](../../../media/2023-03-img\_64264c34bfb86.png)
 
 To create these controls, drag drop them into your current screen, such as **GameScreenGum** or **MainMenuGum.** If you have a GameScreen, but would like to create a screen with only UI, you can add a new MainMenu screen to your FlatRedBall project.
 
-![](../../../media/2023-08-img_64d80de02a89d.png)
+![](../../../media/2023-08-img\_64d80de02a89d.png)
 
 You can drag+drop controls into your screen. The following screenshot shows a Gum screen with four controls:
 
-![](../../../media/2023-08-img_64d80ebea7f91.png)
+![](../../../media/2023-08-img\_64d80ebea7f91.png)
 
 ### Working with Button
 
-Now we can access all of our controls from the Gum screen in code. Every Gum object can be accessed in its respective screen using the Forms object. For example, to add a click event to the button:
+Now we can access all of our controls from the Gum screen in code. Every Gum object can be accessed in its respective screen using the `Forms` object. For example, to add a click event to the button:
 
 1. Open the project in Visual Studio
 2. Go to your screen's code file (**GameScreen.cs** or **MainMenu.cs**, for example)
@@ -36,6 +36,8 @@ Now we can access all of our controls from the Gum screen in code. Every Gum obj
 ```lang:c#
 void CustomInitialize()
 {
+    // This code assumes that your Button is called ButtonStandardInstance.
+    // The name in code matches the name in Gum
     Forms.ButtonStandardInstance.Click += HandleButtonClick;
 }
 
@@ -45,7 +47,7 @@ private void HandleButtonClick(object sender, EventArgs e)
 }
 ```
 
-This results in the button updating its text to indicate when it was last clicked:&#x20;
+This results in the button updating its text to indicate when it was last clicked:
 
 <figure><img src="../../../media/2017-11-12_17-03-31.gif" alt=""><figcaption></figcaption></figure>
 
@@ -58,13 +60,13 @@ Let's take a look at a few parts of the code. First, we should note that the cod
 
 In the code above we accessed the button through the Forms.ButtonStandardInstance property. Note that ButtonStandardInstance is the same name as the object in Gum.
 
-![](../../../media/2023-08-img_64d810334fa4b.png)
+![](../../../media/2023-08-img\_64d810334fa4b.png)
 
 Notice that we are accessing the object through Forms allows us to interact with the Gum object casted as a FlatRedBall.Forms Button. Once we have access to the button we can interact with it in a standard way, such as by assigning a click event or by setting its Text property.
 
 ### Working with CheckBox
 
-The CheckBox  control can be used to allow the user to set true/false values. Just like with Button , before we'll get a reference to the CheckBox  through the screen.
+The CheckBox control can be used to allow the user to set true/false values. Just like with Button , before we'll get a reference to the CheckBox through the screen.
 
 ```lang:c#
 void CustomInitialize()
@@ -79,13 +81,13 @@ private void HandleCheckboxClicked(object sender, EventArgs e)
 }
 ```
 
-Clicking the CheckBox  results in the value being printed to the screen.&#x20;
+Clicking the CheckBox results in the value being printed to the screen.
 
 <figure><img src="../../../media/2017-11-12_20-15-00.gif" alt=""><figcaption></figcaption></figure>
 
 ### Working with ListBox
 
-The ListBox control is used to display options or a collection of current items to the user (such as active quests). The following code adds items to the list box whenever the user presses a key on the keyboard. Note that this code requires code in CustomActivity  to read input from the keyboard.
+The ListBox control is used to display options or a collection of current items to the user (such as active quests). The following code adds items to the list box whenever the user presses a key on the keyboard. Note that this code requires code in CustomActivity to read input from the keyboard.
 
 ```lang:c#
 void CustomActivity(bool firstTimeCalled)
@@ -107,7 +109,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-Typing the A, B, or C characters on the keyboard results in items added to the list box:&#x20;
+Typing the A, B, or C characters on the keyboard results in items added to the list box:
 
 <figure><img src="../../../media/2017-11-12_20-16-58.gif" alt=""><figcaption></figcaption></figure>
 
@@ -128,6 +130,6 @@ private void HandleTextBoxTextChanged(object sender, EventArgs e)
 }
 ```
 
-Note that the TextChanged event will be raised for each new character (including spaces) or whenever a character is deleted.          &#x20;
+Note that the TextChanged event will be raised for each new character (including spaces) or whenever a character is deleted.
 
 <figure><img src="../../../media/2017-11-12_20-23-02.gif" alt=""><figcaption></figcaption></figure>
