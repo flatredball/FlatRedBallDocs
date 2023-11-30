@@ -7,8 +7,9 @@ Sprites are used to render a texture to the screen. Sprites are one of the most 
 * Character graphics (static or animated)
 * Backgrounds
 * Particles
-* Tile graphics
 * Bullets
+
+Sprites are often contained in Entities or created in code as particles.
 
 ### Creating an Entity With a Sprite
 
