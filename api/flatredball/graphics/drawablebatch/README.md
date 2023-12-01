@@ -1,4 +1,4 @@
-# drawablebatch
+# IDrawableBatch
 
 ### Introduction
 
@@ -8,7 +8,7 @@ Although the feature set for FlatRedBall is rapidly expanding, it is impossible 
 
 The following code shows how to create a class that implements IDrawableBatch . This class draws a triangle which uses vertex colors - each point on the triangle is a different color.
 
-```lang:c#
+```csharp
 public class DrawableBatchExample : PositionedObject, IDrawableBatch
 {
     // Even though this IDB doesn't use textures, we'll use a textured vert
@@ -82,9 +82,9 @@ public class DrawableBatchExample : PositionedObject, IDrawableBatch
 }
 ```
 
-The following code shows how the DrawableBatchExample  can be used in a screen:
+The following code shows how the DrawableBatchExample can be used in a screen:
 
-```lang:c#
+```csharp
 public partial class GameScreen
 {
     DrawableBatchExample drawableBatch;
@@ -114,9 +114,33 @@ public partial class GameScreen
 
 The code above produces the following when the game runs:
 
-![](../../../../../media/2016-06-img_57616a108d6e8.png)
+![](../../../../media/2016-06-img\_57616a108d6e8.png)
 
-&#x20;
+### Drawing SpriteBatch in FlatRedBall Coordinates
+
+MonoGame's SpriteBatch can be used to draw sprites in FlatRedBall coordinates. For example, the following code considers the Camera's position, resolution, zoom, and the object's position:
+
+```csharp
+public void Draw(Camera camera)
+{
+    Matrix matrix = Matrix.Identity;
+    matrix *= Matrix.CreateTranslation(this.X, -this.Y, 0);
+    matrix *= Matrix.CreateTranslation(
+        camera.OrthogonalWidth/2.0f, camera.OrthogonalHeight/2, 0);
+    matrix *= Matrix.CreateTranslation(-camera.X, camera.Y, 0);
+    var scale = camera.DestinationRectangle.Height / camera.OrthogonalHeight;
+    matrix *= Matrix.CreateScale(scale, scale, 1);
+
+    spriteBatch.Begin(transformMatrix:matrix);
+    spriteBatch.Draw(
+    TextureFile,
+    new Rectangle(0, 0, TextureFile.Width, TextureFile.Height),
+        Color.White);
+
+    spriteBatch.End();
+}
+
+```
 
 ### Invalid IDrawableBatch Actions
 
@@ -124,24 +148,24 @@ The IDrawableBatch interface provides considerable freedom in custom drawing. Ho
 
 #### Changing Viewport
 
-The GraphicsDevice's Viewport should not be changed. IDrawableBatches can be added to [Layers](../../../../../frb/docs/index.php) - including [Camera](../../../../../frb/docs/index.php)-specific [Layers](../../../../../frb/docs/index.php) which inherit the containing [Camera](../../../../../frb/docs/index.php)'s viewport. In other words, to render to a portion of the Screen, add the IDrawableBatch to the desired [Camera](../../../../../frb/docs/index.php) using the [SpriteManager's AddToLayer](../../../../../frb/docs/index.php) method.
+The GraphicsDevice's Viewport should not be changed. IDrawableBatches can be added to [Layers](../../../../frb/docs/index.php) - including [Camera](../../../../frb/docs/index.php)-specific [Layers](../../../../frb/docs/index.php) which inherit the containing [Camera](../../../../frb/docs/index.php)'s viewport. In other words, to render to a portion of the Screen, add the IDrawableBatch to the desired [Camera](../../../../frb/docs/index.php) using the [SpriteManager's AddToLayer](../../../../frb/docs/index.php) method.
 
 #### Calling SetRenderTarget
 
-FlatRedBall handles render targets under the hood. Changing the RenderTarget can result in unexpected behavior or crashing. For control over render targets, use the [Camera](../../../../../frb/docs/index.php)'s RenderOrder property. If you are interested in performing something not currently supported by one of the render modes, please post on the forums.
+FlatRedBall handles render targets under the hood. Changing the RenderTarget can result in unexpected behavior or crashing. For control over render targets, use the [Camera](../../../../frb/docs/index.php)'s RenderOrder property. If you are interested in performing something not currently supported by one of the render modes, please post on the forums.
 
 ### Additional Information
 
-* [Using DrawableBatches to apply custom shaders to Sprites](../../../../../frb/docs/index.php)
-* [SpriteManager.AddToLayer](../../../../../frb/docs/index.php) - This method can be used to put DrawableBatches on layers for additional sorting control.
+* [Using DrawableBatches to apply custom shaders to Sprites](../../../../frb/docs/index.php)
+* [SpriteManager.AddToLayer](../../../../frb/docs/index.php) - This method can be used to put DrawableBatches on layers for additional sorting control.
 
 ### Related Information
 
-* [Render States and IDrawableBatches](../../../../../frb/docs/index.php)
+* [Render States and IDrawableBatches](../../../../frb/docs/index.php)
 
 ### IDrawableBatch Members
 
-* [FlatRedBall.Graphics.IDrawableBatch.Z](../../../../../frb/docs/index.php)
+* [FlatRedBall.Graphics.IDrawableBatch.Z](../../../../frb/docs/index.php)
 
 #### UpdateEveryFrame
 
@@ -160,7 +184,7 @@ This is where any updating logic goes. This could include updating positions, mo
 
 #### Draw
 
-Executes your drawing code. The _camera_ parameter represents the currently drawing camera, and may be used to retrieve camera settings (the SetDeviceViewAndProjection will work with both the BasicEffect and Effect classes, and will set the variables View, Projection, ViewProj, and any variables that have the semantics VIEW or PROJECTION). Any XNA drawing code may be used in this section. However, please note that RenderState is _not_ preserved, so you will need to set any RenderState variables at the beginning of this method. This includes anything on the graphics device, such as a vertex declaration. For more information, read the [Render State article](../../../../../frb/docs/index.php).
+Executes your drawing code. The _camera_ parameter represents the currently drawing camera, and may be used to retrieve camera settings (the SetDeviceViewAndProjection will work with both the BasicEffect and Effect classes, and will set the variables View, Projection, ViewProj, and any variables that have the semantics VIEW or PROJECTION). Any XNA drawing code may be used in this section. However, please note that RenderState is _not_ preserved, so you will need to set any RenderState variables at the beginning of this method. This includes anything on the graphics device, such as a vertex declaration. For more information, read the [Render State article](../../../../frb/docs/index.php).
 
 #### Destroy
 
@@ -168,7 +192,7 @@ Here is where you destroy any assets that won't be automatically destroyed when 
 
 ### Community Source Code
 
-* [Pie DrawableBatch](../../../../../frb/docs/index.php)
-* [Video Rendering](../../../../../frb/forum/viewtopic.php)
+* [Pie DrawableBatch](../../../../frb/docs/index.php)
+* [Video Rendering](../../../../frb/forum/viewtopic.php)
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

@@ -606,7 +606,7 @@
         * [InterpolateColor](api/flatredball/graphics/coloroperation/interpolatecolor.md)
         * [Modulate](api/flatredball/graphics/coloroperation/modulate.md)
         * [Texture](api/flatredball/graphics/coloroperation/texture.md)
-      * [DrawableBatch](api/flatredball/graphics/drawablebatch/README.md)
+      * [IDrawableBatch](api/flatredball/graphics/drawablebatch/README.md)
         * [Z](api/flatredball/graphics/drawablebatch/flatredball-graphics-idrawablebatch-z.md)
         * [RenderState](api/flatredball/graphics/drawablebatch/render-state.md)
       * [GraphicsOptions](api/flatredball/graphics/graphicsoptions/README.md)

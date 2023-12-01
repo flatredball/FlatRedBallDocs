@@ -1,4 +1,4 @@
-# implementsidrawablebatch
+# Implements IDrawableBatch
 
 ### Introduction
 
@@ -18,12 +18,12 @@ The following instructions show how to use the ImplementsIDrawableBatch property
 1. Create an Entity, or select an existing entity which should have is own Draw method
 2.  Set the Entity's **ImplementsIDrawableBatch** property to T**rue**
 
-    ![](../../media/2016-06-img_576b65577329a.png)
+    ![](../../media/2016-06-img\_576b65577329a.png)
 3. Add a .png file to the entity. This will be used in the Draw call
 
-Once the entity has been created, we must define a Draw  call in the entity's code file. Notice that the Draw  method has a Camera  parameter. This allows entities to perform rendering relative to the current Camera. In this example the entity ignores the Camera for simplicity.
+Once the entity has been created, we must define a Draw call in the entity's code file. Notice that the Draw method has a Camera parameter. This allows entities to perform rendering relative to the current Camera. In this example the entity ignores the Camera for simplicity.
 
-```lang:c#
+```csharp
 public partial class PostProcessingEntity
 {
     SpriteBatch spriteBatch;
@@ -62,4 +62,4 @@ public partial class PostProcessingEntity
 
 ### Additional Information
 
-For more information and code samples related to IDrawableBatch, see the [IDrawableBatch](../../documentation/api/flatredball/graphics/drawablebatch.md) page.
+For more information and code samples related to IDrawableBatch, see the [IDrawableBatch](../../api/flatredball/graphics/drawablebatch/) page.
