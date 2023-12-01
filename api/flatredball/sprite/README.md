@@ -22,6 +22,19 @@ sprite.TextureScale = 1;
 SpriteManager.AddSprite(sprite);
 ```
 
+Once the Sprite has been created, it will persist until it is removed. If your game does not navigate to other Screens, and if you do not need to remove the Sprite, then no additional code is needed.
+
+If you would like to remove your Sprite, you can call SpriteManager.RemoveSprite:
+
+```csharp
+SpriteManager.RemoveSprite(sprite);
+```
+
+If you are creating a Sprite that is owned by a FlatRedBall Screen or Entity, then you will need to either:
+
+* Explicitly call RemoveSprite when it is time to destroy the object containing the Sprite (usually `CustomDestroy` )
+* Add the Sprite to a PositionedObjectList\<Sprite> created in the FlatRedBall Editor on the container. When the container is removed, then the contents of the sprite list will automatically get removed from the engine.
+
 ### Sprite Scale
 
 For information on Scale, see the [IScalable wiki entry](../../../frb/docs/index.php). To match the on-screen pixel dimensions of a Sprite to its referenced [Texture's](../../../frb/docs/index.php) pixel dimensions, see the [2D in FlatRedBall tutorial](../../../frb/docs/index.php).
