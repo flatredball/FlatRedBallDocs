@@ -1,0 +1,57 @@
+# Quick Start Guide
+
+### Introduction
+
+If you're looking to get started without going through lengthy tutorials, this guide will get you running with the minimum number of steps.
+
+### Downloading FlatRedBall
+
+First you will need to make sure you have the prerequisites. Once you do, you need to download FlatRedBall. For detailed steps, see the [Downloading FlatRedBall](../) page.
+
+### Creating a New Project
+
+To create a new project:
+
+1.  Click the Create New Project button\
+
+
+    <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>Create New Project button</p></figcaption></figure>
+2.  Leave the defaults and click the **Create Project!** button. The defaults select the most common project setup.\
+
+
+    <figure><img src="../.gitbook/assets/02_10 08 22.png" alt=""><figcaption><p>Click the Create Project! button</p></figcaption></figure>
+3.  After the project loads, the Project Setup Wizard appears. Select which project type you would like such as **Standard Platformer** or **Standard Top Down**. These options are the quickest way to get a functional game running. If you would like to have an empty project, close the wizard by pressing the X button at the top right.
+
+    <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p>Project Setup Wizard</p></figcaption></figure>
+
+    1. If you selected a project type, wait for the project creation to finish.
+
+    <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>Project Setup Wizard setting up a project</p></figcaption></figure>
+
+You now have a FlatRedBall Project. You can run the project through the FlatRedBall Editor, or in Visual Studio.
+
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption><p>Project in FlatRedBall after it's been created</p></figcaption></figure>
+
+### Running your Project in FlatRedBall
+
+To run your Project in FlatRedBall, click the play button. Notice that this tells you which Screen will load when the project starts.
+
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p>Play button in FlatRedBall</p></figcaption></figure>
+
+Once the project is running you will see it in its own window.
+
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption><p>FlatRedBall Platformer Project</p></figcaption></figure>
+
+### Running in Visual Studio
+
+To run your project in Visual Studio:
+
+1.  Click the Visual Studio icon in FlatRedBall\
+
+
+    <figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>Visual Studio Icon in FlatRedBall</p></figcaption></figure>
+2.  Wait for the project to load in Visual Studio\
+
+
+    <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption><p>FlatRedBall project in Visual Studio</p></figcaption></figure>
+3. Press the Play button to build and run your project in Visual Studio. FlatRedBall projects are standard .NET projects, which means you can treat it as you would any other .NET project including debugging, NuGet packages, and full C# syntax support.\
