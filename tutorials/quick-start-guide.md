@@ -54,4 +54,14 @@ To run your project in Visual Studio:
 
 
     <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption><p>FlatRedBall project in Visual Studio</p></figcaption></figure>
-3. Press the Play button to build and run your project in Visual Studio. FlatRedBall projects are standard .NET projects, which means you can treat it as you would any other .NET project including debugging, NuGet packages, and full C# syntax support.\
+3. Press the Play button to build and run your project in Visual Studio. FlatRedBall projects are standard .NET projects, which means you can treat it as you would any other .NET project including debugging, NuGet packages, and full C# syntax support.
+
+### What's next?
+
+Now that you have FlatRedBall running on your machine, you can get started making games. Here are some next steps to consider:
+
+* Join the [FlatRedBall Discord](https://discord.com/invite/dg7WsFv) - come say "hi" and tell us about what you want to do with FlatRedBall. We have an active community who loves to help new users.
+* Check out the [Beefball tutorials](beefball/) and other tutorials. These will get you up to speed on how to use the FlatRedBall Editor.
+* If you prefer to dive right in to the docs, check out the [FlatRedBall Editor reference](../glue-reference/) to see what it can do, or the [FlatRedBall API Documentation](../api/) for info about working with FlatRedBall in code.
+* Try things out! The best way to learn is by doing, so try making changes to the project and explore what is already there.
+
