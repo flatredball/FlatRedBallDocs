@@ -2,21 +2,23 @@
 
 ### Introduction
 
-FlatRedBall Forms is a set of classes which are used to give UI controls _automatic_ behavior. When using FlatRedBall Forms, your code has access to the FlatRedBall Forms object (such as **Button**) as well as the _Visual_ for the Forms object (such as the component **DefaultForms/Button**). Since your code has access to both the Forms and Gum object, some confusion may arise about which object to interact with in code. This guide discusses the relationship between the Forms and Gum objects, and provides some guidelines to determine whether to interact with one of the other.
+FlatRedBall Forms is a set of classes which are used to give UI controls _automatic_ behavior. When using FlatRedBall Forms, your code has access to the FlatRedBall Forms object (such as **Button**) as well as the _Visual_ for the Forms object (such as the component **DefaultForms/Button**). Since your code has access to both the Forms and Gum object, some confusion may arise about which object to interact with in code.
+
+This guide discusses the relationship between the Forms and Gum objects, and provides some guidelines to determine whether to interact with one of the other.
 
 ### Button Forms and Gum Object
 
 To understand how Forms and Gum objects interact, we will consider a simple example - a Screen with a single Button. The following image shows a default Button instance in a Gum screen:
 
-![](../../../media/2022-02-img_620e597708581.png)
+![](../../../media/2022-02-img\_620e597708581.png)
 
 In this example, the MenuScreenGum is loaded by the FlatRedBall screen **MenuScreen.**
 
-![](../../../media/2022-02-img_620e59a697383.png)
+![](../../../media/2022-02-img\_620e59a697383.png)
 
 We can access both the Gum and Forms objects in Visual Studio as shown in the following code. Keep in mind that every Screen with Gum and Forms objects will have **GumScreen** and **Forms** properties. These make it easy to access objects the same way no matter which Screen you are working on:
 
-```
+```csharp
 public partial class MenuScreen
 {
     void CustomInitialize()
@@ -29,30 +31,34 @@ public partial class MenuScreen
         buttonAsGumObject.Width = 300;
         // ...and the height through the Forms object
         buttonAsFormsObject.Height = 300;
+        
+        // Sometimes the syntax is not the same, such as with clicks:
+        buttonAsGumObject.Click += (buttonClicked) => { /* code here */ };
+        buttonAsFormsObject.Click += (sender, args) => { /* code goes here */ };
 
     }
     ...
 ```
 
-Notice that this code modifies the same object at runtime - it appears as a square.
+Notice that setting width and height modifies the same object at runtime - it appears as a square. Also, filling in the two click handlers would result in both handlers being called when the button is clicked.
 
-![](../../../media/2022-02-img_620e5b2a484f3.png)
+![](../../../media/2022-02-img\_620e5b2a484f3.png)
 
 You may be wondering - which object should I access in code? The answer is - usually it's best to use the Forms object, but sometimes you must access the Gum object for more detailed control over position and size.
 
 ### Forms is a Wrapper to Standardize and Automate Behavior
 
-FlatRedBall.Forms objects are _wrappers_ around Gum objects. For example, in the example above we have a Forms.ButtonInstance. This object has a reference to the Gum object. The Forms object automates behavior so that the Gum object behaves like a UI element. For example, the Forms Button object automatically modifies the state of the button in response to cursor hovers and clicks. No custom code is necessary to achieve this behavior. &#x20;
+FlatRedBall.Forms objects are _wrappers_ around Gum objects. For example, in the example above we have a Forms.ButtonInstance. This object has a reference to the Gum object. The Forms object automates behavior so that the Gum object behaves like a UI element. For example, the Forms Button object automatically modifies the state of the button in response to cursor hovers and clicks. No custom code is necessary to achieve this behavior.
 
 <figure><img src="../../../media/2022-02-17_07-42-15.gif" alt=""><figcaption></figcaption></figure>
 
-This behavior is convenient, but it is not particularly complex - at least not conceptually. The Forms object is responsible for detecting if the cursor is hovering over the button, or if the left mouse button is pressed. If so, the Forms object modifies the state of the button. These states are part of the default Button control, and can be inspected (and modified) in Gum. &#x20;
+This behavior is convenient, but it is not particularly complex - at least not conceptually. The Forms object is responsible for detecting if the cursor is hovering over the button, or if the left mouse button is pressed. If so, the Forms object modifies the state of the button. These states are part of the default Button control, and can be inspected (and modified) in Gum.
 
 <figure><img src="../../../media/2022-02-17_07-58-17.gif" alt=""><figcaption></figcaption></figure>
 
 The Forms Button logic is responsible for setting the button's state, and it will do so in response to any UI behavior. Therefore, manually setting the Gum object's state is not recommended - it will be over written by the Forms object as shown in the following code and animation:
 
-```
+```csharp
 void CustomInitialize()
 {
     // Code can access either Gum or Forms object
@@ -62,8 +68,6 @@ void CustomInitialize()
         GumRuntimes.DefaultForms.ButtonRuntime.ButtonCategory.Pushed;
 }
 ```
-
-&#x20;
 
 <figure><img src="../../../media/2022-02-17_08-17-34.gif" alt=""><figcaption></figcaption></figure>
 
