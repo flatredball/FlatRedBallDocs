@@ -1,4 +1,4 @@
-# absoluterightxedgeat
+# AbsoluteRightXEdgeAt
 
 ### Introduction
 
@@ -17,7 +17,7 @@ The absolute functions take a single argument - the Z value where the absolute v
 
 The following code creates four Circles. Each one is colored differently to help identify it.
 
-```
+```csharp
  Camera camera = Camera.Main;
 
  Circle rightCircle = ShapeManager.AddCircle();
@@ -41,13 +41,13 @@ The following code creates four Circles. Each one is colored differently to help
  bottomCircle.Color = Color.Blue;
 ```
 
-![AbsoluteEdges.png](../../../../media/migrated_media-AbsoluteEdges.png)
+![AbsoluteEdges.png](../../../media/migrated\_media-AbsoluteEdges.png)
 
 ### Detecting if an object is on screen
 
 The edge values can be used to check if on screen. For example, the following code checks if a character's point is on screen. Since visual objects are usually larger than a single pixel, an additional buffer can be added.
 
-```lang:c#
+```csharp
 float buffer = 16; // base this on the size of your object
 
 bool isOnScreen = Character.X < Camera.Main.AbsoluteRightEdgeAt(0) + buffer &&
@@ -58,7 +58,7 @@ bool isOnScreen = Character.X < Camera.Main.AbsoluteRightEdgeAt(0) + buffer &&
 
 Note that the buffer value above may be required if your object does not have a Width property (such as if your object is an entity). If your object has a Width and Height property, like a Sprite, you can use that value as shown in the following code:
 
-```lang:c#
+```csharp
 // This code assumes the Sprite is not rotated
 float halfWidth = SpriteInstance.Width/2.0f;
 float halfHeight = SpriteInstance.Height/2.0f;
@@ -69,13 +69,11 @@ bool isOnScreen = Character.X < Camera.Main.AbsoluteRightEdgeAt(0) + halfWidth &
     Character.Y > Camera.Main.AbsoluteBottomEdgeAt(0) - halfHeight ;
 ```
 
-&#x20;
-
 ### Edge values and attachments
 
-If your Camera is attached to another object, you may need to call [FlatRedBall.Camera.ForceUpdateDependencies](../../../../frb/docs/index.php) before asking the Camera for its absolute edge values. For example:
+If your Camera is attached to another object, you may need to call [FlatRedBall.Camera.ForceUpdateDependencies](../../../frb/docs/index.php) before asking the Camera for its absolute edge values. For example:
 
-```
+```csharp
  Camera camera = Camera.Main;
 
  camera.ForceUpdateDependencies();

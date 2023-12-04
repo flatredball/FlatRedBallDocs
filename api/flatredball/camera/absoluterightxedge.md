@@ -32,6 +32,6 @@ Camera.Main.AbsoluteBottomYEdge = 0;
 //this assumes that the bound values are valid:
 Camera.Main.AbsoluteLeftXEdge = Math.Max(Camera.Main.AbsoluteLeftXEdge, leftBound);
 Camera.Main.AbsoluteRightXEdge = Math.Min(Camera.Main.AbsoluteRightXEdge, rightBound);
-Camera.Main.AbsoluteBottomYEdge = Camera.Max(Camera.Main.AbsoluteBottomYEdge, bottomBound);
-Camera.Main.AbsoluteTopYEdge = Camera.Min(Camera.Main.AbsoluteTopYEdge, topBound);
+Camera.Main.AbsoluteBottomYEdge = Math.Max(Camera.Main.AbsoluteBottomYEdge, bottomBound);
+Camera.Main.AbsoluteTopYEdge = Math.Min(Camera.Main.AbsoluteTopYEdge, topBound);
 ```
