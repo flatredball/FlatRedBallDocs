@@ -79,7 +79,7 @@ Now that you have a PlayerBall instance in your GameScreen, you can run the game
 
 Once the game runs, you should see a circle (the PlayerBall1 instance) in your Screen.
 
-### ![](../../media/2020-07-img\_5f0a421234957.png)
+<figure><img src="../../media/2020-07-img_5f0a421234957.png" alt=""><figcaption></figcaption></figure>
 
 ### FlatRedBall Coordinates
 
