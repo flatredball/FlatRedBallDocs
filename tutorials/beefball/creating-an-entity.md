@@ -6,56 +6,51 @@ This tutorial will cover how to create an Entity, which is the FRB term for a "g
 
 * Game characters (like Mario)
 * Projectiles (like a bullet)
-* UI elements (like a button)
-* Text objects (like a score display)
+* Power-up (like a health pickup)
 
-Our first entity will be called "PlayerBall".
+Our first entity is called "PlayerBall".
 
 ### Creating PlayerBall
 
 To create an Entity:
 
-1.  Click the **Add Entity** in the **Quick Actions** tab
+1.  Click the **Add Entity** in the **Quick Actions** tab...
 
-    ![](../../.gitbook/assets/02\_21\_21\_30.png)
+    ![Add Entity quick action button](../../.gitbook/assets/02\_21\_21\_30.png)
 
-    or right-click on the **Entities** folder and select **Add Entity**
+    ...or right-click on the **Entities** folder and select **Add Entity**
 
-    ![](../../media/2022-01-img\_61d312843f359.png)
+    ![Add Entity right-click menu item](../../media/2022-01-img\_61d312843f359.png)
 2. Enter the name **PlayerBall**
-3. Check the **Circle** checkbox under the **Collisions** category. This will add a circle object to our entity, which we'll use to test if the **PlayerBall** is touching the walls, goals, or other ball instances.
+3. Check the **Circle** checkbox under the **Collisions** category. This will add a circle object to the PlayerBall entity, which we'll use to test if it is touching the walls, goals, or other ball instances.
 4. Notice that the **ICollidable** checkbox is checked - we'll cover this in a later tutorial. We'll leave it checked for now.
 5. Notice that **Create Factory** is also checked. This option simplifies the creation of additional entities in code. We'll leave this checked as well.
 6. Click **OK**
 
-![](../../media/2022-01-img\_61d312b26d918.png)
+![Add PlayerBall entity dialog](../../media/2022-01-img\_61d312b26d918.png)
 
 Our entity will now be created and have a Circle named **CircleInstance** under its **Objects** folder, as shown in the following image:
 
-![](../../media/2022-01-img\_61d312e83c316.png)
+![CircleInstance in PlayerBall](../../media/2022-01-img\_61d312e83c316.png)
 
 ### Alternative Approach - Adding a Circle
 
 The previous section showed how to create an entity and add a Circle to the entity at the same time. Objects can be added after an entity is created as well. **Note, the following steps are only shown for example, and do not need to be followed if you performed the previous steps.** To add a Circle to an already-created entity:
 
-1.  Click the **Add Object** quick action
+1.  Click the **Add Object** quick action...
 
-    ![](../../media/2022-01-img\_61d3133fc9c72.png)
+    ![Add Object to Playerball Quick Actions button](../../media/2022-01-img\_61d3133fc9c72.png)
 
-    or right-click on **Objects** and select **Add Object**
+    ...or right-click on **Objects** and select **Add Object**
 
-    ![](../../media/2022-01-img\_61d31363d6568.png)
+    ![Right-click Add Object option](../../media/2022-01-img\_61d31363d6568.png)
 2. Select the **FlatRedBall Or Custom Type** option
 3. Select **Circle** in the list
 4.  Enter the name **CircleInstance** and click **OK**
 
-    ![](../../media/2022-01-img\_61d313aa162c3.png)
+    ![Add CircleInstance option](../../media/2022-01-img\_61d313aa162c3.png)
 
 ### Creating an Entity - the Code and Data
-
-
-
-### Conclusion
 
 When a new Entity or Screen is created, a number of files are created:
 
@@ -69,13 +64,13 @@ For example, the PlayerBall entity creates PlayerBall.glej, PlayerBall.cs, and P
 
 #### PlayerBall.glej
 
-The PlayerBall.glej file is a JSON file which stores all of the information for the PlayerBall. This file does not need to be edited in most cases since the FlatRedBall Editor provides controls for making changes. Of course, the file can be edited by hand, and any changes will be automatically reloaded by the FlatRedBall Editor if the file changes.
+The PlayerBall.glej file is a JSON file which stores all of the information for the PlayerBall. This file does not need to be edited manually in most cases since the FlatRedBall Editor provides controls for making changes. Of course, the file can be edited by hand, and any changes will be automatically reloaded by the FlatRedBall Editor if the file changes.
 
 This file should be included in version control so that the project can be opened and re-generated on other computers.
 
 #### PlayerBall.cs
 
-The PlayerBall.cs is a code file which contains custom logic. By default this file contains only empty functions, but these can be filled in to customize initialization, every-frame logic, destruction, and content loading. This file is often referred to as the _custom code_ file.
+The PlayerBall.cs is a code file which contains custom logic. By default this file contains only empty functions, but these can be filled in to customize initialization, every-frame logic, destruction, and content loading. This file is often referred to as the _custom code_ file. In a typical game, a lot of your game's code will be written in screen and entity custom code files.
 
 #### PlayerBall.Generated.cs
 
