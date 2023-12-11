@@ -2,7 +2,9 @@
 
 ### Introduction
 
-The Destroy method is used to completely destroy an entity. Generated code calls Destroy for any entity and any list of entities in your current Screen whenever the Screen is destroyed (when the game moves to a different screen). Destroy may need to be manually called if an entity is created manually in game code.
+The Destroy method is used to completely destroy an entity. Generated code calls Destroy for any entity and any list of entities in your current Screen whenever the Screen is destroyed (when the game moves to a different screen). Destroy may need to be manually called if an entity is created manually in game code.&#x20;
+
+Destroy can also automatically called on Entities which take or receive damage based on properties assigned in their collision relationship. For more information on destroying entities when taking damage, see the [Damage Dealing Tutorials](../../tutorials/damage-dealing/).
 
 ### What does Destroy do?
 
@@ -29,47 +31,22 @@ Custom code may need to call Destroy. Usually custom code only needs to destroy 
 
 ### Example - Destroying in a Collision Event
 
-The most common situation where Destroy is called is in collision handling events. For example, consider a game where the player can shoot bullets, and bullets can hit walls (typically represented by a SolidCollision TileShapeCollection). The collision relationship may be defined as shown in the following image. Notice that the collision relationship has an event:
+The most common situation where Destroy is explicitly called is in collision handling events. For example, consider a game like Pac-Man where the Player is moved around the screen and "eats" pellets. Whenever the player collides with a Pellet, the Pellet instance should be destroyed.  In this type of game, the GameScreen would contain two lists: PlayerList and PelletList. A collision relationship between the PlayerList and PelletList would define an event where the destruction of a pellet occurs:
 
-![](../../media/2021-11-img\_61814c88b1382.png)
+![](<../../.gitbook/assets/11\_13 12 35.png>)
 
 The collision relationship event handler might look like as shown in the following code snippet:
 
 ```csharp
-void OnBulletListVsSolidCollisionCollisionOccurred(
-    Entities.Bullet bullet,
-    FlatRedBall.TileCollisions.TileShapeCollection tileShapeCollection)
+void OnPlayerVsPelletCollided(
+    Entities.Player player, Entities.Pellet pellet)
 {
-    bullet.Destroy();
+    pellet.Destroy();
+    // award points, play sfx, etc
 }
 ```
 
-### Entities and presence in your game
-
-If you create a game with Entities, then you will be instantiating and storing these Entities somewhere in your game. For example, you may have a Character and Enemy entity defined as follows:
-
-```csharp
-Character mCharacter;
-PositionedObjectList<Enemy> mEnemies;
-```
-
-In which case you might instantiate them as follows:
-
-```csharp
-mCharacter = new Character(ContentManagerName);
-mEnemies = new PositionedObjectList<Enemy>();
-
-// Somewhere in code you'll be adding new enemies:
-mEnemies.Add(new Enemy(ContentManagerName));
-```
-
-The fist thing to note is that the code above uses the [PositionedObjectList](../../frb/docs/index.php) class. This is **very important**. Let's investigate why. The idea behind using Entities is that you should be able able to destroy your Entity completely with one call - a call to Destroy. This means that the Entity should remove itself from the FlatRedBall Engine **as well as** from your game. Well, the only way that the Entity can remove itself from your game is if it knows which objects to remove itself from in your game. This means that you **must use a class that supports two-way membership**. The [PositionedObjectList](../../frb/docs/index.php) (or any class inheriting from it) supports two-way relationships. If you use the PositionedObjectList class, then any time you call Destroy on an Enemy, it will be automatically removed from your list - assuming of course that your Enemy's Destroy method calls
-
-```csharp
-SpriteManager.RemovePositionedObject(this);
-```
-
-**For Glue users:** As mentioned above, an Entity's generated code will automatically remove the Entity from the [SpriteManager](../../frb/docs/index.php). All you have to do is create a [PositionedObjectList](../../frb/docs/index.php) in your game to store the Entities. Glue also supports creating PositionedObjectLists so use that type in Glue if you plan on creating lists of Entities.
+Situations where damage is dealt (such as a bullet hitting a player) should be handled using the IDamageable and IDamageArea interfaces. FlatRedBall provides automatic destruction of entities which use this interface.
 
 ### Destroy and membership in your game
 

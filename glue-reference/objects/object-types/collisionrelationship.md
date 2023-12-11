@@ -69,7 +69,7 @@ CollisionRelationships are regular Objects which can be created through the righ
 
 In this case the newly-created CollisionRelationship will not yet reference any collidable objects in the screen, and the game will not compile until the objects in the relationship are set (as shown in the next section).
 
-### Editing a CollisionRelationship in Glue
+### Editing a CollisionRelationship in FlatRedBall
 
 Once a CollisionRelationship is created, it can be edited by selecting it under the Screen's **Objects** folder and clicking the **Collision** tab.
 
@@ -140,7 +140,7 @@ To identify which shapes an entity collided against in a TileShapeCollection, th
 
 CollisionRelationships created in Glue will be automatically managed and will automatically perform their every-frame logic. In some cases games need to manually perform collision logic. For example, a game may need to first reset variables on an entity before collision logic is performed for that frame. In that case, the CollisionRelationships created in Glue can be modified in the CustomInitialize method of the **GameScreen**. For example, to disable the EnemyListVsPlayerList CollisionRelationship, the following code can be used:
 
-```lang:c#
+```csharp
 void CustomInitialize()
 {
     EnemyListVsPlayerList.IsActive = false;
