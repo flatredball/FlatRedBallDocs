@@ -11,7 +11,7 @@ This tutorial will show how to work with the solid collision, and how to add new
 
 ### Solid Collision
 
-By default our game already has SolidCollision defined in the GameScreen. If you used the New Proje Wizard, then our GameScreen already has this. If you followed the manual steps in the previous tutorial, then you will have added SolidCollision manually.
+By default our game already has SolidCollision defined in the GameScreen. If you used the New Project Wizard, then GameScreen already has a SolidCollision object. If you followed the manual steps in the previous tutorial, then you will have added SolidCollision manually.
 
 Until now the SolidCollisions have been invisible, and we haven't created anything to collide against. Therefore, there hasn't been any functionality yet either. We can verify that the SolidCollision shape collection is actually being created by making it visible. To do this:
 
@@ -32,7 +32,9 @@ You may want to keep collision visibility set to true to help diagnose problems 
 
 ### Creating Additional TileShapeCollections
 
-As mentioned above, the SolidCollision shape collection is a common object, so the FRB editor provides quick defaults for this type. For the rest of this tutorial we will cover how to create a new TileShapeCollection. At a high level, the steps are:
+As mentioned above, the SolidCollision shape collection is a common object, so the FRB editor provides quick defaults for this type. Your game may need additional TileShapeCollections for additional types of collision. For example, your game may need special collision for spikes that the player can walk over, but which deal damage to the player.
+
+For the rest of this tutorial we will cover how to create a new TileShapeCollection. At a high level, the steps are:
 
 1. Decide on a tile to use for collision
 2. Set the Type on the tile
