@@ -304,6 +304,7 @@
     * [iOS](glue-reference/multi-platform/glue-reference-ios/README.md)
       * [Certificates and Profiles](glue-reference/multi-platform/glue-reference-ios/ios-certificates-and-profiles.md)
       * [Using Xamarin Build Host](glue-reference/multi-platform/glue-reference-ios/using-xamarin-build-host-for-ios-development.md)
+    * [Switch (Nintendo)](glue-reference/multi-platform/switch-nintendo.md)
   * [Objects](glue-reference/objects/README.md)
     * [Object Types](glue-reference/objects/object-types/README.md)
       * [AxisAlignedRectangle](glue-reference/objects/object-types/glue-reference-axisalignedrectangle.md)
