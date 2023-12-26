@@ -473,3 +473,48 @@ This version adds a new checkbox to the Sprite Variables tab enabling the genera
 ![](../media/2023-08-img\_64e2d3103ca16.png)
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+#### Version 46 - IGumScreenOwner Interface
+
+This version introduces the IGumScreenOwner interface. If this exists, then all FlatRedBall Screens which have a Gum Screen will implement this interface in generated code. This enables the automatic updating of layouts outside of screen code, such as in the FlatRedBall Editor code.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+#### Version 47 - FlatRedBall Screens Implement INameable
+
+This version adds a Name property to FlatRedBall Screens, and allows the code generation to assign this Name property.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+#### Version 48 - SpriteManager has InsertLayer
+
+This version adds usage of the SpriteManager's InsertLayer to enable reordering of Layers during live edit.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+#### Version 49 - Gum Renderables Use System.Drawing and System.Numerics
+
+This version is a breaking change to Gum - Gum renderable objects no longer use XNA objects such as Color, Vector3, and Matrix for their internals. This change is an effort to make Gum more cross-platform in C# and to eventually support other programming languages without needing to migrate as much XNA syntax.
+
+This change only modifies the Renderables themselves such as Text and Sprite, but does not modify the wrapping codegen objects such as TextRuntime and SpriteRuntime, so most games will not be affected by this change. However, if you are directly working with the renderables then you may be affected by this syntax change.
+
+Note that if your project is linked to source, then the FRB codegen system will automatically generate the new codegen against the System.Drawing and System.Numerics types, so you are not required to upgrade to this version.
+
+❗ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor. If you have compile errors:
+
+* Identify the locations where you are having compile errors and make the assignments of the values use the proper types. You may need to convert from XNA to System.Drawing/Numerics types.
+* Add System.Numerics and System.Drawing references to your project if you are using an older version of FlatRedBall.
+
+#### Version 50 - GumCommonCodeReferencing
+
+This version updates to using the GumCommon code. The engine doesn't reference GumCommon libraries, but the addition of GumCommon shifts where code is located in the files that are being referenced by the engine and also by games which link to source.
+
+This version does not provide any funcitonal changes.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+#### Version 51 - Gum Text supports BBCode&#x20;
+
+This version allows Gum projects to use BBCode for specifying inline styles.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
