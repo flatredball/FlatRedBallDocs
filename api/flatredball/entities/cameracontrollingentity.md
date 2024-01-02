@@ -27,6 +27,33 @@ void CustomActivity(bool firstTimeCalled)
 
 <figure><img src="../../../.gitbook/assets/02_05 56 02.gif" alt=""><figcaption><p>Switching Targets with key presses</p></figcaption></figure>
 
+### Targets
+
+The Targets property (plural of Target) can be used to give the CameraControllingEntity multiple targets. This is typically used when the camera should follow a list of players in a mutiplayer game. The following code can be used to switch between following one of two targets individually or the list of targets. Notice that the CameraControllingEntity is positioned so that both targets are visible using their average X and Y values.
+
+```csharp
+void CustomActivity(bool firstTimeCalled)
+{
+    var keyboard = InputManager.Keyboard;
+    if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.D1))
+    {
+        CameraControllingEntityInstance.Target = TargetEntity1;
+    }
+    else if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.D2))
+    {
+        CameraControllingEntityInstance.Target = TargetEntity2;
+    }
+    else if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.D3))
+    {
+        // TargetEntityList contains both TargetEntity1 and TargetEntity2
+        CameraControllingEntityInstance.Targets = TargetEntityList;
+    }
+}
+
+```
+
+<figure><img src="../../../.gitbook/assets/02_08 01 01.gif" alt=""><figcaption><p>CameraControllingEntity moving between individual targets and the list</p></figcaption></figure>
+
 ### Moving Immediately to the Target
 
 By default the CameraControllingEntity _interpolates_ from its current position to the target. This is normally desired as it can make the camera move smoothly. At times the Camera may need to be moved immediately to its target.
