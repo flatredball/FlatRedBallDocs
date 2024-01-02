@@ -4,9 +4,32 @@
 
 The CameraControllingEntity is an object which provides convenient camera positioning and zooming functionality. It is included by default in the Top Down and Platformer projects when using the New Project Wizard.
 
+### Target
+
+The Target property controls the desired location of the CameraControllingEntity. If a Target is assigned, the CameraControllingEntity changes its position to move towards the target according to the other properties assigned such as the Map and TargetApproachStyle.
+
+Target can be assigned in code to change the desired position. The following code shows how to change between two targets by pressing the 1 and 2 keys on the keyboard:
+
+```csharp
+void CustomActivity(bool firstTimeCalled)
+{
+    var keyboard = InputManager.Keyboard;
+    if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.D1))
+    {
+        CameraControllingEntityInstance.Target = TargetEntity1;
+    }
+    else if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.D2))
+    {
+        CameraControllingEntityInstance.Target = TargetEntity2;
+    }
+}
+```
+
+<figure><img src="../../../.gitbook/assets/02_05 56 02.gif" alt=""><figcaption><p>Switching Targets with key presses</p></figcaption></figure>
+
 ### Moving Immediately to the Target
 
-By default the CameraControllingEntity _interpolates_ from its current position to the target. This is normally desired as it can make the camera move smoothly. At times the Camera may need to be moved immediately to its target.&#x20;
+By default the CameraControllingEntity _interpolates_ from its current position to the target. This is normally desired as it can make the camera move smoothly. At times the Camera may need to be moved immediately to its target.
 
 The following code results in the CameraControllingEntity moving immediately.
 

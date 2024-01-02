@@ -98,7 +98,7 @@ To create a tile map file in Tiled:
 3. Set the **Tile layer format** to **Base64 (zlib compressed)**. Compressing the tile map will make the .tmx file smaller. We will need to change the type of compression used in a later step, since the new file window only lets us pick "zlib".
 4. Set the **Tile size** to a **Width** of **16px** and a **Height** of **16px**. Tile sizes are usually multiples of 2 (2, 4, 8, 16, 32). This guide uses a tile set with 16x16 tiles.
 5.  Click **Save As...**\
-    &#x20;
+
 
     <figure><img src="../../media/2018-04-img_5ad9edb5c3a12.png" alt=""><figcaption></figcaption></figure>
 6.  Navigate to the Level1's Content folder. You can find this by right-clicking on the GameScreen's **Files** item in Glue and selecting **View in explorer**
@@ -122,7 +122,7 @@ Now that the format has been changed, save the file again. Finally the file can 
 
 <figure><img src="../../media/2016-08-2019-07-03_06-48-05.gif" alt=""><figcaption></figcaption></figure>
 
-The game now references the .tmx file, and when executed the game loads the empty .tmx file.&#x20;
+The game now references the .tmx file, and when executed the game loads the empty .tmx file.
 
 ### Editing the TMX File
 
@@ -195,7 +195,7 @@ Tilesets define the appearance of a collection of tiles along with properties wh
 2. Right-click on the **Files** folder under GameScreen
 3. Select **View in explorer**
 
-The content folder for GameScreen will be open (and empty). &#x20;
+The content folder for GameScreen will be open (and empty).
 
 <figure><img src="../../media/2018-09-img_5b991adb938e1.png" alt=""><figcaption></figcaption></figure>
 
