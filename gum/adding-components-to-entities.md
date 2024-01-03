@@ -148,3 +148,72 @@ public partial class Soldier : IReadOnlyScalable
 ```
 
 The example above shows a simple implementation. An actual implementation can have more features, such as having setters on the scale values, or creating width and height values which are not tied to the SpriteInstance.
+
+### FlatRedBall.Forms in Entities
+
+FlatRedBall.Forms (Gum) components can be added to FlatRedBall Entities just like any other component. If a FlatRedBall.Forms component should be positioned in world space, it can be added to an otherwise-empty entity type, then that entity can be used just like a normal entity.
+
+For example, a DialogBox instance can be positioned in world space by creating an entity in FRB which contains a DialogBox component:
+
+1.  Create a new Entity called DialogBoxContainer in FRB\
+
+
+    <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption><p>DialogBoxEntity</p></figcaption></figure>
+2.  Add a DialogBoxRuntime instance to the DialogBoxContainer entity\
+
+
+    <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Add the DialogBoxRuntime (Gum component) to the DialogBoxEntity</p></figcaption></figure>
+3.  For this demo, all of the code to show the dialog will exist in the Player code, so we need to access the internal DialogBoxRuntime (Gum component). Therefore, it should be marked as public. Select the DialogBoxRuntimeInstance object and change its scope to public.\
+    \
+
+
+    <figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption><p>Make the DialogBoxRuntimeInstance public</p></figcaption></figure>
+
+The DialogBoxRuntime can now be used to show a dialog box on the player. For example, the following code can be added to the Player.cs in a standard platformer project:
+
+```csharp
+private void CustomActivity()
+{
+    if (InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Enter))
+    {
+        ShowDialog();
+    }
+}
+
+private async void ShowDialog()
+{
+    // Create a new instance:
+    var dialogEntity = Factories.DialogBoxEntityFactory.CreateNew();
+    // Set the position of the entity at the same place as the player. The rest of the positioning
+    // can be done in "Gum coordinates" by accessing the Gum object.
+    dialogEntity.Position = this.Position;
+
+    // Access the Gum object - this is why it was made public
+    var dialogGumObject = dialogEntity.DialogBoxRuntimeInstance;
+
+    // make it centered horizontally on the player:
+    dialogGumObject.XOrigin = RenderingLibrary.Graphics.HorizontalAlignment.Center;
+
+    // make the bottom of the box align with the player
+    dialogGumObject.YOrigin = RenderingLibrary.Graphics.VerticalAlignment.Bottom;
+    // Move it up by the player Sprite's height
+    dialogGumObject.Y = 0 - SpriteInstance.Height;
+
+    // Access the Forms object through the FormsControl property...
+    var formsDialog = dialogGumObject.FormsControl;
+    // ...so that we can set its text and await for it to be dismissed.
+    await formsDialog.ShowAsync(
+        "Hello, this is some dialog. Can you believe it? How cool is this? It's so easy to give me movable dialog!");
+
+    // Now that it has been dismissed, we can destroy it:
+    dialogEntity.Destroy();
+}
+
+```
+
+Whenever the enter key is pressed, a DialogBox instance is created and appears above the player.
+
+<figure><img src="../.gitbook/assets/02_18 23 27.gif" alt=""><figcaption><p>DialogBox shown above the player</p></figcaption></figure>
+
+
+
