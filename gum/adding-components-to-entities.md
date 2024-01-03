@@ -135,14 +135,29 @@ Keep in mind that the relationships are updated constantly, so if the Sprite cha
 
 ### Attaching to Scalable Entities
 
-Although entities do not have a size by default, entities can implement the IReadOnlyScalable interface to define their size. Implementing IReadOnlyScalable serves as an alternative to attaching to a FlatRedBall Sprite. Note that FlatRedBall Sprites implement the IReadOnlyScalable interface, so that is why Gum attachment to Sprites allows referencing the Sprite's size. The following code shows how to implement the IReadOnlyScalable interface on an entity called Soldier which has a SpriteInstance:
+Although entities do not have a size by default, entities can implement the IReadOnlyScalable interface to define their size. Implementing IReadOnlyScalable serves as an alternative to attaching to a FlatRedBall Sprite.&#x20;
 
-```lang:c#
-public partial class Soldier : IReadOnlyScalable
+IReadOnlyScalable can be implemented directly on the entity in custom code as shown in the following code:
+
+```csharp
+public partial class Player : IReadOnlyScalable
 {
-    public float ScaleX { get { return SpriteInstance.ScaleX; } }
+    public float ScaleX => 8;
 
-    public float ScaleY { get { return SpriteInstance.ScaleY; } }
+    public float ScaleY => 16;
+    ...
+```
+
+The code above returns a Scale of 8 and ScaleY of 16. Keep in mind that Scale values are measured from the center to the edge, so the values above would result in a width of 16 and a height of 32.
+
+Note that FlatRedBall Sprites implement the IReadOnlyScalable interface. If your entity contains a FlatRedBall Sprite, you can use the Scale values from the Sprite in your IReadOnlyScalable implementation. The following code shows how to implement the IReadOnlyScalable interface on an entity called player which has a SpriteInstance:
+
+```csharp
+public partial class Player : IReadOnlyScalable
+{
+    public float ScaleX => SpriteInstance.ScaleX;
+
+    public float ScaleY => SpriteInstance.ScaleY;
 
     ...
 ```
