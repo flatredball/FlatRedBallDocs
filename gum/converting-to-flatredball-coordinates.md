@@ -21,15 +21,15 @@ The steps for converting are:
 
 For this example, consider a Gum screen with a single colored rectangle named ColoredRectangleInstance:
 
-![](../media/2022-02-img\_621be2f6dba1a.png)
+![Blue rectangle in Gum](../media/2022-02-img\_621be2f6dba1a.png)
 
 Note that the rectangle is positioned according to its center. This example will position a FlatRedBall Circle named CircleInstance. Note that this code can be used to position any FlatRedBall positioned object (such as entities or other collision shapes).
 
-![](../media/2022-02-img\_621be41d3a77b.png)
+![CircleInstance in PositioningScreen](../media/2022-02-img\_621be41d3a77b.png)
 
 The following code can be used to convert the rectangle's position (which in this case is the center) to screen coordinates:
 
-```
+```csharp
 void CustomInitialize()
 {
     // 1 convert the position of the rectangle to screen
@@ -48,12 +48,12 @@ void CustomInitialize()
 }
 ```
 
-![](../media/2022-02-img\_621be43f015a0.png)
+![Circle positioned in the center of the blue rectangle](../media/2022-02-img\_621be43f015a0.png)
 
 Notice that the example above uses the position of the ColoredRectangleInstance as defined by its XOrigin and YOrigin. If the rectangle's origin is changed to top-right in Gum...
 
-![](../media/2022-02-img\_621be4b9beaf8.png)
+![Blue rectangle in Gum with origin top-right](../media/2022-02-img\_621be4b9beaf8.png)
 
 ...then the FlatRedBall CircleInstance will also be positioned on the Gum object's top-right corner.
 
-![](../media/2022-02-img\_621be4ee13f73.png)
+![Circle positioned at the blue rectangle's top-right corner](../media/2022-02-img\_621be4ee13f73.png)
