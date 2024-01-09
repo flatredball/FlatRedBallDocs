@@ -1,5 +1,11 @@
 # 🏗 Building FlatRedBall From Source
 
+### Building FlatRedBall from source is not required to use FlatRedBall.&#x20;
+
+Most users do not need to follow the steps outlined in this section. New users are encouraged to skip this and head over to the Tutorials section. If you would like to build FlatRedBall to do more advanced debugging, contribute to the project, or out of pure curiosity then feel free to continue through this section.
+
+### Introduction
+
 Currently all development is being done on the NetStandard branch, so if you would like to build FlatRedBall Glue form source, we recommend pulling the **NetStandard** branch. The FlatRedBall Game Engine and Tools are all open source:
 
 * [FlatRedBall on Github](https://github.com/vchelaru/FlatRedBall)
