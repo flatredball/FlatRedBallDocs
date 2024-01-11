@@ -2,4 +2,4 @@
 
 ### Introduction
 
-Glue is not just a tool to help you make games. At FlatRedBall we view Glue as a development platform. This means we're working to make it more open. One way of opening Glue is through a [MEF-based](http://mef.codeplex.com/) plugin system. If you're not familiar with MEF, don't worry - the tutorials below will get you up to speed in no time!
+The FlatRedBall Editor is built with a plugin architecture in mind. In fact, most of the functionality you see in the FlatRedBall Editor is provided by plugins. You can create your own plugins for FRB using C#, WPF, and Skia.
