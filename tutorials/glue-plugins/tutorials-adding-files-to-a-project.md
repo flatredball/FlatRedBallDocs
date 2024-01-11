@@ -1,4 +1,4 @@
-# Adding Files to a Game Project
+# Adding Code Files to a Game Project
 
 ### Introduction
 
@@ -23,13 +23,13 @@ Next we'll add files that we want added to our project. To do this:
 3. For each file in your project, right-click and select "Properties"
 4. Change "Build Action" to "Embedded Resource"
 
-![BuildActionEmbeddedResource.png](../../media/migrated_media-BuildActionEmbeddedResource.png)
+![BuildActionEmbeddedResource.png](../../media/migrated\_media-BuildActionEmbeddedResource.png)
 
 ### Editing the PluginBase-inheriting Class
 
 Once you've added the files you want to include we'll write the code to include these files in projects that Glue is managing. First, add an instance of a CodeBuildItemAdder:
 
-```
+```csharp
 // add the following using statements:
 using FlatRedBall.Glue.VSHelpers;
 using System.Reflection;
@@ -40,7 +40,7 @@ CodeBuildItemAdder mItemAdder;
 
 Next we'll write the code to add the "Embedded Resource" files to the project managed by Glue. Add the following code to your plugin class' StartUp method:
 
-```
+```csharp
 mItemAdder = new CodeBuildItemAdder();
 mItemAdder.Add("StateInterpolationPlugin.Back.cs");
 mItemAdder.Add("StateInterpolationPlugin.Bounce.cs");
@@ -48,13 +48,13 @@ mItemAdder.Add("StateInterpolationPlugin.Bounce.cs");
 
 The code above is pulled from a project where the project name is StateInterpolationPlugin, and the files Back.cs and Bounce.cs were added directly in the project (as opposed to being added in a folder). If the files are added in a folder (such as MyFolder) then you will need to change the file names (such as "StateInterpolationPlugin.MyFolder.Back.cs"). After making the "Add" calls, we need to tell the CodeBuildItemAdder where to save the files in the project that it is going to modify. To do this, add the following call:
 
-```
+```csharp
 mItemAdder.OutputFolderInProject = "DesiredOutputFolder";
 ```
 
 This will result in the files being placed in a folder called "DesiredOutputFolder". Finally we'll need to tell Glue that these files should be added to the project. To do this:
 
-```
+```csharp
 // Add the following code to your StartUp method:
 this.ReactToLoadedGlux += HandleGluxLoad;
 
