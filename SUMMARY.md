@@ -143,6 +143,7 @@
     * [Adding UI to FlatRedBall](tutorials/glue-plugins/04-adding-ui-to-glue.md)
     * [Using MVVM](tutorials/glue-plugins/05-and-mvvm.md)
     * [Creating a NamedObjectSave-Editing Plugin](tutorials/glue-plugins/06-creating-a-namedobjectsave-editing-plugin.md)
+    * [Adding File Format Support](tutorials/glue-plugins/adding-file-format-support.md)
     * [Adding Code Files to a Game Project](tutorials/glue-plugins/tutorials-adding-files-to-a-project.md)
     * [Exporting a Plugin](tutorials/glue-plugins/tutorials-exporting-a-plugin.md)
   * [Additional FlatRedBall Editor Tutorials](tutorials/glue-tutorials/README.md)
