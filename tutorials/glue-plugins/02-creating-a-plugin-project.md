@@ -2,87 +2,62 @@
 
 ### Introduction
 
-This tutorial provides instructions for creating a simple Glue plugin. This is the first step in creating any new plugin.
+This tutorial provides instructions for creating a Glue plugin class project.
 
 ### Obtaining Source
 
-The easiest way to create Glue plugins is to use download and develop your plugin in a solution which includes Glue source. Instructions for downloading Glue source can be found on the following page: http://flatredball.com/flatredball-source/ Before continuing you will want to make sure you can build and run Glue from source (**Glue with All.sln**).
+Before creating a plugin, be sure that you have downloaded the FlatRedBall and Gum repositories, and that you have successfully built and run the FlatRedBall Editor from source. For more information see the [Building FlatRedBall From Source page](../../flatredball-source.md).
 
 ### Creating a new SLN
 
-Whether you create a new .sln depends on whether you plan on making a plugin that will be part of the main FlatRedBall repository. If you do intend to do so, please discuss your plans in Discord to make sure it will be accepted as a core library. If you are not sure if you want to include it in the main FRB repository, or if you intend this to be separate from the FRB repository, then you should create a copy of the .sln. Keep in mind that you do not need to create a new .sln for every plugin you are developing - it may be convenient to have multiple plugins in one .sln file. To create a new .sln file:
+Whether you create a new .sln depends on whether you plan on making a plugin that will be part of the main FlatRedBall repository. If your plugin is intended to be part of the FlatRedBall repository, please discuss your plans in Discord to make sure it will be accepted as a core library. If you are not sure if you want to include it in the main FRB repository, or if you intend this to be separate from the FRB repository, then you create your own .sln. Keep in mind that you do not need to create a new .sln for every plugin you are developing - it may be convenient to have multiple plugins in one .sln file. To create a new .sln file:
 
-1.  Open the folder where **Glue with All.sln** is located - on my machine this is located at **C:\Users\Victor\Documents\FlatRedBall\FRBDK\Glue**
+1. Open Visual Studio. If you are using a different IDE such as Rider, you will need to modiyf the steps.
+2.  Select the option to create a new project\
 
-    <figure><img src="../../media/2023-01-img_63b47242dcefd.png" alt=""><figcaption></figcaption></figure>
 
-    The name Glue with All means that all plugins are currently part of this .sln.
-2. Create a copy of **Glue with all.sln** in the same folder
-3.  Rename the newly-created file to indicate the plugin you are developing. For example, I will name mine **Glue with TutorialPlugin.sln**
+    <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Create a new project in Visual Studio</p></figcaption></figure>
+3.  Select Class Library and click Next\
 
-    ![](../../media/2023-01-img_63b4728413a0f.png)
 
-### Creating a Plugin Project
+    <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption><p>Select Class Library in Visual Studio</p></figcaption></figure>
+4.  Enter a name and location for your new project and click Next\
 
-Now that we have a .sln file to hold our plugin, we can create a new .csproj (project) file. To add a new .csproj to your newly-created .sln file:
 
-1. Open the newly-created .sln file (mine is called **Glue with TutorialPlugin.sln**)
-2.  Collapse the projects in the solution explorer - this will make it easier to add new projects
+    <figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption><p>Selecting Project name and Location</p></figcaption></figure>
+5.  Select .NET 6.0 as the Framework - this is the current .NET version used in the FlatRedBall Editor as of January 2024, but it will likely change in the future. Click Create.
 
-    ![](../../media/2018-02-img_5a7f0d5c0c1f5.png)
-3.  You can choose how you prefer to organize your plugin. Common approaches include adding a new folder for your plugin at the root of the solution, or adding your plugin to the existing Plugins folder. For this tutorial I will create a new folder at the root of the solution called Tutorial. Right-click on the solution and select **Add** -> **New Solution Folder**
+    <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption><p>Select .NET Version</p></figcaption></figure>
 
-    ![](../../media/2018-02-img_5a7f0e76ee93f.png)
-4.  Name the folder **Tutorial**
+### Linking Glue Libraries
 
-    ![](../../media/2018-02-img_5a7f0ebc176c7.png)
+To link the necessary Glue libraries in your project:
 
-Larger plugin projects may contain multiple projects, so creating  a folder for your plugin is a good way to keep the projects organized. Next we'll create a new .csproj file for the plugin:
+1. Right-click on the Solution
+2. Select Add -> Existing Project
+3. Navigate to the folder where you have cloned the FlatRedBall Respository. For example, it may be at C:\Users\YourUserName\Documents\GitHub\FlatRedBall
+4. Select the PluginLibraries.csprojj file located at \<FlatRedBall Root>/FRBDK/Glue/PluginLibraries/PluginLibraries.csproj
 
-1.  Right-click on the **Tutorial** folder and select **Add** -> **New Project**
+Once this is added to your project, add the PluginLibraries as a dependency to your plugin project. You may notice that your project has a warning in the projects node in the Solution Explorer. To solve this problem, double-click your csproj and modify it:
 
-    ![](../../media/2018-02-img_5a7f0f6177819.png)
-2.  Select the **Class Library (not .NET Framework)** category
+1. Set the TargetFramework to `net6.0-windows`
+2. Add the `<UseWPF>true</UseWPF>` tag in teh same PropertyGroup.
 
-    ![](../../media/2023-01-img_63b472ef08e0b.png)
-3.  Name your plugin something like **TutorialPlugin**
+For example, after the modifications your .csproj may look like the following csproj:
 
-    ![](../../media/2023-01-img_63b47314c3d19.png)
-4.  Verify that you are targeting .NET 6.0. This is the current version of the FlatRedBall Editor as of 2023, but it will likely change in the future
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<UseWPF>true</UseWPF>
+  </PropertyGroup>
 
-    ![](../../media/2023-01-img_63b4734808217.png)
-
-After clicking **OK**, the project will appear in the **Solution Explorer.**&#x20;
-
-<figure><img src="../../media/2018-02-img_5a7f24bd2c492.png" alt=""><figcaption></figcaption></figure>
-
-### Adding Project References
-
-Tutorial projects must reference FlatRedBall and Glue libraries to be able to make changes to Glue at runtime. Most plugins also require referencing a few other libraries for displaying UI. Fortunately you can solve this by adding a single project reference. To add the project reference:
-
-1. Expand the newly-created **TutorialPlugin** project in the **Solution Explorer**
-2. Right-click on the **Dependencies** item and select **Add Project Reference...**
-3.  Check Plugin Libraries:
-
-    ![](../../media/2023-04-img_644d173f66308.png)
-
-The library should also target Windows:
-
-1. Right-click on the plugin library and select Properties
-2.  Change the Target OS to Windows
-
-    ![](../../media/2023-01-img_63b474f814127.png)
-
-&#x20; Glue plugins typically often require a set of libraries for WPF development, as Glue plugins can host WPF controls. To add these libraries:
-
-1. Double-click your project file to open it as a text file in Visual Studio
-2. Add the following to your PropertyGroup tag:
-
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FlatRedBall\FRBDK\Glue\PluginLibraries\PluginLibraries.csproj" />
+  </ItemGroup>
+</Project>
 ```
- <UseWindowsForms>true</UseWindowsForms>
- <UseWPF>true</UseWPF>
-```
-
-![](../../media/2023-01-img_63b4758c7d999.png)
 
 Now you have a project that is ready to go as a plugin project! Next we'll create our first plugin class.
