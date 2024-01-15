@@ -446,6 +446,8 @@
     * [gum-how-to-play-gum-screen-animations](gum/animations/gum-how-to-play-gum-screen-animations.md)
     * [named-events](gum/animations/named-events.md)
     * [setting-gum-animationchain-achx-in-code](gum/animations/setting-gum-animationchain-achx-in-code.md)
+* [🦴 Spine](spine/README.md)
+  * [Setup](spine/setup.md)
 * [🏫 API Documentation](api/README.md)
   * [FlatRedBall Engine](api/flatredball/README.md)
     * [Introduction](api/flatredball/spritelist.md)
