@@ -4,6 +4,7 @@ To use Spine in your project, you must do the following:
 
 1. Link your project against FlatRedBall Source
 2. Link your project against the Spine
+3. Load the Spine shader (.fx) file
 
 You can use Spine purely in code, or you can use Spine in the FlatRedBall Editor by adding the Spine plugin. The FlatRedBall Editor plugin enables adding Spine files (skeleton and atlas) to your FlatRedBall project. The plugin generates code for loading these files.
 
@@ -41,3 +42,10 @@ Once you have restarted FlatRedBall, you should see Spine listed in the installe
 
 <figure><img src="../.gitbook/assets/15_07 25 10.png" alt=""><figcaption><p>Spine Plugin in FlatRedBall</p></figcaption></figure>
 
+### Loading the Spine Shader
+
+The SpineShader is required to render Spine. To load the Spine Shader:
+
+1. Download SpineEffect.fx file from the Releases page [https://github.com/flatredball/FlatRedBall.Spine/releases](https://github.com/flatredball/FlatRedBall.Spine/releases)
+2. Add the SpineEffect.fx file to GlobalContent by drag+dropping the file into your Global Content Files folder in FlatRedBall
+3. working on this....

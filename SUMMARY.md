@@ -448,6 +448,7 @@
     * [setting-gum-animationchain-achx-in-code](gum/animations/setting-gum-animationchain-achx-in-code.md)
 * [🦴 Spine](spine/README.md)
   * [Setup](spine/setup.md)
+  * [SpineDrawableBatch](spine/spinedrawablebatch.md)
 * [🏫 API Documentation](api/README.md)
   * [FlatRedBall Engine](api/flatredball/README.md)
     * [Introduction](api/flatredball/spritelist.md)
