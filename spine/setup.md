@@ -47,5 +47,14 @@ Once you have restarted FlatRedBall, you should see Spine listed in the installe
 The SpineShader is required to render Spine. To load the Spine Shader:
 
 1. Download SpineEffect.fx file from the Releases page [https://github.com/flatredball/FlatRedBall.Spine/releases](https://github.com/flatredball/FlatRedBall.Spine/releases)
-2. Add the SpineEffect.fx file to GlobalContent by drag+dropping the file into your Global Content Files folder in FlatRedBall
-3. working on this....
+2.  Add the SpineEffect.fx file to GlobalContent by drag+dropping the file into your Global Content Files folder in FlatRedBall\
+
+
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>SpineEffect.fx in Global Content Files</p></figcaption></figure>
+3. Open Game1.cs and add the following code in Initialize after `GeneratedInitialize();`:
+
+```csharp
+FlatRedBall.Spine.SpineManager.Initialize(
+    graphics.GraphicsDevice, 
+    GlobalContent.SpineEffect);
+```

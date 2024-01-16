@@ -45,9 +45,9 @@ Now that we've created a single wall, we can duplicate it by right-clicking on i
 
 <figure><img src="../../.gitbook/assets/02_07 00 27.png" alt=""><figcaption><p>Right-click Duplicate command</p></figcaption></figure>
 
-Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectangle instances: &#x20;
+Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectangle instances:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>All six walls in Walls ShapeCollection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>All six walls in Walls ShapeCollection</p></figcaption></figure>
 
 Next set the X, Y, Width, and Height variables for for the newly-created walls as follows: **Wall2**
 
@@ -97,15 +97,14 @@ Next we'll use collision relationships to define collision between the PlayerBal
 Since our PlayerBall is an ICollidable, that means it can collide with any other ICollidable and with any shapes - like the Walls. We need to tell our game that we want the PlayerList to collide against the PlayerWalls. The easiest way to do this is to create a Collision Relationship in Glue. To do this:
 
 1. Drag+drop the **PlayerBallList** onto the **Walls** in the Glue explorer. This will create a new CollisionRelationship
-2.  Select the new CollisionRelationship (which will be named **PlayerBallVsWalls**)\
-
+2.  Select the new CollisionRelationship (which will be named **PlayerBallVsWalls**)\\
 
     <figure><img src="../../.gitbook/assets/02_07 02 16.gif" alt=""><figcaption><p>Creating PlayerBallVsWalls collision relationship</p></figcaption></figure>
 3. Select the **Collision** tab
 4. Change the **Collision Physics** to **Bounce Collision** so that our **PlayerBall** bounces against the walls
 5. Change the PlayerBall Mass to 0. This means that the PlayerBall will behave as if it has no mass, so it will not be able to move the walls. Be sure to press Enter or Tab to save the change.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing collision mass</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing collision mass</p></figcaption></figure>
 
 If we run the game now, the PlayerBall will collide with the walls.
 

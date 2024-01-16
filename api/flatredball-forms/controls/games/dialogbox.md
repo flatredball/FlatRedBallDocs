@@ -80,9 +80,9 @@ private async void ShowMultiplePages()
 }
 ```
 
-This approach is useful if your DialogBox implementation has additional properties for each page of  dialog. For example, a DialogBox can be modified in Gum to have a Text instance displaying the name of the person speaking.
+This approach is useful if your DialogBox implementation has additional properties for each page of dialog. For example, a DialogBox can be modified in Gum to have a Text instance displaying the name of the person speaking.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>DialogBox with SpeakerTextInstance in Gum</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>DialogBox with SpeakerTextInstance in Gum</p></figcaption></figure>
 
 Since the Show method exists on the standard DialogBox, it does not have a way to specify the speaker. We can access the visual on the DialogBox to modify the SpeakerTextInstance directly through the Visual property.
 
@@ -111,7 +111,7 @@ Note that to access the SpeakerTextInstance, the Visual must be used, which is a
 
 ### DialogBox Input
 
-DialogBox responds to input and can respond to two types of input: c_onfirm_ input and _cancel_ input.
+DialogBox responds to input and can respond to two types of input: c\_onfirm\_ input and _cancel_ input.
 
 Confirm input performs the following actions:
 
