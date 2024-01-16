@@ -23,7 +23,7 @@ To add a SpineDrawableBatch to an entity:
 5.  Select the Skeleton entry in FlatRedBall, click on the Spine tab, and change the Atlas property the desired Atlas file. It should appear in the dropdown.\
 
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Setting an AtlasName on a Spine skeleton</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Setting an AtlasName on a Spine skeleton</p></figcaption></figure>
 
 **Important**: At the time of this writing, the three files must be loaded in the proper order. The order is:
 
@@ -33,7 +33,7 @@ To add a SpineDrawableBatch to an entity:
 
 You can re-order the files by holding down the ALT key on the keyboard and pressing the up and down keys.
 
-<figure><img src="../.gitbook/assets/16_06 16 26.gif" alt=""><figcaption><p>Reordering files</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/16_06 16 26.gif" alt=""><figcaption><p>Reordering files</p></figcaption></figure>
 
 This requirement may go away in the future as the Spine plugin gets better at tracking dependencies.
 
@@ -46,15 +46,15 @@ Now the Spine files have been added to the entity, we need to add them as an obj
 3. Enter a name such as SpineDrawableBatch
 4. Click OK
 
-<figure><img src="../.gitbook/assets/16_06 18 35.png" alt=""><figcaption><p>Creating a new Object from a loaded Spine Skeleton</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/16_06 18 35.png" alt=""><figcaption><p>Creating a new Object from a loaded Spine Skeleton</p></figcaption></figure>
 
 You should now have all three files in your Entity as well as a SpineDrawableBatch in the Objects folder.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Spine files and SpineDrawableBatch object</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Spine files and SpineDrawableBatch object</p></figcaption></figure>
 
 ### Adding an Entity Instance to a Screen
 
 To see the entity instance in-game, drag+drop the entity onto a Screen, such as GameScreen. Run the game and the Spine Drawable Batch should appear.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>SpineDrawableBatch in Game</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>SpineDrawableBatch in Game</p></figcaption></figure>
 
