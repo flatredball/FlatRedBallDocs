@@ -449,6 +449,7 @@
 * [🦴 Spine](spine/README.md)
   * [Setup](spine/setup.md)
   * [SpineDrawableBatch](spine/spinedrawablebatch/README.md)
+    * [Event](spine/spinedrawablebatch/event.md)
     * [SetCollision](spine/spinedrawablebatch/setcollision.md)
 * [🏫 API Documentation](api/README.md)
   * [FlatRedBall Engine](api/flatredball/README.md)
