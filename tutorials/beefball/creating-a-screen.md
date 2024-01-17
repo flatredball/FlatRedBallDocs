@@ -91,7 +91,9 @@ By default the center of the screen is at the origin (0,0), and objects are posi
 
 ![PlayerBall1 positionied at (0,0) in  game](../../media/2023-09-img\_65044991b53a6.png)
 
-For more information on how to control the screen's resolution and world units, see the FlatRedBall Resolution section: [https://flatredball.com/documentation/tools/glue-reference/camera/](../../glue-reference/camera.md) For more information on how to control the Camera to change the center of the screen, see the Camera code reference: [https://flatredball.com/documentation/api/flatredball/flatredball-camera/](../../documentation/api/flatredball/camera.md)
+For more information on how to control the screen's resolution and world units, see the [FlatRedBall Resolution section](../../glue-reference/camera.md).
+
+For more information on how to control the Camera to change the center of the screen, see the [Camera code reference](../../api/flatredball/camera/).
 
 ### Conclusion
 
