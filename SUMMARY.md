@@ -450,6 +450,7 @@
   * [Setup](spine/setup.md)
   * [SpineDrawableBatch](spine/spinedrawablebatch/README.md)
     * [Event](spine/spinedrawablebatch/event.md)
+    * [PlayAnimation](spine/spinedrawablebatch/playanimation.md)
     * [SetCollision](spine/spinedrawablebatch/setcollision.md)
     * [Skeleton](spine/spinedrawablebatch/skeleton.md)
 * [🏫 API Documentation](api/README.md)
