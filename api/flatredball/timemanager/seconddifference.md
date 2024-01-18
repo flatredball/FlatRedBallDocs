@@ -23,11 +23,11 @@ You can use the SecondDifference property to measure how long a frame has taken.
 float framesPerSecond = 1/TimeManager.SecondDifference;
 ```
 
-**The default behavior of FRB is to attempt to force a certain frame rate.** Keep in mind that by default FRB attempts to keep framerate at 60 fps so you will want to disable fixed framerate to get more accurate performance numbers. For more information see the [disabling fixed time step wiki entry](../../../frb/docs/index.php#Disabling\_Fixed\_Time\_Step). If your game is running slowly, or if you have very long frames (such as when the game first starts, or when transitioning between screens) frame time may be longer.
+**The default behavior of FRB is to attempt to force a certain frame rate.** Keep in mind that by default FRB attempts to keep framerate at 60 fps so you will want to disable fixed framerate to get more accurate performance numbers. For more information see the [disabling fixed time step wiki entry](../../microsoft-xna-framework/game/isfixedtimestep.md). If your game is running slowly, or if you have very long frames (such as when the game first starts, or when transitioning between screens) frame time may be longer.
 
 ### Detailed Discussion
 
-The TimeManager.SecondDifference returns the amount of time that the last frame took to process and render - or more specifically the second difference between the start of the current frame and the start of the last frame. This can be used to apply time based movement to objects. Keep in mind that this is usually not necessary as most [PositionedObjects](../../../frb/docs/index.php) are associated with managers which automatically apply velocity to position. For information on turning off the fixed time step, see the [disabling fixed time step](../../../frb/docs/index.php#Disabling\_Fixed\_Time\_Step) wiki entry. The following code manually applies a velocity to a [PositionedObject](../../../frb/docs/index.php).
+The TimeManager.SecondDifference returns the amount of time that the last frame took to process and render - or more specifically the second difference between the start of the current frame and the start of the last frame. This can be used to apply time based movement to objects. Keep in mind that this is usually not necessary as most [PositionedObjects](../positionedobject/) are associated with managers which automatically apply velocity to position. For information on turning off the fixed time step, see the [disabling fixed time step](../../microsoft-xna-framework/game/isfixedtimestep.md) wiki entry. The following code manually applies a velocity to a [PositionedObject](../positionedobject/).
 
 ```
 // This code belongs in Update or some other method which is called every frame.
@@ -55,7 +55,7 @@ While the code is very simple, there is one main problem - it's tied to framerat
 myObject.X += 1 * TimeManager.SecondDifference;
 ```
 
-This is better because it resolves the issue of being dependent on frame time, and in some cases this is the best or only solution to moving objects. However, the [PositionedObject](../../../frb/docs/index.php) (and objects which inherit from it) expose velocity and rate values for many properties including position and rotation. Other objects include velocity and rate values for scale and color component values. For example, the above code to move an object by 1 unit per second can also be accomplished as follows:
+This is better because it resolves the issue of being dependent on frame time, and in some cases this is the best or only solution to moving objects. However, the [PositionedObject](../positionedobject/) (and objects which inherit from it) expose velocity and rate values for many properties including position and rotation. Other objects include velocity and rate values for scale and color component values. For example, the above code to move an object by 1 unit per second can also be accomplished as follows:
 
 ```
 // This only needs to be called once.  Velocity persists!
