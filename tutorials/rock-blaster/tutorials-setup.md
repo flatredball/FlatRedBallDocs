@@ -23,7 +23,7 @@ Press the play button to launch the (empty) game.
 
 ![](../../media/2021-03-img\_604c33fbe290b.png)
 
-### Run Glue Wizard
+### Run Wizard
 
 Next we'll run the New Project Wizard which will jumpstart the development process by adding common Screens, Entities, and other files to our project. To run the Wizard, click the **Run Wizard** button in the **Quick Actions** tab.
 
