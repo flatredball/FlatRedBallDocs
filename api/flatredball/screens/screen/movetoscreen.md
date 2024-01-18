@@ -4,6 +4,8 @@
 
 The MoveToScreen method can be used to move from the current Screen to another Screen. The MoveToScreen method will destroy the current Screen and all of its contained Entities, then begin loading the Screen passed to the MoveToScreen method.
 
+MoveToScreen can be called when moving between different types of screens, such as between a Titlescreen and LevelSelectScreen. MoveToScreen should also be used to transition between levels such as moving between Level1 and Level2.
+
 ### Calling MoveToScreen
 
 MoveToScreen accepts either the type (preferred if you know it) or the name of the screen. The screen name may be fully qualified (such as "YourGame.Screens.Level2") or not fully qualified (such as "Level2"). For example, to move to Level 2, the following code would be used:
@@ -45,7 +47,7 @@ if(wasHitByBullet)
 }
 ```
 
-### MoveToScreen destroys the Screen
+### MoveToScreen Destroys the Screen
 
 When the MoveToScreen method is called, the current Screen will be destroyed and the Screen that you are moving to will be created. The things that are destroyed are:
 
