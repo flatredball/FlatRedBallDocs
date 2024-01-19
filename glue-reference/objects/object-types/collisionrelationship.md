@@ -83,25 +83,30 @@ Subcollision allows specifying a specific shape within a collidable entity to us
 
 <figure><img src="../../../media/2019-08-2019-08-21_09-26-26.gif" alt=""><figcaption></figcaption></figure>
 
-#### Collision Physics
+### Collision Physics
 
-Physics can be set up through the Collision tab using one of three options:
+Physics can be set up through the Collision tab which offers multiple options.
 
-*   **No Physics** - Colliding objects will not automatically be moved by the CollisionRelationship.
+<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption><p>Available collision physics options</p></figcaption></figure>
 
-    ![](../../../media/2019-08-img\_5d5cb7d56fab4.png)
+:
+
+* **No Physics** - Colliding objects will not automatically have their positions or velocities changed by the CollisionRelationship.
 *   **Move Collision** - Colliding objects will be separated if a collision occurs using their relative mass values. The most common values for **First Mass** and **Second Mass** are 1, 1 if both objects have equal mass and 0, 1 if the first object should not be able to push the second (in the case of colliding against a solid TileShapeCollection)
 
-    ![](../../../media/2019-08-img\_5d5cb850a57b1.png)
+    ![Player vs Enemy collision move physics using equal masses](<../../../.gitbook/assets/19\_06 22 22.png>)
 
     * **First Mass** - the mass of the first object in the relationship (the mass of enemies) relative to the mass of the second object. If this object should not be able to push the second object, it should have a mass of 0.
     * **Second Mass** - the mass of the second object relative to the first object. If this object should not be able to push the first object, it should have a mass of 0.
+* **Move Soft Collision -** Colliding objects will be separated, but gradually over time. This creates a "soft" feel, allowing objects to overlap and push each other around.
 *   **Bounce Collision** - Colliding objects will be separated if a collision occurs. They will also have their velocity adjusted in response to the elasticity value. An elasticity value of 1 will preserve momentum. An elasticity of 0 will be an _inelastic_ collision - where momentum is lost.
 
-    ![](../../../media/2019-08-img\_5d5cb8df8e850.png)
+    ![Player vs Enemy collision bounce physics using equal masses](<../../../.gitbook/assets/19\_06 24 17.png>)
 
     * **First Mass/Second Mass** - see Move collision
     * **Elasticity** - A multiplier for an object's velocity when it collides. A value of 0 will absorb momentum. A value of 1 will preserve momentum. A value greater than 1 will add momentum.
+
+Physics can also be applied using collision events if your game needs to customize the behavior when a collision occurs. For example, you may want the relaitive masses between entities to vary rather than always being fixed.
 
 ### Collision Events
 
@@ -109,13 +114,14 @@ In some cases games will need to perform custom logic when a collision occurs. F
 
 * A Player entity takes damage when colliding with a bullet
 * The Bullet entity being destroyed when colliding with a wall
-* An Enemy entity's movement speed being slowed when colliding with mud TileShapeCollection.
+* An Enemy entity's movement speed being slowed when colliding with mud TileShapeCollection
+* Certain objects should have different masses when performing collision.
 
 Collision events can be created by dropping a CollisionRelationship on a Screen's **Events** folder.
 
-<figure><img src="../../../media/2019-08-2019-08-21_07-37-57.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19_06 26 40.gif" alt=""><figcaption><p>Drag+Drop CollisionRelationship on Events.</p></figcaption></figure>
 
-For more information on Glue events, see the [Glue Events page](../../../documentation/tools/glue-reference/events.md). Like all other events, collision events can be edited in code. In the example above, the **GameScreen.Event.cs** file now includes an function OnEnemyListVsPlayerListCollisionOccurred which is called whenever a collision occurs between an Enemy and Player instance. Make sure to add code to **\<YourGameScreen>.Event.cs** and not the **\<YourScreen>.Genererated.Event.cs**.
+For more information on FlatRedBall events, see the [FlatRedBall Events page](../../../documentation/tools/glue-reference/events.md). Like all other events, collision events can be edited in code. In the example above, the **GameScreen.Event.cs** file now includes an function OnEnemyVsPlayerCollisionOccurred which is called whenever a collision occurs between an Enemy and Player instance. Make sure to add code to **\<YourGameScreen>.Event.cs** and not the **\<YourScreen>.Genererated.Event.cs**.
 
 ![](../../../media/2019-08-img\_5d5d4a287ca7b.png)
 
