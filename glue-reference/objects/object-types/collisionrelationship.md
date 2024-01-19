@@ -142,6 +142,26 @@ void OnEnemyListVsPlayerListCollisionOccurred (Entities.Enemy first, Entities.Pl
 
 To identify which shapes an entity collided against in a TileShapeCollection, the LastCollisionAxisAlignedRectangles property can be used. For more information see the LastCollisionAxisAlignedRectangles [page](../../../tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/lastcollisionaxisalignedrectangles.md).
 
+#### Code Example - Custom Entity Masses
+
+If all entity instances have the same mass, then you can set your collision relationship physics through the FlatRedBall Editor. If your game requires custom masses, then you can implement your own physics in the collision event.
+
+For example, the following code would adjust the player's mass so that it is higher if the player is shooting. This makes the player harder to move when shooting.
+
+```csharp
+void OnPlayerVsEnemyCollisionOccurred (Entities.Player player, Entities.Enemy enemy)
+{
+    var playerMass = 1;
+    var enemyMass = 1;
+    var elasticity = 0;
+    if(player.IsAttacking)
+    {
+        playerMass = 5;
+    }
+    player.CollideAgainstBounce(enemy, playerMass, enemyMass, elasticity);
+}
+```
+
 ### Manual Collision Relationships
 
 CollisionRelationships created in Glue will be automatically managed and will automatically perform their every-frame logic. In some cases games need to manually perform collision logic. For example, a game may need to first reset variables on an entity before collision logic is performed for that frame. In that case, the CollisionRelationships created in Glue can be modified in the CustomInitialize method of the **GameScreen**. For example, to disable the EnemyListVsPlayerList CollisionRelationship, the following code can be used:
