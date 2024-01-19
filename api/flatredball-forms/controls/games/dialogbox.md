@@ -64,6 +64,8 @@ await MovePlayerTo(300, 80);
 await dialogBox.ShowAsync("No one is here either. Am I hearing things?");
 ```
 
+Note that if your game requires advancing the dialog with the Keyboard or Xbox360GamePad, then the DialogBox must have its IsFocused property set to true. See the section on IsFocused for more information.
+
 ### Multiple Pages Using ShowAsync
 
 The DialogBox control provides a few approaches for showing multiple pages. As shown above, the Show method can take an array of `string`s. Alternatively, the `ShowAsync` method can be used to show one page at a time.
@@ -111,7 +113,7 @@ Note that to access the SpeakerTextInstance, the Visual must be used, which is a
 
 ### DialogBox Input
 
-DialogBox responds to input and can respond to two types of input: c\_onfirm\_ input and _cancel_ input.
+DialogBox responds to input and can respond to two types of input: _confirm_ input and _cancel_ input.
 
 Confirm input performs the following actions:
 
@@ -127,7 +129,7 @@ Cancel input performs the following actions:
 
 In other words, confirm and cancel input behave the same except that cancel immediately prints out the next page, giving players the choice to skip letter-by-letter display.
 
-Dialog can be advanced with Mouse, Keyboard, Xbox360GamePad, and a custom Func predicate named AdvancePageInputPredicate. Note that if a DialogBox has a non-null AdvancePageInputPredicate, then all other forms of input are ignored. This allows games to fully customize a DialogBox's page advance logic.
+Dialog can be advanced with Mouse, Keyboard, Xbox360GamePad, and a custom `Func` predicate named `AdvancePageInputPredicate`. Note that if a DialogBox has a non-null `AdvancePageInputPredicate`, then all other forms of input are ignored. This allows games to fully customize a DialogBox's page advance logic.
 
 #### Mouse Input
 
@@ -147,6 +149,8 @@ var dialogBox = Forms.DialogBoxInstance;
 dialogBox.IsFocused = true;
 dialogBox.Show("Press space or ESC to perform confirm or cancel actions, respectively");
 ```
+
+For more information on IsFocused and DialogBoxes, see the section below.
 
 **Xbox360GamePad Input**
 
@@ -179,3 +183,22 @@ private bool AdvanceOnSecondaryClick()
 ```
 
 As mentioned above, assigning AdvancePageInputPredicate prevents all other default page advance logic, so the user will not be able to advance the dialog with the keyboard, gamepads, or with a left-click on the DialogBox.
+
+### IsFocused
+
+As mentioned in the section on DialogBox Input, Xbox360Gamepad and Keyboard input will only advance and dismiss the dialog box if IsFocused is set to true. This must be set explicitly to give the dialog box focus. Note that mouse clicks will advance the dialog box automatically even if the DialogBox's IsFocused is not set to true.
+
+Typically IsFocused is set to true whenever dialog is displayed. When a DialogBox is dismissed, it is hidden and its IsFocused is set to false. This means that if multiple DialogBox pages are displayed one-after-another using `ShowAsync`, `IsFocused` must be set to true before each `ShowAsync` call is performed, as shown in the following code:
+
+```csharp
+var dialogBox = Forms.DialogBoxInstance;
+
+dialogBox.IsFocused = true;
+await dialogBox.ShowAsync("This is the first page of dialog.");
+dialogBox.IsFocused = true;
+await dialogBox.ShowAsync("This is a second page.");
+dialogBox.IsFocused = true;
+await dialogBox.ShowAsync("And a third page.");
+dialogBox.IsFocused = true;
+await dialogBox.ShowAsync("Finally a fourth page.");
+```
