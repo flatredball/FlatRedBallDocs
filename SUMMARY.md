@@ -73,6 +73,7 @@
       * [BindingContext Property](tutorials/flatredball-forms/data-binding/01-bindingcontext.md)
       * [Binding FlatRedBall.Forms](tutorials/flatredball-forms/data-binding/02-binding-flatredball-forms.md)
       * [Templates](tutorials/flatredball-forms/data-binding/03-templates.md)
+    * [Styling Forms](tutorials/flatredball-forms/styling-forms.md)
   * [Top Down Games](tutorials/top-down-entity/README.md)
     * [Top Down Basics](tutorials/top-down-entity/top-down-basics/README.md)
       * [Setup](tutorials/top-down-entity/top-down-basics/01-setup.md)

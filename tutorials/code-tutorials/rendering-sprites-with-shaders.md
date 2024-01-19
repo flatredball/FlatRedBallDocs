@@ -21,7 +21,7 @@ To add an Image file:
 
 Both files should now be in your Screen so that we can reference them in the code below.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating an IDrawableBatch**
 
