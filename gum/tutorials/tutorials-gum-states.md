@@ -4,6 +4,8 @@
 
 Gum supports the concept of states, which are very similar to states in Glue. This tutorial will discuss how to use States which are created in Gum when integrating Gum objects in Glue. This tutorial will cover both regular (uncategorized) as well as categorised states. If you'd like to see how to work with states in Gum, see [this tutorial](http://vchelaru.github.io/Gum/tutorials/Usage%20Guide%20\_%20States.html). If you'd like to see how to work with categorized states in Gum, see [this tutorial](http://vchelaru.github.io/Gum/tutorials/Usage%20Guide%20\_%20State%20Categories.html).
 
+Note that this tutorial uses a component titled Button. The purpose of this tutorial is to provide an end-to-end example of how to create states and work with them in code. The purpose of this is **not to create a usable button.** Although buttons may seem simple in concept, a real world button requires lots of logic that can take a long time to implement. For actual UI that uses buttons, we recommend using FlatRedBall.Forms and the Button class/components that it includes. In other words, you should follow this tutorial to learn about states, but we do not recommend actually using the resulting component in an actual game.
+
 ### States Overview
 
 Before we look at how to work with States in code, we'll do a brief overview of states. We'll look at how states are created, why you might want to use states, and state ownership. States can be though of as "groups of variables". For example, consider the state of a button being disabled. A disabled button may have the following variables set:
