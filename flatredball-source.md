@@ -123,7 +123,7 @@ To build the FlatRedBall Editor (also referred to as Glue):
     <figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. Set **GlueFormsCore** as the **StartUp Project**
 
-<figure><img src=".gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 1.  For Rider users, you will need to set GlueFormsCore as the project to run in the Configuration dialog.\
     \

@@ -4,7 +4,7 @@
 
 Spine supports events which can be handled in code. Events are defined in Spine which can include parameters of different types such as ints, floats, and strings.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Events in Spine</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Events in Spine</p></figcaption></figure>
 
 These events can be handled in code by subscribing to a SpineDrawableBatch's Event event, or through the FlatRedBall Editor.
 
