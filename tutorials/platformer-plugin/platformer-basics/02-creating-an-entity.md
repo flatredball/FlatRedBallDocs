@@ -12,7 +12,7 @@ The FlatRedBall Editor provides a quick setup for creating a platformer project.
 2. Create a new project
 3. Wait for the project to finish loading
 4. Wait for the Wizard window to appear
-5.  Select the Platformer project option\\
+5.  Select the Platformer project option
 
     <figure><img src="../../../media/2022-10-img_634748f242105.png" alt=""><figcaption></figcaption></figure>
 6. Wait for the wizard to finish processing
@@ -78,10 +78,10 @@ To add a level:
 
 1. Select the **Quick Actions**
 2. Click the **Add Screen/Level** button
-3.  Leave all defaults and click **OK**\\
+3.  Leave all defaults and click **OK**
 
     <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 Creation Options</p></figcaption></figure>
-4.  After clicking OK, another popup appears with options for the level tile map (TMX). Leave all defaults and click OK\\
+4.  After clicking OK, another popup appears with options for the level tile map (TMX). Leave all defaults and click OK
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>TMX Creation Options</p></figcaption></figure>
 
