@@ -24,12 +24,13 @@ Visual Studio 2022 (as of version 17.5.1) installs .NET SDK 7.0 which has a bug 
 
 ### Downloading FlatRedBall
 
-The most common approach to making FlatRedBall games is to use the FlatRedBall Editor. The Editor can be downloaded from a pre-built .zip file, or it can be built from source. New users should expand **Downloading Pre-Built FlatRedBall**. \[frb\_toggle title="Downloading Pre-Built FlatRedBall"]
+The most common approach to making FlatRedBall games is to use the FlatRedBall Editor. The Editor can be downloaded from a pre-built .zip file, or it can be built from source. New users should download the pre-built .zip file.
 
 ### Downloading and Running FlatRedBall
 
-1. Download the latest zip file from [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip)
-2.  Unzip the file after downloading\\
+1. Download the latest zip file from [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip).&#x20;
+   1. Alternatively, the FlatRedBall Editor (no additional tools) prebuilt can be downloaded from Github. This is not recommended for new users, but experienced users can replace the FlatRedball Glue folder with the contents from the built files: [https://github.com/vchelaru/FlatRedBall/actions](https://github.com/vchelaru/FlatRedBall/actions)
+2.  Unzip the file after downloading
 
     <figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 3. Go to the folder where the .zip file unzipped to (by default called FRBDK)

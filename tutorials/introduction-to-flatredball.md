@@ -8,11 +8,11 @@ We're glad you came to check out FlatRedBall. Before jumping in, let's take a fe
 
 The FlatRedBall game engine has been in active development since 2005 with the goal of making 2D game development as easy as possible. Even today FlatRedBall is [continually being improved](https://github.com/vchelaru/FlatRedBall/commits/NetStandard). Not only are we developing the best 2D game engine in the world, but we're actively using it to make our own games. Every FlatRedBall feature has been tested with a real-world game development team. All FlatRedBall development centers around a program called the FlatRedBall Editor.
 
-![](../media/2022-01-img\_61d2550ab28c6.png)
+![FlatRedBall Editor editing a game level](../media/2022-01-img\_61d2550ab28c6.png)
 
 This program is where you'll start when making a new project, and you'll use it throughout development as your game grows. The editor is a visual tool, which means you won't be writing any code directly in the editor. However, the editor is a programmer-friendly environment. Everything you do in the editor results in generated code. This makes your game easy to debug and keeps your program as efficient as possible. You still have the full power of C# and Visual Studio to write and debug code. Ultimately your project is a standard .NET project which builds and runs just like any other project. It's real .NET!
 
-![](../media/2021-03-img\_6048ea2556f6c.png)
+![Generated code from the FRB Editor](../media/2021-03-img\_6048ea2556f6c.png)
 
 The editor can set up your project and keeps it structured using the best patterns, but gives you all of the freedom you'd expect from a code-based game engine.
 

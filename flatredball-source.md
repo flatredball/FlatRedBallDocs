@@ -10,6 +10,8 @@ Currently all development is being done on the NetStandard branch, so if you wou
 
 * [FlatRedBall on Github](https://github.com/vchelaru/FlatRedBall)
 
+If you plan on using FlatRedBall FNA, be sure that you include all submodules when pulling FlatRedBall. Thsi may automatically happen if you are using some github clients (such as github for desktop), but you may need to perform additional configuration if using a client that doesn't pull submodules by default (such as Rider).
+
 FlatRedBall uses Gum UI including at runtime. This is also open source and can be found on Githhub:
 
 * [Gum on Github](https://github.com/vchelaru/Gum)
@@ -105,7 +107,7 @@ If you would like to use the engine source in your game project:
     ![](media/2017-02-img\_58920a8e61d75.png)
 14. Build and run your project
 
-### Building Glue
+### Building the FlatRedBall Editor (Glue)
 
 Verify that you have .NET 6 SDK installed [https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.309-windows-x64-installer](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.309-windows-x64-installer)
 
