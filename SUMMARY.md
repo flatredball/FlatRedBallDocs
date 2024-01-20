@@ -771,6 +771,7 @@
         * [FakeIsConnected](api/flatredball/input/xbox360gamepad/fakeisconnected.md)
         * [GamepadLayout](api/flatredball/input/xbox360gamepad/gamepadlayout.md)
         * [IgnoreButtonForOneFrame](api/flatredball/input/xbox360gamepad/ignorebuttonforoneframe.md)
+        * [ButtonPosition vs Button](api/flatredball/input/xbox360gamepad/buttonposition-vs-button.md)
     * [Instructions](api/flatredball/instructions/README.md)
       * [DelegateInstruction](api/flatredball/instructions/delegateinstruction.md)
       * [Instruction](api/flatredball/instructions/instruction.md)
