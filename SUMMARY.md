@@ -21,7 +21,6 @@
     * [Adding Dashing](tutorials/beefball/adding-dashing.md)
   * [Platformer Tutorials](tutorials/platformer-plugin/README.md)
     * [Platformer Basics](tutorials/platformer-plugin/platformer-basics/README.md)
-      * [Introduction](tutorials/platformer-plugin/platformer-basics/01-setup.md)
       * [Creating an Entity](tutorials/platformer-plugin/platformer-basics/02-creating-an-entity.md)
       * [Controlling a Platformer Entity](tutorials/platformer-plugin/platformer-basics/03-controlling-a-platformer-entity.md)
       * [Movement Values](tutorials/platformer-plugin/platformer-basics/04-control-values.md)
