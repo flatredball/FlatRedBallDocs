@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial is an introduction to making games with FlatRedBall. It covers using the FlatRedBall Editor and writing code in C#. The FlatRedBall Editor is a program which helps with the creation and organization of game projects. We'll be exploring its features by creating a game called Beefball - a multiplayer competitive game similar to [air hockey](https://en.wikipedia.org/wiki/Air\_hockey). When finished our game will have two circles, each movable with either the keyboard or an Xbox controller, and a smaller circle which each player can use to earn points.
+This tutorial is an introduction to making games with FlatRedBall. It covers using the FlatRedBall Editor and writing code in C#. The FlatRedBall Editor is a program which helps with the creation and organization of game projects. We'll be exploring its features by creating a game called Beefball - a multiplayer competitive game similar to [air hockey](https://en.wikipedia.org/wiki/Air\_hockey). When finished our game will have two circles, each movable with either the keyboard or an gamepad, and a smaller circle which each player can use to earn points.
 
 ### Opening FlatRedBall
 
@@ -43,11 +43,11 @@ You can also open the project in visual studio by opening the .sln file. The pro
 
 <figure><img src="../../media/2016-01-03_08-09-28.gif" alt=""><figcaption><p>Opening the Visual Studio project from disk</p></figcaption></figure>
 
-When you double-click the .sln file you may see a window like this:&#x20;
+When you double-click the .sln file you may see a window like this:
 
 <figure><img src="../../media/migrated_media-VSVersionSelector.PNG" alt=""><figcaption><p>Application selection window</p></figcaption></figure>
 
-If so you will want to select the version of Visual Studio that is compatible with the type of project you are running. At the time of this writing, Visual Studio 2022 Community is the most common version to use with FlatRedBall. Once Visual Studio is open, you can run your project by pressing the "start" button, or by pressing F5.&#x20;
+If so you will want to select the version of Visual Studio that is compatible with the type of project you are running. At the time of this writing, Visual Studio 2022 Community is the most common version to use with FlatRedBall. Once Visual Studio is open, you can run your project by pressing the "start" button, or by pressing F5.
 
 <figure><img src="../../media/migrated_media-PlayButtonInVisualStudio.png" alt=""><figcaption><p>Start button in Visual Studio</p></figcaption></figure>
 
