@@ -17,14 +17,20 @@ using FlatRedBall.Input;
 Later, perform the checks:
 
 ```csharp
- if (InputManager.Xbox360GamePads[0].ButtonDown(Button.A))
+ var gamepad = InputManager.Xbox360GamePads[0];
+ if (gamepad.ButtonDown(Button.A))
  {
      // do something when the A button is down
  }
- if (InputManager.Xbox360GamePads[0].ButtonDown(Button.B))
+ if (gamepad.ButtonDown(Button.B))
  {
      // do something when the B button is down
  }
+ if(gamePad.ButtonDown(ButtonPosition.FaceLeft))
+ {
+     // do somethign when the left button is down, which could be X or Y
+ }
+ 
 ```
 
 ### Code Example - Checking DPad
