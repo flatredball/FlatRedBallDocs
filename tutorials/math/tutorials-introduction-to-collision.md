@@ -4,7 +4,7 @@
 
 The term "collision" in game development refers to both detecting whether objects are touching as well as changing the state of these objects when this touching occurs.
 
-Almost any game ever made requires some type of collision. For example, Pong used ball vs. paddle collision and Super Mario Bros. performs collision between Mario and the ground to test whether he should fall or not. Even games which might not seem to use collision likely do. For example, mouse-driven adventure games like [King's Quest VI](http://en.wikipedia.org/wiki/Search?search=King%27s%20Quest%20VI%3A%20Heir%20Today%2C%20Gone%20Tomorrow) used collision to detect whether the cursor is overlapping certain areas when clicking.
+Almost all games requires some type of collision. For example, Pong used ball vs. paddle collision and Super Mario Bros. performs collision between Mario and the ground to test whether he should fall or not. Even games which might not seem to use collision likely do. For example, mouse-driven adventure games like [King's Quest VI](http://en.wikipedia.org/wiki/Search?search=King%27s%20Quest%20VI%3A%20Heir%20Today%2C%20Gone%20Tomorrow) used collision to detect whether the cursor is overlapping certain areas when clicking.
 
 The only games free from collision are pure text-based games, but it's likely that if you're working on one of those you probably won't need to use FlatRedBall.
 
@@ -14,7 +14,7 @@ Before we get into how FlatRedBall handles collision, let's cover some basic ter
 
 #### Collision
 
-We've already discussed what a collision is, so let's give some examples. The following image shows three situations and labels whether a collision is occurring: &#x20;
+We've already discussed what a collision is, so let's give some examples. The following image shows three situations and labels whether a collision is occurring:
 
 <figure><img src="../../media/migrated_media-CollisionExamples.png" alt=""><figcaption></figcaption></figure>
 
@@ -22,7 +22,7 @@ Notice that collision doesn't just occur if the edges of two objects are touchin
 
 #### "Move" collision
 
-A move collision is a collision where one or both of the involved shapes are repositioned during the collision to prevent overlap. The term "move" was selected because this type of collision can result in the shapes _moving_ to new positions. The amount that each shape is moved depends on their masses relative to each other. It is very common to make one object static by giving it a non-zero mass and giving the other object a mass of zero. The following image shows the result of a move collision assuming that the rectangle is static and the circle is not. &#x20;
+A move collision is a collision where one or both of the involved shapes are repositioned during the collision to prevent overlap. The term "move" was selected because this type of collision can result in the shapes _moving_ to new positions. The amount that each shape is moved depends on their masses relative to each other. It is very common to make one object static by giving it a non-zero mass and giving the other object a mass of zero. The following image shows the result of a move collision assuming that the rectangle is static and the circle is not.
 
 <figure><img src="../../media/migrated_media-MoveCollision.png" alt=""><figcaption></figcaption></figure>
 
@@ -30,7 +30,7 @@ To use FlatRedBall terms, move collisions will adjust the position of the involv
 
 #### "Bounce" collision
 
-A "bounce" collision is a collision which can be used to simulate physics. As the name implies, bounce collisions cause objects to bounce against each other. Just like move collisions, bounce collisions use the masses of two objects to calculate how the forces from the bounce should be applied. Just like with move collisions, it is common to have one object in a bounce collision have a non-zero mass while the other has a mass of zero. This causes one of the shapes (the one with the non-zero mass) to not be affected by the collision.&#x20;
+A "bounce" collision is a collision which can be used to simulate physics. As the name implies, bounce collisions cause objects to bounce against each other. Just like move collisions, bounce collisions use the masses of two objects to calculate how the forces from the bounce should be applied. Just like with move collisions, it is common to have one object in a bounce collision have a non-zero mass while the other has a mass of zero. This causes one of the shapes (the one with the non-zero mass) to not be affected by the collision.
 
 <figure><img src="../../media/migrated_media-BounceCollisionExample.png" alt=""><figcaption></figcaption></figure>
 
