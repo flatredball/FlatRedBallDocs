@@ -16,18 +16,18 @@ For this tutorial we will create a Gum screen which contains the following:
 
 Normally the actions performed by the buttons listed above would occur through regular game logic (such as collision) but we will use buttons for the sake of simplicity. The specifics of the visuals do not matter, so your screen may look like the following:
 
-![](../../../media/2020-08-img_5f2ac2ffa2a12.png)
+![](../../../media/2020-08-img\_5f2ac2ffa2a12.png)
 
 A few details in the screen above are important:
 
 *   The three buttons are FlatRedBall.Forms Button objects. In other words, the three buttons are created in Gum using components which implement the Button behavior. The most common of these is ButtonStandard.
 
-    ![](../../../media/2023-08-img_64d11c2da310a.png)
+    ![](../../../media/2023-08-img\_64d11c2da310a.png)
 * The HealthBar (ColoredRectangle) is contained within a HealthContainer (Container) using the Percent Width Units
 * Each object in the screen is descriptively named. This will make data binding easier.
 *   The screen is called GameScreenGum. This is the default Gum Screen name for a FlatRedBall Screen called GameScreen. If you have created a game with a GameScreen using the wizard, you will also have a GameScreenGum
 
-    ![](../../../media/2022-01-img_61d634c5ae081.png)
+    ![](../../../media/2022-01-img\_61d634c5ae081.png)
 
 ### Creating a ViewModel
 
@@ -39,7 +39,7 @@ The first step in binding to your UI is to create a ViewModel object. ViewModel 
 
 The ViewModel class should implement the INotifyPropertyChanged interface. Fortunately, FlatRedBall provides a convenient class for this. View models are plain C# classes that are created in Visual Studio. We recommend creating a ViewModels folder in your project, but you can organize them however you like. The following code is an example of what the ViewModel class might look like:
 
-```
+```csharp
 using FlatRedBall.Forms.MVVM;
 
 namespace MvvmProject.ViewModels
@@ -97,7 +97,7 @@ The DependsOn attribute creates a dependency relationship between the property w
 
 The ViewModel establishes which properties can be assigned, and the dependency between properties. Once a ViewModel is created, it can be applied to a Gum object. Note that ViewModels can be applied to Gum objects (GraphicalUiElements) or Forms objects (such as Button). BindingContext assignments _cascade_ - you only need to assign the BindingContext at the top level and all children will recursively receive the same BindingContext. Typically this is done at the GumScreen level in each FlatRedBall Screen. Once the BindingContext is assigned, each individual UI property needs to be bound to the corresponding ViewModel property. The following code shows how this type of binding would be done:
 
-```
+```csharp
 GameScreenViewModel ViewModel;
 
 void CustomInitialize()
@@ -133,7 +133,7 @@ The ViewModel object is defined at GameScreen class scope. This is required so t
 
 Once the ViewModel is created, we assign the BindingContext. This assignment tells the GumScreen and everything inside of the GumScreen to use this as its BindingContext. This assignment will also assign the BindingContext on any Forms objects in your screen, so you only need to do this assignment on the GumScreen. Once the BindingContext is assigned, the code establishes individual bindings between UI properties and ViewModel properties. This binding creates an automatic connection between the ViewModel property to the UI property, so that any changes to the ViewModel will automatically update the UI (assuming the Get and Set functions and DependsOn are written correctly in the ViewModel). Notice that the code uses the nameof keyword in C#. The code above could also be written as shown in the following snippet:
 
-```
+```csharp
     GumScreen.PointsTextInstance.SetBinding(
         "Text" 
         "ScoreDisplay");
@@ -145,13 +145,13 @@ While this is less verbose, it produces code which is easier to break. Using nam
 
 Once the binding is set up, assigning properties on the ViewModel will automatically update the UI. For example, the values above initialize the score and health as shown in the following screenshot:
 
-![](../../../media/2022-01-img_61d6411c3f082.png)
+![](../../../media/2022-01-img\_61d6411c3f082.png)
 
 ### Updating ViewModel Properties
 
 The ViewModel properties can be updated at any time. Doing so automatically updates the bound UI. For example, the following code can be used to modify the properties in response to button clicks:
 
-```
+```csharp
 void CustomInitialize()
 {
     ...
@@ -164,8 +164,6 @@ void CustomInitialize()
 }
 ```
 
-&#x20;
-
 <figure><img src="../../../media/2020-08-05_18-21-02.gif" alt=""><figcaption></figcaption></figure>
 
-Notice that the click events on the buttons do not directly access any UI elements - only the properties on the ViewModel. This makes it much easier to maintain the UI and to continue to add dependencies. &#x20;
+Notice that the click events on the buttons do not directly access any UI elements - only the properties on the ViewModel. This makes it much easier to maintain the UI and to continue to add dependencies.
