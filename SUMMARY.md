@@ -288,7 +288,7 @@
     * [Project](glue-reference/menu/project/README.md)
       * [view-projects](glue-reference/menu/project/view-projects.md)
     * [Settings](glue-reference/menu/settings/README.md)
-      * [glue-reference-menu-camera-settings](glue-reference/menu/settings/glue-reference-menu-camera-settings.md)
+      * [Camera Settings](glue-reference/menu/settings/glue-reference-menu-camera-settings.md)
       * [glue-reference-menu-file-associations](glue-reference/menu/settings/glue-reference-menu-file-associations.md)
       * [glue-reference-menu-file-build-tools](glue-reference/menu/settings/glue-reference-menu-file-build-tools.md)
       * [performance-settings](glue-reference/menu/settings/performance-settings.md)

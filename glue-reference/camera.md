@@ -75,7 +75,7 @@ The Fullscreen checkbox controls whether the game runs in fullscreen or windowed
 
 ![](../media/2021-12-img\_61ad541cb742d.png)
 
-If the same game runs in fullscreen mode, Glue will zoom the game as shown in the following image:
+If the same game runs in fullscreen mode, it is zoomed as shown in the following image:
 
 ![](../media/2021-12-img\_61ad543f63cc9.png)
 
@@ -114,6 +114,22 @@ Typically the Scale value is useful during development, but finished games rarel
 * If your game supports full screen mode, then the window will be sized to match the monitor's resolution, ovewriting the Scale value
 * If the user can resize the game, then the window will adjust in response to resizing, also overwriting the Scale value
 
+### Scale (Gum)
+
+If your game includes a Gum project then the Display Settings tab will include a Gum Scale text box. By default this value is 100%, so the Gum pixels will match your game 1:1. Note that Gum Scale is a multiple to your Scale value above. This value should be left to 100% in most cases.
+
+For example, under this setting a game of 800 pixels wide and 600 pixels tall would display Gum at native resolution, as shown in the following image:
+
+<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption><p>Gum displayed at 100%</p></figcaption></figure>
+
+Changing the **Scale (Gum)** to 200% doubles the size of all Gum objects, as shown in the following image:
+
+<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption><p>Gum displayed at 200%</p></figcaption></figure>
+
+Values less than 100% are also supported. The following image shows the same layout with the **Scale (Gum)** set to 50%:
+
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption><p>Gum displayed at 50%</p></figcaption></figure>
+
 ### On Resize - Preserve vs Increase Visible Area
 
 The **On Resize** option sets whether the amount of in-game units visible should change when the game resizes. By default this value is set to **Preserve (Stretch) Area** which means the in-game units will stretch to preserve the bounds. For example in the following example the height of the in-game area remains 400 units regardless of how the window is resized.
@@ -125,3 +141,79 @@ Changing this value to **Increase Visible Area** enables more of the game world 
 <figure><img src="../media/2021-10-05_22_19_04.gif" alt=""><figcaption></figcaption></figure>
 
 Note that this may result in unexpected behavior if your game expects the visible area to be of a constant size.
+
+### Changing Resolution and Camera Values in Initialize Code
+
+FlatRedBall's camera window provides an easy way to set the default behavior of your game, and it can be used to change camera settings during development. Many games allow the user to customize the window (such as by setting if the game runs in full screen), and the resolution information is then saved in a configuration file. The generated code for camera settings allows changing the code-generated-assigned values prior to the window being created. To modify the settings in initialize:
+
+1. Open your project in Visual Studio
+2. Open **Game1.cs**
+3. Find the following line of code in the Game1's Initialize method: CameraSetup.SetupCamera(SpriteManager.Camera, graphics);
+4. Add code to assign values to CameraSetup.Data **before** the call to SetupCamera
+
+For example, the following code could be used to set the values, assuming configurationData is a valid object:
+
+```csharp
+protected override void Initialize()
+{
+    #if IOS
+    var bounds = UIKit.UIScreen.MainScreen.Bounds;
+    var nativeScale = UIKit.UIScreen.MainScreen.Scale;
+    var screenWidth = (int)(bounds.Width * nativeScale);
+    var screenHeight = (int)(bounds.Height * nativeScale);
+    graphics.PreferredBackBufferWidth = screenWidth;
+    graphics.PreferredBackBufferHeight = screenHeight;
+    #endif
+
+    FlatRedBallServices.InitializeFlatRedBall(this, graphics);
+
+    // assuming there is configuration data to load
+    var configurationData = LoadConfigurationData();
+
+    // assign the values before SetupCamera is called:
+    CameraSetup.Data.ResolutionWidth = configurationData.ResolutionWidth;
+    CameraSetup.Data.ResolutionHeight = configurationData.ResolutionHeight;
+    CameraSetup.Data.IsFullScreen = configurationData.IsFullScreen;
+
+    CameraSetup.SetupCamera(SpriteManager.Camera, graphics);
+    ...
+```
+
+### Changing Resolution and Camera Values After Initialize
+
+Camera and resolution values can be changed after initialize. Some games provide control over the resolution in a settings window. The generated CameraSetup object can be modified at any point in the game's execution. For example, the following code could be used to adjust the resolution and camera settings when the user presses the space bar:
+
+```csharp
+// In any screen:
+void CustomActivity(bool firstTimeCalled)
+{
+    var keyboard = InputManager.Keyboard;
+    
+    if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Escape))
+    {
+        CameraSetup.Data.ResolutionWidth = 500;
+        CameraSetup.Data.ResolutionHeight = 300;
+        CameraSetup.Data.AspectRatio = 3;
+        CameraSetup.Data.AllowWidowResizing = false;
+        CameraSetup.Data.Scale = 300;
+        CameraSetup.Data.IsFullScreen = true;
+
+        CameraSetup.ResetWindow();
+        CameraSetup.ResetCamera();
+    }
+}
+```
+
+Notice that the above code calls both ResetWindow and ResetCamera . Typically modifications to the CameraSetup.Data require both to be called. The two functions are separated because generated code calls ResetCamera inbetween each screen.
+
+### Toggling IsFullScreen
+
+The CameraSetup object provides code for toggling between your game running full screen and windowed. Using CameraSetup to toggle full screen is the recommended way as it handles all associated settings such as changing the camera values. The following code shows how to toggle fullscreen and windowed when the space bar is pressed:
+
+```csharp
+if(InputManager.Keyboard.KeyPushed(Keys.Space))
+{
+   CameraSetup.Data.IsFullscreen = !CameraSetup.Data.IsFullScreen;
+   CameraSetup.ResetWindow();
+}
+```
