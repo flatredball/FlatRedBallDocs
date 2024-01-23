@@ -47,7 +47,7 @@ Now that we've created a single wall, we can duplicate it by right-clicking on i
 
 Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectangle instances:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>All six walls in Walls ShapeCollection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>All six walls in Walls ShapeCollection</p></figcaption></figure>
 
 Next set the X, Y, Width, and Height variables for for the newly-created walls as follows: **Wall2**
 
@@ -104,7 +104,7 @@ Since our PlayerBall is an ICollidable, that means it can collide with any other
 4. Change the **Collision Physics** to **Bounce Collision** so that our **PlayerBall** bounces against the walls
 5. Change the PlayerBall Mass to 0. This means that the PlayerBall will behave as if it has no mass, so it will not be able to move the walls. Be sure to press Enter or Tab to save the change.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing collision mass</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing collision mass</p></figcaption></figure>
 
 If we run the game now, the PlayerBall will collide with the walls.
 
