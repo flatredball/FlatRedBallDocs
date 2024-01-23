@@ -107,7 +107,7 @@
     * [Collision Jitter](tutorials/code-tutorials/collision-jitter.md)
     * [Culling](tutorials/code-tutorials/flatredballxna-tutorials-culling.md)
     * [Customizing Cursor Visuals](tutorials/code-tutorials/customizing-cursor-visuals/README.md)
-      * [windows-desktop](tutorials/code-tutorials/customizing-cursor-visuals/windows-desktop.md)
+      * [Windows Desktop](tutorials/code-tutorials/customizing-cursor-visuals/windows-desktop.md)
       * [windows-rt](tutorials/code-tutorials/customizing-cursor-visuals/windows-rt.md)
     * [Depth Buffer Z Fighting](tutorials/code-tutorials/general-programming-graphics-depth-buffer-z-fighting.md)
     * [Dictionaries and Enum Keys](tutorials/code-tutorials/tutorials-dictionaries-and-enum-keys.md)

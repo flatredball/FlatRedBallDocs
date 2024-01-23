@@ -1,12 +1,31 @@
-# windows-desktop
+# Windows Desktop
 
 ### Introduction
 
 Windows Desktop games can display custom cursors. The default XNA window is a Windows Forms window, so customization of the cursor visuals is done the same as for any other Windows Forms app.
 
-### Example Code
+### Example Code - Changing the Cursor using MonoGame
 
-The following code loads a .cur file and sets the window's default cursor: &#x20;
+MonoGame 3.6 and newer introduces a method for changing the Windows cursor. The cursor can be set from a Texture2D. Assuming CursorTexture is a valid Texture2D:
+
+```csharp
+FlatRedBallServices.Game.IsMouseVisible = true;
+
+int originX = 0;
+int originY = 0;
+
+MouseCursor customCursor = MouseCursor.FromTexture2D(CursorTexture, originX, originY);
+Mouse.SetCursor(customCursor);
+```
+
+For more information, see the following links:
+
+* [https://monogame.net/api/Microsoft.Xna.Framework.Input.Mouse/#setcursor-mousecursor](https://monogame.net/api/Microsoft.Xna.Framework.Input.Mouse/#setcursor-mousecursorhttps://monogame.net/api/Microsoft.Xna.Framework.Input.MouseCursor/#fromtextured-textured-int-int)
+* [https://monogame.net/api/Microsoft.Xna.Framework.Input.MouseCursor/#fromtextured-textured-int-int](https://monogame.net/api/Microsoft.Xna.Framework.Input.Mouse/#setcursor-mousecursorhttps://monogame.net/api/Microsoft.Xna.Framework.Input.MouseCursor/#fromtextured-textured-int-int)
+
+### Example Code - Changing the Cursor using Windows Forms and .cur File
+
+The following code loads a .cur file and sets the window's default cursor:
 
 ```lang:c#
 var cursor = new System.Windows.Forms.Cursor("Content/GlobalContent/Cursor.cur");
@@ -15,7 +34,7 @@ System.Windows.Forms.Form asForm =
 asForm.Cursor = cursor;
 ```
 
-### Creating Cursors from .png files
+### Example Code - Changing the Cursor using Windows Forms and .png File
 
 .cur files have a 32x32 pixel size limit. This can be bypassed by loading a .png into a Bitmap object, then using that object to construct a Cursor, as shown in the following code:
 
@@ -59,5 +78,3 @@ void Initialize()
     var cursor = CreateCursor(bitmap, 0, 0);
 }
 ```
-
-&#x20;
