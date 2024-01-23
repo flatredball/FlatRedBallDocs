@@ -27,7 +27,7 @@ For more information, see the following links:
 
 The following code loads a .cur file and sets the window's default cursor:
 
-```lang:c#
+```csharp
 var cursor = new System.Windows.Forms.Cursor("Content/GlobalContent/Cursor.cur");
 System.Windows.Forms.Form asForm =
     (System.Windows.Forms.Form)System.Windows.Forms.Control.FromHandle(this.Window.Handle);
@@ -38,7 +38,7 @@ asForm.Cursor = cursor;
 
 .cur files have a 32x32 pixel size limit. This can be bypassed by loading a .png into a Bitmap object, then using that object to construct a Cursor, as shown in the following code:
 
-```lang:c#
+```csharp
 // code obtained from StackOverflow, as posted by user "Nick"
 // http://stackoverflow.com/questions/550918/change-cursor-hotspot-in-winforms-net
 public struct IconInfo
