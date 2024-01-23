@@ -1,4 +1,4 @@
-# glue-reference-menu-file-build-tools
+# File Build Tools
 
 ### Introduction
 
@@ -10,10 +10,17 @@ To add a new File Build Tool:
 
 1.  Click the Settings->File Build Tools menu item
 
-    ![](../../../../../media/2017-01-img_58902130439d7.png)
-2. Click "Add new build tool"![AddNewBuildToolButton.PNG](../../../../../media/migrated_media-AddNewBuildToolButton.PNG)
-3. Add the source and destination extensions of whatever your file build tool supports. For example, the source might be "psd" and the destination might be "png".![AddSourceAndDestinationTypes.PNG](../../../../../media/migrated_media-AddSourceAndDestinationTypes.PNG)
-4. Click the BuildTool text field, then click the browse button![BuildToolSelectionButton.png](../../../../../media/migrated_media-BuildToolSelectionButton.png)
+    ![](../../../media/2017-01-img\_58902130439d7.png)
+2.  Click "Add new build tool"\
+
+
+    <figure><img src="../../../media/migrated_media-AddNewBuildToolButton.PNG" alt=""><figcaption></figcaption></figure>
+3.  Add the source and destination extensions of whatever your file build tool supports. For example, the source might be "psd" and the destination might be "png".
+
+    <figure><img src="../../../media/migrated_media-AddSourceAndDestinationTypes.PNG" alt=""><figcaption></figcaption></figure>
+4.  Click the BuildTool text field, then click the browse button
+
+    <figure><img src="../../../media/migrated_media-BuildToolSelectionButton.png" alt=""><figcaption></figcaption></figure>
 5. Select your build tool in the file window
 6. Click OK
 
@@ -35,7 +42,3 @@ The values above specify that the build tool accepts a file with a "dest" extens
 ```
 BuildTool.exe "c:/folder/file.source" "c:/gameproject/content/file.dest"
 ```
-
-### Additional Information
-
-* [How to add the Bitmap Font Generator as a File Build Tool](../../../../../frb/docs/index.php)
