@@ -1,4 +1,4 @@
-# currentscreen
+# CurrentScreen
 
 ### Introduction
 
@@ -6,11 +6,11 @@ The CurrentScreen property references the ScreenManager's current Screen. Only o
 
 This property is set automatically by the ScreenManager when a new Screen is created. This can occur through:
 
-* The [FlatRedBall.Screens.ScreenManager.Start](../../../../../frb/docs/index.php) method
-* The [FlatRedBall.Screens.Screen.MoveToScreen](../../../../../frb/docs/index.php) method
-* The [FlatRedBall.Screens.Screen.IsActivityFinished](../../../../../frb/docs/index.php) property
+* The [FlatRedBall.Screens.ScreenManager.Start](start.md) method
+* The [FlatRedBall.Screens.Screen.MoveToScreen](../screen/movetoscreen.md) method
+* The [FlatRedBall.Screens.Screen.IsActivityFinished](../screen/screen-isactivityfinished.md) property
 
-The CurrentScreen property cannot be set directly. For more information on when the CurrentScreen is initially see the [FlatRedBall.Screens.ScreenManager.Start](../../../../../frb/docs/index.php) method.
+The CurrentScreen property cannot be set directly. For more information on when the CurrentScreen is initially see the [FlatRedBall.Screens.ScreenManager.Start](start.md) method.
 
 ### When is CurrentScreen set?
 
