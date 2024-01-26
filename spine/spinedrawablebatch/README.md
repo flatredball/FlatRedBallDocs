@@ -37,6 +37,8 @@ You can re-order the files by holding down the ALT key on the keyboard and press
 
 This requirement may go away in the future as the Spine plugin gets better at tracking dependencies.
 
+Note that the texture file (.png) is loaded when the atlas is created and ultimately uses a FlatRedBall content manager. This means that if your png is already loaded (such as by being in Global Content Files), then you do not need to also have the png in your entity. This is especially useful if your atlas references a shared sprite sheet which is used by other screens and entities.
+
 ### Adding a SpineDrawableBatch Object
 
 Now the Spine files have been added to the entity, we need to add them as an object. By adding an object we can control properties such as position (offset) and scale. Also, each individual object can be independently animated. To add and attach the SpineDrawableBatch:
