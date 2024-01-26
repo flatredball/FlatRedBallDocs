@@ -2,7 +2,7 @@
 
 ### Introduction
 
-States allow you to modify your object in an organized, type-safe, way. States can also be previewed when the game is running in edit mode, speeding up iteration. States are a lightweight alternative to using inheritance, and can even be used to change a Screen or Entity multiple times. States can exist on any Screen or Entity, and appear under the States folder in Glue.&#x20;
+States allow you to modify your object in an organized, type-safe, way. States can also be previewed when the game is running in edit mode, speeding up iteration. States are a lightweight alternative to using inheritance, and can even be used to change a Screen or Entity multiple times. States can exist on any Screen or Entity, and appear under the States folder in the FRB Editor tree view.&#x20;
 
 Although states can be added as either categorized or uncategorized states, categorized states are the most common, and avoid confusion which can be caused by uncategorized state.
 
@@ -52,7 +52,7 @@ Every state category generates a class which is embedded in the screen or entity
 
 ![](../../media/2021-03-img\_605635c67dd65.png)
 
-Assigning the state will apply all variables set in the state in Glue.
+Assigning the state will apply all variables set in the state in the FRB Editor.
 
 ### Conditional Logic Based on State
 
