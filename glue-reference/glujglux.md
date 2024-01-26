@@ -14,7 +14,7 @@ The main Glue file (gluj for modern projects) contains a file version. This vers
 "FileVersion": 11,
 ```
 
-To upgrade to a new version, the gluj/glux file can be opened in a text editor and manually updated.&#x20;
+To upgrade to a new version, the gluj/glux file can be opened in a text editor and manually updated.
 
 Important: Upgrades may require additional changes to a project as described below. Furthermore, upgrading may have unexpected consequences, so using version control to undo large changes is recommended. Upgrades should be performed one version at a time rather than multiple versions at once.
 
@@ -24,13 +24,13 @@ This is the initial version which began tracking FileVersion.
 
 #### Version 2 - Adds Game1.Generated.cs
 
-This version introduces Game1.Generated.cs which enables additional code to be injected into Game1 without the risk of introducing errors in custom code.&#x20;
+This version introduces Game1.Generated.cs which enables additional code to be injected into Game1 without the risk of introducing errors in custom code.
 
 ❗ To update to this version you may need to remove portions of code from Game1.cs which are handled by Game1.Generated.cs. Review the generated code and compare it with your custom code.
 
 #### Version 3 - Automatic List-Factory Association
 
-This version automatically associates Lists in Screens with their corresponding factories. Older games may manually associate the lists with factories.&#x20;
+This version automatically associates Lists in Screens with their corresponding factories. Older games may manually associate the lists with factories.
 
 ❗ To upgrade to this version, remove custom code which associates lists to factories to prevent double-adds. Also, note that you need to check your screens to make lists in the screens have AssociateWithFactory set to true on any items you wish to have associated with factories. This is default to true on newer projects, but older projects may not have this set to true automatically.
 
@@ -38,19 +38,19 @@ This version automatically associates Lists in Screens with their corresponding 
 
 #### Version 4 - Gum GUE GetAnimation Method and FlatRedBall.Forms
 
-This version introduces FlatRedBall.Forms and the GetAnimation method to Gum objects.&#x20;
+This version introduces FlatRedBall.Forms and the GetAnimation method to Gum objects.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 5 - CSV (state) Inheritance support
 
-CSVs can now inherit from other CSVs. This is used to allow derived platformer and top-down objects to access movement variables defined in their base classes.&#x20;
+CSVs can now inherit from other CSVs. This is used to allow derived platformer and top-down objects to access movement variables defined in their base classes.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 6 - Added nuget references in template csproj files
 
-New FlatRedBall csproj files now have nuget packages as part of the csproj enabling the FlatRedBall Editor to modify these. As of version 6 this is only used to add Newtonsoft Json.Net for live editing.&#x20;
+New FlatRedBall csproj files now have nuget packages as part of the csproj enabling the FlatRedBall Editor to modify these. As of version 6 this is only used to add Newtonsoft Json.Net for live editing.
 
 ❗ To upgrade to this version, manually add the Newtonsoft.Json nuget packages to your project.
 
@@ -60,25 +60,25 @@ Edit mode is now enabled. This adds a lot of generated files enabling the editor
 
 #### Version 8 - Screens and entities have partial CustomActivityEditMode
 
-This adds a new function to screens and entities (partial).&#x20;
+This adds a new function to screens and entities (partial).
 
 ✅ No changes are needed to upgrade to this version since these changes have no side effects on a game. The new methods are partial so no modifications are necessary to custom code.
 
 #### Version 9 - Glue file changed from .glux to .gluj
 
-FlatRedBall Editor now saves its files in json format rather than xml.&#x20;
+FlatRedBall Editor now saves its files in json format rather than xml.
 
 ✅ To upgrade to this, open the glux file and change file version to 9, then open the FlatRedBall editor. Note that the glux file will not be deleted and will remain on disk. The editor prefers to load gluj if one exists, and if not, it falls back on glux.
 
 #### Version 10 - Added IEntity base interface for entities
 
-This adds code generation to implement the IEntity interface for all entities.&#x20;
+This adds code generation to implement the IEntity interface for all entities.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 11 - Separated Screens into glsj and entities into glej files
 
-This version separates all screen and entity data into their own json files. This change reduces the chances of destructive merge conflicts.&#x20;
+This version separates all screen and entity data into their own json files. This change reduces the chances of destructive merge conflicts.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor. Versions manually converting to this should first upgrade to version 9. Once a project is on version 9 or higher, it can safely be upgraded to version 11 and FlatRedBall will automatically break apart the main json file into separate Screen/Entity json files.
 
@@ -190,31 +190,31 @@ FlatRedBall Editor supports localization through CSV files. If a localization fi
 4. Localization has no support for string interpolation. This requires code to perform properly.
 5. The Gum tool supports localization files. This is where most games should perform their localization, not in the FlatRedBall editor.
 
-Rather than completely shutting off localization in the FRB Editor, a new version is being added since it introduces a breaking change.&#x20;
+Rather than completely shutting off localization in the FRB Editor, a new version is being added since it introduces a breaking change.
 
 ❗ To update to this version, you must manually add calls to LocalizationManager.Translate wherever generated code was doing so. This can be done by doing a search in generated code and identifying where this occurs. Once this version is enabled, all generated code will not contain LocalizationManager.Translate calls, so these must be done manually in code as necessary. Note that the call to LocalizationManager.AddDatabase will still be done by generated code if a localization CSV has been added to the editor in Global Content. For more information on localization, see the [LocalizationManager page](../api/flatredball/localization/localizationmanager.md).
 
 #### Version 15 - Sprite Has UseAnimationTextureFlip Property
 
-The UseAnimationTextureFlip property was added to the FlatRedBall Source on April 1 2022. The FRB Editor needs to know if this property exists in the engine so it can be shown in the property grid. If not, then it should not be shown.&#x20;
+The UseAnimationTextureFlip property was added to the FlatRedBall Source on April 1 2022. The FRB Editor needs to know if this property exists in the engine so it can be shown in the property grid. If not, then it should not be shown.
 
 ✅ To update to this version, either link your game against FRB source and update the source, or update libraries to get the latest libraries which include Sprite.UseAnimationTextureFlip.
 
 #### Version 16 - Remove IsScrollableEntityList
 
-The IsScrollableEntityList property is an old property which has not been maintained or tested for many years. It is likely broken and similarly, modern projects probably do not use this property. Furthermore, this property mainly existed to support lists which are now handled by FlatRedBall.Forms. Therefore, this is being removed from the UI in Version 16. Earlier file versions will still display this property, but it may not work correctly.&#x20;
+The IsScrollableEntityList property is an old property which has not been maintained or tested for many years. It is likely broken and similarly, modern projects probably do not use this property. Furthermore, this property mainly existed to support lists which are now handled by FlatRedBall.Forms. Therefore, this is being removed from the UI in Version 16. Earlier file versions will still display this property, but it may not work correctly.
 
 ✅ To upgrade to this version, verify that you do not rely on this functionality. No other work is needed.
 
 #### Version 17 - ScreenManager has PersistentPolygons
 
-The FlatRedBall engine now has a PersistentPolygons list which can be used to keep Polygons persistent across screens without throwing errors. This is used by the edit-mode to display the selection. If this is false, then the polygon is not made persistent, and edit mode can crash when switching between screens. However, this is only needed if running in edit mode. Games which do not develop in edit mode do not need this.&#x20;
+The FlatRedBall engine now has a PersistentPolygons list which can be used to keep Polygons persistent across screens without throwing errors. This is used by the edit-mode to display the selection. If this is false, then the polygon is not made persistent, and edit mode can crash when switching between screens. However, this is only needed if running in edit mode. Games which do not develop in edit mode do not need this.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 18 - Sprite has TolerateMissingAnimations
 
-Normally when assigning a Sprite's CurrentChainName, if the animation is not present the code throws an exception. This can be problematic when in edit mode. This version allows the generation of Sprite.HasTolerateMissingAnimations to false when going into edit mode so that the game does not crash when assigning missing animation names.&#x20;
+Normally when assigning a Sprite's CurrentChainName, if the animation is not present the code throws an exception. This can be problematic when in edit mode. This version allows the generation of Sprite.HasTolerateMissingAnimations to false when going into edit mode so that the game does not crash when assigning missing animation names.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
@@ -226,7 +226,7 @@ This version results in the PlatformerAnimationController generating AnimationLa
 
 **IPlatformer is Generated**
 
-This version also generates the IPlatformer interface into projects. This is used to apply the new Platformer AnimationController. Projects which do not use the Platformer entity type will not be impacted by this change.&#x20;
+This version also generates the IPlatformer interface into projects. This is used to apply the new Platformer AnimationController. Projects which do not use the Platformer entity type will not be impacted by this change.
 
 ❗ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor. Make sure you do not have an existing IPlatformer interface in your project. If so, you may get class/namespace conflicts.
 
@@ -236,7 +236,7 @@ This version introduces a new set of FlatRedBall.Forms controls.
 
 <figure><img src="../media/2022-02-04_08-12-25.gif" alt=""><figcaption></figcaption></figure>
 
-These controls provide more flexibility, and the defaults are cleaner and look better overall. New FlatRedBall projects will automatically add these controls when Gum/Forms is added (usually through the wizard).&#x20;
+These controls provide more flexibility, and the defaults are cleaner and look better overall. New FlatRedBall projects will automatically add these controls when Gum/Forms is added (usually through the wizard).
 
 ✅ Upgrading to this version is safe under a number of conditions:
 
@@ -247,7 +247,7 @@ These controls provide more flexibility, and the defaults are cleaner and look b
 
 #### Version 21 - Support for IStackable
 
-This version introduces support for the IStackable interface.&#x20;
+This version introduces support for the IStackable interface.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
@@ -258,43 +258,43 @@ This version adds two new properties to ICollidable to make it easier to track c
 1. Increase the .gluj file version to 22. This tells the FlatRedBall Editor to codegen these properties.
 2. Manually add these properties in custom code to entities. This is a fallback if upgrading a file version is inconvenient.
 
-Note that this is a breaking change to projects linking against the engine, so one of these two changes must be performed.&#x20;
+Note that this is a breaking change to projects linking against the engine, so one of these two changes must be performed.
 
 ✅ If projects would like to upgrade to this version, keeping the engine and FlatRedBall Editor (Glue) together will prevent compile errors.
 
 #### Version 23 - CollisionRelationship Supports ArePhysicsAppliedAutomatically and DoCollisionPhysics
 
-This version adds the ability for CollisionRelationship physics to be defined in the FlatRedBall Editor in the **Collision Physics** UI, but to have those physics only apply if DoCollisionPhysics is called in code.&#x20;
+This version adds the ability for CollisionRelationship physics to be defined in the FlatRedBall Editor in the **Collision Physics** UI, but to have those physics only apply if DoCollisionPhysics is called in code.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 24 - Gum Supports StackSpacing
 
-This version adds code generation support for the StackSpacing property in Gum.&#x20;
+This version adds code generation support for the StackSpacing property in Gum.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 25 - CollisionRelationships support MoveSoft Collision
 
-This version adds limited support for MoveSoft collision. This will be expanded in future versions, but the codegen is being introduced here.&#x20;
+This version adds limited support for MoveSoft collision. This will be expanded in future versions, but the codegen is being introduced here.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 26 - CameraSetup.Generated.cs replaces CameraSetup.cs
 
-The CameraSetup.cs file is a generated file, so it should be named as such. Previous versions did not name it as a generated file, so it was often included in repositories. This version changes the file so it is named as a generated file.&#x20;
+The CameraSetup.cs file is a generated file, so it should be named as such. Previous versions did not name it as a generated file, so it was often included in repositories. This version changes the file so it is named as a generated file.
 
 ❗ To upgrade to this version, either remove Setup/CameraSetup.cs, or rename it to Setup/CameraSetup.Generated.cs. Relaunch the FlatRedBall Editor and it will generate to CameraSetup.Generated.cs.
 
 #### Version 27 - ShapeCollection has MaxAxisAlignedRectanglesRadiusX and MaxAxisAlignedRectanglesRadiusY
 
-This version adds support for using ShapeCollection.MaxAxisAlignedRectanglesRadiusX and MaxAxisAlignedRectanglesRadiusY in the TileShapeCollection generated code. This enables TileShapeCollections to have AxisAlignedRectangles which are not squares.&#x20;
+This version adds support for using ShapeCollection.MaxAxisAlignedRectanglesRadiusX and MaxAxisAlignedRectanglesRadiusY in the TileShapeCollection generated code. This enables TileShapeCollections to have AxisAlignedRectangles which are not squares.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 28 - CollisionRelationship Names No Longer Include "List"
 
-This version reduces the length of CollisionRelationships which are auto-named. "List" will be removed from the name of CollisionRelationships between lists to make it easier to read in the tree view and generated code. For example, previously a CollisionRelationship named PlayerListVsBulletList will now be named PlayerVsBullet. Similarly the generated events for when the collision occurs no longer include the word "List.&#x20;
+This version reduces the length of CollisionRelationships which are auto-named. "List" will be removed from the name of CollisionRelationships between lists to make it easier to read in the tree view and generated code. For example, previously a CollisionRelationship named PlayerListVsBulletList will now be named PlayerVsBullet. Similarly the generated events for when the collision occurs no longer include the word "List.
 
 ✅ To upgrade to this version, be aware that changing the object or sub-collision objects may result in a change to the collision relationship which previously had the word List. Projects do not need any changes to the underlying libraries.
 
@@ -305,13 +305,13 @@ This version does not change any interface for the code, but depends on the Gum 
 1. Often, Text objects render character-by-character. When performing character-by-character rendering, updating the characters is not as expensive because a Texture2D must not be created and disposed.
 2. GraphicalUiElements (the base class for Gum objects) now have more advanced checks in their properties to prevent Layout calls from propagating.
 
-Since the setters on GraphicalUiElement properties often prevent Layout propagation, passing a non-0 children layout depth on TextRuntime.Text changes causes more layouts. Version 29 depends on the internal GraphicalUiElement allowing text to update even if 0 child depth is passed so that TextRuntime.Text can pass a 0 depth and improve performance when updating text.&#x20;
+Since the setters on GraphicalUiElement properties often prevent Layout propagation, passing a non-0 children layout depth on TextRuntime.Text changes causes more layouts. Version 29 depends on the internal GraphicalUiElement allowing text to update even if 0 child depth is passed so that TextRuntime.Text can pass a 0 depth and improve performance when updating text.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 30 - FrameworkElement Manager
 
-This version introduces the FrameworkElementManager class which can call Activity on FlatRedBall.Forms FrameworkElements. This is useful for FrameworkElements which require every-frame activity, such as the PlayerJoinView which must query Xbox360GamePad button presses for joining and unjoining.&#x20;
+This version introduces the FrameworkElementManager class which can call Activity on FlatRedBall.Forms FrameworkElements. This is useful for FrameworkElements which require every-frame activity, such as the PlayerJoinView which must query Xbox360GamePad button presses for joining and unjoining.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
@@ -321,19 +321,19 @@ This version introduces the FrameworkElementManager class which can call Activit
 
 #### Version 32 - ITiledTileMetadata
 
-This version introduces the ITiledTileMetadata interface. This interface has a property which lets your code respond to the creation of an entity from its texture coordinates.&#x20;
+This version introduces the ITiledTileMetadata interface. This interface has a property which lets your code respond to the creation of an entity from its texture coordinates.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 33 - IDamageable and IDamageArea Updates (aka V2)
 
-This version introduces lots of changes to IDamageable and IDamageArea. If this is enabled, the FlatRedBall Editor will generate new properties for IDamageable and IDamageArea Entities. This version also allows the editor to generate additional code on CollisionRelationships between IDamageable and IDamageArea lists.&#x20;
+This version introduces lots of changes to IDamageable and IDamageArea. If this is enabled, the FlatRedBall Editor will generate new properties for IDamageable and IDamageArea Entities. This version also allows the editor to generate additional code on CollisionRelationships between IDamageable and IDamageArea lists.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 34 - Game1 GenerateInitializeEarly, GenerateDrawEarly, Removal of GlobalContent.Initialize
 
-Version 34 enables additional code generation in Game1 with the addition of GenerateInitializeEarly and GenerateDrawEarly. These methods are called before standard FlatRedBall initialize and draw calls, enabling FlatRedBall Editor plugins to inject code before FlatRedBall standard calls. This is used to eliminate needing to add manual code for SkiaGum. This also removes the need to keep GlobalContent.Initialize in Game1.&#x20;
+Version 34 enables additional code generation in Game1 with the addition of GenerateInitializeEarly and GenerateDrawEarly. These methods are called before standard FlatRedBall initialize and draw calls, enabling FlatRedBall Editor plugins to inject code before FlatRedBall standard calls. This is used to eliminate needing to add manual code for SkiaGum. This also removes the need to keep GlobalContent.Initialize in Game1.
 
 ❗ To update to this version, a number of changes are required. First, update the partial block at the top of Game1.cs by adding the two new Early calls as shown in the following code:
 
@@ -385,19 +385,19 @@ This version expands properties introduced in version 22 by adding ObjectsCollid
 1. Increase the .gluj file version to 35. This tells the FlatRedBall Editor to codegen these properties.
 2. Manually add these properties in custom code to entities. This is a fallback if upgrading a file version is inconvenient.
 
-Note that this is a breaking change to projects linking against the engine, so one of these two changes must be performed.&#x20;
+Note that this is a breaking change to projects linking against the engine, so one of these two changes must be performed.
 
 ✅ If projects would like to upgrade to this version, keeping the engine and FlatRedBall Editor (Glue) together will prevent compile errors.
 
 #### Version 36 - FlatRedBall has IRepeatPressableInput
 
-This version adds the IRepeatPressableInput interface which provides checks for repeated press inputs. This is used in the IInputDevice interface to standardize repeat presses when navigating through UI. For example, this is used when holding down the DPad to cycle between letters when entering a name in an arcade-style high score list.&#x20;
+This version adds the IRepeatPressableInput interface which provides checks for repeated press inputs. This is used in the IInputDevice interface to standardize repeat presses when navigating through UI. For example, this is used when holding down the DPad to cycle between letters when entering a name in an arcade-style high score list.
 
 ✅ If projects would like to upgrade to this version, keeping the engine and FlatRedBall Editor (Glue) together will prevent compile errors.
 
 #### Version 37 - Tiled Files Generated
 
-Previous versions of FlatRedBall generated all Tiled files without the .Generated.cs suffix. This causes a lot of version control noise, especially when FlatRedBall changed portions of the Generated code. Now all Tiled files are properly generated.&#x20;
+Previous versions of FlatRedBall generated all Tiled files without the .Generated.cs suffix. This causes a lot of version control noise, especially when FlatRedBall changed portions of the Generated code. Now all Tiled files are properly generated.
 
 ❗ To update to this version:
 
@@ -416,45 +416,45 @@ After code generation finishes, all of the files should be re-added with a .Gene
 
 #### Version 38 - Project JSON files (glej and glsj) Remove Redundant Derived Objects
 
-This version adds logic to remove redundantly-defined derived objects from Screen and Entity json files. This can reduce file sizes and eliminate diffs in version control.&#x20;
+This version adds logic to remove redundantly-defined derived objects from Screen and Entity json files. This can reduce file sizes and eliminate diffs in version control.
 
 ✅ No changes are required to upgrade to this version, but projects which are not on version control are advised to avoid this version until it has been fully tested for a month or two (probably until after May 2023).
 
 #### Version 39 - GraphicalUiElement (Gum) Exposes Animation Properties as Protected
 
-This version introduces protected properties for animation including mCurrentFrameIndex and mTimeIntoAnimation. These protected properties are used by codegen for the SpriteRuntime to add the PlayAnimationsAsync method which work the same as the FlatRedBall Sprite's PlayAnimationsAsync method.&#x20;
+This version introduces protected properties for animation including mCurrentFrameIndex and mTimeIntoAnimation. These protected properties are used by codegen for the SpriteRuntime to add the PlayAnimationsAsync method which work the same as the FlatRedBall Sprite's PlayAnimationsAsync method.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 40 - GraphicalUiElement (Gum) is INotifyPropertyChanged
 
-This version introduces codegen which depends on GraphicalUiElement implementing the INotifyPropertyChanged interface. Initially this is used for real-time variable reference evaluation, but it may be used for additional functionality in the future.&#x20;
+This version introduces codegen which depends on GraphicalUiElement implementing the INotifyPropertyChanged interface. Initially this is used for real-time variable reference evaluation, but it may be used for additional functionality in the future.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 41 - Gum Text Objects Have TextOverflowHorizontalMode and TextOverflowVerticalMode
 
-This version introduces codegen which depends on the Gum Text objects having TextOverflowHorizontalMode and TextOverflowVerticalMode. Projects which are not of this version will not apply these properties as set in the Gum project, so text will continue to overflow as before.&#x20;
+This version introduces codegen which depends on the Gum Text objects having TextOverflowHorizontalMode and TextOverflowVerticalMode. Projects which are not of this version will not apply these properties as set in the Gum project, so text will continue to overflow as before.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 42 - TileShapeCollectionAddToLayerSupportsAutomaticallyUpdated
 
-This version introduces the ability for TileShapeCollections to add themselves to a Layer and to be automatically updated. This is used by Entites which include TileShapeCollections as their collision, such as moving walls in a game.&#x20;
+This version introduces the ability for TileShapeCollections to add themselves to a Layer and to be automatically updated. This is used by Entites which include TileShapeCollections as their collision, such as moving walls in a game.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 43 - FlatRedBall Includes ISong Interface
 
-This version introduces the usage of ISong, an interface which enables FlatRedBall to work with song files other than MonoGame (XNA). This is currently used for NAudio but it can be expanded for other types of songs in the future.&#x20;
+This version introduces the usage of ISong, an interface which enables FlatRedBall to work with song files other than MonoGame (XNA). This is currently used for NAudio but it can be expanded for other types of songs in the future.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 #### Version 44 - FlatRedBall Renderer has ExternalEffectManager
 
-This version adds an ExternalEffectManager, enabling Gum and Tiled rendering to use all of the color operations available to normal FlatRedBall Sprites.&#x20;
+This version adds an ExternalEffectManager, enabling Gum and Tiled rendering to use all of the color operations available to normal FlatRedBall Sprites.
 
-✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.&#x20;
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 ❗ To upgrade to this version and enable rendering using the new shader for Tiled or Gum:
 
@@ -513,8 +513,29 @@ This version does not provide any funcitonal changes.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
-#### Version 51 - Gum Text supports BBCode&#x20;
+#### Version 51 - Gum Text supports BBCode
 
 This version allows Gum projects to use BBCode for specifying inline styles.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+#### Version 52 - IDamageArea has IsDamageDealingEnabled and IDamageable has IsDamageReceivingEnabled
+
+#### This version introduces two new properties:&#x20;
+
+* IDamageArea.IsDamageDealingEnabled
+* IDamageable.IsDamageReceivingEnabled
+
+These new properties are generated on Entities which implement IDamageArea and IDamageable automatically for projects which are at least on version 52.&#x20;
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+❗ Note - if your game uses these interfaces which are either implemented in code, or if you have disabled automatic generation of these properties, then you will need to manually add proerties as shown in the following code:
+
+```csharp
+bool IDamageable.IsDamageReceivingEnabled => true;
+// or
+bool IDamageArea.IsDamageDealingEnabled => true
+```
+
+If needed you can create these as properties with getters and setters, but the code above matches the behavior prior to version 52.
