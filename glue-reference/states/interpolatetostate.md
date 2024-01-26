@@ -1,4 +1,4 @@
-# interpolatetostate
+# InterpolateToState
 
 ### Introduction
 
@@ -6,11 +6,9 @@ The InterpolateToState method allows Entities and Screens to smoothly interpolat
 
 If you are working with an Entity or Screen that has multiple States, then Glue has already gneerated an InterpolateToState for you.
 
-See [this page](../../../../frb/docs/index.php) to discuss the difference between InterpolateToState and InterpolateBetween.
+See [this page](interpolatetostate-vs-interpolatebetween.md) to discuss the difference between InterpolateToState and InterpolateBetween.
 
 ### Example
-
-* [GlueVault Download](http://www.gluevault.com/entity/30-interpolating-entity)
 
 For this example we'll create a simple Entity that contains a Circle. We'll create some Variables and States to modify the Entity and show how they work in code.
 
@@ -39,7 +37,7 @@ Now that we have our Variables, let's create States for them:
 * Create a third state called "Big"
 * Create a fourth state called "Small"
 
-**Note:** In this example we created four states which are all uncategorized. In an actual project you would probably want to categorize these under state categories. You would likely want to set these state categories' [SharesVariablesWithOtherCategories](../../../../frb/docs/index.php) value to false as well.
+**Note:** In this example we created four states which are all uncategorized. In an actual project you would probably want to categorize these under state categories.
 
 These states need to have variables assigned to them:
 
@@ -67,7 +65,7 @@ Glue will generate an InterpolateToState method for each category which has its 
 
 Now that we have our Entity and states set up, let's create the code. Open up the InterpolatingEntity.cs file and add the following code to your CustomActivity method:
 
-```
+```csharp
 double interpolationTime = 1;
 
 if (InputManager.Keyboard.KeyPushed(Keys.Up))
@@ -91,4 +89,4 @@ if (InputManager.Keyboard.KeyPushed(Keys.Right))
 }
 ```
 
-![InterpolateBig.PNG](../../../../media/migrated_media-InterpolateBig.PNG)
+![InterpolateBig.PNG](../../media/migrated\_media-InterpolateBig.PNG)
