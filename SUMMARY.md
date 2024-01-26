@@ -553,6 +553,8 @@
         * [WriteAutomaticallyUpdatedObjectInformation](api/flatredball/debugging/debugger/writeautomaticallyupdatedobjectinformation.md)
     * [Entities](api/flatredball/entities/README.md)
       * [CameraControllingEntity](api/flatredball/entities/cameracontrollingentity.md)
+      * [IDamageable](api/flatredball/entities/idamageable.md)
+      * [IDamageArea](api/flatredball/entities/idamagearea.md)
     * [FlatRedBallServices](api/flatredball/flatredballservices/README.md)
       * [AddDisposable](api/flatredball/flatredballservices/adddisposable.md)
       * [AddManager](api/flatredball/flatredballservices/addmanager.md)
