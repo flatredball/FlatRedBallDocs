@@ -521,21 +521,29 @@ This version allows Gum projects to use BBCode for specifying inline styles.
 
 ### Version 52 - IDamageArea has IsDamageDealingEnabled and IDamageable has IsDamageReceivingEnabled
 
-#### This version introduces two new properties:&#x20;
+#### This version introduces several new properties:
 
 * IDamageArea.IsDamageDealingEnabled
 * IDamageable.IsDamageReceivingEnabled
+* IDamageable.InvulnerabilityTimeAfterDamage
+* IDamageable.IsInvulnerable
+* IDamageable.LastDamageTime
 
-These new properties are generated on Entities which implement IDamageArea and IDamageable automatically for projects which are at least on version 52.&#x20;
+These new properties are generated on Entities which implement IDamageArea and IDamageable automatically for projects which are at least on version 52.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
-❗ Note - if your game uses these interfaces which are either implemented in code, or if you have disabled automatic generation of these properties, then you will need to manually add proerties as shown in the following code:
+❗ Note - if your game uses these interfaces which are either implemented in code, or if you have disabled automatic generation of these properties, then you will need to manually add properties as shown in the following code:
 
-```csharp
-bool IDamageable.IsDamageReceivingEnabled => true;
-// or
-bool IDamageArea.IsDamageDealingEnabled => true
-```
+<pre class="language-csharp"><code class="lang-csharp">// IDamageArea:
+bool IDamageArea.IsDamageDealingEnabled => true;
+
+<strong>// IDamageable:
+</strong>bool IDamageable.IsDamageReceivingEnabled => true;
+
+double InvulnerabilityTimeAfterDamage => 0;
+bool IsInvulnerable => TimeManager.CurrentScreenSecondsSince(LastDamageTime) &#x3C; InvulnerabilityTimeAfterDamage;
+double LastDamageTime { get; set; } = -999
+</code></pre>
 
 If needed you can create these as properties with getters and setters, but the code above matches the behavior prior to version 52.
