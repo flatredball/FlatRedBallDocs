@@ -1181,6 +1181,8 @@
       * [mediaplayer](api/microsoft-xna-framework/media/mediaplayer.md)
       * [song](api/microsoft-xna-framework/media/song/README.md)
         * [fromuri](api/microsoft-xna-framework/media/song/fromuri.md)
+  * [NAudio](api/naudio/README.md)
+    * [NAudio\_Song](api/naudio/naudio\_song.md)
   * [SkiaGum](api/skiagum/README.md)
     * [skiaspritecanvas](api/skiagum/skiaspritecanvas.md)
     * [renderables](api/skiagum/renderables/README.md)

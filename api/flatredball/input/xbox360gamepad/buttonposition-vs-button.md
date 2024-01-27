@@ -6,11 +6,11 @@ ButtonPosition can be used to reference a button based in its physical position 
 
 For example, consider the A, B, X, and Y button positions on the Xbox and Switch controllers.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Switch vs Xbox Button Position</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Switch vs Xbox Button Position</p></figcaption></figure>
 
 You may want your game to use the button positions rather than specific button letters when assigning input to your player.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Buttons face positions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Buttons face positions</p></figcaption></figure>
 
 ### Code Example - Getting Button by ButtonPosition
 
