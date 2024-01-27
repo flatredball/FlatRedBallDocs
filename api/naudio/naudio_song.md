@@ -55,6 +55,8 @@ MenuSong.Play();
 
 Keep in mind that the AudioManager will not be notified of the song playing, so mixing AudioManager behavior with direct Play calls may cause overlapping songs to play, or other confusing behavior.
 
+This may be desirable if you would like to play two songs at the same time, or if you would like to crossfade songs. For information about fading songs, see the [Volume](naudio\_song.md#volume) section.
+
 ### Volume
 
 NAudio\_Song's Volume property can be used to make a song play more quietly. By default the volume value is at 1, which means full volume. A value of 0 silences the song. Values above 1 can be used, and the song will play louder, but it is not recommended for final products.
