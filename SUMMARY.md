@@ -1188,7 +1188,7 @@
     * [renderables](api/skiagum/renderables/README.md)
       * [renderableskiaobject](api/skiagum/renderables/renderableskiaobject.md)
   * [State Interpolation](api/stateinterpolationplugin/README.md)
-    * [gluevault-component-pages-advanced-interpolation-plugin-tween-function](api/stateinterpolationplugin/gluevault-component-pages-advanced-interpolation-plugin-tween-function.md)
+    * [Tween](api/stateinterpolationplugin/gluevault-component-pages-advanced-interpolation-plugin-tween-function.md)
 * [🎮 FlatRedBall Games](games/README.md)
   * [angry-boy](games/angry-boy.md)
   * [avatar-skate](games/avatar-skate.md)

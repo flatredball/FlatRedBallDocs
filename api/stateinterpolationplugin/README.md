@@ -1,3 +1,5 @@
-## Introduction
+# State Interpolation
 
-The StateInterpolationPlugin namespace is part of the StateInterpolation library. Initially the code contained in this library was embedded in FlatRedBall projects by the Advanced State Interpolation plugin. More recently, the StateInterpolation.dll library is automatically added to new FlatRedBall projects. Therefore, newer FlatRedBall projects will already have access to the StateInterpolationPlugin namespace.
+The StateInterpolationPlugin namespace provides a number of useful methods for interpolating (also known as tweening) values using a variety of interpolation types.
+
+The name StateInterpolationPlugin exists for historical reasons - it was previously a plugin that needed to be explicitly installed in the FlatRedBall Editor. Modern FlatRedBall projects automatically include this library, so no plugin installation is necessary. The namespace has remained for backwards compatability.

@@ -1,4 +1,4 @@
-# gluevault-component-pages-advanced-interpolation-plugin-tween-function
+# Tween
 
 ### Introduction
 
@@ -15,12 +15,12 @@ To use Tween to change the position of the Circle based off of keyboard input:
 
 1.  Add the following using statement:
 
-    ```
+    ```csharp
     using StateInterpolationPlugin;
     ```
 2. Add the following to CustomActivity:
 
-```lang:c#
+```clike
 if (InputManager.Keyboard.KeyPushed(Keys.Left))
 {
     CircleInstance.Tween(
@@ -50,9 +50,9 @@ If your Camera is 2D (default, Orthogonal = true), then zooming requires modifyi
 1. OrthogonalHeight
 2. OrthogonalWidth (usually by calling FixAspectRatioYConstant)
 
-Rather than creating two Tween functions that run in parallel, the Tween function allows using a delegate to assign multiple values based on a single value. The example below uses the OrthogonalHeight as the main value, and adjusts the OrthogonalWidth by calling FixAspectRatioYConstant. &#x20;
+Rather than creating two Tween functions that run in parallel, the Tween function allows using a delegate to assign multiple values based on a single value. The example below uses the OrthogonalHeight as the main value, and adjusts the OrthogonalWidth by calling FixAspectRatioYConstant.
 
-```lang:c#
+```csharp
 // Add the using statement to get access to the Tween extension method
 using StateInterpolationPlugin;
 
@@ -87,17 +87,13 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-
-
-<figure><img src="../../../media/2016-01-2019-07-26_09-19-49.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../media/2016-01-2019-07-26_09-19-49.gif" alt=""><figcaption></figcaption></figure>
 
 ### Code Example - Lambda Assignments
 
 Lambdas can be used to assign properties without creating dedicated functions. For example a Circle's radius can be set using the following code:
 
-```
+```csharp
 var keyboard = InputManager.Keyboard;
 
 if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Space))
@@ -113,11 +109,7 @@ if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Space))
 }
 ```
 
-
-
-<figure><img src="../../../media/2016-01-07_13-43-30.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../media/2016-01-07_13-43-30.gif" alt=""><figcaption></figcaption></figure>
 
 ### Tweening vs. Velocity values
 
