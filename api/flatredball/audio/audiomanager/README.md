@@ -1,5 +1,9 @@
-## Introduction
+# AudioManager
 
-The AudioManager is a class responsible for managing audio - including playing, pausing and stopping sounds, setting sound variables and managing 3D-positioned audio. The AudioManager can be used with SoundEffects created from WAV files.
+### Introduction
 
-## 
+The AudioManager class is responsible for managing audio - including playing, pausing and stopping sounds, setting sound variables, and playing songs.
+
+The Audio Manager is not required to play sounds sound effects and songs, but it can simplify a number of common audio-related tasks.
+
+###
