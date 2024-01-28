@@ -48,7 +48,6 @@ private void HandleFullscreenSet(bool isFullscreen)
         CameraSetup.ResetCamera();
     }
 }
-
 ```
 
 This code assumes that you are using the generated CameraSetup code provided by the [Display Settings window](../../../../glue-reference/camera.md).
