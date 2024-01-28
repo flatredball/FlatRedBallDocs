@@ -33,11 +33,22 @@ To toggle full screen you can either bind a ViewModel to the IsFullscreen proper
 The following code shows how to subscribe to the FullscreenSet property:
 
 ```csharp
-CameraSetup.Data.IsFullScreen = IsFullscreen;
-if(CameraSetup.GraphicsDeviceManager != null)
+void CustomInitialize()
 {
-    CameraSetup.ResetWindow();
+    var settings = Forms.SettingsViewInstance;
+    settings.FullscreenSet += HandleFullscreenSet;
 }
+
+private void HandleFullscreenSet(bool isFullscreen)
+{
+    CameraSetup.Data.IsFullScreen = isFullscreen;
+    if (CameraSetup.GraphicsDeviceManager != null)
+    {
+        CameraSetup.ResetWindow();
+        CameraSetup.ResetCamera();
+    }
+}
+
 ```
 
 This code assumes that you are using the generated CameraSetup code provided by the [Display Settings window](../../../../glue-reference/camera.md).
