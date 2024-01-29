@@ -8,7 +8,7 @@ This section discusses the details of how generated code works. The details of g
 
 * You have encountered a bug related to generated code
 * You are interested in debugging generated code
-* You are interested in creating Glue plugins which generate code
+* You are interested in creating FlatRedBall Editor plugins which generate code
 
 ### How can I see generated code?
 
@@ -24,7 +24,7 @@ Assuming that you have an Entity called MyEntity:
 
 ![GeneratedEntityCsFile.png](../media/migrated\_media-GeneratedEntityCsFile.png)
 
-Glue will also generate a file called GlobalContent.Generated.cs, which is not associated with any particular Screen/Entity. It is responsible for loading and providing access to all files added through the Global Content Files item in Glue.
+FlatRedBall also generates a file called GlobalContent.Generated.cs which is not associated with any particular Screen/Entity. It is responsible for loading and providing access to all files added through the Global Content Files item in the FRB Editor.
 
 This file is located in your project as well, but it is not embedded under any other files:
 
