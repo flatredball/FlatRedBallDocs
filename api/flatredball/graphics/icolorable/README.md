@@ -1,24 +1,24 @@
-# icolorable
+# IColorable
 
 ### Introduction
 
-The IColorable interface defines properties for interacting with an object which can have its color dynamically modified and which can specify how it "blends" with objects behind it. Common objects which implement the IColorable interface include the [Sprite](../../../../../frb/docs/index.php) and [Text](../../../../../frb/docs/index.php) object.
+The IColorable interface defines properties for interacting with an object which can have its color dynamically modified and which can specify how it "blends" with objects behind it. Common objects which implement the IColorable interface include the [Sprite](../../../../frb/docs/index.php) and [Text](../../../../frb/docs/index.php) object.
 
-### Applying [ColorOperations](../../../../../frb/docs/index.php)
+### Applying [ColorOperations](../../../../frb/docs/index.php)
 
-[ColorOperations](../../../../../frb/docs/index.php) can be used to change the color of a IColorable at runtime. [ColorOperations](../../../../../frb/docs/index.php) require two pieces of information: the color specified by three values (Red, Green, and Blue) and the operation to perform with the specified color.
+[ColorOperations](../../../../frb/docs/index.php) can be used to change the color of a IColorable at runtime. [ColorOperations](../../../../frb/docs/index.php) require two pieces of information: the color specified by three values (Red, Green, and Blue) and the operation to perform with the specified color.
 
-The default [ColorOperation](../../../../../frb/docs/index.php) for most IColorables (like [Sprites](../../../../../frb/docs/index.php)) is [ColorOperation](../../../../../frb/docs/index.php).None. Unless the [ColorOperation](../../../../../frb/docs/index.php) is changed, the Red, Green, and Blue properties will have no effect on way the IColorable is rendered. The default [ColorOperation](../../../../../frb/docs/index.php) for [Texts](../../../../../frb/docs/index.php) is [Modulate](../../../../../frb/docs/index.php).
+The default [ColorOperation](../../../../frb/docs/index.php) for most IColorables (like [Sprites](../../../../frb/docs/index.php)) is [ColorOperation](../../../../frb/docs/index.php).None. Unless the [ColorOperation](../../../../frb/docs/index.php) is changed, the Red, Green, and Blue properties will have no effect on way the IColorable is rendered. The default [ColorOperation](../../../../frb/docs/index.php) for [Texts](../../../../frb/docs/index.php) is [Modulate](../../../../frb/docs/index.php).
 
-The Red, Green, and Blue properties provide access to the components of the color which is used to change the IColorable's color. The [ColorOperation](../../../../../frb/docs/index.php) property specifies how to modify the color.
+The Red, Green, and Blue properties provide access to the components of the color which is used to change the IColorable's color. The [ColorOperation](../../../../frb/docs/index.php) property specifies how to modify the color.
 
 Color values range between 0 and 1 and are all set to 0 by default.
 
-The exception is the [Text](../../../../../frb/docs/index.php) object. The Text object has its Red, Green, and Blue color values set to 1 so that the text appears as white. Furthermore, the [ColorOperation](../../../../../frb/docs/index.php) defaults to [ColorOperation](../../../../../frb/docs/index.php).Modulate for the [Text](../../../../../frb/docs/index.php) object.
+The exception is the [Text](../../../../frb/docs/index.php) object. The Text object has its Red, Green, and Blue color values set to 1 so that the text appears as white. Furthermore, the [ColorOperation](../../../../frb/docs/index.php) defaults to [ColorOperation](../../../../frb/docs/index.php).Modulate for the [Text](../../../../frb/docs/index.php) object.
 
-The following code will create five Sprites, each with a different [ColorOperation](../../../../../frb/docs/index.php).
+The following code will create five Sprites, each with a different [ColorOperation](../../../../frb/docs/index.php).
 
-```
+```csharp
  // To reduce code, add the following #using statement to your Game class
  using FlatRedBall.Graphics;
 
@@ -64,15 +64,15 @@ The following code will create five Sprites, each with a different [ColorOperati
  }
 ```
 
-![ColorOperations.png](../../../../../media/migrated_media-ColorOperations.png)
+![ColorOperations.png](../../../../media/migrated\_media-ColorOperations.png)
 
-For more information on specific [ColorOperation values](../../../../../frb/docs/index.php), see the [ColorOperation page](../../../../../frb/docs/index.php).
+For more information on specific [ColorOperation values](../../../../frb/docs/index.php), see the [ColorOperation page](../../../../frb/docs/index.php).
 
 ### Color Rates
 
-Color rates are values which change the Red, Green, and Blue values over time. The rates, just like all velocity values, indicate units changed per second. The following code creates 80 Sprites and randomly varies their colors using a [SpriteCustomBehavior](../../../../../frb/docs/index.php).
+Color rates are values which change the Red, Green, and Blue values over time. The rates, just like all velocity values, indicate units changed per second. The following code creates 80 Sprites and randomly varies their colors using a [SpriteCustomBehavior](../../../../frb/docs/index.php).
 
-```
+```csharp
  // To reduce code, add the following #using statement to your Game class
  using FlatRedBall.Graphics;
 
@@ -135,17 +135,17 @@ Color rates are values which change the Red, Green, and Blue values over time. T
  }
 ```
 
-![SpritesWithColorRates.png](../../../../../media/migrated_media-SpritesWithColorRates.png)
+![SpritesWithColorRates.png](../../../../media/migrated\_media-SpritesWithColorRates.png)
 
 ### Alpha and BlendOperation
 
-The Alpha and BlendOperation properties are related just as the components of color and [ColorOperation](../../../../../frb/docs/index.php) properties. The Alpha property is used to control the transparency of an IColorable.
+The Alpha and BlendOperation properties are related just as the components of color and [ColorOperation](../../../../frb/docs/index.php) properties. The Alpha property is used to control the transparency of an IColorable.
 
 Unlike the color components, modifying the Alpha value will affect the appearance of an IColorable with its default BlendOperation.
 
 BlendOperations control how IColorables blend with objects behind them. The following code shows two rows of Sprites - the first with the default BlendOperation.Regular and the second with BlendOperation.Add;
 
-```
+```csharp
  // To reduce code, add the following #using statement to your Game class
  // using FlatRedBall.Graphics;
 
@@ -175,7 +175,7 @@ BlendOperations control how IColorables blend with objects behind them. The foll
  }
 ```
 
-![AlphaAndBlendOperation.png](../../../../../media/migrated_media-AlphaAndBlendOperation.png)
+![AlphaAndBlendOperation.png](../../../../media/migrated\_media-AlphaAndBlendOperation.png)
 
 ### AlphaRate
 
@@ -183,13 +183,13 @@ The AlphaRate property modifies the Alpha property similar to the ColorRate prop
 
 Most IColorables are created with an Alpha value of 1. This generally represents full opacity. AlphaRate can change this value over time. A positive AlphaRate value will increase the Alpha property over time, and a negative AlphaRate value will decrease the Alpha property over time. The formula (which is generally applied automatically for managed objects) is:
 
-```
+```csharp
 object.Alpha += object.AlphaRate * TimeManager.SecondDifference;
 ```
 
 Therefore, a fully opaque object with an AlphaRate of -1 will disappear in 1 second. Increasing the absolute value of the AlphaRate makes the object disappear faster. That is, an AlphaRate of -2 (twice as large in absolute value terms) will make an object disappear after .5 seconds (half as long). The formula is:
 
-```
+```csharp
 AmountOfTimeToDisappearIn = - 1/AlphaRate;
 ```
 
@@ -201,11 +201,11 @@ Therefore, we can see that an AlphaRate value of -2 will cause an object to disa
 
 ### IColorable Members
 
-* [FlatRedBall.Graphics.IColorable.Alpha](../../../../../frb/docs/index.php)
-* [FlatRedBall.Graphics.IColorable.BlendOperation](../../../../../frb/docs/index.php)
-* [FlatRedBall.Graphics.IColorable.Blue](../../../../../frb/docs/index.php)
-* [FlatRedBall.Graphics.IColorable.ColorOperation](../../../../../frb/docs/index.php)
-* [FlatRedBall.Graphics.IColorable.Green](../../../../../frb/docs/index.php)
-* [FlatRedBall.Graphics.IColorable.Red](../../../../../frb/docs/index.php)
+* [FlatRedBall.Graphics.IColorable.Alpha](../../../../frb/docs/index.php)
+* [FlatRedBall.Graphics.IColorable.BlendOperation](../../../../frb/docs/index.php)
+* [FlatRedBall.Graphics.IColorable.Blue](../../../../frb/docs/index.php)
+* [FlatRedBall.Graphics.IColorable.ColorOperation](../../../../frb/docs/index.php)
+* [FlatRedBall.Graphics.IColorable.Green](../../../../frb/docs/index.php)
+* [FlatRedBall.Graphics.IColorable.Red](../../../../frb/docs/index.php)
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.
