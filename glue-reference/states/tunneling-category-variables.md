@@ -27,5 +27,8 @@ The CurrentSizeCategoryState can be tunneled on the entity which can be useful i
 
 To tunnel into a variable, drag+drop the category on the Variables folder.
 
+<figure><img src="../../.gitbook/assets/31_10 28 17.gif" alt=""><figcaption><p>Tunneling to the CurrentSizeCategoryState</p></figcaption></figure>
 
+The tunneled variable now behaves like any other variable. For example, an event can be added to the variable which is raised whenever the SizeCategory changes.
 
+<figure><img src="../../.gitbook/assets/31_10 31 34.gif" alt=""><figcaption><p>Adding an Event for tunneled category variables</p></figcaption></figure>
