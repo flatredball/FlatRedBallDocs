@@ -366,6 +366,7 @@
     * [State Categories](glue-reference/states/state-categories.md)
     * [State Classes](glue-reference/states/glue-reference-state-enumerations.md)
     * [States and Inheritance](glue-reference/states/states-and-inheritance.md)
+    * [Tunneling Category Variables](glue-reference/states/tunneling-category-variables.md)
   * [Variables](glue-reference/variables/README.md)
     * [CreatesEvent](glue-reference/variables/glue-reference-createsevent.md)
     * [HasAccompanyingVelocityProperty](glue-reference/variables/glue-reference-hasaccompanyingvelocityproperty.md)
