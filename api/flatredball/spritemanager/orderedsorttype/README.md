@@ -1,30 +1,30 @@
-# orderedsorttype
+# OrderedSortType
 
 ### Introduction
 
-The OrderedSortType property controls how [Sprites](../../../../../frb/docs/index.php) are ordered when they are drawn. [Z Buffered Sprites](../../../../../frb/docs/index.php) do not use this property when drawing. The following available options exist:
+The OrderedSortType property controls how [Sprites](../../../../frb/docs/index.php) and [IDrawableBatches](../../graphics/drawablebatch/) are ordered when they are drawn. [Z Buffered Sprites](../../../../frb/docs/index.php) do not use this property when drawing. The following available options exist:
 
-|                            |                                                                                                                                                                                                                                                                                                                                                                     |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SortType                   | Description                                                                                                                                                                                                                                                                                                                                                         |
-| None                       | No sorting will be performed. Objects will be drawn in the order that they have been added to the SpriteManager.                                                                                                                                                                                                                                                    |
-| Z                          | **(Default)** Objects will be sorted by their Z value. Objects further away (negative Z) will appear first in the list.                                                                                                                                                                                                                                             |
-| DistanceFromCamera         | Objects will be sorted by their distance from the [Camera](../../../../../frb/docs/index.php)                                                                                                                                                                                                                                                                       |
-| DistanceAlongForwardVector | Objects will be sorted by their distance from the [Camera](../../../../../frb/docs/index.php) along a projection that is parallel to the [Camera's](../../../../../frb/docs/index.php) forward vector. This is useful for sorting billboarded [Sprite](../../../../../frb/docs/index.php) properly when the [Camera](../../../../../frb/docs/index.php) is rotated. |
-| ZSecondaryParentY          | Sorts objects primarily by their Z value then secondarily by their [TopParent's](../../../../../frb/docs/index.php) Y value. This can be used to control how [Sprites](../../../../../frb/docs/index.php) overlap in 3/4 view games. See below for more information on sorting between Sprite and IDrawableBatch instances.                                         |
-| CustomComparer             | Sorts objects based off of the [Renderer's](../../../../../frb/docs/index.php) SpriteComparer property. If CustomComparer is used but no SpriteComparer is set, then the default SortType.Z will be used.                                                                                                                                                           |
+|                            |                                                                                                                                                                                                                                                                                                                                                         |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SortType                   | Description                                                                                                                                                                                                                                                                                                                                             |
+| None                       | No sorting will be performed. Objects will be drawn in the order that they have been added to the SpriteManager.                                                                                                                                                                                                                                        |
+| Z                          | **(Default)** Objects will be sorted by their Z value. Objects further away (negative Z) will appear first in the list.                                                                                                                                                                                                                                 |
+| DistanceFromCamera         | Objects will be sorted by their distance from the [Camera](../../../../frb/docs/index.php)                                                                                                                                                                                                                                                              |
+| DistanceAlongForwardVector | Objects will be sorted by their distance from the [Camera](../../../../frb/docs/index.php) along a projection that is parallel to the [Camera's](../../../../frb/docs/index.php) forward vector. This is useful for sorting billboarded [Sprite](../../../../frb/docs/index.php) properly when the [Camera](../../../../frb/docs/index.php) is rotated. |
+| ZSecondaryParentY          | Sorts objects primarily by their Z value then secondarily by their [TopParent's](../../../../frb/docs/index.php) Y value. This can be used to control how [Sprites](../../../../frb/docs/index.php) overlap in 3/4 view games. See below for more information on sorting between Sprite and IDrawableBatch instances.                                   |
+| CustomComparer             | Sorts objects based off of the [Renderer's](../../../../frb/docs/index.php) SpriteComparer property. If CustomComparer is used but no SpriteComparer is set, then the default SortType.Z will be used.                                                                                                                                                  |
 
 ### Usage
 
 The following code sets the SpriteManager's OrderedSortType to sort by distance from camera:
 
-```
+```csharp
 SpriteManager.OrderedSortType = SortType.DistanceFromCamera;
 ```
 
 ### Code Example
 
-The following code creates 10 [Sprites](../../../../../frb/docs/index.php), rotates them on the X axis, and sizes them to be a little larger so they overlap. Setting the OrderedSortType to DistanceFromCamera results in the [Sprites](../../../../../frb/docs/index.php) overlapping properly whether the [Camera](../../../../../frb/docs/index.php) is above or below the [Sprites](../../../../../frb/docs/index.php).
+The following code creates 10 [Sprites](../../../../frb/docs/index.php), rotates them on the X axis, and sizes them to be a little larger so they overlap. Setting the OrderedSortType to DistanceFromCamera results in the [Sprites](../../../../frb/docs/index.php) overlapping properly whether the [Camera](../../../../frb/docs/index.php) is above or below the [Sprites](../../../../frb/docs/index.php).
 
 ```
  for (int i = 0; i < 10; i++)
@@ -38,11 +38,11 @@ The following code creates 10 [Sprites](../../../../../frb/docs/index.php), rota
  SpriteManager.OrderedSortType = SortType.DistanceFromCamera;
 ```
 
-![OrderedByDistanceFromCamera.png](../../../../../media/migrated_media-OrderedByDistanceFromCamera.png)
+![OrderedByDistanceFromCamera.png](../../../../media/migrated\_media-OrderedByDistanceFromCamera.png)
 
 #### Example with default OrderedSortType
 
-The default OrderedSortType is SortType.Z. This sort type will result in [Sprites](../../../../../frb/docs/index.php) overlapping incorrectly with the above example. To see the difference, replace the above code with:
+The default OrderedSortType is SortType.Z. This sort type will result in [Sprites](../../../../frb/docs/index.php) overlapping incorrectly with the above example. To see the difference, replace the above code with:
 
 ```
  for (int i = 0; i < 10; i++)
@@ -57,7 +57,7 @@ The default OrderedSortType is SortType.Z. This sort type will result in [Sprite
  SpriteManager.OrderedSortType = SortType.Z;
 ```
 
-![OrderedByZ.png](../../../../../media/migrated_media-OrderedByZ.png) Since all [Sprites](../../../../../frb/docs/index.php) have an equal Z value (default of 0), then they are drawn in the order that they were added to the SpriteManager; from bottom-up. That means that the [Sprites](../../../../../frb/docs/index.php) seen from below (at the top of the screen) will appear to overlap incorrectly.
+![OrderedByZ.png](../../../../media/migrated\_media-OrderedByZ.png) Since all [Sprites](../../../../frb/docs/index.php) have an equal Z value (default of 0), then they are drawn in the order that they were added to the SpriteManager; from bottom-up. That means that the [Sprites](../../../../frb/docs/index.php) seen from below (at the top of the screen) will appear to overlap incorrectly.
 
 ### CustomComparer
 
@@ -94,23 +94,33 @@ public class SortByX : IComparer<Sprite>
 }
 ```
 
-![CustomSpriteSorting.png](../../../../../media/migrated_media-CustomSpriteSorting.png)
+![CustomSpriteSorting.png](../../../../media/migrated\_media-CustomSpriteSorting.png)
 
 ### ZSecondaryParentY Details
 
 The ZSecondaryParentY sort type is useful for top down and 3/4 view games. It allows moving objects (such as character entities) to be sorted based on their Y.
 
-![](../../../../../media/2017-04-img_58dfc9a83a342.png)
+![](../../../../media/2017-04-img\_58dfc9a83a342.png)
+
+This is recommended for top-down and 3/4 view games. Note that Sprites use this sorting type only if they have the same Z. Therefore, if your entities have mulitple sprites with different Z values, they will interlace with other instances of the same entity.
+
+For example if a character has a BodySprite and ShadowSprite, the ShadowSprite may have a Z value of -0.1 so that it always sorts behind the BodySprite of all other instances of the same entity type.
+
+The following code shows how to set the OrderedSortType to ZSecondaryParentY:
+
+```csharp
+SpriteManager.OrderedSortType = SortType.DistanceFromCamera;
+```
 
 #### Using Entities to Set Sprite Origin
 
 For Sprites, the sorting is performed according to the sprite's parent. This allows sorting to be performed at a point other than the Sprite's origin (center) for more natural sorting. For example, consider a game with units with different sizes. In this situation, developers are advised to align the Sprite objects to the bottom of the entity. For example, the red X marks the origin of the entity:
 
-![](../../../../../media/2017-04-img_58dfce31e94be.png)
+![](../../../../media/2017-04-img\_58dfce31e94be.png)
 
 If these origins are used, then units will sort properly according to where they are "standing" as shown in the following image:
 
-![](../../../../../media/2017-04-img_58dfd1e3d11d0.png)
+![](../../../../media/2017-04-img\_58dfd1e3d11d0.png)
 
 #### IDrawableBatch Sorting Details
 
@@ -122,6 +132,6 @@ For simple games (or on faster platforms) the OrderedSortType will not have much
 
 ### More Information
 
-* [FlatRedBall.SpriteManager.OrderedSortType.Z](../../../../../frb/docs/index.php) - A deeper look at the default ordering of Sprites in FlatRedBall.
-* [Object Sorting Tutorial](../../../../../frb/docs/index.php)
-* [Layer.SortType](../../../../../frb/docs/index.php) - Each Layer can have its own SortType.
+* [FlatRedBall.SpriteManager.OrderedSortType.Z](../../../../frb/docs/index.php) - A deeper look at the default ordering of Sprites in FlatRedBall.
+* [Object Sorting Tutorial](../../../../frb/docs/index.php)
+* [Layer.SortType](../../../../frb/docs/index.php) - Each Layer can have its own SortType.
