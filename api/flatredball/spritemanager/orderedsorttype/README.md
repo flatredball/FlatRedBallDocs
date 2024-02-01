@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The OrderedSortType property controls how [Sprites](../../../../frb/docs/index.php) and [IDrawableBatches](../../graphics/drawablebatch/) are ordered when they are drawn. [Z Buffered Sprites](../../../../frb/docs/index.php) do not use this property when drawing. The following available options exist:
+The OrderedSortType property controls how [Sprites](../../sprite/) and [IDrawableBatches](../../graphics/drawablebatch/) are ordered when they are drawn. [Z Buffered Sprites](../../../../frb/docs/index.php) do not use this property when drawing. The following available options exist:
 
 |                            |                                                                                                                                                                                                                                                                                                                                                         |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -40,62 +40,6 @@ The following code creates 10 [Sprites](../../../../frb/docs/index.php), rotates
 
 ![OrderedByDistanceFromCamera.png](../../../../media/migrated\_media-OrderedByDistanceFromCamera.png)
 
-#### Example with default OrderedSortType
-
-The default OrderedSortType is SortType.Z. This sort type will result in [Sprites](../../../../frb/docs/index.php) overlapping incorrectly with the above example. To see the difference, replace the above code with:
-
-```
- for (int i = 0; i < 10; i++)
- {
-     Sprite sprite = SpriteManager.AddSprite("redball.bmp");
-     sprite.Y = - 15 + 3 * i;
-     sprite.ScaleX = sprite.ScaleY = 12f;
-     sprite.RotationX = 1.57f;
- }
-
- // SortType.Z is the default value, but we'll explicitly set it anyway
- SpriteManager.OrderedSortType = SortType.Z;
-```
-
-![OrderedByZ.png](../../../../media/migrated\_media-OrderedByZ.png) Since all [Sprites](../../../../frb/docs/index.php) have an equal Z value (default of 0), then they are drawn in the order that they were added to the SpriteManager; from bottom-up. That means that the [Sprites](../../../../frb/docs/index.php) seen from below (at the top of the screen) will appear to overlap incorrectly.
-
-### CustomComparer
-
-The SortType.CustomComparer allows you to define custom sorting logic for your Sprites. The following shows how to create and use an IComparer that sorts all ordered Sprites along their X axis: Add the following using statement:
-
-```
-using FlatRedBall.Graphics
-```
-
-Add the following to Initialize after initializing FlatRedBall:
-
-```
-for (int i = 0; i < 500; i++)
-{
-    Sprite sprite = SpriteManager.AddSprite("redball.bmp");
-    sprite.ScaleX = 3;
-    sprite.ScaleY = 3;
-    SpriteManager.Camera.PositionRandomlyInView(sprite, 40, 40);
-}
-
-SpriteManager.OrderedSortType = SortType.CustomComparer;
-Renderer.SpriteComparer = new SortByX();
-```
-
-Define the SortByX class:
-
-```
-public class SortByX : IComparer<Sprite>
-{
-    public int Compare(Sprite first, Sprite second)
-    {
-        return first.Position.X.CompareTo(second.Position.X);
-    }
-}
-```
-
-![CustomSpriteSorting.png](../../../../media/migrated\_media-CustomSpriteSorting.png)
-
 ### ZSecondaryParentY Details
 
 The ZSecondaryParentY sort type is useful for top down and 3/4 view games. It allows moving objects (such as character entities) to be sorted based on their Y.
@@ -109,7 +53,7 @@ For example if a character has a BodySprite and ShadowSprite, the ShadowSprite m
 The following code shows how to set the OrderedSortType to ZSecondaryParentY:
 
 ```csharp
-SpriteManager.OrderedSortType = SortType.DistanceFromCamera;
+SpriteManager.OrderedSortType = SortType.ZSecondaryParentY;
 ```
 
 #### Using Entities to Set Sprite Origin
@@ -126,12 +70,70 @@ If these origins are used, then units will sort properly according to where they
 
 The name ZSecondaryParentY suggests that objects are sorted by their Z value, then secondarily by their parents' Y value. Using a parent object (such as an entity) to control the sorting of a Sprite is useful (as shown above). Although IDrawableBatch implementations can have parents (especially if inheriting PositionedObject), IDrawableBatches are not required to have a parent. Therefore, the secondary sorting for IDrawableBatch instances is done by the Y property. While this limitation prevents using entities to set the origin of an IDrawableBatch, this can be resolved by offsetting the rendering of an IDrawableBatch so that its position marks its bottom. Furthermore, IDrawableBatch instances and Sprite will sort within the same category using Y values, but then Sprite vs. IDrawableBatch rendering is only performed by the Z value, even if the sort type is set to ZSecondaryParentY. If your game requires sorting Sprite vs. IDrawableBatch instances, you may need to adjust their Z value to force a particular sorting rather than relying on the Z value, or you may need to move all of your rendering to one type of object (either all Sprite or all IDrawableBatch).
 
+### Example with default OrderedSortType
+
+The default OrderedSortType is SortType.Z. This sort type will result in [Sprites](../../../../frb/docs/index.php) overlapping incorrectly with the above example. To see the difference, replace the above code with:
+
+```csharp
+ for (int i = 0; i < 10; i++)
+ {
+     Sprite sprite = SpriteManager.AddSprite("redball.bmp");
+     sprite.Y = - 15 + 3 * i;
+     sprite.ScaleX = sprite.ScaleY = 12f;
+     sprite.RotationX = 1.57f;
+ }
+
+ // SortType.Z is the default value, but we'll explicitly set it anyway
+ SpriteManager.OrderedSortType = SortType.Z;
+```
+
+&#x20;
+
+<figure><img src="../../../../media/migrated_media-OrderedByZ.png" alt=""><figcaption></figcaption></figure>
+
+Since all [Sprites](../../../../frb/docs/index.php) have an equal Z value (default of 0), then they are drawn in the order that they were added to the SpriteManager; from bottom-up. That means that the [Sprites](../../../../frb/docs/index.php) seen from below (at the top of the screen) will appear to overlap incorrectly.
+
+### CustomComparer
+
+The SortType.CustomComparer allows you to define custom sorting logic for your Sprites. The following shows how to create and use an IComparer that sorts all ordered Sprites along their X axis: Add the following using statement:
+
+```csharp
+using FlatRedBall.Graphics
+```
+
+Add the following to Initialize after initializing FlatRedBall:
+
+```csharp
+for (int i = 0; i < 500; i++)
+{
+    Sprite sprite = SpriteManager.AddSprite("redball.bmp");
+    sprite.ScaleX = 3;
+    sprite.ScaleY = 3;
+    SpriteManager.Camera.PositionRandomlyInView(sprite, 40, 40);
+}
+
+SpriteManager.OrderedSortType = SortType.CustomComparer;
+Renderer.SpriteComparer = new SortByX();
+```
+
+Define the SortByX class:
+
+```csharp
+public class SortByX : IComparer<Sprite>
+{
+    public int Compare(Sprite first, Sprite second)
+    {
+        return first.Position.X.CompareTo(second.Position.X);
+    }
+}
+```
+
+```csharp
+SpriteManager.OrderedSortType = SortType.DistanceFromCamera;
+```
+
+![CustomSpriteSorting.png](../../../../media/migrated\_media-CustomSpriteSorting.png)
+
 ### Sort Type Performance
 
 For simple games (or on faster platforms) the OrderedSortType will not have much impact on performance. However, it may be useful to adjust your sort type if possible for performance if you suspect that the sort type is impacting your frame rate. The fastest sort type is OrderedSortType.Z. This is a stable sorting algorithm performing O(n) operations, and each operation is simply a comparison of Z values. The next fastest is OrderedSortType.ZSecondaryParentY which is a stable sorting algorithm which performs simple comparisons, but it must do two passes to sort first along Z, then along the Parent Y. OrderedSortType.DistanceFromCamera is a stable sort also performong O(n) operations, but requies math operations for comparison. The slowest sort type is OrderedSortType.DistanceAlongForwardVector. Due to floating point errors this is not guaranteed to be a stable sort which hurts its performance. It must also perform numerous math operations per Sprite prior to performing sorting so it can be expensive. The performance of custom sorting is not defined because any type of sorting can be performed in custom code; however, this type of sorting is not stable and uses a binary sorting algorithm meaning it performs O(n\*log(n)) operations.
-
-### More Information
-
-* [FlatRedBall.SpriteManager.OrderedSortType.Z](../../../../frb/docs/index.php) - A deeper look at the default ordering of Sprites in FlatRedBall.
-* [Object Sorting Tutorial](../../../../frb/docs/index.php)
-* [Layer.SortType](../../../../frb/docs/index.php) - Each Layer can have its own SortType.
