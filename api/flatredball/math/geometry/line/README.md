@@ -1,4 +1,4 @@
-# line
+# Line
 
 ### Introduction
 
@@ -6,16 +6,16 @@ A line is defined by two endpoints, so in mathematical terms it is actually a se
 
 ### Line Sample
 
-The following sample creates a line, a [Circle](../../../../../../frb/docs/index.php), and an [AxisAlignedRectangle](../../../../../../frb/docs/index.php). The line is controlled with the keyboard and it changes colors when it collides with the other two shapes. Add the following using statements:
+The following sample creates a line, a [Circle](../circle/), and an [AxisAlignedRectangle](../shapecollection/axisalignedrectangles.md). The line is controlled with the keyboard and it changes colors when it collides with the other two shapes. Add the following using statements:
 
-```
+```csharp
 using Microsoft.Xna.Framework.Graphics;
 using FlatRedBall.Math.Geometry;
 ```
 
 Add the following at class scope:
 
-```
+```csharp
 AxisAlignedRectangle rectangle;
 Circle circle;
 Line line;
@@ -23,7 +23,7 @@ Line line;
 
 Add the following in Initialize after Initializing FlatRedBall:
 
-```
+```csharp
 rectangle = ShapeManager.AddAxisAlignedRectangle();
 rectangle.X = 50;
 rectangle.Color = Color.Red;
@@ -38,7 +38,7 @@ line = ShapeManager.AddLine();
 
 Add the following in Update:
 
-```
+```csharp
 InputManager.Keyboard.ControlPositionedObject(line);
 
 if (line.CollideAgainst(rectangle))
@@ -55,20 +55,20 @@ else
 }
 ```
 
-![LineTutorial.png](../../../../../../media/migrated_media-LineTutorial.png) Note that FlatRedBall expects shape colors to be pre-multiplied. Therefore a half-transparent red value would have a R,G,B,A value of (128,0,0,128).
+![LineTutorial.png](../../../../../media/migrated\_media-LineTutorial.png) Note that FlatRedBall expects shape colors to be pre-multiplied. Therefore a half-transparent red value would have a R,G,B,A value of (128,0,0,128).
 
 ### RelativePoint Properties
 
-A line can be modified by changing both its [PositionedObject](../../../../../../frb/docs/index.php) properties as well as through the RelativePoint property. The following code connects two rectangles with a line. Add the following in Update:
+A line can be modified by changing both its [PositionedObject](../../../../../frb/docs/index.php) properties as well as through the RelativePoint property. The following code connects two rectangles with a line. Add the following in Update:
 
-```
+```csharp
 using Microsoft.Xna.Framework.Graphics;
 using FlatRedBall.Math.Geometry;
 ```
 
 Add the following in Initialize after Initializing FlatRedBall:
 
-```
+```csharp
 AxisAlignedRectangle rectangle1 = ShapeManager.AddAxisAlignedRectangle();
 rectangle1.Position = new Vector3(-2, 4, 0);
 rectangle1.Color = Color.Green;
@@ -93,21 +93,10 @@ connectingLine.RelativePoint2 = new Point3D(
     rectangle2.Z - rectangle1.Z); // will be 0 in our case
 ```
 
-![ConnectedRectangles.png](../../../../../../media/migrated_media-ConnectedRectangles.png)
+![ConnectedRectangles.png](../../../../../media/migrated\_media-ConnectedRectangles.png)
 
 ### Line limitations
 
-* Lines, just like any other [Shapes](../../../../../../frb/docs/index.php), can either be drawn on top of or below types that can sort with each other, such as [Sprites](../../../../../../frb/docs/index.php) and [Texts](../../../../../../frb/docs/index.php). They will not sort according to their Z value.
+* Lines, just like any other [Shapes](../../../../../frb/docs/index.php), can either be drawn on top of or below types that can sort with each other, such as [Sprites](../../../../../frb/docs/index.php) and [Texts](../../../../../frb/docs/index.php). They will not sort according to their Z value.
 * Lines must be one pixel thick. Thicker lines are not supported.
 * Lines can only draw solid colors - patterns and gradients are not supported.
-
-### Line Members
-
-* [FlatRedBall.Math.Geometry.Line.AsSegment](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Line.LastCollisionPoint](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Line.RelativePoint1](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Line.RelativePoint2](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Line.SetFromAbsoluteEndpoints](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Line.Visible](../../../../../../frb/docs/index.php)
-
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../../frb/forum.md) for a rapid response.
