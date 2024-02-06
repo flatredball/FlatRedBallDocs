@@ -1,4 +1,4 @@
-# glue-how-to-create-a-first-person-camera
+# How to Create a First Person Camera
 
 ### Introduction
 
@@ -24,7 +24,7 @@ Now we'll set the Camera to be in 3D mode:
 1. In Glue, click the camera icon
 2. Change the **Perspective** to **3D**
 
-![](../../../media/2021-07-img_60f97747cad48.png)
+![](../../media/2021-07-img\_60f97747cad48.png)
 
 Finally create a Screen which will contain the rest of our project. This is not necessary if you already have a GameScreen:
 
@@ -36,7 +36,7 @@ Finally create a Screen which will contain the rest of our project. This is not 
 
 Now we'll create a large Sprite which will serve as our ground. To create this:
 
-1. Download this file to your computer: [![](../../../media/2016-01-redball-1.png)](../../../media/2016-01-redball-1.png)
+1. Download this file to your computer: [![](../../media/2016-01-redball-1.png)](../../media/2016-01-redball-1.png)
 2. Drag+drop redball.bmp onto GameScreen's Files in Glue
 3. Select the **Quick Actions** tab
 4. Click **Add Object to Game Screen**
@@ -52,7 +52,7 @@ Now that the Sprite has been created, let's make it really large and repeating:
 5. Set the Sprite's RightTextureCoordinate to 32000 - this makes the Sprite repeat 1000 times on the X axis
 6. Set the Sprite's BottomTextureCoordinate to 32000 - this makes the Sprite repeat 1000 times on the Y axis
 
-![](../../../media/2021-07-img_60f97cd471063.png)
+![](../../media/2021-07-img\_60f97cd471063.png)
 
 ### Create CameraController Entity
 
@@ -80,27 +80,27 @@ Next we'll set up our initial position of the CameraControllerInstance. We'll be
 4. Open CameraControllerInstance.cs
 5. Add the following code to CustomInitialize:
 
-&#x20;
-
 ```
 this.CameraInstance.UpVector = new Vector3(0, 0, 1);
 this.CameraInstance.RelativePosition = new Vector3();
 this.RotationX = Microsoft.Xna.Framework.MathHelper.PiOver2;
 ```
 
-At this point we can run the game and we should see the Camera looking into the distance: ![LookingAtHorizon.PNG](../../../media/migrated_media-LookingAtHorizon.PNG)
+At this point we can run the game and we should see the Camera looking into the distance:&#x20;
+
+<figure><img src="../../media/migrated_media-LookingAtHorizon.PNG" alt=""><figcaption></figcaption></figure>
 
 ### Implement code to move and look
 
 Finally we'll add code for movement and looking. We'll add looking first, then add moving. To do this, add the following code to CustomActivity in the CameraController entity:
 
-```
+```csharp
 LookingActivity();
 ```
 
 Now implement the LookingActivity function:
 
-```
+```csharp
 // This would normally be a Glue variable,
 // but added here to keep the tutorial shorter:
 const float rotationMultiplier = .006f;
@@ -123,13 +123,13 @@ this.RotationMatrix *=
 
 Next we'll add movement activity. To do this, first add the following code to your CameraController's CustomActivity:
 
-```
+```csharp
 MovementActivity();
 ```
 
 Next, we'll implement the MovementActivity function:
 
-```
+```csharp
 const float movementSpeed = 36;
 
 // Let's get the "forward" vector - this is a vector that represents the way the

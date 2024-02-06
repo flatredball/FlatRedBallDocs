@@ -1,4 +1,4 @@
-# glue-how-to-render-an-entity-to-a-texture
+# How to Tender an Entity to a Texture
 
 ### Introduction
 
@@ -10,8 +10,8 @@ You may want to render an Entity to a texture for a number of reasons:
 
 * Enable visual effects on an entire entity such as transparency or color operations
 * Enable scaling of an entire Entity by rendering it with a single Sprite
-* Improve performance by [reducing render breaks](../../../frb/docs/index.php)
-* Improve performance by [reducing the number of managed objects](../../../frb/docs/index.php)
+* Improve performance by [reducing render breaks](../../frb/docs/index.php)
+* Improve performance by [reducing the number of managed objects](../../frb/docs/index.php)
 * Render FlatRedBall Entities in XNA SpriteBatch or other non-FlatRedBall rendering environment/engine.
 
 ### Setup
@@ -40,7 +40,7 @@ Next add the LotsOfCircles Entity:
 6. Select the list type as Circle
 7. Enter the name CircleList
 
-![CreateLotsOfCircles.gif](../../../media/migrated_media-CreateLotsOfCircles.gif)
+![CreateLotsOfCircles.gif](../../media/migrated\_media-CreateLotsOfCircles.gif)
 
 #### Add Circles in code
 
@@ -51,9 +51,7 @@ Next we'll add some Circle instances in code. We'll do it in code rather than in
 3. Double-click LotsOfCircles.cs
 4. Add the following code to CustomInitialize:
 
-&#x20;
-
-```
+```csharp
 private void CustomInitialize()
 {
     const int numberOfCircles = 200;
@@ -83,13 +81,13 @@ Next add a Screen to contain the LotsOfCircles instance:
 3. Enter the name MainScree and click OK
 4. Drag+drop the LotsOfCircles onto the MainScreen and click OK
 
-![LotsOfCirclesInstanceInScreen.gif](../../../media/migrated_media-LotsOfCirclesInstanceInScreen.gif)
+![LotsOfCirclesInstanceInScreen.gif](../../media/migrated\_media-LotsOfCirclesInstanceInScreen.gif)
 
 #### You should see a lot of circles
 
 If you run the game now you will see a lot of circles. Of course, these circles are all part of the LotsOfCircles entity.
 
-![LotsOfCirclesRuntime.gif](../../../media/migrated_media-LotsOfCirclesRuntime.gif)
+![LotsOfCirclesRuntime.gif](../../media/migrated\_media-LotsOfCirclesRuntime.gif)
 
 ### Adding a new Camera
 
