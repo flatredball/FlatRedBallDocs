@@ -20,14 +20,14 @@ Once you open the editor, you can create a new project. To create a new Project:
 
     ![File -> New Project Menu](../../media/2022-01-img\_61d256005734c.png)
 2. Enter **Beefball** for the **Project Name.**
-3. Leave **Desktop GL** as the platform. Our game will target this platform because it is easy to debug. Creating the project for a desktop platform is recommended even if the game is intended to run on non-desktop platforms (such as Android). Additional platforms can be added at any time.
+3. Leave **Desktop GL** as the platform. Our game targets this platform because it is easy to debug. Creating the project for a desktop platform is recommended even if the game is intended to run on non-desktop platforms (such as Android). Additional platforms can be added at any time.
 4.  Uncheck **Open New Project Wizard**. We'll make Beefball "from scratch".
 
     ![Uncheck the New Project Wizard](../../media/2023-07-img\_64a8393f6368b.png)
-5. (Optional) Change the location of the project. By default the project will be created in **Documents\FlatRedBallProjects**.
+5. (Optional) Change the location of the project. By default the project is created in **Documents\FlatRedBallProjects**.
 6. Click the **Create Project!** button to create the project.
 
-The latest FlatRedBall template will be downloaded, so your project will be running against the newest version available. Now that you've made a project, FlatRedBall will remember this and automatically open it for you next time it is started.
+The latest FlatRedBall template is downloaded, so your project runs against the newest version available. Now that you've made a project, FlatRedBall remembers this and automatically open it for you next time it is started.
 
 ### FlatRedBall Editor and Visual Studio
 
@@ -39,7 +39,7 @@ FlatRedBall projects automatically create a Visual Studio project too. To open t
 
 ![Screenshot of Glue showing the Beefball project loaded with the Open Project in Visual Studio button highlighted.](../../media/2016-01-2022-03-12-09\_15\_09-Beefball-Open-Project.png)
 
-You can also open the project in visual studio by opening the .sln file. The project folder can be opened by clicking the folder icon in the task bar. This will open the location of the .csproj file, which is one folder below the .sln file. The following animation shows how to navigate to the solution:
+You can also open the project in visual studio by opening the .sln file. The project folder can be opened by clicking the folder icon in the task bar. This opens the location of the .csproj file, which is one folder below the .sln file. The following animation shows how to navigate to the solution:
 
 <figure><img src="../../media/2016-01-03_08-09-28.gif" alt=""><figcaption><p>Opening the Visual Studio project from disk</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ When you double-click the .sln file you may see a window like this:
 
 <figure><img src="../../media/migrated_media-VSVersionSelector.PNG" alt=""><figcaption><p>Application selection window</p></figcaption></figure>
 
-If so you will want to select the version of Visual Studio that is compatible with the type of project you are running. At the time of this writing, Visual Studio 2022 Community is the most common version to use with FlatRedBall. Once Visual Studio is open, you can run your project by pressing the "start" button, or by pressing F5.
+If so you should select the version of Visual Studio that is compatible with the type of project you are running. At the time of this writing, Visual Studio 2022 Community is the most common version to use with FlatRedBall. Once Visual Studio is open, you can run your project by pressing the "start" button, or by pressing F5.
 
 <figure><img src="../../media/migrated_media-PlayButtonInVisualStudio.png" alt=""><figcaption><p>Start button in Visual Studio</p></figcaption></figure>
 
@@ -57,4 +57,4 @@ Your game should run if all prerequisites have been properly installed. You shou
 
 ### Conclusion
 
-That was easy! So far you have a fully-functional game using FlatRedBall. The next tutorial will cover making our first Entity.
+That was easy! So far you have a fully-functional game using FlatRedBall. The next tutorial covers making our first Entity.
