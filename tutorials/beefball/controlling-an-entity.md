@@ -6,16 +6,16 @@ So far we have a basic structure for our game: an Entity with graphical represen
 
 ### How will we control our Entity?
 
-Before implementing code to control your Entity you will need to decide how to control an Entity. For this tutorial we will implement controls using gamepads as well as keyboard (in case you do not have a gamepad). We will use FlatRedBall's input interfaces so that our game code doesn't need to consider which input device is using after initial setup. Note that FlatRedBall uses the Xbox36GamePad name since FlatRedBall was originally written to work with XNA. Most controllers will work including wired and wireless XBox controllers, Switch Pro controllers, and Playstation DualShock (although usually the DualShock requires a wired connection).
+Before implementing code to control your Entity you need to decide how to control an Entity. For this tutorial we will implement controls using gamepads as well as keyboard (in case you do not have a gamepad). We will use FlatRedBall's input interfaces so that our game code doesn't need to consider which input device is using after initial setup. Note that FlatRedBall uses the Xbox36GamePad name since FlatRedBall was originally written to work with XNA. Most controllers will work including wired and wireless XBox controllers, Switch Pro controllers, and Playstation DualShock (although usually the DualShock requires a wired connection).
 
 ### Defining Control Interfaces
 
-First we'll need to define which controls are needed in our game. Our PlayerBall will require the following input:
+First we need to define which controls are needed in our game. Our PlayerBall requires the following input:
 
 * Movement in the X and Y coordinates - also known as "2D input"
 * Input for executing a boost. Boosts temporarily increase the player's speed when executed for a short amount of time. The user does not need to hold the input down, simply pressing the button/key is enough.
 
-We'll want to write the PlayerBall so that it will work with any input device, whether that's Xbox 360 controller, Keyboard, or any other device. To add code to PlayerBall, double click **PlayerBall.cs** in Visual Studio. This will be located in your project's **Entities** folder.
+We'll write the PlayerBall so that it works with any input device, whether that's Xbox 360 controller, Keyboard, or any other device. To add code to PlayerBall, double click **PlayerBall.cs** in Visual Studio. This is located in your project's **Entities** folder.
 
 ![](../../media/2022-01-img\_61d31a7f303e9.png)
 
@@ -71,7 +71,7 @@ public partial class GameScreen
     ...
 ```
 
-Notice that the object we are assigning code to (PlayerBall1) matches the name of the entity in the editor. FlatRedBall objects in the editor will always have a matching name in code, as shown in the following image:
+Notice that the object we are assigning code to (PlayerBall1) matches the name of the entity in the editor. FlatRedBall objects in the editor always have a matching name in code, as shown in the following image:
 
 ![PlayerBall1 name in code](../../media/2022-01-img\_61d31b3936349.png)
 
@@ -79,7 +79,7 @@ For more information on the Keyboard class, see [the Keyboard page](../../api/fl
 
 ### Cleaning up the code
 
-**Clean code is very important.** This is something we stress at FlatRedBall for all developers making any kind of game regardless of size. Therefore, this tutorial (and others in the future) will discuss how code can be improved to be cleaner and more flexible. The code we wrote above has a number of problems:
+**Clean code is very important.** This is something we stress at FlatRedBall for all developers making any kind of game regardless of size. Therefore, this tutorial (and others in the future) discusses how code can be improved to be more flexible and maintainable. The code we wrote above has a number of problems:
 
 * The velocity (which was set to 10) is set right in the method where it's used. This velocity value is typically considered "data", while its application is considered "logic". The separation of data from logic is a fundamental concept in keeping game projects maintainable.
 * The game includes logic in the CustomActivity method. We encourage no logic, only method calls in the standard "Custom" methods.
@@ -110,13 +110,13 @@ private void CustomActivity()
 }
 ```
 
-If we run the game now we can control the player with the W, A, S, and D keys:&#x20;
+If we run the game now we can control the player with the W, A, S, and D keys:
 
 <figure><img src="../../media/migrated_media-MovingBeefballWithKeyboard.gif" alt=""><figcaption><p>PlayerBall moving with the MovementSpeed variable</p></figcaption></figure>
 
 ### Adding Gamepad Controls
 
-The benefit of using the input interfaces (I2DInput and IPressableInput ) is that the input device being used can be set or changed without any code changes in the entity. For example, we can modify the GameScreen to optionally use an gamepad if connected, otherwise it will fall back to the keyboard. To add support for keyboard and gamepad controls, open **GameScreen.cs** and Modify CustomActivity as follows:
+The benefit of using the input interfaces (I2DInput and IPressableInput ) is that the input device being used can be set or changed without any code changes in the entity. For example, we can modify the GameScreen to optionally use an gamepad if connected, otherwise it falls back to using the keyboard. To add support for keyboard and gamepad controls, open **GameScreen.cs** and Modify CustomActivity as follows:
 
 ```csharp
 void CustomInitialize()
@@ -146,7 +146,7 @@ For more information on Xbox360GamePad, see [the Xbox360GamePad page](../../api/
 
 ### Cleaning CustomActivity and CustomInitialize
 
-Finally, we will clean up CustomActivity. In general, we encourage keeping the Custom methods free of logic so that it is clear what an Entity/Screen is doing when initialized and when destroyed without having to mentally translate code into concept. Open **PlayerBall.cs** and replace the CustomActivity with the following:
+Finally, we should clean up CustomActivity. In general, we encourage keeping the Custom methods free of logic so that it is clear what an Entity/Screen is doing when initialized and when destroyed without having to mentally translate code into concept. Open **PlayerBall.cs** and replace the CustomActivity with the following:
 
 ```csharp
 private void CustomActivity()
@@ -204,4 +204,4 @@ private void AssignInput()
 
 ### Conclusion
 
-Now we have a PlayerBall Entity which is cleanly written, has speed which can be customized through the FlatRedBall Editor, and can be moved with the game pad or keyboard. The next tutorial will cover defining collision in the GameScreen.
+Now we have a PlayerBall Entity which is cleanly written, has speed which can be customized through the FlatRedBall Editor, and can be moved with the game pad or keyboard. The next tutorial covers defining collision in the GameScreen.

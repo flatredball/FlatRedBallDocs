@@ -2,7 +2,7 @@
 
 ### Introduction
 
-So far we have a very simple project with a PlayerBall (which appears as a Circle) which can be moved with a gamepad or the keyboard. This tutorial will cover creating collision for the game. This tutorial introduces two new types.
+So far we have a very simple project with a PlayerBall (which appears as a Circle) which can be moved with a gamepad or the keyboard. This tutorial covers creating collision for the game. This tutorial introduces two new types.
 
 * ShapeCollection - an object which can contain any number of shapes. Adding multiple shapes to a ShapeCollection makes the creation of collision relationships very easy.
 * AxisAlignedRectangle - this is a rectangle shape which can be created in Glue just like We'll use multiple AxisAlignedRectangles to assemble our level, and we'll be organizing these in a list object.
@@ -22,7 +22,7 @@ First we'll create a ShapeCollection called Walls. This ShapeCollection contains
 
 ### Adding Wall AxisAlignedRectangles
 
-Now that we have a ShapeCollection for our walls, we will add the individual walls. To add the first wall AxisAlignedRectangle:
+Now that we have a ShapeCollection for our walls, we can add the individual walls. To add the first wall AxisAlignedRectangle:
 
 1. Right-click on the **Walls** item.
 2. Select **Add Object**
@@ -37,7 +37,7 @@ Now we can modify the properties of this wall. Select **Wall1** and change the v
 * Width = 800
 * Height = 30
 
-Doing so will move the rectangle to the top of the screen. If you run the game you will see the wall at the top of the screen.
+Doing so moves the rectangle to the top of the screen. If you run the game you should see the wall at the top of the screen.
 
 ![](../../media/2021-07-img\_60fdb75161810.png)
 
@@ -96,17 +96,17 @@ Next we'll use collision relationships to define collision between the PlayerBal
 
 Since our PlayerBall is an ICollidable, that means it can collide with any other ICollidable and with any shapes - like the Walls. We need to tell our game that we want the PlayerList to collide against the PlayerWalls. The easiest way to do this is to create a Collision Relationship in Glue. To do this:
 
-1. Drag+drop the **PlayerBallList** onto the **Walls** in the Glue explorer. This will create a new CollisionRelationship
-2.  Select the new CollisionRelationship (which will be named **PlayerBallVsWalls**)\\
+1. Drag+drop the **PlayerBallList** onto the **Walls** in the Glue explorer. This creates a new CollisionRelationship
+2.  Select the new CollisionRelationship (which is named **PlayerBallVsWalls**)
 
     <figure><img src="../../.gitbook/assets/02_07 02 16.gif" alt=""><figcaption><p>Creating PlayerBallVsWalls collision relationship</p></figcaption></figure>
 3. Select the **Collision** tab
 4. Change the **Collision Physics** to **Bounce Collision** so that our **PlayerBall** bounces against the walls
-5. Change the PlayerBall Mass to 0. This means that the PlayerBall will behave as if it has no mass, so it will not be able to move the walls. Be sure to press Enter or Tab to save the change.
+5. Change the PlayerBall Mass to 0. This means that the PlayerBall behaves as if it has no mass, so it will not be able to move the walls. Be sure to press Enter or Tab to save the change.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing collision mass</p></figcaption></figure>
 
-If we run the game now, the PlayerBall will collide with the walls.
+If we run the game now, the PlayerBall collides with the walls.
 
 <figure><img src="../../media/2016-01-2021_July_25_135826.gif" alt=""><figcaption><p>PlayerBall colliding with the walls</p></figcaption></figure>
 
@@ -114,8 +114,8 @@ We use CollisionRelationships here because they are very powerful and require no
 
 ### Why doesn't the PlayerBall Bounce?
 
-The CollisionRelationship we created in the previous step set the Collision Physics to Bounce Collision, but if we move the PlayerBall to the wall, it doesn't bounce. While this may seem like bounce collision is broken at first glance, the real reason is because of the way our movement has been implemented. Our code in PlayerBall sets the velocity values every frame. When the PlayerBall collides against the wall, the bounce physics sets the velocity values to simulate a bounce; however, our code in PlayerBall overwrites this velocity immediately. We will make changes in a later tutorial to our movement code so we no longer overwrite the velocity every frame, and so the bounce movement works as expected.
+The CollisionRelationship we created in the previous step set the Collision Physics to **Bounce** Collision, but if we move the PlayerBall to the wall, it doesn't bounce. While this may seem like bounce collision is broken at first glance, the real reason is because of the way our movement has been implemented. Our code in PlayerBall sets the velocity values every frame. When the PlayerBall collides against the wall, the bounce physics sets the velocity values to simulate a bounce; however, our code in PlayerBall overwrites this velocity immediately. We will make changes in a later tutorial to our movement code so we no longer overwrite the velocity every frame, and so the bounce movement works as expected.
 
 ### Conclusion
 
-Even though the game isn't really playable yet, we're definitely starting to see something come together. We have a movable object and game boundaries which have solid collision. The next tutorial will dive deeper into the control of our PlayerBall Entity.
+Even though the game isn't really playable yet, we're definitely starting to see something come together. We have a movable object and game boundaries which have solid collision. The next tutorial duves deeper into the control of our PlayerBall Entity.

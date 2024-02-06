@@ -2,9 +2,9 @@
 
 ### Introduction
 
-Screens and Entities are two common FlatRedBall concepts. A Screen represents a container for game content and other Entities. Screens define the flow of your game. Often game developers will create many screens up-front to help them think through a game's structure. Here are some examples of Screens in a typical game:
+Screens and Entities are two common FlatRedBall concepts. A Screen represents a container for game content and other Entities. Screens define the flow of your game. Often game developers create many screens up-front to help think through a game's structure. Here are some examples of Screens in a typical game:
 
-* Game play Screen (like the playing Screen in Pong). This is usually called "GameScreen"
+* GameS play Screen (like the playing Screen in Pong). This is usually called "GameScreen"
 * Splash Screen (like a FlatRedBall logo displaying splash Screen)
 * Main menu Screen
 
@@ -24,7 +24,7 @@ As you work with Screens you will find that they are very similar to Entities. T
 
     ![Add GameScreen dialog](../../media/2022-01-img\_61d3149d379e1.png)
 
-Notice that FlatRedBall suggests the name **GameScreen** for your screen. Recommended practice is to always have the screen where your game takes place called GameScreen. If your game has multiple levels, each level would inherit from GameScreen. Since Beefball does not have multiple levels, we will only create GameScreen.
+Notice that FlatRedBall suggests the name **GameScreen** for your screen. Recommended practice is to always have the screen where your game takes place called GameScreen. If your game has multiple levels, each level would inherit from GameScreen. Since Beefball does not have multiple levels, we only create GameScreen.
 
 ### PlayerBallList in GameScreen
 
@@ -83,7 +83,7 @@ Once the game runs, you should see a circle (the PlayerBall1 instance) in your S
 
 ### FlatRedBall Coordinates
 
-Now that we have an object in our screen we can take a moment to understand how the coordinates in FlatRedBall work. By default, our entity exists at X=0 and Y=0. We can observe this by selecting the entity instance and looking at its Variables tab.
+Now that we have an object in our screen we can take a moment to understand how the coordinates in FlatRedBall work. By default, our entity exists at X=0 and Y=0. We can observe this by selecting the PlayerBall1 instance and looking at its Variables tab.
 
 ![PlayerBall1 position in the FlatRedBall Editor](../../media/2023-09-img\_650449103c08d.png)
 
@@ -97,6 +97,6 @@ For more information on how to control the Camera to change the center of the sc
 
 ### Conclusion
 
-To recap we now have an Entity called PlayerBall which has a Circle. We've also created a GameScreen which contains an instance of our PlayerBall. If we run our game, it will show a white circle (our PlayerBall instance).
+To recap we now have an Entity called PlayerBall which has a Circle. We've also created a GameScreen which contains an instance of our PlayerBall. If we run our game, it shows a white circle (our PlayerBall instance).
 
-We're now ready to start adding some code to our project. The next tutorial will cover controlling your Entity's movement.
+We're now ready to start adding some code to our project. The next tutorial covers controlling your Entity's movement.
