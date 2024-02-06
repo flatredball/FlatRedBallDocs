@@ -2,20 +2,20 @@
 
 ### Introduction
 
-This tutorial will implement more advanced controls for the PlayerBall. Most games with first-person control (that is control where you directly direct an Entity, as opposed to third person control like RTS games - not to be confused with first person view) have fairly complex control logic. We'll be implementing more advanced controls in our game, investigating the logic in detail along the way.
+This tutorial implements more advanced controls for the PlayerBall. Most games with first-person control (that is control where you directly direct an Entity, as opposed to third person control like RTS games - not to be confused with first person view) have fairly complex control logic. We'll be implementing more advanced controls in our game, investigating the logic in detail along the way.
 
 ### Velocity vs. Acceleration
 
 Our current implementation provides immediate control over the PlayerBall's velocity values:
 
-```
+```csharp
 this.XVelocity = MovementInput.X * MovementSpeed;
 this.YVelocity = MovementInput.Y * MovementSpeed;
 ```
 
 In other words, if the input for moving right is held (whether that's a keyboard key or an Xbox360 analog stick), the PlayerBall immediately moves at maximum speed. Similarly, when the movement input is released, the PlayerBall immediately stops. As mentioned earlier, this logic prevents the collision relationship from making the ball bounce. We will modify our input code to gradually add to the speed of the PlayerBall when the input is held down. To do this, we'll change our code to set the PlayerBall's **acceleration** rather than **velocity**. Modify the **MovementActivity** in **PlayerBall.cs** as follows:
 
-```
+```csharp
 private void MovementActivity()
 {
     if (MovementInput != null)
@@ -30,11 +30,11 @@ Notice that the code above still uses the MovementSpeed variable, which can be m
 
 <figure><img src="../../media/2016-01-2021_July_25_135938.gif" alt=""><figcaption></figcaption></figure>
 
-Since we're no longer modifying velocity values directly (acceleration values indirectly modify velocity), the ball continues to move even after releasing input. We'll address this in the next section.
+Since we're no longer setting velocity values directly (acceleration values add and subtract to the current velocity), the ball continues to move even after releasing input. We'll address this in the next section.
 
 ### Reducing Momentum
 
-We'll use the [Drag](../../frb/docs/index.php) property to slow the PlayerBall. Drag modifies velocity proportionally and in the opposite direction of current Velocity. In other words, drag slows an object regardless of its movement direction. The faster an object is moving, the more Drag reduces its velocity. Drag is a built-in variable on all Entities, so if you are creating a game which uses acceleration to move an object, you may want to also implement Drag. Drag is applied whether an object is accelerating or not. Since it slows an object down by more when the object is moving faster, it will in effect create a maximum movement speed for our PlayerBall. To add Drag to the PlayerBall Entity:
+We'll use the [Drag](../../api/flatredball/positionedobject/drag.md) property to slow the PlayerBall. Drag modifies velocity proportionally and in the opposite direction of current Velocity. In other words, drag slows an object regardless of its movement direction. The faster an object is moving, the more Drag reduces its velocity. Drag is a built-in variable on all Entities, so if you are creating a game which uses acceleration to move an object, you may want to also implement Drag. Drag is applied whether an object is accelerating or not. Drag slows an object in proportion to its absolute speed - the faster it moves the more Drag slows velocity. This results in a maximum speed, also known as terminal velocity. To add Drag to the PlayerBall Entity:
 
 1. Select the **PlayerBall** Entity in Glue
 2. Select the **Variable** tab
@@ -60,7 +60,7 @@ The previous tutorial created a collision relationship between the PlayerBall an
 
 <figure><img src="../../.gitbook/assets/02_07 06 16.png" alt=""><figcaption></figcaption></figure>
 
-This value controls how much velocity is preserved after a collision occurs. A value of 1 indicates that 100% of the velocity is preserved. A value less than 1 will result in some of the velocity being absorbed. Feel free to play with this number to create a bounce elasticity that you like. If you want the balls to remain bouncy, you can keep it at 1. If you want the walls to absorb some of the PlayerBall velocity, try putting a (positive) value less than 1, such as 0.5.
+This value controls how much velocity is preserved after a collision occurs. A value of 1 indicates that 100% of the velocity is preserved. A value less than 1 results in some of the velocity being absorbed. Feel free to play with this number to create a bounce elasticity that you like. If you want the balls to remain bouncy, you can keep it at 1. If you want the walls to absorb some of the PlayerBall velocity, try putting a (positive) value less than 1, such as 0.5.
 
 ### Conclusion
 

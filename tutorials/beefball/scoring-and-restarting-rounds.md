@@ -16,7 +16,7 @@ Conceptually detecting a goal is simple - whenever the Puck collides with a cert
 
 <figure><img src="../../media/2016-01-2021_July_25_141031.gif" alt=""><figcaption></figcaption></figure>
 
-The default rectangle size for a Goal is too small, so we will make it bigger:
+The default rectangle size for a Goal is too small, so we should make it bigger:
 
 1. Select the **AxisAlignedRectangleInstance** in the **Goal** entity
 2. Click the **Variables** tab
@@ -36,7 +36,7 @@ Next we'll add two goal rectangles to the GameScreen. Instead of using the Quick
 
 <figure><img src="../../media/2016-01-2021_July_25_141042.gif" alt=""><figcaption></figcaption></figure>
 
-**Why do goal names matter?** In an earlier tutorial we created the wall collision and named them sequentially (Wall1, Wall2, etc). However, the goals are slightly different - we will be checking which goal we collided with in code to determine whether the left or right team should earn a point. Setting clear names will make it easier to keep track of which goal is on each side.
+**Why do goal names matter?** In an earlier tutorial we created the wall collision and named them sequentially (Wall1, Wall2, etc). However, the goals are slightly different - we will be checking which goal we collided with in code to determine whether the left or right team should earn a point. Setting clear names makes it easier to keep track of which goal is on each side.
 
 Next, modify the goals values as follows: LeftGoal:
 
@@ -59,7 +59,7 @@ If you tried playing the game, you may have noticed that the PlayerBall instance
 
 <figure><img src="../../.gitbook/assets/02_07 30 05.gif" alt=""><figcaption></figcaption></figure>
 
-If you run the game, you will no longer be able to leave the play area with either PlayerBall.
+If you run the game, you can no longer leave the play area with either PlayerBall.
 
 <figure><img src="../../media/2016-01-2021_July_25_140248.gif" alt=""><figcaption></figcaption></figure>
 
@@ -72,7 +72,7 @@ Now that we have all of our data and object instances set up, we can write code 
  int player2Score = 0;
 ```
 
-Now we'll create another collision relationship, but this time we won't use any physics. Instead, this will be an _event only_ collision relationship. This means that when the relationship detects a collision, we it will _raise an event_ (call a function) which allows us to perform custom logic such as increasing score and resetting the game. First we'll create a collision relationship:
+Now we'll create another collision relationship, but this time we won't use any physics. Instead, this will be an _event only_ collision relationship. This means that when the relationship detects a collision, it _raises an event_ (call a function) which allows us to perform custom logic such as increasing score and resetting the game. First we'll create a collision relationship:
 
 1. Expand the **GameScreen's Objects** folder
 2. Drag+drop the **PuckList** object onto the **GoalList**
@@ -88,25 +88,25 @@ Now we'll create an event, which is a function that is automatically called when
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-When an event is added, Glue automatically adds a new file to contain events called GameScreen.Events.cs. We can find the new event there. You will need to expand the GameScreen.cs in Visual Studio's Solution Explorer to see this file.
+When an event is added, Glue automatically adds a new file to contain events called GameScreen.Events.cs. We can find the new event there. You need to expand the GameScreen.cs in Visual Studio's Solution Explorer to see this file.
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-We can check which Goal collided with the Puck in the code and perform different logic. We will Modify the OnPuckVsGoalCollided method and add a new ReactToNewScore method to the GameScreen.Event.cs file as shown in the following snippet:
+We can check which Goal collided with the Puck in the code and perform different logic. We can Modify the OnPuckVsGoalCollided method and add a new ReactToNewScore method to the GameScreen.Event.cs file as shown in the following snippet:
 
-```
+```csharp
 public partial class GameScreen
 {
     void OnPuckVsGoalCollided (Entities.Puck puck, Entities.Goal goal)
     {
         if (goal == LeftGoal)
         {
-            player1Score++;
+            player2Score++;
             ReactToNewScore();
         }
         else if (goal == RightGoal)
         {
-            player2Score++;
+            player1Score++;
             ReactToNewScore();
         }
     }
@@ -134,4 +134,4 @@ Whenever a Puck collides with either goal, we call ReactToNewScore, which resets
 
 ### Conclusion
 
-If you've made it this far, congratulations! You now have a fully-playable game...at least, to the point where you can play with friends. There's still a few more things we'll do to improve the design and add polish. The next tutorial will cover adding a HUD to display player score.
+If you've made it this far, congratulations! You now have a fully-playable game...at least, to the point where you can play with friends. There's still a few more things we'll do to improve the design and add polish. The next tutorial covers adding a HUD to display player score.

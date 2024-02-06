@@ -25,7 +25,7 @@ For more information on how to perform the above steps, you may want to review t
 
 ### Differentiating the Puck
 
-Currently our Puck and PlayerBall both have Circle bodies, and by default the Circles will have the same size and color. To differentiate the Puck from the PlayerBall:
+Currently our Puck and PlayerBall both have Circle bodies, and by default the Circles have the same size and color. To differentiate the Puck from the PlayerBall:
 
 1. Expand the **Puck** entity
 2. Click on the **CircleInstance** object under the Puck Entity
@@ -81,7 +81,7 @@ Now that we have a Puck in our game, we need to create two collision relationshi
 1. Puck vs Walls - this prevents the Puck from moving through the walls.
 2. Puck vs PlayerBall - this allows the PlayerBall to "hit" the puck to try to score a goal. We haven't yet created the handling of goals, but this is the first step towards implementing that feature.
 
-We will create these two collision relationships just like the previou PlayerListVsWall collision relationship. To create a relationship between the PuckList and Wall:
+We create these two collision relationships just like the previous PlayerListVsWall collision relationship. To create a relationship between the PuckList and Wall:
 
 1. Expand **GameScreen's Objects** folder in Glue
 2. Drag+drop the **PuckList** onto the **Walls** object
@@ -100,7 +100,7 @@ To create a relationship between the PuckList and PlayerBallList:
 3. Select the new **PlayerBallVsPuck** collision relationship
 4. Select the **Collisions** tab
 5. Set the **Collision Physics** to **Bounce**
-6. Change the **Puck Mass** to **0.3** - this will make it 30% the mass of the PlayerBall
+6. Change the **Puck Mass** to **0.3** - this makes it 30% the mass of the PlayerBall
 7. Optionally adjust the Elasticity value
 
 <figure><img src="../../.gitbook/assets/02_07 21 14.gif" alt=""><figcaption></figcaption></figure>
@@ -111,7 +111,7 @@ Notice that the mass variables for PlayerInstance vs. PuckInstance differ compar
 
 ### Adding Drag
 
-Currently the Puck will move indefinitely after being hit. We'll assign the Drag value to the Puck just like we did to PlayerBall:
+Currently the Puck moves indefinitely after being hit. We'll assign the Drag value to the Puck just like we did to PlayerBall:
 
 1. Select the **Puck** Entity in Glue
 2. Select the **Variables** tab
@@ -122,4 +122,4 @@ Currently the Puck will move indefinitely after being hit. We'll assign the Drag
 
 ![](../../media/2021-07-img\_60fdc59ea563f.png)
 
-Now the Puck will slow down over time just like the PlayerBall.
+Now the Puck slows down over time just like the PlayerBall.

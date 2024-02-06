@@ -37,7 +37,7 @@ Now that we have two PlayerBall instances, we need to add a new collision relati
 
 <figure><img src="../../.gitbook/assets/02_07 26 02.gif" alt=""><figcaption></figcaption></figure>
 
-If you run you game now, the two PlayerBall instances will collide against each other. Also, if we added more players (a third or fourth player) those would also collide with each other automatically.
+If you run you game now, the two PlayerBall instances collide against each other. Also, if we added more players (a third or fourth player) those would also collide with each other automatically.
 
 ### Adding input for Player 2
 
@@ -88,4 +88,4 @@ Now each PlayerBall uses a different Xbox360GamePad or set of keys.
 
 ### Conclusion
 
-Now that we have multiple PlayerBall instances, we have a game that is playable, but it's missing scoring and game rules. The next tutorial will add in the ability to score goals.
+Now that we have multiple PlayerBall instances, we have a game that is playable, but it's missing scoring and game rules. The next tutorial adds the ability to score goals.
