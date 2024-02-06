@@ -67,7 +67,7 @@ If you run the game, you can no longer leave the play area with either PlayerBal
 
 Now that we have all of our data and object instances set up, we can write code to detect if a goal has occurred. First we'll need two variables to keep track of score. Add this code to GameScreen.cs at class scope (outside of any methods):
 
-```
+```csharp
  int player1Score = 0;
  int player2Score = 0;
 ```

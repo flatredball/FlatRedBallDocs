@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial covers creating a HUD object which will display the scores of each player.
+This tutorial covers creating a HUD object which displays the scores of each player.
 
 ### Creating a ScoreHud Entity
 
@@ -73,4 +73,4 @@ You should now see everything showing up correctly in your game
 
 ### Conclusion
 
-Now we have a score HUD that shows up when the game plays, but it doesn't react to scored goals. The next tutorial will add the necessary logic to have it react to scored goals.
+Now we have a score HUD that shows up when the game plays, but it doesn't react to scored goals. The next tutorial adds the necessary logic to have it react to scored goals.

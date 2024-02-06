@@ -6,9 +6,9 @@ At this point Beefball is a fully-playable game, but we'll be adding one final f
 
 ### Adding Dashing
 
-A dash will give the player a burst of speed in the current direction that the player is pointing. The dash can be used to hit other players, shoot the puck, or dive in front of the puck to block a goal. To add a dash, modify **CustomActivity** in **PlayerBall.cs** as follows:
+A dash gives the player a burst of speed in the current direction that the player is pointing. The dash can be used to hit other players, shoot the puck, or dive in front of the puck to block a goal. To add a dash, modify **CustomActivity** in **PlayerBall.cs** as follows:
 
-```
+```csharp
 private void CustomActivity()
 {
     MovementActivity();
@@ -19,7 +19,7 @@ private void CustomActivity()
 
 Next, implement DashActivity in **PlayerBall.cs**:
 
-```
+```csharp
 private void DashActivity()
 {
     if (BoostInput?.WasJustPressed == true)
@@ -61,14 +61,14 @@ Your game should build and dashing should be fully functional.
 
 Currently the player can dash indefinitely. We'll modify the dash so it has a cool-down after it's used. We'll need a variable to keep track of when the dash was first used, and compare against that variable to check if the user can dash again. First, add the following variables to your **PlayerBall.cs at class scope (make it a field)**:
 
-```
+```csharp
 // Set a large negative number so that dashing can happen immediately
 private double lastTimeDashed = -1000;
 ```
 
 Next, add a check for the last dash time and a set to lastDashTime in **DashActivity in PlayerBall.cs**. Your entire method should look like:
 
-```
+```csharp
 private void DashActivity()
 {
     float magnitude = MovementInput?.Magnitude ?? 0;
@@ -105,13 +105,13 @@ Just like before, we need to create a DashFrequency variable in the FRB Editor:
 
 ![](../../media/2021-07-img\_60fdd587a661f.png)
 
-Now the player will only be able to dash once every two seconds.
+Now the player can only dash once every two seconds.
 
-**Why did we create DashFrequency and DashSpeed variables in the FRB Editor, but lastTimeDashed in Visual Studio?** You may have noticed that we defined some of our variables (like DashFrequency and DashSpeed) in the FRB Editor, but we defined lastTimeDashed in Visual Studio. When working in the FRB Editor it is important to distinguish between "data" and "logic". Variables considered data are created in the FRB Editor so that they can be easily modified. Game development is an iterative process, and even the most experienced game designers will make changes to their game throughout development. Creating variables in the FRB Editor makes changing variables easy, and communicates to other developers that these variables should be tuned. The lastTimeDashed variable, on the other hand, exists solely to support the logic of limiting dashing. The actual value of lastTimeDashed will change many times as the game executes, and setting it through the FRB Editor will either have no impact on the game or introduce an unintended bug of making dash not work (if the value is set to a large positive value).
+**Why did we create DashFrequency and DashSpeed variables in the FRB Editor, but lastTimeDashed in Visual Studio?** You may have noticed that we defined some of our variables (like DashFrequency and DashSpeed) in the FRB Editor, but we defined lastTimeDashed in Visual Studio. When working in the FRB Editor it is important to distinguish between "data" and "logic". Variables considered data are created in the FRB Editor so that they can be easily modified. Game development is an iterative process, and even the most experienced game designers make changes to their game throughout development. Creating variables in the FRB Editor makes changing variables easy, and communicates to other developers that these variables should be tuned. The lastTimeDashed variable, on the other hand, exists solely to support the logic of limiting dashing. The actual value of lastTimeDashed changes many times as the game runs, and setting it through the FRB Editor either has no impact on the game or introduces an unintended bug of making dash not work (if the value is set to a large positive value).
 
 ### Adding a Cooldown Indicator
 
-Now that the player's dashing is limited, we need to add some visible indication of when another dash can occur. We'll do this by adding a second Circle to the PlayerBall which will grow when the user has dashed, then disappear when the user can dash again. To do this:
+Now that the player's dashing is limited, we need to add some visible indication of when another dash can occur. We'll do this by adding a second Circle to the PlayerBall which grows when the user has dashed, then disappear when the user can dash again. To do this:
 
 1. Click on **PlayerBall**
 2. Select the **Quick Actions** tab
@@ -126,7 +126,7 @@ Now that the player's dashing is limited, we need to add some visible indication
 Next we'll use States (something we haven't used yet) to define what the PlayerBall should look like when the cooldown first begins and when the cooldown ends. States have the following benefits:
 
 1. They let you "code against concept, not content". In other words, you can define a state and use it in code, and later make changes to the state without having to modify any code. This is desirable because when you set the PlayerBall to a "Tired" state, your code shouldn't depend on anything except for the presence of a Tired state. Code should simply set the state to Tired, while the logic of Tired should be handled elsewhere.
-2. States can interpolate from one to the other. In this case, we'll have the "Tired" state set the CooldownCircle to have a small radius, and the "Rested" will have a large circle. The end result is the CooldownCircle will "grow".
+2. States can interpolate from one to the other. In this case, we'll have the "Tired" state set the CooldownCircle to have a small radius, and the "Rested" will have a large circle. The end result is the CooldownCircle "grows" as the player's dash is recovering.
 
 All states must be categorized, so the first step is to create a new category:
 
@@ -179,7 +179,7 @@ In this case, the only variable is the CooldownCircleRadius. Next let's define t
 
 Now that our states are defined, let's use them in code. The simplest way to use states is to assign an entity's current state variable. FlatRedBall also provides functions for _interpolating_ between states, which is the process of gradually changing from one state to another. We will write code to set the state to "Tired", then interpolate to rested over the course of two seconds - of course we'll use DashFrequency rather than hard-coding the value _2_. To use these newly-created states, go to **PlayerBall.cs** and modify the **DashActivity** function as follows: To use the states, add the following two lines of code inside the if-statement in DashActivity in PlayerBall.cs:
 
-```
+```csharp
 private void DashActivity()
 {
 

@@ -4,8 +4,6 @@
 
 Beefball is intended to be a competitive multiplayer game. So far we only have one PlayerBall instance, so let's add some more PlayerBall instances. Previously we added a list for our PlayerBall. We can now add a second PlayerBall with minimal changes to our project.
 
-###
-
 ### Adding a new PlayerBall
 
 To add a new PlayerBall:
@@ -43,7 +41,7 @@ If you run you game now, the two PlayerBall instances collide against each other
 
 We'll assign input on PlayerBall2Instance with code similar to the input-assigning code for PlayerBallInstance. To do this, open **GameScreen.cs** and modify AssignInput as shown in the following code:
 
-```
+```csharp
 private void AssignInput()
 {
     if (InputManager.Xbox360GamePads[0].IsConnected)
