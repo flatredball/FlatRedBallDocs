@@ -14,7 +14,7 @@ First we'll remove the Input Device from the Enemy entity:
 
 ![](../../../media/2021-04-img\_607797eac1c0f.png)
 
-Now the Enemy will not move in response to keyboard or gamepad input.
+Now the Enemy will not move in response to keyboard or gamepad input. Note that if we do not assign an InputDevice in code, the game crashes so we must do so before running the game.
 
 ### Creating an EnemyInput InputDevice
 
@@ -26,7 +26,7 @@ Next we will create our own custom InputDevice which will control the movement o
     ![](../../../media/2021-04-img\_6077995742261.png)
 3. Modify the code so that the EnemyInput class inherits from **FlatRedBall.Input.InputDeviceBase**
 
-```
+```csharp
 class EnemyInput : FlatRedBall.Input.InputDeviceBase
 {
 }
@@ -34,7 +34,7 @@ class EnemyInput : FlatRedBall.Input.InputDeviceBase
 
 This class provides many virtual methods which we can override to customize the behavior of our enemy. For example, we can override the method for GetHorizontalValue to control which way the Enemy is walking, as shown in the following code snippet:
 
-```
+```csharp
 class EnemyInput : FlatRedBall.Input.InputDeviceBase
 {
     protected override float GetHorizontalValue()
@@ -54,7 +54,7 @@ To use **EnemyInput**, we can modify the **CustomInitialize** method in the **En
 
 To use EnemyInput as the Enemy's InputDevice, modify the Enemy CustomInitialize method as shown in the following code snippet:
 
-```
+```csharp
 public partial class Enemy
 {
     private void CustomInitialize()
@@ -73,7 +73,7 @@ Now if we run the game, the Enemy automatically walks to the right and ignores k
 
 This tutorial does not include adding jumping to the enemy behavior. If your game needs jumping, you can add this by including a primary input override in the EnemyInput class. Of course, you would only want to press the jump button under some condition. The following code snippet shows how this could be accomplished:
 
-```
+```csharp
 class EnemyInput : FlatRedBall.Input.InputDeviceBase
 {
     protected override float GetHorizontalValue()
@@ -98,9 +98,11 @@ class EnemyInput : FlatRedBall.Input.InputDeviceBase
 
 ### Changing Directions
 
-Our EnemyInput object can be expanded to support anything we want - we just need to have the GetHorizontalValue function return a value between 0 and 1. Note that we are only using horizontal movement for this tutorial, but we could also have the Enemy jump by implementing the GetPrimaryActionPressed method, which controls whether the jump button is down. For this tutorial we need access to a value to indicate whether the Enemy should move to the left or right. We will ignore values inbetween -1 (left) and +1 (right), but a full game may support enemies which may stand still or move at various speeds. We'll create a new enum value and expose a property in EnemyInput so that it can be controlled externally. To do this, modify the EnemyInput class as shown in the following code snippet:
+Our EnemyInput object can be expanded to support any type of input  - we just need to have the GetHorizontalValue function return a value between 0 and 1. Note that we are only using horizontal movement for this tutorial, but we could also have the Enemy jump by implementing the GetPrimaryActionPressed method, which controls whether the jump button is down.
 
-```
+For this tutorial we need access to a value to indicate whether the Enemy should move to the left or right. We will ignore values inbetween -1 (left) and +1 (right), but a full game may support enemies which may stand still or move at various speeds. We'll create a new enum value and expose a property in EnemyInput so that it can be controlled externally. To do this, modify the EnemyInput class as shown in the following code snippet:
+
+```csharp
 enum DesiredDirection
 {
     Left,
@@ -132,8 +134,7 @@ Many platformer games include enemies which turn around when colliding with othe
 1. Expand the **GameScreen -> Objects -> Collision Relationships** item in Glue
 2. Select **EnemyListVsSolidCollision**
 3. Select the **Collision** tab
-4.  Click the **Add Event** button\
-
+4.  Click the **Add Event** button\\
 
     <figure><img src="../../../media/2021-04-img_6077b6189b433.png" alt=""><figcaption></figcaption></figure>
 5.  Click **OK** to accept the defaults
@@ -142,7 +143,7 @@ Many platformer games include enemies which turn around when colliding with othe
 
 Glue will add an event to GameScreen.Event.cs which we can modify to adjust the EnemyInput DesiredDirection, as shown in the following snippet.
 
-```
+```csharp
 void OnEnemyListVsSolidCollisionCollisionOccurred (Entities.Enemy first, FlatRedBall.TileCollisions.TileShapeCollection second)
 {
     var collisionReposition = first.AxisAlignedRectangleInstance.LastMoveCollisionReposition;
