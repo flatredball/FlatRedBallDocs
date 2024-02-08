@@ -42,7 +42,7 @@ To apply movement we will need to write some C# code. To do this:
 
 Modify CustomActivity as shown in the following snippet:
 
-```
+```csharp
 void CustomActivity()
 {
    this.Velocity = this.RotationMatrix.Up * this.MovementSpeed;
@@ -55,9 +55,9 @@ If you now run the game you will see the ship move upward, then eventually move 
 
 ### Assigning Input
 
-The next step is to assign input logic so the Player can turn. We will add an object to our Player representing the input device. This could be a gampad, keyboard, or any other object. By using the I1DInput interface, we can write the code the same regardless of the actual hardware used to control the Player. Modify Player1.cs as shown in the following snippet:
+The next step is to assign input logic so the Player can turn. We will add an object to our Player representing the input device. This could be a gampad, keyboard, or any other object. By using the I1DInput interface, we can write the code the same regardless of the actual hardware used to control the Player. Modify Player.cs as shown in the following snippet:
 
-```
+```csharp
 public I1DInput TurningInput { get; set; }
 
 private void CustomInitialize()
@@ -143,7 +143,7 @@ Now we can use BulletFactory to create bullets when the player shoots. To do thi
 1. Go to Player.cs in Visual Studio
 2. Modify the Player.cs code so that it contains the following code:
 
-```
+```csharp
 public I1DInput TurningInput { get; set; }
 public IPressableInput ShootingInput { get; set; }
 
