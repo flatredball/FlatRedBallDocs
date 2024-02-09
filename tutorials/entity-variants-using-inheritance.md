@@ -53,7 +53,7 @@ For example, the Enemy entity includes a Sprite instance, but the Sprite does no
 
 <figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption><p>Enemy (base entity) does not set the AnimationChains</p></figcaption></figure>
 
-Each derived entity would typically include its own AnimationChains. For simplicity, the file can be named the same in all cases (AnimationChainListFile). While this may seem less expressive compared to having different names for each file, keeping the name the same can make your code much simpler if you need to access the file.
+Each derived entity would typically include its own AnimationChains. For simplicity, the file can be named the same in all cases (AnimationChainListFile). While this may seem less expressive compared to having different names for each file, keeping the name the same can make your code much simpler if you need to access the file. To learn more about creating .achx files, see the [Animation Editor](../glue-gluevault-component-pages-animationeditor-plugin/) documentation.
 
 <figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption><p>AnimationChianListFiles in each derived entity</p></figcaption></figure>
 
