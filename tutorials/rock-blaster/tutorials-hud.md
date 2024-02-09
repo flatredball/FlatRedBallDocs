@@ -1,22 +1,30 @@
-# tutorials-hud
+# HUD
 
 ### Introduction
 
 Now that the game is somewhat playable - bullets destroy rocks and the player can lose, we need to add a scoring system and a score display. This tutorial introduces using Gum in a FlatRedBall project. Gum is a general-purpose UI tool which integrates tightly with FlatRedBall. In fact, if you used the Glue Wizard in the first tutorial, then you already have a Gum project in your game - it's just empty.
 
-### Downloading Gum
+### Gum Tool
 
-Before we begin, you must have Gum downloaded on your machine. You can [download Gum here](http://files.flatredball.com/content/Tools/Gum/Gum.zip). For more information on Gum, see the [Gum website](http://gumui.net/). You will also want to set up the Gum tool association with the .gumx and .gusx files. For information on how to do that, see the [first Gum tutorial](../../gum/tutorials/tutorials-gum-introduction-and-setup.md).
+The Gum tool is packaged with the FRBDK.zip so if you are running FlatRedBall, you already have it downloaded. You can find it in \<FRBDK Unzip Location>/Gum/Data/Gum.exe
+
+For more information on Gum, see the [Gum website](http://gumui.net/). If you would like more information on how to use Gum, see the [Gum documentation](https://docs.flatredball.com/gum).
 
 ### Creating a Text Instance in Gum
 
 The easiest way to open Gum is to click the Gum button in Glue.
 
-![](../../media/2021-03-img_604d7f8df22d4.png)
+![](../../media/2021-03-img\_604d7f8df22d4.png)
 
-Gum should open (if you have the file associations set up properly). If you used the Glue Wizard in the first tutorial, you will also have a Gum screen set up for the GameScreen called GameScreenGum. Note that Glue will automatically create a Gum screen for every Glue screen.
+Gum should open (if you have the file associations set up properly). If you do not have file association set up, you might see a window that looks like the following image:
 
-![](../../media/2021-03-img_604d80112bbec.png)
+<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption><p>Dialog asking to set up file associations</p></figcaption></figure>
+
+If you see this dialog, click the Yes button, then navigate to the Gum.exe location which should be at \<FRBDK Unzip Location>/Gum/Data/Gum.exe.
+
+If you used the Glue Wizard in the first tutorial, you will also have a Gum screen set up for the GameScreen called GameScreenGum. Note that Glue will automatically create a Gum screen for every Glue screen.
+
+![](../../media/2021-03-img\_604d80112bbec.png)
 
 Gum follows many of the same concepts as Glue, but it is primarily a visual tool. The window on the right provides a [WYSIWYG editor](https://en.wikipedia.org/wiki/WYSIWYG), so creating visual layout is usually easier to do in Gum than in Glue. Gum also includes a list of _Standard_ objects which can be used in your project with no setup. We will use a Text instance to display our score. To do this:
 
@@ -24,19 +32,17 @@ Gum follows many of the same concepts as Glue, but it is primarily a visual tool
 2. Drag+drop the Text object onto the GameScreenGum
 3. Adjust the position of the Text to its desired location in the Editor window
 
-
-
 <figure><img src="../../media/2016-01-2021_March_13_200519.gif" alt=""><figcaption></figcaption></figure>
 
-   That's all there is to it! Gum automatically saves all changes, and Glue (if open) automatically reacts to these file changes, so we can run the game and see the **Hello** TextInstance right away.
+That's all there is to it! Gum automatically saves all changes, and Glue (if open) automatically reacts to these file changes, so we can run the game and see the **Hello** TextInstance right away.
 
-![](../../media/2021-03-img_604d810fec276.png)
+![](../../media/2021-03-img\_604d810fec276.png)
 
 ### Changing the TextInstance in Code
 
 At this point our text object says "Hello". Instead, we'd like to display a player's score. To change the Text, we can get a reference to the TextInstance in code or in Glue. Both approaches have their benefits, but for simplicity we will access the TextInstance in Glue. For more information, see the [tutorial on accessing Gum objects](../../gum/tutorials/tutorials-gum-gum-objects-in-code.md). The TextInstance is defined in the Gum screen, which has the file format .gusx. Our GameScreen already has the Gum screen added - this happened automatically when we used the wizard.
 
-![](../../media/2021-03-img_604d823aa3e8a.png)
+![](../../media/2021-03-img\_604d823aa3e8a.png)
 
 To access the TextInstance which is inside GameScreenGum:
 
@@ -44,20 +50,18 @@ To access the TextInstance which is inside GameScreenGum:
 2. Use the **Source Name** dropdown to select **TextInstance**
 3. Click **OK**
 
-
-
 <figure><img src="../../media/2016-01-2021_March_13_200727.gif" alt=""><figcaption></figcaption></figure>
 
- We can access the TextInstance in code and change any of its variables. For example, we can change the Text property in CustomActivity. As a test, open GameScreen.cs and add the following code in CustomActivity:
+We can access the TextInstance in code and change any of its variables. For example, we can change the Text property in CustomActivity. As a test, open GameScreen.cs and add the following code in CustomActivity:
 
-```
+```csharp
 void CustomActivity(bool firstTimeCalled)
 {
  TextInstance.Text = "Screen time: " + TimeManager.CurrentScreenTime;
 }
 ```
 
-![](../../media/2021-03-img_604d837571f15.png)
+![](../../media/2021-03-img\_604d837571f15.png)
 
 ### Where to store player score
 
@@ -70,13 +74,11 @@ To add PlayerData to your game:
 
 1.  Add a PlayerData class to the DataTypes folder (which should be part of your project automatically)
 
-    ![](../../media/2022-12-img_63a310d138ae3.png)
+    ![](../../media/2022-12-img\_63a310d138ae3.png)
 2. Press CTRL+SHIFT+S in Visual Studio to save the project. This will notify Glue that the Project has changed, and that it needs to reload it.
 3. Modify PlayerData so the class looks like the following code snippet:
 
-&#x20;
-
-```
+```csharp
 public class PlayerData
 {
     public int Score
@@ -89,13 +91,11 @@ public class PlayerData
 
 Next add GlobalData to your game:
 
-1. Add a GlobalData class in your Visual Studio project in the Data folder
+1. Add a GlobalData class in your Visual Studio project in the DataTypes folder
 2. Press CTRL+SHIFT+S in Visual Studio to save the project.
 3. Modify GlobalData so the class looks as follows:
 
-&#x20;
-
-```
+```csharp
 public static class GlobalData
 {
     public static PlayerData PlayerData
@@ -106,7 +106,7 @@ public static class GlobalData
 }
 ```
 
-&#x20; Now we have a well-organized, globally accessible location for our score. For simplicity all players will share the same score, so we've only created one PlayerData in GlobalData.
+Now we have a well-organized, globally accessible location for our score. For simplicity all players will share the same score, so we've only created one PlayerData in GlobalData.
 
 ### Updating the Score and Hud
 
@@ -116,18 +116,16 @@ Finally we need to update the Score in GlobalData as well as the Hud whenever a 
 2. Find OnBulletListVsRockListCollisionOccurred
 3. Add the lines in the "new code" section so your code looks like:
 
-&#x20;
-
-```
+```csharp
 void OnBulletListVsRockListCollisionOccurred (Entities.Bullet bullet, Entities.Rock rock)
 {
  bullet.Destroy();
  rock.TakeHit(); // <-----This line of code changed
 
- ////////////////////// new code ///////////////////////////////////////
- DataTypes.GlobalData.PlayerData.Score += second.PointValue; //
- this.TextInstance.Text = Data.GlobalData.PlayerData.Score.ToString();//
- ///////////////////////////////////////////////////////////////////////
+ ////////////////////// new code ////////////////////////////////////////////
+ DataTypes.GlobalData.PlayerData.Score += rock.PointValue;                 //
+ this.TextInstance.Text = DataTypes.GlobalData.PlayerData.Score.ToString();//
+ ////////////////////////////////////////////////////////////////////////////
 }
 ```
 
@@ -140,11 +138,11 @@ As Visual Studio will indicate, PointValue is a variable that has not yet been d
 5. Click OK
 6. Set the newly-created value to 10
 
-![](../../media/2021-03-img_604d851f8ac3c.png)
+![](../../media/2021-03-img\_604d851f8ac3c.png)
 
 We can also change the starting TextInstance.Text value to 0 by adding the following code in GameScreen.cs in the CustomInitialize function:
 
-```
+```csharp
 void CustomInitialize()
 {
  this.TextInstance.Text = "0";
@@ -155,4 +153,4 @@ Also, don't forget to remove the temporary code we wrote earlier which set the t
 
 ### Conclusion
 
-![RockBlasterWithScore.png](../../media/migrated_media-RockBlasterWithScore.png) Now the game includes a Score HUD that updates as the player progresses through the game. The next tutorial will add support for multiple players. [<- 08. Rock States](tutorials-rock-states.md) -- [10. Multiple Players ->](tutorials-multiple-players.md)
+![RockBlasterWithScore.png](../../media/migrated\_media-RockBlasterWithScore.png) Now the game includes a Score HUD that updates as the player progresses through the game. The next tutorial will add support for multiple players. [<- 08. Rock States](tutorials-rock-states.md) -- [10. Multiple Players ->](tutorials-multiple-players.md)

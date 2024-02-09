@@ -1,0 +1,188 @@
+# Entity Variants Using Inheritance
+
+### Introduction
+
+Most games include multiple groups of entities (which we'll refer to as variants) such as enemies, bullets, and pickups. Variants usually share common characteristics such as:
+
+* Reactions to collision, such as always dealing damage to the player
+* Creation logic, such as being created by the player when shooting or by an enemy spawner
+* Interfaces and code such as implementing ICollidable or being a top-down entity
+
+Of course, variants can also differ. Common examples of how variants may differ include:
+
+* Visuals, such as different .achx files (Animation Chains)
+* Coefficients and variables such as movement speed or max HP
+* Logic, such as movement patterns or navigation behavior
+* Collision shapes and sizes
+
+Conceptually variants can differ in any number of ways - the lists above are just common examples.
+
+The current recommended approach for creating entity variants (as of the time of this writing in February 2024) is to use entity inheritance. Of course, this is not a requirement - you can implement variants through States, loading custom data files, or any other approach. However, inheritance is very well supported in FlatRedBall. When using inheritance, the FRB Editor provides code generation which simplifies common operations including creating new instances, accessing derived type files, and reading coefficient values.
+
+### Entity Inheritance in the FlatRedBall Editor
+
+FlatRedBall entities provide support for inheritance. By default all entities inherit from the PositionedObject class, but inheritance can be changed to that entities can inherit from other entities. When working with entities with multiple variants, it's best to create a _base_ entity such as Enemy, then create derived entities from the base.
+
+For example, a game project may include an entity called Enemy which serves as the base for all other enemies.
+
+<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption><p>Enemy entity</p></figcaption></figure>
+
+Derived entites might include the different types of enemies that exist in the game. Note that the Enemy entity may never be directly instantiated in the game. It only serves to include all common code, files, and objects for all other enemies. This is similar to the GameScreen screen and the derived Level screens.&#x20;
+
+When creating a variant of the Enemy entity, the Enemy entity type should be selected as the base type.
+
+<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption><p>Creating a derived Enemy variant</p></figcaption></figure>
+
+It may be helpful to organize your derived variants in a subfolder. For example, the following enemy variants are all stored in an Enemies folder.
+
+<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption><p>Enemy variants in an Enemies folder</p></figcaption></figure>
+
+Inheritance can also be set on an Entity after it has been created by selecting the entity and changing its BaseEntity type in the Properties tab.
+
+<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption><p>BaseEntity can be set on the Properties tab</p></figcaption></figure>
+
+Notice that when a derived Entity is created, FlatRedBall does not create a list for that derived type. In most cases you will not need a separate list for each variant - you can use the list for the base type for collision and game logic. In this case, the GameScreen includes an EnemyList, but does not include lists for the specific enemy types.
+
+<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption><p>GameScreen including the base Entity type list EnemyList</p></figcaption></figure>
+
+### Customizing Variant Visuals
+
+As mentioned earlier, entity variants can differ in many ways. One of the most common is through the visuals. The most common way to vary the visuals for each type is to create a Sprite in the base entity, but to assign different animation chains on the derived types.
+
+For example, the Enemy entity includes a Sprite instance, but the Sprite does not have its AnimationChains set.
+
+<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption><p>Enemy (base entity) does not set the AnimationChains</p></figcaption></figure>
+
+Each derived entity would typically include its own AnimationChains. For simplicity, the file can be named the same in all cases (AnimationChainListFile). While this may seem less expressive compared to having different names for each file, keeping the name the same can make your code much simpler if you need to access the file.
+
+<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption><p>AnimationChianListFiles in each derived entity</p></figcaption></figure>
+
+Each derived entity needs to access the SpriteInstance defined in the base entity to modify its appearance. To od this, we can expose SpriteInstance in the base entity. This can be done by selecting the Sprite in the base entity and setting its ExposedInDerived property to true.
+
+<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption><p>The SpriteInstance in the base entity should have its ExposedInDerived set to true</p></figcaption></figure>
+
+By setting this value to true, the Sprite is accessible in all of the derived entities.
+
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption><p>Derived SpriteInstances</p></figcaption></figure>
+
+Now we can assign the animation chain on each of the deirived SpriteInstances. You can do this by selecting the Sprite and changing its AnimationChains dropdown.
+
+<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption><p>Setting the AnimationChains on a Sprite</p></figcaption></figure>
+
+Alternatively you can drag+drop the .achx file onto the Sprite. This is a shortcut to setting the Animation Chains through the dropdown.
+
+<figure><img src="../.gitbook/assets/08_21 40 51.gif" alt=""><figcaption><p>Drag+drop .achx files onto a Sprite to set its AnimationChains.</p></figcaption></figure>
+
+Regardless of which approach you use, be sure to also set the Current Chain Name to a valid animation.
+
+<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption><p>Set the Current Chain Name or the Sprite will be invisible</p></figcaption></figure>
+
+If you do not have any animations in the Current Chain Name drop-down, you need to first add new animations to your .achx.
+
+Typically each AnimationChainListFile would have animations which are named the same. This allows code to set the animation for every enemy variant using the same logic. For example, you might have animations for Idle, Walk, Attack, and Die. These may also include different directions (such as Left, Right, Up, and Down).
+
+### Adding Derived Instances to Your Level
+
+Once you have created derived entities, you can add them to your levels. The easiest way is to use the Live Edit system to drag+drop them into your game.
+
+<figure><img src="../.gitbook/assets/08_21 56 11.gif" alt=""><figcaption><p>Drag+drop and copy/paste derived entities into your level</p></figcaption></figure>
+
+Notice that every instance is added to EnemyList. FlatRedBall understands that the derived entities should be organized in the base entity list. This makes handling collisions much easier than if each type had its own list.
+
+<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption><p>Derived entity instances in a list of base type</p></figcaption></figure>
+
+Entity instances can also be created in code by using their respective factories. When a derived entity's factory is used, the newly-created instance is automatically added to the base list. Derived entities end up in their base list whether created through the FRB Editor or in custom code.
+
+The following code shows how to create an entity instance whenever the user clicks the cursor (mouse) in GameScreen.cs.
+
+```csharp
+void CustomActivity(bool firstTimeCalled)
+{
+    var cursor = GuiManager.Cursor;
+
+    if(cursor.PrimaryClick)
+    {
+        Factories.SnakeFactory.CreateNew(cursor.WorldPosition);
+    }
+}
+```
+
+<figure><img src="../.gitbook/assets/08_22 03 19.gif" alt=""><figcaption><p>Adding new instances with the cusor</p></figcaption></figure>
+
+Using the Derived Generated "Type"
+
+Games often need to refer to the type of a derived entity. For example, an EnemySpawner entity may need to define which type of Enemy it should spawn. FlatRedBall provides a special type for all derived entities which can be used in the FRB Editor and code.
+
+For this example, consider an Entity called EnemySpawner. Each EnemySpawner instance may need to indicte which type of Enemy it should spawn. To support this, we can add a new variable of type EnemyType to the EnemySpawner.
+
+<figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption><p>EnemyType as a variable type</p></figcaption></figure>
+
+In this case, the Entities.EnemyType appears as a possible variable type because the Enemy has at least one derived entity. If you create more entities which have derived types, then they will also appear in this list.
+
+After adding this variable, instances of the EnemySpawner can be assigned an enemy type.
+
+<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption><p>The Enemy Type variable can be set through a dropdown</p></figcaption></figure>
+
+This variable can be used in code to create instances of your derived type. For example, the following code could be added to EnemySpawner.cs to create its enemy type whenever the space bar is pressed.
+
+```csharp
+private void CustomActivity()
+{
+    if(InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Space))
+    {
+        this.EnemyType.CreateNew(this.Position);
+    }
+}
+```
+
+This code uses the space bar for the sake of simplicity, but a real implementation may spawn enemies based on a timer, player proximity, or other game logic.
+
+### Accessing Derived Entity Variables
+
+Variants, such as enemies, may have different variables which may need to be accessed without the creation of an instance. For example, your game may include a bestiary of enemies that the player has encountered. This may be shown to the player using a Gum UI which dislays information about the enemy such as its MaxHealth.
+
+Variables such as MaxHealth can be defined per enemy type. For example, the following image shows a Skeleton which has 80 MaxHealth.
+
+<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption><p>Skeleton with 80 MaxHealth</p></figcaption></figure>
+
+This can be accessed in a type-safe way in code using the EnemyType class as shown in the following snippet:
+
+```csharp
+var maxHealth = EnemyType.Skeleton.MaxHealth;
+```
+
+Similarly, the inrmation is accessible through the EnemyType which might be assigned in the FRB Editor. For example, the EnemySpawner would also be able to access the MaxHelath of the enemy type that it spawns.
+
+```csharp
+var maxHealth = this.EnemyType.MaxHealth;
+```
+
+EnemyTypes can also be accessed through their name. For example, the following code would get the MaxHealth of a Skeleton:
+
+```csharp
+var maxHealth = EnemyType.FromName("Skeleton").MaxHealth;
+```
+
+### Accessing Derived Files
+
+At times your game may need to access files from a derived entity. For example, if we consider the bestiary example from above, you may want to display an image of your enemy in Gum UI. To do this, you would need to access the AnimationChain from the entity. The derived "Type" provides access to file loading. For example, we can access a Skeleton's AnimationChainListFile using the following code:
+
+```csharp
+var animationChains = Enemy.Skeleton.GetFile("AnimationChainListFile");
+// use animationChains to display the enemy, such as in a separate sprite, or in Gum
+```
+
+### Using the Name to Serialize Data
+
+Your game may need to serialize data about derived types. For example, the player may equip different weapon types which should be saved in the profile. The Name property on a derived Type can be used to uniquely identify the type as shown in the following code.
+
+```csharp
+// This assumes that Weapon is a base Entity for the different types
+// of weapons that the player can equip
+var equippedWeapon = this.WeaponType;
+var name = equippedWeapon.Name;
+// use the name to save to disk
+// Later, the weapon can be obtained using the name
+// ...
+this.WeaponType = WeaponType.FromName(name);
+```

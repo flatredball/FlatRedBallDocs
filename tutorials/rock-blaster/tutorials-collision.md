@@ -101,16 +101,16 @@ All events added to GameScreen will be contained in the **GameScreen.Events.cs**
 
 Notice that the methods created provide access to the objects that have collided. For example, **OnBulletListVsRockListCollisionOccurred** provides access to the Bullet and Rock that have collided, named **first** and **second**, respectively. We can modify the code to destroy all objects when they collide. To do so, modify the code in your event file as shown in the following snippet:
 
-```
-void OnBulletListVsRockListCollisionOccurred (Entities.Bullet first, Entities.Rock second)
+```csharp
+void OnBulletListVsRockListCollisionOccurred (Entities.Bullet bullet, Entities.Rock rock)
 {
- first.Destroy();
- second.Destroy();
+ bullet.Destroy();
+ rock.Destroy();
 }
-void OnPlayerListVsRockListCollisionOccurred (Entities.Player first, Entities.Rock second)
+void OnPlayerListVsRockListCollisionOccurred (Entities.Player player, Entities.Rock rock)
 {
- first.Destroy();
- second.Destroy();
+ player.Destroy();
+ rock.Destroy();
 }
 ```
 

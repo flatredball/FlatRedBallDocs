@@ -1,4 +1,4 @@
-# tutorials-health-part-2
+# Health Part 2
 
 ### Introduction
 
@@ -36,13 +36,13 @@ As indicated above, we will need a variable to define the starting value of the 
 6. Click **OK**
 7. Set the value of **StartingHealth** to 6
 
-![](../../media/2021-03-img_604e1be1ebb24.png)
+![](../../media/2021-03-img\_604e1be1ebb24.png)
 
 ### Defining and setting Health
 
 Now we can define the Health variable in the **Player.cs** file. To do this open Player.cs in Visual Studio and add the following code to the Player class:
 
-```
+```csharp
 int health;
 public int Health
 {
@@ -63,7 +63,7 @@ public int Health
 
 Next we'll need to set the Health value to the StartingHealth value. To do this, add the following code in **CustomInitialize** in the Player.cs file:
 
-```
+```csharp
 Health = StartingHealth;
 ```
 
@@ -71,25 +71,25 @@ Health = StartingHealth;
 
 Now we have a Health value which is functional - in other words it destroys the Player when it reaches 0. Next we'll modify the Health value when the Player collides with a Rock. To do this, open GameScreen.Event.cs and find the **OnPlayerListVsRockListCollisionOccurred** function. Locate the following line in the deepest if-statement:
 
-```
- first.Destroy();
+```csharp
+ player.Destroy();
 ```
 
 Remove this line and replace it with:
 
-```
- first.Health--;
+```csharp
+ player.Health--;
 ```
 
 We'll also want to remove the following line:
 
-```
+```csharp
  rock.Destroy();
 ```
 
 Replace it with:
 
-```
+```csharp
  rock.TakeHit(); // so the rock doesn't die completely.
 ```
 
@@ -99,7 +99,7 @@ You can also remove the comment about "Eventually we'll want to do something lik
 
 Now that we have a Health value we need to update the HealthBar according to the current Health value. To do this, modify the Player Health property as shown in the following code snippet:
 
-```
+```csharp
 int health;
 public int Health
 {
@@ -111,7 +111,8 @@ public int Health
  {
   health = value;
 
-  HealthBarRuntimeInstance.PercentFull = Health / (float)StartingHealth;
+  // Multiply the value by 100 so that full health is 100%
+  HealthBarRuntimeInstance.PercentFull = 100 * Health / (float)StartingHealth;
 
   if (health <= 0)
   {
@@ -123,8 +124,8 @@ public int Health
 
 If the Player takes damage now. the HealthBar updates to show how much health the player has left.
 
-![](../../media/2021-03-img_604e2256cdb5a.png)
+![](../../media/2021-03-img\_604e2256cdb5a.png)
 
 ### Conclusion
 
-Our game is becoming more and more playable with each tutorial; however, there is a severe bug present in our game - an accumulation bug occurring due to Entities being dynamically created and not destroyed. If you play the game and survive long enough you will see the frame rate slowly drop. Fortunately this problem is easy to solve. The next tutorial will show how to check for an accumulation of Entities and how to remove them. [<- 11. Health](tutorials-health.md) -- [13. Destroying Entities ->](tutorials-destroying-entities.md)
+Our game is becoming more and more playable with each tutorial; however, there is a severe bug present in our game - an accumulation bug occurring due to Entities being dynamically created and not destroyed. If you play the game and survive long enough you will see the frame rate slowly drop. Fortunately this problem is easy to solve. The next tutorial will show how to check for an accumulation of Entities and how to remove them.

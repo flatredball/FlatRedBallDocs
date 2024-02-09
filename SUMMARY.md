@@ -62,6 +62,7 @@
     * [Team Index](tutorials/damage-dealing/02-team-index.md)
     * [Damage Events](tutorials/damage-dealing/03-damage-events.md)
     * [IDamageArea Removal](tutorials/damage-dealing/04-idamagearea-removal.md)
+  * [Entity Variants Using Inheritance](tutorials/entity-variants-using-inheritance.md)
   * [FlatRedBall.Forms](tutorials/flatredball-forms/README.md)
     * [Getting Started with FlatRedBall.Forms](tutorials/flatredball-forms/getting-started/README.md)
       * [Setup](tutorials/flatredball-forms/getting-started/01-setup.md)
