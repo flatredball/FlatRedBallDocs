@@ -58,6 +58,24 @@ For convenience, existing files in the Content folder are shown when adding new 
 
 <figure><img src="../../.gitbook/assets/01_07 51 21.gif" alt=""><figcaption></figcaption></figure>
 
+### Adding Files Through References
+
+Some file types can reference other files. If FlatRedBall understands this file type, then only the root file must be added to the FlatRedBall project - all referenced files will be automatically added to your game project.
+
+This feature is especially useful for file types which can reference lots of other files. For example, consider that a Gum project (.gumx) can reference dozens of other files such as texture files (.png) and font files (.fnt). By adding the .gumx file to your project (which is done automatically when creating a project with the New Project Wizard, all other files are automatically added to your project.
+
+The following screenshot shows a typical game with the GumProject.gumx added to **Global Content Files**.
+
+<figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption><p>GumProject.gumx in Global Content Files</p></figcaption></figure>
+
+Every file referenced by the Gum project (and any of the Screens and Components in the Gum project) is automatically added to your game project (.csproj). For example, all font files are automatically added to the game project, as shown in the following screenshot from Visual Studio.
+
+<figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Font files in Visual Studio</p></figcaption></figure>
+
+### Adding Files Using Wildcards (\*)
+
+The FRB Editor also supports adding files using a wildcard pattern. For more information on using wildcards, see the [Wildcard Files](wildcard-files.md) page.
+
 ### Accessing Files in Code
 
 Files added through the FRB Editor can be accessed in code. Files added to **Global Content Files** can be accessed in any location through the `GlobalContent` class. Files added to screens and entities can safely be accessed within the respective screen or entity's custom code. Files from other screens or entities can be accessed so long as the owning screen or entity has had its `LoadStaticContent` method called prior to accessing the file.
@@ -148,4 +166,12 @@ For example, if the same file appears in two entities, it can be removed from on
 <figure><img src="../../.gitbook/assets/09_06 52 21.gif" alt=""><figcaption><p>File removed from Monster, but still part of Player</p></figcaption></figure>
 
 If the file were to also be removed from Player, then FRB would ask how to treat the file (nothing, remove from project, delete).
+
+#### Deleting Files Referenced by Other Files
+
+A file can have references from other files. For example, a .png file can be referenced by an .achx file. FlatRedBall understands file references in common file types such as .achx, .tmx, and gum files. Therefore, if a file is removed but still referenced by a different file, FRB will not ask about removing the file from Visual Studio or the file system.
+
+For example, the Player's AnimationChainhListFile.achx references the CharacterSpriteSheet.png. If CharacterSpriteSheet is removed from the Player entity, the FRB Editor recognizes that it is still needed and does not ask about whether it should be deleted or removed from the game project.
+
+<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption><p>AnimationChain refrencing a file on disk</p></figcaption></figure>
 
