@@ -547,3 +547,41 @@ double LastDamageTime { get; set; } = -999
 </code></pre>
 
 If needed you can create these as properties with getters and setters, but the code above matches the behavior prior to version 52.
+
+### Version 53 - "Type" class is now "Variant"
+
+This version removes the confusing "Type" class for derived entities and replaces it with the name "Variant". This is a breaking changes. For example, if you have a base Enemy entity and derived Enemy entities, then FlatRedBall will have generated a class called EnemyType with all of the derived Enemies.
+
+The reason for this change is to avoid confusion with the C# "Type" class in documentation, discussion, and code. Instead, the word Variant will be used in all documentation and code going forward.
+
+❗ Since the name of the class changes, this upgrade may require you to make manual changes if you have been using the Type class. The following list outlines the changes required. If you have not been using the "Type" classes, then no changes are needed.
+
+1. Change all partials from "Type" to "Varint" to match the newly-generated class.
+2. Change usage of any "Type" in your custom code to "variant"
+3. Change any instances which may reference "Type" variables to the new type
+
+The last item requires a bit of manual work so the following outlines the steps to make this change.
+
+Before the upgrade, you may have instances which reference the old "Type" variable as shown here:
+
+<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption><p>EnemyType in json file</p></figcaption></figure>
+
+These will generate incorrectly until, as shown in the following errors in Visual Studio:
+
+<figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption><p>Errors generating EnemyType and GameScreenType</p></figcaption></figure>
+
+To fix these problems:
+
+1. Use a version control system such as Git, or back up your project. Changing types on variables can cause unintended side effects so it's best to have a backup.
+2. Locate the entity or screen which references the incorrect variable. You can do this by double-clicking the error in Visual Studio to be taken to the generated code with the error.
+3. Find the matching entity or screen in the FRB Editor
+4.  Find the variable with the old "Type" type and change it to variant.\
+
+
+    <figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption><p>Change the type to Variant</p></figcaption></figure>
+
+
+
+FlatRedBall attempts to keep all of your variable values the same, so if all worked okay you should not have any changes on instances aside from the types.
+
+<figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
