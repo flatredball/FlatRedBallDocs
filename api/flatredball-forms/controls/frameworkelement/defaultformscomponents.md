@@ -2,7 +2,7 @@
 
 ### Introduction
 
-DefaultFormsComponents is a static property in the FrameworkElement class which associates a FlatRedBall.Forms control to a default Gum component type. DefaultFormsComponent is used whenever code instantiated a FlatRedball.forms object, allowing the internal engine to automatically create visuals for it. In other words, this association defines the default appearance of a FlatRedBall.Forms object by associating it with a Gum type. For example, the following code shows how a simple button can be created without specifying a Visual for the button:
+DefaultFormsComponents is a static property in the FrameworkElement class which associates a FlatRedBall.Forms control to a default Gum component type. DefaultFormsComponent is used whenever code instantiates a FlatRedball.Forms object, allowing the internal engine to automatically create visuals for it. In other words, this association defines the default appearance of a FlatRedBall.Forms object by associating it with a Gum type. For example, the following code shows how a simple button can be created. Notice that this code does not require instantiating a Gum object - the Button automatically has a Visual object created internally.
 
 ```csharp
 // Notice that a visual is not specified for the button
@@ -20,11 +20,11 @@ button.Show();
 button.Click += HandleButtonClick;
 ```
 
-Notice that in the code above there is no creation of a visual Gum object. The Button object uses the DefaultFormsComponent property automatically construct a Gum object.
+Internally, the Button class looks at the DefaultFormsComponents dictionary. It searches for an entry for its type ( `typeof(FlatRedBall.Forms.Controls.Button)` ), and if it finds a match, it uses that as its visual.
 
 ### DefaultFormsComponents in Generated Code
 
-The Gum plugin in Glue will automatically populate the DefaultFormsComponents dictionary according to behaviors assigned to components in the Gum project. Unmodified projects which include Forms components will have a standard component for each Forms control. The code for this is added to the GumIdb.Generated.cs file.  For example, the code may look like this:
+If your project has FlatRedBall.Forms added (default if you used the wizard), then FRB automatically populate the DefaultFormsComponents dictionary according to behaviors assigned to components in the Gum project. Unmodified projects which include Forms components will have a standard component for each Forms control. The code for this is added to the `GumIdb.Generated.cs` file. For example, the code may look like this:
 
 ```csharp
 FlatRedBall.Forms.Controls.FrameworkElement.DefaultFormsComponents[typeof(FlatRedBall.Forms.Controls.Button)] = typeof(ProjectName.GumRuntimes.DefaultForms.ButtonRuntime);
@@ -51,3 +51,5 @@ FrameworkElement.DefaultFormsComponents[typeof(FlatRedBall.Forms.Controls.Button
 ```
 
 The DefaultFormsComponents can be assigned and re-assigned any number of times, allowing a project to have per-screen or even per-function default behavior, rather than a global association.
+
+Note that you can also add additional entries for any custom Forms type - you are not limited to Forms types which ship with the FlatRedBall.Forms library.
