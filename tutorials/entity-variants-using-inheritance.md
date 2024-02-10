@@ -188,3 +188,27 @@ var name = equippedWeapon.Name;
 // ...
 this.WeaponVariant = WeaponVariant.FromName(name);
 ```
+
+### Creating New Variants
+
+Variants are created automatically by FlatRedBall in the base entity's codegen. These entities are hard-coded and will be compiled into your game, but you are not limited to using just these variant types. Instead, you can create new variants in custom code.&#x20;
+
+For example, consider an entity type called Enemy. A new variant can be created in code using the following code:
+
+```csharp
+var newVariant = new EnemyVariant();
+newVariant.PointValue = 300;
+newVariant.MaxHealth = 1000;
+```
+
+This variant can be used to instantiate enemies with the assigned values as shown in the following code:
+
+```csharp
+var enemyInstance = newVariant.CreateNew(x:100, y:50);
+```
+
+Since this new enemy type is not created in the FlatRedBall Editor, its C# type is Enemy (the base Entity type). Note that custom variants can only be created if the base class can be instantiated through a factory. That means that the base class must have the following:
+
+* Its [CreatedByOtherEntities](../glue-reference/entities/glue-reference-createdbyotherentities.md) must be set to true
+* It must not be abtract - it must not have any objects that are [SetByDerived](../glue-reference/objects/glue-reference-setbyderived.md#setbyderived-creates-abstract-screens-entities)
+
