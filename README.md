@@ -32,7 +32,7 @@ The most common approach to making FlatRedBall games is to use the FlatRedBall E
    1. Alternatively, the FlatRedBall Editor (no additional tools) prebuilt can be downloaded from Github. This is not recommended for new users, but experienced users can replace the FlatRedball Glue folder with the contents from the built files: [https://github.com/vchelaru/FlatRedBall/actions](https://github.com/vchelaru/FlatRedBall/actions)
 2.  Unzip the file after downloading
 
-    <figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Go to the folder where the .zip file unzipped to (by default called FRBDK)
 4. Open the Run FlatRedBall.bat file (double click it)
 

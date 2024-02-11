@@ -122,18 +122,18 @@ To build the FlatRedBall Editor (also referred to as Glue):
     ![](media/2021-08-img\_6112b22407f6b.png)
 4.  To rebuild Glue with all plugins, select **Build** -> **Build Solution** in Visual Studio. You must **Build or Rebuild** the first time you run FlatRedBall. If you make further changes to any plugins, you must either build the entire solution, or build the project that contains the plugin. Simply building the GlueFormsCore project, or pressing F5 to build and run Glue, will not build all plugins.\\
 
-    <figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. Set **GlueFormsCore** as the **StartUp Project**
 
 <figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 1.  For Rider users, you will need to set GlueFormsCore as the project to run in the Configuration dialog.\
     \
-    ![](<.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)\\
+    ![](<.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)\\
 
-    <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It's important that Gum and FlatRedBall are checked out to the same folder. For example, you may have:
 

@@ -4,7 +4,7 @@
 
 Spine supports events which can be handled in code. Events are defined in Spine which can include parameters of different types such as ints, floats, and strings.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Events in Spine</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Events in Spine</p></figcaption></figure>
 
 These events can be handled in code by subscribing to a SpineDrawableBatch's Event event, or through the FlatRedBall Editor.
 
@@ -20,7 +20,7 @@ To subscribe to an event in FRB Editor:
 
 The new event can be handled in the Events.cs file of your Entity. For example, if your Entity is named Soldier, the event is in Soldier.Event.cs.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Spine Event in Soldier.Event.cs file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Spine Event in Soldier.Event.cs file</p></figcaption></figure>
 
 ### Subscribing to SpineDrawableBatch.Event in Code
 

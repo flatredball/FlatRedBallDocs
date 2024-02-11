@@ -215,6 +215,7 @@
       * [uniformrowtype](glue-reference/files/glue-reference-csv/uniformrowtype.md)
     * [Destroy on Unload](glue-reference/files/glue-reference-destroyonunload.md)
     * [Effect (.fx, .fxb)](glue-reference/files/effect-.fx.md)
+    * [File Build Tool](glue-reference/files/file-build-tool.md)
     * [Folders](glue-reference/files/glue-reference-folders.md)
     * [Global Content Files](glue-reference/files/glue-reference-globalcontent.md)
     * [IsDatabaseForLocalizing](glue-reference/files/glue-reference-isdatabaseforlocalizing.md)

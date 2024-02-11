@@ -43,7 +43,7 @@ FlatRedBall.Forms.Controls.FrameworkElement.DefaultFormsComponents[typeof(FlatRe
 FlatRedBall.Forms.Controls.FrameworkElement.DefaultFormsComponents[typeof(FlatRedBall.Forms.Controls.UserControl)] = typeof(ProjectName.GumRuntimes.DefaultForms.UserControlRuntime);
 ```
 
-Keep in mind this association can be overridden. For example, you may add the following to your screen's CustomInitialize:
+Keep in mind this association can be overridden. For example, you may add the following to your custom code:
 
 ```csharp
 FrameworkElement.DefaultFormsComponents[typeof(FlatRedBall.Forms.Controls.Button)] = 
@@ -52,4 +52,4 @@ FrameworkElement.DefaultFormsComponents[typeof(FlatRedBall.Forms.Controls.Button
 
 The DefaultFormsComponents can be assigned and re-assigned any number of times, allowing a project to have per-screen or even per-function default behavior, rather than a global association.
 
-Note that you can also add additional entries for any custom Forms type - you are not limited to Forms types which ship with the FlatRedBall.Forms library.
+Note that you can also add additional entries for any custom Forms type - you are not limited to Forms types which ship with the FlatRedBall.Forms library. Also, if you have custom .Forms controls that should have default implementations, you should consider doing so before any Screen runs, such as in Game1.cs. This guarantees that any loading code&#x20;
