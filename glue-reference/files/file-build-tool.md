@@ -38,3 +38,8 @@ Once a file has been added you can change its BuildTool property in its Properti
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>BuildTool Property</p></figcaption></figure>
 
+### Using the Build Tool
+
+Any time the source file changes on disk (such as an .ods file), FRB detects this change and automatically performs a build. The command is displayed in the Output window.
+
+<figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption><p>Build tool command shown in the output window</p></figcaption></figure>
