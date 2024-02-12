@@ -38,7 +38,11 @@ Use SkiaSharp to render gpu-accelerated vector graphics in your game. Perform la
 
 ### Spine Integration
 
-Use Spine to create animated characters and easily add them to your project.
+Use all features in the Spine tool including defining skeletons, animations, and events.
+
+<figure><img src=".gitbook/assets/image (96).png" alt=""><figcaption><p>Animated character in Spine</p></figcaption></figure>
+
+Spine files can be dropped in to your project and loaded with no code. Play animations at runtime in response to input or game events.
 
 <figure><img src=".gitbook/assets/nardiak-spawn-death-loop.gif" alt=""><figcaption><p>Animated character using Spine</p></figcaption></figure>
 
