@@ -3,6 +3,7 @@
 * [🖥 Downloading FlatRedBall](README.md)
 * [🏗 Building FlatRedBall From Source](flatredball-source.md)
 * [❓ Need Help?](help.md)
+* [✨ FlatRedBall Features](flatredball-features.md)
 * [🎓 Tutorials](tutorials/README.md)
   * [Introduction To FlatRedBall](tutorials/introduction-to-flatredball.md)
   * [Quick Start Guide](tutorials/quick-start-guide.md)
