@@ -46,7 +46,7 @@ Notice that setting width and height modifies the same object at runtime - it ap
 
 ![](../../../media/2022-02-img\_620e5b2a484f3.png)
 
-You may be wondering - which object should I access in code? The answer is - usually it's best to use the Forms object, but sometimes you must access the Gum object for more detailed control over position and size.
+You may be wondering - which object should I access in code? The answer is - usually it's best to use the Forms object. If you end up needing to make changes to the Gum object (such as to change its position or size), it's worth considering whether this change should actually be done in code. Most of the time these changes should be performed in the Gum tool.
 
 ### Forms is a Wrapper to Standardize and Automate Behavior
 
