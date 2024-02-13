@@ -6,6 +6,8 @@ FlatRedBall Forms is a set of classes which are used to give UI controls _automa
 
 This guide discusses the relationship between the Forms and Gum objects, and provides some guidelines to determine whether to interact with one of the other.
 
+The most important concept here is - some components in your project are Forms types, and some are not. **Only Forms-implementing component instances appear in the Forms property, but all instances appear in the GumScreen property**.
+
 ### Button Forms and Gum Object
 
 To understand how Forms and Gum objects interact, we will consider a simple example - a Screen with a single Button. The following image shows a default Button instance in a Gum screen:
@@ -72,6 +74,49 @@ void CustomInitialize()
 <figure><img src="../../../media/2022-02-17_08-17-34.gif" alt=""><figcaption></figcaption></figure>
 
 Notice that the state is not immediately changed, but rather only when the mouse moves over the button. Once the mouse hovers over the button, its state changes immediatelz. After the mouse leaves the button, the state is reverted to Enabled. Setting the state through the Gum object can produce confusion. For example, a button may appear pushed or disabled if the state is manually assigned; however, the actual behavior of the button will not match a disabled state. Therefore, the button's state (specifically the **CurrentButtonCategoryState**) is controlled by the Forms Button object. The Forms Button object will modify the state according to standard button behavior, so custom code should not modify the Gum button's state.
+
+### Forms Property Contains Only Forms Objects
+
+The Forms property in FlatRedBall Screens contains properties for all Forms objects in the Gum screen, and only the Forms objects. Therefore, any object that is part of the Gum screen which is not a Forms type (such as Button or TextBox) does not appear in the Forms property.
+
+For example, consider the following screen in Gum:
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Forms and normal Gum instances in a Screen</p></figcaption></figure>
+
+The left column consists of Forms controls: a Button, ListBox, and TextBox. The right column consists of instances of Gum objects which do not implement any Forms controls: a Text, ColoredRectangle, and Container.
+
+In code, the Forms property **only contains references** to the Gum-implementing instances. Therefore, the following code is valid:
+
+```csharp
+var button = Forms.ButtonInstance;
+var listBox = Forms.ListBoxInstance;
+var textBox = Forms.TextBoxInstance;
+```
+
+However, the following is not valid code because these instances are not Forms-implementing types:
+
+```csharp
+// None of these are valid:
+var text = Forms.TextInstance;
+var rectangle = Forms.ColoredRectangleInstance;
+var container = Forms.ContainerInstance.
+```
+
+To access the non-forms objects, you must use the GameScreen object. For example, the following code is valid:
+
+```csharp
+var text = GumScreen.TextInstance;
+var rectangle = GumScreen.ColoredRectangleInstance;
+var container = GumScreen.ContainerInstance;
+```
+
+Keep in mind that an instance in a Gum screen will **always be a Gum object** but only **sometimes be a Forms object**. This means that any instance that is a Forms object can also be accessed through GumScreen as shown in the following code:
+
+```csharp
+var button = GumScreen.ButtonInstance;
+var listBox = GumScreen.ListBoxInstance;
+var textBox = GumScreen.TextBoxInstance;
+```
 
 ### Additional Examples of Automatic Behavior
 
