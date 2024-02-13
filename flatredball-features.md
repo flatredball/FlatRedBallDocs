@@ -6,17 +6,47 @@ The FlatRedBall Editor is a visual tool for creating and organizing screens, ent
 
 <figure><img src=".gitbook/assets/image (92).png" alt=""><figcaption><p>FlatRedBall Editor</p></figcaption></figure>
 
-### Integration with Tiled
+### Quick Setup with the FRB Wizard
+
+Use the FRB wizard to get your game up and running in seconds.
+
+<figure><img src=".gitbook/assets/image (101).png" alt=""><figcaption><p>The FRB Wizard can be used to start making a game in seconds</p></figcaption></figure>
+
+### Tiled Integration
 
 Tiled maps can be drag+dropped into the FlatRedBall Editor and loaded with no extra code. Use Tiled to define visuals, collision, and add entity instances.
 
 <figure><img src=".gitbook/assets/image (94).png" alt=""><figcaption><p>Tiled Map in FlatedBall</p></figcaption></figure>
 
-### Integration with Gum UI tool
+### Gum UI Integration
 
 FlatRedBall provides full integration with the Gum tool. Gum projects are added to your project and loaded by generated code, enabling the creation of UI from the very first click.
 
 <figure><img src=".gitbook/assets/image (93).png" alt=""><figcaption><p>Gum UI Title Screen</p></figcaption></figure>
+
+### Game Live Edit
+
+Run your game in edit mode to make changes in real time.
+
+<figure><img src=".gitbook/assets/12_21 00 53.gif" alt=""><figcaption><p>Live edit in FRB</p></figcaption></figure>
+
+### Hot Reload Files
+
+Make changes to files such as Tiled (.tmx), Textures (.png), and spreadsheet (.csv) files and see the changes update in realtime.
+
+<figure><img src=".gitbook/assets/12_21 20 41.gif" alt=""><figcaption><p>Changes in Tiled update a game in realtime</p></figcaption></figure>
+
+### Platformer Controls and Physics
+
+Creating a platformer has never been easier. Mark your entity as a Platformer or use the new project wizard to get production quality platformer physics and movement.
+
+<figure><img src=".gitbook/assets/Platformer1.gif" alt=""><figcaption><p>FRB provides platformer physics and controls</p></figcaption></figure>
+
+### Built-in Damage System
+
+FRB includes a damage system which simplifies and standardizes dealing damage and reacting to receiving damage.
+
+<figure><img src=".gitbook/assets/12_21 51 58.gif" alt=""><figcaption><p>FRB Damage system simplifies combat code</p></figcaption></figure>
 
 ### AnimationEditor for Building Frame-Based Animations
 
@@ -58,11 +88,45 @@ Set your initial game's resolution, whether it supports resizing, aspect ratio, 
 
 <figure><img src=".gitbook/assets/image (88).png" alt=""><figcaption><p>Display Settings in FRB</p></figcaption></figure>
 
+### Camera Controlling Entity for Following Game Objects
+
+The camera controlling entity can follow one or more targets, supports zooming, provides customizable tweening, and respects map bounds.
+
+<figure><img src=".gitbook/assets/12_22 09 51.gif" alt=""><figcaption><p>Camera controlling entity following targets and zooming</p></figcaption></figure>
+
+### Realtime File Reference Tracking
+
+FlatRedBall turns difficult-to-find runtime errors into clear in-editor errors the moment a file is changed or removed.
+
+<figure><img src=".gitbook/assets/image (103).png" alt=""><figcaption><p>Missing file references are reported in the FRB error tab</p></figcaption></figure>
+
+### Music with MonoGame/FNA and NAudio
+
+MonoGame and FNA Song support included out of the box. For more flexibility song files can be loaded using NAudio.
+
+<figure><img src=".gitbook/assets/image (97).png" alt=""><figcaption><p>Song settings in FRB</p></figcaption></figure>
+
 ### CSV and Open Office/Libre Office Integration
 
 Use CSV files or open office spreadsheet files to define your game data. FlatRedBall automatically generates the classes for loading your data and deserializes the files in geneated code.
 
 <figure><img src=".gitbook/assets/image (95).png" alt=""><figcaption><p>Creating a CSV automatically generates a class with matching properties</p></figcaption></figure>
+
+### Flexible Input
+
+FRB input supports mouse, keyboard, touchscreen, and a variety of gamepads (Xbox, Switch, PlayStation, and PC) including direct and abstract access through a variety of interfaces.
+
+```csharp
+ShootingInput = gamePad.RightTrigger.
+    // primary is the A/B button, which is usually for jumping
+    // shooting is usually X/Y
+    Or(gamePad.DefaultSecondaryActionInput);
+
+ReviveInput = gamePad.DefaultPrimaryActionInput;
+
+PreviousWeaponInput = gamePad.GetButton(Xbox360GamePad.Button.LeftShoulder);
+NextWeaponInput = gamePad.GetButton(Xbox360GamePad.Button.RightShoulder);
+```
 
 ### Localization Support
 
@@ -70,11 +134,35 @@ Add multiple languages to your game using a simple spreadsheet. Localization is 
 
 <figure><img src=".gitbook/assets/image (89).png" alt=""><figcaption><p>Example Localization File</p></figcaption></figure>
 
+### Multiple Platforms
+
+Target multiple platforms with the same code and content. FRB games can run on Windows, Mac, Linux, Android, and iOS. By using FNA and Native AOT, FlatRedBall can also run on consoles such as Switch.
+
+<figure><img src=".gitbook/assets/image (100).png" alt=""><figcaption><p>Target multiple platforms with FRB</p></figcaption></figure>
+
 ### Full .NET C# (not scripted)
 
 FlatRedBall projects are regular .NET projects with full access to modern C# syntax, the full .NET library, and NuGet packages. FlatRedBall Projects are regular Visual Studio project, enabling you to use your favorite IDE and debugger.
 
 <figure><img src=".gitbook/assets/image (87).png" alt=""><figcaption><p>Write any valid C# including LINQ and async code</p></figcaption></figure>
+
+### Open Source
+
+FlatRedBall is fully open source using the MIT License. It is built using which themslves are also open source. You can build your games without the worry of future inconveniences caused by license changes.
+
+<figure><img src=".gitbook/assets/image (98).png" alt=""><figcaption><p>FlatRedball uses the MIT license</p></figcaption></figure>
+
+### All Data is Text
+
+All data created by FlatRedBall is in text format. The FlatRedBall Editor saves .json files and generates pure C# code files. Never worry about binary file conflicts wiping out your work again.
+
+<figure><img src=".gitbook/assets/image (102).png" alt=""><figcaption><p>FRB data is text so you can inspect, debug, and diff easily</p></figcaption></figure>
+
+### Built on XNA-Like Libraries
+
+FlatRedBall was built in the early days of XNA and has continued to grow, adding support for MonoGame and FNA. Your FlatRedBall game is a MonoGame/FNA game, and the full flexibility of these libraries is available to you.
+
+<figure><img src=".gitbook/assets/image (99).png" alt=""><figcaption><p>Fusion Sentient - a FlatRedBall game using XNA Models for 3D graphics</p></figcaption></figure>
 
 ### Async Programming Simplifies Scripting and State Machines
 
