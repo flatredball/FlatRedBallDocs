@@ -118,6 +118,8 @@ var listBox = GumScreen.ListBoxInstance;
 var textBox = GumScreen.TextBoxInstance;
 ```
 
+As mentioned above, accessing Forms objects through GumScreen is generally not good practice.
+
 ### Additional Examples of Automatic Behavior
 
 FlatRedBall Forms contains many types of controls each with their own type of automatic behavior. The following list is an example (not a complete list) of properties which are controlled by Forms behaviors, and which should not be modified on the Gum object:
