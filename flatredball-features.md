@@ -6,17 +6,17 @@ The FlatRedBall Editor is a visual tool for creating and organizing screens, ent
 
 <figure><img src=".gitbook/assets/image (92).png" alt=""><figcaption><p>FlatRedBall Editor</p></figcaption></figure>
 
-### Quick Setup with the FRB Wizard
+### Project Setup Wizard
 
-Use the FRB wizard to get your game up and running in seconds.
+Use the wizard to get your game up and running in seconds.
 
-<figure><img src=".gitbook/assets/image (101).png" alt=""><figcaption><p>The FRB Wizard can be used to start making a game in seconds</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (101).png" alt=""><figcaption><p>The Project SEtup Wizard can be used to start making a game in seconds</p></figcaption></figure>
 
 ### Tiled Integration
 
 Tiled maps can be drag+dropped into the FlatRedBall Editor and loaded with no extra code. Use Tiled to define visuals, collision, and add entity instances.
 
-<figure><img src=".gitbook/assets/image (94).png" alt=""><figcaption><p>Tiled Map in FlatedBall</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (94).png" alt=""><figcaption><p>Tiled Map in the FRB Editor</p></figcaption></figure>
 
 ### Gum UI Integration
 
@@ -44,17 +44,17 @@ Creating a platformer has never been easier. Mark your entity as a Platformer or
 
 ### Built-in Damage System
 
-FRB includes a damage system which simplifies and standardizes dealing damage and reacting to receiving damage.
+The flexible damage system simplifies and standardizes dealing damage and reacting to receiving damage.
 
 <figure><img src=".gitbook/assets/12_21 51 58.gif" alt=""><figcaption><p>FRB Damage system simplifies combat code</p></figcaption></figure>
 
-### AnimationEditor for Building Frame-Based Animations
+### AnimationEditor Integration
 
-Use the FlatRedBall AnimationEditor to define animations for your characters using individual files or sprite sheets. Preview animations, adjust timing, and add shapes for collision or defining key positions.
+Use the AnimationEditor to define animations for your characters using individual files or sprite sheets. Preview animations, adjust timing, and add shapes for collision or defining key positions.
 
 <figure><img src=".gitbook/assets/image (90).png" alt=""><figcaption><p>FRB AnimationEditor</p></figcaption></figure>
 
-### FlatRedBall.Forms Simplifies UI Creation
+### FlatRedBall.Forms
 
 FlatRedBall.Forms is a flexible UI system similar to WPF and MAUI. It is fully integrated with Gum and has MVVM support.
 
@@ -62,7 +62,7 @@ FlatRedBall.Forms is a flexible UI system similar to WPF and MAUI. It is fully i
 
 ### SkiaSharp Integration
 
-Use SkiaSharp to render gpu-accelerated vector graphics in your game. Perform layout purely in code or use Gum.
+Use SkiaSharp to render GPU-accelerated vector graphics in your game. Perform layout purely in code or use Gum.
 
 <figure><img src=".gitbook/assets/image (86).png" alt=""><figcaption><p>SkiaSharp provides vector art rendering support</p></figcaption></figure>
 
@@ -76,19 +76,19 @@ Spine files can be dropped in to your project and loaded with no code. Play anim
 
 <figure><img src=".gitbook/assets/nardiak-spawn-death-loop.gif" alt=""><figcaption><p>Animated character using Spine</p></figcaption></figure>
 
-### Efficient and Convenient Collision Relationship Support
+### Collision Relationships
 
 Define collision relationships in UI or code to add physics, damage dealing, and custom events.
 
 <figure><img src=".gitbook/assets/12_08 08 34.png" alt=""><figcaption><p>CollisionRelationship in FRB</p></figcaption></figure>
 
-### Display Settings for Resolution and Resize Management
+### Display Settings
 
 Set your initial game's resolution, whether it supports resizing, aspect ratio, and more.
 
 <figure><img src=".gitbook/assets/image (88).png" alt=""><figcaption><p>Display Settings in FRB</p></figcaption></figure>
 
-### Camera Controlling Entity for Following Game Objects
+### Camera Controlling Entity
 
 The camera controlling entity can follow one or more targets, supports zooming, provides customizable tweening, and respects map bounds.
 
@@ -96,11 +96,11 @@ The camera controlling entity can follow one or more targets, supports zooming, 
 
 ### Realtime File Reference Tracking
 
-FlatRedBall turns difficult-to-find runtime errors into clear in-editor errors the moment a file is changed or removed.
+Turn difficult-to-find runtime errors into clear in-editor errors the moment a file is changed or removed.
 
 <figure><img src=".gitbook/assets/image (103).png" alt=""><figcaption><p>Missing file references are reported in the FRB error tab</p></figcaption></figure>
 
-### Music with MonoGame/FNA and NAudio
+### MonoGame/FNA and NAudio Music
 
 MonoGame and FNA Song support included out of the box. For more flexibility song files can be loaded using NAudio.
 
@@ -148,7 +148,7 @@ FlatRedBall projects are regular .NET projects with full access to modern C# syn
 
 ### Open Source
 
-FlatRedBall is fully open source using the MIT License. It is built using which themslves are also open source. You can build your games without the worry of future inconveniences caused by license changes.
+FlatRedBall is fully open source using the MIT License. It is built using libraries which themselves are also open source. You can build your games without the worry of future inconveniences caused by license changes.
 
 <figure><img src=".gitbook/assets/image (98).png" alt=""><figcaption><p>FlatRedball uses the MIT license</p></figcaption></figure>
 
@@ -158,13 +158,13 @@ All data created by FlatRedBall is in text format. The FlatRedBall Editor saves 
 
 <figure><img src=".gitbook/assets/image (102).png" alt=""><figcaption><p>FRB data is text so you can inspect, debug, and diff easily</p></figcaption></figure>
 
-### Built on XNA-Like Libraries
+### XNA-Like Foundation
 
 FlatRedBall was built in the early days of XNA and has continued to grow, adding support for MonoGame and FNA. Your FlatRedBall game is a MonoGame/FNA game, and the full flexibility of these libraries is available to you.
 
 <figure><img src=".gitbook/assets/image (99).png" alt=""><figcaption><p>Fusion Sentient - a FlatRedBall game using XNA Models for 3D graphics</p></figcaption></figure>
 
-### Async Programming Simplifies Scripting and State Machines
+### Async Programming
 
 FlatRedBall provides a syncrhonization context and multiple methods returning Tasks to simplify async programming.&#x20;
 
