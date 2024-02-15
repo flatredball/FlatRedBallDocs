@@ -1,15 +1,21 @@
-# bitmapfont
+# BitmapFont
 
 ### Introduction
 
-A BitmapFont is a class defining the texture and rendering values used to render a bitmap font. The [Text object](../../../../../frb/docs/index.php) uses BitmapFonts when drawing itself. Fonts can be also assigned in Glue without any custom code. For more information, see [this article](../../../../../frb/docs/index.php)
+The BitmapFont class defines the texture and rendering values used to render a bitmap font. The [Text object](../text/) uses BitmapFonts when drawing itself. Note that the recommended approach for displaying production-ready text to the screen (including with custom fonts) is to use [Gum](../../../../gum/), which automates the creation of font files and simplifies loading these files.
+
+The main benefit of the FRB Text object is that it can sort with other visual objects and it can have better performance than Gum text objects in some cases.
 
 ### Creating a BitmapFont
 
 Bitmap Fonts require two files - a texture file and a .fnt file. Both can be created with [AngelCode.com's Bitmap Font Generator](http://www.angelcode.com/products/bmfont/). The following steps outline the creation of the two files used in BitmapFonts:
 
-1. Open Bitmap font generator. ![SearchBMFont.png](../../../../../media/migrated_media-SearchBMFont.png)![BitmapFontGenerator.PNG](../../../../../media/migrated_media-BitmapFontGenerator.PNG)
-2. Click or push+drag to select the letters that you'd like included in your exported font. Selected letters will highlight.![SelectedLettersInBFG.PNG](../../../../../media/migrated_media-SelectedLettersInBFG.PNG)
+1. Open Bitmap font generator.\
+   &#x20;![SearchBMFont.png](../../../../media/migrated\_media-SearchBMFont.png)![BitmapFontGenerator.PNG](../../../../media/migrated\_media-BitmapFontGenerator.PNG)
+2.  Click or push+drag to select the letters that you'd like included in your exported font. Selected letters will highlight.\
+
+
+    <figure><img src="../../../../media/migrated_media-SelectedLettersInBFG.PNG" alt=""><figcaption><p>Select the desired characters</p></figcaption></figure>
 3. Click Options->Font Settings
    1. Select the font that you'd like to use in the "Font" drop down. All fonts installed on your machine will appear here.
    2. Enter the font size that you want next to "Size (px)": The larger this is, the larger each letter will be in your game. If you are using PhotoShop, you can test font sizes there (see next item)
@@ -27,7 +33,7 @@ Bitmap Fonts require two files - a texture file and a .fnt file. Both can be cre
 
 ### Using a BitmapFont in Glue
 
-For information on how to use BitmapFonts in Glue, see [this page](../../../../../frb/docs/index.php).
+For information on how to use BitmapFonts in Glue, see [this page](../../../../frb/docs/index.php).
 
 ### Adding custom letters to a .fnt file
 
@@ -60,14 +66,14 @@ Note that if you are using Glue you may not have to add fonts to your project ma
 1. Create or download a .fnt file and matching image file (.png is typical)
 2.  Drag+drop the files into your project's **Content** folder
 
-    ![](../../../../../media/2019-06-img_5d09a2256425b.png)
+    ![](../../../../media/2019-06-img\_5d09a2256425b.png)
 3.  Mark both files as **Copy if Newer** in their properties
 
-    ![](../../../../../media/2019-06-img_5d09a2636c758.png)
+    ![](../../../../media/2019-06-img\_5d09a2636c758.png)
 
 ### Loading a BitmapFont
 
-Once the files are created they need to be loaded into a BitmapFont. The following code loads a BitmapFont and assigns it to a Text object. **Files used:** [font18arial_0.png](../../../../../content/Tutorials/Graphics/font18arial_0.png), [font18arial.fnt](http://files.flatredball.com/content/Tutorials/Graphics/font18arial.fnt) Add the following using statement
+Once the files are created they need to be loaded into a BitmapFont. The following code loads a BitmapFont and assigns it to a Text object. **Files used:** [font18arial\_0.png](../../../../content/Tutorials/Graphics/font18arial\_0.png), [font18arial.fnt](http://files.flatredball.com/content/Tutorials/Graphics/font18arial.fnt) Add the following using statement
 
 ```
 using FlatRedBall.Graphics;
@@ -93,14 +99,14 @@ Text text = TextManager.AddText("Hi, I'm another text.");
 otherText.Font = customFont;
 ```
 
-![CustomFontExample.png](../../../../../media/migrated_media-CustomFontExample.png)
+![CustomFontExample.png](../../../../media/migrated\_media-CustomFontExample.png)
 
 #### Loading a BitmapFont through the Content Pipeline
 
 The .fnt file is simply a text file which must be copied to build folder, while the referenced texture must be built through the content pipeline. Therefore, each file must be handled slightly differently. The following steps outline how to add a BitmapFont to a project through the content pipeline:
 
-1. Add the two font files to the Content folder. You can simply drag them into the Solution Explorer and they will be added. ![FontInContentPipeline.png](../../../../../media/migrated_media-FontInContentPipeline.png)
-2. Highlight the .fnt file and press F4 to bring up the Properties window. Make sure that its "Build Action" is "None" and its "Copy to Output Directory" is "Copy if newer" ![FntProperties.png](../../../../../media/migrated_media-FntProperties.png)
+1. Add the two font files to the Content folder. You can simply drag them into the Solution Explorer and they will be added. ![FontInContentPipeline.png](../../../../media/migrated\_media-FontInContentPipeline.png)
+2. Highlight the .fnt file and press F4 to bring up the Properties window. Make sure that its "Build Action" is "None" and its "Copy to Output Directory" is "Copy if newer" ![FntProperties.png](../../../../media/migrated\_media-FntProperties.png)
 3. Add the following code to load the bitmapFont:
 
 Add the following using statements:
@@ -120,16 +126,10 @@ BitmapFont bitmapFont = new BitmapFont(
 
 ### Bitmap and Text size
 
-While it may not be immediately obvious, there is a difference between BitmapFonts and [Texts](../../../../../frb/docs/index.php) (the [FlatRedBall.Graphics.Text](../../../../../frb/docs/index.php) class). A [Text](../../../../../frb/docs/index.php) contains information such as location, rotation, and the string to write out. The BitmapFont contains the texture information to use which represents the font. Specifically, it contains a Texture2D as well as the texture coordinates for each character. One notable consideration is that the properties in both the BitmapFont class as well as the [Text](../../../../../frb/docs/index.php) class can contain the size of the letters in a Text object. Let's investigate why this is the case. Ultimately, there are three properties which are related to the size that a [Text](../../../../../frb/docs/index.php) takes up when it is rendered:
+While it may not be immediately obvious, there is a difference between BitmapFonts and [Texts](../../../../frb/docs/index.php) (the [FlatRedBall.Graphics.Text](../../../../frb/docs/index.php) class). A [Text](../../../../frb/docs/index.php) contains information such as location, rotation, and the string to write out. The BitmapFont contains the texture information to use which represents the font. Specifically, it contains a Texture2D as well as the texture coordinates for each character. One notable consideration is that the properties in both the BitmapFont class as well as the [Text](../../../../frb/docs/index.php) class can contain the size of the letters in a Text object. Let's investigate why this is the case. Ultimately, there are three properties which are related to the size that a [Text](../../../../frb/docs/index.php) takes up when it is rendered:
 
 * Scale
 * Spacing
 * NewlineDistance
 
-Information and code samples on these properties can be found [here](../../../../../frb/docs/index.php#Text_Size). These three properties ultimately control the absolute size and spacing of each letter in the Text object. However, a BitmapFont that has letters at a higher resolution will result in a larger Text on screen. The reason for this is because the [TextManager](../../../../../frb/docs/index.php) adjusts these three values according to the current [Camera](../../../../../frb/docs/index.php) setup when the AddText method is called so that the Text is drawn to-the-pixel. This means that a Text that is created through the TextManager which is displaying a large BitmapFont will have higher Scale, Spacing, and NewlineDistance values than one displaying a smaller BitmapFont. This behavior simply exists as a convenience, and it can be easily overridden if necessary by changing these values.
-
-### Related Articles
-
-* [Fnt File](../../../../../frb/docs/index.php)
-* [Bmfc File](../../../../../frb/docs/index.php)
-* [Glyphs](../../../../../frb/docs/index.php)
+Information and code samples on these properties can be found [here](../../../../frb/docs/index.php#Text\_Size). These three properties ultimately control the absolute size and spacing of each letter in the Text object. However, a BitmapFont that has letters at a higher resolution will result in a larger Text on screen. The reason for this is because the [TextManager](../../../../frb/docs/index.php) adjusts these three values according to the current [Camera](../../../../frb/docs/index.php) setup when the AddText method is called so that the Text is drawn to-the-pixel. This means that a Text that is created through the TextManager which is displaying a large BitmapFont will have higher Scale, Spacing, and NewlineDistance values than one displaying a smaller BitmapFont. This behavior simply exists as a convenience, and it can be easily overridden if necessary by changing these values.
