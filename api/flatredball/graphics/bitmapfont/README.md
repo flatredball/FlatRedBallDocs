@@ -15,7 +15,7 @@ Bitmap Fonts require two files - a texture file and a .fnt file. Both can be cre
 2.  Click or push+drag to select the letters that you'd like included in your exported font. Selected letters will highlight.\
 
 
-    <figure><img src="../../../../media/migrated_media-SelectedLettersInBFG.PNG" alt=""><figcaption><p>Select the desired characters</p></figcaption></figure>
+    <figure><img src="../../../../media/migrated_media-SelectedLettersInBFG.PNG" alt=""><figcaption><p>Select the desired characters. This screenshot shows 0-9, A-Z, and a-z selected.</p></figcaption></figure>
 3. Click Options->Font Settings
    1. Select the font that you'd like to use in the "Font" drop down. All fonts installed on your machine will appear here.
    2. Enter the font size that you want next to "Size (px)": The larger this is, the larger each letter will be in your game. If you are using PhotoShop, you can test font sizes there (see next item)
