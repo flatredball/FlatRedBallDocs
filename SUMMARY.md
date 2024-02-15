@@ -218,6 +218,7 @@
     * [Effect (.fx, .fxb)](glue-reference/files/effect-.fx.md)
     * [File Build Tool](glue-reference/files/file-build-tool.md)
     * [Folders](glue-reference/files/glue-reference-folders.md)
+    * [Font (.fnt)](glue-reference/files/font-.fnt.md)
     * [Global Content Files](glue-reference/files/glue-reference-globalcontent.md)
     * [IsDatabaseForLocalizing](glue-reference/files/glue-reference-isdatabaseforlocalizing.md)
     * [IsManuallyUpdated](glue-reference/files/glue-reference-ismanuallyupdated.md)

@@ -98,11 +98,11 @@ If we would like to modify the Background color in the Highlight (or any other) 
 
 1. We can go to the NineSlice standard object and modify the PrimaryLight state. Be careful, making modifications here is concpetually similar to making modifications to a style sheet which is used across an entire project. If you would like to change this value globally, feel free to do so, but realize that making changes to the NineSlice styles can modify many components in your project.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>PrimaryLight definition in NineSlice</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>PrimaryLight definition in NineSlice</p></figcaption></figure>
 
 2. Change the state value that is being used on the background. Although this is not recommended, you can change the background to use a different ColorCategoryState, such as changing the value to Success. This is not recommended because the ColorCategoryState states are named to indicate where they should be used throughout your project, and switching to different ColorCategoryStates may result in confusing the user by using the same color for different behaviors and states.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Background using a different ColorCategoryState on Highlighted</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Background using a different ColorCategoryState on Highlighted</p></figcaption></figure>
 
 3. Add a new state to NineSlice for your specific case. This is useful if you have a case that isn't handled by the existing NineSlice category states.
 

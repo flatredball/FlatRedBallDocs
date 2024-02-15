@@ -18,12 +18,12 @@ Bitmap Fonts require two files - a texture file and a .fnt file. Both can be cre
     <figure><img src="../../../../media/migrated_media-SelectedLettersInBFG.PNG" alt=""><figcaption><p>Select the desired characters. This screenshot shows 0-9, A-Z, and a-z selected.</p></figcaption></figure>
 3. Click Options->Font Settings
    1. Select the font that you'd like to use in the "Font" drop down. All fonts installed on your machine will appear here.
-   2. Enter the font size that you want next to "Size (px)": The larger this is, the larger each letter will be in your game. If you are using PhotoShop, you can test font sizes there (see next item)
+   2. Enter the font size that you want next to "Size (px)": The larger this is, the larger each letter will be in your game. If you are using Photoshop, you can test font sizes there (see next item)
    3. Check the "Match char height" option. This will make the resulting font match sizes in Photoshop
    4. Press Ok. The font display will update to the newly-selected font.
 4. Select Options->Export Options.
    1. Select a Bit depth of 32 (or else transparencies won't come through).
-   2. Select the texture width and height.
+   2. Select the texture width and height. Ideally you should select a texture size large enough to fit all characters, but small enough to minimize empty space. This may require some trial and error.
    3. Change the "Textures:" option to "png - Portable Network Graphics"
    4. Press Ok.
 5. Select Options->Visualize. If you see "No Output!" then you need to select characters to export. See the above step for more information.
@@ -31,9 +31,9 @@ Bitmap Fonts require two files - a texture file and a .fnt file. Both can be cre
 7. Click Options->Save bitmap font as... to save your .fnt and .png files.
 8. Copy the files to their appropriate locations for your application.
 
-### Using a BitmapFont in Glue
+### Using a BitmapFont in the FRB Editor
 
-For information on how to use BitmapFonts in Glue, see [this page](../../../../frb/docs/index.php).
+For information on how to use BitmapFonts in the FRB Editor, see the [Font (.fnt) page](../../../../glue-reference/files/font-.fnt.md).
 
 ### Adding custom letters to a .fnt file
 
