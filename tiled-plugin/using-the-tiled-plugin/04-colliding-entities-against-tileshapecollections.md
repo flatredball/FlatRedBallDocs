@@ -13,7 +13,7 @@ We'll be looking at both types.
 
 For this guide, we'll create an entity to test our collision code. This entity will need to be collidable (implements ICollidable) and needs logic for movement in response to input. To create a new entity:
 
-1. In Glue, select the Quick Actions tab
+1. In FRB, select the Quick Actions tab
 2.  Select **Add Entity**
 
     ![](../../media/2021-02-img\_603160c08e65a.png)
@@ -22,7 +22,7 @@ For this guide, we'll create an entity to test our collision code. This entity w
 5. Verify that **ICollidable** is checked - this should happen automatically when **Circle** is checked
 6. Click **OK**
 
-![](../../media/2021-02-img\_60316693e8c55.png)
+![Creating a Player Entity](<../../.gitbook/assets/16\_09 44 17.png>)
 
 Notice the **Include lists in all base level screens** check box. We will leave this checked so that we have a list of players in our game screen. This is a good idea, even if your game will be single player. The new entity should appear in the Entities folder in the FRB editor.
 
@@ -42,7 +42,7 @@ To make the entity move in response to keyboard input:
     ***
 3.  Modify the **CustomActivity** method as shown in the following code snippet:
 
-    ```lang:c#
+    ```csharp
     // You may need the following using statement at the top of the file:
     // using Microsoft.Xna.Framework.Input;
 
@@ -88,7 +88,7 @@ Our entity is ready to go - we just need to add it to GameScreen. Note that we'r
 
 <figure><img src="../../media/2016-08-2021_February_20_135021.gif" alt=""><figcaption></figcaption></figure>
 
-The Player will now appear on the game screen in the PlayerList and can move with the arrow keys.
+The Player now appears on in game screen in the PlayerList and can move with the arrow keys.
 
 <figure><img src="../../media/2016-08-2021_February_20_131426.gif" alt=""><figcaption></figcaption></figure>
 
@@ -101,7 +101,7 @@ We can change the starting position of the player by changing the Player1 X and 
 
 ![](../../media/2021-02-img\_603171273de31.png)
 
-Now the player will appear near the center of the level.
+Now the player appears near the center of the level.
 
 ![](../../media/2021-02-img\_6031714ab082d.png)
 
