@@ -11,76 +11,32 @@ We'll be looking at both types.
 
 ### Creating an Entity
 
-For this guide, we'll create an entity to test our collision code. This entity will need to be collidable (implements ICollidable) and needs logic for movement in response to input. To create a new entity:
+For this guide, we'll create an entity called Player to test our collision code. This entity needs to be collidable (implements ICollidable) and needs logic for movement in response to input.&#x20;
+
+Normally top-down and platformer games in FRB use a Player entity as the character. This is a convention which should be followed in your games to make it easier to follow documentation and to integrate with future FRB improvements.
+
+
+
+To create a new entity:
 
 1. In FRB, select the Quick Actions tab
-2.  Select **Add Entity**
+2.  Select **Add Entity**\
 
-    ![](../../media/2021-02-img\_603160c08e65a.png)
+
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Add Entity button in Quick Actions</p></figcaption></figure>
 3. Enter the name **Player**
 4. Check the **Circle** checkbox to give the entity a circle collision object
 5. Verify that **ICollidable** is checked - this should happen automatically when **Circle** is checked
-6. Click **OK**
+6. Check the Top-Down option under Input Movement Type to automatically give the Player movement logic
+7. Click **OK**
 
-![Creating a Player Entity](<../../.gitbook/assets/16\_09 44 17.png>)
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Creating a Player Entity</p></figcaption></figure>
 
 Notice the **Include lists in all base level screens** check box. We will leave this checked so that we have a list of players in our game screen. This is a good idea, even if your game will be single player. The new entity should appear in the Entities folder in the FRB editor.
 
-![](../../media/2018-04-img\_5adb4ebc01113.png)
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Player Entity in FRB</p></figcaption></figure>
 
 Since the Player entity has its ImplementsICollidable set to true, any shape (Circle, Polygon, AxisAlignedRectangle) in the entity will be used in collision functions.
-
-#### Adding Entity Movement
-
-To make the entity move in response to keyboard input:
-
-1. Open the project in Visual Studio
-2.  Open **Player.cs**
-
-    ![](../../media/2021-02-img\_6031701d1758d.png)
-
-    ***
-3.  Modify the **CustomActivity** method as shown in the following code snippet:
-
-    ```csharp
-    // You may need the following using statement at the top of the file:
-    // using Microsoft.Xna.Framework.Input;
-
-    private void CustomActivity()
-    {
-        var keyboard = InputManager.Keyboard;
-        // Normally this would be an FRB editor variable,
-        // but we set it up here to move the tutorial
-        // along.
-        const float speed = 150;
-
-        if(keyboard.KeyDown(Keys.Up))
-        {
-            YVelocity = speed;
-        }
-        else if(keyboard.KeyDown(Keys.Down))
-        {
-            YVelocity = -speed;
-        }
-        else
-        {
-            YVelocity = 0;
-        }
-
-        if (keyboard.KeyDown(Keys.Right))
-        {
-            XVelocity = speed;
-        }
-        else if (keyboard.KeyDown(Keys.Left))
-        {
-            XVelocity = -speed;
-        }
-        else
-        {
-            XVelocity = 0;
-        }
-    }
-    ```
 
 ### Adding Player to GameScreen
 
