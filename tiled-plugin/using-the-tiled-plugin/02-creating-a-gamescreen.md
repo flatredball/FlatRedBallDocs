@@ -12,11 +12,11 @@ The New Project Wizard automatically creates a GameScreen and two Levels if you 
 
 First we'll create a screen called GameScreen. Many FlatRedBall projects contain a GameScreen which typically contains the _main gameplay_ - as opposed to menus to set up the game. The GameScreen also contains any common objects such as lists of entities and game logic. Note that if you have used the Platformer or Top-Down wizard options, you will already have a GameScreen. To add a GameScreen:
 
-1. In Glue, select the **Quick Actions** tab
+1. In the FRB Editor, select the **Quick Actions** tab
 2.  Click the **Add Screen/Level** button
 
     ![](../../media/2021-02-img\_603139d62debc.png)
-3. Notice that Glue suggests creating a **GameScreen**. We recommend always having one screen called GameScreen, so this default helps you set your project up quickly.
+3. Notice that FRB suggests creating a **GameScreen**. We recommend always having one screen called GameScreen, so this default helps you set your project up quickly.
 4. Click the option to **Add Map LayeredTileMap.** This sets up a base object for your map which will be used in all levels.
 5. Click the option to **Add SolidCollision ShapeCollection**. Most games need solid collision so this will set up your game for that.
 6.  Leave all other defaults and click **OK**
@@ -77,7 +77,7 @@ Next we'll create our first level. Levels are regular screens which inherit from
 
     ![](../../media/2021-02-img\_60313f4f9cca9.png)
 
-Once you click the OK button, Glue will ask you about details for the new map.
+Once you click the OK button, FRB asks you about details for the new map.
 
 1. Verify the name is **Level1Map**. The standard naming is to append the word **Map** to the name of the Screen containing the new TMX file
 2. Leave the other options default (checked). These options will make it easier to create functional tile maps.
@@ -88,6 +88,12 @@ Once you click the OK button, Glue will ask you about details for the new map.
 You should now have a Level1Map file in your Level1 screen.
 
 ![](../../media/2021-02-img\_6031408a58a00.png)
+
+FRB should automatically update your Map object in Level1 so that it uses your newly-added TMX file. You can verify this by selecting the Map object and looking at its properties tab.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Level1 Map object using the Level1Map.tmx file</p></figcaption></figure>
+
+If your values do not match the values shown in the image above, you can manually change them.
 
 ### Alternative - Creating TMX in Tiled
 
@@ -189,7 +195,11 @@ Now the game will be focused on the map.
 
 ### Optional - Adding a Tileset
 
-Tilesets define the appearance of a collection of tiles along with properties which can be specified per-tile to provide functionality in your game (such as collision). We recommend that games have a dedicated tileset for gameplay functionality such as collision. We used the TiledIcons tileset for this earlier. This section will show you how to add a second tileset for visuals. We will use the following image which you can download: [![dungeonTileSet](../../media/2016-08-dungeonTileSet.png)](../../media/2016-08-dungeonTileSet.png) Files which are used by TMX levels should either be saved in the content folder of one of the level screens or in the content folder in the GameScreen. For this tutorial we'll save the file in the GameScreen folder, since the file will be used by multiple levels. First we'll open the content folder for GameScreen:
+Tilesets define the appearance of a collection of tiles along with properties which can be specified per-tile to provide functionality in your game (such as collision). We recommend that games have a dedicated tileset for gameplay functionality such as collision. We used the TiledIcons tileset for this earlier. This section will show you how to add a second tileset for visuals. We will use the following image which you can download:&#x20;
+
+[![dungeonTileSet](../../media/2016-08-dungeonTileSet.png)](../../media/2016-08-dungeonTileSet.png)&#x20;
+
+Files which are used by TMX levels should either be saved in the content folder of one of the level screens or in the content folder in the GameScreen. For this tutorial we'll save the file in the GameScreen folder, since the file will be used by multiple levels. First we'll open the content folder for GameScreen:
 
 1. Expand **GameScreen** in the FRB editor
 2. Right-click on the **Files** folder under GameScreen
