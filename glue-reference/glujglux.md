@@ -556,7 +556,7 @@ The reason for this change is to avoid confusion with the C# "Type" class in doc
 
 ❗ Since the name of the class changes, this upgrade may require you to make manual changes if you have been using the Type class. The following list outlines the changes required. If you have not been using the "Type" classes, then no changes are needed.
 
-1. Change all partials from "Type" to "Varint" to match the newly-generated class.
+1. Change all partials from "Type" to "Variant" to match the newly-generated class.
 2. Change usage of any "Type" in your custom code to "variant"
 3. Change any instances which may reference "Type" variables to the new type
 
