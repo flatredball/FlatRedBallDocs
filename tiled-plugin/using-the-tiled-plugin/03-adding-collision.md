@@ -53,9 +53,9 @@ The first step is to decide which tile you would like to use for your collision.
 
     ![](../../media/2021-02-img\_60315871cbd77.png)
 4. Select a Tile that you would like to use for collision
-5.  Enter a Type for that tile.
+5.  Enter a Class for that tile.
 
-    ![](../../media/2021-02-img\_603159b33ab60.png)
+    ![](<../../.gitbook/assets/15\_21 03 45.png>)
 6. Don't forget to save your tileset file
 
 Now that the type has been set and the tileset has been saved, you can place the tile in your level. Make sure to place it on the GameplayLayer in case your game has multiple layers.

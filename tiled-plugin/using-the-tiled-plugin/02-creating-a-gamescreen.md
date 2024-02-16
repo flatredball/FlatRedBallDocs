@@ -46,13 +46,13 @@ Above we automatically created the SolidCollision object through a check box. If
 
 Now the SolidCollision should appear in the GameScreen. Next we need to modify the TileShapeCollection to properly use the SolidCollision tile.
 
-1. Select **SolidCollision** in Glue under **GameScreen**
+1. Select **SolidCollision** under **GameScreen**
 2. Select the **TileShapeCollection Properties** tab
-3. Select the **From Type** option under **Creation Options**
+3. Select the **From Tile Class** option under **Creation Options**
 4. Select the **Map** under **Source TMX File/Object**
-5.  Enter or select **SolidCollision** under **Type**
+5.  Enter or select **SolidCollision** under **Tile Class:**
 
-    ![](../../media/2021-02-img\_60327b3d6d252.png)
+    ![](<../../.gitbook/assets/15\_20 57 41.png>)
 
 Finally we need to set the property as Set By Derived so that level screens can modify this:
 
