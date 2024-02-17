@@ -88,6 +88,12 @@ Use built-in interpolation systems to move, resize, rotate, and color objects ov
 
 <figure><img src=".gitbook/assets/17_14 19 56.gif" alt=""><figcaption><p>Sprites scaling up using "elastic" interpolation</p></figcaption></figure>
 
+### Physics
+
+Physics engine handles collision between circles, rectangles, polygons, and lines.
+
+<figure><img src=".gitbook/assets/17_16 53 43.gif" alt=""><figcaption><p>Circles colliding against rectangles, polygons, and other circles</p></figcaption></figure>
+
 ### Collision Relationships
 
 Define collision relationships in UI or code to add physics, damage dealing, and custom events.
