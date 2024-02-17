@@ -48,6 +48,12 @@ The flexible damage system simplifies and standardizes dealing damage and reacti
 
 <figure><img src=".gitbook/assets/12_21 51 58.gif" alt=""><figcaption><p>FRB Damage system simplifies combat code</p></figcaption></figure>
 
+### Pathfinding
+
+Create node networks from Tiled maps or in code to navigate maps.
+
+<figure><img src=".gitbook/assets/17_13 59 35.gif" alt=""><figcaption><p>Enemies navigating a map and chansing the player with their path visualization enabled</p></figcaption></figure>
+
 ### AnimationEditor Integration
 
 Use the AnimationEditor to define animations for your characters using individual files or sprite sheets. Preview animations, adjust timing, and add shapes for collision or defining key positions.
@@ -75,6 +81,12 @@ Use all features in the Spine tool including defining skeletons, animations, and
 Spine files can be dropped in to your project and loaded with no code. Play animations at runtime in response to input or game events.
 
 <figure><img src=".gitbook/assets/nardiak-spawn-death-loop.gif" alt=""><figcaption><p>Animated character using Spine</p></figcaption></figure>
+
+### Tweening (Interpolation)
+
+Use built-in interpolation systems to move, resize, rotate, and color objects over time.
+
+<figure><img src=".gitbook/assets/17_14 19 56.gif" alt=""><figcaption><p>Sprites scaling up using "elastic" interpolation</p></figcaption></figure>
 
 ### Collision Relationships
 
