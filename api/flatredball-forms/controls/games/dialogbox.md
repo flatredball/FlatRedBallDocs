@@ -51,6 +51,35 @@ dialogBox.Show(pages);
 
 <figure><img src="../../../../.gitbook/assets/28_17_53_02.gif" alt=""><figcaption><p>Multiple pages of text from a string[]</p></figcaption></figure>
 
+### Automatic Paging
+
+DialogBox can display multiple pages through the Show and ShowAsync methods. Each string is treated as an entire page if it fits. A single string will be be broken up into multiple pages if it is too large.
+
+The following code results in multiple pages automatically being set.
+
+```csharp
+string textToDisplay = string.Empty;
+for(int i = 0; i < 20; i++)
+{
+    textToDisplay += $"This is sentence number {i+1}. ";
+}
+
+dialog.ShowAsync(textToDisplay);
+```
+
+<figure><img src="../../../../.gitbook/assets/19_14 23 03.gif" alt=""><figcaption><p>DialogBox automatic paging for long text</p></figcaption></figure>
+
+Automatic paging only applies if the number of lines is limited on the backing Text object. The default implementation of the DialogBox should automatically limit the number of lines.
+
+The default implementation's Text property has the following relevant properties:
+
+* HeightUnits of RelativeToContainer - the height unit depends on the container, so the height does not increase as more lines of Text are added.\
+  ![](../../../../.gitbook/assets/image.png)
+* Text Overflow Vertical Mode of Truncate Line - this prevents text from spilling over the bounds.\
+  ![](<../../../../.gitbook/assets/image (1).png>)
+
+Note that if the Text property can extend indefinitely - either by allowing it through a Text Overflow Vertical Mode of **Spill** or by having a Height Units of **Relative to Children**.
+
 ### ShowAsync for async Programming
 
 The ShowAsync method returns a task which can be used to await for all pages to be shown and for the final page to be dismissed. A common usage of ShowAsync is in a scripted sequence. For example, a scripted sequence may combine dialog and player movement. Since the player can choose when to advance text, the amount of time that a DialogBox is displayed must be awaited. The following shows how code might be used to implement a scripted sequence which combines dialog being displayed and player movement.
@@ -84,7 +113,7 @@ private async void ShowMultiplePages()
 
 This approach is useful if your DialogBox implementation has additional properties for each page of dialog. For example, a DialogBox can be modified in Gum to have a Text instance displaying the name of the person speaking.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>DialogBox with SpeakerTextInstance in Gum</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>DialogBox with SpeakerTextInstance in Gum</p></figcaption></figure>
 
 Since the Show method exists on the standard DialogBox, it does not have a way to specify the speaker. We can access the visual on the DialogBox to modify the SpeakerTextInstance directly through the Visual property.
 
@@ -110,6 +139,23 @@ await dialogBox.ShowAsync("Well...it might be best to follow the river.");
 <figure><img src="../../../../.gitbook/assets/17_05 57 03.gif" alt=""><figcaption><p>Dialog box with speaker</p></figcaption></figure>
 
 Note that to access the SpeakerTextInstance, the Visual must be used, which is a reference to the Gum object. The `dialogBox` is an instance of the standard `DialogBox` forms object, so it ony provides methods and properties common to every `DialogBox`. For more information about Forms vs Gum objects, see the [Forms vs Gum](../../../../tutorials/flatredball-forms/getting-started/forms-and-gum-objects.md) in Code Tutorial.
+
+### Styling
+
+DialogBox text fully support styling, including pages. The following code results in styled text.
+
+```csharp
+string textToDisplay = 
+    "Now that I've found the [Color=Yellow]ring[/Color], " +
+    "I can return it back to the [Color=Green]king[/Color]. " +
+    "I should hurry before [Color=Purple]nightfall[/Color].";
+
+dialog.ShowAsync(textToDisplay);
+```
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Styled text in a dialog box</p></figcaption></figure>
+
+More information on styled text can be found in the Gum documentation: [https://docs.flatredball.com/gum/gum-elements/text/text#using-bbcode-for-inline-styling](https://docs.flatredball.com/gum/gum-elements/text/text#using-bbcode-for-inline-styling)
 
 ### DialogBox Input
 
