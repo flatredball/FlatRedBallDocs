@@ -52,7 +52,7 @@ The flexible damage system simplifies and standardizes dealing damage and reacti
 
 Create node networks from Tiled maps or in code to navigate maps.
 
-<figure><img src=".gitbook/assets/17_13 59 35.gif" alt=""><figcaption><p>Enemies navigating a map and chansing the player with their path visualization enabled</p></figcaption></figure>
+<figure><img src=".gitbook/assets/wee-pathing-redux.gif" alt=""><figcaption><p>Enemies navigating a map and chansing the player with their path visualization enabled</p></figcaption></figure>
 
 ### AnimationEditor Integration
 
