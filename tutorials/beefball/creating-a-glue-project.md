@@ -39,6 +39,8 @@ FlatRedBall projects automatically create a Visual Studio project too. To open t
 
 ![Screenshot of Glue showing the Beefball project loaded with the Open Project in Visual Studio button highlighted.](../../media/2016-01-2022-03-12-09\_15\_09-Beefball-Open-Project.png)
 
+FlatRedBall uses the windows default file association for your .sln file. If you would like to change this association, you can right-click on the .sln file in Windows Explorer to change the default file association.
+
 You can also open the project in visual studio by opening the .sln file. The project folder can be opened by clicking the folder icon in the task bar. This opens the location of the .csproj file, which is one folder below the .sln file. The following animation shows how to navigate to the solution:
 
 <figure><img src="../../media/2016-01-03_08-09-28.gif" alt=""><figcaption><p>Opening the Visual Studio project from disk</p></figcaption></figure>
