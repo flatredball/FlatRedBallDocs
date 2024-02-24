@@ -1,7 +1,7 @@
 # Table of contents
 
-* [🖥 Downloading FlatRedBall](README.md)
-* [🏗 Building FlatRedBall From Source](flatredball-source.md)
+* [🖥️ Downloading FlatRedBall](README.md)
+* [🏗️ Building FlatRedBall From Source](flatredball-source.md)
 * [❓ Need Help?](help.md)
 * [✨ FlatRedBall Features](flatredball-features.md)
 * [🎓 Tutorials](tutorials/README.md)
@@ -351,7 +351,7 @@
     * [SetByDerived](glue-reference/variables/glue-reference-setbyderived.md)
     * [Type](glue-reference/variables/glue-reference-type.md)
     * [Variable Order](glue-reference/variables/glue-reference-variable-order.md)
-* [🏃♀ Animation Editor](glue-gluevault-component-pages-animationeditor-plugin/README.md)
+* [🏃‍♀️ Animation Editor](glue-gluevault-component-pages-animationeditor-plugin/README.md)
   * [Frame Time](glue-gluevault-component-pages-animationeditor-plugin/frame-time.md)
   * [Animation Shapes and Collision](glue-gluevault-component-pages-animationeditor-plugin/animationeditor-collision.md)
 * [🟦 Tiled](tiled-plugin/README.md)

@@ -248,3 +248,12 @@ await dialogBox.ShowAsync("And a third page.");
 dialogBox.IsFocused = true;
 await dialogBox.ShowAsync("Finally a fourth page.");
 ```
+
+### Dismiss
+
+The dismiss method can be used to visually remove a DialogBox and raise events as if it has been advanced. The Dismiss method performs the following logic:
+
+* Makes the DialogBox invisible (sets IsVisible to false)
+* Raises the PageAdvanced and FinishedShowing events
+* Clears all pages so that the dialog box can be used "fresh"
+* Removes focus (sets IsFocused to false)
