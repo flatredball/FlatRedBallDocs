@@ -16,15 +16,13 @@ The ListBox control requires:
 * An object named **InnerPanelInstance** of any type (typically a Container)
 * An object named **ClipContainerInstance** of any type (typically a Container with **ClipsChildren** set to true)
 
-&#x20;
-
 <figure><img src="../../../media/2017-12-img_5a465ac0d252b.png" alt=""><figcaption></figcaption></figure>
 
 The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [http://flatredball.com/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/](../../../documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md)
 
 ### InnerPanelInstance and Children Layout
 
-The ListBox control typically handles the creation and positioning of ListBoxItem instances. The InnerPanelInstance in the list box Gum component will typically use a **Children Layout** value of **TopToBottomStack.**&#x20;
+The ListBox control typically handles the creation and positioning of ListBoxItem instances. The InnerPanelInstance in the list box Gum component will typically use a **Children Layout** value of **TopToBottomStack.**
 
 <figure><img src="../../../media/2017-12-img_5a46645375a35.png" alt=""><figcaption></figcaption></figure>
 
@@ -113,16 +111,12 @@ listBoxItem3.UpdateToObject("Tank A");
 listBox.Items.Add(listBoxItem3);
 ```
 
-&#x20;
-
 <figure><img src="../../../media/2017-12-img_5a31e49caa5d6.png" alt=""><figcaption></figcaption></figure>
 
 Icons in screenshot obtained from [http://game-icons.net/](http://game-icons.net/) . The same could be achieved by setting the ListBoxItemGumType before calling AddItem, as shown in the following code:
 
 ```csharp
-var listBox = TutorialScreenGum
-    .GetGraphicalUiElementByName("ListBoxInstance")
-    .FormsControlAsObject as ListBox;
+var listBox = Forms.ListBoxInstance;
 
 listBox.ListBoxItemGumType = typeof(GumRuntimes.AirplaneListItemRuntime);
 listBox.Items.Add("Airplane A");
@@ -146,7 +140,7 @@ By default each instance added to the ListBox's Items (either directly or throug
 
 If the class is a ViewModel that is custom-made for UI, then its ToString can be modified as shown in the following code:
 
-```
+```csharp
 public class SBWaveDefinitionViewModel : ViewModel
 {
     public string Name { get; set; }
@@ -199,9 +193,7 @@ The SelectionChanged event is raised whenever a selection changes due to a mouse
 ```csharp
 void CustomInitialize()
 {
-    var listBox = TutorialScreenGum
-                .GetGraphicalUiElementByName("ListBoxInstance")
-                .FormsControlAsObject as ListBox;
+    var listBox = Forms.ListBoxInstance;
 
     // Adding items omitted from example
 
@@ -228,9 +220,7 @@ The event handling the selection changing can also use the SelectedItem property
 ```csharp
 void CustomInitialize()
 {
-    var listBox = TutorialScreenGum
-                .GetGraphicalUiElementByName("ListBoxInstance")
-                .FormsControlAsObject as ListBox;
+    var listBox = Forms.ListBoxInstance;
 
     // Adding items omitted from example
 
