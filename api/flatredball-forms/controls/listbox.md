@@ -39,9 +39,7 @@ Items represents the data that the ListBox is managing. Items can either contain
 Any object type can be added to a ListBox. The following code shows how to add strings to the Items property, resulting in the list box displaying a single entry for each item.
 
 ```csharp
-var listBox = TutorialScreenGum
-    .GetGraphicalUiElementByName("ListBoxInstance")
-    .FormsControlAsObject as ListBox;
+var listBox = Forms.ListBoxInstance;
 
 // Optional - you can specify a ListBoxItemGumType if you do not want to use
 // the default list box item type.
@@ -62,10 +60,7 @@ By default Glue will generate code for a default ListBoxItemGumType, so the line
 ListBoxItem instances can be manually instantiated and added to a list box, as opposed to relying on the default or explicitly specified ListBoxItemGumType. The following code shows how to manually create and add ListBoxItems. Note that the same Items list is used when adding ListBoxItem instances.
 
 ```csharp
-var listBox = TutorialScreenGum
-    .GetGraphicalUiElementByName("ListBoxInstance")
-    .FormsControlAsObject as ListBox;
-
+var listBox = Forms.ListBoxInstance;
 
 // Note that we could also shorthand this
 // to not explicitly create a visual object:
@@ -93,10 +88,7 @@ listBox.Items.Add(listBoxItem3);
 A single ListBox can contain multiple types of ListBoxItems. Multiple types can be used by explicitly instantiating ListBoxItems using different Gum runtime types, or by setting the ListBoxItem property multiple times. The following code shows how to instantiate ListBoxItems using different Gum runtimes:
 
 ```csharp
-var listBox = TutorialScreenGum
-    .GetGraphicalUiElementByName("ListBoxInstance")
-    .FormsControlAsObject as ListBox;
-
+var listBox = Forms.ListBoxInstance;
 
 var listBoxItem = new GumRuntimes.AirplaneListItemRuntime().FormsControl;
 listBoxItem.UpdateToObject("Airplane A");
