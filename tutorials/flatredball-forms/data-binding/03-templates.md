@@ -42,7 +42,7 @@ To use the CustomListBoxItem, first you will need a screen which contains a List
 
 Once this ListBox is added, the following code can be used to populate the ListBoxInstance, including using the new CustomListBoxItem as the template:
 
-```
+```csharp
 void CustomInitialize()
 {
     var listBox = Forms.ListBoxInstance;
