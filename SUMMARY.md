@@ -68,7 +68,7 @@
   * [FlatRedBall.Forms](tutorials/flatredball-forms/README.md)
     * [Getting Started with FlatRedBall.Forms](tutorials/flatredball-forms/getting-started/README.md)
       * [Setup](tutorials/flatredball-forms/getting-started/01-setup.md)
-      * [Creating a Button](tutorials/flatredball-forms/getting-started/02-creating-a-button.md)
+      * [Working with Common Controls](tutorials/flatredball-forms/getting-started/02-creating-a-button.md)
       * [Forms vs Gum in Code](tutorials/flatredball-forms/getting-started/forms-and-gum-objects.md)
     * [Forms and Xbox360GamePad](tutorials/flatredball-forms/forms-and-xbox360gamepad.md)
     * [Data Binding (BindingContext)](tutorials/flatredball-forms/data-binding/README.md)
