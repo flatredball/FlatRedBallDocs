@@ -104,7 +104,44 @@ For example, we can set the enemy to only deal damage one time every second, as 
 
 Now, the enemy only deals damage one time every second. We can see this is the case because the player survives much longer (about 10 seconds) when overlapping the enemy.
 
+### Dealing Damage to the Enemy
 
+Now that our Player can take damage, we can deal damage to enemies using a similar approach. At a high level the approach is:
 
+1. Create a collision relationship for the Player vs Enemy, setting Subcollision to the Player's MeleeCollision
+2. Remove the default (code generated) damage dealing logic on the collision relationship
+3. Add an event
+4. Implement damage dealing in the event.
 
+To create another collision relationship for player vs enemy:
+
+1. Drag + drop PlayerList onto Enemy list in GameScreen again.&#x20;
+2. Set the Player's Subcollision to MeleeCollision  so only the MeleeCollision is considered
+3. Uncheck the damage dealing check box
+4. Click the **Add Event** button
+
+<figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption><p>PlayerMeleeCollisionVsEnemy relationship</p></figcaption></figure>
+
+Now we can modify the damage dealing code in GameScreen.Event.cs:
+
+```csharp
+void OnPlayerMeleeCollisionVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
+{
+    if(enemy.ShouldTakeDamage(player))
+    {
+        enemy.TakeDamage(player);
+
+        if(enemy.CurrentHealth <= 0)
+        {
+            enemy.Destroy();
+        }
+    }
+}
+```
+
+Notice this code is similar to the collision code used to deal damage to the Player. You may also want to set the Player's SecondsBetweenDamage to some non-zero value so the Enemy doesn't take damage every frame.
+
+<figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption><p>Set Player's SecondsBetweenDamage to 1</p></figcaption></figure>
+
+Now we  deal damage to enemies when they collide with the Player's MeleeCollision. Notice that the damage between seconds means the enemy dies in approximately 10 seconds.
 
