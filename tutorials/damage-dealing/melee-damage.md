@@ -90,19 +90,22 @@ Now the player takes damage when colliding with the enemy.
 
 Note that the player dies very quickly after touching the enemy. This happens because the player takes damage every frame (10 damage), so after about 10 frames (1/6th of a second) the player's health reaches 0.
 
-This is typically not desirable in games, so the following can be used to solve this problem:
+This is typically not desirable in games, so we can use damage dealing frequency and invulnerability to solve this problem. Specifically, we have two variables which can be used to solve this problem:
 
-1. Modify the Enemy's SecondsBetweenDamage so the player doesn't take damage every frame
-2. Implement knockback, pushing the player away from the enemy on collision
-3. Implementing solid collision, resulting in the two entities separating
+* Enemy SecondsBetweenDamage (how frequently the damage is dealt to the player)
+* Player InvulnerabilityTimeAfterDamage (how frequently the player can receive damage)
 
-It's important to note that even with knockback or solid collision, the player can get in a situation where damage is dealt very frequently. For example, the player can be sandwiched between two enemies, or between an enemy and solid collision. In these cases it's best to implement SecondsBetweenDamage.
+While these two may seem similar at first, which you use can have an impact on your game. Most older games (such as Super Mario World, Zelda: Link to the Past, Mega Man X, and Super Metroid) implemented invulnerability after being dealt damage. This means that if the player took damage from any damage source, the player would remain invulnerable for a period of time after the damage was dealt. This approach can give the player a moment to recover after taking damage, and can avoid situations where the player is "sandwiched" between multiple damage sources, resulting in health draining rapidly.
 
-For example, we can set the enemy to only deal damage one time every second, as shown in the following image:
+By contrast, some games (such as Mega Man X) do not have invulnerability time on regular (non-boss) enemies, allowing players to mash very quickly to deal large amounts of damage. Keep in mind that invulnerability periods also prevent the use of the damage system for gradual damage, such as poison which deals damage every frame.
 
-<figure><img src="../../.gitbook/assets/01_08 45 26.png" alt=""><figcaption><p>Setting SecondsBetweenDamage to 1 to prevent constant damage</p></figcaption></figure>
+For this tutorial we will implement invulnerability time for the Player and Enemy, but your game may ultimately require mixing these approaches. More complicated games may also implement their own damage suppression techniques without using the built-in invulnerability and attack frequency values.
 
-Now, the enemy only deals damage one time every second. We can see this is the case because the player survives much longer (about 10 seconds) when overlapping the enemy.
+To add invulnerability time to the player, select the Player and change the **Invulnerability Time After Damage** variable.
+
+<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Setting the Player's Invulnerability Time After Damage to 1 second</p></figcaption></figure>
+
+Now, the player can only receive damage one time every second. We can see this is the case because the player survives much longer (about 10 seconds) when overlapping the enemy.
 
 ### Dealing Damage to the Enemy
 
@@ -139,9 +142,85 @@ void OnPlayerMeleeCollisionVsEnemyCollided (Entities.Player player, Entities.Ene
 }
 ```
 
-Notice this code is similar to the collision code used to deal damage to the Player. You may also want to set the Player's SecondsBetweenDamage to some non-zero value so the Enemy doesn't take damage every frame.
+Notice this code is similar to the collision code used to deal damage to the Player.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption><p>Set Player's SecondsBetweenDamage to 1</p></figcaption></figure>
+You may also want to set the Enemy's Invulnerability Time After Damage to some non-zero value. Keep in mind that doing so will affect the invulnerability time of the enemy from all damage. If you worked through this tutorial by continuing work from previous tutorials, then this code will change the behavior of how enemies take damage.&#x20;
 
-Now we  deal damage to enemies when they collide with the Player's MeleeCollision. Notice that the damage between seconds means the enemy dies in approximately 10 seconds.
+<figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption><p>Setting Enemy Invulnerability Time After Damage</p></figcaption></figure>
 
+Notice that the invulnerability time is lower for enemies than for players. You can tune this value to get the right feel for your game.
+
+### Implementing Player Attacks
+
+As implemented now, the player's melee collision deals damage continually to enemies so long as it continues to collide with the enemy when the enemy's invulnerability time expires. Most games with melee attacks require a button to be pushed to perform the attack. When the button is pushed, the attack is only active for a set amount of time, then the attack goes into cooldown.
+
+We can implement this in code by keeping track of when attacks last occurred. Although this has no impact on collision, we can also change the visibility of the weapon. First we will define some variables in code in Player.cs:
+
+```csharp
+public partial class Player
+{
+    // Give this some large negative value so logic
+    // doesn't consider attacks to happen right when 
+    // the entity is created
+    double LastTimeAttackStarted = -999;
+
+    // How long the attack can deal damage
+    double AttackDamageDuration = .5;
+
+    // How long the player must wait before attacking again after the attack ends
+    double AttackCooldown = 1; 
+    
+    public bool IsAttackActive =>
+        TimeManager.SecondsSince(LastTimeAttackStarted) < AttackDamageDuration;
+    
+    ...
+```
+
+Note that the variables `AttackDamageDuration` and `AttackCooldown` are defined in code. In a full game these variables should be defined in the FRB Editor, but we are defining them in code for the sake of brevity.
+
+Next we can perform attacks and modify the visibility of the melee shape in CustomActivity by adding the following code:
+
+```csharp
+private void CustomActivity()
+{
+    /// You may still have code here for shooting bullets
+    /// ...
+
+    if(InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.LeftShift))
+    {
+        LastTimeAttackStarted = TimeManager.CurrentScreenTime;
+    }
+
+    MeleeCollision.Visible = IsAttackActive;
+}
+```
+
+<figure><img src="../../.gitbook/assets/01_21 44 34.gif" alt=""><figcaption><p>MeleeCollision visibility responding to attack input.</p></figcaption></figure>
+
+Keep in mind the visibility logic exists only for the sake of visualizing when damage can be dealt - we cannot use visibility to control whether collision occurs because invisible shapes collide just like visible shapes. However, we can use the `IsAttackActive` property in the collision event in GameScreen.Event.cs for dealing damage to the enemy, as shown in the following modified code:
+
+```csharp
+void OnPlayerVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
+{
+    // ShouldTakeDamage checks if
+    // * Enemy and Player are on different teams
+    // * The player should take damage according to
+    //   the last time the player has taken damage 
+    //   (for damage over time).
+    // NEW: We also check IsAttackActive
+    if(player.IsAttackActive && player.ShouldTakeDamage(enemy))
+    {
+        // Raises all events for damage dealing and ultimately
+        // modifies the player's health.
+        player.TakeDamage(enemy);
+
+        // Typically when an entity reaches 0 health, it should be destroyed
+        if(player.CurrentHealth <= 0)
+        {
+            player.Destroy();
+        }
+    }
+}
+```
+
+###
