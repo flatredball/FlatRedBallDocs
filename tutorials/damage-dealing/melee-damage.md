@@ -223,4 +223,28 @@ void OnPlayerVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
 }
 ```
 
-###
+### Alternative Approach - Using ModifyDamageDealt
+
+By using the IsAttackActive property in the OnPlayerVsEnemyCollided, we could suppress the dealing of damage unless the player is actively attacking. This approach is effetive in this simple case, but more complicated games may have multiple types of objects which can receive damage from a player. For example, the game may include destructible obstacles, or it may even support PvP. Therefore, we can use the ModifyDamageDealt event to prevent dealing damage against any type of object unless the attack is happening. We can do this by modifying the Player.cs file as shown in the following code:
+
+```csharp
+private void CustomInitialize()
+{
+    this.ModifyDamageDealt += HandleModifyDamageDealt;
+}
+
+private decimal HandleModifyDamageDealt(decimal unmodifiedDamage, IDamageable damageable)
+{
+    if(!IsAttackActive)
+    {
+        return 0;
+    }
+    else
+    {
+        return unmodifiedDamage;
+    }
+}
+
+```
+
+Note that this method can be used to modify damage in other scenarios. For example, you may have different attacks (strong vs weak), or multiple attacks in a combo. You are free to define variables in your Player file to support attacks of any complexity. You can then process these variables in ModifyDamageDealt to vary the damage dealt to enemies.
