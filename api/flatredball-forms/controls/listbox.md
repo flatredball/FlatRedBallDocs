@@ -32,7 +32,12 @@ Alternatively the InnerPanelInstance can use a **Children Layout** value of **Le
 
 ### Items
 
-Items represents the data that the ListBox is managing. Items can either contain regular types (such as strings, ints, or classes representing data in your game like data for a car in a racing game), or instances of ListBoxItems. Whenever an object is added to the Items collection the list box will automatically update its visuals to display the newly-added object. If the newly-added object is a regular type, then the ListBox will internally construct a new ListBoxItem. If the newly-added object is already a ListBoxItem, then the ListBox will display the ListboxItem as-is. This allows games to conveniently add non-ListBoxItems or to construct ListBoxItems for full control.
+Items represents the data that the ListBox is managing. Items can either contain regular types (such as strings, ints, or classes representing data in your game like data for a car in a racing game), or instances of ListBoxItems. Whenever an object is added to the Items collection the list box will automatically update its visuals to display the newly-added object. If the newly-added object is a regular type, then the ListBox will internally construct a new ListBoxItem.
+
+The most common types of items added to a ListBox are
+
+* Strings - these display in the ListBox. Usually strings are used in ListBoxes when first learning how to use ListBoxes, to diagnose problems related to displaying items in a ListBox, or to add debug information to a game
+* ViewModel - for final implementations, using ViewModels is recommended when populating ListBoxes.
 
 ### Items.Add with ListBoxItemGumType
 
@@ -40,10 +45,6 @@ Any object type can be added to a ListBox. The following code shows how to add s
 
 ```csharp
 var listBox = Forms.ListBoxInstance;
-
-// Optional - you can specify a ListBoxItemGumType if you do not want to use
-// the default list box item type.
-listBox.ListBoxItemGumType = typeof(GumRuntimes.ListBoxItemRuntime);
 
 listBox.Items.Add("Ford");
 listBox.Items.Add("Chevrolet");
@@ -53,102 +54,9 @@ listBox.Items.Add("Toyota");
 listBox.Items.Add("Mitsubishi");
 ```
 
-By default Glue will generate code for a default ListBoxItemGumType, so the line above is optional. If you would like the list box to have a custom ListBoxItem type, you can specify it as shown in the code above. If specified, the ListBoxItemGumType should be a Gum runtime type which has the ListBoxItem behavior.
+### Customizing ListBoxItems using VisualTemplate
 
-### Items.Add with Manual ListBoxItem Construction
-
-ListBoxItem instances can be manually instantiated and added to a list box, as opposed to relying on the default or explicitly specified ListBoxItemGumType. The following code shows how to manually create and add ListBoxItems. Note that the same Items list is used when adding ListBoxItem instances.
-
-```csharp
-var listBox = Forms.ListBoxInstance;
-
-// Note that we could also shorthand this
-// to not explicitly create a visual object:
-// var listBoxItem = new GumRuntimes.ListBoxItemRuntime().FormsControl;
-var visual1 = new GumRuntimes.ListBoxItemRuntime();
-var listBoxItem = visual1.FormsControl;
-listBoxItem.UpdateToObject("Leather Armor");
-// Notice that this code is adding the listBoItem, which is
-// a FlatRedBall.Forms.Control.ListBoxItem. It is not adding the gum runtime
-listBox.Items.Add(listBoxItem);
-
-var visual2 = new GumRuntimes.ListBoItemRuntime();
-var listBoxItem2 = visual2.FormsControl;
-listBoxItem2.UpdateToObject("Chain Mail");
-listBox.Items.Add(listBoxItem2);
-
-var visual3 = new GumRuntimes.ListBoxItemRuntime();
-var listBoxItem3 = visual3.FormsControl;
-listBoxItem3.UpdateToObject("Full Plate");
-listBox.Items.Add(listBoxItem3);
-```
-
-### Mixing ListBoxItem Types
-
-A single ListBox can contain multiple types of ListBoxItems. Multiple types can be used by explicitly instantiating ListBoxItems using different Gum runtime types, or by setting the ListBoxItem property multiple times. The following code shows how to instantiate ListBoxItems using different Gum runtimes:
-
-```csharp
-var listBox = Forms.ListBoxInstance;
-
-var listBoxItem = new GumRuntimes.AirplaneListItemRuntime().FormsControl;
-listBoxItem.UpdateToObject("Airplane A");
-listBox.Items.Add(listBoxItem);
-
-var listBoxItem2 = new GumRuntimes.AirplaneListItemRuntime().FormsControl;
-listBoxItem2.UpdateToObject("Airplane B");
-listBox.Items.Add(listBoxItem2);
-
-var listBoxItem3 = new GumRuntimes.TankListItemRuntime().FormsControl;
-listBoxItem3.UpdateToObject("Tank A");
-listBox.Items.Add(listBoxItem3);
-```
-
-<figure><img src="../../../media/2017-12-img_5a31e49caa5d6.png" alt=""><figcaption></figcaption></figure>
-
-Icons in screenshot obtained from [http://game-icons.net/](http://game-icons.net/) . The same could be achieved by setting the ListBoxItemGumType before calling AddItem, as shown in the following code:
-
-```csharp
-var listBox = Forms.ListBoxInstance;
-
-listBox.ListBoxItemGumType = typeof(GumRuntimes.AirplaneListItemRuntime);
-listBox.Items.Add("Airplane A");
-listBox.Items.Add("Airplane B");
-
-listBox.ListBoxItemGumType = typeof(GumRuntimes.TankListItemRuntime);
-listBox.Items.Add("Tank A");
-```
-
-Note that using ListBoxItemGumType does require less code, and may be sufficient for many scenarios requiring different ListBoxItem runtimes.
-
-### Customizing ListBoxItems
-
-The ListBox provides a number of ways to customize a ListBox.
-
-#### ViewModel ToString
-
-By default each instance added to the ListBox's Items (either directly or through binding) will have its ToString method called. If strings are added to Items, then the string's contents is displayed automatically. If a non-primitive type is added, then its ToString will (by default) display the type of the object which is usually not desirable.
-
-![](../../../media/2022-09-img\_63305ee979db7.png)
-
-If the class is a ViewModel that is custom-made for UI, then its ToString can be modified as shown in the following code:
-
-```csharp
-public class SBWaveDefinitionViewModel : ViewModel
-{
-    public string Name { get; set; }
-
-    public override string ToString()
-    {
-        return Name;
-    }
-}
-```
-
-![](../../../media/2022-09-img\_63305f68284f8.png)
-
-#### ListBoxItemFormsType
-
-The ListBox control also allows specifying the Forms control to create, which can customize behavior and display logic. For information on creating and using custom ListBoxItem types, see the [ListBoxItem](listboxitem.md) page.
+ListBoxItems can be customized using the VisualTemplate to customize how items in a ListBox are displayed. For more information on how to use Visual Template, see the [ListBox Templates](../../../tutorials/flatredball-forms/data-binding/03-templates.md) page.
 
 ### Selection
 
