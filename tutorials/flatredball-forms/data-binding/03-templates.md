@@ -105,13 +105,13 @@ public class InventoryItemViewModel : ViewModel
 
 For more information on the specific syntax of ViewModels (such as Get/Set and DependsOn), see the [BindingContext Property](01-bindingcontext.md) page.
 
-Each InventoryItemViewModel will correspond to an individual InventoryListBoxItemRuntime. We also need to create a ViewModel for the entire page. This ViewModel contains a list of InventoryItemViewModels in an ObservableCollection. Our ViewModel for the entire page should match the name of the page, so we will create a class called MainPageViewModel.
+Each InventoryItemViewModel will correspond to an individual InventoryListBoxItemRuntime. We also need to create a ViewModel for the entire screen. This ViewModel contains a list of InventoryItemViewModels in an ObservableCollection. Our ViewModel for the entire screen should match the name of the screen, so we will create a class called MainScreenViewModel.
 
 ```csharp
 // Even though we aren't using Get<> and Set (see below) yet, we should
 // still inherit from ViewModel so that we have access to these methods if
 // we need them as our game grows.
-public class MainPageViewModel : ViewModel
+public class MainScreenViewModel : ViewModel
 {
     // The Get<> and Set methods aren't used here because we do not intend to ever
     // change the ListBoxItems instance after it has been created. If we did, we would
@@ -121,14 +121,14 @@ public class MainPageViewModel : ViewModel
 }
 ```
 
-Finally we can modify our MainMenu.cs class to use the MainPageViewModel for its items, as shown in the following code:
+Finally we can modify our MainMenu.cs class to use the MainScreenViewModel for its items, as shown in the following code:
 
 ```csharp
 public partial class MainMenu
 {
     // Declare the ViewModel as a member variable so we can access it
     // in CustomActivity:
-    MainPageViewModel viewModel;
+    MainScreenViewModel viewModel;
 
     void CustomInitialize()
     {
@@ -138,7 +138,7 @@ public partial class MainMenu
             // types with the name "Runtime" appended.
             () => new InventoryListBoxItemRuntime());
 
-        viewModel = new MainPageViewModel();
+        viewModel = new MainScreenViewModel();
         viewModel.ListBoxItems.Add(new InventoryItemViewModel
         {
             InventoryName = "Iron Ore",
@@ -160,7 +160,7 @@ public partial class MainMenu
             InventoryCount = 1
         });
 
-        // Assign the entire page view model:
+        // Assign the entire screen view model:
         Forms.BindingContext = viewModel;
         // Bind the Items in the ListBox to the Items in the ViewModel:
         listBox.SetBinding(nameof(listBox.Items), nameof(viewModel.ListBoxItems));
@@ -216,10 +216,10 @@ Now if we run our application, each item displays the information from each Inve
 
 ### Modifying the Selected ViewModel
 
-Next we'll keep track of the selected item. We can do this by creating a new property on the MainPageViewModel which has&#x20;
+Next we'll keep track of the selected item. We can do this by creating a new property on the MainScreenViewModel which has&#x20;
 
 ```csharp
-public class MainPageViewModel : ViewModel
+public class MainScreenViewModel : ViewModel
 {
     // The Get<> and Set methods aren't used here because we do not intend to ever
     // change the ListBoxItems instance after it has been created. If we did, we would
@@ -247,7 +247,7 @@ void CustomInitialize()
         // types with the name "Runtime" appended.
         () => new InventoryListBoxItemRuntime());
 
-    viewModel = new MainPageViewModel();
+    viewModel = new MainScreenViewModel();
     viewModel.ListBoxItems.Add(new InventoryItemViewModel
     {
         InventoryName = "Iron Ore",
@@ -269,7 +269,7 @@ void CustomInitialize()
         InventoryCount = 1
     });
 
-    // Assign the entire page view model:
+    // Assign the entire screen view model:
     Forms.BindingContext = viewModel;
     // Bind the Items in the ListBox to the Items in the ViewModel:
     listBox.SetBinding(nameof(listBox.Items), nameof(viewModel.ListBoxItems));
