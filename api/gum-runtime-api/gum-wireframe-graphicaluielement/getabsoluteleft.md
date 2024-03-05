@@ -1,4 +1,4 @@
-# getabsoluteleft
+# GetAbsoluteLeft
 
 ### Introduction
 
@@ -8,7 +8,7 @@ GetAbsoluteLeft returns the left edge of the calling object in world coordinates
 
 The GetAbsolute functions provide information useful for performing collision between GraphicalUielements.
 
-```lang:c#
+```csharp
 // requires the following using statement for extension method access:
 using RenderingLibrary;
 
@@ -18,5 +18,3 @@ var collide = firstObject.GetAbsoluteRight() > secondObject.GetAbsoluteLeft() &&
     firstObject.GetAbsoluteBottom() > secondObject.GetAbsoluteTop() &&
     firstObject.GetAbsoluteTop() < secondObject.GetAbsoluteBottom();
 ```
-
-&#x20;   &#x20;
