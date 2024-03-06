@@ -37,8 +37,8 @@ To find your new project solution file (.sln), navigate up a folder from the loc
 
 If you would like to avoid using the FlatRedBall Editor completely, or if you are running on Linux or Mac, then you can directly download a project template .zip file. To do this:
 
-1. Go to [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/](../../content/FrbXnaTemplates/DailyBuild/ZippedTemplates.md)
-2. Select your target platform. For example, if developing for desktop select [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip](../../content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip)
+1. Go to [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/)
+2. Select your target platform. For example, if developing for desktop select [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip)
 3. Download and unzip the file to your machine
 4. Open the .sln in Visual Studio or Visual Studio Code (see below for Visual Studio Code instructions)
 
@@ -68,8 +68,7 @@ If you have an existing MonoGame project, you can add FlatRedBall with the follo
 
 1. Open your MonoGame project in Visual Studio
 2. Add FlatRedBall refernece to your projectx
-   1.  If targeting Desktop GL, you can add FlatRedBall through the FlatRedball NuGet package\
-
+   1.  If targeting Desktop GL, you can add FlatRedBall through the FlatRedball NuGet package\\
 
        <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>FlatRedBall DesktopGL NuGet Package</p></figcaption></figure>
    2. If targeting other platforms, you will need to manually add the FlatRedBall .dlls to your project:
