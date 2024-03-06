@@ -4,6 +4,8 @@
 
 If you're looking to get started without going through lengthy tutorials, this guide will get you running with the minimum number of steps.
 
+Note that this guide assumes you are using the FlatRedBall Editor. If you are creating a code-only project, see the [Code Only Projects](code-only-project-tutorial/) page.
+
 ### Downloading FlatRedBall
 
 First you will need to make sure you have the prerequisites. Once you do, you need to download FlatRedBall. For detailed steps, see the [Downloading FlatRedBall](../) page.
