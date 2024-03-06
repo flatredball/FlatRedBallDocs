@@ -10,7 +10,7 @@ Currently all development is being done on the NetStandard branch, so if you wou
 
 * [FlatRedBall on Github](https://github.com/vchelaru/FlatRedBall)
 
-If you plan on using FlatRedBall FNA, be sure that you include all submodules when pulling FlatRedBall. Thsi may automatically happen if you are using some github clients (such as github for desktop), but you may need to perform additional configuration if using a client that doesn't pull submodules by default (such as Rider).
+If you plan on using FlatRedBall FNA, be sure that you include all submodules when pulling FlatRedBall. This may automatically happen if you are using some github clients (such as github for desktop), but you may need to perform additional configuration if using a client that doesn't pull submodules by default (such as Rider).
 
 FlatRedBall uses Gum UI including at runtime. This is also open source and can be found on Githhub:
 
