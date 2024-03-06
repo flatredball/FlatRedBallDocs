@@ -4,36 +4,7 @@
 
 This tutorial will walk you through installing and creating an empty FlatRedBall project.
 
-### Downloading FlatRedBall
-
-Before you can begin to create your game, you may want to download the FlatRedBall Editor. Download and installation instructions can be found on our [Downloads Page](01-creating-a-flatredball-project.md#downloading-flatredball). Keep in mind that the download page focuses on Windows. If you are running on a Linux or Mac machine, then your installation steps will differ.
-
-We recommend using the FlatRedBall Editor, however, you can create FlatRedBall games without the FlatRedBall Editor. If you would like to skip using the FlatRedBall Editor, you can go do so by installing the .NET SDK (as shown below).
-
-### Creating a New Project Using the FlatRedBall Editor
-
-Once installed, you can create a new FlatRedBall project using the FlatRedBall Glue Editor. Don't worry, you only need to use the editor to create the project. Once the project has been created, you don't have to use it anymore. If you've downloaded and unzipped the FRBDK.zip file, then you should already have Glue on your machine. Unzip the file, open the XNA 4 Tools folder, and run GlueFormsCore.exe.
-
-<figure><img src="../../media/2020-06-img_5ed717015ee58.png" alt=""><figcaption></figcaption></figure>
-
-Once you the FlatRedBall editor, you can create a new project. To create a new Project:
-
-1.  Select **File**-> **New Project**
-
-    ![](../../media/2021-07-img\_60fca048b4f9f.png)
-2. Enter a name for the **Project Name.**
-3. Select your platform.
-4.  Uncheck **Open New Project Wizard**. This way the project will remain empty
-
-    ![](../../media/2021-10-img\_6163ab93aed48.png)
-
-After your project is created, you can open the project folder in the editor using the folder icon:
-
-![](../../media/2021-10-img\_616d84d75ed54.png)
-
-To find your new project solution file (.sln), navigate up a folder from the location opened by Glue. Alternatively you can navigate to the folder displayed in the new project window and open the .sln from the Windows Explorer. That's it; now you won't have to open the FRB editor anymore.
-
-### Alternative - Creating a New Project Without FlatRedBall Editor
+### Creating a New Project Without FlatRedBall Editor
 
 If you would like to avoid using the FlatRedBall Editor completely, or if you are running on Linux or Mac, then you can directly download a project template .zip file. To do this:
 
