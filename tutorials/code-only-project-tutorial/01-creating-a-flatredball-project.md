@@ -6,7 +6,7 @@ This tutorial will walk you through installing and creating an empty FlatRedBall
 
 ### Downloading FlatRedBall
 
-Before you can begin to create your game, you may want to download the FlatRedBall Editor. Download and installation instructions can be found on our [Downloads Page](../../download.md). Keep in mind that the download page focuses on Windows. If you are running on a Linux or Mac machine, then your installation steps will differ.
+Before you can begin to create your game, you may want to download the FlatRedBall Editor. Download and installation instructions can be found on our [Downloads Page](01-creating-a-flatredball-project.md#downloading-flatredball). Keep in mind that the download page focuses on Windows. If you are running on a Linux or Mac machine, then your installation steps will differ.
 
 We recommend using the FlatRedBall Editor, however, you can create FlatRedBall games without the FlatRedBall Editor. If you would like to skip using the FlatRedBall Editor, you can go do so by installing the .NET SDK (as shown below).
 
@@ -72,7 +72,7 @@ If you have an existing MonoGame project, you can add FlatRedBall with the follo
 
        <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>FlatRedBall DesktopGL NuGet Package</p></figcaption></figure>
    2. If targeting other platforms, you will need to manually add the FlatRedBall .dlls to your project:
-      1. Download the .dll for the project you are working on from this folder: [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/](../../content/FrbXnaTemplates/DailyBuild/SingleDlls.md)
+      1. Download the .dll for the project you are working on from this folder: [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/)
       2. Save the .dll to a location relative to your project, such as a Libraries folder
       3. Link your game project to the newly-downloaded .dll
 3. Modify `Game1` so it contains the following calls:
