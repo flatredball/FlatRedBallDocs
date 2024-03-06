@@ -4,6 +4,14 @@
 
 Most users do not need to follow the steps outlined in this section. New users are encouraged to skip this and head over to the Tutorials section. If you would like to build FlatRedBall to do more advanced debugging, contribute to the project, or out of pure curiosity then feel free to continue through this section.
 
+This section discusses the following:
+
+* How to build the FlatRedBall Editor from source (this is also available in binary format on the downloads page)
+* How to add FlatRedBall source code to your project through the FlatRedBall Editor
+* How to add FlatRedball source code to your project manually (if not using the FlatRedBall Editor)
+
+If you are interested in using FlatRedBall in a code-only project, see the [Code-Only](tutorials/code-only-project-tutorial/) Projects page.
+
 ### Introduction
 
 Currently all development is being done on the NetStandard branch, so if you would like to build FlatRedBall Glue form source, we recommend pulling the **NetStandard** branch. The FlatRedBall Game Engine and Tools are all open source:
