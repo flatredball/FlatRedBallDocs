@@ -58,9 +58,9 @@ To modify your .csproj file, you can open it and add the referenced file, simila
 
 ### Creating a Texture2D
 
-Next we'll create a Texture2D. Normally a Texture2D instance might be added to a Screen or Entity object, but we'll do all of our code in Game1 to keep things simple. Also, this example doesn't store a reference to the Texture2D at class scope, but you may want to do so in a real game so Texture2D reference can be reused outside of the initialization function. In this case we'll modify Game1.Initiaialize.The following code is the default for Initialize:
+Next we'll create a Texture2D. Normally a Texture2D instance might be added to a Screen or Entity object, but we'll do all of our code in Game1 to keep things simple. Also, this example doesn't store a reference to the Texture2D at class scope, but you may want to do so in a real game so Texture2D reference can be reused outside of the initialization function. In this case we'll modify Game1.Initialize. The following code is the default for Initialize:
 
-```
+```csharp
 protected override void Initialize()
 {
     #if IOS
@@ -83,7 +83,7 @@ protected override void Initialize()
 
 Since we are not using any generated code from the FlatRedBall Editor and we are not targeting iOS, we can remove most of the code, as shown in the following snippet:
 
-```
+```csharp
 protected override void Initialize()
 {
     FlatRedBallServices.InitializeFlatRedBall(this, graphics);
@@ -94,7 +94,7 @@ protected override void Initialize()
 
 Now we can add code to load our PNG:
 
-```
+```csharp
 protected override void Initialize()
 {
     FlatRedBallServices.InitializeFlatRedBall(this, graphics);
@@ -108,7 +108,7 @@ protected override void Initialize()
 
 Now that the texture is loaded, we can draw it with Sprites. For example, the following code adds a Sprite to the center of the screen:
 
-```
+```csharp
 protected override void Initialize()
 {
     FlatRedBallServices.InitializeFlatRedBall(this, graphics);
@@ -133,7 +133,7 @@ The game now loads a Bear and shows it in the center of the screen.
 
 Sprites inherit from the PositionedObject class, just like the Circle type used in the previous tutorial. Therefore, Sprites have many of the same properties as Circles including Position, Velocity, and Acceleration. We can create multiple Sprites in a loop, changing their position by setting X and Y as shown in the following code snippet:
 
-```
+```csharp
 protected override void Initialize()
 {
     FlatRedBallServices.InitializeFlatRedBall(this, graphics);
