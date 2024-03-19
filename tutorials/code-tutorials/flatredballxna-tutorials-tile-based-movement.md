@@ -1,19 +1,27 @@
-# Introduction
+# Tile-Based Movement
+
+Note - this documentation uses the SpriteGrid class which is now obsolete. The concepts of movement still apply, but the backing SpriteGrid is not recommended.
 
 Tile based movement is a control system common in classic RPGs like Dragon Warrior and many of the early Final Fantasy games. While it was used in some very early games, tile based movement is not as simple as free movement which can be applied as follows:
 
-```
+```csharp
 object.XVelocity = InputManager.XBoxController[0].LeftStick.Position.X;
 object.YVelocity = InputManager.XBoxController[0].LeftStick.Position.Y;
 ```
 
-Tile based movement can be applied in a variety of ways, but the most common is using instructions. The following code creates a tile map and a keyboard-controlled [Sprite](../../../frb/docs/index.php) which moves using tile based movement.
+Tile based movement can be applied in a variety of ways, but the most common is using instructions. The following code creates a tile map and a keyboard-controlled [Sprite](../../api/flatredball/sprite/) which moves using tile based movement.
 
-Add the following using statements: using FlatRedBall; using FlatRedBall.Instructions; using FlatRedBall.ManagedSpriteGroups;
+Add the following using statements:&#x20;
+
+```csharp
+using FlatRedBall;
+using FlatRedBall.Instructions;
+using FlatRedBall.ManagedSpriteGroups;
+```
 
 Add the following code in initialize:
 
-```
+```csharp
 Sprite blueprint = new Sprite();
 // Give the tiles a ColorOperation to make them look different
 blueprint.ColorOperation = FlatRedBall.Graphics.ColorOperation.Modulate;
@@ -38,7 +46,7 @@ character.CustomBehavior += TileBasedMovement;
 
 Add the following at class scope:
 
-```
+```csharp
 public void TileBasedMovement(Sprite sprite)
 {
     // default for SpriteGrids
@@ -71,4 +79,4 @@ public void TileBasedMovement(Sprite sprite)
 }
 ```
 
-![TileBasedMovement.png](../../../media/migrated_media-TileBasedMovement.png)
+![TileBasedMovement.png](../../media/migrated\_media-TileBasedMovement.png)
