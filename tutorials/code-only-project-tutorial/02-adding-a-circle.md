@@ -32,14 +32,16 @@ The Circle object can be created and managed using the ShapeManager class. The S
 * Drawing
 * Destroying (removing references)
 
-We will also use the InputManager which provides common classes for accessing keyboard, mouse, and Xbox gamepad input. We will be writing our code in the **Update** method in  **Game1.cs**. By default our Update method looks like this:
+We will also use the InputManager which provides common classes for accessing keyboard, mouse, and Xbox gamepad input. We will be writing our code in the **Update** method in **Game1.cs**. By default our Update method looks like this:
 
-```
+```csharp
 protected override void Update(GameTime gameTime)
 {
     FlatRedBallServices.Update(gameTime);
 
     FlatRedBall.Screens.ScreenManager.Activity();
+
+    GeneratedUpdate(gameTime);
 
     base.Update(gameTime);
 }
@@ -47,7 +49,7 @@ protected override void Update(GameTime gameTime)
 
 Some of this code is needed if using FRB editor's code generation functionality. If you are absolutely sure you do not want to use the editor, you can remove some code in Update as shown in the following snippet:
 
-```
+```csharp
 protected override void Update(GameTime gameTime)
 {
     FlatRedBallServices.Update(gameTime);
@@ -56,9 +58,11 @@ protected override void Update(GameTime gameTime)
 }
 ```
 
+You may notice other calls to partial methods which begin with the word "Generated" in your code. You are free to remove those methods as well.
+
 To add a circle whenever the mouse is clicked, we will use the Cursor class to detect input and create a new circle, as shown in the following code:
 
-```
+```csharp
 protected override void Update(GameTime gameTime)
 {
     FlatRedBallServices.Update(gameTime);
@@ -80,17 +84,13 @@ protected override void Update(GameTime gameTime)
 }
 ```
 
-
-
 <figure><img src="../../media/2019-10-18_08-40-34.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Circle Movement
 
 Circles (and most other FlatRedBall objects) can be positioned directly by setting the X and Y values, or their position can be modified by changing their velocity and acceleration values. For example, we can modify the code to give the circle a positive XVelocity and negative YAcceleration:
 
-```
+```csharp
 protected override void Update(GameTime gameTime)
 {
     FlatRedBallServices.Update(gameTime);
@@ -116,7 +116,7 @@ protected override void Update(GameTime gameTime)
 }
 ```
 
-The circles will now move to the right and up, but fall naturally. &#x20;
+The circles will now move to the right and up, but fall naturally.
 
 <figure><img src="../../media/2019-10-18_08-44-03.gif" alt=""><figcaption></figcaption></figure>
 
