@@ -120,4 +120,4 @@ The circles will now move to the right and up, but fall naturally.
 
 <figure><img src="../../media/2019-10-18_08-44-03.gif" alt=""><figcaption></figcaption></figure>
 
-Notice that the velocity and acceleration values apply automatically once they are assigned. The ShapeManager keeps track of all Circles and applies these values every frame. For more information on working with the Circle object in code, see the [Circle page](../../documentation/api/flatredball/math/geometry/circle.md).
+Notice that the velocity and acceleration values apply automatically once they are assigned. The ShapeManager keeps track of all Circles and applies these values every frame. For more information on working with the Circle object in code, see the [Circle page](../../api/flatredball/math/geometry/circle/).
