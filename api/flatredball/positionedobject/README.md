@@ -11,7 +11,7 @@ The PositionedObject is an object which contains properties and functionality fo
 | PositionedObject-Inheriting Class                                                        | Associated Manager                                                       |
 | [FlatRedBall.Camera](../camera/)                                                         | [FlatRedBall.SpriteManager](../spritemanager/)                           |
 | [FlatRedBall.Sprite](../sprite/)                                                         | [FlatRedBall.SpriteManager](../spritemanager/)                           |
-| [FlatRedBall.Graphics.Particle.Emitter](../graphics/particle/emitter/)                   | [FlatRedBall.SpriteManager](../spritemanager/)                           |
+| [FlatRedBall.Graphics.Particle.Emitter](../graphics/particle/emitter.md)                 | [FlatRedBall.SpriteManager](../spritemanager/)                           |
 | [FlatRedBall.Graphics.Text](../graphics/text/)                                           | [FlatRedBall.Graphics.TextManager](../graphics/textmanager/)             |
 | [FlatRedBall.Math.Geometry.AxisAlignedRectangle](../math/geometry/axisalignedrectangle/) | [FlatRedBall.Math.Geometry.ShapeManager](../math/geometry/shapemanager/) |
 | [FlatRedBall.Math.Geometry.Circle](../math/geometry/circle/)                             | [FlatRedBall.Math.Geometry.ShapeManager](../math/geometry/shapemanager/) |
