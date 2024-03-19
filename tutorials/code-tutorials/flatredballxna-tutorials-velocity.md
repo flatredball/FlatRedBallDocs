@@ -20,7 +20,7 @@ The frame-style movement is relevant for a number of reasons, but perhaps most i
 
 Consider this code:
 
-```
+```csharp
 if(object.X == 1.0f)
 {
   DoSomething();
@@ -31,7 +31,7 @@ If our numbers above show the movement of the object frame-by-frame, then the th
 
 To guarantee that the code gets hit when the object moves past 1.0, the following code would work:
 
-```
+```csharp
 // assume hasDoneSomething is initialized to false
 if(object.X > 1.0f && !hasDoneSomething)
 {
@@ -46,7 +46,7 @@ Since implementing velocity is nothing more than the continual changing of posit
 
 However, there is one thing to keep in mind when implementing movement: frame time may not be constant! In some cases, it may be constant if you are [not turning off the default constant framerate](../../frb/docs/index.php#Disabling\_Fixed\_Time\_Step). However, even if your game is running at a fixed frame rate, you should not depend on this to move your object. In other words, **don't do this:**
 
-```
+```csharp
 // NO NO NO NO NO NO NO NO!!!!
 myObject.X += 5;
 // In case you forgot, NO NO NO NO NO NO!!!!
@@ -54,7 +54,7 @@ myObject.X += 5;
 
 You may at some time in the future decide to turn off the fixed frame rate, or you may want to change it. If that happens you will suddenly find that your objects are moving at a different rate - and this rate may even fluctuate as you play your game. Instead, use the [TimeManager's](../../frb/docs/index.php) SecondDifference property to move your objects:
 
-```
+```csharp
 float unitsPerSecond = 5;
 myObject.X += unitsPerSecond * TimeManager.SecondDifference;
 ```
@@ -79,13 +79,13 @@ Either can be used, and modifying one automatically modifies the other.
 
 Any object which is managed by one of the FlatRedBall Managers will automatically have its position be modified by its Velocity every frame using time-based movement (using the [TimeManager's](../../frb/docs/index.php) SecondDifference property). Therefore, to reproduce the above code where myObject is moving along the X axis by 5 units/second, the following code would be used:
 
-```
+```csharp
 myObject.XVelocity = 5;
 ```
 
 or:
 
-```
+```csharp
 myObject.Velocity.X = 5;
 ```
 
@@ -97,7 +97,7 @@ The following code creates 30 [Sprites](../../frb/docs/index.php) and sets their
 
 Add the following to Initialize after initializing FlatRedBall:
 
-```
+```clike
 for (int i = 0; i < 30; i++)
 {
     Sprite sprite = SpriteManager.AddSprite("redball.bmp");
@@ -108,8 +108,6 @@ for (int i = 0; i < 30; i++)
 }
 ```
 
-**KABOOM!**&#x20;
+**KABOOM!**
 
 <figure><img src="../../media/migrated_media-VelocityTutorial.png" alt=""><figcaption></figcaption></figure>
-
-Did this article leave any questions unanswered? Post any question in our [forums](../../frb/forum.md) for a rapid response.
