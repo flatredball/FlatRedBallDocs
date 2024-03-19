@@ -19,7 +19,7 @@ FlatRedBall provides Screens and Entities for organizing your code. These are bu
 
 FlatRedBall provides a built-in Camera object which can be used to scroll, zoom, or even display graphics using a 3D perspective. For this tutorial we will set our camera up to be a pure 2D camera, where one unit equals one pixel on screen. To do this, add the following code to Game1's Initialize method, after the InitializeFlatRedBall call.
 
-```
+```csharp
 Camera.Main.UsePixelCoordinates();
 ```
 
