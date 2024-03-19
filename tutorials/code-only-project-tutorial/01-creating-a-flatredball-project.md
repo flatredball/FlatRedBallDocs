@@ -17,7 +17,7 @@ If you would like to avoid using the FlatRedBall Editor completely, or if you ar
 
 Visual Studio is not a requirement for using FlatRedBall. You can write, compile, and run FlatRedBall projects using Visual Studio code. To do so:
 
-1. Install Visual Studio
+1. Install Visual Studio Code
 2. Install Visual Studio C# Dev Kit [https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit\&ssr=false#overview](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit\&ssr=false#overview)
 3. Make sure you have .NET SDK 6 installed
 
