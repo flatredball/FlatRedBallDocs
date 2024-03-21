@@ -30,23 +30,23 @@ ExplosionSound.Volume = 0.5f;
 
 To change whether a .wav file is loaded as a SoundEffect or SoundEffectInstance, change its **RuntimeType** as shown in the following image:
 
-![](../../media/2021-09-img\_6150ca47f1f0d.png)
+![Changing a .wav's RuntimeType](../../.gitbook/assets/20\_22\_24\_42.png)
 
 ### Adding a .wav to a FRB project
 
-To add a .wav file to Glue:
+To add a .wav file to FRB:
 
-1. Right-click on a Screen or Entity's "Files" item
-2. Select "Add File"->"Existing File"
+1. Right-click on a Screen or Entity's **Files** item
+2. Select **Add File**->**Existing File**
 3. Navigate to the location of the .wav that you would like to use and click OK
 
 You should see the .wav file in your project:
 
-![](../../media/2021-02-img\_603bcad7e65c9.png)
+![WAV file in the Enemy entity](../../.gitbook/assets/20\_22\_27\_04.png)
 
 ### Playing a SoundEffect in custom code
 
-Once a .wav file has been added to your FRB project, your Screen, Entity, or GlobalContent includes an instance of a [SoundEffect](http://msdn.microsoft.com/en-us/library/microsoft.xna.framework.audio.soundeffect.aspx) in generated code.&#x20;
+Once a .wav file has been added to your FRB project, your Screen, Entity, or GlobalContent includes an instance of a SoundEffect in generated code.&#x20;
 
 The following example assumes a file named GunShotSound.wav, so the code instance is named GunShotSound. The following code can be added to CustomActivity to play the sound when the space bar is pressed:
 
@@ -59,5 +59,7 @@ public void CustomActivity(bool firstTimeCalled)
    }
 }
 ```
+
+For the full SoundEffect documentation, see the MonoGame [SoundEffect page](https://monogame.net/api/Microsoft.Xna.Framework.Audio.SoundEffect.html).
 
 For more information on SoundEffect in FlatRedBall, see the [SoundEffect page](../../api/microsoft-xna-framework/audio/soundeffect.md).
