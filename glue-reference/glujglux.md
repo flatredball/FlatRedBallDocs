@@ -586,7 +586,17 @@ FlatRedBall attempts to keep all of your variable values the same, so if all wor
 
 <figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
-### Version 54 - Case Sensitive File Loading
+### Version 54 - ITopDownEntity Animations
+
+This version adds top down animation support using an AnimationController specifically built for top down entities. Conceptually this is similar to platformer entity animations. It is optional and will not affect existing games with top down entities.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 55 - Case Sensitive File Loading
 
 This version modifies code generation so that it includes the case of file paths rather than calling ToLower on all files. This helps make FRB work better on case-sensitive platforms such as iOS, Android, and Linux.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+❗ Mobile games using Xamarin should not update to this version.
 
