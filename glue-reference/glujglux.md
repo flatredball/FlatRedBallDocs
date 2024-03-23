@@ -585,3 +585,8 @@ To fix these problems:
 FlatRedBall attempts to keep all of your variable values the same, so if all worked okay you should not have any changes on instances aside from the types.
 
 <figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+
+### Version 54 - Case Sensitive File Loading
+
+This version modifies code generation so that it includes the case of file paths rather than calling ToLower on all files. This helps make FRB work better on case-sensitive platforms such as iOS, Android, and Linux.
+
