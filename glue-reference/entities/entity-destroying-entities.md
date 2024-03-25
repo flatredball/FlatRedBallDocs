@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The Destroy method is used to completely destroy an entity. Generated code calls Destroy for any entity and any list of entities in your current Screen whenever the Screen is destroyed (when the game moves to a different screen). Destroy may need to be manually called if an entity is created manually in game code.&#x20;
+The Destroy method is used to completely destroy an entity. Generated code calls Destroy for any entity and any list of entities in your current Screen whenever the Screen is destroyed (when the game moves to a different screen). Destroy may need to be manually called if an entity is created manually in game code.
 
 Destroy can also automatically called on Entities which take or receive damage based on properties assigned in their collision relationship. For more information on destroying entities when taking damage, see the [Damage Dealing Tutorials](../../tutorials/damage-dealing/).
 
@@ -24,14 +24,14 @@ Note that when writing code in CustomDestroy, the entity **should not unload con
 As mentioned above, Destroy is automatically called by generated code in the following situations:
 
 * Whenever a screen is destroyed, all of the entities added to the screen through the FlatRedBall Editor will also have Destroy called
-* Whenever a screen is destroyed, all of the entity lists added to the screen through the FlatRedBall Editor will also have their Destroy called
+* Whenever a screen is destroyed, all of the entity lists added to the screen through the FlatRedBall Editor will also have their Destroy called. Typically this includes all entities which have been created by a Factory when the GameScreen (or a derived Level Screen) is destroyed.
 * Whenever an entity is destroyed, any entities that it contains will also be destroyed.
 
 Custom code may need to call Destroy. Usually custom code only needs to destroy entities that it creates on its own. The most common case is when entities should be destroyed as a result of collision, such as when a bullet hits a wall.
 
 ### Example - Destroying in a Collision Event
 
-The most common situation where Destroy is explicitly called is in collision handling events. For example, consider a game like Pac-Man where the Player is moved around the screen and "eats" pellets. Whenever the player collides with a Pellet, the Pellet instance should be destroyed.  In this type of game, the GameScreen would contain two lists: PlayerList and PelletList. A collision relationship between the PlayerList and PelletList would define an event where the destruction of a pellet occurs:
+The most common situation where Destroy is explicitly called is in collision handling events. For example, consider a game like Pac-Man where the Player is moved around the screen and "eats" pellets. Whenever the player collides with a Pellet, the Pellet instance should be destroyed. In this type of game, the GameScreen would contain two lists: PlayerList and PelletList. A collision relationship between the PlayerList and PelletList would define an event where the destruction of a pellet occurs:
 
 ![](<../../.gitbook/assets/11\_13 12 35.png>)
 
@@ -97,3 +97,24 @@ The code above has a logic bug which will cause the game to behave improperly. W
 if(mEnemy.Health > 0 && mPlayer.Collision.CollideAgainst(mEnemy.Collision)
 ...
 ```
+
+### Destroying Entities on Death and Collection
+
+Many types of entities can die, be collected, or have other types of removal through custom logic. These entities may create additional visuals when removed. Examples include:
+
+* A collected coin may create a sparkle
+* A dead enemy may fall to the ground the flash for a second
+* A barrel may create an explosion when shot
+* A boss may explode and break apart gradually
+
+Projects which include entities like the ones listed above are encouraged to destroy the entity immediately rather than modify properties to indicate that the entity is in a destroyed/dead state. For example, when a coin is collected it should be immediately destroyed and a new entity or Sprite should be created in its place to play the sparkle effect. Similarly, a dead enemy should be immediately destroyed, being replaced by an entity (such as DeadEnemy).
+
+This approach is encouraged for a number of reasons:
+
+1. By destroying entities immediately, collision relationship events can be simplified. If dead enemies are not destroyed immediately, then additional checks may be needed in the collision event handlers to check if an enemy is alive or dead. For example, a dead enemy should probably not damage the player or absorb bullets.
+2. Game state which depends on entity instances (such as a game progressing after all enemies are dead) is simplified since it does not need to consider the state of entities. Instead it can rely on the count in the relevant entity list.
+
+A typical game may have over a dozen collision relationships for entity lists which are core to the game logic, such as PlayerList, EnemyList, or BulletList. Simplifying the collision event handlers can make it easier to maintain the game as it grows.
+
+Keep in mind that even though entities should be destroyed immediately when killed or collected, adding post-removal animations to their AnimationChain file (.achx) is common.
+

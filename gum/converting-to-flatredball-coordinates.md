@@ -13,7 +13,7 @@ Note that it is possible to add Gum components to FlatRedBall entities, and doin
 
 ### Converting from Gum to FlatRedBall Coordinates
 
-The steps for converting are:
+The high level steps for converting from Gum to FlatRedBall coordinates are:
 
 1. Convert the Gum coordinates to _screen coordinates_ - coordinates relative to the top-left of the screen
 2. Convert the screen coordinates to _world coordinates_ - the coordinates used by FlatRedBall objects
@@ -57,3 +57,43 @@ Notice that the example above uses the position of the ColoredRectangleInstance 
 ...then the FlatRedBall CircleInstance will also be positioned on the Gum object's top-right corner.
 
 ![Circle positioned at the blue rectangle's top-right corner](../media/2022-02-img\_621be4ee13f73.png)
+
+### Converting from FlatRedBall to Gum Coordinates
+
+The high level steps for converting from FlatRedBall to Gum coordinates are:
+
+1. Convert the FlatRedBall coordinates to Screen pixel coordinates
+2. Convert the screen pixel coordinates to Gum screen coordinates (considering zooming)
+3. (Optional) Position a Gum object using the Gum screen coordinates
+
+The following code creates colored rectangle instances on clicks. Notice that the Cursor's world coordinates are used to get the Gum coordinates:
+
+```csharp
+void CustomActivity(bool firstTimeCalled)
+{
+    var cursor = GuiManager.Cursor;
+
+    if(cursor.PrimaryClick)
+    {
+        var worldX = cursor.WorldX;
+        var worldY = cursor.WorldY;
+
+        var gumCoordinates = GetGumCoordinates(worldX, worldY);
+
+        var rectangle = new ColoredRectangleRuntime();
+        rectangle.X = gumCoordinates.X;
+        rectangle.Y = gumCoordinates.Y;
+        rectangle.AddToManagers();
+    }
+}
+
+public Vector2 GetGumCoordinates(float worldX, float worldY)
+{
+    var camera = FlatRedBall.Camera.Main;
+    camera.WorldToScreen(worldX, worldY, 0, out int screenX, out int screenY);
+    var gumZoom = SystemManagers.Default.Renderer.Camera.Zoom;
+    return new Vector2(screenX, screenY) / gumZoom;
+}
+```
+
+<figure><img src="../.gitbook/assets/24_23_05_17.gif" alt=""><figcaption><p>Adding ColoredRectangleRuntime instances by clicking the mouse</p></figcaption></figure>
