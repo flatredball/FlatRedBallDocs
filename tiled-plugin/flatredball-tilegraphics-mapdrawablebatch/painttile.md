@@ -44,15 +44,22 @@ void CustomActivity(bool firstTimeCalled)
 
     if(cursor.PrimaryDown)
     {
-        var position = cursor.WorldPosition;
-
+        var worldPosition = cursor.WorldPosition;
+        
         var layer = Map.MapLayers.FindByName("LayerForPainting");
 
-        var index = layer.GetQuadIndex(position.X, position.Y);
+        // Usually TileMaps are positioned at 0,0, but in case they aren't
+        // we need to offset the position
+        var positionRelativeToMap = worldPosition - layer.Position;
+
+        var index = layer.GetQuadIndex(
+            positionRelativeToMap.X, 
+            positionRelativeToMap.Y);
 
         if(index != null)
         {
-            layer.PaintTile(index.Value, 481);
+            var tileId = 481; // change this to your tile ID
+            layer.PaintTile(index.Value, tileId);
         }
     }
 }
