@@ -1,4 +1,4 @@
-# 07-creating-entities-from-object-layers
+# Creating Entities from Object Layers
 
 ### Introduction
 
@@ -14,23 +14,23 @@ For this tutorial we will be creating a Door entity which can be used to move th
 4. Check the **Circle** check box
 5.  Leave the defaults and click **OK**
 
-    ![](../../../../media/2021-02-img_60317ec745a4f.png)
+    ![Create a Door Entity with a Circle](<../../.gitbook/assets/26\_08 19 24.png>)
 
-Now you will have a Door entity in Glue. We should change the color of the door so it doesn't look like the player (which is currently a white circle). To do this, change the CircleInstance's Color value to Green.
+Now you will have a Door entity. We should change the color of the door so it doesn't look like the player (which is currently a white circle). To do this, change the CircleInstance's Color value to Green.
 
-![](../../../../media/2021-02-img_603182a0c63da.png)
+![](<../../.gitbook/assets/26\_08 20 37.png>)
 
 We need to create a variable for which level to load when the Player collides with the Door:
 
 1. Right-click on the **Variables** folder under the **Door** entity
 2.  Select **Add Variable**
 
-    ![](../../../../media/2018-04-img_5adba32cc76c8.png)
+    ![](<../../.gitbook/assets/26\_08 21 14.png>)
 3. Select the **Create a new variable** option
 4. Select **string** as the **Type**
 5.  Enter the Name **LevelToGoTo**
 
-    ![](../../../../media/2021-02-img_60317f1d72e36.png)
+    ![](../../media/2021-02-img\_60317f1d72e36.png)
 6. Click **OK**
 
 The name of the variable that we created (LevelToGoTo) needs to match the name of the property that we will be adding to the tile later in this guide. Note that if using a entity types XML, the property will automatically be added.
@@ -43,14 +43,14 @@ Tiled object layers allow placing geometric shapes (such as rectangles, circles,
 2. Select the door tile
 3.  Enter **Door** as the **Type.** Note that this may already be the default.
 
-    ![](../../../../media/2021-02-img_60317fcf1bad9.png)
+    ![](../../media/2021-02-img\_60317fcf1bad9.png)
 4.  Click the + button to add a new property
 
-    ![](../../../../media/2018-09-img_5b9d8c89e1e1b.png)
+    ![](../../media/2018-09-img\_5b9d8c89e1e1b.png)
 5. Enter the name **LevelToGoTo**
 6.  Verify the type is **string**
 
-    ![](../../../../media/2018-09-img_5b9d8cad0c40b.png)
+    ![](../../media/2018-09-img\_5b9d8cad0c40b.png)
 
 We won't assign the value of LevelToGo yet, we'll do that per-instance. Now that we've defined the Door tile properties, we'll add a Door to the Level2Map.tmx file. Don't forget to save your tileset in Tiled. First we'll make an object layer:
 
@@ -58,10 +58,10 @@ We won't assign the value of LevelToGo yet, we'll do that per-instance. Now that
 2. Click the Add Layer button
 3.  Select **Object Layer**
 
-    ![](../../../../media/2021-02-img_6031801922e67.png)
+    ![](../../media/2021-02-img\_6031801922e67.png)
 4.  Name the new layer **GameplayObjectLayer**
 
-    ![](../../../../media/2021-02-img_60318041b1a31.png)
+    ![](../../media/2021-02-img\_60318041b1a31.png)
 
 Next we'll add an instance of the door to the **EntityObjectLayer**:
 
@@ -69,21 +69,21 @@ Next we'll add an instance of the door to the **EntityObjectLayer**:
 2. Select the tile to be placed in the tile set
 3.  Click on the tile map to place the tile. Be careful - if you place the door in the same place as where the player starts, the player will immediately collide with the door, and will move to the next level once we add the collision code.
 
-    ![](../../../../media/2021-02-img_603180d6e1b28.png)
+    ![](../../media/2021-02-img\_603180d6e1b28.png)
 
 Notice that the placed door may not align with the tiles. If you wish to make it align, you use the Select Objects command to select the tile and either move it visually or change its X an Y properties:
 
-![](../../../../media/2021-02-img_603181115c5dd.png)
+![](../../media/2021-02-img\_603181115c5dd.png)
 
 Alternatively, holding the CTRL key will snap objects to the grid while you place them. Now we can add the LevelToGoTo property to our placed tile:
 
 1.  Click the **Select Objects** button (if not already selected)
 
-    ![](../../../../media/2018-09-img_5b9e5a7eab252.png)
+    ![](../../media/2018-09-img\_5b9e5a7eab252.png)
 2. Select the placed Door object (if not already selected)
 3.  Enter the value **Level1** for the **LevelToGoTo** property. More generally, the door's **LevelToGoTo** property should be the name of the screen that we want to go to when the Player entity touches the Door.
 
-    ![](../../../../media/2021-02-img_603181812afb8.png)
+    ![](../../media/2021-02-img\_603181812afb8.png)
 
 Don't forget to save the tile map.
 
@@ -91,7 +91,7 @@ Don't forget to save the tile map.
 
 If we run our game now, we should see the Door tile that we placed in Tile replaced by a green circle, which is the collision of the Door entity:
 
-![](../../../../media/2021-02-img_603182c1e11ce.png)
+![](../../media/2021-02-img\_603182c1e11ce.png)
 
 #### Troubleshooting Entities Not Created
 
@@ -99,50 +99,42 @@ If you are not seeing the Door entity in the game, there may be a problem with t
 
 ### Colliding Against the Door Entity
 
-We can use the Door entity to navigate between levels. We'll check collision between the Player  and all doors in the DoorList  object (our game only has one door, but it could be expanded to have more). If a collision occurs, we'll go to the level set by the Door's LevelToGoTo variable. First we'll create a collision relationship between the PlayerList and DoorList in our GameScreen:
+We can use the Door entity to navigate between levels. We'll check collision between the Player and all doors in the DoorList object (our game only has one door, but it could be expanded to have more). If a collision occurs, we'll go to the level set by the Door's LevelToGoTo variable. First we'll create a collision relationship between the PlayerList and DoorList in our GameScreen:
 
 1. Expand the GameScreen Objects folder in Glue
 2. Drag the PlayerList onto the DoorList to create a CollisionRelationship
 
-
-
-<figure><img src="../../../../media/2016-08-2021_February_20_145845.gif" alt=""><figcaption></figcaption></figure>
-
-
-
-```lang:c#
-```
+<figure><img src="../../.gitbook/assets/26_08 22 26.gif" alt=""><figcaption><p>Create a PlayerVsDoor by drag+dropping the PlayerList on the DoorList</p></figcaption></figure>
 
 This time we won't change the **Collision Physics** because the purpose of the door isn't to block the movement of the player. Instead, we'll create an event which will contain code to move to a different level. To do this:
 
 1. Scroll down to the bottom of the Collision tab of the newly-created CollisionRelationship
-2. Click the **Add Event** button ![](../../../../media/2021-02-img_6031845777e87.png)
-3.  Leave the defaults on the **New Event** window and click **OK**
+2.  Click the **Add Event** button\
+    &#x20;
 
-    ![](../../../../media/2021-02-img_60318490d6824.png)
+    <figure><img src="../../.gitbook/assets/26_08 23 33.png" alt=""><figcaption><p>Add Event to PlaeyrVsDoor</p></figcaption></figure>
+3.  If asked, leave the defaults on the **New Event** window and click **OK**
+
+    ![](../../media/2021-02-img\_60318490d6824.png)
 
 Collision events are added to the Events file for the current screen. In this case, the events are added to GameScreen.Events.cs. To add handle the code:
 
 1. Open the project in Visual Studio
 2.  Open **GameScreen.Event.cs**. Notice that the newly created collision event will be located under the GameScreen.cs file
 
-    ![](../../../../media/2021-02-img_603185bb3e375.png)
+    ![OnPlayerVsDoorCollided event in Visual Studio](<../../.gitbook/assets/26\_08 25 44.png>)
 3. Enter the code to move to a screen based on the Door's LevelToGoTo
 
-&#x20;
-
 ```
-void OnPlayerListVsDoorListCollisionOccurred (Entities.Player first, Entities.Door second)
+void OnPlayerVsDoorCollided (Entities.Player first, Entities.Door second)
 {
   MoveToScreen(second.LevelToGoTo);
 }
 ```
 
-Now when the player collides with the door in Level2, the game will move to Level1. 
+Now when the player collides with the door in Level2, the game will move to Level1.
 
-<figure><img src="../../../../media/2016-08-2021_February_20_155400.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../media/2016-08-2021_February_20_155400.gif" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 
