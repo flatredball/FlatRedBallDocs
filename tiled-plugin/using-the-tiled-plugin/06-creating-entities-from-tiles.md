@@ -20,12 +20,12 @@ Any type of entity can be created through tile maps, which provides lots of flex
 
 1.  Select the **Quick Actions** tab in the FRB editor and click **Add Entity**
 
-    ![](../../media/2021-02-img\_603179247a2b1.png)
+    ![Add Entity button in the Quick Actions tab](<../../.gitbook/assets/26\_08 02 40.png>)
 2. Name the entity **Monster**
 3. Check the **AxisAlignedRectangle** check box
 4. Leave the other options default and click **OK**
 
-![](../../media/2021-02-img\_603179528d62a.png)
+![](<../../.gitbook/assets/26\_08 04 26.png>)
 
 We need to modify the rectangle so it stands out relative to the collision rectangles:
 
@@ -34,7 +34,7 @@ We need to modify the rectangle so it stands out relative to the collision recta
 3. Change Height to 12
 4.  Change Color to Yellow
 
-    ![](../../media/2016-08-img\_57acd2692ad27.png)
+    ![Edit new AxisAlignedRectangleInstance variables](<../../.gitbook/assets/26\_08 06 23.png>)
 
 ###
 
@@ -50,7 +50,7 @@ We will be using the **Type** property to set the entity type. For a deeper dive
 4.  Select a tile on your map to represent the monsters. For example, select the red monster icon.
 
     ![](../../media/2021-02-img\_60317b4090261.png)
-5.  Enter the entity name **Monster** as the **Type** for this tile. Depending on what version of Tiled that you are using, you may see **Class** instead of **Type**, but they both mean the same thing. Also, note that the name needs to match the entity name exactly, including capitalization
+5.  Enter the entity name **Monster** as the **Type** or **Class** for this tile. Depending on what version of Tiled that you are using, you may see **Class** instead of **Type**, but they both mean the same thing. Also, note that the name needs to match the entity name exactly, including capitalization.
 
     ![](../../media/2021-02-img\_60317b80e081e.png)
 
