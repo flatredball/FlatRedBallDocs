@@ -75,6 +75,35 @@ If you add goals to your game you will see circles added wherever the goals are 
 
 **Warning:** The purpose of the code above and much of the code in this guide is to show how to interact with tile properties at a low level. A realistic example would require additional code which would significantly increase the length of this tutorial. Keep in mind that the code above suffers from some serious problems. The created circles are not stored in a list so they cannot be used for any purpose aside from displaying on screen. Furthermore, since the circles are not stored in any list, they cannot be cleaned up. Exiting the screen or switching levels at this point would result in an exception.
 
+### Reading Type from Tiles
+
+The code above shows how to identify tiles by Name. A mentioned above, a Name can only be used on a single Tile in a tile set. Alternatively, you may want multiple tiles to have a specific type of behavior. The Type (or Class depending on your version of Tiled) can be reused across multiple tiles. In fact, this is how TileShapeCollections are typically created.
+
+The Name property is the **primary key** when working with tiles, so if we are looking for a particular type, we must find which tile names are associated with the type. For example, if we wanted to get the name of all of the Tiles that have the type SolidCollision, we could use the following code:
+
+```csharp
+var namesWithSolidCollisionType = Map.TileProperties
+    .Where(kvp => kvp.Value.Any(item => item.Name == "Type" && (item.Value as string) == "SolidCollision"))
+    .ToArray();
+```
+
+Once we have the names, we can loop through the names and use their indexes to identify the specific tile locations as shown in the following code:
+
+```csharp
+foreach(var name in namesWithSolidCollisionType)
+{
+    foreach(var layer in Map.MapLayers)
+    {
+        var indexes = layer.NamedTileOrderedIndexes[name];    
+        
+        foreach(var index in indexes)
+        {
+            // do something with the index, like get the coordinates
+        }        
+    }
+}
+```
+
 ### Reading Custom Properties from Tiles
 
 The Name property is built-in to the Tiled Plugin, but we can also read custom properties. For example, we can modify the Goal tile to include a property for coloring the circle:
