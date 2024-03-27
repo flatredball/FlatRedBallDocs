@@ -125,16 +125,16 @@ Collision events are added to the Events file for the current screen. In this ca
     ![OnPlayerVsDoorCollided event in Visual Studio](<../../.gitbook/assets/26\_08 25 44.png>)
 3. Enter the code to move to a screen based on the Door's LevelToGoTo
 
-```
-void OnPlayerVsDoorCollided (Entities.Player first, Entities.Door second)
+```csharp
+void OnPlayerVsDoorCollided (Entities.Player player, Entities.Door door)
 {
-  MoveToScreen(second.LevelToGoTo);
+  MoveToScreen(door.LevelToGoTo);
 }
 ```
 
 Now when the player collides with the door in Level2, the game will move to Level1.
 
-<figure><img src="../../media/2016-08-2021_February_20_155400.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2016-08-2021_February_20_155400.gif" alt=""><figcaption><p>Player moving from one level to another by touching the door</p></figcaption></figure>
 
 ### Conclusion
 
