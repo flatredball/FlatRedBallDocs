@@ -4,7 +4,7 @@
 
 The Tween enables changing any numerical property on an object over a given amount of time using all of the available interpolation types provided by the Advanced Interpolation Plugin. Tween can interpolate any numerical value (like an object's X position). It works on any PositionedObject as an extension method (shown below).
 
-For information on performing tweening with objects which do not implement PositionedObject, see the TweenAsync method.
+For information on performing tweening with objects which do not implement PositionedObject, see the [TweenerManager.TweenAsync](tweenermanager.md) method.
 
 ### Code Example - Move Circle X
 
