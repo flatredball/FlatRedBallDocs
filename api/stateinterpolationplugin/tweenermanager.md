@@ -11,7 +11,7 @@ TweenAsync can be used to perform tweening logic using an Action, allowing the a
 The following code shows how to tween an object's X from 0 to 100.
 
 ```csharp
-await TweenerManager.TweenAsync(
+await TweenerManager.Self.TweenAsync(
     owner: GumObjectInstance,
     assignmentAction: (newValue) => GumObjectInstance.X = newValue,
     from: 0,
