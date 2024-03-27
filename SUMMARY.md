@@ -1165,6 +1165,7 @@
       * [renderableskiaobject](api/skiagum/renderables/renderableskiaobject.md)
   * [State Interpolation](api/stateinterpolationplugin/README.md)
     * [Tween](api/stateinterpolationplugin/gluevault-component-pages-advanced-interpolation-plugin-tween-function.md)
+    * [TweenerManager](api/stateinterpolationplugin/tweenermanager.md)
 * [🎮 FlatRedBall Games](games/README.md)
   * [angry-boy](games/angry-boy.md)
   * [avatar-skate](games/avatar-skate.md)

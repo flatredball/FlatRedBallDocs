@@ -4,6 +4,8 @@
 
 The Tween enables changing any numerical property on an object over a given amount of time using all of the available interpolation types provided by the Advanced Interpolation Plugin. Tween can interpolate any numerical value (like an object's X position). It works on any PositionedObject as an extension method (shown below).
 
+For information on performing tweening with objects which do not implement PositionedObject, see the TweenAsync method.
+
 ### Code Example - Move Circle X
 
 The following code shows how to tween the location of a Circle to the edge of the screen when pressing either the left or right keys. This example assumes:
@@ -20,7 +22,7 @@ To use Tween to change the position of the Circle based off of keyboard input:
     ```
 2. Add the following to CustomActivity:
 
-```clike
+```csharp
 if (InputManager.Keyboard.KeyPushed(Keys.Left))
 {
     CircleInstance.Tween(
