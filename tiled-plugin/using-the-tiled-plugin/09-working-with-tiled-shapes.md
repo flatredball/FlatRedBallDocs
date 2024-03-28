@@ -101,7 +101,7 @@ private void ShapeTutorialLogic()
         // This name matches the layer name 
         .FirstOrDefault(item => item.Name == "ShapesLayer");
 
-    var rectangle = shapeCollection?.Rectangles
+    var rectangle = shapeCollection?.AxisAlignedRectangles
         ?.FirstOrDefault(item => item.Name == "Rectangle1");
 
     if(rectangle != null)
