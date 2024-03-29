@@ -1,4 +1,4 @@
-# steam
+# Steam
 
 ### Introduction
 
@@ -11,25 +11,25 @@ To add Steamworks.NET library to your project:
 1. Go to the [Steamworks.NET github releases page](https://github.com/rlabrecque/Steamworks.NET/releases)
 2.  Download the latest release standalone
 
-    ![](../../../media/2022-09-img_6324fbac1a1fa.png)
+    ![](../../media/2022-09-img\_6324fbac1a1fa.png)
 3. Unzip the downloaded file
 4. Link the Steamworks.NET.dll file in your project
-   1. If you are making a Desktop GL (.NET Framework) project, be sure to link to the x86 version as this version of FlatRedBall does not support 64 bit builds
-   2.  If you are targeting .NET 6, use the 64 bit version.
+   1.  If you are targeting .NET 6, use the 64 bit version.
 
-       ![](../../../media/2022-09-img_6324fdc469a67.png)
-5. Copy the steam_api64.dll or steam_api.dll file to the same folder as your game's .csproj (and .gluj) depending on whether you linked to the 64 bit version of Steamworks.NET.dll
-6.  &#x20;Add the steam_api file to your project in Visual Studio and mark it as **Copy if Newer** so that the file ends up in your game's bin folder next to the built .exe.
+       ![Add the Steamworks.NET library to your project](../../media/2022-09-img\_6324fdc469a67.png)
+   2. If you are making a Desktop GL (.NET Framework) project, be sure to link to the x86 version as this version of FlatRedBall does not support 64 bit builds
+5. Copy the steam\_api64.dll or steam\_api.dll file to the same folder as your game's .csproj (and .gluj) depending on whether you linked to the 64 bit version of Steamworks.NET.dll
+6.  Add the steam\_api file to your project in Visual Studio and mark it as **Copy if Newer** so that the file ends up in your game's bin folder next to the built .exe.
 
-    ![](../../../media/2022-09-img_6324fea5eb27b.png)
-7. Add your steam_appid.txt file to the folder where your game's exe is located.
+    ![](../../media/2022-09-img\_6324fea5eb27b.png)
+7. Add your steam\_appid.txt file to the folder where your game's exe is located.
 8. When testing, be sure to have Steam running or else your tests won't work.
 
 ### Adding SteamManager
 
 Once the Steamworks library is added to your project, you can interact directly with the library to award achievements and respond to the tab overlay being shown. If you would like to work directly with this library, you can find additional information on the [Steamworks github page](https://steamworks.github.io/). The documentation is focused on Unity but may of the concepts apply. Alternatively, the following SteamManager class can be used to set up a project quickly. Note that this is provided to help get a project set up quickly. Future versions of FlatRedBall may provide more integrated solutions such as code gen:
 
-```
+```csharp
     #region Achievement Class
 
     abstract class AchievementBase
@@ -185,7 +185,6 @@ Once the Steamworks library is added to your project, you can interact directly 
 
             }
 #if DEBUG
-
             // If you want to test awarding achievements, try this:
             //var keyboard = FlatRedBall.Input.InputManager.Keyboard;
 
@@ -207,16 +206,8 @@ Once the Steamworks library is added to your project, you can interact directly 
             //    }
 
             //}
-
-
 #endif
-
-
-
-
         }
-
-
 
         internal static void StoreStats()
         {
@@ -246,9 +237,9 @@ Once the Steamworks library is added to your project, you can interact directly 
     #endregion
 ```
 
-#### steam_appid.txt
+#### steam\_appid.txt
 
-The steam_appid.txt file is a text file which is added to the same location as your game's .exe file. It is a text file which should contain only your app ID (which is a 7 digit number athte time of this writing, but may increase to 8 or 9 digits in the future).  Note that creating the file in Visual Studio may add a byte order mark which makes your file unreadable by the Steam api, so create the file as a plain text file through Windows Explorer.
+The steam\_appid.txt file is a text file which is added to the same location as your game's .exe file. It is a text file which should contain only your app ID (which is a 7 digit number at the time of this writing, but may increase to 8 or 9 digits in the future). Note that creating the file in Visual Studio may add a byte order mark which makes your file unreadable by the Steam api, so create the file as a plain text file through Windows Explorer.
 
 #### SteamManager Setup
 
@@ -262,7 +253,7 @@ To use the SteamManager:
 
 Normally games should be paused when the Steam overlay is shown. Games which use GameScreen as their base class for all levels can respond to the SteamManager's SteamOverlayVisibilityChanged event by pausing. For example, the following code snippet could be used to pause the game:
 
-```
+```csharp
 void CustomInitialize()
 {
    ...
@@ -300,7 +291,7 @@ If using the SteamManager, the second point is fairly easy to do:
 
 For example, consider an achievement which is awarded when the player has collected all possible power-ups in a game. This may be checked in the collision function between PlayerList and PowerUpList as follows:
 
-```
+```csharp
 Achievements.PowerUpCollection.TryApply();
 ```
 
@@ -310,6 +301,6 @@ The TryApply method performs a local check for awarding before sending anything 
 
 If your game uses .NET 6 or newer, then it can be published as a self-contained app which includes all of the .NET 6 runtime files. While this increases the size of your game, it enables your game to run on any machine regardless of whether .NET 6 runtime is installed. Furthermore, it allows your game to run on SteamDeck. To do this, first add the following highlighted text to your csproj under the PropertyGroup tag.
 
-![](../../../media/2022-11-img_636bcbde5f619.png)
+![](../../media/2022-11-img\_636bcbde5f619.png)
 
-Once you have done this, you can publish your application using the dotnet publish command or you can grab the files from the bin folder that Visual Studio creates. &#x20;
+Once you have done this, you can publish your application using the dotnet publish command or you can grab the files from the bin folder that Visual Studio creates.
