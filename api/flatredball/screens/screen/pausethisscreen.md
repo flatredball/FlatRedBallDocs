@@ -34,7 +34,7 @@ void CustomActivity(bool firstTimeCalled)
 
 When the game is paused, the Sprite automatically stops rotating and resumes when the game is unpaused.
 
-<figure><img src="../../../../media/2022-10-28_19-44-16.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2022-10-28_19-44-16.gif" alt=""><figcaption><p>FlatRedBall Sprite pausing by stopping RotationZVelocity</p></figcaption></figure>
 
 ### Applying Movement After Pause
 
@@ -75,4 +75,48 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-<figure><img src="../../../../media/2022-10-28_19-51-13.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../media/2022-10-28_19-51-13.gif" alt=""><figcaption><p>Circles added after pausing continue to fall</p></figcaption></figure>
+
+### InstructionManager.ObjectsIgnoringPausing
+
+Objects which do not inherit from the PositionedObject class can be added to the InstructionManager.ObjectsIgnoringPausing so they are ignored during pausing. For a detailed discussion of when to use ObjectsIgnoringPausing, see the [ObjectsIgnoringPausing](../../instructions/instructionmanager/objectsignoringpausing.md) page.
+
+### Example - Playing Gum Animations when Paused
+
+Calling PauseThisScreen also pauses the TweenerManager, which inturn pauses all Gum animations. Animations can be excluded from this pausing by adding the animation to the InstructionManager.ObjectsIgnoringPausing. Note that the animation must be added, not the Gum or Forms object.
+
+The following code begins a Button's looping animation in CustomInitialize. Its animation is added to InstructionManager.ObjectsIgnoringPausing which results in the button continuing to animate even if the game is paused.
+
+```csharp
+void CustomInitialize()
+{
+    GumScreen.ButtonInstance.GrowShrinkAnimation.Play();
+    InstructionManager.ObjectsIgnoringPausing.Add(
+        GumScreen.ButtonInstance.GrowShrinkAnimation);
+
+    // Forms.ButtonInstance is the Forms wrapper for the 
+    // GumScreen.ButtonInstance.
+    Forms.ButtonInstance.Text = "Unpaused";
+}
+
+void CustomActivity(bool firstTimeCalled)
+{
+    if (InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Escape))
+    {
+        if (IsPaused)
+        {
+            UnpauseThisScreen();
+            Forms.ButtonInstance.Text = "Unpaused";
+        }
+        else
+        {
+            PauseThisScreen();
+            Forms.ButtonInstance.Text = "Paused";
+        }
+    }
+}
+```
+
+<figure><img src="../../../../.gitbook/assets/02_06 49 59.gif" alt=""><figcaption><p>Pausing the screen does not stop the button's animation</p></figcaption></figure>
+
+Notice that when the game is paused the player's movement stops but the Button continues to animate.
