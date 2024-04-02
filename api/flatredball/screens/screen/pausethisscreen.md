@@ -1,14 +1,14 @@
-# pausethisscreen
+# PauseThisScreen
 
 ### Introduction
 
-The PauseThisScreen method is provided by FlatRedBall Screens which can be used to implement pausing. In many cases, this function will effectively provide pause implementation for games.
+PauseThisScreen can be used to implement pausing. In many cases, this function will effectively provide pause implementation for games.
 
 ### Example Usage - Pausing With the Keyboard
 
 The following code shows how to pause and unpause the screen using a gamepad's Start button.
 
-```
+```csharp
 void CustomInitialize()
 {
     // start spinning the sprite
@@ -32,11 +32,9 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-When the game is paused, the Sprite automatically stops rotating and resumes when the game is unpaused. 
+When the game is paused, the Sprite automatically stops rotating and resumes when the game is unpaused.
 
-<figure><img src="../../../../../media/2022-10-28_19-44-16.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../media/2022-10-28_19-44-16.gif" alt=""><figcaption></figcaption></figure>
 
 ### Applying Movement After Pause
 
@@ -46,7 +44,7 @@ When a Screen is paused, the underlying engine logic does not stop. Rather, the 
 
 The following code assumes an Entity named Ball. Clicking the cursor creates a new Ball which falls. Pressing the Space toggles pause. Notice that pausing the game will pause all existing entities, but new entities created after a pause will fall normally.
 
-```
+```csharp
 void CustomInitialize()
 {
     FlatRedBallServices.Game.IsMouseVisible = true;
@@ -77,8 +75,4 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-&#x20; 
-
-<figure><img src="../../../../../media/2022-10-28_19-51-13.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../media/2022-10-28_19-51-13.gif" alt=""><figcaption></figcaption></figure>
