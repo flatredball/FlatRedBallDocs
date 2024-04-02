@@ -77,6 +77,45 @@ void CustomActivity(bool firstTimeCalled)
 
 <figure><img src="../../../../media/2022-10-28_19-51-13.gif" alt=""><figcaption><p>Circles added after pausing continue to fall</p></figcaption></figure>
 
+### Example - Playing Gum Animations After Pausing
+
+Gum animations internally create Tweeners on the TweenerManager. When the Screen is paused, all Tweeners are paused. If your game includes a Gum object which animates when the game is paused (such as a menu sliding on the screen), you can play the animation after the PauseThisScreen call and the animation will still play normally.
+
+The following code animates a button on-screen after the game is paused.
+
+```csharp
+void CustomInitialize()
+{
+    GumScreen.CurrentButtonPositionState = GumRuntimes.GameScreenGumRuntime.ButtonPosition.OffScreen;
+}
+
+void CustomActivity(bool firstTimeCalled)
+{
+    if (InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Escape))
+    {
+        if (IsPaused)
+        {
+            UnpauseThisScreen();
+            GumScreen.SlideOffAnimation.Play();
+            Forms.ButtonInstance.Text = "Unpaused";
+        }
+        else
+        {
+            PauseThisScreen();
+ 
+            // The animation must be played after the screen is paused
+            // or else it gets paused too.
+            GumScreen.SlideOnAnimation.Play();
+            Forms.ButtonInstance.Text = "Paused";
+        }
+    }
+}
+```
+
+<figure><img src="../../../../.gitbook/assets/02_07 04 58.gif" alt=""><figcaption><p>Button animating after the screen is paused</p></figcaption></figure>
+
+If you have animations which should persist through pausing, see the ObjectsIgnoringPausing section below.
+
 ### InstructionManager.ObjectsIgnoringPausing
 
 Objects which do not inherit from the PositionedObject class can be added to the InstructionManager.ObjectsIgnoringPausing so they are ignored during pausing. For a detailed discussion of when to use ObjectsIgnoringPausing, see the [ObjectsIgnoringPausing](../../instructions/instructionmanager/objectsignoringpausing.md) page.
