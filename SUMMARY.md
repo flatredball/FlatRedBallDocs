@@ -434,6 +434,8 @@
     * [PlayAnimation](spine/spinedrawablebatch/playanimation.md)
     * [SetCollision](spine/spinedrawablebatch/setcollision.md)
     * [Skeleton](spine/spinedrawablebatch/skeleton.md)
+* [⏸️ Aseprite](aseprite/README.md)
+  * [AnimationChainList](aseprite/animationchainlist.md)
 * [🏫 API Documentation](api/README.md)
   * [FlatRedBall Engine](api/flatredball/README.md)
     * [Introduction](api/flatredball/spritelist.md)
