@@ -10,7 +10,7 @@ The FlatRedBall Editor is a visual tool for creating and organizing screens, ent
 
 Use the wizard to get your game up and running in seconds.
 
-<figure><img src=".gitbook/assets/image (101).png" alt=""><figcaption><p>The Project SEtup Wizard can be used to start making a game in seconds</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (101).png" alt=""><figcaption><p>The Project Setup Wizard can be used to start making a game in seconds</p></figcaption></figure>
 
 ### Tiled Integration
 
