@@ -154,7 +154,6 @@
   * [Additional FlatRedBall Editor Tutorials](tutorials/glue-tutorials/README.md)
     * [How to Create a First Person Camera](tutorials/glue-tutorials/glue-how-to-create-a-first-person-camera.md)
     * [How to Play Sounds](tutorials/glue-tutorials/glue-how-to-play-sounds.md)
-    * [How to Tender an Entity to a Texture](tutorials/glue-tutorials/glue-how-to-render-an-entity-to-a-texture.md)
     * [How to Share Reference Data Between Screens and Entities](tutorials/glue-tutorials/glue-how-to-share-reference-data-between-screens-and-entities.md)
   * [Math Tutorials](tutorials/math/README.md)
     * [Circle Collision](tutorials/math/circle-collision.md)
