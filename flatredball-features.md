@@ -40,7 +40,7 @@ Make changes to files such as Tiled (.tmx), Textures (.png), and spreadsheet (.c
 
 Native support for .aseprite files enables creating animated characters by drag+dropping files into the FlatRedBall Editor.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>.aseprite file in FlatRedBall as an Animated Character</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (110).png" alt=""><figcaption><p>.aseprite file in FlatRedBall as an Animated Character</p></figcaption></figure>
 
 ### Platformer Controls and Physics
 

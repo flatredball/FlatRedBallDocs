@@ -80,7 +80,7 @@ To add a level:
 2. Click the **Add Screen/Level** button
 3.  Leave all defaults and click **OK**
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 Creation Options</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 Creation Options</p></figcaption></figure>
 4.  After clicking OK, another popup appears with options for the level tile map (TMX). Leave all defaults and click OK
 
     <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>TMX Creation Options</p></figcaption></figure>
