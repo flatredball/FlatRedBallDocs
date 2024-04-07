@@ -36,6 +36,12 @@ Make changes to files such as Tiled (.tmx), Textures (.png), and spreadsheet (.c
 
 <figure><img src=".gitbook/assets/12_21 20 41.gif" alt=""><figcaption><p>Changes in Tiled update a game in realtime</p></figcaption></figure>
 
+### Aseprite Integration
+
+Native support for .aseprite files enables creating animated characters by drag+dropping files into the FlatRedBall Editor.
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>.aseprite file in FlatRedBall as an Animated Character</p></figcaption></figure>
+
 ### Platformer Controls and Physics
 
 Creating a platformer has never been easier. Mark your entity as a Platformer or use the new project wizard to get production quality platformer physics and movement.
