@@ -1,8 +1,8 @@
-# flatredball-tilegraphics-mapdrawablebatch
+# MapDrawableBatch
 
 ### Introduction
 
-The MapDrawableBatch class represents a single layer in a .tmx file. It implements the [IDrawableBatch](../../frb/docs/index.php) class to perform custom rendering. It internally creates a single vertex buffer which is drawn all at once with no render state changes for maximum performance. Usually .tmx files are loaded into a [LayeredTileMap](../../documentation/tools/tiled-plugin/flatredball-tilegraphics-layeredtilemap.md), which contains one or more MapDrawableBatch instances.
+The MapDrawableBatch class represents a single layer in a .tmx file. It implements the [IDrawableBatch](../../api/flatredball/graphics/drawablebatch/) class to perform custom rendering. It internally creates a single vertex buffer which is drawn all at once with no render state changes for maximum performance. Usually .tmx files are loaded into a [LayeredTileMap](../flatredball-tilegraphics-layeredtilemap/), which contains one or more MapDrawableBatch instances.
 
 ### Only painted tiles create vertices
 
@@ -16,7 +16,7 @@ MapDrawableBatch supports a Modulate color operation through its Red, Green, and
 
 MapDrawableBatch instances are typically created by adding a TMX file to your project. By default FlatRedBall top down and platformer projects contain TMX files for each level. MapDrawableBatch instances can also be created in code. The following code shows how to create a new MapDrawableBatch which is filled with a pattern from a texture called FRBeefcakeSpritesheet The following code assumes that an existing Map exists (although this is not necessary), that the code has access to a Texture called FRBeefcakeSpritesheet, and that this code exists in the CustomInitialize of a Screen such as Level1.
 
-```
+```csharp
 MapDrawableBatch CustomLayer;
 
 void CustomInitialize()
@@ -56,7 +56,7 @@ void CustomInitialize()
 }
 ```
 
-![](../../media/2023-01-img_63b97849def36.png)
+![](../../media/2023-01-img\_63b97849def36.png)
 
 #### Creation Considerations
 
