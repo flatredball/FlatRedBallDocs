@@ -14,7 +14,7 @@ The FlatRedBall Editor provides a quick setup for creating a platformer project.
 4. Wait for the Wizard window to appear
 5.  Select the Platformer project option
 
-    <figure><img src="../../../media/2022-10-img_634748f242105.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../media/2022-10-img_634748f242105.png" alt=""><figcaption><p>Select the Standard Platformer option in the Wizard</p></figcaption></figure>
 6. Wait for the wizard to finish processing
 7. Run the game from either Visual Studio or the FlatRedBall Editor
 
@@ -32,7 +32,7 @@ Note that you may already have a GameScreen in your project. If so, you can skip
 4. Check both the **Add SolidCollision ShapeCollection** and **Add CloudCollision ShapeCollection** options
 5. Click **OK**
 
-![](<../../../.gitbook/assets/11\_05 37 20.png>)
+![Adding a GameScreen in the new screen window.](<../../../.gitbook/assets/11\_05 37 20.png>)
 
 We will return to the GameScreen in future tutorials, but having one created before we create entities will speed up the process.
 
@@ -51,20 +51,22 @@ To create an entity with platformer behavior:
 7. Leave the Tiled options selected to automatically create a list for this new entity in GameScreen
 8. Click **OK**
 
-![](<../../../.gitbook/assets/11\_05 39 12.png>)
+![Adding a Player entity with collision and marking it as a Platformer](<../../../.gitbook/assets/11\_05 39 12.png>)
 
 This will create a new platformer entity with a rich set of default functionality. We can verify that the entity is marked as a platformer by checking its **Entity Input Movement** tab to verify that it is marked as a platformer and that it has two movement types:
 
 * Ground
 * Air
 
-![](<../../../.gitbook/assets/11\_05 40 26.png>)
+![Select the Entity Input Movement tab to view movement values](<../../../.gitbook/assets/11\_05 40 26.png>)
 
 ### Adding a Player to the GameScreen
 
 Now that we have the **Player entity** set up with platfomer control values, we can add it to our **GameScreen** by drag+dropping the **Player** onto the **GameScreen** node. We should already have a **PlayerList** in our **GameScreen** so the newly-added object will be inside of that list after the drag+drop.
 
-<figure><img src="../../../.gitbook/assets/11_05 42 02.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/11_05 42 02.gif" alt=""><figcaption><p>Drag+drop the Player entity on the GameScreen</p></figcaption></figure>
+
+Note that we add a Player to the GameScreen _before_ creating any Levels. We add the Player to the GameScreen so that we have a player in every Level (screens which inherit from GameScreen).
 
 ### Adding a CameraControllingEntity Instance (Optional)
 
@@ -87,7 +89,7 @@ To add a level:
 
 Your project should now have a Screen named Level1. This is marked as the startup screen (it has the play icon and appears in the startup dropdown).
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 as the startup screen</p></figcaption></figure>
 
 ### Conclusion
 
