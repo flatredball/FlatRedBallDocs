@@ -31,7 +31,7 @@ FlatRedBall provides sample songs which you can use to test song playing. To add
 4.  Select one of the song types and click OK\
 
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add New File window selecting one of the song types</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add New File window selecting one of the song types</p></figcaption></figure>
 
 For more information on NAudio, see below.
 
@@ -81,11 +81,11 @@ For more information on the AudioManager, see the [AudioManager page](../../api/
 
 FlatRedBall provides built-in support for NAudio. When a new song is added through the Add File -> New File right-click option, a window allows the selection of NAudio or (MonoGame) Songs.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Song type selection when creating a new song</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Song type selection when creating a new song</p></figcaption></figure>
 
 Already-added songs can be changed between Song and NAudio\_Song by changing the runtime type on the file's properties.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing a Song's RuntimeType</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing a Song's RuntimeType</p></figcaption></figure>
 
 Both MonoGame/FNA `Song` and `NAudio_Song` share much of the same functionality. Both:
 

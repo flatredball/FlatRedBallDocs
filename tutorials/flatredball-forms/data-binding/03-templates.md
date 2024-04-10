@@ -40,7 +40,7 @@ For this tutorial we will be creating a new ListBoxItem which has two Text insta
 
 Note that by default ListBoxItems attempt to assign a Text object by the name of TextInstance. By changing our Text names, our new ListBoxItem no longer supports default Text display. If you are creating a new ListBoxItem which is intended to be used as a default ListBoxItem throughout your entire game, you should consider keeping a Text instance with th ename TextInstance. In this case we are creating a ListBoxItem to be used in a specific case so this name isn't required.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>InventoryListBoxItem in Gum</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>InventoryListBoxItem in Gum</p></figcaption></figure>
 
 ### Using the Custom ListBoxItem (InventoryListBoxItem)
 
@@ -212,7 +212,7 @@ public partial class InventoryListBoxItemRuntime
 
 Now if we run our application, each item displays the information from each InventoryItemView.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Inventory items displaying information</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Inventory items displaying information</p></figcaption></figure>
 
 ### Modifying the Selected ViewModel
 
