@@ -12,11 +12,11 @@ The SkiaGum namespace contains classes which can be used to integrate SkiaSharp 
 
 As of April 2024, Skia is supported only in FlatRedBall MonoGame DesktopGL projects. You can verify that your project has the Skia libraries included by checking the linked assemblies as shown in the following screenshot:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Skia prebuilt libraries linked in a FlatRedBall project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Skia prebuilt libraries linked in a FlatRedBall project</p></figcaption></figure>
 
 Projects which link to source can optionally include the Skia libraries, as shown in the following screenshot:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Including source can include Skia</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Including source can include Skia</p></figcaption></figure>
 
 If you are targeting a different platform (such as Android), please join the FlatRedBall Discord to discuss extending platform availability.
 
@@ -38,3 +38,12 @@ You should now see the newly-added Skia elements under the Standard folder.
 
 <figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption><p>Skia standard elements in the Standard folder</p></figcaption></figure>
 
+### Using Skia in Your Gum Screen
+
+Once you have added Skia elements to your Screen you can use these elements in your Gum screens and components just like any other type of Gum object. For example, a ColoredCircle can be added to the MainMenuGum screen by drag+dropping the ColoredCircle standard into the workspace in Gum.
+
+<figure><img src="../../.gitbook/assets/11_06 31 58.gif" alt=""><figcaption><p>Adding a ColoredCircle to the MainMenuGum screen</p></figcaption></figure>
+
+The ColoredCircle is also shown in your game, assuming the matching Screen is the startup screen.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>A ColoredCircle in a FlatRedBall game</p></figcaption></figure>
