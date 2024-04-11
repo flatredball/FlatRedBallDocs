@@ -31,7 +31,7 @@ Next we’ll create a IDrawableBatch which will handle our rendering. To do this
 2. Name the file CustomShaderSprite
 3. Replace your file with the following (you may need to change the namespace to match your project’s namespace:
 
-```
+```csharp
 using FlatRedBall;
 using FlatRedBall.Graphics;
 using Microsoft.Xna.Framework.Graphics;
@@ -122,7 +122,7 @@ namespace ShaderProject
 
 To add an instance of CustomShaderSprite to your screen, modify your Screen’s code so its methods are as shown in the following code:
 
-```
+```csharp
 public partial class GameScreen
 {
     CustomShaderSprite customShaderSprite;
