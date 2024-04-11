@@ -20,3 +20,21 @@ Projects which link to source can optionally include the Skia libraries, as show
 
 If you are targeting a different platform (such as Android), please join the FlatRedBall Discord to discuss extending platform availability.
 
+Note that Skia works on MonoGame DesktopGL, and with a little work it can work on mobile platforms, but it will not run on consoles without significant work. Practically speaking, Skia should not be used if your game will target consoles unless you are willing to make changes to Skia.
+
+### Adding Skia Elements to Gum Projects
+
+To add Skia controls to a Gum project:
+
+1. Open your project in the FlatRedBall Editor
+2. If your game wasn't created using the wizard, make sure you have added a Gum project
+3. Open your Gum project by clicking the Gum icon at the top of FlatRedBall
+4.  Click **Plugins** -> **Add Skia Standard Elements**\
+
+
+    <figure><img src="../../.gitbook/assets/image (112).png" alt=""><figcaption><p>Add Skia Satandard Elements menu item in Gum</p></figcaption></figure>
+
+You should now see the newly-added Skia elements under the Standard folder.
+
+<figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption><p>Skia standard elements in the Standard folder</p></figcaption></figure>
+
