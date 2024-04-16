@@ -4,7 +4,7 @@
 
 Asesprite files (.aseprite) can be used in FlatRedBall projects to create AnimationChainLists. Each tag creates an AnimationChain with a matching name. FlatRedBall natively supports .aseprite files so no additional integration (nuget packages or plugins) are needed.
 
-Support for .aseprite files is available for projects which link to source code as of April 6, 2024. Supprort will be availble as of the May 2024 release for binaries.
+Support for .aseprite files is available for projects which link to source code (and which build the FRB Editor) as of April 6, 2024. Support will be available as of the May 2024 release for binaries.
 
 ### Adding an .aseprite File to a FlatRedBall project.
 
