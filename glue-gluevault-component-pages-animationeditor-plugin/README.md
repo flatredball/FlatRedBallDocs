@@ -1,15 +1,19 @@
-# 🏃♀ Animation Editor
+# 🏃‍♀️ Animation Editor
 
 ### Introduction
 
-The AnimationEditor is a tool which simplifies the creation and editing of AnimationChainList files (.achx files). AnimationChainLists are the standard file format for sprite animations.
+The AnimationEditor is a tool which simplifies the creation and editing of AnimationChainList files (.achx files). AnimationChainLists are the standard file format for sprite animations in the FlatRedBall Engine. Note that since the AnimationEditor produces plain XML files, these files can be consumed in any environment, so it can be used for any type of game, not just FlatRedBall games.
 
 ### Opening the AnimationEditor
 
-The AnimationEditor is distributed along FRB in the FRBDK.zip file. For info on downloading the FRBDK.zip file, see the [Downloads page](../download.md). You can open the AnimationEditor by either:
+The AnimationEditor is distributed along FRB in the FRBDK.zip file. For info on downloading the FRBDK.zip file, see the [Downloads page](../). You can open the AnimationEditor by either:
 
-* Double-clicking an .achx file in the FRB Editor. Note that if you have not set up the Windows file association for .achx files, you may be asked how to open this file. You can select to use the AnimationEditor.exe, which is located in the place shown in the next point: ![](../media/2023-06-img\_649226c0a5464.png)
-* Or opening the AnimationEditor.exe in the XNA 4 Tools folder ![](../media/2021-01-img\_5ff8eabb97e17.png)
+*   Double-clicking an .achx file in the FRB Editor. Note that if you have not set up the Windows file association for .achx files, you may be asked how to open this file. You can select to use the AnimationEditor.exe, which is located in the place shown in the next point:&#x20;
+
+    <figure><img src="../media/2023-06-img_649226c0a5464.png" alt=""><figcaption></figcaption></figure>
+*   Or opening the AnimationEditor.exe in the XNA 4 Tools folder&#x20;
+
+    <figure><img src="../media/2021-01-img_5ff8eabb97e17.png" alt=""><figcaption></figcaption></figure>
 
 You can also add a new .achx file to your FlatRedBall project in any Screen, Entity, or in Global Content Files:
 
