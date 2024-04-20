@@ -24,3 +24,17 @@ Circle
 ShapeCollection
 
 * [CollideAgainst](https://docs.flatredball.com/flatredball/api/flatredball/math/geometry/shapecollection/collideagainst)
+
+### ItemsCollidedAgainst and ObjectsCollidedAgainst
+
+Collidables must implement the following four properties:
+
+* ItemsCollidedAgainst
+* LastFrameItemsCollidedAgainst
+* ObjectsCollidedAgainst
+* LastFrameObjectsCollidedAgainst
+
+These serve as an alternative to doing custom collision-related logic, and provide some additional functionality such as detecting when an entity exits collision.
+
+The `Items` property contains the name of items that the IColliable has collided with, while the `Objects` contains a reference to the objects that the ICollidable has collided with. If you are using the FlatRedBall Editor, these propertes are automatically generated in your entities, and these are automatically filled through collision relationships.
+
