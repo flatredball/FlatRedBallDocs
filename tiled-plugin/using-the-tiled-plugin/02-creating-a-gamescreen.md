@@ -91,7 +91,7 @@ You should now have a Level1Map file in your Level1 screen.
 
 FRB should automatically update your Map object in Level1 so that it uses your newly-added TMX file. You can verify this by selecting the Map object and looking at its properties tab.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 Map object using the Level1Map.tmx file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 Map object using the Level1Map.tmx file</p></figcaption></figure>
 
 If your values do not match the values shown in the image above, you can manually change them.
 

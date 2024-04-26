@@ -28,9 +28,29 @@ The Engine.yml file is responsible for the following actions:
 * Build Glue
 * Zip and upload FRBDK.zip
 
+#### Gum Automatic Builds
+
+Team City has an automated build which runs whenever anything is pushed (assuming Vic's desktop is turned on). This attempts to build Gum (the tool) and the .NET 6 libraries use for MonoGameGum. If the builds succeeds it also attempts to upload a new nuget package. Note that this will not upload a new NuGet if the version number is not manually increased first.
+
+Therefore, the steps to get this to work are:
+
+1. Open one of the MonoGame Gum sample projects in Visual Studio - these link MonoGame Gum and the projects it depends on. For example, \<GumRoot>Gum\Samples\MonoGameGumFromFile\MonoGameGumFromFile.sln
+2.  Double-click GumCommon and change its Version to the {year}.{month}.{day}.{build}, where build is 1 if it's the first build of the day.\
+
+
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Setting GumCommon's Version number</p></figcaption></figure>
+3. Repeat this for GumDataTypesNet6, MonoGameGum, and ToolsUtilitiesStandard. Be sure to use the same version for all.
+4. Save the files and push the commit
+
+#### Troubleshooting Gum Automtic Builds
+
+Vic has noticed that sometimes the build will fail due to the referenced ColorPicker not being available. If the same .sln (in the build folder indicated in TeamCity logs) is opened and built in VS 2019, the manual build works. Then if TeamCity is run again, all works. This is a hacky workaround.
+
 #### Gum Builds
 
-Currently Gum uses XNA and .NET 4.7.1. It's not clear why, but this will not build using dotnet build. Therefore, Gum is built as follows:
+Update April 26, 2024 - this may not be accurate, Vic is investigating...
+
+&#x20;Currently Gum uses XNA and .NET 4.7.1. It's not clear why, but this will not build using dotnet build. Therefore, Gum is built as follows:
 
 1. Gum is built locally on Vic's machine using TeamCity
 2. This build increases the build number and uploads it to the default location: [http://files.flatredball.com/content/Tools/Gum/Gum.zip](http://files.flatredball.com/content/Tools/Gum/Gum.zip)
