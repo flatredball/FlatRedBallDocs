@@ -1,8 +1,12 @@
-# layer
+# Layer
 
 ### Introduction
 
-Layers can be used to control the order of visual objects on screen. Typically objects with a larger Z value will appear behind objects with smaller Z values, but this relationship is only true if the objects are on the same layer. Layers take priority over the Z value of objects when performing rendering. Typically Layers are used to force groups of visual objects to draw on top of other objects. For example, a HUD layer can be used to force HUD UI such as score and health bars to appear on top of everything else in a game regardless of Z value. Layers can be added in the FlatRedBall Editor or in code through the SpriteManager. For information on how to use Layers in Glue, see [this article](../../../../frb/docs/index.php)
+Layers can be used to control the order of visual objects on screen. Typically objects with a larger Z value appear on top of objects with smaller Z values, but this relationship is only true if the objects are on the same layer.
+
+Layers take priority over the Z value of objects when performing rendering. Typically Layers are used to force groups of visual objects to draw on top of other objects. For example, a HUD layer can be used to force HUD UI such as score and health bars to appear on top of everything else in a game regardless of Z value.&#x20;
+
+Layers can be added in the FlatRedBall Editor or in code through the SpriteManager. For information on how to use Layers in the FRB Editor, see [this article](../../../../glue-reference/objects/object-types/glue-reference-layer/).
 
 ### Example - Creating a Layer in FlatRedBall Editor
 
@@ -14,46 +18,40 @@ To create a new Layer:
 4. Enter a name for the Layer
 5. Click **OK**
 
-
-
 <figure><img src="../../../../media/2016-01-01_12-19-51.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Layer-able Types
 
 The following types can be added to Layers:
 
-* [FlatRedBall.Graphics.IDrawableBatch](../../../../frb/docs/index.php)
-* [FlatRedBall.Graphics.Text](../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.AxisAlignedCube](../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.AxisAlignedRectangle](../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Capsule2D](../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Circle](../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Line](../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Polygon](../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.Sphere](../../../../frb/docs/index.php)
-* [FlatRedBall.Sprite](../../../../frb/docs/index.php)
+* [FlatRedBall.Graphics.IDrawableBatch](../drawablebatch/)
+* [FlatRedBall.Graphics.Text](../text/)
+* [FlatRedBall.Math.Geometry.AxisAlignedCube](../../math/geometry/axisalignedcube/)
+* [FlatRedBall.Math.Geometry.AxisAlignedRectangle](../../math/geometry/axisalignedrectangle/)
+* [FlatRedBall.Math.Geometry.Capsule2D](../../math/geometry/capsule2d.md)
+* [FlatRedBall.Math.Geometry.Circle](../../math/geometry/circle/)
+* [FlatRedBall.Math.Geometry.Line](../../math/geometry/line/)
+* [FlatRedBall.Math.Geometry.Polygon](../../content/polygon/)
+* [FlatRedBall.Math.Geometry.Sphere](../../math/geometry/sphere.md)
+* [FlatRedBall.Sprite](../../sprite/)
 
-### Ordering with Layers as opposed to Z values
-
-Although ordering does normally obey objects' Z value, changing Z also changes an object's size (if not in orthogonal mode) and can place an object outside of the [Camera's](../../../../frb/docs/index.php) NearClipPlane and FarClipPlane. Furthermore, some objects such as HUDs and in-game UI should not be overlapped by any other objects.
+Additionally, Entities can be added to shapes through the FlatRedBall Editor, or through their MoveToLayer method.
 
 ### Understanding the purpose of Layers
 
-Layers are used **only** to control the drawing order of objects. This means that layers have nothing to do with the position of the objects that they contain. For example, consider the [Entity pattern](../../../../frb/docs/index.php#Entity_Tutorials). Entities usually are composed of 3 [PositionedObjects](../../../../frb/docs/index.php):
+Layers are used **only** to control the drawing order of objects. This means that layers have nothing to do with the position of the objects that they contain. For example, objects in an entity which are attached to the root entity can span multiple layers despite having their positions controlled by the parent/child relationship. For example we can consider a typical entity which is made up of three (3) objects:
 
 * The Entity itself
-* The visible representation which is attached to the Entity
-* The collision object which is also attached to the Entity
+* The visible representation which is attached to the Entity, such as a Sprite
+* The collision object which is also attached to the Entity, such as an AxisAlignedRectangle
 
-Of these three, the **only** [PositionedObject](../../../../frb/docs/index.php) which will get added to a Layer (if you want your Entity to be layered) is the visible representation. You **can** add the collision to a Layer, but this **does not have any impact on the behavior of your collision**. The only reason you might want to add the collision object to a layer is so it will be drawn if on the same layer as the visible representation if you desire to have it drawn for debugging reasons. To clarify, adding the collision to a Layer will **not** provide some form of categorization. Two entities on different Layers will still be able to have their collision objects collide. The collision objects do not consider Layers when performing collision.
+Of these three, only the visible representation needs to be layered. You **can** add the collision to a Layer, but this **does not have any impact on the behavior of your collision**. The only reason you might want to add the collision object to a layer is so it will be drawn if on the same layer as the visible representation if you desire to have it drawn for debugging reasons. To clarify, adding the collision to a Layer does not impact collision. Two entities on different Layers will still be able to have their collision objects collide. The collision objects do not consider Layers when performing collision.
 
-### Using Layers
+### Code Example - Using Layers
 
-Layers are created through the [SpriteManager](../../../../frb/docs/index.php). The following code creates a layer and two [Sprites](../../../../frb/docs/index.php). Although the [Sprite](../../../../frb/docs/index.php) named nearSprite is closer than the [Sprite](../../../../frb/docs/index.php) named farSprite, farSprite is not hidden by nearSprite.
+In code, layers are created through the [SpriteManager](../../spritemanager/). The following code creates a layer and two [Sprites](../../sprite/). Although the [Sprite](../../sprite/) named nearSprite is closer than the [Sprite](../../sprite/) named farSprite, farSprite is not hidden by nearSprite.
 
-```
+```csharp
  Layer layer = SpriteManager.AddLayer();
 
  Texture2D texture = FlatRedBallServices.Load<Texture2D>("redball.bmp");
@@ -68,7 +66,7 @@ Layers are created through the [SpriteManager](../../../../frb/docs/index.php). 
  farSprite.Z = -5;
 ```
 
-![LayeredSpriteBehindUnlayered.png](../../../../media/migrated_media-LayeredSpriteBehindUnlayered.png)
+![LayeredSpriteBehindUnlayered.png](../../../../media/migrated\_media-LayeredSpriteBehindUnlayered.png)
 
 ### AddToLayer Method
 
@@ -79,7 +77,7 @@ Layers are created through the [SpriteManager](../../../../frb/docs/index.php). 
 
 Similar to [Sprite](../../../../frb/docs/index.php) and [Texts](../../../../frb/docs/index.php), [PositionedModels](../../../../frb/docs/index.php) can also be layered. The following code creates a [PositionedModel](../../../../frb/docs/index.php) and adds it to a layer.
 
-```
+```csharp
  Layer layer = SpriteManager.AddLayer();
 
  PositionedModel model = ModelManager.AddModel(ModelShape.Sphere);
@@ -95,7 +93,7 @@ There are two ways to remove objects from Layers:
 
 For reference, let's use the following setup to discuss this point:
 
-```
+```csharp
 Texture2D texture = FlatRedBallServices.Load<Texture2D>("redball.bmp", "Global");
 Layer layer = SpriteManager.AddLayer();
 
@@ -107,7 +105,7 @@ Text text = TextManager.AddText("I'm on a layer", layer);
 
 This is the most common method of removing an object. It's usually what you'll do if you're manually handling the removal of your objects (as opposed to letting Glue do it for you). To do this, simply use the manager removal methods:
 
-```
+```csharp
 // Here's how to remove the Sprite
 SpriteManager.RemoveSprite(sprite);
 
@@ -122,7 +120,7 @@ In other words, remove your objects just like normal - they'll automatically get
 
 Objects can be removed from Layers through the Remove method.
 
-```
+```csharp
 layer.Remove(sprite);
 layer.Remove(text);
 ```
@@ -143,7 +141,7 @@ See [FlatRedBall.Camera.Layer](../../../../frb/docs/index.php).
 
 ### Adding an Entity to a Layer
 
-If you are using [Glue](../../../../frb/docs/index.php) then you can add an Entity to a Layer. See [this article](../../../../frb/docs/index.php#Adding_an_Entity_to_a_Layer) for information on this.
+If you are using [Glue](../../../../frb/docs/index.php) then you can add an Entity to a Layer. See [this article](../../../../frb/docs/index.php#Adding\_an\_Entity\_to\_a\_Layer) for information on this.
 
 ### Controlling Destination Rectangle
 

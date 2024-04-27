@@ -885,6 +885,7 @@
           * [ShapeDrawingOrder](api/flatredball/math/geometry/shapemanager/shapedrawingorder.md)
         * [ShapeMerger](api/flatredball/math/geometry/shapemerger.md)
         * [Shapes and 2D Collision](api/flatredball/math/geometry/shapes-and-2d-collision.md)
+        * [Sphere](api/flatredball/math/geometry/sphere.md)
       * [IAttachable](api/flatredball/math/iattachable/README.md)
         * [Attachment Updates in the Engine](api/flatredball/math/iattachable/flatredball-math-iattachable-attachment-updates-in-the-engine.md)
         * [Detach](api/flatredball/math/iattachable/detach.md)
