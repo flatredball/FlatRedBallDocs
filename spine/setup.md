@@ -1,9 +1,9 @@
 # Setup
 
-To use Spine in your project, you must do the following:
+To use Spine in your project, you must do the following high level steps. Each step will be explained in detail below:
 
-1. Link your project against FlatRedBall Source
-2. Link your project against the Spine
+1. Link your game project against FlatRedBall Source
+2. Link your game project against the Spine
 3. Load the Spine shader (.fx) file
 
 You can use Spine purely in code, or you can use Spine in the FlatRedBall Editor by adding the Spine plugin. The FlatRedBall Editor plugin enables adding Spine files (skeleton and atlas) to your FlatRedBall project. The plugin generates code for loading these files.
