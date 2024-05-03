@@ -42,6 +42,16 @@ Once you have restarted FlatRedBall, you should see Spine listed in the installe
 
 <figure><img src="../.gitbook/assets/15_07 25 10.png" alt=""><figcaption><p>Spine Plugin in FlatRedBall</p></figcaption></figure>
 
+### Alternative - Adding FlatRedBall.Spine Plugin from Source
+
+Alternatively you can clone the Spine plugin if you prefer to build from source and diagnose problems. To do this:
+
+1. Clone the FlatRedBall.Spine repository [https://github.com/flatredball/FlatRedBall.Spine](https://github.com/flatredball/FlatRedBall.Spine/releases). If you clone both FRB and this repository to the same root Github location, then the file links will work correctly
+2. Open SpinePlugin/SpinePlugin.sln
+3. Build->Rebuild the plugin
+
+The latest plugin .dll will be built and also copied over to the Glue output folder.
+
 ### Loading the Spine Shader
 
 The SpineShader is required to render Spine. To load the Spine Shader:
