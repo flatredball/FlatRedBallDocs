@@ -12,8 +12,8 @@ FlatRedBall can be used to develop games for the Nintendo Switch. To develop gam
 
 Both FNA and MonoGame can technically be used to develop games for the Nintendo Switch; however, the FNA path has a number of benefits:
 
-1. FNA allows the use of modern .NET versions (7+). MonoGame requires translating code to C++ using BRUTE which does not support modern .NET and C# features.
-2. As of December 2023, FlatRedBall has yet to run on the Nintendo Switch. FNA demos have been deployed to switch.
+1. FNA allows the use of modern .NET versions (7+). MonoGame requires translating code to C++ using BRUTE which does not support modern .NET and C# features. This is currently being worked on by the MonoGame team, but as of May 2024 there is no AOT solution.
+2. As of December 2023, FlatRedBall MonoGame has yet to run on the Nintendo Switch. FlatREdBall FNA demos have been successfully deployed to switch.
 3. The MonoGame team which was responsible for console support has been less active since 2021. The FNA team continues to be active as of December 2023.
 4. More games have been deployed to consoles recently using FNA rather than MonoGame as of December 2023.
 5. Internally, the FlatRedBall team is testing FNA and will provide support to any games which run into problems with FNA.
