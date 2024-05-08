@@ -174,6 +174,7 @@
       * [New Project Setup](tutorials/overworld/spinning-mode-7/01-new-project-setup.md)
       * [Adding Camera Code](tutorials/overworld/spinning-mode-7/02-adding-camera-code.md)
       * [Fading In and Out](tutorials/overworld/spinning-mode-7/03-fading-in-and-out.md)
+* [🎞️ Videos](videos.md)
 * [📐 FlatRedBall Editor](glue-reference/README.md)
   * [Display Settings](glue-reference/camera.md)
   * [Entities](glue-reference/entities/README.md)
