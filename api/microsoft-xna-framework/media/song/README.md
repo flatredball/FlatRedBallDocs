@@ -11,7 +11,7 @@ The Song class can be used to play music in a game. The easiest way to play a so
 | Format | PC Desktop                                                             | Android |
 | MP3    | X                                                                      | X       |
 | WMA    | X                                                                      |         |
-| OGG    | X [(with this codec installed)](http://www.vorbis.com/setup_windows/) | X       |
+| OGG    | X [(with this codec installed)](http://www.vorbis.com/setup\_windows/) | X       |
 
 WAV files are not supported in FlatRedBall for music files. Instead, they are used by the [SoundEffect](../../../../frb/docs/index.php) and [SoundEffectInstance](../../../../frb/docs/index.php) classes.
 
@@ -23,7 +23,7 @@ To play a song in Glue, drag+drop a file from disk into your Glue project on a S
 
 To play a song:
 
-1. Drag a music file (MP3 or WMA) into your project's Content folder through Visual Studio. ![SongInContentProject.png](../../../../media/migrated_media-SongInContentProject.png)
+1. Drag a music file (MP3 or WMA) into your project's Content folder through Visual Studio. ![SongInContentProject.png](../../../../media/migrated\_media-SongInContentProject.png)
 2. Add the following code:
 
 Add the following using statements:
@@ -50,14 +50,7 @@ Microsoft.Xna.Framework.Media.MediaPlayer.Play(song);
 This error can occur in a number of cases:
 
 * If you're using a WMA/MP3 with DRM
-
-&#x20;
-
 * If Windows Media Player is not installed on the computer running the game
-
-&#x20;
-
-* If Windows Media Player is disabled. To enable it (if installed):
 
 1. Open Control Panel
 2. Select Programs and Features
@@ -67,7 +60,7 @@ This error can occur in a number of cases:
 
 #### OGG song does not play (is silent)
 
-If attempting to play an .ogg file on the PC, you need to have the proper "DirectShow Filters" installed. To verify if you have them installed, attempt to play the .ogg file in Windows Media Player. If Windows Media Player does not recognize the file then you need the filters: ![OggError1.png](../../../../media/migrated_media-OggError1.png) ![OggError2.png](../../../../media/migrated_media-OggError2.png) If the song does not play, you can install the DirectShow Filders, [which can be found here](http://www.vorbis.com/setup_windows/).
+If attempting to play an .ogg file on the PC, you need to have the proper "DirectShow Filters" installed. To verify if you have them installed, attempt to play the .ogg file in Windows Media Player. If Windows Media Player does not recognize the file then you need the filters: ![OggError1.png](../../../../media/migrated\_media-OggError1.png) ![OggError2.png](../../../../media/migrated\_media-OggError2.png) If the song does not play, you can install the DirectShow Filders, [which can be found here](http://www.vorbis.com/setup\_windows/).
 
 ### Android
 

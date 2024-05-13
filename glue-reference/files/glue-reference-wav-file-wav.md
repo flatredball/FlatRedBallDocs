@@ -69,3 +69,23 @@ public void CustomActivity(bool firstTimeCalled)
 For the full SoundEffect documentation, see the MonoGame [SoundEffect page](https://monogame.net/api/Microsoft.Xna.Framework.Audio.SoundEffect.html).
 
 For more information on SoundEffect in FlatRedBall, see the [SoundEffect page](../../api/microsoft-xna-framework/audio/soundeffect.md).
+
+### WAV and XNB Files
+
+FlatRedBall MonoGame requires WAV files to be built and loaded from XNB files. XNB files are built by the MonoGame content pipeline. This happens automatically when a WAV file is added to your FlatRedBall project, and will also happen if the WAV file ever changes.
+
+WAV files are added as XNB files to your Visual Studio project. For example, the following SoundEffectFile.wav is part of GameScreen:
+
+<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption><p>WAV file in GameScreen</p></figcaption></figure>
+
+This file is automatically added to your Visual Studio project by FlatRedBall, as shown in the following screenshot:
+
+<figure><img src="../../.gitbook/assets/image (120).png" alt=""><figcaption><p>WAV file as part of Visual Studio as a converted XNB</p></figcaption></figure>
+
+WAV files can be explicitly rebuilt in the FRB Editor by right-clicking on the file and selecting **Rebuild Content Pipeline File (.xnb)**.
+
+<figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption><p>Right click, Rebuild Content Pipeline File option</p></figcaption></figure>
+
+When the file is built, the output window displays information about the build so you can diagnose problems.
+
+<figure><img src="../../.gitbook/assets/image (122).png" alt=""><figcaption><p>Content Pipline build output</p></figcaption></figure>
