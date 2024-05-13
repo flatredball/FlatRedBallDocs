@@ -44,6 +44,12 @@ You should see the .wav file in your project:
 
 ![WAV file in the Enemy entity](../../.gitbook/assets/20\_22\_27\_04.png)
 
+Alternatively you can drop WAV files into your project from Windows Explorer:
+
+1. Open your project in the FRB Editor
+2. Locate the WAV file you would like to use on disk
+3. Drag+drop the file from Windows Explorer into your project in the desired Files folder. Note that if the file is not already a child of your Content folder, the file will be copied to the desired folder and the original file will be left on disk in its original location.
+
 ### Playing a SoundEffect in custom code
 
 Once a .wav file has been added to your FRB project, your Screen, Entity, or GlobalContent includes an instance of a SoundEffect in generated code.&#x20;
