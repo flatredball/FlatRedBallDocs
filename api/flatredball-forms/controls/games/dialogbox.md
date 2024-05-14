@@ -74,9 +74,9 @@ Automatic paging only applies if the number of lines is limited on the backing T
 The default implementation's Text property has the following relevant properties:
 
 * HeightUnits of RelativeToContainer - the height unit depends on the container, so the height does not increase as more lines of Text are added.\
-  ![](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
-* Text Overflow Vertical Mode of Truncate Line - this prevents text from spilling over the bounds.\
   ![](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+* Text Overflow Vertical Mode of Truncate Line - this prevents text from spilling over the bounds.\
+  ![](<../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Note that if the Text property can extend indefinitely - either by allowing it through a Text Overflow Vertical Mode of **Spill** or by having a Height Units of **Relative to Children**.
 
@@ -113,7 +113,7 @@ private async void ShowMultiplePages()
 
 This approach is useful if your DialogBox implementation has additional properties for each page of dialog. For example, a DialogBox can be modified in Gum to have a Text instance displaying the name of the person speaking.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>DialogBox with SpeakerTextInstance in Gum</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>DialogBox with SpeakerTextInstance in Gum</p></figcaption></figure>
 
 Since the Show method exists on the standard DialogBox, it does not have a way to specify the speaker. We can access the visual on the DialogBox to modify the SpeakerTextInstance directly through the Visual property.
 

@@ -17,4 +17,4 @@ Your font file should appear in the Files folder.
 
 This file can now be referenced on a Text's Font property.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>TextInstance with a Font assigned</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>TextInstance with a Font assigned</p></figcaption></figure>
