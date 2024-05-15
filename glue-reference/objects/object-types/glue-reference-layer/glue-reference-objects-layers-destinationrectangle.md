@@ -25,7 +25,7 @@ This destination rectangle can be changed in Glue. To do this:
 
 Now that the DestinationRectangle value is there, we can modify it easily by changing one of the four values, or by expanding the DestinationRectangle and modifying each value independently: &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Consider a Sprite which takes up nearly the entire screen:
 

@@ -136,3 +136,14 @@ private void HandleSelectionChanged(object sender, SelectionChangedEventArgs arg
 
 }
 ```
+
+### ScrollIntoView
+
+The ScrollIntoView method scrolls the ListBox so that the argument item is in view. The argument object should be one of the items in the ListBox's Items property.
+
+The following code shows how to bring an item into view, assuming ItemToBringIntoView is a valid instance inside the ListBox's Items list.
+
+```csharp
+Forms.ListBoxInstance.ScrollIntoView(ItemToBringIntoView);
+```
+
