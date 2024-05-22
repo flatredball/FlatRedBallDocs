@@ -107,12 +107,12 @@ Once the Steamworks library is added to your project, you can interact directly 
         static bool isInitialized;
         static AppId_t appId;
 
-        static Callback gameOverlayActivatedCallback;
-        static Callback userStatsReceivedCallback;
-        static Callback userStatsStoredCallback;
-        static Callback userAchievementStoredCallback;
+        static Callback<GameOverlayActivated_t> gameOverlayActivatedCallback;
+        static Callback<UserStatsReceived_t> userStatsReceivedCallback;
+        static Callback<UserStatsStored_t> userStatsStoredCallback;
+        static Callback<UserAchievementStored_t> userAchievementStoredCallback;
 
-        public static Action SteamOverlayVisibilityChanged;
+        public static Action<bool> SteamOverlayVisibilityChanged;
 
         public void Initialize()
         {
@@ -128,10 +128,10 @@ Once the Steamworks library is added to your project, you can interact directly 
 
                 SteamUserStats.RequestCurrentStats();
 
-                gameOverlayActivatedCallback = Callback.Create(HandleOverlayActivated);
-                userStatsReceivedCallback = Callback.Create(HandleUserStatsReceived);
-                userStatsStoredCallback = Callback.Create(HandleUserStatsStored);
-                userAchievementStoredCallback = Callback.Create(HandleUserAchievementStored);
+                gameOverlayActivatedCallback = Callback<GameOverlayActivated_t>.Create(HandleOverlayActivated);
+                userStatsReceivedCallback = Callback<UserStatsReceived_t>.Create(HandleUserStatsReceived);
+                userStatsStoredCallback = Callback<UserStatsStored_t>.Create(HandleUserStatsStored);
+                userAchievementStoredCallback = Callback<UserAchievementStored_t>.Create(HandleUserAchievementStored);
 
                 // Example: Gets an achievement by ID
                 //var achievement = SteamUserStats.GetAchievementName(2);
