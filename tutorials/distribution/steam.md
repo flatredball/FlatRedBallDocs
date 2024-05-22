@@ -40,9 +40,9 @@ Once the Steamworks library is added to your project, you can interact directly 
     class BoolAchievement : AchievementBase
     {
         string AchievementName;
-        Func GetCurrentValue;
+        Func<bool> GetCurrentValue;
 
-        public BoolAchievement(string achievementName, Func getCurrentValue)
+        public BoolAchievement(string achievementName, Func<bool> getCurrentValue)
         {
             AchievementName = achievementName;
             GetCurrentValue = getCurrentValue;
@@ -61,9 +61,9 @@ Once the Steamworks library is added to your project, you can interact directly 
     class NumericAchievement : AchievementBase
     {
         string ProgressStat;
-        Func GetCurrentValue;
+        Func<long> GetCurrentValue;
 
-        public NumericAchievement(string progressStat, Func getCurrentValue)
+        public NumericAchievement(string progressStat, Func<long> getCurrentValue)
         {
             ProgressStat = progressStat;
             GetCurrentValue = getCurrentValue;
