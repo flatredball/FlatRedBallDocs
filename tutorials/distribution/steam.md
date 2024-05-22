@@ -27,7 +27,7 @@ To add Steamworks.NET library to your project:
 
 ### Adding SteamManager
 
-Once the Steamworks library is added to your project, you can interact directly with the library to award achievements and respond to the tab overlay being shown. If you would like to work directly with this library, you can find additional information on the [Steamworks github page](https://steamworks.github.io/). The documentation is focused on Unity but may of the concepts apply. Alternatively, the following SteamManager class can be used to set up a project quickly. Note that this is provided to help get a project set up quickly. Future versions of FlatRedBall may provide more integrated solutions such as code gen:
+Once the Steamworks library is added to your project, you can interact directly with the library to award achievements and respond to the tab overlay being shown. If you would like to work directly with this library, you can find additional information on the [Steamworks github page](https://steamworks.github.io/). The documentation is focused on Unity but many of the concepts apply. Alternatively, the following SteamManager class can be used to set up a project quickly. Note that this is provided to help get a project set up quickly. Future versions of FlatRedBall may provide more integrated solutions such as code gen:
 
 ```csharp
     #region Achievement Class
