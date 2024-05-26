@@ -16,7 +16,7 @@ First, mark the Player entity as both IDamageable and IDamageArea.
 
 Repeat the same for the Enemy entity.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Setting an Enemy as an IDamageable and IDamageArea</p></figcaption></figure>
 
 Next, we'll add a collision object to the Player for melee attacks. This can be any type of shape, but we'll use an AxisAlignedRectangle for this tutorial. Be sure to give the new shape a name that clearly explains its purpose, such as **MeleeCollision**.
 
@@ -55,11 +55,13 @@ Notice that the newly-created collision relationship has the option for dealing 
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Default Deal Damage checkbox</p></figcaption></figure>
 
-This collision relationship should only deal damage to the player if the player collides with the enemy (not also to the enemy). We will handle the melee collision in a dedicated collision relationship that has its Subcollision set to MeleeCollision  - we only want to deal damage to the enemy if the enemy collides with the melee collision that we created earlier. To handle this, uncheck the option to deal damage in the collision relationship, and click the button to add a new event.
+This collision relationship should only deal damage to the player if the player collides with the enemy. This collision relationship should not deal any damage to the enemy.
+
+We will handle the melee collision (Player dealing damage to Enemy) in a different collision relationship that has its Subcollision set to MeleeCollision. Since we want this collision relationship to deal damage _one way_, we need to handle dealing damage in code. First, uncheck the option to deal damage in the collision relationship, and click the button to add a new event.
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Uncheck automatic damage dealing, add an event to the collision relationship</p></figcaption></figure>
 
-This results in an event in GameScreen.Event.cs which we can fill in with our collision logic. To deal damage from the enemy to the player, add the following code:
+By checking the Add Event button, the FRB editor adds an event in GameScreen.Event.cs which we can fill in with our collision logic. To deal damage from the enemy to the player, add the following code:
 
 ```csharp
 void OnPlayerVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
@@ -86,7 +88,7 @@ void OnPlayerVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
 
 Now the player takes damage when colliding with the enemy.
 
-<figure><img src="../../.gitbook/assets/01_08 35 49.gif" alt=""><figcaption><p>Player taking damage from the enemy and dying</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/01_08 35 49.gif" alt=""><figcaption><p>Player taking damage from the enemy and dying (Player.Destroy is called)</p></figcaption></figure>
 
 Note that the player dies very quickly after touching the enemy. This happens because the player takes damage every frame (10 damage), so after about 10 frames (1/6th of a second) the player's health reaches 0.
 

@@ -2,11 +2,13 @@
 
 ### Introduction
 
-Most of the work needed to perform damage dealing can be done through the FlatRedBall Editor and generated code. This tutorial shows how to set your entities up so they can deal damage.
+Most of the work needed to perform damage dealing can be done through the FlatRedBall Editor and generated code. Of course, damage dealing can also be managed in code for more flexibility.
+
+This tutorial shows how to set your entities up so they can deal damage.
 
 ### IDamageable and IDamageArea
 
-Damage dealing is done through two interfaces: _IDamageable_ and _IDamageArea_. As the names suggest, IDamageable entities can take damage and IDamageArea entities can deal damage. Projects which use the standard damage system should mark entities as IDamageable or IDamageArea in the FlatRedBall Editor. Keep in mind that in some cases entities can be both IDamageable and IDamageAreas.
+Damage dealing is done through two interfaces: _IDamageable_ and _IDamageArea_. As the names suggest, IDamageable entities can take damage and IDamageArea entities can deal damage. Projects which use the standard damage system should mark entities as IDamageable or IDamageArea in the FlatRedBall Editor. Keep in mind that in some cases entities (such as enemies) can be both IDamageable and IDamageAreas.
 
 ### Player Defaults
 
@@ -43,7 +45,7 @@ The Team Index specified in the **new Entity** window defines the default team i
 
 ![](<../../.gitbook/assets/01\_06 15 14.png>)
 
-Notice that the new Entity window provides a preview of the collision relationships that are added to the GameScreen after creating the entity. This lets you check for unintended collision relationship creation.
+Notice that the new Entity window provides a preview of the collision relationships that are added to the GameScreen after creating the entity. This lets you check for unintended collision relationship creation. If the list of collision relationships matches what your game needs you can use the **Add Opposing Team Index Collision Relationships to GameScreen** option. Alternatively, if you would like to create your own collision relationships, you can uncheck this option.
 
 In this case the game now has an IDamageArea entity (Bullet) and IDamageable entity (Enemy) on different Team Indexes. As shown in the **new entity window**, when the Enemy is added, the FRB creates collision relationships between the Enemy and Bullet.
 
@@ -57,7 +59,9 @@ In the example above, the EnemyVsBullet collision relationship was created autom
 2. The Enemy has a Team Index (1) different than the already-created Bullet Team Index (0)
 3. The Enemy is IDamageable and the Bullet is IDamageArea
 
-It is possible to manually create collision relationships between IDamageable and IDamageArea lists. For example, the default Bullet Team Index matches the Player Team Index, but your game may allow Enemy instances to shoot bullets too. In this case we can still create a collision relationship between the PlayerList and BulletList. If the PlayerList is drag+dropped on the BulletList, a collision relationship is created with the damage-related checkboxes checked.
+It is possible to manually create collision relationships between IDamageable and IDamageArea lists. For example, the default Bullet Team Index matches the Player Team Index, but your game may allow Enemy instances to shoot bullets too.
+
+In this case we can still create a collision relationship between the PlayerList and BulletList. If the PlayerList is drag+dropped on the BulletList, a collision relationship is created with the damage-related checkboxes checked.
 
 <figure><img src="../../.gitbook/assets/01_06 18 08.gif" alt=""><figcaption></figcaption></figure>
 
