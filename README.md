@@ -20,7 +20,7 @@ At a minimum you will need to install **.NET desktop development**.
 
 ![](media/2023-03-img\_6415bcb385f79.png)
 
-Visual Studio 2022 (as of version 17.5.1) installs .NET SDK 7.0 which has a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you will need to manually install .NET 6 SDK.
+Newer Versions of Visual Studio (as of version 17.5.1) install .NET SDK 7.0 or newer which have a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you will need to manually install .NET 6 SDK.
 
 ### Downloading FlatRedBall
 
