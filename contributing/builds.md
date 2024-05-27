@@ -13,6 +13,20 @@ Both can be found in the workflows folder:
 
 These are explicitly invoked currently, and should only be invoked when it is time to make a new FRB release.
 
+### Releases
+
+To make a new (monthly) release:
+
+1. Run tests - make sure that FRB Editor can open a variety of projects and that they run okay. Also create new platformer and top down projects to make sure they work okay.
+2. Run Engine.yml and wait for it to finish successfully
+3. Try creating a new project with Glue (built from source) and make sure it works okay
+4. Run Glue.yml and wait for it to finish successfully
+5. Download latest FRBDK and run Glue - make sure the file version is what you expect
+6. Make a new platformer project and check the version on the .csproj - make sure the file version is what you expect
+7. Create a new release on Github including all the changes since last release
+8. Create an announcement post on Discord including the # of changes and highlight the big changes
+9. Copy the info to Twitter
+
 ### Engine.yml
 
 The Engine.yml file is responsible for the following actions:
