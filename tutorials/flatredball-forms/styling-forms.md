@@ -90,7 +90,7 @@ Since these states are used at runtime automatically, we can run the game and se
 
 In this case our modification to the button added a new variable that was previously unmodified by ButtonCategory. We can also change existing values. For example, when highlighted our Button's background uses the PrimaryLight ColorCategoryState.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>ColorCategoryState assigned in Highlighted State</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>ColorCategoryState assigned in Highlighted State</p></figcaption></figure>
 
 In this case, the ColorCategoryState is defined on NineSlice, which is the base type for Background. Therefore, we should not modify the Red, Green, or Blue values on the Background object because they will be in conflict with the values assigned by this state.
 
@@ -98,20 +98,20 @@ If we would like to modify the Background color in the Highlight (or any other) 
 
 1. We can go to the NineSlice standard object and modify the PrimaryLight state. Be careful, making modifications here is concpetually similar to making modifications to a style sheet which is used across an entire project. If you would like to change this value globally, feel free to do so, but realize that making changes to the NineSlice styles can modify many components in your project.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>PrimaryLight definition in NineSlice</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>PrimaryLight definition in NineSlice</p></figcaption></figure>
 
 2. Change the state value that is being used on the background. Although this is not recommended, you can change the background to use a different ColorCategoryState, such as changing the value to Success. This is not recommended because the ColorCategoryState states are named to indicate where they should be used throughout your project, and switching to different ColorCategoryStates may result in confusing the user by using the same color for different behaviors and states.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Background using a different ColorCategoryState on Highlighted</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Background using a different ColorCategoryState on Highlighted</p></figcaption></figure>
 
 3. Add a new state to NineSlice for your specific case. This is useful if you have a case that isn't handled by the existing NineSlice category states.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Adding a state to NineSlice</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Adding a state to NineSlice</p></figcaption></figure>
 
 4.  Removing the usage of ColorCategoryStates from your ButtonCategory. The states in the NineSlice exist to make global styling easier, but they are not a requirement. If you would prefer to implement your own styling method, such as direct RGB values on the background, that's okay. Keep in mind that the Background NineSlice isn't even a requirement! You can remove it and replace it with something else like a Sprite if that works better for your game.\
 
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>ButtonCategory variables can be removed</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>ButtonCategory variables can be removed</p></figcaption></figure>
 
 
 

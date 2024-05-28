@@ -6,7 +6,7 @@ The atlas file (with extension .atlas) is produced by Spine. The purpose of an a
 
 By default, atlas files are loaded into the runtime type Spine.Atlas.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>.atlas file loaded as Spine.Atlas</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>.atlas file loaded as Spine.Atlas</p></figcaption></figure>
 
 ### AchxToSpineAtlas.exe
 
@@ -44,12 +44,12 @@ To use the AchxToSpineAtlas.exe tool as a File Build Tool in FlatRedBall:
 5. Set the SourceFileType as `achx` (no period before the extension)
 6. Set the DestinationFileType as `atlas`
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting .achx to .atlas build tools</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting .achx to .atlas build tools</p></figcaption></figure>
 
 After you click the OK button, FlatRedBall understands that .achx files may be used to build .atlas files.
 
 Note that this change now results in FlatRedBall asking you about the build tool whenever you add a new .achx file.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dialog asking which builder to use for newly-added .achx files</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dialog asking which builder to use for newly-added .achx files</p></figcaption></figure>
 
 If you are adding a file which you would like to be treated as an AnimationChain, then select the **\<None>** option. For more information on build tools, see the [File Build Tools](atlas.md#file-build-tools) documentation.
