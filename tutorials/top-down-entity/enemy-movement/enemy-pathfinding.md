@@ -288,4 +288,48 @@ So far we have made modifications to the EnemyBase entity and the WalkingNodeNet
 
 
 
-Of course, keep in mind that your game may intentionally have pathfinding strictly along a node network so whether you use l
+Of course, keep in mind that your game may intentionally have pathfinding strictly along a node network so whether you use line of sight pathfinding can be a stylistic choice.
+
+To enable line of sight pathfinding, the TopDownAiInput must have two additional pieces of information:
+
+1. The width of the collision. This is needed because line of sight pathfinding must check if a direct path exists to the target and also if following that direct path results in bumping against solid collision.
+2. The solid collision to avoid
+
+We can enable line of sight pathfinding by modifying the `InitializePathfinding` method as shown in the following code:
+
+```csharp
+public void InitializePathfinding(Player player, TileNodeNetwork nodeNetwork, 
+    FlatRedBall.TileCollisions.TileShapeCollection collision)
+{
+    topDownAiInput.FollowingTarget = player;
+    topDownAiInput.NodeNetwork = nodeNetwork;
+
+    topDownAiInput.SetLineOfSightPathfinding(CircleInstance.Radius * 2, 
+        // This can take multiple shape collections since some games use more than one
+        // TileShapeCollection for pathfinding
+        new List<FlatRedBall.TileCollisions.TileShapeCollection> { collision });
+}
+```
+
+Notice that we use `CircleInstance.Radius*2` to determine the width of the entity. If using a different shape, or multiple shapes, your code needs to account for this. Also, keep in mind to also add any offsets if your shape is not centered on the X or Y. Finally, you may need to increase this value if your collision shapes can adjust during runtime - such as being modified by AnimationChains.
+
+Since this method now requires passing in a TileShapeCollection, we need to modify GameScreen.PrepareEnemyPathfinding to pass in the SolidCollision as shown in the following code:
+
+```csharp
+private void PrepareEnemyPathfinding(EnemyBase enemy)
+{
+    // This assumes Player1 is already created. If your game
+    // creates its Player instances later, you need to make sure
+    // the Player instance has already been created before this is
+    // called.
+    enemy.InitializePathfinding(Player1, WalkingNodeNetwork, SolidCollision);
+}
+```
+
+Now our enemy follows the player directly if there is a line of sight. If not, the enemy performs line of sight checks to skip nodes which are not necessary. Notice that when navigating tight spaces the enemy follows the node network, but when navigating open spaces the enemy moves more directly towards its target.
+
+<figure><img src="../../../.gitbook/assets/29_07 51 30.gif" alt=""><figcaption><p>Enemy performing line of sight pathfinding</p></figcaption></figure>
+
+### Conclusion
+
+This tutorial has shown how to create an enemy that performs pathfinding towards a player. This pathfinding can be customized to address common problems, to enable or disable diagonal movement, and to use line of sight pathfinding for more natural movement.
