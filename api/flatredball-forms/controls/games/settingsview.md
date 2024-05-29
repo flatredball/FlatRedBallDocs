@@ -18,7 +18,7 @@ Note that future versions of SettingsView may expand to include more controls an
 
 The first step in using the SettingsView is to add an instance of the view to your Gum screen. If your project has included FlatRedBall.Forms then you have a default SettingsView in Gum.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>SettingsView in Gum</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption><p>SettingsView in Gum</p></figcaption></figure>
 
 Once the SettingsView has been created and added to a Screen. By default the music slider modifies [AudioManager.MasterSongVolume](../../../flatredball/audio/audiomanager/mastersongvolume.md) and the sound effect slider modifies [AudioManager.MasterSoundVolume](../../../flatredball/audio/audiomanager/mastersoundvolume.md).
 
