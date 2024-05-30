@@ -18,29 +18,27 @@ For this game, the Player will continuously move forward at a constant speed. Th
 5. Enter the name **MovementSpeed**
 6. Click **OK**
 
-![](../../media/2021-03-img\_604d0631101c7.png)
+![Create a variable called MovementSpeed](<../../.gitbook/assets/30\_07 14 45.png>)
 
 Repeat the steps above to also add a **TurningSpeed** variable.
 
-![](../../media/2021-03-img\_604d06a43dc27.png)
+![Create a variable called TurningSpeed](<../../.gitbook/assets/30\_07 12 26.png>)
 
 Next let's give the variables some default values:
 
 1. Enter a value of 100 for **MovementSpeed**. This is the number of pixels the Player will travel in one second.
 2. Enter a value of 3.14 for **TurningSpeed**. This is the maximum number of radians the Player will rotate in one second.
 
-![](../../media/2021-03-img\_604d071fb51e9.png)
+![Player with the two new variables](<../../.gitbook/assets/30\_07 15 50.png>)
 
 ### Applying Movement
 
 To apply movement we will need to write some C# code. To do this:
 
-1.  Open the project in Visual Studio (or switch to Visual Studio if you already have it open)
+1. Open the project in Visual Studio (or switch to Visual Studio if you already have it open)
+2.  Open **Player.cs**. This is in the **Entities** folder in the **Solution Explorer**.
 
-    ![](../../media/2021-03-img\_604d0780c1ed3.png)
-2.  Open **Player.cs**. This will be in the **Entities** folder in the **Solution Explorer**.
-
-    ![](../../media/2021-03-img\_604d0807644d9.png)
+    ![Player.cs in Visual Studio](../../media/2021-03-img\_604d0807644d9.png)
 3. Scroll to the **CustomActivity** method in Player.cs
 
 Modify CustomActivity as shown in the following snippet:
@@ -54,7 +52,9 @@ void CustomActivity()
 
 If you now run the game you will see the ship move upward, then eventually move off-screen.
 
-**What is "RotationMatrix.Up"?:** If you are unfamiliar with the RotationMatrix property, or with matrices in general then you may be wondering about the RotationMatrix.Up variable, and why we're using it. The RotationMatrix property contains information about how an Entity, Sprite, or any other PositionedObject is rotated. The Up property indicates you which way is "up" for the object given its current rotation. This value is in "object space" meaning that if the object rotates, then this value will rotate along with the object. This is especially convenient for this tutorial because this game will have the ships always moving forward. The code above will work regardless of which way the Player is rotated - something which we'll see in the coming sections.
+#### **What is "RotationMatrix.Up"?**
+
+&#x20;If you are unfamiliar with the RotationMatrix property, or with matrices in general then you may be wondering about the RotationMatrix.Up variable, and why we're using it. The RotationMatrix property contains information about how an Entity, Sprite, or any other PositionedObject is rotated. The Up property indicates you which way is "up" for the object given its current rotation. This value is in "object space" meaning that if the object rotates, then this value will rotate along with the object. This is especially convenient for this tutorial because this game will have the ships always moving forward. The code above will work regardless of which way the Player is rotated - something which we'll see in the coming sections.
 
 ### Assigning Input
 
@@ -89,13 +89,17 @@ private void CustomActivity()
 }
 ```
 
-Note that all of the code we have written uses coefficients (**MovementSpeed** and **TurningSpeed**) defined in Glue. This means that you can modify these values in the Player Entity at any time if you want to tune how the game feels. For example, if you want the ship to turn faster, increase **TurningSpeed** to a larger value.
+Note that all of the code we have written uses coefficients (**MovementSpeed** and **TurningSpeed**) defined in the FRB Editor. This means that you can modify these values in the Player Entity at any time if you want to tune how the game feels. For example, if you want the ship to turn faster, increase **TurningSpeed** to a larger value.
 
-![](../../media/2021-03-img\_604d2cab34a53.png)
+Also, keep in mind that the variables MovementSpeed and TurningSpeed can be modified both in the FRB Editor and also in code - so where should you make the change? Typically, these variables can be thought of as variables which a game designer might edit. Larger teams may include designers who are not as comfortable making changes in code. The FlatRedBall Editor provides a less-technical environment so that designers can make changes and see them in-game without venturing into complex C# code.
+
+But you might be wondering if this is important in your case - after all you are likely just learning to use FlatRedBall, so you are a team of one. You are both the designer and programmer, so where should the changes be made? Even in this situation, the answer is the same - if you can make the changes in the FlatRedBall Editor, do so! This makes it easier to tune your game in one place instead of needing to hop around different code files.
+
+![](<../../.gitbook/assets/30\_07 24 59.png>)
 
 ### Adding Bullet Sprite
 
-Next we will give the Bullet a PNG file and a Sprite to use. This process is essentially the same as when we added PNG files and a Sprite to our Player Entity so you may find these steps familiar. To add the PNG:
+Next we will add a file and Sprite to the Bullet entity. This process is essentially the same as when we added PNG files and a Sprite to our Player Entity so you may find these steps familiar. To add the PNG:
 
 1. Download the following file to your computer: ![Bullet1.png](../../media/migrated\_media-Bullet1.png)
 2. Expand the **Bullet** entity in Glue
