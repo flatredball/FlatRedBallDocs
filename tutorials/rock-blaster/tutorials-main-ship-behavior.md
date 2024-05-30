@@ -2,15 +2,18 @@
 
 ### Introduction
 
-At this point we have a ship which is visible on Screen, but it doesn't do anything. This tutorial will add behavior to our Player Entity so that it can move, turn, and shoot.
+At this point we have a ship which is visible on Screen, but it doesn't do anything. This tutorial adds behavior to our Player Entity so that it can move, turn, and shoot.
 
 ### Adding Variables
 
 For this game, the Player will continuously move forward at a constant speed. The Player object will be turned left and right with the keyboard or Xbox gamepad. Before we begin writing any code we'll add two variables to Player: **MovementSpeed** and **TurningSpeed**. To do this:
 
-1. Select the Player entity in Glue
+1. Select the Player entity
 2. Select the Variables tab
-3. Click the **Add New Variable** button
+3.  Click the **Create a new variable** button\
+
+
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Click the Create a new variable button to add a new variable</p></figcaption></figure>
 4. Leave the defaults **Create a new variable** option and **float** type
 5. Enter the name **MovementSpeed**
 6. Click **OK**
