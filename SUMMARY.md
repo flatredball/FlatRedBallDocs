@@ -86,6 +86,7 @@
       * [CurrentMovement](tutorials/top-down-entity/top-down-basics/03-currentmovement.md)
     * [Enemy Movement](tutorials/top-down-entity/enemy-movement/README.md)
       * [Enemy Pathfinding](tutorials/top-down-entity/enemy-movement/enemy-pathfinding.md)
+      * [Direct Enemy Control](tutorials/top-down-entity/enemy-movement/direct-enemy-control.md)
   * [Post Processing](tutorials/post-processing.md)
   * [Rock Blaster](tutorials/rock-blaster/README.md)
     * [Introduction](tutorials/rock-blaster/tutorials-introduction.md)
