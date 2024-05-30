@@ -10,24 +10,11 @@ To create a new project:
 
 1. Select **File** -> **New Project** or click the **New Project** button in the **Quick Actions** tab if you do not have a project open already
 2. Enter the name **RockBlaster** (no spaces) as your project name
-3. Uncheck the **Open New Project Wizard** option - we will run the game first before running the wizard to make sure everything is set up correctly
-4. Click **Create Project!**
+3. Click **Create Project!**
 
-![](<../../.gitbook/assets/15\_07 49 46.png>)
+![Name your project RockBlaster then click Create Project!](<../../.gitbook/assets/30\_06 17 45.png>)
 
-Your project should now be open in the FlatRedBall Editor:
-
-![](<../../.gitbook/assets/15\_07 52 02.png>)
-
-Press the play button to launch the (empty) game.
-
-![](../../media/2021-03-img\_604c33fbe290b.png)
-
-### Run Wizard
-
-Next we'll run the New Project Wizard which will jumpstart the development process by adding common Screens, Entities, and other files to our project. To run the Wizard, click the **Run Wizard** button in the **Quick Actions** tab.
-
-![](<../../.gitbook/assets/15\_07 53 28.png>)
+Wait for your project to finish downloading and the Project Setup Wizard automatically opens.
 
 Check the **Custom (Advanced)** option.
 
@@ -47,7 +34,7 @@ Our game will not use **Tiled Map** files. **CloudCollision** is only used for p
 
 Our player will not use default control types like **Top-down** or **Platformer**. We will be implementing our own custom controls, so select the **None (controls will be added later)** option. Our player will rotate, so **Circle** collision is preferred to Rectangle collision. Also, our player is not a platformer character, so uncheck **Add Player vs. cloud collision**.
 
-![](<../../.gitbook/assets/15\_07 57 47.png>)
+![](<../../.gitbook/assets/30\_06 21 04.png>)
 
 Change **Number of levels to create** to **1**. Uncheck the other options since our game does not have any **Tiled Map** files.
 
@@ -55,7 +42,7 @@ Change **Number of levels to create** to **1**. Uncheck the other options since 
 
 Leave UI options unchanged. We will use Gum to display game HUD.
 
-![](<../../.gitbook/assets/15\_07 59 26.png>)
+![](<../../.gitbook/assets/30\_06 22 11.png>)
 
 Set the Game Resolution to 800x600 and the Game Scale% to 100. Uncheck all other **Camera** options. Our game will not have a Camera which moves.
 
