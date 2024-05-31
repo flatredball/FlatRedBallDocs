@@ -202,7 +202,7 @@ private void CustomActivity()
 Keep in mind the visibility logic exists only for the sake of visualizing when damage can be dealt - we cannot use visibility to control whether collision occurs because invisible shapes collide just like visible shapes. However, we can use the `IsAttackActive` property in the collision event in GameScreen.Event.cs for dealing damage to the enemy, as shown in the following modified code:
 
 ```csharp
-void OnPlayerVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
+void OnPlayerMeleeCollisionVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
 {
     // ShouldTakeDamage checks if
     // * Enemy and Player are on different teams
