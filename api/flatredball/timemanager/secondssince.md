@@ -1,28 +1,23 @@
-## Introduction
+# SecondsSince
+
+### Introduction
 
 The SecondsSince method can be used to detect how many seconds have passed since a given time. This method is often used in combination with the CurrentTime property.
 
-## Code Example
+Note that SecondsSince assumes that the value passed is in game time (using `TimeManager.CurrentTime` ) and not screen time ( `TimeManager.CurrentScreenTime` ). This method is rarely. It is only needed if the amount of in-game time that has passed is greater than some value which may span mulitple screens.&#x20;
 
-The following would show how to perform a rapid-fire system if the user has pressed the rapid fire button (cursor's PrimayPush). Keep track of the variable at class scope:
+### Example - Using SecondsSince for Ability Cooldown
 
-    double mLastShotFired = -1000; // make it a large negative numbers so the first shot will always fire
-    double mShotFrequency = .5; // this means 2 shots per second.  This should probably be a Glue variable if using Glue
+Note that this operation assumes that ability cooldown should persist between screens. If your game has abilities which cool down, but which reset when a screen changes (such as the player re-starting a level), then CurrentScreenSecondsSince should be used. However, if you would like cooldown to persist between multiple screens, you can use SecondsSince as shown in the following code:
 
-Test for shots in the update method:
+```csharp
+var isCooldownAvailable = TimeManager.SecondsSince(LastAbilityUsed);
 
-    Cursor cursor = FlatRedBall.Gui.GuiManager.Cursor;
-    if(cursor.PrimaryDown && TimeManager.SecondsSince(mLastShotFired) > mShotFrequency)
-    {
-       FireShot(); // do whatever you need to do to fire
-       mLastShotFired = TimeManager.CurrentTime;
-    }
-
-## Why use SecondsSince?
-
-If you want, instead of using SecondsSince you can simply subtract the values. For example, the two are equivalent:
-
-    double timePassed = TimeManager.SecondsSince(somePreviousTime);
-    double timePassed2 = TimeManager.CurrentTime - somePreviousTime;
-
-Both will be identical; however, the SecondsSince method reads a little cleaner. It's purely for readability and convenience. You may not like using the SecondsSince method, but the FlatRedBall team has found this method rather handy and we always use it instead of the subtraction method.
+if(isCooldownAvailable && AbilityInput.WasPressed)
+{
+  // Perform ability
+  
+  // Use CurrentTime, not CurrentScreenTime
+  LastAbilityUsed = TimeManager.CurrentTime;
+}
+```

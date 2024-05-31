@@ -173,7 +173,7 @@ public partial class Player
     double AttackCooldown = 1; 
     
     public bool IsAttackActive =>
-        TimeManager.SecondsSince(LastTimeAttackStarted) < AttackDamageDuration;
+        TimeManager.CurrentScreenSecondsSince(LastTimeAttackStarted) < AttackDamageDuration;
     
     ...
 ```
