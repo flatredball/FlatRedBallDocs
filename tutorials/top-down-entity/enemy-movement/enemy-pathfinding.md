@@ -20,7 +20,7 @@ To create the TileNodeNetwork:
 4. Enter a name such as WalkingNodeNetwork
 5. Click OK
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>WalkingNodeNetwork in GameScreen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>WalkingNodeNetwork in GameScreen</p></figcaption></figure>
 
 Next we'll define a tile to use for pathfinding. To do this:
 
@@ -31,11 +31,11 @@ Next we'll define a tile to use for pathfinding. To do this:
 5. Change the **Class** for that tile to WalkableTile
 6. Save your tileset (TSX)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>WalkableTile in Tiled</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>WalkableTile in Tiled</p></figcaption></figure>
 
 Next, select your current level (such as Level1Map) and paint the WalkableTile onto the GameplayLayer. Note that if you would like to be able to walk on areas which already have other tiles, you can create a new layer specifically for Tiles.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>WalkableTile painted in the walkable areas of the Tiled map</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>WalkableTile painted in the walkable areas of the Tiled map</p></figcaption></figure>
 
 Be sure to save both your level and the tileset.
 
@@ -47,15 +47,15 @@ Finally, we can indicate that the WalkableTile should be used to populate the no
 4. Select **Map** as the **Source TMX File/Object**
 5. Select **WalkableTile** as the **Type**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>WalkingNodeNetwork with properties set to fill from WalkableTile Type</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>WalkingNodeNetwork with properties set to fill from WalkableTile Type</p></figcaption></figure>
 
 Optionally, you may want to also set the Visible variable to true so the TileNodeNetwork shows up in your game.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Setting the NodeNetwork visible to true</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Setting the NodeNetwork visible to true</p></figcaption></figure>
 
 The game should now show the TileNodeNetwork. Note that you can also make the GameplayLayer invisible in Tiled so that the TileNodeNetwork is easier to see in game.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>TileNodeNetwork visible in game</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>TileNodeNetwork visible in game</p></figcaption></figure>
 
 Notice that the links between nodes are either vertical or horizontal. We will discuss diagonal movement later in the tutorial.
 
@@ -68,7 +68,7 @@ Now that we have a TileNodeNetwork defined, we can create an input device. Of co
 * The enemy uses the Top-Down movement types, just like the Player.
 * The enemy's InputDevice is set to None. As indicated in the FRB Editor, this must be assigned in code or the game will crash.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>EnemyBase defined in the FRB Editor</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>EnemyBase defined in the FRB Editor</p></figcaption></figure>
 
 Next we'll define the InputDevice. You may be familiar with the InputDevice as hardware input which can control the movement of the Player (such as the Keyboard or Xbox360GamePad). Although these are common implementations of the input device (IInputDevice interface), the concept of an InputDevice is something which can be read by an Entity (such as the Enemy) to determine how it should move.
 
@@ -188,7 +188,7 @@ We can now click to place EnemyBase instances. Each EnemyBase instance follows t
 
 Notice that the EnemyBase moves fairly quickly - the same speed as the Player. You may want to reduce the EnemyBase's movement speed to make it easier to test pathfinding.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Reduce EnemyBase's move speed to 50 to make it easier to test pathfinding</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Reduce EnemyBase's move speed to 50 to make it easier to test pathfinding</p></figcaption></figure>
 
 ### Customizing Pathfinding Behavior
 
@@ -200,7 +200,7 @@ Some games, such as the Legend of Zelda on the NES and the 2D Final Fantasy game
 
 However, if your game requires diagonal movement, you can enable it in the TileNodeNetwork properties for the WalkingNodeNetwork.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Seetting TileNodeNetwork to use eight links per node for diagonal movement</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Seetting TileNodeNetwork to use eight links per node for diagonal movement</p></figcaption></figure>
 
 Now our EnemyBase instance can travel diagonally.
 
@@ -210,11 +210,11 @@ You may have noticed that at times the EnemyBase _backtracks -_ in other words a
 
 To help explain this problem we can visualize a simple path that an enemy may take. It's important to remember that each node in the TileNodeNetwork is always placed at the center of the tile. The following image shows an example path. The blue circles represent the node positions, the red circle represents the enemy, and the purple lines represent the path the Enemy takes.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Example path</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Example path</p></figcaption></figure>
 
 Notice that the enemy moves directly towards the first node diagonally. This happens regardless of where the enemy is located - by default the very first segment in the path connects the enemy to the path. In this case the movement seems to be what we might expect, but in some situations the enemy may be positioned such that its first movement requires it to backtrack, as shown in the following image:
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Example of a backgracing path</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Example of a backgracing path</p></figcaption></figure>
 
 Notice that in this case the closest node to the enemy is to the right of the enemy. Therefore, the first movement segment has the enemy moving to the right before it resumes moving to the left.
 
@@ -256,7 +256,7 @@ To enable collision between EnemyBase and the leve's SolidCollision:
 3. Verify that the newly-created CollisionRelationship is using BounceCollision
 4. Change the elasticity to 0 so that the EnemyBase doesn't actually bounce off the wall. By setting it to 0 the wall absorbs the EnemyBase's velocity.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Set EnemyBaseVsSolidCollision Elasticity to 0 to prevent bouncing</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Set EnemyBaseVsSolidCollision Elasticity to 0 to prevent bouncing</p></figcaption></figure>
 
 If we run our game now we'll notice that the enemy gets stuck when trying to follow the player along any collision.
 
@@ -264,7 +264,7 @@ If we run our game now we'll notice that the enemy gets stuck when trying to fol
 
 This is happening because the collision on our enemy is too big - it has a circle with a radius of 16. This prevents it from getting close enough to tiles to properly pathfind. We can fix some of the problems by changing the EnemyBase's CircleInstance radius to a smaller value. A value of 8 allows the EnemyBase to touch the center of a tile, so we will change the value to 8.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Reducing the EnemyBase CircleInstance to a Radius of 8 </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Reducing the EnemyBase CircleInstance to a Radius of 8 </p></figcaption></figure>
 
 This change helps pathfinding, but it doesn't solve all of the problems. If your game is using diagonal movement, you may notice that the enemy slows down when colliding against corners. We can force the enemy to pathfind around a house. Notice the enemy slows down when moving around corners.
 
@@ -272,15 +272,15 @@ This change helps pathfinding, but it doesn't solve all of the problems. If your
 
 This is occurring because we have enabled 8-way pathfinding, and this includes corner pathfinding. We can set our node network visibility to true to see that the node networks _cut corners_, in other words diagonal paths connect nodes which result in the EnemyBase attempting to push against a corner collision.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>TileNodeNetworks cutting corners</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>TileNodeNetworks cutting corners</p></figcaption></figure>
 
 We can disable corner cutting through an option in the TileNodeNetwork Properties tab:
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Eliminate Cut Corners</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Eliminate Cut Corners</p></figcaption></figure>
 
 Now our tile node network still supports diagonal movement, but it will not attempt to move diagonally around corners as shown in this screen shot:
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Cut corners eliminated from a TileNodeNetwork</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Cut corners eliminated from a TileNodeNetwork</p></figcaption></figure>
 
 ### Line of Sight Pathfinding
 

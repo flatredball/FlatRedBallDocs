@@ -82,14 +82,14 @@ To add a level:
 2. Click the **Add Screen/Level** button
 3.  Leave all defaults and click **OK**
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 Creation Options</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 Creation Options</p></figcaption></figure>
 4.  After clicking OK, another popup appears with options for the level tile map (TMX). Leave all defaults and click OK
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>TMX Creation Options</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>TMX Creation Options</p></figcaption></figure>
 
 Your project should now have a Screen named Level1. This is marked as the startup screen (it has the play icon and appears in the startup dropdown).
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 as the startup screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Level1 as the startup screen</p></figcaption></figure>
 
 ### Conclusion
 

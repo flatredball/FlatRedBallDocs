@@ -81,7 +81,7 @@ The Forms property in FlatRedBall Screens contains properties for all Forms obje
 
 For example, consider the following screen in Gum:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Forms and normal Gum instances in a Screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Forms and normal Gum instances in a Screen</p></figcaption></figure>
 
 The left column consists of Forms controls: a Button, ListBox, and TextBox. The right column consists of instances of Gum objects which do not implement any Forms controls: a Text, ColoredRectangle, and Container.
 

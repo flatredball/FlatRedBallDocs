@@ -1179,6 +1179,7 @@
 * [🏘️ Contributing](contributing/README.md)
   * [How to Contribute](contributing/how-to-contribute.md)
   * [Builds](contributing/builds.md)
+  * [Writing Documentation](contributing/writing-documentation.md)
 * [🎮 FlatRedBall Games](games/README.md)
   * [angry-boy](games/angry-boy.md)
   * [avatar-skate](games/avatar-skate.md)
