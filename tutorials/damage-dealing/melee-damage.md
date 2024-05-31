@@ -175,6 +175,8 @@ public partial class Player
     public bool IsAttackActive =>
         TimeManager.CurrentScreenSecondsSince(LastTimeAttackStarted) < AttackDamageDuration;
     
+    public bool IsAttackAvailable =>
+            TimeManager.CurrentScreenSecondsSince(LastTimeAttackStarted) > AttackCooldown;
     ...
 ```
 
@@ -188,9 +190,22 @@ private void CustomActivity()
     /// You may still have code here for shooting bullets
     /// ...
 
-    if(InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.LeftShift))
+    if(InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.LeftShift)
+        && IsAttackAvailable)
     {
         LastTimeAttackStarted = TimeManager.CurrentScreenTime;
+        
+        // Note - you may want to adjust the rectangle depending on direction facing
+        // For example, you can handle left vs right like this:
+        if (DirectionFacing == HorizontalDirection.Right)
+        {
+            MeleeCollision.RelativeX = 10;
+        }
+        else if(DirectionFacing == HorizontalDirection.Left)
+        {
+            MeleeCollision.RelativeX = -10;
+        }
+        // Note that for up and down you may need to adjust the shape of the collision...
     }
 
     MeleeCollision.Visible = IsAttackActive;
