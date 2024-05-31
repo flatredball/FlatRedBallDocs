@@ -210,16 +210,13 @@ void OnPlayerVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
     //   the last time the player has taken damage 
     //   (for damage over time).
     // NEW: We also check IsAttackActive
-    if(player.IsAttackActive && player.ShouldTakeDamage(enemy))
+    if(player.IsAttackActive && enemy.ShouldTakeDamage(player))
     {
-        // Raises all events for damage dealing and ultimately
-        // modifies the player's health.
-        player.TakeDamage(enemy);
+        enemy.TakeDamage(player);
 
-        // Typically when an entity reaches 0 health, it should be destroyed
-        if(player.CurrentHealth <= 0)
+        if(enemy.CurrentHealth <= 0)
         {
-            player.Destroy();
+            enemy.Destroy();
         }
     }
 }
