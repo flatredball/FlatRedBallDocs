@@ -11,9 +11,17 @@ Sprites are used to render a texture to the screen. Sprites are one of the most 
 
 Sprites are often contained in Entities or created in code as particles.
 
+### Sprite vs Texture
+
+Many new developers confuse the terms Sprite and Texture so it's worth discussing the difference. A Sprite is an object that is added to an Entity which can display a texture or a portion of a texture. A Sprite can have a size, rotation, transparency, and a color tint.
+
+A texture (technically a Texture2D) is an image which is usually loaded from a .png file. The texture has pixel data which is used by a Sprite to draw to the screen. A texture can contain a single image (such as a coin or bullet), or it can contain multiple images. When it contains multiple images it is often referred to as a _sprite sheet_.
+
+You can think of the Sprite as something which displays texture data - like a digital picture frame. The texture is the picture that is being displayed in the digital picture frame.&#x20;
+
 ### Creating an Entity With a Sprite
 
-If you know that your entity needs a Sprite, you can check the Sprite option in the **Add Entity Window**.
+When you are creating a new entity, you can check the option to add a Sprite in the **Add Entity Window**.
 
 1. Right-click on the Entities folder
 2. Select **Add Entity**
@@ -47,4 +55,4 @@ Sprites usually display textures, which are created from image files such as .pn
 
 <figure><img src="../../../.gitbook/assets/18_07 51 43.gif" alt=""><figcaption></figcaption></figure>
 
-For more information about working with textures, see the [Texture2D page](../../files/texture2d.md).&#x20;
+For more information about working with textures, see the [Texture2D page](../../files/texture2d.md).
