@@ -56,3 +56,20 @@ Sprites usually display textures, which are created from image files such as .pn
 <figure><img src="../../../.gitbook/assets/18_07 51 43.gif" alt=""><figcaption></figcaption></figure>
 
 For more information about working with textures, see the [Texture2D page](../../files/texture2d.md).
+
+### Animations
+
+Sprites can display animations by referencing a .acxh file.
+
+To reference an Animation, the first step is to have a .achx file in the same Entity or Screen as your Sprite.
+
+To add a new .achx file, see the [Animation Chain List (.achx)](../../files/glue-reference-animationchainlist.md) page.
+
+Once you have an .achx file, you can add the Animation by drag+dropping the .achx onto the Sprite.
+
+<figure><img src="../../../.gitbook/assets/31_07 32 03.gif" alt=""><figcaption><p>Drag+dropping an .achx file onto a SpriteInstance to assign its AnimationChains variable</p></figcaption></figure>
+
+Alternatively, you can change the Animation Chains property in the Variables tab.
+
+<figure><img src="../../../.gitbook/assets/31_07 33 09.gif" alt=""><figcaption><p>Setting AnimationChains and CurrentChainName on a Sprite using the Variables tab</p></figcaption></figure>
+
