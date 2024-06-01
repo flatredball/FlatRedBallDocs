@@ -59,7 +59,7 @@ For more information about working with textures, see the [Texture2D page](../..
 
 ### Animations
 
-Sprites can display animations by referencing a .acxh file.
+Sprites can display animations by referencing a .achx file.
 
 To reference an Animation, the first step is to have a .achx file in the same Entity or Screen as your Sprite.
 

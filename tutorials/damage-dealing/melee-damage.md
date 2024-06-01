@@ -199,11 +199,11 @@ private void CustomActivity()
         // For example, you can handle left vs right like this:
         if (DirectionFacing == HorizontalDirection.Right)
         {
-            MeleeCollision.RelativeX = 10;
+            MeleeCollision.RelativeX = 24;
         }
         else if(DirectionFacing == HorizontalDirection.Left)
         {
-            MeleeCollision.RelativeX = -10;
+            MeleeCollision.RelativeX = -24;
         }
         // Note that for up and down you may need to adjust the shape of the collision...
     }

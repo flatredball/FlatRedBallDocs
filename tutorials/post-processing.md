@@ -18,7 +18,7 @@ The following diagram shows how such a render target might be used to apply bloo
 
 <figure><img src="../.gitbook/assets/image (117).png" alt=""><figcaption><p>Post processing using a render target to apply "bloom"</p></figcaption></figure>
 
-RenderTargets can be drawn to (usually by the FRB engine) and used when drawing to the screen in the same frame. Typically post processing does not add much overhead to a game, so games can u use post processing without worring about reducing frame rate or introducing additional frame lag.
+RenderTargets can be drawn to (usually by the FRB engine) and used when drawing to the screen in the same frame. Typically post processing does not add much overhead to a game, so games can use post processing without worrying about reducing frame rate or introducing additional frame lag.
 
 ### Drawing to a RenderTarget
 

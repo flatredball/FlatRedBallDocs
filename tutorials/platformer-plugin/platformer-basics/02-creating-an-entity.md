@@ -70,7 +70,24 @@ Note that we add a Player to the GameScreen _before_ creating any Levels. We add
 
 ### Adding a CameraControllingEntity Instance (Optional)
 
-This tutorial series primarily focuses on creating a platformer entity. If you would like to control the camera manually, you can do so by modifying Camera.Main. More information about the Camera object can be found on the [Camera documentation page](../../../api/flatredball/camera/). Alternatively, if you would like to have automatic camera control, see the [CameraControllingEntity documentation](../../../api/flatredball/entities/cameracontrollingentity.md).
+To create a CameraControllingEntity:
+
+1. Select **GameScreen**
+2. Select the **Quick Actions** tab
+3. Click the **Add Object to GameScreen** button
+4. Find and select **Camera Controlling Entity**
+5. Click **OK**
+
+We want to set up the newly created CameraControllingEntityInstance to track our player as it moves around in the map. To do this:
+
+1. Select **CameraControllingEntityInstance** under **GameScreen/Objects**
+2. Select the **Variables** tab on the right
+3. Set the variable **Targets** to **PlayerList**
+4. Set the variable **Map** to **Map**
+
+The camera should now be able to track the player. For more information on automatic camera control, see the [CameraControllingEntity documentation](../../../api/flatredball/entities/cameracontrollingentity.md).
+
+This tutorial series primarily focuses on creating a platformer entity. If you would like to control the camera manually, you can do so by modifying Camera.Main. More information about the Camera object can be found on the [Camera documentation page](../../../api/flatredball/camera/).
 
 ### Adding a Level
 
@@ -78,7 +95,7 @@ Before we can run our game we also need to add a Level. Typically, the GameScree
 
 To add a level:
 
-1. Select the **Quick Actions**
+1. Select the **Quick Actions** tab
 2. Click the **Add Screen/Level** button
 3.  Leave all defaults and click **OK**
 
