@@ -14,7 +14,7 @@ However, screenshots often require additional markings. For consistency we recom
 
 User ShareX's default rectangles to draw attention to UI elements. The following screenshot could be used to show the user how to navigate back in the selection stack.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Red rectangle highlighting UI</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Red rectangle highlighting UI</p></figcaption></figure>
 
 Optionally, consider using arrows to draw the user's attention if the UI is small or otherwise difficult to find.
 
@@ -36,11 +36,11 @@ Screenshots should be the minimum size possible while providing the necessary in
 
 For example, consider a screenshot which displays a CircleInstance and its Variables tab. The following screenshot is a good size and shows the information clearly.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Minimum information shown for CircleInstance and Variables</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Minimum information shown for CircleInstance and Variables</p></figcaption></figure>
 
 Do not show large windows since it can make text difficult to read and it does not focus the reader's attention on important parts of the image.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
 
 #### Hide Irrelevant Parts in Screenshots
 
@@ -48,9 +48,9 @@ If a tab is not important for the screenshot, it should be moved or reduced in s
 
 The following screenshot includes additional output which draws the reader's attention from the important parts of the screenshot, so avoid doing this.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Avoid including output window or other irrelevant parts of the screenshot</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Avoid including output window or other irrelevant parts of the screenshot</p></figcaption></figure>
 
-### Take Entire-App and Window Screenshots Over a Solid-Colored Background
+#### Take Entire-App and Window Screenshots Over a Solid-Colored Background
 
 Screenshots can bleed their backgrounds at the edges or corners. This can be distracting. Take all screenshots over a solid colored background.
 
@@ -65,3 +65,24 @@ Taking a screenshot over other windows can result in distracting edges showing i
 If we zoom in to the edges, we can see that the background shows on the screenshot as shown in this zoomed in image:
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Background bleeding through the screenshot</p></figcaption></figure>
+
+#### Take Screenshots of the Entire App When Introducing Concepts
+
+Readers may not be familiar with FlatRedBall, Visual Studio, or other apps, so when beginning a document, include full-app screenshots to help the user orient themselves.
+
+For example the following could be an image introducing where entities are stored in FlatRedBall:
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Show entire FlatRedBall Editor screenshot to orient the reader</p></figcaption></figure>
+
+Once the reader has been shown full app in a screenshot, additional screenshots can show a subsection. For example, the following screenshot may emphasize the different entity icons.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Entity icons emphasized in a screenshot which does not show the entire app</p></figcaption></figure>
+
+#### Exclude the Cursor From Screenshots
+
+By default ShareX includes the Windows cursor in screenshots. Unless it is important for the screenshot, make sure to move the cursor away from the application so that it doesn't show in the final image. Including the cursor can cause confusion for the reader since they may mistake the cursor in the screenshot for their own cursor.
+
+The following image shows the cursor included in a screenshot.
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot with a cursor - don't do this</p></figcaption></figure>
+
