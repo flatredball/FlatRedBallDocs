@@ -165,6 +165,7 @@
     * [Introduction to Collision](tutorials/math/tutorials-introduction-to-collision.md)
     * [linear-algebra](tutorials/math/linear-algebra.md)
     * [Introduction](tutorials/math/power-of-two.md)
+    * [Rectangle Collision](tutorials/math/rectangle-collision.md)
     * [rotation](tutorials/math/rotation.md)
     * [statistics](tutorials/math/statistics.md)
     * [trigonometry](tutorials/math/trigonometry.md)
