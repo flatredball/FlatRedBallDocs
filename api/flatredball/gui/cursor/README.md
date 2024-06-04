@@ -1,29 +1,33 @@
-# cursor
+# Cursor
 
 ### Introduction
 
-The Cursor class represents the moving cursor (on desktop) or the touch screen (on touch screens). The Cursor class is similar to the [Mouse](../../../../frb/docs/index.php) class in its interface, but provides a few additional features:
+The Cursor class represents the moving cursor (on desktop) or the touch screen (on touch screens). The Cursor class is similar to the [Mouse](../../input/mouse/) class in its interface, but provides a few additional features:
 
 * The Cursor is a more abstract class supporting a variety of input sources such as Mouse, Xbox360Gamepad, and TouchScreen
-* The Cursor works very well with the Window class and IWindow interface
+* The Cursor works very well with the Window class and IWindow interface. The cursor is automatically used with Gum and FlatRedBall.Forms objects
 
-We recommend using the Cursor class instead of Mouse for games which have any kind of selection system, such as RTS games.
+We recommend using the Cursor class unless you specifically need to inspect the Mouse hardware.
 
 ### Cursor and touch screens
 
-The Cursor can handle both mouse and touch screen input. Many games can use the exact same Cursor class whether written for the mouse or touch screen. Games needing more control over touch screen input can use the [TouchScreen](../../../../documentation/api/flatredball/input/touchscreen.md) class.
+The Cursor can handle both mouse and touch screen input. Many games can use the exact same Cursor class whether written for the mouse or touch screen. Games needing more control over touch screen input can use the [TouchScreen](../../input/touchscreen/) class.
 
 ### Accessing the Cursor
 
-The Cursor class can be accessed through the [GuiManager's](../../../../documentation/api/flatredball/gui/guimanager.md) Cursor property as follows:
+The Cursor class can be accessed through the [GuiManager's](../guimanager/) Cursor property as follows:
 
-```
-GuiManager.Cursor
+```csharp
+var cursor = GuiManager.Cursor;
+if(cursor.PrimaryClick)
+{
+  // do something if it's clicked
+}
 ```
 
 ### "Primary" properties
 
-The Cursor is a general-purpose class for handling cross-platform input. It can represent a mouse, touch screen, or visible cursor controlled by the Xbox 360 Gamepad (although this is not often used in games).
+The Cursor is a general-purpose class for handling cross-platform input. It can represent a mouse, touch screen, or visible cursor controlled by the Xbox 360 Gamepad.
 
 |              |                                                                                             |                                                                                           |
 | ------------ | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -34,9 +38,9 @@ The Cursor is a general-purpose class for handling cross-platform input. It can 
 
 ### Cursor visibility
 
-By default the cursor is invisible when moving over a FlatRedBall game. The following code will make the cursor visible when over the Window:
+By default the cursor is invisible when moving over a FlatRedBall game. The following code makes the cursor visible when over the game window:
 
-```lang:c#
+```csharp
 FlatRedBallServices.Game.IsMouseVisible = true;
 ```
 
@@ -44,7 +48,7 @@ FlatRedBallServices.Game.IsMouseVisible = true;
 
 The following code creates a Circle wherever the Cursor is pushed:
 
-```
+```csharp
 void CustomActivity(bool firstTimeCalled)
 {
     var cursor = GuiManager.Cursor;
@@ -60,10 +64,3 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-### Additional Information
-
-* [Customizing Cursor Visuals](../../../../frb/docs/index.php)
-
-&#x20; \[subpages depth="1"]
-
-###
