@@ -1,28 +1,24 @@
-# glue-reference-implements-iclickable
+# Implements IClickable
 
 ### Introduction
 
-The Implements IClickable property is a property that controls whether the Entity has a HasCursorOver  method. In other words, Entities which are IClickable can be tested to see if the user has highlighed or clicked an object with the [Cursor](../../../../frb/docs/index.php)
+The Implements IClickable property tells the FlatRedBall Editor whether to generate a HasCursorOver method for a particular entity. In other words, Entities which are IClickable can be tested to see if the user has highlighed or clicked an object with the [Cursor](../../api/flatredball/gui/cursor/).
 
 ### Setting IClickable
 
-Entities can be created as IClickable in the add entity window.
+Existing entities can be converted to IClickable in the Properties tab
 
-![](../../../../media/2022-02-img_61fb3a85b6f71.png)
-
-Existing entities can be converted to IClickable in the Properties
-
-1. Select the entity in Glue
+1. Select the Entity
 2. Click the **Properties** tab
 3. Set **Implements IClickable** to **True**
 
-![](../../../../media/2019-04-img_5caa9bbeb7bba.png)
+![Setting an Entity's ImplementsIClickable to true](<../../.gitbook/assets/04\_08 24 06.png>)
 
 ### Code Example - Clicking UI
 
 This method returns whether the Cursor is over any visible part of the Entity. You could use this function to detect UI activity such as Cursor clicks. The following code can be used to perform logic if the user clicks on the Button:
 
-```
+```csharp
 Cursor cursor = GuiManager.Cursor;
 
 if (cursor.PrimaryClick && this.HasCursorOver(cursor))
@@ -35,7 +31,7 @@ if (cursor.PrimaryClick && this.HasCursorOver(cursor))
 
 HasCursorOver can be used to select entity instances in a RTS. The following code shows how to handle unit selection in an RTS. It assumes that UnitList is a list of entities which implement IClickable.
 
-```lang:c#
+```csharp
 // At class scope store the selected unit
 Unit selectedUnit;
 
