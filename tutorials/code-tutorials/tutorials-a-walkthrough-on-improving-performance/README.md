@@ -6,7 +6,7 @@ So you're working on a FlatRedBall game and you're having performance problems? 
 
 ### Identifying the type of performance issues you're having
 
-The first step in solving performance problems is to identify which type of performance problem you're having. Let's loo at the most common:
+The first step in solving performance problems is to identify which type of performance problem you're having. Let's look at the most common:
 
 1. My game takes a long time to load
 2. My game runs smoothly, but then seems to freeze or drop frames every once in a while
