@@ -1,4 +1,4 @@
-# tutorials-a-walkthrough-on-improving-performance
+# Improving Performance
 
 ### HELP! My game runs slow!
 
@@ -6,7 +6,7 @@ So you're working on a FlatRedBall game and you're having performance problems? 
 
 ### Identifying the type of performance issues you're having
 
-The first step in solving performance problems is to identify which type of performance problem you're having. Let's identify the most common:
+The first step in solving performance problems is to identify which type of performance problem you're having. Let's loo at the most common:
 
 1. My game takes a long time to load
 2. My game runs smoothly, but then seems to freeze or drop frames every once in a while
@@ -25,10 +25,10 @@ If your game takes a long time to load, it may be one of the following:
 
 If your game seems to run slow, but the slowdown is no consistent then it is likely that you are experiencing slowdown from the garbage collector. Visual Studio offers a tool for measuring memory allocation. For more information, see the Visual Studio documentation for analyzing memory usage: https://learn.microsoft.com/en-us/visualstudio/profiling/dotnet-alloc-tool?view=vs-2022
 
-#### My game constantly runs slowly
+#### My runs slowly
 
 If your game is constantly running slowly, the reason may be one of the following:
 
-1. Number of objects in the engine. This one is fairly easy to diagnose. We can find out if the problem is related to the number of objects in your engine simply by asking the engine to tell us how many objects it is managing. For more information on this, see [this link](../../../documentation/tutorials/code-tutorials/tutorials-a-walkthrough-on-improving-performance/flatredballxna-tutorials-manually-updated-objects.md)
+1. Number of objects in the engine. This one is fairly easy to diagnose. We can find out if the problem is related to the number of objects in your engine simply by asking the engine to tell us how many objects it is managing. To identify if this is the problem, you should start with teh Profiling tab in the FlatRedBall Editor. For more information, see the [Profiling tab](../../../glue-reference/profiling.md) page.
 2. Complicated logic in Custom code. This means that your CustomActivity code is causing problems. It could be in your Screen or it could be in your entities. For information on detecting and fixing complicated logic in custom code, see [this link](flatredballxna-tutorials-customactivity-performance.md)
 3. Rendering issues. This means that you have too many graphical objects on screen. This is possible, however it is not as common of a problem as the first two, so you should look here only after you have eliminated the first two options. For information on detecting and fixing complicated logic in custom code, see [this link](flatredballxna-tutorials-rendering-performance.md)
