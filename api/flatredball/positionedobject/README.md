@@ -24,7 +24,7 @@ The PositionedObject is an object which contains properties and functionality fo
 
 Absolute position can be directly controlled through the X, Y, and Z properties as well as the exposed Position field. The following code creates three [Sprites](../sprite/) with various positions. Note that the default position of a PositionedObject is (0,0,0). Also, note that in the screenshot below, the Z value impacts the size of sprite3 , implying that the game is using a 3D Camera.
 
-```
+```csharp
  Sprite sprite1 = SpriteManager.AddSprite("redball.bmp");
  sprite1.X = 4;
 

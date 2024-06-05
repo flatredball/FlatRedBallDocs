@@ -114,11 +114,11 @@ public partial class GameScreen
 
 The code above produces the following when the game runs:
 
-![](../../../../media/2016-06-img\_57616a108d6e8.png)
+![Triangle drawn by an IDrawableBatch which renders using DrawUserPrimtives](../../../../media/2016-06-img\_57616a108d6e8.png)
 
 ### Drawing SpriteBatch in FlatRedBall Coordinates
 
-MonoGame's SpriteBatch can be used to draw sprites in FlatRedBall coordinates. For example, the following code considers the Camera's position, resolution, zoom, and the object's position:
+MonoGame's SpriteBatch can be used to draw sprites in FlatRedBall coordinates. For example, the following code considers the FlatRedBall Camera's position, resolution, zoom, and the object's position:
 
 ```csharp
 public void Draw(Camera camera)
@@ -154,18 +154,9 @@ The GraphicsDevice's Viewport should not be changed. IDrawableBatches can be add
 
 FlatRedBall handles render targets under the hood. Changing the RenderTarget can result in unexpected behavior or crashing. For control over render targets, use the [Camera](../../../../frb/docs/index.php)'s RenderOrder property. If you are interested in performing something not currently supported by one of the render modes, please post on the forums.
 
-### Additional Information
+### IDrawableBatches and the SpriteManager
 
-* [Using DrawableBatches to apply custom shaders to Sprites](../../../../frb/docs/index.php)
-* [SpriteManager.AddToLayer](../../../../frb/docs/index.php) - This method can be used to put DrawableBatches on layers for additional sorting control.
-
-### Related Information
-
-* [Render States and IDrawableBatches](../../../../frb/docs/index.php)
-
-### IDrawableBatch Members
-
-* [FlatRedBall.Graphics.IDrawableBatch.Z](../../../../frb/docs/index.php)
+The SpriteManager is ultimately responsible for sorting and drawing IDrawableBatch instances. `SpriteManager.AddDrawableBatch` is used to add an _unlayered_ IDrawableBatch to the SpriteManager. To add IDrawableBatch instances to a layer, use `SpriteManager.AddToLayer`.
 
 #### UpdateEveryFrame
 
