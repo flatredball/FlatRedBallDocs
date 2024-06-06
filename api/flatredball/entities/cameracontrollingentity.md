@@ -4,6 +4,8 @@
 
 The CameraControllingEntity is an object which provides convenient camera positioning and zooming functionality. It is included by default in the Top Down and Platformer projects when using the New Project Wizard.
 
+Typically an instance of the CameraControllingEntity is created in the FRB Editor in GameScreen. For more information on working with the CameraControllingEntity in the FRB editor, see the [FRB Editor CameraControllingEntity page](../../../glue-reference/objects/object-types/cameracontrollingentity.md).
+
 ### Target
 
 The Target property controls the desired location of the CameraControllingEntity. If a Target is assigned, the CameraControllingEntity changes its position to move towards the target according to the other properties assigned such as the Map and TargetApproachStyle.
@@ -26,6 +28,44 @@ void CustomActivity(bool firstTimeCalled)
 ```
 
 <figure><img src="../../../.gitbook/assets/02_05 56 02.gif" alt=""><figcaption><p>Switching Targets with key presses</p></figcaption></figure>
+
+Most games use a Target which is an Entity or Targets for multiple objects (as shown below). You can also create PositionedObjects to control the movement of the CameraControllingEntity as shown in the following code:
+
+```csharp
+// At class scope, such as in GameScreen
+PositionedObject CameraTarget;
+
+void CustomInitialize()
+{
+    CameraTarget = new PositionedObject();
+    // If you want to have the CameraTarget apply velocity and acceleration, you 
+    // can add it to the SpriteManager. If you do not need this, you can skip
+    // adding it.
+    SpriteManager.AddPositionedObject(CameraTarget);
+    CameraControllingEntityInstance.Target = CameraTarget;
+}
+
+void CustomActivity()
+{
+    var cursor = GuiManager.Cursor;
+    if(cursor.PrimaryClick)
+    {
+        // We are immediately setting the target to wherever the 
+        // user clicks. For this implementation we wouldn't need to
+        // add the CameraTarget to the SpriteManager.
+        CameraTarget.X = cursor.WorldX;
+        CameraTarget.Y = cursor.WorldY;
+    }
+}
+
+void CustomDestroy()
+{
+    // If you added the CameraTarget to the SpriteManager, remove it too:
+    SpriteManager.RemovePositionedObject(CameraTarget);
+}
+```
+
+<figure><img src="../../../.gitbook/assets/06_11 45 40.gif" alt=""><figcaption></figcaption></figure>
 
 ### Targets
 

@@ -4,6 +4,8 @@
 
 The CameraControllingEntity provides a standardized way to control camera position in games which contain a moving character or which use Tiled for maps.
 
+This page discusses working with the CameraControllingEntity in the FRB Editor. For information about how to work with it in code, see the [CameraControllingEntity API Documentation](../../../api/flatredball/entities/cameracontrollingentity.md).
+
 ### Default Implementation
 
 If your game was created with the wizard, then your GameScreen has an instance called CameraControllingEntityInstance.
