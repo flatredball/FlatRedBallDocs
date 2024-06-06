@@ -24,7 +24,7 @@ If you see this dialog, click the Yes button, then navigate to the Gum.exe locat
 
 If you used the Glue Wizard in the first tutorial, you will also have a Gum screen set up for the GameScreen called GameScreenGum. Note that Glue will automatically create a Gum screen for every Glue screen.
 
-![](../../media/2021-03-img\_604d80112bbec.png)
+![Gum with the GAmeScreenGum and Level1Gum](../../media/2021-03-img\_604d80112bbec.png)
 
 Gum follows many of the same concepts as Glue, but it is primarily a visual tool. The window on the right provides a [WYSIWYG editor](https://en.wikipedia.org/wiki/WYSIWYG), so creating visual layout is usually easier to do in Gum than in Glue. Gum also includes a list of _Standard_ objects which can be used in your project with no setup. We will use a Text instance to display our score. To do this:
 
@@ -32,17 +32,17 @@ Gum follows many of the same concepts as Glue, but it is primarily a visual tool
 2. Drag+drop the Text object onto the GameScreenGum
 3. Adjust the position of the Text to its desired location in the Editor window
 
-<figure><img src="../../media/2016-01-2021_March_13_200519.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../media/2016-01-2021_March_13_200519.gif" alt=""><figcaption><p>Adding a Text instance to GameScrenGum in the Gum tool</p></figcaption></figure>
 
 That's all there is to it! Gum automatically saves all changes, and Glue (if open) automatically reacts to these file changes, so we can run the game and see the **Hello** TextInstance right away.
 
-![](../../media/2021-03-img\_604d810fec276.png)
+![Text instance appearing in RockBlaster](../../media/2021-03-img\_604d810fec276.png)
 
 ### Changing the TextInstance in Code
 
 At this point our text object says "Hello". Instead, we'd like to display a player's score. To change the Text, we can get a reference to the TextInstance in code or in Glue. Both approaches have their benefits, but for simplicity we will access the TextInstance in Glue. For more information, see the [tutorial on accessing Gum objects](../../gum/tutorials/tutorials-gum-gum-objects-in-code.md). The TextInstance is defined in the Gum screen, which has the file format .gusx. Our GameScreen already has the Gum screen added - this happened automatically when we used the wizard.
 
-![](../../media/2021-03-img\_604d823aa3e8a.png)
+![GameScreenGum.gusx in the FlatRedBall Editor](../../media/2021-03-img\_604d823aa3e8a.png)
 
 To access the TextInstance which is inside GameScreenGum:
 
@@ -65,7 +65,7 @@ void CustomActivity(bool firstTimeCalled)
 
 ### Where to store player score
 
-Now that the TextInstance can display a score, we need to actually keep track of the score so we can display it. We need to decide where to keep the score. As outlined in [this article](../../frb/docs/index.php) information such as the player's score should not be tied to any Screen or Entity. Rather, it should be stored independently and globally as an object contained in GlobalData. We'll create two classes to store our data:
+Now that the TextInstance can display a score, we need to actually keep track of the score so we can display it. We need to decide where to keep the score. Information such as the player's score should not be tied to any Screen or Entity. Rather, it should be stored independently and globally as an object contained in GlobalData. We'll create two classes to store our data:
 
 1. PlayerData
 2. GlobalData
@@ -74,7 +74,7 @@ To add PlayerData to your game:
 
 1.  Add a PlayerData class to the DataTypes folder (which should be part of your project automatically)
 
-    ![](../../media/2022-12-img\_63a310d138ae3.png)
+    ![PlayerData class in the DataTypes folder](../../media/2022-12-img\_63a310d138ae3.png)
 2. Press CTRL+SHIFT+S in Visual Studio to save the project. This will notify Glue that the Project has changed, and that it needs to reload it.
 3. Modify PlayerData so the class looks like the following code snippet:
 
@@ -138,7 +138,7 @@ As Visual Studio will indicate, PointValue is a variable that has not yet been d
 5. Click OK
 6. Set the newly-created value to 10
 
-![](../../media/2021-03-img\_604d851f8ac3c.png)
+![Rock with a PointValue set to 10](../../media/2021-03-img\_604d851f8ac3c.png)
 
 We can also change the starting TextInstance.Text value to 0 by adding the following code in GameScreen.cs in the CustomInitialize function:
 
