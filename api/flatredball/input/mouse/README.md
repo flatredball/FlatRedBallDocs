@@ -1,14 +1,14 @@
-# mouse
+# Mouse
 
 ### Introduction
 
-The Mouse class provides functionality for getting input data from the physical mouse. This class is automatically instantiated by and accessible through the [InputManager](../../../../../frb/docs/index.php). The Mouse class is not available on the Xbox360 if using FlatRedBall XNA.
+The Mouse class provides functionality for getting input data from the physical mouse. This class is automatically instantiated by and accessible through the [InputManager](../inputmanager/).
 
 ### Detecting Mouse Activity
 
 There are many ways to get data from the mouse. The following section of code is a series of if-statements which could be used to detect input from the mouse.
 
-```
+```csharp
 if (InputManager.Mouse.ButtonPushed(Mouse.MouseButtons.LeftButton))
 {
     // Left mouse button pushed - down this frame, not down last frame.
@@ -32,19 +32,15 @@ if (InputManager.Mouse.ButtonDoubleClicked(Mouse.MouseButtons.LeftButton))
 
 The mouse scroll wheel is exposed through the InputManager.Mouse.ScrollWheel property. The ScrollWheel property returns the number of "clicks" that the scroll wheel has moved since last frame. The following code controls the Z position of the camera based on the ScrollWheel property.
 
-```
+```csharp
 SpriteManager.Camera.Z -= InputManager.Mouse.ScrollWheel;
 ```
-
-### Cursor Visibility
-
-See [the showing cursor wiki entry](../../../../../frb/docs/index.php#Showing_Cursor).
 
 ### Mouse Pixel Coordinates
 
 The Mouse class provides information about the cursor's pixel coordinates.
 
-```
+```csharp
 int pixelXCoordinate = InputManager.Mouse.X;
 int pixelYCoordinate = InputManager.Mouse.Y;
 ```
@@ -55,39 +51,28 @@ The mouse coordinates are top left justified, so (0,0) represents the top left c
 
 The Mouse reports the world coordinates of the cursor through the functions WorldXAt and WorldYAt.
 
-```
+```csharp
 float zPosition = 0; // or whatever other value, but 0 is the most common
 
 float xWorldPosition = InputManager.Mouse.WorldXAt(zPosition);
 float yWorldPosition = InputManager.Mouse.WorldYAt(zPosition);
 ```
 
-For a more detailed example see [this entry](../../../../../frb/docs/index.php#Creating_Attachments) on moving a [Sprite](../../../../../frb/docs/index.php) by positioning it to the cursor's coordinates.
+For a more detailed example see [this entry](../../../../frb/docs/index.php#Creating\_Attachments) on moving a [Sprite](../../../../frb/docs/index.php) by positioning it to the cursor's coordinates.
 
 ### Detecting Mouse in Window
 
 Certain activities should only occur if the mouse is in the window. To test for this, use the following code: Add the following using statement:
 
-```
+```csharp
 using FlatRedBall.Input;
 ```
 
 The following code performs the check:
 
-```
+```csharp
 if(InputManager.Mouse.IsInGameWindow())
 {
    // perform activity
 }
 ```
-
-### Member List
-
-* [FlatRedBall.Input.Mouse.GrabbedPositionedObject](../../../../../frb/docs/index.php)
-* [FlatRedBall.Input.Mouse.IsOn3D](../../../../../frb/docs/index.php)
-* [FlatRedBall.Input.Mouse.ModifyMouseState](../../../../../frb/docs/index.php)
-* [FlatRedBall.Input.Mouse.SetScreenPosition](../../../../../frb/docs/index.php)
-* [FlatRedBall.Input.Mouse.WorldXAt](../../../../../frb/docs/index.php)
-* [FlatRedBall.Input.Mouse.WorldYAt](../../../../../frb/docs/index.php)
-
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.
