@@ -121,25 +121,52 @@ The code above produces the following when the game runs:
 MonoGame's SpriteBatch can be used to draw sprites in FlatRedBall coordinates. For example, the following code considers the FlatRedBall Camera's position, resolution, zoom, and the object's position:
 
 ```csharp
-public void Draw(Camera camera)
+internal class SpriteBatchIdb : IDrawableBatch
 {
-    Matrix matrix = Matrix.Identity;
-    matrix *= Matrix.CreateTranslation(this.X, -this.Y, 0);
-    matrix *= Matrix.CreateTranslation(
-        camera.OrthogonalWidth/2.0f, camera.OrthogonalHeight/2, 0);
-    matrix *= Matrix.CreateTranslation(-camera.X, camera.Y, 0);
-    var scale = camera.DestinationRectangle.Height / camera.OrthogonalHeight;
-    matrix *= Matrix.CreateScale(scale, scale, 1);
+    public float X { get; set; }
+    public float Y { get; set; }
+    public float Z { get; set; }
 
-    spriteBatch.Begin(transformMatrix:matrix);
-    spriteBatch.Draw(
-    TextureFile,
-    new Rectangle(0, 0, TextureFile.Width, TextureFile.Height),
-        Color.White);
+    public bool UpdateEveryFrame => false;
 
-    spriteBatch.End();
+    SpriteBatch spriteBatch;
+
+    public Texture2D TextureFile { get; set; }
+
+    public SpriteBatchIdb()
+    {
+        spriteBatch = new SpriteBatch(FlatRedBallServices.GraphicsDevice);
+    }
+
+    public void Destroy()
+    {
+
+    }
+
+    public void Draw(Camera camera)
+    {
+        Matrix matrix = Matrix.Identity;
+        matrix *= Matrix.CreateTranslation(this.X, -this.Y, 0);
+        matrix *= Matrix.CreateTranslation(
+            camera.OrthogonalWidth / 2.0f, camera.OrthogonalHeight / 2, 0);
+        matrix *= Matrix.CreateTranslation(-camera.X, camera.Y, 0);
+        var scale = camera.DestinationRectangle.Height / camera.OrthogonalHeight;
+        matrix *= Matrix.CreateScale(scale, scale, 1);
+
+        spriteBatch.Begin(transformMatrix: matrix);
+        spriteBatch.Draw(
+        TextureFile,
+        new Rectangle(0, 0, TextureFile.Width, TextureFile.Height),
+            Color.White);
+
+        spriteBatch.End();
+    }
+
+    public void Update()
+    {
+
+    }
 }
-
 ```
 
 ### Invalid IDrawableBatch Actions
