@@ -37,8 +37,30 @@ In fact, it is impossible for two rectangles to collide without this being the c
 
 <figure><img src="../../.gitbook/assets/image (127).png" alt=""><figcaption><p>More rectangle collisions showing right side of blue being further to the right than the left side of pink</p></figcaption></figure>
 
-This concept is important for two reasons. First, comparing "opposite" edges is ultimately how we can detect if collisions occurred. Seconc, we will use these "opposite" edge distances later to determine how to separate rectangles.
+This concept is important for two reasons. First, comparing "opposite" edges is ultimately how we can detect if collisions occurred. Second, we will use these "opposite" edge distances later to determine how to separate rectangles.
 
 Of course, we cannot detect a collision only by using one edge. The right-side of the blue rectangle could be further to the right (have a greater X value) than the left-side of the pink, but there may not be a collision, as shown in the following image:
+
+<figure><img src="../../.gitbook/assets/image (129).png" alt=""><figcaption><p>Blue right is greater than pink left, but collision does not occur here</p></figcaption></figure>
+
+Therefore, for collision to be checked, we must actually check all four sides. Conceptually the checks are:
+
+* Blue right must to the right of pink left
+* Blue left must to the left of pink right
+* Blue top must be above pink bottom
+* Blue bottom must be below pink top
+
+If all four of these conditions are true, then a collision has occurred. In code, this would look like this:
+
+```csharp
+var didCollisionOccur = 
+    blue.Right > pink.Left &&
+    blue.Left < pink.Right &&
+    // XNA rectangle uses positive-Y-points-down
+    blue.Top < pink.Bottom &&
+    blue.Bottom > pink.Top;
+```
+
+As mentioned in the comments notice that positive Y points down when using XNA (MonoGame/FNA) rectangles. If using FlatRedBall shapes, the top/bottom checks would be inverted to account for it using positive Y as up.
 
 CONTINUE HERE
