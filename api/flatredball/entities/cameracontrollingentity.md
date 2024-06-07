@@ -111,3 +111,28 @@ CameraControllingEntityInstance.ApplyTarget(target, lerpSmooth);
 Keep in mind that setting the Camera.Main's position to the target location will not immediately move the camera to the target position. If using a CameraControllingEntity, then the Camera's position becomes _read only_, so any changes to the camera position must be done through the CameraControllingEntity.
 
 Additionally, when calling ApplyTarget, the value that is passed in should be obtained from the GetTarget method. The GetTarget method considers the bounds of the Map and the Camera size. Setting a value explicitly (such as by defining a Vector2 with constant X and Y values) may result in the CameraControllingEntity temporarily showing a region that is outside of the Map bounds.
+
+### Map
+
+The Map object can be used to define the bounds for the CameraControllingEntity. If a Map is null, then the CameraControllingEntity does not stop on any bounds. If a Map is set, the CameraControllingEntity attempts to keep the Camera within the bounds. If the Target is set such that the Camera would view outside of the Map, the Camera moves smoothly to the edge of the bounds.
+
+If the Map is smaller than the Camera's viewable area, the Camera centers itself within the Map.
+
+A typical FlatRedBall game uses a LayeredTileMap (loaded from a TMX file) as its Map, but manual bounds can be set as well.
+
+The following code shows how to manually create an AxisAlignedRectangle in code and use it as the Map to set bounds. Note that the following code only includes the relevant code to assign the Map property:
+
+```csharp
+AxisAlignedRectangle MapBounds;
+
+void CustomInitialize()
+{
+    MapBounds = new AxisAlignedRectangle();
+    MapBounds.Width = 800;
+    MapBounds.Height = 700;
+
+    CameraControllingEntityInstance.Map = MapBounds;
+}
+```
+
+<figure><img src="../../../.gitbook/assets/07_05 34 04.gif" alt=""><figcaption><p>CameraControllingEntity instance with Map set</p></figcaption></figure>
