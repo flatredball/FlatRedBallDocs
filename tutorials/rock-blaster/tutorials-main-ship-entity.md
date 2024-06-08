@@ -12,7 +12,7 @@ This tutorial takes an iterative approach to defining Entities, as this is more 
 
 ### The art
 
-As mentioned in the introduction to this set of tutorials, this game will be built using art from Tyrian as [provided by Dan Cook](http://www.lostgarden.com/2007/04/free-game-graphics-tyrian-ships-and.html). For simplicity these tutorials provide a subset of the Tyrian art. Modifications have been made only to remove unused parts of various images, to add transparency, and to separate images into separate files for convenience. Otherwise all art is in its original state. If you finish this tutorial and would like to continue developing this game, visit [http://www.lostgarden.com/2007/04/free-game-graphics-tyrian-ships-and.html](http://www.lostgarden.com/2007/04/free-game-graphics-tyrian-ships-and.html) for the full set of Tyrian art.
+As mentioned in the introduction to this set of tutorials, this game will be built using art from Tyrian as [provided by Dan Cook](http://www.lostgarden.com/2007/04/free-game-graphics-tyrian-ships-and.html). For simplicity these tutorials provide a subset of the Tyrian art. Modifications have been made only to remove unused parts of various images, to add transparency, and to separate images into separate files for convenience. Otherwise all art is in its original state. If you finish this tutorial and would like to continue developing this game, visit [https://lostgarden.com/2007/04/05/free-game-graphics-tyrian-ships-and-tiles/](https://lostgarden.com/2007/04/05/free-game-graphics-tyrian-ships-and-tiles/) for the full set of Tyrian art.
 
 For the ship, save the following four files to any location on your computer - remember where you save them as you will need to be able to find them:&#x20;
 

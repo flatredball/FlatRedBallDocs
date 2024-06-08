@@ -1,4 +1,4 @@
-# tutorials-multiple-players
+# Multiple Players
 
 ### Introduction
 
@@ -21,8 +21,6 @@ To add additional players we will detect how many controllers are connected, and
 2. Find the **CustomInitialize** function
 3. Modify this function as shown in the following code snippet:
 
-&#x20;
-
 ```
 void CustomInitialize()
 {
@@ -40,7 +38,7 @@ private void AddAdditionalShips()
  // is already part of the game. Let's start with index 1:
  for (int i = 1; i < InputManager.Xbox360GamePads.Length; i++)
  {
-  var gamePad = InputManager.Xbox360GamePads[i];
+
   if (gamepad.IsConnected)
   {
    var player = new Player();
@@ -66,8 +64,6 @@ Now that we're calling SetPlayerIndex, we'll need to make a public function for 
 1. Open Player.cs in Visual Studio
 2. Add the following to Player.cs:
 
-&#x20;
-
 ```
 public void SetPlayerIndex(int index)
 {
@@ -89,7 +85,7 @@ public void SetPlayerIndex(int index)
 }
 ```
 
-![RockBlasterDifferentShipTextures.png](../../../media/migrated_media-RockBlasterDifferentShipTextures.png)
+![RockBlasterDifferentShipTextures.png](../../media/migrated\_media-RockBlasterDifferentShipTextures.png)
 
 ### Conclusion
 

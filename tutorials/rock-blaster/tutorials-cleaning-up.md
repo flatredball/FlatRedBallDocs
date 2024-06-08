@@ -1,4 +1,4 @@
-# tutorials-cleaning-up
+# Cleaning Up
 
 ### Introduction
 
@@ -14,7 +14,7 @@ All entities with collision currently draw their circles. This is useful for und
 4. Select the **Variables** tab
 5. Uncheck the **Visible** property
 
-![](../../media/2021-03-img_604e24ad82366.png)
+![](../../media/2021-03-img\_604e24ad82366.png)
 
 Repeat this process for:
 
@@ -23,28 +23,27 @@ Repeat this process for:
 
 Now our game looks much better without the white circles:
 
-![](../../media/2021-03-img_604e2525536e5.png)
+![](../../media/2021-03-img\_604e2525536e5.png)
 
 ### Creating the End Game UI
 
 If the user dies currently the game simply sits there and doesn't let the player know what's going on. We can add an end-game UI in Gum to announce that the game has ended.
 
 1. Open Gum
-2. Drag+drop a **Text** object from the Standards folder onto **GameScreenGum** 
+2. Drag+drop a **Text** object from the Standards folder onto **GameScreenGum**
 
 <figure><img src="../../media/2016-01-2021_March_14_093302.gif" alt=""><figcaption></figcaption></figure>
-
 
 3. Rename the **Text** to **GameOverAnnouncement**
 4.  Change the Text property on **GameOverAnnouncement** to **Game Over**. You may need to press the TAB key to apply the changes to the Text property. Pressing the Enter key results in a newline being added to the Text.
 
-    ![](../../media/2021-03-img_604e2624d45ef.png)
+    ![](../../media/2021-03-img\_604e2624d45ef.png)
 5.  Click the **Alignment** tab and then click the **Center Anchor** button
 
-    ![](../../media/2021-03-img_604e26746797a.png)
+    ![](../../media/2021-03-img\_604e26746797a.png)
 6.  Now that we've adjusted the position, we can set GameOverAnnouncement to be invisible by unchecking the Visible property under the Variables tab.
 
-    ![](../../media/2021-03-img_604e26f283407.png)
+    ![](../../media/2021-03-img\_604e26f283407.png)
 
 ### Adding GameOverAnnouncement to GameScreen in Glue
 
@@ -56,11 +55,7 @@ Just like with the score hud, we will access the GameOverAnnouncement in Glue:
 4. Use the drop-down to select **GameOverAnnouncement**
 5. Click **OK**
 
-
-
 <figure><img src="../../media/2016-01-2021_March_14_090510.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Detecting GameOver
 
@@ -68,8 +63,6 @@ Next we'll want to detect if the game is over and show the hud if so. To do this
 
 1. Open GameScreen.cs in Visual Studio
 2. Add the following to the CustomActivity in GameScreen.cs:
-
-&#x20;
 
 ```
 EndGameActivity();
@@ -79,20 +72,18 @@ Next we'll want to implement EndGameActivity. To do this:
 
 1. Add the following code to GameScreen.cs in the GameScreen class:
 
-&#x20;
-
 ```
 void EndGameActivity()
 {
     // If the list has 0 ships, then all have been killed
-    if (GameOverAnnouncement.Visible == false && this.Player.Count == 0)
+    if (GameOverAnnouncement.Visible == false && this.PlayerList.Count == 0)
     {
         GameOverAnnouncement.Visible = true;
     }
 }
 ```
 
-Now the GameOver will appear after all ships have died. If you have increased the ship's health you will want to reduce it back to a reasonable number (like 6). This is important for the final state of the game as well as it will help you test the end game logic quicker. ![GameOverDisplaying.png](../../media/migrated_media-GameOverDisplaying.png)
+Now the GameOver will appear after all ships have died. If you have increased the ship's health you will want to reduce it back to a reasonable number (like 6). This is important for the final state of the game as well as it will help you test the end game logic quicker. ![GameOverDisplaying.png](../../media/migrated\_media-GameOverDisplaying.png)
 
 ### Removing Debugger output
 
