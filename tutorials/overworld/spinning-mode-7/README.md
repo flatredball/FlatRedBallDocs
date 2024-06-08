@@ -1,1 +1,2 @@
-\[subpages depth="1"\]
+# Spinning Mode 7
+
