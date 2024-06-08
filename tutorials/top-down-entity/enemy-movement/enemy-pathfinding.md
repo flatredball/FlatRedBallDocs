@@ -93,6 +93,13 @@ private void CustomInitialize()
     this.InitializeTopDownInput(topDownAiInput);
 }
 
+void CustomDestroy()
+{
+    // The top down input path must be made invisible so it cleans up
+    // any shapes it creates in the path:
+    topDownAiInput.IsPathVisible = false;     
+}
+
 ```
 
 Notice that the topDownAiInput is defined at class scope - this lets us access it in other methods without needing to cast the InputDevice every time. Also, the IsPathVisible and PathColor properties can be used to control the appearance of the path that the EnemyBase is going to take to get to the player. We will enable this to show the path. Also, it may be worth turning off the WalkingNodeNetwork visibility so that the EnemyBase path can be seen more clearly.
