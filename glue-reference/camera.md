@@ -213,7 +213,7 @@ The CameraSetup object provides code for toggling between your game running full
 ```csharp
 if(InputManager.Keyboard.KeyPushed(Keys.Space))
 {
-   CameraSetup.Data.IsFullscreen = !CameraSetup.Data.IsFullScreen;
+   CameraSetup.Data.IsFullScreen = !CameraSetup.Data.IsFullScreen;
    CameraSetup.ResetWindow();
 }
 ```
