@@ -20,7 +20,7 @@ Repeat the same for the Enemy entity.
 
 Next, we'll add a collision object to the Player for melee attacks. This can be any type of shape, but we'll use an AxisAlignedRectangle for this tutorial. Be sure to give the new shape a name that clearly explains its purpose, such as **MeleeCollision**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Adding MeleeCollision to Player</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Adding MeleeCollision to Player</p></figcaption></figure>
 
 Adjust the MeleeCollision so that it is positioned outside of the Player entity. You can use [Live Edit](../../glue-reference/enable-live-edit.md) to iterate quickly on this.
 

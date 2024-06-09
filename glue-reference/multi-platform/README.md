@@ -14,7 +14,7 @@ FlatRedBall supports developing games on multiple platforms. As of the time of t
 
 Your project's platform is selected when first creating a new project. A newly-created project selects a primary platform, which defines the primary project.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The primary project should be a desktop-based project (either MonoGame .NET Desktop GL or FNA at the time of this writing) even if you intend to target other platforms such as Android or consoles. Selecting a Desktop project as the primary project provides a number of benefits:
 

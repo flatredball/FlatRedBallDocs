@@ -153,7 +153,7 @@ string textToDisplay =
 dialog.ShowAsync(textToDisplay);
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Styled text in a dialog box</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Styled text in a dialog box</p></figcaption></figure>
 
 More information on styled text can be found in the Gum documentation: [https://docs.flatredball.com/gum/gum-elements/text/text#using-bbcode-for-inline-styling](https://docs.flatredball.com/gum/gum-elements/text/text#using-bbcode-for-inline-styling)
 

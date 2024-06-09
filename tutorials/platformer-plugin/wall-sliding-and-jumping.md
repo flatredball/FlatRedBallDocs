@@ -127,7 +127,7 @@ We can add sliding animations by checking the IsSlidingOnWall variable either in
 2. Click on the Animation item\
    <img src="http://flatredball.com/wp-content/uploads/2023/10/img_6521ce5b2ed06.png" alt="" data-size="original">
 3. Copy the CharacterFall animation row\
-   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 4. Select **CharacterWallSlide** animation on the new row
 5. Enter **IsSlidingOnWall** for the **Custom Condition** on the new row\
    ![](http://flatredball.com/wp-content/uploads/2023/10/img\_6521cf490bf72.png)

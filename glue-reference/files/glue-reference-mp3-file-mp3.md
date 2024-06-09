@@ -85,7 +85,7 @@ FlatRedBall provides built-in support for NAudio. When a new song is added throu
 
 Already-added songs can be changed between Song and NAudio\_Song by changing the runtime type on the file's properties.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing a Song's RuntimeType</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing a Song's RuntimeType</p></figcaption></figure>
 
 Both MonoGame/FNA `Song` and `NAudio_Song` share much of the same functionality. Both:
 

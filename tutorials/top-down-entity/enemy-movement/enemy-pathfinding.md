@@ -35,7 +35,7 @@ Next we'll define a tile to use for pathfinding. To do this:
 
 Next, select your current level (such as Level1Map) and paint the WalkableTile onto the GameplayLayer. Note that if you would like to be able to walk on areas which already have other tiles, you can create a new layer specifically for Tiles.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>WalkableTile painted in the walkable areas of the Tiled map</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>WalkableTile painted in the walkable areas of the Tiled map</p></figcaption></figure>
 
 Be sure to save both your level and the tileset.
 
@@ -221,7 +221,7 @@ To help explain this problem we can visualize a simple path that an enemy may ta
 
 Notice that the enemy moves directly towards the first node diagonally. This happens regardless of where the enemy is located - by default the very first segment in the path connects the enemy to the path. In this case the movement seems to be what we might expect, but in some situations the enemy may be positioned such that its first movement requires it to backtrack, as shown in the following image:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Example of a backgracing path</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Example of a backgracing path</p></figcaption></figure>
 
 Notice that in this case the closest node to the enemy is to the right of the enemy. Therefore, the first movement segment has the enemy moving to the right before it resumes moving to the left.
 

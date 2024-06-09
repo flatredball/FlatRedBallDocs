@@ -108,5 +108,5 @@ By convention the first column in a localization file is the ID, and subsequent 
 
 The following shows a real-world example of a localization file which includes a column for the speaker, whether to flip the profile, and whether the text is automatically skipped. Note that these columns do not have any built-in behavior on their own. They must be read in and applied in your custom code.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dialog with Speaker, Flip Profile, and Auto Skip</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dialog with Speaker, Flip Profile, and Auto Skip</p></figcaption></figure>
 

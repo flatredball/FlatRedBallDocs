@@ -28,7 +28,7 @@ If you add a file to your FlatRedBall project which has an associated build tool
 
 You can leave the default, or use the dropdown to select a different builder. If you do not want to use a builder for this particular file, you can change the dropdown to \<None>.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Selecting &#x3C;None> in the file build tool selection popup</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Selecting &#x3C;None> in the file build tool selection popup</p></figcaption></figure>
 
 If a file has an associated file build tool, then the destination file is displayed in the FRB Editor. For example, if an .ods file is added, the destination file type (csv) shows. At runtime the source file is completely ignored and only the destination file is loaded.
 

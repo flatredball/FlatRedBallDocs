@@ -13,7 +13,7 @@ To load a font file:
 
 Your font file should appear in the Files folder.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Font file in an Entity's Files folder</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Font file in an Entity's Files folder</p></figcaption></figure>
 
 This file can now be referenced on a Text's Font property.
 

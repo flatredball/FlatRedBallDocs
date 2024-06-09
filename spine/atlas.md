@@ -50,6 +50,6 @@ After you click the OK button, FlatRedBall understands that .achx files may be u
 
 Note that this change now results in FlatRedBall asking you about the build tool whenever you add a new .achx file.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dialog asking which builder to use for newly-added .achx files</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dialog asking which builder to use for newly-added .achx files</p></figcaption></figure>
 
 If you are adding a file which you would like to be treated as an AnimationChain, then select the **\<None>** option. For more information on build tools, see the [File Build Tools](atlas.md#file-build-tools) documentation.
