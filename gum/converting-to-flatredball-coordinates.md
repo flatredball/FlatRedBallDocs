@@ -9,7 +9,28 @@ Gum uses a different coordinate system compared to FlatRedBall. The separate Gum
 
 At times games may need to position FlatRedBall objects (such as entities) relative to the position of a Gum object. This document explains how to convert Gum to FlatRedBall coordinates.
 
-Note that it is possible to add Gum components to FlatRedBall entities, and doing so results in the coponents being drawn in _world coordinates_ (FRB coordinates). Adding a Gum component to a FlatRedBall Entity is the easiest way to position a Gum object in world space. For more information see the [Components in FlatRedBall Entities page](adding-components-to-entities.md).
+Note that it is possible to add Gum components to FlatRedBall entities, and doing so results in the components being drawn in _world coordinates_ (FRB coordinates). Adding a Gum component to a FlatRedBall Entity is the easiest way to position a Gum object in world space. For more information see the [Components in FlatRedBall Entities page](adding-components-to-entities.md).
+
+### Converting from Gum to Screen Coordinates
+
+Gum objects which have no parents and which are using absolute X and Y coordinates are already in screen coordinates. Of course, most Gum objects are nested inside other parent Gum objects, and they may be using other X and Y units.&#x20;
+
+The following code shows how to display the four edge bounds for a ColoredRectangleInstance:
+
+```csharp
+ var rectangle = GumScreen.ColoredRectangleInstance;
+ var left = rectangle.AbsoluteLeft;
+ var top = rectangle.AbsoluteTop;
+ var right = rectangle.AbsoluteLeft + rectangle.GetAbsoluteWidth();
+ var bottom = rectangle.AbsoluteTop + rectangle.GetAbsoluteHeight();
+
+ FlatRedBall.Debugging.Debugger.Write(
+     "Left:" + left + " Top:" + top + " Right:" + right + " Bottom:" + bottom);
+```
+
+
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Edge coordiantes displayed for centered ColoredRectangle instance</p></figcaption></figure>
 
 ### Converting from Gum to FlatRedBall Coordinates
 
