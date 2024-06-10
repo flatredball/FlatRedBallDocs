@@ -176,4 +176,6 @@ GumScreen.PauseMenu.BindingContext = new PauseMenuViewModel();
 
 By assigning the PauseMenu's BindingContext, the internal CustomSettingsViewInstance looks for a property on the PauseMenuViewModel with the name "CustomSettingsViewModel. Since the PauseMenuViewModel has this property, this will automatically be bound.
 
+For this particular example it may seem like a pointless tradeoff - the binding context assignment was removed from the GameScreen, but additional code was added to the PauseMenuRuntime and PauseMenuViewModel. This extra code becomes more valuable if the PauseMenu (or any other container) were to be reused across multiple screens.
+
 Notice that the code above has reduced the explicit assignments from three to two. We could further reduce this code by moving the PauseMenuViewMode inside the GameScreenViewModel and similarly binding the PauseMenu's BindingContext inside of the GameScreenGumRuntime. The amount of embedded ViewModel assignment you perform depends on the level of reusability your game needs.
