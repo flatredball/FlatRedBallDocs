@@ -15,8 +15,8 @@ float tileWidth = 16;
 float tileHeight = 16;
 
 // xOffset and yOffset are used to place the text in the center of the tile
-float xOffset = tileWidth / 16;
-float yOffset = tileHeight / 16;
+float xOffset = tileWidth / 2;
+float yOffset = tileHeight / 2;
 
 // only do 100 so we don't have performance problems:
 for (int i = 0; i < 100; i++)
