@@ -18,7 +18,9 @@ For example, the following shows the tile order index if the map is using SortAx
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Tile index order for SortAxis.Y</p></figcaption></figure>
 
-If your map is wider than it is tall and is isometric, then the ordering is performed left-to-right rather than top-to-bottom. The following image shows example orderedTileIndex values for a map which is ordered left-to-right.
+Note that for isometic maps, tiles are drawn top to bottom (increasing moving downward) so isometric maps use a SortAxis of YTopDown.
+
+If your map is wider than it is tall and is not isometric, then the ordering is performed left-to-right rather than top-to-bottom. The following image shows example orderedTileIndex values for a map which is ordered left-to-right.
 
 ![](../../media/2020-10-img\_5f918eb8a684a.png)
 
