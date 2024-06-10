@@ -60,7 +60,7 @@ The SpineShader is required to render Spine. To load the Spine Shader:
 2.  Add the SpineEffect.fx file to GlobalContent by drag+dropping the file into your Global Content Files folder in FlatRedBall\
 
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>SpineEffect.fx in Global Content Files</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>SpineEffect.fx in Global Content Files</p></figcaption></figure>
 3. Open Game1.cs and add the following code in Initialize after `GeneratedInitialize();`:
 
 ```csharp

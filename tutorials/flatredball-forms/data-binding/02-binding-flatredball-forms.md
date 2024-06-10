@@ -15,7 +15,7 @@ This tutorial uses a Glue screen which contains the following:
 
 These instances are all default FlatRedBall.Forms objects which are available in all FlatRedBall projects created with the wizard.
 
-![](../../../media/2022-01-img\_61d66401c8680.png)
+![Simple Screen containing Forms-inheriting instances](../../../media/2022-01-img\_61d66401c8680.png)
 
 ### Creating a ViewModel
 
@@ -27,7 +27,7 @@ Like the previous tutorial, this tutorial uses a ViewModel for binding. The View
 * The selected item in the list box.
 * Whether the Remove button is enabled. It is only enabled if there is a selection in the ListBox.
 
-Not only will we be binding to FlatRedBall.Forms objects, but the binding will be _two way_ binding. This means that the UI objects can make changes to the view model. For example, when the user clicks on an item in the list box, the SelectedItem will be updated automatically.
+Not only will we be binding to FlatRedBall.Forms objects, but the binding will be _two way_ binding. This means that the UI objects can make changes to the view model. For example, when the user clicks on an item in the list box, the SelectedItem is updated automatically.
 
 ```csharp
 class FormsScreenViewModel : ViewModel
@@ -128,7 +128,7 @@ public partial class FormsScreen
 
 Like the previous tutorial, the add and remove buttons do not access any properties on the UI elements - only properties on the ViewModels are accessed.
 
-<figure><img src="../../../media/2022-01-05_21-14-47.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../media/2022-01-05_21-14-47.gif" alt=""><figcaption><p>Using the TextBox, Add Button, and Remove Button to add and remove items from the ListBox</p></figcaption></figure>
 
 #### Forms.BindingContext
 

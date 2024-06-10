@@ -74,6 +74,7 @@
     * [Data Binding (BindingContext)](tutorials/flatredball-forms/data-binding/README.md)
       * [BindingContext Property](tutorials/flatredball-forms/data-binding/01-bindingcontext.md)
       * [Binding FlatRedBall.Forms](tutorials/flatredball-forms/data-binding/02-binding-flatredball-forms.md)
+      * [Parent and Children Binding using BindingContext](tutorials/flatredball-forms/data-binding/parent-and-children-binding-using-bindingcontext.md)
       * [ListBox Templates](tutorials/flatredball-forms/data-binding/03-templates.md)
     * [Styling Forms](tutorials/flatredball-forms/styling-forms.md)
     * [Defining New Forms Types](tutorials/flatredball-forms/defining-new-forms-types/README.md)

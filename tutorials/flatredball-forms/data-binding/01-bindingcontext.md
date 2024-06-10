@@ -95,7 +95,9 @@ The DependsOn attribute creates a dependency relationship between the property w
 
 ### Assigning BindingContext
 
-The ViewModel establishes which properties can be assigned, and the dependency between properties. Once a ViewModel is created, it can be applied to a Gum object. Note that ViewModels can be applied to Gum objects (GraphicalUiElements) or Forms objects (such as Button). BindingContext assignments _cascade_ - you only need to assign the BindingContext at the top level and all children will recursively receive the same BindingContext. Typically this is done at the GumScreen level in each FlatRedBall Screen. Once the BindingContext is assigned, each individual UI property needs to be bound to the corresponding ViewModel property. The following code shows how this type of binding would be done:
+The ViewModel establishes which properties can be assigned, and the dependency between properties. Once a ViewModel is created, it can be applied to a Gum object. Note that ViewModels can be applied to Gum objects (GraphicalUiElements) or Forms objects (such as Button). BindingContext assignments _cascade_ - you only need to assign the BindingContext at the top level and all children will recursively receive the same BindingContext.
+
+Typically the BindingContext is done at the root level. We recommend assigning the Forms object which is available if you are using Forms in your game. Once the BindingContext is assigned, each individual UI property needs to be bound to the corresponding ViewModel property. The following code shows how this type of binding would be done:
 
 ```csharp
 GameScreenViewModel ViewModel;
@@ -104,8 +106,12 @@ void CustomInitialize()
 {
     ViewModel = new GameScreenViewModel();
 
-    GumScreen.BindingContext = ViewModel;
+    Forms.BindingContext = ViewModel;
+    // You could also assign it on GumScreen, which will do the same thing:
+    // GumScreen.BindingContext = ViewModel;
 
+    // Assigning on the Forms object results in the binding cascading to all
+    // children, whether they are forms or Gum
     GumScreen.PointsTextInstance.SetBinding(
         nameof(GumScreen.PointsTextInstance.Text), 
         nameof(ViewModel.ScoreDisplay));
@@ -124,6 +130,16 @@ void CustomInitialize()
 
 }
 ```
+
+Note that the above code assigns the binding on Gum objects through GumScreen. Although we're not doing it in this tutorial, we could also call SetBinding on Forms objects. For example, if the ViewModel had a property which was to be used as the Text on one of the buttons, the following code could be used:
+
+```csharp
+Forms.AwardPointsButton.SetBinding(
+    nameof(Forms.AwardPointsButton.Text),
+    nameof(ViewModel.SomeTextProperty));
+```
+
+This topic is covered in more detail in the next tutorial.
 
 #### ViewModel Creation
 
