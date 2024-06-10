@@ -387,6 +387,7 @@
   * [MapDrawableBatch](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/README.md)
     * [AddTile](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/glue-gluevault-component-pages-tile-graphics-plugin-addtile.md)
     * [CoordinateAdjustment](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/coordinateadjustment.md)
+    * [GetBottomLeftWorldCoordinateForOrderedTile](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/getbottomleftworldcoordinatefororderedtile.md)
     * [MergeOntoThis](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/mergeontothis.md)
     * [NamedTileOrderedIndexes](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/namedtileorderedindexes.md)
     * [PaintTile](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/painttile.md)
