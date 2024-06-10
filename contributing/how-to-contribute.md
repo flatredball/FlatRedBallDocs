@@ -10,7 +10,7 @@ Community management for FlatRedBall is the highest-impact way to contribute to 
 
 We can see evidence of FlatRedBall's activity and health by looking at the [commit history on GitHub](https://github.com/vchelaru/FlatRedBall/graphs/contributors). The following is a snapshot of the activity from the point when FlatRedBall was added to Github until May 2024. Keep in mind that FlatRedBall had been developed for over a decade prior to being moved to GitHub, but the Subversion history was not preserved on migration, so even the graph below represents less than half of the commit history!
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Eight years of FlatRedBall commit history</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Eight years of FlatRedBall commit history</p></figcaption></figure>
 
 Of course, FlatRedBall also benefits from having more code contributors and we encourage contributions of all type. The point here is to emphasize the importance of community management, not to discredit code contributions.
 

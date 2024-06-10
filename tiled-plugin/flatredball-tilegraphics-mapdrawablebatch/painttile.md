@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The PaintTile can be used to change the texture coordinate on an existing tile in the MapDrawableBatch according to its index. This method can be used if your game requires dynamically the graphics of a tile after it is created (either from a .TMX file or manually).&#x20;
+The PaintTile method can be used to change the texture coordinate on an existing tile in the MapDrawableBatch according to its index. This method can be used if your game requires dynamically the graphics of a tile after it is created (either from a .TMX file or manually).&#x20;
 
 PaintTile has the following overrides:
 
@@ -12,11 +12,13 @@ void PaintTile(int orderedTileIndex, int newTextureId)
 
 PaintTile takes the orderedTileIndex and the texture ID.
 
-The orderedTileIndex value is the index of the tile on the tilemap. Usually, an index of 0 is the top-left tile on the map. The subsequent tiles are ordered counting left-to-right if the map is taller than it is wide. The following image shows example orderedTileIndex values for a map which is ordered left-to-right.
+The orderedTileIndex location depends LayeredTileMap's SortAxis. Interally the MapDrawableBatch may render tiles in different order for performance or visual reasons.
 
-![](../../media/2023-01-img\_63b9077c3c079.png)
+For example, the following shows the tile order index if the map is using SortAxis of Y:
 
-If your map is wider than it is tall, then the ordering is performed top-to-bottom rather than left-to-right. The following image shows example orderedTileIndex values for a map which is ordered top-to-bottom.
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Tile index order for SortAxis.Y</p></figcaption></figure>
+
+If your map is wider than it is tall and is isometric, then the ordering is performed left-to-right rather than top-to-bottom. The following image shows example orderedTileIndex values for a map which is ordered left-to-right.
 
 ![](../../media/2020-10-img\_5f918eb8a684a.png)
 
