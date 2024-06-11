@@ -34,9 +34,9 @@ Once copied, change the following values:
 
 ### Setting WallSliding vs Air Movement Values
 
-Once the WallSliding values have been defined, we need to detect if the player has collided with a solid wall. We can do this by adding the following method which returns whether the player is wall sliding.
+Once the WallSliding values have been defined, we need to detect if the player has collided with a solid wall. We can do this by adding the following method to Player.cs which returns whether the player is wall sliding.
 
-```
+```csharp
 private bool GetIfIsSlidingOnWall()
 {
     if(!IsOnGround && this.AxisAlignedRectangleInstance.LastMoveCollisionReposition.X != 0)
@@ -55,13 +55,13 @@ The code above assumes that any horizontal reposition on a collision allows wall
 
 To do this, you can check the LastFrameItemsCollidedAgainst or LastFrameObjectsCollidedAgainst to only allow wall jumping if colliding against certain objects. For example, your if statement may be modified as shown in the following code snippet:
 
-```
+```csharp
 if(!IsOnGround && this.AxisAlignedRectangleInstance.LastMoveCollisionReposition.X != 0 && LastFrameItemsCollidedAgainst.Contains("SolidCollision"))
 ```
 
 The GetIfIsSlidingOnWall can then be used in the CustomActivity to decide whether the player's AirMovement should be WallSliding or Air, as shown in the following code:
 
-```
+```csharp
 public bool IsSlidingOnWall { get; private set; }
 private void CustomActivity()
 {
@@ -91,7 +91,7 @@ The implementation above results in the Player being able to jump against walls 
 
 Whether a player can climb a wall depends on the outward XVelocity applied on a jump.
 
-```
+```csharp
 private void CustomInitialize()
 {
     JumpAction += HandleJumped;
@@ -124,13 +124,19 @@ This code adds a handler to when the player jumps. The jump checks if the player
 We can add sliding animations by checking the IsSlidingOnWall variable either in code or in the Animations tab for the player. If you are already using the Animations UI, then handling the IsSlidingOnWall variable requires no code. To do so:
 
 1. Select the Player Entity, and select the Entity Input Movement tab
-2. Click on the Animation item\
-   <img src="http://flatredball.com/wp-content/uploads/2023/10/img_6521ce5b2ed06.png" alt="" data-size="original">
-3. Copy the CharacterFall animation row\
-   ![](<../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+2.  Click on the Animation item\
+
+
+    <figure><img src="http://flatredball.com/wp-content/uploads/2023/10/img_6521ce5b2ed06.png" alt=""><figcaption></figcaption></figure>
+3.  Copy the CharacterFall animation row\
+
+
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Select **CharacterWallSlide** animation on the new row
-5. Enter **IsSlidingOnWall** for the **Custom Condition** on the new row\
-   ![](http://flatredball.com/wp-content/uploads/2023/10/img\_6521cf490bf72.png)
+5.  Enter **IsSlidingOnWall** for the **Custom Condition** on the new row\
+
+
+    <figure><img src="http://flatredball.com/wp-content/uploads/2023/10/img_6521cf490bf72.png" alt=""><figcaption></figcaption></figure>
 
 The player will now play the CharacterWallSlide animations if the IsSlidingOnWall property is set to true. Note that the .achx file contains CharacterWallSlideLeft and CharacterWallSlideRight, but the generated code selects the appropriate one based on which way the player is facing.
 
