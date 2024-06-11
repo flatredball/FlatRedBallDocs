@@ -15,7 +15,7 @@ TMX files can be converted to LayeredTileMaps if they are using any of the follo
 * Base64 (Zstandard compressed)
 * CSV
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Tile Layer Format set to CSV in Tiled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Tile Layer Format set to CSV in Tiled</p></figcaption></figure>
 
 Note that Base64 zlib compressed can be used, but to do this you must:
 
@@ -28,4 +28,4 @@ Using an unsupported compression format will result in a runtime error:
 Does not support zlib, try using GZIP compression or csv format
 ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Error message about using format that is unsupported</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Error message about using format that is unsupported</p></figcaption></figure>

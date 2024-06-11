@@ -21,7 +21,7 @@ To add an Image file:
 
 Both files should now be in your Screen so that we can reference them in the code below.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Creating an IDrawableBatch**
 
@@ -152,4 +152,4 @@ public partial class GameScreen
 
 Running the project will result in the following being shown on screen:
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>

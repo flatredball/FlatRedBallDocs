@@ -13,7 +13,7 @@ For this game, the Player will continuously move forward at a constant speed. Th
 3.  Click the **Create a new variable** button\
 
 
-    <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Click the Create a new variable button to add a new variable</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Click the Create a new variable button to add a new variable</p></figcaption></figure>
 4. Leave the defaults **Create a new variable** option and **float** type
 5. Enter the name **MovementSpeed**
 6. Click **OK**

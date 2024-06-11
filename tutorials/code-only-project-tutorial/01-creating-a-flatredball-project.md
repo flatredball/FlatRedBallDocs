@@ -41,7 +41,7 @@ If you have an existing MonoGame project, you can add FlatRedBall with the follo
 2. Add FlatRedBall refernece to your projectx
    1.  If targeting Desktop GL, you can add FlatRedBall through the FlatRedball NuGet package\\
 
-       <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>FlatRedBall DesktopGL NuGet Package</p></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>FlatRedBall DesktopGL NuGet Package</p></figcaption></figure>
    2. If targeting other platforms, you will need to manually add the FlatRedBall .dlls to your project:
       1. Download the .dll for the project you are working on from this folder: [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/)
       2. Save the .dll to a location relative to your project, such as a Libraries folder

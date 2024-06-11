@@ -23,38 +23,115 @@ This walkthrough covers a number of concepts for checkpoints and end of level:
 
 ### Tiled Entity Creation
 
-This demo includes two levels: Level1 and Level2. Each level has its own TMX file: Level1Map.tmx and Level2Map.TMX. If your project used the platformer plugin then it should have these by default.
+This demo includes two levels: Level1 and Level2. Each level has its own TMX file: Level1Map.tmx and Level2Map.TMX. If your project used the platformer plugin then it should have these by default. If your game already has existing levels, you can follow along but you will work in your existing levels rather than Level1 and Level2.
 
 ![Level1 and Level2 with TMX files](<../../.gitbook/assets/13\_05 55 20.png>)
 
-Each level includes an object layer with Checkpoint and EndOfLevel instances. These objects must be defined on an Object layer rather than a Tiled layer so that each instance can have custom properties like Name or LevelToGoTo. For example, the following Checkpoint instance in Level1Map.tmx is named **LevelStart.**
+### Adding an Object Layer
 
-![](../../media/2021-06-img\_60b636d787baf.png)
+The checkpoints and doors will be added to a Tiled _object layer_. You must have at least one object layer on each level which should include a checkpoint. For this video we'll use the name GameplayObjectLayer so that it is similar to the standard GameplayLayer.
 
-The EndOfLevel instances also require a custom property to indicate which level is next. For example, the EndOfLevel instance on the right side of Level1Map.tmx has its NextLevel value set to Level2 as shown in the following image.
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>GameplayObjectLayer in the Tiled layer list</p></figcaption></figure>
 
-![](../../media/2021-06-img\_60b637403706b.png)
+### Creating Checkpoint and EndOfLevel Entities
 
-This custom property will automatically be assigned as long as it matches the property defined in FlatRedBall, including capitalization.
+We will create two entities: Checkpoint and EndOfLevel.
 
-![](../../media/2021-06-img\_60b637ecdd2cf.png)
+To add a Checkpoint entity:
 
-This demo assumes that each level has at least one Checkpoint instance named **LevelStart.** This instance sets where the player begins whenever the level is first created. Additional Checkpoint instances can be added. For example, Level1Map.tmx includes a second **Midpoint** checkpoint.
+1. Right-click on the Entities folder
+2. Select Add Entity
+3. Enter the name EndOfLevel
+4. Check the AxisAlignedRectangle option
+5. Click OK
 
-![](../../media/2021-06-img\_60b6395479628.png)
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Checkpoint Entity Creation</p></figcaption></figure>
+
+Repeat the process above to create an EndOfLevel entity
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>EndOfLevel Entity Creation</p></figcaption></figure>
+
+Next we'll add a new variable to EndOfLevel:
+
+1. Expand EndOfLevel
+2. Right-click on Variables
+3. Select Add variable
+4. Select the type string
+5. Enter the name NextLevel
+6. Click OK
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Creating a NextLevel variable</p></figcaption></figure>
+
+### Setting the Class on a Tile
+
+Next we need to associate a particular tile with the entity. By doing this, FlatRedBall automatically instantiates the entities whenever it encounters a tile.
+
+To do this:
+
+1. Open your level in Tiled. Make sure you do not have other levels open as to avoid mixing tilesets
+2. Select the TiledIcons tileset and click on the edit button
+3. Select the tile that you would like to use as a checkpoint, such as the checkered flag
+4.  Set the Class to Checkpoint - be sure to match the name of your entity exactly\
+
+
+    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Setting the Checkpoint tile class to Checkpoint</p></figcaption></figure>
+5. Save your tileset
+
+Now you can add instances of the Checkpoint tile to your level in the GameplayObjectLayer. You should provide a descriptive name of the Checkpoint, such as LevelStart. Note that checkpoints can exist at the beginning of a level - this is where the player may spawn when going from one level to another.
+
+To do this:
+
+1. Select the Checkpoint tile
+2. Select the GameplayObjectLayer
+3. Clck the Add Tile icon to go into tile placement mode
+4. Click on the map to add the Checkpoint tile
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Adding a new Checkpoint instance to your game</p></figcaption></figure>
+
+All checkpoints must have names so that they can be referenced in code. For this project we assume that every level has at least one checkpoint with the name LevelStart. You can set this name on the newly-created Checkpoint by selecting it and setting its name in Tiled:
+
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Checkpoint instance with the nane LevelStart</p></figcaption></figure>
+
+Next we'll declare which tile in our tileset should create an EndOfLevel instance. To do this, open up the TiledIcons tileset in edit mode again. Select the icon that looks like a door. You may notice that it already has a Class set, so you can change it from "Door" to "EndOfLevel". As mentioned above, the name must match your entity exactly.
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Setting the tile's class to EndOfLevel</p></figcaption></figure>
+
+Next, we can add a new property to the tile. This should match the name of our variable in the FRB Editor exactly. To do this:
+
+1. Select the tile
+2. Click the + icon at the bottom of the properties
+3. Keep the type as string
+4. Enter a property name of NextLevel
+5. Click OK
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Adding a new NextLevel property</p></figcaption></figure>
+
+The variable should appear on the tile.
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>NextLevel property on the EndOfLevel Tile</p></figcaption></figure>
+
+Repeat the process above to add an EndOfLevel instance to your GameplayObjectLayer.
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Adding an EndOfLevel instance</p></figcaption></figure>
+
+Once this instance has been placed, its variable can be changed. For example, we can set the variable to Level2.
+
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Setting Level2 on the EndOfLevel instance</p></figcaption></figure>
 
 ### LastCheckpointName and Spawning
 
-Player spawning depends on the LastCheckpointName. By default this value is set to **LevelStart** - a convention which this game uses to determine the start location for a level. This logic is performed at the end of GameScreen.CustomInitialize.
+We want our player to spawn at a checkpoint. We'll create a static variable called LastCheckpointName which indicates the starting Checkpoint.
 
-```
+Initially when the game starts the LastCheckpointName should be set to LevelStart so that the checkpoint that was previously created is used:
+
+The following code shows the logic that does this:
+
+```csharp
+static string LastCheckpointName = "LevelStart";
+
 void CustomInitialize()
 {
-    var mapPitCollision = Map.ShapeCollections.FirstOrDefault(item => item.Name == "PitCollision");
-    if(mapPitCollision != null)
-    {
-        PitCollision.AddToThis(mapPitCollision);
-    }
+    // ... Other code...
 
     var checkpoint = CheckpointList.First(item => item.Name == LastCheckpointName);
     Player1.Position = checkpoint.Position;
@@ -67,73 +144,56 @@ The spawning checkpoint is used to set the player's position. Notice that the pl
 
 ### Player Collision
 
-Collision between the Player and various objects controls the spawning behavior. As mentioned earlier, the LastCheckpointName variable controls which checkpoint is used to position the Player instance. The CustomInitialize method is called whenever a level is created (or recreated). This creation happens whenever the Player moves from one level to another, or whenever the Player falls into a pit. The Player moves to a different level when colliding with an EndOfLevel instance. This raises a collision event which is in **GameScreen.Event.cs**.
+Collision between the Player and various objects controls the spawning behavior. As mentioned earlier, the LastCheckpointName variable controls which checkpoint is used to position the Player instance. The CustomInitialize method is called whenever a level is created (or recreated).&#x20;
 
-```
-void OnPlayerListVsEndOfLevelListCollisionOccurred (Entities.Player first, Entities.EndOfLevel endOfLevel)
+We will use the EndOfLevel instances to move the player from one level to the next, and to set the LastCheckpointName.
+
+To do this:
+
+1. Create a collision relationship between the PlayerList and EndOfLevelList in GameScreen
+2. Add an event to the newly-created collision relationship
+3. Open GameScreen.Event.cs
+4. Add the following code to move to the next level and set the LastCheckpointName:
+
+```csharp
+void OnPlayerVsEndOfLevelCollided (Entities.Player player, Entities.EndOfLevel endOfLevel)
 {
     GameScreen.LastCheckpointName = "LevelStart";
     MoveToScreen(endOfLevel.NextLevel);
 }
 ```
 
-Notice that the code above assumes that the EndOfLevel instance has a valid NextLevel value. If the EndOfLevel NextLevel property is not set to a valid screen then this code will throw an exception. The code above resets the LastCheckpointName to LevelStart so that the Player spawns at the beginning of the level. The LastCheckpointName variable can also change whenever the Player collides with a Checkpoint instance. This is also handled in the **GameScreen.Event.cs** file.
+Notice that the code above assumes that the EndOfLevel instance has a valid NextLevel value. If the EndOfLevel NextLevel property is not set to a valid screen then this code will throw an exception. The code above resets the LastCheckpointName to LevelStart so that the Player spawns at the beginning of the level.&#x20;
 
-```
-void OnPlayerListVsCheckpointListCollisionOccurred (Entities.Player first, Entities.Checkpoint checkpoint)
+We can set the LastCheckpointName whenever the player collides with a checkpoint - it doesn't have to be only when the player collides with a door. To do this:
+
+1. Create a collision relationship between PlayerList and CheckpointList
+2. Add an event to the newly-created collision relationshp
+3. Open GameScreen.Event.cs
+4. Add the following code:
+
+```csharp
+void OnPlayerListVsCheckpointListCollided (Entities.Player player, Entities.Checkpoint checkpoint)
 {
-    if(checkpoint.Visible)
-    {
-        // This is a checkpoint that you can actually touch and "turn on"
-        checkpoint.MarkAsChecked();
-
-        LastCheckpointName = checkpoint.Name;
-    }
+    LastCheckpointName = checkpoint.Name;
 }
 ```
 
-Since the LastCheckpointName is reset whenever the Player moves to a new level, this is only used if the Player dies by falling into a pit. The next section covers how the PitCollision is defined in more detail, but ultimately a collision relationship handles collision between the player and pits, which is then handled in **GameScreen.Event.cs**.
+The code above sets the LastCheckpointName to the name of the collided checkpoint, but this will ony apply when the screen changes or is restarted. The code above resets the LastCheckpointName whenever colliding with a door, so this checkpoint will only apply whenever the screen is restarted. Typically this would happen when the player dies.
+
+Player death can be handled in a variety of ways, such as by collision with a TileShapeCollection, or even with a hotkey to test death. Regardless, the way to restart the screen is by calling this.RestartScreen().
+
+For example if you have a TileShapeCollection named PitCollision, a collision relationship can be created between the PlayerList and PitCollision to restart the screen. This relationship would have an event with the following code in GameScreen.Event.cs:
 
 ```
-void OnPlayerListVsPitCollisionCollisionOccurred (Entities.Player first, FlatRedBall.Math.Geometry.ShapeCollection second)
+
+void OnPlayerListVsPitCollisionCollided (Entities.Player player, FlatRedBall.Math.Geometry.ShapeCollection second)
 {
     this.RestartScreen(reloadContent:false);
 }
 ```
 
 This code restarts the screen, which results in the entire screen being completely destroyed and recreated. Since CustomInitialize runs again, the Player will be re-positioned according to the LastCheckpointName.
-
-### PitCollision ShapeCollection
-
-The PitCollision object is a ShapeCollection created in the GameScreen in FlatRedBall. It is referenced by the PlayerListVsPitCollision relationship which has a collision event as mentioned above.
-
-![](../../media/2021-06-img\_60b6f1da20081.png)
-
-The PitCollision is initially empty, but populated from the Map object - Level1Map.tmx or Level2Map.tmx depending on the current level. This population is done in the GameScreen's CustomInitialize using the AddToThis method.
-
-```
-void CustomInitialize()
-{
-    var mapPitCollision = Map.ShapeCollections.FirstOrDefault(item => item.Name == "PitCollision");
-    if(mapPitCollision != null)
-    {
-        PitCollision.AddToThis(mapPitCollision);
-    }
-
-    var checkpoint = CheckpointList.First(item => item.Name == LastCheckpointName);
-    Player1.Position = checkpoint.Position;
-    Player1.Y -= 8;
-    CameraControllingEntityInstance.ApplyTarget(CameraControllingEntityInstance.GetTarget(), lerpSmooth: false);
-}
-```
-
-The code above searches the current Map for a ShapeCollection with the name PitCollision. The loaded TMX will automatically create ShapeCollections for every object layer with a shape in it. The Level1Map.tmx file includes a layer named PitCollision with a single large rectangle for collision.
-
-![](../../media/2021-06-img\_60b6f592f1073.png)
-
-A gap is left between the bottom of the map and the position of the rectangle so the player falls fully off-screen before colliding with the rectangle and respawning.
-
-<figure><img src="../../media/2021-06-Qo2qkk2v8Q.gif" alt=""><figcaption></figcaption></figure>
 
 ### Checkpoint Visuals
 
@@ -148,7 +208,7 @@ Whether a checkpoint is visible or not is controlled by an exposed Visible prope
 
 Only Visible Checkpoint instances are considered in the Player vs Checkpoint relationship event.
 
-```
+```csharp
 void OnPlayerListVsCheckpointListCollisionOccurred (Entities.Player first, Entities.Checkpoint checkpoint)
 {
     if(checkpoint.Visible)
@@ -168,7 +228,7 @@ The Checkpoint is visually composed of two Sprites:
 
 By default the **FlagSprite** is invisible, but is turned on in the **MarkAsChecked** function. This provides visual confirmation to the user that the checkpoint has been triggered.
 
-```
+```csharp
 public void MarkAsChecked()
 {
     this.FlagSprite.Visible = true;

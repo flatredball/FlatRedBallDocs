@@ -16,5 +16,5 @@ The high-level steps for creating a new Forms object are:
 
 You can verify that the Gum plugin code generation logic has picked up on the new behavior by checking a game's `GumIdbExtensions` class. for the presence of your new control.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption><p>Entries for new controls appear in the GumIdbExtensions code file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption><p>Entries for new controls appear in the GumIdbExtensions code file</p></figcaption></figure>
 

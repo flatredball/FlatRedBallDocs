@@ -22,7 +22,7 @@ Variable events allow for custom code to react to a variable being assigned. To 
 
 This creates an event in the Event.cs file for the container. For example, if the event is created in the Player entity, then the event handler is added to Player.Event.cs.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Event Handler in Visual Studio</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>Event Handler in Visual Studio</p></figcaption></figure>
 
 ### IWindow Example
 

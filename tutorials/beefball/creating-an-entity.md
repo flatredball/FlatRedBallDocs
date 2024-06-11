@@ -60,7 +60,7 @@ When a new Entity or Screen is created, a number of files are created:
 
 For example, the PlayerBall entity creates PlayerBall.glej, PlayerBall.cs, and PlayerBall.Generated.cs. These files can be viewed by right-clicking on the entity and selecting **View in Explorer**.
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>View in Explorer Right-Click option</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption><p>View in Explorer Right-Click option</p></figcaption></figure>
 
 #### PlayerBall.glej
 

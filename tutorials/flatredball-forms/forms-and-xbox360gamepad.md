@@ -52,7 +52,7 @@ ListBoxes can have two focused states:
 
 When the list box has top-level focus, tabbing between items selects the next sibling item. For example, the following image shows the ListBox on the top left of the screen having focus. Pressing "down" to tab to the next control results in the ComboBox (with the word "Impossible") gaining focus.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>A ListBox with top-level focus can tab to the next control</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption><p>A ListBox with top-level focus can tab to the next control</p></figcaption></figure>
 
 If a ListBox has item focus ( its `DoListItemsHaveFocus` property is set to true), then tabbing up and down selects the next or previous items in the list, as shown in the following animation:
 
