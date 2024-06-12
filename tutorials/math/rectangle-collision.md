@@ -63,4 +63,42 @@ var didCollisionOccur =
 
 As mentioned in the comments notice that positive Y points down when using XNA (MonoGame/FNA) rectangles. If using FlatRedBall shapes, the top/bottom checks would be inverted to account for it using positive Y as up.
 
-CONTINUE HERE
+### Separating Rectangles
+
+Detecting whether a collision has occurred is the first step in resolving collisions. For many games, the next step is to separate the rectangles so that they no longer overlap.
+
+For this section we will assume that the logic for the code is as follows:
+
+1. Move an object (apply velocity to change its position)
+2. Detect whether collision has occurred
+3. If collision has occurred, separate the objects to prevent overlapping
+
+Visually, this may look like this:
+
+<figure><img src="../../.gitbook/assets/image (130).png" alt=""><figcaption><p>Visualizing the steps of collision</p></figcaption></figure>
+
+Of course, all of the three steps happen in one frame, so from the user's point of view they only see the rectangle move from position A to position B, as shown in the following image:
+
+<figure><img src="../../.gitbook/assets/image (131).png" alt=""><figcaption><p>What the player sees when a collision occurs</p></figcaption></figure>
+
+We talked about how to detect whether collision has occurred (step 2), so now we need to determine how to reposition the rectangle (step 3).
+
+If we take a look at the collision, it probably makes sense to us that the rectangle is repositioned by moving "up" - after all, the blue rectangle came from above, so it should end up resting on the pink rectangle. But the question is - why should the rectnagle move straight up? In other words, why do we choose to move the rectangle into position A in the diagram below? Note that the rectangle sizes have been made smaller to help with visualization:
+
+<figure><img src="../../.gitbook/assets/image (132).png" alt=""><figcaption><p>Possible repositions</p></figcaption></figure>
+
+There are a few ways to answer this question. The first question is - when separating two shapes, the shapes should be moved by the _shortest distance possible_ to resolve the separation. In other words, moving to A requires moving the blue rectangle the shortest possible distance - moving to B or C requires moving a longer distance.
+
+Another way to look at it is - when we move the blue rectangle, we should move the rectangle _perpendicular_ to the surface with which it collided. In other words, the direction that we move the rectangle should create a _right angle_ with the surface, as shown in the following diagram:
+
+<figure><img src="../../.gitbook/assets/image (133).png" alt=""><figcaption><p>Showing movement perpendicular to the surface</p></figcaption></figure>
+
+Knowing that the rectangle must move perpendicular to the surface means that the rectangle can cannot be moved diagonally, as shown in the diagram above with movements A, B, and C, at least when colliding with a surface that is perfectly vertical or horizontal, as will be the case with an _axis aligned_ (unrotated) rectangle.
+
+Since the rectangle can move only in one of four directions, then that means that any collision can only be resolved by moving the blue rectangle to one of four spots. For example, if the blue rectangle falls inside of the pink rectangle, then there are four possible ways to resolve the overlap as shown in the following diagram:
+
+<figure><img src="../../.gitbook/assets/image (134).png" alt=""><figcaption><p>Four possible collisions</p></figcaption></figure>
+
+Of course we can tell just by looking at the diagram that the correct way to resolve the overlap would be to move the rectangle to A - because that's the shortest distance.
+
+<figure><img src="../../.gitbook/assets/image (135).png" alt=""><figcaption><p>Repositioning the rectangle up since it's the shortest distance</p></figcaption></figure>
