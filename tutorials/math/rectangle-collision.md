@@ -102,3 +102,45 @@ Since the rectangle can move only in one of four directions, then that means tha
 Of course we can tell just by looking at the diagram that the correct way to resolve the overlap would be to move the rectangle to A - because that's the shortest distance.
 
 <figure><img src="../../.gitbook/assets/image (135).png" alt=""><figcaption><p>Repositioning the rectangle up since it's the shortest distance</p></figcaption></figure>
+
+Of course, visually identifying the shortest distance is easy, but we need to write code that can do it.
+
+We can modify our code from above to both detect and also provide the _separation vector_ - a vector which can be used to move the blue rectangle so that it no longer overlaps the pink rectangle:
+
+```csharp
+// If any of these values are positive, then we have overlap:
+var rightOverlap = blue.Right - pink.Left;
+var leftOverlap = pink.Right - blue.Left;
+var topOverlap = blue.Bottom - pink.Top;
+var bottomOverlap = pink.Bottom - blue.Top;
+
+Vector2 repositionVector = Vector2.Zero;
+
+if(rightOverlap > 0 || leftOverlap > 0 || topOverlap > 0 || bottomOverlap > 0)
+{
+    // let's take a look at which is the smallest:
+    var smallest = rightOverlap;
+    repositionVector = new Vector2(-rightOverlap, 0);
+    
+    if(leftOverlap < smallest)
+    {
+        smallest = leftOverlap;
+        repositionVector = new Vector2(leftOverlap, 0);    
+    }
+    
+    if(topOverlap < smallest)
+    {
+        smallest = topOverlap;
+        repositionVector = new Vector2(0, -topOverlap);
+    }
+    if(bottomOverlap < smallest)
+    {
+        smallest = bottomOverlap;
+        repositionVector = new Vector2(0, bottomOverlap);
+    }
+    
+
+}
+
+// We can move our object by the repositionVector to resolve the overlap
+```
