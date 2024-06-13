@@ -58,6 +58,8 @@ In Update before `base.Update(gameTime)`:
 
 ```csharp
 FlatRedBallServices.Update(gameTime);
+// Optional if you plan on using Screens:
+ScreenManager.Activity();
 ```
 
 In Draw before `base.Draw(gameTime)`:
