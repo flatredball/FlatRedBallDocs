@@ -17,7 +17,13 @@ By default .wav files are loaded as a SoundEffect, which is the simplest object 
 ExplosionSound.Play();
 ```
 
-Once a SoundEffect Play call is made, the sound cannot be modified. It will play to completion and then stop. By contrast, SoundEffectInstances are single-instance sounds which can be played, and manipulated after playing. For example, the following code plays a sound, but then adjusts its volume after 0.5 seconds:
+Once a SoundEffect Play call is made, the sound cannot be modified. It will play to completion and then stop. Therefore, to adjust the Play call, parameters can be added. For example to play a sound at half-volume, 0.5f could be passed as the first pameter:
+
+```csharp
+ExplosionSound.Play(volume:0.5f, pitch:0, pan:0);
+```
+
+By contrast, SoundEffectInstances are single-instance sounds which can be played, and manipulated after playing. For example, the following code plays a sound, but then adjusts its volume after 0.5 seconds:
 
 ```csharp
 ExplosionSound.Volume = 1;

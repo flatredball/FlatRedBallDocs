@@ -1,4 +1,4 @@
-# soundeffect
+# SoundEffect
 
 ### Introduction
 
@@ -8,11 +8,16 @@ The SoundEffect class represents a sound effect that can be played at any time. 
 
 The following example assumes that you have "mySound.wav" added to your content project. If not using Glue, you will need to pass the .WAV file through the MonoGame content pipeline. Glue will automatically process .WAV files added to Screens, Entities, and Global Content Files.
 
-```
+```csharp
 // SoundEffects load through the content pipeline, so there is no extension
 SoundEffect soundEffect = FlatRedBallServices.Load<SoundEffect>(@"Content\mySound");
 // to play the sound, just call Play:
 soundEffect.Play();
 ```
 
-###
+You can adjust parameters on the Play call as shown in the following code snippet:
+
+```csharp
+SoundEffectFile.Play(volume: 1, pitch: 0, pan: 0);
+```
+
