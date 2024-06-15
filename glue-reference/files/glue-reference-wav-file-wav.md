@@ -26,8 +26,8 @@ ExplosionSound.Play(volume:0.5f, pitch:0, pan:0);
 By contrast, SoundEffectInstances are single-instance sounds which can be played, and manipulated after playing. For example, the following code plays a sound, but then adjusts its volume after 0.5 seconds:
 
 ```csharp
-ExplosionSound.Volume = 1;
-ExplosionSound.Play();
+SoundEffectInstance.Volume = 1;
+SoundEffectInstance.Play();
 
 await TimeManager.DelaySeconds(0.5f);
 
