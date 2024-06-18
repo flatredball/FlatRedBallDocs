@@ -362,6 +362,7 @@
     * [SetByDerived](glue-reference/variables/glue-reference-setbyderived.md)
     * [Type](glue-reference/variables/glue-reference-type.md)
     * [Variable Order](glue-reference/variables/glue-reference-variable-order.md)
+  * [Visual Studio Project (.csproj)](glue-reference/visual-studio-project-.csproj.md)
 * [🏃‍♀️ Animation Editor](glue-gluevault-component-pages-animationeditor-plugin/README.md)
   * [Frame Time](glue-gluevault-component-pages-animationeditor-plugin/frame-time.md)
   * [Animation Shapes and Collision](glue-gluevault-component-pages-animationeditor-plugin/animationeditor-collision.md)
