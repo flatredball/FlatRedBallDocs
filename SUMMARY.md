@@ -859,7 +859,7 @@
           * [Clone](api/flatredball/math/geometry/polygon/clone.md)
           * [CollideAgainstBounce](api/flatredball/math/geometry/polygon/collideagainstbounce.md)
           * [CollideAgainstMove and Attachments](api/flatredball/math/geometry/polygon/collideagainstmove-and-attachments.md)
-          * [CollideAgsinstMove](api/flatredball/math/geometry/polygon/collideagainstmove.md)
+          * [CollideAgainstMove](api/flatredball/math/geometry/polygon/collideagainstmove.md)
           * [Color](api/flatredball/math/geometry/polygon/color.md)
           * [CreateEquilateral](api/flatredball/math/geometry/polygon/createequilateral.md)
           * [CreateRectangle](api/flatredball/math/geometry/polygon/createrectangle.md)
