@@ -1,16 +1,18 @@
-# glue-reference-sourcetype
+# SourceType
 
 ### Introduction
 
-The SourceType property determines the type of the Entity at the highest level. Changing the SourceType results in different options being available in the [SourceClassType](../../../../frb/docs/index.php). Available SourceTypes are:
+The SourceType property determines the type of the Entity at the highest level. Changing the SourceType results in different options being available in the [SourceClassType](../../frb/docs/index.php). Available SourceTypes are:
 
 * File
 * FlatRedBallType
 * Entity
 
-### Common File Usage
+### File
 
-File is a very common SourceType for Objects. If an Object's SourceType is File, then the Object represents an element within the file (such as a Sprite inside a .scnx file) or the entire object contained in the file (such as the entire Scene in the File). File is often used when you want to create content for an Entity through one of the standard FRB file types, or when you want to create content for a Screen, and want to give that content specific functionality.
+If an object's SourceType is File, then the object is defined by a file. If the object is created in a Screen, then the object is referencing either a part or the entirety of the file. If the object is an Entity then the object may be a reference to the file or a copy of the file if the file has a runtime type such as a Tiled TMX being loaded into a MapDrawableBatch.
+
+For more information on File objects, see the [SourceFile](glue-reference-sourcefile.md) page.
 
 ### FlatRedBallType
 
