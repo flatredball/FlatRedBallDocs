@@ -900,7 +900,7 @@
         * [ParentRotationChangesPosition](api/flatredball/math/iattachable/parentrotationchangesposition.md)
         * [ParentRotationChangesRotation](api/flatredball/math/iattachable/parentrotationchangesrotation.md)
         * [TopParent](api/flatredball/math/iattachable/topparent.md)
-      * [IRotatble](api/flatredball/math/irotatable/README.md)
+      * [IRotatable](api/flatredball/math/irotatable/README.md)
         * [RotationMatrix](api/flatredball/math/irotatable/rotationmatrix.md)
       * [MathFunctions](api/flatredball/math/mathfunctions/README.md)
         * [AbsoluteToWindow](api/flatredball/math/mathfunctions/absolutetowindow.md)
