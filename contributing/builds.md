@@ -44,7 +44,7 @@ The Engine.yml file is responsible for the following actions:
 
 #### Gum Automatic Builds
 
-Team City has an automated build which runs whenever anything is pushed (assuming Vic's desktop is turned on). This attempts to build Gum (the tool) and the .NET 6 libraries use for MonoGameGum. If the builds succeeds it also attempts to upload a new nuget package. Note that this will not upload a new NuGet if the version number is not manually increased first. Also note, this DOES NOT currently upload a new Gum tool - this must be done manually.
+Team City has an automated build which runs whenever anything is pushed (assuming Vic's desktop is turned on). This attempts to build Gum (the tool) and the .NET 6 libraries use for MonoGameGum. If the builds succeeds it also attempts to upload a new nuget package. Note that this will not upload a new NuGet if the version number is not manually increased first. Also note, this DOES NOT currently upload a new Gum tool - this must be done manually (see steps below).
 
 To create the nuget packages, follow these steps:
 
@@ -58,23 +58,25 @@ To create the nuget packages, follow these steps:
 
 If Vic's computer is on, it will automatically build. If not, Vic must open it and manually run a build.
 
-#### Troubleshooting Gum Automtic Builds
+#### Troubleshooting Gum Automatic Builds
 
 Vic has noticed that sometimes the build will fail due to the referenced ColorPicker not being available. If the same .sln (in the build folder indicated in TeamCity logs) is opened and built in VS 2019, the manual build works. Then if TeamCity is run again, all works. This is a hacky workaround.
 
 #### Gum Builds
 
-Update April 26, 2024 - this may not be accurate, Vic is investigating...
-
 Currently Gum uses XNA and .NET 4.7.1. This will not build using dotnet build (not sure why). Therefore, Gum must be built and uploaded manually. We could eventually automate this through TeamCity until Gum (maybe?) gets updated to modern .NET. Until then the steps are:
 
 1. Open Gum locally in Visual Studio
-2. Open Gum AssemblyInfo.cs and set AssemblyVersion and AssemblyFileVersion using the date-based format.
-3. Rebuld Gum
+2.  Open Gum AssemblyInfo.cs and set AssemblyVersion and AssemblyFileVersion using the date-based format.\
+
+
+    <figure><img src="../.gitbook/assets/image (146).png" alt=""><figcaption><p>AssemblyVersion and AssemblyFileVersion in AssemblyInfo.cs</p></figcaption></figure>
+3. Rebuild Gum
 4. Navigate to the location where Gum is built
 5. Go up one folder so that you are in the Debug folder, and you see the Data folder
 6. Right-click on Data and Zip it. This will produce a .zip that has a Data folder inside - this matches the expected folder structure from previous builds so make sure this is the case
 7. Rename this Gum.zip
 8. Manually upload this to FlatRedBall's Files folder using sftp to /home/frbfiles/files.flatredball.com/content/Tools/Gum/Gum.zip
+9. Create a new release on Github - see the previous releases for examples
 
 This file is used when creating FlatRedBall builds, so Gum must first be built and uploaded to the FlatRedBall FTP prior to running the FlatRedBall Github Actions. Otherwise, an old Gum will be included in FRBDK. This may be okay depending on if Gum has important new features.
