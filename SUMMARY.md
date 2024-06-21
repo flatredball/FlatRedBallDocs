@@ -822,6 +822,7 @@
       * [Collision](api/flatredball/math/collision/README.md)
         * [CollisionManager](api/flatredball/math/collision/collisionmanager/README.md)
           * [Relationships](api/flatredball/math/collision/collisionmanager/relationships.md)
+          * [Update](api/flatredball/math/collision/collisionmanager/update.md)
       * [Geometry](api/flatredball/math/geometry/README.md)
         * [AxisAlignedCube](api/flatredball/math/geometry/axisalignedcube/README.md)
           * [CollideAgainstBounce](api/flatredball/math/geometry/axisalignedcube/collideagainstbounce.md)
