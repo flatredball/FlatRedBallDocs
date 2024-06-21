@@ -838,7 +838,7 @@
         * [Capsule2D](api/flatredball/math/geometry/capsule2d.md)
         * [Circle](api/flatredball/math/geometry/circle/README.md)
           * [CollideAgainst](api/flatredball/math/geometry/circle/collideagainst.md)
-          * [collideAgainstBounce](api/flatredball/math/geometry/circle/collideagainstbounce.md)
+          * [CollideAgainstBounce](api/flatredball/math/geometry/circle/collideagainstbounce.md)
           * [IsPointInside](api/flatredball/math/geometry/circle/ispointinside.md)
           * [LastCollisionTangent](api/flatredball/math/geometry/circle/lastcollisiontangent.md)
           * [LastMoveCollisionReposition](api/flatredball/math/geometry/circle/lastmovecollisionreposition.md)

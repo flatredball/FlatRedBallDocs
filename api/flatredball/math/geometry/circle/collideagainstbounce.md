@@ -1,4 +1,4 @@
-# collideagainstbounce
+# CollideAgainstBounce
 
 ### Introduction
 
@@ -14,7 +14,7 @@ The CollideAgainstBounce is a collision method which performs the following:
 
 The signature for CollideAgainstBounce is as follows:
 
-```
+```csharp
 bool CollideAgainstBounce(Circle circle, float thisMass, float otherMass, float elasticity)
 bool CollideAgainstBounce(Polygon polygon, float thisMass, float otherMass, float elasticity)
 bool CollideAgainstBounce(AxisAlignedRectangle axisAlignedRectangle, float thisMass, float otherMass, float elasticity)
@@ -33,7 +33,7 @@ The following code creates a [Plinko](http://en.wikipedia.org/wiki/Plinko) board
 
 Add the following using statements:
 
-```
+```csharp
 using FlatRedBall.Input;
 using FlatRedBall.Math.Geometry;
 using Microsoft.Xna.Framework.Input;
@@ -41,14 +41,14 @@ using Microsoft.Xna.Framework.Input;
 
 Add the following at class scope:
 
-```
+```csharp
 PositionedObjectList<Circle> mPegs = new PositionedObjectList<Circle>();
 PositionedObjectList<Circle> mFallingPieces = new PositionedObjectList<Circle>();
 ```
 
 Add the following in Initialize after initializing FlatRedBall:
 
-```
+```csharp
  for (int i = 0; i < 8; i++)
  {
      for (int j = 0; j < 7; j++)
@@ -67,7 +67,7 @@ Add the following in Initialize after initializing FlatRedBall:
 
 Add the following in Update:
 
-```
+```csharp
  if (InputManager.Keyboard.KeyPushed(Keys.Space))
  {
      Circle circle = ShapeManager.AddCircle();
@@ -94,13 +94,13 @@ Add the following in Update:
  }
 ```
 
-![CircleBounceCollision.png](../../../../../../media/migrated_media-CircleBounceCollision.png)
+![CircleBounceCollision.png](../../../../../media/migrated\_media-CircleBounceCollision.png)
 
 ### Reacting to CollideAgainstBounce
 
 Since CollideAgainstBounce returns a bool, your code can use the return value to modify your game when a collision occurs:
 
-```
+```csharp
 bool didCollisionOccur = circle.CollideAgainstBounce(otherCircle, 0, 1, 1);
 if(didCollisionOccur)
 {
@@ -111,21 +111,19 @@ if(didCollisionOccur)
 
 ### Bouncing and Velocity
 
-The [Collision tutorial](../../../../../../frb/docs/index.php) mentions:
+The [Collision tutorial](../../../../../frb/docs/index.php) mentions:
 
-```
-"For bouncing to behave properly, we have to make sure that we're not controlling the involved Shapes' position or velocity"
-```
+> "For bouncing to behave properly, we have to make sure that we're not controlling the involved Shapes' position or velocity"
 
 Let's consider why this is the case. Imagine a situation where a shape (or parent of a shape) is moving toward the right. This is being done with the following code:
 
-```
+```csharp
 someShape.XVelocity = 1;
 ```
 
 If this code is called every frame, that means that the XVelocity will be set to 1 every frame, regardless of what it was before. Imagine that "someShape" performs bounce collision against a wall. When collision occurs, the shape's XVelocity will get inverted (that is, set to -1) so that it moves to the left. However, if Velocity is set to 1 every frame, than the -1 would get changed back to 1. In other words, the setting of velocity every frame would cancel out the velocity change from CollideAgainstBounce. Let's look at another example: one where an object is moved with the mouse. In this example, the mouse is simply setting the position of an object:
 
-```
+```clike
 someShape.X = InputManager.Mouse.WorldXAt(0);
 someShape.Y = InputManager.Mouse.WorldYAt(0);
 ```
@@ -134,11 +132,11 @@ In this case, someShape will have a velocity of 0 (assuming there is no other co
 
 #### Code Example
 
-The following example shows a problem with using CollideAgainstBounce and [Mouse](../../../../../../frb/docs/index.php) control and how it can be corrected.
+The following example shows a problem with using CollideAgainstBounce and [Mouse](../../../../../frb/docs/index.php) control and how it can be corrected.
 
 Add the following using statements:
 
-```
+```csharp
 using FlatRedBall;
 using FlatRedBall.Input;
 using FlatRedBall.Math;
@@ -147,14 +145,14 @@ using FlatRedBall.Math.Geometry;
 
 Add the following at class scope:
 
-```
+```csharp
 PositionedObjectList<Circle> mCircles = new PositionedObjectList<Circle>();
 Circle mControlledCircle;
 ```
 
 Add the following in Initialize after initializing FlatRedball:
 
-```
+```csharp
  mControlledCircle = ShapeManager.AddCircle();
 
  for (int i = 0; i < 30; i++)
@@ -167,7 +165,7 @@ Add the following in Initialize after initializing FlatRedball:
 
 Add the following in Update:
 
-```
+```csharp
  // true will result in no bouncing
  // false will result in bouncing (probably expected behavior)
  bool controlByPositionInsteadOfVelocity = false;
@@ -196,8 +194,8 @@ Add the following in Update:
  }
 ```
 
-![CollideAgainstBouncAndVelocity.png](../../../../../../media/migrated_media-CollideAgainstBouncAndVelocity.png)
+![CollideAgainstBouncAndVelocity.png](../../../../../media/migrated\_media-CollideAgainstBouncAndVelocity.png)
 
 ### CollideAgainstBounce for platformers
 
-The CollideAgainstBounce method is effective for performing bouncing physics, but it can also be used in situations where you'd like collision to reset velocity, such as in platformers. It's very common to have acceleration in platformers, and the easiest way to do this is to set the player [Entity](../../../../../../frb/docs/index.php) to have a negative YAcceleration. However, if the player collides with the ground using CollideAgainstMove, the YAcceleration will continue to accumulate the YVelocity value. Eventually this value will build up to be so large that the player will fall through the level. Even if this doesn't occur, the player will show weird behavior if it walks off of a ledge. To solve this, you can simply use CollideAgainstBounce instead of CollideAgainstMove. An elasticity of 0 will result in the same behavior as CollideAgainstMove, but the velocity will be modified according to the velocity to solve accumulation errors. You can try this in the demo above by setting the elasticity argument to 0.
+The CollideAgainstBounce method is effective for performing bouncing physics, but it can also be used in situations where you'd like collision to reset velocity, such as in platformers. It's very common to have acceleration in platformers, and the easiest way to do this is to set the player [Entity](../../../../../frb/docs/index.php) to have a negative YAcceleration. However, if the player collides with the ground using CollideAgainstMove, the YAcceleration will continue to accumulate the YVelocity value. Eventually this value will build up to be so large that the player will fall through the level. Even if this doesn't occur, the player will show weird behavior if it walks off of a ledge. To solve this, you can simply use CollideAgainstBounce instead of CollideAgainstMove. An elasticity of 0 will result in the same behavior as CollideAgainstMove, but the velocity will be modified according to the velocity to solve accumulation errors. You can try this in the demo above by setting the elasticity argument to 0.
