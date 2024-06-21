@@ -12,7 +12,7 @@ Melee attacks increase the complexity of games because they result in entities t
 
 First, mark the Player entity as both IDamageable and IDamageArea.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting a Player as an IDamageable and IDamageArea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting a Player as an IDamageable and IDamageArea</p></figcaption></figure>
 
 Repeat the same for the Enemy entity.
 

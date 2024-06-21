@@ -40,7 +40,7 @@ For example, consider a screenshot which displays a CircleInstance and its Varia
 
 Do not show large windows since it can make text difficult to read and it does not focus the reader's attention on important parts of the image.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
 
 #### Hide Irrelevant Parts in Screenshots
 
@@ -76,7 +76,7 @@ For example the following could be an image introducing where entities are store
 
 Once the reader has been shown full app in a screenshot, additional screenshots can show a subsection. For example, the following screenshot may emphasize the different entity icons.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity icons emphasized in a screenshot which does not show the entire app</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity icons emphasized in a screenshot which does not show the entire app</p></figcaption></figure>
 
 #### Exclude the Cursor From Screenshots
 

@@ -20,7 +20,7 @@ To subscribe to an event in FRB Editor:
 
 The new event can be handled in the Events.cs file of your Entity. For example, if your Entity is named Soldier, the event is in Soldier.Event.cs.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Spine Event in Soldier.Event.cs file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Spine Event in Soldier.Event.cs file</p></figcaption></figure>
 
 ### Subscribing to SpineDrawableBatch.Event in Code
 
