@@ -82,7 +82,7 @@ public class DrawableBatchExample : PositionedObject, IDrawableBatch
 }
 ```
 
-The following code shows how the DrawableBatchExample can be used in a screen:
+The following code shows how the DrawableBatchExample can be used in a screen. By calling `SpriteManager.AddDrawableBatch`, the drawable batch instance is added to the engine so that it is drawn every frame:
 
 ```csharp
 public partial class GameScreen
