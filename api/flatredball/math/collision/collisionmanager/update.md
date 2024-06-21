@@ -10,4 +10,4 @@ The Update method performs the every-frame collision checks for all CollisionRel
 * Invoking the BeforeCollision method
 * Performing collision on all contained CollisionRelationships
 
-Note that most games do not need to call this method manually - it is called automatically by FlatRedBall
+Note that most games do not need to call this method manually - it is called automatically by FlatRedBallServices.Update, which is part of all FlatRedBall projects.
