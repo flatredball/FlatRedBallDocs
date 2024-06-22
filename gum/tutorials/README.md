@@ -13,4 +13,4 @@
 
 ### Using Gum as a Standalone Tool
 
-[https://flatredball.gitbook.io/gum/](https://flatredball.gitbook.io/gum/)
+[https://docs.flatredball.com/gum](https://docs.flatredball.com/gum)

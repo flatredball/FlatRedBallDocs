@@ -59,7 +59,7 @@ Once you have an object in a Gum screen, you can access it in code by using the 
 
 You can subscribe to the Click event by creating a method such as HandleClick, as shown in the following code snippet.
 
-```
+```csharp
 void HandleClick(FlatRedBall.Gui.IWindow callingWindow)
 {
     GumScreen.NinceSliceButtonInstance.Width++;
@@ -74,7 +74,7 @@ If you run the game now and click on the button you will notice that it gets wid
 
 The most common reason for events not firing is that the cursor is not actually detecting being over the Gum object with events. To check, you can add the following code in your Screen's CustomActivity:
 
-```lang:c#
+```csharp
 FlatRedBall.Debugging.Debugger.Write(FlatRedBall.Gui.GuiManager.Cursor.WindowOver);
 ```
 

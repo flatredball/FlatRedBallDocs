@@ -12,7 +12,7 @@ If you've been following along the previous tutorials, then you should have a Sc
 2. Navigate to MainMenu.cs (which will be in your Screens folder in Visual Studio)
 3. Modify CustomInitialize so it looks like this:
 
-```
+```csharp
 void CustomInitialize()
 {
     GumScreen.ColoredRectangleInstance.Y = 250;
@@ -21,7 +21,7 @@ void CustomInitialize()
 
 Similarly, objects from Gum can be modified in CustomActivity. You can modify your MainMenu's CustomActivity so it looks like this:
 
-```
+```csharp
 void CustomActivity(bool firstTimeCalled)
 {
     GumScreen.ColoredRectangleInstance.X += .1f;

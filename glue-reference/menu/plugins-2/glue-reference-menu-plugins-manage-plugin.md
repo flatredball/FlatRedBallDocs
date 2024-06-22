@@ -1,9 +1,13 @@
-# glue-reference-menu-plugins-manage-plugin
+# Manage Plugins
 
 ### Introduction
 
-The Manage Plugins menu item lets you view which plugins are installed, whether these plugins are out of date, and whether any plugins have failed. ![](../../../../../media/2017-06-img_59484f8907439.png)
+The Manage Plugins menu item lets you view which plugins are installed, whether these plugins are out of date, and whether any plugins have failed.
+
+&#x20;
+
+<figure><img src="../../../media/2017-06-img_59484f8907439.png" alt=""><figcaption></figcaption></figure>
 
 ### Location
 
-Plugins are loaded by Glue through a .dll. When a plugin is selected, the Plugins tab will display the location of the selected plugin.   &#x20;
+Plugins are loaded by Glue through a .dll. When a plugin is selected, the Plugins tab will display the location of the selected plugin.

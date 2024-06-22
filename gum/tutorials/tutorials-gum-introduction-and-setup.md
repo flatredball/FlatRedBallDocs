@@ -2,11 +2,11 @@
 
 ### Introduction
 
-Gum is an open source, general purpose, platform-agnostic UI layout tool. Although Gum itself is not built to be used with any game engine in particular, FlatRedBall provides full support for the Gum tool. In fact, Gum is so well integrated into FlatRedBall that it is used to perform layouts of FlatRedBall's built-in UI system: FlatRedBall.Forms. For information on using Gum as a standalone UI tool for any type of project, see the [Gum documentation](https://vchelaru.github.io/Gum/).
+Gum is an open source, general purpose, platform-agnostic UI layout tool. Although Gum itself is not built to be used with any game engine in particular, FlatRedBall provides full support for the Gum tool. In fact, Gum is so well integrated into FlatRedBall that it is used to perform layouts of FlatRedBall's built-in UI system: FlatRedBall.Forms. For information on using Gum as a standalone UI tool for any type of project, see the [Gum documentation](https://docs.flatredball.com/gum).
 
 ### Downloading Gum
 
-The first step in using Gum is to download the project. If you have downloaded the FRBDK.zip file from the main downloads page on this site, you already have Gum in the \<unzipped FRBDK location>/Gum/Data/Gum.exe. You can also get Gum as a standalone [downloaded here](../../content/Tools/Gum/Gum.zip). You will also need to install the [XNA 4.0 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=20914) on your machine to run Gum. Remember the location for Gum.exe, **we'll need it later.**
+The first step in using Gum is to download the project. If you have downloaded the FRBDK.zip file from the main downloads page on this site, you already have Gum in the \<unzipped FRBDK location>/Gum/Data/Gum.exe. You can also get Gum as a standalone [downloaded here](https://files.flatredball.com/content/Tools/Gum/Gum.zip). You will also need to install the [XNA 4.0 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=20914) on your machine to run Gum. Remember the location for Gum.exe, **we'll need it later.**
 
 ### Gum projects
 
@@ -33,9 +33,9 @@ If you do not want to run the Glue wizard, or if your project already has Screen
 
     ![](../../media/2021-03-img\_604417b7e19a7.png)
 
-**Troubleshooting Missing Gum Options:** If you do not see any of the options shown above, you can verify that the plugin has installed correctly and that it is running through the [Manage Plugins Window](../../frb/docs/index.php).
+**Troubleshooting Missing Gum Options:** If you do not see any of the options shown above, you can verify that the plugin has installed correctly and that it is running through the [Manage Plugins Window](../../glue-reference/menu/plugins-2/glue-reference-menu-plugins-manage-plugin.md).
 
-Also, you will see a button in the toolbar for opening the Gum project.&#x20;
+Also, you will see a button in the toolbar for opening the Gum project.
 
 <figure><img src="../../media/2019-03-img_5c78b2870eb69.png" alt=""><figcaption></figcaption></figure>
 
@@ -49,7 +49,7 @@ Setting up file associations is recommended since it makes opening Gum much fast
 
 **Don't associate Launcher.exe with your files:** Instead, associate Gum.exe to gum file formats (gumx, gucx, gusx) Launcher.exe exists when running Gum manually to check for prerequisites.
 
-Once you open up the .gumx file in Gum, you should see a screen like this:&#x20;
+Once you open up the .gumx file in Gum, you should see a screen like this:
 
 <figure><img src="../../media/migrated_media-EmptyGum.PNG" alt=""><figcaption></figcaption></figure>
 
