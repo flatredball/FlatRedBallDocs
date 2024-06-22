@@ -6,7 +6,7 @@ This tutorial continues our look at working with events on Gum objects. The prev
 
 ### HasEvents and ExposeChildrenEvents
 
-**HasEvents** and **ExposeChildrenEvents** decide whether a component and its children are recognized as UI objects by the FlatRedBall engine. More specifically, they decide whether instances of these components are added to the GuiManager's windows list, and whether the GuiManager.Cursor can interact with these instances. Since each value can be independently set, then there are four possible combinations of values.&#x20;
+**HasEvents** and **ExposeChildrenEvents** decide whether a component and its children are recognized as UI objects by the FlatRedBall engine. More specifically, they decide whether instances of these components are added to the GuiManager's windows list, and whether the GuiManager.Cursor can interact with these instances. Since each value can be independently set, then there are four possible combinations of values.
 
 \[row] \[column md="3"] **HasEvents / ExposeChildrenEvents** \[/column] \[column md="4"] **Description** \[/column] \[column md="5"] **Example** \[/column] \[/row] \[row] \[column md="3"] True/False \[/column] \[column md="4"] The entire component is clickable, but individual parts of the component are not independently clickable. \[/column] \[column md="5"] A button made up of multiple sub-components (such as a NineSlice background, Text instance, and icon Sprite) which does not need each sub-component to be clickable. \[/column] \[/row] \[row] \[column md="3"] True/True \[/column] \[column md="4"] The entire component is clickable, as are individual sub-components. \[/column] \[column md="5"] A pop-up which should block clicks and also contains buttons which can be clicked. \[/column] \[/row] \[row] \[column md="3"] False/True \[/column] \[column md="4"] Only individual sub-components of the component will receive clicks. \[/column] \[column md="5"] A component which is used to perform layout on a collection of buttons, but the component as a whole has no visual component and should not receive clicks (or block clicks from receiving underlying UI). Only the individual buttons will receive clicks. \[/column] \[/row] \[row] \[column md="3"] False/False \[/column] \[column md="4"] The UI is completely ignored in the FlatRedBall UI system. \[/column] \[column md="5"] A decorative collection of UI which may overlap underlying UI elements but should not interfere with their click events. \[/column] \[/row]
 
@@ -69,7 +69,7 @@ Now that we have a fully-functional Popup instance, we can add it to our Gum scr
 
 Now that our popup is in our MainMenuGum, we can access it in our MainMenu.cs file in Visual Studio. For example, we can respond to click events on the OK and Cancel buttons by hiding the popup and displaying some debug text.
 
-```
+```csharp
 void CustomInitialize()
 {
     var popup = GumScreen.PopupInstance;
@@ -111,7 +111,7 @@ One of the most common event-related bugs is when the container of a set of inst
 
 ![](../../media/2017-05-img\_5908a5918a41b.png)
 
-If the Container Standard object does not have its **ExposeChildrenEvents** value checked, then the Button will not raise events. &#x20;
+If the Container Standard object does not have its **ExposeChildrenEvents** value checked, then the Button will not raise events.
 
 <figure><img src="../../media/2017-05-img_5908a60746056.png" alt=""><figcaption></figcaption></figure>
 

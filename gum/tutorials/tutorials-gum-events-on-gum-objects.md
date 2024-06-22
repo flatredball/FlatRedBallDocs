@@ -68,7 +68,7 @@ void HandleClick(FlatRedBall.Gui.IWindow callingWindow)
 
 If you run the game now and click on the button you will notice that it gets wider every time it is clicked. Of course, this is not a very practical example. In a real game, you could move to the next screen or switch the logical or visual state of your game elements as appropriate.
 
-**Where is my mouse cursor?** FlatRedBall projects have the mouse cursor invisible by default. To make the mouse cursor visible, see this page: [Microsoft.Xna.Framework.Game#Showing\_Cursor](../../frb/docs/index.php#Showing\_Cursor)
+**Where is my mouse cursor?** FlatRedBall projects have the mouse cursor invisible by default. To make the mouse cursor visible, see this page: [Game.IsMouseVisible](../../api/microsoft-xna-framework/game/ismousevisible.md).
 
 ### Diagnosing Problems
 
