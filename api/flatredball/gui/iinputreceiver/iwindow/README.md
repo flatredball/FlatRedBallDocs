@@ -7,10 +7,3 @@ The IWindow interface is an interface that enables objects to be added to the Gu
 ### IWindow and Glue
 
 Although IWindow can be implemented manually in code, the IWindow interface is most typically implemented by Glue in generated code. For more information on IWindow in Glue, see [this page](../../../../../documentation/tools/glue-reference/entities/glue-reference-implements-iwindow.md).
-
-### IWindow Members
-
-* [FlatRedBall.Gui.IWindow.CallClick](../../../../../frb/docs/index.php)
-* [FlatRedBall.Gui.IWindow.Enabled](../../../../../frb/docs/index.php)
-
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.

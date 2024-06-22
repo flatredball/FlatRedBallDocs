@@ -1,8 +1,8 @@
-# dependsonattribute
+# DependsOnAttribute
 
 ### Introduction
 
-The DependsOnAttribute class is used to define dependencies between properties on a view model. The DependsOnAttribute is used heavily when creating ViewModels for FlatRedBall.Forms objects, and it appears in all but the simplest of ViewModels. For an introduction into the MVVM pattern in FlatRedBall.Forms, see the [Data Binding tutorials](../../../documentation/tutorials/flatredball-forms/data-binding.md).
+The DependsOnAttribute class is used to define dependencies between properties on a view model. The DependsOnAttribute is used heavily when creating ViewModels for FlatRedBall.Forms objects, and it appears in all but the simplest of ViewModels. For an introduction into the MVVM pattern in FlatRedBall.Forms, see the [Data Binding tutorials](../../../tutorials/flatredball-forms/data-binding/).
 
 ### Simple DependsOn Usage
 
@@ -13,7 +13,7 @@ The DependsOnAttribute (also referred to as DependsOn since C# allows the omissi
 
 The following code shows a simple ViewModel which uses DependsOn:
 
-```
+```csharp
 class GameScreenViewModel : ViewModel
 {
     public int Score
@@ -29,7 +29,7 @@ class GameScreenViewModel : ViewModel
 
 In this case, the ScoreDisplay property will broadcast that it has changed whenever the Score value changes. Practically speaking, this means that any UI object can bind to the ScoreDisplay property and that UI will be updated whenever Score changes. Notice that the DependsOn is usually used with the nameof keyword. While this is not necessary, it reduces the chances of error (spelling a property incorrectly), enables automatic refactoring, and can help catch compile errors. Although not recommended, it is possible to use constant string values instead of the nameof keyword:
 
-```
+```csharp
 class GameScreenViewModel : ViewModel
 {
     public int Score
@@ -48,7 +48,7 @@ class GameScreenViewModel : ViewModel
 
 DependsOn can be used to create multiple properties which depend on a single value. For example, a Health value could be used as the root value for multiple properties which depend on it. The following shows how to create multiple properties which depend on one:
 
-```
+```csharp
 class PlayerViewModel : ViewModel
 {
     public decimal Health
@@ -69,7 +69,7 @@ class PlayerViewModel : ViewModel
 
 A single property can depend on multiple properties. In this case, the property will change if either of its root properties change. For example, a health display could depend on both CurrentHealth and MaxHealth as shown in the following code:
 
-```
+```csharp
 class PlayerViewModel : ViewModel
 {
   public decimal CurrentHealth
@@ -88,5 +88,3 @@ class PlayerViewModel : ViewModel
   public string HealthDisplay => $"{CurrentHealth}/{MaxHealth}";
 }
 ```
-
-&#x20;

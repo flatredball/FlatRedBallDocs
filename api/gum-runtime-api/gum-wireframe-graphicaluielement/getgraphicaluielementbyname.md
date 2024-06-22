@@ -1,4 +1,4 @@
-# getgraphicaluielementbyname
+# GetGraphicalUiElementByName
 
 ### Introduction
 
@@ -8,9 +8,9 @@ GetGraphicalUiElementByName returns the instance of a contained element by name,
 
 The following code can be used to find the "Score" component and disable it from being a clickable UI element:
 
-```
+```csharp
 // Assuming the current code has a EntireGumScreen object:
 EntireGumScreen.GetGraphicalUiElementByName("Score").Enabled = false;
 ```
 
-For more information on the Enabled property, see [the IWindow.Enabled page](../../../../frb/docs/index.php).
+For more information on the Enabled property, see [the IWindow.Enabled page](../../flatredball/gui/iinputreceiver/iwindow/enabled.md).
