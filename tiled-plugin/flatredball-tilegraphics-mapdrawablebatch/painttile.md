@@ -16,7 +16,7 @@ The orderedTileIndex location depends LayeredTileMap's SortAxis. Interally the M
 
 For example, the following shows the tile order index if the map is using SortAxis of Y:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Tile index order for SortAxis.Y</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Tile index order for SortAxis.Y</p></figcaption></figure>
 
 Note that for isometic maps, tiles are drawn top to bottom (increasing moving downward) so isometric maps use a SortAxis of YTopDown.
 

@@ -53,3 +53,21 @@ foreach(var layer in LayeredTileMapInstance.Layers)
 Tiles will only have properties at runtime if it uses a tile in a tileset with a Name property.
 
 ![](../../media/2016-06-img\_574f970571521.png)
+
+### Tile Names and Automatic Naming
+
+Tiles in a Tiled map have names at runtime if any of the following conditions apply:
+
+* If the name has been given explicitly to the tile
+* If the Tile has any other custom properties (will be automatically named)
+* If the Tile has a Class
+
+For example, a typical FlatRedBall project includes a tileset named StandardTileset.tsx with tiles for common TileShapeCollision creation such as SolidCollision.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>SolidCollision tile in Tiled</p></figcaption></figure>
+
+The SolidCollision tile does not have a Name property, so it is assigned an automatic name at runtime as shown in the following screenshot of Visual Studio showing the names of the tiles in a typical map:
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>NamedTileOrderedIndexes</p></figcaption></figure>
+
+Notice that in this case the names are TiledIcons0\_autoname and TiledIcons43\_autoname. The names correspond to the IDs in the Tileset.
