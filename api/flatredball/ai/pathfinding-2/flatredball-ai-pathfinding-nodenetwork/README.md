@@ -1,71 +1,44 @@
-# flatredball-ai-pathfinding-nodenetwork
+# NodeNetwork
 
 ### Introduction
 
-NodeNetworks are a collection of [PositionedNodes](../../../../../../frb/docs/index.php) which are linked to eachother using [Links](../../../../../../frb/docs/index.php). NodeNetworks are used for pathfinding.
+NodeNetworks are a collection of [PositionedNodes](../flatredball-ai-pathfinding-positionednode.md) which are linked to each other using [Links](../flatredball-ai-pathfinding-link/). NodeNetworks are used for pathfinding.
 
-### Loading a NodeNetwork
+### Creating a NodeNetwork in Code
 
-**Files Used:** [Sample.nntx](../../../../../../frb/docs/images/5/59/Sample.nntx) NodeNetworks can be loaded from .nntx files. Download the file and:
+The following code creates a simple NodeNetwork and a Sprite. Pressing the 1, 2, 3, or 4 keys causes the Sprite to move toward a given node on the NodeNetwork.
 
-* Drag the file into your Solution. If you decide to use the Content Pipeline, remember to not include the extension when loading the file. This sample will use from-file loading. To load from-file:
-  * Select the .nntx file once it's in the Solution Explorer.
-  * Press F4 or right click and select Properties
-  * Select "None" for the Build Action.
-  * Select "Copy if newer" for the "Copy to Output Directory".
-
-Add the following using statement:
-
-```
-using FlatRedBall.AI.Pathfinding;
-using FlatRedBall.Content.AI.Pathfinding;
-```
-
-Add the following code to Initialize after initializing FlatRedBall:
-
-```
-NodeNetworkSave save = NodeNetworkSave.FromFile("sample.nntx");
-NodeNetwork nodeNetwork = save.ToNodeNetwork();
-nodeNetwork.Visible = true;
-```
-
-![NodeNetworkFromFile.png](../../../../../../media/migrated_media-NodeNetworkFromFile.png) For more information on file loading in FlatRedBall, see the [FlatRedBall File Types](../../../../../../frb/docs/index.php) wiki entry.
-
-### Creating a NodeNetwork
-
-The following code creates a simple NodeNetwork and a [Sprite](../../../../../../frb/docs/index.php). Pressing the 1, 2, 3, or 4 [keys](../../../../../../frb/docs/index.php) causes the [Sprite](../../../../../../frb/docs/index.php) to move toward a given node on the NodeNetwork. This example shows simple node creation, using the node for pathfinding, and how to make the node visible. Add the following using statement:
-
-```
+```csharp
 using FlatRedBall.AI.Pathfinding;
 using FlatRedBall.Input;
 ```
 
-Add the following at class scope:
+Add the following to your screen:
 
-```
+```csharp
 NodeNetwork nodeNetwork;
 Sprite sprite;
 List<PositionedNode> nodePath;
 ```
 
-Add the following in Initialize after initializing FlatRedBall:
+Add the following in CustomInitialize:
 
-```
+```csharp
  // Instantiate the NodeNetwork.
  nodeNetwork = new NodeNetwork();
 
  // Create the 4 nodes.
  PositionedNode node = nodeNetwork.AddNode();
- node.Position = new Vector3(-5, 5, 0); // top left
+ node.Position = new Vector3(-150, 150, 0); // top left
 
  node = nodeNetwork.AddNode();
- node.Position = new Vector3(5, 5, 0); // top right
+ node.Position = new Vector3(150, 150, 0); // top right
 
  node = nodeNetwork.AddNode();
- node.Position = new Vector3(5, -5, 0); // bottom right
+ node.Position = new Vector3(150, -150, 0); // bottom right
 
  node = nodeNetwork.AddNode();
- node.Position = new Vector3(-5, -5, 0); // bottom left
+ node.Position = new Vector3(-150, -150, 0); // bottom left
 
  // Link the nodes together.
  // LinkTo creates two links - one to and one from.
@@ -80,12 +53,13 @@ Add the following in Initialize after initializing FlatRedBall:
  nodeNetwork.Visible = true;
 
  // Create the Sprite used to move around the NodeNetwork
- sprite = SpriteManager.AddSprite("redball.bmp");
+ sprite = SpriteManager.AddSprite(RedBallTexture);
+ sprite.TextureScale = 1;
 ```
 
-Add the following in Update:
+Add the following in CustomActivity:
 
-```
+```csharp
  FlatRedBall.Input.Keyboard keyboard = InputManager.Keyboard;
 
  // Press 1, 2, 3, or 4 to set the Sprite's path for the target node.
@@ -122,32 +96,43 @@ Add the following in Update:
      }
      else
      {
-         float magnitude = 3;
-
-         double angle = Math.Atan2(node.Y - sprite.Y, node.X - sprite.X);
-
-         sprite.XVelocity = (float)Math.Cos(angle) * magnitude;
-         sprite.YVelocity = (float)Math.Sin(angle) * magnitude;
+         float magnitude = 50;
+         var directionToMove = (node.Position - sprite.Position).AtLength(50);
+         sprite.Velocity = directionToMove;
      }
  }
 ```
 
-![NodeNetwork.png](../../../../../../media/migrated_media-NodeNetwork.png)
+![NodeNetwork.png](../../../../../media/migrated\_media-NodeNetwork.png)
 
-### References
+### Loading a NodeNetwork From .nntx
 
-#### Pathfinding
+**The .nntx file format is a standard way to define node networks; however, there is currently no built-in .nntx creating tool supported. Therefore, apps which are interested in working with nntx will need to create their own .nntx files by using the NodeNetworkSave class.**
 
-* [FlatRedBall.AI.Pathfinding Namespace](../../../../../../frb/docs/index.php)
-* [FlatRedBall.AI.Pathfinding.Link](../../../../../../frb/docs/index.php)
-* [FlatRedBall.AI.Pathfinding.PositionedNode](../../../../../../frb/docs/index.php)
+**If you have an existing .nntx you can load it from-file by adding it to the FlatRedBall Editor or to Visual Studio. If you add it directly to Visual Studio, you must manually load the file:**
 
-#### Sprite
+1. Add the file to your project in Visual Studio
+2. Select the .nntx file once it's in the Solution Explorer.
+3. Press F4 or right click and select Properties
+4. Select "None" for the Build Action.
+5. Select "Copy if newer" for the "Copy to Output Directory".
 
-* [FlatRedBall.Sprite](../../../../../../frb/docs/index.php)
+Add the following using statement:
 
-#### Input
+```csharp
+using FlatRedBall.AI.Pathfinding;
+using FlatRedBall.Content.AI.Pathfinding;
+```
 
-* [FlatRedBall.Input.Keyboard](../../../../../../frb/docs/index.php)
+Add the following code to Initialize after initializing FlatRedBall:
+
+```csharp
+NodeNetworkSave save = NodeNetworkSave.FromFile("sample.nntx");
+NodeNetwork nodeNetwork = save.ToNodeNetwork();
+nodeNetwork.Visible = true;
+```
 
 &#x20;
+
+<figure><img src="../../../../../media/migrated_media-NodeNetworkFromFile.png" alt=""><figcaption></figcaption></figure>
+
