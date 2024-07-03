@@ -215,7 +215,7 @@
     * [Accessing Files in Code](glue-reference/files/glue-reference-accessing-in-code.md)
     * [Adding File Objects to Managers](glue-reference/files/glue-reference-adding-file-objects-to-managers.md)
     * [Animation Chain List (.achx)](glue-reference/files/glue-reference-animationchainlist.md)
-    * [CSV](glue-reference/files/glue-reference-csv/README.md)
+    * [Comma Separated Values (.csv)](glue-reference/files/glue-reference-csv/README.md)
       * [Using CSVs Tutorial](glue-reference/files/glue-reference-csv/glue-tutorials-using-csvs.md)
       * [createsdictionary](glue-reference/files/glue-reference-csv/createsdictionary.md)
       * [glue-how-to-combine-csvs-with-entities](glue-reference/files/glue-reference-csv/glue-how-to-combine-csvs-with-entities.md)
