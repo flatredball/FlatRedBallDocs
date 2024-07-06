@@ -86,11 +86,11 @@ Now we'll create an event, which is a function that is automatically called when
 3. Scroll to the bottom and click the **Add Event** button
 4. Accept the defaults and click **OK**
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When an event is added, Glue automatically adds a new file to contain events called GameScreen.Events.cs. We can find the new event there. You need to expand the GameScreen.cs in Visual Studio's Solution Explorer to see this file.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We can check which Goal collided with the Puck in the code and perform different logic. We can Modify the OnPuckVsGoalCollided method and add a new ReactToNewScore method to the GameScreen.Event.cs file as shown in the following snippet:
 

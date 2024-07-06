@@ -121,7 +121,7 @@ private void CustomActivity()
 
 Also, you should check the option to destroy the bullet when it hits the player, but only if damage is dealt.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Destroy bullet on damage but only if damage is dealt</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Destroy bullet on damage but only if damage is dealt</p></figcaption></figure>
 
 Now each Enemy shoots a bullet every 2 seconds which travels downward and which shares the same Team Index as the Enemy. These bullets now collide with the Player, deal damage to the Player, and ultimately kill the Player once the Player's health has dropped to 0.
 

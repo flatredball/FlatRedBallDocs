@@ -216,7 +216,6 @@
     * [Adding File Objects to Managers](glue-reference/files/glue-reference-adding-file-objects-to-managers.md)
     * [Animation Chain List (.achx)](glue-reference/files/glue-reference-animationchainlist.md)
     * [Comma Separated Values (.csv)](glue-reference/files/glue-reference-csv/README.md)
-      * [Using CSVs Tutorial](glue-reference/files/glue-reference-csv/glue-tutorials-using-csvs.md)
       * [Combining .csvs With Entities](glue-reference/files/glue-reference-csv/glue-how-to-combine-csvs-with-entities.md)
       * [CreatesDictionary](glue-reference/files/glue-reference-csv/createsdictionary.md)
       * [Cross Referencing CSVs](glue-reference/files/glue-reference-csv/glue-how-to-cross-reference-csvs.md)

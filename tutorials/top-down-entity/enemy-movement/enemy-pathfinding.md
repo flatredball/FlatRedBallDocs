@@ -31,11 +31,11 @@ Next we'll define a tile to use for pathfinding. To do this:
 5. Change the **Class** for that tile to WalkableTile
 6. Save your tileset (TSX)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>WalkableTile in Tiled</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>WalkableTile in Tiled</p></figcaption></figure>
 
 Next, select your current level (such as Level1Map) and paint the WalkableTile onto the GameplayLayer. Note that if you would like to be able to walk on areas which already have other tiles, you can create a new layer specifically for Tiles.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>WalkableTile painted in the walkable areas of the Tiled map</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>WalkableTile painted in the walkable areas of the Tiled map</p></figcaption></figure>
 
 Be sure to save both your level and the tileset.
 
@@ -47,7 +47,7 @@ Finally, we can indicate that the WalkableTile should be used to populate the no
 4. Select **Map** as the **Source TMX File/Object**
 5. Select **WalkableTile** as the **Type**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>WalkingNodeNetwork with properties set to fill from WalkableTile Type</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>WalkingNodeNetwork with properties set to fill from WalkableTile Type</p></figcaption></figure>
 
 Optionally, you may want to also set the Visible variable to true so the TileNodeNetwork shows up in your game.
 
@@ -207,7 +207,7 @@ Some games, such as the Legend of Zelda on the NES and the 2D Final Fantasy game
 
 However, if your game requires diagonal movement, you can enable it in the TileNodeNetwork properties for the WalkingNodeNetwork.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Seetting TileNodeNetwork to use eight links per node for diagonal movement</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Seetting TileNodeNetwork to use eight links per node for diagonal movement</p></figcaption></figure>
 
 Now our EnemyBase instance can travel diagonally.
 
@@ -217,11 +217,11 @@ You may have noticed that at times the EnemyBase _backtracks -_ in other words a
 
 To help explain this problem we can visualize a simple path that an enemy may take. It's important to remember that each node in the TileNodeNetwork is always placed at the center of the tile. The following image shows an example path. The blue circles represent the node positions, the red circle represents the enemy, and the purple lines represent the path the Enemy takes.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Example path</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Example path</p></figcaption></figure>
 
 Notice that the enemy moves directly towards the first node diagonally. This happens regardless of where the enemy is located - by default the very first segment in the path connects the enemy to the path. In this case the movement seems to be what we might expect, but in some situations the enemy may be positioned such that its first movement requires it to backtrack, as shown in the following image:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Example of a backgracing path</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Example of a backgracing path</p></figcaption></figure>
 
 Notice that in this case the closest node to the enemy is to the right of the enemy. Therefore, the first movement segment has the enemy moving to the right before it resumes moving to the left.
 
@@ -263,7 +263,7 @@ To enable collision between EnemyBase and the leve's SolidCollision:
 3. Verify that the newly-created CollisionRelationship is using BounceCollision
 4. Change the elasticity to 0 so that the EnemyBase doesn't actually bounce off the wall. By setting it to 0 the wall absorbs the EnemyBase's velocity.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Set EnemyBaseVsSolidCollision Elasticity to 0 to prevent bouncing</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Set EnemyBaseVsSolidCollision Elasticity to 0 to prevent bouncing</p></figcaption></figure>
 
 If we run our game now we'll notice that the enemy gets stuck when trying to follow the player along any collision.
 

@@ -1,4 +1,4 @@
-# CSV
+# Comma Separated Values (.csv)
 
 ### Introduction
 
@@ -32,7 +32,7 @@ When you create or modify a CSV which is part of your FlatRedBall project, FRB a
 | Bear            | 60            | Bear    |
 | Slug            | 20            | Slug    |
 
-If this file is added to a Screen, Entity, or Global Content, then Glue will automatically create a file called EnemyInfo.Generated.cs:
+If this file is added to a Screen, Entity, or Global Content, then FlatRedBall automatically creates a file called EnemyInfo.Generated.cs:
 
 ```csharp
 public partial class EnemyInfo
@@ -43,9 +43,50 @@ public partial class EnemyInfo
 }
 ```
 
+### Adding a CSV File
+
+To add a CSV file:
+
+1. Open the FlatRedBall Editor
+2. Pick a place for your CSV file in your project. Usually CSV files are added to Global Content Files
+3. Right-click on on the location which should contain the new CSV and select Add File -> New File
+4. Enter the name for the new file. Although not necessary it's common to end the file name with "Data". For example, EnemyData if the file is to include data about enemies.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Spreadsheet (.csv) selected in the new file window</p></figcaption></figure>
+
+Once you have added a new CSV file you can edit it in any editor you prefer, such as Excel, Libre Office, or even a text editor.
+
+### Accessing CSV Data in Code
+
+CSV files which are added to the FRB Editor are automatically loaded. If your CSV is added to Global Content Files (as is usually the case), then its contents can be accessed through the GlobalContent object.
+
+For example, consider an EnemyData.csv file added to Global Content Files.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>EnemyData.csv file in Global Content Files</p></figcaption></figure>
+
+This file can be accessed in code through the GlobalContent object in code as shown in the following code snippet:
+
+```csharp
+void CustomInitialize()
+{
+    var monsterData = GlobalContent.EnemyData["Monster"];
+    var health = monsterData.Health;
+
+    // You can use health or any other property in your game
+}
+```
+
+The example above assumes a row for the "Monster" enemy and a column for Health as shown in the following image:
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>CSV with a Monster row and a Health property from column B</p></figcaption></figure>
+
+Note that if you add additional rows or columns you can access these in your code. Also note that this code assumes that the CSV is loaded into a dictionary. For more information on List vs Dictionary loading, see the [CreatesDictionary](createsdictionary.md) property.
+
 ### Headers and Generated Class Definition
 
-As mentioned above, Glue will automatically generate a file based on the CSV. Specifically, Glue looks at the top row (headers) of the CSV file to determine the class members. If a header does not specify a type, then it will default to a string type. For example, The example above has two string members: Name and Texture. Headers can also define the type of a class. For example, the header above **Speed (float)** results in a the EnemyInfo including a Speed property of type float. Glue supports comments for headers which tells Glue to exclude a particular member from the class. For example, the following CSV would include a single Name property, and the other column is ignored:
+As mentioned above, the FlatRedBall editor automatically generate a code file based on the CSV. Specifically, FRB looks at the top row (headers) of the CSV file to determine the class members. If a header does not specify a type, then it will default to a string type.
+
+The example above has two string members: Name and Texture. Headers can also define the type of a class. For example, the header above **Speed (float)** results in the EnemyInfo class including a Speed property of type float. FRB supports comments for headers resultingin the exclusion of the property. For example, the following CSV would include a single Name property, and the other column is ignored:
 
 | Name (required) | // Comment       |
 | --------------- | ---------------- |
@@ -66,7 +107,7 @@ Columns in a CSV may be of a list type (such as List\<int>). These types can be 
 
 ### The generated file is partial
 
-The generated code file for the data class is marked as "partial". This means that you can add additional code files to add additional variables and functionality to data that is created by Glue. To do this:
+The generated code file for the data class is marked as "partial". This means that you can add additional code files to add additional variables and functionality to data that is created by FRB. To do this:
 
 1. Find the data file in Visual Studio
 2. Right-click on the folder containing the Data file
@@ -84,4 +125,4 @@ to
 partial class EnemyInfo
 ```
 
-Now you can things to EnemyInfo to help you work with the generated class. Note that this approach of using partial classes is the same as what Glue automatically does for you when you create a Screen or Entity. Custom code is very common in Screens and Entities, so Glue automatically creates a custom code file for you. Custom code in data classes is less common so Glue does not automatically do this for you; however if you do it manually it will work the same way.
+Now you can things to EnemyInfo to help you work with the generated class. Note that this approach of using partial classes is the same as what FRB automatically does for you when you create a Screen or Entity. Custom code is very common in Screens and Entities, so FRB automatically creates a custom code file for you. Custom code in data classes is less common so FRB does not automatically do this for you; however if you do it manually it works the same way.
