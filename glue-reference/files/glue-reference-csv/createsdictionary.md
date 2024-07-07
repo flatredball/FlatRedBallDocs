@@ -69,3 +69,9 @@ int damage = GlobalContent.TestCsv[TestCsv.Imp].Damage;
 ```
 
 The TestCsv class has one constant for each entry in the CSV, so the code above will work without any other code.
+
+### OrderedList
+
+If a CSV is loaded as a dictionary, then FlatRedBall generates an OrderedList property. this property can be useful if you would like to have your data loaded in to a Dictionary while also providing its order. One example of this usage might be to include a list of data for each level in your game. This CSV could be used to populate a level selection ListBox which should show the levels in a particular order. Keep in mind that the Dictionary collection does not guarantee preservation of order, so if you intend to show your data in the same order as the CSV, be sure to use the OrderedList property.
+
+Note that OrderedList is only generated if CreatesDictionary is set to true.
