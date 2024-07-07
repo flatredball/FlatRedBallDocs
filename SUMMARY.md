@@ -219,7 +219,7 @@
       * [Combining .csvs With Entities](glue-reference/files/glue-reference-csv/glue-how-to-combine-csvs-with-entities.md)
       * [CreatesDictionary](glue-reference/files/glue-reference-csv/createsdictionary.md)
       * [Cross Referencing CSVs](glue-reference/files/glue-reference-csv/glue-how-to-cross-reference-csvs.md)
-      * [Instantiating Custom Types](glue-reference/files/glue-reference-csv/instantiating-custom-types.md)
+      * [Instantiating Custom Types](api/flatredball/io/csv/csvfilemanager/instantiating-custom-types.md)
       * [SetCreatedClass](glue-reference/files/glue-reference-csv/glue-reference-set-created-class/README.md)
         * [generate-data-class](glue-reference/files/glue-reference-csv/glue-reference-set-created-class/generate-data-class.md)
       * [uniformrowtype](glue-reference/files/glue-reference-csv/uniformrowtype.md)
