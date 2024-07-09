@@ -85,8 +85,11 @@ Next we'll set up our initial position of the CameraController1. We'll be settin
 ```csharp
 this.CameraInstance.UpVector = new Vector3(0, 0, 1);
 this.CameraInstance.RelativePosition = new Vector3();
+this.CameraInstance.CameraCullMode = CameraCullMode.None;
 this.RotationX = Microsoft.Xna.Framework.MathHelper.PiOver2;
 ```
+
+Note that we set the CameraCullMode to CameraCullMode.None. Although this isn't strictly necessary for this demo, you most likely want to do this if you are making a game that supports camera rotation. For more information, see the [CameraCullMode page](../../api/flatredball/camera/cameracullmode.md).
 
 At this point we can run the game and we should see the Camera looking into the distance:&#x20;
 
@@ -109,7 +112,7 @@ Now implement the LookingActivity function:
 ```csharp
 void LookingActivity()
 {
-    // This would normally be a Glue variable,
+    // This would normally be a FRB Editor variable,
     // but added here to keep the tutorial shorter:
     const float rotationMultiplier = .006f;
 

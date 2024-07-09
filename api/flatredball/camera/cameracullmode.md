@@ -10,8 +10,8 @@ CameraCullMode only culls objects based on their angle relative to the camera. I
 
 ### Available values
 
-* UnrotatedDownZ (default)
-* None
+* UnrotatedDownZ (default) - use this if your game does not support a rotated camera
+* None - use this if your game supports a rotated camera
 
 ### CameraCullMode and multiple Cameras
 
