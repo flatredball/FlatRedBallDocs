@@ -487,6 +487,7 @@
       * [BackgroundColor](api/flatredball/camera/backgroundcolor.md)
       * [CameraCullMode](api/flatredball/camera/cameracullmode.md)
       * [ClearMinimumsAndMaximums](api/flatredball/camera/clearminimumsandmaximums.md)
+      * [ClearsDepthBuffer](api/flatredball/camera/clearsdepthbuffer.md)
       * [DestinationRectangle](api/flatredball/camera/destinationrectangle.md)
       * [DrawsShapes](api/flatredball/camera/drawsshapes.md)
       * [DrawsToScreen](api/flatredball/camera/drawstoscreen.md)

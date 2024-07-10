@@ -1,14 +1,16 @@
-# addzbufferedsprite
+# AddZBufferedSprite
 
 ### Introduction
 
-A Z-buffered [Sprite](../../../../frb/docs/index.php) uses the [Z buffer](../../../../frb/docs/index.php) (also known as a [depth buffer](../../../../frb/docs/index.php)) to perform proper overlapping. Since the [Z buffer](../../../../frb/docs/index.php) does not consider partial transparency, creating [Z buffered](../../../../frb/docs/index.php) [Sprites](../../../../frb/docs/index.php) with transparency can create graphical artifacts. Z-Buffered Sprites are not currently available in FlatSilverBall.
+A Z-buffered [Sprite](../../../frb/docs/index.php) uses the [Z buffer](../../../frb/docs/index.php) (also known as a [depth buffer](../../../frb/docs/index.php)) to perform proper overlapping. Since the [Z buffer](../../../frb/docs/index.php) does not consider partial transparency, creating [Z buffered](../../../frb/docs/index.php) [Sprites](../../../frb/docs/index.php) with transparency can create graphical artifacts.
+
+Z-buffered sprites will only write to and read from the z buffer if the Camera's [ClearsDepthBuffer](../camera/clearsdepthbuffer.md) is true.
 
 ### Code Example
 
-The following code creates two [Z buffered](../../../../frb/docs/index.php) [Sprites](../../../../frb/docs/index.php).
+The following code creates two [Z buffered](../../../frb/docs/index.php) [Sprites](../../../frb/docs/index.php).
 
-```
+```csharp
  Texture2D texture = FlatRedBallServices.Load<Texture2D>("redball.bmp");
 
  Sprite sprite1 = SpriteManager.AddZBufferedSprite(texture);
@@ -26,13 +28,13 @@ The following code creates two [Z buffered](../../../../frb/docs/index.php) [Spr
  sprite2.RotationY = -(float)Math.PI / 3.0f;
 ```
 
-![ModifiedZBuffered.png](../../../../media/migrated_media-ModifiedZBuffered.png)
+![ModifiedZBuffered.png](../../../media/migrated\_media-ModifiedZBuffered.png)
 
 #### Example without Z Buffer
 
-The following code creates two Sprites with the same properties as above, but the [Sprites](../../../../frb/docs/index.php) are created as regular (ordered) [Sprites](../../../../frb/docs/index.php) instead of [Z buffered](../../../../frb/docs/index.php) [Sprites](../../../../frb/docs/index.php). Notice that one [Sprite](../../../../frb/docs/index.php) completely overlaps the other.
+The following code creates two Sprites with the same properties as above, but the [Sprites](../../../frb/docs/index.php) are created as regular (ordered) [Sprites](../../../frb/docs/index.php) instead of [Z buffered](../../../frb/docs/index.php) [Sprites](../../../frb/docs/index.php). Notice that one [Sprite](../../../frb/docs/index.php) completely overlaps the other.
 
-```
+```csharp
  Texture2D texture = FlatRedBallServices.Load<Texture2D>("redball.bmp");
 
  Sprite sprite1 = SpriteManager.AddSprite(texture);
@@ -50,17 +52,19 @@ The following code creates two Sprites with the same properties as above, but th
  sprite2.RotationY = -(float)Math.PI / 3.0f;
 ```
 
-![OrderedLayeredSprites.png](../../../../media/migrated_media-OrderedLayeredSprites.png)
+![OrderedLayeredSprites.png](../../../media/migrated\_media-OrderedLayeredSprites.png)
 
 ### Overlapping Problems
 
-File used:![WhiteGradient.png](../../../../media/migrated_media-WhiteGradient.png)[WhiteGradient.png](../../../../frb/docs/images/1/1b/WhiteGradient.png) Since [Z buffered](../../../../frb/docs/index.php) Sprites write to the [depth buffer](../../../../frb/docs/index.php), partial transparency can block things behind it. For example, consider the following code: ![UnorderedProblems.png](../../../../media/migrated_media-UnorderedProblems.png)
+File used:![WhiteGradient.png](../../../media/migrated\_media-WhiteGradient.png)[WhiteGradient.png](../../../frb/docs/images/1/1b/WhiteGradient.png) Since [Z buffered](../../../frb/docs/index.php) Sprites write to the [depth buffer](../../../frb/docs/index.php), partial transparency can block things behind it. For example, consider the following code:&#x20;
+
+<figure><img src="../../../media/migrated_media-UnorderedProblems.png" alt=""><figcaption></figcaption></figure>
 
 #### Z Buffered Sprites and Transparency
 
 Z Buffered Sprites with transparency may not draw correctly. The reason for this is because the depth buffer does not necessarily know how to treat transparent pixels. FlatRedBall XNA attempts to resolve this issue by setting an alpha threshold for what gets drawn to the depth buffer (see below). If you are experiencing issues with transparency, consider the following:
 
-* If some of your [Sprites](../../../../frb/docs/index.php) have transparency while others are solid, try to make only the solid [Sprites](../../../../frb/docs/index.php) Z Buffered. Sprites that do not use the Z Buffer will still sort properly with the Z Buffer. Therefore, you may be able to mix Z Buffered with non-Z Buffered Sprites and still achieve the desired overlapping result.
+* If some of your [Sprites](../../../frb/docs/index.php) have transparency while others are solid, try to make only the solid [Sprites](../../../frb/docs/index.php) Z Buffered. Sprites that do not use the Z Buffer will still sort properly with the Z Buffer. Therefore, you may be able to mix Z Buffered with non-Z Buffered Sprites and still achieve the desired overlapping result.
 * Eliminate transparency - this may not be preferred, but if you can eliminate transparency from your source image, you may be able to avoid this artifact.
 * Reposition objects or your camera to avoid the undesired graphical issues.
 
@@ -70,4 +74,4 @@ The Alpha Threshold (also known as ReferenceAlpha in XNA terms) is a value that 
 
 ### More Information
 
-* [Object Sorting Tutorial](../../../../frb/docs/index.php)
+* [Object Sorting Tutorial](../../../frb/docs/index.php)
