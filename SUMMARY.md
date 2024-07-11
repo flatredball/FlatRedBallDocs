@@ -233,6 +233,7 @@
     * [IncludeDirectoryRelativeToContainer](glue-reference/files/includedirectoryrelativetocontainer.md)
     * [LoadedAtRuntime](glue-reference/files/glue-reference-loadedatruntime.md)
     * [LoadedOnlyWhenReferenced](glue-reference/files/glue-reference-loadedonlywhenreferenced.md)
+    * [Model (.fbx)](glue-reference/files/model-.fbx.md)
     * [MP3](glue-reference/files/glue-reference-mp3-file-mp3.md)
     * [Node Network (.nntx)](glue-reference/files/nodenetwork-nntx.md)
     * [Name](glue-reference/files/name.md)
