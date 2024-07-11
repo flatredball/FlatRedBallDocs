@@ -12,5 +12,17 @@ Models can be loaded just like any other FlatRedBall file. For example, .fbx fil
 
 Once the file has been added to global content, it can be drawn in Game1.cs as shown in the following code:
 
+```csharp
+protected override void Draw(GameTime gameTime)
+{
+    GeneratedDrawEarly(gameTime);
+    FlatRedBallServices.Draw();
+    GeneratedDraw(gameTime);
 
+    var model = GlobalContent.Test;
+    model.Draw(Matrix.Identity, Camera.Main.View, Camera.Main.Projection);
+
+    base.Draw(gameTime);
+}
+```
 
