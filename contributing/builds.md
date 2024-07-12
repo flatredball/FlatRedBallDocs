@@ -50,12 +50,12 @@ Team City has an automated build which runs whenever anything is pushed (assumin
 
 To create the nuget packages, follow these steps:
 
-1. Open one of the MonoGame Gum sample projects in Visual Studio - these link MonoGame Gum and the projects it depends on. For example, \<GumRoot>Gum\Samples\MonoGameGumFromFile\MonoGameGumFromFile.sln
+1. Open MonoGameGum.sln in Visual Studio - this links MonoGame/Kni Gum and the projects it depends on. It is at \<GumRoot>Gum\MonoGameGum.sln
 2.  Double-click GumCommon and change its Version to the {year}.{month}.{day}.{build}, where build is 1 if it's the first build of the day.\
 
 
     <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting GumCommon's Version number</p></figcaption></figure>
-3. Repeat this for GumDataTypesNet6, MonoGameGum, and ToolsUtilitiesStandard. Be sure to use the same version for all.
+3. Repeat this for GumDataTypesNet6, MonoGameGum, ToolsUtilitiesStandard, and KniGum. Be sure to use the same version for all.
 4. Save the files and push the commit
 
 If Vic's computer is on, it will automatically build. If not, Vic must open it and manually run a build.
