@@ -224,7 +224,7 @@ void CustomInitialize()
 }
 
 // Mark this as virtual so we can override it in the derived class:
-protected virtual void HandleDamageReceived(decimal initialDamage, IDamageArea damageArea)
+protected virtual decimal HandleDamageReceived(decimal initialDamage, IDamageArea damageArea)
 {
     if(IsInvulnerable)
     {
@@ -239,7 +239,7 @@ Now the derived variant can override the method as shown in the following code:
 ```csharp
 // do not assign or += the ModifyDamageReceived, we only need to
 // override the HandleDamageReceived method:
-protected override void HandleDamageReceived(decimal initialDamage, IDamageArea damageArea)
+protected override decimal HandleDamageReceived(decimal initialDamage, IDamageArea damageArea)
 {
     // call the base to allow invulnerability to apply
     var damage = base.HandleDamageReceived(initialDamage, damageArea);
