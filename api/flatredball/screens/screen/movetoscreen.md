@@ -2,27 +2,27 @@
 
 ### Introduction
 
-The MoveToScreen method can be used to move from the current Screen to another Screen. The MoveToScreen method will destroy the current Screen and all of its contained Entities, then begin loading the Screen passed to the MoveToScreen method.
+The MoveToScreen method can be used to move from the current Screen to another Screen. The MoveToScreen method destroys the current Screen and all of its contained Entities, then begin loading the Screen passed to the MoveToScreen method.
 
-MoveToScreen can be called when moving between different types of screens, such as between a Titlescreen and LevelSelectScreen. MoveToScreen should also be used to transition between levels such as moving between Level1 and Level2.
+MoveToScreen can be called when moving between different types of screens, such as between a TitleScreen and LevelSelectScreen. MoveToScreen should also be used to transition between levels such as moving between Level1 and Level2.
 
 ### Calling MoveToScreen
 
 MoveToScreen accepts either the type (preferred if you know it) or the name of the screen. The screen name may be fully qualified (such as "YourGame.Screens.Level2") or not fully qualified (such as "Level2"). For example, to move to Level 2, the following code would be used:
 
-```
+```csharp
 this.MoveToScreen(typeof(Level2));
 ```
 
 Alternatively, you could pass in the name of Level2:
 
-```
+```csharp
 this.MoveToScreen("YourProject.Screens.Level2");
 ```
 
 You can go to the level if it is not fully qualified. This works too:
 
-```
+```csharp
 this.MoveToScreen("Level2");
 ```
 
@@ -35,7 +35,7 @@ The `MoveToScreen` function does the following (in order):
 
 `MoveToScreen` can be used to move to the same screen rather than a different screen. This results in the current screen being destroyed then recreated, resulting in the screen being reset to its original state. For example, consider a situation where the player's character is hit by a bullet. In this case the GameScreen will reset itself:
 
-```
+```csharp
 // assuming there is a function to tell us if the player was hit by a bullet
 // This also assumes that this code is written in the GameScreen and not in an entity
 bool wasHitByBullet = GetIfHitByBullet();
