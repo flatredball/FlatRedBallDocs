@@ -52,7 +52,7 @@ To add a CSV file:
 3. Right-click on on the location which should contain the new CSV and select Add File -> New File
 4. Enter the name for the new file. Although not necessary it's common to end the file name with "Data". For example, EnemyData if the file is to include data about enemies.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Spreadsheet (.csv) selected in the new file window</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Spreadsheet (.csv) selected in the new file window</p></figcaption></figure>
 
 Once you have added a new CSV file you can edit it in any editor you prefer, such as Excel, Libre Office, or even a text editor.
 
@@ -62,7 +62,7 @@ CSV files which are added to the FRB Editor are automatically loaded. If your CS
 
 For example, consider an EnemyData.csv file added to Global Content Files.
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>EnemyData.csv file in Global Content Files</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p>EnemyData.csv file in Global Content Files</p></figcaption></figure>
 
 This file can be accessed in code through the GlobalContent object in code as shown in the following code snippet:
 
