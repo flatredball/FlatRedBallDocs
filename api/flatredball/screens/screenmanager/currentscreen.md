@@ -14,6 +14,8 @@ The CurrentScreen property cannot be set directly. For more information on when 
 
 ### When is CurrentScreen set?
 
+Initially CurrentScreen is usually set in generated code by the FlatRedBall Editor according to the startup screen. After initial setting, any of the calls mentioned above can be used to change the CurrentScreen.
+
 CurrentScreen is set internally by the ScreenManager after the Screen has been instantiated but before CustomInitialize has been called. Therefore, the CurrentScreen will always equal "this" in the CustomInitialize call.
 
 The CurrentScreen will remain the same throughout a Screen's life, persisting through the CustomActivity and CustomDestroy calls.
