@@ -10,7 +10,7 @@ For this view we will have a simple component which could be used for a game's s
 
 Keep in mind the contents of this control are purely to serve as an example. The actual contents of your control could vary. For this example, consider the following control:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sample view with 3 </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Sample view with 3 </p></figcaption></figure>
 
 This control has two sliders and a checkbox, so our ViewModel should be built to support these controls. The following is an example ViewModel for this control:
 

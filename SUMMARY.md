@@ -155,6 +155,7 @@
     * [Creating a NamedObjectSave-Editing Plugin](tutorials/glue-plugins/06-creating-a-namedobjectsave-editing-plugin.md)
     * [Adding File Format Support](tutorials/glue-plugins/adding-file-format-support.md)
     * [Adding Code Files to a Game Project](tutorials/glue-plugins/tutorials-adding-files-to-a-project.md)
+    * [Errors](tutorials/glue-plugins/errors.md)
     * [Exporting a Plugin](tutorials/glue-plugins/tutorials-exporting-a-plugin.md)
   * [Additional FlatRedBall Editor Tutorials](tutorials/glue-tutorials/README.md)
     * [How to Create a First Person Camera](tutorials/glue-tutorials/glue-how-to-create-a-first-person-camera.md)
