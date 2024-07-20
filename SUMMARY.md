@@ -528,6 +528,7 @@
         * [AnimationChainListSave](api/flatredball/content/animationchain/flatredball-content-animationchainlistsave.md)
       * [ContentManager](api/flatredball/content/contentmanager/README.md)
         * [AddUnloadMethod](api/flatredball/content/contentmanager/addunloadmethod.md)
+        * [FileAliases](api/flatredball/content/contentmanager/filealiases.md)
         * [IsAssetLoadedByName](api/flatredball/content/contentmanager/isassetloadedbyname.md)
         * [Load](api/flatredball/content/contentmanager/load.md)
         * [LoadFromGlobalIfExists](api/flatredball/content/contentmanager/loadfromglobalifexists.md)

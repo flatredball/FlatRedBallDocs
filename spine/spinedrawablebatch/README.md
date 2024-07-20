@@ -17,9 +17,9 @@ Spine files are needed to draw a SpineDrawableBatch. Conceptually you can think 
 To add a SpineDrawableBatch to an entity:
 
 1. Create an entity that will contain the SpineDrawableBatch. This example uses an Entity called Soldier
-2. Drag+drop a Spine skeleton file (.json) into the Entity's files
+2. Drag+drop the texture file (.png) used by the Spine atlas into the Entity's files
 3. Drag+drop an Atlas file (.atlas) into the Entity's files
-4. Drag+drop the matching texture file (.png) into the Entity's files
+4. Drag+drop a Spine skeleton file (.json) into the Entity's files
 5.  Select the Skeleton entry in FlatRedBall, click on the Spine tab, and change the Atlas property the desired Atlas file. It should appear in the dropdown.\
 
 
