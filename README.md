@@ -20,7 +20,11 @@ At a minimum you will need to install **.NET desktop development**.
 
 ![](media/2023-03-img\_6415bcb385f79.png)
 
-Newer Versions of Visual Studio (as of version 17.5.1) install .NET SDK 7.0 or newer which have a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you will need to manually install .NET 6 SDK.
+Newer Versions of Visual Studio (as of version 17.5.1) install .NET SDK 7.0 or newer which have a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you will need to manually install .NET 6 SDK.\
+\
+4\. .NET 8 SDK (Optional)
+
+.NET 8 SDK is required if you intend to create FlatRedBall Web projects or FlatRedBall iOS or Android projects. [https://dotnet.microsoft.com/en-us/download/dotnet/8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 ### Downloading FlatRedBall
 
