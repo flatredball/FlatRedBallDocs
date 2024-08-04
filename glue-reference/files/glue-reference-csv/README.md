@@ -78,7 +78,7 @@ void CustomInitialize()
 
 The example above assumes a row for the "Monster" enemy and a column for Health as shown in the following image:
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>CSV with a Monster row and a Health property from column B</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>CSV with a Monster row and a Health property from column B</p></figcaption></figure>
 
 Note that if you add additional rows or columns you can access these in your code. Also note that this code assumes that the CSV is loaded into a dictionary. For more information on List vs Dictionary loading, see the [CreatesDictionary](createsdictionary.md) property.
 

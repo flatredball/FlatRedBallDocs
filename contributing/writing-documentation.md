@@ -14,17 +14,17 @@ However, screenshots often require additional markings. For consistency we recom
 
 User ShareX's default rectangles to draw attention to UI elements. The following screenshot could be used to show the user how to navigate back in the selection stack.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Red rectangle highlighting UI</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Red rectangle highlighting UI</p></figcaption></figure>
 
 Optionally, consider using arrows to draw the user's attention if the UI is small or otherwise difficult to find.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Arrow used to draw the user's attention to a button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Arrow used to draw the user's attention to a button</p></figcaption></figure>
 
 #### Use Arrows When Multiple Clicks are Needed
 
 Use arrows and rectangles to the reader through multiple clicks. For example, the following screenshot shows how to set the Movement Speed on a Player in the Variables tab:
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Arrows used to guide the user through multiple clicks</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Arrows used to guide the user through multiple clicks</p></figcaption></figure>
 
 Use curved arrows to guide user through multiple clicks between UI elements which are near to each other. The following screenshot tells the user to click both the ICollidable and IDamageable checkboxes:
 
@@ -36,11 +36,11 @@ Screenshots should be the minimum size possible while providing the necessary in
 
 For example, consider a screenshot which displays a CircleInstance and its Variables tab. The following screenshot is a good size and shows the information clearly.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Minimum information shown for CircleInstance and Variables</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Minimum information shown for CircleInstance and Variables</p></figcaption></figure>
 
 Do not show large windows since it can make text difficult to read and it does not focus the reader's attention on important parts of the image.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
 
 #### Hide Irrelevant Parts in Screenshots
 
@@ -76,7 +76,7 @@ For example the following could be an image introducing where entities are store
 
 Once the reader has been shown full app in a screenshot, additional screenshots can show a subsection. For example, the following screenshot may emphasize the different entity icons.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity icons emphasized in a screenshot which does not show the entire app</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity icons emphasized in a screenshot which does not show the entire app</p></figcaption></figure>
 
 #### Exclude the Cursor From Screenshots
 

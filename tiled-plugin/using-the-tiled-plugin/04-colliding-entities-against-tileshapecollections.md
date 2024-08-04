@@ -23,14 +23,14 @@ To create a new entity:
 2.  Select **Add Entity**\
 
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add Entity button in Quick Actions</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add Entity button in Quick Actions</p></figcaption></figure>
 3. Enter the name **Player**
 4. Check the **Circle** checkbox to give the entity a circle collision object
 5. Verify that **ICollidable** is checked - this should happen automatically when **Circle** is checked
 6. Check the Top-Down option under Input Movement Type to automatically give the Player movement logic
 7. Click **OK**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Creating a Player Entity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Creating a Player Entity</p></figcaption></figure>
 
 Notice the **Include lists in all base level screens** check box. We will leave this checked so that we have a list of players in our game screen. This is a good idea, even if your game will be single player. The new entity should appear in the Entities folder in the FRB editor.
 

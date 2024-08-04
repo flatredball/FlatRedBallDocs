@@ -4,7 +4,7 @@
 
 The Errors tab is a useful way to let the user know about a problem in their FlatRedBall project. Errors can be a more effective way to explain a problem compared to generating syntax errors or crashes at runtime. Plugins provide support for interacting with the Errors tab.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Error window displaying an error about a missing atlas</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Error window displaying an error about a missing atlas</p></figcaption></figure>
 
 ### ErrorViewModel and ErrorReporterBase
 
