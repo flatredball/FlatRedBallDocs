@@ -1,5 +1,11 @@
 # ✨ FlatRedBall Features
 
+### Introduction
+
+FlatRedBall is a set of technology for creating games on a variety of platforms. FlatRedBall focuses primarily on creating 2D games, although it does provide 3D support and full access to the underlying XNA-like system (MonoGame, FNA, Kni) for creating full 3D games.
+
+FlatRedBall has been used to create dozens of commercial games on a variety of platforms. FlatRedBall's ultimate goal is to boost your productivity as a game developer and to help you ship your game on your target platform.
+
 ### FlatRedBall Editor
 
 The FlatRedBall Editor is a visual tool for creating and organizing screens, entities, and files.&#x20;
