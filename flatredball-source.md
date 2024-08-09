@@ -8,19 +8,19 @@ This section discusses the following:
 
 * How to build the FlatRedBall Editor from source (this is also available in binary format on the downloads page)
 * How to add FlatRedBall source code to your project through the FlatRedBall Editor
-* How to add FlatRedball source code to your project manually (if not using the FlatRedBall Editor)
+* How to add FlatRedBall source code to your project manually (if not using the FlatRedBall Editor)
 
 If you are interested in using FlatRedBall in a code-only project, see the [Code-Only](tutorials/code-only-project-tutorial/) Projects page.
 
 ### Introduction
 
-Currently all development is being done on the NetStandard branch, so if you would like to build FlatRedBall Glue form source, we recommend pulling the **NetStandard** branch. The FlatRedBall Game Engine and Tools are all open source:
+Currently all development is being done on the NetStandard branch, so if you would like to build the FlatRedBall Editor (also known as FlatRedBall Glue) form source, we recommend pulling the **NetStandard** branch. The FlatRedBall Game Engine and Tools are all open source:
 
 * [FlatRedBall on Github](https://github.com/vchelaru/FlatRedBall)
 
-If you plan on using FlatRedBall FNA, be sure that you include all submodules when pulling FlatRedBall. This may automatically happen if you are using some github clients (such as github for desktop), but you may need to perform additional configuration if using a client that doesn't pull submodules by default (such as Rider).
+If you plan on using FlatRedBall FNA, be sure that you include all submodules when pulling FlatRedBall. This may automatically happen if you are using some Git clients (such as GitHub for Desktop), but you may need to perform additional configuration if using a client that doesn't pull submodules by default (such as Rider).
 
-FlatRedBall uses Gum UI including at runtime. This is also open source and can be found on Githhub:
+FlatRedBall uses Gum UI including at runtime. This is also open source and can be found on GitHub:
 
 * [Gum on Github](https://github.com/vchelaru/Gum)
 
@@ -39,7 +39,7 @@ The easiest way to download and keep FlatRedBall source up to date is to use a G
 
     </div>
 3. Select the URL tab
-4. Enter the FlatRedBall url: https://github.com/vchelaru/FlatRedBall. Keep the default folder as **FlatRedBall**
+4. Enter the FlatRedBall URL: https://github.com/vchelaru/FlatRedBall. Keep the default folder as **FlatRedBall**
 5. Click the Clone button\
    ![](media/2021-08-img\_6112a90f42a84.png)
 6.  Switch to the appropriate branch. The default branch is NetStandard
@@ -74,7 +74,7 @@ To add the FRB source to your project:
 
     <div align="left">
 
-    <img src="media/2023-07-img_64b531293eff9.png" alt="">
+    <img src="media/2023-07-img_64b531293eff9.png" alt="Add FRB Source tab in the FRB Editor adds all necessary projects to your game&#x27;s solution">
 
     </div>
 4. If your paths are blank or incorrect, use the ... button to select the file paths for each repository.
@@ -84,7 +84,15 @@ To add the FRB source to your project:
 
 Your game project should not directly reference the FlatRedBall Source.
 
-![](media/2023-07-img\_64b5319f1f491.png)
+![FlatRedBall projects linked in a game project](media/2023-07-img\_64b5319f1f491.png)
+
+#### Game Project Location and FlatRedBall Source
+
+The FlatRedBall Editor attempts to link FlatRedBall source regardless of the location of your projects relative to source. We strongly recommend keeping your project in the same directory (such as C drive) as FlatRedBall source. Otherwise, projects will be linked using absolute paths which makes your project far less portable. By using absolute paths others who clone your project must have the same exact folder structure as you do or the project will not build and run.
+
+Furthermore, Github for Desktop always clones projects to the same directory: `C:\YouserUerName\Owner\Documents\GitHub\YourProjectName`
+
+We recommend keeping these defaults for all repositories - your game and FlatRedBall. By using default locations others can clone the engine and game without needing ot make modifications to their defaults.
 
 ### Adding FlatRedBall Source to a Game Project Manually
 
