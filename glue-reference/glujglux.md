@@ -600,3 +600,8 @@ This version modifies code generation so that it includes the case of file paths
 
 ❗ Mobile games using Xamarin should not update to this version.
 
+### Version 56 - Added FlatRedBallServices.GraphicsDeviceManager
+
+This version modifies code generation for the Profiling tab so that it can enable/disable fixed time step and v-sync. Disabling v-sync requires access to the GraphicsDeviceManager which is now publicly exposed by FlatRedBallServices.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
