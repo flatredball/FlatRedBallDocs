@@ -90,3 +90,21 @@ As mentioned above, multiple shapes can be added per frame. This can be useful i
 In this case you would want to also add the same shapes in your entity so that the code shown above could be used to automatically manage the rectangle positions and sizes.
 
 ![](../media/2022-09-img\_6318ba37dc88d.png)
+
+### Troubleshooting
+
+If your shapes in game are not modified by the shapes in the AnimationEditor you can check a few things to locate the problem.
+
+#### SetCollisionFromAnimation in Generated Code
+
+If your Sprite is set up properly, you should see the `SetCollisionFromAnimation` method being called on a Sprite. This method should appear in your Activity method in generated code.
+
+<figure><img src="../.gitbook/assets/image (152).png" alt=""><figcaption><p>SpriteInstance.SetCollisionFromAnimation called in generated code</p></figcaption></figure>
+
+If this does not appear, verify that the following are true:
+
+* Your entity is an ICollidable entity, or implements ICollidable recursively. This should be true if you added shapes to the entity when it was first created.
+* Your .gluj file version is greater than or equal to 45. For more information see the [FileVersion (.gluj)](../glue-reference/glujglux.md) page.
+* You have a Sprite in the entity
+* The Sprite's Set Collision From Animation is set to true
+* You are playing the animation in your game
