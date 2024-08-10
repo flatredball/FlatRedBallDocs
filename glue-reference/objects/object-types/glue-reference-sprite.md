@@ -73,3 +73,7 @@ Alternatively, you can change the Animation Chains property in the Variables tab
 
 <figure><img src="../../../.gitbook/assets/31_07 33 09.gif" alt=""><figcaption><p>Setting AnimationChains and CurrentChainName on a Sprite using the Variables tab</p></figcaption></figure>
 
+### Set Collision From Animation
+
+Sprites can automatically apply the collision from their AnimationChains to their parent Entity. For more information, see the [Animation Shapes and Collision](../../../glue-gluevault-component-pages-animationeditor-plugin/animationeditor-collision.md) page.
+
