@@ -12,7 +12,7 @@ Melee attacks increase the complexity of games because they result in entities t
 
 First, mark the Player entity as both IDamageable and IDamageArea.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting a Player as an IDamageable and IDamageArea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting a Player as an IDamageable and IDamageArea</p></figcaption></figure>
 
 Repeat the same for the Enemy entity.
 
@@ -20,11 +20,11 @@ Repeat the same for the Enemy entity.
 
 Next, we'll add a collision object to the Player for melee attacks. This can be any type of shape, but we'll use an AxisAlignedRectangle for this tutorial. Be sure to give the new shape a name that clearly explains its purpose, such as **MeleeCollision**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Adding MeleeCollision to Player</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Adding MeleeCollision to Player</p></figcaption></figure>
 
 Adjust the MeleeCollision so that it is positioned outside of the Player entity. You can use [Live Edit](../../glue-reference/enable-live-edit.md) to iterate quickly on this.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Modifying the MeleeCollision</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Modifying the MeleeCollision</p></figcaption></figure>
 
 By default this new shape is used in all relationships which use the Player's **\<Entire Object>,** which is the default for all collisions. For example, the PlayerVsSolidCollision in GameScreen uses this option, so the newly-created MeleeCollision collides with the map's SolidCollision.
 
@@ -32,7 +32,7 @@ By default this new shape is used in all relationships which use the Player's **
 
 Typically, collision shapes which are added for a special purpose (such as only dealing damage to Enemies) should not be used for all collision relationships. We can fix this by setting the MeleeCollision's IncludeInICollidable to false.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting MeleeCollision's IncludeInICollidable to false</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting MeleeCollision's IncludeInICollidable to false</p></figcaption></figure>
 
 Now the MeleeCollision will only be considered in collision relationships which explicitly select it in the Subcollision dropdown (which we'll do later in this tutorial).
 

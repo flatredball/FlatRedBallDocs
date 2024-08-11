@@ -82,7 +82,7 @@ myTextObject.DisplayText = translatedGoalText;
 
 Comments can be added to the ID column by using the `//` syntax (similar to C#). Comments are ignored, allowing you to insert notes when creating localization files.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Localization Comments</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Localization Comments</p></figcaption></figure>
 
 ### Multiple Entries Per ID
 
@@ -90,7 +90,7 @@ Games which display dialog using a dialog box may need to organize the dialog in
 
 Each string ID can contain multiple rows, wher each row serves as a different page. The following image shows three IDs. T\_Dialog1 has 7 separate strings, beginning with the first as "Sounds like something crashed!", and ending with "Or aliens!!"
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>CSV file with dialog that has multiple strings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>CSV file with dialog that has multiple strings</p></figcaption></figure>
 
 To access the strings, the TranslateMultiple method can be used, as shown in the following code:
 
@@ -108,5 +108,5 @@ By convention the first column in a localization file is the ID, and subsequent 
 
 The following shows a real-world example of a localization file which includes a column for the speaker, whether to flip the profile, and whether the text is automatically skipped. Note that these columns do not have any built-in behavior on their own. They must be read in and applied in your custom code.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dialog with Speaker, Flip Profile, and Auto Skip</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dialog with Speaker, Flip Profile, and Auto Skip</p></figcaption></figure>
 

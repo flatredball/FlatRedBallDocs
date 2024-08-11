@@ -6,7 +6,7 @@ The DefaultLayer property is used when instantiating entities. It is useful if y
 
 DefaultLayer can be set in the FlatRedBall Editor by selecting a Screen and changing the DefaultLayer variable.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting a Screen's DefaultLayer in the Variables tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting a Screen's DefaultLayer in the Variables tab</p></figcaption></figure>
 
 For more information on working with Layers in the FRB Editor, see the [Layer page](../objects/object-types/glue-reference-layer/).
 

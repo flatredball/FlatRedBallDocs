@@ -2,7 +2,7 @@
 
 ### Introduction
 
-FlatRedBall support development for iOS (iPhone and iPad) using .NET 8 (as of March 2024), and Xamarin for versions prior to March 2024.
+FlatRedBall support development for iOS (iPhone and iPad) using .NET 8 (as of March 2024).
 
 ### Creating a New iOS Project
 
