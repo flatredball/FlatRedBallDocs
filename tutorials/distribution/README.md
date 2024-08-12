@@ -23,3 +23,21 @@ To distribute this game, navigate to the folder where the game is built, select 
 ![](../../media/2021-07-img\_60ef66dc4d0a1.png)
 
 This zip file can be sent to others such as testers or friends.
+
+### Distributing FlatRedBall Web
+
+To distribute a FlatRedBall Web project:
+
+1. Open your project in Visual Studio
+2. Switch your project to Release build
+   1. If you are linking nuget packages, you may consider linking to FlatRedBall Source so you can build the engine in release mode.
+3. Select **Build** -> **Publish YourProjectName**
+4. If asked, select the option to publish to a Folder
+5. Click the Publish button on the Publish tab
+6. Wait for your project to finish building
+
+After the project finishes building, the file is built to the selected directory. Visual Studio shows the location which can be CTRL+clicked to open the location.
+
+<figure><img src="../../.gitbook/assets/image (153).png" alt=""><figcaption><p>Publish location</p></figcaption></figure>
+
+The project can be uploaded to any location through FTP. If uploading to itch.io you should zip this folder and upload it.
