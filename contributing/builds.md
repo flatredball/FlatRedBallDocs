@@ -21,9 +21,9 @@ To make a new (monthly) release:
    1. Kid Defense
    2. Cranky Chibi Cthulhu
    3. Battlecrypt Bombers
-2. Run Engine.yml and wait for it to finish successfully
+2. Run [Engine.yml](https://github.com/vchelaru/FlatRedBall/actions/workflows/Engine.yml) and wait for it to finish successfully
 3. Run Glue.yml and wait for it to finish successfully
-4. Download latest FRBDK and run Glue - make sure the file version is what you expect
+4. [Download latest FRBDK and run Glue](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip) - make sure the file version is what you expect
 5. Make a new platformer project and check the version on the .csproj - make sure the file version is what you expect
 6. Create a new release on Github including all the changes since last release
 7. Create an announcement post on Discord including the # of changes and highlight the big changes
