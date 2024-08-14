@@ -694,6 +694,7 @@
         * [PrimaryClickNoSlide](api/flatredball/gui/cursor/primaryclicknoslide.md)
         * [PrimaryPushTime](api/flatredball/gui/cursor/primarypushtime.md)
         * [ScreenX](api/flatredball/gui/cursor/screenx.md)
+        * [SecondaryClick](api/flatredball/gui/cursor/secondaryclick.md)
         * [SetControllingGamepad](api/flatredball/gui/cursor/setcontrollinggamepad.md)
         * [SetJoystickControl](api/flatredball/gui/cursor/setjoystickcontrol.md)
         * [WindowOver](api/flatredball/gui/cursor/windowover.md)
