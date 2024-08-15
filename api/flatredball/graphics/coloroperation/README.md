@@ -21,4 +21,4 @@ The following table lists color operations and supported platforms:
 | Modulate4X                              | X              |     |         |        |
 | [InterpolateColor](interpolatecolor.md) | X              |     |         |        |
 
-&#x20;\* As of August 15 the only color operation supported is Texture. These will likely be expanded in future versions of FlatRedBall Web.
+&#x20;\* As of August 15 2024 the only color operation supported is Texture. These will likely be expanded in future versions of FlatRedBall Web.
