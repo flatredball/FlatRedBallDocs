@@ -443,6 +443,7 @@
 * [🦴 Spine](spine/README.md)
   * [Setup](spine/setup.md)
   * [Atlas](spine/atlas.md)
+  * [Changing Spine Textures at Runtime](spine/changing-spine-textures-at-runtime.md)
   * [SpineDrawableBatch](spine/spinedrawablebatch/README.md)
     * [Event](spine/spinedrawablebatch/event.md)
     * [PlayAnimation](spine/spinedrawablebatch/playanimation.md)
