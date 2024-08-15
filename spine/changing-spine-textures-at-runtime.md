@@ -22,7 +22,7 @@ It is possible to create skins completely dynamically at runtime but creating a 
 
 Here's an example of a Spine project with several placeholder slots and a single "template" skin:
 
-<figure><img src="../.gitbook/assets/image (154).png" alt=""><figcaption><p>A Spine project with placeholders and a single template skin.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/14_21 12 03.png" alt=""><figcaption><p>A Spine project with placeholders and a single template skin.</p></figcaption></figure>
 
 ### Change Skins at Runtime
 
