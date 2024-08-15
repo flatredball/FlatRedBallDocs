@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial will walk you through installing and creating an empty FlatRedBall project.
+This tutorial walks you through installing and creating an empty FlatRedBall project.
 
 ### Creating a New Project Without FlatRedBall Editor
 
@@ -19,7 +19,7 @@ Visual Studio is not a requirement for using FlatRedBall. You can write, compile
 
 1. Install Visual Studio Code
 2. Install Visual Studio Code C# Dev Kit [https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit\&ssr=false#overview](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit\&ssr=false#overview)
-3. Make sure you have .NET SDK 6 installed
+3. Make sure you have .NET SDK 6 installed. If you are targeting iOS, Android, or Web then you must have .NET 8 SDK installed.
 
 Open the folder where the .sln is located for your project.
 
@@ -38,8 +38,8 @@ If asked, check **Yes, I trust the authors**.
 If you have an existing MonoGame project, you can add FlatRedBall with the following steps:
 
 1. Open your MonoGame project in Visual Studio
-2. Add FlatRedBall refernece to your projectx
-   1.  If targeting Desktop GL, you can add FlatRedBall through the FlatRedball NuGet package\\
+2. Add FlatRedBall reference to your project
+   1.  If targeting Desktop GL, you can add FlatRedBall through the FlatRedBall NuGet package\\
 
        <figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>FlatRedBall DesktopGL NuGet Package</p></figcaption></figure>
    2. If targeting other platforms, you will need to manually add the FlatRedBall .dlls to your project:
@@ -86,9 +86,9 @@ To run your newly-created project:
 
 <figure><img src="../../media/2017-09-img_59bff6110e49e.png" alt=""><figcaption></figcaption></figure>
 
-Your project will compile and run, displaying an empty (black) screen.
+Your project should compile and run, displaying an empty (black) screen.
 
-![](../../media/2017-09-img\_59bff64728002.png)
+![Empty FlatRedBall game showing an empty black screen](../../media/2017-09-img\_59bff64728002.png)
 
 ### Running your Project Without Visual Studio
 
@@ -98,4 +98,4 @@ If you would like to run your project without Visual Studio, you can use the dot
 2. Go to the folder where your .sln is located
 3. Type the command `dotnet build YourSolutionFile.sln`
 
-This will produce a .exe which you can then run.
+This should produce a .exe which you can then run.

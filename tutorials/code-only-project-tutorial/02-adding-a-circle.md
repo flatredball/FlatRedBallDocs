@@ -9,7 +9,7 @@ FlatRedBall provides a number of **primitives** which can be used to render your
 * Circle - draws a circle to screen and can be used for circular collision.
 * AxisAlignedRectangle - draws a rectangle to screen and can be used for collision. AxisAlignedRectangles cannot be rotated.
 
-This tutorial will show you how to create, move, and destroy a circle. It will use input from the keyboard to control the circle.
+This tutorial shows how to create, move, and destroy a circle. It uses input from the keyboard to control the circle.
 
 ### A Note About Organization
 
