@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The FlatRedBall Editor (also referred to as FRB Editor, FlatRedBall, or FRB) is tool used to create games with FlatRedBall. The FRB Editor provides a variety of functionality, and can be extended and customized with plugins. Some of the most important functions of the FRB Editor include:
+The FlatRedBall Editor (also referred to as FRB Editor, FlatRedBall, or FRB) is a tool used to create games with FlatRedBall. The FRB Editor provides a variety of functionality, and can be extended and customized with plugins. Some of the most important functions of the FRB Editor include:
 
 * Creating new projects
 * Initial project setup using the New Project Wizard
