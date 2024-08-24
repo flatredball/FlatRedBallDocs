@@ -17,7 +17,7 @@ The profiling tab provides the following information about a game:
 
 The Profiling tab obtains information from the game by communicating with it through generated code. This code is only available if **Enable live edit** is checked and if the game is running.
 
-For more information about enabling live edit, see the [Live Edit](enable-live-edit.md) page.
+For more information about enabling live edit, see the [Live Edit](enable-live-edit/) page.
 
 If your game does not have live edit enabled, if it is not running, or if the connection to the game has been lost, then the Summary and Collision tabs will display this information.
 

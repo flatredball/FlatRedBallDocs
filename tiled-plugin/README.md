@@ -1,4 +1,8 @@
-# 🟦 Tiled
+---
+icon: table-cells-large
+---
+
+# Tiled
 
 ### Introduction
 

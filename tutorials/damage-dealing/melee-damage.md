@@ -22,7 +22,7 @@ Next, we'll add a collision object to the Player for melee attacks. This can be 
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Adding MeleeCollision to Player</p></figcaption></figure>
 
-Adjust the MeleeCollision so that it is positioned outside of the Player entity. You can use [Live Edit](../../glue-reference/enable-live-edit.md) to iterate quickly on this.
+Adjust the MeleeCollision so that it is positioned outside of the Player entity. You can use [Live Edit](../../glue-reference/enable-live-edit/) to iterate quickly on this.
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Modifying the MeleeCollision</p></figcaption></figure>
 
