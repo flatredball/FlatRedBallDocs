@@ -600,8 +600,26 @@ This version modifies code generation so that it includes the case of file paths
 
 ❗ Mobile games using Xamarin should not update to this version.
 
-### Version 56 - Added FlatRedBallServices.GraphicsDeviceManager
+### Version 56 - Screens have DefaultLayer
+
+This version modifies code generation so that they use a DefaultLayer property. This can be set in the FRB Editor so all entities added through the editor are added to a DefaultLayer. This can be useful for games which use layers for render targets and post processing.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 57 - Added FlatRedBallServices.GraphicsDeviceManager
 
 This version modifies code generation for the Profiling tab so that it can enable/disable fixed time step and v-sync. Disabling v-sync requires access to the GraphicsDeviceManager which is now publicly exposed by FlatRedBallServices.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 58 - Added ShapeCollection LastCollisionCallDeepCheckCount
+
+This version modifies code generation for TileShapeCollection collision relationships to set LastCollisionCallDeepCheckCount so that collision counts are reported more accurately in the Profiling tab.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 59 - This version adds Screen CancellationTokenSource
+
+This version modifies code generation for Game -> FRB Editor communication during live edit to use the current Screen's CancellationTokenSource to cancel communications on screen change.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
