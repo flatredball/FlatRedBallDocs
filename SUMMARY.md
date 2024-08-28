@@ -1124,6 +1124,7 @@
       * [glue-reference-screens-pauseadjustedsecondssince](api/glue-runtime-api/screen/glue-reference-screens-pauseadjustedsecondssince.md)
   * [Live Edit](api/gluecontrol/README.md)
     * [EditorVisuals](api/gluecontrol/editorvisuals.md)
+    * [Instance Creation](api/gluecontrol/instance-creation.md)
   * [Gum Runtime](api/gum-runtime-api/README.md)
     * [GraphicalUiElement](api/gum-runtime-api/gum-wireframe-graphicaluielement/README.md)
       * [GetAbsoluteLeft](api/gum-runtime-api/gum-wireframe-graphicaluielement/getabsoluteleft.md)
