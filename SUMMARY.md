@@ -205,6 +205,8 @@
     * [LayerProvidedByContainer](glue-reference/entities/glue-reference-layerprovidedbycontainer.md)
     * [MoveToLayer](glue-reference/entities/movetolayer.md)
     * [PooledByFactory](glue-reference/entities/glue-reference-entities-pooledbyfactory.md)
+    * [Top Down Movement](glue-reference/entities/top-down-movement/README.md)
+      * [TopDownSpeedMultiplier](glue-reference/entities/top-down-movement/topdownspeedmultiplier.md)
     * [Use Global Content](glue-reference/entities/glue-reference-useglobalcontent.md)
   * [Events](glue-reference/events/README.md)
     * [ResolutionRrOrientationChanged](glue-reference/events/glue-reference-resolutionororientationchanged.md)
