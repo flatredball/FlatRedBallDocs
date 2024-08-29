@@ -623,3 +623,9 @@ This version modifies code generation for TileShapeCollection collision relation
 This version modifies code generation for Game -> FRB Editor communication during live edit to use the current Screen's CancellationTokenSource to cancel communications on screen change.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 60 - FlatRedBall ScreenManager Supports Direct to EditMode on Launch
+
+This version modifies code generation to enable going directly into edit mode when clicking on the wrench in the FRB Editor, rather than the game first starting in non-edit mode, then switching to edit mode. This speeds up the startup for edit mode, and avoids crashes that can occur when a screen hasn't cleaned itself up.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
