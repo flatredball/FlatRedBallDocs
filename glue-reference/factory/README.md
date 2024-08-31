@@ -2,11 +2,11 @@
 
 ### Introduction
 
-The term "Factories" comes from the [factory design pattern](http://en.wikipedia.org/wiki/Factory\_method\_pattern). Factories are objects which can create new instances of certain types of Entities. Factories provide the following benefits:
+The term "Factories" comes from the [factory design pattern](http://en.wikipedia.org/wiki/Factory\_method\_pattern). Factories are objects for creating new instances of certain types of Entities. Factories provide the following benefits:
 
 1. Entities created in a factory will automatically be added to screen lists (by default).
 2. Factories provide a standard way to create entities which is especially useful for systems like Tiled to instantiate new entities.
-3. Factories can pool Entities which can greatly reduce allocated memory for Entities which are created and destroyed frequently.
+3. Factories can pool Entities which can greatly reduce allocated memory for Entities which are created and destroyed frequently. For more information see the [PooledByFactory](../entities/glue-reference-entities-pooledbyfactory.md) property.
 
 If your game requires the creation of entities in code (such as the player shooting bullets or enemies appearing at an enemy spawn point), then you will want to use factories.
 
