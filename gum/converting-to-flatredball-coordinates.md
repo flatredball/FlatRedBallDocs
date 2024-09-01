@@ -30,7 +30,7 @@ The following code shows how to display the four edge bounds for a ColoredRectan
 
 
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Edge coordiantes displayed for centered ColoredRectangle instance</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Edge coordiantes displayed for centered ColoredRectangle instance</p></figcaption></figure>
 
 ### Converting from Gum to FlatRedBall Coordinates
 

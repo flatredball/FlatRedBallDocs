@@ -28,7 +28,7 @@ When you are creating a new entity, you can check the option to add a Sprite in 
 3. Check the **Sprite** option
 4. Click **OK**
 
-![](../../../media/2019-06-img\_5d18bae01c0a8.png)
+![Check Sprite to add a Sprite when creating a new entity](../../../media/2019-06-img\_5d18bae01c0a8.png)
 
 ### Adding a Sprite
 
@@ -41,7 +41,13 @@ Sprites can be added to FlatRedBall screens or entities, although most games don
 5. Select the **Sprite** type
 6. Click **OK**
 
-<figure><img src="../../../.gitbook/assets/18_07 49 33.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/18_07 49 33.gif" alt=""><figcaption><p>Right-click -> Add Object to add a Sprite to an existing entity</p></figcaption></figure>
+
+Entities often contain a Sprite for their main visuals. Some entities may have multiple sprites for visuals. For example, an Enemy may have the main SpriteInstance for its body and a ShadowSprite for the shadow.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Enemy entity with two Sprites</p></figcaption></figure>
+
+
 
 ### Sprite Texture
 
@@ -53,7 +59,7 @@ Sprites usually display textures, which are created from image files such as .pn
 4. Select the Sprite in the same screen or entity with the newly-added file
 5. Change its **Texture** property to the newly-added file
 
-<figure><img src="../../../.gitbook/assets/18_07 51 43.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/18_07 51 43.gif" alt=""><figcaption><p>Drag+drop a Texture onto a Sprite to set its Texture property</p></figcaption></figure>
 
 For more information about working with textures, see the [Texture2D page](../../files/texture2d.md).
 
