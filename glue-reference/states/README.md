@@ -14,6 +14,8 @@ The following image shows a **PowerUp** entity with a **PowerUpCategory** contai
 
 The FRB Editor provides two different ways to add states. The preferred method is using the State Data tab. The second way is using the right-click menu. The two can both be used, so you don't have to pick which to use; that said, using the State Data method can be easier, so it is recommended.
 
+Before you can add states, you must first add a state category. For information on how to add a state category, see the [State Categories](state-categories.md) page.
+
 #### State Data
 
 Once a category has been created, states can be added in the State Data tab.
