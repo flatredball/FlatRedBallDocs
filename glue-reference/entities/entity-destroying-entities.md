@@ -10,11 +10,11 @@ Destroy can also automatically called on Entities which take or receive damage b
 
 When an Entity's Destroy method is called, the following happens:
 
-* Generated code will destroy any contained object which has been added through FlatRedBall Editor. For example, if your Entity has a Sprite and a Circle, both will automatically be removed from the engine, resulting in the Entity no longer being visible on screen.
-* The entity will be removed from any list that it is a part of. For example, if your GameScreen contains a BulletList, calling Destroy on the Bullet will remove the Bullet instance from the BulletList.
-* The entity will be removed from the engine (SpriteManager) management, so its automatic properties such as Velocity and Acceleration will no longer be applied
-* If the entity is an IWindow-implementing Entity, the entity will be removed from the GuiManager so it no longer receives clicks or other UI interaction
-* If the entity is a collidable entity, its collision will be cleared so future collision calls will return false
+* Generated code destroys any contained object which has been added through FlatRedBall Editor. For example, if your Entity has a Sprite and a Circle, both are automatically removed from the engine, resulting in the Entity no longer being visible on screen.
+* The entity is removed from any list that it is a part of. For example, if your GameScreen contains a BulletList, calling Destroy on the Bullet will remove the Bullet instance from the BulletList.
+* The entity is removed from the engine (SpriteManager) management, so its automatic properties such as Velocity and Acceleration will no longer be applied
+* If the entity is an IWindow-implementing Entity, the entity is removed from the GuiManager so it no longer receives clicks or other UI interaction
+* If the entity is a collidable entity, its collision is cleared so future collision calls will return false
 * The entity's CustomDestroy is called, enabling custom code to perform additional object removal.
 
 Note that when writing code in CustomDestroy, the entity **should not unload content**. The content manager used to load content for the Entity should be provided by the [Screen](../../frb/docs/index.php) that contains the Entity. [Screens](../../frb/docs/index.php) automatically unload their content managers, and this will clean up content loaded by the Entity.
