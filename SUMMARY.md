@@ -1042,6 +1042,7 @@
       * [OrderedSprites](api/flatredball/spritemanager/orderedsprites.md)
       * [RemoveDrawableBatch](api/flatredball/spritemanager/removedrawablebatch.md)
       * [RemoveLayer](api/flatredball/spritemanager/removelayer.md)
+      * [RemovePositionedObject](api/flatredball/spritemanager/removepositionedobject.md)
       * [RemoveSprite](api/flatredball/spritemanager/removesprite.md)
       * [RemoveSpriteOneWay](api/flatredball/spritemanager/removespriteoneway.md)
       * [SortTexturesSecondary](api/flatredball/spritemanager/sorttexturessecondary.md)
