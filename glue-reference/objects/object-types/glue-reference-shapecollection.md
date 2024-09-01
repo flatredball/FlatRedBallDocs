@@ -2,13 +2,19 @@
 
 ### Introduction
 
-The FlatRedBall Editor supports creating objects of type ShapeCollection. You can create a ShapeCollection by following these steps:
+The FlatRedBall Editor supports creating objects of type ShapeCollection.
+
+Note that entities which are created as ICollidable automatically have a ShapeCollection named Collision, and all shapes shapes are added to the default Collision shape collection. In this case you do not need to manually create a ShapeCollection. For more information, see the [Implements ICollidable](../../entities/glue-reference-implements-icollidable.md) page.
+
+### Adding a ShapeCollection
+
+To add a ShapeCollection:
 
 1. Right-click on Objects under a Screen or Entity
-2. Select "Add Object"
-3. Verify that "FlatRedBall or Custom Type" is selected.
-4. Select "ShapeCollection"
-5.  Click OK\
+2. Select **Add Object**
+3. Verify that **FlatRedBall or Custom Type** is selected.
+4. Select **ShapeCollection**
+5.  Click **OK**\
 
 
     <figure><img src="../../../media/migrated_media-AddShapeCollectionObject.PNG" alt=""><figcaption><p>Add a ShapeCollection through the New Object window</p></figcaption></figure>
