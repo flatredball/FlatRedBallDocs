@@ -1123,6 +1123,8 @@
     * [Game1CodeGenerator](api/glue-runtime-api/game1codegenerator.md)
     * [GetFile](api/glue-runtime-api/glue-reference-files-getfile.md)
     * [PauseThisScreen](api/glue-runtime-api/glue-reference-screens-pausethisscreen.md)
+    * [SaveClasses](api/glue-runtime-api/saveclasses/README.md)
+      * [GlueSettingsSave](api/glue-runtime-api/saveclasses/gluesettingssave.md)
     * [Screen](api/glue-runtime-api/screen/README.md)
       * [glue-reference-screens-pauseadjustedsecondssince](api/glue-runtime-api/screen/glue-reference-screens-pauseadjustedsecondssince.md)
   * [Live Edit](api/gluecontrol/README.md)
