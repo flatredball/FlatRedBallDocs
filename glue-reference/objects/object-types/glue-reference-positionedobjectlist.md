@@ -84,7 +84,7 @@ If the list is of a base type, then the right-click option provides all availabl
 
 The CallActivity property controls whether the FRB Editor should generate Activity calls for a PositionedObjectList. By default this value is set to true. For example, the following shows a BulletList inside a screen which has its CallActivity set to true:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>CallActivity set to true on a BulletList</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>CallActivity set to true on a BulletList</p></figcaption></figure>
 
 If this value is changed to false, then the Bullet instances inside of BulletList would not have their Activity (and CustomActivity) methods called automatically in generated code.
 
