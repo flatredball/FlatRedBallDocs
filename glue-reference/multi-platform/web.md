@@ -31,6 +31,13 @@ To run your project:
 
     <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>FlatRedBall running in a browser</p></figcaption></figure>
 
+### Debugging
+
+FlatRedBall Web projects can be debugged in a number of ways:
+
+* To output to the browser console, use `System.Console.WriteLine` just like a normal console application. Note that output from this method appears in both the browser's console as well as Visual Studio's output window.
+* Breakpoints should function the same as normal FlatRedBall projects; however, as of .NET 8 at times stepover will step over a large block of code or may even freeze the application. This may be improved in future versions of .NET.
+
 ### Known Limitations
 
 As of August 2024 FlatRedBall Web is a new platform. The following are known limitations of the platform. Over time more limitations will be discovered, while some may be solved. For more information please check the FlatRedBall Discord server.
@@ -51,10 +58,6 @@ As of August 2024 FlatRedBall Web is a new platform. The following are known lim
 #### Camera/Resolution
 
 * The browser determines the size of the game. Unlike regular DesktopGL projects, FlatRedBall cannot forcefully change the browser size. Of course, FlatRedBall properly reacts to resolution changes on a browser including maintaining the internal resolution and aspect ratio.
-
-#### Graphics
-
-* Some color operations such as Add and ColorTextureAlpha are currently not implemented, although future versions of FlatRedBall Web may address this.
 
 #### Debugging
 
