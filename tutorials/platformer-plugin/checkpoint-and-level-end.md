@@ -49,7 +49,7 @@ To add a Checkpoint entity:
 
 Repeat the process above to create an EndOfLevel entity
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>EndOfLevel Entity Creation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>EndOfLevel Entity Creation</p></figcaption></figure>
 
 Next we'll add a new variable to EndOfLevel:
 

@@ -95,7 +95,7 @@ As mentioned above, adding the same file to Global Content Files using wildcards
 
 For example, the following image shows the same file added to both an entity and Global Content Files.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>TextureFile.png added to Entity1 and also Global Content Files using a wildcard pattern</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>TextureFile.png added to Entity1 and also Global Content Files using a wildcard pattern</p></figcaption></figure>
 
 The example above adds all PNGs to Global Content Files using the following entry in the .gluj file:
 

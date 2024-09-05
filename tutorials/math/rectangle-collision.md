@@ -153,11 +153,11 @@ Collision tunneling occurs when a moving object moves so fast that it overlaps a
 
 For example, consider the following diagram:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Typical movement and collision reposition</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Typical movement and collision reposition</p></figcaption></figure>
 
 The diagram above shows a typical movement and reposition. This results in the blue rectangle being repositioned to the left, so that it rests along the left side of the pink polygon. however, if the blue polygon were moving even faster, it might cross over the halfway point of the pink polygon resulting in collision tunneling, as shown in the following diagram:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Collision tunneling</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Collision tunneling</p></figcaption></figure>
 
 From the player's point of view this all happens in one frame, so the collision seems to "pop" out of the other side.
 

@@ -44,7 +44,7 @@ To use the AchxToSpineAtlas.exe tool as a File Build Tool in FlatRedBall:
 5. Set the SourceFileType as `achx` (no period before the extension)
 6. Set the DestinationFileType as `atlas`
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting .achx to .atlas build tools</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting .achx to .atlas build tools</p></figcaption></figure>
 
 After you click the OK button, FlatRedBall understands that .achx files may be used to build .atlas files.
 

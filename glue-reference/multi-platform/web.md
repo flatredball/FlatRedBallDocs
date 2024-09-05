@@ -10,7 +10,7 @@ FlatRedBall Web projects can be created as standalone (primary) projects, or as 
 
 Whether you create a new project or use a synced project, you can select Web as the target for your new project.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>New project window with Web as the selected platform type</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>New project window with Web as the selected platform type</p></figcaption></figure>
 
 Once you have created a Web project you can use the FlatRedBall Editor as if it's a regular Desktop project. For known limitations see the section below.
 
@@ -19,7 +19,7 @@ To run your project:
 1.  Open the project in Visual Studio\
 
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Open project in Visual Studio</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Open project in Visual Studio</p></figcaption></figure>
 2.  Press the button to begin debugging your project in Visual Studio\
 
 
