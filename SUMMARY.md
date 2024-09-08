@@ -141,6 +141,7 @@
     * [App Icon](tutorials/distribution/app-icon.md)
     * [Emptying bin Folder Using Probing Path](tutorials/distribution/emptying-bin-folder-using-probing-path.md)
     * [Installing your Game Including Prerequisites](tutorials/distribution/installing-your-game-including-prerequisites.md)
+    * [itch.io](tutorials/distribution/itch.io.md)
     * [Release Build](tutorials/distribution/release-build.md)
     * [Steam](tutorials/distribution/steam.md)
   * [FlatRedBall and Velcro Physics](tutorials/flatredballxna-farseer/README.md)
