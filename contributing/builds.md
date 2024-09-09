@@ -44,13 +44,13 @@ The Engine.yml file is responsible for the following actions:
 * Build Glue
 * Zip and upload FRBDK.zip
 
-#### Gum Automatic Builds
+#### Gum Automatic Builds (MonoGame Gum)
 
 Team City has an automated build which runs whenever anything is pushed (assuming Vic's desktop is turned on). This attempts to build Gum (the tool) and the .NET 6 libraries use for MonoGameGum. If the builds succeeds it also attempts to upload a new nuget package. Note that this will not upload a new NuGet if the version number is not manually increased first. Also note, this DOES NOT currently upload a new Gum tool - this must be done manually (see steps below).
 
 To create the nuget packages, follow these steps:
 
-1. Open MonoGameGum.sln in Visual Studio - this links MonoGame/Kni Gum and the projects it depends on. It is at \<GumRoot>Gum\MonoGameGum.sln
+1. Open MonoGameGum.sln in Visual Studio - this links MonoGame/Kni Gum and the projects it depends on. It is at \<GumRoot>\MonoGameGum.sln
 2.  Double-click GumCommon and change its Version to the {year}.{month}.{day}.{build}, where build is 1 if it's the first build of the day.\
 
 
