@@ -6,6 +6,10 @@
 
 [https://visualstudio.microsoft.com/vs/community/](https://visualstudio.microsoft.com/vs/community/) Although it is possible to make games without Visual Studio or Rider, doing so requires advanced knowledge of MSBuild. We recommend downloading and installing Visual Studio Community which is free.
 
+{% hint style="info" %}
+Mac and Linux users can use FlatRedBall, but in a code-only environment. The FlatRedBall Editor requires Windows.
+{% endhint %}
+
 At a minimum you need to install **.NET desktop development**.
 
 ![](media/2021-08-img\_610caaac075b7.png)

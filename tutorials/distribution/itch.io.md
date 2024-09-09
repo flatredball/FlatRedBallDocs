@@ -2,8 +2,6 @@
 
 ### Introduction
 
-🚧 This page is currently under construction
-
 FlatRedBall Web games can be uploaded to itch.io. This guide provides a walkthrough for uploading your game.
 
 {% hint style="info" %}
