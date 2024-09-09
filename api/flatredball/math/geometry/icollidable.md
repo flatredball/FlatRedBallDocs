@@ -18,12 +18,12 @@ ICollidables provide the same three functions for collision as FlatRedBall shape
 
 Circle
 
-* [CollideAgainst](https://docs.flatredball.com/flatredball/api/flatredball/math/geometry/circle/collideagainst)
-* [CollideAgainstBounce](https://docs.flatredball.com/flatredball/api/flatredball/math/geometry/circle/collideagainstbounce)
+* [CollideAgainst](circle/collideagainst.md)
+* [CollideAgainstBounce](circle/collideagainstbounce.md)
 
 ShapeCollection
 
-* [CollideAgainst](https://docs.flatredball.com/flatredball/api/flatredball/math/geometry/shapecollection/collideagainst)
+* [CollideAgainst](shapecollection/collideagainst.md)
 
 ### ItemsCollidedAgainst and ObjectsCollidedAgainst
 
@@ -36,5 +36,15 @@ Collidables must implement the following four properties:
 
 These serve as an alternative to doing custom collision-related logic, and provide some additional functionality such as detecting when an entity exits collision.
 
-The `Items` property contains the name of items that the IColliable has collided with, while the `Objects` contains a reference to the objects that the ICollidable has collided with. If you are using the FlatRedBall Editor, these propertes are automatically generated in your entities, and these are automatically filled through collision relationships.
+The `Items` property contains the name of items that the IColliable has collided with, while the `Objects` contains a reference to the objects that the ICollidable has collided with. If you are using the FlatRedBall Editor, these properties are automatically generated in your entities, and these are automatically filled through collision relationships. For example, if the Player collides with SolidCollision in the GameScreen, then the items properties would contain the string "SolidCollision". The objects properties contains a reference to the TileShapeCollection.
+
+The following code shows how to check whether the player has exited a collision area with the name PoisonCollision:
+
+```csharp
+// assuming IsInPoison is a property that is set to true when collision happens
+if(IsInPoison and this.Items.Contains("PoisonCollision") == false)
+{
+    HandleExitingPoison();
+}
+```
 
