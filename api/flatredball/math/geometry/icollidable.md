@@ -42,9 +42,24 @@ The following code shows how to check whether the player has exited a collision 
 
 ```csharp
 // assuming IsInPoison is a property that is set to true when collision happens
-if(IsInPoison and this.Items.Contains("PoisonCollision") == false)
+if(IsInPoison and this.ItemsCollidedAgainst.Contains("PoisonCollision") == false)
 {
     HandleExitingPoison();
 }
 ```
 
+Alternatively, the Last properties can be used to identify if a changed was made this frame. For example, the following would detect both entering and exiting poison, and does not require the use of additional properties:
+
+```csharp
+var poisonName = "PoisonCollision";
+if(this.ItemsCollidedAgainst.Contains(poisonName) && 
+    !this.LastFrameItemsCollidedAgainst.Contains(poisonName))
+{
+    HandleEnteringPoison();
+}
+else if(this.LastFrameItemsCollidedAgainst.Contains(poisonName) && 
+    !this.ItemsCollidedAgainst.Contains(poisonName))
+{
+    HandleExitingPoison();
+}
+```
