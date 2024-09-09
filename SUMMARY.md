@@ -1116,6 +1116,8 @@
   * [FlatRedBall Editor (Glue)](api/glue-runtime-api/README.md)
     * [AssetTypeInfo](api/glue-runtime-api/flatredball-glue-elements-assettypeinfo.md)
     * [Cleaning Up Screens](api/glue-runtime-api/glue-reference-screens-cleaning-up-screens.md)
+    * [CodeGeneration](api/glue-runtime-api/codegeneration/README.md)
+      * [ICodeBlock](api/glue-runtime-api/codegeneration/icodeblock.md)
     * [CustomActivity](api/glue-runtime-api/glue-reference-code-customactivity.md)
     * [CustomLoadStaticContent](api/glue-runtime-api/glue-reference-code-customloadstaticcontent.md)
     * [Entity](api/glue-runtime-api/entity/README.md)
