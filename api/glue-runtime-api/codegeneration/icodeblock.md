@@ -48,3 +48,72 @@ else
     DoSomethingElse();
 }
 ```
+
+### Code Example: Creating a CodeDocument
+
+If you need to create a full code file without an existing ICodeBlock, you can use the `CodeDocument` class to create a new document. The `CodeDocument` class is an ICodeBlock which has no indents, but which can call any of the extension methods to add new code.
+
+For example, the following could be used to create a string that defines a new class:
+
+```csharp
+var document = new CodeDocument();
+
+document.Line("using System;");
+document.Line("using System.Collections.Generic;");
+document.Line("using System.Linq;");
+
+var classBlock = document.Class("public", "MyClass");
+
+
+classBlock.Line("int health;");
+
+classBlock.Property("public int", "Health")
+    .Get()
+        .Line("return health;")
+    .End()
+    .Set()
+        .Line("health = value;")
+        .Line("ReactToHealthChanged();")
+    .End();
+
+var methodBlock = classBlock.Function("private void", "ReactToHealthChanged");
+
+methodBlock.Line("Console.WriteLine(\"Health changed to \" + health);");
+
+
+var entireFile = document.ToString();
+
+// do something with entireFile, like save it to disk
+```
+
+This produces code similar to the following block:
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class MyClass
+{
+    int health;
+    public int Health
+    {
+        get
+        {
+            return health;
+        }
+        set
+        {
+            health = value;
+            ReactToHealthChanged();
+        }
+    }
+    
+    public void ReactToHealthChanged()
+    {
+        Console.WriteLine("Health changed to " + health);
+    }
+}
+```
+
+Notice that blocks do not need to be explicltly ended. Calling End() returns the parent block, allowing for fluent interfaces, but it is not required. Calling ToString() on a block resolves all brackets and returns a properly indented block of code.
