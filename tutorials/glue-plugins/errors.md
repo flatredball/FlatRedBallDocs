@@ -8,7 +8,7 @@ The Errors tab is a useful way to let the user know about a problem in their Fla
 
 ### ErrorViewModel and ErrorReporterBase
 
-Errors are reported using two objects. ErrorViewModel serves as a base class for all errors. The ErrorViewModel typically provides the following information and functionality:
+Errors are reported using two objects. ErrorViewModel serves as a base class for all errors. Each entry in the error window is an instance of a type inheriting from ErrorViewModel. nThe ErrorViewModel typically provides the following information and functionality:
 
 * Text describing the error
 * The ability to check if the error is still occurring
