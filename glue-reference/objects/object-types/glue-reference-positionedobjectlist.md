@@ -76,7 +76,7 @@ Objects can be directly added to the list by right-clicking on the list. Notice 
 
 If the list is of a base type, then the right-click option provides all available options for the list. For example, the following is a screenshot from a game which has multiple entity types inheriting from Enemy:
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>New Object window also includes all derived entity types</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>New Object window also includes all derived entity types</p></figcaption></figure>
 
 
 
@@ -84,20 +84,20 @@ If the list is of a base type, then the right-click option provides all availabl
 
 The CallActivity property controls whether the FRB Editor should generate Activity calls for a PositionedObjectList. By default this value is set to true. For example, the following shows a BulletList inside a screen which has its CallActivity set to true:
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>CallActivity set to true on a BulletList</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>CallActivity set to true on a BulletList</p></figcaption></figure>
 
 If this value is changed to false, then the Bullet instances inside of BulletList would not have their Activity (and CustomActivity) methods called automatically in generated code.
 
 The most common reason to set this value to false is when dealing with derived entity lists. For example, consider a game which has a base Enemy entity as well as Skeleton entity which inherits from Enemy (Skeleton is an Enemy variant). If the game needs to perform custom logic on Skeleton instances then it may need both an EnemyList and SkeletonList in GameScreen.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>SkeletonList with CallActivity set to false</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>SkeletonList with CallActivity set to false</p></figcaption></figure>
 
 In this case, Skeletons which are created through the Skeleton factory would be added to both the EnemyList and the SkeletonList. If both EnemyList and SkeletonList called Activity, then Skeleton instances would have activity called twice per frame. This can result in unexpected behavior such as movement logic being applied twice per frame.
 
 If a derived entity type list is added to a screen through the quick action button, FlatRedBall automatically sets CallActivity to false.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Quick action button to add a SkeletonList to GameScreen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Quick action button to add a SkeletonList to GameScreen</p></figcaption></figure>
 
 If an entity list is added through the right-click option on a screen, FlatRedBall provides suggestions about whether to call Activity.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>FlatRedBall providing the suggestion to set CallActivity as false (unchecked)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>FlatRedBall providing the suggestion to set CallActivity as false (unchecked)</p></figcaption></figure>

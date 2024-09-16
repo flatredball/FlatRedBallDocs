@@ -64,10 +64,10 @@ Tiles in a Tiled map have names at runtime if any of the following conditions ap
 
 For example, a typical FlatRedBall project includes a tileset named StandardTileset.tsx with tiles for common TileShapeCollision creation such as SolidCollision.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>SolidCollision tile in Tiled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>SolidCollision tile in Tiled</p></figcaption></figure>
 
 The SolidCollision tile does not have a Name property, so it is assigned an automatic name at runtime as shown in the following screenshot of Visual Studio showing the names of the tiles in a typical map:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>NamedTileOrderedIndexes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>NamedTileOrderedIndexes</p></figcaption></figure>
 
 Notice that in this case the names are TiledIcons0\_autoname and TiledIcons43\_autoname. The names correspond to the IDs in the Tileset.

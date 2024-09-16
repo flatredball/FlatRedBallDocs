@@ -31,14 +31,20 @@ To distribute a FlatRedBall Web project:
 1. Open your project in Visual Studio
 2. Switch your project to Release build
    1. If you are linking FlatRedBall nuget packages, instead consider linking to FlatRedBall Source so you can build the engine in release mode. FlatRedBall nuget packages distribute in debug configuration.
-3. Select **Build** -> **Publish YourProjectName**
+3.  Select **Build** -> **Publish YourProjectName**\
+
+
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
 4. If asked, select the option to publish to a Folder unless you are familiar publishing with the other options
 5. Confirm the folder where you would like to publish, then click **Finish**
-6. Click the Publish button on the Publish tab
+6.  Click the Publish button on the Publish tab\
+
+
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Click the Publish button</p></figcaption></figure>
 7. Wait for your project to finish building
 
-After the project finishes building, the file is built to the selected directory. Visual Studio shows the location which can be CTRL+clicked to open the location.
+After the project finishes building, click the **Navigate** link.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (153).png" alt=""><figcaption><p>Publish location</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Navigate link i nthe Publish tab</p></figcaption></figure>
 
-The project can be uploaded to any location through FTP. If uploading to itch.io you should zip this folder and upload it.
+The project can be uploaded to any location through FTP. For information on uploading to itch.io, see the itch.io [distribution page](itch.io.md).

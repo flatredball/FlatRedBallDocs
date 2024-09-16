@@ -45,7 +45,7 @@ Sprites can be added to FlatRedBall screens or entities, although most games don
 
 Entities often contain a Sprite for their main visuals. Some entities may have multiple sprites for visuals. For example, an Enemy may have the main SpriteInstance for its body and a ShadowSprite for the shadow.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Enemy entity with two Sprites</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Enemy entity with two Sprites</p></figcaption></figure>
 
 
 

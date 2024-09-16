@@ -31,7 +31,7 @@ This demo includes two levels: Level1 and Level2. Each level has its own TMX fil
 
 The checkpoints and doors will be added to a Tiled _object layer_. You must have at least one object layer on each level which should include a checkpoint. For this video we'll use the name GameplayObjectLayer so that it is similar to the standard GameplayLayer.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>GameplayObjectLayer in the Tiled layer list</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>GameplayObjectLayer in the Tiled layer list</p></figcaption></figure>
 
 ### Creating Checkpoint and EndOfLevel Entities
 
@@ -45,11 +45,11 @@ To add a Checkpoint entity:
 4. Check the AxisAlignedRectangle option
 5. Click OK
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Checkpoint Entity Creation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Checkpoint Entity Creation</p></figcaption></figure>
 
 Repeat the process above to create an EndOfLevel entity
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>EndOfLevel Entity Creation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>EndOfLevel Entity Creation</p></figcaption></figure>
 
 Next we'll add a new variable to EndOfLevel:
 
@@ -60,7 +60,7 @@ Next we'll add a new variable to EndOfLevel:
 5. Enter the name NextLevel
 6. Click OK
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Creating a NextLevel variable</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Creating a NextLevel variable</p></figcaption></figure>
 
 ### Setting the Class on a Tile
 
@@ -74,7 +74,7 @@ To do this:
 4.  Set the Class to Checkpoint - be sure to match the name of your entity exactly\
 
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Setting the Checkpoint tile class to Checkpoint</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Setting the Checkpoint tile class to Checkpoint</p></figcaption></figure>
 5. Save your tileset
 
 Now you can add instances of the Checkpoint tile to your level in the GameplayObjectLayer. You should provide a descriptive name of the Checkpoint, such as LevelStart. Note that checkpoints can exist at the beginning of a level - this is where the player may spawn when going from one level to another.
@@ -94,7 +94,7 @@ All checkpoints must have names so that they can be referenced in code. For this
 
 Next we'll declare which tile in our tileset should create an EndOfLevel instance. To do this, open up the TiledIcons tileset in edit mode again. Select the icon that looks like a door. You may notice that it already has a Class set, so you can change it from "Door" to "EndOfLevel". As mentioned above, the name must match your entity exactly.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Setting the tile's class to EndOfLevel</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Setting the tile's class to EndOfLevel</p></figcaption></figure>
 
 Next, we can add a new property to the tile. This should match the name of our variable in the FRB Editor exactly. To do this:
 
@@ -104,7 +104,7 @@ Next, we can add a new property to the tile. This should match the name of our v
 4. Enter a property name of NextLevel
 5. Click OK
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Adding a new NextLevel property</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Adding a new NextLevel property</p></figcaption></figure>
 
 The variable should appear on the tile.
 

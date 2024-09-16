@@ -54,7 +54,7 @@ To create the nuget packages, follow these steps:
 2.  Double-click GumCommon and change its Version to the {year}.{month}.{day}.{build}, where build is 1 if it's the first build of the day.\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting GumCommon's Version number</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting GumCommon's Version number</p></figcaption></figure>
 3. Repeat this for GumDataTypesNet6, MonoGameGum, ToolsUtilitiesStandard, and KniGum. Be sure to use the same version for all.
 4. Save the files and push the commit
 
