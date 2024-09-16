@@ -56,11 +56,11 @@ Screenshots can bleed their backgrounds at the edges or corners. This can be dis
 
 For example, a screenshot of the create entity window might be taken over a black background. The following image shows the surrounding background:
 
-<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Location of the Add Entity window over a black background</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>Location of the Add Entity window over a black background</p></figcaption></figure>
 
 Taking a screenshot over other windows can result in distracting edges showing in the screenshot. For example, consider the following location for a screenshot:
 
-<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Screenshot taken over other windows</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption><p>Screenshot taken over other windows</p></figcaption></figure>
 
 If we zoom in to the edges, we can see that the background shows on the screenshot as shown in this zoomed in image:
 

@@ -16,7 +16,7 @@ First, mark the Player entity as both IDamageable and IDamageArea.
 
 Repeat the same for the Enemy entity.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting an Enemy as an IDamageable and IDamageArea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting an Enemy as an IDamageable and IDamageArea</p></figcaption></figure>
 
 Next, we'll add a collision object to the Player for melee attacks. This can be any type of shape, but we'll use an AxisAlignedRectangle for this tutorial. Be sure to give the new shape a name that clearly explains its purpose, such as **MeleeCollision**.
 

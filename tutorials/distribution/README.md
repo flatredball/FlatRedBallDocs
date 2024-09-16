@@ -34,17 +34,17 @@ To distribute a FlatRedBall Web project:
 3.  Select **Build** -> **Publish YourProjectName**\
 
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
 4. If asked, select the option to publish to a Folder unless you are familiar publishing with the other options
 5. Confirm the folder where you would like to publish, then click **Finish**
 6.  Click the Publish button on the Publish tab\
 
 
-    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Click the Publish button</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Click the Publish button</p></figcaption></figure>
 7. Wait for your project to finish building
 
 After the project finishes building, click the **Navigate** link.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Navigate link i nthe Publish tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Navigate link i nthe Publish tab</p></figcaption></figure>
 
 The project can be uploaded to any location through FTP. For information on uploading to itch.io, see the itch.io [distribution page](itch.io.md).

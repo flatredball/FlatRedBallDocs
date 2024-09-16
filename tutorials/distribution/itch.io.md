@@ -33,3 +33,13 @@ Click the Upload Files option and select your .zip file that you created earlier
 Check the **This file will be played in the browser** option.
 
 <figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption><p>Check the option to indicate that this game is played in the browser</p></figcaption></figure>
+
+You can specify the resolution for your project. Typically you should have your project run at a multiple of your native resolution so that pixels draw correctly. If your game uses a smaller resolution for a pixel aesthetic, you may want to set the resolution at two or three times the native size.
+
+For example, consider a game which is set to a resolution of 398x224:
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Resolution set to 398x224 in the FRB Editor</p></figcaption></figure>
+
+You can set the game to render at 300% scale by setting the size to 1194x672:
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Setting game resolution in itch.io</p></figcaption></figure>

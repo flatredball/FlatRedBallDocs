@@ -108,7 +108,7 @@ Next, we can add a new property to the tile. This should match the name of our v
 
 The variable should appear on the tile.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>NextLevel property on the EndOfLevel Tile</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>NextLevel property on the EndOfLevel Tile</p></figcaption></figure>
 
 Repeat the process above to add an EndOfLevel instance to your GameplayObjectLayer.
 

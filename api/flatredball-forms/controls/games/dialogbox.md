@@ -14,7 +14,7 @@ The DialogBox control is used to display dialog to the screen. It provides a num
 
 Like other FlatRedBall.Forms controls, the easiest way to create a DialogBox is to add a DialogBox instance into your screen. By default dialog boxes are visible, but you may want to mark yours as invisible in your Gum screen so it doesn't display in game until you need it to display. For most games only a single DialogBox instance is needed unless you intend to have multiple dialog boxes displayed at the same time.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To display a dialog box, use one of the Show methods. The simplest is to call Show with a string, as shown in the following code:
 

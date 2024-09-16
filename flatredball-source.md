@@ -141,7 +141,7 @@ To build the FlatRedBall Editor (also referred to as Glue):
     <figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 5. Set **GlueFormsCore** as the **StartUp Project**
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Building the solution creates an .exe from which the FRB editor can be run. You can find this .exe at \<your git repo location>\FlatRedBall\FRBDK\Glue\Glue\bin\Debug\GlueFormsCore.exe. Alternatively, you can start up the FRB editor from Visual Studio. Doing so in **Debug Mode** allows you to see error messages in case the FRB editor throws an exception.
 

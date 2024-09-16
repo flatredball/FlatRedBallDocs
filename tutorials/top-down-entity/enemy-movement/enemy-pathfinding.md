@@ -283,11 +283,11 @@ This is occurring because we have enabled 8-way pathfinding, and this includes c
 
 We can disable corner cutting through an option in the TileNodeNetwork Properties tab:
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>Eliminate Cut Corners</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption><p>Eliminate Cut Corners</p></figcaption></figure>
 
 Now our tile node network still supports diagonal movement, but it will not attempt to move diagonally around corners as shown in this screen shot:
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption><p>Cut corners eliminated from a TileNodeNetwork</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption><p>Cut corners eliminated from a TileNodeNetwork</p></figcaption></figure>
 
 ### Line of Sight Pathfinding
 
