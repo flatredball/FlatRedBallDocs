@@ -4,27 +4,28 @@
 
 FlatRedBall supports the use of a localization CSV file to simplify adding text to your game, whether your game uses a single or multiple langauges. The IsDatabaseForLocalizing property controls whether a CSV file is used as a localization file. When a spreadsheet is marked as IsDatabaseForLocalizing, the FlatRedBall Editor populates the LocalizationManager with the database when the CSV is loaded.
 
-Because of this behavior, creating a game that supports localization requires very little code. Note that prior to FRB Editor (gluj) file version 14, generated code would make LocalizationManager.Translate calls. This functionality was inconsistent and difficult to work with, so as of file version 14, Translate must be called manually. For more information on this change, see the [gluj/glux document](../glujglux.md).
+Because of the generated code that FlatRedBall writes automatically, creating a game that supports localization requires very manual code.&#x20;
+
+{% hint style="info" %}
+Prior to FRB Editor (gluj) file version 14, generated code would make LocalizationManager.Translate calls. This functionality was inconsistent and difficult to work with, so as of file version 14, Translate must be called manually. For more information on this change, see the [gluj/glux document](../glujglux.md).
+{% endhint %}
 
 ### Creating a Localization Database
 
-The first step is to create a spreadsheet file that will serve as a localization database. To do this:
+First we'll create a spreadsheet file that will serve as a localization database. To do this:
 
-1. Right-click on "Global Content Files". Since most of your game will use text you will want to put the spreadsheet file under "Global Content Files"
-2. Select Add File->New File
-3. Select Spreadsheet (.csv) as the file type
-4. Enter the name **LocalizationDatabase** for your new file
+1. Right-click on **Global Content Files**. Since most of your game probably uses text from this file, it should be in **Global Content Files** rather than a screen or entity.
+2. Select **Add File**->**New File**
+3. Select **Spreadsheet (.csv)** as the file type
+4. Enter the name **LocalizationDatabase** for your new file. This name is not required, but recommended by convention.
 5. Click OK
 
-The next step is to tell FRB that this file is a database for localization. To do this:
+Next, set IsDatabaseForLocalizing to true:
 
 1. Select the newly-created LocalizationDatabase file
 2.  Change **IsDatabaseForLocalizing** to **True**
 
-    ![](../../media/2023-05-img\_6472186ead348.png)
-3.  You will get a popup notifying you that all code needs to be regenerated. Click OK, close, then re-open the FlatRedBall Editor to force a full code regeneration.
-
-    ![](../../media/2021-01-img\_5ffa10dabd7e8.png)
+    ![IsDatabaseForLocalizing property](<../../.gitbook/assets/21\_05 30 56.png>)
 
 ### Modifying the Spreadsheet
 
@@ -33,14 +34,16 @@ The next step is to begin filling out the database. To do this:
 1. Double-click the file to open it in a spreadsheet editing program such as Excel or Open Office
 2. Change the top-left cell to read "ID (required)". Make sure "required" is not capitalized.
 3. Change the first row in the second column to say "English", or whatever you prefer your default language to be.
-4. Change the first row in the third column to say "Spanish" or the secondary language. You can continually add columns for any language you may want to support. ![LanguagesInExcel.png](../../media/migrated\_media-LanguagesInExcel.png)
+4.  Change the first row in the third column to say "Spanish" or the secondary language. You can continually add columns for any language you may want to support.&#x20;
+
+    <figure><img src="../../.gitbook/assets/21_05 35 20.png" alt=""><figcaption><p>Example CSV with languages</p></figcaption></figure>
 5. Enter a string ID under the "ID" column. You may want to use a particular prefix to differentiate between string IDs and actual text - this can help you spot bugs in development. For this tutorial, I'll use "T\_" before IDs. Therefore, I'll enter "T\_Hello" for my first string.
 6. Enter the English and Spanish versions of this string
 7. Save the spreasheet
 
 ### Setting the Language
 
-Before any localization can happen, you must tell the game which language to use. By default, the LocalizationManager will use index 0 as its default language. This is reserved as an "untranslated" language, which allows you to view string IDs in game. The first language (which is English in our case) begins at index 1. Therefore, to have your database translated, you must set the language index. To do this:
+Before any localization can happen, you must tell the game which language to use. By default, the LocalizationManager uses index 0 as its default language. This column stores the IDs. The first language (which is English in our case) begins at index 1. Therefore, to have your database translated, you must set the language index. To do this:
 
 1. Open Game1.cs (or whatever your Game class is named)
 2. Find `GlobalContent.Initialize();` and add the following after it:
