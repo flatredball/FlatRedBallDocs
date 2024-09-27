@@ -66,7 +66,7 @@ The SpineShader is required to render Spine. To load the Spine Shader:
 2.  Add the SpineEffect.fx file to GlobalContent by drag+dropping the file into your Global Content Files folder in FlatRedBall\
 
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>SpineEffect.fx in Global Content Files</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>SpineEffect.fx in Global Content Files</p></figcaption></figure>
 3. Open Game1.cs and add the following code in Initialize after `GeneratedInitialize();`:
 
 ```csharp
@@ -85,5 +85,5 @@ If you are missing a Spine reference in FlatRedBall, then you may not have saved
 2.  Check if the FlatRedBall.Spine.MonoGame.DesktopGL (or appropriate project for your target platform) is selected. \
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Deselected FlatRedBall.Spine.MonoGame.DesktopGL project reference</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Deselected FlatRedBall.Spine.MonoGame.DesktopGL project reference</p></figcaption></figure>
 3. If not, check the project, click ok, then save you project. At this point you can build/run your game and this also saves your .csproj.

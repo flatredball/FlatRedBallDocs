@@ -4,7 +4,7 @@ Gum is a general-purpose, open source game UI and layout tool. FlatRedBall integ
 
 If you have downloaded the FRBDK.zip, you already have Gum located in the \<FRBDK Unzip Location>/Gum/Data/Gum.exe
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Gum.exe executable</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Gum.exe executable</p></figcaption></figure>
 
 To download Gum separately, click here: [http://files.flatredball.com/content/Tools/Gum/Gum.zip](http://files.flatredball.com/content/Tools/Gum/Gum.zip)
 

@@ -40,7 +40,7 @@ For example, consider a screenshot which displays a CircleInstance and its Varia
 
 Do not show large windows since it can make text difficult to read and it does not focus the reader's attention on important parts of the image.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
 
 #### Hide Irrelevant Parts in Screenshots
 
@@ -48,7 +48,7 @@ If a tab is not important for the screenshot, it should be moved or reduced in s
 
 The following screenshot includes additional output which draws the reader's attention from the important parts of the screenshot, so avoid doing this.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Avoid including output window or other irrelevant parts of the screenshot</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Avoid including output window or other irrelevant parts of the screenshot</p></figcaption></figure>
 
 #### Take Entire-App and Window Screenshots Over a Solid-Colored Background
 
@@ -72,11 +72,11 @@ Readers may not be familiar with FlatRedBall, Visual Studio, or other apps, so w
 
 For example the following could be an image introducing where entities are stored in FlatRedBall:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Show entire FlatRedBall Editor screenshot to orient the reader</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Show entire FlatRedBall Editor screenshot to orient the reader</p></figcaption></figure>
 
 Once the reader has been shown full app in a screenshot, additional screenshots can show a subsection. For example, the following screenshot may emphasize the different entity icons.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity icons emphasized in a screenshot which does not show the entire app</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity icons emphasized in a screenshot which does not show the entire app</p></figcaption></figure>
 
 #### Exclude the Cursor From Screenshots
 
@@ -84,5 +84,5 @@ By default ShareX includes the Windows cursor in screenshots. Unless it is impor
 
 The following image shows the cursor included in a screenshot.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot with a cursor - don't do this</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot with a cursor - don't do this</p></figcaption></figure>
 
