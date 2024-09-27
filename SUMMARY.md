@@ -1069,6 +1069,7 @@
       * [ComboBox](api/flatredball-forms/controls/combobox.md)
       * [FrameworkElement](api/flatredball-forms/controls/frameworkelement/README.md)
         * [DefaultFormsComponents](api/flatredball-forms/controls/frameworkelement/defaultformscomponents.md)
+        * [HandleTab](api/flatredball-forms/controls/frameworkelement/handletab.md)
         * [Show](api/flatredball-forms/controls/frameworkelement/show.md)
         * [Visual](api/flatredball-forms/controls/frameworkelement/visual.md)
       * [Games](api/flatredball-forms/controls/games/README.md)
