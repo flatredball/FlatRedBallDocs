@@ -34,7 +34,7 @@ void CustomActivity(bool firstTimeCalled)
 
 When the game is paused, the Sprite automatically stops rotating and resumes when the game is unpaused.
 
-<figure><img src="../../../../media/2022-10-28_19-44-16.gif" alt=""><figcaption><p>FlatRedBall Sprite pausing by stopping RotationZVelocity</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2022-10-28_19-44-16.gif" alt=""><figcaption><p>FlatRedBall Sprite pausing by stopping RotationZVelocity</p></figcaption></figure>
 
 ### Applying Movement After Pause
 
@@ -75,7 +75,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-<figure><img src="../../../../media/2022-10-28_19-51-13.gif" alt=""><figcaption><p>Circles added after pausing continue to fall</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2022-10-28_19-51-13.gif" alt=""><figcaption><p>Circles added after pausing continue to fall</p></figcaption></figure>
 
 ### Example - Playing Gum Animations After Pausing
 

@@ -8,7 +8,7 @@ So far we have created an simple project called Rock Blaster. Next we will creat
 
 When we refer to a game skeleton, we mean an initial setup which contains empty or nearly-empty Screens and Entities. We are not referring to an actual skeleton, but rather the simplified structure that a skeleton implies.
 
-![No, not that kind of skeleton...](../../media/migrated\_media-NoSkeleton.png)
+![No, not that kind of skeleton...](../../.gitbook/assets/migrated\_media-NoSkeleton.png)
 
 Creating a skeleton is a great exercise because it can quickly get you to think about what your game will contain. You can add Screens and Entities as you think them up because there is no implementation required. As you become more experienced with making games (especially with FlatRedBall) you will find it easier to create skeletons.
 
@@ -54,7 +54,7 @@ To add the Bullet entity, repeat the steps above, but this time name the entity 
 
 Now you should have two new entities - Bullet and Rock.
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption><p>Bullet and Rock Entities</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption><p>Bullet and Rock Entities</p></figcaption></figure>
 
 You may have noticed that the window for creating new entities has two options checked
 
@@ -69,7 +69,7 @@ The **Create Factory** option results in FlatRedBall generating a Factory object
 
 The Include lists in GameScreen option results in lists being added automatically to the GameScreen. If you are creating an entity which will collide with other entities, this is almost always handled through lists in GameScreen. We can verify that our GameScreen now has lists by expanding its Objects folder.
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 

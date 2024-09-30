@@ -1,12 +1,12 @@
-# setpixelperfectscale
+# SetPixelPerfectScale
 
 ### Introduction
 
-SetPixelPerfectScale is a method which will adjust a Text object so that it renders pixel-perfect on the argument Camera. This method is automatically called on Text objects when added to the [FlatRedBall.Graphics.TextManager](../../../../../frb/docs/index.php). For more information on this behavior, see [the AddText page](../../../../../frb/docs/index.php). In the simplest situations this function will automatically be called for you and you won't need to do anything to have Text appear properly. For more information on when to call this function, see the next section. SetPixelPerfectScale sets the following properties on the Text instance that calls it:
+SetPixelPerfectScale is a method which will adjust a Text object so that it renders pixel-perfect on the argument Camera. This method is automatically called on Text objects when added to the [FlatRedBall.Graphics.TextManager](../../../../frb/docs/index.php). For more information on this behavior, see [the AddText page](../../../../frb/docs/index.php). In the simplest situations this function will automatically be called for you and you won't need to do anything to have Text appear properly. For more information on when to call this function, see the next section. SetPixelPerfectScale sets the following properties on the Text instance that calls it:
 
-* [Scale](../../../../../frb/docs/index.php)
-* [Spacing](../../../../../frb/docs/index.php)
-* [NewlineDistance](../../../../../frb/docs/index.php)
+* [Scale](../../../../frb/docs/index.php)
+* [Spacing](../../../../frb/docs/index.php)
+* [NewlineDistance](../../../../frb/docs/index.php)
 
 ### Common usage
 
@@ -36,7 +36,7 @@ text.SetPixelPerfectScale(SpriteManager.Camera);
 
 #### Moving 3D Camera Exaple
 
-Text objects are true 3D objects - they can be scaled, rotated, and positioned in 3D space. Similarly, they are affected by their distance from the camera. If a Text object moves closer to a 3D [Camera](../../../../../frb/docs/index.php), or similarly if a 3D [Camera](../../../../../frb/docs/index.php) moves closer to a Text object, it will apparently change size. This is often undesirable. Therefore, to "counter" the size change of a Text object when a 3D [Camera](../../../../../frb/docs/index.php) changes its distance (often Z value), the Text's Scale, Spacing, and NewLineDistance must change. The SetPixelPerfectScale greatly simplifies this process. The following code creates 3 Text objects and sets the [Camera's](../../../../../frb/docs/index.php) velocity so that it is slowly moving forward. One Text object remains unchanged while the other changes its size every frame by calling SetPixelPerfectScale. Add the following to a Screen's CustomInitialize Initialize method:
+Text objects are true 3D objects - they can be scaled, rotated, and positioned in 3D space. Similarly, they are affected by their distance from the camera. If a Text object moves closer to a 3D [Camera](../../../../frb/docs/index.php), or similarly if a 3D [Camera](../../../../frb/docs/index.php) moves closer to a Text object, it will apparently change size. This is often undesirable. Therefore, to "counter" the size change of a Text object when a 3D [Camera](../../../../frb/docs/index.php) changes its distance (often Z value), the Text's Scale, Spacing, and NewLineDistance must change. The SetPixelPerfectScale greatly simplifies this process. The following code creates 3 Text objects and sets the [Camera's](../../../../frb/docs/index.php) velocity so that it is slowly moving forward. One Text object remains unchanged while the other changes its size every frame by calling SetPixelPerfectScale. Add the following to a Screen's CustomInitialize Initialize method:
 
 ```
 Camera.Main.Orthogonal = false;
@@ -58,4 +58,4 @@ Add the following to the same Screens' CustomActivity:
 text2.SetPixelPerfectScale(SpriteManager.Camera);
 ```
 
-![TextResizing.png](../../../../../media/migrated_media-TextResizing.png)
+![TextResizing.png](../../../../.gitbook/assets/migrated\_media-TextResizing.png)

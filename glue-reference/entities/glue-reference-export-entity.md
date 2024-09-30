@@ -1,14 +1,14 @@
-# glue-reference-export-entity
+# Export Entity
 
 ### Introduction
 
-Screens and Entities can be exported through Glue [and later imported](../../../../frb/docs/index.php). An exported Screen/Entity can be easily transferred to other projects, sent to other developers, or uploaded to [GlueVault.com](http://www.gluevault.com) to be shared with the community.
+Screens and Entities can be exported through Glue [and later imported](../../frb/docs/index.php). An exported Screen/Entity can be easily transferred to other projects, sent to other developers, or uploaded to [GlueVault.com](http://www.gluevault.com) to be shared with the community.
 
 ### Exporting a Screen/Entity
 
 Once you have a Screen/Entity that you are ready to export, you can:
 
-1. Right-click on the Screen/Entity and select "Export Screen"/"Export Entity"![ExportScreen.png](../../../../media/migrated_media-ExportScreen.png)
+1. Right-click on the Screen/Entity and select "Export Screen"/"Export Entity"![ExportScreen.png](../../.gitbook/assets/migrated\_media-ExportScreen.png)
 2. Navigate to the folder where you would like to save the exported element and click OK
 3. An Explorer window will appear showing you your exported file
 

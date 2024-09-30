@@ -25,7 +25,7 @@ Now we'll set the Camera to be in 3D mode:
 1. In the FRB Editor, click the camera icon
 2. Change the **Perspective** to **3D**
 
-![](../../media/2021-07-img\_60f97747cad48.png)
+![](../../.gitbook/assets/2021-07-img\_60f97747cad48.png)
 
 Finally create a Screen which will contain the rest of our project. This is not necessary if you already have a GameScreen:
 
@@ -38,7 +38,7 @@ Finally create a Screen which will contain the rest of our project. This is not 
 
 Now we'll create a large Sprite which will serve as our ground. To create this:
 
-1. Download this file to your computer. Note that you should rename it to not begin with a letter, so renaming it as redball.png is a good idea: [![](../../media/2016-01-redball-1.png)](../../media/2016-01-redball-1.png)
+1. Download this file to your computer. Note that you should rename it to not begin with a letter, so renaming it as redball.png is a good idea: [![](../../.gitbook/assets/2016-01-redball-1.png)](../../media/2016-01-redball-1.png)
 2. Drag+drop the newly-downloaded .png file onto GameScreen's Files in the FRB Editor
 3. Select the **Quick Actions** tab
 4. Click **Add Object to Game Screen**
@@ -54,7 +54,7 @@ Now that the Sprite has been created, let's make it really large and repeating:
 5. Set the Sprite's **Right Texture Pixel** to 32000 - this makes the Sprite repeat 1000 times on the X axis
 6. Set the Sprite's **Bottom Texture Pixel** to 32000 - this makes the Sprite repeat 1000 times on the Y axis
 
-![](../../media/2021-07-img\_60f97cd471063.png)
+![](../../.gitbook/assets/2021-07-img\_60f97cd471063.png)
 
 ### Create CameraController Entity
 
@@ -93,7 +93,7 @@ Note that we set the CameraCullMode to CameraCullMode.None. Although this isn't 
 
 At this point we can run the game and we should see the Camera looking into the distance:&#x20;
 
-<figure><img src="../../media/migrated_media-LookingAtHorizon.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-LookingAtHorizon.PNG" alt=""><figcaption></figcaption></figure>
 
 ### Implement code to move and look
 

@@ -44,7 +44,7 @@ tileNodeNetwork.FillCompletely();
 tileNodeNetwork.Visible = true;
 ```
 
-![TileNodeNetwork.png](../../../../../media/migrated\_media-TileNodeNetwork.png)
+![TileNodeNetwork.png](../../../../../.gitbook/assets/migrated\_media-TileNodeNetwork.png)
 
 ### Example - Creating a TileNodeNetwork from a TileMap in Code
 

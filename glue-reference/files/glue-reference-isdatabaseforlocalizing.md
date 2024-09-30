@@ -72,7 +72,7 @@ So far we've covered static translations. Of course, you may want to have variab
 1.  Add an entry to your database spreadsheet using the { and } characters surrounding the variable index. For example, to inform the player of how many goals are left, you might enter: "You have completed {0} goals and you have {1} goals left."\
     &#x20;
 
-    <figure><img src="../../media/migrated_media-TranslatedTextWithVariables.png" alt=""><figcaption><p>Localization with variables</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/migrated_media-TranslatedTextWithVariables.png" alt=""><figcaption><p>Localization with variables</p></figcaption></figure>
 2. In your code you can use the Translate overload which takes arguments to "format" the string. For example, your code may look like this:
 
 ```csharp
@@ -85,7 +85,7 @@ myTextObject.DisplayText = translatedGoalText;
 
 Comments can be added to the ID column by using the `//` syntax (similar to C#). Comments are ignored, allowing you to insert notes when creating localization files.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Localization Comments</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (132).png" alt=""><figcaption><p>Localization Comments</p></figcaption></figure>
 
 ### Multiple Entries Per ID
 
@@ -93,7 +93,7 @@ Games which display dialog using a dialog box may need to organize the dialog in
 
 Each string ID can contain multiple rows, wher each row serves as a different page. The following image shows three IDs. T\_Dialog1 has 7 separate strings, beginning with the first as "Sounds like something crashed!", and ending with "Or aliens!!"
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>CSV file with dialog that has multiple strings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (133).png" alt=""><figcaption><p>CSV file with dialog that has multiple strings</p></figcaption></figure>
 
 To access the strings, the TranslateMultiple method can be used, as shown in the following code:
 
@@ -111,5 +111,5 @@ By convention the first column in a localization file is the ID, and subsequent 
 
 The following shows a real-world example of a localization file which includes a column for the speaker, whether to flip the profile, and whether the text is automatically skipped. Note that these columns do not have any built-in behavior on their own. They must be read in and applied in your custom code.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Dialog with Speaker, Flip Profile, and Auto Skip</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (134).png" alt=""><figcaption><p>Dialog with Speaker, Flip Profile, and Auto Skip</p></figcaption></figure>
 

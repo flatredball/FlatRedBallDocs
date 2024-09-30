@@ -6,9 +6,9 @@ This walkthrough covers concepts related to creating moving platforms. Moving pl
 
 {% embed url="https://youtu.be/wd2NqblSmIY?t=2535" %}
 
-This sample can be downloaded from GitHub: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo) &#x20;
+This sample can be downloaded from GitHub: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MovingPlatformDemo)
 
-<figure><img src="../../media/2021-05-2021_May_13_071539.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2021-05-2021_May_13_071539.gif" alt=""><figcaption></figcaption></figure>
 
 This walkthrough refers to MovingPlatfomDemo as _this demo_ and _the demo_.
 
@@ -21,7 +21,7 @@ This walkthrough covers a number of concepts related to moving platforms:
 
 ### Moving Platforms Horizontally
 
-The MovingPlatform entity is used in this demo. It moves itself by setting its XAcceleration value and changing this value on a timer controlled by async calls. This logic is started in MovingPlatform.cs and continues to loop until the MovingPlatform is destroyed. &#x20;
+The MovingPlatform entity is used in this demo. It moves itself by setting its XAcceleration value and changing this value on a timer controlled by async calls. This logic is started in MovingPlatform.cs and continues to loop until the MovingPlatform is destroyed.
 
 ```
 public partial class MovingPlatform
@@ -76,11 +76,11 @@ This code loops continually until the entity is destroyed. The entity sets this 
 
 The GameScreen contains a list of Players and a list of MovingPlatforms.
 
-![](../../media/2021-05-img_609de4dc3733b.png)
+![](../../.gitbook/assets/2021-05-img\_609de4dc3733b.png)
 
 The PlayerList collides against the MovingPlatformList using **Platformer Solid Collision** physics
 
-![](../../media/2021-05-img_609de5820e820.png)
+![](../../.gitbook/assets/2021-05-img\_609de5820e820.png)
 
 Note that usually platformer entities like Player collide against TileShapeCollections using Platformer Solid Collision, but this can also be used when colliding against another entity list.
 

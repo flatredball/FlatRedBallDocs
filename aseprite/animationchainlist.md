@@ -14,7 +14,7 @@ To add an .aseprite file to FlatRedBall, drag+drop the file the same as if addin
 
 .aseprite files added to FlatRedBall projects are loaded as AnimationChainLists.
 
-<figure><img src="../.gitbook/assets/image (110) (1).png" alt=""><figcaption><p>.aseprite loaded as an AnimationChainList</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (282).png" alt=""><figcaption><p>.aseprite loaded as an AnimationChainList</p></figcaption></figure>
 
 Once a .aseprite file is loaded, it can be used just like any AnimationChainList. This includes:
 
@@ -34,7 +34,7 @@ Each tag creates an AnimationChainList with one animation for each tag. If tags 
 
 For example, consider the following timeline:
 
-<figure><img src="../.gitbook/assets/image (111).png" alt=""><figcaption><p>Aseprite timeline</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (283).png" alt=""><figcaption><p>Aseprite timeline</p></figcaption></figure>
 
 A file with this timeline would load as an AnimationChainList with the following animations:
 

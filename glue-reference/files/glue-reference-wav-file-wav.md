@@ -17,7 +17,7 @@ By default .wav files are loaded as a SoundEffect, which is the simplest object 
 ExplosionSound.Play();
 ```
 
-Once a SoundEffect Play call is made, the sound cannot be modified. It will play to completion and then stop. Therefore, to adjust the Play call, parameters can be added. For example to play a sound at half-volume, 0.5f could be passed as the first pameter:
+Once a SoundEffect Play call is made, the sound cannot be modified or stopped. It will play to completion and then stop. Therefore, to adjust the Play call, parameters can be added. For example to play a sound at half-volume, 0.5f could be passed as the first parameter:
 
 ```csharp
 ExplosionSound.Play(volume:0.5f, pitch:0, pan:0);
@@ -37,6 +37,10 @@ ExplosionSound.Volume = 0.5f;
 To change whether a .wav file is loaded as a SoundEffect or SoundEffectInstance, change its **RuntimeType** as shown in the following image:
 
 ![Changing a .wav's RuntimeType](../../.gitbook/assets/20\_22\_24\_42.png)
+
+{% hint style="info" %}
+If you need to interrupt a sound after it has started playing, you must use a SoundEffectInstance.
+{% endhint %}
 
 ### Adding a .wav to a FRB project
 
@@ -78,20 +82,42 @@ For more information on SoundEffect in FlatRedBall, see the [SoundEffect page](.
 
 ### WAV and XNB Files
 
-FlatRedBall MonoGame requires WAV files to be built and loaded from XNB files. XNB files are built by the MonoGame content pipeline. This happens automatically when a WAV file is added to your FlatRedBall project, and will also happen if the WAV file ever changes.
+FlatRedBall MonoGame does not require WAV files to be built and loaded from XNB files, but this is optionally supported. XNB files are built by the MonoGame content pipeline. If using the content pipeline, then the WAV file is built into an XNB file when initially added and also whenever the WAV file ever changes.
 
-WAV files are added as XNB files to your Visual Studio project. For example, the following SoundEffectFile.wav is part of GameScreen:
+If using the content pipeline, WAV files are added as XNB files to your Visual Studio project. For example, the following SoundEffectFile.wav is part of GameScreen:
 
-<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption><p>WAV file in GameScreen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (291).png" alt=""><figcaption><p>WAV file in GameScreen</p></figcaption></figure>
 
 This file is automatically added to your Visual Studio project by FlatRedBall, as shown in the following screenshot:
 
-<figure><img src="../../.gitbook/assets/image (120).png" alt=""><figcaption><p>WAV file as part of Visual Studio as a converted XNB</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (292).png" alt=""><figcaption><p>WAV file as part of Visual Studio as a converted XNB</p></figcaption></figure>
 
 WAV files can be explicitly rebuilt in the FRB Editor by right-clicking on the file and selecting **Rebuild Content Pipeline File (.xnb)**.
 
-<figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption><p>Right click, Rebuild Content Pipeline File option</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (293).png" alt=""><figcaption><p>Right click, Rebuild Content Pipeline File option</p></figcaption></figure>
 
 When the file is built, the output window displays information about the build so you can diagnose problems.
 
-<figure><img src="../../.gitbook/assets/image (122).png" alt=""><figcaption><p>Content Pipline build output</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (294).png" alt=""><figcaption><p>Content Pipline build output</p></figcaption></figure>
+
+### Global SoundEffect, Screen/Entity SoundEffectInstance
+
+As mentioned above, the easiest way to work with wav files is to load them as SoundEffects which provide a fire-and-forget Play method. You may want to provide additional control over SoundEffect playing in which case you can use a SoundEffectInstance. If your game pre-loads content, you can add the WAV file to global content as a SoundEffect, then add individual instances to the Screens or Entities which must play them.
+
+Note that when this occurs, a copy is created so be careful adding instances to entities which will have multiple instances alive at once.
+
+Note that this approach does not result in the wav file being loaded multiple times - the SoundEffect in global content is reused for each instance saving time.
+
+To do this:
+
+1. Add the wav file to global content. Note, this can even be done with wildcards
+2.  Set the RuntimeType to SoundEffect\
+
+
+    <figure><img src="../../.gitbook/assets/image (338).png" alt=""><figcaption><p>SoundEffect in Global Content Files</p></figcaption></figure>
+3. Add the same file to a Screen or Entity - you can drag+drop the file from global content, or right-click on the Files folder and select Add Existing.
+4.  Change the RuntimeType to SoundEffectInstance using the dropdown\
+
+
+    <figure><img src="../../.gitbook/assets/image (339).png" alt=""><figcaption><p>SoundEffectInstance in a Screen, using the same .wav file as the SoundEffect in GlobalContent</p></figcaption></figure>
+

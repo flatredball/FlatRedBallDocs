@@ -71,7 +71,7 @@ mSpriteBatch.Draw(mRenderTarget, new Rectangle(0,0,700, 500), Color.White);
 mSpriteBatch.End();
 ```
 
-![RenderTargetRendering.PNG](../../../../media/migrated\_media-RenderTargetRendering.PNG)
+![RenderTargetRendering.PNG](../../../../.gitbook/assets/migrated\_media-RenderTargetRendering.PNG)
 
 ### Rendering to a RenderTarget, Saving to PNG
 

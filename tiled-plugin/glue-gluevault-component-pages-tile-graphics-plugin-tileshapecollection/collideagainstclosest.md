@@ -1,4 +1,4 @@
-# collideagainstclosest
+# CollideAgainstClosest
 
 ### Introduction
 
@@ -14,7 +14,7 @@ Other types of shapes usually are checked over the course of multiple frames as 
 
 The following code can be added to a GameScreen to draw a line from the camera's position to the cursor's position. CollideAgainstClosest is used to find the last collision point which is used to draw a circle. This code assumes that your screen (such as GameScreen or Level1) contains a TileShapeCollection named SolidCollision.
 
-![](../../../../media/2023-05-img_646e09dec8499.png)
+![](../../.gitbook/assets/2023-05-img\_646e09dec8499.png)
 
 ```
 // add the following using at the to of your file to access EditorVisuals:
@@ -50,8 +50,4 @@ void CustomDestroy()
 }
 ```
 
-&#x20; 
-
-<figure><img src="../../../../media/2023-05-24_06-09-22.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/2023-05-24_06-09-22.gif" alt=""><figcaption></figcaption></figure>

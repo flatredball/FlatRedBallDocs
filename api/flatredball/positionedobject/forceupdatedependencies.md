@@ -1,16 +1,16 @@
-# forceupdatedependencies
+# ForceUpdatedependencies
 
 ### Introduction
 
-The ForceUpdateDependencies forces the calling PositionedObject and all of its parents to update absolute values according to relative values. This method can be called if an update is needed immediately (instead of waiting for the next Draw call). For more information on attachments, check the [IAttachable page](../../../../frb/docs/index.php).
+The ForceUpdateDependencies forces the calling PositionedObject and all of its parents to update absolute values according to relative values. This method can be called if an update is needed immediately (instead of waiting for the next Draw call). For more information on attachments, check the [IAttachable page](../../../frb/docs/index.php).
 
 ### Common Usage
 
-In many cases, if you have a parent object and a child object, you will not need to manually manage this attachment by calling ForceUpdateDependencies. However, calling ForceUpdateDependencies may be necessary in certain cases. As explained in [this article](../../../../frb/docs/index.php), setting the relative value of a child object **does not immediately change its absolute value**. Similarly, changing the absolute value of a parent also does not immediately update the absolute value of a child. These updates occur right before drawing occurs. Therefore, if you have created a new attachment or modified the values involved in an attachment and would like to see these updates immediately impact the absolute value of all children, then you need to call ForceUpdateDependencies.
+In many cases, if you have a parent object and a child object, you will not need to manually manage this attachment by calling ForceUpdateDependencies. However, calling ForceUpdateDependencies may be necessary in certain cases. As explained in [this article](../../../frb/docs/index.php), setting the relative value of a child object **does not immediately change its absolute value**. Similarly, changing the absolute value of a parent also does not immediately update the absolute value of a child. These updates occur right before drawing occurs. Therefore, if you have created a new attachment or modified the values involved in an attachment and would like to see these updates immediately impact the absolute value of all children, then you need to call ForceUpdateDependencies.
 
 ### Code Example - Modifying child relative values
 
-The following created two [Text](../../../../frb/docs/index.php) objects. Both are attached to a PositionedObject, but only one calls ForceUpdateDependencies. Then the DisplayText is set to show each [Text's](../../../../frb/docs/index.php) absolute Y value. Notice only the one which called ForceUpdateDependencies has a non-zero Y value. Add the following using statements:
+The following created two [Text](../../../frb/docs/index.php) objects. Both are attached to a PositionedObject, but only one calls ForceUpdateDependencies. Then the DisplayText is set to show each [Text's](../../../frb/docs/index.php) absolute Y value. Notice only the one which called ForceUpdateDependencies has a non-zero Y value. Add the following using statements:
 
 ```
 using FlatRedBall.Graphics;
@@ -40,7 +40,7 @@ Add the following to Initialize after initializing FlatRedBall:
  secondText.DisplayText = "My Y in Initialize is: " + secondText.Y;
 ```
 
-![ForceUpdateDependencies.png](../../../../media/migrated_media-ForceUpdateDependencies.png)
+![ForceUpdateDependencies.png](../../../.gitbook/assets/migrated\_media-ForceUpdateDependencies.png)
 
 ### Code Example - Modifying parent absolute values
 
@@ -76,4 +76,4 @@ Add the following to Initialize after initializing FlatRedBall:
  Text text = TextManager.AddText(stringToOutput);
 ```
 
-![ForceUpdateDependenciesParentReposition.png](../../../../media/migrated_media-ForceUpdateDependenciesParentReposition.png)
+![ForceUpdateDependenciesParentReposition.png](../../../.gitbook/assets/migrated\_media-ForceUpdateDependenciesParentReposition.png)

@@ -27,7 +27,7 @@ To switch to the content pipeline:
 1. Select a file in your project
 2. Change the "UseContentPipeline" property to True&#x20;
 
-<figure><img src="../../media/migrated_media-UseContentPipeline.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-UseContentPipeline.png" alt=""><figcaption></figcaption></figure>
 
 Your game will now load this file from content pipeline.
 

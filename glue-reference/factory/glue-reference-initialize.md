@@ -1,8 +1,8 @@
-# glue-reference-initialize
+# Initialize
 
 ### Introduction
 
-Factories must have their Initialize method called before they are used. In many cases the Initialize method is automatically called in Glue generated code. This article explores when the Initialize method is called for you and when you must call it yourself. The Initialize method also controls which list is populated by a factory. This article also discusses this, specifically as it applies to inheritance. For an in-depth look at using Factories, see the [tutorial on "Created by Other Entities"](../../../../frb/docs/index.php)
+Factories must have their Initialize method called before they are used. In many cases the Initialize method is automatically called in Glue generated code. This article explores when the Initialize method is called for you and when you must call it yourself. The Initialize method also controls which list is populated by a factory. This article also discusses this, specifically as it applies to inheritance. For an in-depth look at using Factories, see the [tutorial on "Created by Other Entities"](../../frb/docs/index.php)
 
 ### A simple situation
 
@@ -52,19 +52,17 @@ We'll assume RedDragon is an Entity that is CreatedByOtherEntities, so there is 
 
 * The Screen includes a PositionedObjectList of type RedDragon
 
-But what if the Screen only contains a PositionedObjectList of Dragon (the type "inbetween" Enemy and RedDragon)? In this situation, Glue does not assume you intend to have the RedDragonFactory instantiated. Glue will only automatically instantiate the RedDragonFactory if there is a PositionedObjectList of the most base Entity (Enemy in this case) or most derived (RedDragon in this case) in a given Screen. However, you can still customize how the behavior of the Factory works using the [EntitySpawned](../../../../frb/docs/index.php) Action and manually adding newly-created Entities to any List.
+But what if the Screen only contains a PositionedObjectList of Dragon (the type "inbetween" Enemy and RedDragon)? In this situation, Glue does not assume you intend to have the RedDragonFactory instantiated. Glue will only automatically instantiate the RedDragonFactory if there is a PositionedObjectList of the most base Entity (Enemy in this case) or most derived (RedDragon in this case) in a given Screen. However, you can still customize how the behavior of the Factory works using the [EntitySpawned](../../frb/docs/index.php) Action and manually adding newly-created Entities to any List.
 
 ### Factories and Multiple Lists of the Same Type
 
 If your screen contains multiple lists of the same type, Glue will generate code to add entities to all lists. For example, if your game has an entity called Enemy and you have two lists (GroundEnemies and AirEnemies), then any Enemy factory (or factory of entity deriving from Enemy) will insert into both lists. A list can be removed from automatic association with a factory in Glue (this requires GLUX version 3 or greater). This value is true by default, but can be set to false to prevent Glue from automatically associating any factories with the list.
 
-![](../../../../media/2020-02-img_5e438e9f4f62f.png)
+![](../../.gitbook/assets/2020-02-img\_5e438e9f4f62f.png)
 
-&#x20; Factory-List association can also be adjusted in code by calling RemoveList. To remove the lists from the factory:
+Factory-List association can also be adjusted in code by calling RemoveList. To remove the lists from the factory:
 
 ```lang:c#
 Factories.EnemyFactory.RemoveList(GroundEnemies);
 Factories.EnemyFactory.RemoveList(AirEnemies);
 ```
-
-&#x20;     &#x20;

@@ -1,8 +1,8 @@
-# collideagainstmove
+# CollideAgainstMove
 
 ### Introduction
 
-CollideAgainstMove is a function which takes any shape type (such as [AxisAlignedRectangle](../../../../../../frb/docs/index.php) or [Circle](../../../../../../frb/docs/index.php)) and calls CollideAgainstMove between the argument and all shapes contained in the ShapeCollection.
+CollideAgainstMove is a function which takes any shape type (such as [AxisAlignedRectangle](../../../../../frb/docs/index.php) or [Circle](../../../../../frb/docs/index.php)) and calls CollideAgainstMove between the argument and all shapes contained in the ShapeCollection.
 
 This method is an alternative to writing loops for all of the contained objects and manually calling CollideAgainstMove. Using CollideAgainstMove has a number of benefits:
 
@@ -72,7 +72,7 @@ ShapeCollectionInstance.CollideAgainstMove(
     1, 0);
 ```
 
-![CollideAgainstMovePartitioned.PNG](../../../../../../media/migrated_media-CollideAgainstMovePartitioned.PNG)
+![CollideAgainstMovePartitioned.PNG](../../../../../.gitbook/assets/migrated\_media-CollideAgainstMovePartitioned.PNG)
 
 #### Performance benefits
 

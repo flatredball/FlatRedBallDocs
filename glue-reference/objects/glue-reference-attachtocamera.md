@@ -11,7 +11,7 @@ To attach an instance of an object to the Camera:
 1. Select the instance under the "Object" tree item in a given Screen
 2. Set the AttachToCamera property to true:
 
-<figure><img src="../../media/migrated_media-AttachToCamera.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-AttachToCamera.PNG" alt=""><figcaption></figcaption></figure>
 
 ### AttachToCamera only available in Screens
 

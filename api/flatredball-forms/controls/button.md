@@ -1,24 +1,22 @@
-# button
+# Button
 
 ### Introduction
 
-Button is a standard clickable object with states for enabled (default), hover, pressed, and disabled. 
+Button is a standard clickable object with states for enabled (default), hover, pressed, and disabled.
 
-<figure><img src="../../../../media/2017-12-2017-12-13_07-05-39.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/2017-12-2017-12-13_07-05-39.gif" alt=""><figcaption></figcaption></figure>
 
 ### Layout Requirements
 
 The Button control has no requirements - an empty container is sufficient.
 
-![](../../../../media/2017-12-img_5a485e78076db.png)
+![](../../../.gitbook/assets/2017-12-img\_5a485e78076db.png)
 
 ### TextInstance
 
 The Button control can optionally include a Text instance named **TextInstance**. Setting the Button control's **Text** property changes the **TextInstance's** displayed string.
 
-![](../../../../media/2017-12-img_5a485fa592a56.png)
+![](../../../.gitbook/assets/2017-12-img\_5a485fa592a56.png)
 
 ### Code Example
 
@@ -72,5 +70,3 @@ private void HandleButtonPush(object sender, EventArgs e)
     // handle push logic here
 }
 ```
-
-&#x20;

@@ -1,4 +1,4 @@
-# maximumx
+# MaximumX
 
 ### Introduction
 
@@ -10,7 +10,7 @@ If you have a Camera which is part of an Entity then the Camera will be attached
 
 ### Code Sample
 
-The following code allows the user to move the camera with the arrow keys on the keyboard, but bounds the position of the Camera to the edges of the [AxisAlignedRectangle](../../../../frb/docs/index.php) created in the Initialize method.
+The following code allows the user to move the camera with the arrow keys on the keyboard, but bounds the position of the Camera to the edges of the [AxisAlignedRectangle](../../../frb/docs/index.php) created in the Initialize method.
 
 Add the following to your Screen's CustomInitialize:
 
@@ -31,8 +31,8 @@ Add the following to Update
 InputManager.Keyboard.ControlPositionedObject(Camera.Main, 100);
 ```
 
-![MinimumMaximumCameraValues.png](../../../../media/migrated_media-MinimumMaximumCameraValues.png)
+![MinimumMaximumCameraValues.png](../../../.gitbook/assets/migrated\_media-MinimumMaximumCameraValues.png)
 
 ### Removing Minimum and Maximum Values
 
-See [FlatRedBall.Camera.ClearMinimumsAndMaximums](../../../../frb/docs/index.php).
+See [FlatRedBall.Camera.ClearMinimumsAndMaximums](../../../frb/docs/index.php).

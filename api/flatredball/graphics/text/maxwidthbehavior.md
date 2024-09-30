@@ -1,8 +1,8 @@
-# maxwidthbehavior
+# MaxWidthBehavior
 
 ### Introduction
 
-The MaxWidthBehavior controls how the Text object displays its [DisplayText](../../../../../frb/docs/index.php) when it is longer than the [MaxWidth](../../../../../frb/docs/index.php). MaxWidthBehavior is an enumeration. Available values are:
+The MaxWidthBehavior controls how the Text object displays its [DisplayText](../../../../frb/docs/index.php) when it is longer than the [MaxWidth](../../../../frb/docs/index.php). MaxWidthBehavior is an enumeration. Available values are:
 
 * Chop
 * Wrap
@@ -25,4 +25,4 @@ wrapText.MaxWidth = 10;
 wrapText.Y = -5;
 ```
 
-![TextMaxWidthBehavior.PNG](../../../../../media/migrated_media-TextMaxWidthBehavior.PNG)
+![TextMaxWidthBehavior.PNG](../../../../.gitbook/assets/migrated\_media-TextMaxWidthBehavior.PNG)

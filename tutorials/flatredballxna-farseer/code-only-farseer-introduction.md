@@ -1,4 +1,4 @@
-# code-only-farseer-introduction
+# Code-Only Velcro Projects
 
 ### Introduction
 
@@ -22,14 +22,12 @@ To add Velcro to your project:
 1. Expand your game project's Dependencies
 2.  Right-click on Packages and select **Manage NuGet Packages...**
 
-    ![](../../../media/2023-05-img_645b9201698a5.png)
+    ![](../../.gitbook/assets/2023-05-img\_645b9201698a5.png)
 3. Check the **Include prerelease** option
 4. Search for **GenBox.VelcroPhysics.MonoGame**
 5.  Add the Genbox.VelcroPhysics.MonoGame package to your project.
 
-    ![](../../../media/2023-05-img_645b92b86a8df.png)
-
-&#x20;
+    ![](../../.gitbook/assets/2023-05-img\_645b92b86a8df.png)
 
 ### Code Example
 
@@ -114,7 +112,7 @@ public partial class GameScreen
 }
 ```
 
-![](../../../media/2016-11-10_06-51-41.gif)
+![](../../.gitbook/assets/2016-11-10\_06-51-41.gif)
 
 ###
 

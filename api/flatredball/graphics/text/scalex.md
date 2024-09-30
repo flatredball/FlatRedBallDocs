@@ -1,16 +1,16 @@
-# scalex
+# ScaleX
 
 ### Introduction
 
-The ScaleX and ScaleY properties are read-only properties in the Text class. You may be familiar with these properties through classes such as [Sprite](../../../../../frb/docs/index.php) or [AxisAlignedRectangle](../../../../../frb/docs/index.php). Unlike those classes, the Text class's ScaleX and ScaleY properties are only used to read the dimensions of the Text object, not to set it. To set the size of your Text, you need to use the Scale, Spacing, and NewlineDistance properties. You can find out more about them [here](../../../../../frb/docs/index.php#Text_Size).
+The ScaleX and ScaleY properties are read-only properties in the Text class. You may be familiar with these properties through classes such as [Sprite](../../../../frb/docs/index.php) or [AxisAlignedRectangle](../../../../frb/docs/index.php). Unlike those classes, the Text class's ScaleX and ScaleY properties are only used to read the dimensions of the Text object, not to set it. To set the size of your Text, you need to use the Scale, Spacing, and NewlineDistance properties. You can find out more about them [here](../../../../frb/docs/index.php#Text\_Size).
 
 ### Scale and Position
 
-If you've read about the [IScalable](../../../../../frb/docs/index.php) interface, then you're likely familiar with the concept of Scale. To help you remember, Scale is the measure from the center of an object to its edge. Another way to put it is ScaleX is half of an object's width and ScaleY is half of an object's height. In most cases, the center of an object is the same as its Position. Therefore, adding or subtracting Scale from an object's position will give you its edges. This is not the case with Text objects because of the [HorizontalAlignment](../../../../../frb/docs/index.php) and [VerticalAlignment](../../../../../frb/docs/index.php) properties. Therefore, to find the center of your Text object, you should use the [HorizontalCenter](../../../../../frb/docs/index.php) and [VerticalCenter](../../../../../frb/docs/index.php) properties.
+If you've read about the [IScalable](../../../../frb/docs/index.php) interface, then you're likely familiar with the concept of Scale. To help you remember, Scale is the measure from the center of an object to its edge. Another way to put it is ScaleX is half of an object's width and ScaleY is half of an object's height. In most cases, the center of an object is the same as its Position. Therefore, adding or subtracting Scale from an object's position will give you its edges. This is not the case with Text objects because of the [HorizontalAlignment](../../../../frb/docs/index.php) and [VerticalAlignment](../../../../frb/docs/index.php) properties. Therefore, to find the center of your Text object, you should use the [HorizontalCenter](../../../../frb/docs/index.php) and [VerticalCenter](../../../../frb/docs/index.php) properties.
 
 ### Code example
 
-The following code creates two Text objects. It then creates two [AxisAlignedRectangles](../../../../../frb/docs/index.php) which show the bounds of the Text object using ScaleX/ScaleY and HorizontalCenter/VerticalCenter properties. Add the following include statements:
+The following code creates two Text objects. It then creates two [AxisAlignedRectangles](../../../../frb/docs/index.php) which show the bounds of the Text object using ScaleX/ScaleY and HorizontalCenter/VerticalCenter properties. Add the following include statements:
 
 ```
 using FlatRedBall.Math.Geometry;
@@ -40,4 +40,4 @@ Add the following to the Initialize method after initializing FlatRedBallService
  aaRect2.ScaleY = text2.ScaleY;
 ```
 
-![TextScaleAndCenter.png](../../../../../media/migrated_media-TextScaleAndCenter.png)
+![TextScaleAndCenter.png](../../../../.gitbook/assets/migrated\_media-TextScaleAndCenter.png)

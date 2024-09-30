@@ -4,7 +4,7 @@
 
 Images which are grayscale can be colored using the Modulate color operation. This is a fast way to create variety for entities such as enemies or equipment. The following animation shows tinting using the FlatRedBall Editor on a Sprite with Modulate color operation.
 
-<figure><img src="../../../../media/2016-01-22_09-46-22.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2016-01-22_09-46-22.gif" alt=""><figcaption></figcaption></figure>
 
 ### Code Example - Darkening
 
@@ -27,11 +27,11 @@ The following code creates 10 bears, starting with a color of pure black (0,0,0)
  }
 ```
 
-![BearDarkening.PNG](../../../../media/migrated\_media-BearDarkening.PNG)
+![BearDarkening.PNG](../../../../.gitbook/assets/migrated\_media-BearDarkening.PNG)
 
 ### Code Example - Tinting
 
-The ColorOperation.Modulate option makes the drawn object "multiply" all of its texture color values by the Red, Green, and Blue of the IColorable. Setting a Modulate with Red, Green, Blue values of 1,1,1 will result in the object drawn regularly. Setting the values to .5, .5, .5 will result in the object being drawn at half-brightness. Setting values to 1,0,0 will result in only red values being drawn. Blue and green will draw as black. The following code example renders the Bear.png graphic with no Modulate operation, then with 3 different values to show how Modulate works. Image used: ![Bear.png](../../../../media/migrated\_media-Bear.png)
+The ColorOperation.Modulate option makes the drawn object "multiply" all of its texture color values by the Red, Green, and Blue of the IColorable. Setting a Modulate with Red, Green, Blue values of 1,1,1 will result in the object drawn regularly. Setting the values to .5, .5, .5 will result in the object being drawn at half-brightness. Setting values to 1,0,0 will result in only red values being drawn. Blue and green will draw as black. The following code example renders the Bear.png graphic with no Modulate operation, then with 3 different values to show how Modulate works. Image used: ![Bear.png](../../../../.gitbook/assets/migrated\_media-Bear.png)
 
 ```csharp
 // This makes it easier to see the blue bear:
@@ -64,4 +64,4 @@ blueSprite.Blue = 1;
 blueSprite.X = 60;
 ```
 
-![3Bears.PNG](../../../../media/migrated\_media-3Bears.PNG)
+![3Bears.PNG](../../../../.gitbook/assets/migrated\_media-3Bears.PNG)

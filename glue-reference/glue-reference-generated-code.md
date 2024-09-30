@@ -22,10 +22,10 @@ Assuming that you have an Entity called MyEntity:
 4. Expand the entity and you should see another file called MyEntity.Generated.cs
 5. Double-click this file to see the generated code
 
-![GeneratedEntityCsFile.png](../media/migrated\_media-GeneratedEntityCsFile.png)
+![GeneratedEntityCsFile.png](../.gitbook/assets/migrated\_media-GeneratedEntityCsFile.png)
 
 FlatRedBall also generates a file called GlobalContent.Generated.cs which is not associated with any particular Screen/Entity. It is responsible for loading and providing access to all files added through the Global Content Files item in the FRB Editor.
 
 This file is located in your project as well, but it is not embedded under any other files:
 
-![GlobalContentGenerated.png](../media/migrated\_media-GlobalContentGenerated.png)
+![GlobalContentGenerated.png](../.gitbook/assets/migrated\_media-GlobalContentGenerated.png)

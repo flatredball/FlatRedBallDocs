@@ -10,15 +10,15 @@ Adding GlobalContent to your game is the same as adding content to any Screen or
 
 1. Right-click on "Global Content Files" in Glue
 2. Select "Add File"->"New file"\
-   ![AddNewFileGlobalContent.png](../../media/migrated\_media-AddNewFileGlobalContent.png)
+   ![AddNewFileGlobalContent.png](../../.gitbook/assets/migrated\_media-AddNewFileGlobalContent.png)
 3. Enter the type and name just like a regular file
 4. Repeat this for as many files as you'd like\
-   ![FilesInGlobalContentFiles.png](../../media/migrated\_media-FilesInGlobalContentFiles.png)
+   ![FilesInGlobalContentFiles.png](../../.gitbook/assets/migrated\_media-FilesInGlobalContentFiles.png)
 
 ### Accessing Global Content Files
 
 Once a file has been added to the "Global Content Files" tree item, it can be accessed anywhere in code at any time after GlobalContent has been initialized. To do this, simply use the same name as the file name after "GlobalContent."\
-![GlobalContentIntellisense.png](../../media/migrated\_media-GlobalContentIntellisense.png)
+![GlobalContentIntellisense.png](../../.gitbook/assets/migrated\_media-GlobalContentIntellisense.png)
 
 ### When to use Global Content Files
 
@@ -33,7 +33,7 @@ The GlobalContent object may take a while to load depending on your game. This c
 
 * Select the "Global Content Files" tree node
 * Change the "LoadAsynchronously" property to "True"\
-  ![LoadGlobalContentAsync.png](../../media/migrated\_media-LoadGlobalContentAsync.png)
+  ![LoadGlobalContentAsync.png](../../.gitbook/assets/migrated\_media-LoadGlobalContentAsync.png)
 
 That's all you need to do - your GlobalContent will now load asynchronously.
 
@@ -47,15 +47,15 @@ The RecordLockContention property can be very useful on larger projects when you
 
 1. Select the "Global Content Files" tree node
 2. Change "RecordLockContention" to "True" (make sure "LoadAsynchronously" is also set to "True")\
-   ![RecordLockContention.png](../../media/migrated\_media-RecordLockContention.png)
+   ![RecordLockContention.png](../../.gitbook/assets/migrated\_media-RecordLockContention.png)
 3. Open your GlobalContent.Generated.cs file in Visual Studio
-4. Scroll to the very bottom where the Intialize method ends and place a breakpoint on the last line of AsyncInitialize which should be "IsInitialized = true;"![AddBreakpoint.png](../../media/migrated\_media-AddBreakpoint.png)
+4. Scroll to the very bottom where the Intialize method ends and place a breakpoint on the last line of AsyncInitialize which should be "IsInitialized = true;"![AddBreakpoint.png](../../.gitbook/assets/migrated\_media-AddBreakpoint.png)
 5. Run your game
-6. Once you hit the breakpoint, add "LockRecord" to your watch window![NoLocks.png](../../media/migrated\_media-NoLocks.png)
+6. Once you hit the breakpoint, add "LockRecord" to your watch window![NoLocks.png](../../.gitbook/assets/migrated\_media-NoLocks.png)
 
-If you notice that it has a count of 0, then congratulations - you are not experiencing any lock contention in your Global Content's initialization. You can easily create a locking case if you'd like to see the result and how to resolve it. To do this, simply access the very last property in GlobalContent right after the GlobalContent.Initialize call in your Game class: ![ShapeCollectionForLock.png](../../media/migrated\_media-ShapeCollectionForLock.png) \
-In this case the file "ShapeCollectionFile" is the last property listed under GlobalContent. It is likely that accessing it immediately after the Initialize call will result in a lock contention. Running the game now verifies this: \
-![LockedThreadCause.png](../../media/migrated\_media-LockedThreadCause.png) \
+If you notice that it has a count of 0, then congratulations - you are not experiencing any lock contention in your Global Content's initialization. You can easily create a locking case if you'd like to see the result and how to resolve it. To do this, simply access the very last property in GlobalContent right after the GlobalContent.Initialize call in your Game class: ![ShapeCollectionForLock.png](../../.gitbook/assets/migrated\_media-ShapeCollectionForLock.png)\
+In this case the file "ShapeCollectionFile" is the last property listed under GlobalContent. It is likely that accessing it immediately after the Initialize call will result in a lock contention. Running the game now verifies this:\
+![LockedThreadCause.png](../../.gitbook/assets/migrated\_media-LockedThreadCause.png)\
 This case was fabricated, and as a result rather trivial; however, if you have multiple locks, this approach can help you reorganize your global content to improve load times. Speaking of reorganizing, keep reading to see how to do this.
 
 ### Controlling GlobalContent load order
@@ -64,9 +64,9 @@ Once you've identified lock contentions, you can easily reorder your content to 
 
 1. Right-click on the "Global Content Files" tree item
 2. Select "View File Order"\
-   ![ViewFileOrderRightClick.png](../../media/migrated\_media-ViewFileOrderRightClick.png)
+   ![ViewFileOrderRightClick.png](../../.gitbook/assets/migrated\_media-ViewFileOrderRightClick.png)
 3. A window will appear listing all of the files in "Global Content Files". This window shows the current order of content loading.\
-   ![GlobalContentFileOrder.png](../../media/migrated\_media-GlobalContentFileOrder.png)
+   ![GlobalContentFileOrder.png](../../.gitbook/assets/migrated\_media-GlobalContentFileOrder.png)
 4. Right-click and select one of the movement options, or click+drag to reorder the content files.
 
 ### Iterating on content order

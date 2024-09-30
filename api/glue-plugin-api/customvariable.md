@@ -10,7 +10,7 @@ The CustomVariable object is a variable directly contained inside of a Screen or
 
 These three types match the three options provided by the New Variable window.
 
-![](../../../media/2023-04-img_6445f9ab03d5c.png)
+![](../../.gitbook/assets/2023-04-img\_6445f9ab03d5c.png)
 
 When the user adds a new variable to a GlueElement, a new CustomVariable instance is added to the GlueElement. Plugins can modify existing CustomVariables or add new CustomVariable instances to a GlueElement.
 
@@ -22,5 +22,3 @@ The following properties are commonly accessed and modified in Glue:
 * Type - the type of the variable, such as "float" or "int". The type informs Glue as to which UI to use when displaying the variable.
 * DefaultValue - the default value of the variable. If unchanged, this value is assigned in code on all instances of the GlueElement. This is typed, so if the variable is a float, then the value assigned should be a float and not a string representation of the value
 * CustomGetForcedOptionsFunc - A delegate which optionally defines which values can be set. This can be used to restrict options in the Glue UI. This is not serialized so plugins must assign this value every time a project is loaded.
-
-&#x20; &#x20;

@@ -1,6 +1,6 @@
 # prismatic
 
-![Prismatic box.jpg](../media/migrated_media-Prismatic_box.jpg)
+![Prismatic box.jpg](../.gitbook/assets/migrated\_media-Prismatic\_box.jpg)
 
 ### Introduction
 
@@ -8,7 +8,7 @@ Prismatic is an addicting puzzle game featuring a fully-illustrated story with 1
 
 ### Screen Shots
 
-![PrismaticXNAscreen1.jpg](../media/migrated_media-PrismaticXNAscreen1.jpg) ![PrismaticXNAscreen2.jpg](../media/migrated_media-PrismaticXNAscreen2.jpg) ![PrismaticXNAscreen3.jpg](../media/migrated_media-PrismaticXNAscreen3.jpg) ![PrismaticXNAscreen4.jpg](../media/migrated_media-PrismaticXNAscreen4.jpg)
+![PrismaticXNAscreen1.jpg](../.gitbook/assets/migrated\_media-PrismaticXNAscreen1.jpg) ![PrismaticXNAscreen2.jpg](../.gitbook/assets/migrated\_media-PrismaticXNAscreen2.jpg) ![PrismaticXNAscreen3.jpg](../.gitbook/assets/migrated\_media-PrismaticXNAscreen3.jpg) ![PrismaticXNAscreen4.jpg](../.gitbook/assets/migrated\_media-PrismaticXNAscreen4.jpg)
 
 ### Video
 

@@ -1,4 +1,4 @@
-# 04-manual-particle-systems
+# Manual Particle Systems
 
 ### Introduction
 
@@ -15,7 +15,7 @@ The term "particle sprite" implies it is used for particle effects, but technica
 
 ### Code Example
 
-The following code is written in a screen which has access to a Texture2D called Texture. Notice that it creates sprites very quickly (60 per second), and even at large numbers the game will run at a reasonable speed: &#x20;
+The following code is written in a screen which has access to a Texture2D called Texture. Notice that it creates sprites very quickly (60 per second), and even at large numbers the game will run at a reasonable speed:
 
 ```lang:c#
 public partial class GameScreen
@@ -78,6 +78,4 @@ public partial class GameScreen
 }
 ```
 
-&#x20;
-
-![](../../../../../media/2017-06-img_59495601556b0.png)
+![](../../../../.gitbook/assets/2017-06-img\_59495601556b0.png)

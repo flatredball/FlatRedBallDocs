@@ -14,7 +14,7 @@ Conceptually detecting a goal is simple - whenever the Puck collides with a cert
 4. Select the **AxisAlignedRectangle** option under **Collisions**
 5. Click **OK**
 
-<figure><img src="../../media/2016-01-2021_July_25_141031.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_July_25_141031.gif" alt=""><figcaption></figcaption></figure>
 
 The default rectangle size for a Goal is too small, so we should make it bigger:
 
@@ -22,7 +22,7 @@ The default rectangle size for a Goal is too small, so we should make it bigger:
 2. Click the **Variables** tab
 3. Change **Height** to **200**
 
-![](../../media/2021-07-img\_60fdca7071514.png)
+![](../../.gitbook/assets/2021-07-img\_60fdca7071514.png)
 
 Just like before, we'll also add a list of goals in our GameScreen:
 
@@ -30,11 +30,11 @@ Just like before, we'll also add a list of goals in our GameScreen:
 2. Select the Quick Actions tab
 3. Click the Add Goal List to GameScreen button
 
-![](../../media/2021-07-img\_60fdcc7a9eb64.png)
+![](../../.gitbook/assets/2021-07-img\_60fdcc7a9eb64.png)
 
 Next we'll add two goal rectangles to the GameScreen. Instead of using the Quick Actions tab, we'll show an alternative method here by drag+dropping the Goal entity onto GameScreen. Do this twice, changing the name of the first to LeftGoal and the second to RightGoal:
 
-<figure><img src="../../media/2016-01-2021_July_25_141042.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_July_25_141042.gif" alt=""><figcaption></figcaption></figure>
 
 **Why do goal names matter?** In an earlier tutorial we created the wall collision and named them sequentially (Wall1, Wall2, etc). However, the goals are slightly different - we will be checking which goal we collided with in code to determine whether the left or right team should earn a point. Setting clear names makes it easier to keep track of which goal is on each side.
 
@@ -61,7 +61,7 @@ If you tried playing the game, you may have noticed that the PlayerBall instance
 
 If you run the game, you can no longer leave the play area with either PlayerBall.
 
-<figure><img src="../../media/2016-01-2021_July_25_140248.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_July_25_140248.gif" alt=""><figcaption></figcaption></figure>
 
 ### Detecting Goals
 
@@ -86,11 +86,11 @@ Now we'll create an event, which is a function that is automatically called when
 3. Scroll to the bottom and click the **Add Event** button
 4. Accept the defaults and click **OK**
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
 
 When an event is added, Glue automatically adds a new file to contain events called GameScreen.Events.cs. We can find the new event there. You need to expand the GameScreen.cs in Visual Studio's Solution Explorer to see this file.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 We can check which Goal collided with the Puck in the code and perform different logic. We can Modify the OnPuckVsGoalCollided method and add a new ReactToNewScore method to the GameScreen.Event.cs file as shown in the following snippet:
 

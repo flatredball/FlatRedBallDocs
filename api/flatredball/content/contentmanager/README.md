@@ -1,8 +1,8 @@
-# contentmanager
+# ContentManager
 
 ### Introduction
 
-Content managers provide functionality for organizing and caching game assets. They can be thought of as a "bucket of assets". When you create an asset through the Content Manager, you give it a name (usually its file name) and decide which Content Manager it goes into. Later if the same name appears, the FlatRedBall Engine will return a reference to that asset instead of loading it from disk. Although MonoGame has a content manager class by the qualified name of Microsoft.Xna.Framework.Content.ContentManager, you do not have to ever explicitly interact with this class when using FlatRedBall. Instead, you simply work with content managers through the [FlatRedBallServices](../../../../../frb/docs/index.php) class.
+Content managers provide functionality for organizing and caching game assets. They can be thought of as a "bucket of assets". When you create an asset through the Content Manager, you give it a name (usually its file name) and decide which Content Manager it goes into. Later if the same name appears, the FlatRedBall Engine will return a reference to that asset instead of loading it from disk. Although MonoGame has a content manager class by the qualified name of Microsoft.Xna.Framework.Content.ContentManager, you do not have to ever explicitly interact with this class when using FlatRedBall. Instead, you simply work with content managers through the [FlatRedBallServices](../../../../frb/docs/index.php) class.
 
 ### Content Manager and the FlatRedBallEditor
 
@@ -18,7 +18,7 @@ Content managers simplify the loading of new assets as well as help organize exi
 
 ### Using Content Managers
 
-If you have programed a FlatRedBall application which displays a texture (such as the red ball texture on a [Sprite](../../../../../frb/docs/index.php)) then you have worked with content managers - although you may not realize it. Any method which takes a string file name for a Texture2D also takes a string for a content manager name. Some methods have overloads which do not require a content manager string argument, but those simply use the default "Global" content manager. You may be familiar with the [SpriteManager's](../../../../../frb/docs/index.php) AddSprite method:
+If you have programed a FlatRedBall application which displays a texture (such as the red ball texture on a [Sprite](../../../../frb/docs/index.php)) then you have worked with content managers - although you may not realize it. Any method which takes a string file name for a Texture2D also takes a string for a content manager name. Some methods have overloads which do not require a content manager string argument, but those simply use the default "Global" content manager. You may be familiar with the [SpriteManager's](../../../../frb/docs/index.php) AddSprite method:
 
 ```
 Sprite someSprite = SpriteManager.AddSprite("redball.bmp");
@@ -182,19 +182,19 @@ The following code simulates the creation and destruction of 3 levels. Levels ca
  }
 ```
 
-[Full Source](http://pastebin.ca/498688) ![SpritesAndDifferentContentManagers.png](../../../../../media/migrated_media-SpritesAndDifferentContentManagers.png)
+[Full Source](http://pastebin.ca/498688) ![SpritesAndDifferentContentManagers.png](../../../../.gitbook/assets/migrated\_media-SpritesAndDifferentContentManagers.png)
 
 ### Which content manager should I use?
 
 Even if you understand the concept that content managers can be thought of as a "bucket of asset", you may be wondering which content manager to put assets in. The following lists a few conditions to help you decide.
 
-* **Is your content going to live forever?** You may be creating a game with a particular object (such as a [Texture2D](../../../../../frb/docs/index.php) or a second [Camera](../../../../../frb/docs/index.php)) that you never want to unload. If this is the case, then you may want to use the global content manager. You can use the FlatRedBallServices.GlobalContentManager property as the value passed to any method that accepts a content manager.
+* **Is your content going to live forever?** You may be creating a game with a particular object (such as a [Texture2D](../../../../frb/docs/index.php) or a second [Camera](../../../../frb/docs/index.php)) that you never want to unload. If this is the case, then you may want to use the global content manager. You can use the FlatRedBallServices.GlobalContentManager property as the value passed to any method that accepts a content manager.
 * **Are you just debugging?** If you are writing code that will not ship with the final game, or if you're just testing something out, then it really doesn't matter what you use. Passing any string will create a new content manager to store the asset. Of course, creating content managers without paying attention to their names can create a buildup of assets if content managers are not cleaned up properly.
-* **Are you using** [**Screens**](../../../../../frb/docs/index.php)**?** The base [Screen](../../../../../frb/docs/index.php) class defines a property called ContentManagerName. If the object that you're creating should be destroyed when the [Screen](../../../../../frb/docs/index.php) is destroyed, then you should use the Screen's ContentManagerName.
-* **Are you creating an object which will be destroyed at some time in the future?** If you are not using [Screens](../../../../../frb/docs/index.php) but still want to perform your own content management (and destruction) then you should place your object in the same content manager as other objects which will be destroyed at the same time. Of course, we encourage the use of [Screens](../../../../../frb/docs/index.php) as they have been created for this reason and they simplify the management of assets.
+* **Are you using** [**Screens**](../../../../frb/docs/index.php)**?** The base [Screen](../../../../frb/docs/index.php) class defines a property called ContentManagerName. If the object that you're creating should be destroyed when the [Screen](../../../../frb/docs/index.php) is destroyed, then you should use the Screen's ContentManagerName.
+* **Are you creating an object which will be destroyed at some time in the future?** If you are not using [Screens](../../../../frb/docs/index.php) but still want to perform your own content management (and destruction) then you should place your object in the same content manager as other objects which will be destroyed at the same time. Of course, we encourage the use of [Screens](../../../../frb/docs/index.php) as they have been created for this reason and they simplify the management of assets.
 
 ### Additional Information
 
-* [Texture caching example](../../../../../frb/docs/index.php#Texture_Caching) - Shows an example of how Content Managers cache content.
-* [FlatRedBall.FlatRedBallServices.AddDisposable](../../../../../frb/docs/index.php) - AddDisposable can be used to add IDisposables to Content Managers.
-* [FlatRedBall Content Manager:Multiple Content Managers](../../../../../frb/docs/index.php) - Discusses the purpose of having multiple content managers.
+* [Texture caching example](../../../../frb/docs/index.php#Texture\_Caching) - Shows an example of how Content Managers cache content.
+* [FlatRedBall.FlatRedBallServices.AddDisposable](../../../../frb/docs/index.php) - AddDisposable can be used to add IDisposables to Content Managers.
+* [FlatRedBall Content Manager:Multiple Content Managers](../../../../frb/docs/index.php) - Discusses the purpose of having multiple content managers.

@@ -1,4 +1,4 @@
-# rendertargetsprite
+# RenderTargetSprite
 
 ### Introduction
 
@@ -18,8 +18,6 @@ This example shows how to create a dark overlay on your game, with light sprites
 
 * The Screen has some other visuals to be drawn under the RenderTargetSprite
 * The WhiteLight Texture is available to the Screen, such as by being added to the Screen in Glue
-
-&#x20;
 
 ```
 public partial class TestScreen
@@ -126,11 +124,7 @@ public partial class TestScreen
 }
 ```
 
-
-
-<figure><img src="../../../../../media/2020-12-2020_December_18_113601.gif" alt=""><figcaption></figcaption></figure>
-
- &#x20;
+<figure><img src="../../../../.gitbook/assets/2020-12-2020_December_18_113601.gif" alt=""><figcaption></figcaption></figure>
 
 ### Refresh
 

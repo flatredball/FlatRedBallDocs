@@ -85,7 +85,7 @@ public void SetPlayerIndex(int index)
 }
 ```
 
-![RockBlasterDifferentShipTextures.png](../../media/migrated\_media-RockBlasterDifferentShipTextures.png)
+![RockBlasterDifferentShipTextures.png](../../.gitbook/assets/migrated\_media-RockBlasterDifferentShipTextures.png)
 
 ### Conclusion
 

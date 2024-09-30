@@ -19,15 +19,15 @@ This image is an example of a sprite sheet combining multiple graphics into one 
 * Top = 128
 * Bottom = 144
 
-![Pixel coordinates of a Coin in a sprite sheet](../../../media/2021-04-img\_6074bfeed2cae.png)
+![Pixel coordinates of a Coin in a sprite sheet](../../../.gitbook/assets/2021-04-img\_6074bfeed2cae.png)
 
 These values can be obtained through most image editors. The following image shows how to obtain these values in Paint.NET:
 
-![Reading pixel coordinates of a selection in Paint.NET](../../../media/2021-04-img\_6074b92ea2b46.png)
+![Reading pixel coordinates of a selection in Paint.NET](../../../.gitbook/assets/2021-04-img\_6074b92ea2b46.png)
 
 These values can be set in the FRB Editor as shown in the following image:
 
-![Setting pixel coordinates in the FRB Editor on a Sprite](../../../media/2021-04-img\_6074b9a2509fa.png)
+![Setting pixel coordinates in the FRB Editor on a Sprite](../../../.gitbook/assets/2021-04-img\_6074b9a2509fa.png)
 
 Keep in mind that the FRB Editor uses **pixels** as its unit for convenience. When working with Sprites in code, you can use either pixel or **UV coordinates** (values between 0 to 1).
 
@@ -103,7 +103,7 @@ sprite3.Vertices[0].TextureCoordinate.Y = .3f;
 sprite3.X = 6;
 ```
 
-![DifferentSpriteTextureCoordinates.png](../../../media/migrated\_media-DifferentSpriteTextureCoordinates.png)
+![DifferentSpriteTextureCoordinates.png](../../../.gitbook/assets/migrated\_media-DifferentSpriteTextureCoordinates.png)
 
 ### TextureCoordinate Properties
 

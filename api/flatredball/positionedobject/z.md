@@ -24,7 +24,7 @@ spriteInFront.Height = 100;
 spriteInFront.Z = 1;
 ```
 
-![SpriteZ.PNG](../../../media/migrated\_media-SpriteZ.PNG)
+![SpriteZ.PNG](../../../.gitbook/assets/migrated\_media-SpriteZ.PNG)
 
 ### Z in 2D
 

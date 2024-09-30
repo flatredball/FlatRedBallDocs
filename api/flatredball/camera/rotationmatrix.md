@@ -1,13 +1,13 @@
-# rotationmatrix
+# RotationMatrix
 
 ### Introduction
 
 The Camera object inherits from the PositionedObject class. Therefore, it can be rotated just like any other PositionedObject. For information on using rotation values on a PositionedObject in general, see the following pages:
 
-* [FlatRedBall.PositionedObject.RotationX](../../../../frb/docs/index.php)
-* [FlatRedBall.PositionedObject.RotationY](../../../../frb/docs/index.php)
-* [FlatRedBall.PositionedObject.RotationZ](../../../../frb/docs/index.php)
-* [FlatRedBall.PositionedObject.RotationMatrix](../../../../frb/docs/index.php)
+* [FlatRedBall.PositionedObject.RotationX](../../../frb/docs/index.php)
+* [FlatRedBall.PositionedObject.RotationY](../../../frb/docs/index.php)
+* [FlatRedBall.PositionedObject.RotationZ](../../../frb/docs/index.php)
+* [FlatRedBall.PositionedObject.RotationMatrix](../../../frb/docs/index.php)
 
 By default the Camera will attempt to orient itself so that "up" is the Y vector (0,1,0). For more information see the [UpVector page](upvector.md).
 
@@ -47,4 +47,4 @@ The Camera can be rotated to be facing any direction. Keep in mind that many sys
  SpriteManager.Camera.CameraCullMode = CameraCullMode.None;
 ```
 
-![RotatedCamera.PNG](../../../../media/migrated_media-RotatedCamera.PNG)
+![RotatedCamera.PNG](../../../.gitbook/assets/migrated\_media-RotatedCamera.PNG)

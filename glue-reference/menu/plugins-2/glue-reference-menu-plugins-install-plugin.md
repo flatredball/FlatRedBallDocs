@@ -8,17 +8,17 @@ Plugins can be manually installed through the Install Plugin menu item. Plugins 
 
 To install a plugin, select the Plugins->Install Plugin menu item. &#x20;
 
-<figure><img src="../../../media/migrated_media-PluginInstallPluginGlueMenuItem.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/migrated_media-PluginInstallPluginGlueMenuItem.png" alt=""><figcaption></figcaption></figure>
 
 You will see the following window appear:&#x20;
 
 &#x20;
 
-<figure><img src="../../../media/migrated_media-InstallPlugin.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/migrated_media-InstallPlugin.PNG" alt=""><figcaption></figcaption></figure>
 
 Press the browse button (...) to select the .plug file you wish to install.
 
-![](../../../media/2016-08-img\_57ab34fb85d44.png)
+![](../../../.gitbook/assets/2016-08-img\_57ab34fb85d44.png)
 
 After selecting the plugin, click the "Ok" button. Glue needs to be restarted to apply the plugin.
 

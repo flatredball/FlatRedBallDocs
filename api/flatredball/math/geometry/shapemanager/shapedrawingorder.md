@@ -1,8 +1,8 @@
-# shapedrawingorder
+# ShapeDrawingOrder
 
 ### Introduction
 
-The ShapeDrawingOrder controls whether all Shapes are drawn under or over other FlatRedBall-drawn objects (for example [Sprites](../../../../../../frb/docs/index.php), [Models](../../../../../../frb/docs/index.php), and [Texts](../../../../../../frb/docs/index.php)). Currently shape drawing order cannot be controlled by the shape's Z value; however, as of the June 2009 release of FlatRedBall, most shapes can be placed on layers which provides some control over ordering.
+The ShapeDrawingOrder controls whether all Shapes are drawn under or over other FlatRedBall-drawn objects (for example [Sprites](../../../../../frb/docs/index.php), [Models](../../../../../frb/docs/index.php), and [Texts](../../../../../frb/docs/index.php)). Currently shape drawing order cannot be controlled by the shape's Z value; however, as of the June 2009 release of FlatRedBall, most shapes can be placed on layers which provides some control over ordering.
 
 The ShapeDrawingOrder has two options:
 
@@ -13,7 +13,7 @@ Since the default for the ShapeManager's ShapeDrawingOrder is OverEverything, th
 
 ### Code Example
 
-The following example adds a [Sprite](../../../../../../frb/docs/index.php) and a [Line](../../../../../../frb/docs/index.php), then sets ShapeDrawingOrder to UnderEverything so that the added [Line](../../../../../../frb/docs/index.php) appears under the [Sprite](../../../../../../frb/docs/index.php).
+The following example adds a [Sprite](../../../../../frb/docs/index.php) and a [Line](../../../../../frb/docs/index.php), then sets ShapeDrawingOrder to UnderEverything so that the added [Line](../../../../../frb/docs/index.php) appears under the [Sprite](../../../../../frb/docs/index.php).
 
 Add the following using statements:
 
@@ -33,4 +33,4 @@ Add the following to Initialize after initializing FlatRedBall:
  ShapeManager.ShapeDrawingOrder = ShapeDrawingOrder.UnderEverything;
 ```
 
-![ShapeDrawingOrder.png](../../../../../../media/migrated_media-ShapeDrawingOrder.png)
+![ShapeDrawingOrder.png](../../../../../.gitbook/assets/migrated\_media-ShapeDrawingOrder.png)

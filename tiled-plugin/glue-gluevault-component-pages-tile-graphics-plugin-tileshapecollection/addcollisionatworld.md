@@ -1,4 +1,4 @@
-# addcollisionatworld
+# AddCollisionAtWorld
 
 ### Introduction
 
@@ -6,7 +6,7 @@ AddCollisionAtWorld creates attempts to create a new rectangle at the location s
 
 ### AddCollisionAtWorld Details
 
-AddCollisionAtWorld  adds a collision rectangle at the argument X and Y values. Rather than using the exact X and Y values, the rectangle will be placed at the center of the tile, extending to the edges using the TileShapeCollection.GridSize  value. For example, consider a TileShapeCollection  with a GridSize  of 16. Calling the AddCollisionAtWorld  method with any value between 0 and 16 will result in a rectangle being placed at (8,8). Furthermore, calling AddCollisionAtWorld  inserts a rectangle in the proper index to keep the shape collection ordered along its SortAxis . Therefore, AddCollisionAtWorld  can be called in any order and all rectangles will still be sorted and collision methods will use partitioning.
+AddCollisionAtWorld adds a collision rectangle at the argument X and Y values. Rather than using the exact X and Y values, the rectangle will be placed at the center of the tile, extending to the edges using the TileShapeCollection.GridSize value. For example, consider a TileShapeCollection with a GridSize of 16. Calling the AddCollisionAtWorld method with any value between 0 and 16 will result in a rectangle being placed at (8,8). Furthermore, calling AddCollisionAtWorld inserts a rectangle in the proper index to keep the shape collection ordered along its SortAxis . Therefore, AddCollisionAtWorld can be called in any order and all rectangles will still be sorted and collision methods will use partitioning.
 
 ### Code Example - Creating AxisAlignedRectangles With the Cursor
 
@@ -27,8 +27,4 @@ if(cursor.PrimaryDown)
 }
 ```
 
-
-
-<figure><img src="../../../../media/2021-04-2021_April_06_215452.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/2021-04-2021_April_06_215452.gif" alt=""><figcaption></figcaption></figure>

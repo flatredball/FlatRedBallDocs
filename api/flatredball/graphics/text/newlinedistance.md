@@ -1,4 +1,4 @@
-# newlinedistance
+# NewLineDistance
 
 ### Introduction
 
@@ -17,7 +17,7 @@ otherText.X = 150;
 otherText.NewLineDistance = 30;
 ```
 
-![NewlineDistance2D.PNG](../../../../../media/migrated_media-NewlineDistance2D.PNG)
+![NewlineDistance2D.PNG](../../../../.gitbook/assets/migrated\_media-NewlineDistance2D.PNG)
 
 ### Code Example (3D Camera/Layer)
 
@@ -34,8 +34,8 @@ otherText.NewLineDistance = 3;
 otherText.AdjustPositionForPixelPerfectDrawing = false;
 ```
 
-![NewlineDistance.PNG](../../../../../media/migrated_media-NewlineDistance.PNG)
+![NewlineDistance.PNG](../../../../.gitbook/assets/migrated\_media-NewlineDistance.PNG)
 
 ### NewlineDistance rounds to whole numbers if AdjustPositionForPixelPerfectDrawing is true
 
-Text object are designed to work in 2D coordinates by default. Therefore, NewlineDistance will round to the nearest integer value. To change this, you can set the Texts' [AdjustPositionForPixelPerfectDrawing](../../../../../frb/docs/index.php) to false. The reason this happens is because if you are dealing with Text that has multiple lines and it is going to scroll vertically (like on a credits screen), then individual lines may appear to jitter when the text scrolls. If you are using 3D text, then you most likely do not want it to be adjusted for pixel perfect drawing anyway, so setting AdjustPositionForPixelPerfectDrawing to false will both resolve this issue and potential other issues with rendering te a Text object on a 3D Camera/Layer.
+Text object are designed to work in 2D coordinates by default. Therefore, NewlineDistance will round to the nearest integer value. To change this, you can set the Texts' [AdjustPositionForPixelPerfectDrawing](../../../../frb/docs/index.php) to false. The reason this happens is because if you are dealing with Text that has multiple lines and it is going to scroll vertically (like on a credits screen), then individual lines may appear to jitter when the text scrolls. If you are using 3D text, then you most likely do not want it to be adjusted for pixel perfect drawing anyway, so setting AdjustPositionForPixelPerfectDrawing to false will both resolve this issue and potential other issues with rendering te a Text object on a 3D Camera/Layer.

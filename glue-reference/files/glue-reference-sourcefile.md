@@ -11,7 +11,7 @@ To add a file with a source file:
 1. Right-click on the "Files" item under a Screen or entity
 2. Select "Add Externally Built File"
 
-<figure><img src="../../media/migrated_media-AddExternallyBuiltFile.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-AddExternallyBuiltFile.png" alt=""><figcaption></figcaption></figure>
 
 ### Source files require builders
 

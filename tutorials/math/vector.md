@@ -14,11 +14,11 @@ In mathematics, a Vector is a set of values which can simplify common physics ca
 
 FlatRedBall uses the Vector3 type for position, velocity, and acceleration. The **3** in Vector3 means that the vector has 3 components: X, Y, and Z. In some cases FlatRedBall also uses Vector2, which is a type which only has X and Y values. By default, all objects in FlatRedBall have a Position value of (0,0,0), where the three values represent the X, Y, and Z components of position. Since the Camera in FlatRedBall also has an X and Y of 0, then by default all objects will be positioned at the center of the screen. For example, a new circle (whether added through the FRB editor or code) will be positioned at the center of the screen.
 
-![](../../../media/2021-02-img_60390522c59ac.png)
+![](../../.gitbook/assets/2021-02-img\_60390522c59ac.png)
 
 We can modify the position of an object by changing its X, Y, or Z values (although Z values may not have a visual impact on the object in 2D). For example, the Circle above can be moved to the right by setting its X to 100, which will move it 100 pixels to the right of the center of the screen. CircleInstance.Position.X = 100;
 
-![](../../../media/2021-02-img_603905764868e.png)
+![](../../.gitbook/assets/2021-02-img\_603905764868e.png)
 
 In the image above, the (X,Y,Z) values are (100, 0, 0).
 
@@ -48,9 +48,7 @@ var vectorToPlayer = player.Position - enemy.Position;
 
 Notice that the order of subtraction is (destination - source). If the enemy is represented by a red circle and the player by a green circle, then the subtraction would produce a vector visualized by the red arrow in the following image:
 
-![](../../../media/2021-11-img_61967362c3312.png)
-
-&#x20;
+![](../../.gitbook/assets/2021-11-img\_61967362c3312.png)
 
 ### Moving Toward a Direction
 
@@ -81,7 +79,7 @@ The following link gives the basics about cross products: [http://www.physics.uo
 
 ### Point Relative to Line and Polygon
 
-One use of the cross product is to determine which side of a line a point is on. This is the core math behind polygon collision. Consider the following example. ![CrossProductTutorial1.png](../../../media/migrated_media-CrossProductTutorial1.png) Using the cross product we can determine which side of the line C is on. However, before we can do that, we need to identify characteristics of the line formed by the points A and B - specifically which point is "first". That is, if a person were standing at point A and looking towards B, to him C would be to the "left" of the line. However, if the person were standing at point B and looking toward point A, C would be to the "right" of the line. Selecting A or B as the first point or origin really doesn't matter as long as the effect is understood and the same ordering is used consistently. For this example, I'll consider A as the first point and use this when creating the vectors to be used in the cross product. Therefore, our two vectors when calculating the cross product will be AB and AC (this is a right handed coordinate system as is used in XNA, but not in Managed DirectX). ![CrossProductTutorial2.png](../../../media/migrated_media-CrossProductTutorial2.png) If AB and AC are considered to be on the Z=0 plane, then the cross of AB and AC is a vector with a positive Z value. So long as the vector is on the "left" side of the line when viewing from A to B, the Z component of the cross of AB and AC will always be positive. If the point is on the right side of the line in the same situation, the Z component of the cross of AB and AC will always be negative. Using this information, we can find out if a point is inside a polygon. In the following image, the point F is inside a polygon formed by points A, B, C, D, E. ![CrossProductTutorial3.png](../../../media/migrated_media-CrossProductTutorial3.png) Each side has a matching vector with which it would be crossed and in all cases the Z component of the cross would be positive. Keep in mind that this is only the case if the polygon is convex. Determining if a point is inside of a concave polygon requires a different method.
+One use of the cross product is to determine which side of a line a point is on. This is the core math behind polygon collision. Consider the following example. ![CrossProductTutorial1.png](../../.gitbook/assets/migrated\_media-CrossProductTutorial1.png) Using the cross product we can determine which side of the line C is on. However, before we can do that, we need to identify characteristics of the line formed by the points A and B - specifically which point is "first". That is, if a person were standing at point A and looking towards B, to him C would be to the "left" of the line. However, if the person were standing at point B and looking toward point A, C would be to the "right" of the line. Selecting A or B as the first point or origin really doesn't matter as long as the effect is understood and the same ordering is used consistently. For this example, I'll consider A as the first point and use this when creating the vectors to be used in the cross product. Therefore, our two vectors when calculating the cross product will be AB and AC (this is a right handed coordinate system as is used in XNA, but not in Managed DirectX). ![CrossProductTutorial2.png](../../.gitbook/assets/migrated\_media-CrossProductTutorial2.png) If AB and AC are considered to be on the Z=0 plane, then the cross of AB and AC is a vector with a positive Z value. So long as the vector is on the "left" side of the line when viewing from A to B, the Z component of the cross of AB and AC will always be positive. If the point is on the right side of the line in the same situation, the Z component of the cross of AB and AC will always be negative. Using this information, we can find out if a point is inside a polygon. In the following image, the point F is inside a polygon formed by points A, B, C, D, E. ![CrossProductTutorial3.png](../../.gitbook/assets/migrated\_media-CrossProductTutorial3.png) Each side has a matching vector with which it would be crossed and in all cases the Z component of the cross would be positive. Keep in mind that this is only the case if the polygon is convex. Determining if a point is inside of a concave polygon requires a different method.
 
 ### Moving a Point to a Line
 

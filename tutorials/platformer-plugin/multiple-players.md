@@ -2,15 +2,13 @@
 
 ### Introduction
 
-This walkthrough looks at the FlatRedBall Multiplayer Platformer project and explains the important details of creating a (local) multiplayer game similar to games like Contra III.&#x20;
+This walkthrough looks at the FlatRedBall Multiplayer Platformer project and explains the important details of creating a (local) multiplayer game similar to games like Contra III.
 
 {% embed url="https://youtu.be/YHfTVFZHj4E?t=85" %}
 
-The sample project can be downloaded from Github: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MultiplayerPlatformerDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MultiplayerPlatformerDemo)&#x20;
+The sample project can be downloaded from Github: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MultiplayerPlatformerDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/MultiplayerPlatformerDemo)
 
-&#x20;
-
-<figure><img src="../../media/2021-05-2021_April_30_161604.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2021-05-2021_April_30_161604.gif" alt=""><figcaption></figcaption></figure>
 
 We will be referring to the MultiplayerPlatformerDemo as _this demo_ and _the demo_ throughout this walkthrough.
 
@@ -28,11 +26,11 @@ We will take a deep dive into these concepts throughout this walkthrough.
 
 The demo includes a Screen called CharacterJoiningScreen. This screen does not inherit from the GameScreen - it is not a level. Rather, it is a screen which contains only Gum UI and logic.
 
-![](../../media/2021-04-img_608c8b75b6b3f.png)
+![](../../.gitbook/assets/2021-04-img\_608c8b75b6b3f.png)
 
 It is marked as the startup screen to give players a chance to join/leave the game before starting Level1.
 
-![](../../media/2021-04-img_608c8b9a89076.png)
+![](../../.gitbook/assets/2021-04-img\_608c8b9a89076.png)
 
 The CharacterJoiningScreen uses Gum and the MVVM pattern to make the UI update according to the join state stored in the ViewModel. The UI does not participate in the logic of the game - it only displays the values stored in the underlying view model objects. The state is stored in the CharacterJoiningScreen's ViewModel object.
 
@@ -167,7 +165,7 @@ for(int i = 0; i < PlayerJoinStates.Length; i++)
 
 This for loop in CustomInitialize is solely responsible for creating Players. Notice that the GameScreen does not automatically create any Player instances through Glue.
 
-![](../../media/2021-04-img_608c959c738b7.png)
+![](../../.gitbook/assets/2021-04-img\_608c959c738b7.png)
 
 Therefore, if the PlayerJoinStates are not assigned, then the game will begin without any Players. The CharacterJoiningScreen is responsible for assigning these values, and it does so right before moving into a level.
 
@@ -185,7 +183,7 @@ private void StartLevel()
 
 If using the Glue Wizard, then the PlayerList will automatically have a collision relationship set up between the PlayerList and SolidCollision. We recommend always creating collision relationships with lists rather than individual objects (such as Player1) so that moving to a multiplayer game is easy.
 
-![](../../media/2021-04-img_608c9681075b9.png)
+![](../../.gitbook/assets/2021-04-img\_608c9681075b9.png)
 
 If your game includes more collision relationships, you will want to make sure that they always include the PlayerList.
 
@@ -242,8 +240,8 @@ partial void CustomInitializePlatformerInput()
 
 The Player code includes an AnimationController which sets the current animation based on input and collision state. This code assigns names like CharacterWalkLeft and CharacterJumpRight, but it does not consider whether the Player is index 0, 1, 2, or 3. This code applies regardless of index because each of the animations have the same names. This approach is a common way to reduce code when displaying multiple player indexes or enemy types. Once a standard set of animations has been decided upon, the code can be written against this common set and it will work regardless of the .achx file used.
 
-![](../../media/2021-05-img_608c9bd1c64bb.png)
+![](../../.gitbook/assets/2021-05-img\_608c9bd1c64bb.png)
 
 ### Conclusion
 
-This walkthrough has shown how a typical FlatRedBall multiplayer game is created, including setting whether a player has joined, using this value to create players, and assigning input device and animations according to player index.   &#x20;
+This walkthrough has shown how a typical FlatRedBall multiplayer game is created, including setting whether a player has joined, using this value to create players, and assigning input device and animations according to player index.

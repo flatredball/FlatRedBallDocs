@@ -23,4 +23,4 @@ if(GuiManager.Cursor.PrimaryClick)
 }
 ```
 
-<figure><img src="../../../../media/2016-01-2017-12-14_08-49-02-1.gif" alt=""><figcaption><p>Creating circles by clicking the cursor primary button</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2016-01-2017-12-14_08-49-02-1.gif" alt=""><figcaption><p>Creating circles by clicking the cursor primary button</p></figcaption></figure>

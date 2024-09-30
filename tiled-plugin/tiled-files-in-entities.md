@@ -1,4 +1,4 @@
-# tiled-files-in-entities
+# Tiled Files in Entities
 
 ### Introduction
 
@@ -15,32 +15,29 @@ To add a .tmx file to an entity, follow these steps:
 
 1.  Create a .tmx file using the Tiled program. Make sure this .tmx file is saved in the folder structure of your project's content folder.
 
-    ![](../../../media/2017-09-img_59cae5f4e8a70.png)
+    ![](../.gitbook/assets/2017-09-img\_59cae5f4e8a70.png)
 2. Create an Entity
-3. Drag+drop the .tmx file onto the entity 
+3. Drag+drop the .tmx file onto the entity
 
-<figure><img src="../../../media/2017-09-2017-09-26_17-28-57.gif" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../.gitbook/assets/2017-09-2017-09-26_17-28-57.gif" alt=""><figcaption></figcaption></figure>
 
 4. Drag+drop the file from inside the entity's **Files** folder onto the entity's **Objects** folder
 5. Select **Entire File (Layered TileMap)** in the **Source Name** dropdown
-6. Click OK 
+6. Click OK
 
-<figure><img src="../../../media/2017-09-2017-09-26_17-33-51.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2017-09-2017-09-26_17-33-51.gif" alt=""><figcaption></figcaption></figure>
 
+The entity will now display the contents of the .tmx file when included in a screen. ![](../.gitbook/assets/2017-09-img\_59cae57528f71.png)
 
-
-The entity will now display the contents of the .tmx file when included in a screen. ![](../../../media/2017-09-img_59cae57528f71.png)
-
-![](../../../media/2017-09-img_59cae5a9912b2.png)
+![](../.gitbook/assets/2017-09-img\_59cae5a9912b2.png)
 
 ### Entity and LayeredTileMap Origin
 
 LayeredTileMap objects use their top-left corner as their origin. This means that the center of the entity will align with the top-left corner of the map. We can observe this by adding a Circle object to an entity which also has a Tiled object.
 
-![](../../../media/2017-09-img_59cae6bc94570.png)
+![](../.gitbook/assets/2017-09-img\_59cae6bc94570.png)
 
-CircleInstance is centered on the entity, so we can see that the tiled object's top-left corner aligns with the center of the entity. ![](../../../media/2017-09-img_59cae6fe1d451.png) We can further observe the impact of the origin by rotating the entity. We'll do this by adding the following code to the entity's CustomActivity  method:
+CircleInstance is centered on the entity, so we can see that the tiled object's top-left corner aligns with the center of the entity. ![](../.gitbook/assets/2017-09-img\_59cae6fe1d451.png) We can further observe the impact of the origin by rotating the entity. We'll do this by adding the following code to the entity's CustomActivity method:
 
 ```lang:c#
 private void CustomActivity()
@@ -50,16 +47,14 @@ private void CustomActivity()
 }
 ```
 
+<figure><img src="../.gitbook/assets/2017-09-2017-09-26_17-49-07.gif" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../../media/2017-09-2017-09-26_17-49-07.gif" alt=""><figcaption></figcaption></figure>
-
- We can center the tiles on the center of the entity by following these steps:
+We can center the tiles on the center of the entity by following these steps:
 
 1. Open the .tmx file in Tiled
 2.  Resize the map so that it there is no empty space around the object
 
-    ![](../../../media/2017-09-img_59caea24d5420.png)
+    ![](../.gitbook/assets/2017-09-img\_59caea24d5420.png)
 3. Save the file
 4.  Add the following code to the entity's CustomInitialize :
 
@@ -72,11 +67,9 @@ private void CustomActivity()
     }
     ```
 
-Now the center of the tilemap will align with the center of the entity. 
+Now the center of the tilemap will align with the center of the entity.
 
-<figure><img src="../../../media/2017-09-2017-09-26_18-04-51.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/2017-09-2017-09-26_18-04-51.gif" alt=""><figcaption></figcaption></figure>
 
 ### Optionally Loading .tmx Files
 
@@ -86,9 +79,9 @@ Tiled files added to entities can also be optionally loaded. Games may need to o
 2. Select the .tmx file in the **Files** folder
 3.  Change its **LoadedOnlyWhenReferenced** to **True**
 
-    ![](../../../media/2017-09-img_59caeeb437173.png)
+    ![](../.gitbook/assets/2017-09-img\_59caeeb437173.png)
 4. If your entity has a LayeredTileMap object (which we called **EntireFile** earlier) remove it - it needs to be created in code instead.
-5.  Modify your entity so that its custom code creates and destroys the entity in CustomInitialize  and CustomDestroy  as shown in the following code:
+5.  Modify your entity so that its custom code creates and destroys the entity in CustomInitialize and CustomDestroy as shown in the following code:
 
     ```lang:c#
     public partial class TiledEntity

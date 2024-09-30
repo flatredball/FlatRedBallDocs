@@ -1,12 +1,12 @@
-# texturecoordinate
+# TextureCoordinate
 
 ### Introduction
 
-The TextureCoordinate property provides the ability for Sprites to display part of a Texture2D. By default, Sprites display their entire Texture. This behavior is desirable in many situations, but you may want to display only part of an image if you are using [sprite sheets](../../../../frb/docs/index.php) or in certain graphical effects. TextureCoordinates also let you display "more" of a texture. Examples include stretching the edge pixels or wrapping (tiling) the texture.
+The TextureCoordinate property provides the ability for Sprites to display part of a Texture2D. By default, Sprites display their entire Texture. This behavior is desirable in many situations, but you may want to display only part of an image if you are using [sprite sheets](../../../frb/docs/index.php) or in certain graphical effects. TextureCoordinates also let you display "more" of a texture. Examples include stretching the edge pixels or wrapping (tiling) the texture.
 
 ### Understanding TextureCoordinates and Pixels
 
-By default all texture coordinates for a Sprite are either 0 or 1. This might seem a little weird considering Sprites usually do not reference [textures](../../../../frb/docs/index.php) of only 1 pixel size. Furthermore, regardless of the size of the referenced [texture](../../../../frb/docs/index.php) the texture coordinates will always default to 0 or 1. What does this mean? For a number of reasons, 3D APIs like DirectX and XNA use 0 - 1 for texture coordinates regardless of the width of the [texture](../../../../frb/docs/index.php). The coordinate (0,0) indicates the top-left of the [texture](../../../../frb/docs/index.php) while the coordinate (1,1) represents the bottom right of the coordinate. The coordinate (1,0) is the top right. Therefore, if you are used to working with pixels, you need to divide your desired pixel coordinate by the width and height of your [texture](../../../../frb/docs/index.php) to get the desired texture coordinate. The following code converts a pixel coordinate to a texture coordinate.
+By default all texture coordinates for a Sprite are either 0 or 1. This might seem a little weird considering Sprites usually do not reference [textures](../../../frb/docs/index.php) of only 1 pixel size. Furthermore, regardless of the size of the referenced [texture](../../../frb/docs/index.php) the texture coordinates will always default to 0 or 1. What does this mean? For a number of reasons, 3D APIs like DirectX and XNA use 0 - 1 for texture coordinates regardless of the width of the [texture](../../../frb/docs/index.php). The coordinate (0,0) indicates the top-left of the [texture](../../../frb/docs/index.php) while the coordinate (1,1) represents the bottom right of the coordinate. The coordinate (1,0) is the top right. Therefore, if you are used to working with pixels, you need to divide your desired pixel coordinate by the width and height of your [texture](../../../frb/docs/index.php) to get the desired texture coordinate. The following code converts a pixel coordinate to a texture coordinate.
 
 ```
 int desiredPixelCoordinateX = 16;
@@ -76,7 +76,7 @@ sprite3.Vertices[0].TextureCoordinate.Y = .3f;
 sprite3.X = 6;
 ```
 
-![DifferentSpriteTextureCoordinates.png](../../../../media/migrated_media-DifferentSpriteTextureCoordinates.png)
+![DifferentSpriteTextureCoordinates.png](../../../.gitbook/assets/migrated\_media-DifferentSpriteTextureCoordinates.png)
 
 ### TextureCoordinate Properties
 
@@ -103,8 +103,8 @@ mVertices[1].TextureCoordinate.X = 5;
 mVertices[2].TextureCoordinate.X = 5;
 ```
 
-You must also make sure that you have set the [TextureAddressMode](../../../../frb/docs/index.php) to TextureAddressMode.Wrap. See the [TextureAddressMode](../../../../frb/docs/index.php) page for more information.
+You must also make sure that you have set the [TextureAddressMode](../../../frb/docs/index.php) to TextureAddressMode.Wrap. See the [TextureAddressMode](../../../frb/docs/index.php) page for more information.
 
 ### Related Information
 
-* [FlatRedBall.Sprite.TextureAddressMode](../../../../frb/docs/index.php) - TextureAddressMode can control how a texture is drawn when texture coordinates outside of the 0.0 - 1.0 range are used. TextureAddressMode can be used to create tiled images using single Sprites.
+* [FlatRedBall.Sprite.TextureAddressMode](../../../frb/docs/index.php) - TextureAddressMode can control how a texture is drawn when texture coordinates outside of the 0.0 - 1.0 range are used. TextureAddressMode can be used to create tiled images using single Sprites.

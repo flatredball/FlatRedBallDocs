@@ -6,7 +6,7 @@ Windows RT supports a custom cursor. This article discusses how to modify the cu
 
 ### Setup
 
-This project assumes a working Windows RT project. It also assumes that the cursor is visible. For more information on making the cursor visible, see [this page](../../../../frb/docs/index.php).
+This project assumes a working Windows RT project. It also assumes that the cursor is visible. For more information on making the cursor visible, see [this page](../../../frb/docs/index.php).
 
 ### Creating a C++ project to house the resource
 
@@ -17,7 +17,7 @@ Unfortunately to create a resource to hold the Cursor graphic you must create a 
 3. Select Add->"New Project"
 4. On the left select the category "Visual C++"->"Store Apps"->"Windows Apps"
 5. Select the "DLL (Windows)" project type
-6. Enter the name "ProjectForCursor"![C++DllProject.PNG](../../../../media/migrated_media-C--DllProject.PNG)
+6. Enter the name "ProjectForCursor"![C++DllProject.PNG](../../../.gitbook/assets/migrated\_media-C--DllProject.PNG)
 7. Click OK
 
 ### Adding a resource to the C++ Project
@@ -28,7 +28,7 @@ Next we'll add a resource file to contain our cursor resource. To do this:
 2. Select Add->"Resource..."
 3. Select "Cursor" when the popup appears and click "New"
 
-![AddCursorToC++Project.gif](../../../../media/migrated_media-AddCursorToC--Project.gif)
+![AddCursorToC++Project.gif](../../../.gitbook/assets/migrated\_media-AddCursorToC--Project.gif)
 
 ### Editing the .cur file
 
@@ -58,8 +58,6 @@ We must now modify the Visual Studio (C#) project by-hand. To do this:
 1. Navigate to your game project's .csproj file
 2. Open it in a text editor
 3. Find the first PropertyGroup tab, which might appear as follows:
-
-&#x20;
 
 ```
   <PropertyGroup>

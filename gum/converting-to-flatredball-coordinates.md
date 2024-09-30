@@ -30,7 +30,7 @@ The following code shows how to display the four edge bounds for a ColoredRectan
 
 
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Edge coordiantes displayed for centered ColoredRectangle instance</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption><p>Edge coordiantes displayed for centered ColoredRectangle instance</p></figcaption></figure>
 
 ### Converting from Gum to FlatRedBall Coordinates
 
@@ -42,11 +42,11 @@ The high level steps for converting from Gum to FlatRedBall coordinates are:
 
 For this example, consider a Gum screen with a single colored rectangle named ColoredRectangleInstance:
 
-![Blue rectangle in Gum](../media/2022-02-img\_621be2f6dba1a.png)
+![Blue rectangle in Gum](../.gitbook/assets/2022-02-img\_621be2f6dba1a.png)
 
 Note that the rectangle is positioned according to its center. This example will position a FlatRedBall Circle named CircleInstance. Note that this code can be used to position any FlatRedBall positioned object (such as entities or other collision shapes).
 
-![CircleInstance in PositioningScreen](../media/2022-02-img\_621be41d3a77b.png)
+![CircleInstance in PositioningScreen](../.gitbook/assets/2022-02-img\_621be41d3a77b.png)
 
 The following code can be used to convert the rectangle's position (which in this case is the center) to screen coordinates:
 
@@ -69,15 +69,15 @@ void CustomInitialize()
 }
 ```
 
-![Circle positioned in the center of the blue rectangle](../media/2022-02-img\_621be43f015a0.png)
+![Circle positioned in the center of the blue rectangle](../.gitbook/assets/2022-02-img\_621be43f015a0.png)
 
 Notice that the example above uses the position of the ColoredRectangleInstance as defined by its XOrigin and YOrigin. If the rectangle's origin is changed to top-right in Gum...
 
-![Blue rectangle in Gum with origin top-right](../media/2022-02-img\_621be4b9beaf8.png)
+![Blue rectangle in Gum with origin top-right](../.gitbook/assets/2022-02-img\_621be4b9beaf8.png)
 
 ...then the FlatRedBall CircleInstance will also be positioned on the Gum object's top-right corner.
 
-![Circle positioned at the blue rectangle's top-right corner](../media/2022-02-img\_621be4ee13f73.png)
+![Circle positioned at the blue rectangle's top-right corner](../.gitbook/assets/2022-02-img\_621be4ee13f73.png)
 
 ### Converting from FlatRedBall to Gum Coordinates
 

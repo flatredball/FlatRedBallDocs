@@ -14,7 +14,7 @@ Damage dealing is done through two interfaces: _IDamageable_ and _IDamageArea_. 
 
 If you have created a platformer or top-down project using the new project Wizard, then your Player entity already implements the IDamageable interface. You can verify this by selecting the Player entity and checking the Properties tab.
 
-![](../../media/2023-01-img\_63bd897ba9088.png)
+![](../../.gitbook/assets/2023-01-img\_63bd897ba9088.png)
 
 If your player does not already implement IDamageable, you can change this property in the Properties tab to true. Once this value is set, the Player will be ready to be used in the damage system.
 
@@ -32,7 +32,7 @@ Any entity can implement either IDamageable or IDamageArea interfaces - or both.
 
 Your Bullet entity is now marked as a IDamageArea.
 
-![](../../media/2023-01-img\_63bd8ab263f30.png)
+![](../../.gitbook/assets/2023-01-img\_63bd8ab263f30.png)
 
 The Team Index specified in the **new Entity** window defines the default team index. The default team index can be overridden in code, but specifying a team index enables the FlatRedBall Editor to generate collision relationships automatically. For example, consider a game which already has a Bullet defined which uses the Team Index of 0 as shown above. If a new Entity is created using Team Index 1, then collision relationships can automatically be created. To test this out, we can add a new entity named Enemy:
 
@@ -49,7 +49,7 @@ Notice that the new Entity window provides a preview of the collision relationsh
 
 In this case the game now has an IDamageArea entity (Bullet) and IDamageable entity (Enemy) on different Team Indexes. As shown in the **new entity window**, when the Enemy is added, the FRB creates collision relationships between the Enemy and Bullet.
 
-![](../../media/2023-01-img\_63be041e5eb06.png)
+![](../../.gitbook/assets/2023-01-img\_63be041e5eb06.png)
 
 ### Manually Creating Collision Relationships
 

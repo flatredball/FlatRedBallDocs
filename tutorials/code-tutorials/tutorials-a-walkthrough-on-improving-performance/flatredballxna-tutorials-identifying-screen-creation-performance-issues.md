@@ -1,4 +1,4 @@
-# flatredballxna-tutorials-identifying-screen-creation-performance-issues
+# Identifying Screen Creation Performance  Issues
 
 ### Introduction
 
@@ -6,7 +6,7 @@ If you have a screen which seems to take a long time to load then this can be th
 
 ### Measuring time in CustomInitialize
 
-CustomInitialize can be measured easily by using the [TimeManager's SystemCurrentTime](../../../../frb/docs/index.php) property along with the [Debugger's CommandLineWrite](../../../../frb/docs/index.php) function. For this example, let's assume a simple CustomInitialize which looks like this:
+CustomInitialize can be measured easily by using the [TimeManager's SystemCurrentTime](../../../frb/docs/index.php) property along with the [Debugger's CommandLineWrite](../../../frb/docs/index.php) function. For this example, let's assume a simple CustomInitialize which looks like this:
 
 ```
 void CustomInitialize()
@@ -49,7 +49,7 @@ void CustomInitialize()
 }
 ```
 
-![MeasuringCustomInitialize.PNG](../../../../media/migrated_media-MeasuringCustomInitialize.PNG)
+![MeasuringCustomInitialize.PNG](../../../.gitbook/assets/migrated\_media-MeasuringCustomInitialize.PNG)
 
 ### Measuring all Initialization including generated code
 
@@ -78,8 +78,6 @@ To do this:
 3. Go to CustomActivity (not CustomInitialize)
 4. Add the following code in CustomActivity:
 
-&#x20;
-
 ```
 if(firstTimeCalled)
 {
@@ -88,7 +86,7 @@ if(firstTimeCalled)
 }
 ```
 
-Your game should now output information about initialization time: ![RecordSegmentsOutput.PNG](../../../../media/migrated_media-RecordSegmentsOutput.PNG) Notice that this output method uses exponential notation for very small values. For example in the image above GameScreenPooled PostInitialize took "4E-07". This is the equivalent of 4 \* 10^(-7), or in other words 0.0000004. Typically if you see exponential notation you are dealing with time values which are so small that they will not have much if any of an impact on performance, so they can be treated as if they're 0. If the output from ToStringVerbose is too large to view on screen you can also output this to the Visual Studio output window as follows:
+Your game should now output information about initialization time: ![RecordSegmentsOutput.PNG](../../../.gitbook/assets/migrated\_media-RecordSegmentsOutput.PNG) Notice that this output method uses exponential notation for very small values. For example in the image above GameScreenPooled PostInitialize took "4E-07". This is the equivalent of 4 \* 10^(-7), or in other words 0.0000004. Typically if you see exponential notation you are dealing with time values which are so small that they will not have much if any of an impact on performance, so they can be treated as if they're 0. If the output from ToStringVerbose is too large to view on screen you can also output this to the Visual Studio output window as follows:
 
 ```
 if(firstTimeCalled)
@@ -98,10 +96,10 @@ if(firstTimeCalled)
 }
 ```
 
-![VerboseToOutputWindow.PNG](../../../../media/migrated_media-VerboseToOutputWindow.PNG)
+![VerboseToOutputWindow.PNG](../../../.gitbook/assets/migrated\_media-VerboseToOutputWindow.PNG)
 
 ### Where is the slowdown?
 
 So far we've discussed how to measure where slowdowns are occurring.
 
-* If the slowdown is in CustomLoadStaticContent or LoadStaticContent (notice the name of your screen will be prefixed), then you can solve the problem either by loading less content or by using a loading screen. For more information on using loading screens, see [this page](../../../../frb/docs/index.php).
+* If the slowdown is in CustomLoadStaticContent or LoadStaticContent (notice the name of your screen will be prefixed), then you can solve the problem either by loading less content or by using a loading screen. For more information on using loading screens, see [this page](../../../frb/docs/index.php).

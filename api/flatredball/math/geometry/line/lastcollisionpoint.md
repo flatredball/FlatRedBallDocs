@@ -1,6 +1,6 @@
-# lastcollisionpoint
+# LastCollisionPoint
 
-[FlatRedBall.Math.Geometry.Line](../../../../../../frb/docs/index.php)
+[FlatRedBall.Math.Geometry.Line](../../../../../frb/docs/index.php)
 
 ### Introduction
 
@@ -54,4 +54,4 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![LineLastCollisionPoint.PNG](../../../../../../media/migrated_media-LineLastCollisionPoint.PNG)
+![LineLastCollisionPoint.PNG](../../../../../.gitbook/assets/migrated\_media-LineLastCollisionPoint.PNG)

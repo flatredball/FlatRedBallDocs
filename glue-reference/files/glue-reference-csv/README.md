@@ -52,7 +52,7 @@ To add a CSV file:
 3. Right-click on on the location which should contain the new CSV and select Add File -> New File
 4. Enter the name for the new file. Although not necessary it's common to end the file name with "Data". For example, EnemyData if the file is to include data about enemies.
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Spreadsheet (.csv) selected in the new file window</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (175).png" alt=""><figcaption><p>Spreadsheet (.csv) selected in the new file window</p></figcaption></figure>
 
 Once you have added a new CSV file you can edit it in any editor you prefer, such as Excel, Libre Office, or even a text editor.
 
@@ -62,7 +62,7 @@ CSV files which are added to the FRB Editor are automatically loaded. If your CS
 
 For example, consider an EnemyData.csv file added to Global Content Files.
 
-<figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p>EnemyData.csv file in Global Content Files</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (176).png" alt=""><figcaption><p>EnemyData.csv file in Global Content Files</p></figcaption></figure>
 
 This file can be accessed in code through the GlobalContent object in code as shown in the following code snippet:
 
@@ -78,7 +78,7 @@ void CustomInitialize()
 
 The example above assumes a row for the "Monster" enemy and a column for Health as shown in the following image:
 
-<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>CSV with a Monster row and a Health property from column B</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (177).png" alt=""><figcaption><p>CSV with a Monster row and a Health property from column B</p></figcaption></figure>
 
 Note that if you add additional rows or columns you can access these in your code. Also note that this code assumes that the CSV is loaded into a dictionary. For more information on List vs Dictionary loading, see the [CreatesDictionary](createsdictionary.md) property.
 

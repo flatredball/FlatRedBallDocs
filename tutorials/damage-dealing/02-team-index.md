@@ -27,7 +27,7 @@ private void CustomActivity()
 
 Now the Player creates bullets when the Space key is pressed. Note that if you have a gamepad connected, the player automatically uses that as its input device. The space bar still shoots bullets, but movement will be controlled by the gamepad.
 
-<figure><img src="../../media/2023-01-11_06-32-40.gif" alt=""><figcaption><p>Player moving and shooting bullets</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-01-11_06-32-40.gif" alt=""><figcaption><p>Player moving and shooting bullets</p></figcaption></figure>
 
 ### Adding Enemies
 
@@ -78,29 +78,29 @@ The EnemyVsBullet collision relationship also has the **Deal Damage in Generated
 
 We can see the this logic work by shooting an enemy enough times to kill it - by default this is 10 shots.
 
-<figure><img src="../../media/2023-01-11_06-48-10.gif" alt=""><figcaption><p>Enemy dying after 10 shots</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-01-11_06-48-10.gif" alt=""><figcaption><p>Enemy dying after 10 shots</p></figcaption></figure>
 
 The default variables used to deal damage and kill the enemy are defined in the Entity and Bullet entities. All entities created with the IDamageable interface default to have 100 health.
 
-![Enemy with a default health of 100](../../media/2023-01-img\_63bebedcd0d20.png)
+![Enemy with a default health of 100](../../.gitbook/assets/2023-01-img\_63bebedcd0d20.png)
 
 All Entities created with the IDamageArea interface default to dealing 10 damage.
 
-![Bullet with a default Damage to Deal of 10](../../media/2023-01-img\_63bebf1ca3662.png)
+![Bullet with a default Damage to Deal of 10](../../.gitbook/assets/2023-01-img\_63bebf1ca3662.png)
 
 If we change these values we can change how many shots it takes to kill an enemy. For example, if the enemy is changed to have 20 health, it only takes 2 shots to kill each enemy.
 
-<figure><img src="../../media/2023-01-11_06-54-40.gif" alt=""><figcaption><p>Enemies being killed with 2 shots</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-01-11_06-54-40.gif" alt=""><figcaption><p>Enemies being killed with 2 shots</p></figcaption></figure>
 
 ### Team Index in Code
 
 As mentioned before, the collision relationship EnemyVsBullet results in damage dealing code because the Enemy and Bullet have different team indexes. Our bullets have a default Team Index of 0, so they will not deal damage to the Player even if a PlayerVsBullet collision relationship exists. To show this, we'll create a collision relationship by dragging PlayerList onto BulletList (you may have already done this in an earlier tutorial).
 
-<figure><img src="../../media/2023-01-11_07-00-26.gif" alt=""><figcaption><p>Creating a PlayerVsBullet collision relationship</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-01-11_07-00-26.gif" alt=""><figcaption><p>Creating a PlayerVsBullet collision relationship</p></figcaption></figure>
 
 Even with this collision relationship, Bullets which are fired by the Player do not deal damage to the player - the generated code checks team index and both have a team index of 0 so no damage is dealt ot the player.
 
-<figure><img src="../../media/2023-01-11_07-02-07.gif" alt=""><figcaption><p>Player shooting bullets</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-01-11_07-02-07.gif" alt=""><figcaption><p>Player shooting bullets</p></figcaption></figure>
 
 We may want enemies to be able to shoot bullets at the player. These bullets should have the Enemy Team Index (a value of 1) which can be assigned in code. To do this, add the following code to Enemy.cs CustomActivity:
 
@@ -121,11 +121,11 @@ private void CustomActivity()
 
 Also, you should check the option to destroy the bullet when it hits the player, but only if damage is dealt.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Destroy bullet on damage but only if damage is dealt</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (93).png" alt=""><figcaption><p>Destroy bullet on damage but only if damage is dealt</p></figcaption></figure>
 
 Now each Enemy shoots a bullet every 2 seconds which travels downward and which shares the same Team Index as the Enemy. These bullets now collide with the Player, deal damage to the Player, and ultimately kill the Player once the Player's health has dropped to 0.
 
-<figure><img src="../../media/2023-01-11_07-07-18.gif" alt=""><figcaption><p>Enemies shooting bullets</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-01-11_07-07-18.gif" alt=""><figcaption><p>Enemies shooting bullets</p></figcaption></figure>
 
 When developing a full game, keep the following in mind:
 

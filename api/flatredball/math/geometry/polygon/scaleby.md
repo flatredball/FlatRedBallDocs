@@ -1,10 +1,10 @@
-# scaleby
+# ScaleBy
 
 ### Introduction
 
 The ScaleBy method can be used to adjust a Polygon's points to make it larger or smaller. The ScaleBy method is relative to the current state of the polygon. This means that calling ScaleBy with any number other than 1 multiple times will continually change the polygon.
 
-![ScaleBy.png](../../../../../../media/migrated_media-ScaleBy.png)
+![ScaleBy.png](../../../../../.gitbook/assets/migrated\_media-ScaleBy.png)
 
 ### Scaling multiple times
 
@@ -43,4 +43,4 @@ scaleAmount = 1;
 
 ### BoundingRadius
 
-ScaleBy will modify the [BoundingRadius](../../../../../../frb/docs/index.php) of the calling Polygon is used internally for collisions. There is no need to call [OptimizeRadius](../../../../../../frb/docs/index.php) after calling ScaleBy.
+ScaleBy will modify the [BoundingRadius](../../../../../frb/docs/index.php) of the calling Polygon is used internally for collisions. There is no need to call [OptimizeRadius](../../../../../frb/docs/index.php) after calling ScaleBy.

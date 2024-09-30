@@ -1,4 +1,4 @@
-# getallfilesindirectory
+# GetAllFilesInDirectory
 
 ### Introduction
 
@@ -29,7 +29,7 @@ An empty string as the fileType will return all contained files.
 
 ### Code Example
 
-The following code creates a [ListBox](../../../../../frb/docs/index.php) to display all .jpg files which exist in the c:\Projects directory. If you do not have this directory on your computer, you will need to change the directory variable. Keep in mind that if the depth variable is large, or if the argument directory has a lot of files and sub-directories, this call can take a long time to execute. Add the following using statements:
+The following code creates a [ListBox](../../../../frb/docs/index.php) to display all .jpg files which exist in the c:\Projects directory. If you do not have this directory on your computer, you will need to change the directory variable. Keep in mind that if the depth variable is large, or if the argument directory has a lot of files and sub-directories, this call can take a long time to execute. Add the following using statements:
 
 ```
 using FlatRedBall.IO;
@@ -59,4 +59,4 @@ foreach (string s in allFiles)
 }
 ```
 
-![GetAllFilesInDirectory.png](../../../../../media/migrated_media-GetAllFilesInDirectory.png)
+![GetAllFilesInDirectory.png](../../../../.gitbook/assets/migrated\_media-GetAllFilesInDirectory.png)

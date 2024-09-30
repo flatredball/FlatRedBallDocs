@@ -39,7 +39,7 @@ Now we can modify the properties of this wall. Select **Wall1** and change the v
 
 Doing so moves the rectangle to the top of the screen. If you run the game you should see the wall at the top of the screen.
 
-![](../../media/2021-07-img\_60fdb75161810.png)
+![](../../.gitbook/assets/2021-07-img\_60fdb75161810.png)
 
 Now that we've created a single wall, we can duplicate it by right-clicking on it and selecting the "Duplicate" command:
 
@@ -47,7 +47,7 @@ Now that we've created a single wall, we can duplicate it by right-clicking on i
 
 Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectangle instances:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>All six walls in Walls ShapeCollection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption><p>All six walls in Walls ShapeCollection</p></figcaption></figure>
 
 Next set the X, Y, Width, and Height variables for for the newly-created walls as follows: **Wall2**
 
@@ -86,13 +86,13 @@ Next set the X, Y, Width, and Height variables for for the newly-created walls a
 
 When finished, the game should have walls made of AxisAlignedRectangles with gaps on the left and right sides for goals:
 
-![Game with walls placed correctly](../../media/2021-07-img\_60fdbae917a81.png)
+![Game with walls placed correctly](../../.gitbook/assets/2021-07-img\_60fdbae917a81.png)
 
 ### Implementing Collision
 
 Next we'll use collision relationships to define collision between the PlayerBall and Walls. We'll revisit collisions in later tutorials, so keep in mind that this is only the first step in setting up our game's collision. When we created our PlayerBall entity in an earlier tutorial, we marked that the entity should contain a Circle object. Doing so automatically marked the Entity as using the ICollidable interface. As a reminder, the following image shows the window we used to create the PlayerBall entity:
 
-![PlayerBall creation dialog](../../media/2021-07-img\_60fdb8d652c26.png)
+![PlayerBall creation dialog](../../.gitbook/assets/2021-07-img\_60fdb8d652c26.png)
 
 Since our PlayerBall is an ICollidable, that means it can collide with any other ICollidable and with any shapes - like the Walls. We need to tell our game that we want the PlayerList to collide against the PlayerWalls. The easiest way to do this is to create a Collision Relationship in Glue. To do this:
 
@@ -104,11 +104,11 @@ Since our PlayerBall is an ICollidable, that means it can collide with any other
 4. Change the **Collision Physics** to **Bounce Collision** so that our **PlayerBall** bounces against the walls
 5. Change the PlayerBall Mass to 0. This means that the PlayerBall behaves as if it has no mass, so it will not be able to move the walls. Be sure to press Enter or Tab to save the change.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Changing collision mass</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (160).png" alt=""><figcaption><p>Changing collision mass</p></figcaption></figure>
 
 If we run the game now, the PlayerBall collides with the walls.
 
-<figure><img src="../../media/2016-01-2021_July_25_135826.gif" alt=""><figcaption><p>PlayerBall colliding with the walls</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_July_25_135826.gif" alt=""><figcaption><p>PlayerBall colliding with the walls</p></figcaption></figure>
 
 We use CollisionRelationships here because they are very powerful and require no code. Just like everything else in Glue, collisions can also be managed in code. If you are interested in writing collision purely in code, see the [CollideAgainstMove page](../../frb/docs/index.php).
 

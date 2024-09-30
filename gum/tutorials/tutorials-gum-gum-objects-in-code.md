@@ -28,7 +28,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![MovingColoredRectangleFromGum.png](../../media/migrated\_media-MovingColoredRectangleFromGum.png)
+![MovingColoredRectangleFromGum.png](../../.gitbook/assets/migrated\_media-MovingColoredRectangleFromGum.png)
 
 ### Alternative Option 1 - Getting a Gum Object in FlatRedBall Editor
 
@@ -42,7 +42,7 @@ You can also add a reference to the ColoredRectangleInstance in the FlatRedBall 
 6. Use the dropdown next to **Source Name:** to select **ColoredRectangleInstance**
 7. Click **OK**
 
-<figure><img src="../../media/2016-01-2019-02-28_22-30-55.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2019-02-28_22-30-55.gif" alt=""><figcaption></figcaption></figure>
 
 Note that the **Source Name:** drop down contains all instances in your Gum project. We selected the **ColoredRectangleInstance** for this example, but you could select any instance. Note that the ColoredRectangle in the FlatRedBall Editor is not a new ColoredRectangle instance - it is a reference to the ColoredRectangle inside the MainMenuGum screen.
 
@@ -61,11 +61,11 @@ void CustomInitialize()
 
 Notice that we use the name **ColoredRectangleInstance**. This needs to match the name of the instance in the Gum screen exactly, including capitalization:
 
-![](../../media/2021-03-img\_604b8ddb7fffd.png)
+![](../../.gitbook/assets/2021-03-img\_604b8ddb7fffd.png)
 
 Also, notice that we use the type **ColoredRectangleRuntime**. We did this because the type in code should match the type in your Gum project. FlatRedBall automatically generates classes for every type in your Gum project, but it will always append **Runtime** to the end of the name. Therefore, the type **ColoredRectangle** in Gum becomes **ColoredRectangleRuntime** in code.
 
-![](../../media/2021-03-img\_604b97ecbcab8.png)
+![](../../.gitbook/assets/2021-03-img\_604b97ecbcab8.png)
 
 ### Incrementing Score
 
@@ -88,11 +88,11 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-<figure><img src="../../media/2016-01-2021_March_07_080847.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_March_07_080847.gif" alt=""><figcaption></figcaption></figure>
 
 Notice that the TextIntance property matches the exact name in Gum:
 
-![](../../media/2021-03-img\_604b8fae4c068.png)
+![](../../.gitbook/assets/2021-03-img\_604b8fae4c068.png)
 
 ### Gum Coordinate System
 

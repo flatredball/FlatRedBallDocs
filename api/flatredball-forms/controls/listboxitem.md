@@ -4,19 +4,19 @@
 
 ListBoxItem is a selectable control used in the ListBox control or controls which contain a ListBox (such as ComboBox). ListBoxItem instances can be manually instantiated just like any control, or may be instantiated internally by the ListBox control.
 
-<figure><img src="../../../media/2017-12-2017-12-13_17-52-13.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2017-12-2017-12-13_17-52-13.gif" alt=""><figcaption></figcaption></figure>
 
 ### Layout Requirements
 
-The ListBoxItem control has no requirements – an empty container is sufficient.&#x20;
+The ListBoxItem control has no requirements – an empty container is sufficient.
 
-<figure><img src="../../../media/2017-12-img_5a485e78076db.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2017-12-img_5a485e78076db.png" alt=""><figcaption></figcaption></figure>
 
 ### TextInstance
 
-The ListBoxItem control can optionally include a Text instance named **TextInstance**. Setting the ListBoxItem control’s **Text** property changes the **TextInstance’s** displayed string.&#x20;
+The ListBoxItem control can optionally include a Text instance named **TextInstance**. Setting the ListBoxItem control’s **Text** property changes the **TextInstance’s** displayed string.
 
-<figure><img src="../../../media/2017-12-img_5a485fa592a56.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2017-12-img_5a485fa592a56.png" alt=""><figcaption></figcaption></figure>
 
 ### Creating ListBoxItems
 
@@ -26,15 +26,15 @@ ListBoxItem instances are typically created and added to a ListBox. For more inf
 
 By default ListBoxItem instances have a single Text object to display information. Some games may require each ListBoxItem to display more than just text. For example, a list box used to display items that a player can buy may display the item name, item icon, and item price. The easiest way to display custom data in a ListBoxItem is to use data binding. Customizing controls doesn't require the creation of any new classes or inheritance - the binding can be performed in the Gum runtime's custom code. For this example, we will use a Gum item which has a Text object for the item description and another for the item cost, as shown in the following image:
 
-![](../../../media/2020-07-img\_5eff335943eb6.png)
+![](../../../.gitbook/assets/2020-07-img\_5eff335943eb6.png)
 
 Unlike our normal ListBoxItem, this item contains two text objects.
 
-![](../../../media/2020-07-img\_5eff33ad55915.png)
+![](../../../.gitbook/assets/2020-07-img\_5eff33ad55915.png)
 
 Also, note that this Gum item should the ListBoxItemBehavior added as well, as shown in the following image:
 
-![](../../../media/2020-07-img\_5eff33e926841.png)
+![](../../../.gitbook/assets/2020-07-img\_5eff33e926841.png)
 
 Now that we have this set up, we need to do the following things:
 
@@ -54,7 +54,7 @@ listBox.ListBoxItemGumType = typeof(GumRuntimes.StoreListBoxItemRuntime);
 
 Next we add items to our ListBox. The simplest way is to add items to the ListBox.Items property. These items can be any class because in the next step we'll write code to use that class to update the visuals on the ListBoxItem. For example, if your game defines inventory in a CSV file, you may have a dictionary of inventory items. Similarly, if your game defines states in an entity, then each state is also available in a dictionary. We'll assume that the data is stored in a CSV called GlobalContent.StoreData.
 
-![](../../../media/2020-07-img\_5eff418ebc5de.png)
+![](../../../.gitbook/assets/2020-07-img\_5eff418ebc5de.png)
 
 We can access the values in the CSV in a foreach loop to fill the listBox.
 
@@ -67,7 +67,7 @@ foreach(var item in GlobalContent.StoreData.Values)
 
 At this point the ListBox should fill up with the data from the CSV, but it will not display any information about the store items - we'll set that up next.
 
-![](../../../media/2020-07-img\_5eff389a38df7.png)
+![](../../../.gitbook/assets/2020-07-img\_5eff389a38df7.png)
 
 #### Binding the Visuals
 
@@ -91,13 +91,13 @@ partial void CustomInitialize ()
 
 Now our UI displays the values in the CSV.
 
-![](../../../media/2020-07-img\_5eff4122cc9a5.png)
+![](../../../.gitbook/assets/2020-07-img\_5eff4122cc9a5.png)
 
 ### Inheriting from ListBoxItem
 
 Above we covered how to use data binding to update the visuals on a ListBoxItem. Another option is to create a derived ListBoxItem and handling the visuals manually. This approach is useful if you are not comfortable with using binding. For this example consider a racing game with a list of cars. We can create a CarListItem in Gum to display information about cars in a player's garage.
 
-<figure><img src="../../../media/2017-12-img_5a31ee2533d00.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2017-12-img_5a31ee2533d00.png" alt=""><figcaption></figcaption></figure>
 
 Notice that this list item does not have a single Text but instead four - for displaying the year, make and model, horsepower, and weight. This shows that list items can contain anything to display the necessary information or decoration.
 
@@ -175,4 +175,4 @@ foreach(var carData in carDatas)
 
 This creates a list of our cars.
 
-![](../../../media/2017-12-img\_5a31f90545230.png)
+![](../../../.gitbook/assets/2017-12-img\_5a31f90545230.png)

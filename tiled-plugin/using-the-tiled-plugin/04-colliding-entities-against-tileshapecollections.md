@@ -23,18 +23,18 @@ To create a new entity:
 2.  Select **Add Entity**\
 
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add Entity button in Quick Actions</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Add Entity button in Quick Actions</p></figcaption></figure>
 3. Enter the name **Player**
 4. Check the **Circle** checkbox to give the entity a circle collision object
 5. Verify that **ICollidable** is checked - this should happen automatically when **Circle** is checked
 6. Check the Top-Down option under Input Movement Type to automatically give the Player movement logic
 7. Click **OK**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Creating a Player Entity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption><p>Creating a Player Entity</p></figcaption></figure>
 
 Notice the **Include lists in all base level screens** check box. We will leave this checked so that we have a list of players in our game screen. This is a good idea, even if your game will be single player. The new entity should appear in the Entities folder in the FRB editor.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Player Entity in FRB</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (108).png" alt=""><figcaption><p>Player Entity in FRB</p></figcaption></figure>
 
 Since the Player entity has its ImplementsICollidable set to true, any shape (Circle, Polygon, AxisAlignedRectangle) in the entity will be used in collision functions.
 
@@ -42,11 +42,11 @@ Since the Player entity has its ImplementsICollidable set to true, any shape (Ci
 
 Our entity is ready to go - we just need to add it to GameScreen. Note that we're adding the Player to the GameScreen rather than Level1 because we want every level to have a player. To add the entity to GameScreen, drag+drop the entity onto the screen:
 
-<figure><img src="../../media/2016-08-2021_February_20_135021.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-2021_February_20_135021.gif" alt=""><figcaption></figcaption></figure>
 
 The Player now appears on in game screen in the PlayerList and can move with the arrow keys.
 
-<figure><img src="../../media/2016-08-2021_February_20_131426.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-2021_February_20_131426.gif" alt=""><figcaption></figcaption></figure>
 
 We can change the starting position of the player by changing the Player1 X and Y values in the FRB editor.
 
@@ -55,11 +55,11 @@ We can change the starting position of the player by changing the Player1 X and 
 3. Change X to 200
 4. Change Y to -200
 
-![](../../media/2021-02-img\_603171273de31.png)
+![](../../.gitbook/assets/2021-02-img\_603171273de31.png)
 
 Now the player appears near the center of the level.
 
-![](../../media/2021-02-img\_6031714ab082d.png)
+![](../../.gitbook/assets/2021-02-img\_6031714ab082d.png)
 
 ### Performing Solid Collision
 
@@ -69,11 +69,11 @@ Solid collision can be used to prevent an entity from passing through solid obje
 2. Drag+drop the PlayerList onto the SolidCollision object. This creates a new CollisionRelationship named **PlayerListVsSolidCollision** and automatically selects it.
 3. Change the **Collision Physics** to **Move Collision**
 
-<figure><img src="../../media/2016-08-2021_February_20_131433.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-2021_February_20_131433.gif" alt=""><figcaption></figcaption></figure>
 
 As shown in the FRB editor, **Move Collision** prevents the objects from overlapping. If we run the game now, you will notice that the Player can no longer move through the walls.
 
-<figure><img src="../../media/2016-08-2021_February_20_133236.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-2021_February_20_133236.gif" alt=""><figcaption></figcaption></figure>
 
 ### Colliding Platformer Entities
 

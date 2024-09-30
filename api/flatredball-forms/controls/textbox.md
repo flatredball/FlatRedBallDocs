@@ -1,33 +1,33 @@
-## Introduction
+# TextBox
 
-The TextBox control can be used to let the user enter text input such as a profile name. 
+### Introduction
 
-<figure><img src="/media/2017-12-2017-12-24_20-24-50.gif" alt=""><figcaption></figcaption></figure>
+The TextBox control can be used to let the user enter text input such as a profile name.
 
+<figure><img src="../../../.gitbook/assets/2017-12-2017-12-24_20-24-50.gif" alt=""><figcaption></figcaption></figure>
 
+### Layout Requirements
 
-## Layout Requirements
+The TextBox control requires:
 
-The TextBox control requires:
+* An Text named **TextInstance**
+* An object named **CaretInstance** of any type
 
--   An Text named **TextInstance**
--   An object named **CaretInstance** of any type
+Although not required, the TextInstance should be contained within an object that has its \*\*Clips Children \*\*set to **True.** This can be a container within the TextBox, of the TextBox component can have its **Clips Children** value set to true.
 
-Although not required, the TextInstance should be contained within an object that has its **Clips Children **set to **True.** This can be a container within the TextBox, of the TextBox component can have its **Clips Children** value set to true.
-
-![](/media/2017-12-img_5a48d720c1694.png)
+![](../../../.gitbook/assets/2017-12-img\_5a48d720c1694.png)
 
 Optionally, the TextBox can contain:
 
--   An object named **SelectionInstance**
+* An object named **SelectionInstance**
 
-![](/media/2019-03-img_5c8d84e285606.png)
+![](../../../.gitbook/assets/2019-03-img\_5c8d84e285606.png)
 
-## TextChanged Event
+### TextChanged Event
 
 The TextChanged event is raised whenever the Text on the TextBox changes. Keep in mind this occurs on every character changed, so if the user types multiple characters, the event will be raised for every character, as shown in the following code example:
 
-``` lang:c#
+```lang:c#
 TextBox textBox;
 
 void CustomInitialize()
@@ -46,12 +46,8 @@ private void HandleTextChanged(object sender, EventArgs e)
 }
 ```
 
+<figure><img src="../../../.gitbook/assets/2017-12-2017-12-25_14-40-10.gif" alt=""><figcaption></figcaption></figure>
 
+### LosesFocusWhenClickedOff
 
-<figure><img src="/media/2017-12-2017-12-25_14-40-10.gif" alt=""><figcaption></figcaption></figure>
-
-
-
-## LosesFocusWhenClickedOff
-
-By default the LosesFocusWhenClickedOff property is set to true. If this property is true, the TextBox instance will lose the focus when the user clicks elsewhere. This functionality matches functionality in other UI systems such as WPF and Xamarin.Forms. If a TextBox is to be associated with an OnScreenKeyboard, you may want to set this property to false so the caret doesn't become invisible when clicking on the OnScreenKeyboard buttons.
+By default the LosesFocusWhenClickedOff property is set to true. If this property is true, the TextBox instance will lose the focus when the user clicks elsewhere. This functionality matches functionality in other UI systems such as WPF and Xamarin.Forms. If a TextBox is to be associated with an OnScreenKeyboard, you may want to set this property to false so the caret doesn't become invisible when clicking on the OnScreenKeyboard buttons.

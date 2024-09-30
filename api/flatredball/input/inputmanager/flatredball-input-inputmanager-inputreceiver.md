@@ -2,9 +2,9 @@
 
 ### Introduction
 
-The InputReceiver property can be assigned to set the current [IInputReceiver](../../gui/iinputreceiver.md). The current IInputReceiver can receive keyboard input and has an ever-frame method raised for pricessing input. This property can be used to prevent multiple objects from receiving keyboard input. This is useful if multiple game objects respond to keyboard input - such as a a text box and a character in a platformer.
+The InputReceiver property can be assigned to set the current [IInputReceiver](../../gui/iinputreceiver/). The current IInputReceiver can receive keyboard input and has an ever-frame method raised for pricessing input. This property can be used to prevent multiple objects from receiving keyboard input. This is useful if multiple game objects respond to keyboard input - such as a a text box and a character in a platformer.
 
-For a detailed discussion of using the InputReceiver property, see the [IInputReceiver](../../gui/iinputreceiver.md) page.
+For a detailed discussion of using the InputReceiver property, see the [IInputReceiver](../../gui/iinputreceiver/) page.
 
 ### Setting InputReceiver
 

@@ -1,8 +1,8 @@
-# drawsworld
+# DrawsWorld
 
 ### Introduction
 
-The DrawsWorld property controls whether the camera draws objects which are not on any [Layer](../../../../frb/docs/index.php) and objects which are on [Layers](../../../../frb/docs/index.php) that are not Camera-specific. Usually Cameras which are used to draw things in split-screen mode should have this property be true, while Cameras which are used to overlay things such as HUDs should usually set this to false.
+The DrawsWorld property controls whether the camera draws objects which are not on any [Layer](../../../frb/docs/index.php) and objects which are on [Layers](../../../frb/docs/index.php) that are not Camera-specific. Usually Cameras which are used to draw things in split-screen mode should have this property be true, while Cameras which are used to overlay things such as HUDs should usually set this to false.
 
 ### Code Example
 
@@ -34,4 +34,4 @@ text.Y = 15;
 TextManager.AddToLayer(text, hudCamera.Layer);
 ```
 
-![DrawsWorld.png](../../../../media/migrated_media-DrawsWorld.png)
+![DrawsWorld.png](../../../.gitbook/assets/migrated\_media-DrawsWorld.png)

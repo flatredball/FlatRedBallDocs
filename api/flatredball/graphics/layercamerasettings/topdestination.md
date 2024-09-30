@@ -1,8 +1,8 @@
-# topdestination
+# TopDestination
 
 ### Introduction
 
-The TopDestination, BottomDestination, LeftDestination, and RightDestination properties of the LayerCameraSettings class allow [Layers](../../../../../frb/docs/index.php) to render to only a portion of the Screen (also known as creating a mask). These coordinates are measured in pixel units in screen space. In other words, 0 is the left side of the screen for LeftDestination and RightDestination, and it increases to the right. The value of 0 is the top of the screen for TopDestination and BottomDestination, and it increases downward. The destination values are not necessarily used when a given Layer is rendered. The default value for TopDestination, BottomDestination, LeftDestination, and RightDestination is -1. If -1 is used, then the Camera's DestinationRectangle values are used.
+The TopDestination, BottomDestination, LeftDestination, and RightDestination properties of the LayerCameraSettings class allow [Layers](../../../../frb/docs/index.php) to render to only a portion of the Screen (also known as creating a mask). These coordinates are measured in pixel units in screen space. In other words, 0 is the left side of the screen for LeftDestination and RightDestination, and it increases to the right. The value of 0 is the top of the screen for TopDestination and BottomDestination, and it increases downward. The destination values are not necessarily used when a given Layer is rendered. The default value for TopDestination, BottomDestination, LeftDestination, and RightDestination is -1. If -1 is used, then the Camera's DestinationRectangle values are used.
 
 ### Code Example
 
@@ -37,7 +37,7 @@ Add the following to Initialize after initializing FlatRedBall:
  SpriteManager.AddToLayer(sprite, layer);
 ```
 
-![LayerCameraSettingsDestinationValues.png](../../../../../media/migrated_media-LayerCameraSettingsDestinationValues.png)
+![LayerCameraSettingsDestinationValues.png](../../../../.gitbook/assets/migrated\_media-LayerCameraSettingsDestinationValues.png)
 
 ### Exceptions related to display size
 

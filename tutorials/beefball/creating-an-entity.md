@@ -20,18 +20,18 @@ To create an Entity:
 
     ...or right-click on the **Entities** folder and select **Add Entity**
 
-    ![Add Entity right-click menu item](../../media/2022-01-img\_61d312843f359.png)
+    ![Add Entity right-click menu item](../../.gitbook/assets/2022-01-img\_61d312843f359.png)
 2. Enter the name **PlayerBall**
 3. Check the **Circle** checkbox under the **Collisions** category. This adds a circle object to the PlayerBall entity, which we'll use to test if it is touching the walls, goals, or other ball instances.
 4. Notice that the **ICollidable** checkbox is checked - we'll cover this in a later tutorial. We'll leave it checked for now.
 5. Notice that **Create Factory** is also checked. This option simplifies the creation of additional entities in code. We'll leave this checked as well.
 6. Click **OK**
 
-![Add PlayerBall entity dialog](../../media/2022-01-img\_61d312b26d918.png)
+![Add PlayerBall entity dialog](../../.gitbook/assets/2022-01-img\_61d312b26d918.png)
 
 Our entity is now created with a Circle named **CircleInstance** under its **Objects** folder, as shown in the following image:
 
-![CircleInstance in PlayerBall](../../media/2022-01-img\_61d312e83c316.png)
+![CircleInstance in PlayerBall](../../.gitbook/assets/2022-01-img\_61d312e83c316.png)
 
 ### Alternative Approach - Adding a Circle
 
@@ -39,16 +39,16 @@ The previous section showed how to create an entity and add a Circle to the enti
 
 1.  Click the **Add Object** quick action...
 
-    ![Add Object to Playerball Quick Actions button](../../media/2022-01-img\_61d3133fc9c72.png)
+    ![Add Object to Playerball Quick Actions button](../../.gitbook/assets/2022-01-img\_61d3133fc9c72.png)
 
     ...or right-click on **Objects** and select **Add Object**
 
-    ![Right-click Add Object option](../../media/2022-01-img\_61d31363d6568.png)
+    ![Right-click Add Object option](../../.gitbook/assets/2022-01-img\_61d31363d6568.png)
 2. Select the **FlatRedBall Or Custom Type** option
 3. Select **Circle** in the list
 4.  Enter the name **CircleInstance** and click **OK**
 
-    ![Add CircleInstance option](../../media/2022-01-img\_61d313aa162c3.png)
+    ![Add CircleInstance option](../../.gitbook/assets/2022-01-img\_61d313aa162c3.png)
 
 ### Creating an Entity - the Code and Data
 
@@ -60,7 +60,7 @@ When a new Entity or Screen is created, a number of files are created:
 
 For example, the PlayerBall entity creates PlayerBall.glej, PlayerBall.cs, and PlayerBall.Generated.cs. These files can be viewed by right-clicking on the entity and selecting **View in Explorer**.
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption><p>View in Explorer Right-Click option</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (181).png" alt=""><figcaption><p>View in Explorer Right-Click option</p></figcaption></figure>
 
 #### PlayerBall.glej
 

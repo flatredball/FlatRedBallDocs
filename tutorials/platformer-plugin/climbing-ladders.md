@@ -2,13 +2,13 @@
 
 ### Introduction
 
-This walkthrough covers the concepts of climbing ladders. When climbing a ladder, the platformer Player is able to move vertically by pressing up or down on the analog stick or d-pad. Ladders and vines are used to provide access to areas normally not reachable by jumping alone.&#x20;
+This walkthrough covers the concepts of climbing ladders. When climbing a ladder, the platformer Player is able to move vertically by pressing up or down on the analog stick or d-pad. Ladders and vines are used to provide access to areas normally not reachable by jumping alone.
 
 {% embed url="https://youtu.be/htFJTiVH5Ao?t=1465" %}
 
-The sample project can be downloaded from GitHub: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/LadderDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/LadderDemo) &#x20;
+The sample project can be downloaded from GitHub: [https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/LadderDemo](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/Samples/Platformer/LadderDemo)
 
-<figure><img src="../../media/2021-05-2021_May_08_094324.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2021-05-2021_May_08_094324.gif" alt=""><figcaption></figcaption></figure>
 
 This walkthrough refers to LadderDemo as _this demo_ and _the demo_.
 
@@ -25,7 +25,7 @@ This walkthrough covers a number of concepts for climbing ladders:
 
 The Player entity defines a set of movement values for climbing called **Climbing**.
 
-![](../../media/2021-05-img_60aefd701ead6.png)
+![](../../.gitbook/assets/2021-05-img\_60aefd701ead6.png)
 
 When this is set as the CurrentMovement, the player has direct control over vertical movement. When climbing up and down, the Climbing Speed is set as the player's Y velocity. As we will see later in the walkthrough, these values are explicitly set when the player presses **Up** to grab the ladder. Notice that the Player has a non-zero **Max Speed** under the Horizontal Movement section. This means that the player can move horizontally on the ladder. Some games like Super Mario world allow horizontal movement on ladders. Other games like Mega Man X only allow vertical movement on ladders. This game allows vertical movement, but changing the value to 0 results in no horizontal movement.
 
@@ -33,23 +33,23 @@ When this is set as the CurrentMovement, the player has direct control over vert
 
 Ladders are placed in the TMX file as tiles. The following image shows just the GameplayLayer with ladders.
 
-![](../../media/2021-05-img_6097123e95d11.png)
+![](../../.gitbook/assets/2021-05-img\_6097123e95d11.png)
 
 Notice that the ladder tiles define the maximum height that the player can climb.
 
-![](../../media/2021-05-img_609fd8ba05c63.png)
+![](../../.gitbook/assets/2021-05-img\_609fd8ba05c63.png)
 
 The code for this is defined below, but we can add extra climb height by adding additional tiles to the map. Keep in mind the GameplayLayer tiles do not need to match the visual layer exactly.
 
-![](../../media/2021-05-img_609fd97cac79a.png)
+![](../../.gitbook/assets/2021-05-img\_609fd97cac79a.png)
 
 These ladders tiles use the **Ladder** type.
 
-![](../../media/2021-05-img_60971250dca22.png)
+![](../../.gitbook/assets/2021-05-img\_60971250dca22.png)
 
 This allows the creation of a **LadderCollision** TileShapeCollection.
 
-![](../../media/2021-05-img_609712da913c8.png)
+![](../../.gitbook/assets/2021-05-img\_609712da913c8.png)
 
 ### Changing to Climbing Movement
 
@@ -111,11 +111,11 @@ private void CustomActivity()
 }
 ```
 
-The CustomActivity method checks if the current movement can climb. If CurrentMovement.CanClimb is false, then the player is not climbing a ladder so we can do regular platformer logic for ducking and running. Otherwise, if the player is climbing, the game checks if the player is on ground (solid collision is colliding with the player from below) and if the user is pressing down. If so, we set the ground movement back to **Ground** so players can climb to the bottom and leave the climbing state.&#x20;
+The CustomActivity method checks if the current movement can climb. If CurrentMovement.CanClimb is false, then the player is not climbing a ladder so we can do regular platformer logic for ducking and running. Otherwise, if the player is climbing, the game checks if the player is on ground (solid collision is colliding with the player from below) and if the user is pressing down. If so, we set the ground movement back to **Ground** so players can climb to the bottom and leave the climbing state.
 
-The second half of CustomActivity code performs logic which switches between being on the ground, in the air, and on th eladder. Rather than only relying on a null check with LastCollisionLadderRectangle, the code also checks if the player's center point (X) is inside the bounds of the LastCollisionLadderRectangle. This prevents the player from moving too far off of the ladder horizontally before falling off. This code could be adjusted to allow the player to move more or less horizontally.&#x20;
+The second half of CustomActivity code performs logic which switches between being on the ground, in the air, and on th eladder. Rather than only relying on a null check with LastCollisionLadderRectangle, the code also checks if the player's center point (X) is inside the bounds of the LastCollisionLadderRectangle. This prevents the player from moving too far off of the ladder horizontally before falling off. This code could be adjusted to allow the player to move more or less horizontally.
 
-If the player is colliding with the ladder and presses up, then the player can grab a ladder. The player's movement on the horizontal axis is stopped and the player snaps its X position to the ladder's position. We also force the player to be on the ground and to use the **Climbing** movement values. If the player is not over the ladder but CurrentMovement.CanClimb is true, then the player has moved horizontally off of a ladder, so the player's movement is changed to air (falling). The **LastCollisionLadderRectangle** property is necessary rather than a bool value so that the player can snap to the ladder's X position. This is a regular property defined at the top of Player.cs. &#x20;
+If the player is colliding with the ladder and presses up, then the player can grab a ladder. The player's movement on the horizontal axis is stopped and the player snaps its X position to the ladder's position. We also force the player to be on the ground and to use the **Climbing** movement values. If the player is not over the ladder but CurrentMovement.CanClimb is true, then the player has moved horizontally off of a ladder, so the player's movement is changed to air (falling). The **LastCollisionLadderRectangle** property is necessary rather than a bool value so that the player can snap to the ladder's X position. This is a regular property defined at the top of Player.cs.
 
 ```
 public partial class Player
@@ -127,7 +127,7 @@ public partial class Player
 
 This value is controlled by GameScreen. The ladder collision requires logic to be executed before collision occurs, so the PlayerListVsLadderCollision relationship does not automatically run.
 
-![](../../media/2021-05-img_60971a6308e58.png)
+![](../../.gitbook/assets/2021-05-img\_60971a6308e58.png)
 
 Instead, all Players have their LastCollisionLadderRectangle explicitly set to null, then the PlayerListVsLadderCollision relationship is manually called in GameScreen CustomActivity.
 

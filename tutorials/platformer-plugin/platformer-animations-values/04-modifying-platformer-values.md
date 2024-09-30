@@ -1,4 +1,4 @@
-# 04-modifying-platformer-values
+# Modifying Platformer Values
 
 ### Introduction
 
@@ -6,7 +6,7 @@ Now that we have our animations set up, we can work in our platformer values. Th
 
 ### Setting Resolution
 
-Before we begin modifying the control values, we'll change the resolution of our game to match the original [Super Mario World resolution of 256x224](https://smwspeedruns.com/Version_Differences).
+Before we begin modifying the control values, we'll change the resolution of our game to match the original [Super Mario World resolution of 256x224](https://smwspeedruns.com/Version\_Differences).
 
 1. In Glue, click the Camera icon
 2. Change the resolution width to 256
@@ -14,11 +14,11 @@ Before we begin modifying the control values, we'll change the resolution of our
 4. Change the TextureFilter to Point so that pixels draw without any blurring
 5. Change the Scale so that the game is larger on your screen. A typical 1080 monitor can support the game at 400% Scale.
 
-![](../../../../media/2021-03-img_6053edb5bceed.png)
+![](../../../.gitbook/assets/2021-03-img\_6053edb5bceed.png)
 
 After making these changes the game should more closely resemble the resolution of the original Super Mario World.
 
-![](../../../../media/2021-03-img_606107009dcee.png)
+![](../../../.gitbook/assets/2021-03-img\_606107009dcee.png)
 
 ### Creating New Platformer Values
 
@@ -35,11 +35,11 @@ Earlier we added running animations which play when the run button is held. We w
 
 Click the Add Control Values button three times, and name the new control values as listed above.
 
-![](../../../../media/2021-03-img_6053f22e87865.png)
+![](../../../.gitbook/assets/2021-03-img\_6053f22e87865.png)
 
 You should now have five sets of values.
 
-![](../../../../media/2021-03-img_6053f2886d5c9.png)
+![](../../../.gitbook/assets/2021-03-img\_6053f2886d5c9.png)
 
 ### Modifying Platformer Movement Values
 
@@ -123,8 +123,6 @@ private void CustomActivity()
 
 ### Additional Challenges
 
-Now the Player will switch its values according to input, of course, the running animations are not currently being used. Use what was covered in the previous tutorial to see if you can modify the Player's animations to play the running and running jump animations as shown in the following animation. 
+Now the Player will switch its values according to input, of course, the running animations are not currently being used. Use what was covered in the previous tutorial to see if you can modify the Player's animations to play the running and running jump animations as shown in the following animation.
 
-<figure><img src="../../../../media/2021-03-2021_March_28_165247.gif" alt=""><figcaption></figcaption></figure>
-
- &#x20;
+<figure><img src="../../../.gitbook/assets/2021-03-2021_March_28_165247.gif" alt=""><figcaption></figcaption></figure>

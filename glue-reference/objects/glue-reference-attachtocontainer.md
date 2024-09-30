@@ -6,9 +6,9 @@ The AttachToContainer property sets whether a contained object attaches to the E
 
 ### Setting AttachToContainer to True
 
-This property will appear on all objects which can be attached to their containers in Glue.&#x20;
+This property will appear on all objects which can be attached to their containers in Glue.
 
-<figure><img src="../../media/migrated_media-AttachToContainer.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-AttachToContainer.PNG" alt=""><figcaption></figcaption></figure>
 
 ### AttachToContainer availability
 

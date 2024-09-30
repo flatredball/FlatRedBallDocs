@@ -4,7 +4,7 @@
 
 Rotation controls the 3D orientation of [PositionedObjects](../../../../documentation/api/flatredball/positionedobject.md). Although some [PositionedObjects](../../../../documentation/api/flatredball/positionedobject.md) such as [Sprites](../../../../frb/docs/index.php) and [Text](../../../../frb/docs/index.php) objects are 2D, all [PositionedObjects](../../../../documentation/api/flatredball/positionedobject.md) can be rotated in 3D space. Rotation can be represented using the RotationMatrix property or individual rotation components. These components (RotationX, RotationY, RotationZ) are measured in radians, not degrees: For more information on working with rotations, see the [Rotation wiki entry](../../../../frb/docs/index.php).
 
-<figure><img src="../../../../media/migrated_media-RadiansAndDegrees.png" alt=""><figcaption><p>Diagram displaying rotation</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-RadiansAndDegrees.png" alt=""><figcaption><p>Diagram displaying rotation</p></figcaption></figure>
 
 ### The Math of Rotation
 
@@ -61,7 +61,7 @@ The following code creates three rows of Sprites. Each row is rotated on a diffe
  }
 ```
 
-![RotatedSprites.png](../../../../media/migrated\_media-RotatedSprites.png)
+![RotatedSprites.png](../../../../.gitbook/assets/migrated\_media-RotatedSprites.png)
 
 ### Rotational Velocity
 
@@ -73,7 +73,7 @@ spinningSprite.ScaleX = 3;
 spinningSprite.RotationZVelocity = 1;
 ```
 
-![SpinningSprite.png](../../../../media/migrated\_media-SpinningSprite.png)
+![SpinningSprite.png](../../../../.gitbook/assets/migrated\_media-SpinningSprite.png)
 
 ### Facing Objects
 

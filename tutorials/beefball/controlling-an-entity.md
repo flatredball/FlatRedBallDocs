@@ -17,7 +17,7 @@ First we need to define which controls are needed in our game. Our PlayerBall re
 
 We'll write the PlayerBall so that it works with any input device, whether that's Xbox 360 controller, Keyboard, or any other device. To add code to PlayerBall, double click **PlayerBall.cs** in Visual Studio. This is located in your project's **Entities** folder.
 
-![](../../media/2022-01-img\_61d31a7f303e9.png)
+![](../../.gitbook/assets/2022-01-img\_61d31a7f303e9.png)
 
 Modify the **PlayerBall.cs** file so it contains two input properties as follows:
 
@@ -73,7 +73,7 @@ public partial class GameScreen
 
 Notice that the object we are assigning code to (PlayerBall1) matches the name of the entity in the editor. FlatRedBall objects in the editor always have a matching name in code, as shown in the following image:
 
-![PlayerBall1 name in code](../../media/2022-01-img\_61d31b3936349.png)
+![PlayerBall1 name in code](../../.gitbook/assets/2022-01-img\_61d31b3936349.png)
 
 For more information on the Keyboard class, see [the Keyboard page](../../api/flatredball/input/keyboard/).
 
@@ -112,7 +112,7 @@ private void CustomActivity()
 
 If we run the game now we can control the player with the W, A, S, and D keys:
 
-<figure><img src="../../media/migrated_media-MovingBeefballWithKeyboard.gif" alt=""><figcaption><p>PlayerBall moving with the MovementSpeed variable</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-MovingBeefballWithKeyboard.gif" alt=""><figcaption><p>PlayerBall moving with the MovementSpeed variable</p></figcaption></figure>
 
 ### Adding Gamepad Controls
 

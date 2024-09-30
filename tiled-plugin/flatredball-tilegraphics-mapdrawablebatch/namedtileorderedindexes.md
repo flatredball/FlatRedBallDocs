@@ -8,7 +8,7 @@ The NameTileOrderedIndexes property can be used to find tiles by a given name. I
 
 The MapDrawableBatch object stores a list of vertices (points) which are used to define the coordinates for each tile. These points are used by the rendering code in the MapDrawableBatch class to perform efficient rendering. Each tile is composed of a list of vertices, as opposed to a Sprite (as might be the case if the MapDrawableBatch were a FlatRedBall-drawn object). Therefore, to access and modify properties on a tile, its index must be known. The following image shows the indexes of a simple tile map:
 
-![](../../media/2017-01-img\_587f9aa4ce403.png)
+![](../../.gitbook/assets/2017-01-img\_587f9aa4ce403.png)
 
 ### Code Example
 
@@ -52,7 +52,7 @@ foreach(var layer in LayeredTileMapInstance.Layers)
 
 Tiles will only have properties at runtime if it uses a tile in a tileset with a Name property.
 
-![](../../media/2016-06-img\_574f970571521.png)
+![](../../.gitbook/assets/2016-06-img\_574f970571521.png)
 
 ### Tile Names and Automatic Naming
 
@@ -64,10 +64,10 @@ Tiles in a Tiled map have names at runtime if any of the following conditions ap
 
 For example, a typical FlatRedBall project includes a tileset named StandardTileset.tsx with tiles for common TileShapeCollision creation such as SolidCollision.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>SolidCollision tile in Tiled</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>SolidCollision tile in Tiled</p></figcaption></figure>
 
 The SolidCollision tile does not have a Name property, so it is assigned an automatic name at runtime as shown in the following screenshot of Visual Studio showing the names of the tiles in a typical map:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>NamedTileOrderedIndexes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption><p>NamedTileOrderedIndexes</p></figcaption></figure>
 
 Notice that in this case the names are TiledIcons0\_autoname and TiledIcons43\_autoname. The names correspond to the IDs in the Tileset.

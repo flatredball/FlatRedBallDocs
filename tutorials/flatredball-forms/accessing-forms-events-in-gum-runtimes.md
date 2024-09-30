@@ -18,13 +18,13 @@ Every Forms object is backed by a Gum "runtime" object. For information about Fo
 
 We can tell that this is the case by looking at the behaviors for each of these controls.
 
-<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption><p>ButtonStandard implements the ButtonBehavior</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption><p>ButtonStandard implements the ButtonBehavior</p></figcaption></figure>
 
 Note that while a full implementation may require handling each of the Runtime classes listed above, for simplicity this tutorial discusses only ButtonStandard.
 
 Every runtime has a code file - even runtimes which correspond to built-in Forms types such as Button. For example, all of the Button Gum components have corresponding Runtime classes in Visual Studio.
 
-<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption><p>Button Runtime classes in Visual Studio</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (287).png" alt=""><figcaption><p>Button Runtime classes in Visual Studio</p></figcaption></figure>
 
 Each runtime provides a CustomInitialize method which is similar to CustomInitialize on Screens and Components. The CustomInitialize is called once when a new instance of our component is created. This code runs regardless of how our Gum runtime is created. This includes if:
 

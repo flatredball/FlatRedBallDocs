@@ -1,4 +1,4 @@
-# mergeontothis
+# MergeOntoThis
 
 ### Introduction
 
@@ -11,7 +11,7 @@ MergeOntoThis can be used to merge tiles from one or more _source_ layers into a
 
 This example uses a tmx file which includes a layer named Layer2 which contains ice blocks.
 
-![](../../../../media/2023-05-img_64779b03a728e.png)
+![](../../.gitbook/assets/2023-05-img\_64779b03a728e.png)
 
 The other tiles (the red number 1 and the orange brick surrounding blocks) are part of the GameplayLayer - the standard layout for Level1 if using the wizard. The following code shows how to merge the layers:
 
@@ -32,13 +32,13 @@ void CustomInitialize()
 }
 ```
 
-&#x20; The code above includes diagnostic variables to count quads and layers. These values can help verify that the layers have been merged at runtime as shown in the following screenshot:
+The code above includes diagnostic variables to count quads and layers. These values can help verify that the layers have been merged at runtime as shown in the following screenshot:
 
-![](../../../../media/2023-05-img_64779ba23dd1a.png)
+![](../../.gitbook/assets/2023-05-img\_64779ba23dd1a.png)
 
 Even though layer2 has been destroyed, the ice blocks still draw as shown in the following screenshot:
 
-![](../../../../media/2023-05-img_64779bbcd4399.png)
+![](../../.gitbook/assets/2023-05-img\_64779bbcd4399.png)
 
 ### Merging and Partitioning
 

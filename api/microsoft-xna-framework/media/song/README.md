@@ -23,7 +23,7 @@ To play a song in Glue, drag+drop a file from disk into your Glue project on a S
 
 To play a song:
 
-1. Drag a music file (MP3 or WMA) into your project's Content folder through Visual Studio. ![SongInContentProject.png](../../../../media/migrated\_media-SongInContentProject.png)
+1. Drag a music file (MP3 or WMA) into your project's Content folder through Visual Studio. ![SongInContentProject.png](../../../../.gitbook/assets/migrated\_media-SongInContentProject.png)
 2. Add the following code:
 
 Add the following using statements:
@@ -60,7 +60,7 @@ This error can occur in a number of cases:
 
 #### OGG song does not play (is silent)
 
-If attempting to play an .ogg file on the PC, you need to have the proper "DirectShow Filters" installed. To verify if you have them installed, attempt to play the .ogg file in Windows Media Player. If Windows Media Player does not recognize the file then you need the filters: ![OggError1.png](../../../../media/migrated\_media-OggError1.png) ![OggError2.png](../../../../media/migrated\_media-OggError2.png) If the song does not play, you can install the DirectShow Filders, [which can be found here](http://www.vorbis.com/setup\_windows/).
+If attempting to play an .ogg file on the PC, you need to have the proper "DirectShow Filters" installed. To verify if you have them installed, attempt to play the .ogg file in Windows Media Player. If Windows Media Player does not recognize the file then you need the filters: ![OggError1.png](../../../../.gitbook/assets/migrated\_media-OggError1.png) ![OggError2.png](../../../../.gitbook/assets/migrated\_media-OggError2.png) If the song does not play, you can install the DirectShow Filders, [which can be found here](http://www.vorbis.com/setup\_windows/).
 
 ### Android
 

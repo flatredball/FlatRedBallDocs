@@ -8,13 +8,13 @@ Entities which can collide with other entities or environments (such as terrain 
 
 When creating a new Entity, Glue will give you the option to mark it as ICollidable. The most common approach is to add a shape on the entity when creating it. For example, if the AxisAlignedRectangle check box is checked, Glue will automatically check the ICollidable check box.
 
-![](../../media/2021-02-img\_60390a9d377a3.png)
+![](../../.gitbook/assets/2021-02-img\_60390a9d377a3.png)
 
 ### Making an Existing Entity an ICollidable Entity
 
-If an entity is already created but not yet marked as a ICollidable, it can be marked as ICollidable in its **Properties** tab. ![ImplementsICollidable.png](../../media/migrated\_media-ImplementsICollidable.png) When marking an existing entity as ICollidable, be sure that your entity has a collidable object, such as a circle.
+If an entity is already created but not yet marked as a ICollidable, it can be marked as ICollidable in its **Properties** tab. ![ImplementsICollidable.png](../../.gitbook/assets/migrated\_media-ImplementsICollidable.png) When marking an existing entity as ICollidable, be sure that your entity has a collidable object, such as a circle.
 
-![](../../media/2021-02-img\_6039252b279e9.png)
+![](../../.gitbook/assets/2021-02-img\_6039252b279e9.png)
 
 For more information on the ICollidable interface as defined in FlatRedBall, see the [ICollidable](../../frb/docs/index.php) page. For more information on colliding Entities and using ImplementsICollidable, see [this page](broken-reference).
 

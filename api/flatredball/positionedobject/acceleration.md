@@ -53,7 +53,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![AccelerationGif.gif](../../../media/migrated\_media-AccelerationGif.gif)
+![AccelerationGif.gif](../../../.gitbook/assets/migrated\_media-AccelerationGif.gif)
 
 ### Acceleration and Velocity
 

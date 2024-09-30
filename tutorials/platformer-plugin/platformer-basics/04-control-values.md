@@ -71,11 +71,11 @@ Variable-height jumping can be implemented a number of different ways. The platf
 
 The following image shows two jump arcs. The first is the movement of the character when the button is held, the second is without:
 
-![Example jump arcs](../../../media/2018-01-img\_5a6e23637b9ad.png)
+![Example jump arcs](../../../.gitbook/assets/2018-01-img\_5a6e23637b9ad.png)
 
 Although it may be difficult to see, the entity moves in a straight line on the first part of the first jump, rather than moving in an arc. This is the result of gravity being turned off while the button is held. If we color the first part red, the linear movement is a little easier to see:
 
-![Initial jump movement with linear portion shown in red](../../../media/2018-01-img\_5a6e249b232c5.png)
+![Initial jump movement with linear portion shown in red](../../../.gitbook/assets/2018-01-img\_5a6e249b232c5.png)
 
 ### Max Jump Hold Time
 

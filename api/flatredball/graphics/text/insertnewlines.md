@@ -1,4 +1,4 @@
-# insertnewlines
+# InsertNewLines
 
 The InsertNewLines method modifies the Text's DisplayText property by inserting the newline character ('\n') to prevent the text from exceeding the argument maxWidth. The maxWidth property is in absolute world units.
 
@@ -28,8 +28,8 @@ float maxWidth = axisAlignedRectangle.ScaleX * 2;
 text.InsertNewLines(maxWidth);
 ```
 
-![InsertNewLines.png](../../../../../media/migrated_media-InsertNewLines.png)
+![InsertNewLines.png](../../../../.gitbook/assets/migrated\_media-InsertNewLines.png)
 
 ### Additional Information
 
-* [FlatRedBall.Graphics.BitmapFont](../../../../../frb/docs/index.php) - See the BitmapFont class for determining the unit-size of your text.
+* [FlatRedBall.Graphics.BitmapFont](../../../../frb/docs/index.php) - See the BitmapFont class for determining the unit-size of your text.

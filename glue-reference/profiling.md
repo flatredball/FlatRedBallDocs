@@ -4,7 +4,7 @@
 
 The Profiling tab provides high-level information about your game related to runtime performance. This can be used to determine what kind of optimizations may have an impact on your game's FPS.
 
-<figure><img src="../.gitbook/assets/image (124).png" alt=""><figcaption><p>Profiling tab displaying information about a game</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (296).png" alt=""><figcaption><p>Profiling tab displaying information about a game</p></figcaption></figure>
 
 The profiling tab provides the following information about a game:
 

@@ -1,24 +1,24 @@
-# shapemanager
+# ShapeManager
 
 ### Introduction
 
 The ShapeManager is responsible for managing "Shapes". Shapes are most often used for collision between objects. Objects which belong to the Shape categorization are:
 
-* [AxisAlignedCube](../../../../../../frb/docs/index.php)
-* [AxisAlignedRectangle](../../../../../../frb/docs/index.php)
-* [Capsule2D](../../../../../../frb/docs/index.php)
-* [Circle](../../../../../../frb/docs/index.php)
-* [Line](../../../../../../frb/docs/index.php)
-* [Polygon](../../../../../../frb/docs/index.php)
-* [Sphere](../../../../../../frb/docs/index.php)
+* [AxisAlignedCube](../../../../../frb/docs/index.php)
+* [AxisAlignedRectangle](../../../../../frb/docs/index.php)
+* [Capsule2D](../../../../../frb/docs/index.php)
+* [Circle](../../../../../frb/docs/index.php)
+* [Line](../../../../../frb/docs/index.php)
+* [Polygon](../../../../../frb/docs/index.php)
+* [Sphere](../../../../../frb/docs/index.php)
 
-All of these objects share the [PositionedObject](../../../../../../frb/docs/index.php) base class. These are the only objects which the ShapeManager manages. Although there is no "Shape" class, these objects are often referred to as shapes.
+All of these objects share the [PositionedObject](../../../../../frb/docs/index.php) base class. These are the only objects which the ShapeManager manages. Although there is no "Shape" class, these objects are often referred to as shapes.
 
 ### Automatic Add in FlatRedBall Editor
 
 Any shape added to the FlatRedBall Editor (either as part of a Screen or Entity) will also be added to the ShapeManager by default. For example, the Player entity in the following screenshot contains an AxisAlignedRectangle which is automatically added to the ShapeManager.
 
-![](../../../../../../media/2023-01-img_63bc1a57b884a.png)
+![](../../../../../.gitbook/assets/2023-01-img\_63bc1a57b884a.png)
 
 ### Adding Shapes in Code
 
@@ -34,11 +34,11 @@ Add the following using statement:
 Circle circle = ShapeManager.AddCircle();
 ```
 
-![SimpleCircle.png](../../../../../../media/migrated_media-SimpleCircle.png) If a Shape is added in code, it must be removed in code as well, typically in a Screen or Entity's CustomDestroy.
+![SimpleCircle.png](../../../../../.gitbook/assets/migrated\_media-SimpleCircle.png) If a Shape is added in code, it must be removed in code as well, typically in a Screen or Entity's CustomDestroy.
 
 #### Shapes and Visibility
 
-Adding a Shape to the ShapeManager will automatically make the shape visible. For example, the following code results in a **visible** [Circle](../../../../../../frb/docs/index.php):
+Adding a Shape to the ShapeManager will automatically make the shape visible. For example, the following code results in a **visible** [Circle](../../../../../frb/docs/index.php):
 
 ```
 Circle circle = new Circle();
@@ -100,13 +100,13 @@ Games which are concerned with performance should only apply every-frame managem
 * Performing management in generated code - the FlatRedBall Editor provides functionality for performing management in generated code. This approach as the benefit of selectively applying updates only to properties which need management.
 * Performing management in custom code - custom code can perform custom management just like generated code. This is effective if you would like complete control over management.
 
-Making shapes visible can be beneficial for debugging collisions. For the final version most games will want shapes to be invisible. Invisible shapes will collide the same as visible ones so in most cases visibility is useful simply during development. Of course, shapes can also be used to draw on-screen line graphics. &#x20;
+Making shapes visible can be beneficial for debugging collisions. For the final version most games will want shapes to be invisible. Invisible shapes will collide the same as visible ones so in most cases visibility is useful simply during development. Of course, shapes can also be used to draw on-screen line graphics.
 
 ####
 
 #### Unmanaged Shape Behavior
 
-The source of some confusion is what happens when a Shape is attached to a [PositionedObject](../../../../../../frb/docs/index.php) (like an Entity), but **not** added to the ShapeManager. If you write code which attaches a shape to an Entity, set the shape's Visible to true, then move the entity, you will notice that the shape does not move. As mentioned above there are two ways to update a shape's parent/child relationship:
+The source of some confusion is what happens when a Shape is attached to a [PositionedObject](../../../../../frb/docs/index.php) (like an Entity), but **not** added to the ShapeManager. If you write code which attaches a shape to an Entity, set the shape's Visible to true, then move the entity, you will notice that the shape does not move. As mentioned above there are two ways to update a shape's parent/child relationship:
 
 1. By being added to the ShapeManager
 2. By calling one of their collision methods or passing them as arguments to a collision method.
@@ -115,14 +115,14 @@ Since the shape is neither part of the ShapeManager nor having any Collision met
 
 ### Additional Information
 
-* [Colliding a list of shapes against itself](../../../../../../frb/docs/index.php)
-* [Shapes and 2D Collision](../../../../../../frb/docs/index.php)
+* [Colliding a list of shapes against itself](../../../../../frb/docs/index.php)
+* [Shapes and 2D Collision](../../../../../frb/docs/index.php)
 
 ### ShapeManager Members
 
-* [FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.ShapeManager.AddToLayer](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.ShapeManager.Remove](../../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder](../../../../../../frb/docs/index.php)
+* [FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle](../../../../../frb/docs/index.php)
+* [FlatRedBall.Math.Geometry.ShapeManager.AddToLayer](../../../../../frb/docs/index.php)
+* [FlatRedBall.Math.Geometry.ShapeManager.Remove](../../../../../frb/docs/index.php)
+* [FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder](../../../../../frb/docs/index.php)
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.

@@ -16,17 +16,17 @@ The orderedTileIndex location depends LayeredTileMap's SortAxis. Interally the M
 
 For example, the following shows the tile order index if the map is using SortAxis of Y:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Tile index order for SortAxis.Y</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption><p>Tile index order for SortAxis.Y</p></figcaption></figure>
 
 Note that for isometic maps, tiles are drawn top to bottom (increasing moving downward) so isometric maps use a SortAxis of YTopDown.
 
 If your map is wider than it is tall and is not isometric, then the ordering is performed left-to-right rather than top-to-bottom. The following image shows example orderedTileIndex values for a map which is ordered left-to-right.
 
-![](../../media/2020-10-img\_5f918eb8a684a.png)
+![](../../.gitbook/assets/2020-10-img\_5f918eb8a684a.png)
 
 The newTileId is the index of the texture of the tileset. This index uses a similar indexing pattern but it always begins at the top-left with a value of 0 and is ordered left-to-right. The following image shows example newTileId values in a tileset.
 
-![](../../media/2020-10-img\_5f91902e76fb2.png)
+![](../../.gitbook/assets/2020-10-img\_5f91902e76fb2.png)
 
 ### Code Example - Painting Tiles
 
@@ -37,7 +37,7 @@ This example assumes the following:
 3. This layer references a tileset that you intend to paint with. This can be done by painting tiles on the layer in Tiled which will result in the layer being associated with the tileset containing the painted tiles
 4. The layer is already filled with tiles. This enables the painting to adjust texture coordinates without adding new tiles.
 
-![](../../media/2023-01-img\_63b90d11ccda1.png)
+![](../../.gitbook/assets/2023-01-img\_63b90d11ccda1.png)
 
 In this example, this map is the modified Level1Map.tmx which is created automatically in a platformer game. To paint on this tile, add the following code:
 

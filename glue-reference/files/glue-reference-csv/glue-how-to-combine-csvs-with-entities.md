@@ -63,7 +63,7 @@ We will also want to set up our camera to be 2D. To do this:
 
 Now you can run the game and you should see your Animal appear as a red square:
 
-<figure><img src="../../../media/migrated_media-AnimalSpriteRed.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/migrated_media-AnimalSpriteRed.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Creating a CSV
 
@@ -102,7 +102,7 @@ If you have used Glue before, you may expect the next step to be adding a variab
 5. Select "GlobalContent/AnimalInfo.csv" as the type
 6.  Enter "AnimalInfo" as the name
 
-    <figure><img src="../../../media/migrated_media-AnimalInfoVariable.PNG" alt="" width="217"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/migrated_media-AnimalInfoVariable.PNG" alt="" width="217"><figcaption></figcaption></figure>
 7. Click "OK"
 
 This new AnimalInfo variable can now be set in code or in Glue. For simplicity we'll set it in Glue; however, CSV variables like AnimalInfo are usually set in code according to player actions or game data. To set the variable:
@@ -110,7 +110,7 @@ This new AnimalInfo variable can now be set in code or in Glue. For simplicity w
 1. Select the newly-created AnimalInfo variable
 2.  Set the DefaultValue to "Bear" using the drop-down
 
-    <figure><img src="../../../media/migrated_media-DefaultValueToBear.png" alt="" width="371"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/migrated_media-DefaultValueToBear.png" alt="" width="371"><figcaption></figcaption></figure>
 
 ### Using AnimalInfo in behavior code
 
@@ -128,21 +128,21 @@ Notice that the AnimalInfo and Speed variables are both supported in Visual Stud
 
 Next we'll look at how to load content dynamically according to information in the AnimalInfo CSV. The approach we're going to show is a very powerful approach because it only loads information as needed. We'll be loading a Texture2D to apply to the Animal Sprite, however this approach can be used for any other data such as AnimationChains, Scenes, and ShapeCollections. Also, keep in mind that this is not limited to Entities - you can also use it on Screens to dynamically load data according to information in a CSV that defines level info. To add the textures to your project:
 
-1. Save the following Bear.png and Slug.png images to your computer![Bear.png](../../../media/migrated\_media-Bear.png)![Slug.png](../../../media/migrated\_media-Slug.png)
+1. Save the following Bear.png and Slug.png images to your computer![Bear.png](../../../.gitbook/assets/migrated\_media-Bear.png)![Slug.png](../../../.gitbook/assets/migrated\_media-Slug.png)
 2. Return to Glue
 3. Expand the Animal Entity
 4. Right-click on the Files item under Animal
 5. Select "Add File"->"Existing File"
 6. Select the Bear and click OK
 7. Repeat the above 3 steps and add the Slug
-8. Select the newly-added Bear file and set its "LoadedOnlyWhenReferenced" to "True"![LoadedOnlyWhenReferencedBear.png](../../../media/migrated\_media-LoadedOnlyWhenReferencedBear.png)
+8. Select the newly-added Bear file and set its "LoadedOnlyWhenReferenced" to "True"![LoadedOnlyWhenReferencedBear.png](../../../.gitbook/assets/migrated\_media-LoadedOnlyWhenReferencedBear.png)
 9. Select the Slug and also set its "LoadedOnlyWhenReferenced" to "True"
 
 Now we need to write a little bit of code to modify the Sprite according to the AnimalInfo. To do this:
 
 1. Open Animal.cs and delete the contents of CustomInitialize - we won't need this code anymore now that we're going to use textures.
 2. Select the AnimalInfo variable under Animal in Glue.
-3. Set its "CreatesEvent" variable to "True"![CreatesEventAnimalInfo.png](../../../media/migrated\_media-CreatesEventAnimalInfo.png)
+3. Set its "CreatesEvent" variable to "True"![CreatesEventAnimalInfo.png](../../../.gitbook/assets/migrated\_media-CreatesEventAnimalInfo.png)
 4. Right-click on the "Events" item under Animal in Glue
 5. Select "Add Event"
 6. Verify "Expose an existing event" is selected
@@ -163,13 +163,13 @@ Next we'll modify the Sprite's variables. To do this:
 4. Set the PixelSize varaible to .5
 5. Set the ColorOpeartion to "Texture"
 
-Run the game and you should see either the Slug or the Bear texture as your Entity. ![BearInGame.png](../../../media/migrated\_media-BearInGame.png)
+Run the game and you should see either the Slug or the Bear texture as your Entity. ![BearInGame.png](../../../.gitbook/assets/migrated\_media-BearInGame.png)
 
 ### Order of Variables Matters!
 
 A very common mistake when working with CSVs is to not properly order your variables. If you followed the tutorial above word-for-word, then your project will not have any variable order issues because there is only one variable - the CSV variable. However in larger Entities variable order problems can emerge. For starters, let's consider the example above where we have a single CSV variable which has a script that sets the Texture on a Sprite. The setup may look like this: &#x20;
 
-<figure><img src="../../../media/migrated_media-AnimalSetup1.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/migrated_media-AnimalSetup1.PNG" alt=""><figcaption></figcaption></figure>
 
 Specifically, we have just a CSV variable, and an event that is raised when the CSV variable (called AnimalInfo) is set. Next we'll tunnel in to the Sprite's Texture. To do this:
 
@@ -180,7 +180,7 @@ Specifically, we have just a CSV variable, and an event that is raised when the 
 5. Set the Texture to "Slug"
 6. Set the AnimalInfo to "Bear"
 
-At this point your Entity will show the Slug. You can verify this by either running GlueView, or by dropping the Animal Entity in a Screen and running the game. If you change the AnimalInfo variable, you will notice that the enemy continues to display the Slug no matter which value you set on AnimalInfo. The reason for this is because order matters. Since MainSpriteTexture appears **below** the AnimalInfo variable, it is set **after**. A good way to think about it is that variables are set from top to bottom - the same way that code is executed. You can fix this by right-clicking on the AnimalInfo variable and selecting to move it to bottom:![MoveToBottomVariable.png](../../../media/migrated\_media-MoveToBottomVariable.png) This will make the CSV variable be set last. In general you will want to make CSV variables - and for that matter any variable which has events tied to it - as set last in your Entities and Screens.
+At this point your Entity will show the Slug. You can verify this by either running GlueView, or by dropping the Animal Entity in a Screen and running the game. If you change the AnimalInfo variable, you will notice that the enemy continues to display the Slug no matter which value you set on AnimalInfo. The reason for this is because order matters. Since MainSpriteTexture appears **below** the AnimalInfo variable, it is set **after**. A good way to think about it is that variables are set from top to bottom - the same way that code is executed. You can fix this by right-clicking on the AnimalInfo variable and selecting to move it to bottom:![MoveToBottomVariable.png](../../../.gitbook/assets/migrated\_media-MoveToBottomVariable.png) This will make the CSV variable be set last. In general you will want to make CSV variables - and for that matter any variable which has events tied to it - as set last in your Entities and Screens.
 
 ### Setting the AnimalInfo after initialization
 

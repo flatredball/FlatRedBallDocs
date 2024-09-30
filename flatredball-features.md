@@ -10,25 +10,25 @@ FlatRedBall has been used to create dozens of commercial games on a variety of p
 
 The FlatRedBall Editor is a visual tool for creating and organizing screens, entities, and files.&#x20;
 
-<figure><img src=".gitbook/assets/image (92).png" alt=""><figcaption><p>FlatRedBall Editor</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (263).png" alt=""><figcaption><p>FlatRedBall Editor</p></figcaption></figure>
 
 ### Project Setup Wizard
 
 Use the wizard to get your game up and running in seconds.
 
-<figure><img src=".gitbook/assets/image (101).png" alt=""><figcaption><p>The Project Setup Wizard can be used to start making a game in seconds</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (272).png" alt=""><figcaption><p>The Project Setup Wizard can be used to start making a game in seconds</p></figcaption></figure>
 
 ### Tiled Integration
 
 Tiled maps can be drag+dropped into the FlatRedBall Editor and loaded with no extra code. Use Tiled to define visuals, collision, and add entity instances.
 
-<figure><img src=".gitbook/assets/image (94).png" alt=""><figcaption><p>Tiled Map in the FRB Editor</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (265).png" alt=""><figcaption><p>Tiled Map in the FRB Editor</p></figcaption></figure>
 
 ### Gum UI Integration
 
 FlatRedBall provides full integration with the Gum tool. Gum projects are added to your project and loaded by generated code, enabling the creation of UI from the very first click.
 
-<figure><img src=".gitbook/assets/image (93).png" alt=""><figcaption><p>Gum UI Title Screen</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (264).png" alt=""><figcaption><p>Gum UI Title Screen</p></figcaption></figure>
 
 ### Game Live Edit
 
@@ -46,7 +46,7 @@ Make changes to files such as Tiled (.tmx), Textures (.png), and spreadsheet (.c
 
 Native support for .aseprite files enables creating animated characters by drag+dropping files into the FlatRedBall Editor.
 
-<figure><img src=".gitbook/assets/image (110).png" alt=""><figcaption><p>.aseprite file in FlatRedBall as an Animated Character</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (281).png" alt=""><figcaption><p>.aseprite file in FlatRedBall as an Animated Character</p></figcaption></figure>
 
 ### Platformer Controls and Physics
 
@@ -70,7 +70,7 @@ Create node networks from Tiled maps or in code to navigate maps.
 
 Use the AnimationEditor to define animations for your characters using individual files or sprite sheets. Preview animations, adjust timing, and add shapes for collision or defining key positions.
 
-<figure><img src=".gitbook/assets/image (90).png" alt=""><figcaption><p>FRB AnimationEditor</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (261).png" alt=""><figcaption><p>FRB AnimationEditor</p></figcaption></figure>
 
 ### FlatRedBall.Forms
 
@@ -82,13 +82,13 @@ FlatRedBall.Forms is a flexible UI system similar to WPF and MAUI. It is fully i
 
 Use SkiaSharp to render GPU-accelerated vector graphics in your game. Perform layout purely in code or use Gum.
 
-<figure><img src=".gitbook/assets/image (86).png" alt=""><figcaption><p>SkiaSharp provides vector art rendering support</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (257).png" alt=""><figcaption><p>SkiaSharp provides vector art rendering support</p></figcaption></figure>
 
 ### Spine Integration
 
 Use all features in the Spine tool including defining skeletons, animations, and events.
 
-<figure><img src=".gitbook/assets/image (96).png" alt=""><figcaption><p>Animated character in Spine</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (267).png" alt=""><figcaption><p>Animated character in Spine</p></figcaption></figure>
 
 Spine files can be dropped in to your project and loaded with no code. Play animations at runtime in response to input or game events.
 
@@ -116,7 +116,7 @@ Define collision relationships in UI or code to add physics, damage dealing, and
 
 Set your initial game's resolution, whether it supports resizing, aspect ratio, and more.
 
-<figure><img src=".gitbook/assets/image (88).png" alt=""><figcaption><p>Display Settings in FRB</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (259).png" alt=""><figcaption><p>Display Settings in FRB</p></figcaption></figure>
 
 ### Camera Controlling Entity
 
@@ -128,19 +128,19 @@ The camera controlling entity can follow one or more targets, supports zooming, 
 
 Turn difficult-to-find runtime errors into clear in-editor errors the moment a file is changed or removed.
 
-<figure><img src=".gitbook/assets/image (103).png" alt=""><figcaption><p>Missing file references are reported in the FRB error tab</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (274).png" alt=""><figcaption><p>Missing file references are reported in the FRB error tab</p></figcaption></figure>
 
 ### MonoGame/FNA and NAudio Music
 
 MonoGame and FNA Song support included out of the box. For more flexibility song files can be loaded using NAudio.
 
-<figure><img src=".gitbook/assets/image (97).png" alt=""><figcaption><p>Song settings in FRB</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (268).png" alt=""><figcaption><p>Song settings in FRB</p></figcaption></figure>
 
 ### CSV and Open Office/Libre Office Integration
 
 Use CSV files or open office spreadsheet files to define your game data. FlatRedBall automatically generates the classes for loading your data and deserializes the files in geneated code.
 
-<figure><img src=".gitbook/assets/image (95).png" alt=""><figcaption><p>Creating a CSV automatically generates a class with matching properties</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (266).png" alt=""><figcaption><p>Creating a CSV automatically generates a class with matching properties</p></figcaption></figure>
 
 ### Flexible Input
 
@@ -162,37 +162,37 @@ NextWeaponInput = gamePad.GetButton(Xbox360GamePad.Button.RightShoulder);
 
 Add multiple languages to your game using a simple spreadsheet. Localization is automatically loaded and can be accessed through a LocalizationManager static class. Include multiple pages per string ID and add custom columns for your game's specific needs.
 
-<figure><img src=".gitbook/assets/image (89).png" alt=""><figcaption><p>Example Localization File</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (260).png" alt=""><figcaption><p>Example Localization File</p></figcaption></figure>
 
 ### Multiple Platforms
 
 Target multiple platforms with the same code and content. FRB games can run on Windows, Mac, Linux, Android, and iOS. By using FNA and Native AOT, FlatRedBall can also run on consoles such as Switch.
 
-<figure><img src=".gitbook/assets/image (100).png" alt=""><figcaption><p>Target multiple platforms with FRB</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (271).png" alt=""><figcaption><p>Target multiple platforms with FRB</p></figcaption></figure>
 
 ### Full .NET C# (not scripted)
 
 FlatRedBall projects are regular .NET projects with full access to modern C# syntax, the full .NET library, and NuGet packages. FlatRedBall Projects are regular Visual Studio project, enabling you to use your favorite IDE and debugger.
 
-<figure><img src=".gitbook/assets/image (87).png" alt=""><figcaption><p>Write any valid C# including LINQ and async code</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (258).png" alt=""><figcaption><p>Write any valid C# including LINQ and async code</p></figcaption></figure>
 
 ### Open Source
 
 FlatRedBall is fully open source using the MIT License. It is built using libraries which themselves are also open source. You can build your games without the worry of future inconveniences caused by license changes.
 
-<figure><img src=".gitbook/assets/image (98).png" alt=""><figcaption><p>FlatRedball uses the MIT license</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (269).png" alt=""><figcaption><p>FlatRedball uses the MIT license</p></figcaption></figure>
 
 ### All Data is Text
 
 All data created by FlatRedBall is in text format. The FlatRedBall Editor saves .json files and generates pure C# code files. Never worry about binary file conflicts wiping out your work again.
 
-<figure><img src=".gitbook/assets/image (102).png" alt=""><figcaption><p>FRB data is text so you can inspect, debug, and diff easily</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (273).png" alt=""><figcaption><p>FRB data is text so you can inspect, debug, and diff easily</p></figcaption></figure>
 
 ### XNA-Like Foundation
 
 FlatRedBall was built in the early days of XNA and has continued to grow, adding support for MonoGame and FNA. Your FlatRedBall game is a MonoGame/FNA game, and the full flexibility of these libraries is available to you.
 
-<figure><img src=".gitbook/assets/image (99).png" alt=""><figcaption><p>Fusion Sentient - a FlatRedBall game using XNA Models for 3D graphics</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (270).png" alt=""><figcaption><p>Fusion Sentient - a FlatRedBall game using XNA Models for 3D graphics</p></figcaption></figure>
 
 ### Async Programming
 

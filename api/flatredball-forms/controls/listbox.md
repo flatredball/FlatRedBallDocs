@@ -4,7 +4,7 @@
 
 The ListBox is a scrollable view which displays multiple ListBoxItem instances. When one ListBoxItem is selected, the previously-selected ListBoxItem becomes deselected.
 
-<figure><img src="../../../media/2017-12-2017-12-13_17-56-55.gif" alt=""><figcaption><p>ListBox Example</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2017-12-2017-12-13_17-56-55.gif" alt=""><figcaption><p>ListBox Example</p></figcaption></figure>
 
 ListBox inherits from [ScrollViewer](scrollviewer.md).
 
@@ -16,7 +16,7 @@ The ListBox control requires:
 * An object named **InnerPanelInstance** of any type (typically a Container)
 * An object named **ClipContainerInstance** of any type (typically a Container with **ClipsChildren** set to true)
 
-<figure><img src="../../../media/2017-12-img_5a465ac0d252b.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2017-12-img_5a465ac0d252b.png" alt=""><figcaption></figcaption></figure>
 
 The requirements for the ListBox are identical to the requirements for the ScrollViewer control. For more information on requirements, see the ScrollViewer page: [http://flatredball.com/documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer/](../../../documentation/tutorials/flatredball-forms/forms-layout-in-gum/scrollviewer.md)
 
@@ -24,11 +24,11 @@ The requirements for the ListBox are identical to the requirements for the Scrol
 
 The ListBox control typically handles the creation and positioning of ListBoxItem instances. The InnerPanelInstance in the list box Gum component will typically use a **Children Layout** value of **TopToBottomStack.**
 
-<figure><img src="../../../media/2017-12-img_5a46645375a35.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2017-12-img_5a46645375a35.png" alt=""><figcaption></figcaption></figure>
 
 Alternatively the InnerPanelInstance can use a **Children Layout** value of **LeftToWriteStack** with the **Wraps Children** value set to true.
 
-![](../../../media/2017-12-img\_5a486c2d92c54.png)
+![](../../../.gitbook/assets/2017-12-img\_5a486c2d92c54.png)
 
 ### Items
 
@@ -113,7 +113,7 @@ private void HandleSelectionChanged(object sender, SelectionChangedEventArgs arg
 }
 ```
 
-<figure><img src="../../../media/2017-12-2017-12-20_21-07-56.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2017-12-2017-12-20_21-07-56.gif" alt=""><figcaption></figcaption></figure>
 
 The event handling the selection changing can also use the SelectedItem property, as shown in the following code:
 

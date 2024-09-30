@@ -8,17 +8,17 @@ The OrthogonalHeight and OrthogonalWidth values control how many units tall and 
 
 By default FlatRedBall games use a 2D camera with an OrthogonalWidth of 800 and OrthogonalHeight of 600. The following diagram can help visualize this configuration:
 
-![](../../../media/2021-02-img\_603417874d630.png)
+![](../../../.gitbook/assets/2021-02-img\_603417874d630.png)
 
 ### Setting OrthogonalHeight in the FlatRedBall Editor
 
 By default, FlatRedBall games have their resolution controlled by the Display Settings in the FlatRedBall Editor.
 
-![](../../../media/2022-10-img\_635af2e509d7c.png)
+![](../../../.gitbook/assets/2022-10-img\_635af2e509d7c.png)
 
 These values can be changed by typing new values in the Width and Height boxes or by using the dropdown to change both values.
 
-![](../../../media/2022-10-img\_635af318149de.png)
+![](../../../.gitbook/assets/2022-10-img\_635af318149de.png)
 
 ### Code Example - Using Resolution to Position Objects at the Edge of the Screen
 
@@ -39,15 +39,15 @@ The [Camera's UsePixelCoordinates](../../../frb/docs/index.php) method sets the 
 
 OrthogonalWidth and OrthogonalHeight control how much of the world can be seen. For example, consider the following game level which is 3200x3200 pixels (zoomed down to fit on screen):
 
-![](../../../media/2017-07-img\_5957200489213.png)
+![](../../../.gitbook/assets/2017-07-img\_5957200489213.png)
 
 If this level were viewed with a camera with OrthogonalWidth of 800 and an OrthogonalHeight of 480, the red square represents the area that might be visible at one time:
 
-![](../../../media/2017-07-img\_5957212b70f7c.png)
+![](../../../.gitbook/assets/2017-07-img\_5957212b70f7c.png)
 
 The following image shows what this might look like in a FlatRedBall game:
 
-![](../../../media/2017-07-img\_595721b963f89.png)
+![](../../../.gitbook/assets/2017-07-img\_595721b963f89.png)
 
 ### Zooming using Orthogonal values
 

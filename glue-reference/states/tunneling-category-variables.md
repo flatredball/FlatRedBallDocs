@@ -8,7 +8,7 @@ State categories automatically create variables in Screens and Entities through 
 
 For this example, consider an Entity named StateEntity which has a SizeCategory with three states: Small, Medium, and Large.
 
-<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption><p>Entity with a SizeCategory</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (229).png" alt=""><figcaption><p>Entity with a SizeCategory</p></figcaption></figure>
 
 This entity generates a variable called CurrentSizeCategoryState which can be accessed in code, as shown in the following code block:
 

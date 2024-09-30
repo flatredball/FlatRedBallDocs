@@ -4,7 +4,7 @@
 
 If you're looking for a jump-start on how to make games with FlatRedBall and the FlatRedBall Editor, you've come to the right place. The following tutorials walk you through how to make a game called **Beefball**. Beefball is a fast-paced physics based game similar to air-hockey. What are you waiting for, let's get started!
 
-<figure><img src="../../media/2016-12-img_585345a4df251.png" alt=""><figcaption><p>Beefball Icon</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-12-img_585345a4df251.png" alt=""><figcaption><p>Beefball Icon</p></figcaption></figure>
 
 Completed Project: [Beefball.zip](https://files.flatredball.com/content/Tutorials/Beefball.zip)
 

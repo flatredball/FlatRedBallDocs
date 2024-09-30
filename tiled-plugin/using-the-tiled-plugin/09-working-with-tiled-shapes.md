@@ -10,7 +10,7 @@ Tiled object layers support "tile objects" (images) and geometric shapes. The fo
 * Polyline
 * Tile (Image)
 
-![](../../media/2016-08-img\_57b76aa31dfed.png)
+![](../../.gitbook/assets/2016-08-img\_57b76aa31dfed.png)
 
 The first four types (geometric shapes) are added to the Map.ShapeCollections list when loaded. These can be accessed and used at run time for custom collision, such as the creation of triggers.
 
@@ -26,18 +26,18 @@ Shapes can be added to any object layer (such as the existing GameplayObjectLaye
 2. Select "Add Object Layer"
 3. Enter the name "ShapesLayer"
 
-![](../../media/2021-02-img\_60318e8c98087.png)
+![](../../.gitbook/assets/2021-02-img\_60318e8c98087.png)
 
 To add a rectangle:
 
 1. In Tiled, click the Insert Rectangle button
 2. Push and drag the left mouse button to draw a Rectangle
 
-<figure><img src="../../media/2016-08-2021_February_20_153435.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-2021_February_20_153435.gif" alt=""><figcaption></figcaption></figure>
 
 3.  Enter the name "Rectangle1" for the new rectangle. This is needed to find the shape at run time.
 
-    ![](../../media/2016-08-img\_57b770362661b.png)
+    ![](../../.gitbook/assets/2016-08-img\_57b770362661b.png)
 
 As always, don't forget to save your changes in Tiled.
 
@@ -82,7 +82,7 @@ void CustomInitialize()
 }
 ```
 
-![White rectangle from the Map's ShapeCollection](../../media/2021-02-img\_60318fee8cc7f.png)
+![White rectangle from the Map's ShapeCollection](../../.gitbook/assets/2021-02-img\_60318fee8cc7f.png)
 
 ### Accessing Individual Shapes
 

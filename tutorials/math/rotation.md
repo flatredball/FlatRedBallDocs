@@ -2,11 +2,11 @@
 
 ### Introduction
 
-Rotation is the property or collection of properties which control the orientation of an object. In other words, it controls which way the object is "facing". Rotation can be used to make a planet rotate on its axis, to rotate a space ship according to user input, or to spin particles to give them more natural-looking behavior. Objects which implement the [IRotatable](../../../frb/docs/index.php) interface can be rotated. Rotation is performed using radians.
+Rotation is the property or collection of properties which control the orientation of an object. In other words, it controls which way the object is "facing". Rotation can be used to make a planet rotate on its axis, to rotate a space ship according to user input, or to spin particles to give them more natural-looking behavior. Objects which implement the [IRotatable](../../frb/docs/index.php) interface can be rotated. Rotation is performed using radians.
 
 ### Radians and Degrees
 
-The FlatRedBall Engine uses [radians](http://en.wikipedia.org/wiki/Radians) instead of [degrees](http://en.wikipedia.org/wiki/Degree_\(angle\)) to measure orientation. ![RadiansAndDegrees.png](../../../media/migrated_media-RadiansAndDegrees.png)
+The FlatRedBall Engine uses [radians](http://en.wikipedia.org/wiki/Radians) instead of [degrees](http://en.wikipedia.org/wiki/Degree\_\(angle\)) to measure orientation. ![RadiansAndDegrees.png](../../.gitbook/assets/migrated\_media-RadiansAndDegrees.png)
 
 ### Shooting Entities From a Rotated Turret
 
@@ -39,8 +39,6 @@ public void ShootBullet()
 }
 ```
 
-&#x20;
-
 ### Rotating a Sprite so it faces the cursor
 
 Rotation can be used to rotate an object to "face" another object. For example a turret may rotate to face an enemy. If the cursor is to be used as a target, the following code can be used to rotate a Sprite so it faces the cursor. The assumption on this code is that there is some identifiable "front" to the Sprite such as the nose of a plane or the tip of a turret. When the Sprite is unrotated (has a RotationZ of 0) the front of the Sprite will face a particular direction. This direction will be the "offset" variable.
@@ -72,7 +70,7 @@ When presented with a current angle and a target angle, rotating clockwise or co
 float angleToRotate = FlatRedBall.Math.MathFunctions.AngleToAngle(currentAngle, targetAngle);
 ```
 
-For more information, see the [AngleToAngle page](../../../frb/docs/index.php).
+For more information, see the [AngleToAngle page](../../frb/docs/index.php).
 
 ### How to find the vertices of a Sprite
 

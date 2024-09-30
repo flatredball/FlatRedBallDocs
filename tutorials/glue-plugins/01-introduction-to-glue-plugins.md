@@ -14,7 +14,7 @@ FlatRedBall Plugins are powerful and flexible, allowing custom code to be used t
 
 If you've run the FlatRedBall Editor, then you've already used functionality provided by the plugin system. In fact, almost the entirety of FRB is now constructed through plugins. Every red rectangle in the following picture represents a different plugin.
 
-![Plugins in the FRB Editor](../../media/2023-04-img\_6444b3c9c3fa9.png)
+![Plugins in the FRB Editor](../../.gitbook/assets/2023-04-img\_6444b3c9c3fa9.png)
 
 Note that the code project for the FRB Editor is called Glue, so the plugin documentations use the terms "FlatRedBall Editor" and "Glue" interchangeably.
 

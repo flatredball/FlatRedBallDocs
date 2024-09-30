@@ -1,4 +1,4 @@
-# propertycollection
+# PropertyCollection
 
 ### Introduction
 
@@ -6,7 +6,7 @@ PropertyCollections are a method of encapsulating a group of property values. Us
 
 ### Using PropertyCollections
 
-The following example creates a [Sprite](../../../../../frb/docs/index.php) and sets its properties through a PropertyCollection.
+The following example creates a [Sprite](../../../../frb/docs/index.php) and sets its properties through a PropertyCollection.
 
 ```
 Sprite sprite = SpriteManager.AddSprite("redball.bmp");
@@ -18,7 +18,7 @@ propertyCollection.Add("RotationZ", (float)Math.PI / 8.0f);
 propertyCollection.ApplyTo(sprite);
 ```
 
-![SpriteWithChangedProperties.png](../../../../../media/migrated_media-SpriteWithChangedProperties.png)
+![SpriteWithChangedProperties.png](../../../../.gitbook/assets/migrated\_media-SpriteWithChangedProperties.png)
 
 ### Lack of Type Conversion in PropertyCollections
 
@@ -45,4 +45,4 @@ propertyCollection.Add("XVelocity", 3.0f);  // Whew, 3.0f is a float.
 propertyCollection.ApplyTo(someSprite);  // This will now work fine.
 ```
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

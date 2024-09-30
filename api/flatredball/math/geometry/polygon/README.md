@@ -56,7 +56,7 @@ polygon.Points = points;
 ShapeManager.AddPolygon(polygon);
 ```
 
-![Polygon created in code by assigning individual Points](../../../../../media/2017-06-img\_593f455263322.png)
+![Polygon created in code by assigning individual Points](../../../../../.gitbook/assets/2017-06-img\_593f455263322.png)
 
 ### Clockwise Points
 
@@ -66,7 +66,7 @@ The example above adds points clockwise. We can see this by overlaying the polyg
 
 
 
-<figure><img src="../../../../../.gitbook/assets/image (123).png" alt=""><figcaption><p>Polygon point order and origin displayed</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (295).png" alt=""><figcaption><p>Polygon point order and origin displayed</p></figcaption></figure>
 
 Polygons provide an IsClockwise method which checks if the points are in clockwise order, as shown in the following code:
 

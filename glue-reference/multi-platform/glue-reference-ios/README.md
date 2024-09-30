@@ -27,7 +27,7 @@ already exist).
 
 Verify that your Info.plist Deployment Target matches your csproj's SupportedOSPlatformVersion.
 
-<figure><img src="../../../.gitbook/assets/image (109).png" alt=""><figcaption><p>Match Deployment Target to SupportedOSPlatformVersion</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (280).png" alt=""><figcaption><p>Match Deployment Target to SupportedOSPlatformVersion</p></figcaption></figure>
 
 ### Additional Information
 

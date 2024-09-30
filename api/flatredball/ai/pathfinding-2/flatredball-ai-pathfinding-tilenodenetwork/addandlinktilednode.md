@@ -1,12 +1,14 @@
-## Introduction
+# AddAndLinkTiledNode
+
+### Introduction
 
 AddAndLinkTiledNode adds a new PositionedNode at the argument X, Y index at the argument DirectionType, or using the default DirectionType specified in the constructor if one isn't specified. This method uses indexes, where 0,0 is the bottom left of the TileNodeNetwork. Each index represents one tile, so if your TileNodeNetwork has a tile size of 16, then an X value of 1 would translate to 16 pixels further to the right than an X index of 0.
 
-## Code Example - Adding nodes manually
+### Code Example - Adding nodes manually
 
 The following code adds a few nodes to a TileNodeNetwork using X,Y indexes.
 
-``` lang:c#
+```lang:c#
 void CustomInitialize()
 {
     var left = -150;
@@ -45,28 +47,26 @@ void CustomInitialize()
 }
 ```
 
-![](/media/2019-08-img_5d63e7723e433.png)
+![](../../../../../.gitbook/assets/2019-08-img\_5d63e7723e433.png)
 
-## Code Example - Adding Nodes with the Cursor
+### Code Example - Adding Nodes with the Cursor
 
 The following code can be used to add nodes with the cursor when the PrimaryDown value is true (left mouse button). The following code could be added to CustomActivity of a Screen which has access to a TileNodeNetwork.
 
-    var cursor = GuiManager.Cursor;
+```
+var cursor = GuiManager.Cursor;
 
-    if(cursor.PrimaryDown)
+if(cursor.PrimaryDown)
+{
+    TileNodeNetwork.WorldToIndex(cursor.WorldX, cursor.WorldY, out int xIndex, out int yIndex);
+
+    var nodeAtPoint = TileNodeNetwork.TiledNodeAt(xIndex, yIndex);
+    if(nodeAtPoint == null)
     {
-        TileNodeNetwork.WorldToIndex(cursor.WorldX, cursor.WorldY, out int xIndex, out int yIndex);
-
-        var nodeAtPoint = TileNodeNetwork.TiledNodeAt(xIndex, yIndex);
-        if(nodeAtPoint == null)
-        {
-            TileNodeNetwork.AddAndLinkTiledNode(xIndex, yIndex);
-            TileNodeNetwork.UpdateShapes();
-        }
+        TileNodeNetwork.AddAndLinkTiledNode(xIndex, yIndex);
+        TileNodeNetwork.UpdateShapes();
     }
+}
+```
 
-
-
-<figure><img src="/media/2019-08-j5VMYNqadR.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../../.gitbook/assets/2019-08-j5VMYNqadR.gif" alt=""><figcaption></figcaption></figure>

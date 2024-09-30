@@ -1,4 +1,4 @@
-# orthogonalwidth
+# OrthogonalWidth
 
 ### Introduction
 
@@ -10,11 +10,11 @@ This example was initially constructed in Glue. To reproduce this:
 
 1. Create a Screen
 2. Add a Sprite to the Screen
-3. Set its Texture (I used ![Redball.bmp](../../../../../media/migrated_media-Redball.png))
+3. Set its Texture (I used ![Redball.bmp](../../../../.gitbook/assets/migrated\_media-Redball.png))
 4. Create a 2D Layer
 5. Place the Sprite on the 2D Layer
 
-If you run the game you should now see the Sprite rendering on the Layer:![Regular2DSpriteOnLayer.PNG](../../../../../media/migrated_media-Regular2DSpriteOnLayer.PNG) We can now zoom in on this Sprite simply by adjusting the orthogonal values on the LayerCameraSettings. Since I'm using Glue I'll add the following code to my CustomInitialize for my Screen that contains the Layer:
+If you run the game you should now see the Sprite rendering on the Layer:![Regular2DSpriteOnLayer.PNG](../../../../.gitbook/assets/migrated\_media-Regular2DSpriteOnLayer.PNG) We can now zoom in on this Sprite simply by adjusting the orthogonal values on the LayerCameraSettings. Since I'm using Glue I'll add the following code to my CustomInitialize for my Screen that contains the Layer:
 
 ```
 // If we want to zoom in 8x, we want to make the amount
@@ -24,9 +24,9 @@ LayerInstance.LayerCameraSettings.OrthogonalWidth /= 8;
 LayerInstance.LayerCameraSettings.OrthogonalHeight /= 8;
 ```
 
-Now the Sprite (and anything on the same Layer) will appear at 8x zoom:![Sprite8xzoom.PNG](../../../../../media/migrated_media-Sprite8xzoom.PNG)
+Now the Sprite (and anything on the same Layer) will appear at 8x zoom:![Sprite8xzoom.PNG](../../../../.gitbook/assets/migrated\_media-Sprite8xzoom.PNG)
 
-### Matching Layer to [Camera](../../../../../frb/docs/index.php) coordinates
+### Matching Layer to [Camera](../../../../frb/docs/index.php) coordinates
 
 You can match the LayerCameraSettings to match the Camera by setting the OrthogonalWidth/OrthogonalHeight of the LayerCameraSettings to the Camera's OrthogonalWidth/OrthogonalHeight. This assumes that both the Layer and Camera are using orthogonal values.
 

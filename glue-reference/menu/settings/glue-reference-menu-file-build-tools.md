@@ -10,17 +10,17 @@ To add a new File Build Tool:
 
 1.  Click the Settings->File Build Tools menu item
 
-    ![](../../../media/2017-01-img\_58902130439d7.png)
+    ![](../../../.gitbook/assets/2017-01-img\_58902130439d7.png)
 2.  Click "Add new build tool"\
 
 
-    <figure><img src="../../../media/migrated_media-AddNewBuildToolButton.PNG" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/migrated_media-AddNewBuildToolButton.PNG" alt=""><figcaption></figcaption></figure>
 3.  Add the source and destination extensions of whatever your file build tool supports. For example, the source might be "psd" and the destination might be "png".
 
-    <figure><img src="../../../media/migrated_media-AddSourceAndDestinationTypes.PNG" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/migrated_media-AddSourceAndDestinationTypes.PNG" alt=""><figcaption></figcaption></figure>
 4.  Click the BuildTool text field, then click the browse button
 
-    <figure><img src="../../../media/migrated_media-BuildToolSelectionButton.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/migrated_media-BuildToolSelectionButton.png" alt=""><figcaption></figcaption></figure>
 5. Select your build tool in the file window
 6. Click OK
 

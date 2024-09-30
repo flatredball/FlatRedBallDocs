@@ -11,11 +11,11 @@ The main benefit of the FRB Text object is that it can sort with other visual ob
 Bitmap Fonts require two files - a texture file and a .fnt file. Both can be created with [AngelCode.com's Bitmap Font Generator](http://www.angelcode.com/products/bmfont/). The following steps outline the creation of the two files used in BitmapFonts:
 
 1. Open Bitmap font generator.\
-   &#x20;![SearchBMFont.png](../../../../media/migrated\_media-SearchBMFont.png)![BitmapFontGenerator.PNG](../../../../media/migrated\_media-BitmapFontGenerator.PNG)
+   &#x20;![SearchBMFont.png](../../../../.gitbook/assets/migrated\_media-SearchBMFont.png)![BitmapFontGenerator.PNG](../../../../.gitbook/assets/migrated\_media-BitmapFontGenerator.PNG)
 2.  Click or push+drag to select the letters that you'd like included in your exported font. Selected letters will highlight.\
 
 
-    <figure><img src="../../../../media/migrated_media-SelectedLettersInBFG.PNG" alt=""><figcaption><p>Select the desired characters. This screenshot shows 0-9, A-Z, and a-z selected.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/migrated_media-SelectedLettersInBFG.PNG" alt=""><figcaption><p>Select the desired characters. This screenshot shows 0-9, A-Z, and a-z selected.</p></figcaption></figure>
 3. Click Options->Font Settings
    1. Select the font that you'd like to use in the "Font" drop down. All fonts installed on your machine will appear here.
    2. Enter the font size that you want next to "Size (px)": The larger this is, the larger each letter will be in your game. If you are using Photoshop, you can test font sizes there (see next item)
@@ -66,10 +66,10 @@ Note that if you are using Glue you may not have to add fonts to your project ma
 1. Create or download a .fnt file and matching image file (.png is typical)
 2.  Drag+drop the files into your project's **Content** folder
 
-    ![](../../../../media/2019-06-img\_5d09a2256425b.png)
+    ![](../../../../.gitbook/assets/2019-06-img\_5d09a2256425b.png)
 3.  Mark both files as **Copy if Newer** in their properties
 
-    ![](../../../../media/2019-06-img\_5d09a2636c758.png)
+    ![](../../../../.gitbook/assets/2019-06-img\_5d09a2636c758.png)
 
 ### Loading a BitmapFont
 
@@ -99,14 +99,14 @@ Text text = TextManager.AddText("Hi, I'm another text.");
 otherText.Font = customFont;
 ```
 
-![CustomFontExample.png](../../../../media/migrated\_media-CustomFontExample.png)
+![CustomFontExample.png](../../../../.gitbook/assets/migrated\_media-CustomFontExample.png)
 
 #### Loading a BitmapFont through the Content Pipeline
 
 The .fnt file is simply a text file which must be copied to build folder, while the referenced texture must be built through the content pipeline. Therefore, each file must be handled slightly differently. The following steps outline how to add a BitmapFont to a project through the content pipeline:
 
-1. Add the two font files to the Content folder. You can simply drag them into the Solution Explorer and they will be added. ![FontInContentPipeline.png](../../../../media/migrated\_media-FontInContentPipeline.png)
-2. Highlight the .fnt file and press F4 to bring up the Properties window. Make sure that its "Build Action" is "None" and its "Copy to Output Directory" is "Copy if newer" ![FntProperties.png](../../../../media/migrated\_media-FntProperties.png)
+1. Add the two font files to the Content folder. You can simply drag them into the Solution Explorer and they will be added. ![FontInContentPipeline.png](../../../../.gitbook/assets/migrated\_media-FontInContentPipeline.png)
+2. Highlight the .fnt file and press F4 to bring up the Properties window. Make sure that its "Build Action" is "None" and its "Copy to Output Directory" is "Copy if newer" ![FntProperties.png](../../../../.gitbook/assets/migrated\_media-FntProperties.png)
 3. Add the following code to load the bitmapFont:
 
 Add the following using statements:

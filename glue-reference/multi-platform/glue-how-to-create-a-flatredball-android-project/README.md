@@ -26,7 +26,7 @@ Creating an Android project is essentially identical to creating any other platf
 
 Select the desired project type in the wizard, or close the wizard to begin with an empty project. Click the Visual Studio icon to open the project in Visual Studio:
 
-![Open the project in Visual Studio](../../../media/2022-03-img\_6235dd408496f.png)
+![Open the project in Visual Studio](../../../.gitbook/assets/2022-03-img\_6235dd408496f.png)
 
 Now that the project is in Visual Studio, you can develop an Android game the same as if you were making a PC game, including using the FRB Editor. To launch the game:
 
@@ -37,9 +37,9 @@ Now that the project is in Visual Studio, you can develop an Android game the sa
 
 3. Press the Play button
 
-![Emulator running and showing up in Visual Studio](../../../media/2016-11-img\_581ac5bb6021e.png)
+![Emulator running and showing up in Visual Studio](../../../.gitbook/assets/2016-11-img\_581ac5bb6021e.png)
 
-![FlatRedBall project running in an emulator](../../../media/migrated\_media-RunningGenymotion.png)
+![FlatRedBall project running in an emulator](../../../.gitbook/assets/migrated\_media-RunningGenymotion.png)
 
 ### Creating a synced Android project
 

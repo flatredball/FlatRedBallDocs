@@ -1,4 +1,4 @@
-# CollideAgsinstMove
+# CollideAgainstMove
 
 ### Introduction
 
@@ -86,7 +86,7 @@ foreach (Polygon polygon in mLoadedPolygons)
 }
 ```
 
-![PolygonCollideAgainstMove.png](../../../../../media/migrated\_media-PolygonCollideAgainstMove.png)
+![PolygonCollideAgainstMove.png](../../../../../.gitbook/assets/migrated\_media-PolygonCollideAgainstMove.png)
 
 ### Understanding the CollideAgainstMove Implementation
 
@@ -94,7 +94,7 @@ In brief mathematical terms, the CollideAgainstMove repositions the calling shap
 
 For example, consider the following situation. There are two Polygons - ball and surface. The ball has a positive XVelocity and negative YVelocity, causing it to fall down and to the right toward the surface Polygon:
 
-![CollideAgainstMoveExplanation1.png](../../../../../media/migrated\_media-CollideAgainstMoveExplanation1.png)
+![CollideAgainstMoveExplanation1.png](../../../../../.gitbook/assets/migrated\_media-CollideAgainstMoveExplanation1.png)
 
 Eventually the ball will overlap the surface. Let's assume that the following method is being called every frame:
 
@@ -106,13 +106,13 @@ In this case the ball is given a 0 mass and the surface is given a 1 mass. In ot
 
 When a collision occurs, the vector of the edge where the collision happened is determined. Then the normal (perpendicular) vector is calculated and the shape(s) is (are) moved along the normal vector the required distance to separate them. For example, the first time ball penetrates surface, the following edge vector and reposition vector are calculated:
 
-![CollideAgainstMoveReposition.png](../../../../../media/migrated\_media-CollideAgainstMoveReposition.png)
+![CollideAgainstMoveReposition.png](../../../../../.gitbook/assets/migrated\_media-CollideAgainstMoveReposition.png)
 
 Since the ball has 0 mass, it will be moved by the full reposition vector. If the value were different, say .5 and .5, then ball and surface would each move half of the reposition vector. Of course, surface would move in the opposite direction as ball so that the two separate after the call.
 
 Since this CollideAgainstMove resolves this penetration, it is never seen when the engine draws the shapes. But if the velocity of ball is not changed, then it will continue to penetrate surface every frame, then get pushed back out every frame. The result is what appears to be a smooth sliding movement across as follows:
 
-![MultipleRepositions.png](../../../../../media/migrated\_media-MultipleRepositions.png)
+![MultipleRepositions.png](../../../../../.gitbook/assets/migrated\_media-MultipleRepositions.png)
 
 ### RepositionDirections
 

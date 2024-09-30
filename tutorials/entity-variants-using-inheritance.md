@@ -31,25 +31,25 @@ FlatRedBall entities provide support for inheritance. By default all entities in
 
 For example, a game project may include an entity called Enemy which serves as the base for all other enemies.
 
-<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption><p>Enemy entity</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (230).png" alt=""><figcaption><p>Enemy entity</p></figcaption></figure>
 
 Derived entities might include the different types of enemies that exist in the game. Note that the Enemy entity may never be directly instantiated in the game. It only serves to include all common code, files, and objects for all other enemies. This is similar to the GameScreen screen and the derived Level screens.&#x20;
 
 When creating a variant of the Enemy entity, the Enemy entity type should be selected as the base type.
 
-<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption><p>Creating a derived Enemy variant</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (231).png" alt=""><figcaption><p>Creating a derived Enemy variant</p></figcaption></figure>
 
 It may be helpful to organize your derived variants in a subfolder. For example, the following enemy variants are all stored in an Enemies folder.
 
-<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption><p>Enemy variants in an Enemies folder</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption><p>Enemy variants in an Enemies folder</p></figcaption></figure>
 
 Inheritance can also be set on an Entity after it has been created by selecting the entity and changing its BaseEntity type in the Properties tab.
 
-<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption><p>BaseEntity can be set on the Properties tab</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (233).png" alt=""><figcaption><p>BaseEntity can be set on the Properties tab</p></figcaption></figure>
 
 Notice that when a derived Entity is created, FlatRedBall does not create a list for that derived type. In most cases you will not need a separate list for each variant - you can use the list for the base type for collision and game logic. In this case, the GameScreen includes an EnemyList, but does not include lists for the specific enemy types.
 
-<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption><p>GameScreen including the base Entity type list EnemyList</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption><p>GameScreen including the base Entity type list EnemyList</p></figcaption></figure>
 
 ### Customizing Variant Visuals
 
@@ -57,23 +57,23 @@ As mentioned earlier, entity variants can differ in many ways. One of the most c
 
 For example, the Enemy entity includes a Sprite instance, but the Sprite does not have its AnimationChains set.
 
-<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption><p>Enemy (base entity) does not set the AnimationChains</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption><p>Enemy (base entity) does not set the AnimationChains</p></figcaption></figure>
 
 Each derived entity would typically include its own AnimationChains. For simplicity, the file can be named the same in all cases (AnimationChainListFile). While this may seem less expressive compared to having different names for each file, keeping the name the same can make your code much simpler if you need to access the file. To learn more about creating .achx files, see the [Animation Editor](../glue-gluevault-component-pages-animationeditor-plugin/) documentation.
 
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption><p>AnimationChianListFiles in each derived entity</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption><p>AnimationChianListFiles in each derived entity</p></figcaption></figure>
 
 Each derived entity needs to access the SpriteInstance defined in the base entity to modify its appearance. To od this, we can expose SpriteInstance in the base entity. This can be done by selecting the Sprite in the base entity and setting its ExposedInDerived property to true.
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption><p>The SpriteInstance in the base entity should have its ExposedInDerived set to true</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption><p>The SpriteInstance in the base entity should have its ExposedInDerived set to true</p></figcaption></figure>
 
 By setting this value to true, the Sprite is accessible in all of the derived entities.
 
-<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption><p>Derived SpriteInstances</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption><p>Derived SpriteInstances</p></figcaption></figure>
 
 Now we can assign the animation chain on each of the deirived SpriteInstances. You can do this by selecting the Sprite and changing its AnimationChains dropdown.
 
-<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption><p>Setting the AnimationChains on a Sprite</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption><p>Setting the AnimationChains on a Sprite</p></figcaption></figure>
 
 Alternatively you can drag+drop the .achx file onto the Sprite. This is a shortcut to setting the Animation Chains through the dropdown.
 
@@ -81,7 +81,7 @@ Alternatively you can drag+drop the .achx file onto the Sprite. This is a shortc
 
 Regardless of which approach you use, be sure to also set the Current Chain Name to a valid animation.
 
-<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption><p>Set the Current Chain Name or the Sprite will be invisible</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption><p>Set the Current Chain Name or the Sprite will be invisible</p></figcaption></figure>
 
 If you do not have any animations in the Current Chain Name drop-down, you need to first add new animations to your .achx.
 
@@ -95,7 +95,7 @@ Once you have created derived entities, you can add them to your levels. The eas
 
 Notice that every instance is added to EnemyList. FlatRedBall understands that the derived entities should be organized in the base entity list. This makes handling collisions much easier than if each type had its own list.
 
-<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption><p>Derived entity instances in a list of base type</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption><p>Derived entity instances in a list of base type</p></figcaption></figure>
 
 Entity instances can also be created in code by using their respective factories. When a derived entity's factory is used, the newly-created instance is automatically added to the base list. Derived entities end up in their base list whether created through the FRB Editor or in custom code.
 
@@ -149,7 +149,7 @@ Variants, such as enemies, may have different variables which may need to be acc
 
 Variables such as MaxHealth can be defined per enemy type. For example, the following image shows a Skeleton which has 80 MaxHealth.
 
-<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption><p>Skeleton with 80 MaxHealth</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption><p>Skeleton with 80 MaxHealth</p></figcaption></figure>
 
 This can be accessed in a type-safe way in code using the EnemyVariant class as shown in the following snippet:
 

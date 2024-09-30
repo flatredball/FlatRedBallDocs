@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The Camera encapsulates functionality to simplify and control the display of a FlatRedBall application to the user. The camera controls view position, rotation, and background color. If the Camera is 3D, it can also control field of view, and viewable distance.&#x20;
+The Camera encapsulates functionality to simplify and control the display of a FlatRedBall application to the user. The camera controls view position, rotation, and background color. If the Camera is 3D, it can also control field of view, and viewable distance.
 
 By default the camera in FlatRedBall looks down the negative Z axis. In other words negative Z points away from the camera. Increasing the Camera's Z moves it backwards while decreasing moves it forward. FlatRedBall uses a _right handed_ coordinate system.
 
@@ -60,7 +60,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-<figure><img src="../../../media/2016-01-10_08-09-06.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2016-01-10_08-09-06.gif" alt=""><figcaption></figcaption></figure>
 
 ### 2D Cameras and Pixels
 
@@ -92,9 +92,7 @@ FlatRedBall supports multiple cameras for different viewports (split screen). Th
  SpriteManager.Cameras[1].Z = 5;
 ```
 
-&#x20;
-
-<figure><img src="../../../media/migrated_media-SplitScreen.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/migrated_media-SplitScreen.png" alt=""><figcaption></figcaption></figure>
 
 For info on the [content manager argument](../../../frb/docs/index.php) see the [FlatRedBall Content Manager wiki entry](../../../frb/docs/index.php).
 

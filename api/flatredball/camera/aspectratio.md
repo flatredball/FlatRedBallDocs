@@ -19,4 +19,4 @@ SpriteManager.AddSprite("redball.bmp");
 Camera.Main.AspectRatio = .3f; // smaller makes things look wider
 ```
 
-![AspectRatio.png](../../../media/migrated\_media-AspectRatio.png)
+![AspectRatio.png](../../../.gitbook/assets/migrated\_media-AspectRatio.png)

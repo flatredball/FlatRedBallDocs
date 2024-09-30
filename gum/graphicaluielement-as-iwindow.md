@@ -52,11 +52,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-
-
-<figure><img src="../media/2019-12-2019_December_07_151411.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/2019-12-2019_December_07_151411.gif" alt=""><figcaption></figcaption></figure>
 
 ### GuiManager Membership
 
@@ -94,5 +90,3 @@ void CustomActivity(bool firstTimeCalled)
     }
 }
 ```
-
-&#x20;     &#x20;

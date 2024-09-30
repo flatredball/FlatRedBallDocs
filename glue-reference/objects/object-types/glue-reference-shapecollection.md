@@ -17,7 +17,7 @@ To add a ShapeCollection:
 5.  Click **OK**\
 
 
-    <figure><img src="../../../media/migrated_media-AddShapeCollectionObject.PNG" alt=""><figcaption><p>Add a ShapeCollection through the New Object window</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/migrated_media-AddShapeCollectionObject.PNG" alt=""><figcaption><p>Add a ShapeCollection through the New Object window</p></figcaption></figure>
 
 Note that FlatRedBall also supports the .shcx file format, but this is no longer recommended. The PolygonEditor tool is no longer maintained, and the recommended approach is to add a ShapeCollection as shown above and to modify the shapes using FlatRedBall's LiveEdit.
 
@@ -32,12 +32,12 @@ To add a new shape to the ShapeCollection:
 3.  Select one of the shapes - notice that FlatRedBall filters the available types to the types allowed in a ShapeCollection.\
 
 
-    <figure><img src="../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 4. Click OK
 
 Your newly-created shape is added to ShapeCollection in the tree view.
 
-<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption><p>New AxisAlignedRectangle in ShapeCollection</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (224).png" alt=""><figcaption><p>New AxisAlignedRectangle in ShapeCollection</p></figcaption></figure>
 
 ### ShapeCollection in code
 

@@ -15,7 +15,7 @@ This tutorial uses a Glue screen which contains the following:
 
 These instances are all default FlatRedBall.Forms objects which are available in all FlatRedBall projects created with the wizard.
 
-![Simple Screen containing Forms-inheriting instances](../../../media/2022-01-img\_61d66401c8680.png)
+![Simple Screen containing Forms-inheriting instances](../../../.gitbook/assets/2022-01-img\_61d66401c8680.png)
 
 ### Creating a ViewModel
 
@@ -128,7 +128,7 @@ public partial class FormsScreen
 
 Like the previous tutorial, the add and remove buttons do not access any properties on the UI elements - only properties on the ViewModels are accessed.
 
-<figure><img src="../../../media/2022-01-05_21-14-47.gif" alt=""><figcaption><p>Using the TextBox, Add Button, and Remove Button to add and remove items from the ListBox</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2022-01-05_21-14-47.gif" alt=""><figcaption><p>Using the TextBox, Add Button, and Remove Button to add and remove items from the ListBox</p></figcaption></figure>
 
 #### Forms.BindingContext
 

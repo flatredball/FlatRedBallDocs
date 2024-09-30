@@ -1,8 +1,8 @@
-# usepixelcoordinates
+# UsePixelCoordinates
 
 ### Introduction
 
-The UsePixelCoordinates can be used to easily create a 2D Layer. This method is often used in combination with attaching Entities to a Camera so that they can be placed in screen space. This method is used by [Glue](../../../../../frb/docs/index.php) if a given Layer's "Is 2D" property is set true.
+The UsePixelCoordinates can be used to easily create a 2D Layer. This method is often used in combination with attaching Entities to a Camera so that they can be placed in screen space. This method is used by [Glue](../../../../frb/docs/index.php) if a given Layer's "Is 2D" property is set true.
 
 ### Code Example
 
@@ -28,7 +28,7 @@ text.Y = SpriteManager.Camera.DestinationRectangle.Height / 2.0f;
 text.SetPixelPerfectScale(layer);
 ```
 
-![Layer2D.png](../../../../../media/migrated_media-Layer2D.png)
+![Layer2D.png](../../../../.gitbook/assets/migrated\_media-Layer2D.png)
 
 ### A note about attachments
 

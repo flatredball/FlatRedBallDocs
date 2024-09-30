@@ -1,4 +1,4 @@
-# closestpointto
+# ClosestPointTo
 
 ### Introduction
 
@@ -6,7 +6,7 @@ The ClosestPointTo returns the closest point on the calling Segment to the argum
 
 ### Code Example
 
-The following creates a Segment and a [Line](../../../../../../frb/docs/index.php) as a visible representation of the Segment. The update method finds the closest point on the Segment to the [Mouse](../../../../../../frb/docs/index.php) and positions a [Sprite](../../../../../../frb/docs/index.php) there.
+The following creates a Segment and a [Line](../../../../../frb/docs/index.php) as a visible representation of the Segment. The update method finds the closest point on the Segment to the [Mouse](../../../../../frb/docs/index.php) and positions a [Sprite](../../../../../frb/docs/index.php) there.
 
 Add the following using statements:
 
@@ -58,4 +58,4 @@ sprite.Position.X = (float)closestPoint.X;
 sprite.Position.Y = (float)closestPoint.Y;
 ```
 
-![ClosestPoint.png](../../../../../../media/migrated_media-ClosestPoint.png)
+![ClosestPoint.png](../../../../../.gitbook/assets/migrated\_media-ClosestPoint.png)

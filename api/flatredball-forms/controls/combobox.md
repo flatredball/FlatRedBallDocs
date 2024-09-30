@@ -1,12 +1,10 @@
-# combobox
+# ComboBox
 
 ### Introduction
 
-The ComboBox control (also often referred to as a drop-down control) allows the user to select a value from a list of options. It expands and collapses in response to user activity. 
+The ComboBox control (also often referred to as a drop-down control) allows the user to select a value from a list of options. It expands and collapses in response to user activity.
 
-<figure><img src="../../../../media/2017-12-2017-12-13_07-47-12.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/2017-12-2017-12-13_07-47-12.gif" alt=""><figcaption></figcaption></figure>
 
 ### Layout Requirements
 
@@ -15,7 +13,7 @@ The ComboBox control requires:
 * An Text named **TextInstance**
 * An object named **ListBoxInstance** which implements ListBoxBehavior (is a ListBox)
 
-![](../../../../media/2018-01-img_5a4b0fd700175.png)
+![](../../../.gitbook/assets/2018-01-img\_5a4b0fd700175.png)
 
 ### ListBoxInstance Details
 
@@ -23,7 +21,7 @@ The ListBoxInstance is the part of the combo box which appears when the user cli
 
 ### Similarities with ListBox
 
-The ComboBox class provides a similar interface to the ListBox class.  This includes the following properties:
+The ComboBox class provides a similar interface to the ListBox class. This includes the following properties:
 
 * Items
 * SelectedIndex

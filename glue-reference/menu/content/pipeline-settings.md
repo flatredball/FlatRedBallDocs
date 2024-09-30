@@ -4,7 +4,7 @@
 
 The Content Pipeline Settings menu item opens the Content Pipeline tab in Glue. This tab controls settings for content pipeline behavior in Glue.
 
-![](../../../../../media/2017-10-img_59dd8fb600f11.png)
+![](../../../.gitbook/assets/2017-10-img\_59dd8fb600f11.png)
 
 This plugin is still in the early stages. Additional options may be added in the future to control how content is built.
 
@@ -30,4 +30,4 @@ When using the Content Pipeline, PNG files must be converted to XNB files. This 
 
 ### Content Pipeline and File Names
 
-Typically FlatRedBall loads files using extensions, such as: var texture = FlatRedBallServices.Load\<Texture2D>("myImage.png"); However, in XNA/MonoGame, files loaded through the content pipeline do not use an extension. For example, to load a texture from a .XNB file (a processed content file), the extension would be omitted, as shown in the following code: var texture = FlatRedBallServices.Load\<Texture2D>("myImage"); The content pipeline settings in Glue are intended to be swapped without requiring any changes to custom or generated code. Therefore, even when using the content pipeline, the code must be able to load a file with its extension, such as "myImage.png". To resolve this, Glue generates a method called SetFileAliases . This method will associate the file with its extension with the file without its extension. Internally when FlatRedBall is told to load a file, it will check if that file exists in the FileAliases  list, and if so, it will use the alias. Therefore, any code written which may reference a file by extension does not need to change when switching to the content pipeline. &#x20;
+Typically FlatRedBall loads files using extensions, such as: var texture = FlatRedBallServices.Load\<Texture2D>("myImage.png"); However, in XNA/MonoGame, files loaded through the content pipeline do not use an extension. For example, to load a texture from a .XNB file (a processed content file), the extension would be omitted, as shown in the following code: var texture = FlatRedBallServices.Load\<Texture2D>("myImage"); The content pipeline settings in Glue are intended to be swapped without requiring any changes to custom or generated code. Therefore, even when using the content pipeline, the code must be able to load a file with its extension, such as "myImage.png". To resolve this, Glue generates a method called SetFileAliases . This method will associate the file with its extension with the file without its extension. Internally when FlatRedBall is told to load a file, it will check if that file exists in the FileAliases list, and if so, it will use the alias. Therefore, any code written which may reference a file by extension does not need to change when switching to the content pipeline.

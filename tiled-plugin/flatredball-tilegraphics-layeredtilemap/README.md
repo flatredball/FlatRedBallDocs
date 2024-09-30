@@ -1,8 +1,8 @@
-# flatredball-tilegraphics-layeredtilemap
+# LayeredTileMap
 
 ### Introduction
 
-The LayeredTileMap object is the runtime type for the TMX file format (the native file format for Tiled). Whenever a TMX file is added to FlatRedBall, it will (by default) be loaded into a LayeredTileMap at runtime. The LayeredTileMap represents a collection of [MapDrawableBatches](../../../../frb/docs/index.php). It contains one [MapDrawableBatch](../../../../frb/docs/index.php) per layer in the source TMX file. The LayeredTileMap class inherits from [FlatRedBall.PositionedObject](../../../../frb/docs/index.php) so it can be moved and attached to other [PositionedObjects](../../../../frb/docs/index.php). Each MapDrawableBatch is attached to its parent LayeredTileMap, and can be moved independently by changing its [RelativePosition](../../../../frb/docs/index.php).
+The LayeredTileMap object is the runtime type for the TMX file format (the native file format for Tiled). Whenever a TMX file is added to FlatRedBall, it will (by default) be loaded into a LayeredTileMap at runtime. The LayeredTileMap represents a collection of [MapDrawableBatches](../../frb/docs/index.php). It contains one [MapDrawableBatch](../../frb/docs/index.php) per layer in the source TMX file. The LayeredTileMap class inherits from [FlatRedBall.PositionedObject](../../frb/docs/index.php) so it can be moved and attached to other [PositionedObjects](../../frb/docs/index.php). Each MapDrawableBatch is attached to its parent LayeredTileMap, and can be moved independently by changing its [RelativePosition](../../frb/docs/index.php).
 
 ### Common Usage
 
@@ -10,12 +10,12 @@ The easiest way to use a TMX file is to create a standard GameScreen and Level. 
 
 1.  Run the Wizard when creating a new project - this will automatically add TMX files to your project.
 
-    ![](../../../../media/2021-10-img_6166edc84073b.png) Existing (empty) projects can also run the wizard through the Quick Actions tab.
+    ![](../../.gitbook/assets/2021-10-img\_6166edc84073b.png) Existing (empty) projects can also run the wizard through the Quick Actions tab.
 
-    ![](../../../../media/2021-10-img_6166ee164da74.png)
-2.  Create a GameScreen and Level screens and check the options for creating TMX files. ![](../../../../media/2021-10-img_6166ee3ba4c28.png)
+    ![](../../.gitbook/assets/2021-10-img\_6166ee164da74.png)
+2.  Create a GameScreen and Level screens and check the options for creating TMX files. ![](../../.gitbook/assets/2021-10-img\_6166ee3ba4c28.png)
 
-    ![](../../../../media/2021-10-img_6166ee644e2ae.png)
+    ![](../../.gitbook/assets/2021-10-img\_6166ee644e2ae.png)
 
 ### Manually Adding a MapDrawableBatch From TMX to a Screen
 
@@ -26,11 +26,9 @@ If you are not using the GameScreen/Level pattern, you can add your own TMX file
 3. Create a game screen
 4. Drag+drop the TMX file into your Screen's **Files** folder
 
+<figure><img src="../../.gitbook/assets/2016-01-2020_February_04_172542.gif" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../../../media/2016-01-2020_February_04_172542.gif" alt=""><figcaption></figcaption></figure>
-
- No additional code is necessary - your map will now show up in the screen.
+No additional code is necessary - your map will now show up in the screen.
 
 ### Creating Entities From a TMX
 
@@ -38,13 +36,13 @@ If using the GameScreen/Level pattern, FlatRedBall will automatically set up a M
 
 #### Creating a Map object for Entity Creation in Glue
 
-Once you have a TMX file in your screen's Files folder, you can create a Map object by drag+dropping the TMX onto the Screen's Objects folder. 
+Once you have a TMX file in your screen's Files folder, you can create a Map object by drag+dropping the TMX onto the Screen's Objects folder.
 
-<figure><img src="../../../../media/2016-01-13_08-39-26.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-13_08-39-26.gif" alt=""><figcaption></figcaption></figure>
 
- Once the Map object has been created, its **Create Entities From Tiles** property can be checked.
+Once the Map object has been created, its **Create Entities From Tiles** property can be checked.
 
-![](../../../../media/2021-10-img_6166f03c272a0.png)
+![](../../.gitbook/assets/2021-10-img\_6166f03c272a0.png)
 
 ### LayeredTileMap as a list of MapDrawableBatches
 
@@ -60,4 +58,4 @@ foreach (var layer in TestLevel.MapLayers)
 }
 ```
 
-![MapLayerInfo.PNG](../../../../media/migrated_media-MapLayerInfo.PNG)   \[subpages depth="1"]
+![MapLayerInfo.PNG](../../.gitbook/assets/migrated\_media-MapLayerInfo.PNG) \[subpages depth="1"]

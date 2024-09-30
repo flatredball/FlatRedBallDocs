@@ -1,12 +1,12 @@
-# layer
+# Layer
 
 ### Introduction
 
-Each Camera has a list of Layers which can be used to draw objects which should only appear on one Camera. This is commonly used for HUD elements such as score and health. By default each Camera has one [Layer](../../../../frb/docs/index.php) (no code necessary to add this). Therefore, if using only one [Layer](../../../../frb/docs/index.php), then no layer instantiation is necessary. To create additional layers, see the [Camera's AddLayer method](../../../../frb/docs/index.php).
+Each Camera has a list of Layers which can be used to draw objects which should only appear on one Camera. This is commonly used for HUD elements such as score and health. By default each Camera has one [Layer](../../../frb/docs/index.php) (no code necessary to add this). Therefore, if using only one [Layer](../../../frb/docs/index.php), then no layer instantiation is necessary. To create additional layers, see the [Camera's AddLayer method](../../../frb/docs/index.php).
 
 ### Code Example
 
-The following code creates two [Sprites](../../../../frb/docs/index.php), each which represents a player. The code splits the view into two screens and adds a [Text](../../../../frb/docs/index.php) object displaying which player's view is shown on the Camera layer. Notice that only one [Text](../../../../frb/docs/index.php) appears in each camera although there are two [Text](../../../../frb/docs/index.php) objects. The bool value can be changed to compare the behavior of Camera-layered [Text](../../../../frb/docs/index.php) and regular [Text](../../../../frb/docs/index.php).
+The following code creates two [Sprites](../../../frb/docs/index.php), each which represents a player. The code splits the view into two screens and adds a [Text](../../../frb/docs/index.php) object displaying which player's view is shown on the Camera layer. Notice that only one [Text](../../../frb/docs/index.php) appears in each camera although there are two [Text](../../../frb/docs/index.php) objects. The bool value can be changed to compare the behavior of Camera-layered [Text](../../../frb/docs/index.php) and regular [Text](../../../frb/docs/index.php).
 
 ```
 string contentManagerName = "ContentManager";
@@ -66,4 +66,4 @@ SpriteManager.Cameras[1].X = player2.X;
 SpriteManager.Cameras[1].Y = player2.Y;
 ```
 
-![CameraLayers.png](../../../../media/migrated_media-CameraLayers.png)
+![CameraLayers.png](../../../.gitbook/assets/migrated\_media-CameraLayers.png)

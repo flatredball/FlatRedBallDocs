@@ -1,4 +1,4 @@
-# keepspriteinscreen
+# KeepSpriteInScreen
 
 ### Introduction
 
@@ -15,7 +15,7 @@ public void KeepSpriteInScreen(Sprite sprite)
 
 ### Code Example
 
-The following code creates a [Sprite](../../../../frb/docs/index.php) which is moved around the screen by the [Keyboad](../../../../frb/docs/index.php) with the arrow keys. Add the following using statement:
+The following code creates a [Sprite](../../../frb/docs/index.php) which is moved around the screen by the [Keyboad](../../../frb/docs/index.php) with the arrow keys. Add the following using statement:
 
 ```
 using FlatRedBall.Input;
@@ -44,7 +44,7 @@ InputManager.Keyboard.ControlPositionedObject(mSprite);
 SpriteManager.Camera.KeepSpriteInScreen(mSprite);
 ```
 
-![CameraKeepSpriteInScreen.png](../../../../media/migrated_media-CameraKeepSpriteInScreen.png)
+![CameraKeepSpriteInScreen.png](../../../.gitbook/assets/migrated\_media-CameraKeepSpriteInScreen.png)
 
 ### KeepSpriteInScreen and Entities
 

@@ -46,11 +46,11 @@ The following shows how to create an Entity (Base) which defines a Sprite Object
 1. Right-click on the tree item
 2.  Select **Add Entity**
 
-    ![](../../media/2018-09-img\_5b9683ae99d26.png)
+    ![](../../.gitbook/assets/2018-09-img\_5b9683ae99d26.png)
 3. Name the entity **Base**
 4.  Check the **Sprite** checkbox to add a Sprite to the Base entity
 
-    ![](../../media/2018-09-img\_5b96841895b75.png)
+    ![](../../.gitbook/assets/2018-09-img\_5b96841895b75.png)
 5. Click OK
 
 #### Creating a Derived Entity
@@ -62,7 +62,7 @@ The following shows how to create an Entity (Base) which defines a Sprite Object
 5. Click the **Properties** tab on the newly-created **Derived** entity
 6.  Set the **BaseEntity** property **Entities\Base**
 
-    ![](../../media/2018-09-img\_5b96850d87188.png)
+    ![](../../.gitbook/assets/2018-09-img\_5b96850d87188.png)
 
 **Base and Derived are bad names!** This example uses the names "Base" and "Derived" to clearly indicate the relationship between two Entities. In an actual game, avoid using names like **Base** and **Derived.** You should always name your Entities in a way to indicate what they are in the context of your game (such as Character or Enemy or PlayerShip). However, if you intend to use an Entity as a base type, it is a good idea to append "Base" at the end of the name (such as **EnemyBase**).
 
@@ -73,11 +73,11 @@ The following shows how to create an Entity (Base) which defines a Sprite Object
 3. Select the **Properties** tab
 4.  Set the SpriteObject's **SetByDerived** to **True**
 
-    ![](../../media/2018-09-img\_5b9685e153df0.png)
+    ![](../../.gitbook/assets/2018-09-img\_5b9685e153df0.png)
 
 FlatRedBall automatically adds a SpriteInstance to the **Derived** entity.
 
-![](../../media/2018-09-img\_5b96861f7c3c8.png)
+![](../../.gitbook/assets/2018-09-img\_5b96861f7c3c8.png)
 
 Notice that objects which have their **SetByDerived** property to true appear blue in the tree view window, and objects which have their base implementation marked as **SetByDerived** appear yellow.
 
@@ -85,7 +85,7 @@ Notice that objects which have their **SetByDerived** property to true appear bl
 
 At this point the Derived entity will automatically create a Sprite for you (since it is an object in Glue). You can select this Sprite and assign variables on it, just like any other Sprite.
 
-![](../../media/2018-09-img\_5b96869b898a9.png)
+![](../../.gitbook/assets/2018-09-img\_5b96869b898a9.png)
 
 ### SetByDerived and Multiple Inheritance Levels
 
@@ -97,8 +97,8 @@ By default SetByDerived applies to only one level of inheritance, rather than ca
 
 If Base defines SpriteInstance, and SpriteInstance has its SetByDerived to true, then the assignment to SpriteInstance will be done in Middle, and Derived will not be able to re-assign Sprite. Notice in the image above that SpriteInstance does not appear in the Derived entity.
 
-![](../../media/2021-08-img\_612e3d6793be7.png)
+![](../../.gitbook/assets/2021-08-img\_612e3d6793be7.png)
 
 However, the SetByDerived property can be set on the Middle SpriteInstance, and it will be assignable in Derived.
 
-![](../../media/2021-08-img\_612e3e13aa857.png)
+![](../../.gitbook/assets/2021-08-img\_612e3e13aa857.png)

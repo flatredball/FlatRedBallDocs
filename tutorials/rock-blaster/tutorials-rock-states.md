@@ -1,4 +1,4 @@
-# tutorials-rock-states
+# Rock States
 
 ### Introduction
 
@@ -17,13 +17,11 @@ Before we create states, we will decide which variables we want to modify. In th
 3. Select **Texture** in the **Variable** dropdown
 4. Click **OK**
 
+<figure><img src="../../.gitbook/assets/2016-01-2021_March_13_183314.gif" alt=""><figcaption></figcaption></figure>
 
+Repeat the process above to tunnel the CircleInstance Radius variable. Now the Rock entity has a variable for the SpriteInstance Texture and CircleInstance radius.
 
-<figure><img src="../../../media/2016-01-2021_March_13_183314.gif" alt=""><figcaption></figcaption></figure>
-
- Repeat the process above to tunnel the CircleInstance Radius variable. Now the Rock entity has a variable for the SpriteInstance Texture and CircleInstance radius.
-
-![](../../../media/2022-12-img_63a05108d73ba.png)
+![](../../.gitbook/assets/2022-12-img\_63a05108d73ba.png)
 
 ### Creating States
 
@@ -33,11 +31,11 @@ Now we can create our four states. We recommend always placing states in a categ
 2. Right-click on the **States** folder
 3.  Select **Add State Category**
 
-    ![](../../../media/2022-12-img_63a04f702cd0f.png)
+    ![](../../.gitbook/assets/2022-12-img\_63a04f702cd0f.png)
 4. Enter the name **RockSize**
 5.  Click **OK**
 
-    ![](../../../media/2021-03-img_604d64771ec9a.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d64771ec9a.png)
 
 The easiest way to edit states is to use the State Data tab:
 
@@ -45,19 +43,19 @@ The easiest way to edit states is to use the State Data tab:
 2. Click the **RockSize** state category
 3.  Click the **State Data** tab. The location of your State Data tab may be different depending on FlatRedBall settings.
 
-    ![](../../../media/2022-12-img_63a04fc267e72.png)
+    ![](../../.gitbook/assets/2022-12-img\_63a04fc267e72.png)
 
-Since states usually require setting many variables, FlatRedBall provides a spreadsheet-like view of state data. By default categories do not modify any variables, so we must explicitly include which variables to our RockSize category. The easiest way is to drag+drop the variables that we would like modified onto the RockSize category. 
+Since states usually require setting many variables, FlatRedBall provides a spreadsheet-like view of state data. By default categories do not modify any variables, so we must explicitly include which variables to our RockSize category. The easiest way is to drag+drop the variables that we would like modified onto the RockSize category.
 
-<figure><img src="../../../media/2016-01-19_05-07-25.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-19_05-07-25.gif" alt=""><figcaption></figcaption></figure>
 
- Alternatively, the **...** button at the top-right of the State Data tab provides more control over included and excluded variables. 
+Alternatively, the **...** button at the top-right of the State Data tab provides more control over included and excluded variables.
 
-<figure><img src="../../../media/2016-01-19_05-08-48.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-19_05-08-48.gif" alt=""><figcaption></figcaption></figure>
 
- Now we can create four states - one for each size of rock. We will call the states Size1, Size2, Size3, and Size4. Size1 will be the smallest and Size4 will be the largest. Enter the values in the spreadsheet, with the state name being the first column.
+Now we can create four states - one for each size of rock. We will call the states Size1, Size2, Size3, and Size4. Size1 will be the smallest and Size4 will be the largest. Enter the values in the spreadsheet, with the state name being the first column.
 
-![](../../../media/2021-03-img_604d65dee8ee2.png)
+![](../../.gitbook/assets/2021-03-img\_604d65dee8ee2.png)
 
 ### Creating Large Rocks Initially
 
@@ -68,13 +66,11 @@ New Rocks in Rock Blaster will default to State4 - the largest. Once they are sh
 3. Find the **PerformSpawn** function
 4. Add the following line of code after **Rock rock = RockFactory.CreateNew();**
 
-&#x20;
-
 ```
 rock.CurrentRockSizeState = Rock.RockSize.Size4;
 ```
 
-If you now play the game, the rocks will be very large: ![RockBlasterLargeRocks.png](../../../media/migrated_media-RockBlasterLargeRocks.png)
+If you now play the game, the rocks will be very large: ![RockBlasterLargeRocks.png](../../.gitbook/assets/migrated\_media-RockBlasterLargeRocks.png)
 
 ### Breaking Rocks
 
@@ -83,8 +79,6 @@ Currently when a Rock collides with a Bullet the game calls Destroy on the Rock 
 1. Open **GameScreen.Event.cs** in Visual Studio
 2. Find the **OnBulletListVsRockListCollisionOccurred** function. Make sure to modify the bullet vs rock method.
 3. Change **Destroy** to **TakeHit**. Your code should look like:
-
-&#x20;
 
 ```
 void OnBulletListVsRockListCollisionOccurred (Entities.Bullet bullet, Entities.Rock rock)
@@ -98,8 +92,6 @@ Next we'll create a TakeHit function in the Rock entity. This is a custom functi
 
 1. Open **Rock.cs**
 2. Add the following code:
-
-&#x20;
 
 ```
 public void TakeHit()
@@ -160,15 +152,15 @@ Although we could have added these variables directly into code, it's much bette
 5. Enter the name **NumberOfRocksToBreakInto**
 6.  Click **OK**
 
-    ![](../../../media/2021-03-img_604d75d07d61f.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d75d07d61f.png)
 
 Repeat the process above, but create a **float** named **RandomSpeedOnBreak** Set the values:
 
 * NumberOfRocksToBreakInto = 2
 * RandomSpeedOnBreak = 50
 
-![](../../../media/2021-03-img_604d76242ebc1.png)
+![](../../.gitbook/assets/2021-03-img\_604d76242ebc1.png)
 
 ### Conclusion
 
-![RockBlasterRocksBrokenUp.png](../../../media/migrated_media-RockBlasterRocksBrokenUp.png) If you now run your game and shoot the rocks, you will see that they will break up into smaller pieces. Our game is becoming far more playable (and difficult). Next we'll add a HUD and logic for scoring. [<- 07. Collision](tutorials-collision.md) -- [09. Hud ->](tutorials-hud.md)
+![RockBlasterRocksBrokenUp.png](../../.gitbook/assets/migrated\_media-RockBlasterRocksBrokenUp.png) If you now run your game and shoot the rocks, you will see that they will break up into smaller pieces. Our game is becoming far more playable (and difficult). Next we'll add a HUD and logic for scoring. [<- 07. Collision](tutorials-collision.md) -- [09. Hud ->](tutorials-hud.md)

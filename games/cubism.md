@@ -1,6 +1,8 @@
-![CubismBanner2.jpg](/media/migrated_media-CubismBanner2.jpg)
+# cubism
 
-## Introduction
+![CubismBanner2.jpg](../.gitbook/assets/migrated\_media-CubismBanner2.jpg)
+
+### Introduction
 
 You've shot bubbles, twisted jewels, built blocks. Now - Get ready for a new dimension.
 
@@ -10,18 +12,18 @@ Welcome to CUBISM.
 
 CAUTION! This game is VERY addictive!
 
-## Download
+### Download
 
--   [Download Cubism](http://www.oggasoft.com/Cubism.html)
+* [Download Cubism](http://www.oggasoft.com/Cubism.html)
 
-## Screen Shots
+### Screen Shots
 
-![Screenshot.jpg](/media/migrated_media-Screenshot.jpg) ![Cubismmainscreen.jpg](/media/migrated_media-Cubismmainscreen.jpg) ![CubismScreenshot.jpg](/media/migrated_media-CubismScreenshot.jpg)
+![Screenshot.jpg](../.gitbook/assets/migrated\_media-Screenshot.jpg) ![Cubismmainscreen.jpg](../.gitbook/assets/migrated\_media-Cubismmainscreen.jpg) ![CubismScreenshot.jpg](../.gitbook/assets/migrated\_media-CubismScreenshot.jpg)
 
-## Videos
+### Videos
 
--   [Cubism Game Play Video](http://www.youtube.com/watch?v=kQFIRVlPFU8)
+* [Cubism Game Play Video](http://www.youtube.com/watch?v=kQFIRVlPFU8)
 
-## Additional Information
+### Additional Information
 
--   [OggaSoft Official Website (creators of Cubism)](http://www.oggasoft.com/)
+* [OggaSoft Official Website (creators of Cubism)](http://www.oggasoft.com/)

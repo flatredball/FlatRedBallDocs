@@ -2,7 +2,7 @@
 
 The **Add UpdateAllAndRun.bat** command adds a batch file to the project which will update FlatRedBall, build it, and run it. This is a convenient way to build and run FlatRedBall from source rather than relying on the prebuilt binaries.
 
-![](../../../../../media/2022-04-img_624732ade314c.png)
+![](../../../.gitbook/assets/2022-04-img\_624732ade314c.png)
 
 When this command is executed a .bat file is created. The location of this bat file is shown in the output window so it can be inspected. For instance, the output window may display the following text:
 
@@ -33,4 +33,4 @@ cd Glue\bin\x86\Debug\netcoreapp3.0\
 start GlueFormsCore.exe
 ```
 
-This script assumes your current Glue project, FlatRedBal, and Gum are all in the same parent folder. To specify a different location for those source code folders, change the folders in the various **cd** commands. &#x20;
+This script assumes your current Glue project, FlatRedBal, and Gum are all in the same parent folder. To specify a different location for those source code folders, change the folders in the various **cd** commands.

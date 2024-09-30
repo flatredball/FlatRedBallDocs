@@ -1,10 +1,10 @@
-# rotationz
+# RotationZ
 
 ### Introduction
 
 RotationZ is the counterclockwise rotation value of the positioned object along the Z axis. For most games this value is used to rotate an object such as a car in a top-down game, or a spinning particle. RotationZ is represented in radians.
 
-![](../../../../media/2023-07-img_64b6c4ad533da.png)
+![](../../../.gitbook/assets/2023-07-img\_64b6c4ad533da.png)
 
 Although RotationZ is a property on all PositionedObjects, the Circle and AxisAlignedRectangle objects will not visually respond to rotation values.
 
@@ -22,8 +22,4 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-
-
-<figure><img src="../../../../media/2019-07-2021_March_16_092026.gif" alt=""><figcaption></figcaption></figure>
-
- &#x20;
+<figure><img src="../../../.gitbook/assets/2019-07-2021_March_16_092026.gif" alt=""><figcaption></figcaption></figure>

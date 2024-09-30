@@ -13,7 +13,7 @@ For this game, the Player will continuously move forward at a constant speed. Th
 3.  Click the **Create a new variable** button\
 
 
-    <figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Click the Create a new variable button to add a new variable</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption><p>Click the Create a new variable button to add a new variable</p></figcaption></figure>
 4. Leave the defaults **Create a new variable** option and **float** type
 5. Enter the name **MovementSpeed**
 6. Click **OK**
@@ -38,7 +38,7 @@ To apply movement we will need to write some C# code. To do this:
 1. Open the project in Visual Studio (or switch to Visual Studio if you already have it open)
 2.  Open **Player.cs**. This is in the **Entities** folder in the **Solution Explorer**.
 
-    ![Player.cs in Visual Studio](../../media/2021-03-img\_604d0807644d9.png)
+    ![Player.cs in Visual Studio](../../.gitbook/assets/2021-03-img\_604d0807644d9.png)
 3. Scroll to the **CustomActivity** method in Player.cs
 
 Modify CustomActivity as shown in the following snippet:
@@ -101,11 +101,11 @@ But you might be wondering if this is important in your case - after all you are
 
 Next we will add a file and Sprite to the Bullet entity. This process is essentially the same as when we added PNG files and a Sprite to our Player Entity so you may find these steps familiar. To add the PNG:
 
-1. Download the following file to your computer: ![Bullet1.png](../../media/migrated\_media-Bullet1.png)
+1. Download the following file to your computer: ![Bullet1.png](../../.gitbook/assets/migrated\_media-Bullet1.png)
 2. Expand the **Bullet** entity in Glue
 3. Drag+drop Bullet1.png onto the Files folder in the Bullet
 
-<figure><img src="../../media/2016-01-2021_March_13_141331.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_March_13_141331.gif" alt=""><figcaption></figcaption></figure>
 
 To add a Sprite to the **Bullet** entity:
 
@@ -113,11 +113,11 @@ To add a Sprite to the **Bullet** entity:
 2. Click the **Quick Actions** tab
 3.  Click the **Add Object to Bullet** button
 
-    ![](../../media/2021-03-img\_604d30bc42574.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d30bc42574.png)
 4. Select the Sprite type
 5. Click OK
 
-![](../../media/2021-03-img\_604d31520f539.png)
+![](../../.gitbook/assets/2021-03-img\_604d31520f539.png)
 
 Now we can set the Sprite's Texture:
 
@@ -126,7 +126,7 @@ Now we can set the Sprite's Texture:
 3. Select the **Variables** tab
 4. Set the **Texture** drop-down to **Bullet1**
 
-![](../../media/2021-03-img\_604d328d7090b.png)
+![](../../.gitbook/assets/2021-03-img\_604d328d7090b.png)
 
 ### Shooting
 
@@ -136,14 +136,14 @@ The next step is to add firing bullets. We'll be using the BulletFactory which w
 2. Click the Variables tab
 3.  Click the **Add New Variable** button
 
-    ![](../../media/2021-03-img\_604d334e219f9.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d334e219f9.png)
 4. Leave the defaults
 5.  Set the variable name to **MovementSpeed**
 
-    ![](../../media/2021-03-img\_604d33b6286ff.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d33b6286ff.png)
 6. Set **MovementSpeed** to 300
 
-![](../../media/2021-03-img\_604d33e35b72d.png)
+![](../../.gitbook/assets/2021-03-img\_604d33e35b72d.png)
 
 Now we can use BulletFactory to create bullets when the player shoots. To do this:
 
@@ -210,7 +210,7 @@ Notice that we are using the RotationMatrix of the MainShip to adjust the initia
 
 If you run the game you should be able to fly, turn, and shoot.
 
-![](../../media/2021-03-img\_604d4a8fd17ba.png)
+![](../../.gitbook/assets/2021-03-img\_604d4a8fd17ba.png)
 
 ### Conclusion
 

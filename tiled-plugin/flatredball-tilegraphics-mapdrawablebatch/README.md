@@ -56,7 +56,7 @@ void CustomInitialize()
 }
 ```
 
-![](../../media/2023-01-img\_63b97849def36.png)
+![](../../.gitbook/assets/2023-01-img\_63b97849def36.png)
 
 #### Creation Considerations
 

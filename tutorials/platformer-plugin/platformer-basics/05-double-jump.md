@@ -15,7 +15,7 @@ Double jumping is a feature in many platforms which gives the player more contro
     ![Default Air Control button adds a new set of movement values for air movement](<../../../.gitbook/assets/01\_06 30 57.png>)
 4.  Change the name of the new values to **AfterDoubleJump**
 
-    ![Set the Movement Type name to AfterDoubleJump](../../../media/2021-03-img\_60578788d5cb5.png)
+    ![Set the Movement Type name to AfterDoubleJump](../../../.gitbook/assets/2021-03-img\_60578788d5cb5.png)
 
 ### Changing Values
 
@@ -39,7 +39,7 @@ Now the platformer entity (Player) supports double jumping.
 
 We can also support infinite double jumps by either setting the AfterDoubleJump Jump Speed value to greater than zero, or by setting the AfterDoubleJump variable to be Air. This results in the character being able to jump indefinitely which can be useful if implementing swimming or abilities like the flying racoon power-up in Super Mario Bros 3.
 
-<figure><img src="../../../media/2021-03-2021_March_21_122535.gif" alt=""><figcaption><p>Infinite double jump allows the player to tap the button to fly</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2021-03-2021_March_21_122535.gif" alt=""><figcaption><p>Infinite double jump allows the player to tap the button to fly</p></figcaption></figure>
 
 ### Limiting Jump Count
 

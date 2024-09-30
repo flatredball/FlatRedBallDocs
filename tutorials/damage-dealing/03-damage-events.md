@@ -12,7 +12,7 @@ Entities which implement the IDamageable interface are required to have an event
 
 Keep in mind this event occurs after damage checks have been made. It will only be raised if the IDamageable entity has a different team index than the argument IDamageArea, and before the IDamageable is killed (if enough damage is dealt to kill the IDamageable). For example, we can make the enemy flash when it takes damage. First, we'll change the enemy's AxisAlignedRectangleInstance color to red in the FlatRedBall Editor.
 
-![Set the Enemy AxisAlignedRectangleInstance color to Red](../../media/2023-01-img\_63bed29eca1f8.png)
+![Set the Enemy AxisAlignedRectangleInstance color to Red](../../.gitbook/assets/2023-01-img\_63bed29eca1f8.png)
 
 Next, we can handle the event in code. In this case we'll use an `async` call to set the color to white temporarily, then set it back to red. Keep in mind that for a full project you may want additional logic to allow the enemy to receive damage multiple times without flashing the rectangle back. For the sake of simplicity we'll ignore this and write simpler code which automatically sets the rectangle back to its original color after a short delay.
 
@@ -33,7 +33,7 @@ private async void HandleDamageReceived(decimal arg1, IDamageArea arg2)
 
 Now the Enemy flashes white when taking damage. Note that to test this you may want to disable the enemy shooting logic added in the previous tutorial. Also, you may want to adjust the health of the enemy to take more hits.
 
-<figure><img src="../../media/2023-01-11_08-19-19.gif" alt=""><figcaption><p>Enemy flashing white when taking damage</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-01-11_08-19-19.gif" alt=""><figcaption><p>Enemy flashing white when taking damage</p></figcaption></figure>
 
 The purpose of ReactToDamageDealt is to react to damage visually, or to perform other game logic outside of typical IDamageable logic. Therefore, ReactToDamageDealt should not:
 
@@ -121,7 +121,7 @@ void CustomActivity(bool firstTimeCalled)
 
 Now we can create fire enemies and ice bullets by right clicking the mouse and pressing the left Alt key, respectively.
 
-<figure><img src="../../media/2023-01-11_08-40-53.gif" alt=""><figcaption><p>Creating different enemy types with right and left click</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-01-11_08-40-53.gif" alt=""><figcaption><p>Creating different enemy types with right and left click</p></figcaption></figure>
 
 Now that we have two different types of enemies and two different types of bullets, we can write logic in the Enemy's ModifyDamageDealt event in response to the elements:
 
@@ -148,7 +148,7 @@ private decimal HandleModifyDamageReceived(decimal damage, IDamageArea arg2)
 
 Now ice enemies die after 5 hits instead of 10 since each bullet will do an effective 20 points of damage.
 
-<figure><img src="../../media/2023-01-11_08-54-38.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2023-01-11_08-54-38.gif" alt=""><figcaption></figcaption></figure>
 
 ### Additional Events
 

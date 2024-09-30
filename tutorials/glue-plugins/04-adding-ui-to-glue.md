@@ -11,13 +11,13 @@ First we will create a WPF user control in our project:
 1. Right-click on your project and select **Add** -> **New** **Folder**
 2.  Name the folder **Controls**
 
-    ![](../../media/2018-02-img_5a8061301231f.png)
+    ![](../../.gitbook/assets/2018-02-img\_5a8061301231f.png)
 3. Right-click on the newly-created folder
 4. Select **Add** -> **New Item...**
 5. Select the **Installed** -> **Visual C# Items** -> **WPF** category
 6.  Select **User Controls (WPF)**
 
-    ![](../../media/2018-02-img_5a8062529e30e.png)
+    ![](../../.gitbook/assets/2018-02-img\_5a8062529e30e.png)
 7. Enter the name **MainControl** (more complicated plugins may have multiple controls)
 8. Click **Add**
 
@@ -99,7 +99,7 @@ This is a delegate which is raised whenever an item is selected. Subscribing to 
 
 #### GlueState.Self
 
-GlueState.Self  provides information about the current state of Glue, including which objects are selected in the tree view. In this case we are checking if a file is selected, which would be represented by the CurrentReferencedFileSave  member.
+GlueState.Self provides information about the current state of Glue, including which objects are selected in the tree view. In this case we are checking if a file is selected, which would be represented by the CurrentReferencedFileSave member.
 
 #### RemoveTab
 
@@ -107,10 +107,10 @@ Removes the tab associated with this plugin from Glue - the tab will still be he
 
 #### AddToTab and AddTab
 
-AddToTab  adds the argument control to the argument tab. In this case we are adding our main control to the center tab control. We only need to call this method once - after that the tab is associated with the center tab and we can call AddTab .
+AddToTab adds the argument control to the argument tab. In this case we are adding our main control to the center tab control. We only need to call this method once - after that the tab is associated with the center tab and we can call AddTab .
 
 ### Testing the Plugin
 
 Rebuilding the plugin (make sure to build solution or explicitly select Build on the plugin project) will result in the tab being shown when a file is selected.
 
-![](../../media/2018-02-img_5a807055eaa60.png)
+![](../../.gitbook/assets/2018-02-img\_5a807055eaa60.png)

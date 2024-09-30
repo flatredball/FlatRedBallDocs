@@ -38,7 +38,7 @@ Absolute position can be directly controlled through the X, Y, and Z properties 
 
 &#x20;
 
-<figure><img src="../../../media/migrated_media-PositionedSprites.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/migrated_media-PositionedSprites.png" alt=""><figcaption></figcaption></figure>
 
 Since the Position and X/Y/Z properties are all part of the PositionedObject class, any class that inherits from the PositionedObject class (list can be viewed above in the table) has these properties. In other words, the code above uses [Sprites](../sprite/), but it could have used any PositionedObject-inheriting object to achieve the same results.
 
@@ -66,7 +66,7 @@ Velocity represents the speed at which an object is moving. Mathematically, it r
 
 &#x20;
 
-<figure><img src="../../../media/migrated_media-TwoPolygons.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/migrated_media-TwoPolygons.png" alt=""><figcaption></figcaption></figure>
 
 For more information on Velocity, see the [Velocity page](velocity.md). For more information on Acceleration, see the [Acceleration page](acceleration.md).
 

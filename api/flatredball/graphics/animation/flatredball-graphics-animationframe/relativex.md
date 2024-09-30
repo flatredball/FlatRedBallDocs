@@ -1,4 +1,4 @@
-# relativex
+# RelativeX
 
 ### Introduction
 
@@ -6,16 +6,16 @@ The RelativeX and RelativeY values in an AnimationFrame can be used to offset an
 
 ### Requirements for use
 
-Simply setting the RelativeX and RelativeY values on an AnimationFrame is not sufficient to change the position of an [IAnimationChainAnimatable](../../../../../../frb/docs/index.php) (such as a [Sprite](../../../../../../frb/docs/index.php). The following conditions must be met:
+Simply setting the RelativeX and RelativeY values on an AnimationFrame is not sufficient to change the position of an [IAnimationChainAnimatable](../../../../../frb/docs/index.php) (such as a [Sprite](../../../../../frb/docs/index.php). The following conditions must be met:
 
-* The object (such as the [Sprite](../../../../../../frb/docs/index.php)) that is displaying the animation must be attached to another PositionedObject.
-* The [UseAnimationRelativePosition](../../../../../../frb/docs/index.php) property must be true.
+* The object (such as the [Sprite](../../../../../frb/docs/index.php)) that is displaying the animation must be attached to another PositionedObject.
+* The [UseAnimationRelativePosition](../../../../../frb/docs/index.php) property must be true.
 
 If you are using objects created in Glue, then both of the above will usually be true.
 
 ### Example
 
-The following code creates an AnimationFrame which displays the four quadrants of a redball.bmp graphic, then displays it in its entirety. The RelativeX and RelativeY values are used to offset the frames which display a single quadrant. Notice that the animated [Sprite](../../../../../../frb/docs/index.php) must be attached to an object and that the [Sprite's](../../../../../../frb/docs/index.php) UseAnimationRelativePosition property must be set to true.
+The following code creates an AnimationFrame which displays the four quadrants of a redball.bmp graphic, then displays it in its entirety. The RelativeX and RelativeY values are used to offset the frames which display a single quadrant. Notice that the animated [Sprite](../../../../../frb/docs/index.php) must be attached to an object and that the [Sprite's](../../../../../frb/docs/index.php) UseAnimationRelativePosition property must be set to true.
 
 ```
 // Create the animationChain
@@ -75,4 +75,4 @@ PositionedObject parent = new PositionedObject();
 animatedSprite.AttachTo(parent, false);
 ```
 
-![AnimatedSprite.png](../../../../../../media/migrated_media-AnimatedSprite.png)
+![AnimatedSprite.png](../../../../../.gitbook/assets/migrated\_media-AnimatedSprite.png)

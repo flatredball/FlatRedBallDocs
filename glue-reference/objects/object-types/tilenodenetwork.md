@@ -49,7 +49,7 @@ Optionally you may want to make the TileNodeNetwork visible so you can verify th
 
 The game should display the node network wherever no tiles are present.
 
-![](../../../media/2021-08-img\_61279322b6383.png)
+![](../../../.gitbook/assets/2021-08-img\_61279322b6383.png)
 
 #### Filling TileNodeNetwork from Specific Types
 
@@ -59,7 +59,7 @@ Some games include specific tiles for pathfinding rather than all empty tiles. T
 
 Once this tile Type is set (and the .tsx is saved), this tile can be used to mark walkable areas in the map.
 
-![](../../../media/2021-08-img\_6127946f19390.png)
+![](../../../.gitbook/assets/2021-08-img\_6127946f19390.png)
 
 To use these tiles:
 
@@ -71,4 +71,4 @@ To use these tiles:
 
 The TileNodeNetwork will now place a node wherever the walkable tiles are present.
 
-![](../../../media/2021-08-img\_6127951030eb7.png)
+![](../../../.gitbook/assets/2021-08-img\_6127951030eb7.png)

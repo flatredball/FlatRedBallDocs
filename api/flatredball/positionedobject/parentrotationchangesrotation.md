@@ -1,4 +1,4 @@
-# parentrotationchangesrotation
+# ParentRotationChangesRotation
 
 ### Introduction
 
@@ -14,7 +14,7 @@ HealthBarInstance.ParentRotationChangesRotation = false;
 
 ### ParentRotationChangesRotation
 
-Attachments create a relationship in which the child is both positioned and rotated relative to the parent. In some cases it is useful to suppress some of this behavior. The ParentRotationChangesRotation property controls whether the rotation of a child is modified by the parents' rotation. In the following example the ship [Sprite](../../../../frb/docs/index.php) (represented by the red ball) rotates and moves according to input from the keyboard. The [Camera](../../../../frb/docs/index.php) is attached to the [Sprite](../../../../frb/docs/index.php) but does not rotate with it. **Declare the ship at class scope:**
+Attachments create a relationship in which the child is both positioned and rotated relative to the parent. In some cases it is useful to suppress some of this behavior. The ParentRotationChangesRotation property controls whether the rotation of a child is modified by the parents' rotation. In the following example the ship [Sprite](../../../frb/docs/index.php) (represented by the red ball) rotates and moves according to input from the keyboard. The [Camera](../../../frb/docs/index.php) is attached to the [Sprite](../../../frb/docs/index.php) but does not rotate with it. **Declare the ship at class scope:**
 
 ```
 Sprite ship;
@@ -67,4 +67,4 @@ Sprite ship;
  }
 ```
 
-![CameraAttachedToRotatingSprite.png](../../../../media/migrated_media-CameraAttachedToRotatingSprite.png) Notice that although the [Camera](../../../../frb/docs/index.php) is attached to the ship [Sprite](../../../../frb/docs/index.php), it does not rotate. Try setting the [Camera's](../../../../frb/docs/index.php) ParentRotationChangesRotation property to true and observe the behavior.
+![CameraAttachedToRotatingSprite.png](../../../.gitbook/assets/migrated\_media-CameraAttachedToRotatingSprite.png) Notice that although the [Camera](../../../frb/docs/index.php) is attached to the ship [Sprite](../../../frb/docs/index.php), it does not rotate. Try setting the [Camera's](../../../frb/docs/index.php) ParentRotationChangesRotation property to true and observe the behavior.

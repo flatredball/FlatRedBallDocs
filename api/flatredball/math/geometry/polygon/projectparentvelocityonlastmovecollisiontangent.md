@@ -1,4 +1,4 @@
-# projectparentvelocityonlastmovecollisiontangent
+# ProjectParentVelocityOnLastMoveCollisionTangent
 
 ### Introduction
 
@@ -12,17 +12,17 @@ To explain what this property means, we'll start from the back and go to the fro
 
 #### OnLastMoveCollision
 
-This phrase indicates that the property that we are investigating will give us information about the last time a "Move" collision was called. In other words, the last time [CollideAgainstMove](../../../../../../frb/docs/index.php) was called. That's all!
+This phrase indicates that the property that we are investigating will give us information about the last time a "Move" collision was called. In other words, the last time [CollideAgainstMove](../../../../../frb/docs/index.php) was called. That's all!
 
 #### OnLastMoveCollision + Tangent
 
-Next, we'll add the Tangent property. In math, a tangent is a line which moves parallel (in the same direction) as a surface. The following image shows a blue line which is a tangent on the yellow circle![TangentLine.png](../../../../../../media/migrated_media-TangentLine.png)
+Next, we'll add the Tangent property. In math, a tangent is a line which moves parallel (in the same direction) as a surface. The following image shows a blue line which is a tangent on the yellow circle![TangentLine.png](../../../../../.gitbook/assets/migrated\_media-TangentLine.png)
 
-The phrase "on last move collision tangent" means that we are going to do something with the line (or Vector in more precise terms) that is tangential to the point where the collision happened the last time [CollideAgainstMove](../../../../../../frb/docs/index.php) was called.
+The phrase "on last move collision tangent" means that we are going to do something with the line (or Vector in more precise terms) that is tangential to the point where the collision happened the last time [CollideAgainstMove](../../../../../frb/docs/index.php) was called.
 
 #### Project...Velocity + OnLastMoveCollisionTangent
 
-Next we'll look at the phrase Project Velocity. The "..." appears in the title because we're going to explain why the word "Parent" appears after this section. A projection in Linear Algebra is the operation done between two Vectors where one Vector is modified so that it is parallel to the second vector, and its length is set to be its length along the second vector. This is a difficult concept to explain in words, so observe the following picture:![VectorProjection.png](../../../../../../media/migrated_media-VectorProjection.png)
+Next we'll look at the phrase Project Velocity. The "..." appears in the title because we're going to explain why the word "Parent" appears after this section. A projection in Linear Algebra is the operation done between two Vectors where one Vector is modified so that it is parallel to the second vector, and its length is set to be its length along the second vector. This is a difficult concept to explain in words, so observe the following picture:![VectorProjection.png](../../../../../.gitbook/assets/migrated\_media-VectorProjection.png)
 
 In this picture Vector A is projected onto Vector B, resulting in Vector 3. Notice that the result will always be parallel to the projected-on Vector.
 
@@ -30,11 +30,11 @@ Assuming there is no bouncing, friction, or energy loss from the collision, this
 
 #### Project + **Parent** + VelocityOnLastMoveCollisionTangent
 
-Finally we introduce the word "Parent". The reason Parent appears in this method name is because most shapes are never used alone, but rather are used as children of another object (usually [Entities](../../../../../../frb/docs/index.php)). Therefore, the shape shouldn't modify its own Velocity, but rather the Velocity of its parent.
+Finally we introduce the word "Parent". The reason Parent appears in this method name is because most shapes are never used alone, but rather are used as children of another object (usually [Entities](../../../../../frb/docs/index.php)). Therefore, the shape shouldn't modify its own Velocity, but rather the Velocity of its parent.
 
 ### CollideAgainstBounce
 
-This method is only used in more complex situations. You can usually accomplish the exact same behavior by simply calling [CollideAgainstBounce](../../../../../../frb/docs/index.php) with an elasticity of 0.
+This method is only used in more complex situations. You can usually accomplish the exact same behavior by simply calling [CollideAgainstBounce](../../../../../frb/docs/index.php) with an elasticity of 0.
 
 ### Method Signature
 
@@ -91,7 +91,7 @@ if (mSmallPolygon.CollideAgainstMove(mLargePolygon, 0, 1))
 }
 ```
 
-![ProjectionAfterCollision.png](../../../../../../media/migrated_media-ProjectionAfterCollision.png)
+![ProjectionAfterCollision.png](../../../../../.gitbook/assets/migrated\_media-ProjectionAfterCollision.png)
 
 **Things to try:** If you remove the call to
 

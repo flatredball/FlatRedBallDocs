@@ -1,4 +1,4 @@
-# setproperty
+# SetProperty
 
 ### Introduction
 
@@ -23,21 +23,17 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-
-
-<figure><img src="../../../../media/2022-01-08_22-28-18.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/2022-01-08_22-28-18.gif" alt=""><figcaption></figcaption></figure>
 
 ### Code Example - Assigning States
 
 SetProperty allows the assignment of states by state name. This is useful when writing code which should apply to any type of Gum object as long as it contains the required category and states. This example assumes a component with a Size category containing two states: Big and Small.
 
-![](../../../../media/2022-01-img_61da73189b5bd.png)
+![](../../../.gitbook/assets/2022-01-img\_61da73189b5bd.png)
 
 This will automatically generate an enumeration and property in the component:
 
-![](../../../../media/2022-01-img_61da7364c4507.png)
+![](../../../.gitbook/assets/2022-01-img\_61da7364c4507.png)
 
 If you are writing code where you do not have access to the specific types, the state category can still be assigned using SetProperty as shown in the following code. Notice that the variable name does not use the prefix "Current", so the variable assigned is simply "SizeState":
 
@@ -54,8 +50,4 @@ if (keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Down))
 }
 ```
 
-
-
-<figure><img src="../../../../media/2022-01-08_22-39-04.gif" alt=""><figcaption></figcaption></figure>
-
- &#x20;
+<figure><img src="../../../.gitbook/assets/2022-01-08_22-39-04.gif" alt=""><figcaption></figcaption></figure>

@@ -12,15 +12,15 @@ The DesktopGL platform provides the most flexibility for distribution.
 
 The easiest way to distribute your game is to package it in a .zip file. When you build your game in Visual Studio, the output window displays the location where the built files are located:
 
-![](../../media/2021-07-img\_60ef661acb76b.png)
+![](../../.gitbook/assets/2021-07-img\_60ef661acb76b.png)
 
 Note that if you are building your game in Glue, the output directory may differ. The location will be displayed in the Build tab when you build and run your game in Glue:
 
-![](../../media/2021-07-img\_60ef6658f2d1a.png)
+![](../../.gitbook/assets/2021-07-img\_60ef6658f2d1a.png)
 
 To distribute this game, navigate to the folder where the game is built, select all files, and zip them. You may want to exclude .pdb files, as they can increase the size of your zip file.
 
-![](../../media/2021-07-img\_60ef66dc4d0a1.png)
+![](../../.gitbook/assets/2021-07-img\_60ef66dc4d0a1.png)
 
 This zip file can be sent to others such as testers or friends.
 
@@ -34,17 +34,17 @@ To distribute a FlatRedBall Web project:
 3.  Select **Build** -> **Publish YourProjectName**\
 
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
 4. If asked, select the option to publish to a Folder unless you are familiar publishing with the other options
 5. Confirm the folder where you would like to publish, then click **Finish**
 6.  Click the Publish button on the Publish tab\
 
 
-    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Click the Publish button</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Click the Publish button</p></figcaption></figure>
 7. Wait for your project to finish building
 
 After the project finishes building, click the **Navigate** link.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Navigate link i nthe Publish tab</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Navigate link i nthe Publish tab</p></figcaption></figure>
 
 The project can be uploaded to any location through FTP. For information on uploading to itch.io, see the itch.io [distribution page](itch.io.md).

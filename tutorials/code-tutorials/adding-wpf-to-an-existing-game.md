@@ -1,4 +1,4 @@
-# adding-wpf-to-an-existing-game
+# Adding WPF to an Existing Game
 
 ### Introduction
 
@@ -11,11 +11,11 @@ This tutorial uses a Glue project named "FrbAndWpf" as the starting point. This 
 1. An entity called "CircleEntity"
    1. CircleEntity will contain a single Circle named CircleInstance
 2. A screen called GameScreen
-   1. GameScreen will contain a [PositionedObjectList](../../../frb/docs/index.php) of CircleEntities named CircleEntityList
+   1. GameScreen will contain a [PositionedObjectList](../../frb/docs/index.php) of CircleEntities named CircleEntityList
 
 By default the game will not display anything since the CircleEntityList will be empty.
 
-![FrbAndWpfStarting.PNG](../../../media/migrated_media-FrbAndWpfStarting.PNG)
+![FrbAndWpfStarting.PNG](../../.gitbook/assets/migrated\_media-FrbAndWpfStarting.PNG)
 
 ### Adding References
 
@@ -80,8 +80,6 @@ Now that we have a Window called DiagnosticWindow we can instantiate and show it
 2. Find the Initialize method
 3. Modify the Initialize function to instantiate and show the DiagnosticWindow so it looks like:
 
-&#x20;
-
 ```
 protected override void Initialize()
 {
@@ -103,8 +101,6 @@ Also the use of WPF requires that the Main function has the STAThread attribute.
 1. Open Program.cs
 2. Add the STAThread to the Main method so it looks like:
 
-&#x20;
-
 ```
 [STAThread]
 static void Main(string[] args)
@@ -116,7 +112,7 @@ static void Main(string[] args)
 }
 ```
 
-At this point you'll want to make sure to save your project. You can do this by build/running it, or by using the "File" -> "Save All" menu item. Running the game shows the WPF window next to the FRB window: ![WpfNextToFrb.PNG](../../../media/migrated_media-WpfNextToFrb.PNG)
+At this point you'll want to make sure to save your project. You can do this by build/running it, or by using the "File" -> "Save All" menu item. Running the game shows the WPF window next to the FRB window: ![WpfNextToFrb.PNG](../../.gitbook/assets/migrated\_media-WpfNextToFrb.PNG)
 
 ### Adding elements to DiagnosticWindow
 
@@ -144,7 +140,7 @@ Modify the DiagnosticWindow XAML so it is as follows:
 
 **Note:** WPF is typically implemented with binding and MVVM. For brevity we won't use these patterns in this tutorial, but you should consider doing so as you expand your FRB/WPF application.
 
-Of course you'll need to add a Button_Click event to the DiagnosticWindow codebehind:
+Of course you'll need to add a Button\_Click event to the DiagnosticWindow codebehind:
 
 ```
 private void Button_Click(object sender, RoutedEventArgs e)
@@ -163,10 +159,8 @@ First we'll add logic for the button to be able to create entities when clicked.
 Next we'll use the factory to instantiate a CircleEntity whenever the button is clicked. To do this:
 
 1. Switch to Visual Studio
-2. Navigate to the Button_Click method in the DiagnosticWindow
-3. Modify Button_Click so it looks like:
-
-&#x20;
+2. Navigate to the Button\_Click method in the DiagnosticWindow
+3. Modify Button\_Click so it looks like:
 
 ```
 private void Button_Click(object sender, RoutedEventArgs e)
@@ -177,11 +171,11 @@ private void Button_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-If you run the game now and click the button you'll see that you can create entities: ![CreatedInstances.PNG](../../../media/migrated_media-CreatedInstances.PNG)
+If you run the game now and click the button you'll see that you can create entities: ![CreatedInstances.PNG](../../.gitbook/assets/migrated\_media-CreatedInstances.PNG)
 
 ### Updating the Label
 
-For a more complicated game we might update the label on a timer, or by using a view model. In this case we'll simply update the label whenever the user clicks the button. We can do this by modifying the Button_Click method so it looks like:
+For a more complicated game we might update the label on a timer, or by using a view model. In this case we'll simply update the label whenever the user clicks the button. We can do this by modifying the Button\_Click method so it looks like:
 
 ```
 private void Button_Click(object sender, RoutedEventArgs e)
@@ -198,7 +192,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 
 Now clicking the button will instantiate an Entity and update the label to show how many objects are in the engine:
 
-![OneInstance.PNG](../../../media/migrated_media-OneInstance.PNG)
+![OneInstance.PNG](../../.gitbook/assets/migrated\_media-OneInstance.PNG)
 
 ### Troubleshooting
 

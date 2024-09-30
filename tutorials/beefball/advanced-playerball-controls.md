@@ -28,7 +28,7 @@ private void MovementActivity()
 
 Notice that the code above still uses the MovementSpeed variable, which can be modified in Glue. This value can be increased to make movement more responsive. You may want to increase this value from 100 to a larger number such as 300. Now our ball can bounce against the walls, and it doesn't immediately speed up or slow down - it takes some time to gain speed.
 
-<figure><img src="../../media/2016-01-2021_July_25_135938.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_July_25_135938.gif" alt=""><figcaption></figcaption></figure>
 
 Since we're no longer setting velocity values directly (acceleration values add and subtract to the current velocity), the ball continues to move even after releasing input. We'll address this in the next section.
 
@@ -44,7 +44,7 @@ We'll use the [Drag](../../api/flatredball/positionedobject/drag.md) property to
 6. Click OK
 7. Change the Drag variable to 1
 
-<figure><img src="../../media/2016-01-2021_July_25_130242.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_July_25_130242.gif" alt=""><figcaption></figcaption></figure>
 
 The addition of Drag has changed the way our ball moves:
 

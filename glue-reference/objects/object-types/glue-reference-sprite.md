@@ -28,7 +28,7 @@ When you are creating a new entity, you can check the option to add a Sprite in 
 3. Check the **Sprite** option
 4. Click **OK**
 
-![Check Sprite to add a Sprite when creating a new entity](../../../media/2019-06-img\_5d18bae01c0a8.png)
+![Check Sprite to add a Sprite when creating a new entity](../../../.gitbook/assets/2019-06-img\_5d18bae01c0a8.png)
 
 ### Adding a Sprite
 
@@ -45,7 +45,7 @@ Sprites can be added to FlatRedBall screens or entities, although most games don
 
 Entities often contain a Sprite for their main visuals. Some entities may have multiple sprites for visuals. For example, an Enemy may have the main SpriteInstance for its body and a ShadowSprite for the shadow.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Enemy entity with two Sprites</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Enemy entity with two Sprites</p></figcaption></figure>
 
 
 

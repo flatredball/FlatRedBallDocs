@@ -21,13 +21,13 @@ Now we can add this type to a custom CSV.
 
 1.  Select **Content** -> **Additional Content** -> **New Content CSV...**
 
-    ![](../../../../../../media/2023-05-img_645d6d3eb725a.png)
+    ![](../../../../.gitbook/assets/2023-05-img\_645d6d3eb725a.png)
 2.  Enter the name ProjectSpecificContent and click OK
 
-    ![](../../../../../../media/2023-05-img_645d6d7b58eb4.png)
+    ![](../../../../.gitbook/assets/2023-05-img\_645d6d7b58eb4.png)
 3.  A folder should open displaying the newly-created ProjectSpecificContent.csv. Double-click it to open it in the default spreadsheet application installed on your machine
 
-    ![](../../../../../../media/2023-05-img_645d6dc7d1061.png)
+    ![](../../../../.gitbook/assets/2023-05-img\_645d6dc7d1061.png)
 4. Enter the values for properties as specified below:
 
 * Friendly Name: **CustomType**
@@ -48,16 +48,16 @@ For examples on how to work with this CSV file, see the ContentTypes.csv file wh
 
 You can now right-click on the Objects under any Screen or Entity and you should see your type.
 
-![](../../../../../../media/2023-05-img_645d6ff53da86.png)
+![](../../../../.gitbook/assets/2023-05-img\_645d6ff53da86.png)
 
 Since this type is also a PositionedObject, your entities can use it as their base.
 
-![](../../../../../../media/2023-05-img_645d703ba763d.png)
+![](../../../../.gitbook/assets/2023-05-img\_645d703ba763d.png)
 
 ### VariableDefinitions
 
 By default instances of new types that you create do not have any variables visible in the Variables tab. You can change this by adding variables which you would like automatically visible by modifying the VariableDefinitions column. The standard ContentTypes.csv file provides a great example of how to define VariableDefinitions. One of the largest set of variables is on the Sprite's VariableDefinitions column.
 
-![](../../../../../../media/2023-05-img_645d711051472.png)
+![](../../../../.gitbook/assets/2023-05-img\_645d711051472.png)
 
-Add as many variables as you would like available. Also, you are not limited to PositionedObject properties. If you add new properties to your type in code, you can expose these to the FlatRedBall Editor by modifying the VariableDefinitions column. &#x20;
+Add as many variables as you would like available. Also, you are not limited to PositionedObject properties. If you add new properties to your type in code, you can expose these to the FlatRedBall Editor by modifying the VariableDefinitions column.

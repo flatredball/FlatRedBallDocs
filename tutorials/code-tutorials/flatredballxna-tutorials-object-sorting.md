@@ -39,8 +39,8 @@ FlatRedBall supports multiple Cameras. These cameras can be used to create split
 
 ### Diagram
 
-The following diagram shows the order in which objects are drawn. Categories in the same vertical space will sort with each other (such as Depth Buffer and Coordinate Sorting) while categories which appear above will draw on top of categories below. For example, layered objects will always draw on top of unlayered objects. &#x20;
+The following diagram shows the order in which objects are drawn. Categories in the same vertical space will sort with each other (such as Depth Buffer and Coordinate Sorting) while categories which appear above will draw on top of categories below. For example, layered objects will always draw on top of unlayered objects.
 
-<figure><img src="../../media/migrated_media-SortingDiagram.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-SortingDiagram.png" alt=""><figcaption></figcaption></figure>
 
 This diagram can best be read bottom-up. The very bottom section (Camera 0, Unlayered) is where objects are added by default when added through managers like the [SpriteManager](../../frb/docs/index.php) or [TextManager](../../frb/docs/index.php). [Layers](../../frb/docs/index.php) added to the [SpriteManager](../../frb/docs/index.php) are added as world [Layers](../../frb/docs/index.php). [Layers](../../frb/docs/index.php) [added to Cameras](../../frb/docs/index.php) are specific to the [Camera](../../frb/docs/index.php) they are added to. To move objects to specific [Layers](../../frb/docs/index.php), call AddToLayer on the appropriate manager for the objectt to be moved.

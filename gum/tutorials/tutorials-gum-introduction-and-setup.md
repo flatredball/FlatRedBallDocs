@@ -16,11 +16,11 @@ For this tutorial we will be adding a Gum project through the FlatRedBall Editor
 
 If you have created your project using one of the project types in the wizard, then your project is already including Gum.
 
-![](../../media/2023-01-img\_63bf79f7b197b.png)
+![](../../.gitbook/assets/2023-01-img\_63bf79f7b197b.png)
 
 You can verify that you have a Gum project by looking for GumProject.gumx in Global Files.
 
-![](../../media/2023-01-img\_63bf7a5903f2d.png)
+![](../../.gitbook/assets/2023-01-img\_63bf7a5903f2d.png)
 
 ### Option 2 - Gum Toolbar Button
 
@@ -28,22 +28,22 @@ If you do not want to run the Glue wizard, or if your project already has Screen
 
 1.  Click the Gum toolbar button or the Add Gum Project quick action. Notice that the Gum icon in the toolbar has a + icon to indicate that this button adds a new project.
 
-    ![](../../media/2023-01-img\_63bf7ababc300.png)
+    ![](../../.gitbook/assets/2023-01-img\_63bf7ababc300.png)
 2.  When asked, select the option to **Include Forms Controls (Recommended)**
 
-    ![](../../media/2021-03-img\_604417b7e19a7.png)
+    ![](../../.gitbook/assets/2021-03-img\_604417b7e19a7.png)
 
 **Troubleshooting Missing Gum Options:** If you do not see any of the options shown above, you can verify that the plugin has installed correctly and that it is running through the [Manage Plugins Window](../../glue-reference/menu/plugins-2/glue-reference-menu-plugins-manage-plugin.md).
 
 Also, you will see a button in the toolbar for opening the Gum project.
 
-<figure><img src="../../media/2019-03-img_5c78b2870eb69.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2019-03-img_5c78b2870eb69.png" alt=""><figcaption></figcaption></figure>
 
 ### Editing the Gum Project
 
 The .gumx project (which means Gum XML) is the root project. It can be opened in Gum. If you have the file association set up for the .gumx file with Gum, you can click the Gum icon or double-click the .gumx file to open Gum. This is the same icon which was previously used to add a new Gum project.
 
-![](../../media/2019-03-img\_5c78b2870eb69.png)
+![](../../.gitbook/assets/2019-03-img\_5c78b2870eb69.png)
 
 Setting up file associations is recommended since it makes opening Gum much faster.
 
@@ -51,7 +51,7 @@ Setting up file associations is recommended since it makes opening Gum much fast
 
 Once you open up the .gumx file in Gum, you should see a screen like this:
 
-<figure><img src="../../media/migrated_media-EmptyGum.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-EmptyGum.PNG" alt=""><figcaption></figcaption></figure>
 
 ### Learning to use Gum
 

@@ -12,11 +12,11 @@ The most important concept here is - some components in your project are Forms t
 
 To understand how Forms and Gum objects interact, we will consider a simple example - a Screen with a single Button. The following image shows a default Button instance in a Gum screen:
 
-![](../../../media/2022-02-img\_620e597708581.png)
+![](../../../.gitbook/assets/2022-02-img\_620e597708581.png)
 
 In this example, the MenuScreenGum is loaded by the FlatRedBall screen **MenuScreen.**
 
-![](../../../media/2022-02-img\_620e59a697383.png)
+![](../../../.gitbook/assets/2022-02-img\_620e59a697383.png)
 
 We can access both the Gum and Forms objects in Visual Studio as shown in the following code. Keep in mind that every Screen with Gum and Forms objects will have **GumScreen** and **Forms** properties. These make it easy to access objects the same way no matter which Screen you are working on:
 
@@ -44,7 +44,7 @@ public partial class MenuScreen
 
 Notice that setting width and height modifies the same object at runtime - it appears as a square. Also, filling in the two click handlers would result in both handlers being called when the button is clicked.
 
-![](../../../media/2022-02-img\_620e5b2a484f3.png)
+![](../../../.gitbook/assets/2022-02-img\_620e5b2a484f3.png)
 
 You may be wondering - which object should I access in code? The answer is - usually it's best to use the Forms object. If you end up needing to make changes to the Gum object (such as to change its position or size), it's worth considering whether this change should actually be done in code. Most of the time these changes should be performed in the Gum tool.
 
@@ -52,11 +52,11 @@ You may be wondering - which object should I access in code? The answer is - usu
 
 FlatRedBall.Forms objects are _wrappers_ around Gum objects. For example, in the example above we have a Forms.ButtonInstance. This object has a reference to the Gum object. The Forms object automates behavior so that the Gum object behaves like a UI element. For example, the Forms Button object automatically modifies the state of the button in response to cursor hovers and clicks. No custom code is necessary to achieve this behavior.
 
-<figure><img src="../../../media/2022-02-17_07-42-15.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2022-02-17_07-42-15.gif" alt=""><figcaption></figcaption></figure>
 
 This behavior is convenient, but it is not particularly complex - at least not conceptually. The Forms object is responsible for detecting if the cursor is hovering over the button, or if the left mouse button is pressed. If so, the Forms object modifies the state of the button. These states are part of the default Button control, and can be inspected (and modified) in Gum.
 
-<figure><img src="../../../media/2022-02-17_07-58-17.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2022-02-17_07-58-17.gif" alt=""><figcaption></figcaption></figure>
 
 The Forms Button logic is responsible for setting the button's state, and it will do so in response to any UI behavior. Therefore, manually setting the Gum object's state is not recommended - it will be over written by the Forms object as shown in the following code and animation:
 
@@ -71,7 +71,7 @@ void CustomInitialize()
 }
 ```
 
-<figure><img src="../../../media/2022-02-17_08-17-34.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2022-02-17_08-17-34.gif" alt=""><figcaption></figcaption></figure>
 
 Notice that the state is not immediately changed, but rather only when the mouse moves over the button. Once the mouse hovers over the button, its state changes immediatelz. After the mouse leaves the button, the state is reverted to Enabled. Setting the state through the Gum object can produce confusion. For example, a button may appear pushed or disabled if the state is manually assigned; however, the actual behavior of the button will not match a disabled state. Therefore, the button's state (specifically the **CurrentButtonCategoryState**) is controlled by the Forms Button object. The Forms Button object will modify the state according to standard button behavior, so custom code should not modify the Gum button's state.
 
@@ -81,7 +81,7 @@ The Forms property in FlatRedBall Screens contains properties for all Forms obje
 
 For example, consider the following screen in Gum:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Forms and normal Gum instances in a Screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (113).png" alt=""><figcaption><p>Forms and normal Gum instances in a Screen</p></figcaption></figure>
 
 The left column consists of Forms controls: a Button, ListBox, and TextBox. The right column consists of instances of Gum objects which do not implement any Forms controls: a Text, ColoredRectangle, and Container.
 

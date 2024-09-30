@@ -16,7 +16,7 @@ Before we get into how FlatRedBall handles collision, let's cover some basic ter
 
 We've already discussed what a collision is, so let's give some examples. The following image shows three situations and labels whether a collision is occurring:
 
-<figure><img src="../../media/migrated_media-CollisionExamples.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-CollisionExamples.png" alt=""><figcaption></figcaption></figure>
 
 Notice that collision doesn't just occur if the edges of two objects are touching. When FlatRedBall performs collision, it considers objects to be _filled in_. Therefore, if one object is inside of another, a collision is still occurring.
 
@@ -24,7 +24,7 @@ Notice that collision doesn't just occur if the edges of two objects are touchin
 
 A move collision is a collision where one or both of the involved shapes are repositioned during the collision to prevent overlap. The term "move" was selected because this type of collision can result in the shapes _moving_ to new positions. The amount that each shape is moved depends on their masses relative to each other. It is very common to make one object static by giving it a non-zero mass and giving the other object a mass of zero. The following image shows the result of a move collision assuming that the rectangle is static and the circle is not.
 
-<figure><img src="../../media/migrated_media-MoveCollision.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-MoveCollision.png" alt=""><figcaption></figcaption></figure>
 
 To use FlatRedBall terms, move collisions will adjust the position of the involved shape(s) if a collision does occur.
 
@@ -32,7 +32,7 @@ To use FlatRedBall terms, move collisions will adjust the position of the involv
 
 A "bounce" collision is a collision which can be used to simulate physics. As the name implies, bounce collisions cause objects to bounce against each other. Just like move collisions, bounce collisions use the masses of two objects to calculate how the forces from the bounce should be applied. Just like with move collisions, it is common to have one object in a bounce collision have a non-zero mass while the other has a mass of zero. This causes one of the shapes (the one with the non-zero mass) to not be affected by the collision.
 
-<figure><img src="../../media/migrated_media-BounceCollisionExample.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-BounceCollisionExample.png" alt=""><figcaption></figcaption></figure>
 
 #### Shape
 
@@ -91,7 +91,7 @@ else
 }
 ```
 
-![CollidingCircles.png](../../media/migrated\_media-CollidingCircles.png)
+![CollidingCircles.png](../../.gitbook/assets/migrated\_media-CollidingCircles.png)
 
 **WARNING:** The code above may not compile because the Color struct is not qualified (the code doesn't know which namespace it is in). Which "using" statement you add to your code depends on which version of FlatRedBall you are using. For more information, see the [Color](../../frb/docs/index.php) page.
 

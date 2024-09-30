@@ -10,16 +10,16 @@ Texture2D's which are added to a screen or entity can be accessed by objects in 
 
 1.  Create an entity with a Sprite object. See the [Sprites in Glue page](../objects/object-types/glue-reference-sprite.md) for more information.
 
-    ![](../../media/2019-06-img\_5d18b9a876102.png)
+    ![](../../.gitbook/assets/2019-06-img\_5d18b9a876102.png)
 2. Drag+drop a .png file from any location on your computer onto the entity's Files object. Note that if the file is not located outside of your game's Content folder, the file will be copied.
 
-<figure><img src="../../media/2016-07-2019-06-30_07-32-33.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-07-2019-06-30_07-32-33.gif" alt=""><figcaption></figcaption></figure>
 
 3. Select the Sprite object
 4. Locate the "Texture" property
 5.  Use the drop-down to select the desired texture
 
-    ![](../../media/2016-07-img\_57881ea9e2cbc.png)
+    ![](../../.gitbook/assets/2016-07-img\_57881ea9e2cbc.png)
 
 The sprite will now use the selected texture.
 
@@ -40,7 +40,7 @@ private void CustomInitialize()
 
 Similarly, files added to global content can be accessed in code through the GlobalContent object. For example, consider a file Background.png which could be added to global content:
 
-![](../../media/2016-07-img\_57882064ea554.png)
+![](../../.gitbook/assets/2016-07-img\_57882064ea554.png)
 
 This file could be accessed in code as shown in the following snippet:
 

@@ -27,23 +27,23 @@ To add a new .ods file:
 4. Enter a name, such as EnemyData
 5. Click OK
 
-<figure><img src="../../.gitbook/assets/image (147).png" alt=""><figcaption><p>Adding EnemyData ods file type</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (319).png" alt=""><figcaption><p>Adding EnemyData ods file type</p></figcaption></figure>
 
 Confirm the conversion of .ods to .csv in the popup window by clicking OK.
 
-<figure><img src="../../.gitbook/assets/image (148).png" alt=""><figcaption><p>Popup for confirming to use open office (soffice.exe)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (320).png" alt=""><figcaption><p>Popup for confirming to use open office (soffice.exe)</p></figcaption></figure>
 
 The newly-created file should appear in the tree view in FRB. Notice that the file is listed as a .csv file since it is converted from .ods to .csv.
 
-<figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption><p>EnemyData.csv in the tree view.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (321).png" alt=""><figcaption><p>EnemyData.csv in the tree view.</p></figcaption></figure>
 
 You can confirm the original file is an .ods file by selecting the file and viewing its properties.
 
-<figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption><p>EnemyData.csv properties displays its source file and build tool (conversion executable)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (322).png" alt=""><figcaption><p>EnemyData.csv properties displays its source file and build tool (conversion executable)</p></figcaption></figure>
 
 FlatRedBall automatically creates a backing data class for your file which matches the name of the .ods file. For example, the following screenshot shows the EnemyData class using the default contents of the .ods.
 
-<figure><img src="../../.gitbook/assets/image (151).png" alt=""><figcaption><p>EnemyData class automatically created in generated code</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (323).png" alt=""><figcaption><p>EnemyData class automatically created in generated code</p></figcaption></figure>
 
 Similarly, the enemy data class is loaded in the object which contains the .ods file. Using the example from above, the EnemyData file would be loaded into GlobalContent and it can be accessed as shown in the following code:
 

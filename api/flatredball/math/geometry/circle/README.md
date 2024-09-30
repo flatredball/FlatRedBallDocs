@@ -47,4 +47,4 @@ else
 }
 ```
 
-![TwoCirclesOverlapping.png](../../../../../media/migrated\_media-TwoCirclesOverlapping.png)
+![TwoCirclesOverlapping.png](../../../../../.gitbook/assets/migrated\_media-TwoCirclesOverlapping.png)

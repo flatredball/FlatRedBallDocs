@@ -1,12 +1,10 @@
-# scrollbar
+# ScrollBar
 
 ### Introduction
 
-Scrollbar is a common control used when scrolling is needed to display information. ScrollBars are included in other standard FlatRedBall.Forms controls such as ListBox and ComboBox, but they can be used in custom controls as well. 
+Scrollbar is a common control used when scrolling is needed to display information. ScrollBars are included in other standard FlatRedBall.Forms controls such as ListBox and ComboBox, but they can be used in custom controls as well.
 
-<figure><img src="../../../../media/2017-12-2017-12-24_07-28-34.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/2017-12-2017-12-24_07-28-34.gif" alt=""><figcaption></figcaption></figure>
 
 ### Layout Requirements
 
@@ -20,7 +18,7 @@ Although not required, the following is strongly recommended:
 
 * An object of any name (typically **TrackInstance**) which contains the **ThumbInstance**
 
-![](../../../../media/2017-12-img_5a4461d95f26f.png)
+![](../../../.gitbook/assets/2017-12-img\_5a4461d95f26f.png)
 
 ### ThumbInstance and TrackInstance
 
@@ -28,9 +26,9 @@ The thumb in a Slider visually represents the Value variable. FlatRedBall.Forms 
 
 ### Element Visibility
 
-Although the thumb, up button, and down button are required, they do not need to be visible. Certain styles of scroll bars do not include up and down buttons - especially of the game is not controlled with a mouse. In this case the up and down buttons can be set to invisible.  If the buttons are invisible a track is not necessary - the thumb can be a direct child of the component. Unlike the Slider control, the track will always be fully contained within its parent object, so a track is only necessary to add padding between the track and the edge of the Slider control.
+Although the thumb, up button, and down button are required, they do not need to be visible. Certain styles of scroll bars do not include up and down buttons - especially of the game is not controlled with a mouse. In this case the up and down buttons can be set to invisible. If the buttons are invisible a track is not necessary - the thumb can be a direct child of the component. Unlike the Slider control, the track will always be fully contained within its parent object, so a track is only necessary to add padding between the track and the edge of the Slider control.
 
-![](../../../../media/2017-12-img_5a44668515c69.png)
+![](../../../.gitbook/assets/2017-12-img\_5a44668515c69.png)
 
 ### Minimum, Maximum, ViewportSize, and Value
 
@@ -56,7 +54,7 @@ scrollBar.Value = 100;
 
 This can be visualized as shown in the following image:
 
-![](../../../../media/2017-12-img_5a3fe8c2bd996.png)
+![](../../../.gitbook/assets/2017-12-img\_5a3fe8c2bd996.png)
 
 Keep in mind that these values do not change the height of the ScrollBar. This is controlled by the Height property just like every other FlatRedBall.Forms control, and it is subject to sizing variables just like all other Gum objects.
 
@@ -79,10 +77,8 @@ scrollBar.SmallChange = 10;
 scrollBar.LargeChange = 30;
 ```
 
-This code produces the behavior shown in the following animation: 
+This code produces the behavior shown in the following animation:
 
-<figure><img src="../../../../media/2017-12-2017-12-24_11-09-14.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/2017-12-2017-12-24_11-09-14.gif" alt=""><figcaption></figcaption></figure>
 
 ###

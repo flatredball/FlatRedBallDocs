@@ -1,18 +1,18 @@
-# shape
+# Shape
 
 ### Introduction
 
 The ShapeManager is responsible for managing "Shapes". Shapes are most often used for collision between objects. Objects which belong to the Shape categorization are:
 
-* [AxisAlignedCube](../../../../../frb/docs/index.php)
-* [AxisAlignedRectangle](../../../../../frb/docs/index.php)
-* [Capsule2D](../../../../../frb/docs/index.php)
-* [Circle](../../../../../frb/docs/index.php)
-* [Line](../../../../../frb/docs/index.php)
-* [Polygon](../../../../../frb/docs/index.php)
-* [Sphere](../../../../../frb/docs/index.php)
+* [AxisAlignedCube](../../../../frb/docs/index.php)
+* [AxisAlignedRectangle](../../../../frb/docs/index.php)
+* [Capsule2D](../../../../frb/docs/index.php)
+* [Circle](../../../../frb/docs/index.php)
+* [Line](../../../../frb/docs/index.php)
+* [Polygon](../../../../frb/docs/index.php)
+* [Sphere](../../../../frb/docs/index.php)
 
-All of these objects share the [PositionedObject](../../../../../frb/docs/index.php) base class. These are the only objects which the ShapeManager manages. Although there is no "Shape" class, these objects are often referred to as shapes.
+All of these objects share the [PositionedObject](../../../../frb/docs/index.php) base class. These are the only objects which the ShapeManager manages. Although there is no "Shape" class, these objects are often referred to as shapes.
 
 ### Adding Shapes
 
@@ -28,11 +28,11 @@ Add the following using statement:
 Circle circle = ShapeManager.AddCircle();
 ```
 
-![SimpleCircle.png](../../../../../media/migrated_media-SimpleCircle.png)
+![SimpleCircle.png](../../../../.gitbook/assets/migrated\_media-SimpleCircle.png)
 
 #### Shapes and Visibility
 
-Adding a Shape to the ShapeManager will automatically make the shape visible. For example, the following code will result in a **visible** [Circle](../../../../../frb/docs/index.php):
+Adding a Shape to the ShapeManager will automatically make the shape visible. For example, the following code will result in a **visible** [Circle](../../../../frb/docs/index.php):
 
 ```
 Circle circle = new Circle();
@@ -85,8 +85,8 @@ Making shapes visible can be beneficial for debugging collisions. For the final 
 * Absolute or relative acceleration.
 * Absolute or relative rotation velocity;
 * Instructions
-* ScaleVelocity ([AxisAlignedRectangle](../../../../../frb/docs/index.php) only)
-* Radius Velocity ([Circle](../../../../../frb/docs/index.php) only)
+* ScaleVelocity ([AxisAlignedRectangle](../../../../frb/docs/index.php) only)
+* Radius Velocity ([Circle](../../../../frb/docs/index.php) only)
 
 **Note about attachments:** Shapes which are attached to parents can have their absolute positions updated one of two ways:
 
@@ -97,7 +97,7 @@ If a shape is to be used only for collision and is not visible, then it is not n
 
 #### Unmanaged Shape Behavior
 
-The source of some confusion is what happens when a Shape is attached to a [PositionedObject](../../../../../frb/docs/index.php) (like a [Sprite](../../../../../frb/docs/index.php)), but **not** added to the ShapeManager. If you write code which attaches a shape to a [Sprite](../../../../../frb/docs/index.php), make the shape visible, then move the parent [Sprite](../../../../../frb/docs/index.php) you will notice that the shape does not move. Why is this the case? Well, again, there are two ways to update a shape's attachments:
+The source of some confusion is what happens when a Shape is attached to a [PositionedObject](../../../../frb/docs/index.php) (like a [Sprite](../../../../frb/docs/index.php)), but **not** added to the ShapeManager. If you write code which attaches a shape to a [Sprite](../../../../frb/docs/index.php), make the shape visible, then move the parent [Sprite](../../../../frb/docs/index.php) you will notice that the shape does not move. Why is this the case? Well, again, there are two ways to update a shape's attachments:
 
 1. By being added to the ShapeManager
 2. By calling one of their collision methods or passing them as arguments to a collision method.
@@ -106,14 +106,14 @@ Since the shape is neither part of the ShapeManager nor having any Collision met
 
 ### Additional Information
 
-* [Colliding a list of shapes against itself](../../../../../frb/docs/index.php)
-* [Shapes and 2D Collision](../../../../../frb/docs/index.php)
+* [Colliding a list of shapes against itself](../../../../frb/docs/index.php)
+* [Shapes and 2D Collision](../../../../frb/docs/index.php)
 
 ### ShapeManager Members
 
-* [FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle](../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.ShapeManager.AddToLayer](../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.ShapeManager.Remove](../../../../../frb/docs/index.php)
-* [FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder](../../../../../frb/docs/index.php)
+* [FlatRedBall.Math.Geometry.ShapeManager.AddAxisAlignedRectangle](../../../../frb/docs/index.php)
+* [FlatRedBall.Math.Geometry.ShapeManager.AddToLayer](../../../../frb/docs/index.php)
+* [FlatRedBall.Math.Geometry.ShapeManager.Remove](../../../../frb/docs/index.php)
+* [FlatRedBall.Math.Geometry.ShapeManager.ShapeDrawingOrder](../../../../frb/docs/index.php)
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

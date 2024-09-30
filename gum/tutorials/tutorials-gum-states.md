@@ -17,7 +17,7 @@ Before we look at how to work with States in code, we'll do a brief overview of 
 
 A disabled button could change these variables in code when it became disabled, but it's far more expressive and maintainable to create a state in Gum that assigns all of these values. This allows the code to simply set the state and not worry about the visual details. States can be added to Screens, Components, and Standard Elements in Gum. States should almost always be categorized, so for the remainder of this tutorial we will be working with categorized states. Categorized states can help avoid some of the most common pitfalls of working with states, such as unset variables when switching between states. The following screen shot shows a typical Button object with states for controlling the button in response to various UI interactions and enabled values:
 
-<figure><img src="../../media/2019-01-img_5c46551c3c3e3-e1548113244713.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2019-01-img_5c46551c3c3e3-e1548113244713.png" alt=""><figcaption></figcaption></figure>
 
 The screenshot shows a **Button** component with a category called **UiStates.** This category contains the following states:
 
@@ -28,7 +28,7 @@ The screenshot shows a **Button** component with a category called **UiStates.**
 
 These states can change any property on the Button or its contained instances. **Important**: Note that all of the states shown belong to the Button component. These states can change values on contained objects (such as **ColoredRectangleInstance** and **TextInstance**), but the states belong to the Button component. For example, if the **Pressed** state is selected and a variable is changed on **ColoredRectangleInstance**...
 
-![](../../media/2019-01-img\_5c469f61080fc.png)
+![](../../.gitbook/assets/2019-01-img\_5c469f61080fc.png)
 
 This change is applied to the **Pressed** state which belongs to the **Button** component. As another example, consider a screen called MenuScreenGum with three buttons:
 
@@ -38,7 +38,7 @@ This change is applied to the **Pressed** state which belongs to the **Button** 
 
 If this screen were used as a main menu in a game which can be played in demo mode, it could control the visibility of its contained buttons using a Full and Demo state, as shown in the following image:
 
-![](../../media/2019-01-img\_5c46a3a71db22.png)
+![](../../.gitbook/assets/2019-01-img\_5c46a3a71db22.png)
 
 The Full state may hide the DemoButton (set its Visible to false), while the Demo state may hide the FullGameButton (set its Visible to false). Even though these states may change variables on the button instances, the state is contained in the MainScreenGum.
 
@@ -52,19 +52,19 @@ Whenever you create a new State in Gum, Glue will automatically generate code fo
 
 Note that in the image below the three states are categorized in a category called **UiStates**. We recommend categorizing states whenever possible.
 
-![](../../media/2019-01-img\_5c4221d8f2808.png)
+![](../../.gitbook/assets/2019-01-img\_5c4221d8f2808.png)
 
 All Gum components create two code files for you: a file for custom code and a file for generated code.
 
-![](../../media/2019-01-img\_5c4223b550fb6.png)
+![](../../.gitbook/assets/2019-01-img\_5c4223b550fb6.png)
 
 The generated file (in this case **ButtonRuntime.Generated.cs**) will contain entries for each of the states. Note that each category will create its own enumeration and associated property in generated code: The following screenshot shows the enumerations defined for the states:
 
-![](../../media/2019-01-img\_5c4223faa1673.png)
+![](../../.gitbook/assets/2019-01-img\_5c4223faa1673.png)
 
 The following screenshot shows the properties for the states:
 
-![](../../media/2019-01-img\_5c422446353d2.png)
+![](../../.gitbook/assets/2019-01-img\_5c422446353d2.png)
 
 Note that categorized states are nullable, allowing the category to not be set at all (which is the default when the Button is created at runtime). These states can be used in code. For example, a simple, functional button could be created by adding events to the button in its CustomInitialize function.
 

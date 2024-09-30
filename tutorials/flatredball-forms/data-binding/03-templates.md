@@ -9,7 +9,7 @@ The ListBox type includes the ability to customize individual items using templa
 
 The following screenshot shows an example of a customized ListBoxItem. It contains a list box which displays levels with images and a check box.
 
-![Customized ListBoxItems used for level select in Battlecrypt Bombers](../../../media/2022-11-img\_637e23a9e9252.png)
+![Customized ListBoxItems used for level select in Battlecrypt Bombers](../../../.gitbook/assets/2022-11-img\_637e23a9e9252.png)
 
 Although the appearance of each item in the ListBox is different from the default appearance, the ListBox itself is still a standard ListBox with a custom VisualTemplate. VisualTemplates can be used for any type of modification to the ListBoxItem. Common examples include:
 
@@ -25,7 +25,7 @@ Most of the time games only need a VisualTemplate and do not need to use a Frame
 
 By default the ListBox creates one ListBoxItem for every instance in its Items property. The ListBoxItem is defined in the Gum project under the Controls folder as shown in the following screenshot:
 
-![](../../../media/2023-08-img\_64d1b98838807.png)
+![](../../../.gitbook/assets/2023-08-img\_64d1b98838807.png)
 
 The first step in replacing this ListBoxItem in our ListBox is to create a new component in Gum. The easiest way to do this is to copy/paste the existing ListBoxItem as a starting point. You can create a copy by using the CTRL+C, CTRL+V hotkeys or by right-clicking on the component and selecting the Duplicate option.
 
@@ -40,13 +40,13 @@ For this tutorial we will be creating a new ListBoxItem which has two Text insta
 
 Note that by default ListBoxItems attempt to assign a Text object by the name of TextInstance. By changing our Text names, our new ListBoxItem no longer supports default Text display. If you are creating a new ListBoxItem which is intended to be used as a default ListBoxItem throughout your entire game, you should consider keeping a Text instance with th ename TextInstance. In this case we are creating a ListBoxItem to be used in a specific case so this name isn't required.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>InventoryListBoxItem in Gum</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption><p>InventoryListBoxItem in Gum</p></figcaption></figure>
 
 ### Using the Custom ListBoxItem (InventoryListBoxItem)
 
 To use the newly-created ListBoxItem, first you need a screen with a ListBox. For example, the following screenshot shows a single ListBox in the MainMenuGum screen.
 
-![ListBoxInstance in MainMenuGum](../../../media/2023-08-img\_64d1bb63c3069.png)
+![ListBoxInstance in MainMenuGum](../../../.gitbook/assets/2023-08-img\_64d1bb63c3069.png)
 
 Once this ListBox is added, the following code can be used to populate the ListBoxInstance, including using the new InventoryListBoxItem as the template:
 
@@ -212,7 +212,7 @@ public partial class InventoryListBoxItemRuntime
 
 Now if we run our application, each item displays the information from each InventoryItemView.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Inventory items displaying information</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption><p>Inventory items displaying information</p></figcaption></figure>
 
 ### Modifying the Selected ViewModel
 

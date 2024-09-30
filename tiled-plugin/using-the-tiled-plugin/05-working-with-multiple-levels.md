@@ -26,27 +26,27 @@ To add a new level we will create a new screen. These steps are the same as what
 7. On the New File window, enter the name **Level2Map** and leave the defaults checked
 8. Click **OK**
 
-<figure><img src="../../media/2016-08-11_08-56-58.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-11_08-56-58.gif" alt=""><figcaption></figcaption></figure>
 
 Now our game has two levels: Level1 and Level2. We can choose which level we want to play by using the drop-down next to the Play button in Glue.
 
-<figure><img src="../../media/2016-08-2021_February_20_132044.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-2021_February_20_132044.gif" alt=""><figcaption></figcaption></figure>
 
 If we play Level2, we will have an empty level since we haven't added any tiles yet. We can edit Level2Map by selecting it in the Tiled dropdown.
 
-![](../../media/2021-02-img\_603174ef881fe.png)
+![](../../.gitbook/assets/2021-02-img\_603174ef881fe.png)
 
 Level2Map already has the TiledIcons referenced, and it already has a GameplayLayer, so we can begin placing tiles immediately.
 
-![](../../media/2021-02-img\_60317559d4c13.png)
+![](../../.gitbook/assets/2021-02-img\_60317559d4c13.png)
 
 As always, don't forget to save your work or the map won't appear in game. The tiles should appear in your game, along with the collision for the tiles.
 
-<figure><img src="../../media/2016-08-2021_February_20_134848.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-2021_February_20_134848.gif" alt=""><figcaption></figcaption></figure>
 
 ### Levels and Inheritance
 
-FlatRedBall follows an inheritance pattern for levels. the GameScreen serves as the _base screen_ for all levels. This means that the GameScreen contains everything that is common to all levels. This not only includes objects (such as lists of entities) but also relationships and settings on objects. For example, the GameScreen defines a Map object which creates entities from the maps (which is covered in later tutorials).&#x20;
+FlatRedBall follows an inheritance pattern for levels. the GameScreen serves as the _base screen_ for all levels. This means that the GameScreen contains everything that is common to all levels. This not only includes objects (such as lists of entities) but also relationships and settings on objects. For example, the GameScreen defines a Map object which creates entities from the maps (which is covered in later tutorials).
 
 If you choose to create Screens which do not inherit, you will have to manually reconfigure some of these settings. This is not recommended for new FlatRedBall users. Readers who are more interested in how TMX Files are loaded can read the [LayeredTileMap page](../../documentation/tools/tiled-plugin/flatredball-tilegraphics-layeredtilemap.md).
 
@@ -78,4 +78,4 @@ void CustomActivity(bool firstTimeCalled)
 
 Now we can run the game and press the space bar to switch between levels.
 
-<figure><img src="../../media/2016-08-2021_February_20_134150.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-2021_February_20_134150.gif" alt=""><figcaption></figcaption></figure>

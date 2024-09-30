@@ -14,7 +14,7 @@ If your game requires the creation of entities in code (such as the player shoot
 
 When adding a new entity, the Create Factory checkbox is automatically checked. In most cases this should be left as true since most entities should be created by factories so they can be properly added to their corresponding lists (usually in GameScreen).
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Create Factory is checked by default</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption><p>Create Factory is checked by default</p></figcaption></figure>
 
 If you have unchecked this option, you can add factories after an entity is created. For more information, see the [CreatedByOtherEntities property page](../entities/glue-reference-createdbyotherentities.md).
 

@@ -1,8 +1,8 @@
-# animationspeed
+# AnimationSpeed
 
 ### Introduction
 
-The AnimationSpeed property controls the speed at which an Animation is playing. The default value for AnimationSpeed is 1, which means the amount of time that each [AnimationFrame](../../../../../../frb/docs/index.php) displays is equal to its [FrameLength](../../../../../../frb/docs/index.php) property.
+The AnimationSpeed property controls the speed at which an Animation is playing. The default value for AnimationSpeed is 1, which means the amount of time that each [AnimationFrame](../../../../../frb/docs/index.php) displays is equal to its [FrameLength](../../../../../frb/docs/index.php) property.
 
 * Increasing this value above 1 will make animations play faster.
 * Setting this value between 0 and 1 will make animations play slower.
@@ -13,6 +13,6 @@ The AnimationSpeed property controls the speed at which an Animation is playing.
 
 A Sprite's AnimationSpeed can be changed in the FlatRedBall Editor in the Variables tab.
 
-![](../../../../../../media/2022-07-img_62e69faa9b168.png)
+![](../../../../../.gitbook/assets/2022-07-img\_62e69faa9b168.png)
 
 ###

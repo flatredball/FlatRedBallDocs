@@ -1,4 +1,4 @@
-# pixelsperunitat
+# PixelsPerUnitAt
 
 ### Introduction
 
@@ -25,7 +25,7 @@ float worldUnits = unitsPerPixel * desiredPixels;
 
 ### Code Example - Setting Sprite Width and Height
 
-The following code example creates a [Sprite](../../../../frb/docs/index.php) and scales it to the size of the entire screen. The default resolution is 800 X 600, so scaling the [Sprite](../../../../frb/docs/index.php) to this size will make the [Sprite](../../../../frb/docs/index.php) fill up the entire screen. Add the following to Initialize after initializing FlatRedBall:
+The following code example creates a [Sprite](../../../frb/docs/index.php) and scales it to the size of the entire screen. The default resolution is 800 X 600, so scaling the [Sprite](../../../frb/docs/index.php) to this size will make the [Sprite](../../../frb/docs/index.php) fill up the entire screen. Add the following to Initialize after initializing FlatRedBall:
 
 ```
 // Our default resolution is 800 X 600
@@ -51,11 +51,11 @@ float PixelsToUnits(int numberOfPixels, float absoluteZ)
 }
 ```
 
-![PixelsPerUnit.png](../../../../media/migrated_media-PixelsPerUnit.png)
+![PixelsPerUnit.png](../../../.gitbook/assets/migrated\_media-PixelsPerUnit.png)
 
 ### Code Example - Spacing Objects on Screen
 
-This example creates a row of circles, each touching end-to-end, 32 pixels apart on a 3D camera. It uses PixelsPerUnitAt to size and space the circles. The following code can be placed in a screen's CustomInitialize  method:
+This example creates a row of circles, each touching end-to-end, 32 pixels apart on a 3D camera. It uses PixelsPerUnitAt to size and space the circles. The following code can be placed in a screen's CustomInitialize method:
 
 ```lang:c#
 void CustomInitialize()
@@ -82,7 +82,7 @@ void CustomInitialize()
 }
 ```
 
-![](../../../../media/2017-02-img_589de828605c9.png)
+![](../../../.gitbook/assets/2017-02-img\_589de828605c9.png)
 
 ### PixelsPerUnitAt and FieldOfView
 

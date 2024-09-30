@@ -13,7 +13,7 @@ To see how a file is accessed in code:
 3. Drag+drop the .png into your TestScreen's Files in Glue
 4.  Notice that the newly-added File will indicate which type it will load to at runtime
 
-    <figure><img src="../../media/migrated_media-Texture2DRuntimeType.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/migrated_media-Texture2DRuntimeType.png" alt=""><figcaption></figcaption></figure>
 5. Open TestScreen.cs in Visual Studio
 6. Add the following code to CustomInitialize:
 

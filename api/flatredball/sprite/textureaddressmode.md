@@ -1,8 +1,8 @@
-# textureaddressmode
+# TextureAddressMode
 
 ### Introduction
 
-The TextureAddressMode controls how Sprites display their texture outside of the 0 - 1 range. TextureAddressMode can be used to create tiles and texture scrolling. TextureAddressMode is usually used in combination with [texture coordinates](../../../../frb/docs/index.php). For more information on texture coordinates, see the [texture coordinates page](../../../../frb/docs/index.php).
+The TextureAddressMode controls how Sprites display their texture outside of the 0 - 1 range. TextureAddressMode can be used to create tiles and texture scrolling. TextureAddressMode is usually used in combination with [texture coordinates](../../../frb/docs/index.php). For more information on texture coordinates, see the [texture coordinates page](../../../frb/docs/index.php).
 
 ### Usage Example
 
@@ -38,7 +38,7 @@ clampSprite.X = 200;
 clampSprite.TextureScale = 1;
 ```
 
-![TextureAddressModes.PNG](../../../../media/migrated_media-TextureAddressModes.PNG) This article uses the [TextureScale property](../../../../frb/docs/index.php) to automatically size the Sprites according to their texture coordinates.
+![TextureAddressModes.PNG](../../../.gitbook/assets/migrated\_media-TextureAddressModes.PNG) This article uses the [TextureScale property](../../../frb/docs/index.php) to automatically size the Sprites according to their texture coordinates.
 
 **Note:** The Wrap texture address mode requires that textures are a power of 2 on the Windows Phone.
 
@@ -67,4 +67,4 @@ mSprite.LeftTextureCoordinate += scrollSpeed * TimeManager.SecondDifference;
 mSprite.RightTextureCoordinate += scrollSpeed * TimeManager.SecondDifference;
 ```
 
-![Scrolling.png](../../../../media/migrated_media-Scrolling.png)
+![Scrolling.png](../../../.gitbook/assets/migrated\_media-Scrolling.png)

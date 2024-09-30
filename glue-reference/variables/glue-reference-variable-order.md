@@ -4,7 +4,7 @@
 
 Variables in Glue are not automatically ordered alphabetically. The reason for this is because the order that variables appear in Glue impacts the order that they are set in Glue's generated code. Instead, variables can be reordered through the "Move" commands when right-clicking on a variable in Glue:
 
-&#x20;![MoveCommandsRightclick.png](../../media/migrated\_media-MoveCommandsRightclick.png)
+![MoveCommandsRightclick.png](../../.gitbook/assets/migrated\_media-MoveCommandsRightclick.png)
 
 ### When does order matter
 

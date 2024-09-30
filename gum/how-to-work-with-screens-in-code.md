@@ -1,4 +1,4 @@
-# how-to-work-with-screens-in-code
+# Accessing Gum Screens in Code
 
 ### Introduction
 
@@ -16,22 +16,20 @@ To write code against a Gum screen, you must first have:
 
 Note: Once you add a Gum project to your Glue project, Glue will automatically add new Gum screens for each Glue screen. This functionality can be controlled by selecting the .gumx file in Glue:
 
-![](../../../media/2020-02-img_5e43122d7e020.png)
+![](../.gitbook/assets/2020-02-img\_5e43122d7e020.png)
 
-If you have already created Glue screens and Gum screens, but the two are not associated, you can right-click on the Files of any Screen to add an existing Gum screen: ![](../../../media/2020-02-img_5e431272d0637.png) Regardless of which method is used, the result is a Gum screen that is using a specific, generated class, as can be seen in Glue:
+If you have already created Glue screens and Gum screens, but the two are not associated, you can right-click on the Files of any Screen to add an existing Gum screen: ![](../.gitbook/assets/2020-02-img\_5e431272d0637.png) Regardless of which method is used, the result is a Gum screen that is using a specific, generated class, as can be seen in Glue:
 
-![](../../../media/2020-02-img_5e43145966d3f.png)
+![](../.gitbook/assets/2020-02-img\_5e43145966d3f.png)
 
 ### Accessing Objects in Code
 
 The Gum screen object can be accessed in code just like any other object. All contained objects in a Gum screen are accessible through properties on the Gum screen. For example, consider the following Gum screen:
 
-![](../../../media/2020-02-img_5e4313383de58.png)
+![](../.gitbook/assets/2020-02-img\_5e4313383de58.png)
 
 These can be accessed in code using the names of the objects from Gum:
 
-![](../../../media/2020-02-img_5e4313fdc956a.png)
-
-&#x20; &#x20;
+![](../.gitbook/assets/2020-02-img\_5e4313fdc956a.png)
 
 ###

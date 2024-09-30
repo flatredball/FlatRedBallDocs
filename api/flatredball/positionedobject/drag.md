@@ -34,7 +34,7 @@ sprite3.Drag = 1;
 sprite3.Y = -3;
 ```
 
-![3SpritesWithDrag.png](../../../media/migrated\_media-3SpritesWithDrag.png) Managed PositionedObjects such as [Sprites](../../../frb/docs/index.php) automatically have their Drag applied every frame.
+![3SpritesWithDrag.png](../../../.gitbook/assets/migrated\_media-3SpritesWithDrag.png) Managed PositionedObjects such as [Sprites](../../../frb/docs/index.php) automatically have their Drag applied every frame.
 
 ### When Is Drag Useful?
 

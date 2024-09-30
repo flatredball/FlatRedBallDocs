@@ -1,4 +1,4 @@
-# adddominantwindow
+# AddDominantWindow
 
 ### Introduction
 
@@ -8,11 +8,11 @@ Dominant Windows are IWindows which have higher priority over regular IWindows. 
 
 This example shows how to use AddDominantWindow to change whether a popup is the dominant window in response to UI events. This example uses a Gum screen with two objects - UserControlInstance and PopupInstance as shown in the following treeview:
 
-![](../../../../../media/2021-09-img_614c9aa1b0ae9.png)
+![](../../../../.gitbook/assets/2021-09-img\_614c9aa1b0ae9.png)
 
 Visually, the layout is shown in the following image:
 
-![](../../../../../media/2021-09-img_614c9a921e7d7.png)
+![](../../../../.gitbook/assets/2021-09-img\_614c9a921e7d7.png)
 
 The hiding and showing of the popup is controlled as shown in the following code:
 
@@ -36,8 +36,4 @@ void CustomInitialize()
 }
 ```
 
-
-
-<figure><img src="../../../../../media/2016-01-23_09-19-49.gif" alt=""><figcaption></figcaption></figure>
-
- &#x20;
+<figure><img src="../../../../.gitbook/assets/2016-01-23_09-19-49.gif" alt=""><figcaption></figcaption></figure>

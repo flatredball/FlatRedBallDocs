@@ -1,4 +1,4 @@
-# backgroundcolor
+# BackgroundColor
 
 ### Introduction
 
@@ -21,15 +21,15 @@ if (FlatRedBall.Input.InputManager.Keyboard.KeyPushed(Keys.Down))
 }
 ```
 
-![CameraBackgroundColor.png](../../../../media/migrated_media-CameraBackgroundColor.png)
+![CameraBackgroundColor.png](../../../.gitbook/assets/migrated\_media-CameraBackgroundColor.png)
 
 ### Transparent Background Color
 
-When a Camera is drawn, the first thing that is done is its DestinationRectangle is painted to the background color. If you have multiple Cameras which overlap and you'd like Cameras which are on top to not write over what's already been drawn by previous Cameras, you can set the BackgroundColor to a color that has an alpha of 0. BackgroundColor for any Cameras except the default one contained in the [SpriteManager](../../../../frb/docs/index.php) is transparent. You will need to change the background color if you are making a split-screen game to something no-transparent.
+When a Camera is drawn, the first thing that is done is its DestinationRectangle is painted to the background color. If you have multiple Cameras which overlap and you'd like Cameras which are on top to not write over what's already been drawn by previous Cameras, you can set the BackgroundColor to a color that has an alpha of 0. BackgroundColor for any Cameras except the default one contained in the [SpriteManager](../../../frb/docs/index.php) is transparent. You will need to change the background color if you are making a split-screen game to something no-transparent.
 
 ### Drawing before FlatRedBall is Drawn
 
 If you would like to draw to the screen before FlatRedBall draws, you can do so, but you must do the following:
 
 1. Set the Camera's Color's Alpha to 0
-2. Turn off [RenderTargets](../../../../frb/docs/index.php).
+2. Turn off [RenderTargets](../../../frb/docs/index.php).

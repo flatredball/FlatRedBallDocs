@@ -79,4 +79,4 @@ public void TileBasedMovement(Sprite sprite)
 }
 ```
 
-![TileBasedMovement.png](../../media/migrated\_media-TileBasedMovement.png)
+![TileBasedMovement.png](../../.gitbook/assets/migrated\_media-TileBasedMovement.png)

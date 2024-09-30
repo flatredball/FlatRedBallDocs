@@ -20,7 +20,7 @@ To do this:
 5. Set the **Converted Type** to **int**
 6. Click **OK**
 
-<figure><img src="../../media/2019-05-TunnelConvertedScoreBeefball.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2019-05-TunnelConvertedScoreBeefball.gif" alt=""><figcaption></figcaption></figure>
 
 Repeat the steps above, but this time use Team2Score, and create a variable called "Score2".
 
@@ -62,7 +62,7 @@ If you are seeing a conversion error similar to Cannot implicitly convert type '
 2. Select the **Properties** tab
 3.  Change **OverridingPropertyType** to **int**
 
-    ![](../../media/2018-08-img\_5b7db0c6336f4.png)
+    ![](../../.gitbook/assets/2018-08-img\_5b7db0c6336f4.png)
 
 ### Conclusion
 

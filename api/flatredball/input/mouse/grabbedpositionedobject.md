@@ -1,8 +1,8 @@
-# grabbedpositionedobject
+# GrabbedPositionedObject
 
 ### GrabbedPositionedObject
 
-The Mouse class provides functionality for grabbing and moving any object which implements the PositionedObject class. This includes common FlatRedBall types like [Sprite](../../../../../frb/docs/index.php) and [Text,](../../../../../frb/docs/index.php) as well as entities created in Glue. The following code creates 9 [Sprites](../../../../../frb/docs/index.php) and allows the user to click and drag to control the [Sprites](../../../../../frb/docs/index.php). This code can be added to any FlatRedBall Screen
+The Mouse class provides functionality for grabbing and moving any object which implements the PositionedObject class. This includes common FlatRedBall types like [Sprite](../../../../frb/docs/index.php) and [Text,](../../../../frb/docs/index.php) as well as entities created in Glue. The following code creates 9 [Sprites](../../../../frb/docs/index.php) and allows the user to click and drag to control the [Sprites](../../../../frb/docs/index.php). This code can be added to any FlatRedBall Screen
 
 ```lang:c#
 public partial class YourScreenName
@@ -63,11 +63,9 @@ public partial class YourScreenName
     ...
 ```
 
+<figure><img src="../../../../.gitbook/assets/2016-01-2019-04-06_22-18-14.gif" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../../../../media/2016-01-2019-04-06_22-18-14.gif" alt=""><figcaption></figcaption></figure>
-
- Setting the GrabbedPositionedObject does the following:
+Setting the GrabbedPositionedObject does the following:
 
 1. Stores the reference in the GrabbedPositionedObject property
 2. Stores offset variables - this is the difference between the GrabbedPositionedObject's position and the cursor's world coordinates.
@@ -75,4 +73,4 @@ public partial class YourScreenName
 
 ### GrabbedPositionedObject and Parents
 
-In the example above the Sprites do not have any parents so they can be grabbed and moved freely by the cursor. It is common to have Sprites as part of Glue entities, in which case the Sprite is attached to the entity. If the GrabbedPositionedObject has a non-null Parent, then it cannot be moved. In this situation it is more common to grab (and move) the parent entity. &#x20;
+In the example above the Sprites do not have any parents so they can be grabbed and moved freely by the cursor. It is common to have Sprites as part of Glue entities, in which case the Sprite is attached to the entity. If the GrabbedPositionedObject has a non-null Parent, then it cannot be moved. In this situation it is more common to grab (and move) the parent entity.

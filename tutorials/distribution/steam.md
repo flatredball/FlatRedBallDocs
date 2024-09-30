@@ -11,17 +11,17 @@ To add Steamworks.NET library to your project:
 1. Go to the [Steamworks.NET github releases page](https://github.com/rlabrecque/Steamworks.NET/releases)
 2.  Download the latest release standalone
 
-    ![](../../media/2022-09-img\_6324fbac1a1fa.png)
+    ![](../../.gitbook/assets/2022-09-img\_6324fbac1a1fa.png)
 3. Unzip the downloaded file
 4. Link the Steamworks.NET.dll file in your project
    1.  If you are targeting .NET 6, use the 64 bit version.
 
-       ![Add the Steamworks.NET library to your project](../../media/2022-09-img\_6324fdc469a67.png)
+       ![Add the Steamworks.NET library to your project](../../.gitbook/assets/2022-09-img\_6324fdc469a67.png)
    2. If you are making a Desktop GL (.NET Framework) project, be sure to link to the x86 version as this version of FlatRedBall does not support 64 bit builds
 5. Copy the steam\_api64.dll or steam\_api.dll file to the same folder as your game's .csproj (and .gluj) depending on whether you linked to the 64 bit version of Steamworks.NET.dll
 6.  Add the steam\_api file to your project in Visual Studio and mark it as **Copy if Newer** so that the file ends up in your game's bin folder next to the built .exe.
 
-    ![](../../media/2022-09-img\_6324fea5eb27b.png)
+    ![](../../.gitbook/assets/2022-09-img\_6324fea5eb27b.png)
 7. Add your steam\_appid.txt file to the folder where your game's exe is located.
 8. When testing, be sure to have Steam running or else your tests won't work.
 
@@ -301,6 +301,6 @@ The TryApply method performs a local check for awarding before sending anything 
 
 If your game uses .NET 6 or newer, then it can be published as a self-contained app which includes all of the .NET 6 runtime files. While this increases the size of your game, it enables your game to run on any machine regardless of whether .NET 6 runtime is installed. Furthermore, it allows your game to run on SteamDeck. To do this, first add the following highlighted text to your csproj under the PropertyGroup tag.
 
-![](../../media/2022-11-img\_636bcbde5f619.png)
+![](../../.gitbook/assets/2022-11-img\_636bcbde5f619.png)
 
 Once you have done this, you can publish your application using the dotnet publish command or you can grab the files from the bin folder that Visual Studio creates.

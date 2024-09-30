@@ -12,7 +12,7 @@ While this code addresses many common scenarios, you may want to create your own
 
 ### Creating a simple Texture2D
 
-The following code creates a Texture2D which is all red, then displays the Texture2D using a [Sprite](../../../../../frb/docs/index.php).
+The following code creates a Texture2D which is all red, then displays the Texture2D using a [Sprite](../../../../frb/docs/index.php).
 
 Add the following using statement:
 
@@ -54,4 +54,4 @@ FlatRedBallServices.AddDisposable(
 SpriteManager.AddSprite(texture2D);
 ```
 
-![GeneratedTexture.png](../../../../../media/migrated_media-GeneratedTexture.png)
+![GeneratedTexture.png](../../../../.gitbook/assets/migrated\_media-GeneratedTexture.png)

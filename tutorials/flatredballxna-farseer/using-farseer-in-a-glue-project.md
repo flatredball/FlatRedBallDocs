@@ -8,7 +8,7 @@ This walkthrough shows how to add Velcro to a simple FlatRedBall project. We wil
 
 We will begin with an empty FlatRedBall project:
 
-![](../../media/2016-11-img_583523104d726.png)
+![](../../.gitbook/assets/2016-11-img\_583523104d726.png)
 
 Add a new Block entity:
 
@@ -17,7 +17,7 @@ Add a new Block entity:
 3. Enter the name Block
 4. Click **OK**
 
-![](../../media/2016-11-img_58352352c6f2c.png)
+![](../../.gitbook/assets/2016-11-img\_58352352c6f2c.png)
 
 Next, we'll add a Sprite to the Block so we can see it in-game:
 
@@ -26,7 +26,7 @@ Next, we'll add a Sprite to the Block so we can see it in-game:
 3. Select **Add Object**
 4.  Select Sprite
 
-    ![](../../media/2016-11-img_58352394527bd.png)
+    ![](../../.gitbook/assets/2016-11-img\_58352394527bd.png)
 5. Click **OK**
 
 The Sprite needs to be modified so it will show up in game:
@@ -37,7 +37,7 @@ The Sprite needs to be modified so it will show up in game:
 4. Enter a **Width** of **32**
 5.  Enter a **Height** of **32**
 
-    ![](../../media/2016-11-img_583524551f2fb.png)
+    ![](../../.gitbook/assets/2016-11-img\_583524551f2fb.png)
 
 ### Creating the GameScreen
 
@@ -48,7 +48,7 @@ Next we'll create a screen to hold our Block instances and the Farseer logic:
 3. Enter the name **Game Screen**
 4. Click **OK**
 
-![](../../media/2016-11-img_583526c9914a3.png)
+![](../../.gitbook/assets/2016-11-img\_583526c9914a3.png)
 
 GameScreen needs a Block list so that we can construct the blocks in code and have them be automatically managed. To do this:
 
@@ -57,7 +57,7 @@ GameScreen needs a Block list so that we can construct the blocks in code and ha
 3. Release the mouse button
 4. Select **Add Entity List**
 
-![](../../media/2016-11-img_58352798ddb2d.png)
+![](../../.gitbook/assets/2016-11-img\_58352798ddb2d.png)
 
 ### Adding Farseer to the Visual Studio Project
 
@@ -72,11 +72,11 @@ Now that our Glue project has been created, we'll add Farseer to the Visual Stud
 7. Navigate to where you saved the Farseer dll file
 8. Select the file and click **Add**
 
-![](../../media/2016-11-img_583528ae9657b.png)
+![](../../.gitbook/assets/2016-11-img\_583528ae9657b.png)
 
 ### Preparing the Block Entity for Farseer
 
-We'll add the code to create a Farseer Body  instance in the Block.cs  file. Open the Block file and modify the class so it appears as shown in the following code:
+We'll add the code to create a Farseer Body instance in the Block.cs file. Open the Block file and modify the class so it appears as shown in the following code:
 
 ```lang:c#
 public partial class Block
@@ -133,7 +133,7 @@ public partial class Block
 
 ### Adding code to GameScreen
 
-Finally we'll add code to our GameScreen . Modify your GameScreen.cs  file so it looks like the following code:
+Finally we'll add code to our GameScreen . Modify your GameScreen.cs file so it looks like the following code:
 
 ```lang:c#
 public partial class GameScreen
@@ -222,6 +222,6 @@ public partial class GameScreen
 }
 ```
 
-If we run the game we'll see our blocks falling and colliding:    &#x20;
+If we run the game we'll see our blocks falling and colliding:
 
-<figure><img src="../../media/2016-11-FallingBlocks.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-11-FallingBlocks.gif" alt=""><figcaption></figcaption></figure>

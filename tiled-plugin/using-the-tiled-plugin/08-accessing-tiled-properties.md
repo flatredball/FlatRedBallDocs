@@ -13,15 +13,15 @@ Each layer in the the tile map can contain its own list of tiles. For performanc
 3. Select a tile which will represent the goal tile
 4.  Click the + button to add a new custom property
 
-    ![](../../media/2021-02-img\_603188d1220aa.png)
+    ![](../../.gitbook/assets/2021-02-img\_603188d1220aa.png)
 5. Enter the name **Name**
 6. Verify the type is **string**
 7.  Click **OK**
 
-    ![](../../media/2018-09-img\_5b9e9bad2aa34.png)
+    ![](../../.gitbook/assets/2018-09-img\_5b9e9bad2aa34.png)
 8.  Set the value for the **Name** property to Goal
 
-    ![](../../media/2021-02-img\_603188f602d54.png)
+    ![](../../.gitbook/assets/2021-02-img\_603188f602d54.png)
 
 Note that FlatRedBall treats the **Name** property as the unique identifier for the tile. Therefore, the same name cannot be used for two different tiles - doing so will crash your program. We can modify the GameScreen.cs as shown in the following code:
 
@@ -69,9 +69,9 @@ private void CreateCirclesForGoalTiles()
 
 If you add goals to your game you will see circles added wherever the goals are located:
 
-![](../../media/2021-02-img\_60318989140e6.png)
+![](../../.gitbook/assets/2021-02-img\_60318989140e6.png)
 
-![](../../media/2021-02-img\_603189f1c4584.png)
+![](../../.gitbook/assets/2021-02-img\_603189f1c4584.png)
 
 **Warning:** The purpose of the code above and much of the code in this guide is to show how to interact with tile properties at a low level. A realistic example would require additional code which would significantly increase the length of this tutorial. Keep in mind that the code above suffers from some serious problems. The created circles are not stored in a list so they cannot be used for any purpose aside from displaying on screen. Furthermore, since the circles are not stored in any list, they cannot be cleaned up. Exiting the screen or switching levels at this point would result in an exception.
 
@@ -79,7 +79,7 @@ If you add goals to your game you will see circles added wherever the goals are 
 
 The Name property is built-in to the Tiled Plugin, but we can also read custom properties. For example, we can modify the Goal tile to include a property for coloring the circle:
 
-![](../../media/2021-02-img\_60318a4b85bb5.png)
+![](../../.gitbook/assets/2021-02-img\_60318a4b85bb5.png)
 
 This property can be read through the level's Properties . We'll modify the code to define the color value and default it to Green . It will be set to Yellow if the CircleColor property is Yellow :
 
@@ -134,7 +134,7 @@ private void CreateCirclesForGoalTiles()
 
 We obtain the circle color outside of any loops because the properties set on tiles in a tile set apply to the entire map, so the value will be the same regardless of layer or individual tile. For instance-specific properties we need to use objects on an Object Layer, as we'll show later in this guide. Now our game displays yellow circles:
 
-![](../../media/2021-02-img\_60318c436a13e.png)
+![](../../.gitbook/assets/2021-02-img\_60318c436a13e.png)
 
 ### Removing Tiles
 
@@ -190,7 +190,7 @@ private void CreateCirclesForGoalTiles()
 }
 ```
 
-![](../../media/2021-02-img\_60318c9cee7ee.png)
+![](../../.gitbook/assets/2021-02-img\_60318c9cee7ee.png)
 
 ### Accessing Tiles by Type
 

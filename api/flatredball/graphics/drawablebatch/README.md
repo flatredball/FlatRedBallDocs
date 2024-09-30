@@ -114,7 +114,7 @@ public partial class GameScreen
 
 The code above produces the following when the game runs:
 
-![Triangle drawn by an IDrawableBatch which renders using DrawUserPrimtives](../../../../media/2016-06-img\_57616a108d6e8.png)
+![Triangle drawn by an IDrawableBatch which renders using DrawUserPrimtives](../../../../.gitbook/assets/2016-06-img\_57616a108d6e8.png)
 
 ### Drawing SpriteBatch in FlatRedBall Coordinates
 

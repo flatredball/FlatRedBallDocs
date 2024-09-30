@@ -14,21 +14,21 @@ However, screenshots often require additional markings. For consistency we recom
 
 User ShareX's default rectangles to draw attention to UI elements. The following screenshot could be used to show the user how to navigate back in the selection stack.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Red rectangle highlighting UI</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption><p>Red rectangle highlighting UI</p></figcaption></figure>
 
 Optionally, consider using arrows to draw the user's attention if the UI is small or otherwise difficult to find.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Arrow used to draw the user's attention to a button</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption><p>Arrow used to draw the user's attention to a button</p></figcaption></figure>
 
 #### Use Arrows When Multiple Clicks are Needed
 
 Use arrows and rectangles to the reader through multiple clicks. For example, the following screenshot shows how to set the Movement Speed on a Player in the Variables tab:
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Arrows used to guide the user through multiple clicks</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption><p>Arrows used to guide the user through multiple clicks</p></figcaption></figure>
 
 Use curved arrows to guide user through multiple clicks between UI elements which are near to each other. The following screenshot tells the user to click both the ICollidable and IDamageable checkboxes:
 
-<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>Curved arrows used to connect UI elements which are near each other</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption><p>Curved arrows used to connect UI elements which are near each other</p></figcaption></figure>
 
 #### Keep Screenshot Size Small
 
@@ -36,11 +36,11 @@ Screenshots should be the minimum size possible while providing the necessary in
 
 For example, consider a screenshot which displays a CircleInstance and its Variables tab. The following screenshot is a good size and shows the information clearly.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Minimum information shown for CircleInstance and Variables</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption><p>Minimum information shown for CircleInstance and Variables</p></figcaption></figure>
 
 Do not show large windows since it can make text difficult to read and it does not focus the reader's attention on important parts of the image.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption><p>This screenshot is too big</p></figcaption></figure>
 
 #### Hide Irrelevant Parts in Screenshots
 
@@ -48,7 +48,7 @@ If a tab is not important for the screenshot, it should be moved or reduced in s
 
 The following screenshot includes additional output which draws the reader's attention from the important parts of the screenshot, so avoid doing this.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Avoid including output window or other irrelevant parts of the screenshot</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption><p>Avoid including output window or other irrelevant parts of the screenshot</p></figcaption></figure>
 
 #### Take Entire-App and Window Screenshots Over a Solid-Colored Background
 
@@ -56,15 +56,15 @@ Screenshots can bleed their backgrounds at the edges or corners. This can be dis
 
 For example, a screenshot of the create entity window might be taken over a black background. The following image shows the surrounding background:
 
-<figure><img src="../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>Location of the Add Entity window over a black background</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption><p>Location of the Add Entity window over a black background</p></figcaption></figure>
 
 Taking a screenshot over other windows can result in distracting edges showing in the screenshot. For example, consider the following location for a screenshot:
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption><p>Screenshot taken over other windows</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption><p>Screenshot taken over other windows</p></figcaption></figure>
 
 If we zoom in to the edges, we can see that the background shows on the screenshot as shown in this zoomed in image:
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Background bleeding through the screenshot</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (63).png" alt=""><figcaption><p>Background bleeding through the screenshot</p></figcaption></figure>
 
 #### Take Screenshots of the Entire App When Introducing Concepts
 
@@ -72,11 +72,11 @@ Readers may not be familiar with FlatRedBall, Visual Studio, or other apps, so w
 
 For example the following could be an image introducing where entities are stored in FlatRedBall:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Show entire FlatRedBall Editor screenshot to orient the reader</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption><p>Show entire FlatRedBall Editor screenshot to orient the reader</p></figcaption></figure>
 
 Once the reader has been shown full app in a screenshot, additional screenshots can show a subsection. For example, the following screenshot may emphasize the different entity icons.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity icons emphasized in a screenshot which does not show the entire app</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption><p>Entity icons emphasized in a screenshot which does not show the entire app</p></figcaption></figure>
 
 #### Exclude the Cursor From Screenshots
 
@@ -84,5 +84,5 @@ By default ShareX includes the Windows cursor in screenshots. Unless it is impor
 
 The following image shows the cursor included in a screenshot.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot with a cursor - don't do this</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption><p>Screenshot with a cursor - don't do this</p></figcaption></figure>
 

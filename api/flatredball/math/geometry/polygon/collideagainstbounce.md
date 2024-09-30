@@ -1,4 +1,4 @@
-# collideagainstbounce
+# CollideAgainstBounce
 
 ### Introduction
 
@@ -25,7 +25,7 @@ Arguments:
 * **Circle circle (or other shape)** - the shape to collide against. This method supports other shapes as well, and if you find a shape that you'd like to collide against which is not supported, please request this feature in the forums.
 * **float thisMass** - the mass of this shape. This does not have to be an absolute mass since it will only be used relative to the otherMass argument.
 * **float otherMass** - the mass of the argument shape. Just like thisMass, otherMass does not have to be absolute. It will be compared against thisMass.
-* **float elasticity** - The amount of bounce that will result. A value of 1 results in all momentum being preserved through the collision. A value of 0 results in no momentum being preserved. Negative values should not be used. Values greater than 1 introduce extra momentum. Values greater than 1 can be used to simulate "bouncing" against a wound-up spring, or to create false physics. For more information on the elasticity  variable, see the Elasticity Examples section below. ![](https://i.imgur.com/MxtwqrI.gif)
+* **float elasticity** - The amount of bounce that will result. A value of 1 results in all momentum being preserved through the collision. A value of 0 results in no momentum being preserved. Negative values should not be used. Values greater than 1 introduce extra momentum. Values greater than 1 can be used to simulate "bouncing" against a wound-up spring, or to create false physics. For more information on the elasticity variable, see the Elasticity Examples section below. ![](https://i.imgur.com/MxtwqrI.gif)
 
 ### Example Code
 
@@ -94,7 +94,7 @@ Add the following in Update:
  }
 ```
 
-![CircleBounceCollision.png](../../../../../../media/migrated_media-CircleBounceCollision.png)
+![CircleBounceCollision.png](../../../../../.gitbook/assets/migrated\_media-CircleBounceCollision.png)
 
 ### Reacting to CollideAgainstBounce
 
@@ -111,7 +111,7 @@ if(didCollisionOccur)
 
 ### Bouncing and Velocity
 
-The [Collision tutorial](../../../../../../frb/docs/index.php) mentions:
+The [Collision tutorial](../../../../../frb/docs/index.php) mentions:
 
 ```
 "For bouncing to behave properly, we have to make sure that we're not controlling the involved Shapes' position or velocity"
@@ -134,7 +134,7 @@ In this case, someShape will have a velocity of 0 (assuming there is no other co
 
 #### Code Example
 
-The following example shows a problem with using CollideAgainstBounce and [Mouse](../../../../../../frb/docs/index.php) control and how it can be corrected.
+The following example shows a problem with using CollideAgainstBounce and [Mouse](../../../../../frb/docs/index.php) control and how it can be corrected.
 
 Add the following using statements:
 
@@ -196,8 +196,8 @@ Add the following in Update:
  }
 ```
 
-![CollideAgainstBouncAndVelocity.png](../../../../../../media/migrated_media-CollideAgainstBouncAndVelocity.png)
+![CollideAgainstBouncAndVelocity.png](../../../../../.gitbook/assets/migrated\_media-CollideAgainstBouncAndVelocity.png)
 
 ### CollideAgainstBounce for platformers
 
-The CollideAgainstBounce method is effective for performing bouncing physics, but it can also be used in situations where you'd like collision to reset velocity, such as in platformers. It's very common to have acceleration in platformers, and the easiest way to do this is to set the player [Entity](../../../../../../frb/docs/index.php) to have a negative YAcceleration. However, if the player collides with the ground using CollideAgainstMove, the YAcceleration will continue to accumulate the YVelocity value. Eventually this value will build up to be so large that the player will fall through the level. Even if this doesn't occur, the player will show weird behavior if it walks off of a ledge. To solve this, you can simply use CollideAgainstBounce instead of CollideAgainstMove. An elasticity of 0 will result in the same behavior as CollideAgainstMove, but the velocity will be modified according to the velocity to solve accumulation errors. You can try this in the demo above by setting the elasticity argument to 0.
+The CollideAgainstBounce method is effective for performing bouncing physics, but it can also be used in situations where you'd like collision to reset velocity, such as in platformers. It's very common to have acceleration in platformers, and the easiest way to do this is to set the player [Entity](../../../../../frb/docs/index.php) to have a negative YAcceleration. However, if the player collides with the ground using CollideAgainstMove, the YAcceleration will continue to accumulate the YVelocity value. Eventually this value will build up to be so large that the player will fall through the level. Even if this doesn't occur, the player will show weird behavior if it walks off of a ledge. To solve this, you can simply use CollideAgainstBounce instead of CollideAgainstMove. An elasticity of 0 will result in the same behavior as CollideAgainstMove, but the velocity will be modified according to the velocity to solve accumulation errors. You can try this in the demo above by setting the elasticity argument to 0.

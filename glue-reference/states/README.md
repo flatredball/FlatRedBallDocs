@@ -32,7 +32,7 @@ By default, variables do not appear in the State Data tab (and are not accessibl
 
 For example, consider a variable which tunnels into a Sprite's CurrentChainName - which we'll call "Animation" to keep the name short:
 
-<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption><p>Animation variable in a PowerUp entity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (228).png" alt=""><figcaption><p>Animation variable in a PowerUp entity</p></figcaption></figure>
 
 To make this variable accessible to the PowerUpCategory, drag+drop the variable onto the category. Doing so results in the variable appearing in the State Data grid.
 
@@ -46,7 +46,7 @@ Alternatively, a category's variables can be added and removed in the **State Da
 
 States can also be added through the right-click menu on a category.
 
-<figure><img src="../../media/2016-01-2021_March_20_112411.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_March_20_112411.gif" alt=""><figcaption></figcaption></figure>
 
 This method is the _old way_ of adding states. It is still supported, but it is a little more cumbersome compared to using _state data_. States added this way still appear in the State Data tab.
 
@@ -54,7 +54,7 @@ This method is the _old way_ of adding states. It is still supported, but it is 
 
 Every state category generates a class which is embedded in the screen or entity containing the state. By default states can only be assigned inside the entity or screen defining the state. For example, if the **PowerUp** entity defines a state category named **PowerUpCategory**, then states can be assigned in code.
 
-![Assigning the CurrentPowerUpCategoryState in code](../../media/2021-03-img\_605635c67dd65.png)
+![Assigning the CurrentPowerUpCategoryState in code](../../.gitbook/assets/2021-03-img\_605635c67dd65.png)
 
 Assigning the state in code applies all state's variables which were assigned in the FRB Editor.
 

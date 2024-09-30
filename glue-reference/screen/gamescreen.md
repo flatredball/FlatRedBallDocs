@@ -44,9 +44,8 @@ Games which include multiple levels typically define one TMX per level. The Game
 
 Therefore, the Map object in a typical GameScreen has its SetByDerived property set to true, which means that the GameScreen expects the derived levels to assign this property using their respective TMX files.
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Map SetByDerived</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (186).png" alt=""><figcaption><p>Map SetByDerived</p></figcaption></figure>
 
 Each Level should have a TMX file, and that TMX file should then be used to create the Map object. This can be observed by selecting the Map object in a Level screen and looking at its properties:
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>

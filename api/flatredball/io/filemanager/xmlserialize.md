@@ -74,7 +74,7 @@ private void PerformLoad()
 }
 ```
 
-![](../../../../media/2017-02-img\_58913fffc58ee.png)
+![](../../../../.gitbook/assets/2017-02-img\_58913fffc58ee.png)
 
 ### Customizing Serialization
 
@@ -90,4 +90,4 @@ The FileManager uses the [internally](http://msdn.microsoft.com/en-us/library/sy
 
 ### Additional Information
 
-* [Creating Save Classes](broken-reference) - Discusses the "Save" class coding pattern commonly used to save game data.
+* [Creating Save Classes](broken-reference/) - Discusses the "Save" class coding pattern commonly used to save game data.

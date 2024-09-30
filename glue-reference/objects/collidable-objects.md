@@ -11,17 +11,17 @@ If an object is collidable, Glue displays a Collision tab. The following types c
 
 The following shows the Collision tab for a BulletList, which is a list of Bullets where the Bullet entity implements the ICollidable interface.
 
-![](../../media/2021-03-img\_6040f2f675be3.png)
+![](../../.gitbook/assets/2021-03-img\_6040f2f675be3.png)
 
 ### Partitioning
 
-If the selected object is a list of collidables, then it can be partitioned. By default partitioning is turned off because incorrect values can cause collision to fail. However, partitioning is critical for games with a large number of objects such as Kosmo Squad. &#x20;
+If the selected object is a list of collidables, then it can be partitioned. By default partitioning is turned off because incorrect values can cause collision to fail. However, partitioning is critical for games with a large number of objects such as Kosmo Squad.
 
 <figure><img src="https://cdn.akamai.steamstatic.com/steam/apps/1448070/ss_61c7bc5936ca829c8ea8da9ba38fd17cdb82b100.1920x1080.jpg?t=1605029685" alt=""><figcaption></figcaption></figure>
 
 If a list performs collision partitioning, Glue provides a number of options for partitioning, as shown in the following image:
 
-![](../../media/2021-03-img\_6040fe7465256.png)
+![](../../.gitbook/assets/2021-03-img\_6040fe7465256.png)
 
 #### Should Partitioning be Enabled?
 

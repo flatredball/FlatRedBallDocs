@@ -1,8 +1,8 @@
-# visibilitygrid
+# VisibilityGrid
 
 ### Introduction
 
-The VisibilityGrid can be used to quickly calculate line of sight between [IViewers](../../../../../frb/docs/index.php). The VisibilityGrid is a very efficient class when dealing with a small number of squares. For example, if each IViewer has a radius smaller than 10, visibility updates can be incredibly fast. The larger the radius (in tiles), the slower performance becomes. Visibility calculations require O(n^2) operations where N is the view radius in tiles, so be careful with larger view radii.
+The VisibilityGrid can be used to quickly calculate line of sight between [IViewers](../../../../frb/docs/index.php). The VisibilityGrid is a very efficient class when dealing with a small number of squares. For example, if each IViewer has a radius smaller than 10, visibility updates can be incredibly fast. The larger the radius (in tiles), the slower performance becomes. Visibility calculations require O(n^2) operations where N is the view radius in tiles, so be careful with larger view radii.
 
 ### VisibilityGrid and IViewer
 
@@ -116,7 +116,7 @@ if (visibilityGrid.Activity())
 }
 ```
 
-![VisibilityGrid.png](../../../../../media/migrated_media-VisibilityGrid.png)
+![VisibilityGrid.png](../../../../.gitbook/assets/migrated\_media-VisibilityGrid.png)
 
 ### Adding blockers
 
@@ -132,6 +132,6 @@ visibilityGrid.BlockWorld(5, 0);
 FlatRedBallServices.GraphicsOptions.TextureFilter = TextureFilter.Point;
 ```
 
-![VisibilityGridWithBlockers.png](../../../../../media/migrated_media-VisibilityGridWithBlockers.png)
+![VisibilityGridWithBlockers.png](../../../../.gitbook/assets/migrated\_media-VisibilityGridWithBlockers.png)
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

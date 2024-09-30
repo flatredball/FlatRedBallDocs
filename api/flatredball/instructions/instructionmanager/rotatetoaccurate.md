@@ -1,12 +1,12 @@
-# rotatetoaccurate
+# RotateToAccurate
 
 ### Introduction
 
-The RotateToAccurate method creates and adds [Instructions](../../../../../frb/docs/index.php) for rotating the argument PositionedObject to the argument rotation. The method takes three values as it can perform rotation on the X, Y, and Z rotation components.
+The RotateToAccurate method creates and adds [Instructions](../../../../frb/docs/index.php) for rotating the argument PositionedObject to the argument rotation. The method takes three values as it can perform rotation on the X, Y, and Z rotation components.
 
 ### Code Example
 
-The following code creates and rotates a [Sprite](../../../../../frb/docs/index.php) so that its rotation matches the angle from the [Sprite](../../../../../frb/docs/index.php) to the [Mouse](../../../../../frb/docs/index.php) when the user clicks the left button. Add the following using statements:
+The following code creates and rotates a [Sprite](../../../../frb/docs/index.php) so that its rotation matches the angle from the [Sprite](../../../../frb/docs/index.php) to the [Mouse](../../../../frb/docs/index.php) when the user clicks the left button. Add the following using statements:
 
 ```
 using FlatRedBall.Input;
@@ -44,4 +44,4 @@ if (InputManager.Mouse.ButtonReleased(FlatRedBall.Input.Mouse.MouseButtons.LeftB
 }
 ```
 
-![RotateToAccurate.png](../../../../../media/migrated_media-RotateToAccurate.png)
+![RotateToAccurate.png](../../../../.gitbook/assets/migrated\_media-RotateToAccurate.png)

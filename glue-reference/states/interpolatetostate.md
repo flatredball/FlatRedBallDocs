@@ -89,4 +89,4 @@ if (InputManager.Keyboard.KeyPushed(Keys.Right))
 }
 ```
 
-![InterpolateBig.PNG](../../media/migrated\_media-InterpolateBig.PNG)
+![InterpolateBig.PNG](../../.gitbook/assets/migrated\_media-InterpolateBig.PNG)

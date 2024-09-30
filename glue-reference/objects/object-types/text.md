@@ -14,13 +14,13 @@ To create a Text object in Glue:
 4. Scroll down and select the "Text" type
 5. Click OK
 
-![AddTextGlue](../../../media/2016-04-AddTextGlue.gif) To see the Text object:
+![AddTextGlue](../../../.gitbook/assets/2016-04-AddTextGlue.gif) To see the Text object:
 
 1. Select the Text object
 2. Set its Display Text value to some value like "Hello"
 3.  Click the **Preview** checkbox in Glue
 
-    ![](../../../media/2017-02-img\_58acb9edc57c5.png)
+    ![](../../../.gitbook/assets/2017-02-img\_58acb9edc57c5.png)
 
 ### Common Text Usage
 

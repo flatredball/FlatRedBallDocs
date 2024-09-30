@@ -15,13 +15,13 @@ To add a file to the project through Visual Studio:
 1. Find or create a PNG file that you would like to use
 2.  Drag+drop the file into your Visual Studio project. Usually content is added to the Content folder, or a subfolder inside of the Content folder. \\
 
-    <figure><img src="../../media/2022-08-17_16_47_41.gif" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2022-08-17_16_47_41.gif" alt=""><figcaption></figcaption></figure>
 3.  Right-click on the file and select **Properties**
 
-    ![](../../media/2022-08-img\_62fd70599f0a8.png)
+    ![](../../.gitbook/assets/2022-08-img\_62fd70599f0a8.png)
 4.  Set the **Copy to Output Directory** item to **Copy if Newer**
 
-    <figure><img src="../../media/2022-08-img_62fd70994f0f8.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2022-08-img_62fd70994f0f8.png" alt=""><figcaption></figcaption></figure>
 
 This tells Visual Studio to copy the Bear.png file to the output directory (where the .exe is created) while maintaining the folder structure. For example, if your .exe is built to \<Project Root>\bin\DesktopGL\x86\Debug\CodeOnly.exe, then the Bear.png file will be copied to \<Project Root>\bin\DesktopGL\x86\Debug\Content\Bear.png.
 
@@ -32,19 +32,19 @@ To add a PNG to your project in Visual Studio Code:
 1. Find or create a PNG file that you would like to use
 2.  Drag+drop the file from an explorer window into your project's Content folder
 
-    <figure><img src="../../media/2022-08-13_08-11-58.gif" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2022-08-13_08-11-58.gif" alt=""><figcaption></figcaption></figure>
 
 We need to add an entry for the newly-added TextureFile so that it is copied to our project. We will need to do this for any PNG file (or other content file) that we add to our project in the future. To do this:
 
 1.  Select your .csproj file to display its contents
 
-    ![](../../media/2023-08-img\_64d8e5b6f2b8c.png)
+    ![](../../.gitbook/assets/2023-08-img\_64d8e5b6f2b8c.png)
 2.  Look for a section of the .csproj where existing content is already handled
 
-    ![](../../media/2023-08-img\_64d8e5f37d97b.png)
+    ![](../../.gitbook/assets/2023-08-img\_64d8e5f37d97b.png)
 3.  Copy/paste one of the **None** blocks to copy the newly-added TextureFile.png
 
-    ![](../../media/2023-08-img\_64d8e63ce8f41.png)
+    ![](../../.gitbook/assets/2023-08-img\_64d8e63ce8f41.png)
 
 ### Adding a File by Modifying Your .csproj File
 
@@ -127,7 +127,7 @@ protected override void Initialize()
 
 The game now loads a Bear and shows it in the center of the screen.
 
-![](../../media/2022-08-img\_62fd72dc705cd.png)
+![](../../.gitbook/assets/2022-08-img\_62fd72dc705cd.png)
 
 ### Modifying a Sprite
 
@@ -157,4 +157,4 @@ protected override void Initialize()
 
 This code creates five sprites, each using the same Texture2D.
 
-![](../../media/2022-08-img\_62fd7890cbed7.png)
+![](../../.gitbook/assets/2022-08-img\_62fd7890cbed7.png)

@@ -35,20 +35,20 @@ The easiest way to download and keep FlatRedBall source up to date is to use a G
 
     <div align="left" data-full-width="true">
 
-    <img src="media/2021-08-img_6112a86031125.png" alt="">
+    <img src=".gitbook/assets/2021-08-img_6112a86031125.png" alt="">
 
     </div>
 3. Select the URL tab
 4. Enter the FlatRedBall URL: https://github.com/vchelaru/FlatRedBall. Keep the default folder as **FlatRedBall**
 5. Click the Clone button\
-   ![](media/2021-08-img\_6112a90f42a84.png)
+   ![](.gitbook/assets/2021-08-img\_6112a90f42a84.png)
 6.  Switch to the appropriate branch. The default branch is NetStandard
 
-    ![](media/2022-11-img\_636b193cd624c.png)
+    ![](.gitbook/assets/2022-11-img\_636b193cd624c.png)
 
 After FlatRedBall is cloned, you will have a local copy on your machine.
 
-![](media/2021-08-img\_6112a93e335de.png)
+![](.gitbook/assets/2021-08-img\_6112a93e335de.png)
 
 ### Downloading Gum Source
 
@@ -67,14 +67,14 @@ To add the FRB source to your project:
 
     <div align="left">
 
-    <img src="media/2023-07-img_64b5303d1f0e2.png" alt="">
+    <img src=".gitbook/assets/2023-07-img_64b5303d1f0e2.png" alt="">
 
     </div>
 3.  The **Add FRB Source** tab appears, showing a text box for FlatRedBAll and Gum root folders. If your current project is also a Git project which is cloned to the same folder as FlatRedBall and Gum, then the FRB Editor attempts to fill in the file paths.
 
     <div align="left">
 
-    <img src="media/2023-07-img_64b531293eff9.png" alt="Add FRB Source tab in the FRB Editor adds all necessary projects to your game&#x27;s solution">
+    <img src=".gitbook/assets/2023-07-img_64b531293eff9.png" alt="Add FRB Source tab in the FRB Editor adds all necessary projects to your game&#x27;s solution">
 
     </div>
 4. If your paths are blank or incorrect, use the ... button to select the file paths for each repository.
@@ -84,7 +84,7 @@ To add the FRB source to your project:
 
 Your game project should not directly reference the FlatRedBall Source.
 
-![FlatRedBall projects linked in a game project](media/2023-07-img\_64b5319f1f491.png)
+![FlatRedBall projects linked in a game project](.gitbook/assets/2023-07-img\_64b5319f1f491.png)
 
 #### Game Project Location and FlatRedBall Source
 
@@ -105,7 +105,7 @@ If you would like to use the engine source in your game project:
 
     <div align="left">
 
-    <img src="media/2017-02-img_5892095362770.png" alt="">
+    <img src=".gitbook/assets/2017-02-img_5892095362770.png" alt="">
 
     </div>
 5. Press the Delete key to remove this reference
@@ -113,14 +113,14 @@ If you would like to use the engine source in your game project:
 7. Select **Add -> Existing Project...**
 8.  Navigate to the location of the FlatRedBall .csproj file for your given platform. For example, for PC, add **\<FlatRedBall Root>\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallDesktopGL.csproj**
 
-    ![](media/2021-08-img\_6112a9f5767f4.png)
+    ![](.gitbook/assets/2021-08-img\_6112a9f5767f4.png)
 9. Click Open to add the project to your game's solution
 10. Right-click on your game's **References** item and select **Add Reference...**
 11. Click the "Projects" category
 12. Check the FlatRedBallDesktopGL project (or whichever FlatRedBall project used for the given platform)
 13. Click OK
 
-    ![](media/2017-02-img\_58920a8e61d75.png)
+    ![](.gitbook/assets/2017-02-img\_58920a8e61d75.png)
 14. Build and run your project
 
 ### Building the FlatRedBall Editor (Glue)
@@ -132,28 +132,28 @@ To build the FlatRedBall Editor (also referred to as Glue):
 1. Download the FlatRedBall repository (either clone it or download the .zip file from Github) following the steps above
 2.  Download the [Gum repository](https://github.com/vchelaru/Gum) following the steps above. Make sure to download it to the same folder where you downloaded the FlatRedBall repository, and name the folder Gum. See below for an example. If you do not do this, you will have reference errors when opening the solution.
 
-    ![](media/2016-11-img\_583909d260b0c.png)
+    ![](.gitbook/assets/2016-11-img\_583909d260b0c.png)
 3.  Open the file **\<FlatRedBall Root>\FRBDK\Glue\Glue with All.sln.**
 
-    ![](media/2021-08-img\_6112b22407f6b.png)
+    ![](.gitbook/assets/2021-08-img\_6112b22407f6b.png)
 4.  To rebuild Glue with all plugins, select **Build** -> **Build Solution** in Visual Studio. You must **Build or Rebuild** the first time you run FlatRedBall. If you make further changes to any plugins, you must either build the entire solution, or build the project that contains the plugin. Simply building the GlueFormsCore project, or pressing F5 to build and run Glue, will not build all plugins.\\
 
-    <figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
 5. Set **GlueFormsCore** as the **StartUp Project**
 
-<figure><img src=".gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
 
 6. Building the solution creates an .exe from which the FRB editor can be run. You can find this .exe at \<your git repo location>\FlatRedBall\FRBDK\Glue\Glue\bin\Debug\GlueFormsCore.exe. Alternatively, you can start up the FRB editor from Visual Studio. Doing so in **Debug Mode** allows you to see error messages in case the FRB editor throws an exception.
 
-<figure><img src=".gitbook/assets/image (128).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (300).png" alt="" width="563"><figcaption></figcaption></figure>
 
 For Rider users, you will need to set GlueFormsCore as the project to run in the Configuration dialog.\
 \
-![](<.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)\\
+![](<.gitbook/assets/image (166).png>)\\
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
 
 It's important that Gum and FlatRedBall are checked out to the same folder. For example, you may have:
 
@@ -172,11 +172,11 @@ The Glue project references Gum projects, so the two project folders must be in 
 
 If the references are correct, your window should look similar to the following image:
 
-![](media/2020-04-img\_5e9098ba3d6ef.png)
+![](.gitbook/assets/2020-04-img\_5e9098ba3d6ef.png)
 
 If your references are broken, then you may see something similar to the following image:
 
-<figure><img src="media/2020-04-img_5e9098e234103.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/2020-04-img_5e9098e234103.png" alt=""><figcaption></figcaption></figure>
 
 Notice that the projects are marked as **unloaded**. To solve this make sure that both of the projects (FlatRedBall and Gum) are in the same root folder. If you unzipped the files, then they may need to be moved up one folder.
 

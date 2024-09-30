@@ -31,7 +31,7 @@ for (int i = 0; i < 200; i++)
 Camera.Main.RotationYVelocity = -.1f;
 ```
 
-<figure><img src="../../../media/migrated_media-200SpritesWithCulling.png" alt=""><figcaption><p>Sprites which are not drawn due to culling</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/migrated_media-200SpritesWithCulling.png" alt=""><figcaption><p>Sprites which are not drawn due to culling</p></figcaption></figure>
 
 To fix this the Camera's CameraCullMode can be changed to None:
 
@@ -46,4 +46,4 @@ Camera.Main.RotationYVelocity = -.1f;
 Camera.Main.CameraCullMode = CameraCullMode.None;
 ```
 
-![Sprites drawn into the distance after setting CameraCullMode to None](../../../media/migrated\_media-200SpritesCullingOff.png)
+![Sprites drawn into the distance after setting CameraCullMode to None](../../../.gitbook/assets/migrated\_media-200SpritesCullingOff.png)

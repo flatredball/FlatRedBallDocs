@@ -1,4 +1,4 @@
-# spline
+# Spline
 
 ### Introduction
 
@@ -49,11 +49,11 @@ using FlatRedBall.Math.Splines;
  spline.Visible = true;
 ```
 
-![SplineExample1.png](../../../../../../media/migrated_media-SplineExample1.png)
+![SplineExample1.png](../../../../../.gitbook/assets/migrated\_media-SplineExample1.png)
 
 ### Creating a Spline from .splx
 
-The following code creates a Spline by loading a .splx file. First you should add the file to your project. Information on adding files can be found [here](../../../../../../frb/docs/index.php). **File used:**[ExampleSpline.splx](../../../../../../frb/docs/images/3/36/ExampleSpline.splx) **Add the following using statement:**
+The following code creates a Spline by loading a .splx file. First you should add the file to your project. Information on adding files can be found [here](../../../../../frb/docs/index.php). **File used:**[ExampleSpline.splx](../../../../../frb/docs/images/3/36/ExampleSpline.splx) **Add the following using statement:**
 
 ```
 using FlatRedBall.Math.Splines;
@@ -71,16 +71,16 @@ using FlatRedBall.Math.Splines;
  splineList[0].Visible = true;
 ```
 
-![SplineFromSplx.png](../../../../../../media/migrated_media-SplineFromSplx.png) There are a few things to keep in mind:
+![SplineFromSplx.png](../../../../../.gitbook/assets/migrated\_media-SplineFromSplx.png) There are a few things to keep in mind:
 
-* A .splx file can contain multiple Splines. In this case the .splx file only contains one. Splines implement the [INameable](../../../../../../frb/docs/index.php) interface, so you can find Splines in the loaded list by their name if your .splx file contains multiple Splines.
+* A .splx file can contain multiple Splines. In this case the .splx file only contains one. Splines implement the [INameable](../../../../../frb/docs/index.php) interface, so you can find Splines in the loaded list by their name if your .splx file contains multiple Splines.
 * In this example I added the .splx to my project's "Content" folder. Therefore, the file name is prepended with "Content\\". Make sure to modify this according to where you place your file.
-* In FlatRedBall XNA and FlatRedBall MDX, this file should be loaded "from file". In FlatSilverBall, it should be set as Content. For more information, see [this article on adding files](../../../../../../frb/docs/index.php).
+* In FlatRedBall XNA and FlatRedBall MDX, this file should be loaded "from file". In FlatSilverBall, it should be set as Content. For more information, see [this article on adding files](../../../../../frb/docs/index.php).
 * .splx files store Velocities, so you do not need to call CalculateVelocities. In fact, it is possible for .splx files to store velocities that have been modified if the tool that has created the .splx supports handles. To preserve the original content, you should only call CalculateAccelerations after the Spline is loaded.
 
 ### Positioning objects using a Spline
 
-Objects can be easily positioned using a Spline. The GetPositionAtTime method returns a Vector3. It takes a time argument which is the amount of time from the beginning of the Spline. The following code positions a Sprite according to how much time has passed since the user has pressed the space bar. This code example also skips over the steps to create a valid Spline and [Sprite](../../../../../../frb/docs/index.php). **Add the following at class scope:**
+Objects can be easily positioned using a Spline. The GetPositionAtTime method returns a Vector3. It takes a time argument which is the amount of time from the beginning of the Spline. The following code positions a Sprite according to how much time has passed since the user has pressed the space bar. This code example also skips over the steps to create a valid Spline and [Sprite](../../../../../frb/docs/index.php). **Add the following at class scope:**
 
 ```
 double mTimeSplineMovementStarted = 0;
@@ -116,6 +116,6 @@ mySpline.CalculateAccelerations();
 
 ### Spline Members
 
-* [FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline](../../../../../../frb/docs/index.php)
+* [FlatRedBall.Math.Splines.Spline.GetPositionAtLengthAlongSpline](../../../../../frb/docs/index.php)
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.

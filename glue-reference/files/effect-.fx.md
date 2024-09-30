@@ -6,7 +6,7 @@ Shader Effect Files (.fx) can be added to FlatRedBall projects. At runtime this 
 
 Effect files require the use of the MonoGame Content Pipeline. If you are using the FlatRedBall Editor, this is automatically handled for you. You can verify that this is the case by checking the UseContentPipeline property.
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption><p>Effect file using content pipeline</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (211).png" alt=""><figcaption><p>Effect file using content pipeline</p></figcaption></figure>
 
 ### Effect Files in FNA
 

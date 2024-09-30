@@ -1,4 +1,4 @@
-# targetelapsedtime
+# TargetElapsedTime
 
 ### Introduction
 
@@ -16,7 +16,7 @@ The following code will tell the game logic to run at 10 frames per second:
 
 ### Fixing collision tunneling with higher frame rate
 
-As explained in [this article](../../../../frb/docs/index.php), tunneling occurs when the speed of a moving object is large relative to objects it is colliding against. More accurately, tunneling occurs when the amount of distance an object travels in one frame is large relative to the objects it is colliding against. By increasing the frame rate of your game, you can reduce the distance covered by an object per-frame. The following example presents a situation where a lot of tunneling is occurring, then shows how increasing the frame rate can solve this problem:
+As explained in [this article](../../../frb/docs/index.php), tunneling occurs when the speed of a moving object is large relative to objects it is colliding against. More accurately, tunneling occurs when the amount of distance an object travels in one frame is large relative to the objects it is colliding against. By increasing the frame rate of your game, you can reduce the distance covered by an object per-frame. The following example presents a situation where a lot of tunneling is occurring, then shows how increasing the frame rate can solve this problem:
 
 Add the following using statements:
 
@@ -83,7 +83,7 @@ for (int i = mCircles.Count - 1; i > -1; i--)
 }
 ```
 
-With the frame rate adjustment code commented (not used):![GameTunnelingExample.png](../../../../media/migrated_media-GameTunnelingExample.png) With the frame rate adjustment code used:![GameWithNoTunneling.png](../../../../media/migrated_media-GameWithNoTunneling.png)
+With the frame rate adjustment code commented (not used):![GameTunnelingExample.png](../../../.gitbook/assets/migrated\_media-GameTunnelingExample.png) With the frame rate adjustment code used:![GameWithNoTunneling.png](../../../.gitbook/assets/migrated\_media-GameWithNoTunneling.png)
 
 ### TargetElapsedTime and performance
 

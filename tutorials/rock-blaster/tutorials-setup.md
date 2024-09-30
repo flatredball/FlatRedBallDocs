@@ -18,11 +18,11 @@ Wait for your project to finish downloading and the Project Setup Wizard automat
 
 Check the **Custom (Advanced)** option.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
 Select Start Wizard from Scratch.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 
 We will change a few of the default options. Follow along with these images and make your options match.
 
@@ -46,11 +46,11 @@ Leave UI options unchanged. We will use Gum to display game HUD.
 
 Set the Game Resolution to 800x600 and the Game Scale% to 100. Uncheck all other **Camera** options. Our game will not have a Camera which moves.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
 
 Skip the option to Download/Import screens by clicking **Next**.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
 
 Skip the option to add additional objects by clicking **Next**.
 
@@ -62,7 +62,7 @@ Click **Done**. Wait a moment and your project will be all set up.
 
 If we run our game now we will see our player which is a white circle.
 
-![](../../media/2021-03-img\_604cda3d3d060.png)
+![](../../.gitbook/assets/2021-03-img\_604cda3d3d060.png)
 
 ### Conclusion
 

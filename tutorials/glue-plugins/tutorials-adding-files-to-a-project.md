@@ -23,7 +23,7 @@ Next we'll add files that we want added to our project. To do this:
 3. For each file in your project, right-click and select "Properties"
 4. Change "Build Action" to "Embedded Resource"
 
-![BuildActionEmbeddedResource.png](../../media/migrated\_media-BuildActionEmbeddedResource.png)
+![BuildActionEmbeddedResource.png](../../.gitbook/assets/migrated\_media-BuildActionEmbeddedResource.png)
 
 ### Editing the PluginBase-inheriting Class
 

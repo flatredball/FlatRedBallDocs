@@ -94,7 +94,7 @@ Add the following in Update:
  }
 ```
 
-![CircleBounceCollision.png](../../../../../media/migrated\_media-CircleBounceCollision.png)
+![CircleBounceCollision.png](../../../../../.gitbook/assets/migrated\_media-CircleBounceCollision.png)
 
 ### Reacting to CollideAgainstBounce
 
@@ -194,7 +194,7 @@ Add the following in Update:
  }
 ```
 
-![CollideAgainstBouncAndVelocity.png](../../../../../media/migrated\_media-CollideAgainstBouncAndVelocity.png)
+![CollideAgainstBouncAndVelocity.png](../../../../../.gitbook/assets/migrated\_media-CollideAgainstBouncAndVelocity.png)
 
 ### CollideAgainstBounce for platformers
 

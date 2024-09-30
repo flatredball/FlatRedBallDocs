@@ -1,4 +1,4 @@
-# hascursorover
+# HasCursorover
 
 ### Introduction
 
@@ -19,11 +19,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-
-
-<figure><img src="../../../../media/2019-09-20_05-26-27.gif" alt=""><figcaption></figcaption></figure>
-
-   &#x20;
+<figure><img src="../../../.gitbook/assets/2019-09-20_05-26-27.gif" alt=""><figcaption></figcaption></figure>
 
 ### Code Example - Detecting Screen Coordinates on GraphicalUiElement
 
@@ -50,5 +46,3 @@ managers.Renderer.Camera.ScreenToWorld(
 
 var isOver = graphicalUiElement.HasCursorOver(worldX, worldY);
 ```
-
-&#x20;     &#x20;

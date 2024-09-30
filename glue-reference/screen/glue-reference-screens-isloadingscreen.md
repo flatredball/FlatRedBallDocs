@@ -1,4 +1,4 @@
-# glue-reference-screens-isloadingscreen
+# IsLoadingScreen
 
 ### Introduction
 
@@ -6,7 +6,7 @@ The IsLoadingScreen property can be used to mark a Screen as a loading screen. L
 
 ### Setting IsLoadingScreen
 
-To mark a Screen as a loading screen, simply set the IsLoadingScreen property to "True": ![IsLoadingScreen.PNG](../../../../media/migrated_media-IsLoadingScreen.PNG)
+To mark a Screen as a loading screen, simply set the IsLoadingScreen property to "True": ![IsLoadingScreen.PNG](../../.gitbook/assets/migrated\_media-IsLoadingScreen.PNG)
 
 ### Using a loading screen
 
@@ -14,8 +14,6 @@ For this example we'll assume you have a Screen called LoadingScreen which has i
 
 1. Identify which screen transitions you want to use a LoadingScren between. For example, you may want to use the LoadingScreen between a main menu screen and the game screen if the game screen has a lot of content to load.
 2. Locate where you want the transition to occur (like when the user presses the Start button or clicks on a button) and add the following code:
-
-&#x20;
 
 ```
  string screenToLoadTo = typeof(GameScreen).FullName;
@@ -53,6 +51,6 @@ The TransitionToScreen method is an easy way to move between two Screens. It wil
 The IsLoadingScreen property can help you create loading screens quickly; however there are some things to consider which can make the user experience better:
 
 * Keep the logic in the loading screens simple to reduce the amount of resources spent on running your loading screen.
-* Keep the amount of content loaded on your Screen low. If this is not possible or desirable, consider making the content that is part of your loading screen also a part of Global Content Files. Your game will pre-load this content if you are using [async global content loading](../../../../frb/docs/index.php).
-* Consider making your loading screens use a [global content manager](../../../../frb/docs/index.php). This means the loading screen's content (such as used textures and Scenes) will always remain in memory making transitioning to a loading screen very fast.
+* Keep the amount of content loaded on your Screen low. If this is not possible or desirable, consider making the content that is part of your loading screen also a part of Global Content Files. Your game will pre-load this content if you are using [async global content loading](../../frb/docs/index.php).
+* Consider making your loading screens use a [global content manager](../../frb/docs/index.php). This means the loading screen's content (such as used textures and Scenes) will always remain in memory making transitioning to a loading screen very fast.
 * Be careful using minigames in your loading screen. There is currently [a patent held by Namco](http://www.google.com/patents?vid=5718632) on the use of minigames in loading screens.

@@ -38,5 +38,5 @@ for (int i = 0; i < 200; i++)
 SpriteManager.OrderedSortType = SortType.DistanceAlongForwardVector;
 ```
 
-![3DCamera.png](../../media/migrated\_media-3DCamera.png)
+![3DCamera.png](../../.gitbook/assets/migrated\_media-3DCamera.png)
 

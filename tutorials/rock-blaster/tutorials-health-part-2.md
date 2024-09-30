@@ -36,7 +36,7 @@ As indicated above, we will need a variable to define the starting value of the 
 6. Click **OK**
 7. Set the value of **StartingHealth** to 6
 
-![](../../media/2021-03-img\_604e1be1ebb24.png)
+![](../../.gitbook/assets/2021-03-img\_604e1be1ebb24.png)
 
 ### Defining and setting Health
 
@@ -124,7 +124,7 @@ public int Health
 
 If the Player takes damage now. the HealthBar updates to show how much health the player has left.
 
-![](../../media/2021-03-img\_604e2256cdb5a.png)
+![](../../.gitbook/assets/2021-03-img\_604e2256cdb5a.png)
 
 ### Conclusion
 

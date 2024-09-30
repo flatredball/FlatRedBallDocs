@@ -1,4 +1,4 @@
-# thin-polygon-problem
+# Thin Polygon Problem
 
 ### Introduction
 
@@ -14,7 +14,7 @@ Of course you may be wondering "what defines thin?" Whether a Polygon is thin or
 
 ### Why the thin Polygon problem exists
 
-The FlatRedBall collision system is a "historyless" collision system. This means that the collision performed at any given time does not consider the previous positions of objects. This approach has its benefits - it uses less memory, is slightly faster, and is very flexible. Of course, this can result in the bug discussed in this article. Let's look at an example of why a historyless collision system can result in tunneling ![TunnelingA.png](../../../../../../media/migrated_media-TunnelingA.png) Frame A shows a yellow ball (could be any shape really) falling towards a light-blue surface. In this example we'll assume that the ball is traveling at a very high speed. There is no collision for frame A, so the ball continues to fall normally. ![TunnelingB.png](../../../../../../media/migrated_media-TunnelingB.png) Because the ball traveled so quickly, it has nearly moved completely through the surface in one frame. Since FlatRedBall does look at the ball's position in frame A (it's historyless), the collision that it performs results in what we see in frame C: ![TunnelingC.png](../../../../../../media/migrated_media-TunnelingC.png) If you were to look only at frame B without looking at frame A, you may also prefer the end-position resulting in C.
+The FlatRedBall collision system is a "historyless" collision system. This means that the collision performed at any given time does not consider the previous positions of objects. This approach has its benefits - it uses less memory, is slightly faster, and is very flexible. Of course, this can result in the bug discussed in this article. Let's look at an example of why a historyless collision system can result in tunneling ![TunnelingA.png](../../../../../.gitbook/assets/migrated\_media-TunnelingA.png) Frame A shows a yellow ball (could be any shape really) falling towards a light-blue surface. In this example we'll assume that the ball is traveling at a very high speed. There is no collision for frame A, so the ball continues to fall normally. ![TunnelingB.png](../../../../../.gitbook/assets/migrated\_media-TunnelingB.png) Because the ball traveled so quickly, it has nearly moved completely through the surface in one frame. Since FlatRedBall does look at the ball's position in frame A (it's historyless), the collision that it performs results in what we see in frame C: ![TunnelingC.png](../../../../../.gitbook/assets/migrated\_media-TunnelingC.png) If you were to look only at frame B without looking at frame A, you may also prefer the end-position resulting in C.
 
 ### Solutions to the thin Polygon problem
 
@@ -26,7 +26,7 @@ The first solution to the thin polygon problem is to simply make your objects no
 
 #### Increasing the frame rate
 
-Increasing the frame rate of your game by reducing the [Game's TargetElapsedTime](../../../../microsoft-xna-framework/game/targetelapsedtime.md) is an effective but very expensive approach to solving this problem. More information on this can be found [here](../../../../../../frb/docs/index.php).
+Increasing the frame rate of your game by reducing the [Game's TargetElapsedTime](../../../../microsoft-xna-framework/game/targetelapsedtime.md) is an effective but very expensive approach to solving this problem. More information on this can be found [here](../../../../../frb/docs/index.php).
 
 #### Multiple collision calls per frame
 
@@ -36,8 +36,6 @@ One solution which simulates increasing the frame rate, but isolates the perform
 2. At the beginning of the frame, compare subtract the last position from the current position to identify the distance traveled.
 3. Determine how much you want to subdivide your frame.
 4. Write a loop as follows:
-
-&#x20;
 
 ```
 for(int i = 0; i < numberOfSubdivisions; i++)
@@ -51,7 +49,7 @@ for(int i = 0; i < numberOfSubdivisions; i++)
 
 #### Limiting movement speed
 
-One of the most common situations where tunneling exists is in platformers that use YAcceleration for gravity. The reason this can cause so many problems is because the speed that the distance that the game character falls impacts how fast the character hits the ground. If your game includes large drops, you may notice that the character sometimes falls through the world when falling long distances. Most professionally-made platformers include a maximum falling speed for game play reasons. Implementing this maximum falling speed (also known as "terminal velocity") can both improve the feel of your game as well as possibly solve tunneling. For a discussion on how to limit falling speed, [see this article](../../../../../../frb/docs/index.php).
+One of the most common situations where tunneling exists is in platformers that use YAcceleration for gravity. The reason this can cause so many problems is because the speed that the distance that the game character falls impacts how fast the character hits the ground. If your game includes large drops, you may notice that the character sometimes falls through the world when falling long distances. Most professionally-made platformers include a maximum falling speed for game play reasons. Implementing this maximum falling speed (also known as "terminal velocity") can both improve the feel of your game as well as possibly solve tunneling. For a discussion on how to limit falling speed, [see this article](../../../../../frb/docs/index.php).
 
 ### Sweeping Shape Collision
 
@@ -59,7 +57,7 @@ Depending on the shape of your object you may be able to create a swept shape. T
 
 #### Subdividing your Polygon
 
-So far we've talked about tunneling issues, but there are also situations where two polygons may report a collision, but not separate correctly. This occurs in the [example that uses the smiley polygon](../../../../../../frb/docs/index.php#Loading_Polygons_from_File_.28.plylstx.29) if you move the moving Polygon to the edges of the mouth polygon. To solve this, you can add additional points to the smiley polygon in the PolygonEditor as described [here](../../../../../../frb/docs/index.php#Add_Point_Button).
+So far we've talked about tunneling issues, but there are also situations where two polygons may report a collision, but not separate correctly. This occurs in the [example that uses the smiley polygon](../../../../../frb/docs/index.php#Loading\_Polygons\_from\_File\_.28.plylstx.29) if you move the moving Polygon to the edges of the mouth polygon. To solve this, you can add additional points to the smiley polygon in the PolygonEditor as described [here](../../../../../frb/docs/index.php#Add\_Point\_Button).
 
 ### Using simpler shapes
 

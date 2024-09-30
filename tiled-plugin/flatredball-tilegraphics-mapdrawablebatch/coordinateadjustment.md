@@ -10,11 +10,11 @@ By default this value is a very small positive value. At the time of this writin
 
 If CoordinateAdjustment is set to 0, then the texture coordinates are assigned according to the edges of the tiles. For example, a texture coordinate of 0 would use the area represented by the yellow are in the image below:
 
-![](../../media/2019-11-img\_5dd88d86d1723.png)
+![](../../.gitbook/assets/2019-11-img\_5dd88d86d1723.png)
 
 Increasing the CoordinateAdjustment value results in the yellow area shrinking.
 
-![](../../media/2019-11-img\_5dd88e0f3db47.png)
+![](../../.gitbook/assets/2019-11-img\_5dd88e0f3db47.png)
 
 ### Code Example
 

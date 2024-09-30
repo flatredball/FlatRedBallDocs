@@ -16,7 +16,7 @@ As mentioned in the introduction to this set of tutorials, this game will be bui
 
 For the ship, save the following four files to any location on your computer - remember where you save them as you will need to be able to find them:&#x20;
 
-![MainShip1.png](../../media/migrated\_media-MainShip1.png) ![MainShip2.png](../../media/migrated\_media-MainShip2.png) ![MainShip3.png](../../media/migrated\_media-MainShip3.png) ![MainShip4.png](../../media/migrated\_media-MainShip4.png)&#x20;
+![MainShip1.png](../../.gitbook/assets/migrated\_media-MainShip1.png) ![MainShip2.png](../../.gitbook/assets/migrated\_media-MainShip2.png) ![MainShip3.png](../../.gitbook/assets/migrated\_media-MainShip3.png) ![MainShip4.png](../../.gitbook/assets/migrated\_media-MainShip4.png)&#x20;
 
 We will use four files to support up to four players at the same time. Note that we are using four separate images, one for each player. Games often combine images into a single file which is called a sprite sheet. FlatRedBall supports working with individual files and sprite sheets.
 
@@ -51,7 +51,7 @@ Our Player contains multiple files, so we need to tell the Sprite which Texture 
 
 If we run the game now, we will see our ship displaying the MainShip1 Texture on its Sprite.
 
-![Player showing MainShip1 Texture](../../media/2021-03-img\_604cf6d4c6dec.png)
+![Player showing MainShip1 Texture](../../.gitbook/assets/2021-03-img\_604cf6d4c6dec.png)
 
 
 

@@ -1,8 +1,8 @@
-# ison3d
+# IsOn3d
 
 ### Introduction
 
-The IsOn3D method is a very powerful method that can be used to test if the cursor is over an object. IsOn3D is used by [Glue](../../../../../frb/docs/index.php) generated code to test if the Cursor is over an Entity if the Entity implements IClickable or IWindow. The IsOn3D method is very powerful and flexible. It considers:
+The IsOn3D method is a very powerful method that can be used to test if the cursor is over an object. IsOn3D is used by [Glue](../../../../frb/docs/index.php) generated code to test if the Cursor is over an Entity if the Entity implements IClickable or IWindow. The IsOn3D method is very powerful and flexible. It considers:
 
 * Object position
 * Camera position
@@ -52,7 +52,7 @@ for (int i = 0; i < mSprites.Count; i++)
 }
 ```
 
-![CursorIsOn3D.png](../../../../../media/migrated_media-CursorIsOn3D.png)
+![CursorIsOn3D.png](../../../../.gitbook/assets/migrated\_media-CursorIsOn3D.png)
 
 ### IsOn3D for clicking UI
 
@@ -66,11 +66,11 @@ if(GuiManager.Cursor.PrimaryClick && GuiManager.Cursor.IsOn3D(spriteInstance))
 }
 ```
 
-For more information on PrimaryClick, see the [PrimaryClick page](../../../../../frb/docs/index.php).
+For more information on PrimaryClick, see the [PrimaryClick page](../../../../frb/docs/index.php).
 
 ### IsOn3D and Layers
 
-The IsOn3D method supports [Layers](../../../../../frb/docs/index.php) as well. For example, assuming mySprite is a valid Sprite and myLayer is valid Layer:
+The IsOn3D method supports [Layers](../../../../frb/docs/index.php) as well. For example, assuming mySprite is a valid Sprite and myLayer is valid Layer:
 
 ```
 bool isCursorOn = GuiManager.Cursor.IsOn3D(mySprite, myLayer);

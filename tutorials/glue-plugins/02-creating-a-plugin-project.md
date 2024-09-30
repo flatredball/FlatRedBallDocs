@@ -16,18 +16,18 @@ Whether you create a new .sln depends on whether you plan on making a plugin tha
 2.  Select the option to create a new project\
 
 
-    <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Create a new project in Visual Studio</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (202).png" alt=""><figcaption><p>Create a new project in Visual Studio</p></figcaption></figure>
 3.  Select Class Library and click Next\
 
 
-    <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption><p>Select Class Library in Visual Studio</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption><p>Select Class Library in Visual Studio</p></figcaption></figure>
 4.  Enter a name and location for your new project and click Next\
 
 
-    <figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption><p>Selecting Project name and Location</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption><p>Selecting Project name and Location</p></figcaption></figure>
 5.  Select .NET 6.0 as the Framework - this is the current .NET version used in the FlatRedBall Editor as of January 2024, but it will likely change in the future. Click Create.
 
-    <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption><p>Select .NET Version</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (205).png" alt=""><figcaption><p>Select .NET Version</p></figcaption></figure>
 
 ### Linking Glue Libraries
 

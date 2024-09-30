@@ -4,9 +4,9 @@
 
 To "billboard" a Sprite means to adjust its rotation so that it is always facing the Camera. Billboarded sprites are only needed for games with a 3D camera. Note that billboarded sprites typically not used for UI because UI and HUD should be handled by Gum.
 
-Games like Doom used a billboard effect on enemies and items. Mario 64 also used a billboard effect on its trees. This effect is evident when running around billboarded Sprites. &#x20;
+Games like Doom used a billboard effect on enemies and items. Mario 64 also used a billboard effect on its trees. This effect is evident when running around billboarded Sprites.
 
-<figure><img src="../../../media/migrated_media-N64_super_mario_64_start.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/migrated_media-N64_super_mario_64_start.jpg" alt=""><figcaption></figcaption></figure>
 
 The AddSpriteToBillboard tells the calling Camera to hold a reference to the argument [Sprite](../sprite/) and adjust its rotation every frame so that it faces the Camera.
 

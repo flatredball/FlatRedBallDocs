@@ -1,4 +1,4 @@
-# 04-platformer-movement-values
+# Platformer Movement Values
 
 ### Introduction
 
@@ -25,7 +25,7 @@ To add a new movement value:
 2. Click the **Entity Input Movement** tab
 3.  Click the **Add Control Values** button
 
-    ![](../../../../media/2023-02-img_63e03a3868fc7.png)
+    ![](../../../.gitbook/assets/2023-02-img\_63e03a3868fc7.png)
 
 Set the following values:
 
@@ -38,7 +38,7 @@ Set the following values:
 * Hold to Jump Higher = true (click checkbox)
 * Max Jump Hold Time = .17
 
-![](../../../../media/2023-02-img_63e03a942a213.png)
+![](../../../.gitbook/assets/2023-02-img\_63e03a942a213.png)
 
 Repeat the process above to create a water movement. Click **Add Control Values** again, and set the following values:
 
@@ -60,8 +60,6 @@ Now that we have Ice and Water movement defined, we can write code in the Player
 1. Open the project in Visual Studio
 2. Open Player.cs
 3. Add the following code to CustomActivity:
-
-&#x20;
 
 ```
 private void CustomActivity()
@@ -95,14 +93,12 @@ private void CustomActivity()
 }
 ```
 
-&#x20; Now our Player will change movement values when moving on ice and solid ground.
+Now our Player will change movement values when moving on ice and solid ground.
 
 ###
 
 ### Conclusion
 
-This concludes the platformer movement value tutorials where we use multiple TileShapeCollections to change the movement values for the player between regular ground/air movement, ice, and water movement. 
+This concludes the platformer movement value tutorials where we use multiple TileShapeCollections to change the movement values for the player between regular ground/air movement, ice, and water movement.
 
-<figure><img src="../../../../media/2021-04-05_16-33-47.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/2021-04-05_16-33-47.gif" alt=""><figcaption></figcaption></figure>

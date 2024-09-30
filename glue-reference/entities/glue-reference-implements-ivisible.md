@@ -9,13 +9,10 @@ The Implements IVisible property controls whether an entity implements the IVisi
   * Children of the entity will be hidden if instances of the entity have their Visible property set to false
 * The entity provides the Visible variable for tunneling and assignment per-instance
 
-
-
-<figure><img src="../../media/migrated_media-ImplementsIVisibleGeneralExample.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-ImplementsIVisibleGeneralExample.png" alt=""><figcaption></figcaption></figure>
 
 ### What is "IVisible"?
 
 IVisible is a code interface defined in FlatRedBall. This interface primarily provides a Visible property. For information on working with IVisible in code, see the [IVisible page](../../api/flatredball/graphics/ivisible/).
 
 ### Common Usage
-

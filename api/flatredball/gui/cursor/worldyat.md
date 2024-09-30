@@ -1,12 +1,12 @@
-# worldyat
+# WorldYAt
 
 ### Introduction
 
-The WorldXAt and WorldYAt methods are useful for finding the absolute world position of the Cursor at a given Z value. These methods should generally be used only when dealing with an unrotated [Camera](../../../../../frb/docs/index.php). For more information on limitations see below. If you are dealing with a [2D Camera](../../../../../frb/docs/index.php) (the default) then you can use a Z value of 0 in the WorldXAt and WorldYAt functions.
+The WorldXAt and WorldYAt methods are useful for finding the absolute world position of the Cursor at a given Z value. These methods should generally be used only when dealing with an unrotated [Camera](../../../../frb/docs/index.php). For more information on limitations see below. If you are dealing with a [2D Camera](../../../../frb/docs/index.php) (the default) then you can use a Z value of 0 in the WorldXAt and WorldYAt functions.
 
 ### Code Example
 
-The following code creates a [Circle](../../../../../frb/docs/index.php) which moves with the Cursor.
+The following code creates a [Circle](../../../../frb/docs/index.php) which moves with the Cursor.
 
 Add the following using statements:
 
@@ -35,7 +35,7 @@ circle.X = GuiManager.Cursor.WorldXAt(0);
 circle.Y = GuiManager.Cursor.WorldYAt(0);
 ```
 
-![CursorWorldXAt.png](../../../../../media/migrated_media-CursorWorldXAt.png)
+![CursorWorldXAt.png](../../../../.gitbook/assets/migrated\_media-CursorWorldXAt.png)
 
 ### Additional Arguments
 
@@ -83,4 +83,4 @@ mCursorSprite.Y = cursor.WorldYAt(0, SpriteManager.TopLayer);
 
 ### Method Limitations
 
-The WorldXAt and WorldYAt methods may giave unexpected results if the Camera is rotated. These methods should only be used when the Camera is facing down the Z axis (default orientation). For a rotated [Camera](../../../../../frb/docs/index.php), the [Cursor's GetRay](../../../../../frb/docs/index.php) method should be used. If interested in object picking, you can use the [Cursor's IsOn3D method](../../../../../frb/docs/index.php) or the [IClickable](../../../../../frb/docs/index.php) or [IWindow](../../../../../frb/docs/index.php) interfaces for Entities in Glue.
+The WorldXAt and WorldYAt methods may giave unexpected results if the Camera is rotated. These methods should only be used when the Camera is facing down the Z axis (default orientation). For a rotated [Camera](../../../../frb/docs/index.php), the [Cursor's GetRay](../../../../frb/docs/index.php) method should be used. If interested in object picking, you can use the [Cursor's IsOn3D method](../../../../frb/docs/index.php) or the [IClickable](../../../../frb/docs/index.php) or [IWindow](../../../../frb/docs/index.php) interfaces for Entities in Glue.

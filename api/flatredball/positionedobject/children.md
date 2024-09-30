@@ -1,8 +1,8 @@
-# children
+# Children
 
 ### Introduction
 
-The Children property contains a list of PositionedObjects which are attached to this. Initially the list is empty, but it is automatically populated when one PositionedObject is attached to another using the [AttachTo](../../../../frb/docs/index.php) method.
+The Children property contains a list of PositionedObjects which are attached to this. Initially the list is empty, but it is automatically populated when one PositionedObject is attached to another using the [AttachTo](../../../frb/docs/index.php) method.
 
 ### Code Example
 
@@ -31,4 +31,4 @@ string displayString =
 TextManager.AddText(displayString);
 ```
 
-![ChildrenTutorial.png](../../../../media/migrated_media-ChildrenTutorial.png)
+![ChildrenTutorial.png](../../../.gitbook/assets/migrated\_media-ChildrenTutorial.png)

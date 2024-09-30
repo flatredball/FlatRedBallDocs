@@ -18,7 +18,7 @@ To create a new Layer:
 4. Enter a name for the Layer
 5. Click **OK**
 
-<figure><img src="../../../../media/2016-01-01_12-19-51.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2016-01-01_12-19-51.gif" alt=""><figcaption></figcaption></figure>
 
 ### Layer-able Types
 
@@ -66,7 +66,7 @@ In code, layers are created through the [SpriteManager](../../spritemanager/). T
  farSprite.Z = -5;
 ```
 
-![LayeredSpriteBehindUnlayered.png](../../../../media/migrated\_media-LayeredSpriteBehindUnlayered.png)
+![LayeredSpriteBehindUnlayered.png](../../../../.gitbook/assets/migrated\_media-LayeredSpriteBehindUnlayered.png)
 
 ### AddToLayer Method
 

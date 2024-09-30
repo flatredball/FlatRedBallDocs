@@ -23,15 +23,15 @@ Visual Studio is not a requirement for using FlatRedBall. You can write, compile
 
 Open the folder where the .sln is located for your project.
 
-![](../../media/2023-08-img\_64d8e28919fe6.png)
+![](../../.gitbook/assets/2023-08-img\_64d8e28919fe6.png)
 
 Select the folder where you have unzipped your project earlier.
 
-![](../../media/2023-08-img\_64d8e2d376c20.png)
+![](../../.gitbook/assets/2023-08-img\_64d8e2d376c20.png)
 
 If asked, check **Yes, I trust the authors**.
 
-![](../../media/2023-08-img\_64d8e207f1e75.png)
+![](../../.gitbook/assets/2023-08-img\_64d8e207f1e75.png)
 
 ### Alternative - Adding FlatRedBall to your MonoGame Project
 
@@ -41,7 +41,7 @@ If you have an existing MonoGame project, you can add FlatRedBall with the follo
 2. Add FlatRedBall reference to your project
    1.  If targeting Desktop GL, you can add FlatRedBall through the FlatRedBall NuGet package\\
 
-       <figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>FlatRedBall DesktopGL NuGet Package</p></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (184).png" alt=""><figcaption><p>FlatRedBall DesktopGL NuGet Package</p></figcaption></figure>
    2. If targeting other platforms, you will need to manually add the FlatRedBall .dlls to your project:
       1. Download the .dll for the project you are working on from this folder: [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/SingleDlls/)
       2. Save the .dll to a location relative to your project, such as a Libraries folder
@@ -75,7 +75,7 @@ FlatRedBall requires a shader file for rendering. You need to add this to your p
 3. Add this file to your Visual Studio project (.csproj)
 4. Mark the file as **Copy if newer**
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>shader.xnb set to Copy if newer</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (185).png" alt=""><figcaption><p>shader.xnb set to Copy if newer</p></figcaption></figure>
 
 ### Running Your FlatRedBall Project With Visual Studio
 
@@ -84,11 +84,11 @@ To run your newly-created project:
 1. Double-click the .sln file to open it in Visual Studio
 2. Once your project opens, click the **Start** button in Visual Studio
 
-<figure><img src="../../media/2017-09-img_59bff6110e49e.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2017-09-img_59bff6110e49e.png" alt=""><figcaption></figcaption></figure>
 
 Your project should compile and run, displaying an empty (black) screen.
 
-![Empty FlatRedBall game showing an empty black screen](../../media/2017-09-img\_59bff64728002.png)
+![Empty FlatRedBall game showing an empty black screen](../../.gitbook/assets/2017-09-img\_59bff64728002.png)
 
 ### Running your Project Without Visual Studio
 

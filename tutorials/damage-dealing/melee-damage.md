@@ -12,19 +12,19 @@ Melee attacks increase the complexity of games because they result in entities t
 
 First, mark the Player entity as both IDamageable and IDamageArea.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting a Player as an IDamageable and IDamageArea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption><p>Setting a Player as an IDamageable and IDamageArea</p></figcaption></figure>
 
 Repeat the same for the Enemy entity.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting an Enemy as an IDamageable and IDamageArea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (100).png" alt=""><figcaption><p>Setting an Enemy as an IDamageable and IDamageArea</p></figcaption></figure>
 
 Next, we'll add a collision object to the Player for melee attacks. This can be any type of shape, but we'll use an AxisAlignedRectangle for this tutorial. Be sure to give the new shape a name that clearly explains its purpose, such as **MeleeCollision**.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Adding MeleeCollision to Player</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (95).png" alt=""><figcaption><p>Adding MeleeCollision to Player</p></figcaption></figure>
 
 Adjust the MeleeCollision so that it is positioned outside of the Player entity. You can use [Live Edit](../../glue-reference/enable-live-edit/) to iterate quickly on this.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Modifying the MeleeCollision</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption><p>Modifying the MeleeCollision</p></figcaption></figure>
 
 By default this new shape is used in all relationships which use the Player's **\<Entire Object>,** which is the default for all collisions. For example, the PlayerVsSolidCollision in GameScreen uses this option, so the newly-created MeleeCollision collides with the map's SolidCollision.
 
@@ -32,7 +32,7 @@ By default this new shape is used in all relationships which use the Player's **
 
 Typically, collision shapes which are added for a special purpose (such as only dealing damage to Enemies) should not be used for all collision relationships. We can fix this by setting the MeleeCollision's IncludeInICollidable to false.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting MeleeCollision's IncludeInICollidable to false</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (97).png" alt=""><figcaption><p>Setting MeleeCollision's IncludeInICollidable to false</p></figcaption></figure>
 
 Now the MeleeCollision will only be considered in collision relationships which explicitly select it in the Subcollision dropdown (which we'll do later in this tutorial).
 
@@ -53,13 +53,13 @@ We need to have a collision relationship between players and enemies, so we can 
 
 Notice that the newly-created collision relationship has the option for dealing damage checked, and that both the player and enemy will receive damage.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Default Deal Damage checkbox</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (98).png" alt=""><figcaption><p>Default Deal Damage checkbox</p></figcaption></figure>
 
 This collision relationship should only deal damage to the player if the player collides with the enemy. This collision relationship should not deal any damage to the enemy.
 
 We will handle the melee collision (Player dealing damage to Enemy) in a different collision relationship that has its Subcollision set to MeleeCollision. Since we want this collision relationship to deal damage _one way_, we need to handle dealing damage in code. First, uncheck the option to deal damage in the collision relationship, and click the button to add a new event.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Uncheck automatic damage dealing, add an event to the collision relationship</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (99).png" alt=""><figcaption><p>Uncheck automatic damage dealing, add an event to the collision relationship</p></figcaption></figure>
 
 By checking the Add Event button, the FRB editor adds an event in GameScreen.Event.cs which we can fill in with our collision logic. To deal damage from the enemy to the player, add the following code:
 
@@ -105,7 +105,7 @@ For this tutorial we will implement invulnerability time for the Player and Enem
 
 To add invulnerability time to the player, select the Player and change the **Invulnerability Time After Damage** variable.
 
-<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Setting the Player's Invulnerability Time After Damage to 1 second</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (277).png" alt=""><figcaption><p>Setting the Player's Invulnerability Time After Damage to 1 second</p></figcaption></figure>
 
 Now, the player can only receive damage one time every second. We can see this is the case because the player survives much longer (about 10 seconds) when overlapping the enemy.
 
@@ -125,7 +125,7 @@ To create another collision relationship for player vs enemy:
 3. Uncheck the damage dealing check box
 4. Click the **Add Event** button
 
-<figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption><p>PlayerMeleeCollisionVsEnemy relationship</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption><p>PlayerMeleeCollisionVsEnemy relationship</p></figcaption></figure>
 
 Now we can modify the damage dealing code in GameScreen.Event.cs:
 
@@ -148,7 +148,7 @@ Notice this code is similar to the collision code used to deal damage to the Pla
 
 You may also want to set the Enemy's Invulnerability Time After Damage to some non-zero value. Keep in mind that doing so will affect the invulnerability time of the enemy from all damage. If you worked through this tutorial by continuing work from previous tutorials, then this code will change the behavior of how enemies take damage.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption><p>Setting Enemy Invulnerability Time After Damage</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (278).png" alt=""><figcaption><p>Setting Enemy Invulnerability Time After Damage</p></figcaption></figure>
 
 Notice that the invulnerability time is lower for enemies than for players. You can tune this value to get the right feel for your game.
 

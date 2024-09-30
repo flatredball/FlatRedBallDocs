@@ -1,12 +1,12 @@
-# pulse
+# Pulse
 
 ### Introduction
 
-The Pulse method creates a recurring set of instructions used to change the argument [IScalable's](../../../../../frb/docs/index.php) Scale and Scale Velocity. The result is a pulsing effect.
+The Pulse method creates a recurring set of instructions used to change the argument [IScalable's](../../../../frb/docs/index.php) Scale and Scale Velocity. The result is a pulsing effect.
 
 ### Code Example
 
-The following creates a [Sprite](../../../../../frb/docs/index.php) which pulses using a set of defined parameters.
+The following creates a [Sprite](../../../../frb/docs/index.php) which pulses using a set of defined parameters.
 
 Add the following using statements:
 
@@ -35,4 +35,4 @@ Add the following to Initialize after initializing FlatRedBall;
      period);
 ```
 
-![InstructionManagerPulse.png](../../../../../media/migrated_media-InstructionManagerPulse.png)
+![InstructionManagerPulse.png](../../../../.gitbook/assets/migrated\_media-InstructionManagerPulse.png)

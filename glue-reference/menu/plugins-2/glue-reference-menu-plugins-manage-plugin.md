@@ -6,7 +6,7 @@ The Manage Plugins menu item lets you view which plugins are installed, whether 
 
 &#x20;
 
-<figure><img src="../../../media/2017-06-img_59484f8907439.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2017-06-img_59484f8907439.png" alt=""><figcaption></figcaption></figure>
 
 ### Location
 

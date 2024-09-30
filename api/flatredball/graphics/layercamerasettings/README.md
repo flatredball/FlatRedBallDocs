@@ -1,8 +1,8 @@
-# layercamerasettings
+# LayerCameraSettings
 
 ### Introduction
 
-The LayerCameraSettings class is a class which can be used to override the settings of a [FlatRedBall.Camera](../../../../../frb/docs/index.php) on a by [FlatRedBall.Graphics.Layer](../../../../../frb/docs/index.php) basis. LayerCameraSettings can be used to achieve the following:
+The LayerCameraSettings class is a class which can be used to override the settings of a [FlatRedBall.Camera](../../../../frb/docs/index.php) on a by [FlatRedBall.Graphics.Layer](../../../../frb/docs/index.php) basis. LayerCameraSettings can be used to achieve the following:
 
 * Adding a 2D layer when the main Camera is 3D
 * Adding a 3D layer when the main Camera is 2D
@@ -11,7 +11,7 @@ The LayerCameraSettings class is a class which can be used to override the setti
 
 ### Code Example
 
-The following code creates a [FlatRedBall.Graphics.Layer](../../../../../frb/docs/index.php) which renders in 2D even though the camera is rendering in 3D: Add the following using statement:
+The following code creates a [FlatRedBall.Graphics.Layer](../../../../frb/docs/index.php) which renders in 2D even though the camera is rendering in 3D: Add the following using statement:
 
 ```
 using FlatRedBall.Graphics;
@@ -37,8 +37,8 @@ sprite.PixelSize = 1;
 SpriteManager.AddToLayer(sprite, layer);
 ```
 
-![2DLayerCameraSettings.png](../../../../../media/migrated_media-2DLayerCameraSettings.png)
+![2DLayerCameraSettings.png](../../../../.gitbook/assets/migrated\_media-2DLayerCameraSettings.png)
 
-### &#x20;LayerCameraSettings and Glue Layers
+### LayerCameraSettings and Glue Layers
 
-If a Layer is added through Glue, the generated code for the layer will instantiate a new LayerCameraSettings and add it to the Layer. By default these settings will match the camera at the time of Layer creation. &#x20;
+If a Layer is added through Glue, the generated code for the layer will instantiate a new LayerCameraSettings and add it to the Layer. By default these settings will match the camera at the time of Layer creation.

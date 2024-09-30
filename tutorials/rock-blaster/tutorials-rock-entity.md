@@ -8,22 +8,22 @@ This tutorial will define the Rock entity and add it to our GameScreen so that w
 
 As you might have guessed, the first step is to add PNGs and a Sprite to the Rock entity. To add the PNGs:
 
-1. Download the following four images: ![Rock1.png](../../media/migrated\_media-Rock1.png)![Rock2.png](../../media/migrated\_media-Rock2.png)![Rock3.png](../../media/migrated\_media-Rock3.png)![Rock4.png](../../media/migrated\_media-Rock4.png)
+1. Download the following four images: ![Rock1.png](../../.gitbook/assets/migrated\_media-Rock1.png)![Rock2.png](../../.gitbook/assets/migrated\_media-Rock2.png)![Rock3.png](../../.gitbook/assets/migrated\_media-Rock3.png)![Rock4.png](../../.gitbook/assets/migrated\_media-Rock4.png)
 2. Expand the **Rock** Entity in Glue
 3. Drag+drop the four files into the **Files** folder
 
-<figure><img src="../../media/2016-01-2021_March_13_161132.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-01-2021_March_13_161132.gif" alt=""><figcaption></figcaption></figure>
 
 Now you should have four files in the Rock entity. Like before, the PNG files will be copied into the game project. To add the Sprite to the Rock entity:
 
 1. Select the Rock entity
 2.  Click the **Add Object to Rock** button in the **Quick Actions** tab
 
-    ![](../../media/2021-03-img\_604d4bedce331.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d4bedce331.png)
 3. Select the **Sprite** type
 4.  Click OK
 
-    ![](../../media/2021-03-img\_604d4c2eb52ff.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d4c2eb52ff.png)
 
 To set the Sprite's Texture:
 
@@ -31,7 +31,7 @@ To set the Sprite's Texture:
 2. Select the Variables tab
 3.  Use the Texture drop-down to select Rock1
 
-    ![](../../media/2021-03-img\_604d4c97d1cd6.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d4c97d1cd6.png)
 
 ### Considering Rock spawning
 
@@ -51,11 +51,11 @@ To create the RockSpawner Entity:
 1. Select the **Quick Actions** tab
 2.  Click the **Add Entity** button
 
-    ![](../../media/2021-03-img\_604d4d0ca12a7.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d4d0ca12a7.png)
 3. Enter the name RockSpawner
 4.  Click OK - we won't need any collision or visuals in this entity
 
-    ![](../../media/2021-03-img\_604d4d3e3962a.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d4d3e3962a.png)
 
 The RockSpawner is different from our other entities - we only need a single RockSpawner instance. To add an instance to the GameScreen:
 
@@ -63,7 +63,7 @@ The RockSpawner is different from our other entities - we only need a single Roc
 2. Click the Quick Actions tab
 3.  Click the **Add RockSpawner Instance to GameScreen** button
 
-    ![](../../media/2021-03-img\_604d4d9b5032a.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d4d9b5032a.png)
 
 Next we'll add four variables to the RockSpawner. These are:
 
@@ -78,7 +78,7 @@ To add RocksPerSecond:
 2. Click the Variables tab
 3.  Click the **Add New Variable** button
 
-    ![](../../media/2021-03-img\_604d4e0058d39.png)
+    ![](../../.gitbook/assets/2021-03-img\_604d4e0058d39.png)
 4. Enter the name **RocksPerSecond**
 5. Click OK
 
@@ -318,6 +318,6 @@ public partial class RockSpawner
 
 ### Conclusion
 
-![](../../media/2021-03-img\_604d53c1829a6.png)
+![](../../.gitbook/assets/2021-03-img\_604d53c1829a6.png)
 
 Now the game is really making progress. If you run the game now you will be able to fly around and fire bullets at rocks. Of course, we haven't put collision in just yet. We'll do that next tutorial.

@@ -1,4 +1,4 @@
-# addandlinktilednodeworld
+# AddAndLinkTiledNodeWorld
 
 ### Introduction
 
@@ -55,8 +55,4 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-
-
-<figure><img src="../../../../../../media/2019-08-2019-08-26_07-59-23.gif" alt=""><figcaption></figcaption></figure>
-
-   &#x20;
+<figure><img src="../../../../../.gitbook/assets/2019-08-2019-08-26_07-59-23.gif" alt=""><figcaption></figcaption></figure>

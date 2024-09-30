@@ -6,7 +6,7 @@ To assist in debugging I have created an extensible interactive input and output
 
 With this system it is possible for developers to view debugging output and interact and update C# objects and methods from within their game. This allows developers to change AI behaviors, spawn entities, load levels, and much more.
 
-![Console5.PNG](../../media/migrated\_media-Console5.PNG)
+![Console5.PNG](../../.gitbook/assets/migrated\_media-Console5.PNG)
 
 ## Install / Quick Start
 

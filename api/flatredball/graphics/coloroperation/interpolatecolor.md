@@ -24,4 +24,4 @@ for (int i = 0; i < 10; i++)
 }
 ```
 
-![InterpolateColorOperation.PNG](../../../../media/migrated\_media-InterpolateColorOperation.PNG)
+![InterpolateColorOperation.PNG](../../../../.gitbook/assets/migrated\_media-InterpolateColorOperation.PNG)

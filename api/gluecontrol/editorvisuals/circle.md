@@ -11,4 +11,4 @@ float radius = 10;
 EditorVisuals.Circle(radius, GuiManager.Cursor.WorldPosition.ToVector3());
 ```
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Circle drawn at the cursor position</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Circle drawn at the cursor position</p></figcaption></figure>

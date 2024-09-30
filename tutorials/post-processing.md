@@ -10,13 +10,13 @@ Post processing requires the use of RenderTargets - memory which can be the targ
 
 A RenderTarget is a piece of video memory, similar to a Texture2D, which can be used as a temporary storage of rendered graphics before being processed and drawn to the screen. To understand how this works, first we'll consider a game which does not use render targets. This type of game may have visual objects which are added through the FlatRedBall Editor or code. These objects are added to the FlatRedBall Engine, which in turn draws the objects directly to a screen. The following diagram can help visualize this process:
 
-<figure><img src="../.gitbook/assets/image (116).png" alt=""><figcaption><p>Diagram of rendering without a render target</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (288).png" alt=""><figcaption><p>Diagram of rendering without a render target</p></figcaption></figure>
 
 Render targets act as "temporary" storage of graphics which can be used to further perform processing on the entire image at once. For example, a render target could be used to apply "bloom" - an effect which applies a glow to the brighter parts of an image.
 
 The following diagram shows how such a render target might be used to apply bloom:
 
-<figure><img src="../.gitbook/assets/image (117).png" alt=""><figcaption><p>Post processing using a render target to apply "bloom"</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (289).png" alt=""><figcaption><p>Post processing using a render target to apply "bloom"</p></figcaption></figure>
 
 RenderTargets can be drawn to (usually by the FRB engine) and used when drawing to the screen in the same frame. Typically post processing does not add much overhead to a game, so games can use post processing without worrying about reducing frame rate or introducing additional frame lag.
 
@@ -34,7 +34,7 @@ For simplicity this tutorial uses the first approach of rendering the entirety o
 
 We'll begin with a sample platformer project. Note that the contents of this project do not matter, so long as we have something on screen to use for testing.
 
-<figure><img src="../.gitbook/assets/image (118).png" alt=""><figcaption><p>Default platformer project before post processing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (290).png" alt=""><figcaption><p>Default platformer project before post processing</p></figcaption></figure>
 
 As mentioned above, we will render the entirety of FlatRedBall to a RenderTarget, which then will be drawn to the screen. Since all of FlatRedBall will have been drawn to the RenderTarget, we must draw the RenderTarget to the screen using objects which are not part of FlatRedBall. We can use a SpriteBatch.
 

@@ -20,11 +20,11 @@ Until now the SolidCollisions have been invisible, and we haven't created anythi
 3. Click the Variables tab
 4. Check the Visible property
 
-![](../../media/2021-02-img\_6031536268380.png)
+![](../../.gitbook/assets/2021-02-img\_6031536268380.png)
 
 If you run the game now, you will see that all solid collision tiles are outlined in white. This is the SolidCollision object.
 
-![](../../media/2021-02-img\_60315396e0918.png)
+![](../../.gitbook/assets/2021-02-img\_60315396e0918.png)
 
 ###
 
@@ -48,10 +48,10 @@ The first step is to decide which tile you would like to use for your collision.
 1. Open Tiled
 2.  Click the TiledIcons tileset
 
-    ![](../../media/2021-02-img\_60315823db414.png)
+    ![](../../.gitbook/assets/2021-02-img\_60315823db414.png)
 3.  Click the Edit icon to edit the TiledIcons tileset
 
-    ![](../../media/2021-02-img\_60315871cbd77.png)
+    ![](../../.gitbook/assets/2021-02-img\_60315871cbd77.png)
 4. Select a Tile that you would like to use for collision
 5.  Enter a Class for that tile.
 
@@ -60,7 +60,7 @@ The first step is to decide which tile you would like to use for your collision.
 
 Now that the type has been set and the tileset has been saved, you can place the tile in your level. Make sure to place it on the GameplayLayer in case your game has multiple layers.
 
-<figure><img src="../../media/2016-08-2021_February_20_112950.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-08-2021_February_20_112950.gif" alt=""><figcaption></figcaption></figure>
 
 Be sure to save your map after adding tiles.
 
@@ -72,12 +72,12 @@ Now that we have a new tile type in our game, we can add another TileShapeCollec
 2. Click the **Quick Actions** tab
 3.  Select the **Add Object to GameScreen** button
 
-    ![](../../media/2021-02-img\_60315b62ae54c.png)
+    ![](../../.gitbook/assets/2021-02-img\_60315b62ae54c.png)
 4. Type or look for **TileShapeCollection** in the window and select this option
 5. Enter the name for your tileset. Usually this should match the type of your tile.
 6. Click OK
 
-![](../../media/2021-02-img\_60315d0613576.png)
+![](../../.gitbook/assets/2021-02-img\_60315d0613576.png)
 
 ### Configuring the TileShapeCollection
 
@@ -89,15 +89,15 @@ TileShapeCollections usually come from specific tiles in tile maps. We'll set up
 4. Select **Map** as the source TMX
 5. Select the matching type in the **Type** dropdown
 
-![](../../media/2021-02-img\_60315ebd96e51.png)
+![](../../.gitbook/assets/2021-02-img\_60315ebd96e51.png)
 
 Notice that **Remove Tiles** is checked by default. Uncheck this option if you would like to see the tiles in game. We should also turn on collision visibility to make sure it is created as we expect.
 
-![](../../media/2021-02-img\_60315de799ae0.png)
+![](../../.gitbook/assets/2021-02-img\_60315de799ae0.png)
 
 If you run your game, you will see the collision in game. The tiles will be removed if the **Remove Tiles** checkbox was left checked.
 
-![](../../media/2021-02-img\_60315f7fc6166.png)
+![](../../.gitbook/assets/2021-02-img\_60315f7fc6166.png)
 
 ### Creating TileShapeCollections in Code
 

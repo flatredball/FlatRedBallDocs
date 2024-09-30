@@ -21,7 +21,7 @@ The FlatRedBall Editor (also referred to as FRB Editor, FlatRedBall, or FRB) is 
 
 In short, the FRB Editor provides functionality to make game development faster.
 
-<figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption><p>A game in the FlatRedBall Editor in Edit mode</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (251).png" alt=""><figcaption><p>A game in the FlatRedBall Editor in Edit mode</p></figcaption></figure>
 
 ### Is the FlatRedBall Editor Required?
 

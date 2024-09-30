@@ -1,4 +1,4 @@
-# alpha
+# Alpha
 
 ### Introduction
 
@@ -8,7 +8,7 @@ The Alpha property represents the transparency (or opacity) of a given object. T
 
 ### Code Example
 
-The following code shows how to use the Alpha property on [Text](../../../../../frb/docs/index.php) objects to control their transparency.
+The following code shows how to use the Alpha property on [Text](../../../../frb/docs/index.php) objects to control their transparency.
 
 ```
 int count = 20;
@@ -26,4 +26,4 @@ for (int i = 0; i < count; i++)
 }
 ```
 
-![TextAlpha.PNG](../../../../../media/migrated_media-TextAlpha.PNG)
+![TextAlpha.PNG](../../../../.gitbook/assets/migrated\_media-TextAlpha.PNG)

@@ -1,4 +1,4 @@
-# bmfc-file
+# BMFC File
 
 ### Introduction
 
@@ -9,7 +9,7 @@ The BMFC file format (which stands for "bitmap font configuration") is a file th
 A .bmfc file can be created in the Bitmap Font Generator. To create a .bmfc file:
 
 1. Open the Bitmap Font Generator
-2. Set up a bitmap font - for more information see [this page](../../../../../frb/docs/index.php)
+2. Set up a bitmap font - for more information see [this page](../../../../frb/docs/index.php)
 3. Click Options->"Save configuration as..."
 4. Enter a name for the file and click OK
 
@@ -31,7 +31,7 @@ First, you must make sure Glue is set up to use the Bitmap Font Generator as a b
 8. Set the DestinationFileArgumentPrefix to -o (lower-case letter 'o')
 9. Click OK
 
-![BitmapFontGeneratorBuildSettings.PNG](../../../../../media/migrated_media-BitmapFontGeneratorBuildSettings.PNG)
+![BitmapFontGeneratorBuildSettings.PNG](../../../../.gitbook/assets/migrated\_media-BitmapFontGeneratorBuildSettings.PNG)
 
 Once you have set up the Bitmap Font Generator as a builder in Glue, you can add .bmfc files as externally built files. To do this:
 
@@ -40,7 +40,7 @@ Once you have set up the Bitmap Font Generator as a builder in Glue, you can add
 3. Select "Add Externally Built File"
 4. Select the .bmfc file. Be sure that this file is located in a subfolder of your project.
 5. Select the bmfont.exe builder in the drop-down in the window that appears
-6. Enter a name for your font (or leave it as default)![AddExternalFileOptions.PNG](../../../../../media/migrated_media-AddExternalFileOptions.PNG)
+6. Enter a name for your font (or leave it as default)![AddExternalFileOptions.PNG](../../../../.gitbook/assets/migrated\_media-AddExternalFileOptions.PNG)
 7. Click OK
 
-Your project will now include a .fnt file which can be loaded by code into a BitmapFont, which can be used in Glue, or which can be used in a .scnx file. ![FontFileInGlue.png](../../../../../media/migrated_media-FontFileInGlue.png)
+Your project will now include a .fnt file which can be loaded by code into a BitmapFont, which can be used in Glue, or which can be used in a .scnx file. ![FontFileInGlue.png](../../../../.gitbook/assets/migrated\_media-FontFileInGlue.png)

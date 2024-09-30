@@ -1,10 +1,10 @@
-# points
+# Points
 
 ### Introduction
 
-The Points property is an array of [Point](../../../../../../frb/docs/index.php) values which contain the position of each point on the polygon. These values are in "object space". In other words, they are relative to the containing Polygon's position and rotation values.
+The Points property is an array of [Point](../../../../../frb/docs/index.php) values which contain the position of each point on the polygon. These values are in "object space". In other words, they are relative to the containing Polygon's position and rotation values.
 
-The Points property can be assigned - this essentially changes the shape of the Polygon. This is a more-efficient and often more-convenient way to change a Polygon rather than to construct a new one if your game requires dynamic shapes. For more information, see [this section](../../../../../../frb/docs/index.php#Creating_a_Polygon).
+The Points property can be assigned - this essentially changes the shape of the Polygon. This is a more-efficient and often more-convenient way to change a Polygon rather than to construct a new one if your game requires dynamic shapes. For more information, see [this section](../../../../../frb/docs/index.php#Creating\_a\_Polygon).
 
 ### Code Example - Setting Points
 
@@ -31,9 +31,9 @@ The Points property can be assigned - this essentially changes the shape of the 
 
 The values in the Points array are all relative to the containing Polygon. This means that if the Polygon moves or rotates, the values stored in the Points property will remain the same.
 
-To retrieve the absolute position of each [Point](../../../../../../frb/docs/index.php), the relative points must be converted into world (or absolute) coordinates.
+To retrieve the absolute position of each [Point](../../../../../frb/docs/index.php), the relative points must be converted into world (or absolute) coordinates.
 
-The following code creates a Polygon which spins automatically and is repositioned based off of [Keyboard](../../../../../../frb/docs/index.php) activity. Three [Sprites](../../../../../../frb/docs/index.php) are positioned in the world coordinates of each of the Polygon's points in the Update method. Since the [Sprites](../../../../../../frb/docs/index.php) are being positioned in world space, the position of the points must be converted to world space so that the [Sprites](../../../../../../frb/docs/index.php) appear in the proper position.
+The following code creates a Polygon which spins automatically and is repositioned based off of [Keyboard](../../../../../frb/docs/index.php) activity. Three [Sprites](../../../../../frb/docs/index.php) are positioned in the world coordinates of each of the Polygon's points in the Update method. Since the [Sprites](../../../../../frb/docs/index.php) are being positioned in world space, the position of the points must be converted to world space so that the [Sprites](../../../../../frb/docs/index.php) appear in the proper position.
 
 Add the following using statements:
 
@@ -91,4 +91,4 @@ Add the following in Update:
  }
 ```
 
-![PolygonPointPosition.png](../../../../../../media/migrated_media-PolygonPointPosition.png)
+![PolygonPointPosition.png](../../../../../.gitbook/assets/migrated\_media-PolygonPointPosition.png)

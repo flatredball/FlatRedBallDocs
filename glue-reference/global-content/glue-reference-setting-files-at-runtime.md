@@ -1,4 +1,4 @@
-# glue-reference-setting-files-at-runtime
+# Setting Files At Runtime
 
 ### Introduction
 
@@ -58,7 +58,7 @@ We want DemoLevelInfo.csv to use the same class as LevelInfo.csv. To do this:
 7. Click "Yes" if asked if you should remove unused file
 8. Click Done
 
-For more info on Set Created Class, see [this page](../../../../frb/docs/index.php).
+For more info on Set Created Class, see [this page](../../frb/docs/index.php).
 
 ### Using LevelInfo in a Screen
 
@@ -82,8 +82,6 @@ Now that we have a Text object, let's set its Text in CustomInitialize of our Sc
 2. Navigate to LevelSelectScreen.cs
 3. Add the following code to CustomInitialize:
 
-&#x20;
-
 ```
     string whatToWrite = "";
 
@@ -95,7 +93,7 @@ Now that we have a Text object, let's set its Text in CustomInitialize of our Sc
     this.TextInstance.DisplayText = whatToWrite;
 ```
 
-If you run your game now you will see that the game has 5 levels (according to LevelInfo): ![FiveLevelsPrintedOut.PNG](../../../../media/migrated_media-FiveLevelsPrintedOut.PNG)
+If you run your game now you will see that the game has 5 levels (according to LevelInfo): ![FiveLevelsPrintedOut.PNG](../../.gitbook/assets/migrated\_media-FiveLevelsPrintedOut.PNG)
 
 ### Changing LevelInfo
 
@@ -104,13 +102,11 @@ All files in GlobalContent have setters. This means that you can simply set the 
 1. Open Game1.cs in your project in Visual Studio
 2. Add the following code **after** GlobalContent.Initialize and **before** ScreenManager.Start in Game1.cs:
 
-&#x20;
-
 ```
 GlobalContent.LevelInfo = GlobalContent.DemoLevelInfo;
 ```
 
-Now if you run your game you'll see that only the first level is available: ![DemoLevelOnly.PNG](../../../../media/migrated_media-DemoLevelOnly.PNG)
+Now if you run your game you'll see that only the first level is available: ![DemoLevelOnly.PNG](../../.gitbook/assets/migrated\_media-DemoLevelOnly.PNG)
 
 ### Making the example more realistic
 
@@ -119,4 +115,4 @@ In this case our code is simply setting the LevelInfo to DemoLevelInfo - overwri
 * It had to be **after** GlobalContent.Initialize because we needed DemolevelInfo to already be loaded
 * It had to be **before** the ScreenManager's Start function because this had to be set prior to the first Screen being initialized.
 
-Although we assigned one CSV in GlobalContent to another CSV in GlobalContent, this is not a requirement. The LevelInfo could be assigned from a completely different file using the [CsvFileManager](../../../../frb/docs/index.php). This means that you could download a CSV from a server somewhere, and assign LevelInfo to a new Dictionary\<string, LevelInfo>, then deserialize the file into that dictionary using [CsvDeserializeDictionary](../../../../frb/docs/index.php). If you are doing any form of assignment on an object in GlobalContent, and you are assigning to something that is not part of GlobalContent, then you can assign the property in GlobalContent **before** GlobalContent is initialized. GlobalContent will respect this assignment and will not overwrite it when initializing.
+Although we assigned one CSV in GlobalContent to another CSV in GlobalContent, this is not a requirement. The LevelInfo could be assigned from a completely different file using the [CsvFileManager](../../frb/docs/index.php). This means that you could download a CSV from a server somewhere, and assign LevelInfo to a new Dictionary\<string, LevelInfo>, then deserialize the file into that dictionary using [CsvDeserializeDictionary](../../frb/docs/index.php). If you are doing any form of assignment on an object in GlobalContent, and you are assigning to something that is not part of GlobalContent, then you can assign the property in GlobalContent **before** GlobalContent is initialized. GlobalContent will respect this assignment and will not overwrite it when initializing.

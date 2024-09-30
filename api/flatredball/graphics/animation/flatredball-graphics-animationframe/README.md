@@ -49,7 +49,7 @@ void CustomInitialize()
 }
 ```
 
-![](../../../../../media/2017-05-img\_591e26d7460e5.png)
+![](../../../../../.gitbook/assets/2017-05-img\_591e26d7460e5.png)
 
 ### FrameLength
 

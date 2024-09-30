@@ -8,7 +8,7 @@ Velocity, another term for movement, is an essential element of nearly all video
 
 Similar to movies and television, the display of video games is broken up into frames. Unlike physical movement, objects which move in video games will actually perform small "hops" from one position to the next every frame. For example, the following image shows the positions of a red ball that is moving along the X axis.
 
-![SpriteMovement.png](../../media/migrated\_media-SpriteMovement.png)
+![SpriteMovement.png](../../.gitbook/assets/migrated\_media-SpriteMovement.png)
 
 As you can tell there are distinct positions that the red ball falls on every frame. While this may appear to be jarring, when played at a high frame rate the animation appears smooth to the user.
 
@@ -110,4 +110,4 @@ for (int i = 0; i < 30; i++)
 
 **KABOOM!**
 
-<figure><img src="../../media/migrated_media-VelocityTutorial.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-VelocityTutorial.png" alt=""><figcaption></figcaption></figure>

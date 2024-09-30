@@ -1,16 +1,16 @@
-# collideagainstbounce
+# CollideAgainstBounce
 
 ### Introduction
 
 The CollideAgainstBounce method can be used to have two 3D shapes collide against each other and bounce (modify their or their top parent's velocity appropriately).
 
-This function works the same as the CollideAgainstBounce provided for 2D shapes, so for a more detailed discussion, see [this page](../../../../../../frb/docs/index.php).
+This function works the same as the CollideAgainstBounce provided for 2D shapes, so for a more detailed discussion, see [this page](../../../../../frb/docs/index.php).
 
 ### Code Example
 
 The following code creates two AxisAlignedCubes, sets the acceleration of one so it falls towards the other, and calls CollideAgainstBounce so that the two collide.
 
-Note that for this example the project is using a 3D camera rather than a 2D camera. For information on how to set up a 3D camera in Glue, see [this page](../../../../../../frb/docs/index.php).
+Note that for this example the project is using a 3D camera rather than a 2D camera. For information on how to set up a 3D camera in Glue, see [this page](../../../../../frb/docs/index.php).
 
 Add the following at class scope in your Screen:
 
@@ -43,4 +43,4 @@ Add the following to CustomActivity:
 second.CollideAgainstBounce(first, 0, 1, 1);
 ```
 
-![AACubeCollideAgainstBounce.png](../../../../../../media/migrated_media-AACubeCollideAgainstBounce.png)
+![AACubeCollideAgainstBounce.png](../../../../../.gitbook/assets/migrated\_media-AACubeCollideAgainstBounce.png)

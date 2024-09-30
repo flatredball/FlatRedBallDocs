@@ -1,4 +1,4 @@
-# vectorfrom
+# VectorFrom
 
 ### Introduction
 
@@ -46,7 +46,7 @@ text = TextManager.AddText("");
 text.Y = 8;
 ```
 
-&#x20; Add the following to Update:
+Add the following to Update:
 
 ```lang:c#
 connectingLine.X = InputManager.Mouse.WorldXAt(0);
@@ -58,4 +58,4 @@ text.DisplayText = vectorFrom.ToString();
 connectingLine.RelativePoint2 = vectorFrom;
 ```
 
-![VectorFrom.png](../../../../../../media/migrated_media-VectorFrom.png)
+![VectorFrom.png](../../../../../.gitbook/assets/migrated\_media-VectorFrom.png)

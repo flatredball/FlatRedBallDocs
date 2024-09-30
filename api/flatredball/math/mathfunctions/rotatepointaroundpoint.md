@@ -1,4 +1,4 @@
-# rotatepointaroundpoint
+# RotatePointAroundPoint
 
 ### Introduction
 
@@ -6,7 +6,7 @@ RotatePointAroundPoint is a method that can easily rotate one point around anoth
 
 ### Code Example
 
-The following code creates a [Sprite](../../../../../frb/docs/index.php) which rotates about the origin when the user holds down the space bar. Add the following at class scope:
+The following code creates a [Sprite](../../../../frb/docs/index.php) which rotates about the origin when the user holds down the space bar. Add the following at class scope:
 
 ```
 Sprite sprite;
@@ -45,4 +45,4 @@ Add the following to Update:
  }
 ```
 
-![RotatePointAroundPoint.png](../../../../../media/migrated_media-RotatePointAroundPoint.png)
+![RotatePointAroundPoint.png](../../../../.gitbook/assets/migrated\_media-RotatePointAroundPoint.png)

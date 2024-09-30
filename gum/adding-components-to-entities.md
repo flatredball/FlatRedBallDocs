@@ -8,11 +8,11 @@ Gum components can be added to FlatRedBall entities without any code or addition
 
 Before adding a Gum component to an entity, your project must have a Gum project added. If not, you can add one by clicking the Gum icon.
 
-![](../media/2020-10-img\_5f920612a27d5.png)
+![](../.gitbook/assets/2020-10-img\_5f920612a27d5.png)
 
 For this example we will add a component called **HealthBar** to an entity named **Soldier**. It assumes that your project has a Gum component named HealthBar.
 
-![](../media/2020-01-img\_5e32406153abb-e1581456365306.png)
+![](../.gitbook/assets/2020-01-img\_5e32406153abb-e1581456365306.png)
 
 To add an instance of the HealthBar component to a FlatRedBall entity:
 
@@ -23,25 +23,25 @@ To add an instance of the HealthBar component to a FlatRedBall entity:
 5. Select the type **HealthBarRuntime.** FRB provides options for every component in your Gum project, with the word **Runtime** appended to the name. Keep in mind that the search bar can help narrow down the options.
 6. Click **OK**
 
-<figure><img src="../media/2018-04-2018-04-03_06-56-33.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2018-04-2018-04-03_06-56-33.gif" alt=""><figcaption></figcaption></figure>
 
 An instance of the HealthBar component will now be a part of the entity and will be attached (moves with) the entity automatically.
 
-<figure><img src="../media/2018-04-2018-04-03_07-47-13.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2018-04-2018-04-03_07-47-13.gif" alt=""><figcaption></figcaption></figure>
 
 ### Changing Component Variables
 
 Component variables can be changed in multiple locations depending on the needs of the project. If a component should be the same across the entire project, then its variables should be changed in Gum.
 
-![](../media/2018-04-img\_5ac382c5d79d3.png)
+![](../.gitbook/assets/2018-04-img\_5ac382c5d79d3.png)
 
 If the component requires changes specific to each entity, then the variables can be changed in FRB.
 
-![](../media/2018-04-img\_5ac383b28305d.png)
+![](../.gitbook/assets/2018-04-img\_5ac383b28305d.png)
 
 If a component requires instance-by-instance modifications, it can be modified in code just like any other component Gum object.
 
-![](../media/2018-04-img\_5ac384828b05a.png)
+![](../.gitbook/assets/2018-04-img\_5ac384828b05a.png)
 
 ### Disabling Entity Attachment
 
@@ -75,22 +75,22 @@ private void CustomInitialize()
 
 Gum provides a powerful layout system for positioning objects. Attached Gum objects can take full advantage of this coordinate system. To use Gum layout effectively we must first understand how Gum objects attach to FlatRedBall objects. For starters, consider a simple FRB entity with a single Sprite:
 
-![](../media/2018-04-img\_5ac3a273ddcac.png)
+![](../.gitbook/assets/2018-04-img\_5ac3a273ddcac.png)
 
 By default the origin of the object is its center. This can be visualized as shown in the following image: &#x20;
 
-<figure><img src="../media/2018-04-img_5ac3a2c63ca8a.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2018-04-img_5ac3a2c63ca8a.png" alt=""><figcaption></figcaption></figure>
 
 We can therefore visualize the behavior of a Gum object that is added to the entity. By default the component will be positioned at 0,0, and the default position values will make its top-left corner align with the center of the entity.
 
-![](../media/2018-04-img\_5ac3a5294d5f7.png)
+![](../.gitbook/assets/2018-04-img\_5ac3a5294d5f7.png)
 
 We can change this by adjusting the origin values:
 
 * XOrigin = Center
 * YOrigin = Center
 
-![](../media/2018-04-img\_5ac3a586b4085.png)
+![](../.gitbook/assets/2018-04-img\_5ac3a586b4085.png)
 
 Keep in mind that FlatRedBall entities do not have size values (width and height), so adjusting the width of the Gum object to be based on its parent width will result in the Gum object behaving as if its parent has Width and Height values of 0:
 
@@ -98,7 +98,7 @@ Keep in mind that FlatRedBall entities do not have size values (width and height
 * WidthUnits = RelativeToContainer
 * YOrigin = Center
 
-![](../media/2018-04-img\_5ac3a62503bce.png)
+![](../.gitbook/assets/2018-04-img\_5ac3a62503bce.png)
 
 Even though the Gum object is attached to a FlatRedBall object, the Gum object is still drawn using the Gum coordinate system (relative to the FlatRedBall object position). For example, by default Gum objects move down when their Y value is increased (assuming YUnits is not set to inverted).
 
@@ -107,7 +107,7 @@ Even though the Gum object is attached to a FlatRedBall object, the Gum object i
 * X = 20
 * Y = 40
 
-![](../media/2018-04-img\_5ac3a736695e4.png)
+![](../.gitbook/assets/2018-04-img\_5ac3a736695e4.png)
 
 As shown above, Gum objects can be attached to Sprites within an entity. This provides the added benefit of being able to use the Sprite's size for layout. If the Gum object is attached to the sprite (using the code above), then the Gum object will (by default) position itself according to the top-left of the Sprite:
 
@@ -116,7 +116,7 @@ As shown above, Gum objects can be attached to Sprites within an entity. This pr
 * X = 0
 * Y = 0
 
-![](../media/2018-04-img\_5ac3a7c7ee002.png)
+![](../.gitbook/assets/2018-04-img\_5ac3a7c7ee002.png)
 
 We can also reference the Sprite's dimensions by changing the WidthUnits and HeightUnits:
 
@@ -129,7 +129,7 @@ We can also reference the Sprite's dimensions by changing the WidthUnits and Hei
 * HeightUnits = RelativeToContainer
 * Height = 0
 
-![](../media/2018-04-img\_5ac3a816a6e4f.png)
+![](../.gitbook/assets/2018-04-img\_5ac3a816a6e4f.png)
 
 Keep in mind that the relationships are updated constantly, so if the Sprite changes size due to an animation, the Gum object will adjust automatically too.
 
@@ -173,16 +173,16 @@ For example, a DialogBox instance can be positioned in world space by creating a
 1.  Create a new Entity called DialogBoxContainer in FRB\
 
 
-    <figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption><p>DialogBoxEntity</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (200).png" alt=""><figcaption><p>DialogBoxEntity</p></figcaption></figure>
 2.  Add a DialogBoxRuntime instance to the DialogBoxContainer entity\
 
 
-    <figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Add the DialogBoxRuntime (Gum component) to the DialogBoxEntity</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (199).png" alt=""><figcaption><p>Add the DialogBoxRuntime (Gum component) to the DialogBoxEntity</p></figcaption></figure>
 3.  For this demo, all of the code to show the dialog will exist in the Player code, so we need to access the internal DialogBoxRuntime (Gum component). Therefore, it should be marked as public. Select the DialogBoxRuntimeInstance object and change its scope to public.\
     \
 
 
-    <figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption><p>Make the DialogBoxRuntimeInstance public</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption><p>Make the DialogBoxRuntimeInstance public</p></figcaption></figure>
 
 The DialogBoxRuntime can now be used to show a dialog box on the player. For example, the following code can be added to the Player.cs in a standard platformer project:
 

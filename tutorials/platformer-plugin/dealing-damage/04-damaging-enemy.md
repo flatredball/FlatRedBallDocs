@@ -17,15 +17,15 @@ The MaxHP is a _designer variable_ - a variable which a game designer may change
 2. Click on the **Variables** tab
 3.  Click the **Add New Variable** button
 
-    ![](../../../media/2021-04-img\_607e404f51080.png)
+    ![](../../../.gitbook/assets/2021-04-img\_607e404f51080.png)
 4. Select the **int** type
 5. Enter the name **MaxHP**
 6.  Click **OK**
 
-    ![](../../../media/2021-04-img\_607e40a147c17.png)
+    ![](../../../.gitbook/assets/2021-04-img\_607e40a147c17.png)
 7.  Set the new **MaxHP** variable to **6**
 
-    ![](../../../media/2021-04-img\_607e41aedaa1c.png)
+    ![](../../../.gitbook/assets/2021-04-img\_607e41aedaa1c.png)
 
 Now we can add the CurrentHP value to the Enemy:
 
@@ -72,18 +72,17 @@ Be sure to make the **TakeDamage** method **public** so it can be called from ou
 Now we can create a collision relationship between the BulletList and EnemyList objects in the GameScreen:
 
 1. Expand the **GameScreen** **Objects** folder
-2.  Drag+drop the **BulletList** object onto **EnemyList**\
+2.  Drag+drop the **BulletList** object onto **EnemyList**\\
 
-
-    <figure><img src="../../../media/2021-04-2021_April_19_212102.gif" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/2021-04-2021_April_19_212102.gif" alt=""><figcaption></figcaption></figure>
 3. Select the new **BulletListVsEnemyList** relationship
 4. Click on the **Collision** tab
 5.  Click the **Add Event** button
 
-    ![](../../../media/2021-04-img\_607e44a841524.png)
+    ![](../../../.gitbook/assets/2021-04-img\_607e44a841524.png)
 6.  Accept the defaults and click **OK**
 
-    ![](../../../media/2021-04-img\_607e44d00fcdb.png)
+    ![](../../../.gitbook/assets/2021-04-img\_607e44d00fcdb.png)
 
 Now we can fill in the event method. Open **GameScreen.Event.cs** and modify the **BulletListVsEnemyListCollisionOccurred** method as shown in the following snippet:
 
@@ -98,7 +97,7 @@ void OnBulletListVsEnemyListCollisionOccurred (Entities.Bullet first, Entities.E
 
 Now we can shoot at the enemy. After six shots, the enemy is destroyed.
 
-<figure><img src="../../../media/2021-04-2021_April_19_210309.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2021-04-2021_April_19_210309.gif" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 

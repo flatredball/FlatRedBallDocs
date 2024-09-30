@@ -47,6 +47,6 @@ Excluding variables has two benefits:
 
 StateData is the concept of treating states similar to CSV data. FlatRedBall supports treating States as CSV data by providing a CSV-like interface when selecting a category, as shown in the following image:
 
-![](../../media/2020-06-img\_5ee783d044f32.png)
+![](../../.gitbook/assets/2020-06-img\_5ee783d044f32.png)
 
 For an in-depth discussion of State Data, including how to exclude variables from inclusion, see the [State Data blog post](https://flatredball.com/news/introducing-state-data/).

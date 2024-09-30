@@ -1,4 +1,4 @@
-# glue-reference-set-created-class
+# SetCreatedClass
 
 ### Introduction
 
@@ -15,23 +15,23 @@ We will assume that each CSV file has the same columns, and we would like to hav
 
 This example uses enemy entities which each provide their own attack data in CSV files. Each CSV has its **Created Class** set to Enemy Data.
 
-![](../../../../../media/2021-05-img_60a665dd427c4.png)
+![](../../../../.gitbook/assets/2021-05-img\_60a665dd427c4.png)
 
 A new class can be added in the **Created Class** window.
 
-![](../../../../../media/2021-05-img_60a66625c9b94.png)
+![](../../../../.gitbook/assets/2021-05-img\_60a66625c9b94.png)
 
 Once added, classes appear in the list below.
 
-![](../../../../../media/2021-05-img_60a6665cd57e5.png)
+![](../../../../.gitbook/assets/2021-05-img\_60a6665cd57e5.png)
 
 This class can be used for the current CSV by selecting the class and clicking the **Use This Class** button.
 
-![](../../../../../media/2021-05-img_60a66712159cc.png)
+![](../../../../.gitbook/assets/2021-05-img\_60a66712159cc.png)
 
 Once a class is added, Glue generates a file for this in the DataTypes folder.
 
-![](../../../../../media/2021-05-img_60a6675f34450.png)
+![](../../../../.gitbook/assets/2021-05-img\_60a6675f34450.png)
 
 The four CSVs specified above will deserialize into AttackData Dictionaries or Lists.
 
@@ -41,4 +41,4 @@ Glue automatically creates a class called PlatformerValues if a game includes pl
 
 ### Additional Information
 
-* [Glue:Reference:Files:Set Created Class:Generate Data Class](../../../../../frb/docs/index.php)
+* [Glue:Reference:Files:Set Created Class:Generate Data Class](../../../../frb/docs/index.php)

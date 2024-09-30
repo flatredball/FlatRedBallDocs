@@ -1,8 +1,8 @@
-# applycoloroperation
+# ApplyColorOperation
 
 ### Introduction
 
-ApplyColorOperation is a method which can be used to modify an ImageData using the same ColorOperation and Red,Green,Blue values that are present in the [IColorable](../../../../../../frb/docs/index.php) interface which is implemented by common FlatRedball objects such as [Sprite](../../../../../../frb/docs/index.php) and [Text](../../../../../../frb/docs/index.php). ApplyColorOperation modifies the data stored in an ImageData permanently - it cannot be undone.
+ApplyColorOperation is a method which can be used to modify an ImageData using the same ColorOperation and Red,Green,Blue values that are present in the [IColorable](../../../../../frb/docs/index.php) interface which is implemented by common FlatRedball objects such as [Sprite](../../../../../frb/docs/index.php) and [Text](../../../../../frb/docs/index.php). ApplyColorOperation modifies the data stored in an ImageData permanently - it cannot be undone.
 
 ### Code Example
 
@@ -30,4 +30,4 @@ ApplyColorOperation can be used to modify a texture so that when rendered normal
  SpriteManager.Camera.BackgroundColor = Color.White;
 ```
 
-![ImageDataApplyColorOperation.png](../../../../../../media/migrated_media-ImageDataApplyColorOperation.png)
+![ImageDataApplyColorOperation.png](../../../../../.gitbook/assets/migrated\_media-ImageDataApplyColorOperation.png)

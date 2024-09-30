@@ -7,4 +7,4 @@ sprite.ColorOperation = ColorOperation.Color;
 sprite.Red = 1;
 ```
 
-![ColorOperationDotColor.png](../../../../media/migrated\_media-ColorOperationDotColor.png)
+![ColorOperationDotColor.png](../../../../.gitbook/assets/migrated\_media-ColorOperationDotColor.png)

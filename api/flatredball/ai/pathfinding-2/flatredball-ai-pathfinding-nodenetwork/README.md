@@ -103,7 +103,7 @@ Add the following in CustomActivity:
  }
 ```
 
-![NodeNetwork.png](../../../../../media/migrated\_media-NodeNetwork.png)
+![NodeNetwork.png](../../../../../.gitbook/assets/migrated\_media-NodeNetwork.png)
 
 ### Loading a NodeNetwork From .nntx
 
@@ -134,5 +134,5 @@ nodeNetwork.Visible = true;
 
 &#x20;
 
-<figure><img src="../../../../../media/migrated_media-NodeNetworkFromFile.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/migrated_media-NodeNetworkFromFile.png" alt=""><figcaption></figcaption></figure>
 

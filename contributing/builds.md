@@ -54,7 +54,7 @@ To create the nuget packages, follow these steps:
 2.  Double-click GumCommon and change its Version to the {year}.{month}.{day}.{build}, where build is 1 if it's the first build of the day.\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Setting GumCommon's Version number</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption><p>Setting GumCommon's Version number</p></figcaption></figure>
 3. Repeat this for GumDataTypesNet6, MonoGameGum, ToolsUtilitiesStandard, and KniGum. Be sure to use the same version for all.
 4. Save the files and push the commit
 
@@ -72,7 +72,7 @@ Currently Gum uses XNA and .NET 4.7.1. This will not build using dotnet build (n
 2.  Open Gum AssemblyInfo.cs and set AssemblyVersion and AssemblyFileVersion using the date-based format.\
 
 
-    <figure><img src="../.gitbook/assets/image (146).png" alt=""><figcaption><p>AssemblyVersion and AssemblyFileVersion in AssemblyInfo.cs</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (318).png" alt=""><figcaption><p>AssemblyVersion and AssemblyFileVersion in AssemblyInfo.cs</p></figcaption></figure>
 3. Rebuild Gum
 4. Navigate to the location where Gum is built
 5. Go up one folder so that you are in the Debug folder, and you see the Data folder

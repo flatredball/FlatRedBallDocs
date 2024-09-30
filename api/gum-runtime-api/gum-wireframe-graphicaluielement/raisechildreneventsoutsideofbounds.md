@@ -12,7 +12,7 @@ Note that if this value is true, then out-of-bounds checks are only performed fo
 
 The following Gum layout shows a UI control UserControlInstance which has a button ButtonCloseInstance outside of its bounds.
 
-<figure><img src="../../../.gitbook/assets/image (108).png" alt=""><figcaption><p>Control with a button outside of its bounds</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (279).png" alt=""><figcaption><p>Control with a button outside of its bounds</p></figcaption></figure>
 
 By default this button will not be clickable because it is not contained in the boudns of its UserControlInstance.
 

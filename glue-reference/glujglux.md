@@ -34,7 +34,7 @@ This version automatically associates Lists in Screens with their corresponding 
 
 ❗ To upgrade to this version, remove custom code which associates lists to factories to prevent double-adds. Also, note that you need to check your screens to make lists in the screens have AssociateWithFactory set to true on any items you wish to have associated with factories. This is default to true on newer projects, but older projects may not have this set to true automatically.
 
-![](../media/2023-03-img\_6408847f65565.png)
+![](../.gitbook/assets/2023-03-img\_6408847f65565.png)
 
 ### Version 4 - Gum GUE GetAnimation Method and FlatRedBall.Forms
 
@@ -234,7 +234,7 @@ This version also generates the IPlatformer interface into projects. This is use
 
 This version introduces a new set of FlatRedBall.Forms controls.
 
-<figure><img src="../media/2022-02-04_08-12-25.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2022-02-04_08-12-25.gif" alt=""><figcaption></figcaption></figure>
 
 These controls provide more flexibility, and the defaults are cleaner and look better overall. New FlatRedBall projects will automatically add these controls when Gum/Forms is added (usually through the wizard).
 
@@ -405,14 +405,14 @@ Previous versions of FlatRedBall generated all Tiled files without the .Generate
 2. Close the FlatRedBall Editor
 3.  Remove all non-generated Tiled files. You can remove the individual files or even the entire folders which contain these files. Be careful in case you have manually added additional files here:
 
-    ![](../media/2023-02-img\_63f38a8261c27.png)
+    ![](../.gitbook/assets/2023-02-img\_63f38a8261c27.png)
 4. Save your project (csproj) in Visual Studio
 5. Update your .gluj file version in a text editor
 6. Open your project in the FlatRedBall Editor
 
 After code generation finishes, all of the files should be re-added with a .Generated.cs suffix.
 
-![](../media/2023-02-img\_63f392f2c0a53.png)
+![](../.gitbook/assets/2023-02-img\_63f392f2c0a53.png)
 
 ### Version 38 - Project JSON files (glej and glsj) Remove Redundant Derived Objects
 
@@ -463,14 +463,14 @@ This version adds an ExternalEffectManager, enabling Gum and Tiled rendering to 
 3. Navigate to the Content folder in the unzipped folder
 4.  Copy the two Shader files (fx and xnb)
 
-    ![](../media/2023-08-img\_64d80a499a664.png)
+    ![](../.gitbook/assets/2023-08-img\_64d80a499a664.png)
 5. Paste these files into your project's Content folder, overwriting the existing shader fx and xnb files
 
 ### Version 45 - Sprite has SetCollisionFromAnimation
 
 This version adds a new checkbox to the Sprite Variables tab enabling the generation of collision assignment from the Sprite's AnimationChains.
 
-![](../media/2023-08-img\_64e2d3103ca16.png)
+![](../.gitbook/assets/2023-08-img\_64e2d3103ca16.png)
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
@@ -564,11 +564,11 @@ The last item requires a bit of manual work so the following outlines the steps 
 
 Before the upgrade, you may have instances which reference the old "Type" variable as shown here:
 
-<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption><p>EnemyType in json file</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (252).png" alt=""><figcaption><p>EnemyType in json file</p></figcaption></figure>
 
 These will generate incorrectly until, as shown in the following errors in Visual Studio:
 
-<figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption><p>Errors generating EnemyType and GameScreenType</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (253).png" alt=""><figcaption><p>Errors generating EnemyType and GameScreenType</p></figcaption></figure>
 
 To fix these problems:
 
@@ -578,13 +578,13 @@ To fix these problems:
 4.  Find the variable with the old "Type" type and change it to variant.\
 
 
-    <figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption><p>Change the type to Variant</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (254).png" alt=""><figcaption><p>Change the type to Variant</p></figcaption></figure>
 
 
 
 FlatRedBall attempts to keep all of your variable values the same, so if all worked okay you should not have any changes on instances aside from the types.
 
-<figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
 
 ### Version 54 - ITopDownEntity Animations
 

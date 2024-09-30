@@ -28,4 +28,4 @@ for (int i = 0; i < 100; i++)
 }
 ```
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Indexes displayed on a MapDrawableBatch</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption><p>Indexes displayed on a MapDrawableBatch</p></figcaption></figure>

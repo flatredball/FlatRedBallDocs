@@ -38,13 +38,13 @@ The following code creates 10 [Sprites](../../../../frb/docs/index.php), rotates
  SpriteManager.OrderedSortType = SortType.DistanceFromCamera;
 ```
 
-![OrderedByDistanceFromCamera.png](../../../../media/migrated\_media-OrderedByDistanceFromCamera.png)
+![OrderedByDistanceFromCamera.png](../../../../.gitbook/assets/migrated\_media-OrderedByDistanceFromCamera.png)
 
 ### ZSecondaryParentY Details
 
 The ZSecondaryParentY sort type is useful for top down and 3/4 view games. It allows moving objects (such as character entities) to be sorted based on their Y.
 
-![](../../../../media/2017-04-img\_58dfc9a83a342.png)
+![](../../../../.gitbook/assets/2017-04-img\_58dfc9a83a342.png)
 
 This is recommended for top-down and 3/4 view games. Note that Sprites use this sorting type only if they have the same Z. Therefore, if your entities have mulitple sprites with different Z values, they will interlace with other instances of the same entity.
 
@@ -60,11 +60,11 @@ SpriteManager.OrderedSortType = SortType.ZSecondaryParentY;
 
 For Sprites, the sorting is performed according to the sprite's parent. This allows sorting to be performed at a point other than the Sprite's origin (center) for more natural sorting. For example, consider a game with units with different sizes. In this situation, developers are advised to align the Sprite objects to the bottom of the entity. For example, the red X marks the origin of the entity:
 
-![](../../../../media/2017-04-img\_58dfce31e94be.png)
+![](../../../../.gitbook/assets/2017-04-img\_58dfce31e94be.png)
 
 If these origins are used, then units will sort properly according to where they are "standing" as shown in the following image:
 
-![](../../../../media/2017-04-img\_58dfd1e3d11d0.png)
+![](../../../../.gitbook/assets/2017-04-img\_58dfd1e3d11d0.png)
 
 #### IDrawableBatch Sorting Details
 
@@ -89,7 +89,7 @@ The default OrderedSortType is SortType.Z. This sort type will result in [Sprite
 
 &#x20;
 
-<figure><img src="../../../../media/migrated_media-OrderedByZ.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-OrderedByZ.png" alt=""><figcaption></figcaption></figure>
 
 Since all [Sprites](../../../../frb/docs/index.php) have an equal Z value (default of 0), then they are drawn in the order that they were added to the SpriteManager; from bottom-up. That means that the [Sprites](../../../../frb/docs/index.php) seen from below (at the top of the screen) will appear to overlap incorrectly.
 
@@ -132,7 +132,7 @@ public class SortByX : IComparer<Sprite>
 SpriteManager.OrderedSortType = SortType.DistanceFromCamera;
 ```
 
-![CustomSpriteSorting.png](../../../../media/migrated\_media-CustomSpriteSorting.png)
+![CustomSpriteSorting.png](../../../../.gitbook/assets/migrated\_media-CustomSpriteSorting.png)
 
 ### Sort Type Performance
 

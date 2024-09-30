@@ -16,9 +16,7 @@ First, we'll create a ScoreHud component in Gum. To do this:
 6. Set **Height Units** to **RelativeToContainer**
 7. Set **Height** to **0**
 
-&#x20;
-
-<figure><img src="../../media/migrated_media-ScoreHud1.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-ScoreHud1.PNG" alt=""><figcaption></figcaption></figure>
 
 Next, we'll create two Text objects:
 
@@ -28,13 +26,13 @@ Next, we'll create two Text objects:
 4. Change the Player1ScoreText's "X Units" to "PercentageWidth"
 5. Repeat the steps above to create a Player2ScoreText which is positioned on the top-right of the Screen
 
-![ScoreHud2.PNG](../../media/migrated\_media-ScoreHud2.PNG)
+![ScoreHud2.PNG](../../.gitbook/assets/migrated\_media-ScoreHud2.PNG)
 
 ### ScoreHud in MainMenuGum
 
-Now we can add a ScoreHud instance to the MainMenuGum by drag+dropping the ScoreHud into MainMenuGum: &#x20;
+Now we can add a ScoreHud instance to the MainMenuGum by drag+dropping the ScoreHud into MainMenuGum:
 
-<figure><img src="../../media/migrated_media-ScoreHud3.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-ScoreHud3.PNG" alt=""><figcaption></figcaption></figure>
 
 If you run the game at this time you'll notice that the score hud appears, but the score HUD says "Hello" for Player 1 and Player 2's scores. We can get access to the ScoreHud object in Glue as follows:
 
@@ -46,13 +44,13 @@ If you run the game at this time you'll notice that the score hud appears, but t
 6. Select the file "MainMenuGum.gusx"
 7. Select ScoreHudInstance as the Source Name
 8. Enter the name ScoreHudInstance
-9. Click OK&#x20;
+9. Click OK
 
-<figure><img src="../../media/migrated_media-ScoreHud4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-ScoreHud4.png" alt=""><figcaption></figcaption></figure>
 
-Unfortunately, if you try to access the Player objects in Visual Studio you'll see that there is no way to change the Text on the ScoreHud:&#x20;
+Unfortunately, if you try to access the Player objects in Visual Studio you'll see that there is no way to change the Text on the ScoreHud:
 
-<figure><img src="../../media/migrated_media-ScoreHud5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-ScoreHud5.png" alt=""><figcaption></figcaption></figure>
 
 ### Accessing score Text
 
@@ -61,16 +59,15 @@ To access the score text we first need to expose the variables in Gum. To do thi
 1. Switch to Gum
 2. Select the Player1ScoreText object in Gum
 3. Right-click on the Text variable
-4.  Select "Expose Variable" \
+4.  Select "Expose Variable" \\
 
-
-    <figure><img src="../../media/migrated_media-GumExposeVariable.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/migrated_media-GumExposeVariable.png" alt=""><figcaption></figcaption></figure>
 5. Enter the name "Score1" and click OK
 6. Repeat the same process to expose "Score2" for Player2ScoreText
 
-You should now have 2 exposed variables. You can see this by selecting the **ScoreHud** object in Gum: &#x20;
+You should now have 2 exposed variables. You can see this by selecting the **ScoreHud** object in Gum:
 
-<figure><img src="../../media/migrated_media-ExposedVariablesInContainer.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-ExposedVariablesInContainer.PNG" alt=""><figcaption></figcaption></figure>
 
 Now you can go to Visual Studio and add the following code to CustomInitialize in your MainMenu screen:
 
@@ -82,6 +79,6 @@ void CustomInitialize()
 }
 ```
 
-Notice that the variables appear in Visual Studio with the same names as exposed in Gum. Running the game will show the score values showing 200 and 450 respectively. &#x20;
+Notice that the variables appear in Visual Studio with the same names as exposed in Gum. Running the game will show the score values showing 200 and 450 respectively.
 
-<figure><img src="../../media/migrated_media-ScoreHud6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-ScoreHud6.png" alt=""><figcaption></figcaption></figure>

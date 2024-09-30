@@ -51,7 +51,7 @@ void PositionSpriteAtCursor(Sprite sprite)
 }
 ```
 
-![ChildAndParentSprite.png](../../../../media/migrated\_media-ChildAndParentSprite.png)
+![ChildAndParentSprite.png](../../../../.gitbook/assets/migrated\_media-ChildAndParentSprite.png)
 
 ### AttachTo Method
 
@@ -111,7 +111,7 @@ sprite.ScaleY = 5;
 sprite.RotationZVelocity = 1;
 ```
 
-![RotatingSprite.png](../../../../media/migrated\_media-RotatingSprite.png) As expected the [Sprite](../../../../frb/docs/index.php) rotates about its center. To change the point that the [Sprite](../../../../frb/docs/index.php) rotates about, we need to use an additional [PositionedObject](../../../../frb/docs/index.php). We'll add a simple [PositionedObject](../../../../frb/docs/index.php), attach the [Sprite](../../../../frb/docs/index.php) to it, then make the [PositionedObject](../../../../frb/docs/index.php) rotate. Notice that we must add the [PositionedObject](../../../../frb/docs/index.php) to the [SpriteManager](../../../../frb/docs/index.php) or else the RotationZVelocity member will not apply automatically.
+![RotatingSprite.png](../../../../.gitbook/assets/migrated\_media-RotatingSprite.png) As expected the [Sprite](../../../../frb/docs/index.php) rotates about its center. To change the point that the [Sprite](../../../../frb/docs/index.php) rotates about, we need to use an additional [PositionedObject](../../../../frb/docs/index.php). We'll add a simple [PositionedObject](../../../../frb/docs/index.php), attach the [Sprite](../../../../frb/docs/index.php) to it, then make the [PositionedObject](../../../../frb/docs/index.php) rotate. Notice that we must add the [PositionedObject](../../../../frb/docs/index.php) to the [SpriteManager](../../../../frb/docs/index.php) or else the RotationZVelocity member will not apply automatically.
 
 ```
 PositionedObject anchor = new PositionedObject();
@@ -132,7 +132,7 @@ bool changeRelative = true;
 sprite.AttachTo(anchor, changeRelative);
 ```
 
-![NewRotationPoint.png](../../../../media/migrated\_media-NewRotationPoint.png)
+![NewRotationPoint.png](../../../../.gitbook/assets/migrated\_media-NewRotationPoint.png)
 
 **Stop right there!** The code shown above for attaching is as brief as possible and simply shows the raw syntax behind attachments. However, you may be using Glue, and if so you shouldn't be writing the code above. Instead, you will likely have the above situation mostly set up - the PositionedObject will be the Entity itself and the Sprite will be a Sprite (or Entire Scene) Object in Glue. Instead of doing this in code, you should simply offset the Sprite in the SpriteEditor. Then when the Entity rotates, the Sprite will rotate about an offset naturally.
 

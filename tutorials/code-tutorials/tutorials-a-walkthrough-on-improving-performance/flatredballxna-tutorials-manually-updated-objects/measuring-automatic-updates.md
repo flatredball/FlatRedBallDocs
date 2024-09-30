@@ -1,4 +1,4 @@
-# measuring-automatic-updates
+# Measuring Automatic Updates
 
 ### Introduction
 
@@ -10,7 +10,7 @@ This article assumes that you already have a working project in FlatRedBall - pr
 
 ### FlatRedBall Debugger
 
-The FlatRedBall Engine includes a class called [Debugger](../../../../../frb/docs/index.php) which can help you debug and diagnose problems in your project. In this case we'll be using a function called WriteAutomaticallyUpdatedObjectInformation. This method will print the number of managed objects to the screen in real time. It's a very simple method to use which provides a lot of useful information. To use it:
+The FlatRedBall Engine includes a class called [Debugger](../../../../frb/docs/index.php) which can help you debug and diagnose problems in your project. In this case we'll be using a function called WriteAutomaticallyUpdatedObjectInformation. This method will print the number of managed objects to the screen in real time. It's a very simple method to use which provides a lot of useful information. To use it:
 
 1. Open your project in Visual Studio
 2. Navigate to your Game class (which is by default called Game1 in Game1.cs)
@@ -22,7 +22,7 @@ The FlatRedBall Engine includes a class called [Debugger](../../../../../frb/doc
     ```
 5. Run your game
 
-Now you should see information about the objects that are present in your game. The top-left of your screen may look similar to: ![WriteAutomaticallyUpdatedObjectInformation.png](../../../../../media/migrated_media-WriteAutomaticallyUpdatedObjectInformation.png)
+Now you should see information about the objects that are present in your game. The top-left of your screen may look similar to: ![WriteAutomaticallyUpdatedObjectInformation.png](../../../../.gitbook/assets/migrated\_media-WriteAutomaticallyUpdatedObjectInformation.png)
 
 ### What does this information mean?
 
@@ -43,11 +43,11 @@ For the most part the cost of each type of object is equal. In other words, mana
 
 #### PositionedObjects
 
-If you are using Glue then it's likely that a large number of your automatically updated PositionedObjects are Entities. For more information on making these manually updated, see the [ConvertToManuallyUpdated page](../../../../../frb/docs/index.php).
+If you are using Glue then it's likely that a large number of your automatically updated PositionedObjects are Entities. For more information on making these manually updated, see the [ConvertToManuallyUpdated page](../../../../frb/docs/index.php).
 
 #### Sprites
 
-For information on how to improve the performance of your game if it has a large number of Sprites, see [this page](../../../../../frb/docs/index.php).
+For information on how to improve the performance of your game if it has a large number of Sprites, see [this page](../../../../frb/docs/index.php).
 
 #### SpriteFrames
 

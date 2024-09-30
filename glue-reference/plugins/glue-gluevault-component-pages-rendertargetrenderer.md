@@ -9,7 +9,7 @@ The RenderTargetRenderer class can be used to greatly increase the performance o
 This example will show how to render a very large number of Entities with essentially no slowdown. To set up the project:
 
 1. Create a new Glue project
-2. Import the following Entity: [File:GraphicWithText.entz](../../../../frb/docs/index.php)
+2. Import the following Entity: [File:GraphicWithText.entz](../../frb/docs/index.php)
 3. Create a new Screen. I'll call mine GameScreen
 
 Before we add anything to the game we'll want to turn off any framerate throttling so we can see actual performance differences. To do this open Game1.cs and add the following code to the Game1 constructor:
@@ -48,7 +48,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-This results in the game running around 7 frames per second (on my hardware at the time of this writing): ![LowFpsPart1.PNG](../../../../media/migrated_media-LowFpsPart1.PNG) Notice that the entities are converted to being manually updated, which reduces the update load significantly. The low frame rate in this case comes almost purely from rendering. For more information on ConvertToManuallyUpdated, [see this page](../../../../frb/docs/index.php). In this case we'll assume that once the Entities have been placed they will not need to move or change otherwise. We can therefore take a "snapshot" of the screen using the RenderTargetRenderer and improve the performance significantly. Since the RenderTargetRender only creates a Texture2D, we will need to create an object to display it. To do this:
+This results in the game running around 7 frames per second (on my hardware at the time of this writing): ![LowFpsPart1.PNG](../../.gitbook/assets/migrated\_media-LowFpsPart1.PNG) Notice that the entities are converted to being manually updated, which reduces the update load significantly. The low frame rate in this case comes almost purely from rendering. For more information on ConvertToManuallyUpdated, [see this page](../../frb/docs/index.php). In this case we'll assume that once the Entities have been placed they will not need to move or change otherwise. We can therefore take a "snapshot" of the screen using the RenderTargetRenderer and improve the performance significantly. Since the RenderTargetRender only creates a Texture2D, we will need to create an object to display it. To do this:
 
 1. Switch to Glue
 2. Right-click on the Objects folder under the GameScreen
@@ -93,7 +93,7 @@ void CustomInitialize()
 }
 ```
 
-The result is a much higher framerate which fluctuated into the 2000's: ![HighFps1.PNG](../../../../media/migrated_media-HighFps1.PNG)
+The result is a much higher framerate which fluctuated into the 2000's: ![HighFps1.PNG](../../.gitbook/assets/migrated\_media-HighFps1.PNG)
 
 ### Further optimizations
 
@@ -212,7 +212,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-Since all objects receive a full update after rotation, updates can be expensive. However once updates are complete the game resumes at full framerate: ![RotatedHighFps.PNG](../../../../media/migrated_media-RotatedHighFps.PNG)
+Since all objects receive a full update after rotation, updates can be expensive. However once updates are complete the game resumes at full framerate: ![RotatedHighFps.PNG](../../.gitbook/assets/migrated\_media-RotatedHighFps.PNG)
 
 ### Integration with Glue
 
@@ -224,4 +224,4 @@ SpriteManager.RemoveLayer(LayerInstance);
 renderer.Camera.AddLayer(LayerInstance);
 ```
 
-Now anything that is added to that Layer will be part of the RenderTargetRenderer. For more information see the [FlatRedBall.SpriteManager.RemoveLayer](../../../../frb/docs/index.php) and [FlatRedBall.Camera.AddLayer](../../../../frb/docs/index.php) pages.
+Now anything that is added to that Layer will be part of the RenderTargetRenderer. For more information see the [FlatRedBall.SpriteManager.RemoveLayer](../../frb/docs/index.php) and [FlatRedBall.Camera.AddLayer](../../frb/docs/index.php) pages.

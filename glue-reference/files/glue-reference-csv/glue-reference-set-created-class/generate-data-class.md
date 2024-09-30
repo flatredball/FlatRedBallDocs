@@ -8,8 +8,8 @@ By default CSVs added to Glue will create a matching class in the DataTypes fold
 
 The following screen shot shows a CSV called EnemyInfo which is tied to a data class with the fully-qualified name of GameProject.DataTypes.EnemyDataClass:
 
-<figure><img src="../../../../media/migrated_media-GenerateDataClassFalse.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-GenerateDataClassFalse.PNG" alt=""><figcaption></figcaption></figure>
 
 &#x20;The "Custom Namespace" field allows using classes defined outside of the GameName.DataTypes namespace. For example in the following image the class BuildingInfo is placed in the BaseDataTypes.Buildings namespace (resulting in the fully qualified name BaseDataTypes.Buildings.BuildingInfo):&#x20;
 
-<figure><img src="../../../../media/migrated_media-CustomNamespace.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-CustomNamespace.PNG" alt=""><figcaption></figcaption></figure>

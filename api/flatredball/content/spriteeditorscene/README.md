@@ -1,14 +1,14 @@
-# spriteeditorscene
+# SpriteEditorScene
 
 ### Introduction
 
-A SpriteEditorScene is a "ready to save" or "just loaded" [Scene](../../../../../frb/docs/index.php). It is used to load a Scene from a .scnx file and it can be used to write .scnx files easily. The [FlatRedBallServices](../../../../../frb/docs/index.php) class internally uses the SpriteEditorScene class when you use it to load Scenes.
+A SpriteEditorScene is a "ready to save" or "just loaded" [Scene](../../../../frb/docs/index.php). It is used to load a Scene from a .scnx file and it can be used to write .scnx files easily. The [FlatRedBallServices](../../../../frb/docs/index.php) class internally uses the SpriteEditorScene class when you use it to load Scenes.
 
-You will not need to use the SpriteEditorScene class in most cases because you can load .scnx files through the FlatRedBallServices.Load method as shown [here](../../../../../frb/docs/index.php#Loading_a_Scene_From_File).
+You will not need to use the SpriteEditorScene class in most cases because you can load .scnx files through the FlatRedBallServices.Load method as shown [here](../../../../frb/docs/index.php#Loading\_a\_Scene\_From\_File).
 
 ### Loading a .scnx into a Scene
 
-Using the SpriteEditorScene can give you additional information and control over how Scenes are created. In most cases you will want to use the [FlatRedBallServices' Load method](../../../../../frb/docs/index.php#Loading_a_Scene_From_File).
+Using the SpriteEditorScene can give you additional information and control over how Scenes are created. In most cases you will want to use the [FlatRedBallServices' Load method](../../../../frb/docs/index.php#Loading\_a\_Scene\_From\_File).
 
 The following code shows how to load a .scnx file using the SpriteEditorScene instead of the FlatRedBallServices method:
 
@@ -29,9 +29,9 @@ Scene scene = saveObject.ToScene(contentManagerName );
 scene.AddToManagers();
 ```
 
-![SplashScreen.png](../../../../../media/migrated_media-SplashScreen.png)
+![SplashScreen.png](../../../../.gitbook/assets/migrated\_media-SplashScreen.png)
 
-The **SpriteEditorScene**.FromFile method loads and returns an instance of a **SpriteEditorScene** which is loaded from the argument .scnx. This **SpriteEditorScene** is then converted to a Scene by calling the ToScene method. The ToScene method takes a [content manager](../../../../../frb/docs/index.php) name. For more information on content managers, see the [FlatRedBall content manager](../../../../../frb/docs/index.php) entry.
+The **SpriteEditorScene**.FromFile method loads and returns an instance of a **SpriteEditorScene** which is loaded from the argument .scnx. This **SpriteEditorScene** is then converted to a Scene by calling the ToScene method. The ToScene method takes a [content manager](../../../../frb/docs/index.php) name. For more information on content managers, see the [FlatRedBall content manager](../../../../frb/docs/index.php) entry.
 
 Next, the Scene adds all of its contained objects to the appropriate managers through the AddToManagers method. Prior to calling AddToManagers all objects referenced by the Scene are stored in memory but they are not managed or drawn.
 
@@ -66,13 +66,13 @@ foreach(SpriteSave spriteSave in spriteEditorScene.SpriteList)
 }
 ```
 
-For more information on the [SpriteSave](../../../../../frb/docs/index.php) class, see the [SpriteSave page](../../../../../frb/docs/index.php).
+For more information on the [SpriteSave](../../../../frb/docs/index.php) class, see the [SpriteSave page](../../../../frb/docs/index.php).
 
 ### Saving a .scnx
 
 FlatRedBall provides code to save .scnx files from FlatRedBall applications. This allows the saving of .scnx files for custom scene building and debugging. Any .scnx file created with FlatRedBall will be loadable in the SpriteEditor.
 
-To save a Scene, you must first create a SpriteEditorScene instance. You can create a SpriteEditorScene either from a [Scene](../../../../../frb/docs/index.php) instance, or by manually creating the objects.
+To save a Scene, you must first create a SpriteEditorScene instance. You can create a SpriteEditorScene either from a [Scene](../../../../frb/docs/index.php) instance, or by manually creating the objects.
 
 The easiest way to save a .scnx file is to first create a Scene, then use the SpriteEditorScene's static FromScene method.
 
@@ -89,13 +89,13 @@ spriteEditorScene.Save("fileName.scnx");
 If you would like more control over how your .scnx is created, you can manually construct SpriteEditorScenes to be saved. To do this:
 
 * Instantiate a SpriteEditorScene
-* Create "Save" objects which represent FlatRedBall objects ([Sprites](../../../../../frb/docs/index.php), [SpriteGrids](../../../../../frb/docs/index.php), [SpriteFrames](../../../../../frb/docs/index.php), [Texts](../../../../../frb/docs/index.php)) and set their properties and fields appropriately.
+* Create "Save" objects which represent FlatRedBall objects ([Sprites](../../../../frb/docs/index.php), [SpriteGrids](../../../../frb/docs/index.php), [SpriteFrames](../../../../frb/docs/index.php), [Texts](../../../../frb/docs/index.php)) and set their properties and fields appropriately.
 * Add the "Save" objects to the SpriteEditorScene.
 * Save the SpriteEditorScene (which serializes it to an XML file).
 
 #### Saving Sprites
 
-The following code creates 20 [Sprites](../../../../../frb/docs/index.php) and saves them to a .scnx file.
+The following code creates 20 [Sprites](../../../../frb/docs/index.php) and saves them to a .scnx file.
 
 Add the following using statement:
 
@@ -130,17 +130,17 @@ for (int i = 0; i < 20; i++)
 spriteEditorScene.Save("fromCode.scnx");
 ```
 
-First the SpriteEditorScene instance is created. Next 20 [Sprites](../../../../../frb/docs/index.php) are created. These [Sprites](../../../../../frb/docs/index.php) will both appear in the application when it runs as well as saved in the SpriteEditorScene. Next, each [Sprite](../../../../../frb/docs/index.php) is represented by a SpriteSave which has its properties set then is added to the SpriteEditorScene.
+First the SpriteEditorScene instance is created. Next 20 [Sprites](../../../../frb/docs/index.php) are created. These [Sprites](../../../../frb/docs/index.php) will both appear in the application when it runs as well as saved in the SpriteEditorScene. Next, each [Sprite](../../../../frb/docs/index.php) is represented by a SpriteSave which has its properties set then is added to the SpriteEditorScene.
 
-Once all [Sprites](../../../../../frb/docs/index.php) have been created the Scene is saved to a .scnx file. Be sure to use a .scnx extension so the SpriteEditor recognizes this file as a valid scene.
+Once all [Sprites](../../../../frb/docs/index.php) have been created the Scene is saved to a .scnx file. Be sure to use a .scnx extension so the SpriteEditor recognizes this file as a valid scene.
 
-Executing the code:![SpritesInCode.png](../../../../../media/migrated_media-SpritesInCode.png)
+Executing the code:![SpritesInCode.png](../../../../.gitbook/assets/migrated\_media-SpritesInCode.png)
 
-.scnx loaded in the SpriteEditor:![FromCodeToSpriteEditor.png](../../../../../media/migrated_media-FromCodeToSpriteEditor.png)
+.scnx loaded in the SpriteEditor:![FromCodeToSpriteEditor.png](../../../../.gitbook/assets/migrated\_media-FromCodeToSpriteEditor.png)
 
 #### Saving SpriteGrids
 
-The following code creates a [SpriteGrid](../../../../../frb/docs/index.php) with a different Texture2D displayed by the center [Sprite](../../../../../frb/docs/index.php).
+The following code creates a [SpriteGrid](../../../../frb/docs/index.php) with a different Texture2D displayed by the center [Sprite](../../../../frb/docs/index.php).
 
 Add the following using statements:
 
@@ -175,12 +175,12 @@ In Initialize:
  spriteEditorScene.Save("spriteGridFromCode.scnx");
 ```
 
-Executing the code:![SpriteGridCreatedInCode.png](../../../../../media/migrated_media-SpriteGridCreatedInCode.png)
+Executing the code:![SpriteGridCreatedInCode.png](../../../../.gitbook/assets/migrated\_media-SpriteGridCreatedInCode.png)
 
-.scnx loaded in the SpriteEditor:![SpriteGridFromCodeInSpriteEditor.png](../../../../../media/migrated_media-SpriteGridFromCodeInSpriteEditor.png)
+.scnx loaded in the SpriteEditor:![SpriteGridFromCodeInSpriteEditor.png](../../../../.gitbook/assets/migrated\_media-SpriteGridFromCodeInSpriteEditor.png)
 
 ### SpriteEditorScene Members
 
-* [FlatRedBall.Content.SpriteEditorScene.Camera](../../../../../frb/docs/index.php)
+* [FlatRedBall.Content.SpriteEditorScene.Camera](../../../../frb/docs/index.php)
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.

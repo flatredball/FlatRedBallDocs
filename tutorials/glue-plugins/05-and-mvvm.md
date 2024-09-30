@@ -6,7 +6,7 @@ The WPF framework can be used with the MVVM (https://en.wikipedia.org/wiki/Model
 
 ### Creating a ViewModel
 
-Developers familiar with MVVM can implement view models according to their own preferred patterns or frameworks, but we will be covering one way to implement view models using Glue's base ViewModel  class. Specifically we will be modifying the plugin from the previous tutorial to display information about the selected file. First, we'll create a view model for the control:
+Developers familiar with MVVM can implement view models according to their own preferred patterns or frameworks, but we will be covering one way to implement view models using Glue's base ViewModel class. Specifically we will be modifying the plugin from the previous tutorial to display information about the selected file. First, we'll create a view model for the control:
 
 1. Right-click on the plugin project and select **Add** -> **New Folder**
 2. Name the folder **ViewModels**
@@ -14,7 +14,7 @@ Developers familiar with MVVM can implement view models according to their own p
 4. Enter the name **MainControlViewModel**
 5. Click **Add**
 
-![](../../media/2018-02-img_5a807b9335783.png)
+![](../../.gitbook/assets/2018-02-img\_5a807b9335783.png)
 
 Next we'll modify the view model to implement the base ViewModel class and to have properties for displaying information about the file. Modify MainControlViewModel.cs as shown in the following code snippet:
 
@@ -58,7 +58,7 @@ The code above can be used to display the file name and write time of the select
 </UserControl>
 ```
 
-Finally we can create add a MainControlViewModel  instance to our MainTutorialPlugin  class and assign the view model in the HandleItemSelected  method, as shown in the following code snippet:
+Finally we can create add a MainControlViewModel instance to our MainTutorialPlugin class and assign the view model in the HandleItemSelected method, as shown in the following code snippet:
 
 ```lang:c#
 using FlatRedBall.Glue.Plugins;
@@ -125,11 +125,11 @@ namespace TutorialPlugin
 
 Now we can run our project and see information about the selected file.
 
-![](../../media/2018-02-img_5a8094e5f23ce.png)
+![](../../.gitbook/assets/2018-02-img\_5a8094e5f23ce.png)
 
 ### Reacting to File Changes
 
-Glue can notify plugins when a file changes. To respond to these changes, the plugin can use the ReactToFileChangeHandler  delegate, as shown in the following code snippet:
+Glue can notify plugins when a file changes. To respond to these changes, the plugin can use the ReactToFileChangeHandler delegate, as shown in the following code snippet:
 
 ```lang:c#
 ...
@@ -161,8 +161,6 @@ private void HandleFileChanged(string fileName)
 ...
 ```
 
-We an change files which are selected and the plugin will be notified of the change and will automatically update the displayed information.&#x20;
+We an change files which are selected and the plugin will be notified of the change and will automatically update the displayed information.
 
-&#x20;&#x20;
-
-<figure><img src="../../media/2018-02-2018-02-11_12-34-52.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2018-02-2018-02-11_12-34-52.gif" alt=""><figcaption></figcaption></figure>

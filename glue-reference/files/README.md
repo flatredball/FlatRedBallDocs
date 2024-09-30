@@ -66,11 +66,11 @@ This feature is especially useful for file types which can reference lots of oth
 
 The following screenshot shows a typical game with the GumProject.gumx added to **Global Content Files**.
 
-<figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption><p>GumProject.gumx in Global Content Files</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (249).png" alt=""><figcaption><p>GumProject.gumx in Global Content Files</p></figcaption></figure>
 
 Every file referenced by the Gum project (and any of the Screens and Components in the Gum project) is automatically added to your game project (.csproj). For example, all font files are automatically added to the game project, as shown in the following screenshot from Visual Studio.
 
-<figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Font files in Visual Studio</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (250).png" alt=""><figcaption><p>Font files in Visual Studio</p></figcaption></figure>
 
 ### Adding Files Using Wildcards (\*)
 
@@ -90,7 +90,7 @@ Files added to a Screen or Entity create a member which can be accessed in code.
 
 This Texture2D can be accessed in custom code, such as to assign a Sprite's Texture. Since MonsterTexture is a static Property of the Monster entity, access to this property is checked at compile time and auto complete displays it as an option when writing code.
 
-![MonsterTexture shown in auto complete](../../media/2016-12-img\_586282b3a3374.png)
+![MonsterTexture shown in auto complete](../../.gitbook/assets/2016-12-img\_586282b3a3374.png)
 
 #### Accessing Global Content Files
 
@@ -133,27 +133,27 @@ This creates a folder both in the FlatRedBall Editor as well as on the file syst
 
 The Name of a file in the FlatRedBall Editor reflects its location. For example, the following shows a file located in the Animations folder of a Ball entity:
 
-<figure><img src="../../media/migrated_media-GlueFileNameWithFolders.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-GlueFileNameWithFolders.png" alt=""><figcaption></figcaption></figure>
 
 Shared files display the name of their location on disk. For example the following shows a file which is located in Global Content, but shared with an entity. When the shared copy is selected the file's actual location is show in the Name property:
 
-<figure><img src="../../media/migrated_media-GlueSharedBallName.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-GlueSharedBallName.png" alt=""><figcaption></figcaption></figure>
 
 Notice that the file above is located in **GlobalContent/ball.png**, but it appears in both the **Global Content Files** folder and the **Files** folder of **BallEntity**. To view a file in its location on disk, right-click and select **View in Explorer**.
 
-<figure><img src="../../media/2016-02-2019-05-02_06-48-09.gif" alt=""><figcaption><p>Right-click to view a file in explorer</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2016-02-2019-05-02_06-48-09.gif" alt=""><figcaption><p>Right-click to view a file in explorer</p></figcaption></figure>
 
 ### Deleting Files
 
 Files can be deleted by right-clicking on a file and selecting the Remove option.
 
-<figure><img src="../../.gitbook/assets/image (75).png" alt=""><figcaption><p>Right click remove option</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (246).png" alt=""><figcaption><p>Right click remove option</p></figcaption></figure>
 
 The Delete key on the keyboard also serves as a shortcut for removing the file.
 
 If a file is removed, the FRB Editor scans the project to determine if the file is still referenced elsewhere. If no refernces are found, then FRB asks what you would like to do with the file.
 
-<figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption><p>Options after removing a file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (247).png" alt=""><figcaption><p>Options after removing a file</p></figcaption></figure>
 
 * Nothing - this option removes the file from the FRB Editor, but the file remains part of the Visual Studio project and is not removed from disk. Select this option if you would still like to use this file in code. Note that you must manually load the file in custom code - the FRB Editor no longer generates any code for files which have been removed.
 * Remove them from the project but keep the files - this option removes the file from the the FRB Editor and also from your game project (.csproj). Select this option if you do not want to use the file in your project, but you want to keep it on disk so you can access it later. Since the file is no longer part of Visual Studio, it will not be copied to your game's bin folder, so it cannot be loaded at runtime - even in custom code.
@@ -173,5 +173,5 @@ A file can have references from other files. For example, a .png file can be ref
 
 For example, the Player's AnimationChainhListFile.achx references the CharacterSpriteSheet.png. If CharacterSpriteSheet is removed from the Player entity, the FRB Editor recognizes that it is still needed and does not ask about whether it should be deleted or removed from the game project.
 
-<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption><p>AnimationChain refrencing a file on disk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (248).png" alt=""><figcaption><p>AnimationChain refrencing a file on disk</p></figcaption></figure>
 

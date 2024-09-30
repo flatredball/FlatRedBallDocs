@@ -1,4 +1,4 @@
-# velocity
+# Velocity
 
 ### Introduction
 
@@ -55,11 +55,9 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
+<figure><img src="../../../.gitbook/assets/2016-01-16_08-10-08.gif" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../../../media/2016-01-16_08-10-08.gif" alt=""><figcaption></figcaption></figure>
-
- The code could also be modified to shoot the bullets at angles. For example, the following code shows how to shoot 5 bullets in a spread angle:
+The code could also be modified to shoot the bullets at angles. For example, the following code shows how to shoot 5 bullets in a spread angle:
 
 ```
 using Microsoft.Xna.Framework;
@@ -87,11 +85,9 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-### &#x20;
+###
 
-<figure><img src="../../../../media/2016-01-16_08-14-14.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/2016-01-16_08-14-14.gif" alt=""><figcaption></figcaption></figure>
 
 ### The persistence of Velocity
 
@@ -130,4 +126,4 @@ Bullet.Velocity = vectorFromBulletToPlayer * speedToMoveAt;
 
 ### Velocity and Parent
 
-If an object has a non-null Parent, then you must use [RelativeVelocity](../../../../frb/docs/index.php) instead of Velocity.
+If an object has a non-null Parent, then you must use [RelativeVelocity](../../../frb/docs/index.php) instead of Velocity.

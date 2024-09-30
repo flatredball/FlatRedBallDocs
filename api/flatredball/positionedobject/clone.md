@@ -1,12 +1,12 @@
-# clone
+# Clone
 
 ### Introduction
 
-The Clone method is a generic method which can be used to create new instances of objects which inherit from PositionedObjects. Since it is generic, the Clone method can be used on types that inherit from the PositionedObject class, like [Entities](../../../../frb/docs/index.php).
+The Clone method is a generic method which can be used to create new instances of objects which inherit from PositionedObjects. Since it is generic, the Clone method can be used on types that inherit from the PositionedObject class, like [Entities](../../../frb/docs/index.php).
 
 ### Code Example
 
-The following creates a custom PositionedObject class called WeightedObject. It manually creates one WeightedObject, then creates a clone of it. The output [Text](../../../../frb/docs/index.php) shows that the WeightedObject has been properly cloned. Add the following using statement:
+The following creates a custom PositionedObject class called WeightedObject. It manually creates one WeightedObject, then creates a clone of it. The output [Text](../../../frb/docs/index.php) shows that the WeightedObject has been properly cloned. Add the following using statement:
 
 ```
 using FlatRedBall.Graphics;
@@ -43,11 +43,11 @@ WeightedObject secondObject = firstObject.Clone<WeightedObject>();
 TextManager.AddText(secondObject.ToString());
 ```
 
-![PositionedObjectClone.png](../../../../media/migrated_media-PositionedObjectClone.png)
+![PositionedObjectClone.png](../../../.gitbook/assets/migrated\_media-PositionedObjectClone.png)
 
 ### What does Clone actually copy?
 
-The Clone method clones your PositionedObject, but there are a few details to keep in mind. First, the Clone method calls the MemberwiseClone method, which is a method that exists for all objects in .NET. This method performs a "shallow" copy. What that means is that if your object has a member that is a reference (for example, to another [Sprite](../../../../frb/docs/index.php)), then the newly-cloned object will share the exact same reference. It will not create a new [Sprite](../../../../frb/docs/index.php) instance for it to reference as a member. All value members (such as float or int) will be copied and each object will have its own value data. There are a few exceptions. The PositionedObject will create new instances for:
+The Clone method clones your PositionedObject, but there are a few details to keep in mind. First, the Clone method calls the MemberwiseClone method, which is a method that exists for all objects in .NET. This method performs a "shallow" copy. What that means is that if your object has a member that is a reference (for example, to another [Sprite](../../../frb/docs/index.php)), then the newly-cloned object will share the exact same reference. It will not create a new [Sprite](../../../frb/docs/index.php) instance for it to reference as a member. All value members (such as float or int) will be copied and each object will have its own value data. There are a few exceptions. The PositionedObject will create new instances for:
 
 * ListsBelongingTo
 * Children

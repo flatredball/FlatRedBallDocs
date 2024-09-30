@@ -59,7 +59,7 @@ ShapeCollection shapeCollection = FlatRedBallServices.Load<ShapeCollection>("sha
 shapeCollection.AddToManagers();
 ```
 
-![ShapeCollection.png](../../../../../media/migrated\_media-ShapeCollection.png)
+![ShapeCollection.png](../../../../../.gitbook/assets/migrated\_media-ShapeCollection.png)
 
 ### Saving a ShapeCollection
 

@@ -1,12 +1,12 @@
-# automaticallyupdatedsprites
+# AutomaticallyUpdatedSprites
 
 ### Introduction
 
-The AutomaticallyUpdatedSprites property in the SpriteManager is a list of all Sprites which the SpriteManager will apply standard behavior to. This includes velocity, rotational velocity, attachment, color rate changes, scale velocity, and animation. This list is made available for debugging and testing. It can be added to a watch window when Visual Studio has hit a breakpoint: ![AutomaticallyUpdatedSpritesInWatchWindow.PNG](../../../../media/migrated_media-AutomaticallyUpdatedSpritesInWatchWindow.PNG)
+The AutomaticallyUpdatedSprites property in the SpriteManager is a list of all Sprites which the SpriteManager will apply standard behavior to. This includes velocity, rotational velocity, attachment, color rate changes, scale velocity, and animation. This list is made available for debugging and testing. It can be added to a watch window when Visual Studio has hit a breakpoint: ![AutomaticallyUpdatedSpritesInWatchWindow.PNG](../../../.gitbook/assets/migrated\_media-AutomaticallyUpdatedSpritesInWatchWindow.PNG)
 
 ### Adding and Removing from AutomaticallyUpdatedSprites
 
-AutomaticallyUpdatedSprites is a [SpriteList](../../../../frb/docs/index.php) which is exposed for debugging, tools development, and advanced FlatRedBall programming. Most games do not need to add or remove Sprites directly from this list. This list is added to and removed from using more common FlatRedBall methods.
+AutomaticallyUpdatedSprites is a [SpriteList](../../../frb/docs/index.php) which is exposed for debugging, tools development, and advanced FlatRedBall programming. Most games do not need to add or remove Sprites directly from this list. This list is added to and removed from using more common FlatRedBall methods.
 
 #### Adding to AutomaticallyUpdatedSprites
 
@@ -32,4 +32,4 @@ SpriteManager.AddToLayer(mySprite, myLayer);
 
 #### Removing from AutomaticallyUpdatedSprites
 
-AutomaticallyUpdatedSprites is a [SpriteList](../../../../frb/docs/index.php) which means it inherits from [PositionedObjectList](../../../../frb/docs/index.php) so it shares a [two-way relationship](../../../../frb/docs/index.php#Two_Way_Relationships) with any Sprite that is added to it. Calling SpriteManager.RemoveSprite is the recommended way of removing a Sprite from this List.
+AutomaticallyUpdatedSprites is a [SpriteList](../../../frb/docs/index.php) which means it inherits from [PositionedObjectList](../../../frb/docs/index.php) so it shares a [two-way relationship](../../../frb/docs/index.php#Two\_Way\_Relationships) with any Sprite that is added to it. Calling SpriteManager.RemoveSprite is the recommended way of removing a Sprite from this List.

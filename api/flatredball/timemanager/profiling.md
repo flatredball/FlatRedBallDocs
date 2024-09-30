@@ -69,7 +69,7 @@ Use the following in Update method (entire method shown):
  }
 ```
 
-![TimeSectionOutput.png](../../../media/migrated\_media-TimeSectionOutput.png)
+![TimeSectionOutput.png](../../../.gitbook/assets/migrated\_media-TimeSectionOutput.png)
 
 ### SumTimeSection
 

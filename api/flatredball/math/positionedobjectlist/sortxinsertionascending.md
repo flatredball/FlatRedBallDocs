@@ -1,4 +1,4 @@
-# sortxinsertionascending
+# SortXInsertionAscending
 
 ### Introduction
 
@@ -6,7 +6,7 @@ The SortXInsertionAscending (and SortYInsertionAscending/SortZInsertionAscending
 
 ### Code Example
 
-The following code creates 3 [Circles](../../../../../frb/docs/index.php) and places them in a PositionedObjectList in descending X order. Then SortXInsertionAscending is called, and the positions of the Circles are printed out:
+The following code creates 3 [Circles](../../../../frb/docs/index.php) and places them in a PositionedObjectList in descending X order. Then SortXInsertionAscending is called, and the positions of the Circles are printed out:
 
 ```
 FlatRedBall.Math.PositionedObjectList<Circle> circleList =
@@ -36,4 +36,4 @@ foreach(Circle circle in circleList)
 }
 ```
 
-![SortedCircles.PNG](../../../../../media/migrated_media-SortedCircles.PNG)
+![SortedCircles.PNG](../../../../.gitbook/assets/migrated\_media-SortedCircles.PNG)

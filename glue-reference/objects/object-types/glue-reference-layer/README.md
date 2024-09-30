@@ -18,7 +18,7 @@ To create a Layer in the FRB Editor:
 4. Select **Layer**
 5. Click **OK**
 
-<figure><img src="../../../../media/2016-01-2021_July_22_092823.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2016-01-2021_July_22_092823.gif" alt=""><figcaption></figcaption></figure>
 
 ### Layer Order
 
@@ -26,11 +26,11 @@ Layers are drawn in the same order that they are added in code. In other words, 
 
 &#x20;&#x20;
 
-<figure><img src="../../../../media/migrated_media-LayerOrderInGlue.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-LayerOrderInGlue.PNG" alt=""><figcaption></figcaption></figure>
 
 You can adjust the order of layers by right-clicking on a Layer and selecting one of the options to move it:&#x20;
 
-<figure><img src="../../../../media/migrated_media-MoveLayerUpOrDown.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-MoveLayerUpOrDown.png" alt=""><figcaption></figcaption></figure>
 
 ### Adding an Object to a Layer
 
@@ -39,6 +39,6 @@ To add an object to a layer:
 1. Make sure you have a Layer in the same Screen as your object
 2. Drag+drop the object onto the layer
 
-<figure><img src="../../../../media/2016-01-2019-07-19_10-39-04.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2016-01-2019-07-19_10-39-04.gif" alt=""><figcaption></figcaption></figure>
 
 You can verify that the layer was changed by looking at the **LayerOn** property. Entity instances can be moved to a layer in code using the [MoveToLayer](../../../entities/movetolayer.md) function.

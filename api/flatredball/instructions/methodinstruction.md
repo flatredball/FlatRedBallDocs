@@ -1,20 +1,20 @@
-# methodinstruction
+# MethodInstruction
 
 ### Introduction
 
-MethodInstructions are a way of calling a method at some time in the future. They can simplify the creation of effects and animation in game development. The [DelegateInstruction](../../../../frb/docs/index.php) provides the same functionality for simple cases.
+MethodInstructions are a way of calling a method at some time in the future. They can simplify the creation of effects and animation in game development. The [DelegateInstruction](../../../frb/docs/index.php) provides the same functionality for simple cases.
 
 ### Using Method Instructions
 
 There are a few things to remember when using MethodInstructions:
 
-1. While MethodInstructions can be manually executed, the easiest way to use them is to add them to an [IInstructable](../../../../frb/docs/index.php) that is being managed such as a [Sprite](../../../../frb/docs/index.php). This way you don't have to manually watch for instructions to call them. The manager takes care of it for you!
-2. MethodInstructions cannot call static methods. You'll see in the following example that SpriteManager.RemoveSprite needs to be wrapped in another method. Another alternative is to create a [StaticMethodInstruction](../../../../frb/docs/index.php).
+1. While MethodInstructions can be manually executed, the easiest way to use them is to add them to an [IInstructable](../../../frb/docs/index.php) that is being managed such as a [Sprite](../../../frb/docs/index.php). This way you don't have to manually watch for instructions to call them. The manager takes care of it for you!
+2. MethodInstructions cannot call static methods. You'll see in the following example that SpriteManager.RemoveSprite needs to be wrapped in another method. Another alternative is to create a [StaticMethodInstruction](../../../frb/docs/index.php).
 
 The following code creates an effect that could be used for explosions when the user presses the space bar. The code does the following things:
 
-* When the user presses the space bar, the code creates 8 instructions to create explosion [Sprites](../../../../frb/docs/index.php). The creation of these [Sprites](../../../../frb/docs/index.php) is delayed and controlled by the last argument of the MethodInstruction constructor.
-* These instructions are added to the [InstructionManager](../../../../frb/docs/index.php) since there is no object around to "own" these Instructions.
+* When the user presses the space bar, the code creates 8 instructions to create explosion [Sprites](../../../frb/docs/index.php). The creation of these [Sprites](../../../frb/docs/index.php) is delayed and controlled by the last argument of the MethodInstruction constructor.
+* These instructions are added to the [InstructionManager](../../../frb/docs/index.php) since there is no object around to "own" these Instructions.
 * When a Sprite is created its properties are set and another MethodInstruction is created to remove the Sprite after 1 second.
 
 Add the following using statement:
@@ -75,7 +75,7 @@ public void RemoveSprite(Sprite sprite)
 }
 ```
 
-![MethodInstructions.png](../../../../media/migrated_media-MethodInstructions.png)
+![MethodInstructions.png](../../../.gitbook/assets/migrated\_media-MethodInstructions.png)
 
 ### "arguments" argument
 
@@ -100,7 +100,7 @@ object[] arguments = new object[]{mySprite, newScale, timeToSet};
 
 MethodInstructions attempt to call methods using reflection. They obtain the method to call using the name of the method. However, if the method that you want to call has multiple overloads then you will need to supply a MethodInfo to tell which version of the method you want to call.
 
-For example, let's say you are working with an [AxisAlignedRectangle](../../../../frb/docs/index.php) instance and you want to call CollideAgainst using a MethodInstruction. The following code can be used to call CollideAgainst against a Circle:
+For example, let's say you are working with an [AxisAlignedRectangle](../../../frb/docs/index.php) instance and you want to call CollideAgainst using a MethodInstruction. The following code can be used to call CollideAgainst against a Circle:
 
 ```
 Type typeToCollideAgainst = typeof(Circle);
@@ -118,4 +118,4 @@ FlatRedBall.Instructions.MethodInstruction mi =
             whenToExecute);
 ```
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../frb/forum.md) for a rapid response.

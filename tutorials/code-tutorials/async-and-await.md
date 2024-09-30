@@ -71,7 +71,7 @@ private async void StartAddingTexts()
 
 This code might produce the following result:
 
-<figure><img src="../../media/2021-09-22_18-20-58.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2021-09-22_18-20-58.gif" alt=""><figcaption></figcaption></figure>
 
 Notice that although the code has a while(true) statement, the code does not block the execution of the normal game loop. In other words, the button still shows its hover state in response to cursor movement.
 

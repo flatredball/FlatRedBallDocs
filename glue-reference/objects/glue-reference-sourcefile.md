@@ -4,7 +4,7 @@
 
 The SourceFile sets the file that defines a given object.
 
-<figure><img src="../../.gitbook/assets/image (136).png" alt=""><figcaption><p>Map in Level1 with its SourceType set to File and the SourceFile set to a TMX</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (308).png" alt=""><figcaption><p>Map in Level1 with its SourceType set to File and the SourceFile set to a TMX</p></figcaption></figure>
 
 
 
@@ -30,11 +30,11 @@ Objects in entities can also reference files, but these objects can create clone
 
 For example, consider a file named TextureFile in the Enemy entity:
 
-<figure><img src="../../.gitbook/assets/image (137).png" alt=""><figcaption><p>TextureFile in Enemy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (309).png" alt=""><figcaption><p>TextureFile in Enemy</p></figcaption></figure>
 
 This file produces a static property in the Enemy class with the matching name.
 
-<figure><img src="../../.gitbook/assets/image (138).png" alt=""><figcaption><p>TextureFile static property in the enemy entity</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (310).png" alt=""><figcaption><p>TextureFile static property in the enemy entity</p></figcaption></figure>
 
 Since the TextureFile (and all other files) are static, then all Enemy instances share the same File property. For file types which are often shared, such as Texture2Ds or SoundEffects, this behavior is convenient and sufficient for most games.
 
@@ -50,11 +50,11 @@ To create an object from a file, you can drag+drop the file onto the Objects fol
 
 You can inspect and change the properties on the object in the Properties tab after its creation.
 
-<figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption><p>File properties displayed in the Properties window</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (311).png" alt=""><figcaption><p>File properties displayed in the Properties window</p></figcaption></figure>
 
 You can identify whether an object is a clone of a file or a reference to a file by inspecting the generated code for the object. For example, the code above for the EntireFile in the Enemy class is assigned to a clone of the file as shown in the following screenshot of the Enemy.Generated.cs file:
 
-<figure><img src="../../.gitbook/assets/image (140).png" alt=""><figcaption><p>Enemytiles cloned into the EntireFile object</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (312).png" alt=""><figcaption><p>Enemytiles cloned into the EntireFile object</p></figcaption></figure>
 
 ### Example - Map in GameScreen and Levels
 
@@ -62,11 +62,11 @@ If your game was created with the wizard and if you have a GameScreen, then your
 
 The Map object in the GameScreen has its source type set to FlatRedBall type. Notice that it also has its SetByDerived property set to true. This combination tells FlatRedBall that this object should be declared in the GameScreen, and that it can be referenced by other objects, but that ultimately it is up to derived classes (Level screens) to instantiate the Map object.
 
-<figure><img src="../../.gitbook/assets/image (141).png" alt=""><figcaption><p>Map is defined as a LayeredTileMap, but it will not be instantiated in GameScreen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (313).png" alt=""><figcaption><p>Map is defined as a LayeredTileMap, but it will not be instantiated in GameScreen</p></figcaption></figure>
 
 Each level also has access to the Map object in the FlatRedBall Editor. By default, these derived Level screens instantiate the Map object by referencing the entire TMX.
 
-<figure><img src="../../.gitbook/assets/image (142).png" alt=""><figcaption><p>Level1 Map instantiated by referencing the Level1Map.tmx</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (314).png" alt=""><figcaption><p>Level1 Map instantiated by referencing the Level1Map.tmx</p></figcaption></figure>
 
 This _split definition_ (declaration in the base, instantiation in the derived) provides both flexibility and reusability. Each level is free to load its own TMX file, but the shared GameScreen can use the Map to define TileShapeCollections for collision, TileNodeNetworks for pathfinding, and to provide map bounds for the CameraControllingEntityInstance.
 
@@ -74,12 +74,12 @@ This _split definition_ (declaration in the base, instantiation in the derived) 
 
 Projects created by the FlatRedBall wizard automatically create a GameScreen which includes a matching Gum screen. This Gum screen is defined in a .gusx file which is added to the GameScreen's Files.
 
-<figure><img src="../../.gitbook/assets/image (143).png" alt=""><figcaption><p>GameScreenGum.gusx in GameScreen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (315).png" alt=""><figcaption><p>GameScreenGum.gusx in GameScreen</p></figcaption></figure>
 
 As mentioned earlier, the addition of the GameScreenGum file to the GameScreen in the FlatRedBall Editor is all that is needed to have the Gum screen render and be interactive when the game is running. However, if this object is to be customized in the FlatRedBall Editor, then it must be added as an object. By default this is added as an object named GumScreen.
 
-<figure><img src="../../.gitbook/assets/image (144).png" alt=""><figcaption><p>GumScreen object in GameScreen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (316).png" alt=""><figcaption><p>GumScreen object in GameScreen</p></figcaption></figure>
 
 The GumScreen object is created so that its layer can be set. For example, the following screenshot shows the GumScreen added to the HudLayer:
 
-<figure><img src="../../.gitbook/assets/image (145).png" alt=""><figcaption><p>GumScreen added to the HudLayer</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (317).png" alt=""><figcaption><p>GumScreen added to the HudLayer</p></figcaption></figure>

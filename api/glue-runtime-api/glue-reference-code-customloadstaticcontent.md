@@ -14,7 +14,7 @@ To understand the difference between content that is "lazy loaded" vs. content t
 
 &#x20;
 
-<figure><img src="../../media/migrated_media-SuperMarioBros.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migrated_media-SuperMarioBros.png" alt=""><figcaption></figcaption></figure>
 
 If Super Mario Bros. were created in Glue, then the Glue project would probably have a Mushroom Entity. The Mushroom Entity would contain either a .scnx file for the Mushroom Sprite, or simply a .png that would be applied to the Mushroom Sprite. In either case, the Mushroom object would have some content that it would need to load from disk. Of course, in Super Mario Bros. the mushroom graphic is very small, but for this example we'll pretend that loading the content for the Mushroom Entity takes some significant amount of time. Conceptually speaking, there are two possible times when the files for the Mushroom Entity can be loaded:
 

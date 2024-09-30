@@ -1,8 +1,8 @@
-# getray
+# GetRay
 
 ### Introduction
 
-The GetRay method can be used to get a Ray representing objects which the Cursor is over. This Ray can be used for complex object picking, and will work even when the Camera is rotated, unlike the [WorldXAt](../../../../../frb/docs/index.php) and [WorldYAt](../../../../../frb/docs/index.php) methods.
+The GetRay method can be used to get a Ray representing objects which the Cursor is over. This Ray can be used for complex object picking, and will work even when the Camera is rotated, unlike the [WorldXAt](../../../../frb/docs/index.php) and [WorldYAt](../../../../frb/docs/index.php) methods.
 
 ### Code Example
 
@@ -34,8 +34,8 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![GetRay.png](../../../../../media/migrated_media-GetRay.png)
+![GetRay.png](../../../../.gitbook/assets/migrated\_media-GetRay.png)
 
 ### Community Code
 
-[Mouse world coordinates for a rotated Camera by Scott Dancer](../../../../../frb/docs/index.php)
+[Mouse world coordinates for a rotated Camera by Scott Dancer](../../../../frb/docs/index.php)

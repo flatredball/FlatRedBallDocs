@@ -41,7 +41,7 @@ The following code creates four Circles. Each one is colored differently to help
  bottomCircle.Color = Color.Blue;
 ```
 
-![AbsoluteEdges.png](../../../media/migrated\_media-AbsoluteEdges.png)
+![AbsoluteEdges.png](../../../.gitbook/assets/migrated\_media-AbsoluteEdges.png)
 
 ### Detecting if an object is on screen
 

@@ -1,6 +1,8 @@
-![Screenshot starstepper zuneicon.png](/media/migrated_media-Screenshot_starstepper_zuneicon.png)
+# star-stepper
 
-## Introduction
+![Screenshot starstepper zuneicon.png](../.gitbook/assets/migrated\_media-Screenshot\_starstepper\_zuneicon.png)
+
+### Introduction
 
 Help Astro Joe escape the blue dwarf's gravity well!
 
@@ -10,13 +12,13 @@ Tip your device side-to-side to controls Joe's direction. Touch and hold the scr
 
 Now go save Joe!
 
-![Starstepperscreenshot1.png](/media/migrated_media-Starstepperscreenshot1.png) ![Starstepperscreenshot2.png](/media/migrated_media-Starstepperscreenshot2.png) ![Starstepperscreenshot3.png](/media/migrated_media-Starstepperscreenshot3.png) ![Starstepperscreenshot4.png](/media/migrated_media-Starstepperscreenshot4.png) ![Starstepperscreenshot6.png](/media/migrated_media-Starstepperscreenshot6.png)
+![Starstepperscreenshot1.png](../.gitbook/assets/migrated\_media-Starstepperscreenshot1.png) ![Starstepperscreenshot2.png](../.gitbook/assets/migrated\_media-Starstepperscreenshot2.png) ![Starstepperscreenshot3.png](../.gitbook/assets/migrated\_media-Starstepperscreenshot3.png) ![Starstepperscreenshot4.png](../.gitbook/assets/migrated\_media-Starstepperscreenshot4.png) ![Starstepperscreenshot6.png](../.gitbook/assets/migrated\_media-Starstepperscreenshot6.png)
 
-## Video
+### Video
 
-[TABLE]
+\[TABLE]
 
-## Other Information
+### Other Information
 
--   [Official Game Blog](http://capncode.blogspot.com/2011/03/introducing-wp7-game-star-stepper.html)
--   [Marketplace Link](http://social.zune.net/redirect?type=phoneApp&id=37b9028d-1d42-e011-854c-00237de2db9e)
+* [Official Game Blog](http://capncode.blogspot.com/2011/03/introducing-wp7-game-star-stepper.html)
+* [Marketplace Link](http://social.zune.net/redirect?type=phoneApp\&id=37b9028d-1d42-e011-854c-00237de2db9e)
