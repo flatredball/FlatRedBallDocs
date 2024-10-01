@@ -8,17 +8,19 @@ This page outlines common FlatRedBall coding standards for consistency and clari
 
 #### Brackets
 
-With the exception of single-line getters and setters in properties, brackets should be on their own lines. Correct:
+With the exception of single-line getters and setters in properties, brackets should be on their own lines.&#x20;
 
-```
+Correct:
+
+```csharp
 public float Weight
 {
-   get { return mWeight;}
+   get { return weight;}
    set
    {
       // If there is more than one command in a setter
       // then don't keep it on one line.
-      mWeight = value;
+      weight = value;
       UpdateAccordingToWeight();
    }
 }
@@ -34,10 +36,10 @@ public void TryPieceCreation()
 
 Incorrect:
 
-```
+```csharp
 public float Weight
 {
-   get { return mWeight;} // The getter is correct.
+   get { return weight;} // The getter is correct.
    // Too many commands for a single line in the setter!
    set {  mWeight = value; UpdateAccordingToWeight();}
 }
@@ -60,7 +62,7 @@ public void TryPieceCreation()
 
 The ++ and -- operators for incrementing and decrementing should always occur on their own lines. Correct:
 
-```
+```csharp
 while(!Party.IsEmpty)
 {
    index++;
@@ -70,7 +72,7 @@ while(!Party.IsEmpty)
 
 Incorrect:
 
-```
+```csharp
 while(!Party.IsEmpty)
 {
    Party.Characters[++index].SwitchParties();
@@ -79,7 +81,7 @@ while(!Party.IsEmpty)
 
 Exception: Compound statements are ok in for-loops:
 
-```
+```csharp
 for(int i = 0; i < List.Count; i++)
 {
    List[i].Activity();
@@ -88,10 +90,12 @@ for(int i = 0; i < List.Count; i++)
 
 #### Use temporary variables to avoid complex statements
 
-Each line of code should do one thing. Do not use method calls inside of other method calls, or complex logic inside of other blocks of code. Correct:
+Each line of code should do one thing. Do not use method calls inside of other method calls, or complex logic inside of other blocks of code.&#x20;
 
-```
-bool shouldPlayerBeDead = mPlayer.Health <= 0 && mPlayer.Type != PlayerType.Undead;
+Correct:
+
+```csharp
+bool shouldPlayerBeDead = Player.Health <= 0 && Player.Type != PlayerType.Undead;
 if(shouldPlayerBeDead)
 {
     EndLevel();
@@ -100,8 +104,8 @@ if(shouldPlayerBeDead)
 
 Incorrect:
 
-```
-if(mPlayer.Health <= 0 && mPlayer.Type != PlayerType.Undead)
+```csharp
+if(Player.Health <= 0 && Player.Type != PlayerType.Undead)
 {
     EndLevel();
 }
@@ -109,17 +113,19 @@ if(mPlayer.Health <= 0 && mPlayer.Type != PlayerType.Undead)
 
 #### Limit use of "value"
 
-The "value" keyword in properties is necessary for setters, but it should be used as little as possible inside properties. The reason for this is because it makes migrating code outside of properties into separate methods more difficult. In practice this usually means that the field represented by the property should be set first, then it should be used in any code that follows. Correct:
+The "value" keyword in properties is necessary for setters, but it should be used as little as possible inside properties. The reason for this is because it makes migrating code outside of properties into separate methods more difficult. In practice this usually means that the field represented by the property should be set first, then it should be used in any code that follows.&#x20;
 
-```
+Correct:
+
+```csharp
 public int Age
 {
-   get { return mAge; }
+   get { return age; }
    set
    {
-      mAge = value;  // set mAge first so it can be used
+      age = value;  // set mAge first so it can be used
 
-      if(mAge < 0)
+      if(age < 0)
       {
          throw new Exception("Age can't be less than 0");
       }
@@ -129,17 +135,17 @@ public int Age
 
 Incorrect:
 
-```
+```csharp
 public int Age
 {
-   get { return mAge; }
+   get { return age; }
    set
    {
       if(value < 0) // mAge should have been set first and used here
       {
          throw new Exception("Age can't be less than 0");
       }
-      mAge = value;
+      age = value;
    }
 }
 ```
@@ -148,9 +154,11 @@ public int Age
 
 #### Access Modifiers and Static
 
-Access modifiers should be listed prior to modifiers such as static. Correct:
+Access modifiers should be listed prior to modifiers such as static.&#x20;
 
-```
+Correct:
+
+```csharp
 public static void Update()
 {
    // Method code
@@ -159,7 +167,7 @@ public static void Update()
 
 Incorrect:
 
-```
+```csharp
 static public void Update()
 {
    // Method code
@@ -172,7 +180,7 @@ static public void Update()
 
 For readability all members in a class should be organized by type and surrounded with the proper regions. The following skeleton region structure shows how classes should be organized. Note, this is not required for smaller classes:
 
-```
+```csharp
 public class ExampleClass
 {
    #region Enums
@@ -180,15 +188,9 @@ public class ExampleClass
    #endregion
 
 
-   #region Fields
+   #region Fields/Properties
 
    #endregion
-
-
-   #region Properties
-
-   #endregion
-
 
    #region Events
 
@@ -209,9 +211,11 @@ public class ExampleClass
 
 #### Structs as Fields
 
-Structs should not be exposed as properties. Although most C# guidelines discourage exposing fields, structs are an exception because properties expose structs by value. Correct:
+Structs should not be exposed as properties. Although most C# guidelines discourage exposing fields, structs are an exception because properties expose structs by value.&#x20;
 
-```
+Correct:
+
+```csharp
 // Position is public since it's a struct.
 // Capitalize it and don't begin with "m" since
 // it's exposed outside of the class.
@@ -220,19 +224,19 @@ public Vector3 Position;
 
 Incorrect:
 
-```
-private Vector3 mPosition;
+```csharp
+private Vector3 position;
 
 public Vector3 Position
 {
-   get{ return mPosition;}
-   set{ mPosition = value;}
+   get{ return position;}
+   set{ position = value;}
 }
 ```
 
 Similarly automatic properties should not be used for structs. Incorrect:
 
-```
+```csharp
 public Vector3 Position
 {
    get;
@@ -242,7 +246,7 @@ public Vector3 Position
 
 The reason this is not permitted is because exposing structs through properties prevents the user from modifying the individual components of the struct. The following code is only valid if the Position member is a field:
 
-```
+```csharp
 // Won't work if Position is a property:
 myPositionedObject.Position.X = 3;
 ```
@@ -257,7 +261,7 @@ The exception to this rule is if the member in question mirrors other members, a
 
 When adding methods to a class, triple-slash documentation should be added (type "///" on the line before a method and the XML skeleton will be added). This is especially important for public members within the engine, as this documentation will be compiled with the engine and used for intellisense hints.
 
-```
+```csharp
 /// <summary>
 /// Here you would put a description on what this method does.
 /// </summary>
@@ -271,7 +275,7 @@ public void MethodName(int firstParameter)
 
 Comments should be used any time code deviates from what a programmer might expect. Also comment any time code is written a particular way to avoid a "gotcha" Correct:
 
-```
+```csharp
 public void SetRankDisplay(int rankIndex)
 {
    // Players expect the first rank to be 1, even though
@@ -286,7 +290,7 @@ public void SetRankDisplay(int rankIndex)
 
 If code was written one way, then later changed, this \*must be commented\*. This is very important for maintainability. The reason for this is because any code that you are changing was written a certain way because the original author thought it was the best way. If you're changing code for whatever reason, then you're essentially saying "No, the code you have written is wrong." Any future reader will benefit from knowing the justification for the change. It's best to leave the old code there, but have it commented out so that future readers can see see what was changed along with why. Be sure to add the date of the change using a written-out month as opposed to numbers because different cultures have different order for numerical month and date (IE 1/2/10 may mean January 2 or February 1 depending on the culture).
 
-```
+```csharp
 public void PerformPlayerVsBulletCollision(Player player)
 {
    // June 4, 2011
@@ -297,9 +301,9 @@ public void PerformPlayerVsBulletCollision(Player player)
    // dead Player, so I'm going to comment out this if-check
    // if(player.Health > 0)
    {
-      for(int i = 0; i < mBulletList.Count; i++)
+      for(int i = 0; i < BulletList.Count; i++)
       {
-         if(player.Collision.CollideAgainst(mBulletList[i].Collision))
+         if(player.Collision.CollideAgainst(BulletList[i].Collision))
          {
             // COLLISION LOGIC
          }
@@ -312,7 +316,7 @@ public void PerformPlayerVsBulletCollision(Player player)
 
 If code has already been modified once but is being modified again, use the word UPDATE: with the date to indicate why it is being modified again. This enables future readers to have an immediate history of code changes when coming across the code.
 
-```
+```csharp
 public void PerformPlayerVsBulletCollision(Player player)
 {
    // June 4, 2011
@@ -328,9 +332,9 @@ public void PerformPlayerVsBulletCollision(Player player)
    // here once again
    if(player.Health > 0)
    {
-      for(int i = 0; i < mBulletList.Count; i++)
+      for(int i = 0; i < BulletList.Count; i++)
       {
-         if(player.Collision.CollideAgainst(mBulletList[i].Collision))
+         if(player.Collision.CollideAgainst(BulletList[i].Collision))
          {
             // COLLISION LOGIC
          }
@@ -347,11 +351,11 @@ The following section defines conventions when naming variables:
 
 Correct:
 
-```
+```csharp
 public int Count
 {
-   get{ return mCount;}
-   set{ mCount = value;}
+   get{ return count;}
+   set{ count = value;}
 }
 
 public void Initialize()
@@ -361,11 +365,11 @@ public void Initialize()
 
 Incorrect:
 
-```
+```csharp
 public int count
 {
-   get{ return mCount;}
-   set{ mCount = value;}
+   get{ return _count;}
+   set{ _count = value;}
 }
 
 public void initialize()
@@ -375,31 +379,33 @@ public void initialize()
 
 #### Avoid abbreviations and non-descriptive variable names
 
-With a few exceptions, variables should not be abbreviated. Err on the side of longer names when in doubt. Auto-complete will aid you when writing long variable names, and most if not all FRB users will be using an IDE with auto-complete support. Correct:
+With a few exceptions, variables should not be abbreviated. Err on the side of longer names when in doubt. Auto-complete will aid you when writing long variable names, and most if not all FRB users will be using an IDE with auto-complete support.&#x20;
 
-```
-int mIndex;
-float mWeight;
-double mBeginningTime;
+Correct:
+
+```csharp
+int index;
+float weight;
+double beginningTime;
 ```
 
 Incorrect:
 
-```
-int mIdx;
-float mWt;
-double mTime; // may not be descriptive enough, but depends on context
+```csharp
+int Idx;
+float Wt;
+double Time; // may not be descriptive enough, but depends on context
 ```
 
 **Exceptions**
 
-```
+```csharp
 // min and max are understood abbreviations
-private float mMin;
-private float mMax;
+private float min;
+private float max;
 
 // "num" is iffy - it's allowed but not encouraged.  Count is often a better choice
-private int mNum;
+private int num;
 
 for(int i = 0; i < Count; i++)
 {
@@ -411,7 +417,7 @@ for(int i = 0; i < Count; i++)
 
 Correct:
 
-```
+```csharp
 public void Attack(Character characterToAttack)
 {
    ...
@@ -420,7 +426,7 @@ public void Attack(Character characterToAttack)
 
 Incorrect:
 
-```
+```csharp
 public void Attack(Character CharacterToAttack)
 {
    ...
@@ -436,7 +442,7 @@ public void Heal(Character pCharacterToDefend)
 
 Correct:
 
-```
+```csharp
 public const float MaximumWidth;
 
 public enum MonsterType
@@ -448,7 +454,7 @@ public enum MonsterType
 
 Incorrect:
 
-```
+```csharp
 public const float MAXIMUMWIDTH; // Screaming Caps only ok in #defines
 public const float MAXIMUM_WIDHT;
 public const float maximum_width;
@@ -464,10 +470,12 @@ Exception: const variables inside methods can be lower-case.
 
 #### Variables should be nouns, Methods should be verbs
 
-Naming your variables (fields, properties, method arguments) as nouns and naming methods as verbs will make your code read more like natural language, ultimately making it more expressive. Correct:
+Naming your variables (fields, properties, method arguments) as nouns and naming methods as verbs will make your code read more like natural language, ultimately making it more expressive.&#x20;
 
-```
-float mRunningSpeed;
+Correct:
+
+```csharp
+float runningSpeed;
 
 public float Weight
 {
@@ -483,8 +491,8 @@ public void PerformCollisionOn(List<Entity> entityList)
 
 Incorrect:
 
-```
-float mRun; // Run is normally a verb.  Also not very descriptive
+```csharp
+float run; // Run is normally a verb.  Also not very descriptive
 public float GetWeight
 {
    get;
@@ -500,7 +508,7 @@ public void Collision(List<Entity> entityList)
 
 Exception: "Activity" is understood as a common method name, although the word "activity" is a noun.
 
-```
+```csharp
 public void Activity()
 {
     // METHOD CONTENTS
@@ -509,61 +517,13 @@ public void Activity()
 
 ### Patterns
 
-#### CustomActivity and CustomInitialize methods should contain no logic
+#### Methods should only have one exit point
 
-Screens and Entities both have a number of standard methods in "custom code". These methods can provide an overview of the purpose of a class for programmers. For readability, the only code present in these methods should be other method calls. No logic should be present in the CustomActivity and CustomInitialize methods. Instead, these methods should only contain single calls to other methods. Correct:
-
-```
-private void CustomActivity()
-{
-   UpdateCharacters();
-
-   UpdateEnemies();
-
-   PerformCollision();
-
-   UpdateUI();
-
-   CheckForEndOfLevel();
-}
-
-private void UpdateCharacters()
-{
-   // Character update logic goes here...
-}
-// remainder of methods goes here
-```
+Methods should not have return statements in the middle of the method.&#x20;
 
 Incorrect:
 
-```
-private void CustomActivity()
-{
-   // No for loops in Activity
-   for(int i = 0; i < mCharacters.Count; i++)
-   {
-      mCharacters[i].Activity();
-   }
-
-   // The following methods could probably be organized clearly in a
-   // wrapping method like UpdateEnemies()
-   UpdateBoss();
-   UpdateSmallEnemies();
-   FollowPlayerWithSmallEnemies();
-
-   // No if-statements in Activity
-   if(IsActivityOver)
-   {
-      EndLevel();
-   }
-}
-```
-
-#### Methods should only have one exit point
-
-Methods should not have return statements in the middle of the method. Incorrect:
-
-```
+```csharp
 public Weapon FindEquippedWeapon()
 {
    // This method has return methods sprinkled throughout. 
@@ -580,7 +540,7 @@ public Weapon FindEquippedWeapon()
 
 Correct:
 
-```
+```csharp
 public Weapon FindEquippedWeapon()
 {
    Weapon foundWeapon = null;
@@ -598,9 +558,9 @@ public Weapon FindEquippedWeapon()
 }
 ```
 
-Exception: "Early-outs" are allowed if they are at the beginning of the method and marked with a very obvious comment:
+Exception: "Early-outs" are allowed if they are at the beginning of the method and marked with a very obvious comment. Early outs should be self-contained and should not carry over into code with else statements:
 
-```
+```csharp
 public Person FindMayor(Town townInstance)
 {
    ///////////EARLY OUT/////////////
@@ -625,9 +585,11 @@ public Person FindMayor(Town townInstance)
 
 ### Information-adding Exceptions should be in DEBUG blocks
 
-Exceptions can be added to help give the user additional information on why a piece of code is failing. However, these should be added in #if DEBUG blocks. The reason is because additional if-statements can slow performance - especially in deep engine calls which may be executed in a tight loop. The exception will eventually be thrown in release, it may just be less informative than in DEBUG. But that's okay because the general pattern is that we exchange performance for information in debug, but release is intended to run as fast as possible. Incorrect:
+Exceptions can be added to help give the user additional information on why a piece of code is failing. However, these should be added in #if DEBUG blocks. The reason is because additional if-statements can slow performance - especially in deep engine calls which may be executed in a tight loop. The exception will eventually be thrown in release, it may just be less informative than in DEBUG. But that's okay because the general pattern is that we exchange performance for information in debug, but release is intended to run as fast as possible.&#x20;
 
-```
+Incorrect:
+
+```csharp
 public bool SetAllToAsleep(Family family)
 {
     if(family == null)
@@ -643,7 +605,7 @@ public bool SetAllToAsleep(Family family)
 
 Correct:
 
-```
+```csharp
 public bool SetAllToAsleep(Family family)
 {
 #if DEBUG
