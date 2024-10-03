@@ -2,9 +2,9 @@
 
 ### Introduction
 
-FlatRedBall supports the use of a localization CSV file to simplify adding text to your game, whether your game uses a single or multiple langauges. The IsDatabaseForLocalizing property controls whether a CSV file is used as a localization file. When a spreadsheet is marked as IsDatabaseForLocalizing, the FlatRedBall Editor populates the LocalizationManager with the database when the CSV is loaded.
+FlatRedBall supports the use of localization CSV files to simplify adding text to your game, whether your game uses a single or multiple languages. The IsDatabaseForLocalizing property controls whether a CSV file is used as a localization file. When a spreadsheet is marked as IsDatabaseForLocalizing, the FlatRedBall Editor populates the LocalizationManager with the database when the CSV is loaded. For more details about how to work with localization in code, see the [LocalizationManager](../../api/flatredball/localization/localizationmanager.md) page.
 
-Because of the generated code that FlatRedBall writes automatically, creating a game that supports localization requires very manual code.&#x20;
+Because of the generated code that FlatRedBall writes automatically, creating a game that supports localization requires very little manual code.&#x20;
 
 {% hint style="info" %}
 Prior to FRB Editor (gluj) file version 14, generated code would make LocalizationManager.Translate calls. This functionality was inconsistent and difficult to work with, so as of file version 14, Translate must be called manually. For more information on this change, see the [gluj/glux document](../glujglux.md).
@@ -46,14 +46,14 @@ The next step is to begin filling out the database. To do this:
 Before any localization can happen, you must tell the game which language to use. By default, the LocalizationManager uses index 0 as its default language. This column stores the IDs. The first language (which is English in our case) begins at index 1. Therefore, to have your database translated, you must set the language index. To do this:
 
 1. Open Game1.cs (or whatever your Game class is named)
-2. Find `GlobalContent.Initialize();` and add the following after it:
+2. Find `GeneratedInitializeEarly();` and add the following before it:
 
 ```csharp
 // Sets it to English, assuming the 2nd column (0-based index) is English.
 FlatRedBall.Localization.LocalizationManager.CurrentLanguage = 1;
 ```
 
-Be sure that this is set **before** ScreenManager.Start is called, or else the Screen will be initialized prior to the language being set.
+Be sure that this is set **before** `GeneratedInitializeEarly();` is called, or else the Screen will be initialized prior to the language being set.
 
 ### Manually Translating Text
 
