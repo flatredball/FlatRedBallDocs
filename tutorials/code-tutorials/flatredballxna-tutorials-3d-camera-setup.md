@@ -19,10 +19,13 @@ Camera.Main.CameraCullMode = CameraCullMode.None;
 // Give the camera an altitude of 1 units.  
 Camera.Main.Z = 1;
 
+// This keeps the camera oriented so that the up vector is positive Z:
+Camera.Main.UpVector = new Vector3(0, 0, 1);
+
 // Place a bunch of Sprites in the world on the XY plane
 for (int i = 0; i < 200; i++)
 {
-    Sprite sprite = SpriteManager.AddSprite("redball.bmp");
+    Sprite sprite = SpriteManager.AddSprite("redball.png");
     sprite.X = -50 + 100 * (float)FlatRedBallServices.Random.NextDouble();
     sprite.Y = 100 * (float)FlatRedBallServices.Random.NextDouble();
     
