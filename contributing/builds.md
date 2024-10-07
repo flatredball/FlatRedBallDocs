@@ -21,6 +21,7 @@ To make a new (monthly) release:
    1. Kid Defense
    2. Cranky Chibi Cthulhu
    3. Battlecrypt Bombers
+   4. [Automated Test Project](automated-test-project.md)
 2. Run [Engine.yml](https://github.com/vchelaru/FlatRedBall/actions/workflows/Engine.yml) and wait for it to finish successfully
 3. Run Glue.yml and wait for it to finish successfully
 4. [Download latest FRBDK and run Glue](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip) - make sure the file version is what you expect

@@ -1202,6 +1202,8 @@
   * [How to Contribute](contributing/how-to-contribute.md)
   * [Builds](contributing/builds.md)
   * [Writing Documentation](contributing/writing-documentation.md)
+  * [Contributing Code (Pull Requests)](contributing/contributing-code-pull-requests.md)
+  * [Automated Test Project](contributing/automated-test-project.md)
   * [Programming Style Guide](contributing/general-programming-flatredball-programming-style-guide.md)
 * [🎮 FlatRedBall Games](games/README.md)
   * [angry-boy](games/angry-boy.md)
