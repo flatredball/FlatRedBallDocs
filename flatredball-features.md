@@ -48,7 +48,7 @@ Native support for .aseprite files enables creating animated characters by drag+
 
 <figure><img src=".gitbook/assets/image (281).png" alt=""><figcaption><p>.aseprite file in FlatRedBall as an Animated Character</p></figcaption></figure>
 
-### Easy-to-use Editor with Clean Design and Theme support
+### Clean Design and Theme support
 
 FlatRedBall Editor supports customizing accent colors and changing between light and dark mode.
 
