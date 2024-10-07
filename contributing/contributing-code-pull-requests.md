@@ -51,7 +51,7 @@ Do not work on new features unless you have discusses this change with long-term
 
 #### Refactors Must be Paired with Feature Work
 
-Refactoring code for the sake of "clean code" will often be scrutinized and may be rejected, especially if the change is large (dozens or hundreds of lines of code). Large refactors suggest that the change was made by following a guideline without contextual consideration.
+Refactoring code for the sake of "clean code" will often be scrutinized and may be rejected, especially if the change is large (changes which span dozens of files). Large refactors suggest that the change was made by following a guideline without contextual consideration.
 
 The FlatRedBall code base includes many cases where code is referencing obsolete methods or classes. These violations persist because changing them is not a simple find-and-replace job. Sometimes the violation is necessary and must be marked as such. Other times the violation can be fixed, but the context surrounding the code is complex.
 
@@ -65,7 +65,7 @@ Indicate how you have tested your code if you are performing refactors. This can
 
 #### Keep Refactors Small
 
-Small refactors are much easier to review by maintainers. If you submit a large refactor (dozens or hundreds of lines of code) it is likely to get rejected.
+Small refactors are much easier to review by maintainers. If you submit a large refactor (spanning over a dozen files) it is likely to get rejected.
 
 Of course, this may seem frustrating if you have found an issue that persists across the entire code base which can be solved in an automated manner. Unfortunately this is the nature of large code bases which have nuances and require context to maintain (see the point above). If such widespread issues are found, the existing maintainers should agree that this is a problem. Furthermore, if fixing these widespread issues are deemed a priority, then a feature or fix should be identified to be paired with the refactor. This exercise can help you get the context necessary to make the change.
 
