@@ -10,19 +10,19 @@ FlatRedBall has been used to create dozens of commercial games on a variety of p
 
 The FlatRedBall Editor is a visual tool for creating and organizing screens, entities, and files.&#x20;
 
-<figure><img src=".gitbook/assets/image (263).png" alt=""><figcaption><p>FlatRedBall Editor</p></figcaption></figure>
+<figure><img src=".gitbook/assets/07_16 52 30.png" alt=""><figcaption><p>FlatRedBall Editor</p></figcaption></figure>
 
 ### Project Setup Wizard
 
 Use the wizard to get your game up and running in seconds.
 
-<figure><img src=".gitbook/assets/image (272).png" alt=""><figcaption><p>The Project Setup Wizard can be used to start making a game in seconds</p></figcaption></figure>
+<figure><img src=".gitbook/assets/07_16 54 40.png" alt=""><figcaption><p>The Project Setup Wizard can be used to start making a game in seconds</p></figcaption></figure>
 
 ### Tiled Integration
 
 Tiled maps can be drag+dropped into the FlatRedBall Editor and loaded with no extra code. Use Tiled to define visuals, collision, and add entity instances.
 
-<figure><img src=".gitbook/assets/image (265).png" alt=""><figcaption><p>Tiled Map in the FRB Editor</p></figcaption></figure>
+<figure><img src=".gitbook/assets/07_17 16 04.png" alt=""><figcaption><p>Tiled Map in the FRB Editor</p></figcaption></figure>
 
 ### Gum UI Integration
 
@@ -47,6 +47,12 @@ Make changes to files such as Tiled (.tmx), Textures (.png), and spreadsheet (.c
 Native support for .aseprite files enables creating animated characters by drag+dropping files into the FlatRedBall Editor.
 
 <figure><img src=".gitbook/assets/image (281).png" alt=""><figcaption><p>.aseprite file in FlatRedBall as an Animated Character</p></figcaption></figure>
+
+### Easy-to-use Editor with Clean Design and Theme support
+
+FlatRedBall Editor supports customizing accent colors and changing between light and dark mode.
+
+<figure><img src=".gitbook/assets/image (342).png" alt=""><figcaption><p>FlatRedBall Editor in Dark Mode</p></figcaption></figure>
 
 ### Platformer Controls and Physics
 
