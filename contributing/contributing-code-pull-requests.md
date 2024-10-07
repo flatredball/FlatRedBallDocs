@@ -38,7 +38,7 @@ The branch for this issue was titled `1533-warnings`.
 All changes should be tested prior to merging a pull request. The type of tests needed depend on the nature of your changes.
 
 * If you are making a game, use of your code in your game may be sufficient testing depending on the size and complexity of the game.
-* If you do not have a game for testing the changes, you should open, generate, and run the auto test project to verify that the change does not introduce problems. You may also be asked to add additional tests to the auto test.
+* If you do not have a game for testing the changes, you should open, generate, and run the auto test project to verify that the change does not introduce problems. You may be asked to run the automated test project even if you have a game project. You may also be asked to add additional tests to the auto test.  For more information, see the [Automated Test Project](automated-test-project.md).
 * If your change is particularly valuable, existing FlatRedBall maintainers may offer to test your branch on an existing project. You should create a pull request to make this process easier.
 
 ### General Guidelines
