@@ -12,7 +12,7 @@ Mac and Linux users can use FlatRedBall, but in a code-only environment. The Fla
 
 At a minimum you need to install **.NET desktop development**.
 
-![](.gitbook/assets/2021-08-img\_610caaac075b7.png)
+![Check the .NET desktop development workload when installing Visual Studio](.gitbook/assets/2021-08-img\_610caaac075b7.png)
 
 #### 2. XNA 4.0 Redistributable
 
@@ -22,7 +22,7 @@ At a minimum you need to install **.NET desktop development**.
 
 [https://dotnet.microsoft.com/en-us/download/dotnet/6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
-![](.gitbook/assets/2023-03-img\_6415bcb385f79.png)
+![Install .NET SDK 6 for x64](.gitbook/assets/2023-03-img\_6415bcb385f79.png)
 
 Newer Versions of Visual Studio (as of version 17.5.1) install .NET SDK 7.0 or newer which have a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you need to manually install .NET 6 SDK.\
 \
@@ -40,16 +40,16 @@ The most common approach to making FlatRedBall games is to use the FlatRedBall E
    1. Alternatively, the FlatRedBall Editor (no additional tools) prebuilt can be downloaded from Github. This is not recommended for new users, but experienced users can replace the FlatRedball Glue folder with the contents from the built files: [https://github.com/vchelaru/FlatRedBall/actions](https://github.com/vchelaru/FlatRedBall/actions)
 2.  Unzip the file after downloading
 
-    <figure><img src=".gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src=".gitbook/assets/image (147).png" alt=""><figcaption><p>Extract the FRBDK.zip file</p></figcaption></figure>
 3. Go to the folder where the .zip file unzipped to (by default called FRBDK)
 4. Open the Run FlatRedBall.bat file (double click it)
 
-![](.gitbook/assets/2023-07-img\_64b932f820fb5.png)
+![Open Run FlatRedBall.bat](.gitbook/assets/2023-07-img\_64b932f820fb5.png)
 
 If you see the **Windows protected your PC** dialog, click **More info** -> **Run Anyway**
 
-![](.gitbook/assets/2023-07-img\_64b938bddd912.png)
+![Windows warnings about FlatRedBall](.gitbook/assets/2023-07-img\_64b938bddd912.png)
 
 The FlatRedBall Editor should appear.
 
-![](.gitbook/assets/2022-12-img\_639d07e85b8d9.png)
+![FlatRedBall Editor](<.gitbook/assets/07\_07 53 54.png>)

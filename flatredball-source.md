@@ -67,14 +67,14 @@ To add the FRB source to your project:
 
     <div align="left">
 
-    <img src=".gitbook/assets/2023-07-img_64b5303d1f0e2.png" alt="">
+    <img src=".gitbook/assets/07_07 59 05.png" alt="Link game to FRB source menu item">
 
     </div>
 3.  The **Add FRB Source** tab appears, showing a text box for FlatRedBAll and Gum root folders. If your current project is also a Git project which is cloned to the same folder as FlatRedBall and Gum, then the FRB Editor attempts to fill in the file paths.
 
     <div align="left">
 
-    <img src=".gitbook/assets/2023-07-img_64b531293eff9.png" alt="Add FRB Source tab in the FRB Editor adds all necessary projects to your game&#x27;s solution">
+    <img src=".gitbook/assets/07_08 01 30.png" alt="Add FRB Source tab in the FRB Editor adds all necessary projects to your game&#x27;s solution">
 
     </div>
 4. If your paths are blank or incorrect, use the ... button to select the file paths for each repository.
@@ -136,18 +136,18 @@ To build the FlatRedBall Editor (also referred to as Glue):
 3.  Open the file **\<FlatRedBall Root>\FRBDK\Glue\Glue with All.sln.**
 
     ![](.gitbook/assets/2021-08-img\_6112b22407f6b.png)
-4.  To rebuild Glue with all plugins, select **Build** -> **Build Solution** in Visual Studio. You must **Build or Rebuild** the first time you run FlatRedBall. If you make further changes to any plugins, you must either build the entire solution, or build the project that contains the plugin. Simply building the GlueFormsCore project, or pressing F5 to build and run Glue, will not build all plugins.\\
+4.  To rebuild Glue with all plugins, select **Build** -> **Build Solution** in Visual Studio. You must **Build or Rebuild** the first time you run FlatRedBall. If you make further changes to any plugins, you must either build the entire solution, or build the project that contains the plugin. Simply building the Glue project, or pressing F5 to build and run Glue, will not build all plugins.\\
 
-    <figure><img src=".gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
-5. Set **GlueFormsCore** as the **StartUp Project**
+    <figure><img src=".gitbook/assets/image (163).png" alt=""><figcaption><p>Build Solution menu item in Visual Studio</p></figcaption></figure>
+5. Set **Glue** as the **Startup Project**
 
-<figure><img src=".gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/07_08 04 22.png" alt=""><figcaption><p>Set Glue as the Startup Project</p></figcaption></figure>
 
 6. Building the solution creates an .exe from which the FRB editor can be run. You can find this .exe at \<your git repo location>\FlatRedBall\FRBDK\Glue\Glue\bin\Debug\GlueFormsCore.exe. Alternatively, you can start up the FRB editor from Visual Studio. Doing so in **Debug Mode** allows you to see error messages in case the FRB editor throws an exception.
 
 <figure><img src=".gitbook/assets/image (300).png" alt="" width="563"><figcaption></figcaption></figure>
 
-For Rider users, you will need to set GlueFormsCore as the project to run in the Configuration dialog.\
+For Rider users, you will need to set Glue as the project to run in the Configuration dialog.\
 \
 ![](<.gitbook/assets/image (166).png>)\\
 
