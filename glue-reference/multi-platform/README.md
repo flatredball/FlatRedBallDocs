@@ -31,3 +31,5 @@ FlatRedBall provides the concept of _synced projects_ - these are projects which
 
 Files which are manually added to a project (either synced or primary) are considered platform-specific and are not automatically synced. Of course, you are free to link these files manually through Visual Studio.
 
+For more information on creating a synced project, see the [Synced Project](../menu/project/view-projects.md#new-synced-project) page.
+
