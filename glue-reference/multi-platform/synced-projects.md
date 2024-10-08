@@ -46,3 +46,7 @@ Content files are also linked by the synced project.
 
 NuGet packages are not automatically synced across projects so if you have manually added a NuGet package to your main project, you may also need to add the same package or an alternative package to your synced projects.
 
+{% hint style="info" %}
+Keep in mind that some NuGet packages are not available on all platforms. For example, NAudio does not work on non-windows platforms like Web. You may need to find alternative NuGet packages if one is not available on your target platform. Alternatively you can use conditional compilation symbols as explained in the [Mult-Platform](./#conditional-compilation-symbols) page.
+{% endhint %}
+
