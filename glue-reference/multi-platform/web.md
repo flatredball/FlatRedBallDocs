@@ -4,6 +4,14 @@
 
 FlatRedBall supports web projects using Blazor Web Assembly and WebGL. Web projects use C# just like other FlatRedBall platforms. Web projects can use the FlatRedBall Editor, almost all FlatRedBall features, and support synced projects.
 
+FlatRedBall Web uses the Kni framwork, which is an XNA-like framework supporting Blazor WASM projects. Fortunately, this means that FlatRedBall and XNA code should work the same on Web as on other platforms, reducing the amount of code changes needed when migrating from other platforms to Web.
+
+### Installing Kni
+
+Before creating a FlatRedBall Web project, you must install Kni. The latest binaries can be found on the Kni release page: [https://github.com/kniEngine/kni/releases](https://github.com/kniEngine/kni/releases)
+
+<figure><img src="../../.gitbook/assets/image (343).png" alt=""><figcaption><p>Download KniSdkSetup exe for the latest version</p></figcaption></figure>
+
 ### Creating a FlatRedBall Web Project
 
 FlatRedBall Web projects can be created as standalone (primary) projects, or as synced projects. For more information on how to create a synced project, see the [View Projects](../menu/project/view-projects.md) page. In other words, you can create a new project (File -> New Project) or you can add a new web synced project.
