@@ -33,3 +33,28 @@ Files which are manually added to a project (either synced or primary) are consi
 
 For more information on creating a synced project, see the [Synced Project](../menu/project/view-projects.md#new-synced-project) page.
 
+### Conditional Compilation Symbols
+
+FlatRedBall attempts to be as cross platform as possible. From time to time you may encounter code which is only available on one platform, especially if you are using 3rd party nuget packages. Therefore, you may need to exclude certain code from platforms.&#x20;
+
+For example, the following code could be used to perform logic which is specific to web or desktop:
+
+```csharp
+#if DESKTOP_GL
+DoDesktopGlSpecificLogic();
+#endif
+
+#if WEB
+DoWebSpecificLogic
+#endif
+```
+
+The following compilation symbols are available:
+
+* ANDROID
+* FNA (not a platform, but can still be checked)
+* DESKTOP\_GL
+* IOS
+* WEB
+
+You can also add your own conditional compilation symbols to the .csproj, and may are available automatically through .NET such as `NET8_0_OR_GREATER`
