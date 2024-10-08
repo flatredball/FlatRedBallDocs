@@ -71,7 +71,7 @@ You can place a breakpoint in the catch block to also stop execution when an exc
 
 This exception can occur when running FlatRedBall Web projects.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Unhandled exception in JavaScript</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Unhandled exception in JavaScript</p></figcaption></figure>
 
 You can disable JavaScript exceptions to silence this error.&#x20;
 

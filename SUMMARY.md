@@ -290,6 +290,7 @@
       * [glue-reference-menu-frbdk](glue-reference/menu/update/glue-reference-menu-frbdk.md)
       * [glue-reference-menu-libraries](glue-reference/menu/update/glue-reference-menu-libraries.md)
   * [Multi-Platform](glue-reference/multi-platform/README.md)
+    * [Synced Projects](glue-reference/multi-platform/synced-projects.md)
     * [Android](glue-reference/multi-platform/glue-how-to-create-a-flatredball-android-project/README.md)
       * [Distribution](glue-reference/multi-platform/glue-how-to-create-a-flatredball-android-project/distribution-on-android.md)
       * [Setup](glue-reference/multi-platform/glue-how-to-create-a-flatredball-android-project/android-setup.md)

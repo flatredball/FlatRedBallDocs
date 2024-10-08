@@ -38,8 +38,8 @@ You can specify the resolution for your project. Typically you should have your 
 
 For example, consider a game which is set to a resolution of 398x224:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Resolution set to 398x224 in the FRB Editor</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Resolution set to 398x224 in the FRB Editor</p></figcaption></figure>
 
 You can set the game to render at 300% scale by setting the size to 1194x672:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Setting game resolution in itch.io</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Setting game resolution in itch.io</p></figcaption></figure>
