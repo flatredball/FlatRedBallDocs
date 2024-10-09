@@ -1,27 +1,27 @@
-# draw
+# Draw
 
 ### Introduction
 
-The Draw function is the function that initiates all FlatRedBall rendering. This function is automatically part of all FlatRedBall templates, including any Glue projects, so it does not need to be added manually. However, it can be removed to quickly disable rendering of FlatRedBall for debugging and customization.
+The Draw function performs all FlatRedBall rendering. This function is automatically part of all FlatRedBall templates, including projects created by the FlatRedBall Editor, so it does not need to be added manually. However, it can be removed to quickly disable rendering of FlatRedBall for debugging and customization.
 
 ### Breaking down Draw
 
-The Draw function can be broken down into two calls: [UpdateDependencies](../../../../frb/docs/index.php) and [RenderAll](renderall.md). Therefore, the following line:
+The Draw function can be broken down into two calls: [UpdateDependencies](../../../frb/docs/index.php) and [RenderAll](renderall.md). Therefore, the following line:
 
-```
+```csharp
 FlatRedBallServices.Draw();
 ```
 
 could be replaced with:
 
-```
+```csharp
 FlatRedBallServices.UpdateDependencies();
 FlatRedBallServices.RenderAll();
 ```
 
 The [RenderAll](renderall.md) function can be further broken-up:
 
-```
+```csharp
 FlatRedBallServices.UpdateDependencies();
 lock (Renderer.Graphics.GraphicsDevice)
 {
@@ -32,9 +32,9 @@ Renderer.Texture = null;
 GraphicsDevice.Textures[0] = null;
 ```
 
-The Renderer.Draw method can be further broken-up:
+The Renderer.Draw method can be further broken-up. By breaking apart the draw calls, each individual camera can be optionally drawn, or it can be drawn to a separate render target:
 
-```
+```csharp
 FlatRedBallServices.UpdateDependencies();
 lock (Renderer.Graphics.GraphicsDevice)
 {
@@ -49,4 +49,4 @@ Renderer.Texture = null;
 GraphicsDevice.Textures[0] = null;
 ```
 
-&#x20;
+The contents of DrawCamera are currently private so this method cannot be broken up further; however, the source for DrawCamera can be inspected by looking at the source code.
