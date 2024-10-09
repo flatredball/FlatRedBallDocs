@@ -116,13 +116,13 @@ Physics engine handles collision between circles, rectangles, polygons, and line
 
 Define collision relationships in UI or code to add physics, damage dealing, and custom events.
 
-<figure><img src=".gitbook/assets/12_08 08 34.png" alt=""><figcaption><p>CollisionRelationship in FRB</p></figcaption></figure>
+<figure><img src=".gitbook/assets/09_06 42 46.png" alt=""><figcaption><p>CollisionRelationship in FRB</p></figcaption></figure>
 
 ### Display Settings
 
 Set your initial game's resolution, whether it supports resizing, aspect ratio, and more.
 
-<figure><img src=".gitbook/assets/image (259).png" alt=""><figcaption><p>Display Settings in FRB</p></figcaption></figure>
+<figure><img src=".gitbook/assets/09_06 44 27.png" alt=""><figcaption><p>Display Settings in FRB</p></figcaption></figure>
 
 ### Camera Controlling Entity
 
@@ -134,13 +134,13 @@ The camera controlling entity can follow one or more targets, supports zooming, 
 
 Turn difficult-to-find runtime errors into clear in-editor errors the moment a file is changed or removed.
 
-<figure><img src=".gitbook/assets/image (274).png" alt=""><figcaption><p>Missing file references are reported in the FRB error tab</p></figcaption></figure>
+<figure><img src=".gitbook/assets/09_06 46 15.png" alt=""><figcaption><p>Missing file references are reported in the FRB error tab</p></figcaption></figure>
 
 ### MonoGame/FNA and NAudio Music
 
 MonoGame and FNA Song support included out of the box. For more flexibility song files can be loaded using NAudio.
 
-<figure><img src=".gitbook/assets/image (268).png" alt=""><figcaption><p>Song settings in FRB</p></figcaption></figure>
+<figure><img src=".gitbook/assets/09_06 47 45.png" alt=""><figcaption><p>Song settings in FRB</p></figcaption></figure>
 
 ### CSV and Open Office/Libre Office Integration
 
