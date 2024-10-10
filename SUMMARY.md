@@ -705,6 +705,7 @@
         * [SecondaryClick](api/flatredball/gui/cursor/secondaryclick.md)
         * [SetControllingGamepad](api/flatredball/gui/cursor/setcontrollinggamepad.md)
         * [SetJoystickControl](api/flatredball/gui/cursor/setjoystickcontrol.md)
+        * [TransformationMatrix](api/flatredball/gui/cursor/transformationmatrix.md)
         * [WindowOver](api/flatredball/gui/cursor/windowover.md)
         * [WidowPushed](api/flatredball/gui/cursor/windowpushed.md)
         * [WorldPosition](api/flatredball/gui/cursor/worldposition.md)

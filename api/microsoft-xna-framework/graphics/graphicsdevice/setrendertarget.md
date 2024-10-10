@@ -80,6 +80,18 @@ base.Draw(gameTime);
 
 ![RenderTargetRendering.PNG](../../../../.gitbook/assets/migrated\_media-RenderTargetRendering.PNG)
 
+{% hint style="info" %}
+This example shows how to modify the Game1 class so that it renders FlatRedBall to a render target. This is a common technique for _pixel perfect_ 2D games, but this setup requires additional work. As of October 2024, a pixel perfect 2D game requires custom code including:
+
+* Modifying the Camera DestinationRectangle, OrthogonalHeight and OrthogonalWidth
+* Modifying Gum GraphicalUiElement CanvasWidth and CanvasHeight
+* Modifying the SystemManagers Zoom (Gum)
+* Modifying the Cursor's TransformationMatrix
+* Adjusting the CameraControllingEntity's CustomSnapToPixelZoom value
+
+Future versions of FlatRedBall may automate this process.
+{% endhint %}
+
 ### Rendering to a RenderTarget, Saving to PNG
 
 This example shows how to render to a render target, then how to save it to disk when pressing the space bar:
