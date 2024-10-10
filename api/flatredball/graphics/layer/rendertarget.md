@@ -7,7 +7,11 @@ The RenderTarget property can be set so a given Layer renders to the RenderTarge
 * To create textures used in a multi-pass rendering system, such as to apply layer-wide effects like color tinting or bloom
 * To improve the performance of complicated, static visuals on a Layer by eliminating the management of multiple objects and multiple draw calls with a single object and draw call (for a collection of objects which do not require every-frame activity)
 
-If a Layer's RenderTarget is set, then the Layer will does render directly to the screen. The contents of the Layer are rendered to the RenderTarget which must then be rendered to the screen using another graphical object such as a FlatRedBall Sprite, a Gum Sprite, or SpriteBatch.
+If a Layer's RenderTarget is set, then the Layer will not render directly to the screen. Instead, the contents of the Layer are rendered to the RenderTarget which must then be rendered to the screen using another graphical object such as a FlatRedBall Sprite, a Gum Sprite, or SpriteBatch.
+
+{% hint style="info" %}
+The Layer's RenderTarget property is used to render a layer to a RenderTarget. For more information about rendering your entire FlatRedBall game to a RenderTarget, see the [SetRenderTarget](../../../microsoft-xna-framework/graphics/graphicsdevice/setrendertarget.md) page.
+{% endhint %}
 
 ### Setting RenderTarget in the FRB Editor
 

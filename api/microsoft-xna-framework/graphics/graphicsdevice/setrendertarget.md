@@ -2,9 +2,9 @@
 
 ### Introduction
 
-The SetRenderTarget function can be used to specify  whether rendering will happen on a RenderTarget (if a non-null value is passed) or directly to the screen (if null is passed). By default no render target is set, which means all rendering will appear on-screen. Setting render targets can be used for a number of reasons:
+The SetRenderTarget function can be used to specify  whether rendering will happen on a RenderTarget (if a non-null value is passed) or directly to the screen (if null is passed). By default no render target is set, which means all rendering appears on-screen. Rendering directly to the screen is also referred to as rendering to the _back buffer_. Setting render targets can be used for a number of reasons:
 
-* To use a screen shot of the game at a later time
+* To create a screen shot of the game to be used elsewhere at runtime
 * To save a screen shot to disk
 * To perform post processing or screen distortion
 
@@ -25,11 +25,11 @@ Rendering to a RenderTarget enables you to use the resulting RenderTarget as a T
 Add the following at Game1's Class scope:
 
 ```csharp
-RenderTarget2D mRenderTarget;
-SpriteBatch mSpriteBatch;
+RenderTarget2D _renderTarget;
+SpriteBatch _spriteBatch;
 ```
 
-Add the following to Game1's Initialize:
+Add the following to Game1's Initialize. Be sure to add this after `GeneratedInitialize();` so that your DestinationRectangle assignment overrides the assignment in generated code:
 
 ```csharp
 // We'll only render a 50x50 pixel area:
@@ -38,37 +38,44 @@ const int backBufferWidth = 50;
 const int backBufferHeight = 50;
 
 // Set the Camera to render within the defined area.
+
 Camera.Main.DestinationRectangle = new Rectangle(0, 0, backBufferWidth, backBufferHeight);
 
 // Create a Sprite so we can see something on screen
+// You can comment out the Sprite creation and assignment
+// if you already have graphics on screen
 var sprite = SpriteManager.AddSprite("redball.bmp");
 sprite.TextureScale = 4;
 
 // Make the render target and SpriteBatch which we'll use later
 var device = graphics.GraphicsDevice;
-mRenderTarget = 
+_renderTarget = 
     new RenderTarget2D(device, backBufferWidth, backBufferHeight, false, 
     device.DisplayMode.Format, DepthFormat.Depth24);
-mSpriteBatch = new SpriteBatch(device);
+_spriteBatch = new SpriteBatch(device);
 ```
 
-Add the following to Game1's Draw:
+Modify Game1's Draw method:
 
 ```csharp
 // Set the render target before rendering FRB:
-graphics.GraphicsDevice.SetRenderTarget(mRenderTarget);
+graphics.GraphicsDevice.SetRenderTarget(_renderTarget);
 
 // FRB's rendering should be done after the render target has been set
+GeneratedDrawEarly(gameTime);
 FlatRedBallServices.Draw();
+GeneratedDraw(gameTime);
 
 // Finally unset the render target so we can render back to screen:
 graphics.GraphicsDevice.SetRenderTarget(null);
 
-// Now simply use the mRenderTarget as a Texture2D:
-mSpriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend, 
+// Now use the _renderTarget as a Texture2D:
+_spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend, 
     SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
-mSpriteBatch.Draw(mRenderTarget, new Rectangle(0,0,700, 500), Color.White);
-mSpriteBatch.End();
+_spriteBatch.Draw(_renderTarget, new Rectangle(0,0,700, 500), Color.White);
+_spriteBatch.End();
+
+base.Draw(gameTime);
 ```
 
 ![RenderTargetRendering.PNG](../../../../.gitbook/assets/migrated\_media-RenderTargetRendering.PNG)
@@ -80,13 +87,13 @@ This example shows how to render to a render target, then how to save it to disk
 Add the at class scope:
 
 ```
-RenderTarget2D mRenderTarget;
+RenderTarget2D _renderTarget;
 ```
 
 Add the following to CustomInitialize:
 
 ```csharp
-mRenderTarget = new RenderTarget2D(FlatRedBallServices.GraphicsDevice, 800, 600);
+_renderTarget = new RenderTarget2D(FlatRedBallServices.GraphicsDevice, 800, 600);
 Camera.Main.ClearsDepthBuffer = false;
 ```
 
@@ -99,7 +106,7 @@ Add the following to Draw:
 // FlatRedBallServices.Draw();
 FlatRedBallServices.UpdateDependencies();
 
-FlatRedBallServices.GraphicsDevice.SetRenderTarget(mRenderTarget);
+FlatRedBallServices.GraphicsDevice.SetRenderTarget(_renderTarget);
 Renderer.DrawCamera(Camera.Main, null);
 FlatRedBallServices.GraphicsDevice.SetRenderTarget(null);
 
@@ -107,7 +114,7 @@ if (InputManager.Keyboard.KeyPushed(Keys.Space))
 {
     using (Stream stream = System.IO.File.Create("savedFile.png"))
     {
-        mRenderTarget.SaveAsPng(stream, mRenderTarget.Width, mRenderTarget.Height);
+        _renderTarget.SaveAsPng(stream, mRenderTarget.Width, mRenderTarget.Height);
     }
 }
 ```
