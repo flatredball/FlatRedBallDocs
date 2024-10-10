@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The DefaultLayer property is used when instantiating entities. It is useful if your game requires all entities to be layered as opposed to the default of being created _unlayered._ This can be useful if your game requires layers for functionality, such as if your main game must render to a render target.
+The DefaultLayer property is used by generated code when instantiating entities. It is useful if your game requires all entities to be layered as opposed to the default of being created _unlayered._ This can be useful if your game requires layers for functionality, such as if your main game must render to a render target.
 
 DefaultLayer can be set in the FlatRedBall Editor by selecting a Screen and changing the DefaultLayer variable.
 
@@ -36,9 +36,11 @@ private void InitializeFactoriesAndSorting ()
 }
 ```
 
-DefaultLayer is used when calling the CreateNew method without explicitly specifying a Layer. Note that the DefaultLayer can be overridden if a factory parameter is passed to CreateNew.
+DefaultLayer is used when calling the `CreateNew` method without explicitly specifying a Layer. Note that the DefaultLayer can be overridden if a factory parameter is passed to `CreateNew`.
 
-Note that the DefaultLayer is returned back to `null` when the Screen is destroyed. This means that if your code explicitly sets the DefaultLayer, this value may get lost when the Screen is destroyed. If your game relies on a DefaultLayer, be sure to explicitly set it in CustomInitialize rather than in Game1 or some other global context.
+{% hint style="info" %}
+DefaultLayer is returned back to `null` when the Screen is destroyed. This means that if your code explicitly sets the DefaultLayer, this value may get lost when the Screen is destroyed. If your game relies on a DefaultLayer, be sure to explicitly set it in CustomInitialize rather than in Game1 or some other global context.
+{% endhint %}
 
 ### Changing DefaultLayer
 
