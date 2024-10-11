@@ -34,8 +34,16 @@ Once a shader has been added, you can add it to the global effect list. If your 
 var postProcess = new SaturationEffect(GlobalContent.SaturationEffect);
 var cameraData = CameraSetup.Data;
 Renderer.SwapChain = new FlatRedBall.Graphics.PostProcessing.SwapChain(
-    (int)(cameraData.ResolutionWidth * cameraData.Scale / 100f),
-    (int)(cameraData.ResolutionHeight * cameraData.Scale / 100));
+    FlatRedBallServices.Game.Window.ClientBounds.Width,
+    FlatRedBallServices.Game.Window.ClientBounds.Height);
+    
+FlatRedBallServices.GraphicsOptions.SizeOrOrientationChanged += (_,_) =>
+{
+    Renderer.SwapChain.UpdateRenderTargetSize(
+        FlatRedBallServices.Game.Window.ClientBounds.Width,
+        FlatRedBallServices.Game.Window.ClientBounds.Height);
+};
+    
 Renderer.GlobalPostProcesses.Add(postProcess);
 ```
 
@@ -48,14 +56,22 @@ public partial class GameScreen
     private void CustomInitialize()
     {
         var cameraData = CameraSetup.Data;
-        // You do not need to create a SwapChain if you have already done so
-        // in Game1
         Renderer.SwapChain = new FlatRedBall.Graphics.PostProcessing.SwapChain(
-            (int)(cameraData.ResolutionWidth * cameraData.Scale / 100f), 
-            (int)(cameraData.ResolutionHeight * cameraData.Scale / 100));
+            FlatRedBallServices.Game.Window.ClientBounds.Width,
+            FlatRedBallServices.Game.Window.ClientBounds.Height);
+
+        FlatRedBallServices.GraphicsOptions.SizeOrOrientationChanged += HandleSizeOrOrientationChanged;
 
         SaturationPostProcess = new SaturationEffect(GameScreen.SaturationEffect);
+        SaturationPostProcess.Saturation = 0;
         Renderer.GlobalPostProcesses.Add(SaturationPostProcess);
+    }
+
+    private void HandleSizeOrOrientationChanged(object sender, EventArgs e)
+    {
+        Renderer.SwapChain.UpdateRenderTargetSize(
+            FlatRedBallServices.Game.Window.ClientBounds.Width,
+            FlatRedBallServices.Game.Window.ClientBounds.Height);
     }
 
     private void CustomActivity(bool firstTimeCalled)
@@ -64,7 +80,8 @@ public partial class GameScreen
 
     private void CustomDestroy()
     {
-        Renderer.GlobalPostProcesses.Remove(SaturationPostProcess);            
+        Renderer.GlobalPostProcesses.Remove(SaturationPostProcess);
+        FlatRedBallServices.GraphicsOptions.SizeOrOrientationChanged -= HandleSizeOrOrientationChanged;
     }
 
     private static void CustomLoadStaticContent(string contentManagerName)
