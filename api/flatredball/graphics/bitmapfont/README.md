@@ -33,7 +33,7 @@ Bitmap Fonts require two files - a texture file and a .fnt file. Both can be cre
 
 ### Using a BitmapFont in the FRB Editor
 
-For information on how to use BitmapFonts in the FRB Editor, see the [Font (.fnt) page](../../../../glue-reference/files/font-.fnt.md).
+For information on how to use BitmapFonts in the FRB Editor, see the [Font (.fnt) page](../../../../glue-reference/files/file-types/font-.fnt.md).
 
 ### Adding custom letters to a .fnt file
 

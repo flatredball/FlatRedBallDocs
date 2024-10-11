@@ -4,7 +4,7 @@
 
 UniformRowType can be used to load the CSV data in a more raw format rather than generating a custom class for the CSV. This is useful if the data in the CSV needs to be accessed by row and column index rather than by class member names. For this guide we'll be using a CSV with the following data:
 
-![](../../../.gitbook/assets/2019-05-img\_5ccd9c025c7c5.png)
+![](../../../../.gitbook/assets/2019-05-img\_5ccd9c025c7c5.png)
 
 ### Default Functionality
 
@@ -37,7 +37,7 @@ Note that we access the first column using the Column1 property.
 
 We can change the UniformRowType to **string\[]** to change how Glue generates the CSV code.
 
-![](../../../.gitbook/assets/2019-05-img\_5ccda2ff48754.png)
+![](../../../../.gitbook/assets/2019-05-img\_5ccda2ff48754.png)
 
 This setting tells Glue to generate each row in the CSV as a string\[], allowing us to index into each column as shown in the following code:
 

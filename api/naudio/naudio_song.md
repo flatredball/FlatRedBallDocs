@@ -6,7 +6,7 @@ The NAudio\_Song class provides more control over the playing of a song compared
 
 ### Loading an NAudio\_Song
 
-The easiest way to load an NAudio\_Song is to use the FRB Editor, add an MP3 to a Screen's Files, and to select NAudio\_Song as the type. For more information on loading through the FRB Editor, see the [FRB Editor's MP3 page](../../glue-reference/files/glue-reference-mp3-file-mp3.md).
+The easiest way to load an NAudio\_Song is to use the FRB Editor, add an MP3 to a Screen's Files, and to select NAudio\_Song as the type. For more information on loading through the FRB Editor, see the [FRB Editor's MP3 page](../../glue-reference/files/file-types/glue-reference-mp3-file-mp3.md).
 
 Alternatively, NAudio\_Song instances can also be loaded in code. The following code shows how to load an NAudio\_Song. The loaded song is registered with FlatRedBall so that it can be unloaded when the content manager is unloaded (usually for a screen).
 

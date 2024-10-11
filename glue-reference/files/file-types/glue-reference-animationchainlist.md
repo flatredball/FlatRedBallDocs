@@ -15,9 +15,9 @@ The AnimationChainList type is the runtime type for the .achx file type. Animati
 
 The easiest way to add an AnimationChainList to your game is to add a new .achx file to a Screen, Entity, or global content:
 
-<figure><img src="../../.gitbook/assets/2016-01-20_16_19_33.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2016-01-20_16_19_33.gif" alt=""><figcaption></figcaption></figure>
 
-For information on how to add a Sprite to your Entity, see [this page](../objects/object-types/glue-reference-sprite.md). For information about how to use the AnimationEditor, see [the AnimationEditor documentation](../../glue-gluevault-component-pages-animationeditor-plugin/).
+For information on how to add a Sprite to your Entity, see [this page](../../objects/object-types/glue-reference-sprite.md). For information about how to use the AnimationEditor, see [the AnimationEditor documentation](../../../glue-gluevault-component-pages-animationeditor-plugin/).
 
 ### Viewing an AnimationChainList in game
 

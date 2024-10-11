@@ -10,5 +10,5 @@ Microsoft.Xna.Framework.Media.Song is the default class in MonoGame and FNA for 
 
 The PlaySong method can also receive any class which implements ISong. The most common type of ISong implementation is the NAudio song. NAudio provides additional flexibility and better seeking/looping compared to MonoGame and FNA, so it is recommended for games which require more song playing flexibility.
 
-For more information on loading an NAudio\_Song intance, see the [MP3 loading page](../../../../glue-reference/files/glue-reference-mp3-file-mp3.md).
+For more information on loading an NAudio\_Song intance, see the [MP3 loading page](../../../../glue-reference/files/file-types/glue-reference-mp3-file-mp3.md).
 

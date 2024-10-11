@@ -15,7 +15,7 @@ Glue has built-in support for working with NodeNetworks. To add a NodeNetwork to
 5. Change the name of the file if desired
 6. Click **OK**
 
-<figure><img src="../../.gitbook/assets/2018-10-2018-10-04_08-47-39.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2018-10-2018-10-04_08-47-39.gif" alt=""><figcaption></figcaption></figure>
 
 ### Editing a NodeNetwork File
 
@@ -26,12 +26,12 @@ To edit a NodeNetwork file, double-click the file in Glue and the AIEditor shoul
 3. Right-click on node network file (.nntx) in Windows Explorer
 4.  Select **Open with...**
 
-    ![](../../.gitbook/assets/2018-10-img\_5bb6295231dde.png)
+    ![](../../../.gitbook/assets/2018-10-img\_5bb6295231dde.png)
 5. Click **More Apps** to expand the list
 6.  Scroll to the bottom of the list and select **Look for another app on this PC**
 
-    ![](../../.gitbook/assets/2018-10-img\_5bb629b9876ef.png)
+    ![](../../../.gitbook/assets/2018-10-img\_5bb629b9876ef.png)
 7. Navigate to the location where the FRBDK was unzipped (this is also where Glue is located)
 8. Find the AIEditor.exe and select that as the default application
 
-Note that you may need to install XNA 3.1 Redistributable to run the AIEditor. For more information, see the [AIEditor page](../../documentation/tools/artificialintelligenceeditor-main-page.md).
+Note that you may need to install XNA 3.1 Redistributable to run the AIEditor. For more information, see the [AIEditor page](../../../documentation/tools/artificialintelligenceeditor-main-page.md).

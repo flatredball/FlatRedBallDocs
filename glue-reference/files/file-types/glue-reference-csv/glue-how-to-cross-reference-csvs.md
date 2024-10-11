@@ -31,7 +31,7 @@ Next create the CSV for StoreInfo:
 
 You should now have 2 CSVs in your Global Content Files uner Global Content Files:
 
-<figure><img src="../../../.gitbook/assets/migrated_media-TwoCsvsCrossReference1.PNG" alt=""><figcaption><p>StoerInfo.csv and WeaponInfo.csv</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-TwoCsvsCrossReference1.PNG" alt=""><figcaption><p>StoerInfo.csv and WeaponInfo.csv</p></figcaption></figure>
 
 ### Filling WeaponInfo CSV
 
@@ -67,7 +67,7 @@ Next we'll need to write some simple code to associate the values in the WeaponT
 
 You should now have a file called StoreInfo.cs and a file called StoreInfo.Generated.cs
 
-<figure><img src="../../../.gitbook/assets/migrated_media-ItemsUnderDataTypes.PNG" alt=""><figcaption><p>Newly-created StoreInfo.cs file</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-ItemsUnderDataTypes.PNG" alt=""><figcaption><p>Newly-created StoreInfo.cs file</p></figcaption></figure>
 
 Next, open the newly-created StoreInfo.cs file and make it a "public partial" class. After you do this, your code should look like:
 

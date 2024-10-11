@@ -30,7 +30,7 @@ As we'll see later in the tutorial, using classes and structs also allows for yo
 
 First we start by creating the CSV that contains our information, then we'll explain the syntax. The following is a screenshot from Excel, but you can use any spreadsheet editing program (such as LibreOffice):&#x20;
 
-<figure><img src="../../../.gitbook/assets/migrated_media-CsvWithClasses1.PNG" alt=""><figcaption><p>Example CSV with an AttackInfo column</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-CsvWithClasses1.PNG" alt=""><figcaption><p>Example CSV with an AttackInfo column</p></figcaption></figure>
 
 A few things are worth mentioning:
 
@@ -86,7 +86,7 @@ public class FireAttackInfo : AttackInfo
 
 Using the code above, we now have FireAttackInfo and SlashingAttackInfo, both of which inherit from AttackInfo. We can now instantiate any of those three types in our AttackInfo column. The following shows a CSV that instantiates different types: &#x20;
 
-<figure><img src="../../../.gitbook/assets/migrated_media-CsvSupportingInheritance.PNG" alt=""><figcaption><p>CSV example showing derived AttackInfo classes</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-CsvSupportingInheritance.PNG" alt=""><figcaption><p>CSV example showing derived AttackInfo classes</p></figcaption></figure>
 
 When using inheritance we must specify the type that we want to use in each column. The syntax for this is the same as it is when instantiating an object in code - use the keyword "new" followed by the type. The contents of the parenthesis are the same as as before. You can assign values defined in the derived class as well as the base class. You can also leave out assignments that you want to keep as the default. For example the EndBoss enemy does not define the AreaOfEffect - it defaults to 0.
 

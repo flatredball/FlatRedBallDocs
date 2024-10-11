@@ -6,13 +6,13 @@ CreatesDictionary is a property that controls whether to deserialize a given CSV
 
 CreatesDictionary can be set on a CSV file in its properties tab or when first adding a new CSV. The following shows the option for specifying Dictionary or List when creating a new CSV:
 
-<figure><img src="../../../.gitbook/assets/migrated_media-SpreadsheetDictionaryOrList.PNG" alt=""><figcaption><p>Selecting Dictionary or List when adding a new CSV</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-SpreadsheetDictionaryOrList.PNG" alt=""><figcaption><p>Selecting Dictionary or List when adding a new CSV</p></figcaption></figure>
 
 ### "required" keyword
 
 Dictionaries in code require a key. This is typically the Name property which is marked with the `required` keyword. For example, the following CSV marks the "Name" as required:&#x20;
 
-<figure><img src="../../../.gitbook/assets/migrated_media-CsvWithRequiredName.PNG" alt=""><figcaption><p>Example CSV with Name required property</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-CsvWithRequiredName.PNG" alt=""><figcaption><p>Example CSV with Name required property</p></figcaption></figure>
 
 **Name is common** The most common key for data is "Name". Unless you have a reason to not use this, consider using "Name" as your required property.
 
@@ -22,13 +22,13 @@ If you have a CSV without a "required" field, then FRB cannot create a Dictionar
 
 CreatesDictionary can also be set to true in the Properties tab of a CSV file:
 
-<figure><img src="../../../.gitbook/assets/migrated_media-CreatesDictionaryProperty.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-CreatesDictionaryProperty.png" alt=""><figcaption></figcaption></figure>
 
 ### Accessing the Dictionary in code
 
 Now that you have created a CSV that has CreatesDictionary set to true, you can access the file in code and get instances using the Name property:&#x20;
 
-<figure><img src="../../../.gitbook/assets/migrated_media-DictionaryInCode.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-DictionaryInCode.png" alt=""><figcaption></figcaption></figure>
 
 ### Concerns about using strings as keys
 
@@ -53,7 +53,7 @@ foreach(var value in GlobalContent.TestCsv.Values)
 
 This would dynamically loop through the list and create UI elements for each item in the CSV. If an item is added or removed, your code would automatically adjust to this and only show which values are appropriately.
 
-**Dictionary order is undefined.** The order of entries in a dictionary is not always the same as the order of entries in a CSV. For more information on retrieving the order, see [this page](../../../frb/docs/index.php).
+**Dictionary order is undefined.** The order of entries in a dictionary is not always the same as the order of entries in a CSV. For more information on retrieving the order, see [this page](../../../../frb/docs/index.php).
 
 #### Accessing values directly
 

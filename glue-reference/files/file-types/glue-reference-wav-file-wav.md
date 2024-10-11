@@ -36,7 +36,7 @@ ExplosionSound.Volume = 0.5f;
 
 To change whether a .wav file is loaded as a SoundEffect or SoundEffectInstance, change its **RuntimeType** as shown in the following image:
 
-![Changing a .wav's RuntimeType](../../.gitbook/assets/20\_22\_24\_42.png)
+![Changing a .wav's RuntimeType](../../../.gitbook/assets/20\_22\_24\_42.png)
 
 {% hint style="info" %}
 If you need to interrupt a sound after it has started playing, you must use a SoundEffectInstance.
@@ -52,7 +52,7 @@ To add a .wav file to FRB:
 
 You should see the .wav file in your project:
 
-![WAV file in the Enemy entity](../../.gitbook/assets/20\_22\_27\_04.png)
+![WAV file in the Enemy entity](../../../.gitbook/assets/20\_22\_27\_04.png)
 
 Alternatively you can drop WAV files into your project from Windows Explorer:
 
@@ -78,7 +78,7 @@ public void CustomActivity(bool firstTimeCalled)
 
 For the full SoundEffect documentation, see the MonoGame [SoundEffect page](https://monogame.net/api/Microsoft.Xna.Framework.Audio.SoundEffect.html).
 
-For more information on SoundEffect in FlatRedBall, see the [SoundEffect page](../../api/microsoft-xna-framework/audio/soundeffect.md).
+For more information on SoundEffect in FlatRedBall, see the [SoundEffect page](../../../api/microsoft-xna-framework/audio/soundeffect.md).
 
 ### WAV and XNB Files
 
@@ -86,19 +86,19 @@ FlatRedBall MonoGame does not require WAV files to be built and loaded from XNB 
 
 If using the content pipeline, WAV files are added as XNB files to your Visual Studio project. For example, the following SoundEffectFile.wav is part of GameScreen:
 
-<figure><img src="../../.gitbook/assets/image (291).png" alt=""><figcaption><p>WAV file in GameScreen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (291).png" alt=""><figcaption><p>WAV file in GameScreen</p></figcaption></figure>
 
 This file is automatically added to your Visual Studio project by FlatRedBall, as shown in the following screenshot:
 
-<figure><img src="../../.gitbook/assets/image (292).png" alt=""><figcaption><p>WAV file as part of Visual Studio as a converted XNB</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (292).png" alt=""><figcaption><p>WAV file as part of Visual Studio as a converted XNB</p></figcaption></figure>
 
 WAV files can be explicitly rebuilt in the FRB Editor by right-clicking on the file and selecting **Rebuild Content Pipeline File (.xnb)**.
 
-<figure><img src="../../.gitbook/assets/image (293).png" alt=""><figcaption><p>Right click, Rebuild Content Pipeline File option</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (293).png" alt=""><figcaption><p>Right click, Rebuild Content Pipeline File option</p></figcaption></figure>
 
 When the file is built, the output window displays information about the build so you can diagnose problems.
 
-<figure><img src="../../.gitbook/assets/image (294).png" alt=""><figcaption><p>Content Pipline build output</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (294).png" alt=""><figcaption><p>Content Pipline build output</p></figcaption></figure>
 
 ### Global SoundEffect, Screen/Entity SoundEffectInstance
 
@@ -114,10 +114,10 @@ To do this:
 2.  Set the RuntimeType to SoundEffect\
 
 
-    <figure><img src="../../.gitbook/assets/image (338).png" alt=""><figcaption><p>SoundEffect in Global Content Files</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (338).png" alt=""><figcaption><p>SoundEffect in Global Content Files</p></figcaption></figure>
 3. Add the same file to a Screen or Entity - you can drag+drop the file from global content, or right-click on the Files folder and select Add Existing.
 4.  Change the RuntimeType to SoundEffectInstance using the dropdown\
 
 
-    <figure><img src="../../.gitbook/assets/image (339).png" alt=""><figcaption><p>SoundEffectInstance in a Screen, using the same .wav file as the SoundEffect in GlobalContent</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (339).png" alt=""><figcaption><p>SoundEffectInstance in a Screen, using the same .wav file as the SoundEffect in GlobalContent</p></figcaption></figure>
 
