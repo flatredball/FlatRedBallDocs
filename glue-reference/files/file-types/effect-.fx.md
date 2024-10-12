@@ -27,7 +27,17 @@ This creates the following files in your project:
 
 If you intend to use the effects as they are when created, you do not need to work with these files. However, these files can also serve as a starting point for your own shaders so you may be interested in locating them.
 
-Once a shader has been added, you can add it to the global effect list. If your shader is part of Global Content Files, the addition can be perfomed in Game1. The following code shows how to add the shader to post processing in Game1
+Once a shader has been added, you can add it to the global effect list. If your shader is part of Global Content Files, the addition can be perfomed in Game1. The following code shows how to add the shader to post processing in Game1.
+
+```csharp
+// Add this after GeneratedInitialize() in Game1.cs
+var postProcess = new SaturationEffect(GlobalContent.SaturationEffect);
+Renderer.GlobalPostProcesses.Add(postProcess);
+Renderer.CreateDefaultSwapChain();
+
+```
+
+If you need more control you can manually create a SwapBuffer as shown in the following block of code:
 
 ```csharp
 // Add this after GeneratedInitialize() in Game1.cs
@@ -44,7 +54,7 @@ FlatRedBallServices.GraphicsOptions.SizeOrOrientationChanged += (_,_) =>
         FlatRedBallServices.Game.Window.ClientBounds.Height);
 };
     
-Renderer.GlobalPostProcesses.Add(postProcess);
+
 ```
 
 If your shader is part of a screen such as GameScreen, you can add it in the Screen's CustomInitialize. Note that if you add it in the Screen's CustomInitialize, you should also remove it in CustomDestroy. The following code shows how an affect might be added through GameScreen.
@@ -55,23 +65,16 @@ public partial class GameScreen
     SaturationEffect SaturationPostProcess;
     private void CustomInitialize()
     {
-        var cameraData = CameraSetup.Data;
-        Renderer.SwapChain = new FlatRedBall.Graphics.PostProcessing.SwapChain(
-            FlatRedBallServices.Game.Window.ClientBounds.Width,
-            FlatRedBallServices.Game.Window.ClientBounds.Height);
-
-        FlatRedBallServices.GraphicsOptions.SizeOrOrientationChanged += HandleSizeOrOrientationChanged;
-
+        if(Renderer.SwapChain == null)
+        {
+            // Only create the SwapChain once just in case this was already
+            // created earlier (like if this screen is restarted)
+            Renderer.CreateDefaultSwapChain();
+        }
+        
         SaturationPostProcess = new SaturationEffect(GameScreen.SaturationEffect);
         SaturationPostProcess.Saturation = 0;
         Renderer.GlobalPostProcesses.Add(SaturationPostProcess);
-    }
-
-    private void HandleSizeOrOrientationChanged(object sender, EventArgs e)
-    {
-        Renderer.SwapChain.UpdateRenderTargetSize(
-            FlatRedBallServices.Game.Window.ClientBounds.Width,
-            FlatRedBallServices.Game.Window.ClientBounds.Height);
     }
 
     private void CustomActivity(bool firstTimeCalled)
@@ -81,7 +84,6 @@ public partial class GameScreen
     private void CustomDestroy()
     {
         Renderer.GlobalPostProcesses.Remove(SaturationPostProcess);
-        FlatRedBallServices.GraphicsOptions.SizeOrOrientationChanged -= HandleSizeOrOrientationChanged;
     }
 
     private static void CustomLoadStaticContent(string contentManagerName)
