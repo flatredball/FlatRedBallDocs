@@ -26,6 +26,17 @@ FlatRedBall uses Gum UI including at runtime. This is also open source and can b
 
 Both repositories should be cloned to the same folder to make linking easier.
 
+### Installing Multi Platform Workloads
+
+FlatRedBall Editor (Glue) links a version of FlatRedBall which builds for multiple platforms including Android and iOS. You must have an installiation that supports these platforms even if you are only building the FlatRedBall Editor.
+
+Be sure to install both workloads:
+
+* .NET Multi-platform App UI development
+* .NET desktop development
+
+<figure><img src=".gitbook/assets/image (350).png" alt=""><figcaption><p>Required installation to build FlatRedBall Editor (Glue)</p></figcaption></figure>
+
 ### Downloading FlatRedBall Source
 
 The easiest way to download and keep FlatRedBall source up to date is to use a Github client such as Github for Desktop. To download source using Github for Desktop:
