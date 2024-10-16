@@ -23,11 +23,11 @@ This creates the following files in your project:
 3. The accompanying PostProcess file
 4. A FullscreenEffectWrapper.cs file. This file is only created one time when the first post processing effect is added
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>New files for effects</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/16_07 46 16.png" alt=""><figcaption><p>New files for effects</p></figcaption></figure>
 
 If you intend to use the effects as they are when created, you do not need to work with these files. However, these files can also serve as a starting point for your own shaders so you may be interested in locating them.
 
-Once a shader has been added, you can add it to the global effect list. If your shader is part of Global Content Files, the addition can be perfomed in Game1. The following code shows how to add the shader to post processing in Game1.
+Once a shader has been added, you can add it to the global effect list. If your shader is part of Global Content Files, the addition can be performed in Game1. The following code shows how to add the shader to post processing in Game1.
 
 ```csharp
 // Add this after GeneratedInitialize() in Game1.cs
@@ -37,7 +37,7 @@ Renderer.CreateDefaultSwapChain();
 
 ```
 
-If you need more control you can manually create a SwapBuffer as shown in the following block of code:
+To use the built in GlobalPostProcessing, a SwapChain must be created. For more information on SwapChains, see the [SwapChain](../../../api/flatredball/graphics/postprocessing/swapchain.md) page. If you need more control you can manually create a SwapChain as shown in the following block of code:
 
 ```csharp
 // Add this after GeneratedInitialize() in Game1.cs

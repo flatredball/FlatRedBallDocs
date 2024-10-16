@@ -655,6 +655,8 @@
           * [PixelSize](api/flatredball/graphics/particle/emissionsettings/pixelsize.md)
           * [ScaleX](api/flatredball/graphics/particle/emissionsettings/scalex.md)
         * [Emitter](api/flatredball/graphics/particle/emitter.md)
+      * [PostProcessing](api/flatredball/graphics/postprocessing/README.md)
+        * [SwapChain](api/flatredball/graphics/postprocessing/swapchain.md)
       * [RenderBreak](api/flatredball/graphics/rendererbreak.md)
       * [Renderer](api/flatredball/graphics/renderer/README.md)
         * [Draw](api/flatredball/graphics/renderer/draw.md)
