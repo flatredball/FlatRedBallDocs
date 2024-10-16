@@ -33,7 +33,7 @@ SwapChains are typically used with post processing. For information about adding
 
 To understand the purpose of a SwapChain, we must first discuss how rendering works without a swap chain. Whenever graphics are rendered to the screen (also known as the back buffer), the following are required:
 
-* A set of verts, which in FlatRedBall are usually a Sprite, tile in a TileMap, or Gum object
+* A set of verts, which in FlatRedBall are usually a Sprite, tile in a TileMap, or Gum object. This is also called the _source._
 * A shader
 * A destination (by default the back buffer)
 
@@ -47,7 +47,7 @@ Of course, the shader may make additional modifications to the Sprite such as ch
 
 Although shaders are always used when rendering individual objects, we can also use shaders to modify an entire scene after it has finished rendering. This is referred to as _post processing_. To perform post processing, all FlatRedBall objects must first be drawn to a r_ender target_ which is a temporary storage of all graphics before it is then passed through another shader which performs final modifications.
 
-The following diagram shows what the process might look like if we were to render a sprite to a render target first, and then render that to the final screen with additional processing. Note that we can render multiple sprites to the render target, and then perform one final pass to apply post processing.
+The following diagram shows what the process might look like if we were to render a sprite to a render target first, and then render that to the final screen with additional processing (blurring). Note that we can render multiple sprites to the render target, and then perform one final pass to apply post processing.
 
 <figure><img src="../../../../.gitbook/assets/image (347).png" alt=""><figcaption><p>Example post processing applying a blur effect to the entire screen</p></figcaption></figure>
 
@@ -55,12 +55,12 @@ The example above applies a single post processing effect to the entire screen t
 
 However, if we have multiple effects, then the output of the post processing shader must become the input to the next shader. For simplicity the next diagram omits the rendering of the sprites and focuses on how multiple render targets are used:
 
-<figure><img src="../../../../.gitbook/assets/image (348).png" alt=""><figcaption><p>Multiple render targets used for a series of post processing</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/16_07 01 23.png" alt=""><figcaption><p>Multiple render targets used for a series of post processing</p></figcaption></figure>
 
-The example above shows a situation where four render targets are used. The first is the render target that the default FlatRedBall rendering targets. Each subsequent render target is used for a separate shader, supporting three post processing effects: grayscale, pixellate, and blur.
+The example above shows a situation where four render targets are used. The first is the render target that the default FlatRedBall rendering targets. Each subsequent render target is used for a separate shader, supporting three post processing effects: grayscale, pixelate, and blur.
 
-Notice that **Render Target 1,** which is used as the destination for regular FlatRedBall rendering, is only used when rendering the Grayscale Shader to **Render Target 2**. After that, **Render Target 1** is no longer needed in the series of shader rendering. Similarly, **Render Target 2** is only needed as the destination when rendering the Grayscale shader and the source for Pixellate shader. We can reduce the number of render targets needed by reusing these render targets. Since one render target will be the source and one will be the destination, we need two render targets. Each time a shader is drawn the input and source are _swapped_, which is where the term SwapChain comes from.
+Notice that **Render Target 1,** which is used as the destination for regular FlatRedBall rendering, is only used when rendering the Grayscale Shader to **Render Target 2**. After that, **Render Target 1** is no longer needed in the series of shader rendering. Similarly, **Render Target 2** is only needed as the destination when rendering the Grayscale shader and the source for Pixelate shader. We can reduce the number of render targets needed by reusing these render targets. Since one render target will be the source and one will be the destination, we need two render targets. Each time a shader is drawn the input and source are _swapped_, which is where the term SwapChain comes from.
 
-<figure><img src="../../../../.gitbook/assets/image (349).png" alt=""><figcaption><p>Rendering multiple post processing effects with a SwapChain</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/16_07 38 30.png" alt=""><figcaption><p>Rendering multiple post processing effects with a SwapChain</p></figcaption></figure>
 
 The example above uses a SwapChain to perform three post processing passes. Notice that if we were to add additional passes we could still use two render targets since each render target is reused either as a source or destination.
