@@ -19,15 +19,11 @@ To add an event to a variable:
     ![](../../.gitbook/assets/2022-11-img\_636cfe6e5f44b.png)
 5. Add code to the event to respond to the variable change.
 
-###
-
-### Example : Assigning Additional Event Handlers
-
-When a variable event is created, an event handler is automatically added. In the example above, the handler is named **OnAfterForceVelocityXSet**. You can also manually create event handlers purely in custom code. By drag+dropping the variable onto the Events folder, the Variable's **CreatesEvent** property is set to true.
+### Example : Assigning Event Handlers
 
 ![](../../.gitbook/assets/2022-11-img\_636cffc3410e9.png)
 
-This results in two events being created:
+
 
 * Before\<VariableName>Set - for example **BeforeForceVelocityXSet**
 * After\<VariableName>Set - for example **AfterForceVelocityXSet**
@@ -38,7 +34,7 @@ These can be seen in generated code:
 
 Notice that the **Before** event is an Action which takes a float. This argument contains the new value, enabling the handler to decide how to respond to the new value before it has been assigned. These can be handled in custom code. For example, the following code could be used to print out that the variable is being assigned:
 
-```
+```csharp
 private void CustomInitialize()
 {
     BeforeForceVelocityXSet += HandleBeforeForceVelocityXSet;
@@ -55,3 +51,18 @@ private void HandleAfterForceVelocityXSet(object sender, EventArgs e)
     FlatRedBall.Debugging.Debugger.Write($"Just assigned value to {ForceVelocityX}");
 }
 ```
+
+### Static Events (IsSharedStatic)
+
+If a variable's IsShared is set to true, then the variable is generated as a static variable in code. This means that its events must also be static. If a variable with IsShared set to true generates an event, the following occurs:
+
+* All events are static
+* If the variable is drag+dropped onto the Events node, the event handler method is generated as static
+* A static constructor is added to generated code for the owning Screen/Entity. This may conflict with static constructors if you have added one in custom code
+* The event is subscribed in the static constructor, so it will always be active
+* The event is never unsubscribed. By contrast instance events are unsubscribed when the owning Screen/Entity are destroyed
+
+As mentioned above, if your Screen/Entity already has a static constructor, adding a static event in the FRB editor will result in a conflicting static constructor.
+
+Also note that even if an event is raised for a Screen/Entity, that does not mean that the content has been loaded for that entity. The content will only have been loaded if an instance of the Screen/Entity has been created, or if the content has been loaded explicitly through a LoadStaticContent method call.
+
