@@ -57,7 +57,7 @@ FlatRedBallServices.GraphicsOptions.SizeOrOrientationChanged += (_,_) =>
 
 ```
 
-If your shader is part of a screen such as GameScreen, you can add it in the Screen's CustomInitialize. Note that if you add it in the Screen's CustomInitialize, you should also remove it in CustomDestroy. The following code shows how an affect might be added through GameScreen.
+If your shader is part of a screen such as GameScreen, you can add it in the Screen's CustomInitialize. Note that if you add it in the Screen's CustomInitialize, you should also remove it in CustomDestroy. The following code shows how an effect might be added through GameScreen.
 
 ```csharp
 public partial class GameScreen
