@@ -54,6 +54,12 @@ FlatRedBall Editor supports customizing accent colors and changing between light
 
 <figure><img src=".gitbook/assets/image (342).png" alt=""><figcaption><p>FlatRedBall Editor in Dark Mode</p></figcaption></figure>
 
+### Customizable Rendering Using Shaders
+
+Add built-in effects like Bloom and CRT with a few clicks, or create your own fully customizable shaders.
+
+<figure><img src=".gitbook/assets/image (351).png" alt=""><figcaption><p>Bloom and CRT effects on a game</p></figcaption></figure>
+
 ### Platformer Controls and Physics
 
 Creating a platformer has never been easier. Mark your entity as a Platformer or use the new project wizard to get production quality platformer physics and movement.
