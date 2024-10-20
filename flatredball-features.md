@@ -178,7 +178,16 @@ Add multiple languages to your game using a simple spreadsheet. Localization is 
 
 ### Multiple Platforms
 
-Target multiple platforms with the same code and content. FRB games can run on Windows, Mac, Linux, Android, and iOS. By using FNA and Native AOT, FlatRedBall can also run on consoles such as Switch.
+Target multiple platforms with the same code and content. FRB games can run on:
+
+* Windows
+* Browser
+* Mac
+* Linux
+* Android
+* iOS
+* Switch/Xbox using FNA AOT
+* PS4/PS5 using MonoGame AOT (coming soon)
 
 <figure><img src=".gitbook/assets/image (271).png" alt=""><figcaption><p>Target multiple platforms with FRB</p></figcaption></figure>
 
