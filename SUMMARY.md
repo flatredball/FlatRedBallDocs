@@ -409,6 +409,7 @@
     * [RemoveQuads](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/removequads.md)
     * [RenderingScale](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/renderingscale.md)
     * [SortAxis](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/sortaxis.md)
+  * [TiledMapSave](tiled-plugin/tiledmapsave.md)
   * [TileShapeCollection](tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/README.md)
     * [AddCollisionAtWorld](tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionatworld.md)
     * [AddCollisionFrom](tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/addcollisionfrom.md)
