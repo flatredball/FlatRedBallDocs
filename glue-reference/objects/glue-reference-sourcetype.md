@@ -7,10 +7,17 @@ The SourceType property determines the type of the Entity at the highest level. 
 * File
 * FlatRedBallType
 * Entity
+* Gum
+
+Note that the same object in a base and derived screen may use different SourceTypes. For example, a Map object in GameScreen may use a FlatRedBallType, but each level uses File.
 
 ### File
 
 If an object's SourceType is File, then the object is defined by a file. If the object is created in a Screen, then the object is referencing either a part or the entirety of the file. If the object is an Entity then the object may be a reference to the file or a copy of the file if the file has a runtime type such as a Tiled TMX being loaded into a MapDrawableBatch.
+
+A common example of an object which uses the File type is the Map object in derived levels.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Map object using a SourceType of File</p></figcaption></figure>
 
 For more information on File objects, see the [SourceFile](glue-reference-sourcefile.md) page.
 
