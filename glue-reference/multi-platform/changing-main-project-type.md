@@ -27,10 +27,10 @@ The next step is to create a new project:
 2. Enter the new project name
 3. Select the desired project type
 4. Check the option for Custom Namespace and enter the namespace of your old project. This will make it much easier to copy existing code into your newly created project
-5. if your old project is linked to source, select the option to link this new project to source
+5. If your old project is linked to source, select the option to link this new project to source
 6. Uncheck the option to run the wizard to prevent adding unnecessary code and content files
 
-If you did not upgrade your project to the latest gluj version, you should open your gluj file and downgrade it. After saving the file, close and re-open the FlatRedBall Editor to verify that it has generated content correctly. If your version is old enough, you may have duplicate classes, with some using .Generated.cs suffix and some with the .cs suffix. You should delete duplicate files if needed.&#x20;
+If you did not upgrade your project to the latest gluj version, you should open your gluj file and downgrade it. After saving the file, close and re-open the FlatRedBall Editor to verify that it has generated content correctly. If your version is old enough, you may have duplicate classes, with some using `.Generated.cs` suffix and some with the `.cs` suffix. You should delete duplicate files if needed.&#x20;
 
 ### Copying Files
 
