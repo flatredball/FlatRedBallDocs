@@ -36,7 +36,8 @@ If you did not upgrade your project to the latest gluj version, you should open 
 
 Once you have a new project running correctly, you can copy existing files. The following files should be copied from the old project to the new project
 
-* Your project's .gluj file (be sure to change the name to the new project name)
+* Your old project's .gluj file (be sure to change the name to the new project name)
+* Your old project's EntityPerformance.json file (if it exists)
 * The entire Content folder except the Shader.fx and Shader.xnb files - these are platform specific and are part of the original template
 * The entire contents of the Entities (code) folder
 * The entire contents of the Screens (code) folder
