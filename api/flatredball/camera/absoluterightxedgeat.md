@@ -52,6 +52,10 @@ Camera.Main.AbsoluteLeftXEdge = 0;
 Camera.Main.AbsoluteTopYEdge = 0;
 ```
 
+If your Camera's Orthogonal value is set to false, then setting any of the absolute values results in an exception being thrown.
+
+Setting any othe absolute values ultimately assigns the Camera's X and Y properties. If your Camera is attached to another object or if you are using a CameraControllingEntity, then these position changes will be undone when updates are processed.
+
 ### Detecting if an object is on screen
 
 The edge values can be used to check if on screen. For example, the following code checks if a character's point is on screen. Since visual objects are usually larger than a single pixel, an additional buffer can be added.
