@@ -9,6 +9,10 @@ The SetFromAbsoluteEndpoints method can be used to set a line so that its endpoi
 * Position
 * RotationZ
 
+{% hint style="info" %}
+SetFromAbsoluteEndpoints updates a Line's Position property. If the line is attached to another object (such as a line in an Entity) then this method will not properly set the line's values.
+{% endhint %}
+
 ### Conceptual Example
 
 Consider the following code:
