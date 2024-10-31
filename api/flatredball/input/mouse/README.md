@@ -56,9 +56,11 @@ float zPosition = 0; // or whatever other value, but 0 is the most common
 
 float xWorldPosition = InputManager.Mouse.WorldXAt(zPosition);
 float yWorldPosition = InputManager.Mouse.WorldYAt(zPosition);
-```
 
-For a more detailed example see [this entry](../../../../frb/docs/index.php#Creating\_Attachments) on moving a [Sprite](../../../../frb/docs/index.php) by positioning it to the cursor's coordinates.
+// use this to set the position of something:
+PlayerInstance.X = xWorldPosition;
+PlayerInstance.Y = yWorldPosition;
+```
 
 ### Detecting Mouse in Window
 
