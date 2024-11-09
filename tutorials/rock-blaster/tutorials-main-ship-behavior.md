@@ -101,7 +101,7 @@ But you might be wondering if this is important in your case - after all you are
 
 Next we will add a file and Sprite to the Bullet entity. This process is essentially the same as when we added PNG files and a Sprite to our Player Entity so you may find these steps familiar. To add the PNG:
 
-1. Download the following file to your computer: ![Bullet1.png](../../.gitbook/assets/migrated\_media-Bullet1.png)
+1. Download the following [file]((../../.gitbook/assets/migrated\_media-Bullet1.png)) to your computer: ![Bullet1.png](../../.gitbook/assets/migrated\_media-Bullet1.png)
 2. Expand the **Bullet** entity in Glue
 3. Drag+drop Bullet1.png onto the Files folder in the Bullet
 
