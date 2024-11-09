@@ -64,7 +64,7 @@ Next we'll want to detect if the game is over and show the hud if so. To do this
 1. Open GameScreen.cs in Visual Studio
 2. Add the following to the CustomActivity in GameScreen.cs:
 
-```
+```csharp
 EndGameActivity();
 ```
 
@@ -72,7 +72,7 @@ Next we'll want to implement EndGameActivity. To do this:
 
 1. Add the following code to GameScreen.cs in the GameScreen class:
 
-```
+```csharp
 void EndGameActivity()
 {
     // If the list has 0 ships, then all have been killed
@@ -83,7 +83,9 @@ void EndGameActivity()
 }
 ```
 
-Now the GameOver will appear after all ships have died. If you have increased the ship's health you will want to reduce it back to a reasonable number (like 6). This is important for the final state of the game as well as it will help you test the end game logic quicker. ![GameOverDisplaying.png](../../.gitbook/assets/migrated\_media-GameOverDisplaying.png)
+Now the GameOver will appear after all ships have died. If you have increased the ship's health you will want to reduce it back to a reasonable number (like 6). This is important for the final state of the game as well as it will help you test the end game logic quicker. 
+
+![GameOverDisplaying.png](../../.gitbook/assets/migrated\_media-GameOverDisplaying.png)
 
 ### Removing Debugger output
 
@@ -104,4 +106,4 @@ Way to go! You've just finished the RockBlaster tutorial series. We've covered a
 * Allow the user to restart the level by pushing a button when the game ends
 * Create an Explosion entity that shows whenever Rocks or the Player are destroyed
 
-There are endless possibilities. Good luck! [<- 13. Destroying Entities](tutorials-destroying-entities.md) -- [Back to Tutorials ->](../../documentation/tutorials.md)
+There are endless possibilities. Good luck!
