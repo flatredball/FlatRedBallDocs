@@ -10,7 +10,7 @@ A state can be thought of as a _collection of variables_. States are usually cre
 
 ### Tunneling Variables
 
-Before we create states, we will decide which variables we want to modify. In this case, the variables we want to modify are not on the Rock entity itself, but instead on \*objects inside \*the Rock. Therefore we will need to _tunnel variables_ to get access to these variables in our states. First we'll _tunnel_ the **Texture** variable on our **SpriteInstance**:
+Before we create states, we will decide which variables we want to modify. In this case, the variables we want to modify are not on the Rock entity itself, but instead on *objects inside* the Rock. Therefore we will need to _tunnel variables_ to get access to these variables in our states. First we'll _tunnel_ the **Texture** variable on our **SpriteInstance**:
 
 1. Expand the Rock entity in Glue
 2. Drag+drop the **SpriteInstance** onto the **Variables** folder
@@ -53,7 +53,7 @@ Alternatively, the **...** button at the top-right of the State Data tab provide
 
 <figure><img src="../../.gitbook/assets/2016-01-19_05-08-48.gif" alt=""><figcaption></figcaption></figure>
 
-Now we can create four states - one for each size of rock. We will call the states Size1, Size2, Size3, and Size4. Size1 will be the smallest and Size4 will be the largest. Enter the values in the spreadsheet, with the state name being the first column.
+Now we can create four states - one for each size of rock. We will call the states Size1, Size2, Size3 and Size4. Size1 will be the smallest and Size4 will be the largest. Enter the values in the spreadsheet, with the state name being the first column.
 
 ![](../../.gitbook/assets/2021-03-img\_604d65dee8ee2.png)
 
@@ -66,7 +66,7 @@ New Rocks in Rock Blaster will default to State4 - the largest. Once they are sh
 3. Find the **PerformSpawn** function
 4. Add the following line of code after **Rock rock = RockFactory.CreateNew();**
 
-```
+```csharp
 rock.CurrentRockSizeState = Rock.RockSize.Size4;
 ```
 
@@ -77,11 +77,11 @@ If you now play the game, the rocks will be very large: ![RockBlasterLargeRocks.
 Currently when a Rock collides with a Bullet the game calls Destroy on the Rock instance. Instead, we will want the Rock to decide whether it should break up into smaller rocks before it is destroyed. First, let's replace the Destroy call with a TakeHit call:
 
 1. Open **GameScreen.Event.cs** in Visual Studio
-2. Find the **OnBulletListVsRockListCollisionOccurred** function. Make sure to modify the bullet vs rock method.
+2. Find the **OnBulletVsRockCollided** function. Make sure to modify the bullet vs rock method.
 3. Change **Destroy** to **TakeHit**. Your code should look like:
 
-```
-void OnBulletListVsRockListCollisionOccurred (Entities.Bullet bullet, Entities.Rock rock)
+```csharp
+void OnBulletVsRockCollided (Entities.Bullet bullet, Entities.Rock rock)
 {
  bullet.Destroy();
  rock.TakeHit(); // <-----This line of code changed
@@ -93,7 +93,7 @@ Next we'll create a TakeHit function in the Rock entity. This is a custom functi
 1. Open **Rock.cs**
 2. Add the following code:
 
-```
+```csharp
 public void TakeHit()
 {
     if(this.CurrentRockSizeState == RockSize.Size4)
@@ -115,7 +115,7 @@ public void TakeHit()
 
 Finally, we'll create a BreakIntoPieces function in Rock.cs:
 
-```
+```csharp
 void BreakIntoPieces(RockSize newRockState)
 {
  for (int i = 0; i < NumberOfRocksToBreakInto; i++)
@@ -123,13 +123,12 @@ void BreakIntoPieces(RockSize newRockState)
   Rock newRock = Factories.RockFactory.CreateNew();
   newRock.Position = this.Position;
   // Let's make the positions random so that they appear in a random arrangement
-  newRock.Position.X += -1 + 2 * (float)(FlatRedBallServices.Random.NextDouble());
-  newRock.Position.Y += -1 + 2 * (float)(FlatRedBallServices.Random.NextDouble());
+  newRock.Position.X += -1 + 2 * FlatRedBallServices.Random.NextSingle();
+  newRock.Position.Y += -1 + 2 * FlatRedBallServices.Random.NextSingle();
 
-  float randomAngle =
-   (float)(FlatRedBallServices.Random.NextDouble() * System.Math.PI * 2);
+  float randomAngle = FlatRedBallServices.Random.NextSingle() * (float)Math.PI * 2;
 
-  float speed = 0 + (float)(FlatRedBallServices.Random.NextDouble() * RandomSpeedOnBreak);
+  float speed = FlatRedBallServices.Random.NextSingle() * RandomSpeedOnBreak;
   newRock.Velocity = FlatRedBall.Math.MathFunctions.AngleToVector(randomAngle) * speed;
   newRock.CurrentRockSizeState = newRockState;
  }
@@ -163,4 +162,6 @@ Repeat the process above, but create a **float** named **RandomSpeedOnBreak** Se
 
 ### Conclusion
 
-![RockBlasterRocksBrokenUp.png](../../.gitbook/assets/migrated\_media-RockBlasterRocksBrokenUp.png) If you now run your game and shoot the rocks, you will see that they will break up into smaller pieces. Our game is becoming far more playable (and difficult). Next we'll add a HUD and logic for scoring. [<- 07. Collision](tutorials-collision.md) -- [09. Hud ->](tutorials-hud.md)
+![RockBlasterRocksBrokenUp.png](../../.gitbook/assets/migrated\_media-RockBlasterRocksBrokenUp.png)
+
+If you now run your game and shoot the rocks, you will see that they will break up into smaller pieces. Our game is becoming far more playable (and difficult). Next we'll add a HUD and logic for scoring.

@@ -22,7 +22,7 @@ Let's look at each condition and see how it relates to the Health variable:
 * The Health variable is not a coefficient for logic. It will not be used to control the behavior of any game objects. Furthermore, the Health variable will change as the Player takes damage from rocks.
 * The Health variable is a new variable which is not directly tied to any FlatRedBall type variable.
 * We will not modify the Health variable through any states or events - it will only be modified when we detect collision.
-* The Health value will need a starting value, however it will change throughout the life of the project. However, we will need a starting value for the Health variable.
+* The Health value will need a starting value, however it will change throughout the life of the project. The health starting value is a good candidate for the variable belonging in Glue.
 
 ### Creating StartingHealth
 
@@ -69,13 +69,13 @@ Health = StartingHealth;
 
 ### Modifying Health
 
-Now we have a Health value which is functional - in other words it destroys the Player when it reaches 0. Next we'll modify the Health value when the Player collides with a Rock. To do this, open GameScreen.Event.cs and find the **OnPlayerListVsRockListCollisionOccurred** function. Locate the following line in the deepest if-statement:
+Now we have a Health value which is functional - in other words it destroys the Player when it reaches 0. Next we'll modify the Health value when the Player collides with a Rock. To do this, open GameScreen.Event.cs and find the **OnPlayerVsRockCollided** function. Locate the following line:
 
 ```csharp
  player.Destroy();
 ```
 
-Remove this line and replace it with:
+and replace it with:
 
 ```csharp
  player.Health--;

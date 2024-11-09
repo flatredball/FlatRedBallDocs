@@ -101,7 +101,7 @@ But you might be wondering if this is important in your case - after all you are
 
 Next we will add a file and Sprite to the Bullet entity. This process is essentially the same as when we added PNG files and a Sprite to our Player Entity so you may find these steps familiar. To add the PNG:
 
-1. Download the following file to your computer: ![Bullet1.png](../../.gitbook/assets/migrated\_media-Bullet1.png)
+1. Download the following [file](../../.gitbook/assets/migrated\_media-Bullet1.png) to your computer: ![Bullet1.png](../../.gitbook/assets/migrated\_media-Bullet1.png)
 2. Expand the **Bullet** entity in Glue
 3. Drag+drop Bullet1.png onto the Files folder in the Bullet
 
@@ -130,7 +130,7 @@ Now we can set the Sprite's Texture:
 
 ### Shooting
 
-The next step is to add firing bullets. We'll be using the BulletFactory which we created in an earlier tutorial to create a new bullet and automatically add it to the GameScreen's BulletList. For more information on factories, see [the tutorial on this topic](../../frb/docs/index.php). Next we will need to define a bullet speed. To do this:
+The next step is to add firing bullets. We'll be using the BulletFactory which we created in an earlier tutorial to create a new bullet and automatically add it to the GameScreen's BulletList. For more information on factories, see the [page](../../glue-reference/factory/) on this topic. Next we will need to define a bullet speed. To do this:
 
 1. Click the Bullet entity in Glue
 2. Click the Variables tab

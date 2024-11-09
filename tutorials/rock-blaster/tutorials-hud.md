@@ -24,7 +24,7 @@ If you see this dialog, click the Yes button, then navigate to the Gum.exe locat
 
 If you used the Glue Wizard in the first tutorial, you will also have a Gum screen set up for the GameScreen called GameScreenGum. Note that Glue will automatically create a Gum screen for every Glue screen.
 
-![Gum with the GAmeScreenGum and Level1Gum](../../.gitbook/assets/2021-03-img\_604d80112bbec.png)
+![Gum with the GameScreenGum and Level1Gum](../../.gitbook/assets/2021-03-img\_604d80112bbec.png)
 
 Gum follows many of the same concepts as Glue, but it is primarily a visual tool. The window on the right provides a [WYSIWYG editor](https://en.wikipedia.org/wiki/WYSIWYG), so creating visual layout is usually easier to do in Gum than in Glue. Gum also includes a list of _Standard_ objects which can be used in your project with no setup. We will use a Text instance to display our score. To do this:
 
@@ -153,4 +153,6 @@ Also, don't forget to remove the temporary code we wrote earlier which set the t
 
 ### Conclusion
 
-![RockBlasterWithScore.png](../../.gitbook/assets/migrated\_media-RockBlasterWithScore.png) Now the game includes a Score HUD that updates as the player progresses through the game. The next tutorial will add support for multiple players. [<- 08. Rock States](tutorials-rock-states.md) -- [10. Multiple Players ->](tutorials-multiple-players.md)
+![RockBlasterWithScore.png](../../.gitbook/assets/migrated\_media-RockBlasterWithScore.png)
+
+Now the game includes a Score HUD that updates as the player progresses through the game. The next tutorial will add support for multiple players.
