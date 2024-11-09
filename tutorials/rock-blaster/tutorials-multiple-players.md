@@ -21,7 +21,7 @@ To add additional players we will detect how many controllers are connected, and
 2. Find the **CustomInitialize** function
 3. Modify this function as shown in the following code snippet:
 
-```
+```csharp
 void CustomInitialize()
 {
  this.TextInstance.Text = "0";
@@ -31,7 +31,7 @@ void CustomInitialize()
 
 Next we'll need to implement AddAdditionalShips. Add the following function to GameScreen.cs:
 
-```
+```csharp
 private void AddAdditionalShips()
 {
  // We assume that the first player (player at index 0) 
@@ -42,7 +42,7 @@ private void AddAdditionalShips()
   if (gamepad.IsConnected)
   {
    var player = new Player();
-   player.SetPlayerIndex(i);
+   player.SetSpriteTexture(i);
    player.TurningInput = gamepad.LeftStick.Horizontal;
    player.ShootingInput = gamepad.GetButton(Xbox360GamePad.Button.A);
    PlayerList.Add(player);
@@ -59,13 +59,13 @@ private void AddAdditionalShips()
 }
 ```
 
-Now that we're calling SetPlayerIndex, we'll need to make a public function for it
+Now that we're calling SetSpriteTexture, we'll need to make a public function for it
 
 1. Open Player.cs in Visual Studio
 2. Add the following to Player.cs:
 
-```
-public void SetPlayerIndex(int index)
+```csharp
+public void SetSpriteTexture(int index)
 {
  switch (index)
  {
@@ -89,4 +89,4 @@ public void SetPlayerIndex(int index)
 
 ### Conclusion
 
-Now each ship will use a different texture so that players will be able to tell each other apart. The next tutorial will improve on the way player death is handled by adding the concept of player health and a health bar. [<- 09. Hud](tutorials-hud.md) -- [11. Health ->](tutorials-health.md)
+Now each ship will use a different texture so that players will be able to tell each other apart. The next tutorial will improve on the way player death is handled by adding the concept of player health and a health bar.
