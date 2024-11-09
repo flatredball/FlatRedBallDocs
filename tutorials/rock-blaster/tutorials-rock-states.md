@@ -77,11 +77,11 @@ If you now play the game, the rocks will be very large: ![RockBlasterLargeRocks.
 Currently when a Rock collides with a Bullet the game calls Destroy on the Rock instance. Instead, we will want the Rock to decide whether it should break up into smaller rocks before it is destroyed. First, let's replace the Destroy call with a TakeHit call:
 
 1. Open **GameScreen.Event.cs** in Visual Studio
-2. Find the **OnBulletListVsRockListCollisionOccurred** function. Make sure to modify the bullet vs rock method.
+2. Find the **OnBulletVsRockCollided** function. Make sure to modify the bullet vs rock method.
 3. Change **Destroy** to **TakeHit**. Your code should look like:
 
 ```csharp
-void OnBulletListVsRockListCollisionOccurred (Entities.Bullet bullet, Entities.Rock rock)
+void OnBulletVsRockCollided (Entities.Bullet bullet, Entities.Rock rock)
 {
  bullet.Destroy();
  rock.TakeHit(); // <-----This line of code changed
