@@ -119,5 +119,3 @@ void OnPlayerListVsRockListCollisionOccurred (Entities.Player player, Entities.R
 This tutorial did a lot to make our game feel like a real game! Now we can shoot rocks and take damage. Of course, once the player dies the game continues to run. We'll improve that behavior in a future tutorial.
 
 <figure><img src="../../.gitbook/assets/2016-01-2021_March_13_182107.gif" alt=""><figcaption></figcaption></figure>
-
-[<- 06. Rock Entity](tutorials-rock-entity.md) -- [08. Rock States ->](tutorials-rock-states.md)
