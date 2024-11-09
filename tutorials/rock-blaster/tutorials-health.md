@@ -110,4 +110,4 @@ Now the HealthBar appears above the player and does not rotate with the player.
 
 ### Conclusion
 
-Now we have our HealthBars in game and ready to be used. The next tutorial will hook up the logic to display the player's health and will modify the collision code so the player takes damage when hitting rocks. [<- 10. Multiple Players](tutorials-multiple-players.md) -- [12. Health Part 2 ->](tutorials-health-part-2.md)
+Now we have our HealthBars in game and ready to be used. The next tutorial will hook up the logic to display the player's health and will modify the collision code so the player takes damage when hitting rocks.
