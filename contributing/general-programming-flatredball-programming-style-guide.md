@@ -15,12 +15,12 @@ Correct:
 ```csharp
 public float Weight
 {
-   get { return weight;}
+   get { return _weight;}
    set
    {
       // If there is more than one command in a setter
       // then don't keep it on one line.
-      weight = value;
+      _weight = value;
       UpdateAccordingToWeight();
    }
 }
@@ -39,9 +39,9 @@ Incorrect:
 ```csharp
 public float Weight
 {
-   get { return weight;} // The getter is correct.
+   get { return _weight;} // The getter is correct.
    // Too many commands for a single line in the setter!
-   set {  mWeight = value; UpdateAccordingToWeight();}
+   set {  _weight = value; UpdateAccordingToWeight();}
 }
 
 public void TryPieceCreation()
@@ -120,12 +120,12 @@ Correct:
 ```csharp
 public int Age
 {
-   get { return age; }
+   get { return _age; }
    set
    {
-      age = value;  // set mAge first so it can be used
+      _age = value;  // set mAge first so it can be used
 
-      if(age < 0)
+      if(_age < 0)
       {
          throw new Exception("Age can't be less than 0");
       }
@@ -138,14 +138,14 @@ Incorrect:
 ```csharp
 public int Age
 {
-   get { return age; }
+   get { return _age; }
    set
    {
       if(value < 0) // mAge should have been set first and used here
       {
          throw new Exception("Age can't be less than 0");
       }
-      age = value;
+      _age = value;
    }
 }
 ```
@@ -225,12 +225,12 @@ public Vector3 Position;
 Incorrect:
 
 ```csharp
-private Vector3 position;
+private Vector3 _position;
 
 public Vector3 Position
 {
-   get{ return position;}
-   set{ position = value;}
+   get{ return _position;}
+   set{ _position = value;}
 }
 ```
 
@@ -354,8 +354,8 @@ Correct:
 ```csharp
 public int Count
 {
-   get{ return count;}
-   set{ count = value;}
+   get{ return _count;}
+   set{ _count = value;}
 }
 
 public void Initialize()
@@ -384,28 +384,28 @@ With a few exceptions, variables should not be abbreviated. Err on the side of l
 Correct:
 
 ```csharp
-int index;
-float weight;
-double beginningTime;
+int _index;
+float _weight;
+double _beginningTime;
 ```
 
 Incorrect:
 
 ```csharp
-int Idx;
-float Wt;
-double Time; // may not be descriptive enough, but depends on context
+int _idx;
+float _wt;
+double _time; // may not be descriptive enough, but depends on context
 ```
 
 **Exceptions**
 
 ```csharp
 // min and max are understood abbreviations
-private float min;
-private float max;
+private float _min;
+private float _max;
 
 // "num" is iffy - it's allowed but not encouraged.  Count is often a better choice
-private int num;
+private int _num;
 
 for(int i = 0; i < Count; i++)
 {
@@ -475,7 +475,7 @@ Naming your variables (fields, properties, method arguments) as nouns and naming
 Correct:
 
 ```csharp
-float runningSpeed;
+float _runningSpeed;
 
 public float Weight
 {
@@ -492,7 +492,7 @@ public void PerformCollisionOn(List<Entity> entityList)
 Incorrect:
 
 ```csharp
-float run; // Run is normally a verb.  Also not very descriptive
+float _run; // Run is normally a verb.  Also not very descriptive
 public float GetWeight
 {
    get;
