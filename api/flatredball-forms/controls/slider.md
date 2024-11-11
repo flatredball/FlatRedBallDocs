@@ -10,7 +10,7 @@ The Slider control can be used to set a value between a minimum and maximum valu
 
 The Slider control requires:
 
-* An object named \*\*ThumbInstance \*\*which implements the ButtonBehavior (is a Button)
+* An object named **ThumbInstance** which implements the ButtonBehavior (is a Button)
 
 ![](../../../.gitbook/assets/2017-12-img\_5a44622e8921e.png)
 
@@ -44,7 +44,7 @@ As shown above, the thumb can be added as a child of a container to control its 
 
 The user may expect to be able to click+drag the thumb by grabbing it when it hangs over the container parent, but this will not work. To solve this problem, the parent's **RaiseChildrenEventsOutsideOfBounds** can be set to true in the gum runtime's custom code. For example, if your slider Gum object is called SliderRuntime , and if the thumb's parent is called ContainerInstance , the following code can be used to enable grabbing the thumb even if it hangs over the edge of its parent:
 
-```lang:c#
+```csharp
 public partial class SliderRuntime
 {
     partial void CustomInitialize () 
@@ -58,15 +58,12 @@ public partial class SliderRuntime
 
 The Value variable represents the current value in the scroll bar, which falls between the Minimum and Maximum values inclusively. By default there is no visual representation of the value, so it can be printed out to screen using the FlatRedBall Debugger. The following code example shows how to set a a Slider to display values between 0 and 100, and to output them in real time.
 
-```lang:c#
+```csharp
 Slider slider;
 
 void CustomInitialize()
 {
-    slider = TutorialScreenGum
-        .GetGraphicalUiElementByName("SliderInstance")
-        .FormsControlAsObject as Slider;
-
+    slider = Forms.SliderInstance;
     slider.Minimum = 0;
     slider.Maximum = 100;
 }
@@ -82,14 +79,11 @@ void CustomActivity(bool firstTimeCalled)
 
 The ValueChanged event is raised whenever the Value property is changed on a slider. The ValueChanged event enables writing logic to respond to the changed slider only when the value changes. The FlatRedBall Debugger.CommandLineWrite method is used to display the value when it changes.
 
-```lang:c#
+```csharp
 Slider slider;
 void CustomInitialize()
 {
-    slider = TutorialScreenGum
-        .GetGraphicalUiElementByName("SliderInstance")
-        .FormsControlAsObject as Slider;
-
+    slider = Forms.SliderInstance;
     slider.Minimum = 0;
     slider.Maximum = 100;
 
@@ -108,7 +102,7 @@ private void HandleValueChanged(object sender, EventArgs e)
 
 TicksFrequency can be used to snap values rather than allowing every value between Minimum and Maximum. TicksFrequency is a numeric value specifying the snapping value. It only applies if IsSnapToTickEnabled is set to true. The following code can be added to the example above to snap the values to whole numbers:
 
-```lang:c#
+```csharp
 slider.IsSnapToTickEnabled = true;
 slider.TicksFrequency = 1;
 ```
@@ -119,7 +113,7 @@ slider.TicksFrequency = 1;
 
 If IsMoveToPointEnabled is set to true then clicking on the track will move the thumb to the clicked point, rather than moving the thumb up or down the Slider by the LargeChange value.
 
-```lang:c#
+```csharp
 slider.IsSnapToTickEnabled = true;
 slider.TicksFrequency = 1;
 slider.IsMoveToPointEnabled = true;
@@ -131,7 +125,7 @@ slider.IsMoveToPointEnabled = true;
 
 The SmallChange property controls the change in value when pressing left or right when the Slider is focused and is controlled by a GamePad. For example, the following code produces the behavior shown in the animation:
 
-```
+```csharp
 MusicSlider.Minimum = 0;
 MusicSlider.Maximum = 1;
 MusicSlider.SmallChange = .1;
