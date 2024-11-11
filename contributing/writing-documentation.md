@@ -86,3 +86,17 @@ The following image shows the cursor included in a screenshot.
 
 <figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption><p>Screenshot with a cursor - don't do this</p></figcaption></figure>
 
+### Text
+
+#### Avoid Using "Will"
+
+If possible keep things in the present tense and use direct language.&#x20;
+
+Don't:
+
+This button will create a new Sprite.
+
+Do:
+
+This button creates a new Sprite.
+
