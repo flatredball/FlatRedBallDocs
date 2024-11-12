@@ -1,5 +1,9 @@
 # Emptying bin Folder Using Probing Path
 
+{% hint style="info" %}
+This document is written for older versions of FlatRedBall (.NET 4.X) and for games which do not include the .NET runtimes. We recommend that you include .NET runtimes in your game to make it easier for people to play your game. Doing so prevents the Probing Path from working.
+{% endhint %}
+
 ### Introduction
 
 By default FlatRedBall games are built to a **bin** folder which contains the game .exe file, referenced .dlls, and content. If you plan on distributing your game as a .zip file, users may be overwhelmed by the number of files after unzipping.
