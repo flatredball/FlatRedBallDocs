@@ -73,25 +73,26 @@ You will also need to download Gum source, as FlatRedBall games which link again
 
 To add the FRB source to your project:
 
-1. Open your project in the FlatRedBall Editor
-2.  Select the **Project** -> **Link Game to FRB Source** menu item
+1. Make sure you have already cloned the FlatRedBall repository. We recommend using Github for Desktop and cloning to the default location so that your game and FlatRedBall are sibling folder sin the same parent folder
+2. Open your project in the FlatRedBall Editor
+3.  Select the **Project** -> **Link Game to FRB Source** menu item
 
     <div align="left">
 
     <img src=".gitbook/assets/07_07 59 05.png" alt="Link game to FRB source menu item">
 
     </div>
-3.  The **Add FRB Source** tab appears, showing a text box for FlatRedBAll and Gum root folders. If your current project is also a Git project which is cloned to the same folder as FlatRedBall and Gum, then the FRB Editor attempts to fill in the file paths.
+4.  The **Add FRB Source** tab appears, showing a text box for FlatRedBAll and Gum root folders. If your current project is also a Git project which is cloned to the same folder as FlatRedBall and Gum, then the FRB Editor attempts to fill in the file paths.
 
     <div align="left">
 
     <img src=".gitbook/assets/07_08 01 30.png" alt="Add FRB Source tab in the FRB Editor adds all necessary projects to your game&#x27;s solution">
 
     </div>
-4. If your paths are blank or incorrect, use the ... button to select the file paths for each repository.
-5. If you are planning to use Gum Skia, check the option
-6. Click **Link to Source**
-7. After your project is linked, the **Add FRB Source** tab will disappear
+5. If your paths are blank or incorrect, use the ... button to select the file paths for each repository.
+6. If you are planning to use Gum Skia, check the option
+7. Click **Link to Source**
+8. After your project is linked, the **Add FRB Source** tab will disappear
 
 Your game project should not directly reference the FlatRedBall Source.
 
