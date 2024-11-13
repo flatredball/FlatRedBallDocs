@@ -7,7 +7,7 @@
 * [🎓 Tutorials](tutorials/README.md)
   * [Introduction To FlatRedBall](tutorials/introduction-to-flatredball.md)
   * [Quick Start Guide](tutorials/quick-start-guide.md)
-  * [Beefball](tutorials/beefball/README.md)
+  * [Beefball - A Full FlatRedBall Tutorial Project](tutorials/beefball/README.md)
     * [Creating a FlatRedBall Project](tutorials/beefball/creating-a-glue-project.md)
     * [Creating an Entity](tutorials/beefball/creating-an-entity.md)
     * [Creating a Screen](tutorials/beefball/creating-a-screen.md)
