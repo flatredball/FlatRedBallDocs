@@ -112,23 +112,35 @@ If you would like to use the engine source in your game project:
 1. Open your game project in Visual Studio
 2. Expand the game project in the solution explorer
 3. Expand the References item
-4.  Find the **FlatRedBall** entry. This is the reference to the prebuilt-dll
+4.  Find the FlatRedBall entries. This is the reference to the prebuilt-dll. Note that these may be direct references or NuGet packages depending on which version of FlatRedBall you are using, so be sure to check under both **Assemblies** and **Packages**. Press the Delete key on all references as mentioned below:
 
     <div align="left">
 
-    <img src=".gitbook/assets/2017-02-img_5892095362770.png" alt="">
+    <img src=".gitbook/assets/13_15 41 12.png" alt="">
 
     </div>
-5. Press the Delete key to remove this reference
-6. Right-click on the solution
-7. Select **Add -> Existing Project...**
-8.  Navigate to the location of the FlatRedBall .csproj file for your given platform. For example, for PC, add **\<FlatRedBall Root>\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallDesktopGL.csproj**
+
+    1. FlatRedBall DesktopGL:
+       1. FlatRedBallDesktopGLNet6
+       2. FlatRedBall.Forms.DesktopGlNet6
+       3. GumCore.DesktopGlNet6
+       4. SkiaInGum
+       5. StateInterpolation.DesktopNet6
+    2. FlatRedBall FNA:
+       1. FlatRedBall.FNA
+       2. FlatRedBall.Forms.FNA
+       3. GumCore.FNA
+       4. StateInterpolation.FNA
+5. Right-click on the solution
+6. Select **Add -> Existing Project...**
+7.  Navigate to the location of the FlatRedBall .csproj file for your given platform. For example, for PC, add **\<FlatRedBall Root>\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallDesktopGL.csproj**
 
     ![](.gitbook/assets/2021-08-img\_6112a9f5767f4.png)
-9. Click Open to add the project to your game's solution
-10. Right-click on your game's **References** item and select **Add Reference...**
-11. Click the "Projects" category
-12. Check the FlatRedBallDesktopGL project (or whichever FlatRedBall project used for the given platform)
+8. Click Open to add the project to your game's solution
+9. Right-click on your game's **References** item and select **Add Reference...**
+10. Click the "Projects" category
+11. Check the FlatRedBallDesktopGL project (or whichever FlatRedBall project used for the given platform)
+12. Repeat the process for the other libraries
 13. Click OK
 
     ![](.gitbook/assets/2017-02-img\_58920a8e61d75.png)
