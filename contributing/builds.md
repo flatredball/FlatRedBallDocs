@@ -26,6 +26,7 @@ To make a new (monthly) release:
 3. Run Glue.yml and wait for it to finish successfully
 4. [Download latest FRBDK and run Glue](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip) - make sure the file version is what you expect
 5. Make a new platformer project and check the version on the .csproj - make sure the file version is what you expect
+   1. Note for December 2024 (or whatever release is after November 2024) - the November release had missing Gum font builder exe. Vic tested this on Nov 13 and was unable to reproduce it when running locally. More diagnostics have been added, so if the font builder exe is missing, check the logs to see if it was zipped.
 6. Create a new release on Github including all the changes since last release
 7. Create an announcement post on Discord including the # of changes and highlight the big changes
 8. Copy the info to Twitter
