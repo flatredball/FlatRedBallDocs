@@ -6,7 +6,7 @@ This tutorial provides instructions for creating a Glue plugin class project.
 
 ### Obtaining Source
 
-Before creating a plugin, be sure that you have downloaded the FlatRedBall and Gum repositories, and that you have successfully built and run the FlatRedBall Editor from source. For more information see the [Building FlatRedBall From Source page](../../flatredball-source/).
+Before creating a plugin, be sure that you have downloaded the FlatRedBall and Gum repositories, and that you have successfully built and run the FlatRedBall Editor from source. For more information see the [Building FlatRedBall From Source page](../../flatredball-source.md).
 
 ### Creating a new SLN
 

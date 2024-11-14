@@ -17,7 +17,7 @@ If an object's SourceType is File, then the object is defined by a file. If the 
 
 A common example of an object which uses the File type is the Map object in derived levels.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Map object using a SourceType of File</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Map object using a SourceType of File</p></figcaption></figure>
 
 For more information on File objects, see the [SourceFile](glue-reference-sourcefile.md) page.
 

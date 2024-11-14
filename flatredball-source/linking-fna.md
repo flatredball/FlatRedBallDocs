@@ -10,7 +10,7 @@ This document includes the required steps for linking your game to FNA.
 
 Before you link your game to FNA, you must first link your game to FRB source. If you do not do this, then the FlatRedBall.FNA nuget package will include FNA which results in the FNA libraries being included twice.
 
-Follow the steps outlined here to link your game to source: [Linking your Game to FlatRedBall Source](./#adding-flatredball-source-to-a-game-project-using-the-frb-editor).
+Follow the steps outlined here to link your game to source: [Linking your Game to FlatRedBall Source](../flatredball-source.md#adding-flatredball-source-to-a-game-project-using-the-frb-editor).
 
 Once you have finished these steps, your solution should include your game project and all FlatRedBall source projects.
 

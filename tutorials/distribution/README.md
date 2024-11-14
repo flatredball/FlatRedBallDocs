@@ -34,7 +34,7 @@ To distribute a FlatRedBall Web project:
 3.  Select **Build** -> **Publish YourProjectName**\
 
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
 4. If asked, select the option to publish to a Folder unless you are familiar publishing with the other options
 5. Confirm the folder where you would like to publish, then click **Finish**
 6.  Click the Publish button on the Publish tab\
