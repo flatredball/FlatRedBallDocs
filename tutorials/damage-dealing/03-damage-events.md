@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Previous tutorials have discussed the automatic damage dealing logic provided by collision relationships. Full games often need to modify how much damage is dealt depending on a variety of factors such as element weaknesses. Similarly, games may need to respond to damage dealt such as by providing a visual indication of an entity taking damage.&#x20;
+Previous tutorials have discussed the automatic damage dealing logic provided by collision relationships. Full games often need to modify how much damage is dealt depending on a variety of factors such as element weaknesses. Similarly, games may need to respond to damage dealt such as by providing a visual indication of an entity taking damage.
 
 This tutorial shows how to assign events on IDamageable entities to modify damage dealt and to visually indicate that damage has been dealt.
 
@@ -14,7 +14,7 @@ Keep in mind this event occurs after damage checks have been made. It will only 
 
 ![Set the Enemy AxisAlignedRectangleInstance color to Red](../../.gitbook/assets/2023-01-img\_63bed29eca1f8.png)
 
-Next, we can handle the event in code. In this case we'll use an `async` call to set the color to white temporarily, then set it back to red. Keep in mind that for a full project you may want additional logic to allow the enemy to receive damage multiple times without flashing the rectangle back. For the sake of simplicity we'll ignore this and write simpler code which automatically sets the rectangle back to its original color after a short delay.
+Next, we can handle the event in code. In this case we'll use an `async` call to set the color to white temporarily, then set it back to red. Keep in mind that for a full project you may want additional logic to allow the enemy to receive damage multiple times without flashing the rectangle back. For the sake of simplicity, we'll ignore this and write simpler code which automatically sets the rectangle back to its original color after a short delay.
 
 ```csharp
 private void CustomInitialize()
@@ -43,7 +43,7 @@ The purpose of ReactToDamageDealt is to react to damage visually, or to perform 
 
 ### ModifyDamageDealt Event
 
-The ModifyDamageDealt event can be used to perform logic that can change how much damage an entity receives. For example, an enemy may be weak to a particular type of bullet such as an elemental bullet. For this example we will add an IsFireBullet property to the Bullet, and an IsIceEnemy property to the Enemy. Note that a real game may handle these variants through entity inheritance, but we will add properties through code to keep the tutorial shorter. Add the following code to Bullet.cs:
+The ModifyDamageDealt event can be used to perform logic that can change how much damage an entity receives. For example, an enemy may be weak to a particular type of bullet such as an elemental bullet. For this example, we will add an IsFireBullet property to the Bullet, and an IsIceEnemy property to the Enemy. Note that a real game may handle these variants through entity inheritance, but we will add properties through code to keep the tutorial shorter. Add the following code to Bullet.cs:
 
 ```csharp
 bool isFireBullet;
@@ -169,7 +169,7 @@ The IDamageable and IDamageArea entities provide additional events which can be 
 
 ### Using += vs =
 
-This tuturoial has used both of the terms \*delegate\* and \*event\*, primarily using event to indicate that these are methods which are invoked in response to something happening in the game such as the enemy taking damage. Before moving on to a new topic we should cover some of the technical details of how these delegates work.
+This tutorial has used both of the terms \*delegate\* and \*event\*, primarily using event to indicate that these are methods which are invoked in response to something happening in the game such as the enemy taking damage. Before moving on to a new topic we should cover some of the technical details of how these delegates work.
 
 Technically, these are delegates and not events. In other words, the IDamageable and IDamageArea interfaces do not define these using the `event` keyword. Therefore, these can be invoked externally, allowing the `DamageableExtensionMethods.TakeDamage` methods to call these methods as necessary.
 
@@ -212,7 +212,7 @@ decimal HandleDamageReceived(decimal initialDamage, IDamageArea damageArea)
 }
 ```
 
-In this situation, the base `CustomInitialize` is called first, then the derived `CustomInitialize`. This means that whenever the enemy receives damage, the base `HandleDamageReceived` is called first, then the derived `HandleDamageReceived`. Unfortunately, when `HandleDamageReceived` is called on the derived, the `initialDamage` is not modified by the first call. In other words, the `initialDamage` will never be affected by the check for `IsInvulnerable` because each method returns its value indepent of the other. In effect this results in the TurtleEnemy never respecting its IsInvulnerable variable.
+In this situation, the base `CustomInitialize` is called first, then the derived `CustomInitialize`. This means that whenever the enemy receives damage, the base `HandleDamageReceived` is called first, then the derived `HandleDamageReceived`. Unfortunately, when `HandleDamageReceived` is called on the derived, the `initialDamage` is not modified by the first call. In other words, the `initialDamage` will never be affected by the check for `IsInvulnerable` because each method returns its value independent of the other. In effect this results in the TurtleEnemy never respecting its IsInvulnerable variable.
 
 Therefore, it's best to never += on any of the `Func` delegates - `ModifyDamageDealt` and `ModifyDamageReceived.` Instead only the `=` operator should be used for clarity. In this case, we can resolve the problem by creating a virtual method for handling damage which derived classes can override, as shown in the following code:
 
