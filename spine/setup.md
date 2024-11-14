@@ -12,7 +12,7 @@ To use the Spine plugin, you must also install the SpinePlugin .plug file.
 
 ### Linking to Source
 
-The first step is to link your FlatRedBall project to source. To link your game to FlatRedBall Source, see the [Building FlatRedBall From Source page](../flatredball-source.md#adding-flatredball-source-to-a-game-project-using-the-frb-editor).
+The first step is to link your FlatRedBall project to source. To link your game to FlatRedBall Source, see the [Building FlatRedBall From Source page](../flatredball-source/#adding-flatredball-source-to-a-game-project-using-the-frb-editor).
 
 Once you have linked your game to FlatRedBall Source, you need to link your game to FlatRedBall.Spine.MonoGame.DesktopGL. As of January 15, 2024, MonoGame DesktopGL is the only platform that supports FlatRedBall.Spine. New platforms will likely be added over time. If you are planning on targeting a new platform, make a request on Discord.
 

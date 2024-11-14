@@ -1,7 +1,8 @@
 # Table of contents
 
 * [🖥️ Downloading FlatRedBall](README.md)
-* [🏗️ Building FlatRedBall From Source](flatredball-source.md)
+* [🏗️ Building FlatRedBall From Source](flatredball-source/README.md)
+  * [Linking FNA](flatredball-source/linking-fna.md)
 * [❓ Need Help?](help.md)
 * [✨ FlatRedBall Features](flatredball-features.md)
 * [🎓 Tutorials](tutorials/README.md)
