@@ -33,7 +33,7 @@ For example, a game project may include an entity called Enemy which serves as t
 
 <figure><img src="../.gitbook/assets/image (230).png" alt=""><figcaption><p>Enemy entity</p></figcaption></figure>
 
-Derived entities might include the different types of enemies that exist in the game. Note that the Enemy entity may never be directly instantiated in the game. It only serves to include all common code, files, and objects for all other enemies. This is similar to the GameScreen screen and the derived Level screens.&#x20;
+Derived entities might include the different types of enemies that exist in the game. Note that the Enemy entity may never be directly instantiated in the game. It only serves to include all common code, files, and objects for all other enemies. This is similar to the GameScreen screen and the derived Level screens.
 
 When creating a variant of the Enemy entity, the Enemy entity type should be selected as the base type.
 
@@ -85,7 +85,7 @@ Regardless of which approach you use, be sure to also set the Current Chain Name
 
 If you do not have any animations in the Current Chain Name drop-down, you need to first add new animations to your .achx.
 
-Typically each AnimationChainListFile would have animations which are named the same. This allows code to set the animation for every enemy variant using the same logic. For example, you might have animations for Idle, Walk, Attack, and Die. These may also include different directions (such as Left, Right, Up, and Down).
+Typically, each AnimationChainListFile would have animations which are named the same. This allows code to set the animation for every enemy variant using the same logic. For example, you might have animations for Idle, Walk, Attack, and Die. These may also include different directions (such as Left, Right, Up, and Down).
 
 ### Adding Derived Instances to Your Level
 
@@ -145,7 +145,7 @@ This code uses the space bar for the sake of simplicity, but a real implementati
 
 ### Accessing Derived Entity Variables
 
-Variants, such as enemies, may have different variables which may need to be accessed without the creation of an instance. For example, your game may include a bestiary of enemies that the player has encountered. This may be shown to the player using a Gum UI which dislays information about the enemy such as its MaxHealth.
+Variants, such as enemies, may have different variables which may need to be accessed without the creation of an instance. For example, your game may include a bestiary of enemies that the player has encountered. This may be shown to the player using a Gum UI which displays information about the enemy such as its MaxHealth.
 
 Variables such as MaxHealth can be defined per enemy type. For example, the following image shows a Skeleton which has 80 MaxHealth.
 
@@ -213,7 +213,7 @@ foreach(var level in GameScreenVariant.All)
 
 ### Creating New Variants
 
-Variants are created automatically by FlatRedBall in the base entity's codegen. These entities are hard-coded and will be compiled into your game, but you are not limited to using just these variant types. Instead, you can create new variants in custom code.&#x20;
+Variants are created automatically by FlatRedBall in the base entity's codegen. These entities are hard-coded and will be compiled into your game, but you are not limited to using just these variant types. Instead, you can create new variants in custom code.
 
 For example, consider an entity type called Enemy. A new variant can be created in code using the following code:
 
@@ -232,5 +232,5 @@ var enemyInstance = newVariant.CreateNew(x:100, y:50);
 Since this new enemy type is not created in the FlatRedBall Editor, its C# type is Enemy (the base Entity type). Note that custom variants can only be created if the base class can be instantiated through a factory. That means that the base class must have the following:
 
 * Its [CreatedByOtherEntities](../glue-reference/entities/glue-reference-createdbyotherentities.md) must be set to true
-* It must not be abtract - it must not have any objects that are [SetByDerived](../glue-reference/objects/glue-reference-setbyderived.md#setbyderived-creates-abstract-screens-entities)
+* It must not be abstract - it must not have any objects that are [SetByDerived](../glue-reference/objects/glue-reference-setbyderived.md#setbyderived-creates-abstract-screens-entities)
 
