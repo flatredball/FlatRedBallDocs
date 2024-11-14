@@ -44,7 +44,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-Now we can click on the screen with the mouse to add enemies, and we can shoot these enemies with bullets.a
+Now we can click on the screen with the mouse to add enemies, and we can shoot these enemies with bullets.
 
 <figure><img src="../../.gitbook/assets/01_06 41 48.gif" alt=""><figcaption><p>Bullets destroying Enemy instances</p></figcaption></figure>
 
@@ -76,7 +76,7 @@ The EnemyVsBullet collision relationship also has the **Deal Damage in Generated
 4. Health is subtracted from the enemy.
 5. The enemy is killed (Destroy is called) if the enemy has less than or equal to 0 health
 
-We can see the this logic work by shooting an enemy enough times to kill it - by default this is 10 shots.
+We can see that this logic works by shooting an enemy enough times to kill it - by default this is 10 shots.
 
 <figure><img src="../../.gitbook/assets/2023-01-11_06-48-10.gif" alt=""><figcaption><p>Enemy dying after 10 shots</p></figcaption></figure>
 
@@ -88,7 +88,7 @@ All Entities created with the IDamageArea interface default to dealing 10 damage
 
 ![Bullet with a default Damage to Deal of 10](../../.gitbook/assets/2023-01-img\_63bebf1ca3662.png)
 
-If we change these values we can change how many shots it takes to kill an enemy. For example, if the enemy is changed to have 20 health, it only takes 2 shots to kill each enemy.
+If we change these values, we can change how many shots it takes to kill an enemy. For example, if the enemy is changed to have 20 health, it only takes 2 shots to kill each enemy.
 
 <figure><img src="../../.gitbook/assets/2023-01-11_06-54-40.gif" alt=""><figcaption><p>Enemies being killed with 2 shots</p></figcaption></figure>
 
@@ -98,7 +98,7 @@ As mentioned before, the collision relationship EnemyVsBullet results in damage 
 
 <figure><img src="../../.gitbook/assets/2023-01-11_07-00-26.gif" alt=""><figcaption><p>Creating a PlayerVsBullet collision relationship</p></figcaption></figure>
 
-Even with this collision relationship, Bullets which are fired by the Player do not deal damage to the player - the generated code checks team index and both have a team index of 0 so no damage is dealt ot the player.
+Even with this collision relationship, Bullets which are fired by the Player do not deal damage to the player - the generated code checks team index and both have a team index of 0 so no damage is dealt to the player.
 
 <figure><img src="../../.gitbook/assets/2023-01-11_07-02-07.gif" alt=""><figcaption><p>Player shooting bullets</p></figcaption></figure>
 
