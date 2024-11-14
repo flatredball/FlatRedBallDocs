@@ -26,7 +26,7 @@ Adjust the MeleeCollision so that it is positioned outside of the Player entity.
 
 <figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption><p>Modifying the MeleeCollision</p></figcaption></figure>
 
-By default this new shape is used in all relationships which use the Player's **\<Entire Object>,** which is the default for all collisions. For example, the PlayerVsSolidCollision in GameScreen uses this option, so the newly-created MeleeCollision collides with the map's SolidCollision.
+By default, this new shape is used in all relationships which use the Player's **\<Entire Object>**, which is the default for all collisions. For example, the PlayerVsSolidCollision in GameScreen uses this option, so the newly-created MeleeCollision collides with the map's SolidCollision.
 
 <figure><img src="../../.gitbook/assets/01_07 15 08.gif" alt=""><figcaption><p>MeleeCollision blocking player movement</p></figcaption></figure>
 
@@ -40,7 +40,7 @@ Now the MeleeCollision will only be considered in collision relationships which 
 
 ### Player vs Enemy CollisionRelationships
 
-Next we will create collision relationships between players and enemies. Conceptually, we want the following behavior:
+Next, we will create collision relationships between players and enemies. Conceptually, we want the following behavior:
 
 1. When the body of the enemy touches the body of the player, the player should take damage
 2. When the sword of the player touches the body of the enemy, the enemy should take damage
@@ -116,12 +116,12 @@ Now that our Player can take damage, we can deal damage to enemies using a simil
 1. Create a collision relationship for the Player vs Enemy, setting Subcollision to the Player's MeleeCollision
 2. Remove the default (code generated) damage dealing logic on the collision relationship
 3. Add an event
-4. Implement damage dealing in the event.
+4. Implement damage dealing in the event
 
 To create another collision relationship for player vs enemy:
 
-1. Drag + drop PlayerList onto Enemy list in GameScreen again.&#x20;
-2. Set the Player's Subcollision to MeleeCollision  so only the MeleeCollision is considered
+1. Drag + drop PlayerList onto Enemy list in GameScreen again
+2. Set the Player's Subcollision to MeleeCollision so only the MeleeCollision is considered
 3. Uncheck the damage dealing check box
 4. Click the **Add Event** button
 
@@ -144,9 +144,9 @@ void OnPlayerMeleeCollisionVsEnemyCollided (Entities.Player player, Entities.Ene
 }
 ```
 
-Notice this code is similar to the collision code used to deal damage to the Player.&#x20;
+Notice this code is similar to the collision code used to deal damage to the Player.
 
-You may also want to set the Enemy's Invulnerability Time After Damage to some non-zero value. Keep in mind that doing so will affect the invulnerability time of the enemy from all damage. If you worked through this tutorial by continuing work from previous tutorials, then this code will change the behavior of how enemies take damage.&#x20;
+You may also want to set the Enemy's Invulnerability Time After Damage to some non-zero value. Keep in mind that doing so will affect the invulnerability time of the enemy from all damage. If you worked through this tutorial by continuing work from previous tutorials, then this code will change the behavior of how enemies take damage.
 
 <figure><img src="../../.gitbook/assets/image (278).png" alt=""><figcaption><p>Setting Enemy Invulnerability Time After Damage</p></figcaption></figure>
 
@@ -182,7 +182,7 @@ public partial class Player
 
 Note that the variables `AttackDamageDuration` and `AttackCooldown` are defined in code. In a full game these variables should be defined in the FRB Editor, but we are defining them in code for the sake of brevity.
 
-Next we can perform attacks and modify the visibility of the melee shape in CustomActivity by adding the following code:
+Next, we can perform attacks and modify the visibility of the melee shape in CustomActivity by adding the following code:
 
 ```csharp
 private void CustomActivity()
@@ -209,6 +209,35 @@ private void CustomActivity()
     }
 
     MeleeCollision.Visible = IsAttackActive;
+}
+```
+
+Please note the property `DirectionFacing` and enum `HorizontalDirection` will not be available if you are working in a custom, blank project created without using a platformer wizard. In that case you will need to write your own direction detection logic. As an example, assuming MovementActivity method is called in CustomActivity for every frame update and MovementInput has been instantiated in CustomInitialize in Player.cs, it could look like this:
+
+```csharp
+int MovementSpeed = 300;
+HorizontalDirection DirectionFacing;
+I2DInput MovementInput;
+
+void MovementActivity()
+{
+    XVelocity = MovementInput.X * MovementSpeed;
+    YVelocity = MovementInput.Y * MovementSpeed;
+	
+	if (MovementInput.X != 0)
+	{
+		DirectionFacing = MovementInput.X switch
+		{
+			> 0 => HorizontalDirection.Right,
+			_ => HorizontalDirection.Left
+		};
+	}
+}
+
+enum HorizontalDirection
+{
+    Left,
+    Right
 }
 ```
 
@@ -239,26 +268,25 @@ void OnPlayerMeleeCollisionVsEnemyCollided (Entities.Player player, Entities.Ene
 
 ### Alternative Approach - Using ModifyDamageDealt
 
-By using the IsAttackActive property in the OnPlayerVsEnemyCollided, we could suppress the dealing of damage unless the player is actively attacking. This approach is effetive in this simple case, but more complicated games may have multiple types of objects which can receive damage from a player. For example, the game may include destructible obstacles, or it may even support PvP. Therefore, we can use the ModifyDamageDealt event to prevent dealing damage against any type of object unless the attack is happening. We can do this by modifying the Player.cs file as shown in the following code:
+By using the IsAttackActive property in the OnPlayerVsEnemyCollided, we could suppress the dealing of damage unless the player is actively attacking. This approach is effective in this simple case, but more complicated games may have multiple types of objects which can receive damage from a player. For example, the game may include destructible obstacles, or it may even support PvP. Therefore, we can use the ModifyDamageDealt event to prevent dealing damage against any type of object unless the attack is happening. We can do this by modifying the Player.cs file as shown in the following code:
 
 ```csharp
 private void CustomInitialize()
 {
-    this.ModifyDamageDealt += HandleModifyDamageDealt;
+    this.ModifyDamageDealt = HandleModifyDamageDealt;
 }
 
 private decimal HandleModifyDamageDealt(decimal unmodifiedDamage, IDamageable damageable)
 {
-    if(!IsAttackActive)
-    {
-        return 0;
-    }
-    else
-    {
-        return unmodifiedDamage;
-    }
+    return IsAttackActive ? unmodifiedDamage : 0;
 }
-
 ```
 
 Note that this method can be used to modify damage in other scenarios. For example, you may have different attacks (strong vs weak), or multiple attacks in a combo. You are free to define variables in your Player file to support attacks of any complexity. You can then process these variables in ModifyDamageDealt to vary the damage dealt to enemies.
+
+To properly test this approach in our particular example, you might want to remove the IsAttackActive check from the OnPlayerMeleeCollisionVsEnemyCollided event handler to allow all the attacks through (remember the melee collisions are still happening whether the melee rectangle is visible or not) and add the following line to the beginning of HandleDamageReceived delegate handler in Enemy.cs (prevents false flashing when damage is supressed by the Player's damage modification in HandleModifyDamageDealt):
+
+```csharp
+if (damage <= 0) return;
+
+```
