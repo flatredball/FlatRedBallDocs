@@ -27,7 +27,7 @@ This documentation discusses Entity variants primarily; however, the concepts an
 
 ### Entity Inheritance in the FlatRedBall Editor
 
-FlatRedBall entities provide support for inheritance. By default all entities inherit from the PositionedObject class, but inheritance can be changed to that entities can inherit from other entities. When working with entities with multiple variants, it's best to create a _base_ entity such as Enemy, then create derived entities from the base.
+FlatRedBall entities provide support for inheritance. By default, all entities inherit from the PositionedObject class, but inheritance can be changed to that entities can inherit from other entities. When working with entities with multiple variants, it's best to create a _base_ entity such as Enemy, then create derived entities from the base.
 
 For example, a game project may include an entity called Enemy which serves as the base for all other enemies.
 
@@ -63,7 +63,7 @@ Each derived entity would typically include its own AnimationChains. For simplic
 
 <figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption><p>AnimationChianListFiles in each derived entity</p></figcaption></figure>
 
-Each derived entity needs to access the SpriteInstance defined in the base entity to modify its appearance. To od this, we can expose SpriteInstance in the base entity. This can be done by selecting the Sprite in the base entity and setting its ExposedInDerived property to true.
+Each derived entity needs to access the SpriteInstance defined in the base entity to modify its appearance. To do this, we can expose SpriteInstance in the base entity. This can be done by selecting the Sprite in the base entity and setting its ExposedInDerived property to true.
 
 <figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption><p>The SpriteInstance in the base entity should have its ExposedInDerived set to true</p></figcaption></figure>
 
@@ -71,11 +71,11 @@ By setting this value to true, the Sprite is accessible in all of the derived en
 
 <figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption><p>Derived SpriteInstances</p></figcaption></figure>
 
-Now we can assign the animation chain on each of the deirived SpriteInstances. You can do this by selecting the Sprite and changing its AnimationChains dropdown.
+Now we can assign the animation chain on each of the derived SpriteInstances. You can do this by selecting the Sprite and changing its AnimationChains dropdown.
 
 <figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption><p>Setting the AnimationChains on a Sprite</p></figcaption></figure>
 
-Alternatively you can drag+drop the .achx file onto the Sprite. This is a shortcut to setting the Animation Chains through the dropdown.
+Alternatively, you can drag+drop the .achx file onto the Sprite. This is a shortcut to setting the Animation Chains through the dropdown.
 
 <figure><img src="../.gitbook/assets/08_21 40 51.gif" alt=""><figcaption><p>Drag+drop .achx files onto a Sprite to set its AnimationChains.</p></figcaption></figure>
 
@@ -115,7 +115,7 @@ void CustomActivity(bool firstTimeCalled)
 
 <figure><img src="../.gitbook/assets/08_22 03 19.gif" alt=""><figcaption><p>Adding new instances with the cusor</p></figcaption></figure>
 
-Using the Variant Type
+### Using the Variant Type
 
 Games often need to refer variants in code or in the FRB Editor. For example, an EnemySpawner entity may need to define which Enemy variant to spawn. FlatRedBall provides a special type for all derived entities which can be used in the FRB Editor and code which is called a Variant.
 
