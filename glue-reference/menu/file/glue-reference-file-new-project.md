@@ -45,3 +45,10 @@ If this option is selected, an open file dialog appears allowing you to select a
 The folder that you have selected appers in the Platform dropdown.
 
 <figure><img src="../../../.gitbook/assets/image (355).png" alt=""><figcaption><p>Custom template location in the New Project window</p></figcaption></figure>
+
+### Use local copy if available
+
+This option contols whether to attempt to use a previously-downloaded .zip for the selected project rather than to download a new version. This option is useful if:
+
+1. Your computer is offline so a download would fail
+2. You are testing the creation of many projects and would like to speed up the process. This option skips the downloading of new projects which can be time consuming.
