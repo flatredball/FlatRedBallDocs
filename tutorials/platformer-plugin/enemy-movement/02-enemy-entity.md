@@ -2,77 +2,60 @@
 
 ### Introduction
 
-This tutorial will create the Enemy entity which we'll use in the remainder of the tutorials. This enemy will be similar to a Player entity - it has collision and will use Platformer physics, but it will not use input from a keyboard or gamepad - instead its movement will be controlled purely in code.
+This tutorial creates an Enemy entity which is use in the remainder of the tutorials. This enemy is similar to the Player entity - it has collision and uses Platformer physics, but it does not use input from a keyboard or gamepad - instead its movement is controlled purely in code.
 
 ### Creating the Enemy Entity
 
-We'll be creating an Enemy entity ourselves since it wasn't automatically created for us by the Glue Wizard. To do this:
+To create the Enemy entity:
 
 1. Click the **Quick Actions** tab
 2.  Click the **Add Entity** button
 
-    ![](../../../.gitbook/assets/2021-04-img\_60778d5b43a87.png)
+    <figure><img src="../../../.gitbook/assets/image (357).png" alt=""><figcaption><p>Click the Add Entity quick action button</p></figcaption></figure>
 3. Enter the name **Enemy**
 4. Check **AxisAlignedRectangle**
 5. Check **Platformer** for the **Input Movement Type**
-6.  Leave the rest of the defaults and click **OK**
+6.  Leave the rest of the defaults and click **OK**\
 
-    ![](../../../.gitbook/assets/2022-06-img\_62a0d9af55429.png)
 
-We will also change the color of the enemy rectangle so we can tell it apart from the Player:
+    <figure><img src="../../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
 
-1. Expand the Enemy **Object** folder
-2. Select **AxisAlignedRectangleInstance**
-3. Select the **Variables** tab
-4. Change **Width** to **16**
-5. Change **Height** to **16**
-6. Change **Color** to **Red**
-
-![](../../../.gitbook/assets/2021-04-img\_60778f4feef7e.png)
+You can optionally change the color of your Enemy if you would like by selecting the newly-created AxisAlignedRectangle and setting its color to Red.
 
 ### Adding an Enemy to Level1
 
-Normally entities like Enemies are added through Tiled files, as shown in the [breaking blocks tutorial](../../../documentation/tutorials/platformer-plugin/breaking-blocks.md). To keep the tutorial shorter, we will be directly adding Enemy instances through Glue. We could add enemies to GameScreen, but it's more common for each level to specify its own enemies, so we'll be adding the enemy instance to level1. First we will modify the EnemyList in GameScreen (which was automatically added as one of the default options when we created our Enemy entity) so it can be accessed in the levels. To do this:
+Entities such as Enemy are usually added directly to levels such as Level1. Note that it is possible to add Entities in may ways including through Tiled and directly in code, but we will be adding an instance directly in the FlatRedBall Editor.
 
-1. Expand GameScreen **Objects** folder
-2. Select **EnemyList**
-3. Click the **Properties** tab
-4. Set **ExposedInDerived** to **True**
+Note that the EnemyList object is defined in GameScreen, but it is also accessible in all levels, such as Level1.
 
-![](../../../.gitbook/assets/2021-04-img\_607790a49c1d6.png)
+<figure><img src="../../../.gitbook/assets/image (359).png" alt=""><figcaption><p>EnemyList defined in GameScreen but also accessible in Level1</p></figcaption></figure>
 
-Now that this is true, the EnemyList appears in all of the Level screens (which are derived from the GameScreen), and we can add instances to these lists.
+The EnemyList must be accessible in both screens. It is used in GameScreen to create collision relationships, which should always be the same across all levels. It is used in each level to define which enemies should appear in a particular level. This setup is enabled by the EnemyList having its **ExposedInDerived** property set to true, which is set up by default from when we created our Enemy entity.
 
-![](../../../.gitbook/assets/2021-04-img\_607790f455d7c.png)
+<figure><img src="../../../.gitbook/assets/image (360).png" alt=""><figcaption><p>Lists in GameScreen are typically ExposedInDerived</p></figcaption></figure>
 
 To add an enemy to Level 1, drag+drop the **Enemy** entity onto the **Level1** Screen.
 
-<figure><img src="../../../.gitbook/assets/2021-04-2021_April_14_192104.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15_05 18 23.gif" alt=""><figcaption><p>Drag drop enemy onto Level1</p></figcaption></figure>
 
-We also need to modify the Enemy so it is positioned inside of the solid boundary of our game screen. To do this:
+The newly created entity is automatically added to Level1's EnemyList.
 
-1. Select the newly-created **Enemy1** in **Level1**
-2. Select the **Variables** tab
-3. Change **X** to **160**
-4. Change **Y** to **-160**
+Next the Enemy should be positioned so it is standing on the ground. You can position this through trial-and-error by running the game and adjusting the position of the entity, but the fastest way to accomplish this is in Live Edit mode. For information about setting up Live Edit, see the [Live Edit](../../../glue-reference/enable-live-edit/) page.
 
-![](../../../.gitbook/assets/2021-04-img\_60779420c673c.png)
+<figure><img src="../../../.gitbook/assets/15_05 33 02.gif" alt=""><figcaption><p>Move the Enemy instance in Live Edit so it sits on the ground</p></figcaption></figure>
 
 ### EnemyList vs SolidCollision
 
 Now we have a fully-functional enemy, but it falls through the solid collision since we haven't yet set up an EnemyList vs SolidCollision relationship. To do this:
 
 1. Expand **GameScreen** **Objects** folder
-2. Drag+drop the **EnemyList** onto **SolidCollision.** Notice that we are doing this in the GameScreen rather than Level1 because we want all enemies to collide with the SolidCollision regardless of level.
-3.
+2. Drag+drop the **EnemyList** onto **SolidCollision.** Notice that we are doing this in the GameScreen rather than Level1 because we want all enemies to collide with the SolidCollision regardless of level. By doing this in the GameScreen, this new Collision Relationship will apply to all levels, including Level1.
 
-```
-<figure><img src="../../../media/2021-04-2021_April_14_195924.gif" alt=""><figcaption></figcaption></figure>
-```
+<figure><img src="../../../.gitbook/assets/15_05 40 35.gif" alt=""><figcaption><p>Drag+drop EnemyList onto SolidCollision to create a new collision relationship</p></figcaption></figure>
 
-Glue automatically sets the **Collision Physics** to **Platformer Solid Collision** since the Enemy entity is marked as a Platformer.
+The new Collision Relationship automatically has its physics set to Glue automatically sets the **Collision Physics** to **Platformer Solid Collision** since the Enemy entity is marked as a Platformer.
 
-![](../../../.gitbook/assets/2021-04-img\_6077966149575.png)
+<figure><img src="../../../.gitbook/assets/15_05 42 17.png" alt=""><figcaption><p>EnemyVsSolidCollision is set to Platformer Solid Collision</p></figcaption></figure>
 
 ### Conclusion
 
