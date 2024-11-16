@@ -41,7 +41,7 @@ To add a Checkpoint entity:
 
 1. Right-click on the Entities folder
 2. Select Add Entity
-3. Enter the name EndOfLevel
+3. Enter the name Checkpoint
 4. Check the AxisAlignedRectangle option
 5. Click OK
 
@@ -71,7 +71,7 @@ To do this:
 1. Open your level in Tiled. Make sure you do not have other levels open as to avoid mixing tilesets
 2. Select the TiledIcons tileset and click on the edit button
 3. Select the tile that you would like to use as a checkpoint, such as the checkered flag
-4.  Set the Class to Checkpoint - be sure to match the name of your entity exactly\
+4. Set the Class to Checkpoint - be sure to match the name of your entity exactly\
 
 
     <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption><p>Setting the Checkpoint tile class to Checkpoint</p></figcaption></figure>
@@ -144,7 +144,7 @@ The spawning checkpoint is used to set the player's position. Notice that the pl
 
 ### Player Collision
 
-Collision between the Player and various objects controls the spawning behavior. As mentioned earlier, the LastCheckpointName variable controls which checkpoint is used to position the Player instance. The CustomInitialize method is called whenever a level is created (or recreated).&#x20;
+Collision between the Player and various objects controls the spawning behavior. As mentioned earlier, the LastCheckpointName variable controls which checkpoint is used to position the Player instance. The CustomInitialize method is called whenever a level is created (or recreated).
 
 We will use the EndOfLevel instances to move the player from one level to the next, and to set the LastCheckpointName.
 
@@ -163,12 +163,12 @@ void OnPlayerVsEndOfLevelCollided (Entities.Player player, Entities.EndOfLevel e
 }
 ```
 
-Notice that the code above assumes that the EndOfLevel instance has a valid NextLevel value. If the EndOfLevel NextLevel property is not set to a valid screen then this code will throw an exception. The code above resets the LastCheckpointName to LevelStart so that the Player spawns at the beginning of the level.&#x20;
+Notice that the code above assumes that the EndOfLevel instance has a valid NextLevel value. If the EndOfLevel NextLevel property is not set to a valid screen then this code will throw an exception. The code above resets the LastCheckpointName to LevelStart so that the Player spawns at the beginning of the level.
 
 We can set the LastCheckpointName whenever the player collides with a checkpoint - it doesn't have to be only when the player collides with a door. To do this:
 
 1. Create a collision relationship between PlayerList and CheckpointList
-2. Add an event to the newly-created collision relationshp
+2. Add an event to the newly-created collision relationship
 3. Open GameScreen.Event.cs
 4. Add the following code:
 
@@ -179,11 +179,11 @@ void OnPlayerListVsCheckpointListCollided (Entities.Player player, Entities.Chec
 }
 ```
 
-The code above sets the LastCheckpointName to the name of the collided checkpoint, but this will ony apply when the screen changes or is restarted. The code above resets the LastCheckpointName whenever colliding with a door, so this checkpoint will only apply whenever the screen is restarted. Typically this would happen when the player dies.
+The OnPlayerVsEndOfLevelCollided resets the LastCheckpointName whenever colliding with a door, so this checkpoint will apply whenever the screen changes. The OnPlayerListVsCheckpointListCollided sets the LastCheckpointName to the name of the collided checkpoint, but this will only apply when the screen is restarted.  Typically, this would happen when the player dies.
 
 Player death can be handled in a variety of ways, such as by collision with a TileShapeCollection, or even with a hotkey to test death. Regardless, the way to restart the screen is by calling this.RestartScreen().
 
-For example if you have a TileShapeCollection named PitCollision, a collision relationship can be created between the PlayerList and PitCollision to restart the screen. This relationship would have an event with the following code in GameScreen.Event.cs:
+For example, if you have a TileShapeCollection named PitCollision, a collision relationship can be created between the PlayerList and PitCollision to restart the screen. This relationship would have an event with the following code in GameScreen.Event.cs:
 
 ```
 
@@ -203,6 +203,8 @@ The demo includes two types of checkpoints:
 2. Invisible checkpoints - are used only to spawn the player. In the case of the demo, only at the beginning of the level.
 
 Whether a checkpoint is visible or not is controlled by an exposed Visible property.
+
+Please note that if you are adding the checkpoints to your own project, to have the Visible property available you need to set the _ImplementsIVisible_ in Checkpoint Properties to true and then create a variable via the _Expose an existing variable_ and select _Visible_. Also, since FlatRedBall purely converts the Tiled Object to an Entity, to actually see the flag and the door you will need to add a Sprite object to the Checkpoint entity and set it to an appropriate image or animation chain file. Repeat the same process for the EndOfLevel.
 
 ![](../../.gitbook/assets/2021-06-img\_60b8cf51505df.png)
 
@@ -226,7 +228,7 @@ The Checkpoint is visually composed of two Sprites:
 * PoleSprite
 * FlagSprite
 
-By default the **FlagSprite** is invisible, but is turned on in the **MarkAsChecked** function. This provides visual confirmation to the user that the checkpoint has been triggered.
+By default, the **FlagSprite** is invisible, but is turned on in the **MarkAsChecked** function. This provides visual confirmation to the user that the checkpoint has been triggered.
 
 ```csharp
 public void MarkAsChecked()
