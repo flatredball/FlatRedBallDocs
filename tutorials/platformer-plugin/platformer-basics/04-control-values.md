@@ -2,11 +2,11 @@
 
 ### Introduction
 
-This page covers all control values in available on a platformer entity. It also provides ways to implement common functionality such as ice physics and under-water levels.
+This page covers all control values available in a platformer entity. It also provides ways to implement common functionality such as ice physics and under-water levels.
 
 ### Modifying Control Values
 
-If you created your game using the wizard, then the Player entity already has a set of default values. If you manually created your Player entity, the it should also have a set of default control variables.
+If you created your game using the wizard, then the Player entity already has a set of default values. If you manually created your Player entity, then it should also have a set of default control variables.
 
 These values serve as a starting point for platformers - they can be tuned to provide a custom feel to platformer entities. The platformer control values can be viewed and edited by selecting the **Player** entity and clicking on the **Entity Input Movement** tab.
 
@@ -14,7 +14,7 @@ These values serve as a starting point for platformers - they can be tuned to pr
 
 ### Max Speed
 
-This is the maximum speed (maximum absolute horizontal velocity) that the character can move through input. Note that if using **Immediate** horizontal movement, then this is a hard value - not other forces can modify the character movement. For more information, see the next section. Increasing this value makes the character move more quickly , but doing so can make the game more difficult to control if the value is too large.
+This is the maximum speed (maximum absolute horizontal velocity) that the character can move through input. Note that if using **Immediate** horizontal movement, then this is a hard value - not other forces can modify the character movement. For more information, see the next section. Increasing this value makes the character move more quickly, but doing so can make the game more difficult to control if the value is too large.
 
 ### Immediate and Speed Up/Down
 
@@ -30,7 +30,7 @@ The **Speed Up/Down** option results in the platformer entity accelerating to ma
 
 The **Speed Up Time** value controls how many seconds are required for the platformer entity to reach max speed. This value is only available if using **Speed Up/Down** horizontal movement.
 
-Increasing this value makes the character makes the platformer entity feel sluggish. Decreasing this value makes the platformer entity feel more responsive. A value of 0 is identical to using **Immediate** horizontal movement. A larger speed up time can also be used for different terrains and environments. For example, a larger value can make the ground feel more slippery (if the character is walking on ice). A larger value can also make the character seem more heavy, or can be used to simulate under-water movement. A larger **Speed Up Time** can be used for air movement so that control is less precise when in the air.
+Increasing this value makes the character makes the platformer entity feel sluggish. Decreasing this value makes the platformer entity feel more responsive. A value of 0 is identical to using **Immediate** horizontal movement. A larger speed up time can also be used for different terrains and environments. For example, a larger value can make the ground feel more slippery (if the character is walking on ice). A larger value can also make the character seem heavier, or can be used to simulate under-water movement. A larger **Speed Up Time** can be used for air movement so that control is less precise when in the air.
 
 {% embed url="https://youtu.be/n9G9Vzd2l8U?t=212" %}
 
@@ -42,7 +42,7 @@ The **Slow Down Time** value controls how many seconds it takes for the platform
 * Medium .4 seconds
 * High .8 seconds
 
-Of course you should modify values to achieve the desired movement for your specific game.
+Of course, you should modify values to achieve the desired movement for your specific game.
 
 |                                 | Speed Up Time | Slow Down Time |
 | ------------------------------- | ------------- | -------------- |
@@ -56,7 +56,7 @@ Of course you should modify values to achieve the desired movement for your spec
 
 This value controls the velocity of the platformer entity at the moment when jumping off the ground, or when initiating a double-jump. Larger values allow the character to jump higher. This value is typically larger than **Max Speed**, but the exact value often requires multiple iterations to get the right feel.
 
-A platformer entity's jump height is also impacted by **Gravity**, so both **Jump Speed** and **Gravity** may need to be modified together. A low jump speed can be used for double-jumps, or for swimming when under water. A large jump speed can be used for characters who can jump higher. The Jump Speed value on Air movement can control whether the character can perform a double jump. By default this value is 0 which means that the character cannot double-jump. Setting a value greater than 0 means a character can double jump. This topic will be covered in more detail in the following tutorial.
+A platformer entity's jump height is also impacted by **Gravity**, so both **Jump Speed** and **Gravity** may need to be modified together. A low jump speed can be used for double-jumps, or for swimming when under water. A large jump speed can be used for characters who can jump higher. The Jump Speed value on Air movement can control whether the character can perform a double jump. By default, this value is 0 which means that the character cannot double-jump. Setting a value greater than 0 means a character can double jump. This topic will be covered in more detail in the following tutorial.
 
 ### Hold to Jump Higher
 
@@ -81,7 +81,7 @@ Although it may be difficult to see, the entity moves in a straight line on the 
 
 The **Max Jump Hold Time** value sets the maximum amount of time that the player can hold the jump button to extend the platformer entity's jump. A large value gives the player the option to hold the button to jump higher. A small value results in the max and min jump heights not differing by much. A very large value may result in the player appearing to "float" while jumping, so keep this in mind when setting large values (such as over 1 second). A large **Max Jump Hold Time** may be used with a small **Max Jump Speed** to create swimming controls.
 
-### **Can Fall Through Clouds**
+### Can Fall Through Clouds
 
 This value controls whether the platformer entity can press the down arrow + jump to fall down through cloud collision. If this value is false, then cloud collisions can only be jumped up through, but the player cannot fall down through them.
 
@@ -99,6 +99,6 @@ This is the distance to fall when pressing down + jump on a cloud platform befor
 
 {% embed url="https://youtu.be/1DfSMLXGYRc?t=9" %}
 
-A smaller M**ax Falling Speed** and low **Gravity** can be used to implement water physics such as the water levels in Donkey Kong Country.
+A smaller **Max Falling Speed** and low **Gravity** can be used to implement water physics such as the water levels in Donkey Kong Country.
 
 {% embed url="https://www.youtube.com/watch?v=GH-UGtfGH8I" %}
