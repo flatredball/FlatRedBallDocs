@@ -629,3 +629,17 @@ This version modifies code generation for Game -> FRB Editor communication durin
 This version modifies code generation to enable going directly into edit mode when clicking on the wrench in the FRB Editor, rather than the game first starting in non-edit mode, then switching to edit mode. This speeds up the startup for edit mode, and avoids crashes that can occur when a screen hasn't cleaned itself up.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 61 - RenderableCloneLogic Exists in Gum
+
+This version modifies code generation to assign `GraphicalUiElement.CloneRenderableFunction` in Game1.Generated.cs. This code is needed so that FlatRedBall Forms TextBoxes can create additional Selection instances when highlighting multiline text.
+
+{% hint style="info" %}
+If your project cannot upgrade to Version 61, you can still use multi-line text boxes by manually adding the following line of code as long as you are using a version of the engine which supports synax version 61, or if you are linking against source:
+
+```
+global::Gum.Wireframe.GraphicalUiElement.CloneRenderableFunction = global::RenderingLibrary.Graphics.RenderableCloneLogic.Clone;
+```
+{% endhint %}
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
