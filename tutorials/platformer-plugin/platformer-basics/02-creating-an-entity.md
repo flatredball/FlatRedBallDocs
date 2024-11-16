@@ -91,7 +91,7 @@ This tutorial series primarily focuses on creating a platformer entity. If you w
 
 ### Adding a Level
 
-Before we can run our game we also need to add a Level. Typically, the GameScreen includes objects, files, and objects which are common to all screens (such as a Player), while each level includes objects and logic which are level-specific (such as the TMX).
+Before we can run our game, we also need to add a Level. Typically, the GameScreen includes objects, files, and objects which are common to all screens (such as a Player), while each level includes objects and logic which are level-specific (such as the TMX).
 
 To add a level:
 
@@ -110,4 +110,4 @@ Your project should now have a Screen named Level1. This is marked as the startu
 
 ### Conclusion
 
-If we run our game now we'll see the entity functional - at least, it seems to fall with gravity. In the next tutorial we'll add collision and controls using our entity.
+If we run our game now, we'll see the entity functional - at least, it seems to fall with gravity. In the next tutorial we'll add collision and controls using our entity.
