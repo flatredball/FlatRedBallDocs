@@ -30,7 +30,7 @@
     * [Checkpoint and Level End](tutorials/platformer-plugin/checkpoint-and-level-end.md)
     * [Climbing Ladders](tutorials/platformer-plugin/climbing-ladders.md)
     * [Doors](tutorials/platformer-plugin/doors.md)
-    * [GroundCollideAgainst and Movement Values](tutorials/platformer-plugin/groundcollidedagainst-for-movement-values.md)
+    * [GroundCollidedAgainst and Movement Values](tutorials/platformer-plugin/groundcollidedagainst-for-movement-values.md)
     * [Moving Platforms](tutorials/platformer-plugin/moving-platforms.md)
     * [Multiple Players](tutorials/platformer-plugin/multiple-players.md)
     * [NPC Dialog](tutorials/platformer-plugin/npc-dialog.md)
