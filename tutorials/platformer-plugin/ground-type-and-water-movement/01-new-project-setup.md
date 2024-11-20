@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial, like many other tutorials, begins with an empty Glue project. I'll call mine PlatformerMovement.
+This tutorial, like many others in this documentation, begins with an empty Glue project. I'll call mine PlatformerMovement.
 
 ![](../../../.gitbook/assets/2023-02-img\_63e0332764d5d.png)
 
