@@ -43,12 +43,12 @@ When we define these rectangles, we need to remember a few things:
 As mentioned above, we'll need to create two AxisAlignedRectangle instances in our Enemy entity - one for left edge collision and one for right edge collision. To create the left edge collision rectangle:
 
 1. Select the Enemy entity
-2.  Select the Quick Actions tab and click the Add Object to Enemy button
+2. Select the Quick Actions tab and click the Add Object to Enemy button
 
     ![](../../../.gitbook/assets/2021-04-img\_60784f42b2d1b.png)
 3. Select the type **AxisAlignedRectangle**
 4. Enter the name **LeftEdgeCollision**
-5.  Click **OK**
+5. Click **OK**
 
     ![](../../../.gitbook/assets/2021-04-img\_60784f95cff10.png)
 6. With the **LeftEdgeCollision** object selected, click on the **Variables** tab
@@ -68,7 +68,7 @@ Now our enemy has two extra rectangles which it can use for detecting edges, but
 
 1. Select the **LeftEdgeCollision**
 2. Click on the **Properties** tab
-3.  Change **IncludeInICollidable** to **False** so that the rectangle is not used in default collision relationships (like EnemyListVsSolidCollision in GameScreen)
+3. Change **IncludeInICollidable** to **False** so that the rectangle is not used in default collision relationships (like EnemyListVsSolidCollision in GameScreen)
 
     ![](../../../.gitbook/assets/2021-04-img\_607851a6d3661.png)
 
@@ -80,7 +80,7 @@ Repeat the steps above for the **RightEdgeCollision** and the Enemy will no long
 
 Normally when performing logic related to collision, we do so inside a collision relationship event. Detecting an edge is different because we need to respond to a situation when there is no collision. Therefore, we will be writing code which happens every frame inside of our GameScreen CustomActivity. To detect if the enemy should turn around, modify the **GameScreen.cs** file so that its **CustomActivity** matches the following code snippet:
 
-```
+```csharp
 void CustomActivity(bool firstTimeCalled)
 {
     for(int i = 0; i < EnemyList.Count; i++)
