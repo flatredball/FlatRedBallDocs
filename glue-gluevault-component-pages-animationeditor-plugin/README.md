@@ -1,4 +1,4 @@
-# 🏃‍♀️ Animation Editor
+# 🏃 Animation Editor
 
 ### Introduction
 
