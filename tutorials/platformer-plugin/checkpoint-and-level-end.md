@@ -204,7 +204,7 @@ The demo includes two types of checkpoints:
 
 Whether a checkpoint is visible or not is controlled by an exposed Visible property.
 
-Please note that if you are adding the checkpoints to your own project, to have the Visible property available you need to set the _ImplementsIVisible_ in Checkpoint Properties to true and then create a variable via the _Expose an existing variable_ and select _Visible_. Also, since FlatRedBall purely converts the Tiled Object to an Entity, to actually see the flag and the door you will need to add a Sprite object to the Checkpoint entity and set it to an appropriate image or animation chain file. Repeat the same process for the EndOfLevel.
+Please note that if you are adding the checkpoints to your own project, to have the Visible property available you will need to set the _ImplementsIVisible_ in Checkpoint Properties to true and then create a variable via the _Expose an existing variable_ and select _Visible_. Also, since FlatRedBall purely converts the Tiled objects in the objects layer to instances of an Entity with the same class, to actually see the flag and the door in your game you will need to add a Sprite object to the Checkpoint and EndOfLevel entities and set them to appropriate images or animation chain files. This subject is explained in detail in following tutorials.
 
 ![](../../.gitbook/assets/2021-06-img\_60b8cf51505df.png)
 
