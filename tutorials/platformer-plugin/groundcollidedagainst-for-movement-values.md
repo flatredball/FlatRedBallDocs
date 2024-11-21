@@ -1,8 +1,12 @@
-# GroundCollideAgainst and Movement Values
+# GroundCollidedAgainst and Movement Values
 
 ### Introduction
 
 The GroundCollidedAgainst property can be used to detect the type of terrain that a platformer entity is standing on. This property, along with the standard ItemsCollidedAgainst property, can be used to perform complex logic in response to collision after all collision for a frame has been resolved. The most common use of the GroundCollidedAgainst property is to assign movement values.
+
+{% hint style="info" %}
+The GroundCollidedAgainst property is only available for gluj version 22 and newer. For more information see the [FileVersion (.gluj)](../../glue-reference/glujglux.md) page. New FlatRedBall projects use this version, but some of the samples linked in the Platformer tutorials may not have this value available.
+{% endhint %}
 
 ### Code Example - Setting GroundMovement According to GroundCollidedAgainst
 
