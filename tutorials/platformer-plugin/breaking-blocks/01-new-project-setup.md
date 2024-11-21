@@ -6,7 +6,7 @@ We'll begin this tutorial with an empty project. Mine will be called BreakingBlo
 
 ![](../../../.gitbook/assets/2021-04-img\_60777be0d952b.png)
 
-### Nes Project Wizard
+### New Project Wizard
 
 The New Project Wizard can help us get a quick project set up. We will leave most of the options to their default, but we will change the following:
 

@@ -13,7 +13,7 @@ The previous tutorial created a GameScreen which contains two TileShapeCollectio
 * SolidCollision
 * CloudCollision
 
-By default each is associated with a standard tile from the tileset included in our Level1Map.tmx. However, these collisons do not have any affect on our player since we haven't told the player to collide with them.
+By default, each is associated with a standard tile from the tileset included in our Level1Map.tmx. However, these collisions do not have any effect on our player since we haven't told the player to collide with them.
 
 To set up collision between our PlayerList and SolidCollision:
 
@@ -30,11 +30,11 @@ Now the player will collide with the level.
 
 ### Controlling the Entity with Input
 
-By default the platformer entity already supports a default set of controls. To see this, select the Player entity, then select the **Entity Input Movement** tab.
+By default, the platformer entity already supports a default set of controls. To see this, select the Player entity, then select the **Entity Input Movement** tab.
 
 ![Player uses Gamepad with Keyboard Fallback by default](<../../../.gitbook/assets/11\_06 15 36.png>)
 
-By default the platformer will be controllable with a plugged-in Xbox Gamepad. If no Gamepad is detected, then the entity can be controlled with WASD and Space.
+By default, the platformer will be controllable with a plugged-in Xbox Gamepad. If no Gamepad is detected, then the entity can be controlled with WASD and Space.
 
 <figure><img src="../../../.gitbook/assets/11_06 17 12.gif" alt=""><figcaption><p>Player moving with the gamepad or keyboard</p></figcaption></figure>
 
@@ -56,7 +56,7 @@ void CustomInitialize()
 }
 ```
 
-The code above added keyboard controls so that the Player can be moved horizontally with the A and D keys and jumps using the space bar.
+The code above added keyboard controls so that the Player can be moved horizontally with the Left and Right arrow keys and jumps using the Enter button.
 
 ### Conclusion
 

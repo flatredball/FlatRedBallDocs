@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial creates an Enemy entity which is use in the remainder of the tutorials. This enemy is similar to the Player entity - it has collision and uses Platformer physics, but it does not use input from a keyboard or gamepad - instead its movement is controlled purely in code.
+This tutorial creates an Enemy entity which is used in the remainder of the tutorials. This enemy is similar to the Player entity - it has collision and uses Platformer physics, but it does not use input from a keyboard or gamepad - instead its movement is controlled purely in code.
 
 ### Creating the Enemy Entity
 
@@ -11,20 +11,20 @@ To create the Enemy entity:
 1. Click the **Quick Actions** tab
 2.  Click the **Add Entity** button
 
-    <figure><img src="../../../.gitbook/assets/image (357).png" alt=""><figcaption><p>Click the Add Entity quick action button</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (357).png" alt=""><figcaption><p>Click the Add Entity quick action button</p></figcaption></figure>
+
 3. Enter the name **Enemy**
 4. Check **AxisAlignedRectangle**
 5. Check **Platformer** for the **Input Movement Type**
-6.  Leave the rest of the defaults and click **OK**\
+6.  Leave the rest of the defaults and click **OK**
 
-
-    <figure><img src="../../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
 
 You can optionally change the color of your Enemy if you would like by selecting the newly-created AxisAlignedRectangle and setting its color to Red.
 
 ### Adding an Enemy to Level1
 
-Entities such as Enemy are usually added directly to levels such as Level1. Note that it is possible to add Entities in may ways including through Tiled and directly in code, but we will be adding an instance directly in the FlatRedBall Editor.
+Entities such as Enemy are usually added directly to levels such as Level1. Note that it is possible to add Entities in more ways including through Tiled and directly in code, but we will be adding an instance directly in the FlatRedBall Editor.
 
 Note that the EnemyList object is defined in GameScreen, but it is also accessible in all levels, such as Level1.
 
@@ -53,7 +53,7 @@ Now we have a fully-functional enemy, but it falls through the solid collision s
 
 <figure><img src="../../../.gitbook/assets/15_05 40 35.gif" alt=""><figcaption><p>Drag+drop EnemyList onto SolidCollision to create a new collision relationship</p></figcaption></figure>
 
-The new Collision Relationship automatically has its physics set to Glue automatically sets the **Collision Physics** to **Platformer Solid Collision** since the Enemy entity is marked as a Platformer.
+Glue automatically sets the **Collision Physics** in the new Collision Relationship to **Platformer Solid Collision** since the Enemy entity is marked as a Platformer.
 
 <figure><img src="../../../.gitbook/assets/15_05 42 17.png" alt=""><figcaption><p>EnemyVsSolidCollision is set to Platformer Solid Collision</p></figcaption></figure>
 

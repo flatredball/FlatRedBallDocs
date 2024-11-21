@@ -12,7 +12,7 @@ First we'll remove the Input Device from the Enemy entity:
 2. Select the **Enemy Input Movement** tab
 3. Check **None** under **Input Device**
 
-![](../../../.gitbook/assets/2021-04-img\_607797eac1c0f.png)
+<figure><img src="../../../.gitbook/assets/2021-04-img\_607797eac1c0f.png" alt=""><figcaption></figcaption></figure>
 
 Now the Enemy will not move in response to keyboard or gamepad input. Note that if we do not assign an InputDevice in code, the game crashes so we must do so before running the game.
 
@@ -21,7 +21,7 @@ Now the Enemy will not move in response to keyboard or gamepad input. Note that 
 Next we will create our own custom InputDevice which will control the movement of the enemy. The reason we are creating this is because Platformer entities expect to receive commands from an input device like a keyboard. We can create a class which simulates input commands without actually having physical input. To create this class:
 
 1. Open the project in Visual Studio
-2.  Create a new class called EnemyInput. I will place mine in an Input folder
+2. Create a new class called EnemyInput. I will place mine in an Input folder
 
     ![](../../../.gitbook/assets/2021-04-img\_6077995742261.png)
 3. Modify the code so that the EnemyInput class inherits from **FlatRedBall.Input.InputDeviceBase**
@@ -50,7 +50,7 @@ class EnemyInput : FlatRedBall.Input.InputDeviceBase
 
 To use **EnemyInput**, we can modify the **CustomInitialize** method in the **Enemy.cs** class to assign its **InputDevice.** The **Enemy.cs** file can be found in the **Entities** folder in the Visual Studio Solution Explorer.
 
-![](../../../.gitbook/assets/2021-04-img\_60779b423c26b.png)
+<figure><img src="../../../.gitbook/assets/2021-04-img\_60779b423c26b.png" alt=""><figcaption><p>CustomInitialize method in Enemy class</p></figcaption></figure>
 
 To use EnemyInput as the Enemy's InputDevice, modify the Enemy CustomInitialize method as shown in the following code snippet:
 
@@ -67,7 +67,7 @@ public partial class Enemy
 
 Now if we run the game, the Enemy automatically walks to the right and ignores keyboard and gamepad input.
 
-<figure><img src="../../../.gitbook/assets/2021-04-2021_April_14_194852.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2021-04-2021_April_14_194852.gif" alt=""><figcaption><p>Enemy moving to the right on level start</p></figcaption></figure>
 
 #### Jumping
 
@@ -134,12 +134,13 @@ Many platformer games include enemies which turn around when colliding with othe
 1. Expand the **GameScreen -> Objects -> Collision Relationships** item in Glue
 2. Select **EnemyListVsSolidCollision**
 3. Select the **Collision** tab
-4.  Click the **Add Event** button\\
+4. Click the **Add Event** button\\
 
-    <figure><img src="../../../.gitbook/assets/2021-04-img_6077b6189b433.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2021-04-img_6077b6189b433.png" alt=""><figcaption></figcaption></figure>
+
 5.  Click **OK** to accept the defaults
 
-    ![](../../../.gitbook/assets/2021-04-img\_6077b70441b42.png)
+<figure><img src="../../../.gitbook/assets/2021-04-img\_6077b70441b42.png" alt=""><figcaption></figcaption></figure>
 
 Glue will add an event to GameScreen.Event.cs which we can modify to adjust the EnemyInput DesiredDirection, as shown in the following snippet.
 
@@ -165,9 +166,9 @@ void OnEnemyListVsSolidCollisionCollisionOccurred (Entities.Enemy first, FlatRed
 }
 ```
 
-The code above is assigns the EnemyInput DesiredDirection according to the enemy's AxisAlignedRectangleInstance.LastMoveCollisionReposition. We'll take a deeper look at how this property works in the next section.
+The code above assigns the EnemyInput DesiredDirection according to the enemy's AxisAlignedRectangleInstance.LastMoveCollisionReposition. We'll take a deeper look at how this property works in the next section.
 
-#### LastMoveCollisionReposition
+### LastMoveCollisionReposition
 
 The collision relationship between Enemies and SolidCollision prevents Enemy instances from overlapping the SolidCollision TileShapeCollection. Whenever an Enemy overlaps one of the rectangles in the SolidCollision TileShapeCollection, the Enemy must be _repositioned_ so it does not overlap the solid collision. For example, consider a falling Enemy (white). Initially the enemy may be falling but not overlapping any solid collision (red).
 
@@ -193,6 +194,6 @@ In the diagram above, the RepositionDirection has a negative X value (points to 
 
 Now that we have this logic in place, our Enemy will automatically walk until colliding with a wall, then it turns around and walks in the other direction.
 
-<figure><img src="../../../.gitbook/assets/2021-04-2021_April_15_075827.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2021-04-2021_April_15_075827.gif" alt=""><figcaption><p>Enemy moving left and right within level bounds</p></figcaption></figure>
 
 The next tutorial will enable Enemies to turn around when reaching the end of a platform.
