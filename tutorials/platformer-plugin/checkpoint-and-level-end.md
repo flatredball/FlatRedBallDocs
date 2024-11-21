@@ -185,8 +185,7 @@ Player death can be handled in a variety of ways, such as by collision with a Ti
 
 For example, if you have a TileShapeCollection named PitCollision, a collision relationship can be created between the PlayerList and PitCollision to restart the screen. This relationship would have an event with the following code in GameScreen.Event.cs:
 
-```
-
+```csharp
 void OnPlayerListVsPitCollisionCollided (Entities.Player player, FlatRedBall.Math.Geometry.ShapeCollection second)
 {
     this.RestartScreen(reloadContent:false);
@@ -204,7 +203,7 @@ The demo includes two types of checkpoints:
 
 Whether a checkpoint is visible or not is controlled by an exposed Visible property.
 
-Please note that if you are adding the checkpoints to your own project, to have the Visible property available you will need to set the _ImplementsIVisible_ in Checkpoint Properties to true and then create a variable via the _Expose an existing variable_ and select _Visible_. Also, since FlatRedBall purely converts the Tiled objects in the objects layer to instances of an Entity with the same class, to actually see the flag and the door in your game you will need to add a Sprite object to the Checkpoint and EndOfLevel entities and set them to appropriate images or animation chain files. This subject is explained in detail in following tutorials.
+Please note that if you are adding the checkpoints to your own custom project, to have the Visible property available you will need to set the _ImplementsIVisible_ in Checkpoint Properties to true and then create a variable via the _Expose an existing variable_ and select _Visible_. Also, since FlatRedBall purely converts the Tiled objects in the objects layer to instances of a FlatRedBall Entity with the same class, to actually see the flag and the door in your game you will need to add a Sprite object to the Checkpoint and EndOfLevel entities and set them to appropriate images or animation chain files. This subject is explained in detail in following tutorials.
 
 ![](../../.gitbook/assets/2021-06-img\_60b8cf51505df.png)
 
