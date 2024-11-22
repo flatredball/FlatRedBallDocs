@@ -41,7 +41,7 @@ For information on Scale, see the [IScalable wiki entry](../../../frb/docs/index
 
 ### Texture
 
-Sprites can be thought of as picture frames or canvases - they define how big a displayed image will be, its position, its rotation, and so on. However, the image or picture that they display is separate from the Sprite itself. This is an important realization because this often differs from other game engines where the image and the Sprite are one and the same at runtime. For more information, see the [Sprite.Texture](../../../frb/docs/index.php) page.
+Sprites can be thought of as picture frames or canvases - they define how big a displayed image will be, its position, its rotation, and so on. However, the image or picture that they display is separate from the Sprite itself. This is an important realization because this often differs from other game engines where the image and the Sprite are one and the same at runtime. For more information, see the [Sprite.Texture](../graphics/animation/flatredball-graphics-animationframe/texture.md) page.
 
 ### Color and Alpha
 
@@ -62,5 +62,3 @@ Sprite newSprite = SpriteManager.AddParticleSprite();
 Particle Sprites have all of the same functionality as regular Sprites - in fact, they are just Sprites. The only difference is that there is minimal memory allocation and garbage collection so they can be useful when creating particle effects. Particle Sprites are used by [Emitters](../../../frb/docs/index.php).
 
 ###
-
-&#x20;
