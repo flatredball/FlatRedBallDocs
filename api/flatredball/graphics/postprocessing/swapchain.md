@@ -45,7 +45,7 @@ Of course, the shader may make additional modifications to the Sprite such as ch
 
 <figure><img src="../../../../.gitbook/assets/image (346).png" alt=""><figcaption><p>Example of a shader modifying the color of a Sprite</p></figcaption></figure>
 
-Although shaders are always used when rendering individual objects, we can also use shaders to modify an entire scene after it has finished rendering. This is referred to as _post processing_. To perform post processing, all FlatRedBall objects must first be drawn to a r_ender target_ which is a temporary storage of all graphics (sometimes called a buffer). Effects can be applied to this render target using shaders before it is drawn to the back buffer that is shown on the display device.
+Although shaders are always used when rendering individual objects, we can also use shaders to modify an entire scene after it has finished rendering. This is referred to as _post processing_. To perform post processing, all FlatRedBall objects must first be drawn to a &#x72;_&#x65;nder target_ which is a temporary storage of all graphics (sometimes called a buffer). Effects can be applied to this render target using shaders before it is drawn to the back buffer that is shown on the display device.
 
 The following diagram shows what the process might look like if we were to render a sprite to a render target first, and then render that to the final screen with additional processing (blurring). Note that we can render multiple sprites to the render target, and then perform one final pass to apply post processing.
 

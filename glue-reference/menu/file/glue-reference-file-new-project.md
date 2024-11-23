@@ -4,11 +4,11 @@
 
 The **New Project** menu item is used to show the new project window. **File->New Project** does the same thing as clicking the **Create New Project** quick action.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>The New Project menu item is the same as the Create new Project quick action</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>The New Project menu item is the same as the Create new Project quick action</p></figcaption></figure>
 
 Clicking either option shows the New Project window.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>New Project Window</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>New Project Window</p></figcaption></figure>
 
 ### Project Name
 
@@ -30,7 +30,7 @@ When the project is created, the Platform that you select determines the templat
 
 If you would like to create a project from a local folder, you can select the **Select Local Project...** option.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Select Local Project dropdown option</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Select Local Project dropdown option</p></figcaption></figure>
 
 This option is usually for advanced scenarios and contributors of FlatRedBall. You may want to select this option in the following situations:
 
