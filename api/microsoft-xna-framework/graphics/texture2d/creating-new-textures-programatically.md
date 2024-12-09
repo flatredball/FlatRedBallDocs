@@ -1,11 +1,13 @@
-# creating-new-textures-programatically
+# Creating New Textures Programatically
 
 ### Introduction
 
-The easiest way to create a Texture2D is to load a graphical file and create a Texture2D using FlatRedBallServices as follows:
+The easiest way to create a Texture2D is to drop a Texture2D into the FlatRedBall Editor. It generates code for loading the Texture2D.
+
+Alternatively you can load a graphical file and create a Texture2D using FlatRedBallServices as follows:
 
 ```
-Texture2D myTextre = FlatRedBallServices.Load<Texture2D>("redball.bmp");
+Texture2D myTextre = FlatRedBallServices.Load<Texture2D>("redball.png");
 ```
 
 While this code addresses many common scenarios, you may want to create your own textures programatically. This section discusses various topics on how to create Texture2Ds in code.
@@ -16,7 +18,7 @@ The following code creates a Texture2D which is all red, then displays the Textu
 
 Add the following using statement:
 
-```
+```csharp
 Microsoft.Xna.Framework.Graphics.Texture2D;
 
 // Define the properties of the to-be-created Texture2D
@@ -54,4 +56,4 @@ FlatRedBallServices.AddDisposable(
 SpriteManager.AddSprite(texture2D);
 ```
 
-![GeneratedTexture.png](../../../../.gitbook/assets/migrated\_media-GeneratedTexture.png)
+![GeneratedTexture.png](../../../../.gitbook/assets/migrated_media-GeneratedTexture.png)

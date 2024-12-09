@@ -1,15 +1,15 @@
-# texture2d
+# Texture2D
 
 ### Introduction
 
-A Texture2D is a 2D array of pixel information which can be used by [Sprites](../../../../../frb/docs/index.php), [Text objects](../../../../../frb/docs/index.php), and [PositionedModels](../../../../../frb/docs/index.php) when drawn. All FlatRedBall platforms support textures up to a max size of 2048x2048. FlatRedBall PC uses the Reach profile by default, but if switched to HiDef, textures up to 4096x4096 can be used.
+A Texture2D is a 2D array of pixel information which can be used by [Sprites](../../../../frb/docs/index.php), [Text objects](../../../../frb/docs/index.php), and [PositionedModels](../../../../frb/docs/index.php) when drawn. All FlatRedBall platforms support textures up to a max size of 2048x2048. FlatRedBall PC uses the Reach profile by default, but if switched to HiDef, textures up to 4096x4096 can be used.
 
 ### Displaying a Texture
 
-A Texture2D by itself cannot be displayed in FlatRedBall. The Texutre2D must be drawn by a FlatRedBall object. The most common object for displaying Texture2Ds are [Sprite](../../../../../frb/docs/index.php). The following code shows how to render a Texture2D using a Sprite.
+A Texture2D by itself cannot be displayed in FlatRedBall. The Texutre2D must be drawn by a FlatRedBall object. The most common object for displaying Texture2Ds are [Sprite](../../../../frb/docs/index.php). The following code shows how to render a Texture2D using a Sprite.
 
-```
-Texture2D texture2D = FlatRedBallServices.Load<Texture2D>("redball.bmp");
+```csharp
+Texture2D texture2D = FlatRedBallServices.Load<Texture2D>("redball.png");
 // AddSprite will both instantiate a Sprite and add it so it is rendered by FlatRedBall
 Sprite sprite = SpriteManager.AddSprite(texture2D);
 ```
@@ -56,12 +56,12 @@ The Bitmap object is an object commonly used in Windows programming. It is an ob
 
 ### Power of 2
 
-When a texture is loaded into FlatRedBall, the source image width and height should be a [power of two](../../../../../frb/docs/index.php). Non-power of two image can be loaded, but they may be up-scaled which can result in blurry textures and wasted memory. For a list of power of two values, [see this table](../../../../../frb/docs/index.php).
+When a texture is loaded into FlatRedBall, the source image width and height should be a [power of two](../../../../frb/docs/index.php). Non-power of two image can be loaded, but they may be up-scaled which can result in blurry textures and wasted memory. For a list of power of two values, [see this table](../../../../frb/docs/index.php).
 
 ### Extra Sections
 
-* [Filtering](../../../../../frb/docs/index.php) - Explains why textures become blurry when displayed larger than actual size.
-* [Creating New Textures Programatically](../../../../../frb/docs/index.php)
-* [FlatRedBall.FlatRedBallServices.AddDisposable](../../../../../frb/docs/index.php) - Can be used to add a Texture2D to a [FlatRedBall Content Manager](../../../../../frb/docs/index.php).
+* [Filtering](../../../../frb/docs/index.php) - Explains why textures become blurry when displayed larger than actual size.
+* [Creating New Textures Programatically](../../../../frb/docs/index.php)
+* [FlatRedBall.FlatRedBallServices.AddDisposable](../../../../frb/docs/index.php) - Can be used to add a Texture2D to a [FlatRedBall Content Manager](../../../../frb/docs/index.php).
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.
+Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.
