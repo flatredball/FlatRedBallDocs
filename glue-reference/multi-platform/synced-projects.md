@@ -38,7 +38,7 @@ Synced projects can reference pre-built FlatRedBall .dlls (directly or using NuG
 
 Synced projects automatically link all source files from the original project. This includes custom and generated code for screens, entities, and global content.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity code files linked in a synced project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity code files linked in a synced project</p></figcaption></figure>
 
 Content files are also linked by the synced project.
 
