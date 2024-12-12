@@ -870,6 +870,7 @@
         * [IScalable](api/flatredball/math/geometry/iscalable/README.md)
           * [Scale](api/flatredball/math/geometry/iscalable/scale.md)
         * [Line](api/flatredball/math/geometry/line/README.md)
+          * [Color](api/flatredball/math/geometry/line/color.md)
           * [LastCollisionPoint](api/flatredball/math/geometry/line/lastcollisionpoint.md)
           * [RelativePoint1](api/flatredball/math/geometry/line/relativepoint1.md)
           * [SetFromAbsoluteEndpoints](api/flatredball/math/geometry/line/setfromabsoluteendpoints.md)
