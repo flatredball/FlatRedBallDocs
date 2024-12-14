@@ -89,6 +89,7 @@
     * [Enemy Movement](tutorials/top-down-entity/enemy-movement/README.md)
       * [Enemy Pathfinding](tutorials/top-down-entity/enemy-movement/enemy-pathfinding.md)
       * [Direct Enemy Control](tutorials/top-down-entity/enemy-movement/direct-enemy-control.md)
+    * [GroundVelocity](tutorials/top-down-entity/groundvelocity.md)
   * [Post Processing](tutorials/post-processing.md)
   * [Rock Blaster - A Full FlatRedBall Tutorial Project](tutorials/rock-blaster/README.md)
     * [Introduction](tutorials/rock-blaster/tutorials-introduction.md)
