@@ -11,7 +11,7 @@ FlatRedBall includes an automated test project which can be used to verify that 
 3.  Open the Automated Test Project in Glue. It can be found here: \<FlatRedBall>\Tests\GlueTestProjectDesktopGl\GlueTestProjectDesktopGl.sln\
 
 
-    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Autoamted Test Project in the FRB Editor</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Autoamted Test Project in the FRB Editor</p></figcaption></figure>
 4. After it has finished generating, open the project in Visual Studio
 5. Rebuild the project
 6. Run the project

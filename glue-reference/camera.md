@@ -59,7 +59,7 @@ Notice that if the game resolution and aspect ratio do not match, the window wil
 
 For example, we can set the following values:
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Aspect ratio values not matching the game resolution</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Aspect ratio values not matching the game resolution</p></figcaption></figure>
 
 These settings produce a game with the following properties:
 
@@ -68,7 +68,7 @@ These settings produce a game with the following properties:
 * The game maintains a 16:9 aspect ratio
 * The game will always display an in-game height of 600 units
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>16:9 game displayed in a window that is 400x600</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>16:9 game displayed in a window that is 400x600</p></figcaption></figure>
 
 ### Perspective
 
@@ -84,7 +84,7 @@ Cameras with 3D perspective result in objects with positive Z values drawing lar
 
 Texture filtering modifies the way textures are rendered by Sprites. By default, FlatRedBall uses **Point** filtering. Linear filtering applies a blur effect when objects Sprites are drawn larger than the native resolution, or if the game is zoomed in.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Texture Filter options in the Display Settings tab</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Texture Filter options in the Display Settings tab</p></figcaption></figure>
 
 The following image shows the difference between Point and Linear filtering:
 

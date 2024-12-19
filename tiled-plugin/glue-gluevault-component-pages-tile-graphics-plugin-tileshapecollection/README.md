@@ -202,4 +202,35 @@ To use these shapes to fill a TileShapeCollection:
 
 The TileShapeCollection will now include custom shapes as defined in Tiled.
 
-###
+#### Solid Collision Considerations
+
+If you are using partial tiles for solid collision, there are a few guidelines you should follow to prevent your entities from being teleported strangely when colliding with shapes. If you are not using the tiles for solid collision, then these rules do not need to be followed.
+
+&#x20;If a tile has partial collision, then its neighbors must fall into one of the following categories:
+
+1. It must be completely empty (no collision)
+2. The two tiles must have their solid are aligned perfectly
+
+Let's look at a few examples to see how these rules can be followed. The following shows a valid layout:
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Valid collision with partial tiles</p></figcaption></figure>
+
+Note that the partial collision tiles have neighbors which are either empty (0) or which are aligned perfectly (1).
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Collision following the guidelines for partial collision</p></figcaption></figure>
+
+Similarly, adjacent tiles can also be partial as long as they continue the collision, as shown in the following image:
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Valid collision with neighbors continuing the collision</p></figcaption></figure>
+
+The following would not be a valid collision because the neighbor to the edges of the solid collision do not match.
+
+<figure><img src="../../.gitbook/assets/19_08 22 04.png" alt=""><figcaption><p>Invalid solid collision</p></figcaption></figure>
+
+We can see that the top tiles in the second and third tiles do not align properly, as shown by the following image:
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Invalid collision due to the solid collision edges not matching</p></figcaption></figure>
+
+Partial tiles can connect to adjacent partial tiles even if the edges do not meet at the corner of the grid. For example the following layout is valid:
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>

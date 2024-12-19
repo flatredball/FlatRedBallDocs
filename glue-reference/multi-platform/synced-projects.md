@@ -34,15 +34,15 @@ New Synced Projects are created using a standard FlatRedBall template for the gi
 
 Synced projects can reference pre-built FlatRedBall .dlls (directly or using NuGet), or they can be linked to FlatRedBall source. The following screenshot shows a FlatRedBall Web project linking to the FlatRedBall Engine.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Synced project linking FlatRedBall source projects</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Synced project linking FlatRedBall source projects</p></figcaption></figure>
 
 Synced projects automatically link all source files from the original project. This includes custom and generated code for screens, entities, and global content.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity code files linked in a synced project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Entity code files linked in a synced project</p></figcaption></figure>
 
 Content files are also linked by the synced project.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Content files in GlobalContent folder linked in a synced project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Content files in GlobalContent folder linked in a synced project</p></figcaption></figure>
 
 NuGet packages are not automatically synced across projects so if you have manually added a NuGet package to your main project, you may also need to add the same package or an alternative package to your synced projects.
 
