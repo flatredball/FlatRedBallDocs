@@ -185,14 +185,21 @@ By default each rectangle in a TileShapeCollection occupies the entire tile (16x
 7. Once you have added shapes to all of the tiles, and once you have set the types on the tiles, save the TSX file.
 8.  Paint the tiles in their desired locations. Note that tile collision can be previewed in Tiled by selecting the **View** -> **Show Tile Collision Shapes** option
 
-    ![](../../.gitbook/assets/2022-02-img_621b99413e7ec.png)
+    ![Turn on Show Tile Collision Shapes to see your collisions in Tiled](../../.gitbook/assets/2022-02-img_621b99413e7ec.png)
 
-    ![](../../.gitbook/assets/2022-02-img_621b99668f609.png)
+    ![Solid collisions ](<../../.gitbook/assets/19_08 30 41.png>)
 9. Save the Tiled (TMX) file.
 
-To use these shapes to fill a TileShapeCollection:
+{% hint style="info" %}
+Tiles can be flipped and rotated in Tiled to allow for more complex shapes. You can use the shortcut keys X, Y, and Z, or the icons to flip tiles. FlatRedBall respects flipping and rotation for collision.
+
+![](<../../.gitbook/assets/19_08 33 20.gif>)
+{% endhint %}
+
+To use these shapes to fill a TileShapeCollection in FlatRedBall:
 
 1. Select an existing TileShapeCollection or create a new TileShapeCollection. Typically this TileShapeCollection would be in the GameScreen.
+   1. If creating a new TileShapeCollection, name it the exact same as the name you assigned to the Class value for all of your tiles.
 2. Select the **TileShapeCollection Properties** tab
 3. Select the **From TMX Collision - requires shapes defined in the tileset (TSX)** option
 4. Set **Source TMX File/Object** to **Map**
@@ -200,7 +207,7 @@ To use these shapes to fill a TileShapeCollection:
 
 ![](<../../.gitbook/assets/19_08 03 26.png>)
 
-The TileShapeCollection will now include custom shapes as defined in Tiled.
+The TileShapeCollection now includes custom shapes as defined in Tiled.
 
 #### Solid Collision Considerations
 
