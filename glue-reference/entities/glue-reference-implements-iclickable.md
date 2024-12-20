@@ -12,7 +12,7 @@ Existing entities can be converted to IClickable in the Properties tab
 2. Click the **Properties** tab
 3. Set **Implements IClickable** to **True**
 
-![Setting an Entity's ImplementsIClickable to true](<../../.gitbook/assets/04\_08 24 06.png>)
+![Setting an Entity's ImplementsIClickable to true](<../../.gitbook/assets/04_08 24 06.png>)
 
 ### Code Example - Clicking UI
 
@@ -56,3 +56,17 @@ void DoSelectionLogic()
    }
 }
 ```
+
+### IClickable Object Tests
+
+Entities do not have a size, so their contents are used when HasCursorOver is called. The following objects are tested in the HasCursorOver method:
+
+* Sprites (if Visible is true and Alpha > 0)
+* Text (if Visible is true and Alpha > 0)
+* ShapeCollections
+* AxisAlignedRectangle
+* Circle
+* Polygon
+* CapsulePolygon
+* Sphere
+* Children instances of entities which implement IClickable
