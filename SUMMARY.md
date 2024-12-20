@@ -618,6 +618,7 @@
       * [ColorOperation](api/flatredball/graphics/coloroperation/README.md)
         * [Add](api/flatredball/graphics/coloroperation/add.md)
         * [Color](api/flatredball/graphics/coloroperation/color.md)
+        * [ColorTextureAlpha](api/flatredball/graphics/coloroperation/colortexturealpha.md)
         * [InterpolateColor](api/flatredball/graphics/coloroperation/interpolatecolor.md)
         * [Modulate](api/flatredball/graphics/coloroperation/modulate.md)
         * [Texture](api/flatredball/graphics/coloroperation/texture.md)
