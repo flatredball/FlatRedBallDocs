@@ -4,7 +4,7 @@ Shader Effect Files (.fx) can be added to FlatRedBall projects. At runtime this 
 
 ### Creating a Post Processing Effect File
 
-FlatRedBall can import existing .fx files, but also provides a standard way to create effect files for post processing. The easeist way to add a post processing effect file to your project is to use the Add File dialog:
+FlatRedBall can import existing .fx files, but also provides a standard way to create effect files for post processing. The easiest way to add a post processing effect file to your project is to use the Add File dialog:
 
 1. Right-click on the Files folder where you would like to add your .fx file (such as Global Content Files or GameScreen) and select **Add File** -> **New File**
 2. Select **Effect (.fx)** as the file type
@@ -25,7 +25,7 @@ This creates the following files in your project:
 
 <figure><img src="../../../.gitbook/assets/16_07 46 16.png" alt=""><figcaption><p>New files for effects</p></figcaption></figure>
 
-If you intend to use the effects as they are when created, you do not need to work with these files. However, these files can also serve as a starting point for your own shaders so you may be interested in locating them.
+If you intend to use the effects as they are when created, you do not need to make any changes to these files. However, these files can also serve as a starting point for your own shaders so you may be interested in locating them.
 
 Once a shader has been added, you can add it to the global effect list. If your shader is part of Global Content Files, the addition can be performed in Game1. The following code shows how to add the shader to post processing in Game1.
 
@@ -37,7 +37,7 @@ Renderer.CreateDefaultSwapChain();
 
 ```
 
-To use the built in GlobalPostProcessing, a SwapChain must be created. For more information on SwapChains, see the [SwapChain](../../../api/flatredball/graphics/postprocessing/swapchain.md) page. If you need more control you can manually create a SwapChain as shown in the following block of code:
+To use the built in GlobalPostProcessing, a SwapChain must be created. The code above creates default SwapChains for us in the `CreateDefaultSwapChain` method. For more information on SwapChains, see the [SwapChain](../../../api/flatredball/graphics/postprocessing/swapchain.md) page. If you need more control you can manually create a SwapChain as shown in the following block of code:
 
 ```csharp
 // Add this after GeneratedInitialize() in Game1.cs
@@ -57,7 +57,7 @@ FlatRedBallServices.GraphicsOptions.SizeOrOrientationChanged += (_,_) =>
 
 ```
 
-If your shader is part of a screen such as GameScreen, you can add it in the Screen's CustomInitialize. Note that if you add it in the Screen's CustomInitialize, you should also remove it in CustomDestroy. The following code shows how an effect might be added through GameScreen.
+If your shader is part of a screen such as GameScreen, you can add it in the Screen's `CustomInitialize`. Note that if you add it in the Screen's `CustomInitialize`, you should also remove it in `CustomDestroy`. The following code shows how an effect might be added through GameScreen.
 
 ```csharp
 public partial class GameScreen
@@ -92,11 +92,11 @@ public partial class GameScreen
 }
 ```
 
-Note that by using a SwapChain, FlatRedBall internally creates and assigns a RenderTarget when performing rendering, so you should not manually create and assing a RenderTarget prior to drawing FlatRedBall.
+Note that by using a SwapChain, FlatRedBall internally creates and assigns a RenderTarget when performing rendering, so you should not manually create and assign a RenderTarget prior to drawing FlatRedBall.
 
 ### Effect Files in MonoGame
 
-Effect files require the use of the MonoGame Content Pipeline. If you are using the FlatRedBall Editor, this is automatically handled for you. You can verify that this is the case by checking the UseContentPipeline property.
+Effect files require the use of the MonoGame Content Pipeline. If you are using the FlatRedBall Editor, this is automatically handled for you. You can verify that this is the case by checking the **UseContentPipeline** property.
 
 <figure><img src="../../../.gitbook/assets/image (211).png" alt=""><figcaption><p>Effect file using content pipeline</p></figcaption></figure>
 
@@ -114,6 +114,6 @@ fxc.exe can be used to build effect files which can be consumed by FNA (and Flat
 "fxc.exe" /T fx_2_0 ShaderFile.fx /Fo ShaderFile.fxb
 ```
 
-In the command above, `ShaderFile.fx` is the input file and `ShaderFile.fxb` is the output file. FlatRedBall recommends using the extension fxb as the output file.
+In the command above, `ShaderFile.fx` is the input file and `ShaderFile.fxb` is the output file. FlatRedBall recommends using the extension .fxb as the output file.
 
 Once an .fxb file is built, it can be added to FlatRedBall just like any other file (by drag+dropping it into the FlatRedBall Editor) and it will be loaded into a standard Effect object.
