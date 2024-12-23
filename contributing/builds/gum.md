@@ -27,16 +27,20 @@ Vic has noticed that sometimes the build will fail due to the referenced ColorPi
 Currently Gum uses XNA and .NET 4.7.1. This will not build using dotnet build (not sure why). Therefore, Gum must be built and uploaded manually. We could eventually automate this through TeamCity until Gum (maybe?) gets updated to modern .NET. Until then the steps are:
 
 1. Open Gum locally in Visual Studio
-2.  Open Gum AssemblyInfo.cs and set AssemblyVersion and AssemblyFileVersion using the date-based format.\
+2.  Open Gum AssemblyInfo.cs and set AssemblyVersion and AssemblyFileVersion using the date-based format. Notice that there's only 3 numbers unlike the versions for nuget packages.\
 
 
-    <figure><img src="../../.gitbook/assets/image (318).png" alt=""><figcaption><p>AssemblyVersion and AssemblyFileVersion in AssemblyInfo.cs</p></figcaption></figure>
-3. Rebuild Gum
+    <figure><img src="../../.gitbook/assets/23_07 47 02.png" alt=""><figcaption><p>AssemblyVersion and AssemblyFileVersion in AssemblyInfo.cs</p></figcaption></figure>
+3. Rebuild the entire solution (not just the Gum project)
 4. Navigate to the location where Gum is built
 5. Go up one folder so that you are in the Debug folder, and you see the Data folder
 6. Right-click on Data and Zip it. This will produce a .zip that has a Data folder inside - this matches the expected folder structure from previous builds so make sure this is the case
 7. Rename this Gum.zip
 8. Manually upload this to FlatRedBall's Files folder using sftp to /home/frbfiles/files.flatredball.com/content/Tools/Gum/Gum.zip
 9. Create a new release on Github - see the previous releases for examples
+10. Announce on FRB discord
+11. Announce on MonoGame discord
+12. Announce on MGE discord
+13. Announce on twitter
 
 This file is used when creating FlatRedBall builds, so Gum must first be built and uploaded to the FlatRedBall FTP prior to running the FlatRedBall Github Actions. Otherwise, an old Gum will be included in FRBDK. This may be okay depending on if Gum has important new features.
