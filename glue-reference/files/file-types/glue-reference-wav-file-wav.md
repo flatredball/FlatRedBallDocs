@@ -36,7 +36,7 @@ ExplosionSound.Volume = 0.5f;
 
 To change whether a .wav file is loaded as a SoundEffect or SoundEffectInstance, change its **RuntimeType** as shown in the following image:
 
-![Changing a .wav's RuntimeType](../../../.gitbook/assets/20\_22\_24\_42.png)
+![Changing a .wav's RuntimeType](../../../.gitbook/assets/20_22_24_42.png)
 
 {% hint style="info" %}
 If you need to interrupt a sound after it has started playing, you must use a SoundEffectInstance.
@@ -52,7 +52,7 @@ To add a .wav file to FRB:
 
 You should see the .wav file in your project:
 
-![WAV file in the Enemy entity](../../../.gitbook/assets/20\_22\_27\_04.png)
+![WAV file in the Enemy entity](../../../.gitbook/assets/20_22_27_04.png)
 
 Alternatively you can drop WAV files into your project from Windows Explorer:
 
@@ -82,7 +82,11 @@ For more information on SoundEffect in FlatRedBall, see the [SoundEffect page](.
 
 ### WAV and XNB Files
 
-FlatRedBall MonoGame does not require WAV files to be built and loaded from XNB files, but this is optionally supported. XNB files are built by the MonoGame content pipeline. If using the content pipeline, then the WAV file is built into an XNB file when initially added and also whenever the WAV file ever changes.
+FlatRedBall MonoGame does not require WAV files to be built and loaded from XNB files, but this is optionally supported. XNB files are built by the MonoGame content pipeline.
+
+If using the content pipeline, then the WAV file is built into an XNB file when initially added and also whenever the WAV file ever changes.
+
+<figure><img src="../../../.gitbook/assets/image (366).png" alt=""><figcaption><p>.wav file with UseContentPipeline set to True</p></figcaption></figure>
 
 If using the content pipeline, WAV files are added as XNB files to your Visual Studio project. For example, the following SoundEffectFile.wav is part of GameScreen:
 
