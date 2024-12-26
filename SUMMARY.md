@@ -489,6 +489,7 @@
         * [MasterSoundVolume](api/flatredball/audio/audiomanager/mastersoundvolume.md)
         * [Play](api/flatredball/audio/audiomanager/play.md)
         * [PlaySong](api/flatredball/audio/audiomanager/playsong.md)
+        * [PlaySongs](api/flatredball/audio/audiomanager/playsongs.md)
         * [StopSong](api/flatredball/audio/audiomanager/stopsong.md)
       * [PositionedSound](api/flatredball/audio/positionedsound.md)
       * [Sound](api/flatredball/audio/sound.md)
