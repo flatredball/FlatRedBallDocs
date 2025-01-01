@@ -230,6 +230,7 @@
         * [uniformrowtype](glue-reference/files/file-types/glue-reference-csv/uniformrowtype.md)
       * [Effect (.fx, .fxb)](glue-reference/files/file-types/effect-.fx.md)
       * [Font (.fnt)](glue-reference/files/file-types/font-.fnt.md)
+      * [JSON (.json)](glue-reference/files/file-types/json-.json.md)
       * [Model (.fbx)](glue-reference/files/file-types/model-.fbx.md)
       * [MP3](glue-reference/files/file-types/glue-reference-mp3-file-mp3.md)
       * [Node Network (.nntx)](glue-reference/files/file-types/nodenetwork-nntx.md)
