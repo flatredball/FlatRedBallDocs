@@ -823,6 +823,7 @@
       * [FileManager](api/flatredball/io/filemanager/README.md)
         * [BinarySerialize](api/flatredball/io/filemanager/binaryserialize.md)
         * [CloneObject](api/flatredball/io/filemanager/cloneobject.md)
+        * [FromFileText](api/flatredball/io/filemanager/fromfiletext.md)
         * [GetAllFilesInDirectory](api/flatredball/io/filemanager/getallfilesindirectory.md)
         * [GetUserFolder](api/flatredball/io/filemanager/getuserfolder.md)
         * [InitializeUserFolder](api/flatredball/io/filemanager/initializeuserfolder.md)

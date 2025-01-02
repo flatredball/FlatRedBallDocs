@@ -134,12 +134,15 @@ The steps above ultimately add the JSON file to your .csproj file. If you are co
 Now the file is part of your project, so you can load it in your custom code. For example, the following code could be used to load the data in Game1.cs:
 
 ```csharp
-var jsonContents = System.IO.File.ReadAllText("Content/GlobalContent/EnemyData.json");
+var jsonContents = FlatRedBall.IO.FileManager.FromFileText(
+    "Content/GlobalContent/EnemyData.json");
 
 // This uses JSON.NET but you can also use System.Text.Json:
 var enemyData = Newtonsoft.Json.JsonConvert.DeserializeObject<EnemyData>(
     jsonContents);
 ```
+
+The contents of the JSON are loaded using FromFileText. For more information, see the [FileManager.FromFileText](../../../api/flatredball/io/filemanager/fromfiletext.md) page.
 
 We can add a breakpoint to verify that enemyData contains the data we added to our JSON file:
 
