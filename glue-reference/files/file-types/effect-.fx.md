@@ -100,6 +100,14 @@ Effect files require the use of the MonoGame Content Pipeline. If you are using 
 
 <figure><img src="../../../.gitbook/assets/image (211).png" alt=""><figcaption><p>Effect file using content pipeline</p></figcaption></figure>
 
+#### Unable to load DLL 'libmojoshader\_64.dll' or one of its dependencies
+
+If FlatRedBall is displaying output about not being able to load libmojoshader\_64.dll then you need to install Visual C++ Redistributable Packages for Visual Studio 2013. For more information, see the [Downloading FlatRedBall](../../../#id-4-visual-c-redistributable-packages-for-visual-studio-2013) page.
+
+### Effect Files in Web (Kni)
+
+Effect files can be used on web projects just like effect files in MonoGame projects. The FlatRedBall Editor automatically selects the proper builder as long as the Effect file has its UseContentPipeline set to true.
+
 ### Effect Files in FNA
 
 FNA does not provide a content pipeline, and use of XNA Content Pipeline is discouraged because it does not function in newer versions of Visual Studio.

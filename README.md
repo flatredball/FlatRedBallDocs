@@ -14,23 +14,29 @@ At a minimum you need to install **.NET desktop development**.
 
 ![Check the .NET desktop development workload when installing Visual Studio](.gitbook/assets/2021-08-img_610caaac075b7.png)
 
-#### 2. XNA 4.0 Redistributable
+#### 2 - XNA 4.0 Redistributable
 
 [https://www.microsoft.com/en-us/download/details.aspx?id=27598](https://www.microsoft.com/en-us/download/details.aspx?id=27598) Although this is not required to build and run FlatRedBall games, it is required to use Gum, which is the preferred FlatRedBall UI tool.
 
-#### 3. .NET SDK
+#### 3 - .NET SDK
 
-FlatRedBall projects are built with .NET 8 or newer:
+FlatRedBall projects are built with .NET 8 or newer. If you are using Visual Studio then you do not need to explicitly install .NET 8. If you are using a different IDE such as Visual Studio Code, then you need to install .NET SDK 8:
 
 [https://dotnet.microsoft.com/en-us/download/dotnet/8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
-You must also install the .NET 6 SDK even if you have .NET 8 installed. This may change in a future version of FlatRedBall:
+You must also install the .NET 6 SDK even if you have .NET 8 installed since the FlatRedBall Editor relies on this version for loading projects. This may change in a future version of FlatRedBall:
 
 [https://dotnet.microsoft.com/en-us/download/dotnet/6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
 ![Install .NET SDK 6 for x64](.gitbook/assets/2023-03-img_6415bcb385f79.png)
 
-Newer Versions of Visual Studio (as of version 17.5.1) install .NET SDK 7.0 or newer which have a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you need to manually install .NET 6 SDK if you don't want to use .NET 8.
+Newer Versions of Visual Studio (as of version 17.5.1) install .NET SDK 7.0 or newer which have a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you need to manually install .NET 6 SDK.
+
+#### 4 - Visual C++ Redistributable Packages for Visual Studio 2013
+
+This dependency is required to build shader files. If you are certain that you will not be using any custom shaders or post processing, then you can skip this installation. However, we recommend installing this to avoid confusing errors if you do end up using any shaders.
+
+[https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
 ### Downloading FlatRedBall
 
