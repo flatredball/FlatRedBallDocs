@@ -20,11 +20,11 @@ At a minimum you need to install **.NET desktop development**.
 
 #### 3. .NET SDK
 
-(Recommended) .NET 8 SDK&#x20;
+FlatRedBall projects are built with .NET 8 or newer:
 
-This required if you intend to create FlatRedBall Web projects or FlatRedBall iOS or Android projects. [https://dotnet.microsoft.com/en-us/download/dotnet/8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+[https://dotnet.microsoft.com/en-us/download/dotnet/8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
-(Minimum) .NET 6 SDK
+You must also install the .NET 6 SDK even if you have .NET 8 installed. This may change in a future version of FlatRedBall:
 
 [https://dotnet.microsoft.com/en-us/download/dotnet/6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
