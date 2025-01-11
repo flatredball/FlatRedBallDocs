@@ -24,6 +24,22 @@ To distribute this game, navigate to the folder where the game is built, select 
 
 This zip file can be sent to others such as testers or friends.
 
+#### Distributing Release Build
+
+To create a release build, switch your build configuration to Release. If you are linked against prebuilt .dlls or NuGet packages and you would like to include FlatRedBall release packages, see the [Release Build](release-build.md) page.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Switch to Release build</p></figcaption></figure>
+
+Verify that you can build and run your game.
+
+Next, right-click on your game and select the Publish item.
+
+<figure><img src="../../.gitbook/assets/11_10 12 16.png" alt=""><figcaption><p>Publish item</p></figcaption></figure>
+
+Select Folder unless you know how to publish to the other options.
+
+Once you finish publishing, you can zip the project.
+
 ### Distributing FlatRedBall Web Games
 
 To distribute a FlatRedBall Web project:

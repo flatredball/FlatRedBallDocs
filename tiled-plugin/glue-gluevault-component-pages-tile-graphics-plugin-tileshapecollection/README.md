@@ -220,11 +220,11 @@ If you are using partial tiles for solid collision, there are a few guidelines y
 
 Let's look at a few examples to see how these rules can be followed. The following shows a valid layout:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Valid collision with partial tiles</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Valid collision with partial tiles</p></figcaption></figure>
 
 Note that the partial collision tiles have neighbors which are either empty (0) or which are aligned perfectly (1).
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Collision following the guidelines for partial collision</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Collision following the guidelines for partial collision</p></figcaption></figure>
 
 Similarly, adjacent tiles can also be partial as long as they continue the collision, as shown in the following image:
 
