@@ -6,7 +6,7 @@ Layers can be used to control the order of visual objects on screen. Typically o
 
 Layers take priority over the Z value of objects when performing rendering. Typically Layers are used to force groups of visual objects to draw on top of other objects. For example, a HUD layer can be used to force HUD UI such as score and health bars to appear on top of everything else in a game regardless of Z value.&#x20;
 
-Layers can be added in the FlatRedBall Editor or in code through the SpriteManager. For information on how to use Layers in the FRB Editor, see [this article](../../../../glue-reference/objects/object-types/glue-reference-layer/).
+Layers can be added in the FlatRedBall Editor or in code through the SpriteManager. For information on how to use Layers in the FRB Editor, see [the FlatRedBall Editor Layer page](../../../../glue-reference/objects/object-types/glue-reference-layer/).
 
 ### Example - Creating a Layer in FlatRedBall Editor
 
@@ -18,7 +18,7 @@ To create a new Layer:
 4. Enter a name for the Layer
 5. Click **OK**
 
-<figure><img src="../../../../.gitbook/assets/2016-01-01_12-19-51.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2016-01-01_12-19-51.gif" alt=""><figcaption><p>Adding a new Layer object to the GameScreen</p></figcaption></figure>
 
 ### Layer-able Types
 
@@ -66,23 +66,12 @@ In code, layers are created through the [SpriteManager](../../spritemanager/). T
  farSprite.Z = -5;
 ```
 
-![LayeredSpriteBehindUnlayered.png](../../../../.gitbook/assets/migrated\_media-LayeredSpriteBehindUnlayered.png)
+![LayeredSpriteBehindUnlayered.png](../../../../.gitbook/assets/migrated_media-LayeredSpriteBehindUnlayered.png)
 
 ### AddToLayer Method
 
 * [SpriteManager.AddToLayer](../../../../frb/docs/index.php) - Responsible for adding SpriteFrames, Sprites, and IDrawableBatches to Layers.
 * [TextManager.AddToLayer](../../../../frb/docs/index.php) - Responsible for adding Texts to Layers.
-
-#### Adding PositionedModels to Layers
-
-Similar to [Sprite](../../../../frb/docs/index.php) and [Texts](../../../../frb/docs/index.php), [PositionedModels](../../../../frb/docs/index.php) can also be layered. The following code creates a [PositionedModel](../../../../frb/docs/index.php) and adds it to a layer.
-
-```csharp
- Layer layer = SpriteManager.AddLayer();
-
- PositionedModel model = ModelManager.AddModel(ModelShape.Sphere);
- ModelManager.AddToLayer(model, layer);
-```
 
 ### Removing Objects from Layers
 
@@ -137,11 +126,11 @@ This section discusses sorting objects (such as [Sprites](../../../../frb/docs/i
 
 ### Camera Layers
 
-See [FlatRedBall.Camera.Layer](../../../../frb/docs/index.php).
+See [FlatRedBall.Camera.Layers](../../camera/layers.md).
 
 ### Adding an Entity to a Layer
 
-If you are using [Glue](../../../../frb/docs/index.php) then you can add an Entity to a Layer. See [this article](../../../../frb/docs/index.php#Adding\_an\_Entity\_to\_a\_Layer) for information on this.
+If you are using [Glue](../../../../frb/docs/index.php) then you can add an Entity to a Layer. See [this article](../../../../frb/docs/index.php#Adding_an_Entity_to_a_Layer) for information on this.
 
 ### Controlling Destination Rectangle
 
@@ -151,4 +140,3 @@ Layers will render to the full screen by default. Layers can be adjusted to only
 
 For more information, see the [Adding Gum Components to Layers](../../../../gum/how-to-add-components-to-layers.md) page.
 
-###

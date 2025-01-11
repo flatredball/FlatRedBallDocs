@@ -2,7 +2,11 @@
 
 ### Introduction
 
-CreatesDictionary is a property that controls whether to deserialize a given CSV file to either a List or Dictionary. If you are accessing entries within a CSV according to some common key (such as the Name of an enemy type), then you should use the CreatesDictionary property to simplify access in code.&#x20;
+CreatesDictionary is a property that controls whether to deserialize a given CSV file to either a List or Dictionary. If true, the CSV file is deserialized to a Dictionary. Otherwise, it is Deserialized to a List.
+
+<figure><img src="../../../../.gitbook/assets/11_09 14 19.png" alt=""><figcaption><p>CreatesDictionary property on a CSV file</p></figcaption></figure>
+
+If you are accessing entries within a CSV according to some common key (such as the Name of an enemy type), then you should use the CreatesDictionary property to simplify access in code.&#x20;
 
 CreatesDictionary can be set on a CSV file in its properties tab or when first adding a new CSV. The following shows the option for specifying Dictionary or List when creating a new CSV:
 
@@ -18,23 +22,17 @@ Dictionaries in code require a key. This is typically the Name property which is
 
 If you have a CSV without a "required" field, then FRB cannot create a Dictionary out of the CSV. Just like any other CSV, once you have saved this file, the generated class will be added/updated.
 
-### Setting CreatesDictionary" in the Properties Tab
-
-CreatesDictionary can also be set to true in the Properties tab of a CSV file:
-
-<figure><img src="../../../../.gitbook/assets/migrated_media-CreatesDictionaryProperty.png" alt=""><figcaption></figcaption></figure>
-
 ### Accessing the Dictionary in code
 
 Now that you have created a CSV that has CreatesDictionary set to true, you can access the file in code and get instances using the Name property:&#x20;
 
-<figure><img src="../../../../.gitbook/assets/migrated_media-DictionaryInCode.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/migrated_media-DictionaryInCode.png" alt=""><figcaption><p>CSVs rows can be accessed in code using the required property</p></figcaption></figure>
 
 ### Concerns about using strings as keys
 
 You may be wondering if it is a good idea to access objects using strings as the key. For example, let's consider the following line:
 
-```
+```csharp
 int damage = GlobalContent.TestCsv["Imp"].Damage;
 ```
 
@@ -44,7 +42,7 @@ As you may have realized, this can be an unsafe line of code. What if, for examp
 
 It is common to use values form CSVs in Lists. For example, let's say that the TestCsv used above is being used in a screen where the user picks which enemies to take into battle. Your code may look something like this:
 
-```
+```csharp
 foreach(var value in GlobalContent.TestCsv.Values)
 {
    CreateButtonFor(value);
@@ -64,7 +62,7 @@ In some cases you may need to access values directly. This can happen if:
 
 Fortunately the generated code creates const string values to allow you to access values in a compile-time-protected way. For example, the code above to access the imp could be more-safely done as follows:
 
-```
+```csharp
 int damage = GlobalContent.TestCsv[TestCsv.Imp].Damage;
 ```
 
@@ -72,6 +70,6 @@ The TestCsv class has one constant for each entry in the CSV, so the code above 
 
 ### OrderedList
 
-If a CSV is loaded as a dictionary, then FlatRedBall generates an OrderedList property. this property can be useful if you would like to have your data loaded in to a Dictionary while also providing its order. One example of this usage might be to include a list of data for each level in your game. This CSV could be used to populate a level selection ListBox which should show the levels in a particular order. Keep in mind that the Dictionary collection does not guarantee preservation of order, so if you intend to show your data in the same order as the CSV, be sure to use the OrderedList property.
+If a CSV is loaded as a dictionary, then FlatRedBall generates an `OrderedList` property. this property can be useful if you would like to have your data loaded in to a Dictionary while also providing its order. One example of this usage might be to include a list of data for each level in your game. This CSV could be used to populate a level selection ListBox which should show the levels in a particular order. Keep in mind that the Dictionary collection does not guarantee preservation of order, so if you intend to show your data in the same order as the CSV, be sure to use the `OrderedList` property.
 
-Note that OrderedList is only generated if CreatesDictionary is set to true.
+Note that `OrderedList` is only generated if CreatesDictionary is set to true.

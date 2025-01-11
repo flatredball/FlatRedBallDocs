@@ -27,14 +27,21 @@ This creates the following files in your project:
 
 If you intend to use the effects as they are when created, you do not need to make any changes to these files. However, these files can also serve as a starting point for your own shaders so you may be interested in locating them.
 
-Once a shader has been added, you can add it to the global effect list. If your shader is part of Global Content Files, the addition can be performed in Game1. The following code shows how to add the shader to post processing in Game1.
+Once a shader has been added, you can add it to the Renderer's `GlobalPostProcesses` list. If your shader is part of Global Content Files, the addition can be performed in Game1. The following code shows how to add the shader to post processing in Game1.
 
 ```csharp
 // Add this after GeneratedInitialize() in Game1.cs
 var postProcess = new SaturationEffect(GlobalContent.SaturationEffect);
 Renderer.GlobalPostProcesses.Add(postProcess);
 Renderer.CreateDefaultSwapChain();
+```
 
+Alternatively, shaders can be added per-camera to enable post processing that does not apply to the entire game. For example, you may want to add a bloom effect to only your game camera, but place the UI above the bloom as shown in the following code:
+
+```csharp
+var postProcess = new BloomEffect(GlobalContent.BloomEffect);
+Camera.Main.PostProcesses.Add(postProcess);
+Camera.Main.CreateDefaultSwapChain();
 ```
 
 To use the built in GlobalPostProcessing, a SwapChain must be created. The code above creates default SwapChains for us in the `CreateDefaultSwapChain` method. For more information on SwapChains, see the [SwapChain](../../../api/flatredball/graphics/postprocessing/swapchain.md) page. If you need more control you can manually create a SwapChain as shown in the following block of code:
