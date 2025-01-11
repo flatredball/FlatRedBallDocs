@@ -1,29 +1,28 @@
-# song
+# Song
 
 ### Introduction
 
-The Song class can be used to play music in a game. The easiest way to play a song is through Glue, which requires no code. For more information on Songs in Glue, see [this page](../../../../frb/docs/index.php).
+The Song class can be used to play music in a game. The easiest way to play a song is through the FlatRedBall Editor, which requires no code. For more information on Songs in Glue, see [this page](../../../../glue-reference/files/file-types/glue-reference-mp3-file-mp3.md).
 
 ### Supported File Types
 
-|        |                                                                        |         |
-| ------ | ---------------------------------------------------------------------- | ------- |
-| Format | PC Desktop                                                             | Android |
-| MP3    | X                                                                      | X       |
-| WMA    | X                                                                      |         |
-| OGG    | X [(with this codec installed)](http://www.vorbis.com/setup\_windows/) | X       |
+| Format | PC Desktop                                                            | Android |
+| ------ | --------------------------------------------------------------------- | ------- |
+| MP3    | X                                                                     | X       |
+| WMA    | X                                                                     |         |
+| OGG    | X [(with this codec installed)](http://www.vorbis.com/setup_windows/) | X       |
 
 WAV files are not supported in FlatRedBall for music files. Instead, they are used by the [SoundEffect](../../../../frb/docs/index.php) and [SoundEffectInstance](../../../../frb/docs/index.php) classes.
 
-### Example - Glue
+### Example - Playing a Song in Code
 
-To play a song in Glue, drag+drop a file from disk into your Glue project on a Screen. It will play automatically when the screen loads. For more information about playing songs in Glue, see the [Glue MP3 page](../../../../glue-reference/files/file-types/glue-reference-mp3-file-mp3.md).
+To play a song in code, drag+drop a file from disk into your FlatRedBall project on a Screen. When your game runs the song plays automatically when the screen loads. For more information about playing songs in Glue, see the [MP3 page](../../../../glue-reference/files/file-types/glue-reference-mp3-file-mp3.md).
 
 ### Example - Manual Visual Studio/Code Loading and Playing
 
 To play a song:
 
-1. Drag a music file (MP3 or WMA) into your project's Content folder through Visual Studio. ![SongInContentProject.png](../../../../.gitbook/assets/migrated\_media-SongInContentProject.png)
+1. Drag a music file (MP3 or WMA) into your project's Content folder through Visual Studio. ![SongInContentProject.png](../../../../.gitbook/assets/migrated_media-SongInContentProject.png)
 2. Add the following code:
 
 Add the following using statements:
@@ -60,7 +59,7 @@ This error can occur in a number of cases:
 
 #### OGG song does not play (is silent)
 
-If attempting to play an .ogg file on the PC, you need to have the proper "DirectShow Filters" installed. To verify if you have them installed, attempt to play the .ogg file in Windows Media Player. If Windows Media Player does not recognize the file then you need the filters: ![OggError1.png](../../../../.gitbook/assets/migrated\_media-OggError1.png) ![OggError2.png](../../../../.gitbook/assets/migrated\_media-OggError2.png) If the song does not play, you can install the DirectShow Filders, [which can be found here](http://www.vorbis.com/setup\_windows/).
+If attempting to play an .ogg file on the PC, you need to have the proper "DirectShow Filters" installed. To verify if you have them installed, attempt to play the .ogg file in Windows Media Player. If Windows Media Player does not recognize the file then you need the filters: ![OggError1.png](../../../../.gitbook/assets/migrated_media-OggError1.png) ![OggError2.png](../../../../.gitbook/assets/migrated_media-OggError2.png) If the song does not play, you can install the DirectShow Filders, [which can be found here](http://www.vorbis.com/setup_windows/).
 
 ### Android
 
@@ -73,9 +72,3 @@ This is dependent on the Android phone. Just because it plays on one phone doesn
 ```
 Java.IO.IOException: Exception of type 'Java.IO.IOException' was thrown.
 ```
-
-### Song Members
-
-* [FromUri](../../../../frb/docs/index.php)
-
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../frb/forum.md) for a rapid response.
