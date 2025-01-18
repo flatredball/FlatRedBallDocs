@@ -28,12 +28,28 @@ if (InputManager.Mouse.ButtonDoubleClicked(Mouse.MouseButtons.LeftButton))
 }
 ```
 
-#### Mouse Scroll Wheel
+### Mouse Scroll Wheel
 
-The mouse scroll wheel is exposed through the InputManager.Mouse.ScrollWheel property. The ScrollWheel property returns the number of "clicks" that the scroll wheel has moved since last frame. The following code controls the Z position of the camera based on the ScrollWheel property.
+The mouse scroll wheel is exposed through the `InputManager.Mouse.ScrollWheel` property. The `ScrollWheel` property returns the number of "clicks" that the scroll wheel has moved since last frame. The following code controls the Z position of the camera based on the `ScrollWheel` property.
+
+You can check whether the value is positive or negative to check if it's scrolled in or out:
 
 ```csharp
-SpriteManager.Camera.Z -= InputManager.Mouse.ScrollWheel;
+var scrollWheelChange = InputManager.Mouse.ScrollWheelChange;
+if(scrollWheelChange > 0)
+{
+    // user scrolled the wheel "up"
+}
+else if(scrollWheelChange < 0)
+{
+    // user scrolled the wheel "down"
+}
+```
+
+The following code shows how you might move a 3D Camera (zoom in or out) based on the scroll wheel.
+
+```csharp
+Camera.Main.Z -= InputManager.Mouse.ScrollWheelChange;
 ```
 
 ### Mouse Pixel Coordinates
