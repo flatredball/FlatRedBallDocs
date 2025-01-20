@@ -38,17 +38,7 @@ These serve as an alternative to doing custom collision-related logic, and provi
 
 The `Items` property contains the name of items that the IColliable has collided with, while the `Objects` contains a reference to the objects that the ICollidable has collided with. If you are using the FlatRedBall Editor, these properties are automatically generated in your entities, and these are automatically filled through collision relationships. For example, if the Player collides with SolidCollision in the GameScreen, then the items properties would contain the string "SolidCollision". The objects properties contains a reference to the TileShapeCollection.
 
-The following code shows how to check whether the player has exited a collision area with the name PoisonCollision:
-
-```csharp
-// assuming IsInPoison is a property that is set to true when collision happens
-if(IsInPoison and this.ItemsCollidedAgainst.Contains("PoisonCollision") == false)
-{
-    HandleExitingPoison();
-}
-```
-
-Alternatively, the Last properties can be used to identify if a changed was made this frame. For example, the following would detect both entering and exiting poison, and does not require the use of additional properties:
+The following code shows how to check whether the player has entered or exited a collision area with the name PoisonCollision:
 
 ```csharp
 var poisonName = "PoisonCollision";
