@@ -36,7 +36,13 @@ Classes which implement ICollidable must implement the following four properties
 
 These serve as an alternative to doing custom collision-related logic, and provide some additional functionality such as detecting when an entity exits collision.
 
-The `Items` property contains the name of items that the IColliable has collided with, while the `Objects` contains a reference to the objects that the ICollidable has collided with. If you are using the FlatRedBall Editor, these properties are automatically generated in your entities, and these are automatically filled through collision relationships. For example, if the Player collides with SolidCollision in the GameScreen, then the items properties would contain the string "SolidCollision". The objects properties contains a reference to the TileShapeCollection.
+The `Items` property contains the name of items that the IColliable has collided with, while the `Objects` contains a reference to the objects that the ICollidable has collided with. If you are using the FlatRedBall Editor, these properties are automatically generated in your entities, and these are automatically filled through collision relationships. For example, if the Player collides with SolidCollision in the GameScreen, then the items properties would contain the string "SolidCollision". The objects properties would a reference to the TileShapeCollection.
+
+The instances contained in the Items and Objects lists dare the top-most ICollidable-implementing instances that have been collided against. In short, TileShapeCollections and ShapeCollections appear in these lists, but only individual entity instances (rather than their entire list) appear in these lists. items are:
+
+* TileShapeCollections - Since TileShapeCollection implements ICollidable, the name and reference to the TileShapeCollection are added to the appropriate lists. The individual shapes (AxisAlignedRectangle and Polygon) do do not appear in the lists
+* ShapeCollections - The entire ShapeCollection name and reference are added to the appropriate lists. Individual shapes do not appear in the lists, just like with TileShapeCollections
+* Collidable Entity Lists - Individual items in collidable name and references appear in the appropriate lists. The entire list is not added to the list since the list itself does not implement the ICollidable interface.
 
 The following code shows how to check whether the player has entered or exited a collision area with the name PoisonCollision:
 
