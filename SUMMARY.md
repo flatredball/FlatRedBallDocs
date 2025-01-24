@@ -916,6 +916,7 @@
           * [SortAscending](api/flatredball/math/geometry/shapecollection/sortascending.md)
           * [Visible](api/flatredball/math/geometry/shapecollection/visible.md)
         * [ShapeManager](api/flatredball/math/geometry/shapemanager/README.md)
+          * [AddToLayer](api/flatredball/math/geometry/shapemanager/addtolayer.md)
           * [Remove](api/flatredball/math/geometry/shapemanager/remove.md)
           * [ShapeDrawingOrder](api/flatredball/math/geometry/shapemanager/shapedrawingorder.md)
         * [ShapeMerger](api/flatredball/math/geometry/shapemerger.md)
