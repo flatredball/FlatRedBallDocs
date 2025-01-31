@@ -6,7 +6,7 @@ The Draw function performs all FlatRedBall rendering. This function is automatic
 
 ### Breaking down Draw
 
-The Draw function can be broken down into two calls: [UpdateDependencies](../../../frb/docs/index.php) and [RenderAll](renderall.md). Therefore, the following line:
+The Draw function can be broken down into two calls: UpdateDependencies and [RenderAll](renderall.md). Therefore, the following line:
 
 ```csharp
 FlatRedBallServices.Draw();
