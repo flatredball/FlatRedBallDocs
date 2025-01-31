@@ -864,6 +864,7 @@
         * [Circle](api/flatredball/math/geometry/circle/README.md)
           * [CollideAgainst](api/flatredball/math/geometry/circle/collideagainst.md)
           * [CollideAgainstBounce](api/flatredball/math/geometry/circle/collideagainstbounce.md)
+          * [CollideAgainstMove](api/flatredball/math/geometry/circle/collideagainstmove.md)
           * [IsPointInside](api/flatredball/math/geometry/circle/ispointinside.md)
           * [LastCollisionTangent](api/flatredball/math/geometry/circle/lastcollisiontangent.md)
           * [LastMoveCollisionReposition](api/flatredball/math/geometry/circle/lastmovecollisionreposition.md)

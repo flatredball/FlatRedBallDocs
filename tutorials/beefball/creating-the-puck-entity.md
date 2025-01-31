@@ -14,14 +14,14 @@ To create a Puck Entity:
 4. Check the **Circle** check box under **Collisions**
 5.  Verify that **ICollidable** is checked (it should be checked automatically when **Circle** is checked)
 
-    ![](../../.gitbook/assets/2021-07-img\_60fdc0904b245.png)
+    ![Options for creating a Puck entity](../../.gitbook/assets/2021-07-img_60fdc0904b245.png)
 6. Click **OK**
 
 The Puck entity should appear in the FlatRedBall Editor.
 
-![](../../.gitbook/assets/2021-07-img\_60fdcb7c2a8d0.png)
+![](../../.gitbook/assets/2021-07-img_60fdcb7c2a8d0.png)
 
-For more information on how to perform the above steps, you may want to review the tutorial which created the PlayerBall Entity [here](../../frb/docs/index.php).
+For more information on how to perform the above steps, you may want to review the tutorial which created the [first entity (Player)](creating-an-entity.md).
 
 ### Differentiating the Puck
 
@@ -34,7 +34,7 @@ Currently our Puck and PlayerBall both have Circle bodies, and by default the Ci
 5. Change the value to **Red** using the drop-down
 6. Change the **Radius** value to **6**
 
-![](../../.gitbook/assets/2021-07-img\_60fdcaad89ad8.png)
+![](../../.gitbook/assets/2021-07-img_60fdcaad89ad8.png)
 
 **Computer settings matter:** If your computer is set up so the decimal separator is the comma ',' instead of the period '.' then you should enter values using the ',' character. Unlike C# code, Glue obeys your computer's language settings.
 
@@ -42,7 +42,7 @@ Currently our Puck and PlayerBall both have Circle bodies, and by default the Ci
 
 By default the FlatRedBall Editor adds lists of newly-created entities to the GameScreen. Therefore, you should already have a PuckList in your GameScreen.
 
-![](../../.gitbook/assets/2023-08-img\_64cbe9fc4ec5c.png)
+![](../../.gitbook/assets/2023-08-img_64cbe9fc4ec5c.png)
 
 If you unchecked the option, or if you would like to know how to manually add a PuckList to your GameScreen, the following section shows how to add a list. **This is not necessary if you kept the defaults.**
 
@@ -52,18 +52,18 @@ If you unchecked the option, or if you would like to know how to manually add a 
 2. Select the **Quick Actions** tab
 3.  Click the **Add Puck List to GameScreen** button
 
-    ![](../../.gitbook/assets/2021-07-img\_60fdc158af7ad.png)
+    ![](../../.gitbook/assets/2021-07-img_60fdc158af7ad.png)
 
 ### Adding a Puck Instance
 
 1. Select the **Puck** entity
 2.  Click the **Add Puck Instance to GameScreen** button
 
-    ![](../../.gitbook/assets/2021-07-img\_60fdc1cc87873.png)
+    ![](../../.gitbook/assets/2021-07-img_60fdc1cc87873.png)
 
 Now the GameScreen has a list and a single Puck.
 
-![](../../.gitbook/assets/2021-07-img\_60fdc2338ca81.png)
+![](../../.gitbook/assets/2021-07-img_60fdc2338ca81.png)
 
 ### Positioning your objects
 
@@ -72,7 +72,7 @@ If you run your game you'll notice that the PlayerBallInstance and PuckInstance 
 1. Select the PlayerBall1 object under your GameScreen
 2. Change the X value to -180
 
-![](../../.gitbook/assets/2021-07-img\_60fdc27406b6b.png)
+![](../../.gitbook/assets/2021-07-img_60fdc27406b6b.png)
 
 ### Puck Collision
 
@@ -120,6 +120,6 @@ Currently the Puck moves indefinitely after being hit. We'll assign the Drag val
 5. Select the value **Drag**
 6. Enter a value of **0.4** for **Drag**
 
-![](../../.gitbook/assets/2021-07-img\_60fdc59ea563f.png)
+![](../../.gitbook/assets/2021-07-img_60fdc59ea563f.png)
 
 Now the Puck slows down over time just like the PlayerBall.
