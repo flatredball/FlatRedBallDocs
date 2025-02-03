@@ -11,13 +11,13 @@ To define a path in the FlatRedBall Editor:
 1. Add a new object to a Screen or Entity
 2.  Select **Path** as the type
 
-    ![](../../../../.gitbook/assets/2021-11-img\_61927e51d938c.png)
+    ![](../../../../.gitbook/assets/2021-11-img_61927e51d938c.png)
 3.  Select the newly-created Path and click on the Variables tab
 
-    ![](../../../../.gitbook/assets/2021-11-img\_61927e9eec6be.png)
+    ![](../../../../.gitbook/assets/2021-11-img_61927e9eec6be.png)
 4.  Click the Add to Path button to add segments to the path
 
-    ![](../../../../.gitbook/assets/2021-11-img\_61927eccef025.png)
+    ![](../../../../.gitbook/assets/2021-11-img_61927eccef025.png)
 
 ### Example - Creating a Path in Code
 
@@ -32,7 +32,7 @@ Paths can also be created or modified in code. Paths are built through move, lin
 
 Typically the Relative methods are recommend over the absolute methods, as this allows paths to be shifted. The FlatRedBall Editor only provides access to the Relative methods. The following code shows how to construct a path in code:
 
-```
+```csharp
 var pathInstance = new FlatRedBall.Math.Paths.Path();
 pathInstance.LineToRelative(50, 50);
 pathInstance.ArcToRelative(0, -100, -MathHelper.ToRadians(180));
@@ -40,7 +40,11 @@ pathInstance.MoveToRelative(0, -100);
 pathInstance.LineToRelative(200, 0);
 ```
 
-![](../../../../.gitbook/assets/2021-11-img\_6193daaacff55.png)
+![](../../../../.gitbook/assets/2021-11-img_6193daaacff55.png)
+
+{% hint style="warning" %}
+Calling methods like LineToRelative, ArcToRelative, and MoveToRelative updates the internal path object's values used to calculate positions. Once segments have been added to a Path, the segments should not be directly modified. To modify segments, create a new Path.
+{% endhint %}
 
 ### Example - Visualizing Paths in Edit Mode
 
@@ -49,7 +53,7 @@ Paths can be visualized using EditorVisuals when the game is in Edit Mode. This 
 1. Open the Screen or Entity which has the Path
 2. Add a partial CustomActivityEditMode with the following code:
 
-```
+```csharp
 partial void CustomActivityEditMode()
 {
     EditorVisuals.DrawPath(PathInstance);
@@ -64,7 +68,7 @@ The Path will now update in realtime as it is edited.
 
 Paths by themselves do not provide the ability to change the velocity of an object, but they do provide a method PointAtLength which can be used to position an object. Typically a variable is used to keep track of the distance that an object has moved along the path. This value can be modified every frame, then it can be used to determine the position of an object along the path. For example, the following code shows how to move a circle along a path. Pressing the space bar resets the distance value.
 
-```
+```csharp
 float DistanceAlongPath = 0;
 float MovementSpeed = 80;
 void CustomActivity(bool firstTimeCalled)
@@ -79,13 +83,13 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![](../../../../.gitbook/assets/2021-11-15\_09-00-17.gif)
+![](../../../../.gitbook/assets/2021-11-15_09-00-17.gif)
 
 ### Example - TangentAtLength
 
 The TangentAtLength returns a Vector2 describing the unit vector parallel (tangent) to the path at the argument length. This can be used to determine the velocity of an object moving along the path. The following code shows how to draw a line displaying the tangent at length.
 
-```
+```csharp
 Line line;
 void CustomInitialize()
 {
