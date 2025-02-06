@@ -28,7 +28,7 @@ This zip file can be sent to others such as testers or friends.
 
 To create a release build, switch your build configuration to Release. If you are linked against prebuilt .dlls or NuGet packages and you would like to include FlatRedBall release packages, see the [Release Build](release-build.md) page.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Switch to Release build</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Switch to Release build</p></figcaption></figure>
 
 Verify that you can build and run your game.
 
@@ -50,13 +50,13 @@ To distribute a FlatRedBall Web project:
 3.  Select **Build** -> **Publish YourProjectName**\
 
 
-    <figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
 4. If asked, select the option to publish to a Folder unless you are familiar publishing with the other options
 5. Confirm the folder where you would like to publish, then click **Finish**
 6.  Click the Publish button on the Publish tab\
 
 
-    <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Click the Publish button</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Click the Publish button</p></figcaption></figure>
 7. Wait for your project to finish building
 
 After the project finishes building, click the **Navigate** link.&#x20;

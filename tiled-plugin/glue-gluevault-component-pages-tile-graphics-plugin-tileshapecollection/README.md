@@ -220,15 +220,15 @@ If you are using partial tiles for solid collision, there are a few guidelines y
 
 Let's look at a few examples to see how these rules can be followed. The following shows a valid layout:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Valid collision with partial tiles</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Valid collision with partial tiles</p></figcaption></figure>
 
 Note that the partial collision tiles have neighbors which are either empty (0) or which are aligned perfectly (1).
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Collision following the guidelines for partial collision</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p>Collision following the guidelines for partial collision</p></figcaption></figure>
 
 Similarly, adjacent tiles can also be partial as long as they continue the collision, as shown in the following image:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Valid collision with neighbors continuing the collision</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Valid collision with neighbors continuing the collision</p></figcaption></figure>
 
 The following would not be a valid collision because the neighbor to the edges of the solid collision do not match.
 
@@ -236,8 +236,8 @@ The following would not be a valid collision because the neighbor to the edges o
 
 We can see that the top tiles in the second and third tiles do not align properly, as shown by the following image:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Invalid collision due to the solid collision edges not matching</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Invalid collision due to the solid collision edges not matching</p></figcaption></figure>
 
 Partial tiles can connect to adjacent partial tiles even if the edges do not meet at the corner of the grid. For example the following layout is valid:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>

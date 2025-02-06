@@ -84,7 +84,7 @@ Cameras with 3D perspective result in objects with positive Z values drawing lar
 
 Texture filtering modifies the way textures are rendered by Sprites. By default, FlatRedBall uses **Point** filtering. Linear filtering applies a blur effect when objects Sprites are drawn larger than the native resolution, or if the game is zoomed in.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Texture Filter options in the Display Settings tab</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Texture Filter options in the Display Settings tab</p></figcaption></figure>
 
 The following image shows the difference between Point and Linear filtering:
 

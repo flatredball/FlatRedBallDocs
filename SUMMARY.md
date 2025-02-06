@@ -2,6 +2,7 @@
 
 * [🖥️ Downloading FlatRedBall](README.md)
 * [🏗️ Building FlatRedBall From Source](flatredball-source.md)
+  * [Linking Games to FlatRedBall Engine Source](flatredball-source/linking-games-to-flatredball-engine-source.md)
   * [Linking FNA](flatredball-source/linking-fna.md)
 * [❓ Need Help?](help.md)
 * [✨ FlatRedBall Features](flatredball-features.md)
