@@ -5,7 +5,7 @@
 All of FlatRedBall, including the editor and the core engine, is open source. If you are using FlatRedBall in your game, you may want to use source. Specifically you may want to:
 
 1. Build the FlatRedBall Editor (aka Glue) from source to get the most up-to-date features and code generation
-2. Link your game to source to improve debugging
+2. Link your game to source to improve debugging. For information on how to do this, see the [Linking Games to FlatRedBall](flatredball-source/linking-games-to-flatredball-engine-source.md) page.
 
 ### Building FlatRedBall from source is not required to use FlatRedBall.&#x20;
 
