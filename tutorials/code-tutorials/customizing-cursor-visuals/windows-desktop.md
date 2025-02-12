@@ -20,10 +20,14 @@ Mouse.SetCursor(customCursor);
 
 For more information, see the following links:
 
-* [https://monogame.net/api/Microsoft.Xna.Framework.Input.Mouse/#setcursor-mousecursor](https://monogame.net/api/Microsoft.Xna.Framework.Input.Mouse/#setcursor-mousecursorhttps://monogame.net/api/Microsoft.Xna.Framework.Input.MouseCursor/#fromtextured-textured-int-int)
-* [https://monogame.net/api/Microsoft.Xna.Framework.Input.MouseCursor/#fromtextured-textured-int-int](https://monogame.net/api/Microsoft.Xna.Framework.Input.Mouse/#setcursor-mousecursorhttps://monogame.net/api/Microsoft.Xna.Framework.Input.MouseCursor/#fromtextured-textured-int-int)
+* [https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.Mouse.html#Microsoft\_Xna\_Framework\_Input\_Mouse\_SetCursor\_Microsoft\_Xna\_Framework\_Input\_MouseCursor\_](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.Mouse.html#Microsoft_Xna_Framework_Input_Mouse_SetCursor_Microsoft_Xna_Framework_Input_MouseCursor_)
+* [https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.MouseCursor.html](https://docs.monogame.net/api/Microsoft.Xna.Framework.Input.MouseCursor.html)
 
 ### Example Code - Changing the Cursor using Windows Forms and .cur File
+
+{% hint style="info" %}
+This approach only worked with the original XNA engine, and may work in the future if FRB adds support for MonoGame DirectX. This does not work with DesktopGL projects.
+{% endhint %}
 
 The following code loads a .cur file and sets the window's default cursor:
 
@@ -35,6 +39,10 @@ asForm.Cursor = cursor;
 ```
 
 ### Example Code - Changing the Cursor using Windows Forms and .png File
+
+{% hint style="info" %}
+This approach only worked with the original XNA engine, and may work in the future if FRB adds support for MonoGame DirectX. This does not work with DesktopGL projects.
+{% endhint %}
 
 .cur files have a 32x32 pixel size limit. This can be bypassed by loading a .png into a Bitmap object, then using that object to construct a Cursor, as shown in the following code:
 
