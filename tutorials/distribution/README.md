@@ -53,16 +53,20 @@ To distribute a FlatRedBall Web project:
     <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
 
     1. If the Publish option is not enabled, be sure that your game is not running, and select the project in the Solution Explorer
-4.  If asked, select the option to publish to a Folder unless you are familiar publishing with the other options\
+4.  If you have existing "profiles" which are not folder, then click to add a new profile\
+
+
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>If needed, create a new profile</p></figcaption></figure>
+5.  If asked, select the option to publish to a Folder unless you are familiar publishing with the other options\
 
 
     <figure><img src="../../.gitbook/assets/19_05 16 41.png" alt=""><figcaption><p>Select the Folder option to create a build locally which can be uploaded manually</p></figcaption></figure>
-5. Confirm the folder where you would like to publish, then click **Finish**
-6.  Click the Publish button on the Publish tab\
+6. Confirm the folder where you would like to publish, then click **Finish**
+7.  Click the Publish button on the Publish tab\
 
 
     <figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Click the Publish button</p></figcaption></figure>
-7. Wait for your project to finish building
+8. Wait for your project to finish building
 
 After the project finishes building, click the **Navigate** link.&#x20;
 

@@ -14,6 +14,15 @@ Once you have published your build through Visual Studio, you should have a fold
 
 <figure><img src="../../.gitbook/assets/image (327).png" alt=""><figcaption><p>Example published web project</p></figcaption></figure>
 
+Note that at the time of this writing itch.io does not support .br (brotli compressed) files. These and .gz files can be removed to reduce the size of your build. To do this:
+
+1. Search for .br files in your wwwroot folder
+2. Delete all .br files
+3. Repeat the search for .gz files in your wwwroot folder
+4. Delete all .gz files
+
+
+
 Open the wwwroot and create a .zip file with the contents.
 
 <figure><img src="../../.gitbook/assets/image (332).png" alt=""><figcaption><p>Compress the contents of your wwwroot</p></figcaption></figure>

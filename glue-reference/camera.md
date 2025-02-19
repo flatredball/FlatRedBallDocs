@@ -59,7 +59,7 @@ Notice that if the game resolution and aspect ratio do not match, the window wil
 
 For example, we can set the following values:
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Aspect ratio values not matching the game resolution</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Aspect ratio values not matching the game resolution</p></figcaption></figure>
 
 These settings produce a game with the following properties:
 
@@ -68,7 +68,7 @@ These settings produce a game with the following properties:
 * The game maintains a 16:9 aspect ratio
 * The game will always display an in-game height of 600 units
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>16:9 game displayed in a window that is 400x600</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>16:9 game displayed in a window that is 400x600</p></figcaption></figure>
 
 ### Perspective
 

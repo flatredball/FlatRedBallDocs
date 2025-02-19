@@ -9,11 +9,11 @@ To add the FRB source to your project:
 3.  Select the **Project** -> **Link Game to FRB Source** menu item\
 
 
-    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Link game to FRB source menu item</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Link game to FRB source menu item</p></figcaption></figure>
 4.  The **Add FRB Source** tab appears, showing a text box for FlatRedBall and Gum root folders. If your current project is also a Git project which is cloned to the same folder as FlatRedBall and Gum, then the FRB Editor attempts to fill in the file paths.\
 
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Add FRB Source tab in the FRB Editor adds all necessary projects to your game's solution</p></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Add FRB Source tab in the FRB Editor adds all necessary projects to your game's solution</p></figcaption></figure>
 
 
 5. If your paths are blank or incorrect, use the ... button to select the file paths for each repository. Select the root folder for where Gum and FRB repositories.
