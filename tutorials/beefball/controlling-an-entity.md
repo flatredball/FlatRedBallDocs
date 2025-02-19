@@ -17,7 +17,7 @@ First we need to define which controls are needed in our game. Our PlayerBall re
 
 We'll write the PlayerBall so that it works with any input device, whether that's Xbox 360 controller, Keyboard, or any other device. To add code to PlayerBall, double click **PlayerBall.cs** in Visual Studio. This is located in your project's **Entities** folder.
 
-![](../../.gitbook/assets/2022-01-img\_61d31a7f303e9.png)
+![](../../.gitbook/assets/2022-01-img_61d31a7f303e9.png)
 
 Modify the **PlayerBall.cs** file so it contains two input properties as follows:
 
@@ -73,7 +73,7 @@ public partial class GameScreen
 
 Notice that the object we are assigning code to (PlayerBall1) matches the name of the entity in the editor. FlatRedBall objects in the editor always have a matching name in code, as shown in the following image:
 
-![PlayerBall1 name in code](../../.gitbook/assets/2022-01-img\_61d31b3936349.png)
+![PlayerBall1 name in code](../../.gitbook/assets/2022-01-img_61d31b3936349.png)
 
 For more information on the Keyboard class, see [the Keyboard page](../../api/flatredball/input/keyboard/).
 
@@ -116,7 +116,7 @@ If we run the game now we can control the player with the W, A, S, and D keys:
 
 ### Adding Gamepad Controls
 
-The benefit of using the input interfaces (I2DInput and IPressableInput ) is that the input device being used can be set or changed without any code changes in the entity. For example, we can modify the GameScreen to optionally use an gamepad if connected, otherwise it falls back to using the keyboard. To add support for keyboard and gamepad controls, open **GameScreen.cs** and Modify CustomActivity as follows:
+The benefit of using the input interfaces (I2DInput and IPressableInput ) is that the input device being used can be set or changed without any code changes in the entity. For example, we can modify the GameScreen to optionally use an gamepad if connected, otherwise it falls back to using the keyboard. To add support for keyboard and gamepad controls, open **GameScreen.cs** and Modify CustomInitialize as shown in the following code:
 
 ```csharp
 void CustomInitialize()
