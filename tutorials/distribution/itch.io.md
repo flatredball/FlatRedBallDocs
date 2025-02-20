@@ -21,7 +21,7 @@ Note that at the time of this writing itch.io does not support .br (brotli compr
 3. Repeat the search for .gz files in your wwwroot folder
 4. Delete all .gz files
 
-
+<figure><img src="../../.gitbook/assets/19_05 39 27.gif" alt=""><figcaption><p>Search for *.br, select all files, then delete all files</p></figcaption></figure>
 
 Open the wwwroot and create a .zip file with the contents.
 
