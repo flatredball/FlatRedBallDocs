@@ -4,7 +4,7 @@
 
 To add the FRB source to your project:
 
-1. Make sure you have already cloned the **FlatRedBall** and **Gum** repositories. We recommend using Github for Desktop and cloning to the default location so that your game and FlatRedBall are sibling folder sin the same parent folder.&#x20;
+1. Make sure you have already cloned the **FlatRedBall** and **Gum** repositories. We recommend using Github for Desktop and cloning to the default location so that your game and FlatRedBall are sibling folders in the same parent folder. For more information on cloning FlatRedBall, see the [main Building FlatRedBall From Source page](../flatredball-source.md#downloading-flatredball-source). For more information on cloning Gum, see [this section](../flatredball-source.md#downloading-gum-source) on the main Building FlatRedBall From Source page.
 2. Open your project in the FlatRedBall Editor
 3.  Select the **Project** -> **Link Game to FRB Source** menu item\
 
