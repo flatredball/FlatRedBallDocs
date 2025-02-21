@@ -17,6 +17,8 @@ To add the FRB source to your project:
 
 
 5. If your paths are blank or incorrect, use the ... button to select the file paths for each repository. Select the root folder for where Gum and FRB repositories.
+   1. The FRB Root Folder is the folder where FlatRedBall is cloned locally. For example, if you use the default folders when cloning in Github Desktop, this would be `<Documents Folder>\GitHub\FlatRedBall\` . This folder contains the root-most FlatRedBall files like LICENSE and README.doc
+   2. The Gum Root Folder is the folder where Gum is cloned locally. For example, if you use the default folders when cloning in Github Desktop, this would be `<Documents Folder>\GitHub\Gum\` . This folder contains the root-most Gum files like Gum.sln
 6. If you are planning to use Gum Skia, check the option
 7. Click **Link to Source**
 8. After your project is linked, the **Add FRB Source** tab will disappear
