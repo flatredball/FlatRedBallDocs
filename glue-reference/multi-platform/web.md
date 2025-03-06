@@ -99,6 +99,7 @@ As of August 2024 FlatRedBall Web is a new platform. The following are known lim
 #### Audio
 
 * The user must interact with the browser before audio plays. We recommend a loading/title screen that asks the user to click to continue
+* MediaPlayer.MediaStateChanged is not implemented when a song automatically loops. This issue can be tracked here: [https://github.com/kniEngine/kni/issues/2182](https://github.com/kniEngine/kni/issues/2182)
 
 #### File IO
 
