@@ -56,13 +56,19 @@ Paths can be visualized using EditorVisuals when the game is in Edit Mode. This 
 ```csharp
 partial void CustomActivityEditMode()
 {
-    EditorVisuals.DrawPath(PathInstance);
+    EditorVisuals.DrawPath(PathInstance, Vector3.Zero);
 }
 ```
 
-The Path will now update in realtime as it is edited.
+The Path updates in real time as it is edited.
 
 <figure><img src="../../../../.gitbook/assets/2021-11-15_08-43-00.gif" alt=""><figcaption></figcaption></figure>
+
+Note that the DrawPath method takes two parameters. The second parameter is the starting point. If your path is associated with a paritcular entity, you can pass the position of the entity instance into the method:
+
+```csharp
+EditorVisuals.DrawPath(PathInstance, PlayerInstance.Position);
+```
 
 ### Example - Following a Path
 
