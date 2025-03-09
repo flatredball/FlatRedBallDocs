@@ -649,3 +649,11 @@ global::Gum.Wireframe.GraphicalUiElement.CloneRenderableFunction = global::Rende
 This version modifies code generation to provide `TileShapeCollection.IsPointOnOrInside`, which checks both the inside and also the edges of the shapes in the TileShapeCollection. This addresses a problem of IsPointInside returning false for positions perfectly inbetween tiles.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 63 - AudioManager.StopSong has a bool Parameter
+
+This version modifies code generation to pass `true`  to AudioManager.StopSong when a song is destroyed when a screen is destroyed. This is desirable because if StopSong is called without a parameter, if the next screen does not play a song, then pausing/unpausing the game will resume the song from the previous screen.
+
+Initially this code is being implemented for NAudio songs, but will eventually be expanded to all songs as well.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
