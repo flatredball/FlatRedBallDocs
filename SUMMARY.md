@@ -408,7 +408,7 @@
     * [NamedTileOrderedIndexes](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/namedtileorderedindexes.md)
     * [PaintTile](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/painttile.md)
     * [PaintTileTextureCoordinates](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/painttiletexturecoordinates.md)
-    * [Parallaxx](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/parallaxx.md)
+    * [ParallaxX](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/parallaxx.md)
     * [Paste](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/glue-gluevault-component-pages-tile-graphics-plugin-paste.md)
     * [Properties](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/properties.md)
     * [RemoveQuads](tiled-plugin/flatredball-tilegraphics-mapdrawablebatch/removequads.md)
