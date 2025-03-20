@@ -61,4 +61,9 @@ These values restrict when an animation can play depending on the player's curre
 
 Min Velocity Absolute can set the minimum speed for an animation to play. For example, by default the Player has a minimum velocity set for when the Walk animation plays.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Min Velocity Absolute set to 5, which means this animation only plays if moving faster than 5 pixels per second</p></figcaption></figure>
+
+### Min Movement Input Absolute and Max Movement Input Absolute
+
+These values specify min and max bounds for when to play the animation. These rely on the input for the character which has an absolute value of 0 - 1.
+
