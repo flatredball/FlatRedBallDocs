@@ -67,3 +67,13 @@ Min Velocity Absolute can set the minimum speed for an animation to play. For ex
 
 These values specify min and max bounds for when to play the animation. These rely on the input for the character which has an absolute value of 0 - 1.
 
+### Animation Speed Assignment
+
+The Animation Speed Assignment is used to optionally set the animation speed based on input or velocity.
+
+* ForceTo1 forces the animation speed to 1
+* NoAssignment removes all assignment of animation speed so it can be modified in custom code
+* BasedOnVelocityMultiplier multiplies the specified value by the current velocity. Usually the specified value is less than 1.0f.
+* BasedOnMaxSpeedRatioMultiplier multiplies the ratio of the entity's speed (current speed / max speed) by the specified value. Usually the specified value is 1.0f.
+* BasedOnInputMultiplier sets the animation speed based on movement input values which which are between 0 and 1.
+
