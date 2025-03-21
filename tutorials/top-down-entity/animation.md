@@ -77,3 +77,7 @@ The Animation Speed Assignment is used to optionally set the animation speed bas
 * BasedOnMaxSpeedRatioMultiplier multiplies the ratio of the entity's speed (current speed / max speed) by the specified value. Usually the specified value is 1.0f.
 * BasedOnInputMultiplier sets the animation speed based on movement input values which which are between 0 and 1.
 
+### Movement Name
+
+Movement Name is used to limit an animation to a particular movement. For example, you may set the movement value to Running if the user is holding down a run button. In that case you may want to limit the movement to if the Running movement values are set.
+
