@@ -61,7 +61,7 @@ These values restrict when an animation can play depending on the player's curre
 
 Min Velocity Absolute can set the minimum speed for an animation to play. For example, by default the Player has a minimum velocity set for when the Walk animation plays.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Min Velocity Absolute set to 5, which means this animation only plays if moving faster than 5 pixels per second</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Min Velocity Absolute set to 5, which means this animation only plays if moving faster than 5 pixels per second</p></figcaption></figure>
 
 ### Min Movement Input Absolute and Max Movement Input Absolute
 
@@ -81,3 +81,23 @@ The Animation Speed Assignment is used to optionally set the animation speed bas
 
 Movement Name is used to limit an animation to a particular movement. For example, you may set the movement value to Running if the user is holding down a run button. In that case you may want to limit the movement to if the Running movement values are set.
 
+### Custom Condition
+
+The animation section of the top down Entity Input Movement tab is intended to contain all animations. Of course, games may need to assign animation using conditions that are not offered in this view. The Custom Condition text provides ultimate flexibility for assigning animations.
+
+If this text box is not empty, then its contents are directly copied into generated code for an if-statement to decide whether the animation should play. The recommended approach is to create a single `bool` variable in your code which can be used to determine if an animation should play.
+
+For example, consider an animation that plays when the player is taking damage. Your entity might have the following code:
+
+```csharp
+bool IsPlayingDamageAnimation => 
+    TimeManager.CurrentScreenTime - LastDamageTime < 1.0f;
+```
+
+IsPlayingDamageAnimation can now be used as shown in the following image:
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Combining Conditions
+
+Multiple conditions for whether an animation plays can be combined. For example, an animation might only play if the Movement Name is set to OnIce and if Min Movement Input Absolute is set to 0.3. This results in the animation only playing if both values are true.

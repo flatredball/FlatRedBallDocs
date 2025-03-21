@@ -8,7 +8,7 @@ The **New Project** menu item is used to show the new project window. **File->Ne
 
 Clicking either option shows the New Project window.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>New Project Window</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>New Project Window</p></figcaption></figure>
 
 ### Project Name
 
