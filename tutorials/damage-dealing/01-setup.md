@@ -14,13 +14,17 @@ Damage dealing is done through two interfaces: _IDamageable_ and _IDamageArea_. 
 
 If you have created a platformer or top-down project using the new project Wizard, then your Player entity already implements the IDamageable interface. You can verify this by selecting the Player entity and checking the Properties tab.
 
-![](../../.gitbook/assets/2023-01-img\_63bd897ba9088.png)
+![](../../.gitbook/assets/2023-01-img_63bd897ba9088.png)
 
 If your player does not already implement IDamageable, you can change this property in the Properties tab to true. Once this value is set, the Player will be ready to be used in the damage system.
 
 ### Setting IDamageable and IDamageArea on New Entities
 
-Any entity can implement either IDamageable or IDamageArea interfaces - or both. For example, to add a Bullet entity which implements IDamageArea:
+Any entity can implement either IDamageable or IDamageArea interfaces - or both. Let's look at some examples of how to create IDamageable and IDamageArea entities.
+
+#### Bullet - IDamageArea
+
+To add a Bullet entity which implements IDamageArea:
 
 1. Right-click on Entities
 2. Select to add a new entity
@@ -28,13 +32,17 @@ Any entity can implement either IDamageable or IDamageArea interfaces - or both.
 4. Check the option for IDamageArea
 5. Keep the Team Index to 0 (Player Team) if the bullet is created by the Player. This can be set on a per-instance basis in code if your game has bullets that can damage enemies and players (such as a shoot-'em-up game).
 
-![](<../../.gitbook/assets/01\_06 11 28.png>)
+![](<../../.gitbook/assets/01_06 11 28.png>)
 
 Your Bullet entity is now marked as a IDamageArea.
 
-![](../../.gitbook/assets/2023-01-img\_63bd8ab263f30.png)
+![](../../.gitbook/assets/2023-01-img_63bd8ab263f30.png)
 
-The Team Index specified in the **new Entity** window defines the default team index. The default team index can be overridden in code, but specifying a team index enables the FlatRedBall Editor to generate collision relationships automatically. For example, consider a game which already has a Bullet defined which uses the Team Index of 0 as shown above. If a new Entity is created using Team Index 1, then collision relationships can automatically be created. To test this out, we can add a new entity named Enemy:
+The Team Index specified in the **new Entity** window defines the default team index. The default team index can be overridden in code, but specifying a team index enables the FlatRedBall Editor to generate collision relationships automatically. For example, consider a game which already has a Bullet defined which uses the Team Index of 0 as shown above. If a new Entity is created using Team Index 1, then collision relationships can automatically be created.&#x20;
+
+#### Enemy - IDamageable
+
+To create an Enemy entity:
 
 1. Right-click on Entities
 2. Select to add a new entity
@@ -43,13 +51,13 @@ The Team Index specified in the **new Entity** window defines the default team i
 5. Change the Team Index to 1 (Enemy Team)
 6. Check the **Add Opposing Team Index Collision Relationships to GameScreen** option.
 
-![](<../../.gitbook/assets/01\_06 15 14.png>)
+![](<../../.gitbook/assets/01_06 15 14.png>)
 
 Notice that the new Entity window provides a preview of the collision relationships that are added to the GameScreen after creating the entity. This lets you check for unintended collision relationship creation. If the list of collision relationships matches what your game needs you can use the **Add Opposing Team Index Collision Relationships to GameScreen** option. Alternatively, if you would like to create your own collision relationships, you can uncheck this option.
 
 In this case the game now has an IDamageArea entity (Bullet) and IDamageable entity (Enemy) on different Team Indexes. As shown in the **new entity window**, when the Enemy is added, the FRB creates collision relationships between the Enemy and Bullet.
 
-![](../../.gitbook/assets/2023-01-img\_63be041e5eb06.png)
+![](../../.gitbook/assets/2023-01-img_63be041e5eb06.png)
 
 ### Manually Creating Collision Relationships
 
