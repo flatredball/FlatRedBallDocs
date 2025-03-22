@@ -64,6 +64,10 @@ We will handle the melee collision (Player dealing damage to Enemy) in a differe
 By checking the Add Event button, the FRB editor adds an event in GameScreen.Event.cs which we can fill in with our collision logic. To deal damage from the enemy to the player, add the following code:
 
 ```csharp
+// Add this using statement so you have access 
+// to ShouldTakeDamage and TakeDamage extension methods
+using FlatRedBall.Entities;
+
 void OnPlayerVsEnemyCollided (Entities.Player player, Entities.Enemy enemy)
 {
     // ShouldTakeDamage checks if
