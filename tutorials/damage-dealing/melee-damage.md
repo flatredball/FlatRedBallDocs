@@ -201,11 +201,11 @@ private void CustomActivity()
         
         // Note - you may want to adjust the rectangle depending on direction facing
         // For example, you can handle left vs right like this:
-        if (DirectionFacing == HorizontalDirection.Right)
+        if (DirectionFacing == TopDownDirection.Right)
         {
             MeleeCollision.RelativeX = 24;
         }
-        else if(DirectionFacing == HorizontalDirection.Left)
+        else if(DirectionFacing == TopDownDirection.Left)
         {
             MeleeCollision.RelativeX = -24;
         }
@@ -216,7 +216,7 @@ private void CustomActivity()
 }
 ```
 
-Please note the property `DirectionFacing` and enum `HorizontalDirection` will not be available if you are working in a custom, blank project created without using a platformer wizard. In that case you will need to write your own direction detection logic. As an example, assuming MovementActivity method is called in CustomActivity for every frame update and MovementInput has been instantiated in CustomInitialize in Player.cs, it could look like this:
+Please note the property `DirectionFacing` and enum TopDownDirection will not be available if you are working in a custom, blank project created without using a platformer wizard. In that case you will need to write your own direction detection logic. As an example, assuming MovementActivity method is called in CustomActivity for every frame update and MovementInput has been instantiated in CustomInitialize in Player.cs, it could look like this:
 
 ```csharp
 int MovementSpeed = 300;
@@ -232,8 +232,8 @@ void MovementActivity()
 	{
 		DirectionFacing = MovementInput.X switch
 		{
-			> 0 => HorizontalDirection.Right,
-			_ => HorizontalDirection.Left
+			> 0 => TopDownDirection.Right,
+			_ => TopDownDirection.Left
 		};
 	}
 }
