@@ -8,12 +8,12 @@ The automated build will not upload a new NuGet if the version number is not man
 
 To upload a new NuGet packages, follow these steps:
 
-1. Open MonoGameGum.sln in Visual Studio - this links MonoGame/Kni Gum and the projects it depends on. It is at \<GumRoot>\MonoGameGum.sln
-2.  Double-click GumCommon and change its Version to the {year}.{month}.{day}.{build}, where build is 1 if it's the first build of the day.\
+1. Open AllLibraries.sln in Visual Studio - this links MonoGame/FNA/Kni Gum and the projects it depends on. It is at \<GumRoot>\MonoGameGum.sln
+2.  Double-click GumCommon and find the version. Copy this, then do a global find/replace to upate all versions to the latest version.\
 
 
     <figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption><p>Setting GumCommon's Version number</p></figcaption></figure>
-3. Repeat this for GumDataTypesNet6, MonoGameGum, ToolsUtilitiesStandard, and KniGum. Be sure to use the same version for all.
+3. at the time of this writing, 7 projects will be updated.&#x20;
 4. Save the files and push the commit
 
 If Vic's computer is on, it will automatically build. If not, Vic must open it and manually run a build.
@@ -41,6 +41,7 @@ Currently Gum uses XNA and .NET 4.7.1. This will not build using dotnet build (n
 10. Announce on FRB discord
 11. Announce on MonoGame discord
 12. Announce on MGE discord
-13. Announce on twitter
+13. Announce on Kni discord
+14. Announce on twitter
 
 This file is used when creating FlatRedBall builds, so Gum must first be built and uploaded to the FlatRedBall FTP prior to running the FlatRedBall Github Actions. Otherwise, an old Gum will be included in FRBDK. This may be okay depending on if Gum has important new features.
