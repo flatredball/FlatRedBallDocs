@@ -17,11 +17,12 @@ These are explicitly invoked currently, and should only be invoked when it is ti
 
 To make a new (monthly) release:
 
-1. Run tests - make sure that FRB Editor can open a variety of projects and that they run okay. Also create new platformer and top down projects to make sure they work okay.
-   1. Kid Defense
-   2. Cranky Chibi Cthulhu
-   3. Battlecrypt Bombers
-   4. [Automated Test Project](../automated-test-project.md)
+1. Run tests - make sure that FRB Editor can open a variety of projects and that they run okay.
+   1. New platformer project
+   2. Kid Defense
+   3. Cranky Chibi Cthulhu
+   4. Battlecrypt Bombers
+   5. [Automated Test Project](../automated-test-project.md)
 2. Run [Engine.yml](https://github.com/vchelaru/FlatRedBall/actions/workflows/Engine.yml) and wait for it to finish successfully
 3. Run Glue.yml and wait for it to finish successfully
 4. [Download latest FRBDK and run Glue](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip) - make sure the file version is what you expect
