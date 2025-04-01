@@ -135,7 +135,7 @@ private void CustomActivity()
         topDownAiInput.UpdatePath();
     }
     // We only call UpdatePath once every second since that doesn't need
-    // to update too requently, but this should be called every frame so the
+    // to update too frequently, but this should be called every frame so the
     // enemy's movement values are updated according to its path.
     topDownAiInput.DoTargetFollowingActivity();
 }
