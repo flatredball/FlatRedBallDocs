@@ -1216,6 +1216,7 @@
       * [RenderableSkiaObject](api/skiagum/renderables/renderableskiaobject.md)
   * [State Interpolation](api/stateinterpolationplugin/README.md)
     * [Tween](api/stateinterpolationplugin/gluevault-component-pages-advanced-interpolation-plugin-tween-function.md)
+    * [Tweener](api/stateinterpolationplugin/tweener.md)
     * [TweenerManager](api/stateinterpolationplugin/tweenermanager.md)
 * [🏘️ Contributing](contributing/README.md)
   * [How to Contribute](contributing/how-to-contribute.md)
