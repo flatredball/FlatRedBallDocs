@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The Tween enables changing any numerical property on an object over a given amount of time using all of the available interpolation types provided by the Advanced Interpolation Plugin. Tween can interpolate any numerical value (like an object's X position). It works on any PositionedObject as an extension method (shown below).
+`Tween` enables changing any numerical property on an object over a given amount of time using a variety of interpolation types. `Tween` is an extension method on the PositionedObject type, so it works on any entity and most objects that are added to entities such as Sprites and collision shapes.
 
 For information on performing tweening with objects which do not implement PositionedObject, see the [TweenerManager.TweenAsync](tweenermanager.md) method.
 
@@ -11,7 +11,7 @@ For information on performing tweening with objects which do not implement Posit
 The following code shows how to tween the location of a Circle to the edge of the screen when pressing either the left or right keys. This example assumes:
 
 1. You have a Screen
-2. The Screen has a Circle object. For this example the Circle will be named CircleInstance.
+2. The Screen has a Circle object. For this example the Circle is named CircleInstance.
 
 To use Tween to change the position of the Circle based off of keyboard input:
 
@@ -23,7 +23,7 @@ To use Tween to change the position of the Circle based off of keyboard input:
 2. Add the following to CustomActivity:
 
 ```csharp
-if (InputManager.Keyboard.KeyPushed(Keys.Left))
+if (Keyboard.Main.KeyPushed(Keys.Left))
 {
     CircleInstance.Tween(
         property: "X", 
@@ -33,7 +33,7 @@ if (InputManager.Keyboard.KeyPushed(Keys.Left))
         easing: FlatRedBall.Glue.StateInterpolation.Easing.Out
     );
 }
-if (InputManager.Keyboard.KeyPushed(Keys.Right))
+if (Keyboard.Main.KeyPushed(Keys.Right))
 {
     CircleInstance.Tween(
         property: "X",
@@ -66,7 +66,7 @@ void SetOrthogonalHeight(float newHeight)
 }
 void CustomActivity(bool firstTimeCalled)
 {
-    if(InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Up))
+    if(Keyboard.Main.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Up))
     {
         Camera.Main.Tween(SetOrthogonalHeight,
             from: Camera.Main.OrthogonalHeight,
@@ -76,7 +76,7 @@ void CustomActivity(bool firstTimeCalled)
             easing: FlatRedBall.Glue.StateInterpolation.Easing.Out
             );
     }
-    if (InputManager.Keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Down))
+    if (Keyboard.Main.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Down))
     {
         Camera.Main.Tween(SetOrthogonalHeight,
             from: Camera.Main.OrthogonalHeight,
@@ -96,7 +96,7 @@ void CustomActivity(bool firstTimeCalled)
 Lambdas can be used to assign properties without creating dedicated functions. For example a Circle's radius can be set using the following code:
 
 ```csharp
-var keyboard = InputManager.Keyboard;
+var keyboard = Keyboard.Main;
 
 if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Space))
 {
