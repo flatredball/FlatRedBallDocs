@@ -2,11 +2,15 @@
 
 ### Introduction
 
-The ICollidable interface provides a standard collision implementation. Objects which implement ICollidable can collide with all FlatRedBall shapes and other ICollidables. The ICollidable interface requires a [ShapeCollection](shapecollection/) property named Collision. FlatRedBall also offers the following extension methods for ICollidable:
+The ICollidable interface provides a standard collision implementation. Objects which implement ICollidable can collide with all FlatRedBall shapes and other ICollidables. The ICollidable interface requires a [ShapeCollection](shapecollection/) property named Collision along with properties to keep track of which collisions have occurred each frame.
+
+FlatRedBall also offers the following extension methods for ICollidable:
 
 * CollideAgainst - Simply returns true/false to indicate whether a collision has occurred
 * CollideAgainstMove - Returns true/false and separates the two objects involved in the collision
 * CollideAgainstBounce - Returns true/false, separates the two objects involved, and adjusts the velocity of the objects involved to simulate bouncing
+
+Objects implementing ICollidables are typically used with CollisionRelationships, usually set up through the FlatRedBall Editor.
 
 ### ICollidable Entities
 
@@ -89,3 +93,28 @@ private void CustomActivity()
 The code above results in the collision info being printed to the screen as shown in the following animation:
 
 <figure><img src="../../../../.gitbook/assets/21_05 51 58.gif" alt=""><figcaption><p>Player displaying names of ItemsCollidedAgainst</p></figcaption></figure>
+
+In some situations the player may be fully responsible for handling events. For example, you may apply a particle effect at the moment when a player enters a collision area. This could be handled internally in the Player.
+
+Altenatively, entities could raise events when certain actions occur, such as raising an event when entering poison. The code above can be modified as shown in the following code block:
+
+```csharp
+public event Action PoisonEntered;
+
+public void CustomActivity()
+{
+    var poisonName = "PoisonCollision";
+    if(this.ItemsCollidedAgainst.Contains(poisonName) && 
+        !this.LastFrameItemsCollidedAgainst.Contains(poisonName))
+    {
+        PoisonEntered?.Invoke();
+    }
+}
+```
+
+This event could be handled in a screen, such as GameScreen.
+
+```csharp
+// assuming Player1 is a valid player:
+Player1.PoisonEntered += DoPoisonEnteredLogic;
+```
