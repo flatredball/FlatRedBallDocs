@@ -1,48 +1,60 @@
-## Introduction
+# States and Inheritance
 
-States are very powerful, but their behavior can be a little confusing when combined with inheritance. This article discusses how states and inheritance work together and things you should be aware of in your project when using States with Screens/Entities that inherit from other Screens/Entities.
+### Introduction
 
-## States are enums
+State behavior can be a little confusing when combined with inheritance. This article discusses how states and inheritance work together and things you should be aware of in your project when using States with Screens/Entities that inherit from other Screens/Entities.
 
-For starters we should lay the programming foundation that States are enums. In other words, when you create a new State, you add a new entry to an enum in your code. For example, if you have created an Entity with the following four States:
+### States Categories Create Classes
 
--   Disabled
--   Enabled
--   Highlighted
--   Invisible
+Every category in your project creates a class in generated code. For example, consider a Bullet entity with a category BulletAppearance.
 
-The generated code will create this enum:
+<figure><img src="../../.gitbook/assets/07_06 40 56.png" alt=""><figcaption><p>BulletAppearance category</p></figcaption></figure>
 
-    public enum VariableState
+The generated includes a class called BulletAppearance with properties matching the variables assigned in the FRB Editor.
+
+<figure><img src="../../.gitbook/assets/07_06 43 01.png" alt=""><figcaption></figcaption></figure>
+
+```csharp
+public class BulletAppearance
+{
+    public string Name;
+    public float BulletLifeDuration;
+    public string AnimationName;
+    public float SideBulletRadius;
+    public float SideBulletRotationSpeed;
+    public int MaxBullets;
+    ...
+```
+
+### Derived Categories
+
+If a category is added to a derived screen or entity, FlatRedBall checks if the same-named category exists in the base screen or entity. We can name a category the same in a derived class to create a derived state class in code.
+
+For example, if we create an entity named BulletDerived and add a Category named BulletAppearance, we get a derived BulletAppearance class in code.
+
+<figure><img src="../../.gitbook/assets/07_06 51 57.png" alt=""><figcaption><p>BulletAppearance category in BulletDerived</p></figcaption></figure>
+
+```csharp
+public class BulletAppearance : Entities.Bullet.BulletAppearance
+{
+    public string Name;
+    ...
+```
+
+The derived entity incudes a property that is of the derived type, so derived instances can assign this property in code.
+
+```csharp
+private BulletAppearance mCurrentBulletAppearanceState = null;
+public new Entities.BulletDerived.BulletAppearance CurrentBulletAppearanceState
+{
+    get
     {
-        Uninitialized, // This exists so that the first set call actually does something
-        Enabled,
-        Disabled,
-        Highlighted,
-        Invisible
+        return mCurrentBulletAppearanceState;
     }
-
-## State values cannot be added in derived objects
-
-The fact that States use enums is very important to the discussion of inheritance. Enums do not have a sense of inheritance - you can not inherit one enum from another (this is a C# language rule). Therefore, if you define a set of variables in the base class - that's it! You can't add or remove from them in a derived object.
-
-## Accessing state in derived custom code
-
-Of course, the CurrentState property is public:
-
-    public VariableState CurrentState
+    set
     {
-        get
-        {
-            return mCurrentState;
-        }
-        set
-        {
-            mCurrentState = value;
-            switch(mCurrentState)
-            {
-                         ...
+        mCurrentBulletAppearanceState = value;
+        ...
+```
 
-This means that the derived object can set its CurrentState just the same way the base class:
-
-    this.CurrentState = VariableState.Invisible;
+###
