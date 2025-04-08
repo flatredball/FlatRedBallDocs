@@ -21,7 +21,10 @@ As shown below, when an entity is created, the FlatRedBall suggests creating a l
 * Entity lists automatically associated themselves with factories, so that creating a new instance through a factory in code results in the instance being added to the list.
 * Entity lists call Activity on all contained instances, keeping activity behavior consistent whether the instance is created in the FRB editor or at runtime (such as through a factory)
 * Entity lists automatically destroy all instances when the screen ends, making screen cleanup easy
-*
+
+{% hint style="info" %}
+Derived entities do not create lists in the GameScreen by default. Derived entities may still need lists in GameScreen if they require custom behavior, or for performance reasons.
+{% endhint %}
 
 ### Default Functionality - Automatically Created Lists in GameScreen
 
@@ -56,7 +59,7 @@ PositionedObjectLists can also be created through the regular right-click menu i
 5. Select the type of list to create using the dropdown
 6.  Enter the name of the list
 
-    ![New Object window for adding a new list to a screen](<../../../.gitbook/assets/04\_10 22 25.png>)
+    ![New Object window for adding a new list to a screen](<../../../.gitbook/assets/04_10 22 25.png>)
 
 ### Adding to a List
 
@@ -101,3 +104,29 @@ If a derived entity type list is added to a screen through the quick action butt
 If an entity list is added through the right-click option on a screen, FlatRedBall provides suggestions about whether to call Activity.
 
 <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>FlatRedBall providing the suggestion to set CallActivity as false (unchecked)</p></figcaption></figure>
+
+### AssociateWithFactory
+
+Entity lists automatically set AssociateWithFactory to true, which means that the list registers itself with the relevant factories when the Screen is first initialized.
+
+If an entity is a base type, or if it is not part of an inheritance chain, then its list registers itself with only one factory. For example, in a default project the PlayerList associates itself with PlayerFactory.
+
+If an entity is a derived entity, such as a Skeleton deriving from a base Enemy entity, then typically Skeleton also has a SkeletonFactory. By default Skeletons which are created by the SkeletonFactory are added to the base EnemyList.
+
+If the GameScreen contains a SkeletonList, and if SkeletonList has AssociateWithFactory set to true, then SkeletonFactory adds newly-created Skeleton instances to both SkeletonList and EnemyList. This only occurs if a SkeletonList is manually created. Your game may need to have derived entities, like Skeleton, as part of two lists.
+
+The EnemyList serves as a list for behavior common to all types of enemies. This may include:
+
+* Collision against the environment
+* Taking damage from the Player
+* Destruction at the end of the level
+* Game-specific checks, such as see if all Enemy instances are destroyed before moving on to the next level
+
+The SkeletonList can be used for logic specific to the entity type. Entity-specific logic may include:
+
+* Custom logic when performing collision, such as applying a status effect to the player when colliding with a skeleton
+* Playing sound effects or music if a particular entity type exists, such as a bone rattling sound every few seconds if the screen contains any skeletons
+* Announcing if an enemy raid has ended once the player has defeated all enemies of a particular type
+
+Keep in mind that all of the entity-specific logic listed above can be performed by using the `is` keyword and checking for specific types. Of course, this can be slower than checking if a list is empty.
+
