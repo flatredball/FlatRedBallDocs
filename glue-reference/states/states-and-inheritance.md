@@ -28,11 +28,13 @@ public class BulletAppearance
 
 ### Derived Categories
 
-If a category is added to a derived screen or entity, FlatRedBall checks if the same-named category exists in the base screen or entity. We can name a category the same in a derived class to create a derived state class in code.
+If a category is added to a derived screen or entity, FlatRedBall checks if the same-named category exists in the base screen or entity. If the derived category matches the name of a category in the base, then this category is created as a derived class from the base category. Derived categories can be used to add additional states to the base.
 
-For example, if we create an entity named BulletDerived and add a Category named BulletAppearance, we get a derived BulletAppearance class in code.
+For example, consider a base entity Bullet and a derived entity named BulletDerived each with a category named BulletAppearance.
 
 <figure><img src="../../.gitbook/assets/07_06 51 57.png" alt=""><figcaption><p>BulletAppearance category in BulletDerived</p></figcaption></figure>
+
+BulletDerived defines a class named BulletAppearance which inherits from the base BulletAppearance class.
 
 ```csharp
 public class BulletAppearance : Entities.Bullet.BulletAppearance
@@ -41,7 +43,7 @@ public class BulletAppearance : Entities.Bullet.BulletAppearance
     ...
 ```
 
-The derived entity incudes a property that is of the derived type, so derived instances can assign this property in code.
+The derived entity includes a property that is of the derived type, so derived instances can assign this property in code.
 
 ```csharp
 private BulletAppearance mCurrentBulletAppearanceState = null;
@@ -57,4 +59,7 @@ public new Entities.BulletDerived.BulletAppearance CurrentBulletAppearanceState
         ...
 ```
 
-###
+The derived entity can add additional states to the category, but it cannot overwrite existing states. If a new state is added with the same name as a state in the base class, FlatRedBall marks it as an error by coloring the name text.
+
+<figure><img src="../../.gitbook/assets/08_06 29 52.png" alt=""><figcaption><p>Derived category with a state that has the same name as a state in the base category is marked as an error</p></figcaption></figure>
+
