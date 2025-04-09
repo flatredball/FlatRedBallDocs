@@ -136,3 +136,20 @@ void CustomInitialize()
 ```
 
 <figure><img src="../../../.gitbook/assets/07_05 34 04.gif" alt=""><figcaption><p>CameraControllingEntity instance with Map set</p></figcaption></figure>
+
+### ShakeScreen
+
+ShakeScreen applies an offset to the camera for screen shaking. The `radius` parameter specifies the maximum distance of the Camera's position from the CameraControllingEntity. The `durationInSeconds` parameter specifies how long screen shake should apply.
+
+The following code shows how to shake the screen in the GameScreen when the cursor is clicked.
+
+```csharp
+if(Cursor.Main.PrimaryClick)
+{
+    CameraControllingEntityInstance.ShakeScreen(
+        shakeRadius: 4, durationInSeconds: 1);
+}
+```
+
+<figure><img src="../../../.gitbook/assets/09_17 50 34.gif" alt=""><figcaption><p>ScreenShake in response to cursor click</p></figcaption></figure>
+
