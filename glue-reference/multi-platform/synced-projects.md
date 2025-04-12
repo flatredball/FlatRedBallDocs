@@ -6,6 +6,26 @@ Synced Projects provide a way to create and keep multiple projects in sync when 
 
 ![A main project targeting XNA 4 with synced projects for iOS and Android](../../.gitbook/assets/2017-04-img_58f2ca34ce257.png)
 
+A synced project is a completely separate .sln and .csproj which is initially created by the FlatRedBall Editor when the new Synced project is created.
+
+Synced projects can be added to the same root folder as the main project. Therefore, a typical game might look like this:
+
+* MainProject (folder)
+  * MainProject.sln
+  * MainProject (folder containing original project like DesktopGL
+    * MainProject.csproj (csproj for original project)
+  * MainProjectWeb (folder for new synced project)
+    * MainProjectWeb.sln
+
+When a new synced project is created, FlatRedBall performs the following functionality automatically:
+
+* Generated and custom code files for screens and entities are automatically linked in the synced project
+* All content files are either linked in the synced project, or custom versions are created and linked. For example, when XNB files are built, these may differ per-platform. FlatRedBall takes care of this automatically
+
+You are still responsible for managing your own code files if you add them through Visual Studio.&#x20;
+
+### Opening Synced Projects
+
 To open a project, click on the icon for the IDE for a given project. For example, the following icon can be used to open the TownRaiser XNA 4 Project:
 
 ![](../../.gitbook/assets/2017-04-img_58f2cb4ab5082.png)
