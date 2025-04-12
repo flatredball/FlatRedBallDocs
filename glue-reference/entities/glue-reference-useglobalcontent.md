@@ -2,18 +2,21 @@
 
 ### Introduction
 
-The UseGlobalContent property tells an Entity/Screen to use the "Global" content manager when loading its content. This means that its content will only be loaded the first time it is accessed and it will never be unloaded. The UseGlobalContent is not the same thing as [Global Content Files](../../frb/docs/index.php). Global Content Files is a collection of files which by default are pre-loaded when the application starts and are never unloaded. Files which are part of Screens and Entities which UseGlobalContent will not be preloaded, but will never be unloaded once they are loaded. It is possible for a file to both be part of an Entity as well as Global Content Files, as shown [here](../../frb/docs/index.php#Using\_both\_UseGlobalContent\_and\_.22Global\_Content\_Files.22).
+The UseGlobalContent property tells Screens or Entities to use the "Global" content manager when loading its content. This means that its content will only be loaded the first time it is accessed and it will never be unloaded.
+
+The UseGlobalContent is not the same thing as [Global Content Files](../global-content/). Global Content Files is a collection of files which by default are pre-loaded when the application starts and are never unloaded. Files which are part of Screens and Entities which UseGlobalContent will not be preloaded, but will never be unloaded even if a Screen is destroyed.
 
 ### What is the default behavior
 
-The default value for UseGlobalContent is false. Entities will (by default) use the ContentManager given to them by their containing Screen. Screens will by default use a content manager unique to the given Screen. This means that any time a Screen is unloaded, all content referenced by that given Screen and any contained Entities will automatically be unloaded. This unloading behavior reduces the likelihood of accumulating too much memory through content loading, meaning simpler games will be able to ignore content loading and unloading. However, this also means that content may be unnecessarily loaded and unloaded. For example, consider a game which has a number of UI screens which use the same font files. If this font is used in a lot of Screens, it may be beneficial to always keep it in memory rather than to unload and re-load it on every Screen transition. If this font exists in a Text object Entity which is reused in multiple Screens, then the Entity's UseGlobalContent property can be set to true, resulting in it never being unloaded.
+The default value for UseGlobalContent is false. Entities (by default) use the ContentManager given to them by their containing Screen. Screens by default use a content manager unique to the given Screen. This means that any time a Screen is unloaded, all content referenced by that given Screen and any contained Entities is automatically be unloaded.
 
-### Setting UseGlobalContent
+The unloading of content reduces the likelihood of accumulating too much memory through content loading. However, this also means that content may be unnecessarily loaded and unloaded which increases load times.
 
-UseGlobalContent can be set by:
+For example, consider a game which uses the same tileset and associated PNG file for each level. These levels should probably be have UseGlobalContent set to true. Similarly, if an entity (such as Player) appears in multiple screens, the content for that entity should probably never be unloaded.
 
-1. Selecting an Entity/Screen
-2. Changing the "UseGlobalContent" property to "True"![UseGlobalContent.png](../../.gitbook/assets/migrated\_media-UseGlobalContent.png)
+UseGlobalContent can be set in the Properties tab of a Screen or Entity.
+
+<figure><img src="../../.gitbook/assets/12_10 39 29.png" alt=""><figcaption><p>UseGlobalContent can be set to true in the Properties tab</p></figcaption></figure>
 
 Your Entity/Screen will no longer unload files that it uses.
 
