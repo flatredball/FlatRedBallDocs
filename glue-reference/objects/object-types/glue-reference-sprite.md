@@ -28,7 +28,7 @@ When you are creating a new entity, you can check the option to add a Sprite in 
 3. Check the **Sprite** option
 4. Click **OK**
 
-![Check Sprite to add a Sprite when creating a new entity](../../../.gitbook/assets/2019-06-img\_5d18bae01c0a8.png)
+![Check Sprite to add a Sprite when creating a new entity](../../../.gitbook/assets/2019-06-img_5d18bae01c0a8.png)
 
 ### Adding a Sprite
 
@@ -62,6 +62,16 @@ Sprites usually display textures, which are created from image files such as .pn
 <figure><img src="../../../.gitbook/assets/18_07 51 43.gif" alt=""><figcaption><p>Drag+drop a Texture onto a Sprite to set its Texture property</p></figcaption></figure>
 
 For more information about working with textures, see the [Texture2D page](../../files/file-types/texture2d.md).
+
+Textures can also be assigned using the Texture dropdown in the Variables tab.
+
+<figure><img src="../../../.gitbook/assets/26_06 09 02.png" alt=""><figcaption></figcaption></figure>
+
+PNGs that are in the same entity or screen's Files folder appear in the dropdown. PNGs which are in the base entity or screen's Files folder also appear in the dropdown on Sprites in the derived screen or entity.
+
+<figure><img src="../../../.gitbook/assets/26_06 07 16.png" alt=""><figcaption></figcaption></figure>
+
+Files in Global Content Files can also be used, but they must first be added to the Entity as well. For more information see the section on [Shared Files](../../files/#shared-files).
 
 ### Animations
 
