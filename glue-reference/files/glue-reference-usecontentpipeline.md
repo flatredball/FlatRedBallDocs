@@ -32,11 +32,26 @@ The recommended approach is to use from-file loading whenever possible throughou
 To switch to the content pipeline:
 
 1. Select a file in your project
-2. Change the "UseContentPipeline" property to True&#x20;
+2. Click on the Properties tab
+3. Change the **UseContentPipeline** property to **True**&#x20;
 
-<figure><img src="../../.gitbook/assets/migrated_media-UseContentPipeline.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/26_07 03 18.png" alt=""><figcaption><p>UseContentPipeline set to True</p></figcaption></figure>
 
-Your game will now load this file from content pipeline.
+Changing this value to true performs the following:
+
+1.  The file is built using the content pipeline. Unlike normal MonoGame projects, the file is built through the FRB Editor using the command line. When this change is made you can see the command that was used to build the file in the FRB Editor's Output tab.\
+
+
+    <figure><img src="../../.gitbook/assets/26_07 11 17.png" alt=""><figcaption><p>Output from building a PNG file through the content pipeline</p></figcaption></figure>
+2. The .xnb file is added to your game project (.csproj)
+3. Code is generated for the appropriate screen, entity, or global content to reference the .xnb
+4. Code is generated to add aliases for the .xnb so that other files (such as .tmx or Gum files) can still reference the file with the .png extension even though it is loaded from .xnb
+
+FlatRedBall automatically builds files as necessary, such as when the FRB editor is opened or if the source file changes on disk. However, files can be re-built by right-clicking on the file and selecting **Rebuild Content Pipeline File (xnb)**.
+
+
+
+<figure><img src="../../.gitbook/assets/26_07 19 19.png" alt=""><figcaption><p>Rebuild Content Pipeline File (xnb) menu item</p></figcaption></figure>
 
 ### Content pipelines and dependencies
 
