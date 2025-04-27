@@ -33,7 +33,7 @@ Currently Gum uses XNA and .NET 4.7.1. This will not build using dotnet build (n
     <figure><img src="../../.gitbook/assets/23_07 47 02.png" alt=""><figcaption><p>AssemblyVersion and AssemblyFileVersion in AssemblyInfo.cs</p></figcaption></figure>
 3. Rebuild the entire solution (not just the Gum project)
 4. Navigate to the location where Gum is built
-5. Go up one folder so that you are in the Debug folder
+5. Go up one folder so that you are outside of the Debug folder
 6. Create a Data folder if one doesn't exist and copy the Debug folder into it
 7. Right-click on Data and Zip it. This will produce a .zip that has a Data folder inside - this matches the expected folder structure from previous builds so make sure this is the case
 8. Rename this Gum.zip
@@ -44,5 +44,6 @@ Currently Gum uses XNA and .NET 4.7.1. This will not build using dotnet build (n
 13. Announce on MGE discord
 14. Announce on Kni discord
 15. Announce on twitter
+16. Announce on Blue Sky
 
 This file is used when creating FlatRedBall builds, so Gum must first be built and uploaded to the FlatRedBall FTP prior to running the FlatRedBall Github Actions. Otherwise, an old Gum will be included in FRBDK. This may be okay depending on if Gum has important new features.
