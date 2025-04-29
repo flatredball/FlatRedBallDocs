@@ -2,14 +2,14 @@
 
 FlatRedBall supports developing games on multiple platforms. As of the time of this writing the following platforms are supported:
 
-* Desktop
+* Desktop (MonoGame, FNA)
   * Windows
   * Mac
   * Linux
-* Android
-* iOS
-* Consoles (Switch, Xbox) through the use of FNA and Native AOT compilation
-* Web
+* Android (MonoGame)
+* iOS (MonoGame)
+* Consoles (FNA and Native AOT compilation)
+* Web (Kni)
 
 ### Selecting Platforms
 
