@@ -24,10 +24,10 @@ Vic has noticed that sometimes the build will fail due to the referenced ColorPi
 
 ### Gum Tool
 
-Currently Gum uses XNA and .NET 4.7.1. This will not build using dotnet build (not sure why). Therefore, Gum must be built and uploaded manually. We could eventually automate this through TeamCity until Gum (maybe?) gets updated to modern .NET. Until then the steps are:
+Currently Gum uses .NET 4.7.1. This will not build using dotnet build (not sure why). Therefore, Gum must be built and uploaded manually. We could eventually automate this through TeamCity until Gum (maybe?) gets updated to modern .NET. Until then the steps are:
 
 1. Open Gum locally in Visual Studio
-2.  Open Gum AssemblyInfo.cs and set AssemblyVersion and AssemblyFileVersion using the date-based format. Notice that there's only 3 numbers unlike the versions for nuget packages.\
+2.  Open Gum AssemblyInfo.cs and set AssemblyVersion and AssemblyFileVersion using the date-based format. Notice that there's only 3 numbers unlike the versions for NuGet packages.\
 
 
     <figure><img src="../../.gitbook/assets/23_07 47 02.png" alt=""><figcaption><p>AssemblyVersion and AssemblyFileVersion in AssemblyInfo.cs</p></figcaption></figure>
@@ -39,11 +39,12 @@ Currently Gum uses XNA and .NET 4.7.1. This will not build using dotnet build (n
 8. Rename this Gum.zip
 9. Manually upload this to FlatRedBall's Files folder using sftp to /home/frbfiles/files.flatredball.com/content/Tools/Gum/Gum.zip
 10. Create a new release on Github - see the previous releases for examples
-11. Announce on FRB discord
-12. Announce on MonoGame discord
-13. Announce on MGE discord
-14. Announce on Kni discord
-15. Announce on twitter
-16. Announce on Blue Sky
+11. Add a new page in the Gum Upgrade section explaining how to upgrade this version. If no changes are needed, explain that the upgrade can happen without any changes.&#x20;
+12. Announce on FRB discord
+13. Announce on MonoGame discord
+14. Announce on MGE discord
+15. Announce on Kni discord
+16. Announce on twitter
+17. Announce on Blue Sky
 
 This file is used when creating FlatRedBall builds, so Gum must first be built and uploaded to the FlatRedBall FTP prior to running the FlatRedBall Github Actions. Otherwise, an old Gum will be included in FRBDK. This may be okay depending on if Gum has important new features.
