@@ -657,3 +657,13 @@ This version modifies code generation to pass `true`  to AudioManager.StopSong w
 Initially this code is being implemented for NAudio songs, but will eventually be expanded to all songs as well.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 64 - Gum Visuals have IsRenderTarget and Alpha Properties
+
+This version modifies Gum code generation to support setting IsRenderTarget in generated code. This enables Gum projects with containers that are render targets in FlatRedBall Projects.
+
+For more information on this property, see the Gum page here:
+
+{% embed url="https://docs.flatredball.com/gum/gum-tool/gum-elements/container/is-render-target" %}
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
