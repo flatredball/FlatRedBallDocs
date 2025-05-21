@@ -10,7 +10,7 @@ This guide explores animations for top-down entities.
 
 If your game was created using the New Project Wizard then you should already have a Player entity that is fully animated.
 
-We can see the animations used by the player by expanding the Player's Objects folder, selecting the SpriteInstance, and looking at its Animation Chains variable. Notice that this variable is set to the .achx file in its Files folder.
+We can see the animation file used by the player by expanding the Player's Objects folder, selecting the SpriteInstance, and looking at its Animation Chains variable. Notice that this variable is set to the .achx file in its Files folder.
 
 <figure><img src="../../.gitbook/assets/20_07 55 33.png" alt=""><figcaption><p>Player SpriteInstance with its Animation Chains variable assigned</p></figcaption></figure>
 
@@ -22,13 +22,13 @@ If we run the game, the Player is animated - it displays idle and walk animation
 
 <figure><img src="../../.gitbook/assets/20_08 00 56.gif" alt=""><figcaption><p>Animated Player</p></figcaption></figure>
 
-We can view the setup for animations by selecting the Player Entity, clicking on Entity Input Movement, and selecting the Animation item.
+We can view the conditions for which animations play by selecting the Player Entity, clicking on Entity Input Movement, and selecting the Animation item.
 
 <figure><img src="../../.gitbook/assets/20_08 31 09.png" alt=""><figcaption><p>Animations for the Player entity</p></figcaption></figure>
 
 This section controls which animations are displayed on the Player's sprite.
 
-Each row defines one set of animations, and the condition for when those animations play. Animations at the bottom of the list play if their condition evalutes to true. In other words, Idle animations always play unless the Walk conditions are satisfied.&#x20;
+Each row defines one set of animations, and the condition for when those animations play. Animations at the bottom of the list play if their condition evaluates to true. In other words, Idle animations always play unless the Walk conditions are satisfied.&#x20;
 
 The next section covers each variable.
 

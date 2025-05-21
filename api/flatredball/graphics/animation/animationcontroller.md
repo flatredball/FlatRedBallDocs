@@ -2,7 +2,9 @@
 
 ### Introduction
 
-The AnimationController class enables a game project to define animation logic using a modular approach as compared to a long chain of if/else if statements. The AnimationController was initially created to enable generated code to define animations while still allowing custom code to inject new animation behavior. Since its creation, the AnimationController has grown in capability, and it is currently the recommended way to create animation-assigning logic.
+The `AnimationController` class enables a game project to define animation logic using a modular approach as compared to a long chain of if/else if statements. The AnimationController was initially created to enable generated code to define animations while still allowing custom code to inject new animation behavior. Since its creation, the AnimationController has grown in capability, and it is currently the recommended way to create animation-assigning logic.
+
+If your game is using the default top-down or platformer setup, then your Player entity is already using an AnimationController in generated code. If you have created any entities which are top-down or platformer entities, then those also have an AnimationController in generated code.
 
 ### AnimationController Benefits
 
@@ -49,7 +51,7 @@ else
 }
 ```
 
-Although the logic for setting the animationToSet is fairly simple, it suffers from not being very modular. That is, whether to assign the idle animations depends on the logic for whether to set the walking animations and whether the player is taking damage. Larger projects may want to organize logic for different types of animation assignment, or even take advantage of code generation for animation assignments. AnimationControllers provide a standard way to separate your animation code into modular pieces of code.
+Although the logic for setting the animationToSet is fairly simple, it suffers from not being very modular. That is, whether to assign the idle animations depends on the logic for whether to set the walking animations and whether the player is taking damage. Larger projects may want to organize logic for different types of animation assignment. Similarly, projects which use the top-down or platformer input types can define their animations in the FRB editor which generates an AnimationController instance for each entity. AnimationControllers provide a standard way to separate your animation code into modular pieces of code.
 
 ### Using AnimationLayer for Animation Logic
 
