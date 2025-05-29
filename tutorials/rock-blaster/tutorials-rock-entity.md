@@ -9,7 +9,7 @@ This tutorial will define the Rock entity and add it to our GameScreen so that w
 As you might have guessed, the first step is to add PNGs and a Sprite to the Rock entity. To add the PNGs:
 
 1. Download the following four images: ![Rock1.png](../../.gitbook/assets/migrated_media-Rock1.png)![Rock2.png](../../.gitbook/assets/migrated_media-Rock2.png)![Rock3.png](../../.gitbook/assets/migrated_media-Rock3.png)![Rock4.png](../../.gitbook/assets/migrated_media-Rock4.png)
-2. Expand the **Rock** Entity in Glue
+2. Expand the **Rock** Entity in the FlatRedBall Editor
 3. Drag+drop the four files into the **Files** folder
 
 <figure><img src="../../.gitbook/assets/2016-01-2021_March_13_161132.gif" alt=""><figcaption></figcaption></figure>
