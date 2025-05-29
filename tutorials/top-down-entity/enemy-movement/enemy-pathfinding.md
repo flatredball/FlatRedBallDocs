@@ -14,7 +14,7 @@ First we'll create a TileNodeNetwork. This is defined in our GameScreen, but wil
 
 To create the TileNodeNetwork:
 
-1. Select the GameScreen
+1. Select GameScreen
 2. Click the **Add Object to GameScreen** under **Quick Actions**, or right-click on GameScreen and select Add Object
 3. Select the TileNodeNetwork type
 4. Enter a name such as WalkingNodeNetwork
@@ -33,7 +33,7 @@ Next we'll define a tile to use for pathfinding. To do this:
 
 <figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption><p>WalkableTile in Tiled</p></figcaption></figure>
 
-Next, select your current level (such as Level1Map) and paint the WalkableTile onto the GameplayLayer. Note that if you would like to be able to walk on areas which already have other tiles, you can create a new layer specifically for Tiles.
+Next, select your current level (such as Level1Map) and paint the WalkableTile onto the GameplayLayer. Note that if you would like to be able to walk on areas which already have other tiles, you can create a new layer specifically for walkable tiles.
 
 <figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption><p>WalkableTile painted in the walkable areas of the Tiled map</p></figcaption></figure>
 
@@ -58,6 +58,13 @@ The game should now show the TileNodeNetwork. Note that you can also make the Ga
 <figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>TileNodeNetwork visible in game</p></figcaption></figure>
 
 Notice that the links between nodes are either vertical or horizontal. We will discuss diagonal movement later in the tutorial.
+
+#### Troubleshooting
+
+If your TileNodeNetwork does not appear, you can try a few things.
+
+1. Change your TileNodeNetwork's Creation Options to **Fill Completely** to see if it appears. If it does, then the TileNodeNetwork object is properly created, but it may be a problem with your Tiled map.
+2. Close all maps in Tiled, then open the map that you are editing through the FRB Editor to make sure you are editing the right map.
 
 ### Creating Enemy InputDevice
 
