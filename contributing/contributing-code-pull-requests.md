@@ -57,7 +57,7 @@ The FlatRedBall code base includes many cases where code is referencing obsolete
 
 The best way to prove that your change is done with the understanding of context is to perform the refactor while having worked on a feature in the same code. Feature work requires contextual understanding which can help with refactoring.
 
-In sort, **you should understand the context of the code that is being changed. If you do not know exactly why the code is written a certain way, do not touch it!**
+In short, **you should understand the context of the code that is being changed. If you do not know exactly why the code is written a certain way, do not touch it!**
 
 #### Perform Tests
 
