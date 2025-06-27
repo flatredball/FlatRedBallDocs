@@ -2,25 +2,25 @@
 
 ### MonoGame Gum (NuGet Packages)
 
-Team City has an automated build which runs whenever anything is pushed (assuming Vic's desktop is turned on). This attempts to build Gum (the tool) and the .NET 6 libraries use for MonoGameGum. If the builds succeeds it also attempts to upload a new nuget package.&#x20;
+Gum's repository includes a GitHub Action yaml file which builds and uploads NuGet packages. If the build succeeds and if the NuGet numbers are new, then new NuGet packages are uploaded.
 
 The automated build will not upload a new NuGet if the version number is not manually increased first. Also note, this DOES NOT currently upload a new Gum tool - this must be done manually (see steps below).
 
 To upload a new NuGet packages, follow these steps:
 
 1. Open AllLibraries.sln in Visual Studio - this links MonoGame/FNA/Kni Gum and the projects it depends on. It is at \<GumRoot>\MonoGameGum.sln
-2.  Double-click GumCommon and find the version. Copy this, then do a global find/replace to upate all versions to the latest version.\
+2.  Double-click GumCommon and find the version. Copy this, then do a global find/replace to update all versions to the latest version.\
+    \
+    \
+    \
 
 
     <figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption><p>Setting GumCommon's Version number</p></figcaption></figure>
-3. at the time of this writing, 7 projects will be updated.&#x20;
-4. Save the files and push the commit
 
-If Vic's computer is on, it will automatically build. If not, Vic must open it and manually run a build.
-
-#### Troubleshooting Gum Automatic Builds
-
-Vic has noticed that sometimes the build will fail due to the referenced ColorPicker not being available. If the same .sln (in the build folder indicated in TeamCity logs) is opened and built in VS 2019, the manual build works. Then if TeamCity is run again, all works. This is a hacky workaround.
+    at the time of this writing, 8 projects will be updated.
+3. Save the files and push the commit
+4. Merge the commit to `Master`
+5. Run the GitHub action file
 
 ### Gum Tool
 
