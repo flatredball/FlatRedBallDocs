@@ -1,14 +1,12 @@
 # 🖥️ Downloading FlatRedBall
 
+{% tabs %}
+{% tab title="Windows" %}
 ### Prerequisites
 
 #### 1 - Visual Studio 2022 or Newer
 
 [https://visualstudio.microsoft.com/vs/community/](https://visualstudio.microsoft.com/vs/community/) Although it is possible to make games without Visual Studio or Rider, doing so requires advanced knowledge of MSBuild. We recommend downloading and installing Visual Studio Community which is free.
-
-{% hint style="info" %}
-Mac and Linux users can use FlatRedBall, but in a code-only environment. The FlatRedBall Editor requires Windows.
-{% endhint %}
 
 At a minimum you need to install **.NET desktop development**.
 
@@ -45,7 +43,7 @@ The most common approach to making FlatRedBall games is to use the FlatRedBall E
 ### Downloading and Running FlatRedBall
 
 1. Download the latest zip file from [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/FRBDK.zip).&#x20;
-   1. Alternatively, the FlatRedBall Editor (no additional tools) prebuilt can be downloaded from Github. This is not recommended for new users, but experienced users can replace the FlatRedball Glue folder with the contents from the built files: [https://github.com/vchelaru/FlatRedBall/actions](https://github.com/vchelaru/FlatRedBall/actions)
+   1. Alternatively, the FlatRedBall Editor (no additional tools) prebuilt can be downloaded from Github. This is not recommended for new users, but experienced users can replace the FlatRedBall Glue folder with the contents from the built files: [https://github.com/vchelaru/FlatRedBall/actions](https://github.com/vchelaru/FlatRedBall/actions)
 2. (Optional) Unblock the ZIP file.  This will prevent the windows protected your PC warning.\
    ![](<.gitbook/assets/image (367).png>)
    1. Right-click the ZIP file and chose Properties
@@ -67,3 +65,22 @@ If you see the **Windows protected your PC** dialog, click **More info** -> **Ru
 The FlatRedBall Editor should appear.
 
 ![FlatRedBall Editor](<.gitbook/assets/07_07 53 54.png>)
+{% endtab %}
+
+{% tab title="Mac/Linux" %}
+## Introduction
+
+FlatRedBall games can be developed on Mac and Linux, but can only be done in a code-only environment. As of 2025 the FlatRedBall Editor does not run on Mac and Linux.
+
+## Environment Setup
+
+Before beginning to develop FlatRedBall games, you should set up your environment for C# and MonoGame development. To do so, follow the MonoGame setup docs:
+
+{% embed url="https://docs.monogame.net/articles/tutorials/building_2d_games/02_getting_started/?tabs=macos" %}
+
+Once you are set up for working with MonoGame and C# you can begin to develop FlatRedBall games.
+
+To begin, see the [Code-Only Projects tutorials](tutorials/code-only-project-tutorial/).
+{% endtab %}
+{% endtabs %}
+
