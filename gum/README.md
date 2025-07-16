@@ -6,7 +6,7 @@ If you have downloaded the FRBDK.zip, you already have Gum located in the \<FRBD
 
 <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption><p>Gum.exe executable</p></figcaption></figure>
 
-To download Gum separately, click here: [http://files.flatredball.com/content/Tools/Gum/Gum.zip](http://files.flatredball.com/content/Tools/Gum/Gum.zip)
+To download Gum separately, click here: [https://files.flatredball.com/content/Tools/Gum/Gum.zip](http://files.flatredball.com/content/Tools/Gum/Gum.zip)
 
 For information about using the Gum tool: [https://docs.flatredball.com/gum/](https://docs.flatredball.com/gum/)
 
