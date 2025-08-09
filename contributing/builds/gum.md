@@ -35,7 +35,7 @@ Currently Gum uses .NET 4.7.1. This will not build using dotnet build (not sure 
 4. Navigate to the location where Gum is built
 5. Go up one folder so that you are outside of the Debug folder
 6. Create a Data folder if one doesn't exist and copy the Debug folder into it
-7. Right-click on Data and Zip it. This will produce a .zip that has a Data folder inside - this matches the expected folder structure from previous builds so make sure this is the case
+7. Right-click on Data and Zip it. This will produce a .zip that has a Data/Debug folder inside - this matches the expected folder structure from previous builds so make sure this is the case. This may change in the future.
 8. Rename this Gum.zip
 9. Manually upload this to FlatRedBall's Files folder using sftp to /home/frbfiles/files.flatredball.com/content/Tools/Gum/Gum.zip
 10. Create a new release on Github - see the previous releases for examples
