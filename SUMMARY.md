@@ -267,6 +267,7 @@
     * [Reload](glue-reference/global-content/glue-reference-reload.md)
     * [Setting Files At Runtime](glue-reference/global-content/glue-reference-setting-files-at-runtime.md)
   * [Live Edit](glue-reference/enable-live-edit/README.md)
+    * [Customizing Live Edit with Code](glue-reference/enable-live-edit/customizing-live-edit-with-code.md)
     * [Render Targets](glue-reference/enable-live-edit/render-targets.md)
   * [Menu](glue-reference/menu/README.md)
     * [Content](glue-reference/menu/content/README.md)
