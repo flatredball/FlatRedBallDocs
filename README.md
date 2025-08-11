@@ -12,11 +12,7 @@ At a minimum you need to install **.NET desktop development**.
 
 ![Check the .NET desktop development workload when installing Visual Studio](.gitbook/assets/2021-08-img_610caaac075b7.png)
 
-#### 2 - XNA 4.0 Redistributable
-
-[https://www.microsoft.com/en-us/download/details.aspx?id=27598](https://www.microsoft.com/en-us/download/details.aspx?id=27598) Although this is not required to build and run FlatRedBall games, it is required to use Gum, which is the preferred FlatRedBall UI tool.
-
-#### 3 - .NET SDK
+#### 2 - .NET SDK
 
 FlatRedBall projects are built with .NET 8 or newer. If you are using Visual Studio then you do not need to explicitly install .NET 8. If you are using a different IDE such as Visual Studio Code, then you need to install .NET SDK 8:
 
@@ -30,7 +26,7 @@ You must also install the .NET 6 SDK even if you have .NET 8 installed since the
 
 Newer Versions of Visual Studio (as of version 17.5.1) install .NET SDK 7.0 or newer which have a bug preventing projects from being loaded in the FlatRedBall Editor. Therefore, you need to manually install .NET 6 SDK.
 
-#### 4 - Visual C++ Redistributable Packages for Visual Studio 2013
+#### 3 - Visual C++ Redistributable Packages for Visual Studio 2013
 
 This dependency is required to build shader files. If you are certain that you will not be using any custom shaders or post processing, then you can skip this installation. However, we recommend installing this to avoid confusing errors if you do end up using any shaders.
 
