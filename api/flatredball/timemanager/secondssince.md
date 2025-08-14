@@ -4,7 +4,7 @@
 
 The SecondsSince method can be used to detect how many seconds have passed since a given time. This method is often used in combination with the CurrentTime property.
 
-Note that SecondsSince assumes that the value passed is in game time (using `TimeManager.CurrentTime` ) and not screen time ( `TimeManager.CurrentScreenTime` ). This method is rarely. It is only needed if the amount of in-game time that has passed is greater than some value which may span mulitple screens.&#x20;
+Note that SecondsSince assumes that the value passed is in game time (using `TimeManager.CurrentTime` ) and not screen time ( `TimeManager.CurrentScreenTime` ). This method is rarely used. It is only needed if the amount of in-game time that has passed is greater than some value which may span mulitple screens.&#x20;
 
 ### Example - Using SecondsSince for Ability Cooldown
 
