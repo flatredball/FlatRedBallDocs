@@ -8,9 +8,9 @@ Variables allow modifying built-in properties on objects (such as the position o
 2. New variables - variables which do not have any built-in functionality, but which are added through the editor and used in custom code. For example, an explosive enemy may have a SecondsBeforeExploding variable which is used in custom code to make the enemy explode after a certain amount of time.
 3. Exposed variables - variables which are available in code but not available (by default) on an entity. Exposed variables expand the available variables on an entity or screen. For example, an Entity may expose its RotationZ variable so that instances can be rotated in live edit.
 
-### Adding a Variable
+### Creating a New Variable
 
-There are a few ways to add a new variable.
+There are a few ways to create a new variable.
 
 #### Adding in the Variables Tab
 
@@ -30,13 +30,11 @@ To add a variable by right-clicking:
 2. Right-click on the Variables folder
 3.  Select **Add Variable**
 
-    ![](../../.gitbook/assets/2022-05-img_6271609803846.png)
+    ![Right-click Add Variable Item](../../.gitbook/assets/2022-05-img_6271609803846.png)
 
 This will bring up the **New Variable** window which is used to select the variable type and set options according to the selected variable type.
 
-### Creating a New Variable
-
-
+<figure><img src="../../.gitbook/assets/17_08 35 26.png" alt=""><figcaption><p>New Variable popup</p></figcaption></figure>
 
 ### Expose an existing variable
 
