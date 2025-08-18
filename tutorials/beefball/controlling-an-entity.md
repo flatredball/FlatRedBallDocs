@@ -89,8 +89,8 @@ For more information on the Keyboard class, see [the Keyboard page](../../api/fl
 FlatRedBall provides a number of ways to separate data from logic. The simplest of these is to create variables. To add a variable to the PlayerBall entity:
 
 1. In the editor, click the **PlayerBall** Entity
-2. Right the **Variables** tab
-3. Click the **Add New Variable** button
+2. Left-Click the **Variables** tab
+3. Click the **Create a new variable** button
 4. Verify that **float** is the **Type**
 5. Enter the name **MovementSpeed** and click the **OK** button
 6. Verify **Variables** is selected and set **MovementSpeed** to **100**. Deselect the text box or press ENTER to apply the value.

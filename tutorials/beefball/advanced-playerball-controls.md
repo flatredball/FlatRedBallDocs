@@ -38,7 +38,7 @@ We'll use the [Drag](../../api/flatredball/positionedobject/drag.md) property to
 
 1. Select the **PlayerBall** Entity in Glue
 2. Select the **Variable** tab
-3. Click the **Add New Variable** button
+3. Click the **Create a new variable** button
 4. Select the **Expose an existing variable** option
 5. Click the Drag variable
 6. Click OK

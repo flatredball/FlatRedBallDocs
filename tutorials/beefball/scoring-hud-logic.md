@@ -14,7 +14,7 @@ First we'll be adding properties to the Hud object for the scores of each of the
 To do this:
 
 1. Expand ScoreHud's Objects in the FRB Editor
-2. Drag+drop the **Team1Score** onto the **Variables** item
+2. Drag+drop the **Team1Score** onto the **Variables** folder
 3. Select **DisplayText** as the variable
 4. Set the **Alternative Name** to **Score1**
 5. Set the **Converted Type** to **int**
@@ -62,7 +62,7 @@ If you are seeing a conversion error similar to Cannot implicitly convert type '
 2. Select the **Properties** tab
 3.  Change **OverridingPropertyType** to **int**
 
-    ![](../../.gitbook/assets/2018-08-img\_5b7db0c6336f4.png)
+    ![](../../.gitbook/assets/2018-08-img_5b7db0c6336f4.png)
 
 ### Conclusion
 

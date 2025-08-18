@@ -8,7 +8,7 @@ Now that we have our PlayerBall movement working, we'll add a Puck Entity which 
 
 To create a Puck Entity:
 
-1. Click on the Quick Actions tab
+1. Click on the **Quick Actions** tab
 2. Click the **Add Entity** button
 3. Name the Entity **Puck**
 4. Check the **Circle** check box under **Collisions**
@@ -57,7 +57,7 @@ If you unchecked the option, or if you would like to know how to manually add a 
 ### Adding a Puck Instance
 
 1. Select the **Puck** entity
-2.  Click the **Add Puck Instance to GameScreen** button
+2.  Under the **Quick Actions**, Click the **Add Puck Instance to GameScreen** button
 
     ![](../../.gitbook/assets/2021-07-img_60fdc1cc87873.png)
 
@@ -115,7 +115,7 @@ Currently the Puck moves indefinitely after being hit. We'll assign the Drag val
 
 1. Select the **Puck** Entity in Glue
 2. Select the **Variables** tab
-3. Click the **Add New Variable** button
+3. Click the **Create a new variable** button
 4. Select the **Expose an existing variable** option
 5. Select the value **Drag**
 6. Enter a value of **0.4** for **Drag**

@@ -49,7 +49,7 @@ Create 5 duplicates, so that the Walls list holds a total of 6 AxisAlignedRectan
 
 <figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption><p>All six walls in Walls ShapeCollection</p></figcaption></figure>
 
-Next set the X, Y, Width, and Height variables for for the newly-created walls as follows: **Wall2**
+Next set the X, Y, Width, and Height variables for the newly-created walls as follows: **Wall2**
 
 * X = 0
 * Y = -300
