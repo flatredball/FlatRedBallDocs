@@ -11,11 +11,13 @@ The Play method can be used to play a [SoundEffect](../../../../frb/docs/index.p
 
 ### Code Examples
 
-The following assumes that Explosion is a [SoundEffect](../../../../frb/docs/index.php). This can be created by adding a [.wav file](../../../../frb/docs/index.php) to Glue.
+The following assumes that Explosion is a [SoundEffect](../../../../frb/docs/index.php). This can be created by adding a [.wav file](../../../../frb/docs/index.php) to the FlatRedBall Editor.
 
 ```csharp
 AudioManager.Play(Explosion);
 ```
+
+If volume is not specified, then Play uses the [MasterSoundVolume](mastersoundvolume.md).
 
 Sounds can be played with a custom volume:
 
