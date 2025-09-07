@@ -20,7 +20,7 @@ The following piece of code uses a Circle, sets the acceleration, then applies v
 
 Screen's CustomInitialize:
 
-```
+```csharp
 void CustomInitialize()
 {
     // In a full game, Gravity should probably be assigned as a variable in a Screen or on an Entity
@@ -31,7 +31,7 @@ void CustomInitialize()
 
 Screen's CustomActivity:
 
-```
+```csharp
 void CustomActivity(bool firstTimeCalled)
 {
     const float ground = 0;
@@ -53,7 +53,7 @@ void CustomActivity(bool firstTimeCalled)
 }
 ```
 
-![AccelerationGif.gif](../../../.gitbook/assets/migrated\_media-AccelerationGif.gif)
+![AccelerationGif.gif](../../../.gitbook/assets/migrated_media-AccelerationGif.gif)
 
 ### Acceleration and Velocity
 
