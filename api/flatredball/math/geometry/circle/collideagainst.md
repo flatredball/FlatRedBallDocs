@@ -13,7 +13,7 @@ CollideAgainst is often used in the following situations:
 
 ### CollideAgainst and Z values
 
-All shape collision for 2D shapes (that is, all shapes except AxisAlignedCube and Sphere) consider only X and Y values when testing for collision. This means that the Z value is ignored. Therefore two shapes which are at different Z values will trigger a collision. For example:
+All shape collision for 2D shapes (that is, all shapes except AxisAlignedCube and Sphere) consider only X and Y values when testing for collision. The Z value is ignored. Therefore two shapes which are at different Z values still trigger a collision. For example:
 
 ```csharp
 Circle firstCircle = new Circle();

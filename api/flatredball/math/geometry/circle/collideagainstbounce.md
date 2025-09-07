@@ -2,13 +2,15 @@
 
 ### Introduction
 
-The CollideAgainstBounce is a collision method which performs the following:
+The CollideAgainstBounce collision method performs the following:
 
 * Returns true if a collision has occurred.
-* Repositions the calling Circle and/or the argument object depending on the argument masses.
-* Changes the calling Shape's Velocity and/or the argument object's Velocity depending on the argument masses.
+* Repositions the calling shape and the argument shape according to the argument masses.
+* Changes the calling shape's Velocity and/or the argument object's Velocity depending on the argument masses. See below about more information non attachments.
 
-**Note:** All collision methods, including CollideAgainstBounce, are methods common to all Shapes. If you came here through a link on a page beside the Circle (such as Polygon), don't worry, the code for all shapes is identical.
+{% hint style="info" %}
+**Note:** All collision methods, including CollideAgainstBounce, are methods common to all Shapes. If you came here through a link on a page beside the Circle (such as Polygon), the code for all shapes is identical.
+{% endhint %}
 
 ### Method Signature
 
@@ -22,7 +24,7 @@ bool CollideAgainstBounce(AxisAlignedRectangle axisAlignedRectangle, float thisM
 
 Arguments:
 
-* **Circle circle (or other shape)** - the shape to collide against. This method supports other shapes as well, and if you find a shape that you'd like to collide against which is not supported, please request this feature in the forums.
+* **Circle circle (or other shape)** - the shape to collide against. This method supports other shapes as well.
 * **float thisMass** - the mass of this shape. This does not have to be an absolute mass since it will only be used relative to the otherMass argument.
 * **float otherMass** - the mass of the argument shape. Just like thisMass, otherMass does not have to be absolute. It will be compared against thisMass.
 * **float elasticity** - The amount of bounce that will result. A value of 1 results in all momentum being preserved through the collision. A value of 0 results in no momentum being preserved. Negative values should not be used. Values greater than 1 introduce extra momentum. Values greater than 1 can be used to simulate "bouncing" against a wound-up spring, or to create false physics.
@@ -94,7 +96,7 @@ Add the following in Update:
  }
 ```
 
-![CircleBounceCollision.png](../../../../../.gitbook/assets/migrated\_media-CircleBounceCollision.png)
+![CircleBounceCollision.png](../../../../../.gitbook/assets/migrated_media-CircleBounceCollision.png)
 
 ### Reacting to CollideAgainstBounce
 
@@ -111,9 +113,7 @@ if(didCollisionOccur)
 
 ### Bouncing and Velocity
 
-The [Collision tutorial](../../../../../frb/docs/index.php) mentions:
-
-> "For bouncing to behave properly, we have to make sure that we're not controlling the involved Shapes' position or velocity"
+For bouncing to behave properly, a shapes velocity must not be directly assigned.
 
 Let's consider why this is the case. Imagine a situation where a shape (or parent of a shape) is moving toward the right. This is being done with the following code:
 
@@ -194,7 +194,7 @@ Add the following in Update:
  }
 ```
 
-![CollideAgainstBouncAndVelocity.png](../../../../../.gitbook/assets/migrated\_media-CollideAgainstBouncAndVelocity.png)
+![CollideAgainstBouncAndVelocity.png](../../../../../.gitbook/assets/migrated_media-CollideAgainstBouncAndVelocity.png)
 
 ### CollideAgainstBounce for platformers
 
