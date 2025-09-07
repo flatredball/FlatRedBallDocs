@@ -6,7 +6,7 @@ The CollideAgainstBounce collision method performs the following:
 
 * Returns true if a collision has occurred.
 * Repositions the calling shape and the argument shape according to the argument masses.
-* Changes the calling shape's Velocity and/or the argument object's Velocity depending on the argument masses. See below about more information non attachments.
+* Changes the calling shape's Velocity and/or the argument object's Velocity depending on the argument masses. See below about more information about collision and attachments.
 
 {% hint style="info" %}
 **Note:** All collision methods, including CollideAgainstBounce, are methods common to all Shapes. If you came here through a link on a page beside the Circle (such as Polygon), the code for all shapes is identical.
