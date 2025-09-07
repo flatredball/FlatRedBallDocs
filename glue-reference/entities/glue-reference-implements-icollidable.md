@@ -10,6 +10,8 @@ When creating a new Entity, FlatRedBall provides the option to mark it as IColli
 
 ![](../../.gitbook/assets/2021-02-img_60390a9d377a3.png)
 
+If you have created a FlatRedBall project using either the Top Down or Platformer wizard, then your Player entity implements ICollidable.
+
 ### Making an Existing Entity an ICollidable Entity
 
 If an entity is already created but not yet marked as a ICollidable, it can be marked as ICollidable in its **Properties** tab.
