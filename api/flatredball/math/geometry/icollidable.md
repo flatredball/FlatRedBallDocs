@@ -10,6 +10,8 @@ FlatRedBall also offers the following extension methods for ICollidable:
 * CollideAgainstMove - Returns true/false and separates the two objects involved in the collision
 * CollideAgainstBounce - Returns true/false, separates the two objects involved, and adjusts the velocity of the objects involved to simulate bouncing
 
+These methods ultimately call the same-named methods on the contained shapes in the ICollidable's ShapeCollections.
+
 Objects implementing ICollidables are typically used with CollisionRelationships, usually set up through the FlatRedBall Editor.
 
 ### ICollidable Entities
@@ -24,6 +26,7 @@ Circle
 
 * [CollideAgainst](circle/collideagainst.md)
 * [CollideAgainstBounce](circle/collideagainstbounce.md)
+* [CollideAgainstMove](circle/collideagainstmove.md)
 
 ShapeCollection
 

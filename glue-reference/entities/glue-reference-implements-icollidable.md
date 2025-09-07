@@ -2,21 +2,25 @@
 
 ### Introduction
 
-Entities which can collide with other entities or environments (such as terrain in a platformer) can have their ImplementsICollidable property set. Setting this property to true simplifies writing collision code and makes your code more resistant to changes made to collision objects in Glue.
+Entities which can collide with other entities or environments (such as terrain in a platformer) can have their ImplementsICollidable property set. Setting this property to true simplifies writing collision code. Furthermore, entities which implement ICollidable can freely change their collision shapes without having to change any collision code or collision relationships.
 
 ### Creating an ICollidable Entity
 
-When creating a new Entity, Glue will give you the option to mark it as ICollidable. The most common approach is to add a shape on the entity when creating it. For example, if the AxisAlignedRectangle check box is checked, Glue will automatically check the ICollidable check box.
+When creating a new Entity, FlatRedBall provides the option to mark it as ICollidable. The most common approach is to add a shape on the entity when creating it. For example, if the AxisAlignedRectangle check box is checked, the ICollidable check box is automatically checked.
 
-![](../../.gitbook/assets/2021-02-img\_60390a9d377a3.png)
+![](../../.gitbook/assets/2021-02-img_60390a9d377a3.png)
 
 ### Making an Existing Entity an ICollidable Entity
 
-If an entity is already created but not yet marked as a ICollidable, it can be marked as ICollidable in its **Properties** tab. ![ImplementsICollidable.png](../../.gitbook/assets/migrated\_media-ImplementsICollidable.png) When marking an existing entity as ICollidable, be sure that your entity has a collidable object, such as a circle.
+If an entity is already created but not yet marked as a ICollidable, it can be marked as ICollidable in its **Properties** tab.
 
-![](../../.gitbook/assets/2021-02-img\_6039252b279e9.png)
+<figure><img src="../../.gitbook/assets/migrated_media-ImplementsICollidable.png" alt=""><figcaption></figcaption></figure>
 
-For more information on the ICollidable interface as defined in FlatRedBall, see the [ICollidable](../../frb/docs/index.php) page. For more information on colliding Entities and using ImplementsICollidable, see [this page](broken-reference).
+When marking an existing entity as ICollidable, be sure that your entity has a collidable object, such as a circle.
+
+![](../../.gitbook/assets/2021-02-img_6039252b279e9.png)
+
+For more information on the ICollidable interface as defined in FlatRedBall, see the [ICollidable](../../api/flatredball/math/geometry/icollidable.md) page.
 
 ### Code Examples
 
