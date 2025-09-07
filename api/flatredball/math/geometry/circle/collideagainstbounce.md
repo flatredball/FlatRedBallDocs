@@ -29,6 +29,12 @@ Arguments:
 * **float otherMass** - the mass of the argument shape. Just like thisMass, otherMass does not have to be absolute. It will be compared against thisMass.
 * **float elasticity** - The amount of bounce that will result. A value of 1 results in all momentum being preserved through the collision. A value of 0 results in no momentum being preserved. Negative values should not be used. Values greater than 1 introduce extra momentum. Values greater than 1 can be used to simulate "bouncing" against a wound-up spring, or to create false physics.
 
+### Collision and Parents
+
+If two shapes collide using CollideAgainstBounce, their Position and Velocity values are modified. If a shape is attached to a parent PositionedObject, then the parent's Position and Velocity values are modified instead.
+
+Entities which impement ICollidable typically contain children shapes. These shapes move their parent entity instance when collision occurs.
+
 ### Example Code
 
 The following code creates a [Plinko](http://en.wikipedia.org/wiki/Plinko) board.
