@@ -1228,6 +1228,7 @@
   * [Contributing Code (Pull Requests)](contributing/contributing-code-pull-requests.md)
   * [Automated Test Project](contributing/automated-test-project.md)
   * [Programming Style Guide](contributing/general-programming-flatredball-programming-style-guide.md)
+  * [Adding New Platforms](contributing/adding-new-platforms.md)
 * [🎮 FlatRedBall Games](games/README.md)
   * [angry-boy](games/angry-boy.md)
   * [avatar-skate](games/avatar-skate.md)
