@@ -21,3 +21,7 @@ Open BuildServerUploader.cs and modify AllData.cs to add the new engine.
 ## 4. Modifying Glue
 
 Update EmptyTemplates.cs to include the new template.
+
+## 5. Update Engine.yml
+
+Add the NuGet package building steps
