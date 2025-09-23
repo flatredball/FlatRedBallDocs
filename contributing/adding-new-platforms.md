@@ -10,10 +10,14 @@ To add a new template, open the Templates folder and copy an existing template, 
 
 ## 2. Modifying Game1Copier
 
-todo...
+Open Game1Copier.sln and find Program.cs.
+
+Add information about the newly-created template to the templates list. Rebuild the project, then copy the built .exe to root Templates folder so the new template is copied.
 
 ## 3. Modifying BuildServerUploader
 
-todo...
+Open BuildServerUploader.cs and modify AllData.cs to add the new engine.
 
 ## 4. Modifying Glue
+
+Update EmptyTemplates.cs to include the new template.
