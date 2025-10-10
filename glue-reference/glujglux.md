@@ -635,7 +635,7 @@ This version modifies code generation to enable going directly into edit mode wh
 This version modifies code generation to assign `GraphicalUiElement.CloneRenderableFunction` in Game1.Generated.cs. This code is needed so that FlatRedBall Forms TextBoxes can create additional Selection instances when highlighting multiline text.
 
 {% hint style="info" %}
-If your project cannot upgrade to Version 61, you can still use multi-line text boxes by manually adding the following line of code as long as you are using a version of the engine which supports synax version 61, or if you are linking against source:
+If your project cannot upgrade to Version 61, you can still use multi-line text boxes by manually adding the following line of code as long as you are using a version of the engine which supports syntax version 61, or if you are linking against source:
 
 ```
 global::Gum.Wireframe.GraphicalUiElement.CloneRenderableFunction = global::RenderingLibrary.Graphics.RenderableCloneLogic.Clone;
@@ -646,7 +646,7 @@ global::Gum.Wireframe.GraphicalUiElement.CloneRenderableFunction = global::Rende
 
 ### Version 62 - ShapeCollection has IsPointOnOrInside
 
-This version modifies code generation to provide `TileShapeCollection.IsPointOnOrInside`, which checks both the inside and also the edges of the shapes in the TileShapeCollection. This addresses a problem of IsPointInside returning false for positions perfectly inbetween tiles.
+This version modifies code generation to provide `TileShapeCollection.IsPointOnOrInside`, which checks both the inside and also the edges of the shapes in the TileShapeCollection. This addresses a problem of IsPointInside returning false for positions perfectly in-between tiles.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
@@ -665,5 +665,11 @@ This version modifies Gum code generation to support setting IsRenderTarget in g
 For more information on this property, see the Gum page here:
 
 {% embed url="https://docs.flatredball.com/gum/gum-tool/gum-elements/container/is-render-target" %}
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 65 - Gum Has IRenderTargetTextureReferencer
+
+This version modifies Gum code generation to support the IRenderTargetTextureReferencer interface. This is used on the SpriteRuntime class so that Gum sprites can reference other render targets for more advanced effects when drawing a render target.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
