@@ -177,16 +177,19 @@ In this case, the only variable is the CooldownCircleRadius. Next let's define t
 
 ### Using States in code
 
-Now that our states are defined, let's use them in code. The simplest way to use states is to assign an entity's current state variable. FlatRedBall also provides functions for _interpolating_ between states, which is the process of gradually changing from one state to another. We will write code to set the state to "Tired", then interpolate to rested over the course of two seconds - of course we'll use DashFrequency rather than hard-coding the value _2_. To use these newly-created states, go to **PlayerBall.cs** and modify the **DashActivity** function as follows: To use the states, add the following two lines of code inside the if-statement in DashActivity in PlayerBall.cs:
+Now that our states are defined, let's use them in code. The simplest way to use states is to assign an entity's current state variable.
 
-```csharp
-private void DashActivity()
+FlatRedBall also provides functions for _interpolating_ between states using the TweenerManager, which is the process of gradually changing from one state to another. We will write code to set the state to "Tired", then interpolate to rested over the course of two seconds - of course we'll use DashFrequency rather than hard-coding the value _2_.
+
+To use these newly-created states, go to **PlayerBall.cs** and modify the **DashActivity** function as shown in the following block of code:
+
+<pre class="language-csharp"><code class="lang-csharp">private void DashActivity()
 {
 
     float magnitude = MovementInput?.Magnitude ?? 0;
 
-    bool shouldBoost = BoostInput?.WasJustPressed == true &&
-        TimeManager.CurrentScreenSecondsSince(lastTimeDashed) > DashFrequency &&
+    bool shouldBoost = BoostInput?.WasJustPressed == true &#x26;&#x26;
+        TimeManager.CurrentScreenSecondsSince(lastTimeDashed) > DashFrequency &#x26;&#x26;
         magnitude > 0;
 
     if (shouldBoost)
@@ -202,11 +205,14 @@ private void DashActivity()
         XVelocity = normalizedX * DashSpeed;
         YVelocity = normalizedY * DashSpeed;
 
-        CurrentDashCategoryState = DashCategory.Tired;
-        InterpolateToState(DashCategory.Rested, DashFrequency);
-    }
+<strong>        CurrentDashCategoryState = DashCategory.Tired;
+</strong><strong>        _ = TweenerManager.Self.TweenAsync(
+</strong><strong>            this,
+</strong><strong>            value => InterpolateBetween(DashCategory.Tired, DashCategory.Rested, value),
+</strong><strong>            0, 1, DashFrequency);
+</strong>    }
 }
-```
+</code></pre>
 
 <figure><img src="../../.gitbook/assets/2016-01-2021_July_25_154528.gif" alt=""><figcaption></figcaption></figure>
 
