@@ -458,6 +458,7 @@
     * [How to Play Gum Screen Animations](gum/animations/gum-how-to-play-gum-screen-animations.md)
     * [Named Events](gum/animations/named-events.md)
     * [Setting Gum Animationchain Achx in Code](gum/animations/setting-gum-animationchain-achx-in-code.md)
+  * [Localization](gum/localization.md)
 * [🦴 Spine](spine/README.md)
   * [Setup](spine/setup.md)
   * [Atlas](spine/atlas.md)
