@@ -24,26 +24,20 @@ To upload a new NuGet packages, follow these steps:
 
 ### Gum Tool
 
-Currently Gum uses .NET 4.7.1. This will not build using dotnet build (not sure why). Therefore, Gum must be built and uploaded manually. We could eventually automate this through TeamCity until Gum (maybe?) gets updated to modern .NET. Until then the steps are:
+To release Gum tool:
 
-1. Open Gum locally in Visual Studio
-2.  Open Gum AssemblyInfo.cs and set AssemblyVersion and AssemblyFileVersion using the date-based format. Notice that there's only 3 numbers unlike the versions for NuGet packages.<br>
-
-    <figure><img src="../../.gitbook/assets/23_07 47 02.png" alt=""><figcaption><p>AssemblyVersion and AssemblyFileVersion in AssemblyInfo.cs</p></figcaption></figure>
-3. Rebuild the entire solution (not just the Gum project)
-4. Navigate to the location where Gum is built
-5. Go up one folder so that you are outside of the Debug folder
-6. Create a Data folder if one doesn't exist and copy the Debug folder into it
-7. Right-click on Data and Zip it. This will produce a .zip that has a Data/Debug folder inside - this matches the expected folder structure from previous builds so make sure this is the case. This may change in the future.
-8. Rename this Gum.zip
-9. Manually upload this to FlatRedBall's Files folder using sftp to /home/frbfiles/files.flatredball.com/content/Tools/Gum/Gum.zip
-10. Create a new release on Github - see the previous releases for examples
-11. Add a new page in the Gum Upgrade section explaining how to upgrade this version. If no changes are needed, explain that the upgrade can happen without any changes.&#x20;
-12. Announce on FRB discord
-13. Announce on MonoGame discord
-14. Announce on MGE discord
-15. Announce on Kni discord
-16. Announce on twitter
-17. Announce on Blue Sky
+1. Create new release notes on GitHub including
+   1. Screenshots for new features
+   2. Breaking changes
+2. Create migration doc on gitbook
+3. Run the action to release the Gum tool
+4. Copy the release notes onto the new release
+5. Add a new page in the Gum Upgrade section explaining how to upgrade this version. If no changes are needed, explain that the upgrade can happen without any changes.&#x20;
+6. Announce on FRB discord
+7. Announce on MonoGame discord
+8. Announce on MGE discord
+9. Announce on Kni discord
+10. Announce on twitter
+11. Announce on Blue Sky
 
 This file is used when creating FlatRedBall builds, so Gum must first be built and uploaded to the FlatRedBall FTP prior to running the FlatRedBall Github Actions. Otherwise, an old Gum will be included in FRBDK. This may be okay depending on if Gum has important new features.
