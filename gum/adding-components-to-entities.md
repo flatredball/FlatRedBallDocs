@@ -4,6 +4,12 @@
 
 Gum components can be added to FlatRedBall entities without any code or additional setup. A common example of needing a Gum component on a FRB entity is a health bar in a RTS game. Gum components can be thought of as containers which are "Gum on the inside, FlatRedBall on the outside". In other words, internally the Gum component uses the Gum coordinate and rendering system, but the component is attached to an entity which can be positioned like any other FlatRedBall object.
 
+{% hint style="info" %}
+This page discusses adding Gum components to FRB Entities to position them in world spae. If a component is added to a Gum screen, then it will be positioned in screen space.
+
+In code, components which are added to a FRB entity are wrapped in an instance of a `PositionedObjectGueWrapper`. Components which are added to FRB screens are not wrapped in a `PositionedObjectGueWrapper`, but a `PositionedObjectGueWrapper` can be created manually in code.
+{% endhint %}
+
 ### Adding a Gum Component
 
 Before adding a Gum component to an entity, your project must have a Gum project added. If not, you can add one by clicking the Gum icon.
@@ -189,17 +195,14 @@ FlatRedBall.Forms (Gum) components can be added to FlatRedBall Entities just lik
 
 For example, a DialogBox instance can be positioned in world space by creating an entity in FRB which contains a DialogBox component:
 
-1.  Create a new Entity called DialogBoxContainer in FRB\
-
+1.  Create a new Entity called DialogBoxContainer in FRB<br>
 
     <figure><img src="../.gitbook/assets/image (200).png" alt=""><figcaption><p>DialogBoxEntity</p></figcaption></figure>
-2.  Add a DialogBoxRuntime instance to the DialogBoxContainer entity\
-
+2.  Add a DialogBoxRuntime instance to the DialogBoxContainer entity<br>
 
     <figure><img src="../.gitbook/assets/image (199).png" alt=""><figcaption><p>Add the DialogBoxRuntime (Gum component) to the DialogBoxEntity</p></figcaption></figure>
 3.  For this demo, all of the code to show the dialog will exist in the Player code, so we need to access the internal DialogBoxRuntime (Gum component). Therefore, it should be marked as public. Select the DialogBoxRuntimeInstance object and change its scope to public.\
-    \
-
+    <br>
 
     <figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption><p>Make the DialogBoxRuntimeInstance public</p></figcaption></figure>
 
