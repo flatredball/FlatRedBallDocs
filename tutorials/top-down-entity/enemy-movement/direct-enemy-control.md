@@ -15,13 +15,13 @@ We'll be creating a new Enemy entity for this tutorial. To do this:
 1. Click the **Quick Actions** tab
 2.  Click the **Add Entity** button
 
-    ![](../../../.gitbook/assets/2022-03-img\_6230b5fde30ba.png)
+    ![](../../../.gitbook/assets/2022-03-img_6230b5fde30ba.png)
 3. Enter the name **Enemy**
 4. Check **AxisAlignedRectangle**
 5. Check **Top-Down** for the **Input Movement Type**
 6. Leave the rest of the defaults and click **OK**
 
-![](../../../.gitbook/assets/2022-03-img\_6230b8a8de03d.png)
+![](../../../.gitbook/assets/2022-03-img_6230b8a8de03d.png)
 
 We will also change the color of the enemy rectangle to tell it apart from the player:
 
@@ -32,7 +32,7 @@ We will also change the color of the enemy rectangle to tell it apart from the p
 5. Change **Height** to **16**
 6. Change **Color** to **Red**
 
-![](../../../.gitbook/assets/2022-03-img\_6230b9313ef12.png)
+![](../../../.gitbook/assets/2022-03-img_6230b9313ef12.png)
 
 ### Adding an Enemy to Level1
 
@@ -41,13 +41,12 @@ To add an enemy to Level1:
 1. Expand the Screens folder, then expand Level1's **Objects** folder
 2. Select the **EnemyList**
 3. Click the **Quick Actions** tab
-4.  Click **Add a new Enemy to Enemy List**\
-
+4.  Click **Add a new Enemy to Enemy List**<br>
 
     <figure><img src="../../../.gitbook/assets/2022-03-img_6230b9bfbb45e.png" alt=""><figcaption></figcaption></figure>
 5.  Modify the X and Y values for the new enemy so it is inside of the level boundaries by changing **X to 160** and **Y to -160**
 
-    ![](../../../.gitbook/assets/2022-03-img\_6230ba2a14f07.png)
+    ![](../../../.gitbook/assets/2022-03-img_6230ba2a14f07.png)
 
 ### Setting the InputDevice
 
@@ -58,14 +57,14 @@ So far our Enemy instance is an entity with no behavior - it simply stays in the
 3. Set **Input Movement Type** to **Top-Down**
 4.  Set **Input Device** to **None (Can Assign in Code)**
 
-    ![](../../../.gitbook/assets/2022-03-img\_6230bae6a419f.png)
+    ![](../../../.gitbook/assets/2022-03-img_6230bae6a419f.png)
 
 Now our Enemy has the behavior of top-down movement, but it is not using an input device for movement. Custom input can be set by defining an input device class which inherits from **FlatRedBall.Input.InputDeviceBase**. To do this:
 
 1. Open the project in Visual Studio
 2.  Create a new class called **EnemyInput**. Mine is in an Input folder.
 
-    ![](../../../.gitbook/assets/2022-03-img\_6230bbff0fb59.png)
+    ![](../../../.gitbook/assets/2022-03-img_6230bbff0fb59.png)
 
 The EnemyInput class needs to inhert from the FlatRedBall.Input.InputDeviceBase class which provides virtual methods to control how the input device behaves. Although the InputDeviceBase class offers many virtual methods, the only two that the top-down movement logic uses are:
 

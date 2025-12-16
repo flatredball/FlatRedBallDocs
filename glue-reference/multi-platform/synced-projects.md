@@ -34,8 +34,7 @@ To open a project, click on the icon for the IDE for a given project. For exampl
 
 New platforms can be added to an existing project at any point in development by adding a new synced project. To add a new synced project to an existing Glue project:
 
-1.  Open the **Projects** tab by selecting **Project** -> **View Projects**\
-
+1.  Open the **Projects** tab by selecting **Project** -> **View Projects**<br>
 
     <figure><img src="../../.gitbook/assets/image (369).png" alt=""><figcaption><p>Projects tab</p></figcaption></figure>
 2. Click the **New Synced Project** button

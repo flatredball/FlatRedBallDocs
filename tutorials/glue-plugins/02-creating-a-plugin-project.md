@@ -13,16 +13,13 @@ Before creating a plugin, be sure that you have downloaded the FlatRedBall and G
 Whether you create a new .sln depends on whether you plan on making a plugin that will be part of the main FlatRedBall repository. If your plugin is intended to be part of the FlatRedBall repository, please discuss your plans in Discord to make sure it will be accepted as a core library. If you are not sure if you want to include it in the main FRB repository, or if you intend this to be separate from the FRB repository, then you create your own .sln. Keep in mind that you do not need to create a new .sln for every plugin you are developing - it may be convenient to have multiple plugins in one .sln file. To create a new .sln file:
 
 1. Open Visual Studio. If you are using a different IDE such as Rider, you will need to modiyf the steps.
-2.  Select the option to create a new project\
-
+2.  Select the option to create a new project<br>
 
     <figure><img src="../../.gitbook/assets/image (202).png" alt=""><figcaption><p>Create a new project in Visual Studio</p></figcaption></figure>
-3.  Select Class Library and click Next\
-
+3.  Select Class Library and click Next<br>
 
     <figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption><p>Select Class Library in Visual Studio</p></figcaption></figure>
-4.  Enter a name and location for your new project and click Next\
-
+4.  Enter a name and location for your new project and click Next<br>
 
     <figure><img src="../../.gitbook/assets/image (204).png" alt=""><figcaption><p>Selecting Project name and Location</p></figcaption></figure>
 5.  Select .NET 6.0 as the Framework - this is the current .NET version used in the FlatRedBall Editor as of January 2024, but it will likely change in the future. Click Create.

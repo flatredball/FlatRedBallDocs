@@ -14,8 +14,7 @@ To add a ShapeCollection:
 2. Select **Add Object**
 3. Verify that **FlatRedBall or Custom Type** is selected.
 4. Select **ShapeCollection**
-5.  Click **OK**\
-
+5.  Click **OK**<br>
 
     <figure><img src="../../../.gitbook/assets/migrated_media-AddShapeCollectionObject.PNG" alt=""><figcaption><p>Add a ShapeCollection through the New Object window</p></figcaption></figure>
 
@@ -29,8 +28,7 @@ To add a new shape to the ShapeCollection:
 
 1. Right-click on the ShapeCollection instance
 2. Select **Add Object**
-3.  Select one of the shapes - notice that FlatRedBall filters the available types to the types allowed in a ShapeCollection.\
-
+3.  Select one of the shapes - notice that FlatRedBall filters the available types to the types allowed in a ShapeCollection.<br>
 
     <figure><img src="../../../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 4. Click OK

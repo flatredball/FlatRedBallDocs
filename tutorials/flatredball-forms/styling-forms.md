@@ -108,8 +108,7 @@ If we would like to modify the Background color in the Highlight (or any other) 
 
 <figure><img src="../../.gitbook/assets/image (138).png" alt=""><figcaption><p>Adding a state to NineSlice</p></figcaption></figure>
 
-4.  Removing the usage of ColorCategoryStates from your ButtonCategory. The states in the NineSlice exist to make global styling easier, but they are not a requirement. If you would prefer to implement your own styling method, such as direct RGB values on the background, that's okay. Keep in mind that the Background NineSlice isn't even a requirement! You can remove it and replace it with something else like a Sprite if that works better for your game.\
-
+4.  Removing the usage of ColorCategoryStates from your ButtonCategory. The states in the NineSlice exist to make global styling easier, but they are not a requirement. If you would prefer to implement your own styling method, such as direct RGB values on the background, that's okay. Keep in mind that the Background NineSlice isn't even a requirement! You can remove it and replace it with something else like a Sprite if that works better for your game.<br>
 
     <figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption><p>ButtonCategory variables can be removed</p></figcaption></figure>
 

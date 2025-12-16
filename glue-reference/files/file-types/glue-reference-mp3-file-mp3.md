@@ -28,8 +28,7 @@ FlatRedBall provides sample songs which you can use to test song playing. To add
 1. Right-click on the Files folder in a Screen
 2. Select Add File -> New File
 3. Search for Song
-4.  Select one of the song types and click OK\
-
+4.  Select one of the song types and click OK<br>
 
     <figure><img src="../../../.gitbook/assets/image (122).png" alt=""><figcaption><p>Add New File window selecting one of the song types</p></figcaption></figure>
 
@@ -43,7 +42,7 @@ FlatRedBall provides simple song controls in the Song tab. To view the Song tab:
 2. Select the newly-created song
 3. Select the **Song** tab
 
-![Song tab provides basic song controls](<../../../.gitbook/assets/27\_05 17 46.png>)
+![Song tab provides basic song controls](<../../../.gitbook/assets/27_05 17 46.png>)
 
 ### Moving between Screens
 
@@ -63,8 +62,7 @@ You can add multiple songs to your Screen if you would like to select which one 
     &#x20;
 
     <figure><img src="../../../.gitbook/assets/migrated_media-MultipleSongsInScreen.PNG" alt=""><figcaption><p>A FlatRedBall Screen with multiple song files</p></figcaption></figure>
-3.  Set each of them to **LoadedOnlyWhenReferenced**. For more information on this property, see [the LoadedOnlyWhenReferenced page](../glue-reference-loadedonlywhenreferenced.md). \
-
+3.  Set each of them to **LoadedOnlyWhenReferenced**. For more information on this property, see [the LoadedOnlyWhenReferenced page](../glue-reference-loadedonlywhenreferenced.md). <br>
 
     <figure><img src="../../../.gitbook/assets/migrated_media-SongLoadedOnlyWhenReferenced.png" alt=""><figcaption></figcaption></figure>
 4. In custom code, play the song you would like to play. For example, if your song is called MySong, then add the following code:

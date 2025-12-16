@@ -22,12 +22,10 @@ However, more complex entities, such as a Player or Enemy, may need additional l
 
 Entity instances have their CustomActivity called automatically if any of the following are true:
 
-*   The entity is created directly in the FlatRedBall Editor\
-
+*   The entity is created directly in the FlatRedBall Editor<br>
 
     <figure><img src="../../.gitbook/assets/image (340).png" alt=""><figcaption><p>Player1 is added directly to a Screen so its CustomActivity is called automatically</p></figcaption></figure>
-*   The entity is added to a list which is part of a Screen in the FlatRedBall Editor\
-
+*   The entity is added to a list which is part of a Screen in the FlatRedBall Editor<br>
 
     <figure><img src="../../.gitbook/assets/image (341).png" alt=""><figcaption><p>BulletList is part of the GameScreen, so any Bullet added to BulletList has its CustomActivity called automatically</p></figcaption></figure>
 

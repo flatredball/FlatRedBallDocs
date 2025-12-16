@@ -15,17 +15,17 @@ First we'll create a screen called GameScreen. Many FlatRedBall projects contain
 1. In the FRB Editor, select the **Quick Actions** tab
 2.  Click the **Add Screen/Level** button
 
-    ![](../../.gitbook/assets/2021-02-img\_603139d62debc.png)
+    ![](../../.gitbook/assets/2021-02-img_603139d62debc.png)
 3. Notice that FRB suggests creating a **GameScreen**. We recommend always having one screen called GameScreen, so this default helps you set your project up quickly.
 4. Click the option to **Add Map LayeredTileMap.** This sets up a base object for your map which will be used in all levels.
 5. Click the option to **Add SolidCollision ShapeCollection**. Most games need solid collision so this will set up your game for that.
 6.  Leave all other defaults and click **OK**
 
-    ![](../../.gitbook/assets/2022-05-img\_6287da871fd59.png)
+    ![](../../.gitbook/assets/2022-05-img_6287da871fd59.png)
 
 Once you click OK you will have a GameScreen which includes Map and SolidCollision objects.
 
-![](../../.gitbook/assets/2021-02-img\_60313b3b433db.png)
+![](../../.gitbook/assets/2021-02-img_60313b3b433db.png)
 
 For now we'll leave our GameScreen empty, but we'll return later to add objects.
 
@@ -37,12 +37,12 @@ Above we automatically created the SolidCollision object through a check box. If
 2. Go to the **Quick Actions** tab
 3.  Click **Add Object to GameScreen**
 
-    ![](../../.gitbook/assets/2021-02-img\_603278ee43e9b.png)
+    ![](../../.gitbook/assets/2021-02-img_603278ee43e9b.png)
 4. Search for **TileShapeCollection** in the **New Object** window
 5. Enter the name **SolidCollision**
 6.  Click **OK**
 
-    ![](../../.gitbook/assets/2021-02-img\_603279bb85e66.png)
+    ![](../../.gitbook/assets/2021-02-img_603279bb85e66.png)
 
 Now the SolidCollision should appear in the GameScreen. Next we need to modify the TileShapeCollection to properly use the SolidCollision tile.
 
@@ -52,7 +52,7 @@ Now the SolidCollision should appear in the GameScreen. Next we need to modify t
 4. Select the **Map** under **Source TMX File/Object**
 5.  Enter or select **SolidCollision** under **Tile Class:**
 
-    ![](<../../.gitbook/assets/15\_20 57 41.png>)
+    ![](<../../.gitbook/assets/15_20 57 41.png>)
 
 Finally we need to set the property as Set By Derived so that level screens can modify this:
 
@@ -60,7 +60,7 @@ Finally we need to set the property as Set By Derived so that level screens can 
 2. Select the **Properties** tab
 3. Set the **SetByDerived** property to **True**
 
-![](../../.gitbook/assets/2021-02-img\_60327c03e75a2.png)
+![](../../.gitbook/assets/2021-02-img_60327c03e75a2.png)
 
 ### Adding Level1 Screen
 
@@ -69,13 +69,13 @@ Next we'll create our first level. Levels are regular screens which inherit from
 1. Go to the **Quick Actions** tab
 2.  Click **Add Screen/Level**
 
-    ![](../../.gitbook/assets/2021-02-img\_60313b96abcf7.png)
+    ![](../../.gitbook/assets/2021-02-img_60313b96abcf7.png)
 3. Verify that the following options are set:
    1. Name **Level1** (no spaces)
    2. **Add Standard TMX File** option is selected. This will add a TMX file to this level for you, saving you extra steps.
 4.  Click **OK**
 
-    ![](../../.gitbook/assets/2021-02-img\_60313f4f9cca9.png)
+    ![](../../.gitbook/assets/2021-02-img_60313f4f9cca9.png)
 
 Once you click the OK button, FRB asks you about details for the new map.
 
@@ -83,11 +83,11 @@ Once you click the OK button, FRB asks you about details for the new map.
 2. Leave the other options default (checked). These options will make it easier to create functional tile maps.
 3.  Click OK
 
-    ![](../../.gitbook/assets/2022-05-img\_6287db23aadf1.png)
+    ![](../../.gitbook/assets/2022-05-img_6287db23aadf1.png)
 
 You should now have a Level1Map file in your Level1 screen.
 
-![](../../.gitbook/assets/2021-02-img\_6031408a58a00.png)
+![](../../.gitbook/assets/2021-02-img_6031408a58a00.png)
 
 FRB should automatically update your Map object in Level1 so that it uses your newly-added TMX file. You can verify this by selecting the Map object and looking at its properties tab.
 
@@ -103,16 +103,15 @@ To create a tile map file in Tiled:
 2. Select **File**->**New**->**New Map...**
 3. Set the **Tile layer format** to **Base64 (zlib compressed)**. Compressing the tile map will make the .tmx file smaller. We will need to change the type of compression used in a later step, since the new file window only lets us pick "zlib".
 4. Set the **Tile size** to a **Width** of **16px** and a **Height** of **16px**. Tile sizes are usually multiples of 2 (2, 4, 8, 16, 32). This guide uses a tile set with 16x16 tiles.
-5.  Click **Save As...**\
-
+5.  Click **Save As...**<br>
 
     <figure><img src="../../.gitbook/assets/2018-04-img_5ad9edb5c3a12.png" alt=""><figcaption></figcaption></figure>
 6.  Navigate to the Level1's Content folder. You can find this by right-clicking on the GameScreen's **Files** item in Glue and selecting **View in explorer**
 
-    ![](../../.gitbook/assets/2019-07-img\_5d1ca326b595f.png)
+    ![](../../.gitbook/assets/2019-07-img_5d1ca326b595f.png)
 7.  Save the file as Level1File.tmx
 
-    ![](../../.gitbook/assets/2019-07-img\_5d1ca39751724.png)
+    ![](../../.gitbook/assets/2019-07-img_5d1ca39751724.png)
 
 #### Changing to GZip (Only if Created in Tiled)
 
@@ -121,8 +120,8 @@ Now that we've created a map, we will change the "Tile Layer Format" to "Base64 
 1. Find the map properties on the left-side of the screen
 2.  If the properties window is not open, select the **Map** -> **Map Properties...** menu item
 
-    ![](../../.gitbook/assets/2018-04-img\_5ad9ef60d069a.png)
-3. Change the **Tile Layer Format** to **Base64 (gzip compressed)** ![](../../.gitbook/assets/2016-08-img\_57abb3401128c.png)
+    ![](../../.gitbook/assets/2018-04-img_5ad9ef60d069a.png)
+3. Change the **Tile Layer Format** to **Base64 (gzip compressed)** ![](../../.gitbook/assets/2016-08-img_57abb3401128c.png)
 
 Now that the format has been changed, save the file again. Finally the file can be added to the Level1 screen by drag+dropping the file from windows explorer to the Files item under Level1.
 
@@ -147,11 +146,11 @@ If you followed the previous steps, your map should include:
 1. A single layer called **GameplayLayer**
 2. A single Tileset called **TiledIcons**
 
-![](../../.gitbook/assets/2021-02-img\_603142bfa74a7.png)
+![](../../.gitbook/assets/2021-02-img_603142bfa74a7.png)
 
 This tileset was automatically added in an earlier step so that you can hit the ground running on creating your game. It contains common tiles for many games, but this tutorial will focus on the solid collision tile, which is the top-left tile in the tileset.
 
-![](../../.gitbook/assets/2021-02-img\_603143ca04832.png)
+![](../../.gitbook/assets/2021-02-img_603143ca04832.png)
 
 We can click this tile and place it on the **GameplayLayer** to create walls, floors, or any other type of solid collision.
 
@@ -159,26 +158,26 @@ We can click this tile and place it on the **GameplayLayer** to create walls, fl
 
 Don't forget to save your work in Tiled - otherwise it won't show up in game.
 
-![](../../.gitbook/assets/2021-02-img\_6031449fb6101.png)
+![](../../.gitbook/assets/2021-02-img_6031449fb6101.png)
 
 ### Playing Your Game
 
 Once you have saved your tileset, you can play the game by pushing the play button in the FRB editor.
 
-![](../../.gitbook/assets/2021-02-img\_6031452c21294.png)
+![](../../.gitbook/assets/2021-02-img_6031452c21294.png)
 
 Alternatively you can open your project in Visual Studio and build/run it there. Use whichever method you are most comfortable with. Either way, you should see your game run with the Level1 map displayed.
 
-![](../../.gitbook/assets/2021-02-img\_6031465890171.png)
+![](../../.gitbook/assets/2021-02-img_6031465890171.png)
 
 Notice the file may be offset depending on which tiles are painted. This is because the center of the screen is (0,0), which is the top-left of the tile. To adjust the camera so that the top left of the game window matches the top left of the tile map:
 
 1.  Open Visual Studio
 
-    ![](../../.gitbook/assets/2021-02-img\_6031470068e28.png)
+    ![](../../.gitbook/assets/2021-02-img_6031470068e28.png)
 2.  Open **GameScreen.cs**. We could do this in Level1.cs if we wanted it to be logic specific to Level 1, but we want to have this code run for all levels.
 
-    ![](../../.gitbook/assets/2021-02-img\_603147579ee3a.png)
+    ![](../../.gitbook/assets/2021-02-img_603147579ee3a.png)
 3.  Modify the CustomInitialize method as follows:
 
     ```lang:c#
@@ -191,7 +190,7 @@ Notice the file may be offset depending on which tiles are painted. This is beca
 
 Now the game will be focused on the map.
 
-![](../../.gitbook/assets/2021-02-img\_6031479185612.png)
+![](../../.gitbook/assets/2021-02-img_6031479185612.png)
 
 ### Optional - Adding a Tileset
 
@@ -223,14 +222,14 @@ To use the dungeonTileSet.png file in the tile map:
 3. Verify that **Tile width** and **Tile height** are both **16px**
 4.  Click **Save As...**
 
-    ![](../../.gitbook/assets/2018-09-img\_5b991d0deca5b.png)
+    ![](../../.gitbook/assets/2018-09-img_5b991d0deca5b.png)
 5.  Save the file in the same location as the PNG (the GameScreen content folder)
 
-    ![](../../.gitbook/assets/2018-09-img\_5b991d2a83156.png)
+    ![](../../.gitbook/assets/2018-09-img_5b991d2a83156.png)
 
 The tileset (called **dungeonTileSet**) will now be shown in the Tilesets section in Tiled.
 
-![](../../.gitbook/assets/2019-07-img\_5d1ca4fc66f33.png)
+![](../../.gitbook/assets/2019-07-img_5d1ca4fc66f33.png)
 
 #### Tileset Considerations
 
@@ -267,7 +266,7 @@ Keep in mind that changes made to the .tmx file in Tiled must be saved before th
 
 ### TextureFilter and Tile Maps
 
-Texture filtering is a method of making objects look less-pixellated when zoomed in. Most 3D games apply a form of "non-point" linear filtering, which removes the square pixel looks of zoomed-in textures. Unfortunately, since tile maps pack each tile adjacent to one-another, this can cause lines to appear between each tile when running the game in FlatRedBall. For example, consider the horizontal lines which appear on the tree and purple ground in the following image: ![](../../.gitbook/assets/2017-06-img\_593acc78bff79.png) To avoid this, _point filtering_ should be used. To apply point filtering, add the following code, preferably in Game1.cs Initialize, after initializing FlatRedBall:
+Texture filtering is a method of making objects look less-pixellated when zoomed in. Most 3D games apply a form of "non-point" linear filtering, which removes the square pixel looks of zoomed-in textures. Unfortunately, since tile maps pack each tile adjacent to one-another, this can cause lines to appear between each tile when running the game in FlatRedBall. For example, consider the horizontal lines which appear on the tree and purple ground in the following image: ![](../../.gitbook/assets/2017-06-img_593acc78bff79.png) To avoid this, _point filtering_ should be used. To apply point filtering, add the following code, preferably in Game1.cs Initialize, after initializing FlatRedBall:
 
 ```lang:c#
 FlatRedBallServices.GraphicsOptions.TextureFilter = 
@@ -284,4 +283,4 @@ If your tile map does not appear, the following section may help solve the probl
 
 Loaded tile maps are drawn in the FlatRedBall engine, sorted by their Z value. A single-layer map will be drawn at Z = 0, so any object with a larger Z value will draw in front of the map. If a map has multiple layers, each layer will be 1 unit in front of the layer before it. For example, a map with four layers will have the layers at Z values 0, 1 ,2 and 3. Note that if layers are added under the GameplayLayer, and if Shift Map To Move Gameplay Layer To Z0 is checked, then the map will be shifted on the Z axis so that the GameplayLayer is at Z=0, and all other layers are above or below, each offset by one unit.
 
-![](../../.gitbook/assets/2022-02-img\_620b09801d166.png)
+![](../../.gitbook/assets/2022-02-img_620b09801d166.png)

@@ -575,8 +575,7 @@ To fix these problems:
 1. Use a version control system such as Git, or back up your project. Changing types on variables can cause unintended side effects so it's best to have a backup.
 2. Locate the entity or screen which references the incorrect variable. You can do this by double-clicking the error in Visual Studio to be taken to the generated code with the error.
 3. Find the matching entity or screen in the FRB Editor
-4.  Find the variable with the old "Type" type and change it to variant.\
-
+4.  Find the variable with the old "Type" type and change it to variant.<br>
 
     <figure><img src="../.gitbook/assets/image (254).png" alt=""><figcaption><p>Change the type to Variant</p></figcaption></figure>
 

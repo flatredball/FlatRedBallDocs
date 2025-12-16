@@ -6,12 +6,10 @@ To add the FRB source to your project:
 
 1. Make sure you have already cloned the **FlatRedBall** and **Gum** repositories. We recommend using Github for Desktop and cloning to the default location so that your game and FlatRedBall are sibling folders in the same parent folder. For more information on cloning FlatRedBall, see the [main Building FlatRedBall From Source page](../flatredball-source.md#downloading-flatredball-source). For more information on cloning Gum, see [this section](../flatredball-source.md#downloading-gum-source) on the main Building FlatRedBall From Source page.
 2. Open your project in the FlatRedBall Editor
-3.  Select the **Project** -> **Link Game to FRB Source** menu item\
-
+3.  Select the **Project** -> **Link Game to FRB Source** menu item<br>
 
     <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Link game to FRB source menu item</p></figcaption></figure>
-4.  The **Add FRB Source** tab appears, showing a text box for FlatRedBall and Gum root folders. If your current project is also a Git project which is cloned to the same folder as FlatRedBall and Gum, then the FRB Editor attempts to fill in the file paths.\
-
+4.  The **Add FRB Source** tab appears, showing a text box for FlatRedBall and Gum root folders. If your current project is also a Git project which is cloned to the same folder as FlatRedBall and Gum, then the FRB Editor attempts to fill in the file paths.<br>
 
     <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Add FRB Source tab in the FRB Editor adds all necessary projects to your game's solution</p></figcaption></figure>
 
@@ -42,8 +40,7 @@ If you would like to use the engine source in your game project:
 1. Open your game project in Visual Studio
 2. Expand the game project in the solution explorer
 3. Expand the References item
-4.  Find the FlatRedBall entries. This is the reference to the prebuilt-dll. Note that these may be direct references or NuGet packages depending on which version of FlatRedBall you are using, so be sure to check under both **Assemblies** and **Packages**. Press the Delete key on all references as mentioned below:\
-
+4.  Find the FlatRedBall entries. This is the reference to the prebuilt-dll. Note that these may be direct references or NuGet packages depending on which version of FlatRedBall you are using, so be sure to check under both **Assemblies** and **Packages**. Press the Delete key on all references as mentioned below:<br>
 
     <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -60,8 +57,7 @@ If you would like to use the engine source in your game project:
        4. StateInterpolation.FNA
 5. Right-click on the solution
 6. Select **Add -> Existing Project...**
-7.  Navigate to the location of the FlatRedBall .csproj file for your given platform. For example, for PC, add **\<FlatRedBall Root>\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallDesktopGL.csproj**\
-
+7.  Navigate to the location of the FlatRedBall .csproj file for your given platform. For example, for PC, add **\<FlatRedBall Root>\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallDesktopGL.csproj**<br>
 
     <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 8. Click Open to add the project to your game's solutionComment
@@ -69,8 +65,7 @@ If you would like to use the engine source in your game project:
 10. Click the "Projects" categoryComment
 11. Check the FlatRedBallDesktopGL project (or whichever FlatRedBall project used for the given platform)Comment
 12. Repeat the process for the other librariesComment
-13. Click OK\
-
+13. Click OK<br>
 
     <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 14. Build and run your project

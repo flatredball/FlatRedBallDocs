@@ -29,8 +29,7 @@ To add Skia controls to a Gum project:
 1. Open your project in the FlatRedBall Editor
 2. If your game wasn't created using the wizard, make sure you have added a Gum project
 3. Open your Gum project by clicking the Gum icon at the top of FlatRedBall
-4.  Click **Plugins** -> **Add Skia Standard Elements**\
-
+4.  Click **Plugins** -> **Add Skia Standard Elements**<br>
 
     <figure><img src="../../.gitbook/assets/image (284).png" alt=""><figcaption><p>Add Skia Satandard Elements menu item in Gum</p></figcaption></figure>
 

@@ -44,8 +44,7 @@ The most common approach to making FlatRedBall games is to use the FlatRedBall E
    ![](<.gitbook/assets/image (367).png>)
    1. Right-click the ZIP file and chose Properties
    2. Check-mark the Unblock option and Click Apply
-   3. Close the Properties window\
-
+   3. Close the Properties window<br>
 3.  Unzip the file after downloading
 
     <figure><img src=".gitbook/assets/image (147).png" alt=""><figcaption><p>Extract the FRBDK.zip file</p></figcaption></figure>

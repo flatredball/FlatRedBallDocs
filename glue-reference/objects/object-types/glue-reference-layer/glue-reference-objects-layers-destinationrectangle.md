@@ -15,8 +15,7 @@ The DestinationRectangle can control the area of the screen where a Layer is dra
 This destination rectangle can be changed in Glue. To do this:
 
 1. Right-click on "DestinationRectnagle" in Glue.
-2.  An option for "Use Custom Rectangle" should appear\
-
+2.  An option for "Use Custom Rectangle" should appear<br>
 
     <figure><img src="../../../../.gitbook/assets/migrated_media-UseCustomRectangleOption.png" alt=""><figcaption></figcaption></figure>
 3.  Select this option and the Layer will be given a custom rectangle:

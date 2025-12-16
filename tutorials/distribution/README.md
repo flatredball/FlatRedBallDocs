@@ -47,19 +47,16 @@ To distribute a FlatRedBall Web project:
 1. Open your project in Visual Studio
 2. Switch your project to Release build
    1. If you are linking FlatRedBall nuget packages, instead consider linking to FlatRedBall Source so you can build the engine in release mode. FlatRedBall nuget packages distribute in debug configuration.
-3.  Select **Build** -> **Publish YourProjectName**\
-
+3.  Select **Build** -> **Publish YourProjectName**<br>
 
     <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Publish menu command</p></figcaption></figure>
 
     1. If the Publish option is not enabled, be sure that your game is not running, and select the project in the Solution Explorer
-4.  If asked, select the option to publish to a Folder unless you are familiar publishing with the other options\
-
+4.  If asked, select the option to publish to a Folder unless you are familiar publishing with the other options<br>
 
     <figure><img src="../../.gitbook/assets/19_05 16 41.png" alt=""><figcaption><p>Select the Folder option to create a build locally which can be uploaded manually</p></figcaption></figure>
 5. Confirm the folder where you would like to publish, then click **Finish**
-6.  Click the Publish button on the Publish tab\
-
+6.  Click the Publish button on the Publish tab<br>
 
     <figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Click the Publish button</p></figcaption></figure>
 7. Wait for your project to finish building

@@ -124,17 +124,14 @@ This code adds a handler to when the player jumps. The jump checks if the player
 We can add sliding animations by checking the IsSlidingOnWall variable either in code or in the Animations tab for the player. If you are already using the Animations UI, then handling the IsSlidingOnWall variable requires no code. To do so:
 
 1. Select the Player Entity, and select the Entity Input Movement tab
-2.  Click on the Animation item\
-
+2.  Click on the Animation item<br>
 
     <figure><img src="http://flatredball.com/wp-content/uploads/2023/10/img_6521ce5b2ed06.png" alt=""><figcaption></figcaption></figure>
-3.  Copy the CharacterFall animation row\
-
+3.  Copy the CharacterFall animation row<br>
 
     <figure><img src="../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 4. Select **CharacterWallSlide** animation on the new row
-5.  Enter **IsSlidingOnWall** for the **Custom Condition** on the new row\
-
+5.  Enter **IsSlidingOnWall** for the **Custom Condition** on the new row<br>
 
     <figure><img src="http://flatredball.com/wp-content/uploads/2023/10/img_6521cf490bf72.png" alt=""><figcaption></figcaption></figure>
 

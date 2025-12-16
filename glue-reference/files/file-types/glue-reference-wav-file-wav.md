@@ -115,13 +115,11 @@ Note that this approach does not result in the wav file being loaded multiple ti
 To do this:
 
 1. Add the wav file to global content. Note, this can even be done with wildcards
-2.  Set the RuntimeType to SoundEffect\
-
+2.  Set the RuntimeType to SoundEffect<br>
 
     <figure><img src="../../../.gitbook/assets/image (338).png" alt=""><figcaption><p>SoundEffect in Global Content Files</p></figcaption></figure>
 3. Add the same file to a Screen or Entity - you can drag+drop the file from global content, or right-click on the Files folder and select Add Existing.
-4.  Change the RuntimeType to SoundEffectInstance using the dropdown\
-
+4.  Change the RuntimeType to SoundEffectInstance using the dropdown<br>
 
     <figure><img src="../../../.gitbook/assets/image (339).png" alt=""><figcaption><p>SoundEffectInstance in a Screen, using the same .wav file as the SoundEffect in GlobalContent</p></figcaption></figure>
 

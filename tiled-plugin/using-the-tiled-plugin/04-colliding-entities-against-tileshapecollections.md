@@ -20,8 +20,7 @@ Normally top-down and platformer games in FRB use a Player entity as the charact
 To create a new entity:
 
 1. In FRB, select the Quick Actions tab
-2.  Select **Add Entity**\
-
+2.  Select **Add Entity**<br>
 
     <figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Add Entity button in Quick Actions</p></figcaption></figure>
 3. Enter the name **Player**
@@ -55,11 +54,11 @@ We can change the starting position of the player by changing the Player1 X and 
 3. Change X to 200
 4. Change Y to -200
 
-![](../../.gitbook/assets/2021-02-img\_603171273de31.png)
+![](../../.gitbook/assets/2021-02-img_603171273de31.png)
 
 Now the player appears near the center of the level.
 
-![](../../.gitbook/assets/2021-02-img\_6031714ab082d.png)
+![](../../.gitbook/assets/2021-02-img_6031714ab082d.png)
 
 ### Performing Solid Collision
 

@@ -24,18 +24,15 @@ Once you have created a Web project you can use the FlatRedBall Editor as if it'
 
 To run your project:
 
-1.  Open the project in Visual Studio\
-
+1.  Open the project in Visual Studio<br>
 
     <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Open project in Visual Studio</p></figcaption></figure>
-2.  Press the button to begin debugging your project in Visual Studio\
-
+2.  Press the button to begin debugging your project in Visual Studio<br>
 
     <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Start debugging button in Visual Studio</p></figcaption></figure>
 
 
-3.  A browser should appear running your game project\
-
+3.  A browser should appear running your game project<br>
 
     <figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption><p>FlatRedBall running in a browser</p></figcaption></figure>
 

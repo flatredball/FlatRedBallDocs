@@ -22,24 +22,23 @@ Creating an Android project is essentially identical to creating any other platf
 4. Set the **Platform** to **Android .NET**
 5. Click **Create project!**
 
-![The New Project window for creating an Android project](<../../../.gitbook/assets/07\_09 03 11.png>)
+![The New Project window for creating an Android project](<../../../.gitbook/assets/07_09 03 11.png>)
 
 Select the desired project type in the wizard, or close the wizard to begin with an empty project. Click the Visual Studio icon to open the project in Visual Studio:
 
-![Open the project in Visual Studio](../../../.gitbook/assets/2022-03-img\_6235dd408496f.png)
+![Open the project in Visual Studio](../../../.gitbook/assets/2022-03-img_6235dd408496f.png)
 
 Now that the project is in Visual Studio, you can develop an Android game the same as if you were making a PC game, including using the FRB Editor. To launch the game:
 
 1. Select the target device
    1. If you have a physical phone, you can connect it to your computer. You need to enable your phone for development by turning on developer mode. For more information see the Microsoft page for setting up an Android device: [https://learn.microsoft.com/en-us/dotnet/maui/android/device/setup?view=net-maui-8.0](https://learn.microsoft.com/en-us/dotnet/maui/android/device/setup?view=net-maui-8.0)
    2. If you do not have a physical phone, or if you prefer to use an Android emulator, see the following page on how to set up an Android emulator: [https://learn.microsoft.com/en-us/dotnet/maui/android/emulator/?view=net-maui-8.0](https://learn.microsoft.com/en-us/dotnet/maui/android/emulator/?view=net-maui-8.0)
-2. Verify that the **Play** button in Visual Studio has the desired emulator or device selected. Note that if a physical Android device is connected to your computer and is set up for debugging, then Visual Studio will detect it as a deployment option.\
-
+2. Verify that the **Play** button in Visual Studio has the desired emulator or device selected. Note that if a physical Android device is connected to your computer and is set up for debugging, then Visual Studio will detect it as a deployment option.<br>
 3. Press the Play button
 
-![Emulator running and showing up in Visual Studio](../../../.gitbook/assets/2016-11-img\_581ac5bb6021e.png)
+![Emulator running and showing up in Visual Studio](../../../.gitbook/assets/2016-11-img_581ac5bb6021e.png)
 
-![FlatRedBall project running in an emulator](../../../.gitbook/assets/migrated\_media-RunningGenymotion.png)
+![FlatRedBall project running in an emulator](../../../.gitbook/assets/migrated_media-RunningGenymotion.png)
 
 ### Creating a synced Android project
 
@@ -56,7 +55,7 @@ Synced Android projects are created just like any other synced project. The firs
 
 The project will take a moment to download and be created, but once it is, you should see the Android project listed in the Androids project list. Since your FlatRedBall project now has multiple platforms, you can choose which project to open through the Projects tab.
 
-![Synced Android project](<../../../.gitbook/assets/07\_09 12 21.png>)
+![Synced Android project](<../../../.gitbook/assets/07_09 12 21.png>)
 
 ### Releasing an Android Project
 

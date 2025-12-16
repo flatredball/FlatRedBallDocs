@@ -20,17 +20,17 @@ You can also add a new .achx file to your FlatRedBall project in any Screen, Ent
 1. Right-click on the Files folder in any Screen or Entity, or in Global Content Files
 2.  Select **Add File** -> **New File**
 
-    ![](../.gitbook/assets/2023-07-img\_64aff8b27d18d.png)
+    ![](../.gitbook/assets/2023-07-img_64aff8b27d18d.png)
 3. Select **Animation Chain List (.achx)**
 4.  Click **OK**
 
-    ![](../.gitbook/assets/2023-07-img\_64aff8eb27900.png)
+    ![](../.gitbook/assets/2023-07-img_64aff8eb27900.png)
 
 #### Troubleshooting the AnimationEditor
 
 If you are seeing a popup that tells you that XNA is not available, then you probably do not have the XNA runtimes installed. The text for this error might look like this: System.IO.FileNotFoundException: Could not load file or assembly 'Microsoft.Xna.Framework.Graphics.dll' or one of its dependencies. The specified module could not be found. To fix this problem, install the XNA 4 redistributable: https://www.microsoft.com/en-us/download/details.aspx?id=27598 Once you run AnimationEditor.exe you will have an empty animation project.
 
-![](../.gitbook/assets/2021-01-img\_5ff8eb36a9e5c.png)
+![](../.gitbook/assets/2021-01-img_5ff8eb36a9e5c.png)
 
 ### Creating an Animation
 
@@ -38,14 +38,13 @@ To create an animation:
 
 1.  Click the + icon on the left-side of the window
 
-    ![](../.gitbook/assets/2018-03-img\_5ab7d409cee3b.png)
+    ![](../.gitbook/assets/2018-03-img_5ab7d409cee3b.png)
 2. Enter the name "Idle" and click OK
 
 Next we'll add a frame to our animation. To do this:
 
 1. Right-click on the newly-added Idle animation
-2.  Select "Add Frame"\
-
+2.  Select "Add Frame"<br>
 
     <figure><img src="../.gitbook/assets/migrated_media-WithUntexturedFrame.PNG" alt=""><figcaption></figcaption></figure>
 
@@ -60,8 +59,7 @@ Now we have an animation with one frame, but the frame does not yet have a textu
 
     <figure><img src="../.gitbook/assets/migrated_media-ClickTextureButton.png" alt=""><figcaption></figcaption></figure>
 4. Navigate to where you saved the Idle.png file and select it
-5.  You may see a window asking you if you want the file copied. In most cases you do; however you may not if in the future you are working with textures which are shared between multiple files which are not in the same location.\
-
+5.  You may see a window asking you if you want the file copied. In most cases you do; however you may not if in the future you are working with textures which are shared between multiple files which are not in the same location.<br>
 
     <figure><img src="../.gitbook/assets/migrated_media-CopyFileWindow.PNG" alt=""><figcaption></figcaption></figure>
 
@@ -134,7 +132,7 @@ Once you have added all frames, you can view the animation as it will play in yo
 If you are working with an image file which is not structured in a sprite sheet you can still use this file in the AnimationEditor plugin. In this situation you will need to use the "Pixel" coordinate mode. Next we'll use the Pixel coordinate mode to create a run animation. First, let's set up a frame:
 
 1. Download the following file to your computer:\
-   ![Running.png](../.gitbook/assets/migrated\_media-Running.png)
+   ![Running.png](../.gitbook/assets/migrated_media-Running.png)
 2. Right-click in the far-left window and select "Add Animation"
 3. Enter the name "Run"
 4. Right-click on the newly-added animation and select "Add Frame"
@@ -142,10 +140,10 @@ If you are working with an image file which is not structured in a sprite sheet 
 6. If asked, copy the file to the same folder as the AnimationChain
 
 To edit the frame using pixel coordinates, change the "Sprite Sheet" value to "Pixel\
-![PixelSelectedInAnimationEditor.png](../.gitbook/assets/migrated\_media-PixelSelectedInAnimationEditor.png)\
-You will now see a white square with 8 circle handles. You can push on the circles and drag to resize the frame. As you do so, you will notice that the preview window at the bottom updates in realtime. Keep in mind that you can pan and zoom by pushing/scrolling the mouse wheel. ![SelectedFramePixelCoordinates.PNG](../.gitbook/assets/migrated\_media-SelectedFramePixelCoordinates.PNG)\
+![PixelSelectedInAnimationEditor.png](../.gitbook/assets/migrated_media-PixelSelectedInAnimationEditor.png)\
+You will now see a white square with 8 circle handles. You can push on the circles and drag to resize the frame. As you do so, you will notice that the preview window at the bottom updates in realtime. Keep in mind that you can pan and zoom by pushing/scrolling the mouse wheel. ![SelectedFramePixelCoordinates.PNG](../.gitbook/assets/migrated_media-SelectedFramePixelCoordinates.PNG)\
 Just like when we were using sprite sheets, we can add additional frames to our animation by right-clicking on it and selecting "Add Frame". Do this to add a second frame. The newly added frame will use the same region as the previous frame. You can move the mouse over the region and the cursor will turn into a cross with arrows to indicate that the region can be moved. Push the mouse button to move the frame to the appropriate location for the second frame.\
-![SecondFramePixelCoords.PNG](../.gitbook/assets/migrated\_media-SecondFramePixelCoords.PNG)\
+![SecondFramePixelCoords.PNG](../.gitbook/assets/migrated_media-SecondFramePixelCoords.PNG)\
 To help keep the tutorial shorter we won't include the steps for creating the rest of the animation, but feel free to do so if you would like a complete running animation.
 
 ### Using the Guides
@@ -158,10 +156,10 @@ The first step is to decide which animation we want to set up our guides to. I'l
 
 1. Select the "Idle" animation
 2. Zoom in on the preview of the animation (the bottom display)
-3. Click on the left side of the preview window on the ruler. A guide should appear ![GuideInPreview.PNG](../.gitbook/assets/migrated\_media-GuideInPreview.PNG)
-4. Push and drag on the guide line to adjust its position. Move the line so that it is just below the feet of the character so it represents the ground. The value of the line will update as the line moves ![AdjustGuideLine.png](../.gitbook/assets/migrated\_media-AdjustGuideLine.png)
+3. Click on the left side of the preview window on the ruler. A guide should appear ![GuideInPreview.PNG](../.gitbook/assets/migrated_media-GuideInPreview.PNG)
+4. Push and drag on the guide line to adjust its position. Move the line so that it is just below the feet of the character so it represents the ground. The value of the line will update as the line moves ![AdjustGuideLine.png](../.gitbook/assets/migrated_media-AdjustGuideLine.png)
 
-Now that we have a guide which represents the ground we can select the other animation to see how it lines up. Click on the "Run" animation to view it relative to the guide. ![RunRelativeToGuide.PNG](../.gitbook/assets/migrated\_media-RunRelativeToGuide.PNG)\
+Now that we have a guide which represents the ground we can select the other animation to see how it lines up. Click on the "Run" animation to view it relative to the guide. ![RunRelativeToGuide.PNG](../.gitbook/assets/migrated_media-RunRelativeToGuide.PNG)\
 Notice that the character is below the guide line. If we were to use this animation as-is in a platformer game, the character would appear to sink below the ground when running. We can fix this in a number of ways:
 
 1. Change the source .PNG to have the character positioned higher. This is not a good approach in this particular case because the art was actually created to include equally-spaced frames.
@@ -176,6 +174,6 @@ Each frame can be independently positioned. By default all frames are not shifte
 
 1. Expand the Run animation
 2. Select the first frame
-3. Change the RelativeY value so that the character is positioned properly relative to the guide ![AdjustedRelativeY.PNG](../.gitbook/assets/migrated\_media-AdjustedRelativeY.PNG)
+3. Change the RelativeY value so that the character is positioned properly relative to the guide ![AdjustedRelativeY.PNG](../.gitbook/assets/migrated_media-AdjustedRelativeY.PNG)
 
 Once the RelativeY value (and similarly RelativeX) is changed, the preview window will update immediately, allowing you to update frames appropriately.

@@ -39,8 +39,7 @@ To switch to the content pipeline:
 
 Changing this value to true performs the following:
 
-1.  The file is built using the content pipeline. Unlike normal MonoGame projects, the file is built through the FRB Editor using the command line. When this change is made you can see the command that was used to build the file in the FRB Editor's Output tab.\
-
+1.  The file is built using the content pipeline. Unlike normal MonoGame projects, the file is built through the FRB Editor using the command line. When this change is made you can see the command that was used to build the file in the FRB Editor's Output tab.<br>
 
     <figure><img src="../../.gitbook/assets/26_07 11 17.png" alt=""><figcaption><p>Output from building a PNG file through the content pipeline</p></figcaption></figure>
 2. The .xnb file is added to your game project (.csproj)

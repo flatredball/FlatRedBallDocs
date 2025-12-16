@@ -2,16 +2,16 @@
 
 ### Introduction
 
-`Tween` enables changing any numerical property on an object over a given amount of time using a variety of interpolation types. `Tween` is an extension method on the PositionedObject type, so it works on any entity and most objects that are added to entities such as Sprites and collision shapes.
+`Tween` enables changing any numerical property on an object over a given amount of time using a variety of interpolation types. `Tween` is an extension method on the `PositionedObject` type, so it works on any entity and most objects that are added to entities such as Sprites and collision shapes.
 
-For information on performing tweening with objects which do not implement PositionedObject, see the [TweenerManager.TweenAsync](tweenermanager.md) method.
+For information on performing tweening with objects which do not implement `PositionedObject`, see the [TweenerManager.TweenAsync](tweenermanager.md) method.
 
 ### Code Example - Move Circle X
 
-The following code shows how to tween the location of a Circle to the edge of the screen when pressing either the left or right keys. This example assumes:
+The following code shows how to tween the location of a `Circle` to the edge of the screen when pressing either the left or right keys. This example assumes:
 
-1. You have a Screen
-2. The Screen has a Circle object. For this example the Circle is named CircleInstance.
+1. You have a `Screen`
+2. The Screen has a `Circle` object. For this example the `Circle` is named `CircleInstance`.
 
 To use Tween to change the position of the Circle based off of keyboard input:
 
@@ -20,7 +20,7 @@ To use Tween to change the position of the Circle based off of keyboard input:
     ```csharp
     using StateInterpolationPlugin;
     ```
-2. Add the following to CustomActivity:
+2. Add the following to `CustomActivity`:
 
 ```csharp
 if (Keyboard.Main.KeyPushed(Keys.Left))
@@ -47,12 +47,12 @@ if (Keyboard.Main.KeyPushed(Keys.Right))
 
 ### Code Example - Zoom Camera with Delegates
 
-If your Camera is 2D (default, Orthogonal = true), then zooming requires modifying two values:
+If your `Camera` is 2D (default, `Orthogonal` = true), then zooming requires modifying two values:
 
-1. OrthogonalHeight
-2. OrthogonalWidth (usually by calling FixAspectRatioYConstant)
+1. `OrthogonalHeight`
+2. `OrthogonalWidth` (usually by calling `FixAspectRatioYConstant`)
 
-Rather than creating two Tween functions that run in parallel, the Tween function allows using a delegate to assign multiple values based on a single value. The example below uses the OrthogonalHeight as the main value, and adjusts the OrthogonalWidth by calling FixAspectRatioYConstant.
+Rather than creating two `Tween` functions that run in parallel, the `Tween` function allows using a delegate to assign multiple values based on a single value. The example below uses the `OrthogonalHeight` as the main value, and adjusts the `OrthogonalWidth` by calling `FixAspectRatioYConstant`.
 
 ```csharp
 // Add the using statement to get access to the Tween extension method
@@ -93,7 +93,7 @@ void CustomActivity(bool firstTimeCalled)
 
 ### Code Example - Lambda Assignments
 
-Lambdas can be used to assign properties without creating dedicated functions. For example a Circle's radius can be set using the following code:
+Lambdas can be used to assign properties without creating dedicated functions. For example a `Circle`'s `Radius` can be set using the following code:
 
 ```csharp
 var keyboard = Keyboard.Main;
@@ -112,6 +112,53 @@ if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Space))
 ```
 
 <figure><img src="../../.gitbook/assets/2016-01-07_13-43-30.gif" alt=""><figcaption></figcaption></figure>
+
+### TweenAsync
+
+`TweenAsync` returns a `Task` which can be awaited to perform logic after the tweening has finished. For example, multiple `TweenAsync` methods can be combined to create a series of tweens.
+
+The following code shows how to move a `Circle` in response to the space bar being pressed. The `Circle` moves to the right with a bounce interpolation, moves to the left with another bounce interpolation, then finally returns to its original position using elastic interpolation.
+
+```csharp
+void CustomActivity(bool firstTimeCalled)
+{
+    var keyboard = Keyboard.Main;
+
+    if(keyboard.KeyPushed(Microsoft.Xna.Framework.Input.Keys.Space))
+    {
+        DoMovementLogic();
+    }
+}
+
+private async void DoMovementLogic()
+{
+    await CircleInstance.TweenAsync(
+        newValue => CircleInstance.X = newValue,
+        0, 
+        200, 
+        2, 
+        FlatRedBall.Glue.StateInterpolation.InterpolationType.Bounce, 
+        FlatRedBall.Glue.StateInterpolation.Easing.Out);
+
+    await CircleInstance.TweenAsync(
+        newValue => CircleInstance.X = newValue,
+        200,
+        -200,
+        3,
+        FlatRedBall.Glue.StateInterpolation.InterpolationType.Bounce,
+        FlatRedBall.Glue.StateInterpolation.Easing.Out);
+
+    await CircleInstance.TweenAsync(
+        newValue => CircleInstance.X = newValue,
+        -200,
+        0,
+        3,
+        FlatRedBall.Glue.StateInterpolation.InterpolationType.Elastic,
+        FlatRedBall.Glue.StateInterpolation.Easing.Out);
+}
+```
+
+<figure><img src="../../.gitbook/assets/16_05 39 16.gif" alt=""><figcaption><p>Circle using TweenAsync to perform mulitple tweens in series</p></figcaption></figure>
 
 ### Tweening vs. Velocity values
 
