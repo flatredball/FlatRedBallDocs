@@ -6,15 +6,15 @@ Files added to the FlatRedBall Editor are managed for you automatically, simplif
 
 * The file is listed in the tree view
 * The file is added to the proper Visual Studio project(s)
-* A static member is added for the file in the appropriate screen, entity, or global content
-* Code for loading the file is generated automatically
+* A static member is added for the file in the appropriate screen, entity, or global content (if the file type is known)
+* Code for loading the file is generated automatically (if the file type is known)
 
 ### Supported File Types
 
 * png (image files)
 * achx (animation files)
 * tmx (tiled map files)
-* gusx (Gum screen files, usually automatically added when creating a new FRB Screen)
+* gumx, gusx (Gum files, usually automatically added when creating a new FRB Screen)
 * mp3 (music)
 * ogg (music)
 * wav (sound)
@@ -86,17 +86,17 @@ Note that files can also be accessed through the generated "Type" class generate
 
 Files added to a Screen or Entity create a member which can be accessed in code. For example, if a .png file is added to an Entity, it can be used to assign a texture on a sprite. In the example below, the FlatRedBall Editor generates code for a Texture2D called MonsterTexture .
 
-![MonsterTexture.png file in the FRB Editor](<../../.gitbook/assets/09\_06 32 10.png>)
+![MonsterTexture.png file in the FRB Editor](<../../.gitbook/assets/09_06 32 10.png>)
 
 This Texture2D can be accessed in custom code, such as to assign a Sprite's Texture. Since MonsterTexture is a static Property of the Monster entity, access to this property is checked at compile time and auto complete displays it as an option when writing code.
 
-![MonsterTexture shown in auto complete](../../.gitbook/assets/2016-12-img\_586282b3a3374.png)
+![MonsterTexture shown in auto complete](../../.gitbook/assets/2016-12-img_586282b3a3374.png)
 
 #### Accessing Global Content Files
 
 Global content files are loaded when the game first starts, and remain in memory for the remainder of a game's execution, so they can be accessed at any time. For example, the following file named MainSpriteSheet.png is part of Global Content Files.
 
-![](<../../.gitbook/assets/09\_06 35 20.png>)
+![](<../../.gitbook/assets/09_06 35 20.png>)
 
 This can be accessed anywhere in a game with the following code:
 
