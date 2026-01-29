@@ -672,3 +672,9 @@ For more information on this property, see the Gum page here:
 This version modifies Gum code generation to support the IRenderTargetTextureReferencer interface. This is used on the SpriteRuntime class so that Gum sprites can reference other render targets for more advanced effects when drawing a render target.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 66 - Gum has GraphicalUiElement IsPointInside Virtual Method
+
+This version modifies Gum code generation to support overriding the GraphicalUiElement.IsPointInside method. Previously this version did not exist but has been introduced by Gum to support non-rectangular controls.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
