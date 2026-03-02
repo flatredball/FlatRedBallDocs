@@ -17,6 +17,10 @@ The .ods file format does add a small amount of complexity to your projct:
 
 FRB creates a class for your .ods file using the same rules as .csv files. For information about the automatic generation of data for .csv files, see the [.csv page](glue-reference-csv/).
 
+### LibreOffice Language Settings
+
+If your computer is set to a different locale than English (USA), then exports to CSV may include localized values for bool. The export should be done in English so that true and false appear as "true" and "false" in the CSV. This can be changed in LibreOffice by going to Tools ⇒ Options ⇒ Language Settings and changing the language/locale to English (USA).
+
 ### Example - Adding an .ods File and Accessing Values
 
 To add a new .ods file:
