@@ -41,5 +41,6 @@ To release Gum tool:
 10. Announce on Kni discord
 11. Announce on twitter
 12. Announce on Blue Sky
+13. Post on [https://community.monogame.net/](https://community.monogame.net/)
 
 This file is used when creating FlatRedBall builds, so Gum must first be built and uploaded to the FlatRedBall FTP prior to running the FlatRedBall Github Actions. Otherwise, an old Gum will be included in FRBDK. This may be okay depending on if Gum has important new features.
