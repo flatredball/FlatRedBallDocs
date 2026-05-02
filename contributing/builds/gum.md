@@ -13,31 +13,19 @@ To upload a new NuGet packages, follow these steps:
 
 ### Gum Tool
 
-Experimental:
-
-1. Run /gum-monthly-release in Claude and give it the URL for the release
 
 
-
-Old:
-
-To release Gum tool:
-
-1. Run the **Build and Release Gum Tool** action
-   1. Run a **prerelease** build
-2. Create new release notes on GitHub including
-   1. Screenshots for new features
-   2. Breaking changes
-3. Create migration doc on gitbook
-4. Run the action to release the Gum tool
-5. Copy the release notes onto the new release
-6. Add a new page in the Gum Upgrade section explaining how to upgrade this version. If no changes are needed, explain that the upgrade can happen without any changes.&#x20;
-7. Announce on FRB discord
-8. Announce on MonoGame discord
-9. Announce on MGE discord
-10. Announce on Kni discord
-11. Announce on twitter
-12. Announce on Blue Sky
-13. Post on [https://community.monogame.net/](https://community.monogame.net/)
+1. Run /gum-monthly-release in Claude and give it the URL for the release, creating a markdown file
+2. Create screenshots for anything that is decided as being important (in the top items)
+3. Run the **Build and Release Gum Tool** action using a full release
+4. Copy the release notes and screenshots to the release
+5. Create/update migration doc on gitbook, or update what's already there
+6. Announce on FRB discord
+7. Announce on MonoGame discord
+8. Announce on MGE discord
+9. Announce on Kni discord
+10. Announce on twitter
+11. Announce on Blue Sky
+12. Post on [https://community.monogame.net/](https://community.monogame.net/)
 
 This file is used when creating FlatRedBall builds, so Gum must first be built and uploaded to the FlatRedBall FTP prior to running the FlatRedBall Github Actions. Otherwise, an old Gum will be included in FRBDK. This may be okay depending on if Gum has important new features.
