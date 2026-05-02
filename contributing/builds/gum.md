@@ -2,25 +2,14 @@
 
 ### Gum Runtimes (NuGet Packages)
 
-Gum's repository includes a GitHub Action yaml file which builds and uploads NuGet packages. If the build succeeds and if the NuGet numbers are new, then new NuGet packages are uploaded.
-
-The automated build will not upload a new NuGet if the version number is not manually increased first. Also note, this DOES NOT currently upload a new Gum tool - this is a separate process (see below).
+Gum's repository includes a GitHub Action yaml file which builds and uploads NuGet packages. This DOES NOT currently upload a new Gum tool - this is a separate process (see below).
 
 To upload a new NuGet packages, follow these steps:
 
-1. Create a new branch like `ReleaseCode_2025_11_30` . This is `ReleaseCode_YYYY_MM_DD`.
-2. Open AllLibraries.sln in Visual Studio - this links MonoGame/FNA/Kni Gum and the projects it depends on. It is at \<GumRoot>\MonoGameGum.sln
-3.  Double-click GumCommon and find the version. Copy this, then do a global find/replace to update all versions to the latest version.\
-    \
-    \
-    <br>
-
-    <figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption><p>Setting GumCommon's Version number</p></figcaption></figure>
-
-    at the time of this writing, 8 projects will be updated.
-4. Save the files and push the commit
-5. Run the github action on this branch, it's faster than merging first, so you don't have to wait
-6. Merge the commit to `Master`
+1. Go to GitHub Gum actions: [https://github.com/vchelaru/Gum/actions/workflows/dotnet-nuget.yaml](https://github.com/vchelaru/Gum/actions/workflows/dotnet-nuget.yaml)
+2. Click Run workflow.
+3. Select the branch (probably main), check both options for publishing
+4. Enter the new version name such as 2026.5.2.1. The format is `year.month.day.build` where build only increments if multiple builds happened in the same day. Note that if you are releasing a preview build, then append -preview.1. See [https://www.nuget.org/packages/Gum.MonoGame/#versions-body-tab](https://www.nuget.org/packages/Gum.MonoGame/#versions-body-tab) for examples
 
 ### Gum Tool
 
