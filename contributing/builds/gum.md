@@ -13,6 +13,14 @@ To upload a new NuGet packages, follow these steps:
 
 ### Gum Tool
 
+Experimental:
+
+1. Run /gum-monthly-release in Claude and give it the URL for the release
+
+
+
+Old:
+
 To release Gum tool:
 
 1. Run the **Build and Release Gum Tool** action
