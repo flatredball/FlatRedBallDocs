@@ -678,3 +678,9 @@ This version modifies Gum code generation to support the IRenderTargetTextureRef
 This version modifies Gum code generation to support overriding the GraphicalUiElement.IsPointInside method. Previously this version did not exist but has been introduced by Gum to support non-rectangular controls.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 67 - NineSlice has TilingMiddleSections
+
+Adds support for the `IsTilingMiddleSections` variable on Gum `NineSlice` runtimes. When true, the four edge sections and the center section of a NineSlice tile (repeat) instead of stretching, which is the typical use case for repeating-pattern panels and frames.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
