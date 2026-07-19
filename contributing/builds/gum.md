@@ -31,4 +31,4 @@ To upload a new NuGet packages, follow these steps:
 11. Announce on Blue Sky
 12. Post on [https://community.monogame.net/](https://community.monogame.net/)
 
-This file is used when creating FlatRedBall builds, so Gum must first be built and uploaded to the FlatRedBall FTP prior to running the FlatRedBall Github Actions. Otherwise, an old Gum will be included in FRBDK. This may be okay depending on if Gum has important new features.
+FlatRedBall's `glue.yml` build downloads Gum's **latest GitHub release** (`Gum.zip` asset) and bundles it into FRBDK - Gum is no longer uploaded to the FlatRedBall FTP. If a new Gum tool version is needed in the FRB release, publish it on GitHub first (see above) before running FlatRedBall's Github Actions, otherwise FRBDK will bundle whatever Gum release currently happens to be "latest." This may be okay depending on if Gum has important new features.
