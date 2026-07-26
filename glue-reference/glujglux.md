@@ -684,3 +684,9 @@ This version modifies Gum code generation to support overriding the GraphicalUiE
 Adds support for the `IsTilingMiddleSections` variable on Gum `NineSlice` runtimes. When true, the four edge sections and the center section of a NineSlice tile (repeat) instead of stretching, which is the typical use case for repeating-pattern panels and frames.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 68 - Gum Sprite/NineSlice/Container/Polygon Runtimes Implement FRB-Only Interfaces
+
+This version modifies Gum code generation so that generated `SpriteRuntime`, `NineSliceRuntime`, `ContainerRuntime`, and `PolygonRuntime` classes implement small FRB-only interfaces (`ISpriteRuntime`, `INineSliceRuntime`, `IContainerRuntime`, `IPolygonRuntime`) declared in the FlatRedBall build of Gum's shared source. These interfaces exist only so FlatRedBall's engine-side property dispatch can be unified with the other Gum backends; they add no new properties or behavior to existing projects.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
