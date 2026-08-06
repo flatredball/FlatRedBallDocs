@@ -1,5 +1,9 @@
 # Android
 
+{% hint style="warning" %}
+**Android projects cannot currently be created.** The Android engine targets `net8.0-android`, whose workload has reached end of life and is no longer available on the build machines, so the Android engine is not built or published and the **Android** option has been removed from the New Project and New Synced Project windows. This page and its sub-pages are kept for reference and for whenever the Android project is retargeted. Existing Android projects are unaffected — their NuGet packages are still published.
+{% endhint %}
+
 ### Introduction
 
 FlatRedBall supports creating games which run on Android devices. Aside from Android-specific capabilities, FlatRedBall Android development is nearly identical to developing games for other platforms. As of April 2024 FlatRedBall Android projects use .NET 8 which provides access to a much wider set of features and nuget packages compared to the previous Xamarin-based version.

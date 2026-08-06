@@ -1,5 +1,9 @@
 # Copying Projects to Mac
 
+{% hint style="warning" %}
+**iOS projects cannot currently be created** — see the [iOS](README.md) page for why.
+{% endhint %}
+
 ### Introduction
 
 This tutorial will walk you through the steps of creating a FlatRedBall iOS project on the PC then copying it to the Mac. Note that unlike most other FlatRedBall platforms, FlatRedBall iOS requires commercial software and a computer running OSX along with a computer running Windows.

@@ -458,7 +458,7 @@ This version adds an ExternalEffectManager, enabling Gum and Tiled rendering to 
 
 ❗ To upgrade to this version and enable rendering using the new shader for Tiled or Gum:
 
-1. Download the latest DesktopGL template [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip](../content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlNet6Template.zip)
+1. Download the latest DesktopGL template [https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlMonoGameTemplate.zip](https://files.flatredball.com/content/FrbXnaTemplates/DailyBuild/ZippedTemplates/FlatRedBallDesktopGlMonoGameTemplate.zip)
 2. Extract the template
 3. Navigate to the Content folder in the unzipped folder
 4.  Copy the two Shader files (fx and xnb)

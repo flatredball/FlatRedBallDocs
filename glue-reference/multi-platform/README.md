@@ -11,6 +11,10 @@ FlatRedBall supports developing games on multiple platforms. As of the time of t
 * Consoles (FNA and Native AOT compilation)
 * Web (Kni)
 
+{% hint style="warning" %}
+**Android and iOS projects cannot currently be created.** Those engines target `net8.0-android` and `net8.0-ios`, whose workloads have reached end of life and are no longer available on the build machines, so the engines are not built or published and both options have been removed from the New Project and New Synced Project windows. The [Android](glue-how-to-create-a-flatredball-android-project/README.md) and [iOS](glue-reference-ios/README.md) pages are kept for reference and for whenever those projects are retargeted. Existing Android and iOS projects are unaffected — their NuGet packages are still published.
+{% endhint %}
+
 ### Selecting Platforms
 
 Your project's platform is selected when first creating a new project. A newly-created project selects a primary platform, which defines the primary project.&#x20;
