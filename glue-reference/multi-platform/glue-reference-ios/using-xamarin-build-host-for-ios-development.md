@@ -1,5 +1,9 @@
 # Using Xamarin Build Host
 
+{% hint style="warning" %}
+**iOS projects cannot currently be created** — see the [iOS](README.md) page for why.
+{% endhint %}
+
 ### Introduction
 
 FlatRedBall iOS projects (including Glue projects) can be developed in Visual Studio and deployed to an iOS device through a networked Mac using Xamarin Build Host. This is the fastest way to develop iOS gams but it does require a Xamarin Business License (which is more expensive than Xamarin Indie License).

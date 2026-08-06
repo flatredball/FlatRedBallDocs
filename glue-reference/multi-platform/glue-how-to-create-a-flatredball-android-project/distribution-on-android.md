@@ -1,5 +1,9 @@
 # Distribution
 
+{% hint style="warning" %}
+**Android projects cannot currently be created** — see the [Android](README.md) page for why.
+{% endhint %}
+
 ### Introduction
 
 Android builds can be distributed using a digital store (such as Google or Android), or can be manually distributed by distributing a .apk.

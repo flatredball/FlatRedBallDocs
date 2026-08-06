@@ -1,12 +1,16 @@
 # iOS
 
+{% hint style="warning" %}
+**iOS projects cannot currently be created.** The iOS engine targets `net8.0-ios`, whose workload has reached end of life and is no longer available on the build machines, so the iOS engine is not built or published and the **iOS** option has been removed from the New Project and New Synced Project windows. This page and its sub-pages are kept for reference and for whenever the iOS project is retargeted. Existing iOS projects are unaffected — their NuGet packages are still published.
+{% endhint %}
+
 ### Introduction
 
 FlatRedBall support development for iOS (iPhone and iPad) using .NET 8 (as of March 2024).
 
 ### Creating a New iOS Project
 
-To create a new iOS project, launch the FlatRedBall Editor, create a new project, and select iOS as your target platform.
+To create a new iOS project, launch the FlatRedBall Editor, create a new project, and select iOS as your target platform. This option is not currently available — see the note above.
 
 ### Troubleshooting
 

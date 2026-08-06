@@ -1,5 +1,9 @@
 # Setup
 
+{% hint style="warning" %}
+**Android projects cannot currently be created** — see the [Android](README.md) page for why.
+{% endhint %}
+
 To create FlatRedBall Android projects, you must:
 
 1. Install Visual Studio as explained on the **FlatRedBall Downloads page**.

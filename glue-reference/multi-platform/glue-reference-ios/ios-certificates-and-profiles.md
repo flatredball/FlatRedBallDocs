@@ -1,3 +1,7 @@
+{% hint style="warning" %}
+**iOS projects cannot currently be created** — see the [iOS](README.md) page for why.
+{% endhint %}
+
 ## Introduction
 
 iOS development requires the use of Provisioning Profiles to deploy to iOS hardware, either for development or for final distribution. This section will discuss how to create and use provisioning profiles.

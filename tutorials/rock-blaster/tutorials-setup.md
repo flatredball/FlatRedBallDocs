@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial begins with the creation of a new project in FlatRedBall. We'll make a new **Desktop GL .NET 6** project.
+This tutorial begins with the creation of a new project in FlatRedBall. We'll make a new **Desktop GL .NET 9** project.
 
 ### Creating a new project
 
