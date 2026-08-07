@@ -7,6 +7,14 @@ So far we have a very simple project with a PlayerBall (which appears as a Circl
 * ShapeCollection - an object which can contain any number of shapes. Adding multiple shapes to a ShapeCollection makes the creation of collision relationships very easy.
 * AxisAlignedRectangle - this is a rectangle shape which can be created in Glue just like We'll use multiple AxisAlignedRectangles to assemble our level, and we'll be organizing these in a list object.
 
+### Live Edit in FlatRedBall
+
+This tutorial walks you through creating solid walls by manually entering X, Y, Width, and Height values. These values are provided for convenience, but during typical game development you rarely have these types of values set before you begin work. Rather, you may be placing objects relative to the screen bounds or other objects.
+
+To help with this work flow, FlatRedBall provides live edit functionality which allows you to place and edit objects in-game. Although this feature is not covered in this tutorial, you may want to take a look at the feature since you can use it in this tutorial and future projects.
+
+To learn more about live edit, see the [Live Edit page](../../glue-reference/enable-live-edit/).
+
 ### Creating the Walls ShapeCollection
 
 First we'll create a ShapeCollection called Walls. This ShapeCollection contains all of the rectangles in our game. ShapeCollections are a specialized list which can contain multiple instances of Shape objects such as Circles and AxisAlignedRectangles. To create the Walls ShapeCollection:

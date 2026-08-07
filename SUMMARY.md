@@ -188,7 +188,7 @@
   * [Display Settings](glue-reference/camera.md)
   * [Entities](glue-reference/entities/README.md)
     * [BaseEntity](glue-reference/entities/glue-reference-baseentity.md)
-    * [Constructor](glue-reference/entities/glue-reference-constructor.md)
+    * [ Untitled](glue-reference/entities/glue-reference-constructor.md)
     * [ConvertToManuallyUpdated](glue-reference/entities/glue-reference-converttomanuallyupdated.md)
     * [CreatedByOtherEntities](glue-reference/entities/glue-reference-createdbyotherentities.md)
     * [CustomActivity](glue-reference/entities/glue-reference-customactivity.md)
@@ -353,7 +353,7 @@
   * [Screens](glue-reference/screen/README.md)
     * [AsyncLoadingState](glue-reference/screen/glue-reference-asyncloadingstate.md)
     * [BaseScreen](glue-reference/screen/basescreen.md)
-    * [Constructor](glue-reference/screen/glue-reference-screen-constructor.md)
+    * [ Untitled](glue-reference/screen/glue-reference-screen-constructor.md)
     * [Creating a New Screen](glue-reference/screen/glue-reference-screens-creating-a-new-screen.md)
     * [CustomDestroy](glue-reference/screen/flatredball-screens-screen-customdestroy.md)
     * [CustomInitialize](glue-reference/screen/custominitialize.md)
