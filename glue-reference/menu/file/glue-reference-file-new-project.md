@@ -24,7 +24,7 @@ This should not have spaces, or any characters which would be invalid in a C# na
 
 The Platform dropdown determines which platform your project targets. The available options are **Desktop GL .NET 9 (Windows, Mac, Linux) - MonoGame**, **Web (Browsers) - Kni**, and **FNA .NET 7 (Windows, Mac, Linux)**. Typically this should be one of the Desktop projects (either MonoGame or FNA); you can select Web if you are testing that platform, or if you do not intend to ever target desktop.
 
-Android and iOS are not currently offered. See [Multi-Platform](../../multi-platform/README.md) for details.
+Android and iOS are not currently offered. See [Multi-Platform](../../multi-platform/) for details.
 
 When the project is created, the Platform that you select determines the template that FlatRedBall downloads. Note that when you create a new project, the latest template (from the most recent monthly build) is downloaded.
 
@@ -32,7 +32,7 @@ When the project is created, the Platform that you select determines the templat
 
 If you would like to create a project from a local folder, you can select the **Select Local Project...** option.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Select Local Project dropdown option (screenshot predates the removal of the Android and iOS entries)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Select Local Project dropdown option (screenshot predates the removal of the Android and iOS entries)</p></figcaption></figure>
 
 This option is usually for advanced scenarios and contributors of FlatRedBall. You may want to select this option in the following situations:
 

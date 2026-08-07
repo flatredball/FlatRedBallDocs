@@ -4,7 +4,7 @@
 
 We’ll begin this tutorial with an empty project. Mine will be called EnemyDamage.
 
-![](../../../.gitbook/assets/2021-04-img\_60777be85a32e.png)
+![](../../../.gitbook/assets/2021-04-img_60777be0d952b.png)
 
 ### Glue Wizard
 

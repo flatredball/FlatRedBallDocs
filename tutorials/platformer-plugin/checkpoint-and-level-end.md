@@ -25,7 +25,7 @@ This walkthrough covers a number of concepts for checkpoints and end of level:
 
 This demo includes two levels: Level1 and Level2. Each level has its own TMX file: Level1Map.tmx and Level2Map.TMX. If your project used the platformer plugin then it should have these by default. If your game already has existing levels, you can follow along but you will work in your existing levels rather than Level1 and Level2.
 
-![Level1 and Level2 with TMX files](<../../.gitbook/assets/13\_05 55 20.png>)
+![Level1 and Level2 with TMX files](<../../.gitbook/assets/13_05 55 20.png>)
 
 ### Adding an Object Layer
 
@@ -71,8 +71,7 @@ To do this:
 1. Open your level in Tiled. Make sure you do not have other levels open as to avoid mixing tilesets
 2. Select the TiledIcons tileset and click on the edit button
 3. Select the tile that you would like to use as a checkpoint, such as the checkered flag
-4. Set the Class to Checkpoint - be sure to match the name of your entity exactly\
-
+4.  Set the Class to Checkpoint - be sure to match the name of your entity exactly\\
 
     <figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption><p>Setting the Checkpoint tile class to Checkpoint</p></figcaption></figure>
 5. Save your tileset
@@ -86,7 +85,7 @@ To do this:
 3. Clck the Add Tile icon to go into tile placement mode
 4. Click on the map to add the Checkpoint tile
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Adding a new Checkpoint instance to your game</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (38).png" alt=""><figcaption><p>Adding a new Checkpoint instance to your game</p></figcaption></figure>
 
 All checkpoints must have names so that they can be referenced in code. For this project we assume that every level has at least one checkpoint with the name LevelStart. You can set this name on the newly-created Checkpoint by selecting it and setting its name in Tiled:
 
@@ -179,7 +178,7 @@ void OnPlayerListVsCheckpointListCollided (Entities.Player player, Entities.Chec
 }
 ```
 
-The OnPlayerVsEndOfLevelCollided resets the LastCheckpointName whenever colliding with a door, so this checkpoint will apply whenever the screen changes. The OnPlayerListVsCheckpointListCollided sets the LastCheckpointName to the name of the collided checkpoint, but this will only apply when the screen is restarted.  Typically, this would happen when the player dies.
+The OnPlayerVsEndOfLevelCollided resets the LastCheckpointName whenever colliding with a door, so this checkpoint will apply whenever the screen changes. The OnPlayerListVsCheckpointListCollided sets the LastCheckpointName to the name of the collided checkpoint, but this will only apply when the screen is restarted. Typically, this would happen when the player dies.
 
 Player death can be handled in a variety of ways, such as by collision with a TileShapeCollection, or even with a hotkey to test death. Regardless, the way to restart the screen is by calling this.RestartScreen().
 
@@ -205,7 +204,7 @@ Whether a checkpoint is visible or not is controlled by an exposed Visible prope
 
 Please note that if you are adding the checkpoints to your own custom project, to have the Visible property available you will need to set the _ImplementsIVisible_ in Checkpoint Properties to true and then create a variable via the _Expose an existing variable_ and select _Visible_. Also, since FlatRedBall purely converts the Tiled objects in the objects layer to instances of a FlatRedBall Entity with the same class, to actually see the flag and the door in your game you will need to add a Sprite object to the Checkpoint and EndOfLevel entities and set them to appropriate images or animation chain files. This subject is explained in detail in following tutorials.
 
-![](../../.gitbook/assets/2021-06-img\_60b8cf51505df.png)
+![](../../.gitbook/assets/2021-06-img_60b8cf51505df.png)
 
 Only Visible Checkpoint instances are considered in the Player vs Checkpoint relationship event.
 

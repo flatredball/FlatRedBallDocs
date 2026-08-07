@@ -32,7 +32,7 @@ You can leave the default, or use the dropdown to select a different builder. If
 
 If a file has an associated file build tool, then the destination file is displayed in the FRB Editor. For example, if an .ods file is added, the destination file type (csv) shows. At runtime the source file is completely ignored and only the destination file is loaded.
 
-<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption><p>CSV file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (118).png" alt=""><figcaption><p>CSV file</p></figcaption></figure>
 
 Once a file has been added you can change its BuildTool property in its Properties window.
 

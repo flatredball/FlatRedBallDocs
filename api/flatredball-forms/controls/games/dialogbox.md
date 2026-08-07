@@ -8,7 +8,7 @@ The DialogBox control is used to display dialog to the screen. It provides a num
 * Force display of entire page and page advance input
 * Input support using keyboard, mouse, and gamepads
 
-<figure><img src="../../../../.gitbook/assets/28_17_07_29 (1).gif" alt=""><figcaption><p>Standard DialogBox</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/28_17_07_29.gif" alt=""><figcaption><p>Standard DialogBox</p></figcaption></figure>
 
 ### Implementation Example
 

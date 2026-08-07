@@ -1156,6 +1156,7 @@
   * [Live Edit](api/gluecontrol/README.md)
     * [EditorVisuals](api/gluecontrol/editorvisuals/README.md)
       * [Circle](api/gluecontrol/editorvisuals/circle.md)
+      * [Rectangle](api/gluecontrol/editorvisuals/rectangle.md)
       * [Text](api/gluecontrol/editorvisuals/text.md)
     * [Instance Creation](api/gluecontrol/instance-creation.md)
   * [Gum Runtime](api/gum-runtime-api/README.md)

@@ -25,7 +25,7 @@ By convention FlatRedBall loads Tiled maps so that the GameplayLayer is at Z=0. 
 
 <figure><img src="../../.gitbook/assets/01_05 55 49.png" alt=""><figcaption><p>Layers in tiled</p></figcaption></figure>
 
-In this map the AbovePlayer layer is positioned at Z = 1, so any tiles placed on this Layer draw on top of the Player.&#x20;
+In this map the AbovePlayer layer is positioned at Z = 1, so any tiles placed on this Layer draw on top of the Player.
 
 {% hint style="info" %}
 The H hotkey in Tiled toggles highlighting the current layer. This feature can help visualize the current layer.
@@ -33,7 +33,7 @@ The H hotkey in Tiled toggles highlighting the current layer. This feature can h
 <img src="../../.gitbook/assets/01_05 58 06.gif" alt="" data-size="original">
 {% endhint %}
 
-If we want the player to overlap the pillar when below it, but be behind the pillar when above it, then the pillar must be broken up into two separate layers.&#x20;
+If we want the player to overlap the pillar when below it, but be behind the pillar when above it, then the pillar must be broken up into two separate layers.
 
 <figure><img src="../../.gitbook/assets/01_06 10 31.gif" alt=""><figcaption><p>Pillar broken up into two layers</p></figcaption></figure>
 
@@ -51,7 +51,7 @@ Most of the time this arbitrary sorting does not cause problems because the Game
 
 For example, if only the GameplayLayer is visible, then entities will sort below the GameplayLayer.
 
-<figure><img src="../../.gitbook/assets/01_06 18 17 (1).png" alt=""><figcaption><p>Player below the GameplayLayer</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/01_06 18 17.png" alt=""><figcaption><p>Player below the GameplayLayer</p></figcaption></figure>
 
 We can shift our map slightly below the player by adding the following code to our GameScreen's CustomInitialize:
 

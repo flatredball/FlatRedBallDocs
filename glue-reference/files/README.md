@@ -52,7 +52,7 @@ In this case the file is copied to the game's **Content/GlobalContent** folder. 
 
 If the file is already a part of the project's Content folder, then it is not copied when drag+dropped into FlatRedBall.
 
-<figure><img src="../../.gitbook/assets/01_07 47 36 (1).gif" alt=""><figcaption><p>File in Content added without copying</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/01_07 47 36.gif" alt=""><figcaption><p>File in Content added without copying</p></figcaption></figure>
 
 For convenience, existing files in the Content folder are shown when adding new files.
 
@@ -174,4 +174,3 @@ A file can have references from other files. For example, a .png file can be ref
 For example, the Player's AnimationChainhListFile.achx references the CharacterSpriteSheet.png. If CharacterSpriteSheet is removed from the Player entity, the FRB Editor recognizes that it is still needed and does not ask about whether it should be deleted or removed from the game project.
 
 <figure><img src="../../.gitbook/assets/image (248).png" alt=""><figcaption><p>AnimationChain refrencing a file on disk</p></figcaption></figure>
-

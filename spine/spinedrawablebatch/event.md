@@ -16,7 +16,7 @@ To subscribe to an event in FRB Editor:
 2. Drag+drop the SpineDrawableBatch into the Events folder
 3. Change the name if desired, then press OK
 
-<figure><img src="../../.gitbook/assets/16_18 45 11 (1).gif" alt=""><figcaption><p>Drag+Drop SpineDrawableBatch on Event Window</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/16_18 45 11.gif" alt=""><figcaption><p>Drag+Drop SpineDrawableBatch on Event Window</p></figcaption></figure>
 
 The new event can be handled in the Events.cs file of your Entity. For example, if your Entity is named Soldier, the event is in Soldier.Event.cs.
 

@@ -137,4 +137,4 @@ We can add sliding animations by checking the IsSlidingOnWall variable either in
 
 The player will now play the CharacterWallSlide animations if the IsSlidingOnWall property is set to true. Note that the .achx file contains CharacterWallSlideLeft and CharacterWallSlideRight, but the generated code selects the appropriate one based on which way the player is facing.
 
-<figure><img src="../../.gitbook/assets/07_16 11 00 (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/07_16 11 00.gif" alt=""><figcaption></figcaption></figure>

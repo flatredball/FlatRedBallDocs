@@ -12,8 +12,6 @@ To add the FRB source to your project:
 4.  The **Add FRB Source** tab appears, showing a text box for FlatRedBall and Gum root folders. If your current project is also a Git project which is cloned to the same folder as FlatRedBall and Gum, then the FRB Editor attempts to fill in the file paths.<br>
 
     <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Add FRB Source tab in the FRB Editor adds all necessary projects to your game's solution</p></figcaption></figure>
-
-
 5. If your paths are blank or incorrect, use the ... button to select the file paths for each repository. Select the root folder for where Gum and FRB repositories.
    1. The FRB Root Folder is the folder where FlatRedBall is cloned locally. For example, if you use the default folders when cloning in Github Desktop, this would be `<Documents Folder>\GitHub\FlatRedBall\` . This folder contains the root-most FlatRedBall files like LICENSE and README.doc
    2. The Gum Root Folder is the folder where Gum is cloned locally. For example, if you use the default folders when cloning in Github Desktop, this would be `<Documents Folder>\GitHub\Gum\` . This folder contains the root-most Gum files like Gum.sln
@@ -59,7 +57,7 @@ If you would like to use the engine source in your game project:
 6. Select **Add -> Existing Project...**
 7.  Navigate to the location of the FlatRedBall .csproj file for your given platform. For example, for PC, add **\<FlatRedBall Root>\Engines\FlatRedBallXNA\FlatRedBall\FlatRedBallDesktopGL.csproj**<br>
 
-    <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 8. Click Open to add the project to your game's solutionComment
 9. Right-click on your game's **References** item and select **Add Reference...**&#x43;omment
 10. Click the "Projects" categoryComment
@@ -69,4 +67,3 @@ If you would like to use the engine source in your game project:
 
     <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 14. Build and run your project
-

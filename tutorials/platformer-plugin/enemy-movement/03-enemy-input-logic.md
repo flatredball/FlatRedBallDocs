@@ -12,8 +12,6 @@ First we'll remove the Input Device from the Enemy entity:
 2. Select the **Enemy Input Movement** tab
 3. Check **None** under **Input Device**
 
-<figure><img src="../../../.gitbook/assets/2021-04-img\_607797eac1c0f.png" alt=""><figcaption></figcaption></figure>
-
 Now the Enemy will not move in response to keyboard or gamepad input. Note that if we do not assign an InputDevice in code, the game crashes so we must do so before running the game.
 
 ### Creating an EnemyInput InputDevice
@@ -21,9 +19,9 @@ Now the Enemy will not move in response to keyboard or gamepad input. Note that 
 Next we will create our own custom InputDevice which will control the movement of the enemy. The reason we are creating this is because Platformer entities expect to receive commands from an input device like a keyboard. We can create a class which simulates input commands without actually having physical input. To create this class:
 
 1. Open the project in Visual Studio
-2. Create a new class called EnemyInput. I will place mine in an Input folder
+2.  Create a new class called EnemyInput. I will place mine in an Input folder
 
-    ![](../../../.gitbook/assets/2021-04-img\_6077995742261.png)
+    ![](../../../.gitbook/assets/2021-04-img_6077995742261.png)
 3. Modify the code so that the EnemyInput class inherits from **FlatRedBall.Input.InputDeviceBase**
 
 ```csharp
@@ -49,8 +47,6 @@ class EnemyInput : FlatRedBall.Input.InputDeviceBase
 ```
 
 To use **EnemyInput**, we can modify the **CustomInitialize** method in the **Enemy.cs** class to assign its **InputDevice.** The **Enemy.cs** file can be found in the **Entities** folder in the Visual Studio Solution Explorer.
-
-<figure><img src="../../../.gitbook/assets/2021-04-img\_60779b423c26b.png" alt=""><figcaption><p>CustomInitialize method in Enemy class</p></figcaption></figure>
 
 To use EnemyInput as the Enemy's InputDevice, modify the Enemy CustomInitialize method as shown in the following code snippet:
 
@@ -98,7 +94,7 @@ class EnemyInput : FlatRedBall.Input.InputDeviceBase
 
 ### Changing Directions
 
-Our EnemyInput object can be expanded to support any type of input  - we just need to have the GetHorizontalValue function return a value between 0 and 1. Note that we are only using horizontal movement for this tutorial, but we could also have the Enemy jump by implementing the GetPrimaryActionPressed method, which controls whether the jump button is down.
+Our EnemyInput object can be expanded to support any type of input - we just need to have the GetHorizontalValue function return a value between 0 and 1. Note that we are only using horizontal movement for this tutorial, but we could also have the Enemy jump by implementing the GetPrimaryActionPressed method, which controls whether the jump button is down.
 
 For this tutorial we need access to a value to indicate whether the Enemy should move to the left or right. We will ignore values inbetween -1 (left) and +1 (right), but a full game may support enemies which may stand still or move at various speeds. We'll create a new enum value and expose a property in EnemyInput so that it can be controlled externally. To do this, modify the EnemyInput class as shown in the following code snippet:
 
@@ -138,9 +134,7 @@ Many platformer games include enemies which turn around when colliding with othe
 
 <figure><img src="../../../.gitbook/assets/2021-04-img_6077b6189b433.png" alt=""><figcaption></figcaption></figure>
 
-5.  Click **OK** to accept the defaults
-
-<figure><img src="../../../.gitbook/assets/2021-04-img\_6077b70441b42.png" alt=""><figcaption></figcaption></figure>
+5. Click **OK** to accept the defaults
 
 Glue will add an event to GameScreen.Event.cs which we can modify to adjust the EnemyInput DesiredDirection, as shown in the following snippet.
 
@@ -172,23 +166,23 @@ The code above assigns the EnemyInput DesiredDirection according to the enemy's 
 
 The collision relationship between Enemies and SolidCollision prevents Enemy instances from overlapping the SolidCollision TileShapeCollection. Whenever an Enemy overlaps one of the rectangles in the SolidCollision TileShapeCollection, the Enemy must be _repositioned_ so it does not overlap the solid collision. For example, consider a falling Enemy (white). Initially the enemy may be falling but not overlapping any solid collision (red).
 
-![](../../../.gitbook/assets/2021-04-img\_60783a690fdef.png)
+![](../../../.gitbook/assets/2021-04-img_60783a690fdef.png)
 
 As the Enemy continues to fall, it eventually overlaps the solid collision.
 
-![](../../../.gitbook/assets/2021-04-img\_60783bce4c53b.png)
+![](../../../.gitbook/assets/2021-04-img_60783bce4c53b.png)
 
 When this happens, the Enemy must be _repositioned_ up to resolve the overlapping collision.
 
-![](../../../.gitbook/assets/2021-04-img\_60783cc8cb303.png)
+![](../../../.gitbook/assets/2021-04-img_60783cc8cb303.png)
 
 In this case, the RepositionDirection would have a positive Y value. For example, it may be (0,1,0). Similarly, whenever an Enemy collides with a wall in the SolidCollision TileShapeCollection, the Enemy is repositioned horizontally, so the X value of the RepositionDirection is non-zero, as shown in the following diagram:
 
-![](../../../.gitbook/assets/2021-04-img\_60783e6668121.png)
+![](../../../.gitbook/assets/2021-04-img_60783e6668121.png)
 
 In the diagram above, the RepositionDirection has a negative X value (points to the left) so we know that the wall is to the right of the Enemy. If the RepositionDirection has a positive X value, then the wall is to the left of the Enemy.
 
-![](../../../.gitbook/assets/2021-04-img\_60783ebc5efb7.png)
+![](../../../.gitbook/assets/2021-04-img_60783ebc5efb7.png)
 
 ### Conclusion
 
