@@ -6,23 +6,23 @@ The InputManager is a class responsible for reading and reporting input from the
 
 ### Keyboard
 
-See [Keyboard](../../../../../frb/docs/index.php)
+See [Keyboard](../keyboard/)
 
 ### Mouse
 
-See [Mouse](../../../../../frb/docs/index.php)
+See [Mouse](../mouse/)
 
 ### TouchScreen
 
-See [TouchScreen](../../../../../frb/docs/index.php)
+See [TouchScreen](../touchscreen/)
 
 ### Xbox 360 Game Pad
 
-See [Xbox360GamePad](../../../../../frb/docs/index.php)
+See [Xbox360GamePad](../xbox360gamepad/)
 
 ### InputManager Members
 
-* [FlatRedBall.Input.InputManager.ClearAllInput](../../../../../frb/docs/index.php)
-* [FlatRedBall.Input.InputManager.InputReceiver](../../../../../frb/docs/index.php)
+* [FlatRedBall.Input.InputManager.ClearAllInput](clearallinput.md)
+* [FlatRedBall.Input.InputManager.InputReceiver](flatredball-input-inputmanager-inputreceiver.md)
 
 Did this article leave any questions unanswered? Post any question in our [forums](../../../../../frb/forum.md) for a rapid response.
