@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The Keyboard class provides functionality for getting input data from the physical keyboard. This class is automatically instantiated by and accessible through the [InputManager](../../../../../frb/docs/index.php). The Keyboard class is accessible both on a PC as well as on the Xbox 360.
+The Keyboard class provides functionality for getting input data from the physical keyboard. This class is automatically instantiated by and accessible through the [InputManager](../inputmanager/). The Keyboard class is accessible both on a PC as well as on the Xbox 360.
 
 ### Detecting Keyboard Activity
 
@@ -43,20 +43,20 @@ void CustomActivity(bool firstTimeCalled)
 
 ### Controlling Objects With the Keyboard
 
-The Keyboard is commonly used to control objects like in-game characters and the [Camera](../../../../../frb/docs/index.php). The following code can be used to quickly control any [PositionedObject](../../../../../frb/docs/index.php) **Add the following using statement:**
+The Keyboard is commonly used to control objects like in-game characters and the [Camera](../../camera/). The following code can be used to quickly control any [PositionedObject](../../positionedobject/) **Add the following using statement:**
 
 ```
 using FlatRedBall.Input;
 ```
 
-**Assuming positionedObject is a valid** [**PositionedObject**](../../../../../frb/docs/index.php) **(or object inheriting from the** [**PositionedObject**](../../../../../frb/docs/index.php) **class like a** [**Sprite**](../../../../../frb/docs/index.php) **or** [**Camera**](../../../../../frb/docs/index.php)**) add the following code in Update:**
+**Assuming positionedObject is a valid** [**PositionedObject**](../../positionedobject/) **(or object inheriting from the** [**PositionedObject**](../../positionedobject/) **class like a** [**Sprite**](../../sprite/) **or** [**Camera**](../../camera/)**) add the following code in Update:**
 
 ```
 float velocityToApply = 10;
 InputManager.Keyboard.ControlPositionedObject(positionedObject, velocityToApply);
 ```
 
-For more control over input controlling movement, see the following entry on [controlling the camera with the keyboard](../../../../../frb/docs/index.php#Controlling_the_Camera).
+For more control over input controlling movement, see the following entry on [controlling the camera with the keyboard](../../camera/).
 
 ###
 
