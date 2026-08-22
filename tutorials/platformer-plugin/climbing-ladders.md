@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This walkthrough covers the concepts of climbing ladders. When climbing a ladder, the platformer Player is able to move vertically by pressing up or down on the analog stick or d-pad. Ladders and vines are used to provide access to areas normally not reachable by jumping alone.
+This walkthrough covers climbing ladders. When climbing a ladder, the platformer Player moves vertically by pressing up or down on the analog stick or d-pad. Ladders and vines give access to areas that jumping alone can't reach.
 
 {% embed url="https://youtu.be/htFJTiVH5Ao?t=1465" %}
 
@@ -18,8 +18,8 @@ This walkthrough covers a number of concepts for climbing ladders:
 
 * Defining ladder platformer values to control climbing speed
 * Defining ladders in the TMX file
-* Controlling whether currently climbing or not according to ladder collision and input
-* Limiting the climbing height
+* Telling the player where a ladder's collision is, and where it ends
+* Reacting to the player reaching the top or bottom of a ladder
 
 ### Climbing Values
 
@@ -27,7 +27,7 @@ The Player entity defines a set of movement values for climbing called **Climbin
 
 ![](../../.gitbook/assets/2021-05-img\_60aefd701ead6.png)
 
-When this is set as the CurrentMovement, the player has direct control over vertical movement. When climbing up and down, the Climbing Speed is set as the player's Y velocity. As we will see later in the walkthrough, these values are explicitly set when the player presses **Up** to grab the ladder. Notice that the Player has a non-zero **Max Speed** under the Horizontal Movement section. This means that the player can move horizontally on the ladder. Some games like Super Mario world allow horizontal movement on ladders. Other games like Mega Man X only allow vertical movement on ladders. This game allows vertical movement, but changing the value to 0 results in no horizontal movement.
+While these values are active, the player has direct control over vertical movement - climbing up and down sets the player's Y velocity from the Climbing Speed. Notice that the Player also has a non-zero **Max Speed** under the Horizontal Movement section. This means the player can move horizontally while on the ladder. Some games, like Super Mario World, allow this. Others, like Mega Man X, only allow vertical movement on ladders. This demo allows horizontal movement, but setting Max Speed to 0 removes it.
 
 ### Defining Ladders
 
@@ -39,158 +39,142 @@ Notice that the ladder tiles define the maximum height that the player can climb
 
 ![](../../.gitbook/assets/2021-05-img\_609fd8ba05c63.png)
 
-The code for this is defined below, but we can add extra climb height by adding additional tiles to the map. Keep in mind the GameplayLayer tiles do not need to match the visual layer exactly.
+You can add extra climb height by adding more tiles to the map. The GameplayLayer tiles don't need to match the visual layer exactly.
 
 ![](../../.gitbook/assets/2021-05-img\_609fd97cac79a.png)
 
-These ladders tiles use the **Ladder** type.
+These ladder tiles use the **Ladder** type.
 
 ![](../../.gitbook/assets/2021-05-img\_60971250dca22.png)
 
-This allows the creation of a **LadderCollision** TileShapeCollection.
+This lets Glue create a **LadderCollision** TileShapeCollection.
 
 ![](../../.gitbook/assets/2021-05-img\_609712da913c8.png)
 
-### Changing to Climbing Movement
+### Switching to Climbing Movement
 
-Platformer Entities do not (currently) support automatic switching to climbing movement values. The demo includes custom code to enable switching to climbing. The main logic controlling the movement values is in the Player.cs **CustomActivity** method.
+Platformer entities handle ladder climbing automatically: grabbing a ladder, clamping at its top, and falling off if the player steps sideways off of it are all built in. Your code just needs to tell the entity two things: which movement values to use while climbing, and where the ladder collision is.
 
+Assign the **ClimbingMovement** property once, in CustomInitialize:
+
+```csharp
+private void CustomInitialize()
+{
+    ClimbingMovement = PlatformerValuesStatic["Climbing"];
+    ...
+}
 ```
+
+That's it for movement values - you never assign GroundMovement or AirMovement to make the player climb. ClimbingMovement is a separate slot, and the platformer entity switches to it on its own once the player grabs a ladder.
+
+Player.cs's CustomActivity only needs to handle the movement values a real project usually wants: switching between Ducking, Running, and Ground while **not** climbing.
+
+```csharp
 private void CustomActivity()
 {
     animationController.Activity();
 
-    if(!CurrentMovement.CanClimb)
+    if (CurrentMovementType != MovementType.Climbing)
     {
         if (VerticalInput.Value < 0)
         {
-            this.GroundMovement = PlatformerValuesStatic["Ducking"];
+            GroundMovement = PlatformerValuesStatic["Ducking"];
         }
         else if (RunInput.IsDown)
         {
-            this.GroundMovement = PlatformerValuesStatic["Running"];
-            this.AirMovement = PlatformerValuesStatic["RunningAir"];
+            GroundMovement = PlatformerValuesStatic["Running"];
+            AirMovement = PlatformerValuesStatic["RunningAir"];
         }
         else
         {
-            this.GroundMovement = PlatformerValuesStatic["Ground"];
-            this.AirMovement = PlatformerValuesStatic["Air"];
+            GroundMovement = PlatformerValuesStatic["Ground"];
+            AirMovement = PlatformerValuesStatic["Air"];
         }
-    }
-    else
-    {
-        if(VerticalInput.Value < 0 && IsOnGround)
-        {
-            this.GroundMovement = PlatformerValuesStatic["Ground"];
-        }
-    }
-
-    // Even if we are colliding with it, we want to see if the player's "body" is over
-    // the ladder. We can do this by checking the center.
-    var isOverLadder = LastCollisionLadderRectange != null && 
-        X < LastCollisionLadderRectange.Right && X > LastCollisionLadderRectange.Left;
-
-    if (InputDevice.DefaultUpPressable.WasJustPressed && LastCollisionLadderRectange != null)
-    {
-        this.GroundMovement = PlatformerValuesStatic["Climbing"];
-        // snap the player's position to the center of the ladder
-        this.X = LastCollisionLadderRectange.X;
-        this.XVelocity = 0;
-        if(this.IsOnGround == false)
-        {
-            // force the player on ground:
-            CurrentMovementType = MovementType.Ground;
-        }
-    }
-
-    if(isOverLadder == false && CurrentMovement.CanClimb)
-    {
-        // fall off the ladder...
-        CurrentMovementType = MovementType.Air;
     }
 }
 ```
 
-The CustomActivity method checks if the current movement can climb. If CurrentMovement.CanClimb is false, then the player is not climbing a ladder so we can do regular platformer logic for ducking and running. Otherwise, if the player is climbing, the game checks if the player is on ground (solid collision is colliding with the player from below) and if the user is pressing down. If so, we set the ground movement back to **Ground** so players can climb to the bottom and leave the climbing state.
+The `if (CurrentMovementType != MovementType.Climbing)` check keeps this code out of the way while the player is on a ladder. Everything else - grabbing the ladder, letting go, clamping at the top - is handled for you.
 
-The second half of CustomActivity code performs logic which switches between being on the ground, in the air, and on th eladder. Rather than only relying on a null check with LastCollisionLadderRectangle, the code also checks if the player's center point (X) is inside the bounds of the LastCollisionLadderRectangle. This prevents the player from moving too far off of the ladder horizontally before falling off. This code could be adjusted to allow the player to move more or less horizontally.
+### Telling the Player Where the Ladder Is
 
-If the player is colliding with the ladder and presses up, then the player can grab a ladder. The player's movement on the horizontal axis is stopped and the player snaps its X position to the ladder's position. We also force the player to be on the ground and to use the **Climbing** movement values. If the player is not over the ladder but CurrentMovement.CanClimb is true, then the player has moved horizontally off of a ladder, so the player's movement is changed to air (falling). The **LastCollisionLadderRectangle** property is necessary rather than a bool value so that the player can snap to the ladder's X position. This is a regular property defined at the top of Player.cs.
+The platformer entity still needs to know where the ladder collision actually is - that part depends on your level, so it isn't automatic. Every platformer entity has a **LastCollisionLadderRectange** property for this. You set it to the ladder rectangle the player is touching, and set it back to null when the player isn't touching one.
 
-```
-public partial class Player
-{
-    ...
-    public AxisAlignedRectangle LastCollisionLadderRectange { get; set; }
-    ...
-```
+The ladder collision needs to run before other collision, so GameScreen calls it directly instead of letting it run automatically:
 
-This value is controlled by GameScreen. The ladder collision requires logic to be executed before collision occurs, so the PlayerListVsLadderCollision relationship does not automatically run.
-
-![](../../.gitbook/assets/2021-05-img\_60971a6308e58.png)
-
-Instead, all Players have their LastCollisionLadderRectangle explicitly set to null, then the PlayerListVsLadderCollision relationship is manually called in GameScreen CustomActivity.
-
-```
+```csharp
 private void DoCollisionActivity()
 {
     // first we reset the collision...
-    foreach(var player in PlayerList)
+    foreach (var player in PlayerList)
     {
         player.LastCollisionLadderRectange = null;
     }
     // Then we do the collision which sets LastCollisionLadderRectange if a collision happens
-    PlayerListVsLadderCollision.DoCollisions();
+    PlayerVsLadderCollision.DoCollisions();
 }
 ```
 
-Whenever a collision occurs, the LastCollisionLadderRectangle is set, as shown in GameScreen.Event.cs OnPlayerListVsLadderCollisionCollisionOccurred.
+Whenever a collision happens, LastCollisionLadderRectange is set in GameScreen.Event.cs's OnPlayerVsLadderCollisionCollided:
 
-```
- void OnPlayerListVsLadderCollisionCollisionOccurred (Entities.Player player, FlatRedBall.TileCollisions.TileShapeCollection second)
- {
-     player.LastCollisionLadderRectange = second.LastCollisionAxisAlignedRectangles.First();
-
-     ...
- }
+```csharp
+void OnPlayerVsLadderCollisionCollided(Player player, TileShapeCollection ladder)
+{
+    player.LastCollisionLadderRectange = ladder.LastCollisionAxisAlignedRectangles.First();
+}
 ```
 
-All of this results in the LastCollisionLadderRectangle storing a rectangle if the player collides with a ladder, and storing null if not. Note that this implementation will not work effectively if two ladders are placed next to each other.
+This results in LastCollisionLadderRectange holding a rectangle whenever the player touches a ladder, and null otherwise. Note that this simple version won't behave well if two ladders are placed right next to each other - see the next section for the code the demo actually uses, which also handles ladder height.
 
-### Custom Movement Logic vs. Player Platform Movement Values
+### Reacting to Reaching the Top or Bottom
 
-Simple games may make use of automatically assigning movement values on collision as shown in the [Adding Ice and Water document](ground-type-and-water-movement/03-adding-ice-and-water.md). In this document, platformer values are assigned through the FlatRedBall dropdowns on the Collision Relationship. While this is convenient, note that ladder movement is optionally assigned based on game logic rather than simple collision. Therefore, if your game uses ladders, you may need to move all assignment of movement values to code.
+A platformer entity automatically calls two methods you can override in your own code:
+
+* **OnLadderTopReached** - called when the player has climbed as high as the ladder allows and isn't holding Up
+* **OnLadderBottomReached** - called when the player is climbing, touches solid ground, and isn't holding Down
+
+Both are optional. You don't need to do anything in them for climbing to work correctly - reaching the top leaves the player hanging there with gravity turned off, and reaching the bottom (or stepping off either side) switches the player back to normal ground/air movement on its own. Use these methods for extra behavior, like playing a sound or triggering an animation:
+
+```csharp
+partial void OnLadderTopReached()
+{
+    // for example: play a "reached the top" sound here
+}
+
+partial void OnLadderBottomReached()
+{
+}
+```
 
 ### Limiting Ladder Height
 
-When a player climbs down a ladder and collides with solid collision, IsOnGround will be set to true and the climbing movement values will be undone. The demo performs extra logic to prevent the player from climbing above the top of the ladder. Platformer entities like Player automatically have a **TopOfLadderY** property which can be assigned in custom code. The demo assigns this in the OnPlayerListVsLadderCollisionCollisionOccurred.
+A platformer entity has a **TopOfLadderY** property that caps how high the player can climb. You assign it yourself, since only your code knows where the top of a given ladder actually is. The demo assigns it in OnPlayerVsLadderCollisionCollided, by walking up the ladder's tiles one at a time until it finds the last one:
 
-```
-void OnPlayerListVsLadderCollisionCollisionOccurred (Entities.Player player, FlatRedBall.TileCollisions.TileShapeCollection second) 
+```csharp
+void OnPlayerVsLadderCollisionCollided(Player player, TileShapeCollection ladder)
 {
-    player.LastCollisionLadderRectange = second.LastCollisionAxisAlignedRectangles.First();
+    player.LastCollisionLadderRectange = ladder.LastCollisionAxisAlignedRectangles.First();
 
-    // a little inefficient, could use caching to save a little calculation but it won't be too bad:
     var topRectangle = player.LastCollisionLadderRectange;
 
-    var rectangleAbove = second.GetRectangleAtPosition(topRectangle.X, topRectangle.Y + second.GridSize);
+    var rectangleAbove = ladder.GetRectangleAtPosition(topRectangle.X, topRectangle.Y + ladder.GridSize);
 
-    while(rectangleAbove != null)
+    while (rectangleAbove != null)
     {
         topRectangle = rectangleAbove;
-        rectangleAbove = second.GetRectangleAtPosition(topRectangle.X, topRectangle.Y + second.GridSize);
+        rectangleAbove = ladder.GetRectangleAtPosition(topRectangle.X, topRectangle.Y + ladder.GridSize);
     }
 
-    player.TopOfLadderY = topRectangle.Bottom;
+    player.TopOfLadderY = topRectangle.Top;
 }
 ```
 
-Whenever a collision occurs with ladder rectangles, the code moves up one tile at a time (using GridSize) until it finds the last tile. This is marked as the TopOfLadderY which prevents the player from climbing up indefinitely. The Player's position is defined as the bottom of the player, so in this case, the code limits the height that the player to the bottom of the ladder. This can be changed by modifying the last line of code in the code above. For example, we could let the player's feet reach the top of the ladder by changing the last line to:
+Use `topRectangle.Top` here, not `.Bottom` - `.Top` puts the player's feet at the actual top of the ladder, standing on whatever floor is up there. `.Bottom` stops the player a full tile short, still hanging in the air. The platformer entity clamps slightly inside the top tile automatically, so you don't need to account for that yourself.
 
-```
-player.TopOfLadderY = topRectangle.Top;
-```
+### Custom Movement Logic vs. Player Platform Movement Values
+
+Simple games may assign movement values automatically on collision, as shown in the [Adding Ice and Water document](ground-type-and-water-movement/03-adding-ice-and-water.md), where values are assigned through the FlatRedBall dropdowns on the Collision Relationship. Ladders don't fit that pattern - a ladder isn't something the player collides into and bounces off of, so entering and leaving the climbing state is driven by your own game logic instead. In practice this means assigning ClimbingMovement once and setting LastCollisionLadderRectange from your ladder collision, as shown above.
 
 ### Conclusion
 
-This walkthrough has covered how to add ladder climbing to a platformer game.
+This walkthrough covered how to add ladder climbing to a platformer game.
