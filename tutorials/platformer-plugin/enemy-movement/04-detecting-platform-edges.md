@@ -4,7 +4,7 @@
 
 Some games include enemies which turn around when reaching a platform edge. For example, in Super Mario World, the red Koopa enemies (turtles) walk until they reach an edge, then turn around. ![](http://cdn.wikimg.net/strategywiki/images/d/d5/SMW\_Koopa.png)
 
-We will add this logic to our Enemies in this tutorial.
+We add this logic to our Enemies in this tutorial.
 
 ### The Concept of Platform Edges
 
@@ -20,11 +20,11 @@ This shape acts as the Enemy's _body_. It can be used to keep the enemy from mov
 
 ![](../../../.gitbook/assets/2021-04-img\_607843b53d272.png)
 
-Both situations are identical in the collision event - they both result in collision and both have the same _RepositionDirection._ To detect if the Enemy is near the edge of a platform, we can use a new collision rectangle (displayed in green). If this green rectangle is not colliding with SolidCollision, then the player is near a ledge. For example, in the following diagram the Enemy is near the edge of a platform on the right side:
+Both situations are identical in the collision event. They both result in collision and both have the same _RepositionDirection._ To detect if the Enemy is near the edge of a platform, we can use a new collision rectangle (displayed in green). If this green rectangle is not colliding with SolidCollision, then the player is near a ledge. For example, in the following diagram the Enemy is near the edge of a platform on the right side:
 
 ![](../../../.gitbook/assets/2021-04-img\_607847cdd2344.png)
 
-If the player is not near a ledge, then the green rectangle will collide with solid collision.
+If the player is not near a ledge, then the green rectangle collides with solid collision.
 
 ![](../../../.gitbook/assets/2021-04-img\_6078481a2157e.png)
 
@@ -36,7 +36,7 @@ When we define these rectangles, we need to remember a few things:
 
 * These rectangles should not be used for solid collision - they should be excluded from the ICollidable interface
 * These rectangles should be smaller than the size of our tiles (16x16) so they do not reach across gaps or down pits
-* These rectangles will be used to apply logic when _not colliding_ with the SolidCollision. Normally we perform logic when a collision occurs, so we will need to write custom code to handle this situation.
+* These rectangles are used to apply logic when _not colliding_ with the SolidCollision. Normally we perform logic when a collision occurs, so we need to write custom code to handle this situation.
 
 ### Creating Edge Collision Rectangles
 
@@ -72,13 +72,13 @@ Now our enemy has two extra rectangles which it can use for detecting edges, but
 
     ![](../../../.gitbook/assets/2021-04-img\_607851a6d3661.png)
 
-Repeat the steps above for the **RightEdgeCollision** and the Enemy will no longer use these two rectangles for solid collision.
+Repeat the steps above for the **RightEdgeCollision** and the Enemy no longer uses these two rectangles for solid collision.
 
 ![](../../../.gitbook/assets/2021-04-img\_607851d7226fd.png)
 
 ### Adding Edge Detecting Logic
 
-Normally when performing logic related to collision, we do so inside a collision relationship event. Detecting an edge is different because we need to respond to a situation when there is no collision. Therefore, we will be writing code which happens every frame inside of our GameScreen CustomActivity. To detect if the enemy should turn around, modify the **GameScreen.cs** file so that its **CustomActivity** matches the following code snippet:
+Normally when performing logic related to collision, we do so inside a collision relationship event. Detecting an edge is different because we need to respond to a situation when there is no collision. Therefore, we write code that runs every frame inside our GameScreen CustomActivity. To detect if the enemy should turn around, modify the **GameScreen.cs** file so that its **CustomActivity** matches the following code snippet:
 
 ```csharp
 void CustomActivity(bool firstTimeCalled)
@@ -127,7 +127,7 @@ To do this:
 
     ![](../../../.gitbook/assets/2021-04-img\_60785758cc8b5.png)
 
-These changes enable the enemy to turn around without falling off of the platform. It's important to note that with enough **Max Speed** or a large enough **Slow Down Time** will result in an enemy sliding off of an edge.
+These changes enable the enemy to turn around without falling off of the platform. It's important to note that too much **Max Speed** or too large a **Slow Down Time** results in an enemy sliding off an edge.
 
 <figure><img src="../../../.gitbook/assets/2021-04-2021_April_15_090312.gif" alt=""><figcaption></figcaption></figure>
 

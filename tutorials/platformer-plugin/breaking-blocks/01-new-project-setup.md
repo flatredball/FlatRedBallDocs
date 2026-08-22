@@ -2,22 +2,22 @@
 
 ### Introduction
 
-We'll begin this tutorial with an empty project. Mine will be called BreakingBlocksProject.
+We'll begin this tutorial with an empty project. Mine is called BreakingBlocksProject.
 
 ![](../../../.gitbook/assets/2021-04-img\_60777be0d952b.png)
 
 ### New Project Wizard
 
-The New Project Wizard can help us get a quick project set up. We will leave most of the options to their default, but we will change the following:
+The New Project Wizard helps us get a project set up quickly. We leave most of the options at their default, but change the following:
 
 #### Player Entity
 
 * Change **What kind of control will the player have?** to **Platformer**
-* Uncheck **Add Sprite to Player Entity** unless you intend to add graphics to your Player entity. This tutorial will not cover how to add graphics to the Player entity.
+* Uncheck **Add Sprite to Player Entity** unless you intend to add graphics to your Player entity. This tutorial does not cover how to add graphics to the Player entity.
 
 #### Levels
 
-* Change **Number of levels to create** to **1**. We will only have one level in this game
+* Change **Number of levels to create** to **1**. We only have one level in this game
 
 ### Conclusion
 

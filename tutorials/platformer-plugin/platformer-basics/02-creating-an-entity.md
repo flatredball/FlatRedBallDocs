@@ -22,7 +22,7 @@ The FlatRedBall Editor provides a quick setup for creating a platformer project.
 
 ### Creating a GameScreen
 
-Although this tutorial is focused on creating a platformer entity, we will first add a GameScreen. Creating a GameScreen first makes it much easier to add an entity after. Most FlatRedBall projects have a GameScreen - it's a standard screen created by the wizard, so it's best to follow this naming convention in your own projects even if you aren't using the wizard.
+Although this tutorial is focused on creating a platformer entity, we first add a GameScreen. Creating a GameScreen first makes it much easier to add an entity after. Most FlatRedBall projects have a GameScreen - it's a standard screen created by the wizard, so it's best to follow this naming convention in your own projects even if you aren't using the wizard.
 
 Note that you may already have a GameScreen in your project. If so, you can skip this section. To add a GameScreen:
 
@@ -34,11 +34,11 @@ Note that you may already have a GameScreen in your project. If so, you can skip
 
 ![Adding a GameScreen in the new screen window.](<../../../.gitbook/assets/11_05 37 20.png>)
 
-We will return to the GameScreen in future tutorials, but having one created before we create entities will speed up the process.
+We return to the GameScreen in future tutorials, but creating one before we create entities speeds up the process.
 
 ### Creating a Player Entity
 
-The Player entity is our entity that will be controlled and have platformer physics. Regardless of the genre, most FlatRedBall games have a Player entity. It's a convention that your games should follow, just like having a GameScreen.
+The Player entity is our entity that is controlled and has platformer physics. Regardless of the genre, most FlatRedBall games have a Player entity. It's a convention that your games should follow, just like having a GameScreen.
 
 To create an entity with platformer behavior:
 
@@ -53,7 +53,7 @@ To create an entity with platformer behavior:
 
 ![Adding a Player entity with collision and marking it as a Platformer](<../../../.gitbook/assets/11_05 39 12.png>)
 
-This will create a new platformer entity with a rich set of default functionality. We can verify that the entity is marked as a platformer by checking its **Entity Input Movement** tab to verify that it is marked as a platformer and that it has two movement types:
+This creates a new platformer entity with a rich set of default functionality. We can verify this by checking its **Entity Input Movement** tab, which shows that it is marked as a platformer with two movement types:
 
 * Ground
 * Air
@@ -62,7 +62,7 @@ This will create a new platformer entity with a rich set of default functionalit
 
 ### Adding a Player to the GameScreen
 
-Now that we have the **Player entity** set up with platfomer control values, we can add it to our **GameScreen** by drag+dropping the **Player** onto the **GameScreen** node. We should already have a **PlayerList** in our **GameScreen** so the newly-added object will be inside of that list after the drag+drop.
+Now that we have the **Player entity** set up with platfomer control values, we can add it to our **GameScreen** by drag+dropping the **Player** onto the **GameScreen** node. We should already have a **PlayerList** in our **GameScreen** so the newly-added object is inside of that list after the drag+drop.
 
 <figure><img src="../../../.gitbook/assets/11_05 42 02.gif" alt=""><figcaption><p>Drag+drop the Player entity on the GameScreen</p></figcaption></figure>
 
@@ -110,4 +110,4 @@ Your project should now have a Screen named Level1. This is marked as the startu
 
 ### Conclusion
 
-If we run our game now, we'll see the entity functional - at least, it seems to fall with gravity. In the next tutorial we'll add collision and controls using our entity.
+If we run our game now, the entity is functional, at least it seems to fall with gravity. The next tutorial adds collision and controls to our entity.

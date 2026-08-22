@@ -6,7 +6,7 @@ This tutorial explores how to add double jump to a platformer character. It cove
 
 ### Double Jump Variables
 
-Double jumping is a feature in many platforms which gives the player more control over player movement. Players can use double jumping to remain in the air for a longer period of time, to reach areas higher than possible with a single jump, and improve horizontal movement precision. Entities which support double jumping require two sets of values - the movement values before double jump and the movement values to apply after double jump. Platformer entities automatically receive a platformer values called **Air** which are the **before double jump** variables, so we need to create a new set of values. To do this:
+Double jumping is a feature in many platforms which gives the player more control over player movement. Players can use double jumping to remain in the air for a longer period of time, to reach areas higher than possible with a single jump, and improve horizontal movement precision. Entities which support double jumping require two sets of values - the movement values before double jump and the movement values to apply after double jump. Platformer entities automatically receive a set of platformer values called **Air**, which are the **before double jump** variables, so we need to create a new set of values. To do this:
 
 1. Select your platformer entity (Player)
 2. Expand the drop-down next to the **Add Movement Type** button
@@ -27,7 +27,7 @@ Now that we have a set of values for after double jump, we need to tell our game
 
     ![Use AfterDoubleJump for the After Double Jump variable](<../../../.gitbook/assets/01\_06 36 55.png>)
 
-Finally we need to change the **Jump Speed** value on the **Air** movement values to be greater than zero. This is the velocity which will be applied when performing a double jump.
+Finally we need to change the **Jump Speed** value on the **Air** movement values to be greater than zero. This is the velocity that is applied when performing a double jump.
 
 ![Set the Air Jump Speed to a value larger than 0 to enable double jumping](<../../../.gitbook/assets/01\_06 40 55.png>)
 
@@ -45,9 +45,9 @@ We can also support infinite double jumps by either setting the AfterDoubleJump 
 
 As shown above, the platformer entity can support a single double jump by making the **AfterDoubleJump** variables have a **Jump Speed** of 0. By increasing the **Jump Speed** to greater than 0, then the platformer entity can jump infinitely similar to flying or swimming. It is also possible to limit the number of jumps, but this requires custom code.
 
-For this example we will use the two movement types from the previous sections: **Air** and **AfterDoubleJump**. To limit the number of jumps, make sure that **AfterDoubleJump** has a **Jump Speed** value of 0.
+For this example we use the two movement types from the previous sections: **Air** and **AfterDoubleJump**. To limit the number of jumps, make sure that **AfterDoubleJump** has a **Jump Speed** value of 0.
 
-Next we will conditionally assign the Air value in code `AirMovement` value in code according to the number of jumps the player has performed since touching the ground.
+Next we conditionally assign the `AirMovement` value in code according to the number of jumps the player has performed since touching the ground.
 
 To do so, open your platformer entity's code file (Player.cs) and modify the code as shown in the following snippet:
 

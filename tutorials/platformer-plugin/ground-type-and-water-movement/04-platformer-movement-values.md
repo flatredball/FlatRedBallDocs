@@ -12,12 +12,12 @@ This tutorial shows how to create new platformer values for ice and water, and h
 
 ### Creating the Platformer Values
 
-Before we change which platformer values are used based on collision, we first need to define the platformer values for the different movement types. As mentioned before, we will have the following platformer values:
+Before we change which platformer values are used based on collision, we first need to define the platformer values for the different movement types. As mentioned before, we have the following platformer values:
 
 * Ground - already defined by default
 * Air - already defined by default
-* Ice - will apply when user collides with the ice TileShapeCollection
-* Water - will apply when the user collides with the water TileShapeCollection
+* Ice - applies when user collides with the ice TileShapeCollection
+* Water - applies when the user collides with the water TileShapeCollection
 
 To add a new movement value:
 
@@ -93,7 +93,7 @@ private void CustomActivity()
 }
 ```
 
-Now our Player will change movement values when moving on ice and solid ground.
+Now our Player changes movement values when moving on ice and solid ground.
 
 ###
 

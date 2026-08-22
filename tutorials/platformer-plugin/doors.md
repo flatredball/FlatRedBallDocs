@@ -27,7 +27,7 @@ The Level1Map file is a TMX which contains three sections. These three sections 
 
 ![](../../.gitbook/assets/2021-05-img\_609551cef0b58.png)
 
-These three rectangles will be used to mark the bounds of the Camera when the Player is in one of the three areas of the map. These bounds will apply directly to the Camera, so they must not extend beyond tile edges. Every object layer with shapes is automatically loaded into a ShapeCollection contained in the map. The name of the ShapeCollection matches the name of the layer, so it can be retrieved with a First linq call on the map's ShapeCollections object, as shown in GameScreen's CustomInitialize.
+These three rectangles mark the bounds of the Camera when the Player is in one of the three areas of the map. These bounds apply directly to the Camera, so they must not extend beyond tile edges. Every object layer with shapes is automatically loaded into a ShapeCollection contained in the map. The name of the ShapeCollection matches the name of the layer, so it can be retrieved with a First linq call on the map's ShapeCollections object, as shown in GameScreen's CustomInitialize.
 
 ```
 ShapeCollection boundsShapeCollection;
@@ -65,7 +65,7 @@ private void UpdateBoundsForPosition(Vector3 position)
 }
 ```
 
-Normally the Map object references an entire MapDrawableBatch (the runtime for TMX files), but in this case we replace it with an AxisAlignedRectangle. In either case, the CameraControllingEntityInstance will respect the bounds of the Map object it is assigned. We can observe this behavior by walking to the edge of the map. Notice that the Camera doesn't move further to the right even though it hasn't reached the edge of the TMX file.
+Normally the Map object references an entire MapDrawableBatch (the runtime for TMX files), but in this case we replace it with an AxisAlignedRectangle. In either case, the CameraControllingEntityInstance respects the bounds of the Map object it is assigned. We can observe this behavior by walking to the edge of the map. Notice that the Camera doesn't move further to the right even though it hasn't reached the edge of the TMX file.
 
 <figure><img src="../../.gitbook/assets/2021-05-2021_May_06_202739.gif" alt=""><figcaption></figcaption></figure>
 
@@ -79,7 +79,7 @@ Its Type is set to Door, which results in instances of that tile automatically b
 
 ![](../../.gitbook/assets/2021-05-img\_6094b0d0a2f44.png)
 
-The map contains four doors. Each door in the map has another door which marks where the Player should appear when travelling through the door. These pairs are identified by their names. The demo uses the convention of setting the Name of each pair of doors with the same letter. Specifically, the doors "A 1" and "A 2" are paired together and the doors "B 1" and "B 2" are paired together. This convention could support up to 26 pairs of doors if using only upper case, and more if using lower case and numbers, so it will work for even larger levels.
+The map contains four doors. Each door in the map has another door which marks where the Player should appear when travelling through the door. These pairs are identified by their names. The demo uses the convention of setting the Name of each pair of doors with the same letter. Specifically, the doors "A 1" and "A 2" are paired together and the doors "B 1" and "B 2" are paired together. This convention could support up to 26 pairs of doors if using only upper case, and more if using lower case and numbers, so it works for even larger levels.
 
 ![](../../.gitbook/assets/2021-05-img\_60953bd9cdaac.png)
 
@@ -136,7 +136,7 @@ async void OnPlayerListVsDoorListCollisionOccurred (Entities.Player player, Enti
 }
 ```
 
-We'll focus primarily on the collision and positioning logic in this section. Initially we check if the player has input enabled and whether the player is pressing up. Checking the InputEnabled property is important otherwise the Player could press Up multiple times during the transition animation and force the animations to play over and over, resulting in confusing behavior. We use the PressedUp property which returns whether the default up input was just pressed. This property is defined in Player.cs.
+We focus primarily on the collision and positioning logic in this section. Initially we check if the player has input enabled and whether the player is pressing up. Checking the InputEnabled property is important otherwise the Player could press Up multiple times during the transition animation and force the animations to play over and over, resulting in confusing behavior. We use the PressedUp property which returns whether the default up input was just pressed. This property is defined in Player.cs.
 
 ```
 public bool PressedUp => InputDevice.DefaultUpPressable.WasJustPressed;

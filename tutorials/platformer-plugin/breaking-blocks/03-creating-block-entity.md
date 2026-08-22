@@ -2,11 +2,11 @@
 
 ### Introduction
 
-Now that we have a simple platformer game with a Player moving around in a level with solid collision, we can add blocks to our game. We will be creating a new Block entity, instantiate blocks through our TileMap, and adjusting collision RepositionDirections.
+Now that we have a simple platformer game with a Player moving around in a level with solid collision, we can add blocks to our game. We create a new Block entity, instantiate blocks through our TileMap, and adjust collision RepositionDirections.
 
 ### Creating the Block Entity
 
-Our Block entity will contain an AxisAlignedRectangle for collision and a Sprite for visual. Since the player will be able to walk on Block instances, we want to make sure the AxisAlignedRectangle size matches the tile size of our map (16x16). To create a Block entity:
+Our Block entity contains an AxisAlignedRectangle for collision and a Sprite for visual. Since the player can walk on Block instances, we want to make sure the AxisAlignedRectangle size matches the tile size of our map (16x16). To create a Block entity:
 
 1.  Select the **Quick Actions** tab and click the **Add Entity** button&#x20;
 
@@ -41,22 +41,22 @@ To create Block instances in Tiled, we must decide which tile we want to use to 
 
     ![](../../../.gitbook/assets/2021-04-img\_606f2f8aa3527.png)
 6. Save the TSX file
-7.  Place blocks as desired in the GameplayLayer in Level1Map. Be sure to do this in the GameplayLayer, since mixing tilesets in a single layer will prevent your game from running.
+7.  Place blocks as desired in the GameplayLayer in Level1Map. Be sure to do this in the GameplayLayer, since mixing tilesets in a single layer prevents your game from running.
 
     ![](../../../.gitbook/assets/2021-04-img\_606f3048dc1d4.png)
 8. Save the map file so the game can use the changes
 
-Your game should now be creating Block instances for each Block tile placed in Level1Map.tmx. Since we haven't yet added graphics to the blocks, the blocks currently display only the white collision rectangles. Notice that each instance also has a small black square - this is the Sprite which we will be modifying next.
+Your game should now be creating Block instances for each Block tile placed in Level1Map.tmx. Since we haven't yet added graphics to the blocks, the blocks currently display only the white collision rectangles. Notice that each instance also has a small black square - this is the Sprite which we modify next.
 
 ![](../../../.gitbook/assets/2021-04-img\_606f313e81b98.png)
 
 ### Adding Block Graphics
 
-Our Block objects are currently displaying a black dot in the center of the collision rectangle for its graphics. This Sprite is not currently assigned a Texture yet. To fix this:
+Our Block objects are currently displaying a black dot in the center of the collision rectangle for its graphics. This Sprite isn't assigned a Texture yet. To fix this:
 
 1. Expand the **Block** entity
 2. Right-click on **Files**
-3.  Select **Add File -> Existing File**. We will be using the same file which is used for the graphics in our Level1Map.tmx - it has a graphic for a breakable block.
+3.  Select **Add File -> Existing File**. We use the same file which is used for the graphics in our Level1Map.tmx - it has a graphic for a breakable block.
 
     ![](../../../.gitbook/assets/2021-04-img\_606f320957490.png)
 4.  Search for **FRBPlatformer.png** and click **OK**
@@ -101,13 +101,13 @@ So far our game seems fairly functional, but it has a collision bug which can re
 
 <figure><img src="../../../.gitbook/assets/2021-04-img_606f1937e27db.png" alt=""><figcaption></figcaption></figure>
 
-The purple lines indicate possible RepositionDirections which can occur, and if these occur the Player will experience snagging. The topic of RepositionDirections is fairly extensive, and interested readers can see the following pages for more information:
+The purple lines indicate possible RepositionDirections which can occur, and if these occur the Player experiences snagging. The topic of RepositionDirections is fairly extensive, and interested readers can see the following pages for more information:
 
 * [AxisAlignedRectangle.RepositionDirections](../../../api/flatredball/math/geometry/axisalignedrectangle/repositiondirections.md)
 * [TileShapeCollection.AdjustRepositionDirectionsOnAddAndRemove](../../../tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/adjustrepositiondirectionsonaddandremove.md)
 * [TileShapeCollection.InsertCollidables](../../../tiled-plugin/glue-gluevault-component-pages-tile-graphics-plugin-tileshapecollection/insertcollidables.md)
 
-We will be applying some of the concepts and code discussed in the tutorials above, but for the sake of keeping the tutorial shorter we will not take a deep dive into every topic here. To adjust the RepositionDirections of our Block instances, we will use a new TileShapeCollection which is created purely for this purpose. In other words, we'll make a new TileShapeCollection, but we won't create any collision relationships or fill it in Glue the way we normally do with other TileShapeCollections. First we'll create a TileShapeCollection to be used for adjusting the Block RepositionDirections:
+We apply some of the concepts and code discussed in the tutorials above, but for the sake of keeping the tutorial short we don't take a deep dive into every topic here. To adjust the RepositionDirections of our Block instances, we use a new TileShapeCollection which is created purely for this purpose. In other words, we'll make a new TileShapeCollection, but we won't create any collision relationships or fill it in Glue the way we normally do with other TileShapeCollections. First we'll create a TileShapeCollection to be used for adjusting the Block RepositionDirections:
 
 1. Select the **GameScreen** in Glue
 2.  Select the **Quick Actions** tab and click **Add Object** to **GameScreen**
@@ -131,8 +131,8 @@ void CustomInitialize()
 }
 ```
 
-Now our BlockList will have proper RepositionDirections. Remember the CombinedShapeCollection - we will be returning to this when we work on creating/destroying our Blocks in the next tutorial.
+Now our BlockList has proper RepositionDirections. Remember the CombinedShapeCollection - we return to this when we work on creating/destroying our Blocks in the next tutorial.
 
 ### Conclusion
 
-Our blocks are now fully functional as platforming collision. The next tutorial will add the ability to break the blocks when the player hits the block from below.
+Our blocks are now fully functional as platforming collision. The next tutorial adds the ability to break the blocks when the player hits the block from below.

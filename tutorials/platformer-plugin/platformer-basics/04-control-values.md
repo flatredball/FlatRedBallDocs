@@ -14,7 +14,7 @@ These values serve as a starting point for platformers - they can be tuned to pr
 
 ### Max Speed
 
-This is the maximum speed (maximum absolute horizontal velocity) that the character can move through input. Note that if using **Immediate** horizontal movement, then this is a hard value - not other forces can modify the character movement. For more information, see the next section. Increasing this value makes the character move more quickly, but doing so can make the game more difficult to control if the value is too large.
+This is the maximum speed (maximum absolute horizontal velocity) that the character can move through input. Note that if using **Immediate** horizontal movement, then this is a hard value - no other forces can modify the character movement. For more information, see the next section. Increasing this value makes the character move more quickly, but doing so can make the game more difficult to control if the value is too large.
 
 ### Immediate and Speed Up/Down
 
@@ -30,7 +30,7 @@ The **Speed Up/Down** option results in the platformer entity accelerating to ma
 
 The **Speed Up Time** value controls how many seconds are required for the platformer entity to reach max speed. This value is only available if using **Speed Up/Down** horizontal movement.
 
-Increasing this value makes the character makes the platformer entity feel sluggish. Decreasing this value makes the platformer entity feel more responsive. A value of 0 is identical to using **Immediate** horizontal movement. A larger speed up time can also be used for different terrains and environments. For example, a larger value can make the ground feel more slippery (if the character is walking on ice). A larger value can also make the character seem heavier, or can be used to simulate under-water movement. A larger **Speed Up Time** can be used for air movement so that control is less precise when in the air.
+Increasing this value makes the platformer entity feel sluggish. Decreasing this value makes the platformer entity feel more responsive. A value of 0 is identical to using **Immediate** horizontal movement. A larger speed up time can also be used for different terrains and environments. For example, a larger value can make the ground feel more slippery (if the character is walking on ice). A larger value can also make the character seem heavier, or can be used to simulate under-water movement. A larger **Speed Up Time** can be used for air movement so that control is less precise when in the air.
 
 {% embed url="https://youtu.be/n9G9Vzd2l8U?t=212" %}
 
@@ -56,11 +56,11 @@ Of course, you should modify values to achieve the desired movement for your spe
 
 This value controls the velocity of the platformer entity at the moment when jumping off the ground, or when initiating a double-jump. Larger values allow the character to jump higher. This value is typically larger than **Max Speed**, but the exact value often requires multiple iterations to get the right feel.
 
-A platformer entity's jump height is also impacted by **Gravity**, so both **Jump Speed** and **Gravity** may need to be modified together. A low jump speed can be used for double-jumps, or for swimming when under water. A large jump speed can be used for characters who can jump higher. The Jump Speed value on Air movement can control whether the character can perform a double jump. By default, this value is 0 which means that the character cannot double-jump. Setting a value greater than 0 means a character can double jump. This topic will be covered in more detail in the following tutorial.
+A platformer entity's jump height is also impacted by **Gravity**, so both **Jump Speed** and **Gravity** may need to be modified together. A low jump speed can be used for double-jumps, or for swimming when under water. A large jump speed can be used for characters who can jump higher. The Jump Speed value on Air movement can control whether the character can perform a double jump. By default, this value is 0 which means that the character cannot double-jump. Setting a value greater than 0 means a character can double jump. This topic is covered in more detail in the following tutorial.
 
 ### Hold to Jump Higher
 
-If **Hold to Jump Higher** is checked, then the player will be able to hold the jump button to cause the platformer character to jump higher. This allows players to perform shorter hops when desired, and longer jumps to clear large obstacles. The larger this value, the longer the player can hold the button to jump higher.
+If **Hold to Jump Higher** is checked, then the player can hold the jump button to make the platformer character jump higher. This allows players to perform shorter hops when desired, and longer jumps to clear large obstacles. The larger this value, the longer the player can hold the button to jump higher.
 
 #### Implementation Details
 
@@ -87,7 +87,7 @@ This value controls whether the platformer entity can press the down arrow + jum
 
 ### Cloud Platform Thickness
 
-This is the distance to fall when pressing down + jump on a cloud platform before testing cloud collision again. When falling through cloud collision, collision against clouds is temporarily disabled until the user has fallen far enough. Once that has happened, cloud collision is re-enabled. This value should be roughly the thickness of cloud collision objects plus the height of the player collision. For example, if the tile height is 16 and the player's collision height is 32, then the Cloud Platform Thickness value should be set to 48. If a TileShapeCollection's UpdateShapesForCloudCollision method is called, then only half of the shape will be used for collision, so only half of the tile height needs to be considered when determining the Cloud Platform Thickness.
+This is the distance to fall when pressing down + jump on a cloud platform before testing cloud collision again. When falling through cloud collision, collision against clouds is temporarily disabled until the user has fallen far enough. Once that has happened, cloud collision is re-enabled. This value should be roughly the thickness of cloud collision objects plus the height of the player collision. For example, if the tile height is 16 and the player's collision height is 32, then the Cloud Platform Thickness value should be set to 48. If a TileShapeCollection's UpdateShapesForCloudCollision method is called, then only half of the shape is used for collision, so only half of the tile height needs to be considered when determining the Cloud Platform Thickness.
 
 ### Gravity
 

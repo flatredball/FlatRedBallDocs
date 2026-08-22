@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial covers how to read input to move a platformer entity. We will also be creating a level to test out our platformer entity. To create a level and collision, we will be using a Tiled level. For more information on working with Tiled, see the [Tiled](../../../tiled-plugin/) documentation.
+This tutorial covers how to read input to move a platformer entity. We also create a level to test out our platformer entity, using a Tiled level for the level and collision. For more information on working with Tiled, see the [Tiled](../../../tiled-plugin/) documentation.
 
 Note - if you created your Platformer project using the wizard, feel free to skip this tutorial. This tutorial is only needed if you are manually creating your game.
 
@@ -24,7 +24,7 @@ To set up collision between our PlayerList and SolidCollision:
 
 Since our Player is marked as a Platformer entity, the FlatRedBall editor assumes that the PlayerVsSolidCollision relationship should use platformer physics. You can verify that this is the case by selecting the PlayerVsSolidCollision object and clicking on the Collision tab.
 
-Now the player will collide with the level.
+Now the player collides with the level.
 
 ![PlayerVsSolidCollision using Platformer Solid Collision](<../../../.gitbook/assets/11\_06 13 50.png>)
 
@@ -34,7 +34,7 @@ By default, the platformer entity already supports a default set of controls. To
 
 ![Player uses Gamepad with Keyboard Fallback by default](<../../../.gitbook/assets/11\_06 15 36.png>)
 
-By default, the platformer will be controllable with a plugged-in Xbox Gamepad. If no Gamepad is detected, then the entity can be controlled with WASD and Space.
+By default, the platformer is controllable with a plugged-in Xbox Gamepad. If no Gamepad is detected, then the entity can be controlled with WASD and Space.
 
 <figure><img src="../../../.gitbook/assets/11_06 17 12.gif" alt=""><figcaption><p>Player moving with the gamepad or keyboard</p></figcaption></figure>
 

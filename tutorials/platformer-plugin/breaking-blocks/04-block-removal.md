@@ -2,13 +2,13 @@
 
 ### Introduction
 
-Currently our game is fully playable as a platformer, but it is missing the feature we've been working towards on this whole tutorial - the removal of blocks on collision. Games which remove blocks based on collision are common. Some games, such as Mega Man and Metroid, remove blocks in response t being shot by a weapon. Super Mario Bros removes blocks in response to collision with the player. Specifically, if Mario has collected a power-up which makes him grow, then hitting a block from below destroys it.
+Currently our game is fully playable as a platformer, but it is missing the feature we've been working towards on this whole tutorial - the removal of blocks on collision. Games which remove blocks based on collision are common. Some games, such as Mega Man and Metroid, remove blocks in response to being shot by a weapon. Super Mario Bros removes blocks in response to collision with the player. Specifically, if Mario has collected a power-up which makes him grow, then hitting a block from below destroys it.
 
-This tutorial will implement this type of destruction since it will give us the opportunity to perform more advanced collision logic.
+This tutorial implements this type of destruction since it gives us the opportunity to perform more advanced collision logic.
 
 ### Adjusting the Player and Camera
 
-Before we add logic to destroy Blocks, we will make some minor adjustments to the game to make it easier to control, and easier to see our player. First, we'll adjust the collision on the player.
+Before we add logic to destroy Blocks, we make some minor adjustments to the game to make it easier to control, and easier to see our player. First, we'll adjust the collision on the player.
 
 1. Expand the Player Objects folder
 2. Select the AxisAlignedRectangle
@@ -42,11 +42,11 @@ Now our character is easier to control and see.
 
 ### Breaking Blocks Conceptually
 
-To help us understand the code that we will be writing, let's first look at block breaking implementation concepts. For the player to break the blocks, a number of things must happen:
+To help us understand the code that we write, let's first look at block breaking implementation concepts. For the player to break the blocks, a number of things must happen:
 
-1. The player must collide with the blocks. This may seem like an obvious requirement, but it's worth noting since it we will be writing code in the PlayerListVsBlockList collision relationship.
+1. The player must collide with the blocks. This may seem like an obvious requirement, but it's worth noting since we write code in the PlayerListVsBlockList collision relationship.
 2. The player must hit the block from below.
-3. Only one block can be destroyed at a time. Modern Super Mario Bros. games do support destroying multiple blocks at the same time, but the older games only support one at a time. We will follow the old approach.
+3. Only one block can be destroyed at a time. Modern Super Mario Bros. games do support destroying multiple blocks at the same time, but the older games only support one at a time. We follow the old approach.
 4. Once a block is destroyed, the surrounding block RepositionDirections must be adjusted to prevent snagging.
 
 Of the four concepts listed above, the one which requires the most attention is the third.
@@ -69,7 +69,7 @@ Which block should break in this situation? The player overlaps more of the bloc
 
 ![](../../../.gitbook/assets/2021-04-img\_60705acc1cc7c.png)
 
-If the left block collides first and the player is pushed down as a result of the collision, the right block will not perform collision with the player. The events raised for collision will only be raised for the left block. As explained above, the block which actually collides with the player is arbitrary - it could be the left or it could be the right. This means that we cannot rely purely on the Player vs Block relationship to decide which block to destroy - at least, not if we plan on controlling which block is destroyed in such a situation.
+If the left block collides first and the player is pushed down as a result of the collision, the right block does not perform collision with the player. The events raised for collision are only raised for the left block. As explained above, the block which actually collides with the player is arbitrary - it could be the left or it could be the right. This means that we cannot rely purely on the Player vs Block relationship to decide which block to destroy - at least, not if we plan on controlling which block is destroyed in such a situation.
 
 #### Solving Block Breaking with Sub Collisions
 
@@ -83,11 +83,11 @@ Of course, it is possible that a block collision may occur even without the gree
 
 This means that we can not rely completely on either the body (blue) or sub collision (green) to decide which block to destroy. Instead, we need to use both to decide which to destroy. The logic should be as follows:
 
-* If the player collides with a block from below, then the player will destroy a block.
+* If the player collides with a block from below, then the player destroys a block.
 * First, check all blocks to see if any block collides with the sub collision (green rectangle). If so, destroy that block.
 * Otherwise, if the sub collision (green rectangle) does not collide with any blocks, destroy the block that collided with the player body (blue)
 
-This means that the sub collision is an optional collision. It should only be performed if the player body collides with the blocks from below. Therefore, we will be performing this collision manually in code rather than creating a collision relationship.
+This means that the sub collision is an optional collision. It should only be performed if the player body collides with the blocks from below. Therefore, we perform this collision manually in code rather than creating a collision relationship.
 
 ### Adding Player BlockCollision
 
@@ -120,7 +120,7 @@ We don't want this rectangle to perform solid collision - it should only be used
 
     ![](../../../.gitbook/assets/2021-04-img\_607064aca548a.png)
 
-Now BlockCollision will still be part of the Player object but will not be considered in any CollisionRelationships (by default).
+Now BlockCollision is still part of the Player object but isn't considered in any CollisionRelationships (by default).
 
 <figure><img src="../../../.gitbook/assets/2021-04-2021_April_09_084732.gif" alt=""><figcaption></figcaption></figure>
 
@@ -149,7 +149,7 @@ Glue has now added an event to the **GameScreen.Events.cs** file which is called
 
 #### The Player Must Hit the Block From Below
 
-The OnPlayerListVsBlockListCollisionOccurred method is called whenever the player collides with a block from any side. This means that if the player is standing on a block, this function will be called every frame. We only want to destroy blocks if the player hits a block from below. Whenever a solid collision occurs, the objects being collided must be separated to prevent overlap. Since blocks cannot be moved when a collision occurs, the player must be moved. When hitting a block from below, the player must be moved downward (negative Y). We can check the player's **AxisAlignedRectangleInstance.LastMoveCollisionReposition.Y** value to see if the player was moved down due to the collision. If so, then the player hit the Block from below. Modify the **OnPlayerListVsBlockListCollisionOccurred** method as shown in the following code snippet:
+The OnPlayerListVsBlockListCollisionOccurred method is called whenever the player collides with a block from any side. This means that if the player is standing on a block, this function is called every frame. We only want to destroy blocks if the player hits a block from below. Whenever a solid collision occurs, the objects being collided must be separated to prevent overlap. Since blocks cannot be moved when a collision occurs, the player must be moved. When hitting a block from below, the player must be moved downward (negative Y). We can check the player's **AxisAlignedRectangleInstance.LastMoveCollisionReposition.Y** value to see if the player was moved down due to the collision. If so, then the player hit the Block from below. Modify the **OnPlayerListVsBlockListCollisionOccurred** method as shown in the following code snippet:
 
 ```
 void OnPlayerListVsBlockListCollisionOccurred (Entities.Player first, Entities.Block second)
@@ -165,7 +165,7 @@ void OnPlayerListVsBlockListCollisionOccurred (Entities.Player first, Entities.B
 
 #### Only One Block can be Destroyed at a Time
 
-Now we can perform our destroy logic. As mentioned above, we will first check if the BlockCollision collides with any blocks. If so, we will destroy the block. Otherwise we will destroy the block that the body collided with. To do this, modify the **OnPlayerListVsBlockListCollisionOccurred** method as shown in the following code snippet:
+Now we can perform our destroy logic. As mentioned above, we first check if the BlockCollision collides with any blocks. If so, we destroy the block. Otherwise we destroy the block that the body collided with. To do this, modify the **OnPlayerListVsBlockListCollisionOccurred** method as shown in the following code snippet:
 
 ```
 void OnPlayerListVsBlockListCollisionOccurred (Entities.Player first, Entities.Block second) 
@@ -196,13 +196,13 @@ void OnPlayerListVsBlockListCollisionOccurred (Entities.Player first, Entities.B
 }
 ```
 
-Now if we run the game, the Player can only destroy one Block at a time. If the Player collides with multiple Blocks, then the one which is directly above the Player will be destroyed. Of course, we there are some collision problems caused by the RepositionDirections not being adjusted properly. This is evident when trying to destroy the top row of blocks.
+Now if we run the game, the Player can only destroy one Block at a time. If the Player collides with multiple Blocks, then the one which is directly above the Player is destroyed. Of course, there are some collision problems caused by the RepositionDirections not being adjusted properly. This is evident when trying to destroy the top row of blocks.
 
 <figure><img src="../../../.gitbook/assets/2021-04-2021_April_09_091143.gif" alt=""><figcaption></figcaption></figure>
 
 #### 4. Once a Block is Destroyed, Update RepositionDirections
 
-The RepositionDirections are initially set when all of the Blocks are created, and will work properly until one of the Blocks is removed. Once a Block is removed, surrounding Blocks must have their RepositionDirections updated. To do this, we will remove the Block's collision from the CombinedShapeCollection before destroying the Block. Doing so will result in all adjacent collisions updating their RepositionDirections. To do this, modify the **OnPlayerListVsBlockListCollisionOccurred** method as shown in the following code snippet:
+The RepositionDirections are initially set when all of the Blocks are created, and work properly until one of the Blocks is removed. Once a Block is removed, surrounding Blocks must have their RepositionDirections updated. To do this, we remove the Block's collision from the CombinedShapeCollection before destroying the Block. Doing so results in all adjacent collisions updating their RepositionDirections. To do this, modify the **OnPlayerListVsBlockListCollisionOccurred** method as shown in the following code snippet:
 
 ```
 void OnPlayerListVsBlockListCollisionOccurred (Entities.Player first, Entities.Block second) 
@@ -239,10 +239,10 @@ void OnPlayerListVsBlockListCollisionOccurred (Entities.Player first, Entities.B
 }
 ```
 
-Notice that the rectangle is removed **before** the Block is destroyed. Also, notice that the RemoveRectangle method is called in two spots since we destroy blocks in two spots in the code above. Now the RepositionDirections are updated properly and the player will be able to collide with the blocks properly even after blocks are destroyed.
+Notice that the rectangle is removed **before** the Block is destroyed. Also, notice that the RemoveRectangle method is called in two spots since we destroy blocks in two spots in the code above. Now the RepositionDirections are updated properly and the player can collide with the blocks properly even after blocks are destroyed.
 
 <figure><img src="../../../.gitbook/assets/2021-04-2021_April_09_094421.gif" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 
-If you've made it this far, congratulations! You have worked through a complex collision example in FlatRedBall. Now you should be able to add blocks freely in Tiled and the game will collide properly.
+If you've made it this far, congratulations! You have worked through a complex collision example in FlatRedBall. Now you should be able to add blocks freely in Tiled and the game collides properly.

@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Now that we have a basic project (with a Player instance falling off the screen) we can create our map. Our map will have:
+Now that we have a basic project (with a Player instance falling off the screen) we can create our map. Our map has:
 
 * Solid collision to keep the player on screen
 * Graphics so our tutorial project looks like a real game
@@ -30,13 +30,13 @@ Once open, drag+drop the three downloaded files into the Level1 content folder. 
 
 <figure><img src="../../../.gitbook/assets/2021-04-2021_April_07_232506.gif" alt=""><figcaption></figcaption></figure>
 
-Now our game will run and display the level, but our character still falls through the screen. We'll fix this next.
+Now our game runs and displays the level, but our character still falls through the screen. We'll fix this next.
 
 ![](../../../.gitbook/assets/2021-04-img\_606e8fa420c15.png)
 
 ### Adding SolidCollision
 
-Our map already has visuals for a platformer game, but no tiles are marked as solid collision. We will add the standard tileset to our map and create a new layer which defines solid collision. To do this:
+Our map already has visuals for a platformer game, but no tiles are marked as solid collision. We add the standard tileset to our map and create a new layer that defines solid collision. To do this:
 
 1. Double-click the new Level1Map.tmx - either in the file explorer or in Glue
 2. Return to Glue and click the Folder icon to open the project folder ![](../../../.gitbook/assets/2021-03-img\_6057adfc033c6.png)
@@ -63,4 +63,4 @@ The GameplayLayer visibility can be toggled in Tiled. You may want this off at t
 
 ### Conclusion
 
-Now that we have a functional level, we will create the Block entity.
+Now that we have a functional level, we create the Block entity.
