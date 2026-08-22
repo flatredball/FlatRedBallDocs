@@ -10,7 +10,7 @@ The sample project can be downloaded from Github: [https://github.com/vchelaru/F
 
 <figure><img src="../../.gitbook/assets/2021-05-2021_April_30_161604.gif" alt=""><figcaption></figcaption></figure>
 
-We will be referring to the MultiplayerPlatformerDemo as _this demo_ and _the demo_ throughout this walkthrough.
+We refer to the MultiplayerPlatformerDemo as _this demo_ and _the demo_ throughout this walkthrough.
 
 ### Selecting and Storing Join Status
 
@@ -20,7 +20,7 @@ Local multiplayer games provide a variety of ways to join. Older games on the Su
 2. The values for which players have joined must be stored somewhere which is accessible by both the GameScreen and the screen for joining/leaving. These values cannot be instance values on a screen.
 3. The GameScreen must inspect these values and create Player instances (using a Factory) for every joined player. The correct gamepad must be assigned.
 
-We will take a deep dive into these concepts throughout this walkthrough.
+We take a deep dive into these concepts throughout this walkthrough.
 
 ### CharacterJoiningScreen
 
@@ -94,7 +94,7 @@ private void HandleControllerConnectionEvent(object sender, InputManager.Control
 }
 ```
 
-As mentioned earlier, Gum is bound to the view model, so changing these values automatically updates the Gum visuals. We won't discuss this in much depth in this guide.
+As mentioned earlier, Gum is bound to the view model, so changing these values automatically updates the Gum visuals. We don't discuss this in much depth in this guide.
 
 #### GamePad Activity
 
@@ -167,7 +167,7 @@ This for loop in CustomInitialize is solely responsible for creating Players. No
 
 ![](../../.gitbook/assets/2021-04-img\_608c959c738b7.png)
 
-Therefore, if the PlayerJoinStates are not assigned, then the game will begin without any Players. The CharacterJoiningScreen is responsible for assigning these values, and it does so right before moving into a level.
+Therefore, if the PlayerJoinStates are not assigned, then the game begins without any Players. The CharacterJoiningScreen is responsible for assigning these values, and it does so right before moving into a level.
 
 ```
 private void StartLevel()
@@ -181,11 +181,11 @@ private void StartLevel()
 }
 ```
 
-If using the Glue Wizard, then the PlayerList will automatically have a collision relationship set up between the PlayerList and SolidCollision. We recommend always creating collision relationships with lists rather than individual objects (such as Player1) so that moving to a multiplayer game is easy.
+If using the Glue Wizard, then the PlayerList automatically has a collision relationship set up between the PlayerList and SolidCollision. We recommend always creating collision relationships with lists rather than individual objects (such as Player1) so that moving to a multiplayer game is easy.
 
 ![](../../.gitbook/assets/2021-04-img\_608c9681075b9.png)
 
-If your game includes more collision relationships, you will want to make sure that they always include the PlayerList.
+If your game includes more collision relationships, make sure that they always include the PlayerList.
 
 ### Assigning Player Index
 
@@ -238,7 +238,7 @@ partial void CustomInitializePlatformerInput()
 
 #### Animation Naming
 
-The Player code includes an AnimationController which sets the current animation based on input and collision state. This code assigns names like CharacterWalkLeft and CharacterJumpRight, but it does not consider whether the Player is index 0, 1, 2, or 3. This code applies regardless of index because each of the animations have the same names. This approach is a common way to reduce code when displaying multiple player indexes or enemy types. Once a standard set of animations has been decided upon, the code can be written against this common set and it will work regardless of the .achx file used.
+The Player code includes an AnimationController which sets the current animation based on input and collision state. This code assigns names like CharacterWalkLeft and CharacterJumpRight, but it does not consider whether the Player is index 0, 1, 2, or 3. This code applies regardless of index because each of the animations have the same names. This approach is a common way to reduce code when displaying multiple player indexes or enemy types. Once a standard set of animations has been decided upon, the code can be written against this common set and it works regardless of the .achx file used.
 
 ![](../../.gitbook/assets/2021-05-img\_608c9bd1c64bb.png)
 

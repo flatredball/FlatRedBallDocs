@@ -4,10 +4,10 @@
 
 This tutorial adds a Bullet entity which the player can shoot. The Bullet entity has the following characteristics:
 
-* It will be visually represented by a circle
+* It is visually represented by a circle
 * It moves left or right depending on which way the Player is facing when shooting
-* It will be destroyed when colliding with the SolidCollision
-* It will be destroyed when colliding with the Enemy
+* It is destroyed when colliding with the SolidCollision
+* It is destroyed when colliding with the Enemy
 
 ### Creating Bullet Entity
 
@@ -23,7 +23,7 @@ To create a Bullet:
 
     ![](../../../.gitbook/assets/2021-04-img\_607e20336ee94.png)
 
-When a Bullet is created, it will move either left or right. We need to control the speed of the bullet. We will create a variable which we'll use in our code later:
+When a Bullet is created, it moves either left or right. We need to control the speed of the bullet. We create a variable which we use in our code later:
 
 1. Select the **Bullet** entity
 2. Click on the **Variables** tab
@@ -39,7 +39,7 @@ When a Bullet is created, it will move either left or right. We need to control 
 
     ![](../../../.gitbook/assets/2021-04-img\_607e229ab79a5.png)
 
-We will also want to change the radius of the Bullet's CircleInstance:
+We also want to change the radius of the Bullet's CircleInstance:
 
 1. Expand the **Bullet Objects** folder
 2. Select **CircleInstance**
@@ -50,7 +50,7 @@ We will also want to change the radius of the Bullet's CircleInstance:
 
 ### Creating a Bullet in Player
 
-The Bullet creation logic will be added to the Player entity. We need to detect if the shoot button has been pressed. If so, we'll create a new bullet and have it move in the direction that the player is facing. To do this, open **Player.cs** in Visual Studio and modify the code as shown in the following snippet:
+The Bullet creation logic is added to the Player entity. We need to detect if the shoot button has been pressed. If so, we create a new bullet and have it move in the direction that the player is facing. To do this, open **Player.cs** in Visual Studio and modify the code as shown in the following snippet:
 
 ```
 public partial class Player
@@ -106,7 +106,7 @@ public partial class Player
 
 #### IPressableInput
 
-The first line of code in the Player class defines an IPressableInput. This is an object which can reference any pressable input hardware such as a keyboard key or an Xbox360GamePad button. We create this IPressableInput so that we can write code which will work regardless of input device. For more information on IPressableInput, see the [IPressableInput page](../../../api/flatredball/input/ipressableinput.md).
+The first line of code in the Player class defines an IPressableInput. This is an object which can reference any pressable input hardware such as a keyboard key or an Xbox360GamePad button. We create this IPressableInput so that we can write code that works regardless of input device. For more information on IPressableInput, see the [IPressableInput page](../../../api/flatredball/input/ipressableinput.md).
 
 #### CustomInitializePlatformerInput
 
@@ -126,7 +126,7 @@ Finally, we check our shootingInput.WasJustPressed to see if the user just pushe
 
 ### Destroying Bullets
 
-Currently, our bullets can move through walls and enemies. First we'll add collision between our GameScreen BulletList and SolidCollision:
+Currently, our bullets can move through walls and enemies. First we add collision between our GameScreen BulletList and SolidCollision:
 
 1. Expand the **GameScreen** **Objects** folder
 2.  Drag **BulletList** onto **SolidCollision** to create a new collision relationship
@@ -155,10 +155,10 @@ void OnBulletListVsSolidCollisionCollisionOccurred (Entities.Bullet first, FlatR
 }
 ```
 
-Now we can shoot bullets and they will get destroyed when they hit the wall.
+Now we can shoot bullets and they get destroyed when they hit the wall.
 
 <figure><img src="../../../.gitbook/assets/2021-04-2021_April_19_202018-1.gif" alt=""><figcaption></figcaption></figure>
 
 ### Conclusion
 
-We end this tutorial with the ability to shoot bullets and destroy them when they hit the wall. The next tutorial will implement the ability to damage and destroy enemies.
+We end this tutorial with the ability to shoot bullets and destroy them when they hit the wall. The next tutorial implements the ability to damage and destroy enemies.

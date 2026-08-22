@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial creates an Enemy entity which is used in the remainder of the tutorials. This enemy is similar to the Player entity - it has collision and uses Platformer physics, but it does not use input from a keyboard or gamepad - instead its movement is controlled purely in code.
+This tutorial creates an Enemy entity which is used in the remainder of the tutorials. This enemy is similar to the Player entity. It has collision and uses Platformer physics, but it does not use input from a keyboard or gamepad. Instead, its movement is controlled purely in code.
 
 ### Creating the Enemy Entity
 
@@ -24,7 +24,7 @@ You can optionally change the color of your Enemy if you would like by selecting
 
 ### Adding an Enemy to Level1
 
-Entities such as Enemy are usually added directly to levels such as Level1. Note that it is possible to add Entities in more ways including through Tiled and directly in code, but we will be adding an instance directly in the FlatRedBall Editor.
+Entities such as Enemy are usually added directly to levels such as Level1. Note that it is possible to add Entities in more ways including through Tiled and directly in code, but we add an instance directly in the FlatRedBall Editor.
 
 Note that the EnemyList object is defined in GameScreen, but it is also accessible in all levels, such as Level1.
 
@@ -49,7 +49,7 @@ Next the Enemy should be positioned so it is standing on the ground. You can pos
 Now we have a fully-functional enemy, but it falls through the solid collision since we haven't yet set up an EnemyList vs SolidCollision relationship. To do this:
 
 1. Expand **GameScreen** **Objects** folder
-2. Drag+drop the **EnemyList** onto **SolidCollision.** Notice that we are doing this in the GameScreen rather than Level1 because we want all enemies to collide with the SolidCollision regardless of level. By doing this in the GameScreen, this new Collision Relationship will apply to all levels, including Level1.
+2. Drag+drop the **EnemyList** onto **SolidCollision.** Notice that we are doing this in the GameScreen rather than Level1 because we want all enemies to collide with the SolidCollision regardless of level. By doing this in the GameScreen, this new Collision Relationship applies to all levels, including Level1.
 
 <figure><img src="../../../.gitbook/assets/15_05 40 35.gif" alt=""><figcaption><p>Drag+drop EnemyList onto SolidCollision to create a new collision relationship</p></figcaption></figure>
 
@@ -59,4 +59,4 @@ Glue automatically sets the **Collision Physics** in the new Collision Relations
 
 ### Conclusion
 
-Now we have an Enemy entity and an instance of this Enemy in Level1. This instance collides with the game's SolidCollision and has full support for platformer physics. Currently both the Player and Enemy are controlled by the keyboard (or gamepad if one is plugged in). We will remove this input control from the Enemy and replace it with logic-based movement in the next tutorial.
+Now we have an Enemy entity and an instance of this Enemy in Level1. This instance collides with the game's SolidCollision and has full support for platformer physics. Currently both the Player and Enemy are controlled by the keyboard (or gamepad if one is plugged in). The next tutorial removes this input control from the Enemy and replaces it with logic-based movement.

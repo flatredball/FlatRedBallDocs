@@ -23,19 +23,19 @@ This walkthrough covers a number of concepts for checkpoints and end of level:
 
 ### Tiled Entity Creation
 
-This demo includes two levels: Level1 and Level2. Each level has its own TMX file: Level1Map.tmx and Level2Map.TMX. If your project used the platformer plugin then it should have these by default. If your game already has existing levels, you can follow along but you will work in your existing levels rather than Level1 and Level2.
+This demo includes two levels: Level1 and Level2. Each level has its own TMX file: Level1Map.tmx and Level2Map.TMX. If your project used the platformer plugin then it should have these by default. If your game already has existing levels, you can follow along, but you work in your existing levels rather than Level1 and Level2.
 
 ![Level1 and Level2 with TMX files](<../../.gitbook/assets/13_05 55 20.png>)
 
 ### Adding an Object Layer
 
-The checkpoints and doors will be added to a Tiled _object layer_. You must have at least one object layer on each level which should include a checkpoint. For this video we'll use the name GameplayObjectLayer so that it is similar to the standard GameplayLayer.
+The checkpoints and doors are added to a Tiled _object layer_. You must have at least one object layer on each level which should include a checkpoint. For this video we'll use the name GameplayObjectLayer so that it is similar to the standard GameplayLayer.
 
 <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption><p>GameplayObjectLayer in the Tiled layer list</p></figcaption></figure>
 
 ### Creating Checkpoint and EndOfLevel Entities
 
-We will create two entities: Checkpoint and EndOfLevel.
+We create two entities: Checkpoint and EndOfLevel.
 
 To add a Checkpoint entity:
 
@@ -51,7 +51,7 @@ Repeat the process above to create an EndOfLevel entity
 
 <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>EndOfLevel Entity Creation</p></figcaption></figure>
 
-Next we'll add a new variable to EndOfLevel:
+Next we add a new variable to EndOfLevel:
 
 1. Expand EndOfLevel
 2. Right-click on Variables
@@ -91,7 +91,7 @@ All checkpoints must have names so that they can be referenced in code. For this
 
 <figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption><p>Checkpoint instance with the nane LevelStart</p></figcaption></figure>
 
-Next we'll declare which tile in our tileset should create an EndOfLevel instance. To do this, open up the TiledIcons tileset in edit mode again. Select the icon that looks like a door. You may notice that it already has a Class set, so you can change it from "Door" to "EndOfLevel". As mentioned above, the name must match your entity exactly.
+Next we declare which tile in our tileset should create an EndOfLevel instance. To do this, open up the TiledIcons tileset in edit mode again. Select the icon that looks like a door. You may notice that it already has a Class set, so you can change it from "Door" to "EndOfLevel". As mentioned above, the name must match your entity exactly.
 
 <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption><p>Setting the tile's class to EndOfLevel</p></figcaption></figure>
 
@@ -119,7 +119,7 @@ Once this instance has been placed, its variable can be changed. For example, we
 
 ### LastCheckpointName and Spawning
 
-We want our player to spawn at a checkpoint. We'll create a static variable called LastCheckpointName which indicates the starting Checkpoint.
+We want our player to spawn at a checkpoint. We create a static variable called LastCheckpointName which indicates the starting Checkpoint.
 
 Initially when the game starts the LastCheckpointName should be set to LevelStart so that the checkpoint that was previously created is used:
 
@@ -145,7 +145,7 @@ The spawning checkpoint is used to set the player's position. Notice that the pl
 
 Collision between the Player and various objects controls the spawning behavior. As mentioned earlier, the LastCheckpointName variable controls which checkpoint is used to position the Player instance. The CustomInitialize method is called whenever a level is created (or recreated).
 
-We will use the EndOfLevel instances to move the player from one level to the next, and to set the LastCheckpointName.
+We use the EndOfLevel instances to move the player from one level to the next, and to set the LastCheckpointName.
 
 To do this:
 
@@ -162,7 +162,7 @@ void OnPlayerVsEndOfLevelCollided (Entities.Player player, Entities.EndOfLevel e
 }
 ```
 
-Notice that the code above assumes that the EndOfLevel instance has a valid NextLevel value. If the EndOfLevel NextLevel property is not set to a valid screen then this code will throw an exception. The code above resets the LastCheckpointName to LevelStart so that the Player spawns at the beginning of the level.
+Notice that the code above assumes that the EndOfLevel instance has a valid NextLevel value. If the EndOfLevel NextLevel property is not set to a valid screen then this code throws an exception. The code above resets the LastCheckpointName to LevelStart so that the Player spawns at the beginning of the level.
 
 We can set the LastCheckpointName whenever the player collides with a checkpoint - it doesn't have to be only when the player collides with a door. To do this:
 
@@ -178,7 +178,7 @@ void OnPlayerListVsCheckpointListCollided (Entities.Player player, Entities.Chec
 }
 ```
 
-The OnPlayerVsEndOfLevelCollided resets the LastCheckpointName whenever colliding with a door, so this checkpoint will apply whenever the screen changes. The OnPlayerListVsCheckpointListCollided sets the LastCheckpointName to the name of the collided checkpoint, but this will only apply when the screen is restarted. Typically, this would happen when the player dies.
+The OnPlayerVsEndOfLevelCollided resets the LastCheckpointName whenever colliding with a door, so this checkpoint applies whenever the screen changes. The OnPlayerListVsCheckpointListCollided sets the LastCheckpointName to the name of the collided checkpoint, but this only applies when the screen is restarted. Typically, this would happen when the player dies.
 
 Player death can be handled in a variety of ways, such as by collision with a TileShapeCollection, or even with a hotkey to test death. Regardless, the way to restart the screen is by calling this.RestartScreen().
 
@@ -191,7 +191,7 @@ void OnPlayerListVsPitCollisionCollided (Entities.Player player, FlatRedBall.Mat
 }
 ```
 
-This code restarts the screen, which results in the entire screen being completely destroyed and recreated. Since CustomInitialize runs again, the Player will be re-positioned according to the LastCheckpointName.
+This code restarts the screen, which results in the entire screen being completely destroyed and recreated. Since CustomInitialize runs again, the Player is re-positioned according to the LastCheckpointName.
 
 ### Checkpoint Visuals
 
@@ -202,7 +202,7 @@ The demo includes two types of checkpoints:
 
 Whether a checkpoint is visible or not is controlled by an exposed Visible property.
 
-Please note that if you are adding the checkpoints to your own custom project, to have the Visible property available you will need to set the _ImplementsIVisible_ in Checkpoint Properties to true and then create a variable via the _Expose an existing variable_ and select _Visible_. Also, since FlatRedBall purely converts the Tiled objects in the objects layer to instances of a FlatRedBall Entity with the same class, to actually see the flag and the door in your game you will need to add a Sprite object to the Checkpoint and EndOfLevel entities and set them to appropriate images or animation chain files. This subject is explained in detail in following tutorials.
+Please note that if you are adding the checkpoints to your own custom project, to have the Visible property available you need to set the _ImplementsIVisible_ in Checkpoint Properties to true and then create a variable via the _Expose an existing variable_ and select _Visible_. Also, since FlatRedBall purely converts the Tiled objects in the objects layer to instances of a FlatRedBall Entity with the same class, to actually see the flag and the door in your game you need to add a Sprite object to the Checkpoint and EndOfLevel entities and set them to appropriate images or animation chain files. This subject is explained in detail in following tutorials.
 
 ![](../../.gitbook/assets/2021-06-img_60b8cf51505df.png)
 

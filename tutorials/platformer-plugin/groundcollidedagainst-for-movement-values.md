@@ -10,11 +10,11 @@ The GroundCollidedAgainst property is only available for gluj version 22 and new
 
 ### Code Example - Setting GroundMovement According to GroundCollidedAgainst
 
-Typically a platformer game will have collision relationships between the Player and various TileShapeCollections. For example, the following screenshot shows collision relationships between the Player and a number of TileShapeCollections.
+Typically a platformer game has collision relationships between the Player and various TileShapeCollections. For example, the following screenshot shows collision relationships between the Player and a number of TileShapeCollections.
 
 ![](../../.gitbook/assets/2022-12-img\_639e3fcf67694.png)
 
-Whenever the player collides with one of these TileShapeCollections, the GroundCollidedAgainst property will be updated. Some games may have multiple TileShapeCollections represent one type of terrain (such as Ice and IceCloud), so all collision should be resolved before determining the terrain type. In such a situation, the Player entity can have properties for determining the ground type as shown in the following code snippet:
+Whenever the player collides with one of these TileShapeCollections, the GroundCollidedAgainst property is updated. Some games may have multiple TileShapeCollections represent one type of terrain (such as Ice and IceCloud), so all collision should be resolved before determining the terrain type. In such a situation, the Player entity can have properties for determining the ground type as shown in the following code snippet:
 
 ```
 public bool IsOnIce => GroundCollidedAgainst.Contains(nameof(GameScreen.IceCollision)) 

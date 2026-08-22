@@ -65,12 +65,12 @@ public partial class MovingPlatform
 Notice that the StartMoving function is an async method, and it uses the async functionality supported in FlatRedBall to simplify the looping logic for moving. The logic in StartMoving performs the following:
 
 * Set XAcceleration to 30 for 1 second - the platform starts stationary and ends moving 30 units/second to the right
-* Set XAcceleration to 0 for 2 seconds - the platform will be moving to the right at a constant speed
-* Set XAcceleration to -30 for 2 seconds - the platform will reverse direction
-* Set XAcceleration to 0 for 2 seconds - the platform will be moving to the left at a constant speed
-* Set XAcceleration t0 30 for 1 second - this will result in the platform standing still, but its acceleration will continue on the next loop
+* Set XAcceleration to 0 for 2 seconds - the platform moves to the right at a constant speed
+* Set XAcceleration to -30 for 2 seconds - the platform reverses direction
+* Set XAcceleration to 0 for 2 seconds - the platform moves to the left at a constant speed
+* Set XAcceleration t0 30 for 1 second - this results in the platform standing still, but its acceleration continues on the next loop
 
-This code loops continually until the entity is destroyed. The entity sets this value to true in CustomDestroy which will result in the StartMoving loop eventually ending. Notice that this code uses acceleration values, which ultimately change the MovingPlatform velocity values. Moving platforms must use velocity to move as opposed to directly setting their position values to have an impact on the movement of the player.
+This code loops continually until the entity is destroyed. The entity sets this value to true in CustomDestroy which results in the StartMoving loop eventually ending. Notice that this code uses acceleration values, which ultimately change the MovingPlatform velocity values. Moving platforms must use velocity to move as opposed to directly setting their position values to have an impact on the movement of the player.
 
 ### MovingPlatform Collision
 

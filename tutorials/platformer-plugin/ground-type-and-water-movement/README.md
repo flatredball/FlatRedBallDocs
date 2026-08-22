@@ -4,4 +4,4 @@ This set of tutorials covers how to change a Player's movement values in respons
 
 {% embed url="https://youtu.be/htFJTiVH5Ao?t=2359" %}
 
-This tutorial begins with an empty project and will create a Player which changes its movement values according to collision with different ShapeCollections.
+This tutorial begins with an empty project and creates a Player which changes its movement values according to collision with different ShapeCollections.

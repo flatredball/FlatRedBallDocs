@@ -2,11 +2,11 @@
 
 ### Introduction
 
-This tutorial shows how to add ice and water collision. We'll be setting up the TileShapeCollections for these two types of tiles, and creating collision relationships to control the interaction between the Player and these tiles.
+This tutorial shows how to add ice and water collision. We set up the TileShapeCollections for these two types of tiles, and create collision relationships to control the interaction between the Player and these tiles.
 
 ### Adding Tile Shape Collections
 
-As shown in the previous tutorial, the Player already collides with the solid collision. This is automatically added by the New Project Wizard, so we don't have to do any setup for ground collision. We'll add ice collision first. To do this:
+As shown in the previous tutorial, the Player already collides with the solid collision. This is automatically added by the New Project Wizard, so we don't have to do any setup for ground collision. We add ice collision first. To do this:
 
 1. Click **GameScreen**
 2.  Select the **Quick Actions** tab and click the **Add Object to Game Screen** button
@@ -25,7 +25,7 @@ As shown in the previous tutorial, the Player already collides with the solid co
 
     ![](../../../.gitbook/assets/2023-02-img\_63e03832d521a.png)
 
-We'll repeat the process above to create water collision:
+We repeat the process above to create water collision:
 
 1. Click **GameScreen**
 2. Select the **Quick Actions** tab and click the **Add Object to Game Screen** button
@@ -42,7 +42,7 @@ We'll repeat the process above to create water collision:
 
 ### Creating Collision Relationships
 
-Now our game has two new collision relationships: IceCollision and WaterCollision. This means that when our game runs, collision shapes are created based on the water and ice tiles, but we haven't yet told the game how to handle collisions between the Player and these collision relationships. First, we'll set up collisions between the Player and IceCollision:
+Now our game has two new collision relationships: IceCollision and WaterCollision. This means that when our game runs, collision shapes are created based on the water and ice tiles, but we haven't yet told the game how to handle collisions between the Player and these collision relationships. First, we set up collisions between the Player and IceCollision:
 
 1. Drag+drop **PlayerList** onto **IceCollision**
 
@@ -58,4 +58,4 @@ Now if we run our game we can collide with the ice tiles and fall through water.
 
 ### Conclusion
 
-Now our game has ice and water TileShapeCollections and collision relationships. You may have noticed that the ice currently acts identical to solid collision (bricks). The next tutorial will create new platformer variables for moving on ice and swimming in water, and will switch between them in response to collision.
+Now our game has ice and water TileShapeCollections and collision relationships. You may have noticed that the ice currently acts identical to solid collision (bricks). The next tutorial creates new platformer variables for moving on ice and swimming in water, and switches between them in response to collision.

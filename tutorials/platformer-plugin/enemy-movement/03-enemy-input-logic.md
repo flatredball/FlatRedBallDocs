@@ -12,11 +12,11 @@ First we'll remove the Input Device from the Enemy entity:
 2. Select the **Enemy Input Movement** tab
 3. Check **None** under **Input Device**
 
-Now the Enemy will not move in response to keyboard or gamepad input. Note that if we do not assign an InputDevice in code, the game crashes so we must do so before running the game.
+Now the Enemy does not move in response to keyboard or gamepad input. Note that if we do not assign an InputDevice in code, the game crashes so we must do so before running the game.
 
 ### Creating an EnemyInput InputDevice
 
-Next we will create our own custom InputDevice which will control the movement of the enemy. The reason we are creating this is because Platformer entities expect to receive commands from an input device like a keyboard. We can create a class which simulates input commands without actually having physical input. To create this class:
+Next we create our own custom InputDevice which controls the movement of the enemy. The reason we are creating this is because Platformer entities expect to receive commands from an input device like a keyboard. We can create a class which simulates input commands without actually having physical input. To create this class:
 
 1. Open the project in Visual Studio
 2.  Create a new class called EnemyInput. I will place mine in an Input folder
@@ -94,9 +94,9 @@ class EnemyInput : FlatRedBall.Input.InputDeviceBase
 
 ### Changing Directions
 
-Our EnemyInput object can be expanded to support any type of input - we just need to have the GetHorizontalValue function return a value between 0 and 1. Note that we are only using horizontal movement for this tutorial, but we could also have the Enemy jump by implementing the GetPrimaryActionPressed method, which controls whether the jump button is down.
+Our EnemyInput object can be expanded to support any type of input. We just need to have the GetHorizontalValue function return a value between 0 and 1. Note that we are only using horizontal movement for this tutorial, but we could also have the Enemy jump by implementing the GetPrimaryActionPressed method, which controls whether the jump button is down.
 
-For this tutorial we need access to a value to indicate whether the Enemy should move to the left or right. We will ignore values inbetween -1 (left) and +1 (right), but a full game may support enemies which may stand still or move at various speeds. We'll create a new enum value and expose a property in EnemyInput so that it can be controlled externally. To do this, modify the EnemyInput class as shown in the following code snippet:
+For this tutorial we need access to a value to indicate whether the Enemy should move to the left or right. We ignore values inbetween -1 (left) and +1 (right), but a full game may support enemies which may stand still or move at various speeds. We create a new enum value and expose a property in EnemyInput so that it can be controlled externally. To do this, modify the EnemyInput class as shown in the following code snippet:
 
 ```csharp
 enum DesiredDirection
@@ -125,7 +125,7 @@ class EnemyInput : FlatRedBall.Input.InputDeviceBase
 
 ### Handling Wall Collision
 
-Many platformer games include enemies which turn around when colliding with other objects such as walls, platform edges, and other enemies. We will implement wall collision here since it is the simplest scenario to control enemies turning around. First we will add an event whenever Enemies collide with SolidCollision:
+Many platformer games include enemies which turn around when colliding with other objects such as walls, platform edges, and other enemies. We implement wall collision here since it is the simplest scenario to control enemies turning around. First we add an event whenever Enemies collide with SolidCollision:
 
 1. Expand the **GameScreen -> Objects -> Collision Relationships** item in Glue
 2. Select **EnemyListVsSolidCollision**
@@ -136,7 +136,7 @@ Many platformer games include enemies which turn around when colliding with othe
 
 5. Click **OK** to accept the defaults
 
-Glue will add an event to GameScreen.Event.cs which we can modify to adjust the EnemyInput DesiredDirection, as shown in the following snippet.
+Glue adds an event to GameScreen.Event.cs which we can modify to adjust the EnemyInput DesiredDirection, as shown in the following snippet.
 
 ```csharp
 void OnEnemyListVsSolidCollisionCollisionOccurred (Entities.Enemy first, FlatRedBall.TileCollisions.TileShapeCollection second)
@@ -160,7 +160,7 @@ void OnEnemyListVsSolidCollisionCollisionOccurred (Entities.Enemy first, FlatRed
 }
 ```
 
-The code above assigns the EnemyInput DesiredDirection according to the enemy's AxisAlignedRectangleInstance.LastMoveCollisionReposition. We'll take a deeper look at how this property works in the next section.
+The code above assigns the EnemyInput DesiredDirection according to the enemy's AxisAlignedRectangleInstance.LastMoveCollisionReposition. We take a deeper look at how this property works in the next section.
 
 ### LastMoveCollisionReposition
 
@@ -186,8 +186,8 @@ In the diagram above, the RepositionDirection has a negative X value (points to 
 
 ### Conclusion
 
-Now that we have this logic in place, our Enemy will automatically walk until colliding with a wall, then it turns around and walks in the other direction.
+Now that we have this logic in place, our Enemy automatically walks until colliding with a wall, then turns around and walks in the other direction.
 
 <figure><img src="../../../.gitbook/assets/2021-04-2021_April_15_075827.gif" alt=""><figcaption><p>Enemy moving left and right within level bounds</p></figcaption></figure>
 
-The next tutorial will enable Enemies to turn around when reaching the end of a platform.
+The next tutorial enables Enemies to turn around when reaching the end of a platform.

@@ -2,16 +2,16 @@
 
 ### Introduction
 
-This tutorial will implement dealing damage to an Enemy. Rather than immediately destroying the Enemy when it collides with a Bullet, we'll implement _health points_ (HP) which can be reduced when an Enemy collides with a Bullet. Once an Enemy's HP is reduced to 0, it will be destroyed.
+This tutorial implements dealing damage to an Enemy. Rather than immediately destroying the Enemy when it collides with a Bullet, we implement _health points_ (HP) which can be reduced when an Enemy collides with a Bullet. Once an Enemy's HP is reduced to 0, it is destroyed.
 
 ### Adding Enemy HP
 
-Typically enemies will have two values for HP:
+Typically enemies have two values for HP:
 
 * MaxHP - the starting number of HP when an Enemy is first spawned
 * CurrentHP - the number of HP that the enemy currently has
 
-The MaxHP is a _designer variable_ - a variable which a game designer may change during the development of the game to adjust difficulty. We'll define this in Glue so it can be changed easily. By contrast, CurrentHP is a _logic variable_ - a variable which is used in game logic and which should not be modified by a game designer. It will initially be assigned to MaxHP and will be reduced whenever the Player takes damage. To define a MaxHP variable:
+The MaxHP is a _designer variable_ - a variable which a game designer may change during the development of the game to adjust difficulty. We define this in Glue so it can be changed easily. By contrast, CurrentHP is a _logic variable_ - a variable which is used in game logic and which should not be modified by a game designer. It is initially assigned to MaxHP and is reduced whenever the Player takes damage. To define a MaxHP variable:
 
 1. Select the **Enemy** entity
 2. Click on the **Variables** tab
@@ -52,7 +52,7 @@ In a typical game, whenever an Enemy takes damage the game may perform many acti
 * Modifying how much health is shown in a health bar
 * Destroying the Enemy and showing a death effect if the Enemy has died
 
-Keeping this logic in the Enemy.cs file can help keep code organized, so we'll be adding the following function to the Enemy.cs file:
+Keeping this logic in the Enemy.cs file can help keep code organized, so we add the following function to the Enemy.cs file:
 
 ```
 public void TakeDamage(int damageAmount)
@@ -101,4 +101,4 @@ Now we can shoot at the enemy. After six shots, the enemy is destroyed.
 
 ### Conclusion
 
-Now we've created a game where we can destroy an enemy with 6 shots. A real game would have more than one enemy, but if we add additional enemies, our game will automatically collide bullets against each enemy, and each enemy will keep track of its own HP.
+Now we've created a game where we can destroy an enemy with 6 shots. A real game would have more than one enemy, but if we add additional enemies, our game automatically collides bullets against each enemy, and each enemy keeps track of its own HP.

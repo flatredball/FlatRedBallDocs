@@ -4,4 +4,4 @@ This set of tutorials covers how to write logic to control a platformer animatio
 
 {% embed url="https://www.youtube.com/watch?v=htFJTiVH5Ao" %}
 
-This tutorial will create a game similar to Super Mario World. The first begins with a completely empty project and covers the FlatRedBall platformer technology and best practices.
+This tutorial creates a game similar to Super Mario World. The first begins with a completely empty project and covers the FlatRedBall platformer technology and best practices.

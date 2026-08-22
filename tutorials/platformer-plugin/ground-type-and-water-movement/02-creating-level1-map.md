@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The default Platformer project creates a game with a level (Level1). We will modify this level to create ice and water tiles.
+The default Platformer project creates a game with a level (Level1). We modify this level to create ice and water tiles.
 
 ### Modifying Level1.tmx
 
@@ -14,7 +14,7 @@ Level1Map.tmx should appear in the Tiled app. To make sure that no tiles from ot
 
 ![](../../../.gitbook/assets/2023-02-img\_63e035fab1969.png)
 
-Default maps include a tileset named TiledIcons. Most of these icons have no built-in functionality, so they can be used to add custom behavior to your game. In this case we will use the ice and water tiles which are part of the tileset.
+Default maps include a tileset named TiledIcons. Most of these icons have no built-in functionality, so they can be used to add custom behavior to your game. In this case we use the ice and water tiles which are part of the tileset.
 
 ![](../../../.gitbook/assets/2023-02-img\_63e0365f25494.png)
 

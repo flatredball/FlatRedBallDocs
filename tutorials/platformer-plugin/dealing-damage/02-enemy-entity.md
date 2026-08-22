@@ -2,7 +2,7 @@
 
 ### Introduction
 
-This tutorial covers how to add an Enemy to your project. To speed up the process we'll be importing an existing entity rather than building a new one ourselves. Once imported, we will modify the entity so it has the functionality we'll need for this tutorial - specifically adding the ability for the enemy to take damage.
+This tutorial covers how to add an Enemy to your project. To speed up the process we import an existing entity rather than building a new one ourselves. Once imported, we modify the entity so it has the functionality we need for this tutorial - specifically adding the ability for the enemy to take damage.
 
 ### Importing Enemy Entity
 
@@ -20,7 +20,7 @@ We now have a fully-functional enemy which has:
 * Collision shape named AxisAlignedRectangle
 * Sprite displaying a walking animation
 * Platformer values so that it can collide with solid collision
-* EnemyInput object which will keep the enemy from moving (does not use the gamepad or keyboard)
+* EnemyInput object which keeps the enemy from moving (does not use the gamepad or keyboard)
 
 ![](../../../.gitbook/assets/2021-04-img\_607e0a6f79d2f.png)
 
@@ -30,7 +30,7 @@ We will add a list to our GameScreen and an instance of our Enemy to Level1 so w
 
 1. Select the **Enemy** entity
 2. Select the **Quick Actions** tab
-3. Click the **Add Enemy List to GameScreen** button - this creates a list of enemies which we'll use to create collision relationships later
+3. Click the **Add Enemy List to GameScreen** button - this creates a list of enemies which we use to create collision relationships later
 4. Click the **Add Enemy Factory** button - this allows us to create enemies in code and Tiled maps.
 
 ![](../../../.gitbook/assets/2021-04-img\_607e0b2c6c289.png)
@@ -54,6 +54,6 @@ Now we have an enemy in the game, but it falls through the level. We can fix thi
 
 <figure><img src="../../../.gitbook/assets/2021-04-2021_April_19_185117.gif" alt=""><figcaption></figcaption></figure>
 
-If we run the game now, the enemy will fall and land in the level next to the player.
+If we run the game now, the enemy falls and lands in the level next to the player.
 
 ![](../../../.gitbook/assets/2021-04-img\_607e1e1cb80cb.png)

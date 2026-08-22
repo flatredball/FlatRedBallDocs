@@ -30,18 +30,18 @@ Each animation layer defines which animation is played, conditions for playing, 
 
 ![](../../../.gitbook/assets/2023-02-img\_63e26fe527a06.png)
 
-If we change the Min X Velocity Absolute, we can modify the behavior of the player. For example, if we change the value to 140, the player will only play the walk animation if walking faster than 140 units per second.
+If we change the Min X Velocity Absolute, we can modify the behavior of the player. For example, if we change the value to 140, the player only plays the walk animation if walking faster than 140 units per second.
 
 <figure><img src="../../../.gitbook/assets/2021-03-07_08-43-26.gif" alt=""><figcaption></figcaption></figure>
 
 While this specific example may not be a practical change to the game, it shows how the logic controls whether an animation is played, and how that logic can cascade up through the layers. The following conditions can be used to control whether an animation plays:
 
-* Min X Velocity Absolute - this is the minimum speed that the player must be moving to play the animation. For example, we set the minimum speed to 140 for the CharacterWalk animation, which means the character will only walk if moving faster than 140 units per second. Note that this is _Absolute_ which means the character must be moving either greater than 140 pixels (to the right) or less than -140 pixels (to the left).
-* Max X Velocity Absolute - this is the maximum speed that the player can move to play the animation. For example, setting the maximum speed to 200 means that if the player is moving faster than 200 units (absolute), then the animation will not play.
+* Min X Velocity Absolute - this is the minimum speed that the player must be moving to play the animation. For example, we set the minimum speed to 140 for the CharacterWalk animation, which means the character only walks if moving faster than 140 units per second. Note that this is _Absolute_ which means the character must be moving either greater than 140 pixels (to the right) or less than -140 pixels (to the left).
+* Max X Velocity Absolute - this is the maximum speed that the player can move to play the animation. For example, setting the maximum speed to 200 means that if the player is moving faster than 200 units (absolute), then the animation does not play.
 *   Min Y Velocity - the minimum Y velocity (vertical movement) the player must have to play the animation. For example our player has CharacterJump animation which plays only if the velocity is greater than 0.
 
     ![](../../../.gitbook/assets/2023-02-img\_63e272ccc6ca9.png)
-* Max Y Velocity - the maximum Y Velocity (vertical movement) that the player can move to play the animation. If the player is moving faster than this value upward, then animation will no longer play.
+* Max Y Velocity - the maximum Y Velocity (vertical movement) that the player can move to play the animation. If the player is moving faster than this value upward, then animation no longer plays.
 * Movement Type - this option restricts an animation to whether the player is on the ground, air, or either. For example, this can be used to restrict animations to only play when in the air, such as the CharacterFall and CharacterJump animations.
 *   Movement Name - this option restricts an animation to only play when a particular set of Movement Values are active. This is a dropdown which contains all of the movement values defined in the **Movement Values** section. This is especially effective if you have logic which is already setting the Movement Values in code - such as allowing a user to run when the run button is held.
 
@@ -87,10 +87,10 @@ Note that the .achx file contains "Left" and "Right" versions of character anima
 
 The Animation Speed Assignment dropdown provides the animation speed assignment logic. By default, all animations use the ForceTo1 speed, which means the animation plays at the normal speed as defined in the .achx. This dropdown provides a number of options:
 
-* ForceTo1 - the Sprite's AnimationSpeed will be forcefully set to 1, so the animation will play at the same speed as defined in the .achx
-* NoAssignment - the Sprite's AnimationSpeed is left untouched. Previous assignments on the AnimationSpeed (either in custom code or through other animation layers) will remain on the Sprite.
+* ForceTo1 - the Sprite's AnimationSpeed is forcefully set to 1, so the animation plays at the same speed as defined in the .achx
+* NoAssignment - the Sprite's AnimationSpeed is left untouched. Previous assignments on the AnimationSpeed (either in custom code or through other animation layers) remain on the Sprite.
 * BasedOnVelocityMultiplier - if values are specified, then the **Absolute X Velocity Animation Speed Multiplier** or **Absolute Y Velocity Animation Speed Multiplier** values are multiplied by the Player's runtime velocity to determine the speed. For example, if the X Velocity multiplier is set to .1, then the animation speed plays at full speed if the Player is moving at 10 units per second, and plays at 10 times the speed if the Player is moving at 100 Units per second.
-* BasedOnMaxSpeedRatioMultiplier - if these values are specified, the animation speed will be specified based on the speed of the Player relative to the max speed of the current movement value. For example, the Max Speed on the ground is set to 160 units on the Player. If the MaxSpeedXRatioMultiplier value is set to 1, then the animation plays at full speed when the player moves at max speed. If the MaxSpeedXRatioMultiplier is set to 2, then the animation plays at twice full speed when the player moves at max speed.
+* BasedOnMaxSpeedRatioMultiplier - if these values are specified, the animation speed is specified based on the speed of the Player relative to the max speed of the current movement value. For example, the Max Speed on the ground is set to 160 units on the Player. If the MaxSpeedXRatioMultiplier value is set to 1, then the animation plays at full speed when the player moves at max speed. If the MaxSpeedXRatioMultiplier is set to 2, then the animation plays at twice full speed when the player moves at max speed.
 
 For example, the CharacterWalk animation can be set to use **BasedOnMaxSpeedRatioMultiplier** with a **Max Speed X Ratio Mutiplier** of 2. This results in the walk animation playing faster based on the movement speed of the player.
 

@@ -10,7 +10,7 @@ The sample project can be downloaded from Github: [https://github.com/vchelaru/F
 
 <figure><img src="../../.gitbook/assets/2021-05-2021_May_01_160053.gif" alt=""><figcaption></figcaption></figure>
 
-This walkthrough will refer to the DialogBoxDemo as _this demo_ and _the demo_.
+This walkthrough refers to the DialogBoxDemo as _this demo_ and _the demo_.
 
 ### Main Concepts
 
@@ -40,7 +40,7 @@ void CustomInitialize()
 }
 ```
 
-Notice that the first column (Id) is index 0, so English is index 1. The text contained in this file is accessed through the **LocalizationManager.Translate** method whenever we display dialog boxes. We will return to this code later in the walkthrough to examine how the DialogBox works, but for now we'll highlight the call to Translate in **GameScreen.Event.cs ShowDialogBox**.
+Notice that the first column (Id) is index 0, so English is index 1. The text contained in this file is accessed through the **LocalizationManager.Translate** method whenever we display dialog boxes. We return to this code later in the walkthrough to examine how the DialogBox works, but for now we'll highlight the call to Translate in **GameScreen.Event.cs ShowDialogBox**.
 
 ```
 private async Task ShowDialogBox(IInputDevice inputDevice, string stringId)
@@ -69,7 +69,7 @@ private async Task ShowDialogBox(IInputDevice inputDevice, string stringId)
 }
 ```
 
-The call to Translate passes in stringId which will be one of the IDs (T\_Npc1, T\_Npc2, or T\_Npc3) depending on which NPC the player has talked to. For example, calling Translate with the string "T\_Npc1" results in the string "Hi, I'm just hanging out over here." being returned. The returned string is then split according to the newline character ('\n') to create an IEnumerable\<string> where each string is a separate page. The pages are passed to the currentDialogBox.ShowDialog call.
+The call to Translate passes in stringId which is one of the IDs (T\_Npc1, T\_Npc2, or T\_Npc3) depending on which NPC the player has talked to. For example, calling Translate with the string "T\_Npc1" results in the string "Hi, I'm just hanging out over here." being returned. The returned string is then split according to the newline character ('\n') to create an IEnumerable\<string> where each string is a separate page. The pages are passed to the currentDialogBox.ShowDialog call.
 
 ### Npc in Glue
 
@@ -112,7 +112,7 @@ Npc instances can be added to levels through Tiled. To do this, a Tile must have
 
 ![](../../.gitbook/assets/2021-05-img\_608f09e24c794.png)
 
-Any instance of this tile in Level1Map will result in an Npc instance at runtime.
+Any instance of this tile in Level1Map results in an Npc instance at runtime.
 
 ![](../../.gitbook/assets/2021-05-img\_608f0a5158aff.png)
 
@@ -235,7 +235,7 @@ async void OnPlayerListTalkCollisionVsNpcListCollisionOccurred (Entities.Player 
 }
 ```
 
-Notice that this collision relationship event may trigger every frame, but we only want to perform the dialog box logic if there isn't already a dialog box active, and if the user has just pressed the TalkInput. We could have also manually performed the CollisionRelationship logic in CustomActivity to reduce the number of collision checks, but games like this will typically have a small number of NPCs so the overhead of checking collision every frame is negligible. As mentioned earlier, we manually set the DirectionFacing on the Npc to turn the Npc towards the player. We also temporarily disable Player input so that players cannot move while the dialog is displayed. Notice that the event is an async method, and that we await the DialogBox. Code using the async/await pattern is not very common in FlatRedBall, but it can be very useful when displaying UI using FlatRedBall.Forms. Awaiting the ShowDialogBox method allows us to turn input off and on in a single method without continually checking if the DialogBox is displayed and without callbacks. The ShowDialogBox method displays the dialog box by calling ShowDialog. The ShowDialog method is responsible for the following whether dealing with the DialogBox type or any other FlatRedBall.Forms type:
+Notice that this collision relationship event may trigger every frame, but we only want to perform the dialog box logic if there isn't already a dialog box active, and if the user has just pressed the TalkInput. We could have also manually performed the CollisionRelationship logic in CustomActivity to reduce the number of collision checks, but games like this typically have a small number of NPCs so the overhead of checking collision every frame is negligible. As mentioned earlier, we manually set the DirectionFacing on the Npc to turn the Npc towards the player. We also temporarily disable Player input so that players cannot move while the dialog is displayed. Notice that the event is an async method, and that we await the DialogBox. Code using the async/await pattern is not very common in FlatRedBall, but it can be very useful when displaying UI using FlatRedBall.Forms. Awaiting the ShowDialogBox method allows us to turn input off and on in a single method without continually checking if the DialogBox is displayed and without callbacks. The ShowDialogBox method displays the dialog box by calling ShowDialog. The ShowDialog method is responsible for the following whether dealing with the DialogBox type or any other FlatRedBall.Forms type:
 
 1. Displaying new instances of the DialogBox - specifically adding the visuals to FlatRedBall and allowing the Cursor and Xbox360GamePad logic to be performed on the control
 2. Displaying the pages of text as passed in to this method
@@ -268,7 +268,7 @@ private async Task ShowDialogBox(IInputDevice inputDevice, string stringId)
 }
 ```
 
-If awaited, the ShowDialog call will not return until all pages have been shown. Since the game uses gamepads, we provide a custom AdvancePageInputPredicate which specifies how text is advanced. In this case, we progress a page of text whenever the A, X, B, or Y buttons are pressed, and only for the InputDevice for the player that talked to the NPC. This would matter if the game were to be expanded to support multiple players.
+If awaited, the ShowDialog call does not return until all pages have been shown. Since the game uses gamepads, we provide a custom AdvancePageInputPredicate which specifies how text is advanced. In this case, we progress a page of text whenever the A, X, B, or Y buttons are pressed, and only for the InputDevice for the player that talked to the NPC. This would matter if the game were to be expanded to support multiple players.
 
 ### Conclusion
 

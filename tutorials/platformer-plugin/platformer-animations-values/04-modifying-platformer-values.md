@@ -2,11 +2,11 @@
 
 ### Introduction
 
-Now that we have our animations set up, we can work in our platformer values. These values control the way the Player entity moves in response input (such as max speed) and the physics which impact the Player's movement (such as gravity). Our Player entity automatically gets a set of default values which is why we are already able to walk and jump around the level. This tutorial will modify the default values and add additional platformer values for running and ducking.
+Now that we have our animations set up, we can work in our platformer values. These values control the way the Player entity moves in response input (such as max speed) and the physics which impact the Player's movement (such as gravity). Our Player entity automatically gets a set of default values which is why we are already able to walk and jump around the level. This tutorial modifies the default values and adds additional platformer values for running and ducking.
 
 ### Setting Resolution
 
-Before we begin modifying the control values, we'll change the resolution of our game to match the original [Super Mario World resolution of 256x224](https://smwspeedruns.com/Version\_Differences).
+Before we begin modifying the control values, we change the resolution of our game to match the original [Super Mario World resolution of 256x224](https://smwspeedruns.com/Version\_Differences).
 
 1. In Glue, click the Camera icon
 2. Change the resolution width to 256
@@ -27,7 +27,7 @@ Currently our game has two set of platformer movement values:
 * Ground
 * Air
 
-Earlier we added running animations which play when the run button is held. We will be modifying our game so the Player entity can run faster when the run button is held. We will be creating two new set of platformer movement variables for running. We will also be creating a new type of movement for when the player is ducking. Therefore, we'll have three more sets of movement variables:
+Earlier we added running animations which play when the run button is held. We modify our game so the Player entity can run faster when the run button is held. We create two new set of platformer movement variables for running. We also create a new type of movement for when the player is ducking. Therefore, we have three more sets of movement variables:
 
 * Running
 * RunningAir
@@ -43,7 +43,7 @@ You should now have five sets of values.
 
 ### Modifying Platformer Movement Values
 
-Next we'll modify the values to make the game feel a little more like Super Mario World. We'll be modifying these to get close - this is not intended to be an exact copy. Of course if you want to tune the values to make the game feel different, or if you want to mimic Super Mario World even more closely, feel free to change these values.
+Next we modify the values to make the game feel a little more like Super Mario World. We're modifying these to get close. This is not intended to be an exact copy. Of course, if you want to tune the values to make the game feel different, or if you want to mimic Super Mario World even more closely, feel free to change these values.
 
 #### Ground
 
@@ -97,7 +97,7 @@ Next we'll modify the values to make the game feel a little more like Super Mari
 
 ### Switching PlatformerValues in Code
 
-Now that we have our platformer movement values created in Glue, we can assign them in code. To switch values, we can change the GroundMovement and AirMovement variables in CustomActivity. We will be looking at the VerticalInput (holding up/down) and the RunInput to decide whether the player should be using the default values, running values, or ducking. To switch between these platformer movement values, modify CustomActivity in Player.cs as shown in the following code snippet:
+Now that we have our platformer movement values created in Glue, we can assign them in code. To switch values, we can change the GroundMovement and AirMovement variables in CustomActivity. We look at the VerticalInput (holding up/down) and the RunInput to decide whether the player should be using the default values, running values, or ducking. To switch between these platformer movement values, modify CustomActivity in Player.cs as shown in the following code snippet:
 
 ```
 private void CustomActivity()
@@ -123,6 +123,6 @@ private void CustomActivity()
 
 ### Additional Challenges
 
-Now the Player will switch its values according to input, of course, the running animations are not currently being used. Use what was covered in the previous tutorial to see if you can modify the Player's animations to play the running and running jump animations as shown in the following animation.
+Now the Player switches its values according to input, though the running animations are not currently being used. Use what was covered in the previous tutorial to see if you can modify the Player's animations to play the running and running jump animations as shown in the following animation.
 
 <figure><img src="../../../.gitbook/assets/2021-03-2021_March_28_165247.gif" alt=""><figcaption></figcaption></figure>

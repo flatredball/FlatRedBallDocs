@@ -1,6 +1,6 @@
 # Wall Sliding and Jumping
 
-This walkthrough covers the concept of wall sliding and wall jumping. When a player is in the air and pressing against a wall, the player's fall speed will slow the player's falling speed and enable jumping.
+This walkthrough covers the concept of wall sliding and wall jumping. When a player is in the air and pressing against a wall, the player's fall speed slows the player's falling speed and enables jumping.
 
 {% embed url="https://youtu.be/wd2NqblSmIY?t=845" %}
 
@@ -79,7 +79,7 @@ private void CustomActivity()
 }
 ```
 
-Note that this code uses a property IsSlidingOnWall rather than a local variable. Although a property provides no additional benefits on this code, it will be used later when assigning animations.
+Note that this code uses a property IsSlidingOnWall rather than a local variable. Although a property provides no additional benefits on this code, it is used later when assigning animations.
 
 With this code in place, the player can now slide down walls and jump when sliding.
 
@@ -115,7 +115,7 @@ private void HandleJumped()
 }
 ```
 
-This code adds a handler to when the player jumps. The jump checks if the player is sliding on the wall and if so, pushes the player "outward". Note that the outwardVelocity is defined here in the HandleJumped method, but you may want to put this variable in the Player entity so that it can be tuned without changing code. Also, keep in mind that a smaller outwardVelocity value results in the player being pushed outward less. If the value is small enough then the player will be able to climb the wall through wall jumping. With the values used here, this value is roughly around 30.
+This code adds a handler to when the player jumps. The jump checks if the player is sliding on the wall and if so, pushes the player "outward". Note that the outwardVelocity is defined here in the HandleJumped method, but you may want to put this variable in the Player entity so that it can be tuned without changing code. Also, keep in mind that a smaller outwardVelocity value results in the player being pushed outward less. If the value is small enough then the player can climb the wall through wall jumping. With the values used here, this value is roughly around 30.
 
 <figure><img src="../../.gitbook/assets/07_15 27 17.gif" alt=""><figcaption></figcaption></figure>
 
@@ -135,6 +135,6 @@ We can add sliding animations by checking the IsSlidingOnWall variable either in
 
     <figure><img src="http://flatredball.com/wp-content/uploads/2023/10/img_6521cf490bf72.png" alt=""><figcaption></figcaption></figure>
 
-The player will now play the CharacterWallSlide animations if the IsSlidingOnWall property is set to true. Note that the .achx file contains CharacterWallSlideLeft and CharacterWallSlideRight, but the generated code selects the appropriate one based on which way the player is facing.
+The player now plays the CharacterWallSlide animations if the IsSlidingOnWall property is set to true. Note that the .achx file contains CharacterWallSlideLeft and CharacterWallSlideRight, but the generated code selects the appropriate one based on which way the player is facing.
 
 <figure><img src="../../.gitbook/assets/07_16 11 00.gif" alt=""><figcaption></figcaption></figure>
