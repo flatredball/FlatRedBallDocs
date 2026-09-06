@@ -23,7 +23,6 @@ Files added to the FlatRedBall Editor are managed for you automatically, simplif
 The following types are also supported, but are not commonly used in modern FlatRedBall game development
 
 * scnx
-* shcx
 * emix
 * splx
 * nntx (node network files)
