@@ -1,75 +1,47 @@
-# flatredball-content-math-shapecollectionsave
+# ShapeCollectionSave
 
 ### Introduction
 
-The ShapeCollectionSave class is a ["save"](../../../../../../frb/docs/index.php) class. Save classes are classes which allow you to load XML files to runtime objects as well as to save data contained in runtime objects to XML files. For more information on Save files, check [this article](../../../../../../frb/docs/index.php).
+ShapeCollectionSave is the serializable form of a [ShapeCollection](../../../math/geometry/shapecollection/). It holds the same shapes, but as plain data rather than as live objects, so it can be stored in a file and turned back into a ShapeCollection later.
 
-You do not need to use the ShapeCollectionSave class in most cases since the FlatRedBallServices' Load method can load ShapeCollections. If you are simply looking to load a ShapeCollection, see [this page](../../../../../../frb/docs/index.php#Loading_a_ShapeCollection).
+The most common place to encounter one is animation collision. Frames in an AnimationChainList (.achx) can carry shapes authored in the AnimationEditor, and each frame exposes them as a ShapeCollectionSave - see [AnimationFrame ShapeCollectionSave](../../../graphics/animation/flatredball-graphics-animationframe/shapecollectionsave.md) for how to apply a frame's shapes to an entity's collision.
 
-You can use ShapeCollectionSave if you are making a tool that works with the .shcx file format.
+You would otherwise use ShapeCollectionSave directly only when writing a tool that reads or writes shape data.
 
-### Loading a .shcx file
-
-You can load load a ShapeCollectionSave as follows:
-
-```
-ShapeCollectionSave saveInstance = ShapeCollectionSave.FromFile("fileName.shcx");
-```
-
-### Saving a .shcx file
-
-Sha'eCollectionSaves can be saved through the Save method. Therefore, the process of saving an existing ShapeCollectionSave is very simple:
-
-```
-string fileName = "c:/folder/fileName.shcx"; // The .shcx extension is the standard extension for ShapeCollectionSaves
-shapeCollectionSaveInstance.Save(fileName);
-```
-
-The more complicated process is to construct the ShapeCollectionSave. You can construct a ShapeCollectionSave by creating a ShapeCollectionSave from an existing [ShapeCollection](../../../../../../frb/docs/index.php) or manually (by instantiating and adding instances to it).
-
-#### Creating a ShapeCollectionSave from a [ShapeCollection](../../../../../../frb/docs/index.php)
-
-The following code saves a .shcxfile named MyShapeCollection.shcx. It assumes that shapeCollection is a valid .
+### Creating a ShapeCollectionSave from a ShapeCollection
 
 Add the following using statements:
 
-```
+```csharp
 using FlatRedBall.Math.Geometry;
 using FlatRedBall.Content.Math.Geometry;
 ```
 
-Assumes shapeCollection is a valid [ShapeCollection](../../../../../../frb/docs/index.php):
+Assuming `shapeCollection` is a valid [ShapeCollection](../../../math/geometry/shapecollection/):
 
-```
- ShapeCollectionSave save =
-    ShapeCollectionSave.FromShapeCollection(shapeCollection);
- string fileName = "MyShapeCollection.shcx";
- save.Save(fileName);
+```csharp
+ShapeCollectionSave save = ShapeCollectionSave.FromShapeCollection(shapeCollection);
 ```
 
-#### Creating a ShapeCollectionSave manually
+A ShapeCollectionSave can also be built by hand: instantiate one, then add "save" instances such as PolygonSave and CircleSave to it.
 
-The steps for creating a ShapeCollectionSave manually are:
+### Creating a ShapeCollection from a ShapeCollectionSave
 
-1. Instantiate a ShapeCollectionSave
-2. Add "save" instances to the ShapeCollectionSave (such as [PolygonSave](../../../../../../frb/docs/index.php) and [CircleSave](../../../../../../frb/docs/index.php))
-3. Save using the Save method.
+Converting back produces live shapes. Assuming `save` is a valid ShapeCollectionSave:
 
-### Creating a [ShapeCollection](../../../../../../frb/docs/index.php) from a ShapeCollectionSave
-
-You can convert ShapeCollectionSaves into runtime ShapeCollections: Add the following using statements:
-
-```
-using FlatRedBall.Math.Geometry;
-using FlatRedBall.Content.Math.Geometry;
-```
-
-Assumes "save" is a valid ShapeCollectionSave:
-
-```
+```csharp
 ShapeCollection newShapeCollection = save.ToShapeCollection();
-// You can make the ShapeCollection visible if desired:
+
+// The shapes must be added to managers before they will draw or update:
 newShapeCollection.AddToManagers();
 ```
 
-Did this article leave any questions unanswered? Post any question in our [forums](../../../../../../frb/forum.md) for a rapid response.
+### Saving to a File
+
+ShapeCollectionSave writes itself to XML through its Save method, and reads back through the static FromFile method:
+
+```csharp
+save.Save(fileName);
+
+ShapeCollectionSave loaded = ShapeCollectionSave.FromFile(fileName);
+```

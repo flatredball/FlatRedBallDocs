@@ -2,11 +2,22 @@
 
 ### Introduction
 
-The ShapeCollection class is a container for a variety of shapes. The ShapeCollection class is often used for collision maps and to define triggers. ShapeCollections are often loaded from .shcx files created by the [PolygonEditor](../../../../../PolygonEditorWiki.md). ShapeCollections are a very common class due to the support of .shcx files in Glue.
+A ShapeCollection is a container that holds shapes of mixed types - [AxisAlignedRectangles](../axisalignedrectangle/), [Circles](../circle/), [Polygons](../polygon/), [Lines](../line/), AxisAlignedCubes, Capsule2Ds, and Spheres - and lets you treat them as a single unit.
+
+That last part is the reason to use one. A regular list holds a single type, so a collision area made of a rectangle and two circles would otherwise mean separate lists and separate calls for each. A ShapeCollection lets you:
+
+* Collide against every contained shape with one [CollideAgainst](collideagainst.md) call, or push another object out of all of them with [CollideAgainstMove](collideagainstmove.md)
+* [Attach](attachto.md) all shapes to a parent, so they follow an entity as it moves and rotates
+* Show or hide all shapes at once through [Visible](visible.md), which is useful when debugging collision
+* Add or remove the whole group from the [ShapeManager](../shapemanager/) in one call
+
+Typical uses are collision areas built from more than one shape, level collision maps, and trigger regions such as doors, damage zones, and camera boundaries.
+
+Most games do not create ShapeCollections directly. Entities marked as ICollidable get one named `Collision` automatically, and every shape added to the entity goes into it - see [Implements ICollidable](../../../../../glue-reference/entities/glue-reference-implements-icollidable.md). A ShapeCollection can also be added as an object in the FlatRedBall Editor; see [the ShapeCollection object page](../../../../../glue-reference/objects/object-types/glue-reference-shapecollection.md).
 
 ### Accessing Shapes
 
-The ShapeCollection provides a number of methods that can be used to perform actions on all contained Shapes (such as [AttachTo](../../../../../frb/docs/index.php)). However, you may be working on a game that requires access to individual shapes. The ShapeCollection exposes its shapes. The following members are available:
+The ShapeCollection exposes its shapes through one list per type:
 
 * AxisAlignedRectangles
 * AxisAlignedCubes
@@ -16,67 +27,7 @@ The ShapeCollection provides a number of methods that can be used to perform act
 * Polygons
 * Spheres
 
-These are all [PositionedObjectLists](../../../../../frb/docs/index.php) which can be accessed like regular lists. You can add and remove elements from these lists as well as modify the individual members inside the lists. If your need to perform special actions on all elements in a ShapeCollection you can do the following:
-
-```csharp
-// Assuming ShapeCollectionInstance is a valid ShapeCollection
-for(int i = 0; i < ShapeCollectionInstance.AxisAlignedRectangles.Count; i++)
-{
-   // do something with ShapeCollectionInstance.AxisAlignedRectangles[i];
-}
-for(int i = 0; i < ShapeCollectionInstance.AxisAlignedCubes.Count; i++)
-{
-   // do something with ShapeCollectionInstance.AxisAlignedCubes[i];
-}
-// Continue writing loops for the other categories here...
-```
-
-Of course, you can also access the shapes using a foreach statement. Keep in mind that foreach statements may have performance penalties compared to regular for loops.
-
-```csharp
-foreach(var circle in ShapeCollectionInstance.Circles)
-{
-    // do something with circle, like perform collision
-}
-```
-
-### Loading a ShapeCollection
-
-ShapeCollections can be created by loading .shcx files.
-
-#### Loading ShapeCollection From File
-
-The following code loads a .shcx file into memory, adds all contained shapes to the [ShapeManager](../../../../../frb/docs/index.php). If you are using Glue you can add ShapeCollections to Screens and Entities just like other files. For an example on how to add a ShapeCollection to Glue, see [the Beefball tutorial on creating Screen collisions](../../../../../frb/docs/index.php). File used: [ShapeCollection.shcx](../../../../../frb/docs/images/b/b0/ShapeCollection.shcx) Add the following using statements:
-
-```csharp
-using FlatRedBall.Math.Geometry;
-```
-
-Add the following to Initialize after initializing FlatRedBall:
-
-```csharp
-ShapeCollection shapeCollection = FlatRedBallServices.Load<ShapeCollection>("shapeCollection.shcx");
-shapeCollection.AddToManagers();
-```
-
-![ShapeCollection.png](../../../../../.gitbook/assets/migrated\_media-ShapeCollection.png)
-
-### Saving a ShapeCollection
-
-Although most games do not need ShapeCollection saving support, FlatRedBall provides easy-to-use classes for saving a ShapeCollection. For more information, see the [ShapeCollectionSave page](../../../../../frb/docs/index.php).
-
-### ShapeCollection Shapes
-
-All shapes in the ShapeCollection can be accessed through its member lists. The available lists are:
-
-* AxisAlignedRectangles
-* AxisAlignedCubes
-* Circles
-* Polygons
-* Lines
-* Spheres
-
-The ShapeCollection can be thought of as a container for all of these lists. Therefore, you can use the individual lists to do anything you would do with a normal list such as:
+Each is a PositionedObjectList and behaves like a regular list, so you can add to it, remove from it, and modify the shapes it holds:
 
 ```csharp
 // Adding:
@@ -84,6 +35,35 @@ myShapeCollection.Circles.Add(someCircleInstance);
 
 // Removing:
 ShapeManager.Remove(myShapeCollection.AxisAlignedRectangles[0]);
-
-// ...and anything else you'd want to do with shapes
 ```
+
+To act on every shape of a given type, loop over the matching list:
+
+```csharp
+foreach(var circle in ShapeCollectionInstance.Circles)
+{
+    // do something with circle, like perform collision
+}
+```
+
+A ShapeCollection has no single list containing every shape, so code that must touch all of them needs one loop per type.
+
+### Adding a ShapeCollection to Managers
+
+Shapes are drawn and updated only after they have been added to the [ShapeManager](../shapemanager/). A ShapeCollection adds all of its shapes at once:
+
+```csharp
+shapeCollection.AddToManagers();
+```
+
+Removing works the same way:
+
+```csharp
+shapeCollection.RemoveFromManagers();
+```
+
+ShapeCollections created in the FlatRedBall Editor are added to managers by generated code, so these calls are only needed for collections created in custom code.
+
+### Saving a ShapeCollection
+
+Most games do not need to save ShapeCollections at runtime, but FlatRedBall can convert one to and from a serializable form. For more information, see the [ShapeCollectionSave page](../../../content/math/geometry/flatredball-content-math-shapecollectionsave.md).

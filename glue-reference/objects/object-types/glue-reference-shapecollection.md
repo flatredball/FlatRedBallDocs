@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The FlatRedBall Editor supports creating objects of type ShapeCollection.
+The FlatRedBall Editor supports creating objects of type ShapeCollection. A ShapeCollection groups shapes of mixed types (rectangles, circles, polygons, and lines) so they can be treated as a single unit - collided against with one call, attached to a parent, and shown or hidden together. For a full description of the type, see [the ShapeCollection page](../../../api/flatredball/math/geometry/shapecollection/).
 
 Note that entities which are created as ICollidable automatically have a ShapeCollection named Collision, and all shapes shapes are added to the default Collision shape collection. In this case you do not need to manually create a ShapeCollection. For more information, see the [Implements ICollidable](../../entities/glue-reference-implements-icollidable.md) page.
 
@@ -18,7 +18,7 @@ To add a ShapeCollection:
 
     <figure><img src="../../../.gitbook/assets/migrated_media-AddShapeCollectionObject.PNG" alt=""><figcaption><p>Add a ShapeCollection through the New Object window</p></figcaption></figure>
 
-Note that FlatRedBall also supports the .shcx file format, but this is no longer recommended. The PolygonEditor tool is no longer maintained, and the recommended approach is to add a ShapeCollection as shown above and to modify the shapes using FlatRedBall's LiveEdit.
+Shapes in a ShapeCollection can be positioned and resized visually using FlatRedBall's LiveEdit.
 
 ### Adding Shapes to a ShapeCollection in FlatRedBall
 
@@ -39,4 +39,4 @@ Your newly-created shape is added to ShapeCollection in the tree view.
 
 ### ShapeCollection in code
 
-For information on how to work with a ShapeCollection in code, see [the ShapeCollection page](../../../frb/docs/index.php).
+For information on how to work with a ShapeCollection in code, see [the ShapeCollection page](../../../api/flatredball/math/geometry/shapecollection/).

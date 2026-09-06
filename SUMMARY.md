@@ -239,7 +239,6 @@
       * [MP3](glue-reference/files/file-types/glue-reference-mp3-file-mp3.md)
       * [Node Network (.nntx)](glue-reference/files/file-types/nodenetwork-nntx.md)
       * [OpenDocument Spreadsheet (.ods)](glue-reference/files/file-types/opendocument-spreadsheet-.ods.md)
-      * [ShapeCollections (.shcx)](glue-reference/files/file-types/glue-reference-shapecollection-shcx.md)
       * [SplineList (.splx)](glue-reference/files/file-types/glue-reference-splinelist-splx.md)
       * [Texture2D (.png)](glue-reference/files/file-types/texture2d.md)
       * [Wave (.wav)](glue-reference/files/file-types/glue-reference-wav-file-wav.md)
