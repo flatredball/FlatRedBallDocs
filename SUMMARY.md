@@ -646,6 +646,7 @@
       * [IDrawableBatch](api/flatredball/graphics/drawablebatch/README.md)
         * [Z](api/flatredball/graphics/drawablebatch/flatredball-graphics-idrawablebatch-z.md)
         * [RenderState](api/flatredball/graphics/drawablebatch/render-state.md)
+        * [MonoGame.Extended Particles](api/flatredball/graphics/drawablebatch/monogame-extended-particles.md)
       * [IVisible](api/flatredball/graphics/ivisible/README.md)
         * [IgnoresParentVisibility](api/flatredball/graphics/ivisible/ignoresparentvisibility.md)
       * [Layer](api/flatredball/graphics/layer/README.md)

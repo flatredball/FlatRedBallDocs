@@ -169,6 +169,10 @@ internal class SpriteBatchIdb : IDrawableBatch
 }
 ```
 
+### Third Party Rendering Libraries
+
+Drawable batches are also how you render a library that knows nothing about FlatRedBall. [MonoGame.Extended Particles](monogame-extended-particles.md) works through a complete example, including the coordinate space and render state problems any such integration runs into.
+
 ### Invalid IDrawableBatch Actions
 
 The IDrawableBatch interface provides considerable freedom in custom drawing. However, the IDrawableBatch's Draw method is a method which is executed during FlatRedBall's Draw call. This means that it is possible to change the state of the graphics device in such a way that will cause FlatRedBall to render incorrectly or even crash. The following lists actions which should not be performed.
