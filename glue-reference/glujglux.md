@@ -690,3 +690,9 @@ Adds support for the `IsTilingMiddleSections` variable on Gum `NineSlice` runtim
 This version modifies Gum code generation so that generated `SpriteRuntime`, `NineSliceRuntime`, `ContainerRuntime`, and `PolygonRuntime` classes implement small FRB-only interfaces (`ISpriteRuntime`, `INineSliceRuntime`, `IContainerRuntime`, `IPolygonRuntime`) declared in the FlatRedBall build of Gum's shared source. These interfaces exist only so FlatRedBall's engine-side property dispatch can be unified with the other Gum backends; they add no new properties or behavior to existing projects.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 71 - int/float CustomVariables Can Be Lists
+
+This version lets a custom variable of type `int` or `float` be marked as a list (`List<int>`/`List<float>`), the same way `List<string>` custom variables already worked. This only applies to projects saved in JSON (`.gluj`) format, since the underlying block for non-string lists was a crash in `.glux`'s XML serialization.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
