@@ -690,3 +690,9 @@ Adds support for the `IsTilingMiddleSections` variable on Gum `NineSlice` runtim
 This version modifies Gum code generation so that generated `SpriteRuntime`, `NineSliceRuntime`, `ContainerRuntime`, and `PolygonRuntime` classes implement small FRB-only interfaces (`ISpriteRuntime`, `INineSliceRuntime`, `IContainerRuntime`, `IPolygonRuntime`) declared in the FlatRedBall build of Gum's shared source. These interfaces exist only so FlatRedBall's engine-side property dispatch can be unified with the other Gum backends; they add no new properties or behavior to existing projects.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 72 - Sprite has SyncShapesFromAnimation
+
+This version adds `Sprite.SyncShapesFromAnimation`, which updates named shapes from the Sprite's current animation frame the same way `SetCollisionFromAnimation` (version 45) does, but only as plain children - it never adds or removes shapes from an entity's `Collision`. This means it works on any entity, not just ones that implement `ICollidable`, which is useful for a shape that should track the animation (such as a bullet spawn point marker) without becoming part of collision. A shape's `Collision` membership is unaffected either way; it's still controlled entirely by that shape's own `IncludeInICollidable` setting.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
