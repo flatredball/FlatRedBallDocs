@@ -700,4 +700,6 @@ The existing "Set Collision From Animation" checkbox (version 45) required the e
 
 This means existing `ICollidable` entities using this checkbox see no behavior change, while entities that aren't `ICollidable` can now use it too, for a shape that should track the animation (such as a bullet spawn point marker) without becoming part of collision.
 
+The checkbox is also relabeled to "Set Collision/Shapes From Animation" in the property grid, since "Set Collision" alone would be misleading on a non-`ICollidable` entity. This is a display-only change - the underlying variable name/storage is unchanged, so existing projects aren't affected.
+
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
