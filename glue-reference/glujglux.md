@@ -691,8 +691,15 @@ This version modifies Gum code generation so that generated `SpriteRuntime`, `Ni
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
-### Version 72 - Sprite has SyncShapesFromAnimation
+### Version 72 - Set Collision From Animation Works on Non-ICollidable Entities
 
-This version adds `Sprite.SyncShapesFromAnimation`, which updates named shapes from the Sprite's current animation frame the same way `SetCollisionFromAnimation` (version 45) does, but only as plain children - it never adds or removes shapes from an entity's `Collision`. This means it works on any entity, not just ones that implement `ICollidable`, which is useful for a shape that should track the animation (such as a bullet spawn point marker) without becoming part of collision. A shape's `Collision` membership is unaffected either way; it's still controlled entirely by that shape's own `IncludeInICollidable` setting.
+The existing "Set Collision From Animation" checkbox (version 45) required the entity to be `ICollidable`, since it wrote matched shapes directly into `Collision`. At this version, the same checkbox instead calls a new method, `Sprite.SyncShapesFromAnimation`, which works on any entity:
+
+* A shape that already exists (matched by name) only has its values updated - its `Collision` membership, if any, is left exactly as it was. That membership is controlled by the shape's own `IncludeInICollidable` setting, not by this checkbox.
+* A newly-created shape is attached as a child, and is also added to `Collision` if the entity is `ICollidable` - the same default the old method always used, now applied automatically instead of being the only option.
+
+This means existing `ICollidable` entities using this checkbox see no behavior change, while entities that aren't `ICollidable` can now use it too, for a shape that should track the animation (such as a bullet spawn point marker) without becoming part of collision.
+
+The checkbox is also relabeled to "Set Collision/Shapes From Animation" in the property grid, since "Set Collision" alone would be misleading on a non-`ICollidable` entity. This is a display-only change - the underlying variable name/storage is unchanged, so existing projects aren't affected.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
