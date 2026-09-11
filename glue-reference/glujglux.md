@@ -701,7 +701,7 @@ This version modifies global content code generation for .achx files. When an An
 
 This version modifies code generation for platformer solid and cloud CollisionRelationships so that the generated collision function checks the relationship's new `ApplyPhysics` delegate. `ApplyPhysics` is a `Func<First, Second, bool>` which can be assigned in code to decide per-collision whether platformer physics are applied, such as to let an entity pass through certain platforms. When it is null (the default), physics are applied as before.
 
-This version also adds `ScreenManager.ScreenLoadExceptionOccurred`, an event raised when a Screen throws during loading. The generated live edit code subscribes to this event so that load exceptions are reported to the FlatRedBall Editor instead of only crashing the game.
+This version also adds `ScreenManager.ScreenLoadExceptionOccurred`, an event raised when a Screen throws during loading. The generated live edit code subscribes to this event and sends the exception to the FlatRedBall Editor, which prints it as an error in the Output tab.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
