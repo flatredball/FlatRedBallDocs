@@ -691,6 +691,20 @@ This version modifies Gum code generation so that generated `SpriteRuntime`, `Ni
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
+### Version 69 - AnimationChainList has ReplaceValues
+
+This version modifies global content code generation for .achx files. When an AnimationChainList is reloaded (such as when the file changes on disk during live edit), the generated code now calls `AnimationChainList.ReplaceValues` to update the existing instance in place rather than assigning a newly-loaded instance to the field. Objects which already reference the list, such as Sprites, keep seeing the updated animations instead of a stale copy.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 70 - Platformer CollisionRelationships have ApplyPhysics, ScreenManager has ScreenLoadExceptionOccurred
+
+This version modifies code generation for platformer solid and cloud CollisionRelationships so that platformer physics respect the **Automatically Apply Physics** checkbox (previously ignored by platformer relationships) and the new `ApplyPhysics` delegate. `ApplyPhysics` is a `Func<First, Second, bool>` which can be assigned in code to decide per-collision whether platformer physics are applied, such as to let an entity pass through certain platforms.
+
+This version also adds `ScreenManager.ScreenLoadExceptionOccurred`, an event raised when a Screen throws during loading. The generated live edit code subscribes to this event so that load exceptions are reported to the FlatRedBall Editor instead of only crashing the game.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
 ### Version 72 - Sprite has SyncShapesFromAnimation
 
 This version adds `Sprite.SyncShapesFromAnimation`, which updates named shapes from the Sprite's current animation frame the same way `SetCollisionFromAnimation` (version 45) does, but only as plain children - it never adds or removes shapes from an entity's `Collision`. This means it works on any entity, not just ones that implement `ICollidable`, which is useful for a shape that should track the animation (such as a bullet spawn point marker) without becoming part of collision. A shape's `Collision` membership is unaffected either way; it's still controlled entirely by that shape's own `IncludeInICollidable` setting.
