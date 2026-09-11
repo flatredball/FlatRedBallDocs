@@ -699,7 +699,7 @@ This version modifies global content code generation for .achx files. When an An
 
 ### Version 70 - Platformer CollisionRelationships have ApplyPhysics, ScreenManager has ScreenLoadExceptionOccurred
 
-This version modifies code generation for platformer solid and cloud CollisionRelationships so that platformer physics respect the **Automatically Apply Physics** checkbox (previously ignored by platformer relationships) and the new `ApplyPhysics` delegate. `ApplyPhysics` is a `Func<First, Second, bool>` which can be assigned in code to decide per-collision whether platformer physics are applied, such as to let an entity pass through certain platforms.
+This version modifies code generation for platformer solid and cloud CollisionRelationships so that the generated collision function checks the relationship's new `ApplyPhysics` delegate. `ApplyPhysics` is a `Func<First, Second, bool>` which can be assigned in code to decide per-collision whether platformer physics are applied, such as to let an entity pass through certain platforms. When it is null (the default), physics are applied as before.
 
 This version also adds `ScreenManager.ScreenLoadExceptionOccurred`, an event raised when a Screen throws during loading. The generated live edit code subscribes to this event so that load exceptions are reported to the FlatRedBall Editor instead of only crashing the game.
 
