@@ -158,6 +158,10 @@ wrapper.RelativeY = 36;
 
 <figure><img src="../.gitbook/assets/02_10 07 53.gif" alt=""><figcaption></figcaption></figure>
 
+#### Zooming in the FRB Editor's live-edit mode
+
+The behavior above (Gum coordinates ignoring camera zoom) is for normal gameplay. While using the FRB Editor's live-edit mode, zooming the camera **does** scale a Gum component that's attached to an entity this way, so you can zoom in to make fine positional adjustments. This only applies to Gum objects added directly to an entity as described above — a Gum object placed on a manually-created Layer (see [Adding Components to Layers](../gum/how-to-add-components-to-layers.md)) does not zoom with the editor.
+
 ### Attaching to Scalable Entities
 
 Although entities do not have a size by default, entities can implement the IReadOnlyScalable interface to define their size. Implementing IReadOnlyScalable serves as an alternative to attaching to a FlatRedBall Sprite.&#x20;
