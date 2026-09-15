@@ -710,3 +710,9 @@ This version also adds `ScreenManager.ScreenLoadExceptionOccurred`, an event rai
 This version adds `Sprite.SyncShapesFromAnimation`, which updates named shapes from the Sprite's current animation frame the same way `SetCollisionFromAnimation` (version 45) does, but only as plain children - it never adds or removes shapes from an entity's `Collision`. This means it works on any entity, not just ones that implement `ICollidable`, which is useful for a shape that should track the animation (such as a bullet spawn point marker) without becoming part of collision. A shape's `Collision` membership is unaffected either way; it's still controlled entirely by that shape's own `IncludeInICollidable` setting.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 73 - PositionedObjectGueWrapper has GetOrCreateEntityAttachmentZoomLayer
+
+This version adds `PositionedObjectGueWrapper.GetOrCreateEntityAttachmentZoomLayer` to GumCore. In edit mode, Gum objects attached to an entity (`AttachToContainer`) are moved onto this dedicated layer so the FlatRedBall Editor's zoom scales them, while HUD and other screen-space Gum content keeps its size. The generated live edit code only zooms this layer at this version or newer; on older versions Gum content does not follow the editor zoom.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
