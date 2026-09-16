@@ -691,6 +691,20 @@ This version modifies Gum code generation so that generated `SpriteRuntime`, `Ni
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
+### Version 69 - AnimationChainList has ReplaceValues
+
+This version modifies global content code generation for .achx files. When an AnimationChainList is reloaded (such as when the file changes on disk during live edit), the generated code now calls `AnimationChainList.ReplaceValues` to update the existing instance in place rather than assigning a newly-loaded instance to the field. Objects which already reference the list, such as Sprites, keep seeing the updated animations instead of a stale copy.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 70 - Platformer CollisionRelationships have ApplyPhysics, ScreenManager has ScreenLoadExceptionOccurred
+
+This version modifies code generation for platformer solid and cloud CollisionRelationships so that the generated collision function checks the relationship's new `ApplyPhysics` delegate. `ApplyPhysics` is a `Func<First, Second, bool>` which can be assigned in code to decide per-collision whether platformer physics are applied, such as to let an entity pass through certain platforms. When it is null (the default), physics are applied as before.
+
+This version also adds `ScreenManager.ScreenLoadExceptionOccurred`, an event raised when a Screen throws during loading. The generated live edit code subscribes to this event and sends the exception to the FlatRedBall Editor, which prints it as an error in the Output tab.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
 ### Version 72 - Set Collision From Animation Works on Non-ICollidable Entities
 
 The existing "Set Collision From Animation" checkbox (version 45) required the entity to be `ICollidable`, since it wrote matched shapes directly into `Collision`. At this version, the same checkbox instead calls a new method, `Sprite.SyncShapesFromAnimation`, which works on any entity:
@@ -701,5 +715,11 @@ The existing "Set Collision From Animation" checkbox (version 45) required the e
 This means existing `ICollidable` entities using this checkbox see no behavior change, while entities that aren't `ICollidable` can now use it too, for a shape that should track the animation (such as a bullet spawn point marker) without becoming part of collision.
 
 The checkbox is also relabeled to "Set Collision/Shapes From Animation" in the property grid, since "Set Collision" alone would be misleading on a non-`ICollidable` entity. This is a display-only change - the underlying variable name/storage is unchanged, so existing projects aren't affected.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 73 - PositionedObjectGueWrapper has GetOrCreateEntityAttachmentZoomLayer
+
+This version adds `PositionedObjectGueWrapper.GetOrCreateEntityAttachmentZoomLayer` to GumCore. In edit mode, Gum objects attached to an entity (`AttachToContainer`) are moved onto this dedicated layer so the FlatRedBall Editor's zoom scales them, while HUD and other screen-space Gum content keeps its size. The generated live edit code only zooms this layer at this version or newer; on older versions Gum content does not follow the editor zoom.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
