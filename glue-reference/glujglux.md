@@ -722,4 +722,6 @@ The checkbox is also relabeled to "Set Collision/Shapes From Animation" in the p
 
 This version adds `PositionedObjectGueWrapper.GetOrCreateEntityAttachmentZoomLayer` to GumCore. In edit mode, Gum objects attached to an entity (`AttachToContainer`) are moved onto this dedicated layer so the FlatRedBall Editor's zoom scales them, while HUD and other screen-space Gum content keeps its size. The generated live edit code only zooms this layer at this version or newer; on older versions Gum content does not follow the editor zoom.
 
+At this version `GumIdb.Generated.cs` also registers component-to-Forms associations through `FrameworkElement.DefaultFormsTemplates` instead of the obsolete `DefaultFormsComponents`, which removes a CS0618 warning from every generated project. `DefaultFormsTemplates` has been available since well before version 73, so this reuses the number rather than adding a new one. `TreeViewItem` is the one control still registered through `DefaultFormsComponents` (with the warning suppressed), because FlatRedBall's `TreeView` only looks there for its default item type.
+
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
