@@ -1,5 +1,9 @@
 # 🏃 Animation Editor
 
+{% hint style="warning" %}
+This documentation covers the AnimationEditor that is bundled with FlatRedBall's FRBDK zip. Although this application is still functional, it is no longer receiving updates. A new AnimationEditor with improved functionality and cross-platform support is available here: [https://github.com/vchelaru/FlatRedBall2/releases/tag/animationeditor-latest](https://github.com/vchelaru/FlatRedBall2/releases/tag/animationeditor-latest)
+{% endhint %}
+
 ### Introduction
 
 The AnimationEditor is a tool which simplifies the creation and editing of AnimationChainList files (.achx files). AnimationChainLists are the standard file format for sprite animations in the FlatRedBall Engine. Note that since the AnimationEditor produces plain XML files, these files can be consumed in any environment, so it can be used for any type of game, not just FlatRedBall games.
@@ -8,10 +12,10 @@ The AnimationEditor is a tool which simplifies the creation and editing of Anima
 
 The AnimationEditor is distributed along FRB in the FRBDK.zip file. For info on downloading the FRBDK.zip file, see the [Downloads page](../). You can open the AnimationEditor by either:
 
-*   Double-clicking an .achx file in the FRB Editor. Note that if you have not set up the Windows file association for .achx files, you may be asked how to open this file. You can select to use the AnimationEditor.exe, which is located in the place shown in the next point:&#x20;
+*   Double-clicking an .achx file in the FRB Editor. Note that if you have not set up the Windows file association for .achx files, you may be asked how to open this file. You can select to use the AnimationEditor.exe, which is located in the place shown in the next point:
 
     <figure><img src="../.gitbook/assets/2023-06-img_649226c0a5464.png" alt=""><figcaption></figcaption></figure>
-*   Or opening the AnimationEditor.exe in the XNA 4 Tools folder&#x20;
+*   Or opening the AnimationEditor.exe in the XNA 4 Tools folder
 
     <figure><img src="../.gitbook/assets/2021-01-img_5ff8eabb97e17.png" alt=""><figcaption></figcaption></figure>
 
