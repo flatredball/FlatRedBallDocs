@@ -44,15 +44,15 @@ Next let's look at a situation where there are three entities in an inheritance 
   * Dragon
     * RedDragon
 
-We'll assume RedDragon is an Entity that is CreatedByOtherEntities, so there is a RedDragonFactory. As explained above, RedDragonFactory will be automatically Instantiated in a Screen if:
+We'll assume RedDragon is an Entity that is CreatedByOtherEntities, so there is a RedDragonFactory. A factory is associated with a list if the list's type is the factory's Entity or any Entity it derives from, at any depth. As explained above, RedDragonFactory will be automatically initialized in a Screen, and will add new instances to the list, if the Screen includes a PositionedObjectList of any of these types:
 
-* The screen includes a PositionedObjectList of type Enemy
+* Enemy
+* Dragon
+* RedDragon
 
-\-- OR --
+Glue does not stop at the most base or most derived type. A PositionedObjectList of Dragon (the type "inbetween" Enemy and RedDragon) also gets the RedDragonFactory, so a RedDragon created by the factory is added to the list of Dragons. Likewise, DragonFactory (if Dragon has one) is associated with lists of Enemy and Dragon, but not with a list of RedDragon.
 
-* The Screen includes a PositionedObjectList of type RedDragon
-
-But what if the Screen only contains a PositionedObjectList of Dragon (the type "inbetween" Enemy and RedDragon)? In this situation, Glue does not assume you intend to have the RedDragonFactory instantiated. Glue will only automatically instantiate the RedDragonFactory if there is a PositionedObjectList of the most base Entity (Enemy in this case) or most derived (RedDragon in this case) in a given Screen. However, you can still customize how the behavior of the Factory works using the [EntitySpawned](../../frb/docs/index.php) Action and manually adding newly-created Entities to any List.
+If you do not want a list to receive instances from the factories, set its AssociateWithFactory value to false in Glue (or call RemoveList in code, as shown below). You can also customize the behavior of the Factory using the [EntitySpawned](../../frb/docs/index.php) Action and manually adding newly-created Entities to any List.
 
 ### Factories and Multiple Lists of the Same Type
 
