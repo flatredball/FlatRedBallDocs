@@ -735,3 +735,11 @@ Registering factories means Screens are created without reflection, which is req
 At this version `GumIdb.Generated.cs` also registers `TreeViewItem` through `FrameworkElement.DefaultFormsTemplates`, like every other control. Version 73 left `TreeViewItem` on the obsolete `DefaultFormsComponents`, because FlatRedBall's `TreeView` only looked there for its default item type. The `TreeView` now checks `DefaultFormsTemplates` first, which creates the item without reflection and works with Native AOT. A project on an older FlatRedBall Engine only reads `DefaultFormsComponents`, so update the engine along with this version.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 77 - Factories Keep Entity Members
+
+This version adds a `[DynamicDependency]` attribute to the `CreateNew` method of each entity factory. The attribute tells the trimmer to keep the public fields and properties of the entity. Tiled object properties are assigned to these members by name, and Native AOT and trimming remove members that nothing references directly, so without the attribute a published game cannot find them.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+❗ Projects that target a framework older than .NET 5 should not update to this version, because the factory code does not compile there.
