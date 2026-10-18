@@ -732,4 +732,6 @@ This version adds `ScreenManager.RegisterScreenFactory(string screenFullName, Fu
 
 Registering factories means Screens are created without reflection, which is required for Native AOT and trimming: the constructor of a Screen that is only reached by name is removed when the game is trimmed, so a published game fails at startup with a `MissingMethodException`. Screens that are not registered, such as Screens created by hand-written code, are still found through reflection, so games that are not trimmed behave as before.
 
+At this version `GumIdb.Generated.cs` also registers `TreeViewItem` through `FrameworkElement.DefaultFormsTemplates`, like every other control. Version 73 left `TreeViewItem` on the obsolete `DefaultFormsComponents`, because FlatRedBall's `TreeView` only looked there for its default item type. The `TreeView` now checks `DefaultFormsTemplates` first, which creates the item without reflection and works with Native AOT. A project on an older FlatRedBall Engine only reads `DefaultFormsComponents`, so update the engine along with this version.
+
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
