@@ -725,3 +725,11 @@ This version adds `PositionedObjectGueWrapper.GetOrCreateEntityAttachmentZoomLay
 At this version `GumIdb.Generated.cs` also registers component-to-Forms associations through `FrameworkElement.DefaultFormsTemplates` instead of the obsolete `DefaultFormsComponents`, which removes a CS0618 warning from every generated project. `DefaultFormsTemplates` has been available since well before version 73, so this reuses the number rather than adding a new one. `TreeViewItem` is the one control still registered through `DefaultFormsComponents` (with the warning suppressed), because FlatRedBall's `TreeView` only looks there for its default item type.
 
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+### Version 76 - ScreenManager has RegisterScreenFactory
+
+This version adds `ScreenManager.RegisterScreenFactory(string screenFullName, Func<Screen> factory)`. At this version `Game1.Generated.cs` registers a factory for every non-abstract Screen in the project, and the generated code uses that list to create Screens by name, including the Screen named on the command line when the game starts. Abstract Screens (Screens with an object marked SetByDerived) are not registered because they cannot be created.
+
+Registering factories means Screens are created without reflection, which is required for Native AOT and trimming: the constructor of a Screen that is only reached by name is removed when the game is trimmed, so a published game fails at startup with a `MissingMethodException`. Screens that are not registered, such as Screens created by hand-written code, are still found through reflection, so games that are not trimmed behave as before.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
