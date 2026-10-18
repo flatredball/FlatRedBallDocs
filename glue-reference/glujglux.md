@@ -743,3 +743,13 @@ This version adds a `[DynamicDependency]` attribute to the `CreateNew` method of
 ✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
 
 ❗ Projects that target a framework older than .NET 5 should not update to this version, because the factory code does not compile there.
+
+### Version 78 - Entity Factory Registry
+
+This version adds `FactoryManager.Register(string entityName, IEntityFactory factory)` to the generated `FactoryManager`. At this version `Game1.Generated.cs` registers the factory of every entity that has one, and `FactoryManager` looks entities up in that list before it falls back to reflection. Entities that are abstract, or that are not set up to be created by other entities, have no factory and are not registered.
+
+Registering factories means entities are found without reflection, which Native AOT and trimming need. Without it, a published game cannot find its factories, so entities created by name, such as Tiled entities, are never created and no error is shown.
+
+✅ To upgrade to this version, either link to the FlatRedBall Engine source code and update the repository, or update the pre-built binaries through the FlatRedBall Editor.
+
+❗ Projects that target a framework older than .NET 5 should not update to this version, because the registry code does not compile there.
