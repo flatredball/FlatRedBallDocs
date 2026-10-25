@@ -2,6 +2,10 @@
 
 ### Introduction
 
+{% hint style="warning" %}
+SplineList is not actively supported. For new games, use [Path](../../../api/flatredball/math/paths/path.md) instead.
+{% endhint %}
+
 The .splx file format is an XML file that stores a list of Splines. For more information on using Splines in code, see the [Spline page](../../../../frb/docs/index.php).
 
 ### Adding a SplineList file to Glue
