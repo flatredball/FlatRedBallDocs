@@ -100,7 +100,7 @@ As of August 2024 FlatRedBall Web is a new platform. The following are known lim
 
 #### File IO
 
-* Local saving and loading of files cannot be performed with the standard System.IO.File operations
+* Local saving and loading of files cannot be performed with the standard System.IO.File operations. Use `FlatRedBallServices.Storage` instead, which saves to the browser's `localStorage` and needs no setup on web. For more information see the [Storage page](../../api/flatredball/flatredballservices/storage.md).
 
 #### Camera/Resolution
 

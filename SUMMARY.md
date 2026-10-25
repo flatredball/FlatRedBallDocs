@@ -587,6 +587,7 @@
       * [Owner](api/flatredball/flatredballservices/owner.md)
       * [Random](api/flatredball/flatredballservices/random.md)
       * [RenderAll](api/flatredball/flatredballservices/renderall.md)
+      * [Storage](api/flatredball/flatredballservices/storage.md)
       * [Unload](api/flatredball/flatredballservices/unload.md)
       * [Update](api/flatredball/flatredballservices/update.md)
       * [WindowHandle](api/flatredball/flatredballservices/windowhandle.md)

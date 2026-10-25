@@ -48,6 +48,19 @@ float randomNumber = (float)(FlatRedBallServices.Random.NextDouble() * 10);
 
 The NextDouble returns a double value between 0 and 1. The code above multiplies it by 10 to get a value between 0 and 10. This value is a double, so the value must be converted to a float if it is to be used for a float variable.
 
+### Saving and Loading Data
+
+`FlatRedBallServices.Storage` saves and loads game data on desktop and web with the same code. Set `FlatRedBallServices.StorageName` before initializing, then call `Storage`:
+
+```csharp
+FlatRedBallServices.StorageName = "MyGame";
+
+await FlatRedBallServices.Storage.WriteTextAsync("saves/slot1.json", json);
+string? loaded = await FlatRedBallServices.Storage.ReadTextAsync("saves/slot1.json");
+```
+
+For more information see the [Storage page](storage.md).
+
 ### Exiting FlatRedBall
 
 To exit an application, call the Game's Exit method. This can be accessed through FlatRedBallServices:
