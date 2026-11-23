@@ -8,7 +8,7 @@ Which properties a file has depends on the file and where it lives. Most files h
 
 * `IsSharedStatic` only for a file in a screen.
 * `DestroyOnUnload` only for a `Song` that is not in an entity.
-* `CreatesDictionary`, `IsDatabaseForLocalizing`, `UniformRowType` and `CsvDelimiter` only for a CSV.
+* `CreatesDictionary`, `IsDatabaseForLocalizing`, `UniformRowType` and `CsvDelimiter` only for a CSV. `CreatesDictionary` needs a column marked required. In a comma-delimited CSV, quote a header that has a comma (`"Name (string, required)"`) or use `Name (required)`; otherwise the comma splits the header into two columns.
 * `TreatAsCsv` only for a `.txt` file.
 * A file that is not `LoadedAtRuntime` has none of the loading properties.
 
