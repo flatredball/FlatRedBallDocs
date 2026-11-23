@@ -42,7 +42,7 @@ Use those names in your edit commands rather than guessing them or reading the J
 
 #### 2. Edit with One Command per Change
 
-Each change is one GlueCli run. Pick the command that matches what you would do in the editor:
+Each change is one GlueCli command. Pick the command that matches what you would do in the editor:
 
 | To do this | Use |
 |------------|-----|
@@ -59,6 +59,12 @@ Each change is one GlueCli run. Pick the command that matches what you would do 
 Rename with `rename`, `rename-state` or `rename-state-category` rather than deleting and re-adding. A rename updates everything that refers to the old name. Deleting and re-adding loses those references.
 
 Every edit saves the project and regenerates code for the changed screens and entities, so there is no separate save or codegen step.
+
+To make several edits, put them in a file, one command per line, and run [batch](batch.md). The editor starts and the project loads once, so each edit after the first costs a fraction of a separate run. Each command reports and fails as it would alone, and the batch stops at the first failure:
+
+```
+GlueCli batch MyGame --file edits.txt --json
+```
 
 To preview an edit before making it, add `--dry-run`. The edit runs the same way, with the same checks, but against a temp copy of the project. The report lists the files it would change, with a diff of each `.gluj`, `.glsj` and `.glej` file, and your project stays as it was. The exit code is the one the real edit would get, so a dry run is also a cheap way to find out whether an edit is allowed:
 

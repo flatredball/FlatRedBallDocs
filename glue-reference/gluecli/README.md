@@ -51,7 +51,7 @@ The last one works because the search includes subfolders. It fails if the repos
 Each run does the following:
 
 1. Starts the editor with no window and loads the project. Loading reads the project. Unlike **File > Load Project**, it does not regenerate code or save anything.
-2. Runs one command.
+2. Runs one command, or several with [batch](batch.md).
 3. Waits for the editor's queued work, such as plugin reactions and code generation.
 4. For edit commands, saves the `.gluj`, the changed screen and entity files and the `.csproj`, and regenerates code for every changed screen and entity.
 5. Prints a report and exits.
@@ -187,6 +187,7 @@ If a command needs an answer and you did not pass its flag, the run fails and th
 | [check](check.md) | Load the project and report every error. |
 | [regen](regen.md) | Load the project, regenerate all code, and report errors. |
 | [describe](describe.md) | Show what the project or one screen or entity contains. |
+| [batch](batch.md) | Run several commands, one per line of a file or stdin, against one load of the project. |
 
 **Screens and Entities**
 

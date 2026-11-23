@@ -271,6 +271,7 @@
     * [check](glue-reference/gluecli/check.md)
     * [regen](glue-reference/gluecli/regen.md)
     * [describe](glue-reference/gluecli/describe.md)
+    * [batch](glue-reference/gluecli/batch.md)
     * [add-screen](glue-reference/gluecli/add-screen.md)
     * [add-entity](glue-reference/gluecli/add-entity.md)
     * [add-object](glue-reference/gluecli/add-object.md)
