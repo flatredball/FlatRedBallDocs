@@ -4,7 +4,7 @@
 
 `regen` loads the project the same way as [check](check.md), then regenerates the code for every screen, entity and Global Content. It waits for queued work, saves the `.csproj`, and reports errors.
 
-Use it after you hand-edit project files, or when generated code is missing or out of date. Generated files are usually not in source control, so `regen` is also how you get them on a fresh clone without opening the editor.
+Run `regen` once after cloning or pulling, or whenever generated code is out of date. Edit commands regenerate only what they change, and `check` regenerates nothing. Generated files are usually not in source control, so a fresh clone does not build until `regen` runs. The same goes for project files changed outside GlueCli, such as hand edits or a pull.
 
 ### Usage
 

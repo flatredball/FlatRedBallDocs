@@ -2,9 +2,9 @@
 
 ### Introduction
 
-`check` loads the project the way the editor's **File > Load Project** does and reports every error the editor finds. Use it after you hand-edit `.gluj`, `.glsj` or `.glej` files.
+`check` loads the project and reports every error the editor finds. Use it after you hand-edit `.gluj`, `.glsj` or `.glej` files.
 
-Loading writes what opening the project in the editor writes (generated code and the `.csproj`), and nothing else.
+`check` does not regenerate code or save anything, unlike opening the project in the editor. The one exception is a project that has never had its code generated: plugins such as Gum and Tiled write their generated code while the project loads. Run [regen](regen.md) to bring generated code up to date.
 
 ### Usage
 
@@ -27,12 +27,7 @@ GlueCli check Beefball
 
 ```
 check C:\Games\Beefball\Beefball\Beefball.csproj
-Glue started in 4.4s, project loaded in 4.4s, 10.5s total.
-Files written (14):
-  Beefball.csproj
-  Entities/Goal.Generated.cs
-  Entities/PlayerBall.Generated.cs
-  ...
+Glue started in 2.5s, project loaded in 1.5s, 4.0s total.
 No errors.
 ```
 

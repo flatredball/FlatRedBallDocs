@@ -21,6 +21,7 @@ This page is a recipe for agents. For each command's options, follow the links t
 * `GlueCli.exe` is next to the editor's exe (`GlueFormsCore.exe`). See [Getting GlueCli](README.md#getting-gluecli).
 * The project can stay open in the FlatRedBall Editor. The editor reloads the changed files and regenerates code.
 * `<project>` is a `.gluj`, a `.csproj`, or a folder with exactly one `.gluj` in it or its subfolders. See [How a Run Works](README.md#how-a-run-works).
+* Run [regen](regen.md) once after cloning or pulling, or whenever generated code is out of date. Edit commands regenerate only what they change, and generated files are usually not in source control, so a fresh clone does not build until `regen` runs.
 
 ### The Agent Loop
 

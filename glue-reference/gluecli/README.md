@@ -50,11 +50,13 @@ The last one works because the search includes subfolders. It fails if the repos
 
 Each run does the following:
 
-1. Starts the editor with no window and loads the project, as **File > Load Project** does.
+1. Starts the editor with no window and loads the project. Loading reads the project. Unlike **File > Load Project**, it does not regenerate code or save anything.
 2. Runs one command.
 3. Waits for the editor's queued work, such as plugin reactions and code generation.
 4. For edit commands, saves the `.gluj`, the changed screen and entity files and the `.csproj`, and regenerates code for every changed screen and entity.
 5. Prints a report and exits.
+
+Run [regen](regen.md) once after cloning or pulling, or whenever generated code is out of date. Edit commands regenerate only what they change, so after a fresh clone, or after project files change outside GlueCli, the game does not build until `regen` runs.
 
 GlueCli reads the editor's settings but never saves them. Plugins load from the `Plugins` folder next to `GlueCli.exe`, plus the project's own `Plugins` folder.
 
@@ -67,8 +69,8 @@ Run `GlueCli --help` for the list of commands, and `GlueCli <command> --help` fo
 A run prints the command, the project, how long loading took, the files it wrote, and any errors:
 
 ```
-check C:\Games\Beefball\Beefball\Beefball.csproj
-Glue started in 4.4s, project loaded in 4.4s, 10.5s total.
+regen C:\Games\Beefball\Beefball\Beefball.csproj
+Glue started in 2.5s, project loaded in 1.5s, 4.4s total.
 Files written (14):
   Beefball.csproj
   Entities/Goal.Generated.cs
@@ -129,7 +131,7 @@ Build again until there are no errors.
 
 ### A Failed Edit Saves Nothing
 
-GlueCli checks an edit before it changes anything. If the name is taken, the element or object does not exist, or a value does not convert to the variable's type, the run exits with code 1 and saves no changes to the project. Loading can still write generated code, as [check](check.md) does. The message says why and lists close matches:
+GlueCli checks an edit before it changes anything. If the name is taken, the element or object does not exist, or a value does not convert to the variable's type, the run exits with code 1 and saves no changes to the project. The message says why and lists close matches:
 
 ```
 Edit not applied (1):
