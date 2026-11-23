@@ -4,7 +4,7 @@
 
 `check` loads the project and reports every error the editor finds. Use it after you hand-edit `.gluj`, `.glsj` or `.glej` files.
 
-`check` does not regenerate code or save anything, unlike opening the project in the editor. The one exception is a project that has never had its code generated: plugins such as Gum and Tiled write their generated code while the project loads. Run [regen](regen.md) to bring generated code up to date.
+`check` does not regenerate code or save anything, unlike opening the project in the editor. This holds for a project that has never had its code generated too. Run [regen](regen.md) to bring generated code up to date.
 
 ### Usage
 
