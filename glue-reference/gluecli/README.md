@@ -206,3 +206,4 @@ If a command needs an answer and you did not pass its flag, the run fails and th
 | [rename](rename.md) | Rename a screen, entity, object or file, and everything that refers to it. |
 | [delete](delete.md) | Delete a screen, entity, object or file. |
 | [set-property](set-property.md) | Set a property of a screen, entity or object, such as `LayerOn` or `BaseEntity`. |
+| [set-file-property](set-file-property.md) | Set a property of a file, such as `LoadedOnlyWhenReferenced` or `RuntimeType`. |

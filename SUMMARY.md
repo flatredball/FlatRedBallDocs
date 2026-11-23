@@ -290,6 +290,7 @@
     * [rename](glue-reference/gluecli/rename.md)
     * [delete](glue-reference/gluecli/delete.md)
     * [set-property](glue-reference/gluecli/set-property.md)
+    * [set-file-property](glue-reference/gluecli/set-file-property.md)
   * [Live Edit](glue-reference/enable-live-edit/README.md)
     * [Customizing Live Edit with Code](glue-reference/enable-live-edit/customizing-live-edit-with-code.md)
     * [Render Targets](glue-reference/enable-live-edit/render-targets.md)
