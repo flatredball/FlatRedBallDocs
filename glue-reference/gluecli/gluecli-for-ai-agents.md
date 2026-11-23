@@ -56,6 +56,12 @@ Rename with `rename`, `rename-state` or `rename-state-category` rather than dele
 
 Every edit saves the project and regenerates code for the changed screens and entities, so there is no separate save or codegen step.
 
+To preview an edit before making it, add `--dry-run`. The edit runs the same way, with the same checks, but against a temp copy of the project. The report lists the files it would change, with a diff of each `.gluj`, `.glsj` and `.glej` file, and your project stays as it was. The exit code is the one the real edit would get, so a dry run is also a cheap way to find out whether an edit is allowed:
+
+```
+GlueCli rename MyGame --element Entities\Enemy --to Slime --dry-run --json
+```
+
 #### 3. Read the Result
 
 With `--json`, check `exitCode` first:

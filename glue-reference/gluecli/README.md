@@ -64,6 +64,37 @@ You can leave the project open in the FlatRedBall Editor. The editor sees the ch
 
 Run `GlueCli --help` for the list of commands, and `GlueCli <command> --help` for a command's options and examples.
 
+### Options for Every Command
+
+| Option | Meaning |
+|--------|---------|
+| `--json` | Print one JSON object to stdout instead of text. See JSON Output below. |
+| `--dry-run` | Run the command against a temp copy of the project and report what it would change. The project on disk stays exactly as it was. |
+| `--help` | Show the command's options and examples. |
+
+### Previewing an Edit with --dry-run
+
+`--dry-run` works with every command. GlueCli copies the `.csproj` folder (skipping `bin`, `obj`, `.vs` and `.git`) to a temp folder, runs the command there in full, compares the copy with how it started, and deletes it. The edit goes through the same checks and plugin reactions as a real one, and the exit code is the one the real edit would get.
+
+The report lists each file the run would add, change or delete, with a diff of each `.gluj`, `.glsj`, `.glej` and `.json` file:
+
+```
+add-object C:\Games\Beefball\Beefball\Beefball.csproj
+Glue started in 3.3s, project loaded in 2.4s, 6.7s total.
+Added SpriteInstance (FlatRedBall.Sprite) to Screens\GameScreen.
+Would change (2):
+  modified Screens/GameScreen.Generated.cs
+  modified Screens/GameScreen.glsj
+    --- a/Screens/GameScreen.glsj
+    +++ b/Screens/GameScreen.glsj
+    @@ -1065,6 +1065,29 @@
+    ...
+No new errors.
+Dry run: the project on disk was not changed.
+```
+
+Art, audio and other large binary files are linked rather than copied, so a dry run stays fast on a game with a lot of content.
+
 ### Output
 
 A run prints the command, the project, how long loading took, the files it wrote, and any errors:
@@ -99,6 +130,8 @@ Pass `--json` to any command to print one JSON object to stdout. Everything else
 | `preexistingErrors` | Edit commands only: errors the project had before the edit. These are not counted. |
 | `filesWritten` | Files the run wrote, relative to the `.csproj` folder. |
 | `startupSeconds`, `loadSeconds`, `elapsedSeconds` | How long starting the editor, loading the project, and the whole run took. |
+| `dryRun` | `--dry-run` only: `true`. `filesWritten` is then empty. |
+| `changes` | `--dry-run` only: each file the run would change, with `path` (relative to the `.csproj` folder), `kind` (`modified`, `added` or `deleted`) and `diff` (a unified diff for `.gluj`, `.glsj`, `.glej` and `.json` files, otherwise `null`). |
 
 ### Exit Codes
 
