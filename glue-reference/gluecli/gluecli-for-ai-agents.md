@@ -6,6 +6,10 @@
 
 This page is a recipe for agents. For each command's options, follow the links to the command pages, or run `GlueCli <command> --help`.
 
+### Using GlueCli with AI Agents
+
+FlatRedBall ships a skill for Claude Code that tells an agent to use GlueCli and links back to these pages. Copy the [glue-cli folder](https://github.com/vchelaru/FlatRedBall/tree/NetStandard/frb-skills/glue-cli) from the FlatRedBall repository into your game repository's `.claude/skills/` folder. Other AI tools can read its `SKILL.md` as a plain Markdown file.
+
 ### Why It Works Well for Agents
 
 * **JSON output.** Pass `--json` and the run prints one JSON object to stdout. Banners and progress go to stderr.
