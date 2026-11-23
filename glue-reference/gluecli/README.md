@@ -201,6 +201,13 @@ If a command needs an answer and you did not pass its flag, the run fails and th
 | [add-event](add-event.md) | Add an event to a screen or entity. |
 | [remove-event](remove-event.md) | Remove an event from a screen or entity. |
 
+**Collision**
+
+| Command | Description |
+|---------|-------------|
+| [add-collision-relationship](add-collision-relationship.md) | Add a collision relationship between two objects in a screen. |
+| [set-collision-property](add-collision-relationship.md#changing-settings-later) | Change a setting of a collision relationship, such as its physics or masses. |
+
 **Rename, Delete and Properties**
 
 | Command | Description |

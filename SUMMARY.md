@@ -287,6 +287,7 @@
     * [delete-state](glue-reference/gluecli/delete-state.md)
     * [add-event](glue-reference/gluecli/add-event.md)
     * [remove-event](glue-reference/gluecli/remove-event.md)
+    * [add-collision-relationship](glue-reference/gluecli/add-collision-relationship.md)
     * [rename](glue-reference/gluecli/rename.md)
     * [delete](glue-reference/gluecli/delete.md)
     * [set-property](glue-reference/gluecli/set-property.md)
