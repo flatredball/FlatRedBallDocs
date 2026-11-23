@@ -4,7 +4,7 @@
 
 `set-variable-property` sets a property of a screen's or entity's variable, the way the editor's Properties tab does with the variable selected. The editor makes the same follow-up changes to derived elements, instances and events.
 
-Properties include `Type` (only for a new variable, not one that exposes or tunnels), `SetByDerived`, `IsShared`, `Scope`, `Category`, `Summary`, `CreatesEvent`, `HasAccompanyingVelocityProperty`, `SourceObject`, `SourceObjectProperty`, `OverridingPropertyType`, `TypeConverter` and `Name`. Setting `Name` renames the variable and what refers to it.
+The properties are `Name`, `Type` (only for a new variable, not one that exposes or tunnels), `SetByDerived`, `IsShared`, `DefinedByBase`, `Scope`, `Category`, `Summary`, `CreatesEvent`, `CreatesProperty`, `HasAccompanyingVelocityProperty`, `PreferredDisplayerTypeName`, `SourceObject`, `SourceObjectProperty` (once `SourceObject` is set), `OverridingPropertyType` and `TypeConverter` (once `OverridingPropertyType` is set). A `DefinedByBase` variable has no `Scope`, `SourceObject`, `SourceObjectProperty` or `OverridingPropertyType`. Setting `Name` renames the variable and what refers to it.
 
 Only the properties the editor shows for that variable can be set. The error lists them. To change the default value, use [set-variable](set-variable.md).
 

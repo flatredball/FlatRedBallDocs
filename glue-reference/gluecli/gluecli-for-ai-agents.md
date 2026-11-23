@@ -75,4 +75,4 @@ GlueCli proves the project is valid for the editor. It does not compile the game
 * Hand-written code is never changed. A rename updates generated code and project files, but code you wrote that uses the old name must be updated by you.
 * Event handlers go into the element's `.Event.cs` file. [add-event](add-event.md) adds an empty `On<name>` method there for you to fill in.
 * [delete](delete.md) keeps left-over files on disk by default, unlike the editor. Pass `--files delete` to remove them.
-* Element names accept either slash and may leave out the folder when the name is unique: `GameScreen`, `Screens\GameScreen` and `Screens/GameScreen` all work. Property values picked from a list, such as `BaseEntity`, must match the listed value exactly, including the backslash.
+* Element names accept either slash and may leave out the folder when the name is unique: `GameScreen`, `Screens\GameScreen` and `Screens/GameScreen` all work. Property values picked from a list, such as `BaseEntity`, match the same way.

@@ -52,6 +52,8 @@ Any other option a plugin adds to the dialog keeps its default, and is listed in
 The editor's dialog defaults to deleting the files. GlueCli defaults to keeping them on disk.
 {% endhint %}
 
+Deleting an entity always deletes its factory (`Factories/<Name>Factory.Generated.cs`), whatever `--files` says. The editor does the same, because removing the entity removes its factory. That is why the example below lists the factory with `onDisk: false`.
+
 ### Examples
 
 Delete an object:

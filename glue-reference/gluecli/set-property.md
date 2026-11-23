@@ -18,7 +18,7 @@ GlueCli set-property <project> --element <element> [--object <name>] --property 
 
 ### Values
 
-`<text>` is converted to the property's type: `true` or `false`, an enum value name, a number, or text. A property the editor picks from a list (`LayerOn`, `BaseEntity`, `SourceClassType`, `SourceFile`) must be exactly one of the listed values. `<NONE>` clears it.
+`<text>` is converted to the property's type: `true` or `false`, an enum value name, a number, or text. A property the editor picks from a list (`LayerOn`, `BaseEntity`, `SourceClassType`, `SourceFile`) must be one of the listed values. Case does not matter and either slash works, so `Entities/Puck` matches `Entities\Puck`. An element may leave out its folder when the name is unique. `<NONE>` clears it.
 
 ### Options
 
@@ -32,7 +32,7 @@ GlueCli set-property <project> --element <element> [--object <name>] --property 
 
 ### Answers
 
-Some changes make the editor ask a question. Each question has an option. Without it, the run takes the answer that changes the least. If that answer would undo the edit or lose data, the run fails, saves nothing, and names the option to pass.
+Some changes make the editor ask a question. Each question has an option that answers it, and each option below states its default. "Default: fail" means the run fails without the option, saves no changes, and names the option to pass. Any other default is what the run does without the option.
 
 | Option | Description |
 |--------|-------------|
