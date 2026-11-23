@@ -19,7 +19,8 @@ This page is a recipe for agents. For each command's options, follow the links t
 
 * GlueCli runs on Windows only.
 * `GlueCli.exe` is next to the editor's exe (`GlueFormsCore.exe`). See [Getting GlueCli](README.md#getting-gluecli).
-* Make sure the project is not open in the FlatRedBall Editor. Both programs write the same files.
+* The project can stay open in the FlatRedBall Editor. The editor reloads the changed files and regenerates code.
+* `<project>` is a `.gluj`, a `.csproj`, or a folder with exactly one `.gluj` in it or its subfolders. See [How a Run Works](README.md#how-a-run-works).
 
 ### The Agent Loop
 
@@ -66,9 +67,26 @@ With `--json`, check `exitCode` first:
 
 If you edit `.gluj`, `.glsj` or `.glej` files by hand, run [check](check.md) afterwards, then [regen](regen.md) to regenerate code. A non-zero exit code means the hand edit has a problem.
 
-#### 5. Build the Game
+#### 5. Build the Game and Fix Errors
 
-GlueCli proves the project is valid for the editor. It does not compile the game. After editing, build the game project with `dotnet build` to confirm the generated and hand-written code still compile together.
+GlueCli proves the project is valid for the editor. It does not compile the game. After editing, build the game project:
+
+```
+dotnet build MyGame/MyGame/MyGame.csproj
+```
+
+Find the `error CS` lines. Each one names a file and a line:
+
+```
+C:\Games\Beefball\Beefball\Entities\PlayerBall.cs(34,51): error CS0103: The name 'Speed' does not exist in the current context
+```
+
+Fix each error by where it is:
+
+* **In a `.Generated.cs` file:** the cause is in the project data. Fix it with a GlueCli command, then run [regen](regen.md). Never edit a `.Generated.cs` file. Code generation overwrites it.
+* **In any other file:** the cause is hand-written code. Edit the code. The example above is hand-written code that still uses a name a GlueCli edit changed.
+
+Then build again. Repeat until the build has no errors.
 
 ### Things to Know
 

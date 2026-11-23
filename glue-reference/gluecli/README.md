@@ -32,7 +32,21 @@ Every command has the same shape:
 GlueCli <command> <project> [options]
 ```
 
-`<project>` is a `.gluj` file, a `.csproj` file, or a folder that contains exactly one `.gluj` (searched recursively, skipping `bin` and `obj`).
+`<project>` is one of these:
+
+* A `.gluj` file. GlueCli opens the `.csproj` with the same name next to it, or the only `.csproj` in that folder.
+* A `.csproj` file.
+* A folder. GlueCli searches it and all its subfolders for `.gluj` files, skipping `bin` and `obj` folders. The search must find exactly one. If it finds more, the run fails and lists them, so pass one of them instead.
+
+A common layout puts the `.gluj` one folder down from the repository root, such as `MyGame/MyGame/MyGame.gluj`. All of these load it:
+
+```
+GlueCli check MyGame/MyGame/MyGame.gluj
+GlueCli check MyGame/MyGame
+GlueCli check MyGame
+```
+
+The last one works because the search includes subfolders. It fails if the repository holds a second `.gluj`, such as a copy of the game for another platform.
 
 Each run does the following:
 
@@ -44,9 +58,7 @@ Each run does the following:
 
 GlueCli reads the editor's settings but never saves them. Plugins load from the `Plugins` folder next to `GlueCli.exe`, plus the project's own `Plugins` folder.
 
-{% hint style="warning" %}
-Close the project in the FlatRedBall Editor before running an edit command. Both programs write the same files.
-{% endhint %}
+You can leave the project open in the FlatRedBall Editor. The editor sees the changed `.gluj`, `.glsj` and `.glej` files, reloads them, and regenerates code.
 
 Run `GlueCli --help` for the list of commands, and `GlueCli <command> --help` for a command's options and examples.
 
@@ -93,6 +105,27 @@ Pass `--json` to any command to print one JSON object to stdout. Everything else
 | 0 | Done, and no new errors. |
 | 1 | An edit command could not apply the edit, or the edit left errors the project did not have before. For `check`, `regen` and `describe`, the project has errors. |
 | 2 | Bad arguments, the project could not be loaded, or a plugin failed to start. |
+
+### Build Errors
+
+GlueCli checks the project, not the game's code. After editing, build the game and read the compiler errors:
+
+```
+dotnet build MyGame/MyGame/MyGame.csproj
+```
+
+Each error names a file and a line:
+
+```
+C:\Games\Beefball\Beefball\Entities\PlayerBall.cs(34,51): error CS0103: The name 'Speed' does not exist in the current context
+```
+
+Where the error is tells you where to fix it:
+
+* **A `.Generated.cs` file.** The generated code comes from the project, so fix the project with a GlueCli command, then run [regen](regen.md). Do not edit the `.Generated.cs` file. The next code generation overwrites it.
+* **Any other file.** This is code you wrote. Fix it in the code. A common cause is a [rename](rename.md), which does not change hand-written code.
+
+Build again until there are no errors.
 
 ### A Failed Edit Saves Nothing
 
