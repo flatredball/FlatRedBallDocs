@@ -20,3 +20,5 @@ To set parallax:
 Once the file is saved, the parallax will automatically be applied at runtime in the game.
 
 <figure><img src="../../.gitbook/assets/2022-08-28_12-36-06.gif" alt=""><figcaption></figcaption></figure>
+
+To make a parallax layer repeat forever, see [InfiniteScrollX](infinitescrollx.md). To move a layer yourself, use [OffsetX](offsetx.md). The layer resets its RelativeX every frame, so setting RelativeX does not work.
